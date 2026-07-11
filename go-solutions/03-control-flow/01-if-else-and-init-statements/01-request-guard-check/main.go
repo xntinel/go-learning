@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"strings"
 
-	requestguard "github.com/sentinel/go-learning/go-solutions/03-control-flow/01-if-else-and-init-statements/requestguard/guard"
+	requestguard "github.com/sentinel/go-learning/go-solutions/03-control-flow/01-if-else-and-init-statements/01-request-guard-check/guard"
 )
 
 func decide(req *http.Request) string {
