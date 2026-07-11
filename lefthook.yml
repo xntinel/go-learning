@@ -1,0 +1,4 @@
+pre-push:
+  commands:
+    progress:
+      run: go run ./tools/progress

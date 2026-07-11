@@ -1,0 +1,18 @@
+# binarios compilados
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+/bin/
+/dist/
+
+# cache / temporales de build
+*.prof
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
