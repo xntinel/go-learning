@@ -6,32 +6,29 @@ request. This is the twelve-factor pattern, and it is a decision tree — each f
 is an init-statement `if` that separates "absent" from "present but invalid" and
 early-returns a wrapped error naming the offending variable.
 
-This module is fully self-contained: its own `go mod init`, all code inline, its
-own demo and hermetic tests.
+This solution lives in the shared `go-solutions` module — no `go mod init`, just a
+folder that mirrors this exercise's path, plus a demo and hermetic tests.
 
 ## What you'll build
 
 ```text
-envconfig/                  independent module: example.com/envconfig
-  go.mod                    go 1.26
-  config.go                 Config, LoadConfig(lookup), sentinels, defaults + invariants
+go-solutions/03-control-flow/01-if-else-and-init-statements/03-env-config-loader/
+  config.go        Config, LoadConfig(lookup), sentinels, defaults + invariants
   cmd/
-    demo/
-      main.go               loads from os.LookupEnv, prints the resolved Config
-  config_test.go            hermetic table-driven tests over a fake lookup
+    main.go         loads from os.LookupEnv, prints the resolved Config
+  config_test.go    hermetic table-driven tests over a fake lookup
 ```
 
-- Files: `config.go`, `cmd/demo/main.go`, `config_test.go`.
+- Files: `config.go`, `cmd/main.go`, `config_test.go`.
 - Implement: `LoadConfig(lookup func(string) (string, bool)) (Config, error)` reading `DB_DSN`, `HTTP_PORT`, `READ_TIMEOUT`, `MAX_CONNS`, `DEBUG`, with defaults for optional keys and cross-field invariants.
 - Test: a fake lookup backed by a map; full valid set; each missing-required key; each malformed value; defaults applied when optional keys absent. Assert `errors.Is` against exported sentinels.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
+Create the folder:
 
 ```bash
-mkdir -p ~/go-exercises/envconfig/cmd/demo
-cd ~/go-exercises/envconfig
-go mod init example.com/envconfig
+mkdir -p go-solutions/03-control-flow/01-if-else-and-init-statements/03-env-config-loader/cmd
+cd go-solutions/03-control-flow/01-if-else-and-init-statements/03-env-config-loader
 ```
 
 ## Absent versus present-but-invalid, one field at a time
@@ -161,7 +158,7 @@ dead code — here neither branch has returned unconditionally in a way that mak
 The demo loads from a fixed in-memory map (so the output is deterministic) and
 prints the resolved config, then shows a missing-variable failure.
 
-Create `cmd/demo/main.go`:
+Create `cmd/main.go`:
 
 ```go
 package main
@@ -204,7 +201,7 @@ func main() {
 Run it:
 
 ```bash
-go run ./cmd/demo
+go run ./cmd
 ```
 
 Expected output:
