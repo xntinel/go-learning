@@ -193,6 +193,59 @@ func hasSignificantCode(dir string) bool {
 	return found
 }
 
+type treeNode struct {
+	name     string
+	children []*treeNode
+	childIdx map[string]int
+}
+
+func buildTree(paths []string) *treeNode {
+	root := &treeNode{childIdx: map[string]int{}}
+	for _, p := range paths {
+		cur := root
+		for _, seg := range strings.Split(p, "/") {
+			name := humanizeSegment(seg)
+			idx, ok := cur.childIdx[name]
+			if !ok {
+				idx = len(cur.children)
+				cur.childIdx[name] = idx
+				cur.children = append(cur.children, &treeNode{name: name, childIdx: map[string]int{}})
+			}
+			cur = cur.children[idx]
+		}
+	}
+	return root
+}
+
+func renderTree(b *strings.Builder, n *treeNode, depth int) {
+	for _, c := range n.children {
+		fmt.Fprintf(b, "%s- %s\n", strings.Repeat("  ", depth), c.name)
+		renderTree(b, c, depth+1)
+	}
+}
+
+// humanizeSegment convierte "01-check-package-and-error-contract" en
+// "Check Package And Error Contract" para mostrarlo en el README.
+func humanizeSegment(s string) string {
+	if idx := strings.IndexByte(s, '-'); idx > 0 {
+		allDigits := true
+		for _, c := range s[:idx] {
+			if c < '0' || c > '9' {
+				allDigits = false
+				break
+			}
+		}
+		if allDigits {
+			s = s[idx+1:]
+		}
+	}
+	words := strings.Fields(strings.ReplaceAll(s, "-", " "))
+	for i, w := range words {
+		words[i] = strings.ToUpper(w[:1]) + w[1:]
+	}
+	return strings.Join(words, " ")
+}
+
 func updateReadme(exercises []exercise) (bool, error) {
 	var solvedList []string
 	solvedCount, attemptedCount := 0, 0
@@ -221,12 +274,9 @@ func updateReadme(exercises []exercise) (bool, error) {
 	fmt.Fprintln(&b)
 	fmt.Fprintln(&b)
 	if len(solvedList) > 0 {
-		fmt.Fprintln(&b, "<details><summary>Ejercicios resueltos</summary>")
+		fmt.Fprintln(&b, "### Ejercicios resueltos")
 		fmt.Fprintln(&b)
-		for _, s := range solvedList {
-			fmt.Fprintf(&b, "- %s\n", s)
-		}
-		fmt.Fprintln(&b, "</details>")
+		renderTree(&b, buildTree(solvedList), 0)
 	}
 	fmt.Fprint(&b, markerEnd)
 	block := b.String()
