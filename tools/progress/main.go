@@ -45,7 +45,7 @@ func main() {
 		fmt.Fprintln(os.Stderr, "progress: clean binaries:", err)
 		os.Exit(2)
 	} else if len(removed) > 0 {
-		fmt.Printf("progress: %d binario(s) eliminado(s)\n", len(removed))
+		fmt.Printf("progress: removed %d stray binary(ies)\n", len(removed))
 	}
 
 	exercises, err := enumerateCurriculum()
@@ -64,7 +64,7 @@ func main() {
 		os.Exit(2)
 	}
 	if !changed {
-		fmt.Println("progress: sin cambios")
+		fmt.Println("progress: no changes")
 		return
 	}
 
@@ -72,7 +72,7 @@ func main() {
 		fmt.Fprintln(os.Stderr, "progress: git commit:", err)
 		os.Exit(2)
 	}
-	fmt.Println("progress: README.md actualizado y commiteado — corre `git push` de nuevo")
+	fmt.Println("progress: README.md updated and committed — run `git push` again")
 	os.Exit(1)
 }
 
@@ -217,10 +217,15 @@ func buildTree(paths []string) *treeNode {
 	return root
 }
 
-func renderTree(b *strings.Builder, n *treeNode, depth int) {
-	for _, c := range n.children {
-		fmt.Fprintf(b, "%s- %s\n", strings.Repeat("  ", depth), c.name)
-		renderTree(b, c, depth+1)
+func renderTree(b *strings.Builder, n *treeNode, prefix string) {
+	for i, c := range n.children {
+		last := i == len(n.children)-1
+		connector, childPrefix := "├── ", prefix+"│   "
+		if last {
+			connector, childPrefix = "└── ", prefix+"    "
+		}
+		fmt.Fprintf(b, "%s%s%s\n", prefix, connector, c.name)
+		renderTree(b, c, childPrefix)
 	}
 }
 
@@ -267,16 +272,18 @@ func updateReadme(exercises []exercise) (bool, error) {
 
 	var b strings.Builder
 	fmt.Fprintln(&b, markerStart)
-	fmt.Fprintf(&b, "**Avance: %d / %d ejercicios resueltos (%.1f%%)**", solvedCount, len(exercises), pct)
+	fmt.Fprintf(&b, "**Progress: %d / %d exercises solved (%.1f%%)**", solvedCount, len(exercises), pct)
 	if attemptedCount > 0 {
-		fmt.Fprintf(&b, " — %d intentados sin compilar", attemptedCount)
+		fmt.Fprintf(&b, " — %d attempted, not compiling", attemptedCount)
 	}
 	fmt.Fprintln(&b)
 	fmt.Fprintln(&b)
 	if len(solvedList) > 0 {
-		fmt.Fprintln(&b, "### Ejercicios resueltos")
+		fmt.Fprintln(&b, "### Solved exercises")
 		fmt.Fprintln(&b)
-		renderTree(&b, buildTree(solvedList), 0)
+		fmt.Fprintln(&b, "```")
+		renderTree(&b, buildTree(solvedList), "")
+		fmt.Fprintln(&b, "```")
 	}
 	fmt.Fprint(&b, markerEnd)
 	block := b.String()
