@@ -41,10 +41,16 @@ type exercise struct {
 }
 
 func main() {
-	if removed, err := cleanBinaries(solutionsDir); err != nil {
-		fmt.Fprintln(os.Stderr, "progress: clean binaries:", err)
-		os.Exit(2)
-	} else if len(removed) > 0 {
+	var removed []string
+	for _, root := range []string{solutionsDir, "tools"} {
+		r, err := cleanBinaries(root)
+		if err != nil {
+			fmt.Fprintln(os.Stderr, "progress: clean binaries:", err)
+			os.Exit(2)
+		}
+		removed = append(removed, r...)
+	}
+	if len(removed) > 0 {
 		fmt.Printf("progress: removed %d stray binary(ies)\n", len(removed))
 	}
 
