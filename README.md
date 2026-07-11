@@ -1,7 +1,7 @@
 # go-learning
 
 <!-- PROGRESS:START -->
-**Progress: 1 / 3586 exercises solved (0.0%)**
+**Progress: 1 / 3586 exercises solved (0.0%)** — 1 attempted, not compiling
 
 ### Solved exercises
 
