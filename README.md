@@ -5,6 +5,8 @@
 
 <details><summary>Ejercicios resueltos</summary>
 
-- 01-environment-and-tooling/01-your-first-go-program/01-check-package-and-error-contract
+- Environment And Tooling
+  - Your First Go Program
+    - Check Package And Error Contract
 </details>
 <!-- PROGRESS:END -->
