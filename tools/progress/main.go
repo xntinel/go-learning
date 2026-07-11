@@ -48,13 +48,6 @@ func main() {
 		fmt.Printf("progress: %d binario(s) eliminado(s)\n", len(removed))
 	}
 
-	tmpDir, err := os.MkdirTemp("", "go-learning-build-*")
-	if err != nil {
-		fmt.Fprintln(os.Stderr, "progress: tmp dir:", err)
-		os.Exit(2)
-	}
-	defer os.RemoveAll(tmpDir)
-
 	exercises, err := enumerateCurriculum()
 	if err != nil {
 		fmt.Fprintln(os.Stderr, "progress: enumerate curriculum:", err)
@@ -62,7 +55,7 @@ func main() {
 	}
 
 	for i := range exercises {
-		exercises[i].status = classify(filepath.Join(solutionsDir, exercises[i].relPath), tmpDir)
+		exercises[i].status = classify(filepath.Join(solutionsDir, exercises[i].relPath))
 	}
 
 	changed, err := updateReadme(exercises)
@@ -159,7 +152,7 @@ func enumerateCurriculum() ([]exercise, error) {
 	return out, err
 }
 
-func classify(dir, buildOutDir string) status {
+func classify(dir string) status {
 	info, err := os.Stat(dir)
 	if err != nil || !info.IsDir() {
 		return unsolved
@@ -167,7 +160,9 @@ func classify(dir, buildOutDir string) status {
 	if !hasSignificantCode(dir) {
 		return unsolved
 	}
-	cmd := exec.Command("go", "build", "-o", buildOutDir+string(os.PathSeparator), "./...")
+	// go vet type-checks main and non-main packages alike and never writes
+	// a binary, so it works uniformly without needing -o or a main func.
+	cmd := exec.Command("go", "vet", "./...")
 	cmd.Dir = dir
 	if _, err := cmd.CombinedOutput(); err != nil {
 		return attempted
