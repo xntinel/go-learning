@@ -1,7 +1,7 @@
 # go-learning
 
 <!-- PROGRESS:START -->
-**Progress: 8 / 3586 exercises solved (0.2%)**
+**Progress: 9 / 3586 exercises solved (0.3%)**
 
 ### Solved exercises
 
@@ -15,10 +15,13 @@
 │       ├── Env Config Loader
 │       ├── Cache Comma Ok Ttl
 │       └── Idempotency Guard
-└── Functions
-    └── Function Declaration And Multiple Return Values
-        ├── Repository Notfound Vs Failure
-        ├── Comma Ok Type Assertion Payload
-        └── Constructor Returns Cleanup Func
+├── Functions
+│   └── Function Declaration And Multiple Return Values
+│       ├── Repository Notfound Vs Failure
+│       ├── Comma Ok Type Assertion Payload
+│       └── Constructor Returns Cleanup Func
+└── Collections Arrays Slices And Maps
+    └── Slice Expressions And Sub Slicing
+        └── Log Window Pagination
 ```
 <!-- PROGRESS:END -->
