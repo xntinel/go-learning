@@ -1,7 +1,7 @@
 # go-learning
 
 <!-- PROGRESS:START -->
-**Progress: 9 / 3586 exercises solved (0.3%)**
+**Progress: 13 / 3586 exercises solved (0.4%)**
 
 ### Solved exercises
 
@@ -21,7 +21,12 @@
 │       ├── Comma Ok Type Assertion Payload
 │       └── Constructor Returns Cleanup Func
 └── Collections Arrays Slices And Maps
-    └── Slice Expressions And Sub Slicing
-        └── Log Window Pagination
+    ├── Slice Expressions And Sub Slicing
+    │   ├── Log Window Pagination
+    │   ├── Csv Line Field Slicing
+    │   └── Repository Page Defensive Copy
+    └── Slices Package
+        ├── Normalize Pipeline Stage
+        └── Reconcile Drift Equal Compare
 ```
 <!-- PROGRESS:END -->
