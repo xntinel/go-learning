@@ -73,23 +73,7 @@ func main() {
 		fmt.Println("progress: no changes")
 		return
 	}
-
-	if err := commitReadme(); err != nil {
-		fmt.Fprintln(os.Stderr, "progress: git commit:", err)
-		os.Exit(2)
-	}
-	fmt.Println("progress: README.md updated and committed — run `git push` again")
-	os.Exit(1)
-}
-
-func commitReadme() error {
-	if out, err := exec.Command("git", "add", readmePath).CombinedOutput(); err != nil {
-		return fmt.Errorf("%s: %w", out, err)
-	}
-	if out, err := exec.Command("git", "commit", "-m", "chore: update progress").CombinedOutput(); err != nil {
-		return fmt.Errorf("%s: %w", out, err)
-	}
-	return nil
+	fmt.Println("progress: README.md updated")
 }
 
 // cleanBinaries elimina binarios compilados sueltos: archivos ejecutables sin

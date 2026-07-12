@@ -1,4 +1,5 @@
-pre-push:
+pre-commit:
   commands:
     progress:
       run: go run ./tools/progress
+      stage_fixed: true
