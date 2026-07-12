@@ -1,7 +1,7 @@
 # go-learning
 
 <!-- PROGRESS:START -->
-**Progress: 13 / 3586 exercises solved (0.4%)**
+**Progress: 14 / 3586 exercises solved (0.4%)**
 
 ### Solved exercises
 
@@ -20,13 +20,16 @@
 │       ├── Repository Notfound Vs Failure
 │       ├── Comma Ok Type Assertion Payload
 │       └── Constructor Returns Cleanup Func
-└── Collections Arrays Slices And Maps
-    ├── Slice Expressions And Sub Slicing
-    │   ├── Log Window Pagination
-    │   ├── Csv Line Field Slicing
-    │   └── Repository Page Defensive Copy
-    └── Slices Package
-        ├── Normalize Pipeline Stage
-        └── Reconcile Drift Equal Compare
+├── Collections Arrays Slices And Maps
+│   ├── Slice Expressions And Sub Slicing
+│   │   ├── Log Window Pagination
+│   │   ├── Csv Line Field Slicing
+│   │   └── Repository Page Defensive Copy
+│   └── Slices Package
+│       ├── Normalize Pipeline Stage
+│       └── Reconcile Drift Equal Compare
+└── Structs And Methods
+    └── Struct Declaration And Initialization
+        └── User Entity And Validating Constructor
 ```
 <!-- PROGRESS:END -->
