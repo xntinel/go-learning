@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03-control-flow/01-if-else-and-init-statements/06-idempotency-guard.md",
+                "file": "04-functions/01-function-declaration-and-multiple-return-values/04-repository-notfound-vs-failure.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "06-idempotency-guard"
+              "title": "04-repository-notfound-vs-failure"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-control-flow/01-if-else-and-init-statements/06-idempotency-guard.md",
+                "file": "04-functions/01-function-declaration-and-multiple-return-values/04-repository-notfound-vs-failure.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 06-idempotency-guard"
+              "title": "Backlinks for 04-repository-notfound-vs-failure"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03-control-flow/01-if-else-and-init-statements/06-idempotency-guard.md",
+                "file": "04-functions/01-function-declaration-and-multiple-return-values/04-repository-notfound-vs-failure.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 06-idempotency-guard"
+              "title": "Outgoing links from 04-repository-notfound-vs-failure"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-control-flow/01-if-else-and-init-statements/06-idempotency-guard.md",
+                "file": "04-functions/01-function-declaration-and-multiple-return-values/04-repository-notfound-vs-failure.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 06-idempotency-guard"
+              "title": "Outline of 04-repository-notfound-vs-failure"
             }
           }
         ]
@@ -185,6 +185,11 @@
   },
   "active": "0c7dc44833088d1b",
   "lastOpenFiles": [
+    "04-functions/01-function-declaration-and-multiple-return-values/02-value-ok-lookup-and-embedding.md",
+    "04-functions/01-function-declaration-and-multiple-return-values/01-typed-accessors-value-error.md",
+    "04-functions/01-function-declaration-and-multiple-return-values/00-concepts.md",
+    "03-control-flow/01-if-else-and-init-statements/07-optimistic-lock-update.md",
+    "03-control-flow/01-if-else-and-init-statements/06-idempotency-guard.md",
     "03-control-flow/01-if-else-and-init-statements/05-retry-classifier.md",
     "03-control-flow/01-if-else-and-init-statements/04-cache-comma-ok-ttl.md",
     "03-control-flow/01-if-else-and-init-statements/03-env-config-loader.md",
