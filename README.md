@@ -1,7 +1,7 @@
 # go-learning
 
 <!-- PROGRESS:START -->
-**Progress: 5 / 3586 exercises solved (0.1%)**
+**Progress: 4 / 3586 exercises solved (0.1%)** — 1 attempted, not compiling
 
 ### Solved exercises
 
@@ -13,7 +13,6 @@
     └── If Else And Init Statements
         ├── Request Guard Check
         ├── Env Config Loader
-        ├── Cache Comma Ok Ttl
-        └── Idempotency Guard
+        └── Cache Comma Ok Ttl
 ```
 <!-- PROGRESS:END -->
