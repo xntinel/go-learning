@@ -29,9 +29,8 @@ Verify: `go test -count=1 ./...`
 Set up the module:
 
 ```bash
-mkdir -p workflow/cmd/demo
-cd workflow
-go mod init example.com/workflow
+mkdir -p go-solutions/02-variables-types-and-constants/04-constants-and-iota/01-workflow-states-and-permissions/cmd/demo
+cd go-solutions/02-variables-types-and-constants/04-constants-and-iota/01-workflow-states-and-permissions
 ```
 
 ## Why two kinds of constant in one package

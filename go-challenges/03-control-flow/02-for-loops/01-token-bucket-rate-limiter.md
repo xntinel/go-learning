@@ -30,9 +30,8 @@ ratelimit/                          module example.com/ratelimit
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ratelimit/internal/limiter ~/go-exercises/ratelimit/cmd/ratelimit-demo
-cd ~/go-exercises/ratelimit
-go mod init example.com/ratelimit
+mkdir -p go-solutions/03-control-flow/02-for-loops/01-token-bucket-rate-limiter/internal/limiter go-solutions/03-control-flow/02-for-loops/01-token-bucket-rate-limiter/cmd/ratelimit-demo
+cd go-solutions/03-control-flow/02-for-loops/01-token-bucket-rate-limiter
 ```
 
 ### Why the clock is injected once, and refill is the only time math

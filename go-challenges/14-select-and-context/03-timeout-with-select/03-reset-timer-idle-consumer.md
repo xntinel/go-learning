@@ -25,9 +25,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/idlecon/cmd/demo
-cd ~/go-exercises/idlecon
-go mod init example.com/idle
+mkdir -p go-solutions/14-select-and-context/03-timeout-with-select/03-reset-timer-idle-consumer/cmd/demo
+cd go-solutions/14-select-and-context/03-timeout-with-select/03-reset-timer-idle-consumer
 ```
 
 ### One timer, reset per message

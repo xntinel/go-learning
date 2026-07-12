@@ -22,8 +22,7 @@ shardmerge_test.go   global-order check, fail-fast error propagation, empty case
 Set up the module:
 
 ```bash
-mkdir -p shardmerge/cmd/demo && cd shardmerge
-go mod init example.com/shardmerge
+mkdir -p go-solutions/16-concurrency-patterns/03-fan-in-pattern/02-ordered-shard-merge/cmd/demo && cd go-solutions/16-concurrency-patterns/03-fan-in-pattern/02-ordered-shard-merge
 ```
 
 ### Why arrival order is not enough, and what a k-way merge does

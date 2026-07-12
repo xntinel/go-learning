@@ -44,9 +44,8 @@ transaction-log-recovery/   independent module: example.com/transaction-log-reco
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/transaction-log-recovery/cmd/demo
-cd ~/go-exercises/transaction-log-recovery
-go mod init example.com/transaction-log-recovery
+mkdir -p go-solutions/03-control-flow/04-type-switch/24-transaction-log-recovery/cmd/demo
+cd go-solutions/03-control-flow/04-type-switch/24-transaction-log-recovery
 go mod edit -go=1.24
 ```
 

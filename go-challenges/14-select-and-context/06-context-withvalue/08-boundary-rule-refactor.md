@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/boundary/cmd/demo
-cd ~/go-exercises/boundary
-go mod init example.com/boundary
+mkdir -p go-solutions/14-select-and-context/06-context-withvalue/08-boundary-rule-refactor/cmd/demo
+cd go-solutions/14-select-and-context/06-context-withvalue/08-boundary-rule-refactor
 ```
 
 ### The smell, the rule, and the fix

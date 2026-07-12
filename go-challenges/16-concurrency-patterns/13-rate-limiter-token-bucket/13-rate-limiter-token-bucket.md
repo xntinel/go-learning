@@ -53,9 +53,8 @@ This is the Go 1.20+ multi-wrap pattern. Both unwrap targets are reachable throu
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ratelimit/internal/ratelimit ~/go-exercises/ratelimit/cmd/ratelimitdemo
-cd ~/go-exercises/ratelimit
-go mod init example.com/ratelimit
+mkdir -p go-solutions/16-concurrency-patterns/13-rate-limiter-token-bucket/13-rate-limiter-token-bucket/internal/ratelimit go-solutions/16-concurrency-patterns/13-rate-limiter-token-bucket/13-rate-limiter-token-bucket/cmd/ratelimitdemo
+cd go-solutions/16-concurrency-patterns/13-rate-limiter-token-bucket/13-rate-limiter-token-bucket
 ```
 
 ### Exercise 1: The Token Bucket

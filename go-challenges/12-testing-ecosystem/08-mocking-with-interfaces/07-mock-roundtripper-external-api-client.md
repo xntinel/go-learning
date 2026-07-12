@@ -30,9 +30,8 @@ weather/                     independent module: example.com/weather
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/weather/cmd/demo
-cd ~/go-exercises/weather
-go mod init example.com/weather
+mkdir -p go-solutions/12-testing-ecosystem/08-mocking-with-interfaces/07-mock-roundtripper-external-api-client/cmd/demo
+cd go-solutions/12-testing-ecosystem/08-mocking-with-interfaces/07-mock-roundtripper-external-api-client
 ```
 
 ### The client and its error mapping

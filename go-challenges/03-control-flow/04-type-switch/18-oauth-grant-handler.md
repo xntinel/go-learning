@@ -33,9 +33,8 @@ oauth-grant-handler/        independent module: example.com/oauth-grant-handler
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/oauth-grant-handler/cmd/demo
-cd ~/go-exercises/oauth-grant-handler
-go mod init example.com/oauth-grant-handler
+mkdir -p go-solutions/03-control-flow/04-type-switch/18-oauth-grant-handler/cmd/demo
+cd go-solutions/03-control-flow/04-type-switch/18-oauth-grant-handler
 go mod edit -go=1.24
 ```
 

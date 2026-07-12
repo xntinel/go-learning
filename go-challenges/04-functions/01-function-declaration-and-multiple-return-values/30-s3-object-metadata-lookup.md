@@ -32,9 +32,8 @@ s3meta/                    independent module: example.com/s3-object-metadata-lo
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/s3meta/cmd/demo
-cd ~/go-exercises/s3meta
-go mod init example.com/s3-object-metadata-lookup
+mkdir -p go-solutions/04-functions/01-function-declaration-and-multiple-return-values/30-s3-object-metadata-lookup/cmd/demo
+cd go-solutions/04-functions/01-function-declaration-and-multiple-return-values/30-s3-object-metadata-lookup
 go mod edit -go=1.24
 ```
 

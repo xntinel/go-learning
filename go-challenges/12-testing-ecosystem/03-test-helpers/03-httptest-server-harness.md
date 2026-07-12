@@ -29,9 +29,8 @@ apiharness/                  independent module: example.com/apiharness
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/apiharness/cmd/demo
-cd ~/go-exercises/apiharness
-go mod init example.com/apiharness
+mkdir -p go-solutions/12-testing-ecosystem/03-test-helpers/03-httptest-server-harness/cmd/demo
+cd go-solutions/12-testing-ecosystem/03-test-helpers/03-httptest-server-harness
 ```
 
 ### The handler and why `httptest.NewServer`

@@ -31,9 +31,8 @@ frameparser/                independent module: example.com/frameparser
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/frameparser/cmd/demo
-cd ~/go-exercises/frameparser
-go mod init example.com/frameparser
+mkdir -p go-solutions/03-control-flow/06-labels-break-continue-goto/15-binary-protocol-frame-parser/cmd/demo
+cd go-solutions/03-control-flow/06-labels-break-continue-goto/15-binary-protocol-frame-parser
 go mod edit -go=1.24
 ```
 

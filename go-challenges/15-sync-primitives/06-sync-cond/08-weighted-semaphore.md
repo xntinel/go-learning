@@ -28,9 +28,8 @@ wsem/                       independent module: example.com/wsem
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/wsem/cmd/demo
-cd ~/go-exercises/wsem
-go mod init example.com/wsem
+mkdir -p go-solutions/15-sync-primitives/06-sync-cond/08-weighted-semaphore/cmd/demo
+cd go-solutions/15-sync-primitives/06-sync-cond/08-weighted-semaphore
 ```
 
 ### Why heterogeneous weights make Signal a lost-wakeup bug

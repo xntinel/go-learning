@@ -63,9 +63,8 @@ Closing the body without draining it leaves unread bytes in the socket buffer. T
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/keepalive/cmd/demo
-cd ~/go-exercises/keepalive
-go mod init example.com/keepalive
+mkdir -p go-solutions/33-tcp-udp-and-networking/11-http-keep-alive-analysis/11-http-keep-alive-analysis/cmd/demo
+cd go-solutions/33-tcp-udp-and-networking/11-http-keep-alive-analysis/11-http-keep-alive-analysis
 ```
 
 This is a library, not a program: there is no `main`. You verify it with `go test`.

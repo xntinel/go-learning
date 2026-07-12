@@ -31,9 +31,8 @@ mapbench/                  independent module: example.com/mapbench
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/mapbench/cmd/demo
-cd ~/go-exercises/mapbench
-go mod init example.com/mapbench
+mkdir -p go-solutions/48-modern-go-language-and-stdlib/11-swiss-table-map-internals/03-map-benchmark-suite/cmd/demo
+cd go-solutions/48-modern-go-language-and-stdlib/11-swiss-table-map-internals/03-map-benchmark-suite
 go mod edit -go=1.24
 ```
 

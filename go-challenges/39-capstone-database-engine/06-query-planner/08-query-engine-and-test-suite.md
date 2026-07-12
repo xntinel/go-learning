@@ -29,8 +29,7 @@ planner_test.go   the full engine test suite
 Set up the module:
 
 ```bash
-mkdir -p query-engine/cmd/demo && cd query-engine
-go mod init example.com/query-engine
+mkdir -p go-solutions/39-capstone-database-engine/06-query-planner/08-query-engine-and-test-suite/cmd/demo && cd go-solutions/39-capstone-database-engine/06-query-planner/08-query-engine-and-test-suite
 ```
 
 ### Values, schema, and the operator protocol

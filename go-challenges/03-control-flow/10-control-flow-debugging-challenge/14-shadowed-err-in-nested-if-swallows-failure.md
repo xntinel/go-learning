@@ -26,9 +26,8 @@ inventory/                  module example.com/inventory
 - Verify: `go test -count=1 ./...`.
 
 ```bash
-mkdir -p ~/go-exercises/inventory
-cd ~/go-exercises/inventory
-go mod init example.com/inventory
+mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/14-shadowed-err-in-nested-if-swallows-failure
+cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/14-shadowed-err-in-nested-if-swallows-failure
 ```
 
 ### The artifact and the planted bug

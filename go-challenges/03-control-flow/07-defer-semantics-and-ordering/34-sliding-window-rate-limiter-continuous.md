@@ -37,9 +37,8 @@ ratelimiter/                  independent module: example.com/sliding-window-rat
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/sliding-window-rate-limiter-continuous/cmd/demo
-cd ~/go-exercises/sliding-window-rate-limiter-continuous
-go mod init example.com/sliding-window-rate-limiter-continuous
+mkdir -p go-solutions/03-control-flow/07-defer-semantics-and-ordering/34-sliding-window-rate-limiter-continuous/cmd/demo
+cd go-solutions/03-control-flow/07-defer-semantics-and-ordering/34-sliding-window-rate-limiter-continuous
 go mod edit -go=1.24
 ```
 

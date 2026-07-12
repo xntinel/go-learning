@@ -22,8 +22,7 @@ eject_test.go        ejection, the last-backend invariant, exponential cooldown,
 Set up the module:
 
 ```bash
-mkdir -p outlier-ejection/cmd/demo && cd outlier-ejection
-go mod init example.com/outlier-ejection
+mkdir -p go-solutions/42-capstone-service-mesh-data-plane/05-health-checking/03-outlier-ejection/cmd/demo && cd go-solutions/42-capstone-service-mesh-data-plane/05-health-checking/03-outlier-ejection
 go mod edit -go=1.26
 ```
 

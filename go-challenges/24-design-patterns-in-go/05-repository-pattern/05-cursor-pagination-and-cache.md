@@ -29,8 +29,7 @@ accounts_test.go         pagination walks every row once, page boundaries
 Set up the module:
 
 ```bash
-mkdir -p accounts/cmd/demo && cd accounts
-go mod init example.com/accounts
+mkdir -p go-solutions/24-design-patterns-in-go/05-repository-pattern/05-cursor-pagination-and-cache/cmd/demo && cd go-solutions/24-design-patterns-in-go/05-repository-pattern/05-cursor-pagination-and-cache
 ```
 
 ### Why cursor pagination and what the opaque token hides

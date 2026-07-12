@@ -33,9 +33,8 @@ jsreplay/                    independent module: example.com/jsreplay
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/jsreplay/cmd/demo
-cd ~/go-exercises/jsreplay
-go mod init example.com/jsreplay
+mkdir -p go-solutions/50-messaging-and-event-driven/03-nats-jetstream-persistence/03-stream-replay-projection/cmd/demo
+cd go-solutions/50-messaging-and-event-driven/03-nats-jetstream-persistence/03-stream-replay-projection
 go mod edit -go=1.26
 ```
 

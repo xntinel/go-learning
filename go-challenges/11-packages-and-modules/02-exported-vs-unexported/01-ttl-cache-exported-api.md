@@ -31,9 +31,8 @@ cache/                     independent module: example.com/cache
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cache/cmd/demo
-cd ~/go-exercises/cache
-go mod init example.com/cache
+mkdir -p go-solutions/11-packages-and-modules/02-exported-vs-unexported/01-ttl-cache-exported-api/cmd/demo
+cd go-solutions/11-packages-and-modules/02-exported-vs-unexported/01-ttl-cache-exported-api
 go mod edit -go=1.26
 ```
 

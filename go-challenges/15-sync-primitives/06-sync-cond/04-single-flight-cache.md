@@ -29,9 +29,8 @@ sfcache/                    independent module: example.com/sfcache
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/sfcache/cmd/demo
-cd ~/go-exercises/sfcache
-go mod init example.com/sfcache
+mkdir -p go-solutions/15-sync-primitives/06-sync-cond/04-single-flight-cache/cmd/demo
+cd go-solutions/15-sync-primitives/06-sync-cond/04-single-flight-cache
 ```
 
 ### The in-flight generation, and why Broadcast

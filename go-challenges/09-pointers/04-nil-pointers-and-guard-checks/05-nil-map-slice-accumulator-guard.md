@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/aggregator/cmd/demo
-cd ~/go-exercises/aggregator
-go mod init example.com/aggregator
+mkdir -p go-solutions/09-pointers/04-nil-pointers-and-guard-checks/05-nil-map-slice-accumulator-guard/cmd/demo
+cd go-solutions/09-pointers/04-nil-pointers-and-guard-checks/05-nil-map-slice-accumulator-guard
 go mod edit -go=1.24
 ```
 

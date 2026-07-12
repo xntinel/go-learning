@@ -22,8 +22,7 @@ huffcodec/
 Set up the module:
 
 ```bash
-mkdir -p huffcodec/cmd/demo && cd huffcodec
-go mod init example.com/huffcodec
+mkdir -p go-solutions/44-capstone-http2-implementation/02-hpack-header-compression/03-huffman-codec/cmd/demo && cd go-solutions/44-capstone-http2-implementation/02-hpack-header-compression/03-huffman-codec
 go mod edit -go=1.26
 ```
 

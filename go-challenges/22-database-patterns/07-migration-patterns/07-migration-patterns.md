@@ -21,9 +21,8 @@ The demo runs through exported API, but `go test` is the gate. Table-driven test
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/07-migration-patterns.md
-cd ~/go-exercises/07-migration-patterns.md
-go mod init example.com/07-migration-patterns.md
+mkdir -p go-solutions/22-database-patterns/07-migration-patterns/07-migration-patterns
+cd go-solutions/22-database-patterns/07-migration-patterns/07-migration-patterns
 go mod edit -go=1.26
 ```
 

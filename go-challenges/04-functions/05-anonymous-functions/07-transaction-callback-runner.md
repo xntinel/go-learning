@@ -27,9 +27,8 @@ txn/                          module example.com/txn
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/txn/cmd/demo
-cd ~/go-exercises/txn
-go mod init example.com/txn
+mkdir -p go-solutions/04-functions/05-anonymous-functions/07-transaction-callback-runner/cmd/demo
+cd go-solutions/04-functions/05-anonymous-functions/07-transaction-callback-runner
 ```
 
 ### The runner owns the boundary; the literal owns the work

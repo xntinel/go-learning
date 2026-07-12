@@ -29,9 +29,8 @@ userstore/                     independent module: example.com/userstore
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/userstore/cmd/demo
-cd ~/go-exercises/userstore
-go mod init example.com/userstore
+mkdir -p go-solutions/07-structs-and-methods/07-method-sets-and-addressability/02-repository-interface-pointer-method-set/cmd/demo
+cd go-solutions/07-structs-and-methods/07-method-sets-and-addressability/02-repository-interface-pointer-method-set
 ```
 
 ### Why *MemStore satisfies Store but MemStore does not

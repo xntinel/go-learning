@@ -30,9 +30,8 @@ userapi/                       independent module: example.com/userapi
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/userapi/cmd/demo
-cd ~/go-exercises/userapi
-go mod init example.com/userapi
+mkdir -p go-solutions/07-structs-and-methods/07-method-sets-and-addressability/07-http-handler-method-values-expressions/cmd/demo
+cd go-solutions/07-structs-and-methods/07-method-sets-and-addressability/07-http-handler-method-values-expressions
 ```
 
 ### Method value vs method expression

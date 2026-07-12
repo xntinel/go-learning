@@ -21,9 +21,8 @@ A parser that expects specific columns should validate the header before reading
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/employeecsv/cmd/demo
-cd ~/go-exercises/employeecsv
-go mod init example.com/employeecsv
+mkdir -p go-solutions/19-io-and-filesystem/08-csv-reading-writing/08-csv-reading-writing/cmd/demo
+cd go-solutions/19-io-and-filesystem/08-csv-reading-writing/08-csv-reading-writing
 ```
 
 ### Exercise 1: Parse Employees

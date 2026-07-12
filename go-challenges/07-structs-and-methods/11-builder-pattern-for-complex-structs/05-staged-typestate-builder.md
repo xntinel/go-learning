@@ -29,9 +29,8 @@ staged/                     independent module: example.com/staged
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/staged/cmd/demo
-cd ~/go-exercises/staged
-go mod init example.com/staged
+mkdir -p go-solutions/07-structs-and-methods/11-builder-pattern-for-complex-structs/05-staged-typestate-builder/cmd/demo
+cd go-solutions/07-structs-and-methods/11-builder-pattern-for-complex-structs/05-staged-typestate-builder
 ```
 
 ### How the type system enforces ordering

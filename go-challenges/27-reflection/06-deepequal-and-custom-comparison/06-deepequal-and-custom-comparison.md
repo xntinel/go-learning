@@ -64,9 +64,8 @@ Note: `go-cmp` is an external module, so the lesson's stdlib-only code uses `ref
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/compare/cmd/demo
-cd ~/go-exercises/compare
-go mod init example.com/compare
+mkdir -p go-solutions/27-reflection/06-deepequal-and-custom-comparison/06-deepequal-and-custom-comparison/cmd/demo
+cd go-solutions/27-reflection/06-deepequal-and-custom-comparison/06-deepequal-and-custom-comparison
 ```
 
 ### Exercise 1: Custom Field-Ignoring Comparator

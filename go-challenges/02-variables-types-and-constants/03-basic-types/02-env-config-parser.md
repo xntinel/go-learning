@@ -28,9 +28,8 @@ config/                    independent module: example.com/config
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/config/cmd/demo
-cd ~/go-exercises/config
-go mod init example.com/config
+mkdir -p go-solutions/02-variables-types-and-constants/03-basic-types/02-env-config-parser/cmd/demo
+cd go-solutions/02-variables-types-and-constants/03-basic-types/02-env-config-parser
 ```
 
 ### Why bitSize and error classification are the whole point

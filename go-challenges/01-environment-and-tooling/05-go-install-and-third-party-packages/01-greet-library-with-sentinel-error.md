@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/greetlib/internal/hello ~/go-exercises/greetlib/cmd/demo
-cd ~/go-exercises/greetlib
-go mod init example.com/greetlib
+mkdir -p go-solutions/01-environment-and-tooling/05-go-install-and-third-party-packages/01-greet-library-with-sentinel-error/internal/hello go-solutions/01-environment-and-tooling/05-go-install-and-third-party-packages/01-greet-library-with-sentinel-error/cmd/demo
+cd go-solutions/01-environment-and-tooling/05-go-install-and-third-party-packages/01-greet-library-with-sentinel-error
 ```
 
 ### Why a sentinel error, not a string

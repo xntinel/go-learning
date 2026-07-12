@@ -30,9 +30,8 @@ greetcli/                     independent module: example.com/greetcli
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/greetcli/cmd/demo ~/go-exercises/greetcli/internal/writer
-cd ~/go-exercises/greetcli
-go mod init example.com/greetcli
+mkdir -p go-solutions/01-environment-and-tooling/06-linting-with-golangci-lint/03-cli-error-surfacing/cmd/demo go-solutions/01-environment-and-tooling/06-linting-with-golangci-lint/03-cli-error-surfacing/internal/writer
+cd go-solutions/01-environment-and-tooling/06-linting-with-golangci-lint/03-cli-error-surfacing
 ```
 
 ### Why split main() from run()

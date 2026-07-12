@@ -31,8 +31,7 @@ report_test.go       byte-stable rendering across runs, golden output, totals
 Set up the module:
 
 ```bash
-mkdir -p deterministic-report-export/cmd/demo && cd deterministic-report-export
-go mod init example.com/deterministic-report-export
+mkdir -p go-solutions/25-iterators-and-modern-go/08-standard-library-iterators/04-deterministic-report-export/cmd/demo && cd go-solutions/25-iterators-and-modern-go/08-standard-library-iterators/04-deterministic-report-export
 ```
 
 ### Why determinism is the whole point of an export job

@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/logfmt/cmd/demo
-cd ~/go-exercises/logfmt
-go mod init example.com/logfmt
+mkdir -p go-solutions/05-strings-runes-and-unicode/05-strings-package/04-logfmt-line-parser/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/05-strings-package/04-logfmt-line-parser
 ```
 
 ### Why strings.Fields is the wrong baseline

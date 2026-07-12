@@ -30,9 +30,8 @@ greetcli/                   independent module: example.com/greetcli
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/greetcli/internal/greeter ~/go-exercises/greetcli/cmd/demo
-cd ~/go-exercises/greetcli
-go mod init example.com/greetcli
+mkdir -p go-solutions/01-environment-and-tooling/02-go-modules-and-dependencies/02-cmd-binary-imports-internal-package/internal/greeter go-solutions/01-environment-and-tooling/02-go-modules-and-dependencies/02-cmd-binary-imports-internal-package/cmd/demo
+cd go-solutions/01-environment-and-tooling/02-go-modules-and-dependencies/02-cmd-binary-imports-internal-package
 ```
 
 ### Why internal/ and why a run seam

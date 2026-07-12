@@ -28,9 +28,8 @@ inflight/                    independent module: example.com/inflight
 - Verify: `go test -count=1 -race ./...`
 
 ```bash
-mkdir -p ~/go-exercises/inflight/cmd/demo
-cd ~/go-exercises/inflight
-go mod init example.com/inflight
+mkdir -p go-solutions/15-sync-primitives/01-sync-mutex/01-request-inflight-gauge/cmd/demo
+cd go-solutions/15-sync-primitives/01-sync-mutex/01-request-inflight-gauge
 ```
 
 ### Why a mutex and not just the raw int

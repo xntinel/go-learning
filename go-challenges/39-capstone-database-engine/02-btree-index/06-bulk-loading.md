@@ -23,8 +23,7 @@ bulk_test.go         invariant check on 1000 keys, input validation, empty input
 Set up the module:
 
 ```bash
-mkdir -p bulk-loading/cmd/demo && cd bulk-loading
-go mod init example.com/bulk-loading
+mkdir -p go-solutions/39-capstone-database-engine/02-btree-index/06-bulk-loading/cmd/demo && cd go-solutions/39-capstone-database-engine/02-btree-index/06-bulk-loading
 ```
 
 ### The baseline

@@ -31,9 +31,8 @@ guardmw/                    independent module: example.com/guardmw
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/guardmw/cmd/demo
-cd ~/go-exercises/guardmw
-go mod init example.com/guardmw
+mkdir -p go-solutions/03-control-flow/01-if-else-and-init-statements/02-guard-middleware-status-mapping/cmd/demo
+cd go-solutions/03-control-flow/01-if-else-and-init-statements/02-guard-middleware-status-mapping
 ```
 
 ## One place for the mapping, one path for the leak

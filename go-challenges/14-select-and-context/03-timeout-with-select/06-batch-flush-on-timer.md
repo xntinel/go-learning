@@ -25,9 +25,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/batcher/cmd/demo
-cd ~/go-exercises/batcher
-go mod init example.com/batcher
+mkdir -p go-solutions/14-select-and-context/03-timeout-with-select/06-batch-flush-on-timer/cmd/demo
+cd go-solutions/14-select-and-context/03-timeout-with-select/06-batch-flush-on-timer
 ```
 
 ### Two triggers, one timer, one copy

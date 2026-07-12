@@ -23,8 +23,7 @@ roundrobin_test.go   equal/weighted distribution, smooth spread, unhealthy skip,
 Set up the module:
 
 ```bash
-mkdir -p weighted-round-robin/cmd/demo && cd weighted-round-robin
-go mod init example.com/weighted-round-robin
+mkdir -p go-solutions/42-capstone-service-mesh-data-plane/04-load-balancing/01-weighted-round-robin/cmd/demo && cd go-solutions/42-capstone-service-mesh-data-plane/04-load-balancing/01-weighted-round-robin
 go mod edit -go=1.26
 ```
 

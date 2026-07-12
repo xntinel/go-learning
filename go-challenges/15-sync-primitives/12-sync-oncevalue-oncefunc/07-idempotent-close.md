@@ -25,9 +25,8 @@ idemclose/                 independent module: example.com/idemclose
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/idemclose/cmd/demo
-cd ~/go-exercises/idemclose
-go mod init example.com/idemclose
+mkdir -p go-solutions/15-sync-primitives/12-sync-oncevalue-oncefunc/07-idempotent-close/cmd/demo
+cd go-solutions/15-sync-primitives/12-sync-oncevalue-oncefunc/07-idempotent-close
 ```
 
 ### Why double-close is a real bug, not a nit

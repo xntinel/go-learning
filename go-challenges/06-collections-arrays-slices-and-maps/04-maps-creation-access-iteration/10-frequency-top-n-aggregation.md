@@ -30,9 +30,8 @@ statusrank/                independent module: example.com/statusrank
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/statusrank/cmd/demo
-cd ~/go-exercises/statusrank
-go mod init example.com/statusrank
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/10-frequency-top-n-aggregation/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/10-frequency-top-n-aggregation
 ```
 
 ### Why the map accumulates and the slice ranks

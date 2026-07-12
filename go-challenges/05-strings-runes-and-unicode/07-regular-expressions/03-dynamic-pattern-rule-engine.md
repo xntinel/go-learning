@@ -30,9 +30,8 @@ ruleengine/                 independent module: example.com/ruleengine
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ruleengine/cmd/demo
-cd ~/go-exercises/ruleengine
-go mod init example.com/ruleengine
+mkdir -p go-solutions/05-strings-runes-and-unicode/07-regular-expressions/03-dynamic-pattern-rule-engine/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/07-regular-expressions/03-dynamic-pattern-rule-engine
 ```
 
 ### Compile at load, budget before compile, match with no allocation

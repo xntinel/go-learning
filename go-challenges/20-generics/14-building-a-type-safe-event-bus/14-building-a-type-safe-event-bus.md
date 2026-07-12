@@ -21,9 +21,8 @@ Publishing after shutdown is a runtime state error. The package returns a wrappe
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/eventbus/cmd/demo
-cd ~/go-exercises/eventbus
-go mod init example.com/verify
+mkdir -p go-solutions/20-generics/14-building-a-type-safe-event-bus/14-building-a-type-safe-event-bus/cmd/demo
+cd go-solutions/20-generics/14-building-a-type-safe-event-bus/14-building-a-type-safe-event-bus
 ```
 
 ### Exercise 1: Build The Event Bus

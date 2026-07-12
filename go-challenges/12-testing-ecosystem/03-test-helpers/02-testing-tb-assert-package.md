@@ -32,9 +32,8 @@ tbassert/                    independent module: example.com/tbassert
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/tbassert/assert ~/go-exercises/tbassert/cmd/demo
-cd ~/go-exercises/tbassert
-go mod init example.com/tbassert
+mkdir -p go-solutions/12-testing-ecosystem/03-test-helpers/02-testing-tb-assert-package/assert go-solutions/12-testing-ecosystem/03-test-helpers/02-testing-tb-assert-package/cmd/demo
+cd go-solutions/12-testing-ecosystem/03-test-helpers/02-testing-tb-assert-package
 ```
 
 ### Why a minimal `TB` interface, not `testing.TB`

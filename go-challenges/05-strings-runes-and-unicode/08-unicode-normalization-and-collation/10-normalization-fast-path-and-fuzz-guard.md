@@ -28,9 +28,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/foldfast/cmd/demo
-cd ~/go-exercises/foldfast
-go mod init example.com/foldfast
+mkdir -p go-solutions/05-strings-runes-and-unicode/08-unicode-normalization-and-collation/10-normalization-fast-path-and-fuzz-guard/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/08-unicode-normalization-and-collation/10-normalization-fast-path-and-fuzz-guard
 go get golang.org/x/text
 ```
 

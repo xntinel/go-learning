@@ -28,9 +28,8 @@ doc-tour/                      module example.com/doc-tour
 Create the module:
 
 ```bash
-mkdir -p doc-tour/cmd/demo doc-tour/internal/circle
-cd doc-tour
-go mod init example.com/doc-tour
+mkdir -p go-solutions/01-environment-and-tooling/04-go-tool-commands/05-go-doc-package-and-stdlib/cmd/demo go-solutions/01-environment-and-tooling/04-go-tool-commands/05-go-doc-package-and-stdlib/internal/circle
+cd go-solutions/01-environment-and-tooling/04-go-tool-commands/05-go-doc-package-and-stdlib
 ```
 
 ### Docs live in comments, not a separate file

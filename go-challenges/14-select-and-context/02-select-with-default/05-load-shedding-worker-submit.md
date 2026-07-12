@@ -28,9 +28,8 @@ pool/                       independent module: example.com/pool
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pool/cmd/demo
-cd ~/go-exercises/pool
-go mod init example.com/pool
+mkdir -p go-solutions/14-select-and-context/02-select-with-default/05-load-shedding-worker-submit/cmd/demo
+cd go-solutions/14-select-and-context/02-select-with-default/05-load-shedding-worker-submit
 go mod edit -go=1.26
 ```
 

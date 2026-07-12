@@ -33,9 +33,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/sentinelmap/cmd/demo
-cd ~/go-exercises/sentinelmap
-go mod init example.com/sentinelmap
+mkdir -p go-solutions/10-error-handling/10-error-handling-middleware/02-sentinel-status-mapping/cmd/demo
+cd go-solutions/10-error-handling/10-error-handling-middleware/02-sentinel-status-mapping
 ```
 
 ### Why errors.Is and not a type switch

@@ -26,9 +26,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cancellableworker/cmd/demo
-cd ~/go-exercises/cancellableworker
-go mod init example.com/cancellableworker
+mkdir -p go-solutions/13-goroutines-and-channels/07-done-channel-pattern/01-cancellable-worker/cmd/demo
+cd go-solutions/13-goroutines-and-channels/07-done-channel-pattern/01-cancellable-worker
 ```
 
 ### The two-signal loop

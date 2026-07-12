@@ -30,9 +30,8 @@ guardedrepo/                 independent module: example.com/must-be-constructed
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/guardedrepo/cmd/demo
-cd ~/go-exercises/guardedrepo
-go mod init example.com/must-be-constructed-guard
+mkdir -p go-solutions/07-structs-and-methods/06-constructor-functions-and-validation/10-must-be-constructed-guard/cmd/demo
+cd go-solutions/07-structs-and-methods/06-constructor-functions-and-validation/10-must-be-constructed-guard
 ```
 
 ### Two honest answers, one dishonest one

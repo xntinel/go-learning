@@ -26,9 +26,8 @@ releasetargets/                module example.com/releasetargets
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/releasetargets/cmd/demo
-cd ~/go-exercises/releasetargets
-go mod init example.com/releasetargets
+mkdir -p go-solutions/01-environment-and-tooling/08-cross-compilation-and-build-tags/02-cross-compile-release-targets/cmd/demo
+cd go-solutions/01-environment-and-tooling/08-cross-compilation-and-build-tags/02-cross-compile-release-targets
 ```
 
 ### The matrix as data, and the actual cross-build

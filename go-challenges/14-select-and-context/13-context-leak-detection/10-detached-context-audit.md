@@ -32,9 +32,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/detached/cmd/demo
-cd ~/go-exercises/detached
-go mod init example.com/detached
+mkdir -p go-solutions/14-select-and-context/13-context-leak-detection/10-detached-context-audit/cmd/demo
+cd go-solutions/14-select-and-context/13-context-leak-detection/10-detached-context-audit
 ```
 
 ### WithoutCancel detaches — and thereby unbounds

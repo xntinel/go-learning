@@ -29,9 +29,8 @@ idem/                         independent module: example.com/idem
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/idem/cmd/demo
-cd ~/go-exercises/idem
-go mod init example.com/idem
+mkdir -p go-solutions/10-error-handling/05-sentinel-errors/09-idempotency-guard-typed-vs-sentinel/cmd/demo
+cd go-solutions/10-error-handling/05-sentinel-errors/09-idempotency-guard-typed-vs-sentinel
 ```
 
 ### The decision rule: identity vs data

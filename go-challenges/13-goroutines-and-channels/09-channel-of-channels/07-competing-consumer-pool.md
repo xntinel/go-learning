@@ -30,9 +30,8 @@ pool/                      independent module: example.com/pool
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pool/cmd/demo
-cd ~/go-exercises/pool
-go mod init example.com/pool
+mkdir -p go-solutions/13-goroutines-and-channels/09-channel-of-channels/07-competing-consumer-pool/cmd/demo
+cd go-solutions/13-goroutines-and-channels/09-channel-of-channels/07-competing-consumer-pool
 ```
 
 ### Competing consumers on a shared channel

@@ -31,9 +31,8 @@ responder/                     independent module: example.com/responder
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/responder/cmd/demo
-cd ~/go-exercises/responder
-go mod init example.com/responder
+mkdir -p go-solutions/10-error-handling/02-fmt-errorf-and-error-wrapping/07-error-message-hygiene-contract/cmd/demo
+cd go-solutions/10-error-handling/02-fmt-errorf-and-error-wrapping/07-error-message-hygiene-contract
 ```
 
 ### The breadcrumb is the contract

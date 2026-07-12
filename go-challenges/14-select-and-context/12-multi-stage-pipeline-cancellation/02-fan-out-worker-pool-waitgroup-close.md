@@ -34,9 +34,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/fanout/cmd/demo
-cd ~/go-exercises/fanout
-go mod init example.com/fanout
+mkdir -p go-solutions/14-select-and-context/12-multi-stage-pipeline-cancellation/02-fan-out-worker-pool-waitgroup-close/cmd/demo
+cd go-solutions/14-select-and-context/12-multi-stage-pipeline-cancellation/02-fan-out-worker-pool-waitgroup-close
 ```
 
 ### The close ownership problem, and the WaitGroup gate

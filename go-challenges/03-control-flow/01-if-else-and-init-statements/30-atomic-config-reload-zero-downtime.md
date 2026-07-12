@@ -31,9 +31,8 @@ configreload/                independent module: example.com/atomic-config-reloa
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/configreload/cmd/demo
-cd ~/go-exercises/configreload
-go mod init example.com/atomic-config-reload-zero-downtime
+mkdir -p go-solutions/03-control-flow/01-if-else-and-init-statements/30-atomic-config-reload-zero-downtime/cmd/demo
+cd go-solutions/03-control-flow/01-if-else-and-init-statements/30-atomic-config-reload-zero-downtime
 go mod edit -go=1.24
 ```
 

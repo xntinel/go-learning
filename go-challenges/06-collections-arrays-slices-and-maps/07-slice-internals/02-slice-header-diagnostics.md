@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/slicediag/cmd/demo
-cd ~/go-exercises/slicediag
-go mod init example.com/slicediag
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/02-slice-header-diagnostics/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/02-slice-header-diagnostics
 ```
 
 ### Reading the header with unsafe.SliceData

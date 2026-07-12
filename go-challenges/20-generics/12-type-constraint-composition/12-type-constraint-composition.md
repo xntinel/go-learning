@@ -21,9 +21,8 @@ Only keys need comparability in this registry. Values are `any` because the regi
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/constraintcomposition/cmd/demo
-cd ~/go-exercises/constraintcomposition
-go mod init example.com/verify
+mkdir -p go-solutions/20-generics/12-type-constraint-composition/12-type-constraint-composition/cmd/demo
+cd go-solutions/20-generics/12-type-constraint-composition/12-type-constraint-composition
 ```
 
 ### Exercise 1: Build The Composed Constraint

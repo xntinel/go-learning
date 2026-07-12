@@ -29,9 +29,8 @@ leakfix/                   independent module: example.com/leakfix
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/leakfix/cmd/demo
-cd ~/go-exercises/leakfix
-go mod init example.com/leakfix
+mkdir -p go-solutions/13-goroutines-and-channels/11-goroutine-lifecycle-management/05-goroutine-leak-detection/cmd/demo
+cd go-solutions/13-goroutines-and-channels/11-goroutine-lifecycle-management/05-goroutine-leak-detection
 go get go.uber.org/goleak
 ```
 

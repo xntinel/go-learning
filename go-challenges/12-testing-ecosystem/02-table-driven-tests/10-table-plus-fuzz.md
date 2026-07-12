@@ -30,9 +30,8 @@ labelset/                 independent module: example.com/labelset
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/labelset/cmd/demo
-cd ~/go-exercises/labelset
-go mod init example.com/labelset
+mkdir -p go-solutions/12-testing-ecosystem/02-table-driven-tests/10-table-plus-fuzz/cmd/demo
+cd go-solutions/12-testing-ecosystem/02-table-driven-tests/10-table-plus-fuzz
 ```
 
 ### Why the table and the fuzzer need each other

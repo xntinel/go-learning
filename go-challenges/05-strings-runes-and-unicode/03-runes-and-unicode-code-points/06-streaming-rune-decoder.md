@@ -56,9 +56,8 @@ bad.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/logscan/internal/logscan ~/go-exercises/logscan/cmd/demo
-cd ~/go-exercises/logscan
-go mod init example.com/logscan
+mkdir -p go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/06-streaming-rune-decoder/internal/logscan go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/06-streaming-rune-decoder/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/06-streaming-rune-decoder
 ```
 
 Create `internal/logscan/logscan.go`:

@@ -27,9 +27,8 @@ statustext/                 independent module: example.com/statustext
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/statustext/cmd/demo
-cd ~/go-exercises/statustext
-go mod init example.com/statustext
+mkdir -p go-solutions/07-structs-and-methods/10-implementing-stringer/03-enum-text-round-trip/cmd/demo
+cd go-solutions/07-structs-and-methods/10-implementing-stringer/03-enum-text-round-trip
 ```
 
 ### One table, three consumers

@@ -29,9 +29,8 @@ userrepo/                  independent module: example.com/userrepo
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/userrepo/cmd/demo
-cd ~/go-exercises/userrepo
-go mod init example.com/userrepo
+mkdir -p go-solutions/09-pointers/01-pointer-basics/04-repository-lookup-nil-return/cmd/demo
+cd go-solutions/09-pointers/01-pointer-basics/04-repository-lookup-nil-return
 ```
 
 ### nil-as-not-found and the discipline it demands

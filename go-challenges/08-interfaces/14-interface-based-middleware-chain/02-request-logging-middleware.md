@@ -26,9 +26,8 @@ accesslog/                   independent module: example.com/accesslog
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/accesslog/cmd/demo
-cd ~/go-exercises/accesslog
-go mod init example.com/accesslog
+mkdir -p go-solutions/08-interfaces/14-interface-based-middleware-chain/02-request-logging-middleware/cmd/demo
+cd go-solutions/08-interfaces/14-interface-based-middleware-chain/02-request-logging-middleware
 go mod edit -go=1.26
 ```
 

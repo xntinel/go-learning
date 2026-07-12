@@ -22,8 +22,7 @@ preventive_test.go    direction table test + crossed-deadlock progress under -ra
 Set up the module:
 
 ```bash
-mkdir -p deadlock-prevention/cmd/demo && cd deadlock-prevention
-go mod init example.com/deadlock-prevention
+mkdir -p go-solutions/39-capstone-database-engine/08-transaction-manager/02-deadlock-prevention/cmd/demo && cd go-solutions/39-capstone-database-engine/08-transaction-manager/02-deadlock-prevention
 ```
 
 ### Why direction is the whole game

@@ -28,9 +28,8 @@ mwchain/                   independent module: example.com/mwchain
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/mwchain/cmd/demo
-cd ~/go-exercises/mwchain
-go mod init example.com/mwchain
+mkdir -p go-solutions/04-functions/03-variadic-functions/07-http-middleware-chain/cmd/demo
+cd go-solutions/04-functions/03-variadic-functions/07-http-middleware-chain
 go mod edit -go=1.25
 ```
 

@@ -31,9 +31,8 @@ shedpool/                  independent module: example.com/shedpool
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/shedpool/cmd/demo
-cd ~/go-exercises/shedpool
-go mod init example.com/shedpool
+mkdir -p go-solutions/13-goroutines-and-channels/13-goroutine-pools/06-backpressure-load-shedding/cmd/demo
+cd go-solutions/13-goroutines-and-channels/13-goroutine-pools/06-backpressure-load-shedding
 ```
 
 ### Non-blocking send is the load-shedding primitive

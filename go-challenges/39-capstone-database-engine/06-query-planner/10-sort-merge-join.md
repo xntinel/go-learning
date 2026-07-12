@@ -26,8 +26,7 @@ mergejoin_test.go   inner/left semantics, error cases, duplicate-key cartesian
 Set up the module:
 
 ```bash
-mkdir -p sort-merge-join/cmd/demo && cd sort-merge-join
-go mod init example.com/sort-merge-join
+mkdir -p go-solutions/39-capstone-database-engine/06-query-planner/10-sort-merge-join/cmd/demo && cd go-solutions/39-capstone-database-engine/06-query-planner/10-sort-merge-join
 ```
 
 ### How the merge walks two sorted runs

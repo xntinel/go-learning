@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/keylimiter/cmd/demo
-cd ~/go-exercises/keylimiter
-go mod init example.com/keylimiter
+mkdir -p go-solutions/15-sync-primitives/02-sync-rwmutex/07-per-key-rate-limiter-registry/cmd/demo
+cd go-solutions/15-sync-primitives/02-sync-rwmutex/07-per-key-rate-limiter-registry
 ```
 
 ### Two locks, two jobs

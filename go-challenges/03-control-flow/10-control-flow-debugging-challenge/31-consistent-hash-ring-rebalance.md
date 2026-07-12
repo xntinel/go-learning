@@ -39,9 +39,8 @@ ring/                         independent module: example.com/consistent-hash-ri
 - Verify: `go test -count=1 ./...`.
 
 ```bash
-mkdir -p ~/go-exercises/consistent-hash-ring-rebalance/cmd/demo
-cd ~/go-exercises/consistent-hash-ring-rebalance
-go mod init example.com/consistent-hash-ring-rebalance
+mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/31-consistent-hash-ring-rebalance/cmd/demo
+cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/31-consistent-hash-ring-rebalance
 ```
 
 ### Why a shared cursor breaks the moment map order isn't ascending

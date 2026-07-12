@@ -33,9 +33,8 @@ dispatch/                    independent module: example.com/dispatch
 Set up the module. `goleak` is a test dependency, so tidy after adding the import:
 
 ```bash
-mkdir -p ~/go-exercises/dispatch/cmd/demo
-cd ~/go-exercises/dispatch
-go mod init example.com/dispatch
+mkdir -p go-solutions/13-goroutines-and-channels/11-goroutine-lifecycle-management/13-per-tenant-dispatcher-registry-isolation/cmd/demo
+cd go-solutions/13-goroutines-and-channels/11-goroutine-lifecycle-management/13-per-tenant-dispatcher-registry-isolation
 go mod edit -go=1.26
 go get go.uber.org/goleak
 go mod tidy

@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/recordrepo/cmd/demo
-cd ~/go-exercises/recordrepo
-go mod init example.com/recordrepo
+mkdir -p go-solutions/09-pointers/08-pointers-in-slices-and-maps/06-nil-pointer-map-lookup-guard/cmd/demo
+cd go-solutions/09-pointers/08-pointers-in-slices-and-maps/06-nil-pointer-map-lookup-guard
 ```
 
 ### Why the cold path panics, and how to define the zero case

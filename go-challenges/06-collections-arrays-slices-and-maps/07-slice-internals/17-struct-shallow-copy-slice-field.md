@@ -50,9 +50,8 @@ revhistory/               module example.com/revhistory
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/revhistory
-cd ~/go-exercises/revhistory
-go mod init example.com/revhistory
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/17-struct-shallow-copy-slice-field
+cd go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/17-struct-shallow-copy-slice-field
 go mod edit -go=1.24
 ```
 

@@ -32,9 +32,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/leakcheck/cmd/demo
-cd ~/go-exercises/leakcheck
-go mod init example.com/leakcheck
+mkdir -p go-solutions/10-error-handling/09-error-handling-in-goroutines/08-goroutine-leak-detection/cmd/demo
+cd go-solutions/10-error-handling/09-error-handling-in-goroutines/08-goroutine-leak-detection
 go mod edit -go=1.26
 go get golang.org/x/sync/errgroup
 go get go.uber.org/goleak

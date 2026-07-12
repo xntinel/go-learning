@@ -32,9 +32,8 @@ healthprobe/                independent module: example.com/healthprobe
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/healthprobe/cmd/demo
-cd ~/go-exercises/healthprobe
-go mod init example.com/healthprobe
+mkdir -p go-solutions/12-testing-ecosystem/04-subtests-and-t-run/05-parallel-subtests-lifecycle/cmd/demo
+cd go-solutions/12-testing-ecosystem/04-subtests-and-t-run/05-parallel-subtests-lifecycle
 ```
 
 ### The pause-resume model and why the wrapper group exists

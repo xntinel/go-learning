@@ -25,9 +25,8 @@ retrybus/                    independent module: example.com/retrybus
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/retrybus/cmd/demo
-cd ~/go-exercises/retrybus
-go mod init example.com/retrybus
+mkdir -p go-solutions/13-goroutines-and-channels/14-deadlock-detection-and-prevention/13-dead-letter-feedback-cycle-break/cmd/demo
+cd go-solutions/13-goroutines-and-channels/14-deadlock-detection-and-prevention/13-dead-letter-feedback-cycle-break
 go mod edit -go=1.26
 ```
 

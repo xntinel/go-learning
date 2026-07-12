@@ -30,9 +30,8 @@ eventbatch/                independent module: example.com/eventbatch
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/eventbatch/cmd/demo
-cd ~/go-exercises/eventbatch
-go mod init example.com/eventbatch
+mkdir -p go-solutions/09-pointers/01-pointer-basics/10-reset-on-flush-swap/cmd/demo
+cd go-solutions/09-pointers/01-pointer-basics/10-reset-on-flush-swap
 ```
 
 ### Reset in place with *dst = Batch{}

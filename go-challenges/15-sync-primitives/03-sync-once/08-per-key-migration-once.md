@@ -32,9 +32,8 @@ per-key-migration-once/       module: example.com/per-key-migration-once
 Set up the module:
 
 ```bash
-mkdir -p per-key-migration-once/cmd/demo
-cd per-key-migration-once
-go mod init example.com/per-key-migration-once
+mkdir -p go-solutions/15-sync-primitives/03-sync-once/08-per-key-migration-once/cmd/demo
+cd go-solutions/15-sync-primitives/03-sync-once/08-per-key-migration-once
 ```
 
 ### Three contracts, one keyword: granularity is the design decision

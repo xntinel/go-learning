@@ -21,9 +21,8 @@ Build a small streaming package that copies bytes once, computes a SHA-256 diges
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/streamcopy/cmd/demo
-cd ~/go-exercises/streamcopy
-go mod init example.com/streamcopy
+mkdir -p go-solutions/19-io-and-filesystem/04-io-copy-teereader-multiwriter/04-io-copy-teereader-multiwriter/cmd/demo
+cd go-solutions/19-io-and-filesystem/04-io-copy-teereader-multiwriter/04-io-copy-teereader-multiwriter
 ```
 
 ### Exercise 1: Copy And Hash

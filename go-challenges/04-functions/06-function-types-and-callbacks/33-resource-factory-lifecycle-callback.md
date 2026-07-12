@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/resource-factory-lifecycle-callback/cmd/demo
-cd ~/go-exercises/resource-factory-lifecycle-callback
-go mod init example.com/resource-factory-lifecycle-callback
+mkdir -p go-solutions/04-functions/06-function-types-and-callbacks/33-resource-factory-lifecycle-callback/cmd/demo
+cd go-solutions/04-functions/06-function-types-and-callbacks/33-resource-factory-lifecycle-callback
 go mod edit -go=1.24
 ```
 

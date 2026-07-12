@@ -32,9 +32,8 @@ muxclient/                   independent module: example.com/muxclient
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/muxclient/cmd/demo
-cd ~/go-exercises/muxclient
-go mod init example.com/muxclient
+mkdir -p go-solutions/13-goroutines-and-channels/09-channel-of-channels/13-correlation-id-response-demux/cmd/demo
+cd go-solutions/13-goroutines-and-channels/09-channel-of-channels/13-correlation-id-response-demux
 go get go.uber.org/goleak
 go mod tidy
 ```

@@ -50,9 +50,8 @@ The test then asserts `errors.Is(err, ErrInvalidPercentage)` rather than matchin
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/feature-flags/cmd/demo
-cd ~/go-exercises/feature-flags
-go mod init example.com/feature-flags
+mkdir -p go-solutions/30-production-patterns/03-feature-flags/03-feature-flags/cmd/demo
+cd go-solutions/30-production-patterns/03-feature-flags/03-feature-flags
 ```
 
 This is a library, not a program: there is no single `main`. You verify it with `go test`.

@@ -34,9 +34,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/slodetect/cmd/demo
-cd ~/go-exercises/slodetect
-go mod init example.com/slodetect
+mkdir -p go-solutions/14-select-and-context/08-select-priority-and-starvation/09-starvation-slo-detector/cmd/demo
+cd go-solutions/14-select-and-context/08-select-priority-and-starvation/09-starvation-slo-detector
 ```
 
 ### Making an invisible fairness bug observable

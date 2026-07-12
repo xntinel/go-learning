@@ -102,10 +102,9 @@ The `bpf()` syscall requires one of: root (`uid == 0`), or `CAP_BPF` + `CAP_PERF
 Set up the module (requires network access to fetch cilium/ebpf):
 
 ```bash
-mkdir -p ~/go-exercises/tracer/bpf
-mkdir -p ~/go-exercises/tracer/cmd/demo
-cd ~/go-exercises/tracer
-go mod init example.com/tracer
+mkdir -p go-solutions/47-capstone-systems-and-kernel/02-ebpf-tracing/02-ebpf-tracing/bpf
+mkdir -p go-solutions/47-capstone-systems-and-kernel/02-ebpf-tracing/02-ebpf-tracing/cmd/demo
+cd go-solutions/47-capstone-systems-and-kernel/02-ebpf-tracing/02-ebpf-tracing
 go get github.com/cilium/ebpf@v0.17.3
 ```
 
@@ -1049,9 +1048,8 @@ The pure-stdlib files (`events.go`, `histogram.go`, `tracer_test.go`) can be ver
 **Offline (any platform):** extract `events.go`, `histogram.go`, and the stdlib-only parts of `tracer_test.go` into a standalone module:
 
 ```bash
-mkdir -p ~/go-exercises/tracer-verify
-cd ~/go-exercises/tracer-verify
-go mod init example.com/tracer-verify
+mkdir -p go-solutions/47-capstone-systems-and-kernel/02-ebpf-tracing/02-ebpf-tracing
+cd go-solutions/47-capstone-systems-and-kernel/02-ebpf-tracing/02-ebpf-tracing
 # copy events.go and histogram.go here (package tracer-verify → rename to package tracerverify)
 test -z "$(gofmt -l .)"
 go vet ./...

@@ -70,9 +70,8 @@ reason for the short `TransactionTimeout` on the producing side.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/txnerr/cmd/demo
-cd ~/go-exercises/txnerr
-go mod init example.com/txnerr
+mkdir -p go-solutions/50-messaging-and-event-driven/02-kafka-exactly-once-transactions/03-txn-error-recovery-and-isolation/cmd/demo
+cd go-solutions/50-messaging-and-event-driven/02-kafka-exactly-once-transactions/03-txn-error-recovery-and-isolation
 go mod edit -go=1.25
 go get github.com/twmb/franz-go@latest
 ```

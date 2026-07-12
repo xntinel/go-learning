@@ -22,8 +22,7 @@ fixtures_test.go     pin grid contents and dimensions, identity, user fixtures, 
 Set up the module:
 
 ```bash
-mkdir -p grids-and-fixtures/cmd/demo && cd grids-and-fixtures
-go mod init example.com/fixtures
+mkdir -p go-solutions/25-iterators-and-modern-go/01-range-over-integers/02-grids-and-fixtures/cmd/demo && cd go-solutions/25-iterators-and-modern-go/01-range-over-integers/02-grids-and-fixtures
 ```
 
 ### Why nested integer ranges read better than indexed loops

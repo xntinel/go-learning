@@ -28,9 +28,8 @@ repo/                       independent module: example.com/repo
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/repo/cmd/demo
-cd ~/go-exercises/repo
-go mod init example.com/repo
+mkdir -p go-solutions/09-pointers/02-pointers-and-function-parameters/04-repository-scan-into-pointers/cmd/demo
+cd go-solutions/09-pointers/02-pointers-and-function-parameters/04-repository-scan-into-pointers
 ```
 
 ### Why Scan cannot take values

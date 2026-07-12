@@ -25,9 +25,8 @@ promoter/                    independent module: example.com/promoter
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/promoter/cmd/demo
-cd ~/go-exercises/promoter
-go mod init example.com/promoter
+mkdir -p go-solutions/13-goroutines-and-channels/07-done-channel-pattern/11-rolling-deploy-health-gate-preempt/cmd/demo
+cd go-solutions/13-goroutines-and-channels/07-done-channel-pattern/11-rolling-deploy-health-gate-preempt
 ```
 
 Set the `go` directive in `go.mod` to `go 1.26`; the toolchain auto-downloads.

@@ -26,9 +26,8 @@ Verify: `go test -count=1 -race ./...` and `go test -short ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/mainsuite/cmd/demo
-cd ~/go-exercises/mainsuite
-go mod init example.com/mainsuite
+mkdir -p go-solutions/12-testing-ecosystem/25-building-a-test-suite/06-testmain-and-short/cmd/demo
+cd go-solutions/12-testing-ecosystem/25-building-a-test-suite/06-testmain-and-short
 ```
 
 ### The TestMain contract, and why teardown cannot defer

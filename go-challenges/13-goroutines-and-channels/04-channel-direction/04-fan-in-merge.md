@@ -28,9 +28,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/fanin/cmd/demo
-cd ~/go-exercises/fanin
-go mod init example.com/fanin
+mkdir -p go-solutions/13-goroutines-and-channels/04-channel-direction/04-fan-in-merge/cmd/demo
+cd go-solutions/13-goroutines-and-channels/04-channel-direction/04-fan-in-merge
 ```
 
 ### Why the close needs a lone closer goroutine

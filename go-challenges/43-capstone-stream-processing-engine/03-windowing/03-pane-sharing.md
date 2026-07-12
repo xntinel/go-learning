@@ -23,8 +23,7 @@ panes_test.go          window sums, pane-vs-direct equality, GC bound, O(1) upda
 Set up the module:
 
 ```bash
-mkdir -p pane-sharing/cmd/demo && cd pane-sharing
-go mod init example.com/panes
+mkdir -p go-solutions/43-capstone-stream-processing-engine/03-windowing/03-pane-sharing/cmd/demo && cd go-solutions/43-capstone-stream-processing-engine/03-windowing/03-pane-sharing
 go mod edit -go=1.26
 ```
 

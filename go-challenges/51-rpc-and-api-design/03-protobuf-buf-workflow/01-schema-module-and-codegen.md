@@ -37,9 +37,8 @@ orderschema/                         buf module + Go module: example.com/ordersc
 Set up the module:
 
 ```bash
-mkdir -p orderschema/proto/acme/order/v1 orderschema/cmd/demo
-cd orderschema
-go mod init example.com/orderschema
+mkdir -p go-solutions/51-rpc-and-api-design/03-protobuf-buf-workflow/01-schema-module-and-codegen/proto/acme/order/v1 go-solutions/51-rpc-and-api-design/03-protobuf-buf-workflow/01-schema-module-and-codegen/cmd/demo
+cd go-solutions/51-rpc-and-api-design/03-protobuf-buf-workflow/01-schema-module-and-codegen
 ```
 
 ### The schema: designing acme.order.v1 to pass STANDARD

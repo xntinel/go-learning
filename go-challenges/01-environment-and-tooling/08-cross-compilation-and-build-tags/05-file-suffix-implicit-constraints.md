@@ -30,9 +30,8 @@ suffixdemo/                    module example.com/suffixdemo
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/suffixdemo/cmd/demo
-cd ~/go-exercises/suffixdemo
-go mod init example.com/suffixdemo
+mkdir -p go-solutions/01-environment-and-tooling/08-cross-compilation-and-build-tags/05-file-suffix-implicit-constraints/cmd/demo
+cd go-solutions/01-environment-and-tooling/08-cross-compilation-and-build-tags/05-file-suffix-implicit-constraints
 ```
 
 ### Three legitimate styles and one trap

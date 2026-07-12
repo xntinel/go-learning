@@ -27,9 +27,8 @@ fetchpolicy/               independent module: example.com/fetchpolicy
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/fetchpolicy/cmd/demo
-cd ~/go-exercises/fetchpolicy
-go mod init example.com/fetchpolicy
+mkdir -p go-solutions/11-packages-and-modules/07-module-proxies-and-goproxy/10-fetch-policy-engine/cmd/demo
+cd go-solutions/11-packages-and-modules/07-module-proxies-and-goproxy/10-fetch-policy-engine
 go mod edit -go=1.26
 ```
 

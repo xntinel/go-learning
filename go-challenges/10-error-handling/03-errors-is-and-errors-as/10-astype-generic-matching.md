@@ -28,9 +28,8 @@ Verify: `go test -count=1 -race ./... && go vet ./...`
 Set up the module (Go 1.26 required):
 
 ```bash
-mkdir -p ~/go-exercises/astypegeneric/cmd/demo
-cd ~/go-exercises/astypegeneric
-go mod init example.com/astypegeneric
+mkdir -p go-solutions/10-error-handling/03-errors-is-and-errors-as/10-astype-generic-matching/cmd/demo
+cd go-solutions/10-error-handling/03-errors-is-and-errors-as/10-astype-generic-matching
 go mod edit -go=1.26
 ```
 

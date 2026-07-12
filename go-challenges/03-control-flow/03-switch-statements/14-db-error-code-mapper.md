@@ -25,9 +25,8 @@ dberr/                      independent module: example.com/db-error-code-mapper
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/dberr
-cd ~/go-exercises/dberr
-go mod init example.com/db-error-code-mapper
+mkdir -p go-solutions/03-control-flow/03-switch-statements/14-db-error-code-mapper
+cd go-solutions/03-control-flow/03-switch-statements/14-db-error-code-mapper
 go mod edit -go=1.24
 ```
 

@@ -42,9 +42,8 @@ biindex/                module example.com/biindex
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/biindex
-cd ~/go-exercises/biindex
-go mod init example.com/biindex
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/18-bidirectional-index-consistency
+cd go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/18-bidirectional-index-consistency
 go mod edit -go=1.24
 ```
 

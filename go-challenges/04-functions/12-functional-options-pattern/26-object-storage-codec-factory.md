@@ -30,9 +30,8 @@ objstore/                        independent module: example.com/object-storage-
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/objstore/cmd/demo
-cd ~/go-exercises/objstore
-go mod init example.com/object-storage-codec-factory
+mkdir -p go-solutions/04-functions/12-functional-options-pattern/26-object-storage-codec-factory/cmd/demo
+cd go-solutions/04-functions/12-functional-options-pattern/26-object-storage-codec-factory
 go mod edit -go=1.24
 ```
 

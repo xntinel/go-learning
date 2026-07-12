@@ -41,9 +41,8 @@ The `CaptureCPU` helper validates its writer and workload, wraps sentinel valida
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cpuprof/cmd/demo
-cd ~/go-exercises/cpuprof
-go mod init cpuprof
+mkdir -p go-solutions/26-memory-model-and-optimization/02-cpu-profiling-with-pprof/02-cpu-profiling-with-pprof/cmd/demo
+cd go-solutions/26-memory-model-and-optimization/02-cpu-profiling-with-pprof/02-cpu-profiling-with-pprof
 ```
 
 ### Exercise 1: Build The Processing Library

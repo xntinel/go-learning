@@ -30,9 +30,8 @@ tbucket/                    independent module: example.com/tbucket
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/tbucket/cmd/demo
-cd ~/go-exercises/tbucket
-go mod init example.com/tbucket
+mkdir -p go-solutions/07-structs-and-methods/05-struct-comparison-and-equality/01-token-bucket-comparable-equal/cmd/demo
+cd go-solutions/07-structs-and-methods/05-struct-comparison-and-equality/01-token-bucket-comparable-equal
 ```
 
 ### Why a custom Equal when `==` already works

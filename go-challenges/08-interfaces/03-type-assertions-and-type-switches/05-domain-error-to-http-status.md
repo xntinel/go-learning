@@ -28,9 +28,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/httperr/cmd/demo
-cd ~/go-exercises/httperr
-go mod init example.com/httperr
+mkdir -p go-solutions/08-interfaces/03-type-assertions-and-type-switches/05-domain-error-to-http-status/cmd/demo
+cd go-solutions/08-interfaces/03-type-assertions-and-type-switches/05-domain-error-to-http-status
 ```
 
 ### Why errors.As, not a raw assertion

@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/stream/cmd/demo
-cd ~/go-exercises/stream
-go mod init example.com/stream
+mkdir -p go-solutions/04-functions/06-function-types-and-callbacks/09-predicate-stream-filter/cmd/demo
+cd go-solutions/04-functions/06-function-types-and-callbacks/09-predicate-stream-filter
 ```
 
 ### The yield contract is the whole thing

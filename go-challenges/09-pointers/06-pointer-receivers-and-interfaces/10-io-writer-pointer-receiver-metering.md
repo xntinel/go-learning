@@ -28,9 +28,8 @@ metering/                   independent module: example.com/metering
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/metering/cmd/demo
-cd ~/go-exercises/metering
-go mod init example.com/metering
+mkdir -p go-solutions/09-pointers/06-pointer-receivers-and-interfaces/10-io-writer-pointer-receiver-metering/cmd/demo
+cd go-solutions/09-pointers/06-pointer-receivers-and-interfaces/10-io-writer-pointer-receiver-metering
 go mod edit -go=1.25
 ```
 

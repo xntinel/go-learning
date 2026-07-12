@@ -31,9 +31,8 @@ profile-capture/              independent module: example.com/profile-capture
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/profile-capture/cmd/demo
-cd ~/go-exercises/profile-capture
-go mod init example.com/profile-capture
+mkdir -p go-solutions/15-sync-primitives/14-contention-profiling/05-mutex-and-block-profile-capture/cmd/demo
+cd go-solutions/15-sync-primitives/14-contention-profiling/05-mutex-and-block-profile-capture
 ```
 
 ### Writing a profile from a test, and restoring the rates

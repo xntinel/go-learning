@@ -30,9 +30,8 @@ mathcov/                   independent module: example.com/mathcov
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/mathcov/cmd/demo
-cd ~/go-exercises/mathcov
-go mod init example.com/mathcov
+mkdir -p go-solutions/12-testing-ecosystem/20-test-coverage-analysis/01-coverage-basics-math-lib/cmd/demo
+cd go-solutions/12-testing-ecosystem/20-test-coverage-analysis/01-coverage-basics-math-lib
 ```
 
 ### The library and its one interesting branch

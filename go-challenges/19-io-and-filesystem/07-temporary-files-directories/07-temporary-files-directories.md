@@ -21,9 +21,8 @@ Some temporary files are internal scratch space and should always be deleted. Ot
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/tempstage/cmd/demo
-cd ~/go-exercises/tempstage
-go mod init example.com/tempstage
+mkdir -p go-solutions/19-io-and-filesystem/07-temporary-files-directories/07-temporary-files-directories/cmd/demo
+cd go-solutions/19-io-and-filesystem/07-temporary-files-directories/07-temporary-files-directories
 ```
 
 ### Exercise 1: Stage JSON In A Temporary File

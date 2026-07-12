@@ -28,9 +28,8 @@ patch/                      independent module: example.com/patch
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/patch/cmd/demo
-cd ~/go-exercises/patch
-go mod init example.com/patch
+mkdir -p go-solutions/09-pointers/02-pointers-and-function-parameters/02-patch-semantics-optional-pointer-fields/cmd/demo
+cd go-solutions/09-pointers/02-pointers-and-function-parameters/02-patch-semantics-optional-pointer-fields
 ```
 
 ### Why the fields must be pointers

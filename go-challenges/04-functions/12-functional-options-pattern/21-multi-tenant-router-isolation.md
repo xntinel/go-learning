@@ -32,9 +32,8 @@ tenantrouter/                    independent module: example.com/tenantrouter
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/tenantrouter/cmd/demo
-cd ~/go-exercises/tenantrouter
-go mod init example.com/tenantrouter
+mkdir -p go-solutions/04-functions/12-functional-options-pattern/21-multi-tenant-router-isolation/cmd/demo
+cd go-solutions/04-functions/12-functional-options-pattern/21-multi-tenant-router-isolation
 go mod edit -go=1.24
 ```
 

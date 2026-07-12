@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/configloader/cmd/demo
-cd ~/go-exercises/configloader
-go mod init example.com/configloader
+mkdir -p go-solutions/08-interfaces/08-accept-interfaces-return-structs/08-config-loader-io-reader/cmd/demo
+cd go-solutions/08-interfaces/08-accept-interfaces-return-structs/08-config-loader-io-reader
 go mod edit -go=1.26
 ```
 

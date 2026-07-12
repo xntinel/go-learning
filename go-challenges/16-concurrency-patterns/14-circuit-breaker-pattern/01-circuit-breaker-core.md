@@ -23,8 +23,7 @@ breaker_test.go       pass-through, trip on MaxFailures, success-resets, half-op
 Set up the module:
 
 ```bash
-mkdir -p circuit-breaker-core/cmd/demo && cd circuit-breaker-core
-go mod init example.com/circuit-breaker-core
+mkdir -p go-solutions/16-concurrency-patterns/14-circuit-breaker-pattern/01-circuit-breaker-core/cmd/demo && cd go-solutions/16-concurrency-patterns/14-circuit-breaker-pattern/01-circuit-breaker-core
 ```
 
 ### Why consecutive failures, and why the mutex spans the whole call

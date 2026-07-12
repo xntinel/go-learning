@@ -33,9 +33,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/webhook/cmd/demo
-cd ~/go-exercises/webhook
-go mod init example.com/webhook
+mkdir -p go-solutions/07-structs-and-methods/04-anonymous-structs-and-embedding/09-anonymous-struct-webhook-handler/cmd/demo
+cd go-solutions/07-structs-and-methods/04-anonymous-structs-and-embedding/09-anonymous-struct-webhook-handler
 ```
 
 ### Why anonymous structs are exactly right here

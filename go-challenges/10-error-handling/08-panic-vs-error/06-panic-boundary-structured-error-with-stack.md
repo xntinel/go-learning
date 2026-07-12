@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/panicerr/cmd/demo
-cd ~/go-exercises/panicerr
-go mod init example.com/panicerr
+mkdir -p go-solutions/10-error-handling/08-panic-vs-error/06-panic-boundary-structured-error-with-stack/cmd/demo
+cd go-solutions/10-error-handling/08-panic-vs-error/06-panic-boundary-structured-error-with-stack
 go mod edit -go=1.26
 ```
 

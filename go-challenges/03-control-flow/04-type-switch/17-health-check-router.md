@@ -32,9 +32,8 @@ health-check-router/        independent module: example.com/health-check-router
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/health-check-router/cmd/demo
-cd ~/go-exercises/health-check-router
-go mod init example.com/health-check-router
+mkdir -p go-solutions/03-control-flow/04-type-switch/17-health-check-router/cmd/demo
+cd go-solutions/03-control-flow/04-type-switch/17-health-check-router
 go mod edit -go=1.24
 ```
 

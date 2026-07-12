@@ -34,9 +34,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/storemetrics/cmd/demo
-cd ~/go-exercises/storemetrics
-go mod init example.com/storemetrics
+mkdir -p go-solutions/07-structs-and-methods/04-anonymous-structs-and-embedding/05-store-decorator-interface-embed/cmd/demo
+cd go-solutions/07-structs-and-methods/04-anonymous-structs-and-embedding/05-store-decorator-interface-embed
 ```
 
 ### Why embedding the interface is the whole trick

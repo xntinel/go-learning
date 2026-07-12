@@ -30,9 +30,8 @@ user/                       independent module: example.com/user
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/user/cmd/demo
-cd ~/go-exercises/user
-go mod init example.com/user
+mkdir -p go-solutions/07-structs-and-methods/12-designing-a-domain-model/02-user-entity-invariants/cmd/demo
+cd go-solutions/07-structs-and-methods/12-designing-a-domain-model/02-user-entity-invariants
 ```
 
 ### Identity, not fields, defines an entity

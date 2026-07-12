@@ -30,9 +30,8 @@ safecounter/                   independent module: example.com/safecounter
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/safecounter/cmd/demo
-cd ~/go-exercises/safecounter
-go mod init example.com/safecounter
+mkdir -p go-solutions/07-structs-and-methods/07-method-sets-and-addressability/04-mutex-guarded-counter-no-copy-receivers/cmd/demo
+cd go-solutions/07-structs-and-methods/07-method-sets-and-addressability/04-mutex-guarded-counter-no-copy-receivers
 ```
 
 ### Why a mutex forces pointer receivers

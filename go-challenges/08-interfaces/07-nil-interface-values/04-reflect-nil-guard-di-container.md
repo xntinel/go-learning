@@ -26,9 +26,8 @@ diregistry/                independent module: example.com/diregistry
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/diregistry/cmd/demo
-cd ~/go-exercises/diregistry
-go mod init example.com/diregistry
+mkdir -p go-solutions/08-interfaces/07-nil-interface-values/04-reflect-nil-guard-di-container/cmd/demo
+cd go-solutions/08-interfaces/07-nil-interface-values/04-reflect-nil-guard-di-container
 ```
 
 ### Why a plain nil check is not enough

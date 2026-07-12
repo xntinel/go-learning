@@ -31,9 +31,8 @@ errwrap/                       independent module: example.com/errwrap
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/errwrap/pipeline ~/go-exercises/errwrap/cmd/demo
-cd ~/go-exercises/errwrap
-go mod init example.com/errwrap
+mkdir -p go-solutions/10-error-handling/02-fmt-errorf-and-error-wrapping/01-errwrap-pipeline/pipeline go-solutions/10-error-handling/02-fmt-errorf-and-error-wrapping/01-errwrap-pipeline/cmd/demo
+cd go-solutions/10-error-handling/02-fmt-errorf-and-error-wrapping/01-errwrap-pipeline
 ```
 
 ### How the chain is constructed

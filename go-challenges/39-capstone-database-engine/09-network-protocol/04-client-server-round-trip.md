@@ -24,8 +24,7 @@ wire_test.go         an end-to-end round-trip assertion plus the CommandTag tabl
 Set up the module:
 
 ```bash
-mkdir -p roundtrip/cmd/demo && cd roundtrip
-go mod init example.com/roundtrip
+mkdir -p go-solutions/39-capstone-database-engine/09-network-protocol/04-client-server-round-trip/cmd/demo && cd go-solutions/39-capstone-database-engine/09-network-protocol/04-client-server-round-trip
 ```
 
 ### The simple-query conversation, end to end

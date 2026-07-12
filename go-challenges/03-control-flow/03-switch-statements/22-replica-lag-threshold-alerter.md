@@ -30,9 +30,8 @@ replicalag/                 independent module: example.com/replica-lag-threshol
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/replicalag/cmd/demo
-cd ~/go-exercises/replicalag
-go mod init example.com/replica-lag-threshold-alerter
+mkdir -p go-solutions/03-control-flow/03-switch-statements/22-replica-lag-threshold-alerter/cmd/demo
+cd go-solutions/03-control-flow/03-switch-statements/22-replica-lag-threshold-alerter
 go mod edit -go=1.24
 ```
 

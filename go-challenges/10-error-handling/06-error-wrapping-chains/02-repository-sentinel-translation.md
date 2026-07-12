@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/userrepo/cmd/demo
-cd ~/go-exercises/userrepo
-go mod init example.com/userrepo
+mkdir -p go-solutions/10-error-handling/06-error-wrapping-chains/02-repository-sentinel-translation/cmd/demo
+cd go-solutions/10-error-handling/06-error-wrapping-chains/02-repository-sentinel-translation
 go mod edit -go=1.24
 ```
 

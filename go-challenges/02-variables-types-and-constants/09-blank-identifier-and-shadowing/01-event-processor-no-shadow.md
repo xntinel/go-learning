@@ -28,9 +28,8 @@ eventprocessor/                 module: example.com/eventprocessor
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/eventprocessor/cmd/demo
-cd ~/go-exercises/eventprocessor
-go mod init example.com/eventprocessor
+mkdir -p go-solutions/02-variables-types-and-constants/09-blank-identifier-and-shadowing/01-event-processor-no-shadow/cmd/demo
+cd go-solutions/02-variables-types-and-constants/09-blank-identifier-and-shadowing/01-event-processor-no-shadow
 ```
 
 ### Why `=` on the save error is the whole point

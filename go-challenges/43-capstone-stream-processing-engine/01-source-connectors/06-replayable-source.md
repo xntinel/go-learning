@@ -23,8 +23,7 @@ replayable-source/
 Set up the module:
 
 ```bash
-mkdir -p replayable-source/cmd/demo && cd replayable-source
-go mod init example.com/replayable-source
+mkdir -p go-solutions/43-capstone-stream-processing-engine/01-source-connectors/06-replayable-source/cmd/demo && cd go-solutions/43-capstone-stream-processing-engine/01-source-connectors/06-replayable-source
 ```
 
 ### An offset on every record

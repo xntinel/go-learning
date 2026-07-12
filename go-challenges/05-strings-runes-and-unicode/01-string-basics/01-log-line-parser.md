@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/logparse/cmd/demo
-cd ~/go-exercises/logparse
-go mod init example.com/logparse
+mkdir -p go-solutions/05-strings-runes-and-unicode/01-string-basics/01-log-line-parser/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/01-string-basics/01-log-line-parser
 ```
 
 ## Why SplitN with n=3, and why time.Parse over hand-rolling

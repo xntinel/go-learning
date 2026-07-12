@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/clientfetch/cmd/demo
-cd ~/go-exercises/clientfetch
-go mod init example.com/clientfetch
+mkdir -p go-solutions/14-select-and-context/09-context-in-http-servers-clients/03-client-fetch-with-context/cmd/demo
+cd go-solutions/14-select-and-context/09-context-in-http-servers-clients/03-client-fetch-with-context
 ```
 
 ## The design

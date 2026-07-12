@@ -30,9 +30,8 @@ workerpool/                independent module: example.com/workerpool
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/workerpool/cmd/demo
-cd ~/go-exercises/workerpool
-go mod init example.com/workerpool
+mkdir -p go-solutions/13-goroutines-and-channels/11-goroutine-lifecycle-management/04-context-worker-pool/cmd/demo
+cd go-solutions/13-goroutines-and-channels/11-goroutine-lifecycle-management/04-context-worker-pool
 go mod edit -go=1.25
 ```
 

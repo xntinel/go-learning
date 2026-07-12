@@ -30,9 +30,8 @@ diopts/                     independent module: example.com/diopts
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/diopts/cmd/demo
-cd ~/go-exercises/diopts
-go mod init example.com/diopts
+mkdir -p go-solutions/08-interfaces/10-dependency-injection-with-interfaces/04-functional-options-constructor/cmd/demo
+cd go-solutions/08-interfaces/10-dependency-injection-with-interfaces/04-functional-options-constructor
 ```
 
 ### Why options, and how the pattern works

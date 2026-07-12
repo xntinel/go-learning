@@ -23,8 +23,7 @@ strategy_test.go     each strategy, both combinators, the nil-strategy default
 Set up the module:
 
 ```bash
-mkdir -p strategy-via-function-types/cmd/demo && cd strategy-via-function-types
-go mod init example.com/pricing-func
+mkdir -p go-solutions/24-design-patterns-in-go/03-strategy-pattern-via-interfaces/02-strategy-via-function-types/cmd/demo && cd go-solutions/24-design-patterns-in-go/03-strategy-pattern-via-interfaces/02-strategy-via-function-types
 ```
 
 ### The function is the strategy

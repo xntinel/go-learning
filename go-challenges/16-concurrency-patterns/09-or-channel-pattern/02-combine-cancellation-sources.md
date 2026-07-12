@@ -22,8 +22,7 @@ shutdown_test.go     each source wins, race close-once, zero sources never fire,
 Set up the module:
 
 ```bash
-mkdir -p combine-cancellation/cmd/demo && cd combine-cancellation
-go mod init example.com/combine-cancellation
+mkdir -p go-solutions/16-concurrency-patterns/09-or-channel-pattern/02-combine-cancellation-sources/cmd/demo && cd go-solutions/16-concurrency-patterns/09-or-channel-pattern/02-combine-cancellation-sources
 ```
 
 ### Why a cause-tracking combiner, not a bare or-channel

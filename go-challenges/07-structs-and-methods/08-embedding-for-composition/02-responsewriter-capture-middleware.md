@@ -28,9 +28,8 @@ accesslog/                 independent module: example.com/accesslog
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/accesslog/cmd/demo
-cd ~/go-exercises/accesslog
-go mod init example.com/accesslog
+mkdir -p go-solutions/07-structs-and-methods/08-embedding-for-composition/02-responsewriter-capture-middleware/cmd/demo
+cd go-solutions/07-structs-and-methods/08-embedding-for-composition/02-responsewriter-capture-middleware
 ```
 
 ### Capturing the status without breaking the writer

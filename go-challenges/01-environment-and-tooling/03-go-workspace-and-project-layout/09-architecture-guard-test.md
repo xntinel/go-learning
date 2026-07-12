@@ -31,9 +31,8 @@ guarded/                       module github.com/example/guarded
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/guarded/internal/core ~/go-exercises/guarded/internal/adapters ~/go-exercises/guarded/internal/platform ~/go-exercises/guarded/internal/arch ~/go-exercises/guarded/cmd/demo
-cd ~/go-exercises/guarded
-go mod init github.com/example/guarded
+mkdir -p go-solutions/01-environment-and-tooling/03-go-workspace-and-project-layout/09-architecture-guard-test/internal/core go-solutions/01-environment-and-tooling/03-go-workspace-and-project-layout/09-architecture-guard-test/internal/adapters go-solutions/01-environment-and-tooling/03-go-workspace-and-project-layout/09-architecture-guard-test/internal/platform go-solutions/01-environment-and-tooling/03-go-workspace-and-project-layout/09-architecture-guard-test/internal/arch go-solutions/01-environment-and-tooling/03-go-workspace-and-project-layout/09-architecture-guard-test/cmd/demo
+cd go-solutions/01-environment-and-tooling/03-go-workspace-and-project-layout/09-architecture-guard-test
 go mod edit -go=1.24
 ```
 

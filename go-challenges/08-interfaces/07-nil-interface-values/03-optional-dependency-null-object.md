@@ -26,9 +26,8 @@ optmetrics/                independent module: example.com/optmetrics
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/optmetrics/cmd/demo
-cd ~/go-exercises/optmetrics
-go mod init example.com/optmetrics
+mkdir -p go-solutions/08-interfaces/07-nil-interface-values/03-optional-dependency-null-object/cmd/demo
+cd go-solutions/08-interfaces/07-nil-interface-values/03-optional-dependency-null-object
 ```
 
 ### Why a no-op default beats a nil check

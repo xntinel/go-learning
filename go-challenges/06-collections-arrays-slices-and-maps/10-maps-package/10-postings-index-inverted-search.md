@@ -51,9 +51,8 @@ postingsidx/                   module example.com/postingsidx
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/postingsidx
-cd ~/go-exercises/postingsidx
-go mod init example.com/postingsidx
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/10-postings-index-inverted-search
+cd go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/10-postings-index-inverted-search
 go mod edit -go=1.24
 ```
 

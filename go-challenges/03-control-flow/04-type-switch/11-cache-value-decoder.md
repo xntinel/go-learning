@@ -27,9 +27,8 @@ cachedecode/                independent module: example.com/cachedecode
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cachedecode
-cd ~/go-exercises/cachedecode
-go mod init example.com/cachedecode
+mkdir -p go-solutions/03-control-flow/04-type-switch/11-cache-value-decoder
+cd go-solutions/03-control-flow/04-type-switch/11-cache-value-decoder
 go mod edit -go=1.24
 ```
 

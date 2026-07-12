@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/money/cmd/demo
-cd ~/go-exercises/money
-go mod init example.com/money
+mkdir -p go-solutions/07-structs-and-methods/03-methods-value-vs-pointer-receivers/04-immutable-money-value-object/cmd/demo
+cd go-solutions/07-structs-and-methods/03-methods-value-vs-pointer-receivers/04-immutable-money-value-object
 ```
 
 ### Why value receivers are correct here

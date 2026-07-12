@@ -30,9 +30,8 @@ coredbg/                   independent module: example.com/coredbg
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/coredbg/crashy ~/go-exercises/coredbg/cmd/demo
-cd ~/go-exercises/coredbg
-go mod init example.com/coredbg
+mkdir -p go-solutions/01-environment-and-tooling/07-debugging-with-delve/10-postmortem-core-dump/crashy go-solutions/01-environment-and-tooling/07-debugging-with-delve/10-postmortem-core-dump/cmd/demo
+cd go-solutions/01-environment-and-tooling/07-debugging-with-delve/10-postmortem-core-dump
 go mod edit -go=1.24
 ```
 

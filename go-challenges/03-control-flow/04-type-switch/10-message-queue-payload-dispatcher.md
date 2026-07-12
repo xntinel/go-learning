@@ -26,9 +26,8 @@ qpayload/                   independent module: example.com/qpayload
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/qpayload
-cd ~/go-exercises/qpayload
-go mod init example.com/qpayload
+mkdir -p go-solutions/03-control-flow/04-type-switch/10-message-queue-payload-dispatcher
+cd go-solutions/03-control-flow/04-type-switch/10-message-queue-payload-dispatcher
 go mod edit -go=1.24
 ```
 

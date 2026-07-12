@@ -29,9 +29,8 @@ textfield/                 independent module: example.com/textfield
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/textfield/cmd/demo
-cd ~/go-exercises/textfield
-go mod init example.com/textfield
+mkdir -p go-solutions/02-variables-types-and-constants/03-basic-types/05-utf8-input-validation/cmd/demo
+cd go-solutions/02-variables-types-and-constants/03-basic-types/05-utf8-input-validation
 ```
 
 ### Bytes for storage, runes for the limit

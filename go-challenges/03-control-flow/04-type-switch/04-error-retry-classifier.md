@@ -35,9 +35,8 @@ retryclass/                  independent module: example.com/retryclass
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/retryclass/cmd/demo
-cd ~/go-exercises/retryclass
-go mod init example.com/retryclass
+mkdir -p go-solutions/03-control-flow/04-type-switch/04-error-retry-classifier/cmd/demo
+cd go-solutions/03-control-flow/04-type-switch/04-error-retry-classifier
 ```
 
 ## Why the bare type switch is the bug, and the correct ordering

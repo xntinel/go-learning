@@ -30,9 +30,8 @@ mapfoot/                   independent module: example.com/mapfoot
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/mapfoot/cmd/demo
-cd ~/go-exercises/mapfoot
-go mod init example.com/mapfoot
+mkdir -p go-solutions/48-modern-go-language-and-stdlib/11-swiss-table-map-internals/02-map-memory-footprint/cmd/demo
+cd go-solutions/48-modern-go-language-and-stdlib/11-swiss-table-map-internals/02-map-memory-footprint
 go mod edit -go=1.24
 ```
 

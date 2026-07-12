@@ -52,9 +52,8 @@ routetable/                module example.com/routetable
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/routetable
-cd ~/go-exercises/routetable
-go mod init example.com/routetable
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/12-named-route-table-generic-constraint
+cd go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/12-named-route-table-generic-constraint
 go mod edit -go=1.24
 ```
 

@@ -29,9 +29,8 @@ flags/                     independent module: example.com/feature-flag-compiled
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/flags/cmd/demo
-cd ~/go-exercises/flags
-go mod init example.com/feature-flag-compiled-rules
+mkdir -p go-solutions/04-functions/04-first-class-functions-and-closures/24-feature-flag-evaluator-compiled-rules/cmd/demo
+cd go-solutions/04-functions/04-first-class-functions-and-closures/24-feature-flag-evaluator-compiled-rules
 go mod edit -go=1.24
 ```
 

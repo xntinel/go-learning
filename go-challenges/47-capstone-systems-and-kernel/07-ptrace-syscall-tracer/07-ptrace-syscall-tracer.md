@@ -71,10 +71,9 @@ With `PTRACE_O_TRACEFORK | PTRACE_O_TRACECLONE`, the kernel delivers a clone-eve
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ptrace-syscall-tracer/tracer
-mkdir -p ~/go-exercises/ptrace-syscall-tracer/cmd/tracer
-cd ~/go-exercises/ptrace-syscall-tracer
-go mod init example.com/ptrace-syscall-tracer
+mkdir -p go-solutions/47-capstone-systems-and-kernel/07-ptrace-syscall-tracer/07-ptrace-syscall-tracer/tracer
+mkdir -p go-solutions/47-capstone-systems-and-kernel/07-ptrace-syscall-tracer/07-ptrace-syscall-tracer/cmd/tracer
+cd go-solutions/47-capstone-systems-and-kernel/07-ptrace-syscall-tracer/07-ptrace-syscall-tracer
 ```
 
 ### Exercise 1: SyscallEvent and Flag Decoders

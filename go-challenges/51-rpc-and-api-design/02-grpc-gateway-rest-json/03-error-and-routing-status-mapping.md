@@ -26,9 +26,8 @@ Verify: `buf generate && go test -count=1 -race ./...` (bar mode: builds only af
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/errmap/proto/order/v1 ~/go-exercises/errmap/cmd/demo
-cd ~/go-exercises/errmap
-go mod init example.com/errmap
+mkdir -p go-solutions/51-rpc-and-api-design/02-grpc-gateway-rest-json/03-error-and-routing-status-mapping/proto/order/v1 go-solutions/51-rpc-and-api-design/02-grpc-gateway-rest-json/03-error-and-routing-status-mapping/cmd/demo
+cd go-solutions/51-rpc-and-api-design/02-grpc-gateway-rest-json/03-error-and-routing-status-mapping
 go get github.com/grpc-ecosystem/grpc-gateway/v2/runtime
 go get google.golang.org/grpc google.golang.org/protobuf
 ```

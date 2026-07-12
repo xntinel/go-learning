@@ -31,9 +31,8 @@ oauthscope/                 independent module: example.com/oauthscope
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/oauthscope/cmd/demo
-cd ~/go-exercises/oauthscope
-go mod init example.com/oauthscope
+mkdir -p go-solutions/04-functions/03-variadic-functions/24-oauth-scope-claim-verifier/cmd/demo
+cd go-solutions/04-functions/03-variadic-functions/24-oauth-scope-claim-verifier
 go mod edit -go=1.24
 ```
 

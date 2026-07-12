@@ -37,9 +37,8 @@ Set up the module. The core needs no dependencies; add the SDKs only when you
 compile the tagged adapters:
 
 ```bash
-mkdir -p ~/go-exercises/streamclient/cmd/demo
-cd ~/go-exercises/streamclient
-go mod init example.com/streamclient
+mkdir -p go-solutions/52-ai-llm-backends/02-streaming-completions/02-streaming-llm-client/cmd/demo
+cd go-solutions/52-ai-llm-backends/02-streaming-completions/02-streaming-llm-client
 go mod edit -go=1.26
 # only needed to build the //go:build llm adapters:
 go get github.com/anthropics/anthropic-sdk-go@latest

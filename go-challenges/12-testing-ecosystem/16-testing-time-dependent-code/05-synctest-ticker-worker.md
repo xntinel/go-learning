@@ -28,9 +28,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module (synctest is stable in Go 1.25):
 
 ```bash
-mkdir -p ~/go-exercises/flushworker/cmd/demo
-cd ~/go-exercises/flushworker
-go mod init example.com/flushworker
+mkdir -p go-solutions/12-testing-ecosystem/16-testing-time-dependent-code/05-synctest-ticker-worker/cmd/demo
+cd go-solutions/12-testing-ecosystem/16-testing-time-dependent-code/05-synctest-ticker-worker
 go mod edit -go=1.25
 ```
 

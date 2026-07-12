@@ -26,9 +26,8 @@ lazyseq/                     independent module: example.com/lazyseq
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/lazyseq
-cd ~/go-exercises/lazyseq
-go mod init example.com/lazyseq
+mkdir -p go-solutions/04-functions/10-higher-order-functions/23-lazy-iterator-collect-transform
+cd go-solutions/04-functions/10-higher-order-functions/23-lazy-iterator-collect-transform
 go mod edit -go=1.24
 ```
 

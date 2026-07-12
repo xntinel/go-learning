@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/rowscan/cmd/demo
-cd ~/go-exercises/rowscan
-go mod init example.com/rowscan
+mkdir -p go-solutions/08-interfaces/03-type-assertions-and-type-switches/09-driver-value-normalizer/cmd/demo
+cd go-solutions/08-interfaces/03-type-assertions-and-type-switches/09-driver-value-normalizer
 ```
 
 ### The closed set, both directions

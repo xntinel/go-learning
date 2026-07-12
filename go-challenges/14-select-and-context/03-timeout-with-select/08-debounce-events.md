@@ -24,9 +24,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/debouncer/cmd/demo
-cd ~/go-exercises/debouncer
-go mod init example.com/debounce
+mkdir -p go-solutions/14-select-and-context/03-timeout-with-select/08-debounce-events/cmd/demo
+cd go-solutions/14-select-and-context/03-timeout-with-select/08-debounce-events
 ```
 
 ### Reset on every trigger, act on the survivor

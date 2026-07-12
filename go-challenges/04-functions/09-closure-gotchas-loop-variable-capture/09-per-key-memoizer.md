@@ -28,9 +28,8 @@ memoize/                     independent module: example.com/memoize
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/memoize/cmd/demo
-cd ~/go-exercises/memoize
-go mod init example.com/memoize
+mkdir -p go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/09-per-key-memoizer/cmd/demo
+cd go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/09-per-key-memoizer
 go mod edit -go=1.26
 ```
 

@@ -25,8 +25,7 @@ wire_test.go         error/SQLSTATE, CommandTag table, RowDescription/DataRow, P
 Set up the module:
 
 ```bash
-mkdir -p queryproto/cmd/demo && cd queryproto
-go mod init example.com/queryproto
+mkdir -p go-solutions/39-capstone-database-engine/09-network-protocol/02-query-and-error-responses/cmd/demo && cd go-solutions/39-capstone-database-engine/09-network-protocol/02-query-and-error-responses
 ```
 
 ### Encoding a result set

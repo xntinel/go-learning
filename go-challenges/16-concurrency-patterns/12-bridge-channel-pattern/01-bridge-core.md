@@ -22,8 +22,7 @@ bridge_test.go       order, single empty stream, cancellation terminates, nil in
 Set up the module:
 
 ```bash
-mkdir -p bridge/cmd/demo && cd bridge
-go mod init example.com/bridge
+mkdir -p go-solutions/16-concurrency-patterns/12-bridge-channel-pattern/01-bridge-core/cmd/demo && cd go-solutions/16-concurrency-patterns/12-bridge-channel-pattern/01-bridge-core
 ```
 
 ### Why two selects and an inner range, and why a nil guard

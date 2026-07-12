@@ -33,9 +33,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/rate-limiter-panic-containment/cmd/demo
-cd ~/go-exercises/rate-limiter-panic-containment
-go mod init example.com/ratelimiter
+mkdir -p go-solutions/03-control-flow/08-panic-and-recover/16-rate-limiter-panic-containment/cmd/demo
+cd go-solutions/03-control-flow/08-panic-and-recover/16-rate-limiter-panic-containment
 go mod edit -go=1.24
 ```
 

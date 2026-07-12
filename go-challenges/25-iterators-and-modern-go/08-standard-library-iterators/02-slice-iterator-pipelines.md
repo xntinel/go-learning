@@ -29,8 +29,7 @@ pipeline_test.go     pipeline output, reverse, chunk cloning, multi-key sort
 Set up the module:
 
 ```bash
-mkdir -p slice-iterator-pipelines/cmd/demo && cd slice-iterator-pipelines
-go mod init example.com/slice-iterator-pipelines
+mkdir -p go-solutions/25-iterators-and-modern-go/08-standard-library-iterators/02-slice-iterator-pipelines/cmd/demo && cd go-solutions/25-iterators-and-modern-go/08-standard-library-iterators/02-slice-iterator-pipelines
 ```
 
 ### Why a lazy pipeline allocates only once

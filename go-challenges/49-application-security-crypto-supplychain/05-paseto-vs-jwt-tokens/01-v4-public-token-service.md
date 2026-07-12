@@ -30,9 +30,8 @@ Set up the module. `go-paseto` is an external dependency, so this lesson builds
 and tests only with network access to fetch it:
 
 ```bash
-mkdir -p ~/go-exercises/accesstoken/cmd/demo
-cd ~/go-exercises/accesstoken
-go mod init example.com/accesstoken
+mkdir -p go-solutions/49-application-security-crypto-supplychain/05-paseto-vs-jwt-tokens/01-v4-public-token-service/cmd/demo
+cd go-solutions/49-application-security-crypto-supplychain/05-paseto-vs-jwt-tokens/01-v4-public-token-service
 go mod edit -go=1.25
 go get aidanwoods.dev/go-paseto@latest
 ```

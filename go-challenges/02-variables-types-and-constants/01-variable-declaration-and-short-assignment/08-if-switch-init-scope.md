@@ -30,9 +30,8 @@ dispatch/                      independent module: example.com/dispatch
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/dispatch/cmd/demo
-cd ~/go-exercises/dispatch
-go mod init example.com/dispatch
+mkdir -p go-solutions/02-variables-types-and-constants/01-variable-declaration-and-short-assignment/08-if-switch-init-scope/cmd/demo
+cd go-solutions/02-variables-types-and-constants/01-variable-declaration-and-short-assignment/08-if-switch-init-scope
 ```
 
 ### Why the init clause is the right scope

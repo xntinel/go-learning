@@ -35,9 +35,8 @@ latencyreservoir/              module example.com/latencyreservoir
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/latencyreservoir
-cd ~/go-exercises/latencyreservoir
-go mod init example.com/latencyreservoir
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/15-latency-reservoir-fixed-array
+cd go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/15-latency-reservoir-fixed-array
 go mod edit -go=1.24
 ```
 

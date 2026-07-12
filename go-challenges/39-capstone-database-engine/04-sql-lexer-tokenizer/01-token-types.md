@@ -22,8 +22,7 @@ token_test.go        IsKeyword brackets the keyword block; String format; type i
 Set up the module:
 
 ```bash
-mkdir -p token-types/cmd/demo && cd token-types
-go mod init example.com/token-types
+mkdir -p go-solutions/39-capstone-database-engine/04-sql-lexer-tokenizer/01-token-types/cmd/demo && cd go-solutions/39-capstone-database-engine/04-sql-lexer-tokenizer/01-token-types
 ```
 
 ### Why a sentinel-bracketed enum, and why position lives in the token

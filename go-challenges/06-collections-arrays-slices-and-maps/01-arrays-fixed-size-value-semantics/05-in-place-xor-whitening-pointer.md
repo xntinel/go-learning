@@ -30,9 +30,8 @@ whitening/                   independent module: example.com/whitening
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/whitening/cmd/demo
-cd ~/go-exercises/whitening
-go mod init example.com/whitening
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/05-in-place-xor-whitening-pointer/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/05-in-place-xor-whitening-pointer
 ```
 
 ### Why the mutation path needs *[16]byte

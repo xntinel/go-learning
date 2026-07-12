@@ -20,8 +20,7 @@ tee_test.go          both outputs get every value, source-close closes both, OrD
 Set up the module:
 
 ```bash
-mkdir -p basic-tee/cmd/demo && cd basic-tee
-go mod init example.com/basic-tee
+mkdir -p go-solutions/16-concurrency-patterns/11-tee-channel-pattern/01-basic-tee/cmd/demo && cd go-solutions/16-concurrency-patterns/11-tee-channel-pattern/01-basic-tee
 ```
 
 ### Why the sequential form is correct, and what it costs

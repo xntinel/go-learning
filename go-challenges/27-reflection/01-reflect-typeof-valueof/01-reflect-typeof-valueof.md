@@ -21,9 +21,8 @@ Reflection is useful at package boundaries where the static type is intentionall
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/reflectinfo/cmd/demo
-cd ~/go-exercises/reflectinfo
-go mod init example.com/reflectinfo
+mkdir -p go-solutions/27-reflection/01-reflect-typeof-valueof/01-reflect-typeof-valueof/cmd/demo
+cd go-solutions/27-reflection/01-reflect-typeof-valueof/01-reflect-typeof-valueof
 ```
 
 ### Exercise 1: Implement the Inspector

@@ -39,9 +39,8 @@ Verify: `go run github.com/99designs/gqlgen generate` then `go test -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/catalogapi/domain ~/go-exercises/catalogapi/graph
-cd ~/go-exercises/catalogapi
-go mod init example.com/catalogapi
+mkdir -p go-solutions/51-rpc-and-api-design/04-gqlgen-graphql-server/03-scalars-and-field-resolvers/domain go-solutions/51-rpc-and-api-design/04-gqlgen-graphql-server/03-scalars-and-field-resolvers/graph
+cd go-solutions/51-rpc-and-api-design/04-gqlgen-graphql-server/03-scalars-and-field-resolvers
 go mod edit -go=1.26
 go get github.com/99designs/gqlgen@latest
 ```

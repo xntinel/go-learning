@@ -35,9 +35,8 @@ retry-backoff-picker/       independent module: example.com/retry-backoff-picker
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/retry-backoff-picker/cmd/demo
-cd ~/go-exercises/retry-backoff-picker
-go mod init example.com/retry-backoff-picker
+mkdir -p go-solutions/03-control-flow/04-type-switch/19-retry-backoff-picker/cmd/demo
+cd go-solutions/03-control-flow/04-type-switch/19-retry-backoff-picker
 go mod edit -go=1.24
 ```
 

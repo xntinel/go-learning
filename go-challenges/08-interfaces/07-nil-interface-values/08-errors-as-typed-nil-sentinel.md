@@ -26,9 +26,8 @@ apierr/                    independent module: example.com/apierr
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/apierr/cmd/demo
-cd ~/go-exercises/apierr
-go mod init example.com/apierr
+mkdir -p go-solutions/08-interfaces/07-nil-interface-values/08-errors-as-typed-nil-sentinel/cmd/demo
+cd go-solutions/08-interfaces/07-nil-interface-values/08-errors-as-typed-nil-sentinel
 ```
 
 ### Why the typed nil re-enters through errors.As

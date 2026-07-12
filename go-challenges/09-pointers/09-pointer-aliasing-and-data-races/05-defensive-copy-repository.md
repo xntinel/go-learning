@@ -32,9 +32,8 @@ userrepo/                  independent module: example.com/userrepo
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/userrepo/cmd/demo
-cd ~/go-exercises/userrepo
-go mod init example.com/userrepo
+mkdir -p go-solutions/09-pointers/09-pointer-aliasing-and-data-races/05-defensive-copy-repository/cmd/demo
+cd go-solutions/09-pointers/09-pointer-aliasing-and-data-races/05-defensive-copy-repository
 ```
 
 ### Aliasing through a map value, and why a shallow copy is not enough

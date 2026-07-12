@@ -35,9 +35,8 @@ ctxlock/                   independent module: example.com/ctxlock
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ctxlock/cmd/demo
-cd ~/go-exercises/ctxlock
-go mod init example.com/ctxlock
+mkdir -p go-solutions/15-sync-primitives/09-lock-ordering-deadlock-prevention/04-context-aware-lock/cmd/demo
+cd go-solutions/15-sync-primitives/09-lock-ordering-deadlock-prevention/04-context-aware-lock
 ```
 
 ### Preemption: the Coffman condition sync.Mutex cannot break

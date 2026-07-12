@@ -34,9 +34,8 @@ distributor/                 independent module: example.com/distributor
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/distributor/cmd/demo
-cd ~/go-exercises/distributor
-go mod init example.com/distributor
+mkdir -p go-solutions/13-goroutines-and-channels/04-channel-direction/10-load-balancing-stream-distributor/cmd/demo
+cd go-solutions/13-goroutines-and-channels/04-channel-direction/10-load-balancing-stream-distributor
 ```
 
 ### One value per lane, and why a single owner per lane makes close trivial

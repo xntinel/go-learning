@@ -55,9 +55,8 @@ fanoutring/                module example.com/fanoutring
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/fanoutring
-cd ~/go-exercises/fanoutring
-go mod init example.com/fanoutring
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/13-implementing-a-ring-buffer/19-multi-reader-fanout-ring-watermark
+cd go-solutions/06-collections-arrays-slices-and-maps/13-implementing-a-ring-buffer/19-multi-reader-fanout-ring-watermark
 go mod edit -go=1.24
 ```
 

@@ -29,9 +29,8 @@ maxprocs/                  independent module: example.com/maxprocs
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/maxprocs/cmd/demo
-cd ~/go-exercises/maxprocs
-go mod init example.com/maxprocs
+mkdir -p go-solutions/48-modern-go-language-and-stdlib/10-container-aware-gomaxprocs/02-runtime-gomaxprocs-control/cmd/demo
+cd go-solutions/48-modern-go-language-and-stdlib/10-container-aware-gomaxprocs/02-runtime-gomaxprocs-control
 go mod edit -go=1.25
 ```
 

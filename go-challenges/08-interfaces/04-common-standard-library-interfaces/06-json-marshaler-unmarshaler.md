@@ -28,9 +28,8 @@ apidto/                     independent module: example.com/apidto
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/apidto/cmd/demo
-cd ~/go-exercises/apidto
-go mod init example.com/apidto
+mkdir -p go-solutions/08-interfaces/04-common-standard-library-interfaces/06-json-marshaler-unmarshaler/cmd/demo
+cd go-solutions/08-interfaces/04-common-standard-library-interfaces/06-json-marshaler-unmarshaler
 ```
 
 ### Receiver rules and the encode/decode split

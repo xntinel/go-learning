@@ -56,9 +56,8 @@ replayq/                  module example.com/replayq
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/replayq
-cd ~/go-exercises/replayq
-go mod init example.com/replayq
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/11-slice-memory-leaks/17-replay-queue-ack-compaction
+cd go-solutions/06-collections-arrays-slices-and-maps/11-slice-memory-leaks/17-replay-queue-ack-compaction
 go mod edit -go=1.24
 ```
 

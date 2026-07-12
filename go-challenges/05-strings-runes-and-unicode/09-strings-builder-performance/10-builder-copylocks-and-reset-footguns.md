@@ -26,9 +26,8 @@ Test: reuse does not bleed prior content; concurrent formatting is race-free und
 Verify: `go vet ./...` is clean and `go test -count=1 -race ./...` passes.
 
 ```bash
-mkdir -p ~/go-exercises/footguns/cmd/demo
-cd ~/go-exercises/footguns
-go mod init example.com/footguns
+mkdir -p go-solutions/05-strings-runes-and-unicode/09-strings-builder-performance/10-builder-copylocks-and-reset-footguns/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/09-strings-builder-performance/10-builder-copylocks-and-reset-footguns
 ```
 
 ### The four footguns, and why the compiler lets them through

@@ -29,9 +29,8 @@ logcfg/                    independent module: example.com/log-level-config-load
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/logcfg/cmd/demo
-cd ~/go-exercises/logcfg
-go mod init example.com/log-level-config-loader
+mkdir -p go-solutions/03-control-flow/03-switch-statements/04-log-level-config-loader/cmd/demo
+cd go-solutions/03-control-flow/03-switch-statements/04-log-level-config-loader
 go mod edit -go=1.24
 ```
 

@@ -33,9 +33,8 @@ distlock/                  independent module: example.com/distributed-lock-acqu
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/distlock/cmd/demo
-cd ~/go-exercises/distlock
-go mod init example.com/distributed-lock-acquire-lease
+mkdir -p go-solutions/04-functions/01-function-declaration-and-multiple-return-values/35-distributed-lock-acquire-lease/cmd/demo
+cd go-solutions/04-functions/01-function-declaration-and-multiple-return-values/35-distributed-lock-acquire-lease
 go mod edit -go=1.24
 ```
 

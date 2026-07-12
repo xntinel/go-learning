@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/scattergather/cmd/demo
-cd ~/go-exercises/scattergather
-go mod init example.com/scattergather
+mkdir -p go-solutions/14-select-and-context/01-select-statement-basics/05-bounded-result-collector/cmd/demo
+cd go-solutions/14-select-and-context/01-select-statement-basics/05-bounded-result-collector
 ```
 
 ## The counter is the terminator

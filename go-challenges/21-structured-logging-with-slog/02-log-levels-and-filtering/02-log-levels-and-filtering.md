@@ -21,9 +21,8 @@ Filtering happens after call arguments are evaluated. Avoid expensive work in di
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/slog-levels
-cd ~/go-exercises/slog-levels
-go mod init example.com/sloglevels
+mkdir -p go-solutions/21-structured-logging-with-slog/02-log-levels-and-filtering/02-log-levels-and-filtering
+cd go-solutions/21-structured-logging-with-slog/02-log-levels-and-filtering/02-log-levels-and-filtering
 ```
 
 Edit `go.mod`:

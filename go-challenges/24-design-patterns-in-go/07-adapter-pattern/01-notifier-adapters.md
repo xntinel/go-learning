@@ -26,9 +26,8 @@ notifier_test.go                  contract tests: fan-out, error wrapping, senti
 Set up the module:
 
 ```bash
-mkdir -p notifier/thirdparty/sendgrid notifier/thirdparty/twilio notifier/thirdparty/slack notifier/cmd/demo
-cd notifier
-go mod init example.com/notifier
+mkdir -p go-solutions/24-design-patterns-in-go/07-adapter-pattern/01-notifier-adapters/thirdparty/sendgrid go-solutions/24-design-patterns-in-go/07-adapter-pattern/01-notifier-adapters/thirdparty/twilio go-solutions/24-design-patterns-in-go/07-adapter-pattern/01-notifier-adapters/thirdparty/slack go-solutions/24-design-patterns-in-go/07-adapter-pattern/01-notifier-adapters/cmd/demo
+cd go-solutions/24-design-patterns-in-go/07-adapter-pattern/01-notifier-adapters
 ```
 
 ### Three incompatible SDKs, on purpose

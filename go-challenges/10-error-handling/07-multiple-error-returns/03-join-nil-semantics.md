@@ -28,9 +28,8 @@ joinnil/                   independent module: example.com/joinnil
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/joinnil/cmd/demo
-cd ~/go-exercises/joinnil
-go mod init example.com/joinnil
+mkdir -p go-solutions/10-error-handling/07-multiple-error-returns/03-join-nil-semantics/cmd/demo
+cd go-solutions/10-error-handling/07-multiple-error-returns/03-join-nil-semantics
 ```
 
 ### Why the nil rules matter for real code

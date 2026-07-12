@@ -24,9 +24,8 @@ inventory/                 module example.com/inventory
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/inventory/cmd/demo
-cd ~/go-exercises/inventory
-go mod init example.com/inventory
+mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/05-range-value-copy-mutation/cmd/demo
+cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/05-range-value-copy-mutation
 ```
 
 ### The artifact and the planted bug

@@ -28,9 +28,8 @@ apihandler/                 independent module: example.com/apihandler
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/apihandler/cmd/demo
-cd ~/go-exercises/apihandler
-go mod init example.com/apihandler
+mkdir -p go-solutions/09-pointers/06-pointer-receivers-and-interfaces/03-http-handler-pointer-receiver/cmd/demo
+cd go-solutions/09-pointers/06-pointer-receivers-and-interfaces/03-http-handler-pointer-receiver
 go mod edit -go=1.25
 ```
 

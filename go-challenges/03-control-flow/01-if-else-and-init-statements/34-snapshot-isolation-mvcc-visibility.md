@@ -33,9 +33,8 @@ mvcc/                          independent module: example.com/snapshot-isolatio
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/mvcc/cmd/demo
-cd ~/go-exercises/mvcc
-go mod init example.com/snapshot-isolation-mvcc-visibility
+mkdir -p go-solutions/03-control-flow/01-if-else-and-init-statements/34-snapshot-isolation-mvcc-visibility/cmd/demo
+cd go-solutions/03-control-flow/01-if-else-and-init-statements/34-snapshot-isolation-mvcc-visibility
 go mod edit -go=1.24
 ```
 

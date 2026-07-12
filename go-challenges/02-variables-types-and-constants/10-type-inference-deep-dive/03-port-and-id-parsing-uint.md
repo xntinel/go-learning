@@ -28,9 +28,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/netcfg/cmd/demo
-cd ~/go-exercises/netcfg
-go mod init example.com/netcfg
+mkdir -p go-solutions/02-variables-types-and-constants/10-type-inference-deep-dive/03-port-and-id-parsing-uint/cmd/demo
+cd go-solutions/02-variables-types-and-constants/10-type-inference-deep-dive/03-port-and-id-parsing-uint
 go mod edit -go=1.26
 ```
 

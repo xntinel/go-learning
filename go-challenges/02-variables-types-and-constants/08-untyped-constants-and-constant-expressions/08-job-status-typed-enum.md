@@ -35,9 +35,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/jobstatus/cmd/demo
-cd ~/go-exercises/jobstatus
-go mod init example.com/jobstatus
+mkdir -p go-solutions/02-variables-types-and-constants/08-untyped-constants-and-constant-expressions/08-job-status-typed-enum/cmd/demo
+cd go-solutions/02-variables-types-and-constants/08-untyped-constants-and-constant-expressions/08-job-status-typed-enum
 ```
 
 ### The type is the contract

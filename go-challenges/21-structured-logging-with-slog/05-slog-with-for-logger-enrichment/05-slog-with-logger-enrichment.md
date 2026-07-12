@@ -21,9 +21,8 @@ An enriched logger should be passed explicitly through constructors and request 
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/slog-enrichment
-cd ~/go-exercises/slog-enrichment
-go mod init example.com/slogenrichment
+mkdir -p go-solutions/21-structured-logging-with-slog/05-slog-with-for-logger-enrichment/05-slog-with-logger-enrichment
+cd go-solutions/21-structured-logging-with-slog/05-slog-with-for-logger-enrichment/05-slog-with-logger-enrichment
 ```
 
 Edit `go.mod`:

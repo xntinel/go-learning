@@ -26,9 +26,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/money/cmd/demo
-cd ~/go-exercises/money
-go mod init example.com/money
+mkdir -p go-solutions/12-testing-ecosystem/15-testable-examples/02-money-value-object-method-examples/cmd/demo
+cd go-solutions/12-testing-ecosystem/15-testable-examples/02-money-value-object-method-examples
 ```
 
 ## Naming attaches an example to a symbol

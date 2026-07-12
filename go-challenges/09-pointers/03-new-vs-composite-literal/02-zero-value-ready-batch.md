@@ -35,9 +35,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/eventbatch/cmd/demo
-cd ~/go-exercises/eventbatch
-go mod init example.com/eventbatch
+mkdir -p go-solutions/09-pointers/03-new-vs-composite-literal/02-zero-value-ready-batch/cmd/demo
+cd go-solutions/09-pointers/03-new-vs-composite-literal/02-zero-value-ready-batch
 ```
 
 ### Why the zero value must be valid

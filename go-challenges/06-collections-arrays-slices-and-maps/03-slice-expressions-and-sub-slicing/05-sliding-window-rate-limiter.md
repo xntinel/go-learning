@@ -34,9 +34,8 @@ ratelimit/                 independent module: example.com/ratelimit
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ratelimit/cmd/demo
-cd ~/go-exercises/ratelimit
-go mod init example.com/ratelimit
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/05-sliding-window-rate-limiter/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/05-sliding-window-rate-limiter
 go mod edit -go=1.24
 ```
 

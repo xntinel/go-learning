@@ -31,9 +31,8 @@ audit/                     independent module: example.com/audit
 Set up the module:
 
 ```bash
-mkdir -p audit/cmd/demo
-cd audit
-go mod init example.com/audit
+mkdir -p go-solutions/14-select-and-context/04-context-withcancel/08-detached-background-write/cmd/demo
+cd go-solutions/14-select-and-context/04-context-withcancel/08-detached-background-write
 ```
 
 ### Why WithoutCancel, then WithTimeout

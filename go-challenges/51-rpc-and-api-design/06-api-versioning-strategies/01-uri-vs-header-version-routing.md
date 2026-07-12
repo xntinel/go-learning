@@ -29,9 +29,8 @@ versionrouting/                independent module: example.com/versionrouting
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/versionrouting/cmd/demo
-cd ~/go-exercises/versionrouting
-go mod init example.com/versionrouting
+mkdir -p go-solutions/51-rpc-and-api-design/06-api-versioning-strategies/01-uri-vs-header-version-routing/cmd/demo
+cd go-solutions/51-rpc-and-api-design/06-api-versioning-strategies/01-uri-vs-header-version-routing
 ```
 
 ### Why both axes, and where the version lives

@@ -26,9 +26,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/startupcfg/cmd/demo
-cd ~/go-exercises/startupcfg
-go mod init example.com/startupcfg
+mkdir -p go-solutions/12-testing-ecosystem/17-testing-with-environment-variables/05-accumulated-validation-errors/cmd/demo
+cd go-solutions/12-testing-ecosystem/17-testing-with-environment-variables/05-accumulated-validation-errors
 ```
 
 ## Accumulate, then join

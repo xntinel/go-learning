@@ -26,9 +26,8 @@ Verify: `go test -race ./...` (`GOFLAGS=-mod=mod` to fetch the modules).
 Set up the module:
 
 ```bash
-mkdir -p renderpipe/cmd/demo
-cd renderpipe
-go mod init example.com/renderpipe
+mkdir -p go-solutions/54-cloud-native-platform-and-orchestration/05-helm-and-gitops-patterns/02-rendered-manifests-drift/cmd/demo
+cd go-solutions/54-cloud-native-platform-and-orchestration/05-helm-and-gitops-patterns/02-rendered-manifests-drift
 go get helm.sh/helm/v3@latest sigs.k8s.io/yaml@latest github.com/google/go-cmp@latest
 ```
 

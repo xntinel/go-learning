@@ -26,9 +26,8 @@ greetapi/                       independent module: example.com/recorder-unit-ha
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/greetapi/cmd/demo
-cd ~/go-exercises/greetapi
-go mod init example.com/recorder-unit-handler
+mkdir -p go-solutions/12-testing-ecosystem/09-httptest/01-recorder-unit-handler/cmd/demo
+cd go-solutions/12-testing-ecosystem/09-httptest/01-recorder-unit-handler
 ```
 
 ### Why a recorder, and what it captures

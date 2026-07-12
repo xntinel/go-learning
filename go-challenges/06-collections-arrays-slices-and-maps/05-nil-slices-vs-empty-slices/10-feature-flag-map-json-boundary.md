@@ -48,9 +48,8 @@ flagset/                 module example.com/flagset
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/flagset
-cd ~/go-exercises/flagset
-go mod init example.com/flagset
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/10-feature-flag-map-json-boundary
+cd go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/10-feature-flag-map-json-boundary
 go mod edit -go=1.24
 ```
 

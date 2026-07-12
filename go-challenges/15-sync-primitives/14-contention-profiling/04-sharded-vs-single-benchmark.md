@@ -32,9 +32,8 @@ store-bench/                  independent module: example.com/store-bench
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/store-bench/cmd/demo
-cd ~/go-exercises/store-bench
-go mod init example.com/store-bench
+mkdir -p go-solutions/15-sync-primitives/14-contention-profiling/04-sharded-vs-single-benchmark/cmd/demo
+cd go-solutions/15-sync-primitives/14-contention-profiling/04-sharded-vs-single-benchmark
 ```
 
 ### What the harness measures, and how to capture the profile

@@ -29,9 +29,8 @@ a chain exactly at `maxDepth` passing, and one node deeper failing with
 Verify: `go test -count=1 ./...`
 
 ```bash
-mkdir -p ~/go-exercises/storagerollup
-cd ~/go-exercises/storagerollup
-go mod init example.com/storagerollup
+mkdir -p go-solutions/04-functions/07-recursive-functions-and-stack-depth/12-storage-prefix-tree-size-rollup
+cd go-solutions/04-functions/07-recursive-functions-and-stack-depth/12-storage-prefix-tree-size-rollup
 go mod edit -go=1.24
 ```
 

@@ -37,9 +37,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/drain/cmd/demo
-cd ~/go-exercises/drain
-go mod init example.com/drain
+mkdir -p go-solutions/14-select-and-context/12-multi-stage-pipeline-cancellation/09-graceful-drain-on-shutdown/cmd/demo
+cd go-solutions/14-select-and-context/12-multi-stage-pipeline-cancellation/09-graceful-drain-on-shutdown
 ```
 
 ### Separate "stop accepting" from "stop working"

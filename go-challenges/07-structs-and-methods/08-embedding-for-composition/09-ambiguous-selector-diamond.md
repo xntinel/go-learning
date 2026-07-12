@@ -28,9 +28,8 @@ mixins/                    independent module: example.com/mixins
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/mixins/cmd/demo
-cd ~/go-exercises/mixins
-go mod init example.com/mixins
+mkdir -p go-solutions/07-structs-and-methods/08-embedding-for-composition/09-ambiguous-selector-diamond/cmd/demo
+cd go-solutions/07-structs-and-methods/08-embedding-for-composition/09-ambiguous-selector-diamond
 ```
 
 ### Equal-depth collisions do not promote

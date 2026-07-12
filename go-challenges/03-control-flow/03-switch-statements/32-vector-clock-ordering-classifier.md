@@ -34,9 +34,8 @@ vclock/                     independent module: example.com/vector-clock-orderin
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/vclock/cmd/demo
-cd ~/go-exercises/vclock
-go mod init example.com/vector-clock-ordering-classifier
+mkdir -p go-solutions/03-control-flow/03-switch-statements/32-vector-clock-ordering-classifier/cmd/demo
+cd go-solutions/03-control-flow/03-switch-statements/32-vector-clock-ordering-classifier
 go mod edit -go=1.24
 ```
 

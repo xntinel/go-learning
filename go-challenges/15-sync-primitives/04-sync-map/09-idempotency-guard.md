@@ -31,8 +31,7 @@ idemguard/                    independent module: example.com/idemguard
 Set up the module:
 
 ```bash
-mkdir idemguard && cd idemguard
-go mod init example.com/idemguard
+mkdir go-solutions/15-sync-primitives/04-sync-map/09-idempotency-guard && cd go-solutions/15-sync-primitives/04-sync-map/09-idempotency-guard
 ```
 
 ### Why a *call with a done channel

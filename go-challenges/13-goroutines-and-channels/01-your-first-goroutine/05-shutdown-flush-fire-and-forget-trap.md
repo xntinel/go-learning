@@ -31,9 +31,8 @@ Verify: `go test -race -count=5 ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/logwriter/cmd/demo
-cd ~/go-exercises/logwriter
-go mod init example.com/logwriter
+mkdir -p go-solutions/13-goroutines-and-channels/01-your-first-goroutine/05-shutdown-flush-fire-and-forget-trap/cmd/demo
+cd go-solutions/13-goroutines-and-channels/01-your-first-goroutine/05-shutdown-flush-fire-and-forget-trap
 ```
 
 ### The shutdown-flush contract

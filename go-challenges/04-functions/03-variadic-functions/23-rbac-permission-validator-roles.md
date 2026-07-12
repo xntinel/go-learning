@@ -30,9 +30,8 @@ rbac/                       independent module: example.com/rbac
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/rbac/cmd/demo
-cd ~/go-exercises/rbac
-go mod init example.com/rbac
+mkdir -p go-solutions/04-functions/03-variadic-functions/23-rbac-permission-validator-roles/cmd/demo
+cd go-solutions/04-functions/03-variadic-functions/23-rbac-permission-validator-roles
 go mod edit -go=1.24
 ```
 

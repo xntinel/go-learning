@@ -28,9 +28,8 @@ Verify: `go test -count=1 ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/compression-codec-adapter/cmd/demo
-cd ~/go-exercises/compression-codec-adapter
-go mod init example.com/compression-codec-adapter
+mkdir -p go-solutions/04-functions/06-function-types-and-callbacks/17-compression-codec-adapter/cmd/demo
+cd go-solutions/04-functions/06-function-types-and-callbacks/17-compression-codec-adapter
 go mod edit -go=1.24
 ```
 

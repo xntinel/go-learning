@@ -36,9 +36,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/budget/cmd/demo
-cd ~/go-exercises/budget
-go mod init example.com/budget
+mkdir -p go-solutions/14-select-and-context/07-context-propagation/08-deadline-budget-propagation/cmd/demo
+cd go-solutions/14-select-and-context/07-context-propagation/08-deadline-budget-propagation
 go mod edit -go=1.24
 ```
 

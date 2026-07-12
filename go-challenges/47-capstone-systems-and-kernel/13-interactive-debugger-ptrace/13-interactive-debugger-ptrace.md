@@ -74,9 +74,8 @@ Field offsets are version-specific; a robust implementation reads them from the 
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/debugger/cmd/demo
-cd ~/go-exercises/debugger
-go mod init example.com/debugger
+mkdir -p go-solutions/47-capstone-systems-and-kernel/13-interactive-debugger-ptrace/13-interactive-debugger-ptrace/cmd/demo
+cd go-solutions/47-capstone-systems-and-kernel/13-interactive-debugger-ptrace/13-interactive-debugger-ptrace
 ```
 
 This is a library used by the `cmd/demo` REPL, not a standalone program. Verify with `go test ./...` (the cross-platform tests) and `go build ./...` (on Linux, builds the full package including `cmd/demo`).

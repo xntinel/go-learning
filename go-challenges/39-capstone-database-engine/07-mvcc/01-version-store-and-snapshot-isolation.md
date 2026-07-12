@@ -23,8 +23,7 @@ mvcc_test.go     snapshot isolation, read-your-own-writes, conflict, abort, dele
 Set up the module:
 
 ```bash
-mkdir -p mvcc/cmd/demo && cd mvcc
-go mod init example.com/mvcc
+mkdir -p go-solutions/39-capstone-database-engine/07-mvcc/01-version-store-and-snapshot-isolation/cmd/demo && cd go-solutions/39-capstone-database-engine/07-mvcc/01-version-store-and-snapshot-isolation
 ```
 
 ### The transaction manager and the visibility rule

@@ -96,9 +96,8 @@ collect results — the same logic applies when sub-requests are HTTP or gRPC ca
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/shardkv/cmd/demo
-cd ~/go-exercises/shardkv
-go mod init example.com/shardkv
+mkdir -p go-solutions/37-distributed-systems-fundamentals/13-sharded-key-value-store/13-sharded-key-value-store/cmd/demo
+cd go-solutions/37-distributed-systems-fundamentals/13-sharded-key-value-store/13-sharded-key-value-store
 ```
 
 This is a library with a demo; the verification is `go test`, not `go run`.

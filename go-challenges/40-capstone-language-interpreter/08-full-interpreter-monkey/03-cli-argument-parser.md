@@ -23,9 +23,8 @@ cmd/
 Set up the module:
 
 ```bash
-mkdir -p cli-argument-parser/cli cli-argument-parser/cmd/demo
-cd cli-argument-parser
-go mod init example.com/cli-argument-parser
+mkdir -p go-solutions/40-capstone-language-interpreter/08-full-interpreter-monkey/03-cli-argument-parser/cli go-solutions/40-capstone-language-interpreter/08-full-interpreter-monkey/03-cli-argument-parser/cmd/demo
+cd go-solutions/40-capstone-language-interpreter/08-full-interpreter-monkey/03-cli-argument-parser
 ```
 
 ### Parsing as a pure function, and why exit codes are the point

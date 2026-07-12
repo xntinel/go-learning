@@ -93,9 +93,8 @@ The kernel pushes unsolicited messages to the socket whenever matching events oc
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/netlinkmon/cmd/demo
-cd ~/go-exercises/netlinkmon
-go mod init example.com/netlinkmon
+mkdir -p go-solutions/47-capstone-systems-and-kernel/03-netlink-socket/03-netlink-socket/cmd/demo
+cd go-solutions/47-capstone-systems-and-kernel/03-netlink-socket/03-netlink-socket
 ```
 
 All files carry `//go:build linux`.

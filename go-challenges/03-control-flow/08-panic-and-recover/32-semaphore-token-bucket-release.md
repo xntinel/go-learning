@@ -33,9 +33,8 @@ Verify: `go test -count=1 ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/semaphore-token-bucket-release/cmd/demo
-cd ~/go-exercises/semaphore-token-bucket-release
-go mod init example.com/semaphore
+mkdir -p go-solutions/03-control-flow/08-panic-and-recover/32-semaphore-token-bucket-release/cmd/demo
+cd go-solutions/03-control-flow/08-panic-and-recover/32-semaphore-token-bucket-release
 go mod edit -go=1.24
 ```
 

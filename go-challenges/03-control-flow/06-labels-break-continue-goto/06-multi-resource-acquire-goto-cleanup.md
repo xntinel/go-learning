@@ -29,9 +29,8 @@ acquire/                   independent module: example.com/acquire
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/acquire/cmd/demo
-cd ~/go-exercises/acquire
-go mod init example.com/acquire
+mkdir -p go-solutions/03-control-flow/06-labels-break-continue-goto/06-multi-resource-acquire-goto-cleanup/cmd/demo
+cd go-solutions/03-control-flow/06-labels-break-continue-goto/06-multi-resource-acquire-goto-cleanup
 go mod edit -go=1.24
 ```
 

@@ -29,9 +29,8 @@ configload/                  independent module: example.com/config-load-errors-
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/configload/cmd/demo
-cd ~/go-exercises/configload
-go mod init example.com/config-load-errors-join
+mkdir -p go-solutions/07-structs-and-methods/06-constructor-functions-and-validation/01-config-load-errors-join/cmd/demo
+cd go-solutions/07-structs-and-methods/06-constructor-functions-and-validation/01-config-load-errors-join
 ```
 
 ### Why aggregate instead of fail-fast

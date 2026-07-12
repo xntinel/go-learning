@@ -27,9 +27,8 @@ Test: a 50ms budget with backoff that would exceed it returns early with attempt
 Verify: `go test -count=1 -race ./...`
 
 ```bash
-mkdir -p ~/go-exercises/deadline/cmd/demo
-cd ~/go-exercises/deadline
-go mod init example.com/deadline
+mkdir -p go-solutions/10-error-handling/12-retry-patterns-with-backoff/04-deadline-budget-retry/cmd/demo
+cd go-solutions/10-error-handling/12-retry-patterns-with-backoff/04-deadline-budget-retry
 go mod edit -go=1.26
 ```
 

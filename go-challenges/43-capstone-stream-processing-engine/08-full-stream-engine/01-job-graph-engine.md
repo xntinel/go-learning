@@ -31,8 +31,7 @@ engine_test.go builder validation, compile/shuffle, manager lifecycle,
 Set up the module:
 
 ```bash
-mkdir -p streamengine/cmd/demo && cd streamengine
-go mod init example.com/streamengine
+mkdir -p go-solutions/43-capstone-stream-processing-engine/08-full-stream-engine/01-job-graph-engine/cmd/demo && cd go-solutions/43-capstone-stream-processing-engine/08-full-stream-engine/01-job-graph-engine
 go mod edit -go=1.26
 ```
 

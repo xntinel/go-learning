@@ -30,9 +30,8 @@ authz/                        module example.com/authz
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/authz/cmd/demo
-cd ~/go-exercises/authz
-go mod init example.com/authz
+mkdir -p go-solutions/04-functions/05-anonymous-functions/31-permission-closure-factory/cmd/demo
+cd go-solutions/04-functions/05-anonymous-functions/31-permission-closure-factory
 go mod edit -go=1.24
 ```
 

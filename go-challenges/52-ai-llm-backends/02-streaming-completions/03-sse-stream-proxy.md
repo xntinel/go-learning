@@ -32,9 +32,8 @@ sseproxy/                   independent module: example.com/sseproxy
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/sseproxy/cmd/demo
-cd ~/go-exercises/sseproxy
-go mod init example.com/sseproxy
+mkdir -p go-solutions/52-ai-llm-backends/02-streaming-completions/03-sse-stream-proxy/cmd/demo
+cd go-solutions/52-ai-llm-backends/02-streaming-completions/03-sse-stream-proxy
 go mod edit -go=1.26
 ```
 

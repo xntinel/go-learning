@@ -28,9 +28,8 @@ metrics/                    independent module: example.com/metrics
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/metrics/cmd/demo
-cd ~/go-exercises/metrics
-go mod init example.com/metrics
+mkdir -p go-solutions/09-pointers/02-pointers-and-function-parameters/07-nil-receiver-optional-dependency/cmd/demo
+cd go-solutions/09-pointers/02-pointers-and-function-parameters/07-nil-receiver-optional-dependency
 ```
 
 ### Why a nil receiver is callable

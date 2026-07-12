@@ -32,9 +32,8 @@ webhookvalidate/              independent module: example.com/webhook-validator-
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/webhookvalidate/cmd/demo
-cd ~/go-exercises/webhookvalidate
-go mod init example.com/webhook-validator-collect-errors
+mkdir -p go-solutions/04-functions/01-function-declaration-and-multiple-return-values/23-webhook-validator-collect-errors/cmd/demo
+cd go-solutions/04-functions/01-function-declaration-and-multiple-return-values/23-webhook-validator-collect-errors
 go mod edit -go=1.24
 ```
 

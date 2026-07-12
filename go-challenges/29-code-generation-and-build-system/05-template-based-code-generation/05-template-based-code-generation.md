@@ -62,9 +62,8 @@ Inside `{{ range $s := .Structs }}`, `$s` holds the current `StructInfo`. If an 
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/structgen/cmd/structgen
-cd ~/go-exercises/structgen
-go mod init example.com/structgen
+mkdir -p go-solutions/29-code-generation-and-build-system/05-template-based-code-generation/05-template-based-code-generation/cmd/structgen
+cd go-solutions/29-code-generation-and-build-system/05-template-based-code-generation/05-template-based-code-generation
 ```
 
 ### Exercise 1: Implement the library

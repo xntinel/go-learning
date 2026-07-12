@@ -65,9 +65,8 @@ for _, tt := range tests {
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/registry/cmd/demo
-cd ~/go-exercises/registry
-go mod init example.com/registry
+mkdir -p go-solutions/32-concurrency-debugging-and-testing/07-concurrent-test-isolation/07-concurrent-test-isolation/cmd/demo
+cd go-solutions/32-concurrency-debugging-and-testing/07-concurrent-test-isolation/07-concurrent-test-isolation
 ```
 
 ### Exercise 1: A Registry Service With State

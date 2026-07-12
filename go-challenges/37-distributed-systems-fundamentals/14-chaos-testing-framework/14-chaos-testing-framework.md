@@ -51,9 +51,8 @@ A full linearizability check (the Porcupine/Wing-Gong algorithm) is NP-complete 
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/chaos/cmd/demo
-cd ~/go-exercises/chaos
-go mod init example.com/chaos
+mkdir -p go-solutions/37-distributed-systems-fundamentals/14-chaos-testing-framework/14-chaos-testing-framework/cmd/demo
+cd go-solutions/37-distributed-systems-fundamentals/14-chaos-testing-framework/14-chaos-testing-framework
 ```
 
 ### Exercise 1: Event Log and Fault Configuration

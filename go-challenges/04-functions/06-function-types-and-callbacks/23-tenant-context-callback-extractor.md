@@ -30,9 +30,8 @@ Verify: `go test -count=1 ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/tenant-context-callback-extractor/cmd/demo
-cd ~/go-exercises/tenant-context-callback-extractor
-go mod init example.com/tenant-context-callback-extractor
+mkdir -p go-solutions/04-functions/06-function-types-and-callbacks/23-tenant-context-callback-extractor/cmd/demo
+cd go-solutions/04-functions/06-function-types-and-callbacks/23-tenant-context-callback-extractor
 go mod edit -go=1.24
 ```
 

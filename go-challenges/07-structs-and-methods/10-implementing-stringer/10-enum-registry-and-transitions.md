@@ -28,9 +28,8 @@ statemachine/               independent module: example.com/statemachine
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/statemachine/cmd/demo
-cd ~/go-exercises/statemachine
-go mod init example.com/statemachine
+mkdir -p go-solutions/07-structs-and-methods/10-implementing-stringer/10-enum-registry-and-transitions/cmd/demo
+cd go-solutions/07-structs-and-methods/10-implementing-stringer/10-enum-registry-and-transitions
 ```
 
 ### Tying Stringer to domain-error UX

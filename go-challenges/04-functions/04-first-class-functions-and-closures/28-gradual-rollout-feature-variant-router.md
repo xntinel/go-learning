@@ -31,9 +31,8 @@ feature-rollout/             independent module: example.com/feature-rollout
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/feature-rollout/cmd/demo
-cd ~/go-exercises/feature-rollout
-go mod init example.com/feature-rollout
+mkdir -p go-solutions/04-functions/04-first-class-functions-and-closures/28-gradual-rollout-feature-variant-router/cmd/demo
+cd go-solutions/04-functions/04-first-class-functions-and-closures/28-gradual-rollout-feature-variant-router
 go mod edit -go=1.24
 ```
 

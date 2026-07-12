@@ -56,9 +56,8 @@ must be rejected; a valid multi-byte string like `café` must pass.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ingest/internal/ingest ~/go-exercises/ingest/cmd/demo
-cd ~/go-exercises/ingest
-go mod init example.com/ingest
+mkdir -p go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/03-utf8-sanitize-ingest-boundary/internal/ingest go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/03-utf8-sanitize-ingest-boundary/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/03-utf8-sanitize-ingest-boundary
 ```
 
 Create `internal/ingest/ingest.go`:

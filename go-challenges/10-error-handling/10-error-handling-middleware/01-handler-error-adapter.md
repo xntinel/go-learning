@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/erradapter/cmd/demo
-cd ~/go-exercises/erradapter
-go mod init example.com/erradapter
+mkdir -p go-solutions/10-error-handling/10-error-handling-middleware/01-handler-error-adapter/cmd/demo
+cd go-solutions/10-error-handling/10-error-handling-middleware/01-handler-error-adapter
 ```
 
 ### Why an adapter at all

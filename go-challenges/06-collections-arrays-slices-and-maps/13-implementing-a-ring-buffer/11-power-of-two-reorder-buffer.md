@@ -49,9 +49,8 @@ seqbuffer/                module example.com/seqbuffer
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/seqbuffer
-cd ~/go-exercises/seqbuffer
-go mod init example.com/seqbuffer
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/13-implementing-a-ring-buffer/11-power-of-two-reorder-buffer
+cd go-solutions/06-collections-arrays-slices-and-maps/13-implementing-a-ring-buffer/11-power-of-two-reorder-buffer
 go mod edit -go=1.24
 ```
 

@@ -84,9 +84,8 @@ This eliminates a comparison callback while keeping the implementation generic o
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/skiplist/cmd/demo
-cd ~/go-exercises/skiplist
-go mod init example.com/skiplist
+mkdir -p go-solutions/46-capstone-concurrency-deep-dive/02-concurrent-skip-list/02-concurrent-skip-list/cmd/demo
+cd go-solutions/46-capstone-concurrency-deep-dive/02-concurrent-skip-list/02-concurrent-skip-list
 ```
 
 This is a library. Verification uses `go test`, not `go run`.

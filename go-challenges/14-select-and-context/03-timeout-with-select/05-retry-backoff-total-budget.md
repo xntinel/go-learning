@@ -25,9 +25,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/retrybudget/cmd/demo
-cd ~/go-exercises/retrybudget
-go mod init example.com/retry
+mkdir -p go-solutions/14-select-and-context/03-timeout-with-select/05-retry-backoff-total-budget/cmd/demo
+cd go-solutions/14-select-and-context/03-timeout-with-select/05-retry-backoff-total-budget
 ```
 
 ### Two timers, two questions

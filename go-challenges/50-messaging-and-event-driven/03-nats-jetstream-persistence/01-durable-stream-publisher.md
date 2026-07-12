@@ -34,9 +34,8 @@ jspublisher/                 independent module: example.com/jspublisher
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/jspublisher/cmd/demo
-cd ~/go-exercises/jspublisher
-go mod init example.com/jspublisher
+mkdir -p go-solutions/50-messaging-and-event-driven/03-nats-jetstream-persistence/01-durable-stream-publisher/cmd/demo
+cd go-solutions/50-messaging-and-event-driven/03-nats-jetstream-persistence/01-durable-stream-publisher
 go mod edit -go=1.26
 ```
 

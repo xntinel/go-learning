@@ -29,9 +29,8 @@ scheduler/                   module example.com/scheduler
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/scheduler/cmd/demo
-cd ~/go-exercises/scheduler
-go mod init example.com/scheduler
+mkdir -p go-solutions/03-control-flow/02-for-loops/06-labeled-break-slot-search/cmd/demo
+cd go-solutions/03-control-flow/02-for-loops/06-labeled-break-slot-search
 ```
 
 ### Where a label pays for itself, and where it does not

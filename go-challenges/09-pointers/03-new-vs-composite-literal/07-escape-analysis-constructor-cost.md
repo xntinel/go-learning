@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/metricalloc/cmd/demo
-cd ~/go-exercises/metricalloc
-go mod init example.com/metricalloc
+mkdir -p go-solutions/09-pointers/03-new-vs-composite-literal/07-escape-analysis-constructor-cost/cmd/demo
+cd go-solutions/09-pointers/03-new-vs-composite-literal/07-escape-analysis-constructor-cost
 ```
 
 ### Why the pointer escapes

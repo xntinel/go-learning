@@ -47,9 +47,8 @@ fields/                   module example.com/fields
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/fields
-cd ~/go-exercises/fields
-go mod init example.com/fields
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/02-slices-creation-append-capacity/14-zero-alloc-scratch-field-splitter
+cd go-solutions/06-collections-arrays-slices-and-maps/02-slices-creation-append-capacity/14-zero-alloc-scratch-field-splitter
 go mod edit -go=1.24
 ```
 

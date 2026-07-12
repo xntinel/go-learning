@@ -85,9 +85,8 @@ No real network port is opened. The test is hermetic, deterministic, and does no
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/grpcstreaming/proto
-cd ~/go-exercises/grpcstreaming
-go mod init example.com/grpcstreaming
+mkdir -p go-solutions/33-tcp-udp-and-networking/13-grpc-streaming/13-grpc-streaming/proto
+cd go-solutions/33-tcp-udp-and-networking/13-grpc-streaming/13-grpc-streaming
 ```
 
 Install the code-generation plugins (once per machine):

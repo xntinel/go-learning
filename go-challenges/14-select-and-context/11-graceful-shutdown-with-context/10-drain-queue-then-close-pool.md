@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/jobdrain/cmd/demo
-cd ~/go-exercises/jobdrain
-go mod init example.com/jobdrain
+mkdir -p go-solutions/14-select-and-context/11-graceful-shutdown-with-context/10-drain-queue-then-close-pool/cmd/demo
+cd go-solutions/14-select-and-context/11-graceful-shutdown-with-context/10-drain-queue-then-close-pool
 ```
 
 ## Why the pool closes last, and how the drain stays bounded

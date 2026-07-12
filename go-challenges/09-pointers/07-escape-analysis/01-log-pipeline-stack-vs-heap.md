@@ -34,9 +34,8 @@ Verify: `go test -count=1 -race ./...`, then observe the escape decisions with
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/logpipeline/cmd/demo
-cd ~/go-exercises/logpipeline
-go mod init example.com/logpipeline
+mkdir -p go-solutions/09-pointers/07-escape-analysis/01-log-pipeline-stack-vs-heap/cmd/demo
+cd go-solutions/09-pointers/07-escape-analysis/01-log-pipeline-stack-vs-heap
 ```
 
 ### The two constructors, and why they differ

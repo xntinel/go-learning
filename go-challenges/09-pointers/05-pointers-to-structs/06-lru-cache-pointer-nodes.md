@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/lrucache/cmd/demo
-cd ~/go-exercises/lrucache
-go mod init example.com/lrucache
+mkdir -p go-solutions/09-pointers/05-pointers-to-structs/06-lru-cache-pointer-nodes/cmd/demo
+cd go-solutions/09-pointers/05-pointers-to-structs/06-lru-cache-pointer-nodes
 ```
 
 ### Sentinels, wiring, and why you must null the links on eviction

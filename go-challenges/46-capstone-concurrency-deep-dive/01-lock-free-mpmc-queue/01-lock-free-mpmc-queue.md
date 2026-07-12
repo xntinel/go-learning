@@ -83,9 +83,8 @@ The queue is *linearizable*: each Enqueue and Dequeue appears to take effect ato
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/mpmc/cmd/demo
-cd ~/go-exercises/mpmc
-go mod init example.com/mpmc
+mkdir -p go-solutions/46-capstone-concurrency-deep-dive/01-lock-free-mpmc-queue/01-lock-free-mpmc-queue/cmd/demo
+cd go-solutions/46-capstone-concurrency-deep-dive/01-lock-free-mpmc-queue/01-lock-free-mpmc-queue
 ```
 
 This is a library. You verify it with `go test`, not by running a `main`.

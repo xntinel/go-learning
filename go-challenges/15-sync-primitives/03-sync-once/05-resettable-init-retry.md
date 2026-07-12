@@ -29,9 +29,8 @@ resettable-init-retry/        module: example.com/resettable-init-retry
 Set up the module:
 
 ```bash
-mkdir -p resettable-init-retry/cmd/demo
-cd resettable-init-retry
-go mod init example.com/resettable-init-retry
+mkdir -p go-solutions/15-sync-primitives/03-sync-once/05-resettable-init-retry/cmd/demo
+cd go-solutions/15-sync-primitives/03-sync-once/05-resettable-init-retry
 ```
 
 ### Retry requires a new Once instance, guarded

@@ -29,9 +29,8 @@ money/                      independent module: example.com/money
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/money/cmd/demo
-cd ~/go-exercises/money
-go mod init example.com/money
+mkdir -p go-solutions/07-structs-and-methods/12-designing-a-domain-model/04-money-currency-safe-arithmetic/cmd/demo
+cd go-solutions/07-structs-and-methods/12-designing-a-domain-model/04-money-currency-safe-arithmetic
 ```
 
 ### Integer minor units and a currency tag

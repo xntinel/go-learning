@@ -29,9 +29,8 @@ batcher/                    independent module: example.com/batcher
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/batcher/cmd/demo
-cd ~/go-exercises/batcher
-go mod init example.com/batcher
+mkdir -p go-solutions/14-select-and-context/02-select-with-default/07-ticker-batch-flusher/cmd/demo
+cd go-solutions/14-select-and-context/02-select-with-default/07-ticker-batch-flusher
 go mod edit -go=1.26
 ```
 

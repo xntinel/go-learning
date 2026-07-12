@@ -30,9 +30,8 @@ envconfig/                   independent module: example.com/env-config-loader-d
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/envconfig/cmd/demo
-cd ~/go-exercises/envconfig
-go mod init example.com/env-config-loader-defaults
+mkdir -p go-solutions/07-structs-and-methods/06-constructor-functions-and-validation/02-env-config-loader-defaults/cmd/demo
+cd go-solutions/07-structs-and-methods/06-constructor-functions-and-validation/02-env-config-loader-defaults
 ```
 
 ### Inject the lookup; distinguish unset from zero

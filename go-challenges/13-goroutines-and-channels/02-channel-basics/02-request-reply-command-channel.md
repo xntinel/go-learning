@@ -28,9 +28,8 @@ idgen/                       independent module: example.com/idgen
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/idgen/cmd/demo
-cd ~/go-exercises/idgen
-go mod init example.com/idgen
+mkdir -p go-solutions/13-goroutines-and-channels/02-channel-basics/02-request-reply-command-channel/cmd/demo
+cd go-solutions/13-goroutines-and-channels/02-channel-basics/02-request-reply-command-channel
 ```
 
 ### The command struct carries its own reply channel

@@ -30,9 +30,8 @@ appconfig/                       independent module: example.com/appconfig
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/appconfig/cmd/demo
-cd ~/go-exercises/appconfig
-go mod init example.com/appconfig
+mkdir -p go-solutions/04-functions/12-functional-options-pattern/08-config-precedence-options/cmd/demo
+cd go-solutions/04-functions/12-functional-options-pattern/08-config-precedence-options
 ```
 
 ### Ordering is the whole design

@@ -27,9 +27,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/mergejoin/cmd/demo
-cd ~/go-exercises/mergejoin
-go mod init example.com/mergejoin
+mkdir -p go-solutions/03-control-flow/09-range-over-integers-and-functions/04-pull-merge-sorted-streams/cmd/demo
+cd go-solutions/03-control-flow/09-range-over-integers-and-functions/04-pull-merge-sorted-streams
 ```
 
 ## The design

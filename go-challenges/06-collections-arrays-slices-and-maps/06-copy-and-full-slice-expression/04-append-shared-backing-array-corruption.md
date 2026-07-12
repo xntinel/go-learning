@@ -28,9 +28,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/reqlabels/cmd/demo
-cd ~/go-exercises/reqlabels
-go mod init example.com/reqlabels
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/06-copy-and-full-slice-expression/04-append-shared-backing-array-corruption/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/06-copy-and-full-slice-expression/04-append-shared-backing-array-corruption
 ```
 
 ### Why the base slice's spare capacity is the trap

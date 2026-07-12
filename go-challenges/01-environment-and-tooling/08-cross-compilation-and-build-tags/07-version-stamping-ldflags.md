@@ -28,9 +28,8 @@ app/                           module example.com/app
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/app/cmd/app ~/go-exercises/app/internal/buildmeta
-cd ~/go-exercises/app
-go mod init example.com/app
+mkdir -p go-solutions/01-environment-and-tooling/08-cross-compilation-and-build-tags/07-version-stamping-ldflags/cmd/app go-solutions/01-environment-and-tooling/08-cross-compilation-and-build-tags/07-version-stamping-ldflags/internal/buildmeta
+cd go-solutions/01-environment-and-tooling/08-cross-compilation-and-build-tags/07-version-stamping-ldflags
 ```
 
 ### Why the variables must be package-level strings

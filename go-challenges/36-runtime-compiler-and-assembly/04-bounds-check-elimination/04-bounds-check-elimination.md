@@ -93,9 +93,8 @@ Generic functions instantiated with a concrete type may or may not get BCE depen
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/bce/cmd/demo
-cd ~/go-exercises/bce
-go mod init example.com/bce
+mkdir -p go-solutions/36-runtime-compiler-and-assembly/04-bounds-check-elimination/04-bounds-check-elimination/cmd/demo
+cd go-solutions/36-runtime-compiler-and-assembly/04-bounds-check-elimination/04-bounds-check-elimination
 ```
 
 ### Exercise 1: Implement the BCE Showcase Functions

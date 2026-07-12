@@ -26,9 +26,8 @@ cleanupstack/              independent module: example.com/cleanupstack
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cleanupstack/cmd/demo
-cd ~/go-exercises/cleanupstack
-go mod init example.com/cleanupstack
+mkdir -p go-solutions/08-interfaces/07-nil-interface-values/06-closer-cleanup-nil-skip/cmd/demo
+cd go-solutions/08-interfaces/07-nil-interface-values/06-closer-cleanup-nil-skip
 ```
 
 ### Why the nil guard and errors.Join matter here

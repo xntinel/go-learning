@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/replicamux/cmd/demo
-cd ~/go-exercises/replicamux
-go mod init example.com/replicamux
+mkdir -p go-solutions/14-select-and-context/01-select-statement-basics/01-multiplex-first-ready/cmd/demo
+cd go-solutions/14-select-and-context/01-select-statement-basics/01-multiplex-first-ready
 ```
 
 ## Why reflect.Select here

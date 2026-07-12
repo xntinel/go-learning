@@ -34,9 +34,8 @@ idemgate/                   independent module: example.com/idempotency-key-gate
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/idempotency-key-gate-windowed/cmd/demo
-cd ~/go-exercises/idempotency-key-gate-windowed
-go mod init example.com/idempotency-key-gate-windowed
+mkdir -p go-solutions/03-control-flow/05-range-over-collections/16-idempotency-key-gate-windowed/cmd/demo
+cd go-solutions/03-control-flow/05-range-over-collections/16-idempotency-key-gate-windowed
 go mod edit -go=1.24
 ```
 

@@ -35,9 +35,8 @@ profile-triage/               independent module: example.com/profile-triage
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/profile-triage/cmd/demo
-cd ~/go-exercises/profile-triage
-go mod init example.com/profile-triage
+mkdir -p go-solutions/15-sync-primitives/14-contention-profiling/08-cpu-vs-mutex-triage/cmd/demo
+cd go-solutions/15-sync-primitives/14-contention-profiling/08-cpu-vs-mutex-triage
 ```
 
 ### Wait-bound versus CPU-bound: the diagnosis that decides the fix

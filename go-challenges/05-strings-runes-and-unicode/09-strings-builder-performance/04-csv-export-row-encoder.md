@@ -27,9 +27,8 @@ Test: golden round-trip through `csv.Reader` for fields with commas/quotes/newli
 Verify: `go test -count=1 -race ./...`
 
 ```bash
-mkdir -p ~/go-exercises/csvexport/cmd/demo
-cd ~/go-exercises/csvexport
-go mod init example.com/csvexport
+mkdir -p go-solutions/05-strings-runes-and-unicode/09-strings-builder-performance/04-csv-export-row-encoder/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/09-strings-builder-performance/04-csv-export-row-encoder
 ```
 
 ### Why the manual join is wrong

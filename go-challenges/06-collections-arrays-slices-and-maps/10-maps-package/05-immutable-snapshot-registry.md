@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/flagreg/cmd/demo
-cd ~/go-exercises/flagreg
-go mod init example.com/flagreg
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/05-immutable-snapshot-registry/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/05-immutable-snapshot-registry
 ```
 
 ## Why you hand out a clone, not the live map

@@ -28,9 +28,8 @@ flagflip/                    independent module: example.com/flagflip
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/flagflip/flagflip ~/go-exercises/flagflip/cmd/demo
-cd ~/go-exercises/flagflip
-go mod init example.com/flagflip
+mkdir -p go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/17-flag-flip-panic-restore/flagflip go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/17-flag-flip-panic-restore/cmd/demo
+cd go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/17-flag-flip-panic-restore
 go mod edit -go=1.24
 ```
 

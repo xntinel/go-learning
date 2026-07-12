@@ -30,9 +30,8 @@ shardcount/                  independent module: example.com/shardcount
 - Verify: `go test -count=1 -race ./...` then `go test -bench . -benchmem -cpu 8 ./...`
 
 ```bash
-mkdir -p ~/go-exercises/shardcount/cmd/demo
-cd ~/go-exercises/shardcount
-go mod init example.com/shardcount
+mkdir -p go-solutions/15-sync-primitives/01-sync-mutex/10-sharded-counter-store/cmd/demo
+cd go-solutions/15-sync-primitives/01-sync-mutex/10-sharded-counter-store
 ```
 
 ### What sharding buys, what it costs, and how to decide

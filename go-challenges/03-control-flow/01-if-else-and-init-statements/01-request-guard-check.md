@@ -29,9 +29,8 @@ requestguard/               independent module: example.com/requestguard
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/requestguard/cmd/demo
-cd ~/go-exercises/requestguard
-go mod init example.com/requestguard
+mkdir -p go-solutions/03-control-flow/01-if-else-and-init-statements/01-request-guard-check/cmd/demo
+cd go-solutions/03-control-flow/01-if-else-and-init-statements/01-request-guard-check
 ```
 
 ## The decision tree, in order

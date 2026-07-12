@@ -23,8 +23,7 @@ generator-source/
 Set up the module:
 
 ```bash
-mkdir -p generator-source/cmd/demo && cd generator-source
-go mod init example.com/generator-source
+mkdir -p go-solutions/43-capstone-stream-processing-engine/01-source-connectors/05-generator-source/cmd/demo && cd go-solutions/43-capstone-stream-processing-engine/01-source-connectors/05-generator-source
 ```
 
 ### The shared vocabulary

@@ -25,9 +25,8 @@ Treat confirmation as data. A declined confirmation is not a crash; it is a cont
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/interactive-prompts
-cd ~/go-exercises/interactive-prompts
-go mod init example.com/interactiveprompts
+mkdir -p go-solutions/23-cli-applications/05-interactive-prompts/05-interactive-prompts
+cd go-solutions/23-cli-applications/05-interactive-prompts/05-interactive-prompts
 go mod edit -go=1.26
 ```
 

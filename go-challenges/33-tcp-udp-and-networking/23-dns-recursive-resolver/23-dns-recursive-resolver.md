@@ -97,9 +97,8 @@ recursion. Two guards are needed:
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/dnsr/cmd/demo
-cd ~/go-exercises/dnsr
-go mod init example.com/dnsr
+mkdir -p go-solutions/33-tcp-udp-and-networking/23-dns-recursive-resolver/23-dns-recursive-resolver/cmd/demo
+cd go-solutions/33-tcp-udp-and-networking/23-dns-recursive-resolver/23-dns-recursive-resolver
 ```
 
 ### Exercise 1: DNS Message Types, Name Encoding, and Message Decode

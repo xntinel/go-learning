@@ -25,9 +25,8 @@ singleflight/                independent module: example.com/singleflight
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/singleflight/cmd/demo
-cd ~/go-exercises/singleflight
-go mod init example.com/singleflight
+mkdir -p go-solutions/13-goroutines-and-channels/07-done-channel-pattern/14-singleflight-cache-stampede-done-broadcast/cmd/demo
+cd go-solutions/13-goroutines-and-channels/07-done-channel-pattern/14-singleflight-cache-stampede-done-broadcast
 go get go.uber.org/goleak@v1.3.0
 ```
 

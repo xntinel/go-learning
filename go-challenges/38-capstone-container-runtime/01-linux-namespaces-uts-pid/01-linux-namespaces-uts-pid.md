@@ -90,10 +90,9 @@ syscall.Mount("proc", "/proc", "proc", 0, "")
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/namespace-demo/namespace
-mkdir -p ~/go-exercises/namespace-demo/cmd/namespace-demo
-cd ~/go-exercises/namespace-demo
-go mod init example.com/namespace-demo
+mkdir -p go-solutions/38-capstone-container-runtime/01-linux-namespaces-uts-pid/01-linux-namespaces-uts-pid/namespace
+mkdir -p go-solutions/38-capstone-container-runtime/01-linux-namespaces-uts-pid/01-linux-namespaces-uts-pid/cmd/namespace-demo
+cd go-solutions/38-capstone-container-runtime/01-linux-namespaces-uts-pid/01-linux-namespaces-uts-pid
 ```
 
 All files use `//go:build linux`. The unit tests (validation-error paths) run on any Linux host without root. The integration smoke test requires root.

@@ -28,9 +28,8 @@ tlsclient/                      independent module: example.com/tls-server-clien
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/tlsclient/cmd/demo
-cd ~/go-exercises/tlsclient
-go mod init example.com/tls-server-client
+mkdir -p go-solutions/12-testing-ecosystem/09-httptest/06-tls-server-client/cmd/demo
+cd go-solutions/12-testing-ecosystem/09-httptest/06-tls-server-client
 ```
 
 ### Self-signed by design: trust is the thing under test

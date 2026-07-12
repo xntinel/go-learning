@@ -30,9 +30,8 @@ Verify: `go test -count=1 ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/breaker/cmd/demo
-cd ~/go-exercises/breaker
-go mod init example.com/breaker
+mkdir -p go-solutions/04-functions/08-init-functions-and-package-initialization/30-circuit-breaker-thresholds-from-config/cmd/demo
+cd go-solutions/04-functions/08-init-functions-and-package-initialization/30-circuit-breaker-thresholds-from-config
 go mod edit -go=1.24
 ```
 

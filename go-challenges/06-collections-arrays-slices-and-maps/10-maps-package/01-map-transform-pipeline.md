@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/mappipe/cmd/demo
-cd ~/go-exercises/mappipe
-go mod init example.com/mappipe
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/01-map-transform-pipeline/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/01-map-transform-pipeline
 ```
 
 ## Why the pipeline is shaped this way

@@ -94,9 +94,8 @@ GOSSAFUNC=sumSlice+ go build -o /dev/null .
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ssareader/cmd/demo
-cd ~/go-exercises/ssareader
-go mod init example.com/ssareader
+mkdir -p go-solutions/36-runtime-compiler-and-assembly/01-reading-ssa-output/01-reading-ssa-output/cmd/demo
+cd go-solutions/36-runtime-compiler-and-assembly/01-reading-ssa-output/01-reading-ssa-output
 ```
 
 ### Exercise 1: The Package Under Analysis

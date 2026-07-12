@@ -29,9 +29,8 @@ userlookup/                 independent module: example.com/userlookup
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/userlookup/store ~/go-exercises/userlookup/cmd/demo
-cd ~/go-exercises/userlookup
-go mod init example.com/userlookup
+mkdir -p go-solutions/08-interfaces/12-interface-pollution-anti-patterns/04-consumer-defined-narrow-interface/store go-solutions/08-interfaces/12-interface-pollution-anti-patterns/04-consumer-defined-narrow-interface/cmd/demo
+cd go-solutions/08-interfaces/12-interface-pollution-anti-patterns/04-consumer-defined-narrow-interface
 ```
 
 ### Why the interface lives in the consumer

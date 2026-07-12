@@ -29,9 +29,8 @@ hermetictests/                independent module: example.com/hermetictests
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/hermetictests/cmd/demo
-cd ~/go-exercises/hermetictests
-go mod init example.com/hermetictests
+mkdir -p go-solutions/01-environment-and-tooling/06-linting-with-golangci-lint/02-hermetic-table-tests-for-io/cmd/demo
+cd go-solutions/01-environment-and-tooling/06-linting-with-golangci-lint/02-hermetic-table-tests-for-io
 ```
 
 ### Why t.TempDir, and why per-case

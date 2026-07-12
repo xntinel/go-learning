@@ -29,9 +29,8 @@ router/                     independent module: example.com/router
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/router/cmd/demo
-cd ~/go-exercises/router
-go mod init example.com/router
+mkdir -p go-solutions/05-strings-runes-and-unicode/07-regular-expressions/05-regex-path-router/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/07-regular-expressions/05-regex-path-router
 ```
 
 ### Compiling a template safely: anchors and QuoteMeta

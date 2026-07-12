@@ -30,9 +30,8 @@ zerocopy/                   independent module: example.com/zerocopy
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/zerocopy/cmd/demo
-cd ~/go-exercises/zerocopy
-go mod init example.com/zerocopy
+mkdir -p go-solutions/05-strings-runes-and-unicode/02-byte-slices-vs-strings/02-zero-copy-conversion-guard/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/02-byte-slices-vs-strings/02-zero-copy-conversion-guard
 go mod edit -go=1.25
 ```
 

@@ -37,9 +37,8 @@ multipart/                  independent module: example.com/s3-multipart-upload-
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/s3-multipart-upload-bufferer/cmd/demo
-cd ~/go-exercises/s3-multipart-upload-bufferer
-go mod init example.com/s3-multipart-upload-bufferer
+mkdir -p go-solutions/03-control-flow/05-range-over-collections/25-s3-multipart-upload-bufferer/cmd/demo
+cd go-solutions/03-control-flow/05-range-over-collections/25-s3-multipart-upload-bufferer
 go mod edit -go=1.24
 ```
 

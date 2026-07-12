@@ -29,9 +29,8 @@ drain/                     independent module: example.com/drain
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/drain/cmd/demo
-cd ~/go-exercises/drain
-go mod init example.com/drain
+mkdir -p go-solutions/03-control-flow/06-labels-break-continue-goto/04-worker-fanin-graceful-drain/cmd/demo
+cd go-solutions/03-control-flow/06-labels-break-continue-goto/04-worker-fanin-graceful-drain
 go mod edit -go=1.24
 ```
 

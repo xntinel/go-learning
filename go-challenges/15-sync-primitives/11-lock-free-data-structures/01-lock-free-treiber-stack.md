@@ -27,9 +27,8 @@ freelist/                        independent module: example.com/freelist
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/freelist/stack ~/go-exercises/freelist/cmd/demo
-cd ~/go-exercises/freelist
-go mod init example.com/freelist
+mkdir -p go-solutions/15-sync-primitives/11-lock-free-data-structures/01-lock-free-treiber-stack/stack go-solutions/15-sync-primitives/11-lock-free-data-structures/01-lock-free-treiber-stack/cmd/demo
+cd go-solutions/15-sync-primitives/11-lock-free-data-structures/01-lock-free-treiber-stack
 ```
 
 ### Why a server keeps a free-list

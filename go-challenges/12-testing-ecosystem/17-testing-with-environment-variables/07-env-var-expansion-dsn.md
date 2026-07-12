@@ -26,9 +26,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/dsnbuild/cmd/demo
-cd ~/go-exercises/dsnbuild
-go mod init example.com/dsnbuild
+mkdir -p go-solutions/12-testing-ecosystem/17-testing-with-environment-variables/07-env-var-expansion-dsn/cmd/demo
+cd go-solutions/12-testing-ecosystem/17-testing-with-environment-variables/07-env-var-expansion-dsn
 ```
 
 ## `os.Expand` with a mapping that fails loudly

@@ -31,9 +31,8 @@ flagmw/                    independent module: example.com/flagmw
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/flagmw/cmd/demo
-cd ~/go-exercises/flagmw
-go mod init example.com/flagmw
+mkdir -p go-solutions/15-sync-primitives/08-atomic-value-config-hot-reload/08-feature-flag-http-middleware/cmd/demo
+cd go-solutions/15-sync-primitives/08-atomic-value-config-hot-reload/08-feature-flag-http-middleware
 ```
 
 ### Deterministic bucketing: why a hash and not a coin flip

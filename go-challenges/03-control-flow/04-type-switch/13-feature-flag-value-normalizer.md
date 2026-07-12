@@ -26,9 +26,8 @@ flagvalue/                  independent module: example.com/flagvalue
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/flagvalue
-cd ~/go-exercises/flagvalue
-go mod init example.com/flagvalue
+mkdir -p go-solutions/03-control-flow/04-type-switch/13-feature-flag-value-normalizer
+cd go-solutions/03-control-flow/04-type-switch/13-feature-flag-value-normalizer
 go mod edit -go=1.24
 ```
 

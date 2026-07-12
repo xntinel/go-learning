@@ -30,9 +30,8 @@ lifecycle/                 independent module: example.com/lifecycle
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/lifecycle/cmd/demo
-cd ~/go-exercises/lifecycle
-go mod init example.com/lifecycle
+mkdir -p go-solutions/13-goroutines-and-channels/11-goroutine-lifecycle-management/01-start-stop-worker/cmd/demo
+cd go-solutions/13-goroutines-and-channels/11-goroutine-lifecycle-management/01-start-stop-worker
 ```
 
 ### Why the shape is what it is

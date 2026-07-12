@@ -78,9 +78,8 @@ will happen — that is the honest report that you were too late to cancel it.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ctxbridge/cmd/demo
-cd ~/go-exercises/ctxbridge
-go mod init example.com/ctxbridge
+mkdir -p go-solutions/13-goroutines-and-channels/10-signaling-with-closed-channels/05-context-to-done-bridge/cmd/demo
+cd go-solutions/13-goroutines-and-channels/10-signaling-with-closed-channels/05-context-to-done-bridge
 ```
 
 Create `processor.go`:

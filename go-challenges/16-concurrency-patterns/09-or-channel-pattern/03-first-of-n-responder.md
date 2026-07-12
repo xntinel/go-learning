@@ -22,8 +22,7 @@ firstof_test.go      first-healthy beats fast-failure, all-fail aggregates, lose
 Set up the module:
 
 ```bash
-mkdir -p first-of-n/cmd/demo && cd first-of-n
-go mod init example.com/first-of-n
+mkdir -p go-solutions/16-concurrency-patterns/09-or-channel-pattern/03-first-of-n-responder/cmd/demo && cd go-solutions/16-concurrency-patterns/09-or-channel-pattern/03-first-of-n-responder
 ```
 
 ### Why "first healthy" and why cancellation is load-bearing

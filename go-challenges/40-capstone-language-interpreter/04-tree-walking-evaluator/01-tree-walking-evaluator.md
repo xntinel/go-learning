@@ -25,8 +25,7 @@ cmd/
 Set up the module:
 
 ```bash
-mkdir -p evaluator/cmd/demo && cd evaluator
-go mod init example.com/evaluator
+mkdir -p go-solutions/40-capstone-language-interpreter/04-tree-walking-evaluator/01-tree-walking-evaluator/cmd/demo && cd go-solutions/40-capstone-language-interpreter/04-tree-walking-evaluator/01-tree-walking-evaluator
 ```
 
 ### How Eval dispatches and why errors are values

@@ -23,8 +23,7 @@ handshake_test.go    a full handshake round-trip, bad-version rejection, passwor
 Set up the module:
 
 ```bash
-mkdir -p handshake/cmd/demo && cd handshake
-go mod init example.com/handshake
+mkdir -p go-solutions/39-capstone-database-engine/09-network-protocol/07-startup-auth-handshake/cmd/demo && cd go-solutions/39-capstone-database-engine/09-network-protocol/07-startup-auth-handshake
 ```
 
 ### The shape of the handshake

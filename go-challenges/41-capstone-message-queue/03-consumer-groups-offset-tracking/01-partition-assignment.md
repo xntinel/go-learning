@@ -22,8 +22,7 @@ assignment_test.go   even/remainder/single-consumer splits, sticky preservation,
 Set up the module:
 
 ```bash
-mkdir -p partition-assignment/cmd/demo && cd partition-assignment
-go mod init example.com/assignment
+mkdir -p go-solutions/41-capstone-message-queue/03-consumer-groups-offset-tracking/01-partition-assignment/cmd/demo && cd go-solutions/41-capstone-message-queue/03-consumer-groups-offset-tracking/01-partition-assignment
 ```
 
 ### Why an assignor is a pure function, and what "moved" means

@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/graceful-shutdown/cmd/demo
-cd ~/go-exercises/graceful-shutdown
-go mod init example.com/graceful-shutdown
+mkdir -p go-solutions/13-goroutines-and-channels/15-building-a-concurrent-task-scheduler/03-graceful-shutdown-drain-vs-cancel/cmd/demo
+cd go-solutions/13-goroutines-and-channels/15-building-a-concurrent-task-scheduler/03-graceful-shutdown-drain-vs-cancel
 go mod edit -go=1.25
 ```
 

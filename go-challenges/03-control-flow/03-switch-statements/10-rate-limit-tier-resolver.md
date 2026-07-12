@@ -29,9 +29,8 @@ ratelimit/                 independent module: example.com/rate-limit-tier-resol
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ratelimit/cmd/demo
-cd ~/go-exercises/ratelimit
-go mod init example.com/rate-limit-tier-resolver
+mkdir -p go-solutions/03-control-flow/03-switch-statements/10-rate-limit-tier-resolver/cmd/demo
+cd go-solutions/03-control-flow/03-switch-statements/10-rate-limit-tier-resolver
 go mod edit -go=1.24
 ```
 

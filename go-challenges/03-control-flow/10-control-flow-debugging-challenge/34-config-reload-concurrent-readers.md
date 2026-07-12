@@ -37,9 +37,8 @@ configmgr/                    independent module: example.com/config-reload-conc
 - Verify: `go test -count=1 -race ./...`.
 
 ```bash
-mkdir -p ~/go-exercises/config-reload-concurrent-readers/cmd/demo
-cd ~/go-exercises/config-reload-concurrent-readers
-go mod init example.com/config-reload-concurrent-readers
+mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/34-config-reload-concurrent-readers/cmd/demo
+cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/34-config-reload-concurrent-readers
 ```
 
 ### Why swapping the pointer is not enough to make reload safe

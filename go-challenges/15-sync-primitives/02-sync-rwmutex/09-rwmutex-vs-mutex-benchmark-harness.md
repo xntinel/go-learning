@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...` then `go test -bench . -benchmem -cpu 8`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/lockbench/cmd/demo
-cd ~/go-exercises/lockbench
-go mod init example.com/lockbench
+mkdir -p go-solutions/15-sync-primitives/02-sync-rwmutex/09-rwmutex-vs-mutex-benchmark-harness/cmd/demo
+cd go-solutions/15-sync-primitives/02-sync-rwmutex/09-rwmutex-vs-mutex-benchmark-harness
 ```
 
 ### One interface so the benchmark is a fair fight

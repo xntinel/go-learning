@@ -29,9 +29,8 @@ backfill/                  independent module: example.com/backfill
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/backfill/cmd/demo
-cd ~/go-exercises/backfill
-go mod init example.com/backfill
+mkdir -p go-solutions/13-goroutines-and-channels/05-waitgroup/09-reusable-waitgroup-paged-backfill/cmd/demo
+cd go-solutions/13-goroutines-and-channels/05-waitgroup/09-reusable-waitgroup-paged-backfill
 go mod edit -go=1.25
 ```
 

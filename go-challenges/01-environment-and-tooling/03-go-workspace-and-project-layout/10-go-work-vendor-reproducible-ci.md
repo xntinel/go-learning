@@ -29,9 +29,8 @@ vendorci/                      module github.com/example/vendorci
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/vendorci/cmd/demo
-cd ~/go-exercises/vendorci
-go mod init github.com/example/vendorci
+mkdir -p go-solutions/01-environment-and-tooling/03-go-workspace-and-project-layout/10-go-work-vendor-reproducible-ci/cmd/demo
+cd go-solutions/01-environment-and-tooling/03-go-workspace-and-project-layout/10-go-work-vendor-reproducible-ci
 go mod edit -go=1.24
 ```
 

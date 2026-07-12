@@ -22,8 +22,7 @@ tasks_test.go        distinct-closure capture, per-index check, retry success/ex
 Set up the module:
 
 ```bash
-mkdir -p closures-and-retries/cmd/demo && cd closures-and-retries
-go mod init example.com/tasks
+mkdir -p go-solutions/25-iterators-and-modern-go/01-range-over-integers/03-closures-and-retries/cmd/demo && cd go-solutions/25-iterators-and-modern-go/01-range-over-integers/03-closures-and-retries
 ```
 
 ### Why each stage captures its own index, and why Retry drops the counter

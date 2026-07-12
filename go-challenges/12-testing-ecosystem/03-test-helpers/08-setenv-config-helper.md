@@ -30,9 +30,8 @@ envconfig/                   independent module: example.com/envconfig
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/envconfig/cmd/demo
-cd ~/go-exercises/envconfig
-go mod init example.com/envconfig
+mkdir -p go-solutions/12-testing-ecosystem/03-test-helpers/08-setenv-config-helper/cmd/demo
+cd go-solutions/12-testing-ecosystem/03-test-helpers/08-setenv-config-helper
 ```
 
 ### Why the helper is inherently serial

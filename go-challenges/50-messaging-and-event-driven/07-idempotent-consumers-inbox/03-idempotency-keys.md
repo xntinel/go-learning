@@ -28,9 +28,8 @@ idemkey/                   independent module: example.com/idemkey
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/idemkey/cmd/demo
-cd ~/go-exercises/idemkey
-go mod init example.com/idemkey
+mkdir -p go-solutions/50-messaging-and-event-driven/07-idempotent-consumers-inbox/03-idempotency-keys/cmd/demo
+cd go-solutions/50-messaging-and-event-driven/07-idempotent-consumers-inbox/03-idempotency-keys
 go mod edit -go=1.26
 ```
 

@@ -30,9 +30,8 @@ buildinfo/                     independent module: example.com/buildinfo
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/buildinfo/cmd/demo
-cd ~/go-exercises/buildinfo
-go mod init example.com/buildinfo
+mkdir -p go-solutions/02-variables-types-and-constants/01-variable-declaration-and-short-assignment/05-grouped-var-build-metadata/cmd/demo
+cd go-solutions/02-variables-types-and-constants/01-variable-declaration-and-short-assignment/05-grouped-var-build-metadata
 ```
 
 ### Why these must be package-level string `var`s

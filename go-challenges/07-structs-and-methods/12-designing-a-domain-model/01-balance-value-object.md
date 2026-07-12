@@ -29,9 +29,8 @@ balance/                    independent module: example.com/balance
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/balance/cmd/demo
-cd ~/go-exercises/balance
-go mod init example.com/balance
+mkdir -p go-solutions/07-structs-and-methods/12-designing-a-domain-model/01-balance-value-object/cmd/demo
+cd go-solutions/07-structs-and-methods/12-designing-a-domain-model/01-balance-value-object
 ```
 
 ### Why unexported fields and a constructor

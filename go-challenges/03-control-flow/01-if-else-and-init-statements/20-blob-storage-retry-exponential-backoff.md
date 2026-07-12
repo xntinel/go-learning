@@ -29,9 +29,8 @@ blobretry/                  independent module: example.com/blob-storage-retry-e
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/blobretry
-cd ~/go-exercises/blobretry
-go mod init example.com/blob-storage-retry-exponential-backoff
+mkdir -p go-solutions/03-control-flow/01-if-else-and-init-statements/20-blob-storage-retry-exponential-backoff
+cd go-solutions/03-control-flow/01-if-else-and-init-statements/20-blob-storage-retry-exponential-backoff
 go mod edit -go=1.24
 ```
 

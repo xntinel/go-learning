@@ -25,8 +25,7 @@ producer_test.go     flush triggers, future resolution, timeout, concurrent send
 Set up the module:
 
 ```bash
-mkdir -p batching-and-futures/cmd/demo && cd batching-and-futures
-go mod init example.com/batching-and-futures
+mkdir -p go-solutions/41-capstone-message-queue/04-producer-api-batching/01-batching-and-futures/cmd/demo && cd go-solutions/41-capstone-message-queue/04-producer-api-batching/01-batching-and-futures
 ```
 
 ### How the accumulator and the sender stay decoupled

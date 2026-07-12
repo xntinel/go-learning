@@ -22,8 +22,7 @@ recvwindow/
 Set up the module:
 
 ```bash
-mkdir -p recvwindow/cmd/demo && cd recvwindow
-go mod init example.com/recvwindow
+mkdir -p go-solutions/44-capstone-http2-implementation/03-stream-multiplexing/02-receive-window/cmd/demo && cd go-solutions/44-capstone-http2-implementation/03-stream-multiplexing/02-receive-window
 go mod edit -go=1.26
 ```
 

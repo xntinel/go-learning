@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/repo/cmd/demo
-cd ~/go-exercises/repo
-go mod init example.com/repo
+mkdir -p go-solutions/02-variables-types-and-constants/02-zero-values-and-default-initialization/10-sql-null-vs-pointer-columns/cmd/demo
+cd go-solutions/02-variables-types-and-constants/02-zero-values-and-default-initialization/10-sql-null-vs-pointer-columns
 ```
 
 ## Why sql.Null[T] first, pointer second

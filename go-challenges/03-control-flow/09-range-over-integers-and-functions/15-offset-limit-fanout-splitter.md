@@ -24,9 +24,8 @@ Verify: `go test -count=1 ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/fanout
-cd ~/go-exercises/fanout
-go mod init example.com/fanout
+mkdir -p go-solutions/03-control-flow/09-range-over-integers-and-functions/15-offset-limit-fanout-splitter
+cd go-solutions/03-control-flow/09-range-over-integers-and-functions/15-offset-limit-fanout-splitter
 go mod edit -go=1.24
 ```
 

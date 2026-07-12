@@ -30,9 +30,8 @@ hybridkem/                 independent module: example.com/hybridkem
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/hybridkem/cmd/demo
-cd ~/go-exercises/hybridkem
-go mod init example.com/hybridkem
+mkdir -p go-solutions/49-application-security-crypto-supplychain/01-post-quantum-hybrid-tls/01-hybrid-kem-handshake/cmd/demo
+cd go-solutions/49-application-security-crypto-supplychain/01-post-quantum-hybrid-tls/01-hybrid-kem-handshake
 go mod edit -go=1.26
 ```
 

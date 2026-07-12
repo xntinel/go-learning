@@ -24,8 +24,7 @@ checkpoint_test.go     trigger/ack, wait-for-all, snapshot/restore, exactly-once
 Set up the module:
 
 ```bash
-mkdir -p coordinator-recovery/cmd/demo && cd coordinator-recovery
-go mod init example.com/coordinator-recovery
+mkdir -p go-solutions/43-capstone-stream-processing-engine/05-checkpointing/03-coordinator-recovery/cmd/demo && cd go-solutions/43-capstone-stream-processing-engine/05-checkpointing/03-coordinator-recovery
 go mod edit -go=1.26
 ```
 

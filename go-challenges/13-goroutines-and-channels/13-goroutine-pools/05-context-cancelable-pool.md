@@ -29,9 +29,8 @@ cpool/                     independent module: example.com/cpool
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cpool/cmd/demo
-cd ~/go-exercises/cpool
-go mod init example.com/cpool
+mkdir -p go-solutions/13-goroutines-and-channels/13-goroutine-pools/05-context-cancelable-pool/cmd/demo
+cd go-solutions/13-goroutines-and-channels/13-goroutine-pools/05-context-cancelable-pool
 ```
 
 ### Drain and cancel are two contracts

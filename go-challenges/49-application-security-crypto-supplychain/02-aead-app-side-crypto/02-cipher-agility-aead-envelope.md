@@ -30,9 +30,8 @@ aeadenvelope/              independent module: example.com/aeadenvelope
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/aeadenvelope/cmd/demo
-cd ~/go-exercises/aeadenvelope
-go mod init example.com/aeadenvelope
+mkdir -p go-solutions/49-application-security-crypto-supplychain/02-aead-app-side-crypto/02-cipher-agility-aead-envelope/cmd/demo
+cd go-solutions/49-application-security-crypto-supplychain/02-aead-app-side-crypto/02-cipher-agility-aead-envelope
 go mod edit -go=1.24
 go get golang.org/x/crypto/chacha20poly1305
 ```

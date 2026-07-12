@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/repository/cmd/demo
-cd ~/go-exercises/repository
-go mod init example.com/repository
+mkdir -p go-solutions/08-interfaces/08-accept-interfaces-return-structs/01-implement-repository/cmd/demo
+cd go-solutions/08-interfaces/08-accept-interfaces-return-structs/01-implement-repository
 go mod edit -go=1.26
 ```
 

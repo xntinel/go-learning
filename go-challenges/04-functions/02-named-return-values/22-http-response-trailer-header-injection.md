@@ -28,9 +28,8 @@ trailerresp/                    independent module: example.com/trailerresp
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/trailerresp/cmd/demo
-cd ~/go-exercises/trailerresp
-go mod init example.com/trailerresp
+mkdir -p go-solutions/04-functions/02-named-return-values/22-http-response-trailer-header-injection/cmd/demo
+cd go-solutions/04-functions/02-named-return-values/22-http-response-trailer-header-injection
 go mod edit -go=1.24
 ```
 

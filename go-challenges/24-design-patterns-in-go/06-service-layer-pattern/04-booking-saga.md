@@ -26,8 +26,7 @@ booking_test.go      pin the step order, both rollback paths, the reverse-order
 Set up the module:
 
 ```bash
-mkdir -p booking-saga/cmd/demo && cd booking-saga
-go mod init example.com/booking-saga
+mkdir -p go-solutions/24-design-patterns-in-go/06-service-layer-pattern/04-booking-saga/cmd/demo && cd go-solutions/24-design-patterns-in-go/06-service-layer-pattern/04-booking-saga
 ```
 
 ### Why a saga, and how compensation differs from a rollback

@@ -30,9 +30,8 @@ cfgcas/                    independent module: example.com/cfgcas
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cfgcas/cmd/demo
-cd ~/go-exercises/cfgcas
-go mod init example.com/cfgcas
+mkdir -p go-solutions/15-sync-primitives/08-atomic-value-config-hot-reload/06-validated-cas-versioned-updates/cmd/demo
+cd go-solutions/15-sync-primitives/08-atomic-value-config-hot-reload/06-validated-cas-versioned-updates
 ```
 
 ### Why Load-then-Store cannot enforce "never roll back"

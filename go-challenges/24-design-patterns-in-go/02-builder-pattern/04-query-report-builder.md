@@ -22,8 +22,7 @@ query_test.go        composition, the parameter/identifier split, every validato
 Set up the module:
 
 ```bash
-mkdir -p report-builder/cmd/demo && cd report-builder
-go mod init example.com/report-builder
+mkdir -p go-solutions/24-design-patterns-in-go/02-builder-pattern/04-query-report-builder/cmd/demo && cd go-solutions/24-design-patterns-in-go/02-builder-pattern/04-query-report-builder
 ```
 
 ### The one rule: values are parameters, identifiers are allow-listed

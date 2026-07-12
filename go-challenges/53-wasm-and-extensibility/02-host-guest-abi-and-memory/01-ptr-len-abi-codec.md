@@ -30,9 +30,8 @@ abi/                       independent module: example.com/abi
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/abi/cmd/demo
-cd ~/go-exercises/abi
-go mod init example.com/abi
+mkdir -p go-solutions/53-wasm-and-extensibility/02-host-guest-abi-and-memory/01-ptr-len-abi-codec/cmd/demo
+cd go-solutions/53-wasm-and-extensibility/02-host-guest-abi-and-memory/01-ptr-len-abi-codec
 ```
 
 ### Why a codec, and why one `i64`

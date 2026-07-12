@@ -30,9 +30,8 @@ configmgr/                 independent module: example.com/configmgr
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/configmgr/cmd/demo
-cd ~/go-exercises/configmgr
-go mod init example.com/configmgr
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/05-maps-package-config-snapshots/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/05-maps-package-config-snapshots
 ```
 
 ### Why each maps function, and the shallow-clone trap

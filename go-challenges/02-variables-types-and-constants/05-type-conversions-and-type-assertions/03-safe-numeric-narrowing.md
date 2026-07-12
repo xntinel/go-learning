@@ -29,9 +29,8 @@ narrow/                      independent module: example.com/narrow
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/narrow/cmd/demo
-cd ~/go-exercises/narrow
-go mod init example.com/narrow
+mkdir -p go-solutions/02-variables-types-and-constants/05-type-conversions-and-type-assertions/03-safe-numeric-narrowing/cmd/demo
+cd go-solutions/02-variables-types-and-constants/05-type-conversions-and-type-assertions/03-safe-numeric-narrowing
 go mod edit -go=1.26
 ```
 

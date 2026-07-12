@@ -30,9 +30,8 @@ configdiff/                 independent module: example.com/configdiff
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/configdiff/cmd/demo
-cd ~/go-exercises/configdiff
-go mod init example.com/configdiff
+mkdir -p go-solutions/03-control-flow/05-range-over-collections/03-deterministic-config-diff/cmd/demo
+cd go-solutions/03-control-flow/05-range-over-collections/03-deterministic-config-diff
 go mod edit -go=1.24
 ```
 

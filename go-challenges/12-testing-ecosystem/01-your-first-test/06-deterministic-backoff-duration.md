@@ -25,9 +25,8 @@ backoff/                   independent module: example.com/backoff
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/backoff/cmd/demo
-cd ~/go-exercises/backoff
-go mod init example.com/backoff
+mkdir -p go-solutions/12-testing-ecosystem/01-your-first-test/06-deterministic-backoff-duration/cmd/demo
+cd go-solutions/12-testing-ecosystem/01-your-first-test/06-deterministic-backoff-duration
 ```
 
 ### Capped exponential backoff, and why jitter is excluded

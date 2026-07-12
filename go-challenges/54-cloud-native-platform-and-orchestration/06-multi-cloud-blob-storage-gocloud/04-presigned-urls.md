@@ -25,9 +25,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/presigner/cmd/demo
-cd ~/go-exercises/presigner
-go mod init example.com/presigner
+mkdir -p go-solutions/54-cloud-native-platform-and-orchestration/06-multi-cloud-blob-storage-gocloud/04-presigned-urls/cmd/demo
+cd go-solutions/54-cloud-native-platform-and-orchestration/06-multi-cloud-blob-storage-gocloud/04-presigned-urls
 go get gocloud.dev/blob@latest
 go mod edit -go=1.26
 ```

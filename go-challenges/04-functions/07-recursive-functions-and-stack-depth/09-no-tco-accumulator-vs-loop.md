@@ -29,9 +29,8 @@ notco/                     independent module: example.com/notco
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/notco/cmd/demo
-cd ~/go-exercises/notco
-go mod init example.com/notco
+mkdir -p go-solutions/04-functions/07-recursive-functions-and-stack-depth/09-no-tco-accumulator-vs-loop/cmd/demo
+cd go-solutions/04-functions/07-recursive-functions-and-stack-depth/09-no-tco-accumulator-vs-loop
 ```
 
 ### Why "tail recursion" buys nothing in Go

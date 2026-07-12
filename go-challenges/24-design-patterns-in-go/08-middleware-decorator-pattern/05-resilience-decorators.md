@@ -27,8 +27,7 @@ resilience_test.go   backoff schedule, breaker opens after N (race), half-open
 Set up the module:
 
 ```bash
-mkdir -p resilience/cmd/demo && cd resilience
-go mod init example.com/resilience
+mkdir -p go-solutions/24-design-patterns-in-go/08-middleware-decorator-pattern/05-resilience-decorators/cmd/demo && cd go-solutions/24-design-patterns-in-go/08-middleware-decorator-pattern/05-resilience-decorators
 ```
 
 ### One signature, three decorators

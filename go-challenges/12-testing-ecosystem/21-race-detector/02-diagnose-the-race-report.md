@@ -34,9 +34,8 @@ the report; then `GORACE="exitcode=77 halt_on_error=1" go run -race ./cmd/racy`.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/racecache/cmd/racy
-cd ~/go-exercises/racecache
-go mod init example.com/racecache
+mkdir -p go-solutions/12-testing-ecosystem/21-race-detector/02-diagnose-the-race-report/cmd/racy
+cd go-solutions/12-testing-ecosystem/21-race-detector/02-diagnose-the-race-report
 ```
 
 ### The racy artifact lives under cmd/racy on purpose

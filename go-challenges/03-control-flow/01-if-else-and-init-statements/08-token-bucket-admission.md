@@ -29,9 +29,8 @@ tokenbucket/                independent module: example.com/tokenbucket
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/tokenbucket/cmd/demo
-cd ~/go-exercises/tokenbucket
-go mod init example.com/tokenbucket
+mkdir -p go-solutions/03-control-flow/01-if-else-and-init-statements/08-token-bucket-admission/cmd/demo
+cd go-solutions/03-control-flow/01-if-else-and-init-statements/08-token-bucket-admission
 ```
 
 ## Refill lazily, then decide

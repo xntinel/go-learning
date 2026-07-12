@@ -26,9 +26,8 @@ modcachescan/              independent module: example.com/modcachescan
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/modcachescan/cmd/demo
-cd ~/go-exercises/modcachescan
-go mod init example.com/modcachescan
+mkdir -p go-solutions/11-packages-and-modules/07-module-proxies-and-goproxy/09-modcache-integrity-scan/cmd/demo
+cd go-solutions/11-packages-and-modules/07-module-proxies-and-goproxy/09-modcache-integrity-scan
 go mod edit -go=1.26
 go get golang.org/x/mod/sumdb/dirhash
 ```

@@ -27,9 +27,8 @@ ranking/                      module example.com/ranking
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ranking/cmd/demo
-cd ~/go-exercises/ranking
-go mod init example.com/ranking
+mkdir -p go-solutions/04-functions/05-anonymous-functions/10-sort-ranking-anonymous-comparator/cmd/demo
+cd go-solutions/04-functions/05-anonymous-functions/10-sort-ranking-anonymous-comparator
 ```
 
 ### The three-way comparator contract

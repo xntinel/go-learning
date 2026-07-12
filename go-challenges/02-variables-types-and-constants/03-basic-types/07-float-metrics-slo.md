@@ -28,9 +28,8 @@ slo/                       independent module: example.com/slo
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/slo/cmd/demo
-cd ~/go-exercises/slo
-go mod init example.com/slo
+mkdir -p go-solutions/02-variables-types-and-constants/03-basic-types/07-float-metrics-slo/cmd/demo
+cd go-solutions/02-variables-types-and-constants/03-basic-types/07-float-metrics-slo
 ```
 
 ### Why NaN and == are both traps

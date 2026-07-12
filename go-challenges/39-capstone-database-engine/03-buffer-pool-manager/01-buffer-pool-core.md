@@ -25,8 +25,7 @@ bufferpool_test.go       cache hit, eviction, pinned-not-evicted, pool exhausted
 Set up the module:
 
 ```bash
-mkdir -p buffer-pool-core/cmd/demo && cd buffer-pool-core
-go mod init example.com/buffer-pool-core
+mkdir -p go-solutions/39-capstone-database-engine/03-buffer-pool-manager/01-buffer-pool-core/cmd/demo && cd go-solutions/39-capstone-database-engine/03-buffer-pool-manager/01-buffer-pool-core
 ```
 
 ### The shape of the pool: frames, the page table, and the guard

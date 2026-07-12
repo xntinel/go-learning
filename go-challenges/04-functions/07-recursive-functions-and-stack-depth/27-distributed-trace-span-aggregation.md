@@ -37,9 +37,8 @@ spanagg/                      independent module: example.com/spanagg
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/spanagg/cmd/demo
-cd ~/go-exercises/spanagg
-go mod init example.com/spanagg
+mkdir -p go-solutions/04-functions/07-recursive-functions-and-stack-depth/27-distributed-trace-span-aggregation/cmd/demo
+cd go-solutions/04-functions/07-recursive-functions-and-stack-depth/27-distributed-trace-span-aggregation
 go mod edit -go=1.24
 ```
 

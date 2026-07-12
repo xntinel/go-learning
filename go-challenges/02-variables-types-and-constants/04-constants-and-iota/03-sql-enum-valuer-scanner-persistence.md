@@ -28,9 +28,8 @@ Verify: `go test -count=1 ./...`
 Set up the module:
 
 ```bash
-mkdir -p sqlenum/cmd/demo
-cd sqlenum
-go mod init example.com/sqlenum
+mkdir -p go-solutions/02-variables-types-and-constants/04-constants-and-iota/03-sql-enum-valuer-scanner-persistence/cmd/demo
+cd go-solutions/02-variables-types-and-constants/04-constants-and-iota/03-sql-enum-valuer-scanner-persistence
 ```
 
 ## Why the driver interfaces are the seam

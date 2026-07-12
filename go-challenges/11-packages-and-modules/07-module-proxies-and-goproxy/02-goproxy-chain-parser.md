@@ -26,9 +26,8 @@ goproxychain/              independent module: example.com/goproxychain
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/goproxychain/cmd/demo
-cd ~/go-exercises/goproxychain
-go mod init example.com/goproxychain
+mkdir -p go-solutions/11-packages-and-modules/07-module-proxies-and-goproxy/02-goproxy-chain-parser/cmd/demo
+cd go-solutions/11-packages-and-modules/07-module-proxies-and-goproxy/02-goproxy-chain-parser
 go mod edit -go=1.26
 ```
 

@@ -45,9 +45,8 @@ cdc/                           module example.com/cdc
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cdc
-cd ~/go-exercises/cdc
-go mod init example.com/cdc
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/15-rabin-rolling-window-chunking
+cd go-solutions/06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/15-rabin-rolling-window-chunking
 go mod edit -go=1.24
 ```
 

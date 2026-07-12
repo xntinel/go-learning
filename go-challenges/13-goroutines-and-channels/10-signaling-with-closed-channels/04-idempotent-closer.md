@@ -57,9 +57,8 @@ clean.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/onceclose/cmd/demo
-cd ~/go-exercises/onceclose
-go mod init example.com/onceclose
+mkdir -p go-solutions/13-goroutines-and-channels/10-signaling-with-closed-channels/04-idempotent-closer/cmd/demo
+cd go-solutions/13-goroutines-and-channels/10-signaling-with-closed-channels/04-idempotent-closer
 ```
 
 Create `resource.go`:

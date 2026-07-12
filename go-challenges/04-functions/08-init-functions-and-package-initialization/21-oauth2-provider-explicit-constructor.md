@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/oauth2setup/cmd/demo
-cd ~/go-exercises/oauth2setup
-go mod init example.com/oauth2setup
+mkdir -p go-solutions/04-functions/08-init-functions-and-package-initialization/21-oauth2-provider-explicit-constructor/cmd/demo
+cd go-solutions/04-functions/08-init-functions-and-package-initialization/21-oauth2-provider-explicit-constructor
 go mod edit -go=1.24
 ```
 

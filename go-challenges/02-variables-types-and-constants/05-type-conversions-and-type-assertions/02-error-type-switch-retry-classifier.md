@@ -29,9 +29,8 @@ retryclass/                  independent module: example.com/retryclass
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/retryclass/cmd/demo
-cd ~/go-exercises/retryclass
-go mod init example.com/retryclass
+mkdir -p go-solutions/02-variables-types-and-constants/05-type-conversions-and-type-assertions/02-error-type-switch-retry-classifier/cmd/demo
+cd go-solutions/02-variables-types-and-constants/05-type-conversions-and-type-assertions/02-error-type-switch-retry-classifier
 go mod edit -go=1.26
 ```
 

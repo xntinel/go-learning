@@ -33,9 +33,8 @@ grounding/                   independent module: example.com/grounding
 Set up the module:
 
 ```bash
-mkdir -p ~/rag-exercises/grounding/cmd/demo
-cd ~/rag-exercises/grounding
-go mod init example.com/grounding
+mkdir -p go-solutions/52-ai-llm-backends/05-rag-pipeline/03-grounding/cmd/demo
+cd go-solutions/52-ai-llm-backends/05-rag-pipeline/03-grounding
 go mod edit -go=1.26
 ```
 

@@ -24,8 +24,7 @@ vacuum_test.go   reclaim-below-watermark, pinned-by-long-txn, concurrent vacuum 
 Set up the module:
 
 ```bash
-mkdir -p mvcc-vacuum/cmd/demo && cd mvcc-vacuum
-go mod init example.com/mvcc-vacuum
+mkdir -p go-solutions/39-capstone-database-engine/07-mvcc/02-vacuum-and-the-low-watermark/cmd/demo && cd go-solutions/39-capstone-database-engine/07-mvcc/02-vacuum-and-the-low-watermark
 ```
 
 ### Why a version is reclaimable only below the watermark

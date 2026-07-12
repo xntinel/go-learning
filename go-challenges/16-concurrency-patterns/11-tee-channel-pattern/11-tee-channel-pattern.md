@@ -52,9 +52,8 @@ outputs by default and documents the backpressure contract. The
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/tee/internal/tee ~/go-exercises/tee/cmd/teedemo
-cd ~/go-exercises/tee
-go mod init example.com/tee
+mkdir -p go-solutions/16-concurrency-patterns/11-tee-channel-pattern/11-tee-channel-pattern/internal/tee go-solutions/16-concurrency-patterns/11-tee-channel-pattern/11-tee-channel-pattern/cmd/teedemo
+cd go-solutions/16-concurrency-patterns/11-tee-channel-pattern/11-tee-channel-pattern
 ```
 
 ### Exercise 1: The Basic Tee

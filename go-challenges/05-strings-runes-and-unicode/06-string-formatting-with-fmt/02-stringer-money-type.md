@@ -27,9 +27,8 @@ money/                     independent module: example.com/money
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/money/cmd/demo
-cd ~/go-exercises/money
-go mod init example.com/money
+mkdir -p go-solutions/05-strings-runes-and-unicode/06-string-formatting-with-fmt/02-stringer-money-type/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/06-string-formatting-with-fmt/02-stringer-money-type
 go mod edit -go=1.24
 ```
 

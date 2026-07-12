@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p gzipmw/gzipmw gzipmw/cmd/demo
-cd gzipmw
-go mod init example.com/gzipmw
+mkdir -p go-solutions/15-sync-primitives/05-sync-pool/06-gzip-response-compression-middleware/go-solutions/15-sync-primitives/05-sync-pool/06-gzip-response-compression-middleware go-solutions/15-sync-primitives/05-sync-pool/06-gzip-response-compression-middleware/cmd/demo
+cd go-solutions/15-sync-primitives/05-sync-pool/06-gzip-response-compression-middleware
 ```
 
 ### Reset to rebind, Close to flush — the poolable lifecycle

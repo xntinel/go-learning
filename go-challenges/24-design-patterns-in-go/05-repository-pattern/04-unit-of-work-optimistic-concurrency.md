@@ -28,8 +28,7 @@ uow_test.go              atomic multi-entity commit, stale-version conflict,
 Set up the module:
 
 ```bash
-mkdir -p unit-of-work/cmd/demo && cd unit-of-work
-go mod init example.com/unit-of-work
+mkdir -p go-solutions/24-design-patterns-in-go/05-repository-pattern/04-unit-of-work-optimistic-concurrency/cmd/demo && cd go-solutions/24-design-patterns-in-go/05-repository-pattern/04-unit-of-work-optimistic-concurrency
 ```
 
 ### Why a unit of work and what optimistic concurrency buys you

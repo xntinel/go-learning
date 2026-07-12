@@ -28,9 +28,8 @@ directory/                  independent module: example.com/directory
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/directory/cmd/demo
-cd ~/go-exercises/directory
-go mod init example.com/directory
+mkdir -p go-solutions/04-functions/02-named-return-values/09-result-struct-over-positional/cmd/demo
+cd go-solutions/04-functions/02-named-return-values/09-result-struct-over-positional
 ```
 
 ### Why a struct beats four positional returns

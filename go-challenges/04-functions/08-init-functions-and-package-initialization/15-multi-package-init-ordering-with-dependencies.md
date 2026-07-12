@@ -35,12 +35,11 @@ Verify: `go test -count=1 ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/multiinit/orderlog
-mkdir -p ~/go-exercises/multiinit/units
-mkdir -p ~/go-exercises/multiinit/convrules
-mkdir -p ~/go-exercises/multiinit/cmd/demo
-cd ~/go-exercises/multiinit
-go mod init example.com/multiinit
+mkdir -p go-solutions/04-functions/08-init-functions-and-package-initialization/15-multi-package-init-ordering-with-dependencies/orderlog
+mkdir -p go-solutions/04-functions/08-init-functions-and-package-initialization/15-multi-package-init-ordering-with-dependencies/units
+mkdir -p go-solutions/04-functions/08-init-functions-and-package-initialization/15-multi-package-init-ordering-with-dependencies/convrules
+mkdir -p go-solutions/04-functions/08-init-functions-and-package-initialization/15-multi-package-init-ordering-with-dependencies/cmd/demo
+cd go-solutions/04-functions/08-init-functions-and-package-initialization/15-multi-package-init-ordering-with-dependencies
 go mod edit -go=1.24
 ```
 

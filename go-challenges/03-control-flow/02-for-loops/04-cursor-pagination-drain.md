@@ -28,9 +28,8 @@ pagination/                  module example.com/pagination
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pagination/cmd/demo
-cd ~/go-exercises/pagination
-go mod init example.com/pagination
+mkdir -p go-solutions/03-control-flow/02-for-loops/04-cursor-pagination-drain/cmd/demo
+cd go-solutions/03-control-flow/02-for-loops/04-cursor-pagination-drain
 ```
 
 ### Why an infinite loop needs three exits, not one

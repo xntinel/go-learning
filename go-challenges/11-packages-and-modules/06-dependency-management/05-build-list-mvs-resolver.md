@@ -29,9 +29,8 @@ mvs/                       independent module: example.com/mvs
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/mvs/cmd/demo
-cd ~/go-exercises/mvs
-go mod init example.com/mvs
+mkdir -p go-solutions/11-packages-and-modules/06-dependency-management/05-build-list-mvs-resolver/cmd/demo
+cd go-solutions/11-packages-and-modules/06-dependency-management/05-build-list-mvs-resolver
 go get golang.org/x/mod
 ```
 

@@ -21,9 +21,8 @@ An `fs.FS` path should be relative and slash-separated. `fs.ValidPath` rejects e
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/docstore/cmd/demo
-cd ~/go-exercises/docstore
-go mod init example.com/docstore
+mkdir -p go-solutions/19-io-and-filesystem/13-io-fs-virtual-filesystems/13-io-fs-virtual-filesystems/cmd/demo
+cd go-solutions/19-io-and-filesystem/13-io-fs-virtual-filesystems/13-io-fs-virtual-filesystems
 ```
 
 ### Exercise 1: Implement A Filesystem-Backed Store

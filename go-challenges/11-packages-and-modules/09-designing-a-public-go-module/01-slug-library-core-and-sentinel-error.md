@@ -30,9 +30,8 @@ publicstr/                 independent module: example.com/publicstr
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/publicstr/cmd/demo
-cd ~/go-exercises/publicstr
-go mod init example.com/publicstr
+mkdir -p go-solutions/11-packages-and-modules/09-designing-a-public-go-module/01-slug-library-core-and-sentinel-error/cmd/demo
+cd go-solutions/11-packages-and-modules/09-designing-a-public-go-module/01-slug-library-core-and-sentinel-error
 ```
 
 ### Why the sentinel is part of the contract, not an implementation detail

@@ -28,9 +28,8 @@ tenantshard/                independent module: example.com/tenantshard
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/tenantshard/cmd/demo
-cd ~/go-exercises/tenantshard
-go mod init example.com/tenantshard
+mkdir -p go-solutions/04-functions/03-variadic-functions/17-tenant-key-sharding-variadic/cmd/demo
+cd go-solutions/04-functions/03-variadic-functions/17-tenant-key-sharding-variadic
 go mod edit -go=1.24
 ```
 

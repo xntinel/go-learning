@@ -22,8 +22,7 @@ rebalance_test.go    first-join, second-join split, leave hand-off, single-owner
 Set up the module:
 
 ```bash
-mkdir -p rebalance-delta/cmd/demo && cd rebalance-delta
-go mod init example.com/rebalance
+mkdir -p go-solutions/41-capstone-message-queue/03-consumer-groups-offset-tracking/04-rebalance-on-membership-change/cmd/demo && cd go-solutions/41-capstone-message-queue/03-consumer-groups-offset-tracking/04-rebalance-on-membership-change
 ```
 
 ### Why a consumer needs the delta, not the full assignment

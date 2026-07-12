@@ -21,9 +21,8 @@ The walk function receives an `err` argument when the walker could not read an e
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/treeinventory/cmd/demo
-cd ~/go-exercises/treeinventory
-go mod init example.com/treeinventory
+mkdir -p go-solutions/19-io-and-filesystem/05-walking-directory-trees/05-walking-directory-trees/cmd/demo
+cd go-solutions/19-io-and-filesystem/05-walking-directory-trees/05-walking-directory-trees
 ```
 
 ### Exercise 1: Implement The Inventory

@@ -33,9 +33,8 @@ Verify: `go test -race ./...`, then `go test -fuzz=FuzzParseHeaderLine
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/header/cmd/demo
-cd ~/go-exercises/header
-go mod init example.com/header
+mkdir -p go-solutions/12-testing-ecosystem/06-fuzz-testing/04-no-panic-header-parser/cmd/demo
+cd go-solutions/12-testing-ecosystem/06-fuzz-testing/04-no-panic-header-parser
 ```
 
 ### Splitting, validating, and canonicalizing

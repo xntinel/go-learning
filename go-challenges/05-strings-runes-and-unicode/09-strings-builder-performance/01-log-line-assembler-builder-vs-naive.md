@@ -27,9 +27,8 @@ Test: a table test asserting `Naive(...) == Builder(...)` over representative an
 Verify: `go test -count=1 -race ./...`
 
 ```bash
-mkdir -p ~/go-exercises/logline/cmd/demo
-cd ~/go-exercises/logline
-go mod init example.com/logline
+mkdir -p go-solutions/05-strings-runes-and-unicode/09-strings-builder-performance/01-log-line-assembler-builder-vs-naive/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/09-strings-builder-performance/01-log-line-assembler-builder-vs-naive
 ```
 
 ### Why two implementations

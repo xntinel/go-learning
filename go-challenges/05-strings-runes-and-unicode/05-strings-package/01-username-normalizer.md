@@ -32,9 +32,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/usernorm/username ~/go-exercises/usernorm/cmd/demo
-cd ~/go-exercises/usernorm
-go mod init example.com/usernorm
+mkdir -p go-solutions/05-strings-runes-and-unicode/05-strings-package/01-username-normalizer/username go-solutions/05-strings-runes-and-unicode/05-strings-package/01-username-normalizer/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/05-strings-package/01-username-normalizer
 ```
 
 ### Why the order of operations is the spec

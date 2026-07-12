@@ -37,9 +37,8 @@ The lesson's `PageData` has a mutex-protected map of section results. When the r
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/errgroupctx/internal/group ~/go-exercises/errgroupctx/internal/pageload ~/go-exercises/errgroupctx/cmd/errgroupctx
-cd ~/go-exercises/errgroupctx
-go mod init example.com/errgroupctx
+mkdir -p go-solutions/16-concurrency-patterns/07-errgroup-with-context/07-errgroup-with-context/internal/group go-solutions/16-concurrency-patterns/07-errgroup-with-context/07-errgroup-with-context/internal/pageload go-solutions/16-concurrency-patterns/07-errgroup-with-context/07-errgroup-with-context/cmd/errgroupctx
+cd go-solutions/16-concurrency-patterns/07-errgroup-with-context/07-errgroup-with-context
 ```
 
 ### Exercise 1: The Group (Embedded)

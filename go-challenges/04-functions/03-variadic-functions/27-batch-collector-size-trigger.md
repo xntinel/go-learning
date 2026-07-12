@@ -30,9 +30,8 @@ batchcol/                  independent module: example.com/batchcol
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/batchcol/cmd/demo
-cd ~/go-exercises/batchcol
-go mod init example.com/batchcol
+mkdir -p go-solutions/04-functions/03-variadic-functions/27-batch-collector-size-trigger/cmd/demo
+cd go-solutions/04-functions/03-variadic-functions/27-batch-collector-size-trigger
 go mod edit -go=1.24
 ```
 

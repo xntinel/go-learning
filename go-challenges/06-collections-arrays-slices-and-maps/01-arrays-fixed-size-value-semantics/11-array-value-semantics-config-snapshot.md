@@ -42,9 +42,8 @@ configsnap/                  module example.com/configsnap
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/configsnap
-cd ~/go-exercises/configsnap
-go mod init example.com/configsnap
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/11-array-value-semantics-config-snapshot
+cd go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/11-array-value-semantics-config-snapshot
 go mod edit -go=1.24
 ```
 

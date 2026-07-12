@@ -31,9 +31,8 @@ userrepo/                      independent module: example.com/userrepo
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/userrepo/cmd/demo
-cd ~/go-exercises/userrepo
-go mod init example.com/userrepo
+mkdir -p go-solutions/10-error-handling/02-fmt-errorf-and-error-wrapping/02-repo-translate-not-leak/cmd/demo
+cd go-solutions/10-error-handling/02-fmt-errorf-and-error-wrapping/02-repo-translate-not-leak
 ```
 
 ### Translate, do not leak

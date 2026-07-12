@@ -31,9 +31,8 @@ statcache/                 independent module: example.com/statcache
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/statcache/cmd/demo
-cd ~/go-exercises/statcache
-go mod init example.com/statcache
+mkdir -p go-solutions/09-pointers/09-pointer-aliasing-and-data-races/06-rwmutex-compound-state-store/cmd/demo
+cd go-solutions/09-pointers/09-pointer-aliasing-and-data-races/06-rwmutex-compound-state-store
 ```
 
 ### Why a single atomic cannot guard this invariant

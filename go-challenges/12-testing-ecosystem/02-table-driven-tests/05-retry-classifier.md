@@ -30,9 +30,8 @@ retryclass/               independent module: example.com/retryclass
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/retryclass/cmd/demo
-cd ~/go-exercises/retryclass
-go mod init example.com/retryclass
+mkdir -p go-solutions/12-testing-ecosystem/02-table-driven-tests/05-retry-classifier/cmd/demo
+cd go-solutions/12-testing-ecosystem/02-table-driven-tests/05-retry-classifier
 ```
 
 ### Why order matters, and why Is and As both appear

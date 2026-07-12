@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/leaktriage/cmd/demo
-cd ~/go-exercises/leaktriage
-go mod init example.com/leaktriage
+mkdir -p go-solutions/14-select-and-context/13-context-leak-detection/08-pprof-goroutine-triage/cmd/demo
+cd go-solutions/14-select-and-context/13-context-leak-detection/08-pprof-goroutine-triage
 ```
 
 ### The goroutine profile is a text document you can grep

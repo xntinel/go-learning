@@ -34,9 +34,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/exacttax/cmd/demo
-cd ~/go-exercises/exacttax
-go mod init example.com/exacttax
+mkdir -p go-solutions/02-variables-types-and-constants/07-numeric-precision-and-overflow/06-exact-tax-and-percentage-big-rat/cmd/demo
+cd go-solutions/02-variables-types-and-constants/07-numeric-precision-and-overflow/06-exact-tax-and-percentage-big-rat
 ```
 
 ### Exact until you choose to round

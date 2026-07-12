@@ -31,9 +31,8 @@ budget-retry/                        independent module: example.com/budgetretry
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/budget-retry/cmd/demo
-cd ~/go-exercises/budget-retry
-go mod init example.com/budgetretry
+mkdir -p go-solutions/14-select-and-context/05-context-withtimeout-withdeadline/04-total-budget-retry/cmd/demo
+cd go-solutions/14-select-and-context/05-context-withtimeout-withdeadline/04-total-budget-retry
 ```
 
 ### The two things a budget-aware retry must do differently

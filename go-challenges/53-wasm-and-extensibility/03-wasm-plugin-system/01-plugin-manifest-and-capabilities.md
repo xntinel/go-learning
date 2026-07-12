@@ -33,9 +33,8 @@ capability/                 independent module: example.com/capability
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/capability/cmd/demo
-cd ~/go-exercises/capability
-go mod init example.com/capability
+mkdir -p go-solutions/53-wasm-and-extensibility/03-wasm-plugin-system/01-plugin-manifest-and-capabilities/cmd/demo
+cd go-solutions/53-wasm-and-extensibility/03-wasm-plugin-system/01-plugin-manifest-and-capabilities
 ```
 
 ### Why a closed set, and why the grant is an intersection

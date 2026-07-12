@@ -26,9 +26,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/seedstore/cmd/demo
-cd ~/go-exercises/seedstore
-go mod init example.com/seedstore
+mkdir -p go-solutions/04-functions/08-init-functions-and-package-initialization/08-testmain-bootstrap-vs-init/cmd/demo
+cd go-solutions/04-functions/08-init-functions-and-package-initialization/08-testmain-bootstrap-vs-init
 ```
 
 ### Why TestMain and not a test init()

@@ -53,9 +53,8 @@ authcache/                module example.com/authcache
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/authcache
-cd ~/go-exercises/authcache
-go mod init example.com/authcache
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/14-acl-decision-cache-tristate
+cd go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/14-acl-decision-cache-tristate
 go mod edit -go=1.24
 ```
 

@@ -29,9 +29,8 @@ email/                      independent module: example.com/email
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/email/cmd/demo
-cd ~/go-exercises/email
-go mod init example.com/email
+mkdir -p go-solutions/07-structs-and-methods/12-designing-a-domain-model/03-value-object-equality-and-map-keys/cmd/demo
+cd go-solutions/07-structs-and-methods/12-designing-a-domain-model/03-value-object-equality-and-map-keys
 ```
 
 ### Why a value object must be comparable, and why normalization makes it mean something

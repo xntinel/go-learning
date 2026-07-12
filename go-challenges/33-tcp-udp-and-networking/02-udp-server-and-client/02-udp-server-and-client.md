@@ -65,9 +65,8 @@ The theoretical UDP maximum is 65 507 bytes (65 535 − 20 − 8). Sending that 
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/udpecho/cmd/demo
-cd ~/go-exercises/udpecho
-go mod init example.com/udpecho
+mkdir -p go-solutions/33-tcp-udp-and-networking/02-udp-server-and-client/02-udp-server-and-client/cmd/demo
+cd go-solutions/33-tcp-udp-and-networking/02-udp-server-and-client/02-udp-server-and-client
 ```
 
 This is a library, not a program: there is no top-level `main`. You verify it with `go test`.

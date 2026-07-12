@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/shardmerge/cmd/demo
-cd ~/go-exercises/shardmerge
-go mod init example.com/shardmerge
+mkdir -p go-solutions/14-select-and-context/01-select-statement-basics/02-fan-in-merge/cmd/demo
+cd go-solutions/14-select-and-context/01-select-statement-basics/02-fan-in-merge
 ```
 
 ## The merge contract, and where it panics if you break it

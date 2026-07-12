@@ -31,9 +31,8 @@ downstream/                  independent module: example.com/downstream
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/downstream/cmd/demo
-cd ~/go-exercises/downstream
-go mod init example.com/downstream
+mkdir -p go-solutions/03-control-flow/07-defer-semantics-and-ordering/07-http-body-close-drain/cmd/demo
+cd go-solutions/03-control-flow/07-defer-semantics-and-ordering/07-http-body-close-drain
 ```
 
 ### Why draining, not just closing, returns the connection

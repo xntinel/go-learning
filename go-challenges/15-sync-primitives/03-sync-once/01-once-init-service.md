@@ -29,9 +29,8 @@ once-init-service/            module: example.com/once-init-service
 Set up the module:
 
 ```bash
-mkdir -p once-init-service/cmd/demo
-cd once-init-service
-go mod init example.com/once-init-service
+mkdir -p go-solutions/15-sync-primitives/03-sync-once/01-once-init-service/cmd/demo
+cd go-solutions/15-sync-primitives/03-sync-once/01-once-init-service
 ```
 
 ### Why capture the error in a field

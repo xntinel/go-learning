@@ -28,9 +28,8 @@ bbuf/                       independent module: example.com/bbuf
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/bbuf/cmd/demo
-cd ~/go-exercises/bbuf
-go mod init example.com/bbuf
+mkdir -p go-solutions/15-sync-primitives/06-sync-cond/01-bounded-buffer/cmd/demo
+cd go-solutions/15-sync-primitives/06-sync-cond/01-bounded-buffer
 ```
 
 ### Why two Conds over one mutex

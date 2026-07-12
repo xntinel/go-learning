@@ -31,9 +31,8 @@ metrics/                   independent module: example.com/metrics
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/metrics/cmd/demo
-cd ~/go-exercises/metrics
-go mod init example.com/metrics
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/02-metrics-label-aggregator/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/02-metrics-label-aggregator
 ```
 
 ### Aggregate in a map, emit via sorted keys

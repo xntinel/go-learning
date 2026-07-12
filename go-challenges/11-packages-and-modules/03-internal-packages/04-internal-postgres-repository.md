@@ -30,9 +30,8 @@ userstore/                        module example.com/userstore
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/userstore/internal/store ~/go-exercises/userstore/cmd/demo
-cd ~/go-exercises/userstore
-go mod init example.com/userstore
+mkdir -p go-solutions/11-packages-and-modules/03-internal-packages/04-internal-postgres-repository/internal/store go-solutions/11-packages-and-modules/03-internal-packages/04-internal-postgres-repository/cmd/demo
+cd go-solutions/11-packages-and-modules/03-internal-packages/04-internal-postgres-repository
 ```
 
 ### Why the store goes under internal and the interface does not

@@ -26,9 +26,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/sheddingsend/cmd/demo
-cd ~/go-exercises/sheddingsend
-go mod init example.com/sheddingsend
+mkdir -p go-solutions/13-goroutines-and-channels/07-done-channel-pattern/06-nonblocking-send-avoid-leak/cmd/demo
+cd go-solutions/13-goroutines-and-channels/07-done-channel-pattern/06-nonblocking-send-avoid-leak
 ```
 
 ### The three-way select

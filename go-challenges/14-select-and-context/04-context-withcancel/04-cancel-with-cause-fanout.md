@@ -31,9 +31,8 @@ fanout/                    independent module: example.com/fanout
 Set up the module:
 
 ```bash
-mkdir -p fanout/cmd/demo
-cd fanout
-go mod init example.com/fanout
+mkdir -p go-solutions/14-select-and-context/04-context-withcancel/04-cancel-with-cause-fanout/cmd/demo
+cd go-solutions/14-select-and-context/04-context-withcancel/04-cancel-with-cause-fanout
 ```
 
 ### Why the cause is the whole point

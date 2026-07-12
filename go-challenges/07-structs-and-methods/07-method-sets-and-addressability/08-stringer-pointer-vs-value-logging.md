@@ -29,9 +29,8 @@ orderstate/                    independent module: example.com/orderstate
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/orderstate/cmd/demo
-cd ~/go-exercises/orderstate
-go mod init example.com/orderstate
+mkdir -p go-solutions/07-structs-and-methods/07-method-sets-and-addressability/08-stringer-pointer-vs-value-logging/cmd/demo
+cd go-solutions/07-structs-and-methods/07-method-sets-and-addressability/08-stringer-pointer-vs-value-logging
 ```
 
 ### Why fmt skips a pointer-only Stringer for a value

@@ -23,8 +23,7 @@ example_test.go      a runnable ExampleFilter with verified output
 Set up the module:
 
 ```bash
-mkdir -p itertools/cmd/demo && cd itertools
-go mod init example.com/itertools
+mkdir -p go-solutions/25-iterators-and-modern-go/06-composing-iterators/01-core-combinators/cmd/demo && cd go-solutions/25-iterators-and-modern-go/06-composing-iterators/01-core-combinators
 ```
 
 ### Sources, intermediates, and terminals

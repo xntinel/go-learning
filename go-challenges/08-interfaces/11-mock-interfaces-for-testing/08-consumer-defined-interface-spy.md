@@ -28,9 +28,8 @@ orderevents/                 independent module: example.com/orderevents
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/orderevents/cmd/demo
-cd ~/go-exercises/orderevents
-go mod init example.com/orderevents
+mkdir -p go-solutions/08-interfaces/11-mock-interfaces-for-testing/08-consumer-defined-interface-spy/cmd/demo
+cd go-solutions/08-interfaces/11-mock-interfaces-for-testing/08-consumer-defined-interface-spy
 ```
 
 ### The consumer defines the interface

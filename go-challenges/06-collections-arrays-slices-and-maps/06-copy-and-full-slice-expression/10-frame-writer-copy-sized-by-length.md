@@ -46,9 +46,8 @@ framepack/                module example.com/framepack
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/framepack
-cd ~/go-exercises/framepack
-go mod init example.com/framepack
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/06-copy-and-full-slice-expression/10-frame-writer-copy-sized-by-length
+cd go-solutions/06-collections-arrays-slices-and-maps/06-copy-and-full-slice-expression/10-frame-writer-copy-sized-by-length
 go mod edit -go=1.24
 ```
 

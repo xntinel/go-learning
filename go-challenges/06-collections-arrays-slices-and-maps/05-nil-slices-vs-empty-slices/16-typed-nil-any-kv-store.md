@@ -51,9 +51,8 @@ anycache/                module example.com/anycache
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/anycache
-cd ~/go-exercises/anycache
-go mod init example.com/anycache
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/16-typed-nil-any-kv-store
+cd go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/16-typed-nil-any-kv-store
 go mod edit -go=1.24
 ```
 

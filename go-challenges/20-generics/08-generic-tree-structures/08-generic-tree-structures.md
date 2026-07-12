@@ -21,9 +21,8 @@ A search tree can count duplicates, store them on one side, or reject them. This
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/generictree/cmd/demo
-cd ~/go-exercises/generictree
-go mod init example.com/verify
+mkdir -p go-solutions/20-generics/08-generic-tree-structures/08-generic-tree-structures/cmd/demo
+cd go-solutions/20-generics/08-generic-tree-structures/08-generic-tree-structures
 ```
 
 ### Exercise 1: Build The Tree

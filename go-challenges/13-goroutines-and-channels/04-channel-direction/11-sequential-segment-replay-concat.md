@@ -32,9 +32,8 @@ concat/                      independent module: example.com/concat
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/concat/cmd/demo
-cd ~/go-exercises/concat
-go mod init example.com/concat
+mkdir -p go-solutions/13-goroutines-and-channels/04-channel-direction/11-sequential-segment-replay-concat/cmd/demo
+cd go-solutions/13-goroutines-and-channels/04-channel-direction/11-sequential-segment-replay-concat
 ```
 
 ### Why one drain goroutine, not one per input

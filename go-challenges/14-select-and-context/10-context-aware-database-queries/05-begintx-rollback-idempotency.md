@@ -70,9 +70,8 @@ guard and as a replica-routing hint.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ledger/cmd/demo
-cd ~/go-exercises/ledger
-go mod init example.com/ledger
+mkdir -p go-solutions/14-select-and-context/10-context-aware-database-queries/05-begintx-rollback-idempotency/cmd/demo
+cd go-solutions/14-select-and-context/10-context-aware-database-queries/05-begintx-rollback-idempotency
 go mod edit -go=1.25
 go get modernc.org/sqlite
 ```

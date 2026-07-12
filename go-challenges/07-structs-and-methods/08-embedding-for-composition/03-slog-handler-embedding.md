@@ -28,9 +28,8 @@ ctxlog/                    independent module: example.com/ctxlog
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ctxlog/cmd/demo
-cd ~/go-exercises/ctxlog
-go mod init example.com/ctxlog
+mkdir -p go-solutions/07-structs-and-methods/08-embedding-for-composition/03-slog-handler-embedding/cmd/demo
+cd go-solutions/07-structs-and-methods/08-embedding-for-composition/03-slog-handler-embedding
 ```
 
 ### Overriding Handle, and why WithAttrs must be re-wrapped

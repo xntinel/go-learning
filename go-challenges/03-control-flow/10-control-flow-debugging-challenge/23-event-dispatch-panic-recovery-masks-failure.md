@@ -32,9 +32,8 @@ eventdispatch/               independent module: example.com/event-dispatch-pani
 - Verify: `go test -count=1 -race ./...`.
 
 ```bash
-mkdir -p ~/go-exercises/event-dispatch-panic-recovery-masks-failure/cmd/demo
-cd ~/go-exercises/event-dispatch-panic-recovery-masks-failure
-go mod init example.com/event-dispatch-panic-recovery-masks-failure
+mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/23-event-dispatch-panic-recovery-masks-failure/cmd/demo
+cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/23-event-dispatch-panic-recovery-masks-failure
 ```
 
 ### Why recover has to produce an error, not just stop the crash

@@ -26,8 +26,7 @@ filter_test.go  NULL handling, IS NULL/IS NOT NULL, projection, LIKE
 Set up the module:
 
 ```bash
-mkdir -p filter-and-projection/cmd/demo && cd filter-and-projection
-go mod init example.com/filter-and-projection
+mkdir -p go-solutions/39-capstone-database-engine/06-query-planner/04-expression-evaluator-and-filter/cmd/demo && cd go-solutions/39-capstone-database-engine/06-query-planner/04-expression-evaluator-and-filter
 ```
 
 ### Values, schema, and storage

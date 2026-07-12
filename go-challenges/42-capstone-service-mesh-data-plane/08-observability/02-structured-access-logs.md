@@ -22,8 +22,7 @@ accesslog_test.go    field/type assertions, ndjson line count, duration math, co
 Set up the module:
 
 ```bash
-mkdir -p access-log/cmd/demo && cd access-log
-go mod init example.com/access-log
+mkdir -p go-solutions/42-capstone-service-mesh-data-plane/08-observability/02-structured-access-logs/cmd/demo && cd go-solutions/42-capstone-service-mesh-data-plane/08-observability/02-structured-access-logs
 ```
 
 ### Why JSON Lines, a fixed struct, and one mutex

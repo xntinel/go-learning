@@ -82,9 +82,8 @@ last-writer-wins registers where monotonic or commutative semantics are natural.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/crdt/cmd/demo
-cd ~/go-exercises/crdt
-go mod init example.com/crdt
+mkdir -p go-solutions/37-distributed-systems-fundamentals/09-crdts/09-crdts/cmd/demo
+cd go-solutions/37-distributed-systems-fundamentals/09-crdts/09-crdts
 ```
 
 This is a library package verified with `go test`. There is no top-level

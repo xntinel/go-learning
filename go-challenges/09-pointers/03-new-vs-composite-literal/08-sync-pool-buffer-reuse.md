@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/bufpool/cmd/demo
-cd ~/go-exercises/bufpool
-go mod init example.com/bufpool
+mkdir -p go-solutions/09-pointers/03-new-vs-composite-literal/08-sync-pool-buffer-reuse/cmd/demo
+cd go-solutions/09-pointers/03-new-vs-composite-literal/08-sync-pool-buffer-reuse
 ```
 
 ### Why pool, and why Reset

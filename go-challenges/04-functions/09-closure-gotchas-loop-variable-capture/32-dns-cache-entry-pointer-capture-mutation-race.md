@@ -31,9 +31,8 @@ dnscache/                    independent module: example.com/dnscache
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/dnscache/cmd/demo
-cd ~/go-exercises/dnscache
-go mod init example.com/dnscache
+mkdir -p go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/32-dns-cache-entry-pointer-capture-mutation-race/cmd/demo
+cd go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/32-dns-cache-entry-pointer-capture-mutation-race
 go mod edit -go=1.24
 ```
 

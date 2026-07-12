@@ -29,9 +29,8 @@ obsadmin/                          module: example.com/obsadmin
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/obsadmin/obs ~/go-exercises/obsadmin/admin ~/go-exercises/obsadmin/cmd/demo
-cd ~/go-exercises/obsadmin
-go mod init example.com/obsadmin
+mkdir -p go-solutions/11-packages-and-modules/01-package-declaration-and-imports/05-observability-side-effect-imports/obs go-solutions/11-packages-and-modules/01-package-declaration-and-imports/05-observability-side-effect-imports/admin go-solutions/11-packages-and-modules/01-package-declaration-and-imports/05-observability-side-effect-imports/cmd/demo
+cd go-solutions/11-packages-and-modules/01-package-declaration-and-imports/05-observability-side-effect-imports
 go mod edit -go=1.26
 ```
 

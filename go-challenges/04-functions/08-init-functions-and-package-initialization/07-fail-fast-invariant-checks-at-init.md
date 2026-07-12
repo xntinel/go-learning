@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/bootcheck/migrations ~/go-exercises/bootcheck/cmd/demo
-cd ~/go-exercises/bootcheck
-go mod init example.com/bootcheck
+mkdir -p go-solutions/04-functions/08-init-functions-and-package-initialization/07-fail-fast-invariant-checks-at-init/migrations go-solutions/04-functions/08-init-functions-and-package-initialization/07-fail-fast-invariant-checks-at-init/cmd/demo
+cd go-solutions/04-functions/08-init-functions-and-package-initialization/07-fail-fast-invariant-checks-at-init
 ```
 
 ### Why fail-fast at init is legitimate here

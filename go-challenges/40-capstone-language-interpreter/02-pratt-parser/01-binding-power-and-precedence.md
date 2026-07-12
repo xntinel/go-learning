@@ -24,8 +24,7 @@ cmd/
 Set up the module:
 
 ```bash
-mkdir -p prattparser/cmd/demo && cd prattparser
-go mod init example.com/prattparser
+mkdir -p go-solutions/40-capstone-language-interpreter/02-pratt-parser/01-binding-power-and-precedence/cmd/demo && cd go-solutions/40-capstone-language-interpreter/02-pratt-parser/01-binding-power-and-precedence
 ```
 
 ### The token layer

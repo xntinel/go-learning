@@ -47,9 +47,8 @@ fieldstate/                    module example.com/fieldstate
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/fieldstate
-cd ~/go-exercises/fieldstate
-go mod init example.com/fieldstate
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/17-json-field-state-classifier
+cd go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/17-json-field-state-classifier
 go mod edit -go=1.24
 ```
 

@@ -26,8 +26,7 @@ example_test.go      a go-doc Example that proves logging is transparent
 Set up the module:
 
 ```bash
-mkdir -p instrumented-repository/cmd/demo && cd instrumented-repository
-go mod init example.com/instrumented-repository
+mkdir -p go-solutions/24-design-patterns-in-go/08-middleware-decorator-pattern/01-instrumented-repository/cmd/demo && cd go-solutions/24-design-patterns-in-go/08-middleware-decorator-pattern/01-instrumented-repository
 ```
 
 ### The interface is the contract every layer shares

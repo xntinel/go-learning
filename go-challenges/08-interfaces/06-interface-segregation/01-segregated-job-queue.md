@@ -27,9 +27,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/jobqueue/cmd/demo
-cd ~/go-exercises/jobqueue
-go mod init example.com/jobqueue
+mkdir -p go-solutions/08-interfaces/06-interface-segregation/01-segregated-job-queue/cmd/demo
+cd go-solutions/08-interfaces/06-interface-segregation/01-segregated-job-queue
 go mod edit -go=1.24
 ```
 

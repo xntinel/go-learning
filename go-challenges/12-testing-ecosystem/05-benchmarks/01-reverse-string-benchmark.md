@@ -29,9 +29,8 @@ bench/                     independent module: example.com/bench
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/bench/cmd/demo
-cd ~/go-exercises/bench
-go mod init example.com/bench
+mkdir -p go-solutions/12-testing-ecosystem/05-benchmarks/01-reverse-string-benchmark/cmd/demo
+cd go-solutions/12-testing-ecosystem/05-benchmarks/01-reverse-string-benchmark
 go mod edit -go=1.24
 ```
 

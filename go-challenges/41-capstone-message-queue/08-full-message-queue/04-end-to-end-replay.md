@@ -24,8 +24,7 @@ replay_test.go    committed offset survives restart; uncommitted tail is replaye
 Set up the module:
 
 ```bash
-mkdir -p replay/cmd/demo && cd replay
-go mod init example.com/replay
+mkdir -p go-solutions/41-capstone-message-queue/08-full-message-queue/04-end-to-end-replay/cmd/demo && cd go-solutions/41-capstone-message-queue/08-full-message-queue/04-end-to-end-replay
 ```
 
 ### Why durable offsets, and how the offset log mirrors the message log

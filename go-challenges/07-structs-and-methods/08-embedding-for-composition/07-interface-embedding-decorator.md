@@ -29,9 +29,8 @@ repo/                      independent module: example.com/repo
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/repo/cmd/demo
-cd ~/go-exercises/repo
-go mod init example.com/repo
+mkdir -p go-solutions/07-structs-and-methods/08-embedding-for-composition/07-interface-embedding-decorator/cmd/demo
+cd go-solutions/07-structs-and-methods/08-embedding-for-composition/07-interface-embedding-decorator
 ```
 
 ### Override one method, promote the rest

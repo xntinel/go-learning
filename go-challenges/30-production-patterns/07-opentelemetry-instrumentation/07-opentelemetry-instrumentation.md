@@ -118,9 +118,8 @@ This keeps unit tests hermetic: no goroutines, no file descriptors, no global si
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/otelservice
-cd ~/go-exercises/otelservice
-go mod init example.com/otelservice
+mkdir -p go-solutions/30-production-patterns/07-opentelemetry-instrumentation/07-opentelemetry-instrumentation
+cd go-solutions/30-production-patterns/07-opentelemetry-instrumentation/07-opentelemetry-instrumentation
 go get go.opentelemetry.io/otel@latest
 go get go.opentelemetry.io/otel/sdk@latest
 go get go.opentelemetry.io/otel/exporters/stdout/stdouttrace@latest

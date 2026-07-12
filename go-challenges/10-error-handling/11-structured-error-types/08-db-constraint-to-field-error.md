@@ -29,9 +29,8 @@ constraintmap/             independent module: example.com/constraintmap
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/constraintmap/cmd/demo
-cd ~/go-exercises/constraintmap
-go mod init example.com/constraintmap
+mkdir -p go-solutions/10-error-handling/11-structured-error-types/08-db-constraint-to-field-error/cmd/demo
+cd go-solutions/10-error-handling/11-structured-error-types/08-db-constraint-to-field-error
 go mod edit -go=1.26
 ```
 

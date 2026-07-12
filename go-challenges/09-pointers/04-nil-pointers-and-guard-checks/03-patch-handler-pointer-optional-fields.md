@@ -28,9 +28,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/patchuser/cmd/demo
-cd ~/go-exercises/patchuser
-go mod init example.com/patchuser
+mkdir -p go-solutions/09-pointers/04-nil-pointers-and-guard-checks/03-patch-handler-pointer-optional-fields/cmd/demo
+cd go-solutions/09-pointers/04-nil-pointers-and-guard-checks/03-patch-handler-pointer-optional-fields
 go mod edit -go=1.24
 ```
 

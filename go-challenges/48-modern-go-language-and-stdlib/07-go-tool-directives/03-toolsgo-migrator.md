@@ -29,9 +29,8 @@ toolsmig/                     independent module: example.com/toolsmig
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/toolsmig/cmd/demo
-cd ~/go-exercises/toolsmig
-go mod init example.com/toolsmig
+mkdir -p go-solutions/48-modern-go-language-and-stdlib/07-go-tool-directives/03-toolsgo-migrator/cmd/demo
+cd go-solutions/48-modern-go-language-and-stdlib/07-go-tool-directives/03-toolsgo-migrator
 go mod edit -go=1.25 -require=golang.org/x/mod@v0.37.0
 go mod tidy
 ```

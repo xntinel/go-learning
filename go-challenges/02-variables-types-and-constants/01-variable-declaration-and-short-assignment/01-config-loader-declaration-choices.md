@@ -30,9 +30,8 @@ appconfig/                     independent module: example.com/appconfig
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/appconfig/cmd/demo
-cd ~/go-exercises/appconfig
-go mod init example.com/appconfig
+mkdir -p go-solutions/02-variables-types-and-constants/01-variable-declaration-and-short-assignment/01-config-loader-declaration-choices/cmd/demo
+cd go-solutions/02-variables-types-and-constants/01-variable-declaration-and-short-assignment/01-config-loader-declaration-choices
 ```
 
 ### Why the zero value is a starting policy, not the final one

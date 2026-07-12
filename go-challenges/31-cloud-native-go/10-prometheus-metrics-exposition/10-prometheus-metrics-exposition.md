@@ -107,9 +107,8 @@ Without this wrapper every request is labeled `200` because that is what
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/metrics/cmd/demo
-cd ~/go-exercises/metrics
-go mod init example.com/metrics
+mkdir -p go-solutions/31-cloud-native-go/10-prometheus-metrics-exposition/10-prometheus-metrics-exposition/cmd/demo
+cd go-solutions/31-cloud-native-go/10-prometheus-metrics-exposition/10-prometheus-metrics-exposition
 go get github.com/prometheus/client_golang@v1.20.0
 ```
 

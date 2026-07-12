@@ -31,9 +31,8 @@ cfgfanout/                 independent module: example.com/cfgfanout
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cfgfanout/cmd/demo
-cd ~/go-exercises/cfgfanout
-go mod init example.com/cfgfanout
+mkdir -p go-solutions/15-sync-primitives/08-atomic-value-config-hot-reload/07-reload-subscriber-fanout/cmd/demo
+cd go-solutions/15-sync-primitives/08-atomic-value-config-hot-reload/07-reload-subscriber-fanout
 ```
 
 ### Events say "changed", snapshots say what changed to

@@ -22,8 +22,7 @@ collector_test.go    nil is ignored, label wrapping, errors.Is reaches every cau
 Set up the module:
 
 ```bash
-mkdir -p collect-every-error/cmd/demo && cd collect-every-error
-go mod init example.com/collect-all
+mkdir -p go-solutions/16-concurrency-patterns/17-error-group-parallel-error-handling/01-collect-every-error/cmd/demo && cd go-solutions/16-concurrency-patterns/17-error-group-parallel-error-handling/01-collect-every-error
 ```
 
 ### Why `errgroup.Wait` is the wrong tool here, and what replaces it

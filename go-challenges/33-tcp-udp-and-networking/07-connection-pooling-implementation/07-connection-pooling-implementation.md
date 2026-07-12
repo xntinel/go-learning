@@ -39,9 +39,8 @@ Both checks run while holding the pool lock, so they must be fast. A health chec
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pool/cmd/demo
-cd ~/go-exercises/pool
-go mod init example.com/pool
+mkdir -p go-solutions/33-tcp-udp-and-networking/07-connection-pooling-implementation/07-connection-pooling-implementation/cmd/demo
+cd go-solutions/33-tcp-udp-and-networking/07-connection-pooling-implementation/07-connection-pooling-implementation
 ```
 
 This is a library, not a program. Verification is via `go test`.

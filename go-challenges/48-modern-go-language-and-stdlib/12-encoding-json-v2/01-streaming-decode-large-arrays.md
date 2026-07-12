@@ -31,9 +31,8 @@ Set up the module. `encoding/json/v2` requires the experiment, so the language
 version is pinned and the experiment must be set in the environment:
 
 ```bash
-mkdir -p ~/go-exercises/streamingest/cmd/demo
-cd ~/go-exercises/streamingest
-go mod init example.com/streamingest
+mkdir -p go-solutions/48-modern-go-language-and-stdlib/12-encoding-json-v2/01-streaming-decode-large-arrays/cmd/demo
+cd go-solutions/48-modern-go-language-and-stdlib/12-encoding-json-v2/01-streaming-decode-large-arrays
 go mod edit -go=1.26
 export GOEXPERIMENT=jsonv2
 ```

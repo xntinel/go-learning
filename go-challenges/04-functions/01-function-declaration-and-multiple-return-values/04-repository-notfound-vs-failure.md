@@ -31,9 +31,8 @@ userrepo/                  independent module: example.com/userrepo
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/userrepo/cmd/demo
-cd ~/go-exercises/userrepo
-go mod init example.com/userrepo
+mkdir -p go-solutions/04-functions/01-function-declaration-and-multiple-return-values/04-repository-notfound-vs-failure/cmd/demo
+cd go-solutions/04-functions/01-function-declaration-and-multiple-return-values/04-repository-notfound-vs-failure
 go mod edit -go=1.25
 ```
 

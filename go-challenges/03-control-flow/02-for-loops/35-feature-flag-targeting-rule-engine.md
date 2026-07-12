@@ -34,9 +34,8 @@ flags/                         module example.com/flags
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/flags/cmd/demo
-cd ~/go-exercises/flags
-go mod init example.com/flags
+mkdir -p go-solutions/03-control-flow/02-for-loops/35-feature-flag-targeting-rule-engine/cmd/demo
+cd go-solutions/03-control-flow/02-for-loops/35-feature-flag-targeting-rule-engine
 go mod edit -go=1.24
 ```
 

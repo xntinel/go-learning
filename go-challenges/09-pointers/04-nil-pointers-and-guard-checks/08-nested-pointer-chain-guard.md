@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/webhook/cmd/demo
-cd ~/go-exercises/webhook
-go mod init example.com/webhook
+mkdir -p go-solutions/09-pointers/04-nil-pointers-and-guard-checks/08-nested-pointer-chain-guard/cmd/demo
+cd go-solutions/09-pointers/04-nil-pointers-and-guard-checks/08-nested-pointer-chain-guard
 go mod edit -go=1.24
 ```
 

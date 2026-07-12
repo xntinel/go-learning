@@ -33,9 +33,8 @@ Verify: `go test -race ./...`, then a bounded `go test -fuzz=FuzzParseInt
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/configint/cmd/demo
-cd ~/go-exercises/configint
-go mod init example.com/configint
+mkdir -p go-solutions/12-testing-ecosystem/06-fuzz-testing/01-fuzz-parseint-invariant/cmd/demo
+cd go-solutions/12-testing-ecosystem/06-fuzz-testing/01-fuzz-parseint-invariant
 ```
 
 ### The parser and the invariant it must satisfy

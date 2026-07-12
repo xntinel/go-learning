@@ -44,9 +44,8 @@ Every wrapper in this lesson holds an inner `io.Reader` or `io.Writer` and adds 
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/iocompose/transform/cmd/demo
-cd ~/go-exercises/iocompose
-go mod init example.com/iocompose
+mkdir -p go-solutions/19-io-and-filesystem/02-io-reader-writer-composition/02-io-reader-writer-composition/transform/cmd/demo
+cd go-solutions/19-io-and-filesystem/02-io-reader-writer-composition/02-io-reader-writer-composition
 ```
 
 ### Exercise 1: A Counting Writer

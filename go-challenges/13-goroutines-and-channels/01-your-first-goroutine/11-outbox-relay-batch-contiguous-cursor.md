@@ -31,9 +31,8 @@ outbox/                      independent module: example.com/outbox
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/outbox/cmd/demo
-cd ~/go-exercises/outbox
-go mod init example.com/outbox
+mkdir -p go-solutions/13-goroutines-and-channels/01-your-first-goroutine/11-outbox-relay-batch-contiguous-cursor/cmd/demo
+cd go-solutions/13-goroutines-and-channels/01-your-first-goroutine/11-outbox-relay-batch-contiguous-cursor
 ```
 
 ### Join before you trust the side effect, then advance only across the gap-free prefix

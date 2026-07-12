@@ -30,9 +30,8 @@ inbox/                     independent module: example.com/inbox
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/inbox/cmd/demo
-cd ~/go-exercises/inbox
-go mod init example.com/inbox
+mkdir -p go-solutions/50-messaging-and-event-driven/07-idempotent-consumers-inbox/01-inbox-store/cmd/demo
+cd go-solutions/50-messaging-and-event-driven/07-idempotent-consumers-inbox/01-inbox-store
 go mod edit -go=1.26
 ```
 

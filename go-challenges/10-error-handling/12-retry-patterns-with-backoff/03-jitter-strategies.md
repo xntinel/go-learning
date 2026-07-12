@@ -27,9 +27,8 @@ Test: seeded `NewPCG(fixed,fixed)` reproduces exact sequences; 10k samples of fu
 Verify: `go test -count=1 -race ./...`
 
 ```bash
-mkdir -p ~/go-exercises/jitter/cmd/demo
-cd ~/go-exercises/jitter
-go mod init example.com/jitter
+mkdir -p go-solutions/10-error-handling/12-retry-patterns-with-backoff/03-jitter-strategies/cmd/demo
+cd go-solutions/10-error-handling/12-retry-patterns-with-backoff/03-jitter-strategies
 go mod edit -go=1.26
 ```
 

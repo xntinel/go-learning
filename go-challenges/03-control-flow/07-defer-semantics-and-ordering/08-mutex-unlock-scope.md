@@ -30,9 +30,8 @@ rtcache/                     independent module: example.com/rtcache
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/rtcache/cmd/demo
-cd ~/go-exercises/rtcache
-go mod init example.com/rtcache
+mkdir -p go-solutions/03-control-flow/07-defer-semantics-and-ordering/08-mutex-unlock-scope/cmd/demo
+cd go-solutions/03-control-flow/07-defer-semantics-and-ordering/08-mutex-unlock-scope
 ```
 
 ### Why the deferred unlock scope is the whole problem

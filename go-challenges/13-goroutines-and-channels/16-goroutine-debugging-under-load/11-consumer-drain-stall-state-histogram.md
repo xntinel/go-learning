@@ -34,9 +34,8 @@ dumpscan/                    independent module: example.com/dumpscan
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/dumpscan/cmd/demo
-cd ~/go-exercises/dumpscan
-go mod init example.com/dumpscan
+mkdir -p go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/11-consumer-drain-stall-state-histogram/cmd/demo
+cd go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/11-consumer-drain-stall-state-histogram
 ```
 
 ### The state keyword is the diagnosis, and it lives in the header line

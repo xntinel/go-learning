@@ -32,9 +32,8 @@ periodic/                    independent module: example.com/periodic
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/periodic/cmd/demo
-cd ~/go-exercises/periodic
-go mod init example.com/periodic
+mkdir -p go-solutions/13-goroutines-and-channels/15-building-a-concurrent-task-scheduler/11-periodic-compaction-skip-if-running/cmd/demo
+cd go-solutions/13-goroutines-and-channels/15-building-a-concurrent-task-scheduler/11-periodic-compaction-skip-if-running
 go mod edit -go=1.26
 go get go.uber.org/goleak
 go mod tidy

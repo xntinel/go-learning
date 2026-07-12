@@ -29,9 +29,8 @@ narrow/                    independent module: example.com/narrow
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/narrow/cmd/demo
-cd ~/go-exercises/narrow
-go mod init example.com/narrow
+mkdir -p go-solutions/02-variables-types-and-constants/03-basic-types/04-safe-integer-narrowing/cmd/demo
+cd go-solutions/02-variables-types-and-constants/03-basic-types/04-safe-integer-narrowing
 ```
 
 ### Why a plain conversion is a bug generator

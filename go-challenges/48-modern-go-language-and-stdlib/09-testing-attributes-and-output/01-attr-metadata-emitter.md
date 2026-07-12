@@ -29,9 +29,8 @@ attremit/                   independent module: example.com/attremit
 Set up the module. `testing.T.Attr` requires Go 1.25+, so pin the language version:
 
 ```bash
-mkdir -p ~/go-exercises/attremit/cmd/demo
-cd ~/go-exercises/attremit
-go mod init example.com/attremit
+mkdir -p go-solutions/48-modern-go-language-and-stdlib/09-testing-attributes-and-output/01-attr-metadata-emitter/cmd/demo
+cd go-solutions/48-modern-go-language-and-stdlib/09-testing-attributes-and-output/01-attr-metadata-emitter
 go mod edit -go=1.25
 ```
 

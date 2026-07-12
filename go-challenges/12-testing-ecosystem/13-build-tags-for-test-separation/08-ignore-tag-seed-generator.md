@@ -32,9 +32,8 @@ seeddemo/                  independent module: example.com/seeddemo
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/seeddemo/cmd/demo
-cd ~/go-exercises/seeddemo
-go mod init example.com/seeddemo
+mkdir -p go-solutions/12-testing-ecosystem/13-build-tags-for-test-separation/08-ignore-tag-seed-generator/cmd/demo
+cd go-solutions/12-testing-ecosystem/13-build-tags-for-test-separation/08-ignore-tag-seed-generator
 go mod edit -go=1.26
 ```
 

@@ -29,8 +29,7 @@ tree_test.go         a known-total tree, a nil tree, and a wide tree under -race
 Set up the module:
 
 ```bash
-mkdir -p concurrent-tree-fold/cmd/demo && cd concurrent-tree-fold
-go mod init example.com/parallel
+mkdir -p go-solutions/48-modern-go-language-and-stdlib/05-sync-waitgroup-go/02-concurrent-tree-fold/cmd/demo && cd go-solutions/48-modern-go-language-and-stdlib/05-sync-waitgroup-go/02-concurrent-tree-fold
 go mod edit -go=1.25
 ```
 

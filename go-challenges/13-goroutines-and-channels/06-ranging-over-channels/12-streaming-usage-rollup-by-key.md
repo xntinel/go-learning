@@ -32,9 +32,8 @@ rollup/                      independent module: example.com/rollup
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/rollup/cmd/demo
-cd ~/go-exercises/rollup
-go mod init example.com/rollup
+mkdir -p go-solutions/13-goroutines-and-channels/06-ranging-over-channels/12-streaming-usage-rollup-by-key/cmd/demo
+cd go-solutions/13-goroutines-and-channels/06-ranging-over-channels/12-streaming-usage-rollup-by-key
 ```
 
 ### Reduce while ranging, flush once on close

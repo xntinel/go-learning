@@ -32,9 +32,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/svccfg/cmd/demo
-cd ~/go-exercises/svccfg
-go mod init example.com/svccfg
+mkdir -p go-solutions/12-testing-ecosystem/24-property-based-testing/07-custom-generators-and-shrinking/cmd/demo
+cd go-solutions/12-testing-ecosystem/24-property-based-testing/07-custom-generators-and-shrinking
 go mod edit -go=1.26
 go get pgregory.net/rapid@latest
 ```

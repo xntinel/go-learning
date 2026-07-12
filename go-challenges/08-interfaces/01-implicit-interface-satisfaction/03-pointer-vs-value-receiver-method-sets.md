@@ -31,9 +31,8 @@ limiter/                      independent module: example.com/limiter
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/limiter/cmd/demo
-cd ~/go-exercises/limiter
-go mod init example.com/limiter
+mkdir -p go-solutions/08-interfaces/01-implicit-interface-satisfaction/03-pointer-vs-value-receiver-method-sets/cmd/demo
+cd go-solutions/08-interfaces/01-implicit-interface-satisfaction/03-pointer-vs-value-receiver-method-sets
 ```
 
 ### Why the value form does not satisfy the interface

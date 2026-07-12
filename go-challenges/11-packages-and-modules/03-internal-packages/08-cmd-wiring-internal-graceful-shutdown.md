@@ -31,9 +31,8 @@ serverkit/                          module example.com/serverkit
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/serverkit/internal/config ~/go-exercises/serverkit/internal/httpapi ~/go-exercises/serverkit/cmd/server ~/go-exercises/serverkit/cmd/demo
-cd ~/go-exercises/serverkit
-go mod init example.com/serverkit
+mkdir -p go-solutions/11-packages-and-modules/03-internal-packages/08-cmd-wiring-internal-graceful-shutdown/internal/config go-solutions/11-packages-and-modules/03-internal-packages/08-cmd-wiring-internal-graceful-shutdown/internal/httpapi go-solutions/11-packages-and-modules/03-internal-packages/08-cmd-wiring-internal-graceful-shutdown/cmd/server go-solutions/11-packages-and-modules/03-internal-packages/08-cmd-wiring-internal-graceful-shutdown/cmd/demo
+cd go-solutions/11-packages-and-modules/03-internal-packages/08-cmd-wiring-internal-graceful-shutdown
 ```
 
 ### Why cmd/ + internal/ is an encapsulation choice

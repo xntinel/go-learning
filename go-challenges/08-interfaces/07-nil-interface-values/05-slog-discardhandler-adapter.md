@@ -26,9 +26,8 @@ slogwiring/                independent module: example.com/slogwiring
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/slogwiring/cmd/demo
-cd ~/go-exercises/slogwiring
-go mod init example.com/slogwiring
+mkdir -p go-solutions/08-interfaces/07-nil-interface-values/05-slog-discardhandler-adapter/cmd/demo
+cd go-solutions/08-interfaces/07-nil-interface-values/05-slog-discardhandler-adapter
 ```
 
 ### Why normalize the Handler, and what the four methods mean

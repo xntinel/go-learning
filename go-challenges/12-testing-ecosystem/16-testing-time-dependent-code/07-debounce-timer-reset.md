@@ -28,9 +28,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module (synctest is stable in Go 1.25):
 
 ```bash
-mkdir -p ~/go-exercises/debounce/cmd/demo
-cd ~/go-exercises/debounce
-go mod init example.com/debounce
+mkdir -p go-solutions/12-testing-ecosystem/16-testing-time-dependent-code/07-debounce-timer-reset/cmd/demo
+cd go-solutions/12-testing-ecosystem/16-testing-time-dependent-code/07-debounce-timer-reset
 go mod edit -go=1.25
 ```
 

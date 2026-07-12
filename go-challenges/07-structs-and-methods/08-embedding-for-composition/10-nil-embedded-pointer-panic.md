@@ -28,9 +28,8 @@ svc/                       independent module: example.com/svc
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/svc/cmd/demo
-cd ~/go-exercises/svc
-go mod init example.com/svc
+mkdir -p go-solutions/07-structs-and-methods/08-embedding-for-composition/10-nil-embedded-pointer-panic/cmd/demo
+cd go-solutions/07-structs-and-methods/08-embedding-for-composition/10-nil-embedded-pointer-panic
 ```
 
 ### Why the zero value bites, and how the constructor fixes it

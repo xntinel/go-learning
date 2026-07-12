@@ -29,9 +29,8 @@ collector/                 independent module: example.com/collector
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/collector/cmd/demo
-cd ~/go-exercises/collector
-go mod init example.com/collector
+mkdir -p go-solutions/10-error-handling/07-multiple-error-returns/01-source-collector-join/cmd/demo
+cd go-solutions/10-error-handling/07-multiple-error-returns/01-source-collector-join
 ```
 
 ### Why aggregate instead of returning the first error

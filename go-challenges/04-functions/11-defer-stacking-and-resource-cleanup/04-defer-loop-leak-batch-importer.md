@@ -28,9 +28,8 @@ importer/                   independent module: example.com/importer
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/importer/importer ~/go-exercises/importer/cmd/demo
-cd ~/go-exercises/importer
-go mod init example.com/importer
+mkdir -p go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/04-defer-loop-leak-batch-importer/importer go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/04-defer-loop-leak-batch-importer/cmd/demo
+cd go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/04-defer-loop-leak-batch-importer
 ```
 
 ### Function scope is the whole story

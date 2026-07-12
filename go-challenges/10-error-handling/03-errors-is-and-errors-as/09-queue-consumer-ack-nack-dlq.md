@@ -27,9 +27,8 @@ Verify: `go test -count=1 -race ./... && go vet ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/queuedisp/cmd/demo
-cd ~/go-exercises/queuedisp
-go mod init example.com/queuedisp
+mkdir -p go-solutions/10-error-handling/03-errors-is-and-errors-as/09-queue-consumer-ack-nack-dlq/cmd/demo
+cd go-solutions/10-error-handling/03-errors-is-and-errors-as/09-queue-consumer-ack-nack-dlq
 go mod edit -go=1.25
 ```
 

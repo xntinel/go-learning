@@ -27,9 +27,8 @@ txn/                        independent module: example.com/txn
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/txn/cmd/demo
-cd ~/go-exercises/txn
-go mod init example.com/txn
+mkdir -p go-solutions/04-functions/02-named-return-values/03-tx-commit-rollback-boundary/cmd/demo
+cd go-solutions/04-functions/02-named-return-values/03-tx-commit-rollback-boundary
 ```
 
 ### The single-exit settlement

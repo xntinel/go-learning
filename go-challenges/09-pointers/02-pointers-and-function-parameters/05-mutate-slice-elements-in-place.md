@@ -29,9 +29,8 @@ normalize/                  independent module: example.com/normalize
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/normalize/cmd/demo
-cd ~/go-exercises/normalize
-go mod init example.com/normalize
+mkdir -p go-solutions/09-pointers/02-pointers-and-function-parameters/05-mutate-slice-elements-in-place/cmd/demo
+cd go-solutions/09-pointers/02-pointers-and-function-parameters/05-mutate-slice-elements-in-place
 ```
 
 ### Why the value-range write is lost

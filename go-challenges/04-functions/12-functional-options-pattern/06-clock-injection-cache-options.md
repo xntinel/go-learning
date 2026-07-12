@@ -29,9 +29,8 @@ ttlcache/                        independent module: example.com/ttlcache
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ttlcache/cmd/demo
-cd ~/go-exercises/ttlcache
-go mod init example.com/ttlcache
+mkdir -p go-solutions/04-functions/12-functional-options-pattern/06-clock-injection-cache-options/cmd/demo
+cd go-solutions/04-functions/12-functional-options-pattern/06-clock-injection-cache-options
 ```
 
 ### Injecting a clock and a hook, both generic

@@ -23,8 +23,7 @@ tcp-source/
 Set up the module:
 
 ```bash
-mkdir -p tcp-source/cmd/demo && cd tcp-source
-go mod init example.com/tcp-source
+mkdir -p go-solutions/43-capstone-stream-processing-engine/01-source-connectors/02-tcp-source/cmd/demo && cd go-solutions/43-capstone-stream-processing-engine/01-source-connectors/02-tcp-source
 ```
 
 ### The shared vocabulary

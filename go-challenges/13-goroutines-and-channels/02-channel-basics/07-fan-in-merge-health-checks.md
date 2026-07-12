@@ -28,9 +28,8 @@ health/                      independent module: example.com/health
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/health/cmd/demo
-cd ~/go-exercises/health
-go mod init example.com/health
+mkdir -p go-solutions/13-goroutines-and-channels/02-channel-basics/07-fan-in-merge-health-checks/cmd/demo
+cd go-solutions/13-goroutines-and-channels/02-channel-basics/07-fan-in-merge-health-checks
 ```
 
 ### One shared output, one owner, one close

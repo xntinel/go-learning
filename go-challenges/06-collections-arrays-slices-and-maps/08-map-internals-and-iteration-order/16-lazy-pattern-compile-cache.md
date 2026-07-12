@@ -56,9 +56,8 @@ patterncache/             module example.com/patterncache
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/patterncache
-cd ~/go-exercises/patterncache
-go mod init example.com/patterncache
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/16-lazy-pattern-compile-cache
+cd go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/16-lazy-pattern-compile-cache
 go mod edit -go=1.24
 ```
 

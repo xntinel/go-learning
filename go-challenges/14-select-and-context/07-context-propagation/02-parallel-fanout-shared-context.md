@@ -34,9 +34,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/fanout/cmd/demo
-cd ~/go-exercises/fanout
-go mod init example.com/fanout
+mkdir -p go-solutions/14-select-and-context/07-context-propagation/02-parallel-fanout-shared-context/cmd/demo
+cd go-solutions/14-select-and-context/07-context-propagation/02-parallel-fanout-shared-context
 go mod edit -go=1.24
 ```
 

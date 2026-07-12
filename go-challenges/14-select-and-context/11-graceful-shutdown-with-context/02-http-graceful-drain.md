@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/httpdrain/cmd/demo
-cd ~/go-exercises/httpdrain
-go mod init example.com/httpdrain
+mkdir -p go-solutions/14-select-and-context/11-graceful-shutdown-with-context/02-http-graceful-drain/cmd/demo
+cd go-solutions/14-select-and-context/11-graceful-shutdown-with-context/02-http-graceful-drain
 ```
 
 ## Why the shutdown context must be fresh

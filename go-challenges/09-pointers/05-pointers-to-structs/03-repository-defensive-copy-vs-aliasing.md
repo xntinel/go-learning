@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/orderrepo/cmd/demo
-cd ~/go-exercises/orderrepo
-go mod init example.com/orderrepo
+mkdir -p go-solutions/09-pointers/05-pointers-to-structs/03-repository-defensive-copy-vs-aliasing/cmd/demo
+cd go-solutions/09-pointers/05-pointers-to-structs/03-repository-defensive-copy-vs-aliasing
 ```
 
 ### Aliasing, and why a shallow copy is not enough

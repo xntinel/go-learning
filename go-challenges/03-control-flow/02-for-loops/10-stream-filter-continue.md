@@ -30,9 +30,8 @@ ingest/                     module example.com/ingest
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ingest/cmd/demo
-cd ~/go-exercises/ingest
-go mod init example.com/ingest
+mkdir -p go-solutions/03-control-flow/02-for-loops/10-stream-filter-continue/cmd/demo
+cd go-solutions/03-control-flow/02-for-loops/10-stream-filter-continue
 ```
 
 ### continue is a flattening tool, not a jump

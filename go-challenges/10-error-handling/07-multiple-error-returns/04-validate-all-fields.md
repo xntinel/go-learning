@@ -29,9 +29,8 @@ validate/                  independent module: example.com/validate
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/validate/cmd/demo
-cd ~/go-exercises/validate
-go mod init example.com/validate
+mkdir -p go-solutions/10-error-handling/07-multiple-error-returns/04-validate-all-fields/cmd/demo
+cd go-solutions/10-error-handling/07-multiple-error-returns/04-validate-all-fields
 ```
 
 ### Why fail-complete, and why typed violations

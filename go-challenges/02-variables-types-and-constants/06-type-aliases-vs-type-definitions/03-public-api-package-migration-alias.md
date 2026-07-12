@@ -33,9 +33,8 @@ apimigration/             independent module: example.com/apimigration
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/apimigration/entities ~/go-exercises/apimigration/models ~/go-exercises/apimigration/cmd/demo
-cd ~/go-exercises/apimigration
-go mod init example.com/apimigration
+mkdir -p go-solutions/02-variables-types-and-constants/06-type-aliases-vs-type-definitions/03-public-api-package-migration-alias/entities go-solutions/02-variables-types-and-constants/06-type-aliases-vs-type-definitions/03-public-api-package-migration-alias/models go-solutions/02-variables-types-and-constants/06-type-aliases-vs-type-definitions/03-public-api-package-migration-alias/cmd/demo
+cd go-solutions/02-variables-types-and-constants/06-type-aliases-vs-type-definitions/03-public-api-package-migration-alias
 go mod edit -go=1.24
 ```
 

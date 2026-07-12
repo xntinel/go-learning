@@ -24,8 +24,7 @@ hash_test.go  immutability, override-on-merge, unhashable-key error
 Set up the module:
 
 ```bash
-mkdir -p hashbuiltins/cmd/demo && cd hashbuiltins
-go mod init example.com/hashbuiltins
+mkdir -p go-solutions/40-capstone-language-interpreter/05-builtin-functions/06-hash-builtins/cmd/demo && cd go-solutions/40-capstone-language-interpreter/05-builtin-functions/06-hash-builtins
 ```
 
 ### Canonical keys and immutable rebuilds

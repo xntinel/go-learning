@@ -30,9 +30,8 @@ profile-fanout/                      independent module: example.com/profilefano
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/profile-fanout/cmd/demo
-cd ~/go-exercises/profile-fanout
-go mod init example.com/profilefanout
+mkdir -p go-solutions/14-select-and-context/05-context-withtimeout-withdeadline/08-fanout-subbudget-allocation/cmd/demo
+cd go-solutions/14-select-and-context/05-context-withtimeout-withdeadline/08-fanout-subbudget-allocation
 ```
 
 ### One request budget, many branches

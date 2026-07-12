@@ -25,9 +25,8 @@ priorityactor/               independent module: example.com/priorityactor
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/priorityactor/cmd/demo
-cd ~/go-exercises/priorityactor
-go mod init example.com/priorityactor
+mkdir -p go-solutions/13-goroutines-and-channels/09-channel-of-channels/11-control-plane-priority-actor/cmd/demo
+cd go-solutions/13-goroutines-and-channels/09-channel-of-channels/11-control-plane-priority-actor
 ```
 
 ### Two inboxes, one loop, a preferential drain

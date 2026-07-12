@@ -26,8 +26,7 @@ grpc_test.go          end-to-end push over bufconn; NACK re-push via a fake stre
 Set up the module and add grpc:
 
 ```bash
-mkdir -p control-plane/cmd/demo && cd control-plane
-go mod init example.com/control-plane
+mkdir -p go-solutions/42-capstone-service-mesh-data-plane/09-control-plane-grpc/04-grpc-control-plane/cmd/demo && cd go-solutions/42-capstone-service-mesh-data-plane/09-control-plane-grpc/04-grpc-control-plane
 go mod edit -go=1.26
 go get google.golang.org/grpc@latest
 ```

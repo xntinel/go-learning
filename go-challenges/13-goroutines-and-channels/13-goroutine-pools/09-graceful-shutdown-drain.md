@@ -29,9 +29,8 @@ drainpool/                 independent module: example.com/drainpool
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/drainpool/cmd/demo
-cd ~/go-exercises/drainpool
-go mod init example.com/drainpool
+mkdir -p go-solutions/13-goroutines-and-channels/13-goroutine-pools/09-graceful-shutdown-drain/cmd/demo
+cd go-solutions/13-goroutines-and-channels/13-goroutine-pools/09-graceful-shutdown-drain
 ```
 
 ### Race the drain against the deadline

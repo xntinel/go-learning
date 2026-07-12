@@ -28,9 +28,8 @@ Verify: `go test -count=1 -race ./... && go vet ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/obsfields/cmd/demo
-cd ~/go-exercises/obsfields
-go mod init example.com/obsfields
+mkdir -p go-solutions/10-error-handling/03-errors-is-and-errors-as/08-observability-extract-fields/cmd/demo
+cd go-solutions/10-error-handling/03-errors-is-and-errors-as/08-observability-extract-fields
 go mod edit -go=1.25
 ```
 

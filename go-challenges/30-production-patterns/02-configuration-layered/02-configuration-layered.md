@@ -89,9 +89,8 @@ would misparse `"5s"` silently.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/config/cmd/demo
-cd ~/go-exercises/config
-go mod init example.com/config
+mkdir -p go-solutions/30-production-patterns/02-configuration-layered/02-configuration-layered/cmd/demo
+cd go-solutions/30-production-patterns/02-configuration-layered/02-configuration-layered
 ```
 
 This is a library. Verification is `go test`, not `go run`.

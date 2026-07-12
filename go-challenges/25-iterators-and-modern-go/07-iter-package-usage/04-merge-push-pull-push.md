@@ -22,8 +22,7 @@ merge_test.go        interleave, uneven lengths, empties, early-break stops both
 Set up the module:
 
 ```bash
-mkdir -p merge-push-pull-push/cmd/demo && cd merge-push-pull-push
-go mod init example.com/merge-push-pull-push
+mkdir -p go-solutions/25-iterators-and-modern-go/07-iter-package-usage/04-merge-push-pull-push/cmd/demo && cd go-solutions/25-iterators-and-modern-go/07-iter-package-usage/04-merge-push-pull-push
 ```
 
 ### The push-pull-push sandwich

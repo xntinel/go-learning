@@ -29,9 +29,8 @@ idleconn/                   independent module: example.com/idleconn
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/idleconn/cmd/demo
-cd ~/go-exercises/idleconn
-go mod init example.com/idleconn
+mkdir -p go-solutions/08-interfaces/05-interface-composition-and-embedding/07-idle-timeout-conn/cmd/demo
+cd go-solutions/08-interfaces/05-interface-composition-and-embedding/07-idle-timeout-conn
 ```
 
 ### Why embedding is exactly right here

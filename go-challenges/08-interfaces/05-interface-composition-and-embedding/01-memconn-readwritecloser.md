@@ -28,9 +28,8 @@ memconn/                    independent module: example.com/memconn
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/memconn/cmd/demo
-cd ~/go-exercises/memconn
-go mod init example.com/memconn
+mkdir -p go-solutions/08-interfaces/05-interface-composition-and-embedding/01-memconn-readwritecloser/cmd/demo
+cd go-solutions/08-interfaces/05-interface-composition-and-embedding/01-memconn-readwritecloser
 ```
 
 ### Why a composed interface, and why MemConn does not embed one

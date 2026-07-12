@@ -21,9 +21,8 @@ Embed patterns are relative to the source file containing the directive. They ca
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/embeddedsite/cmd/demo ~/go-exercises/embeddedsite/assets/templates
-cd ~/go-exercises/embeddedsite
-go mod init example.com/embeddedsite
+mkdir -p go-solutions/19-io-and-filesystem/06-embed-directive/06-embed-directive/cmd/demo go-solutions/19-io-and-filesystem/06-embed-directive/06-embed-directive/assets/templates
+cd go-solutions/19-io-and-filesystem/06-embed-directive/06-embed-directive
 ```
 
 Create `assets/config.txt`:

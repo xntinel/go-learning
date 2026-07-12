@@ -63,9 +63,8 @@ For unknown values the generated code falls back to:
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/taskstatus
-cd ~/go-exercises/taskstatus
-go mod init example.com/taskstatus
+mkdir -p go-solutions/29-code-generation-and-build-system/02-stringer/02-stringer
+cd go-solutions/29-code-generation-and-build-system/02-stringer/02-stringer
 ```
 
 ### Exercise 1: Define The Enum Type

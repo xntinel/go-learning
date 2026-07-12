@@ -29,9 +29,8 @@ sizegate/                  independent module: example.com/sizegate
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/sizegate/cmd/demo
-cd ~/go-exercises/sizegate
-go mod init example.com/sizegate
+mkdir -p go-solutions/07-structs-and-methods/09-struct-memory-layout-and-padding/04-size-regression-gate/cmd/demo
+cd go-solutions/07-structs-and-methods/09-struct-memory-layout-and-padding/04-size-regression-gate
 ```
 
 ### Why a size budget belongs in CI

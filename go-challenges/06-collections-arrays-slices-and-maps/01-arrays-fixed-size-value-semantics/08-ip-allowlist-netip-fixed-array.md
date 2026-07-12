@@ -30,9 +30,8 @@ ipallow/                     independent module: example.com/ipallow
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ipallow/cmd/demo
-cd ~/go-exercises/ipallow
-go mod init example.com/ipallow
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/08-ip-allowlist-netip-fixed-array/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/08-ip-allowlist-netip-fixed-array
 ```
 
 ### Why normalize to [16]byte via As16

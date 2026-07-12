@@ -29,9 +29,8 @@ leasebackoff/                independent module: example.com/lease-renewal-backo
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/leasebackoff/cmd/demo
-cd ~/go-exercises/leasebackoff
-go mod init example.com/lease-renewal-backoff-strategy
+mkdir -p go-solutions/03-control-flow/03-switch-statements/24-lease-renewal-backoff-strategy/cmd/demo
+cd go-solutions/03-control-flow/03-switch-statements/24-lease-renewal-backoff-strategy
 go mod edit -go=1.24
 ```
 

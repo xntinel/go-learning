@@ -30,9 +30,8 @@ endpoint/                    independent module: example.com/normalize-endpoint-
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/endpoint/cmd/demo
-cd ~/go-exercises/endpoint
-go mod init example.com/normalize-endpoint-canonical
+mkdir -p go-solutions/07-structs-and-methods/06-constructor-functions-and-validation/09-normalize-endpoint-canonical/cmd/demo
+cd go-solutions/07-structs-and-methods/06-constructor-functions-and-validation/09-normalize-endpoint-canonical
 ```
 
 ### Normalization is a constructor's job

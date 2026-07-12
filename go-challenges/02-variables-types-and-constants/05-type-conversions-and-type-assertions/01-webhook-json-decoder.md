@@ -29,9 +29,8 @@ webhookdecode/               independent module: example.com/webhookdecode
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/webhookdecode/cmd/demo
-cd ~/go-exercises/webhookdecode
-go mod init example.com/webhookdecode
+mkdir -p go-solutions/02-variables-types-and-constants/05-type-conversions-and-type-assertions/01-webhook-json-decoder/cmd/demo
+cd go-solutions/02-variables-types-and-constants/05-type-conversions-and-type-assertions/01-webhook-json-decoder
 go mod edit -go=1.26
 ```
 

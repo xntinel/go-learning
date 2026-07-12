@@ -22,8 +22,7 @@ reaper_test.go         time-then-size composition, the never-empty floor, concur
 Set up the module:
 
 ```bash
-mkdir -p background-reaper/cmd/demo && cd background-reaper
-go mod init example.com/background-reaper
+mkdir -p go-solutions/41-capstone-message-queue/06-message-retention-compaction/04-background-reaper/cmd/demo && cd go-solutions/41-capstone-message-queue/06-message-retention-compaction/04-background-reaper
 ```
 
 ### Composing two policies in one pass

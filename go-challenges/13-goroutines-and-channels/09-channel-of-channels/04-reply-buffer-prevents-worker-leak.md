@@ -29,9 +29,8 @@ replybuffer/               independent module: example.com/replybuffer
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/replybuffer/cmd/demo
-cd ~/go-exercises/replybuffer
-go mod init example.com/replybuffer
+mkdir -p go-solutions/13-goroutines-and-channels/09-channel-of-channels/04-reply-buffer-prevents-worker-leak/cmd/demo
+cd go-solutions/13-goroutines-and-channels/09-channel-of-channels/04-reply-buffer-prevents-worker-leak
 ```
 
 ### The leak, made concrete

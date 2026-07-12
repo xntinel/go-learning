@@ -31,9 +31,8 @@ observable/                independent module: example.com/observable
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/observable/cmd/demo
-cd ~/go-exercises/observable
-go mod init example.com/observable
+mkdir -p go-solutions/13-goroutines-and-channels/09-channel-of-channels/09-actor-self-observability/cmd/demo
+cd go-solutions/13-goroutines-and-channels/09-channel-of-channels/09-actor-self-observability
 ```
 
 ### Metrics as a request on the same loop

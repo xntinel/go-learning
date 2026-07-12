@@ -34,9 +34,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/multicurrency/cmd/demo
-cd ~/go-exercises/multicurrency
-go mod init example.com/multicurrency
+mkdir -p go-solutions/02-variables-types-and-constants/07-numeric-precision-and-overflow/09-multi-currency-minor-units/cmd/demo
+cd go-solutions/02-variables-types-and-constants/07-numeric-precision-and-overflow/09-multi-currency-minor-units
 ```
 
 ### Scale is a property of the currency, not a constant

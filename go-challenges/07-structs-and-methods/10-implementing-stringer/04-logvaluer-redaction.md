@@ -29,9 +29,8 @@ redact/                     independent module: example.com/redact
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/redact/cmd/demo
-cd ~/go-exercises/redact
-go mod init example.com/redact
+mkdir -p go-solutions/07-structs-and-methods/10-implementing-stringer/04-logvaluer-redaction/cmd/demo
+cd go-solutions/07-structs-and-methods/10-implementing-stringer/04-logvaluer-redaction
 ```
 
 ### Why String() alone is not enough

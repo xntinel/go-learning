@@ -22,8 +22,7 @@ expiry_test.go       fires for an expiring cert, silent for a long-lived one, fi
 Set up the module:
 
 ```bash
-mkdir -p expiry-monitoring/cmd/demo && cd expiry-monitoring
-go mod init example.com/expiry-monitoring
+mkdir -p go-solutions/42-capstone-service-mesh-data-plane/03-mtls-termination/04-expiry-monitoring/cmd/demo && cd go-solutions/42-capstone-service-mesh-data-plane/03-mtls-termination/04-expiry-monitoring
 go mod edit -go=1.26
 ```
 

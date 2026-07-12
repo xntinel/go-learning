@@ -32,9 +32,8 @@ benchmark; `go test -run=Fuzz` runs the seed corpus. `gofmt -l` empty.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/urlnorm/cmd/demo
-cd ~/go-exercises/urlnorm
-go mod init example.com/urlnorm
+mkdir -p go-solutions/01-environment-and-tooling/01-your-first-go-program/07-benchmarks-and-fuzzing/cmd/demo
+cd go-solutions/01-environment-and-tooling/01-your-first-go-program/07-benchmarks-and-fuzzing
 ```
 
 ### The helper, built to never panic

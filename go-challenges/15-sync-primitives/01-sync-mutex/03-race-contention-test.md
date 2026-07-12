@@ -30,9 +30,8 @@ racetest/                    independent module: example.com/racetest
 - Verify: `go test -count=1 -race ./...` (default, clean), then `go test -tags racebug -race ./...` (fires the detector).
 
 ```bash
-mkdir -p ~/go-exercises/racetest/cmd/demo
-cd ~/go-exercises/racetest
-go mod init example.com/racetest
+mkdir -p go-solutions/15-sync-primitives/01-sync-mutex/03-race-contention-test/cmd/demo
+cd go-solutions/15-sync-primitives/01-sync-mutex/03-race-contention-test
 ```
 
 ### Why the bug lives behind a build tag

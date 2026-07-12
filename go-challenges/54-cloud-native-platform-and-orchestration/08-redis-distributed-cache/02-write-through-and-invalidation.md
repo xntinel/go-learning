@@ -30,9 +30,8 @@ writethrough/                 independent module: example.com/writethrough
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/writethrough/cmd/demo
-cd ~/go-exercises/writethrough
-go mod init example.com/writethrough
+mkdir -p go-solutions/54-cloud-native-platform-and-orchestration/08-redis-distributed-cache/02-write-through-and-invalidation/cmd/demo
+cd go-solutions/54-cloud-native-platform-and-orchestration/08-redis-distributed-cache/02-write-through-and-invalidation
 go get github.com/redis/go-redis/v9@latest
 go get github.com/alicebob/miniredis/v2@latest
 ```

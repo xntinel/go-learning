@@ -35,9 +35,8 @@ sdkretry/                      independent module: example.com/sdkretry
 Set up the module. `//go:fix inline` and the revamped `go fix` require Go 1.26:
 
 ```bash
-mkdir -p ~/go-exercises/sdkretry/backoff ~/go-exercises/sdkretry/consumer ~/go-exercises/sdkretry/cmd/demo
-cd ~/go-exercises/sdkretry
-go mod init example.com/sdkretry
+mkdir -p go-solutions/48-modern-go-language-and-stdlib/16-go-fix-inline-modernization/01-deprecate-and-inline-a-function-api/backoff go-solutions/48-modern-go-language-and-stdlib/16-go-fix-inline-modernization/01-deprecate-and-inline-a-function-api/consumer go-solutions/48-modern-go-language-and-stdlib/16-go-fix-inline-modernization/01-deprecate-and-inline-a-function-api/cmd/demo
+cd go-solutions/48-modern-go-language-and-stdlib/16-go-fix-inline-modernization/01-deprecate-and-inline-a-function-api
 go mod edit -go=1.26
 ```
 

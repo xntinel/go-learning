@@ -32,9 +32,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/workerqueue/cmd/demo
-cd ~/go-exercises/workerqueue
-go mod init example.com/workerqueue
+mkdir -p go-solutions/09-pointers/03-new-vs-composite-literal/05-make-vs-new-worker-queue/cmd/demo
+cd go-solutions/09-pointers/03-new-vs-composite-literal/05-make-vs-new-worker-queue
 ```
 
 ### Why make, not new

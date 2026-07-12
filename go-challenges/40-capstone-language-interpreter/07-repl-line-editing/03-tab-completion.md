@@ -22,8 +22,7 @@ complete_test.go   prefix match, dedup on Add, no-match, empty prefix returns al
 Set up the module:
 
 ```bash
-mkdir -p completion/cmd/demo && cd completion
-go mod init example.com/completion
+mkdir -p go-solutions/40-capstone-language-interpreter/07-repl-line-editing/03-tab-completion/cmd/demo && cd go-solutions/40-capstone-language-interpreter/07-repl-line-editing/03-tab-completion
 ```
 
 ### Interface first, implementation second

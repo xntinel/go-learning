@@ -25,8 +25,7 @@ service_test.go        defaults, required DSN, aggregated errors, cross-field ru
 Set up the module:
 
 ```bash
-mkdir -p dbservice/cmd/demo && cd dbservice
-go mod init example.com/dbservice
+mkdir -p go-solutions/24-design-patterns-in-go/01-functional-options-deep-dive/05-connection-pool-service/cmd/demo && cd go-solutions/24-design-patterns-in-go/01-functional-options-deep-dive/05-connection-pool-service
 ```
 
 ### Depend on a port, not on `*sql.DB`

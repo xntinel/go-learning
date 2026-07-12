@@ -30,9 +30,8 @@ ledger/                     independent module: example.com/ledger
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ledger/cmd/demo
-cd ~/go-exercises/ledger
-go mod init example.com/ledger
+mkdir -p go-solutions/07-structs-and-methods/12-designing-a-domain-model/07-aggregate-root-ledger-invariant/cmd/demo
+cd go-solutions/07-structs-and-methods/12-designing-a-domain-model/07-aggregate-root-ledger-invariant
 ```
 
 ### The root is the only door, and it owns the cross-entry rule

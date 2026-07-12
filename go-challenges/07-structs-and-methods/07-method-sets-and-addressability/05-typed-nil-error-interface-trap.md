@@ -29,9 +29,8 @@ apihandler/                    independent module: example.com/apihandler
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/apihandler/cmd/demo
-cd ~/go-exercises/apihandler
-go mod init example.com/apihandler
+mkdir -p go-solutions/07-structs-and-methods/07-method-sets-and-addressability/05-typed-nil-error-interface-trap/cmd/demo
+cd go-solutions/07-structs-and-methods/07-method-sets-and-addressability/05-typed-nil-error-interface-trap
 ```
 
 ### Why a typed-nil pointer is a non-nil error

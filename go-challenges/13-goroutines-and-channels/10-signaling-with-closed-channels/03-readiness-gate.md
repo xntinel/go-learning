@@ -62,9 +62,8 @@ double-close panic. Exactly one close happens.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/readygate/cmd/demo
-cd ~/go-exercises/readygate
-go mod init example.com/readygate
+mkdir -p go-solutions/13-goroutines-and-channels/10-signaling-with-closed-channels/03-readiness-gate/cmd/demo
+cd go-solutions/13-goroutines-and-channels/10-signaling-with-closed-channels/03-readiness-gate
 ```
 
 Create `server.go`:

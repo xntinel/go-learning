@@ -30,9 +30,8 @@ safefanout/                  independent module: example.com/safefanout
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/safefanout/cmd/demo
-cd ~/go-exercises/safefanout
-go mod init example.com/safefanout
+mkdir -p go-solutions/12-testing-ecosystem/03-test-helpers/06-goroutine-safe-fatal-helper/cmd/demo
+cd go-solutions/12-testing-ecosystem/03-test-helpers/06-goroutine-safe-fatal-helper
 ```
 
 ### Why not `t.Fatal` in a worker

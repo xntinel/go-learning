@@ -27,9 +27,8 @@ flagrules/                   independent module: example.com/flagrules
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/flagrules/cmd/demo
-cd ~/go-exercises/flagrules
-go mod init example.com/flagrules
+mkdir -p go-solutions/04-functions/10-higher-order-functions/25-feature-flag-variant-selector/cmd/demo
+cd go-solutions/04-functions/10-higher-order-functions/25-feature-flag-variant-selector
 go mod edit -go=1.24
 ```
 

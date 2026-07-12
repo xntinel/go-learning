@@ -31,9 +31,8 @@ admission/                  independent module: example.com/admission-control-lo
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/admission/cmd/demo
-cd ~/go-exercises/admission
-go mod init example.com/admission-control-load-shedding
+mkdir -p go-solutions/03-control-flow/01-if-else-and-init-statements/26-admission-control-load-shedding/cmd/demo
+cd go-solutions/03-control-flow/01-if-else-and-init-statements/26-admission-control-load-shedding
 go mod edit -go=1.24
 ```
 

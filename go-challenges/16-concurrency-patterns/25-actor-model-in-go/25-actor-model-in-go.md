@@ -19,9 +19,8 @@ actor/
 Module path: `example.com/actor`. Set up with:
 
 ```bash
-mkdir -p ~/go-exercises/actor/internal/actor ~/go-exercises/actor/cmd/demo
-cd ~/go-exercises/actor
-go mod init example.com/actor
+mkdir -p go-solutions/16-concurrency-patterns/25-actor-model-in-go/25-actor-model-in-go/internal/actor go-solutions/16-concurrency-patterns/25-actor-model-in-go/25-actor-model-in-go/cmd/demo
+cd go-solutions/16-concurrency-patterns/25-actor-model-in-go/25-actor-model-in-go
 ```
 
 ## Concepts

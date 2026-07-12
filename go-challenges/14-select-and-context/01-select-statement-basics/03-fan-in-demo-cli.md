@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...` and `go run ./cmd/demo`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/feeddemo/cmd/demo
-cd ~/go-exercises/feeddemo
-go mod init example.com/feeddemo
+mkdir -p go-solutions/14-select-and-context/01-select-statement-basics/03-fan-in-demo-cli/cmd/demo
+cd go-solutions/14-select-and-context/01-select-statement-basics/03-fan-in-demo-cli
 ```
 
 ## Why the work lives in Run(w io.Writer), not in main

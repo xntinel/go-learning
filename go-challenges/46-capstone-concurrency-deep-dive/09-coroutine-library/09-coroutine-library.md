@@ -68,9 +68,8 @@ The `Scheduler` holds a list of registered coroutines and drives them in round-r
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/coroutine/cmd/demo
-cd ~/go-exercises/coroutine
-go mod init example.com/coroutine
+mkdir -p go-solutions/46-capstone-concurrency-deep-dive/09-coroutine-library/09-coroutine-library/cmd/demo
+cd go-solutions/46-capstone-concurrency-deep-dive/09-coroutine-library/09-coroutine-library
 ```
 
 ### Exercise 1: Core Types and State Machine

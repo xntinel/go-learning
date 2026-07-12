@@ -22,8 +22,7 @@ fanout_test.go        downstream-observed peak <= N under -race; error capture
 Set up the module:
 
 ```bash
-mkdir -p bounded-http-fanout/cmd/demo && cd bounded-http-fanout
-go mod init example.com/bounded-http-fanout
+mkdir -p go-solutions/16-concurrency-patterns/15-bounded-parallelism/03-bounded-http-fanout/cmd/demo && cd go-solutions/16-concurrency-patterns/15-bounded-parallelism/03-bounded-http-fanout
 ```
 
 ### The design, and why the proof must come from the server

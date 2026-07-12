@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/repo/cmd/demo
-cd ~/go-exercises/repo
-go mod init example.com/repo
+mkdir -p go-solutions/07-structs-and-methods/03-methods-value-vs-pointer-receivers/08-interface-method-set-repository/cmd/demo
+cd go-solutions/07-structs-and-methods/03-methods-value-vs-pointer-receivers/08-interface-method-set-repository
 ```
 
 ### The method-set rule, made concrete

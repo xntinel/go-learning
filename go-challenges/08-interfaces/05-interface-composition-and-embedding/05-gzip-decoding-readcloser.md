@@ -28,9 +28,8 @@ gzipbody/                   independent module: example.com/gzipbody
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/gzipbody/cmd/demo
-cd ~/go-exercises/gzipbody
-go mod init example.com/gzipbody
+mkdir -p go-solutions/08-interfaces/05-interface-composition-and-embedding/05-gzip-decoding-readcloser/cmd/demo
+cd go-solutions/08-interfaces/05-interface-composition-and-embedding/05-gzip-decoding-readcloser
 ```
 
 ### Why gzip.Reader.Close is not enough

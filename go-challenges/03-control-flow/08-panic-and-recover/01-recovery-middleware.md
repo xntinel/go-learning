@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/recovermw/cmd/demo
-cd ~/go-exercises/recovermw
-go mod init example.com/recovermw
+mkdir -p go-solutions/03-control-flow/08-panic-and-recover/01-recovery-middleware/cmd/demo
+cd go-solutions/03-control-flow/08-panic-and-recover/01-recovery-middleware
 ```
 
 ### Why the boundary is here and what it must not do

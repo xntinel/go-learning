@@ -28,9 +28,8 @@ embserver/                 independent module: example.com/embserver
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/embserver/cmd/demo
-cd ~/go-exercises/embserver
-go mod init example.com/embserver
+mkdir -p go-solutions/07-structs-and-methods/08-embedding-for-composition/01-embedded-http-server/cmd/demo
+cd go-solutions/07-structs-and-methods/08-embedding-for-composition/01-embedded-http-server
 ```
 
 ### Why embed the pointer, and why the logger is named

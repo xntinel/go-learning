@@ -29,9 +29,8 @@ headers/                   independent module: example.com/headers
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/headers/cmd/demo
-cd ~/go-exercises/headers
-go mod init example.com/headers
+mkdir -p go-solutions/04-functions/03-variadic-functions/10-splat-aliasing-and-copy-safety/cmd/demo
+cd go-solutions/04-functions/03-variadic-functions/10-splat-aliasing-and-copy-safety
 go mod edit -go=1.25
 ```
 

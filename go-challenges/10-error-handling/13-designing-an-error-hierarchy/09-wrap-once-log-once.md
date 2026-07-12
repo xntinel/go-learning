@@ -27,9 +27,8 @@ wrap-once-log-once/                module example.com/wrap-once-log-once
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/wrap-once-log-once/cmd/demo
-cd ~/go-exercises/wrap-once-log-once
-go mod init example.com/wrap-once-log-once
+mkdir -p go-solutions/10-error-handling/13-designing-an-error-hierarchy/09-wrap-once-log-once/cmd/demo
+cd go-solutions/10-error-handling/13-designing-an-error-hierarchy/09-wrap-once-log-once
 ```
 
 ### Two rules: wrap on the way up, log at the top

@@ -22,8 +22,7 @@ seq_test.go            map/filter/flatmap results, lazy early-stop, composition
 Set up the module:
 
 ```bash
-mkdir -p iter-seq-operators/cmd/demo && cd iter-seq-operators
-go mod init example.com/iter-seq-operators
+mkdir -p go-solutions/43-capstone-stream-processing-engine/02-operators-map-filter-flatmap/06-iter-seq-operators/cmd/demo && cd go-solutions/43-capstone-stream-processing-engine/02-operators-map-filter-flatmap/06-iter-seq-operators
 go mod edit -go=1.26
 ```
 

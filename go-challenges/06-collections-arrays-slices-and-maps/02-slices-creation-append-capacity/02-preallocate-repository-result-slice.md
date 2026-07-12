@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/repo/cmd/demo
-cd ~/go-exercises/repo
-go mod init example.com/repo
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/02-slices-creation-append-capacity/02-preallocate-repository-result-slice/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/02-slices-creation-append-capacity/02-preallocate-repository-result-slice
 go mod edit -go=1.26
 ```
 

@@ -27,9 +27,8 @@ recovermw/                  independent module: example.com/recovermw
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/recovermw/recovermw ~/go-exercises/recovermw/cmd/demo
-cd ~/go-exercises/recovermw
-go mod init example.com/recovermw
+mkdir -p go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/07-panic-recover-http-middleware/recovermw go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/07-panic-recover-http-middleware/cmd/demo
+cd go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/07-panic-recover-http-middleware
 ```
 
 ### The recover boundary on a real request path

@@ -27,9 +27,8 @@ examples-doc/                  module example.com/examples-doc
 Create the module:
 
 ```bash
-mkdir -p examples-doc/cmd/demo examples-doc/internal/circle
-cd examples-doc
-go mod init example.com/examples-doc
+mkdir -p go-solutions/01-environment-and-tooling/04-go-tool-commands/03-testable-examples-as-docs/cmd/demo go-solutions/01-environment-and-tooling/04-go-tool-commands/03-testable-examples-as-docs/internal/circle
+cd go-solutions/01-environment-and-tooling/04-go-tool-commands/03-testable-examples-as-docs
 ```
 
 ### How examples are checked and named

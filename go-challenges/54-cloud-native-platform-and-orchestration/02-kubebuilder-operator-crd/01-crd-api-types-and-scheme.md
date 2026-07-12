@@ -36,9 +36,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p cacheoperator/api/v1 cacheoperator/cmd/demo
-cd cacheoperator
-go mod init example.com/cacheoperator
+mkdir -p go-solutions/54-cloud-native-platform-and-orchestration/02-kubebuilder-operator-crd/01-crd-api-types-and-scheme/api/v1 go-solutions/54-cloud-native-platform-and-orchestration/02-kubebuilder-operator-crd/01-crd-api-types-and-scheme/cmd/demo
+cd go-solutions/54-cloud-native-platform-and-orchestration/02-kubebuilder-operator-crd/01-crd-api-types-and-scheme
 go mod edit -go=1.26
 go get k8s.io/apimachinery@v0.32.0
 go get sigs.k8s.io/controller-runtime@v0.20.0

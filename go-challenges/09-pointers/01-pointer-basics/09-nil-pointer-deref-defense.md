@@ -29,9 +29,8 @@ nilchain/                  independent module: example.com/nilchain
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/nilchain/cmd/demo
-cd ~/go-exercises/nilchain
-go mod init example.com/nilchain
+mkdir -p go-solutions/09-pointers/01-pointer-basics/09-nil-pointer-deref-defense/cmd/demo
+cd go-solutions/09-pointers/01-pointer-basics/09-nil-pointer-deref-defense
 ```
 
 ### Guard each link before stepping to the next

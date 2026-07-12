@@ -82,11 +82,10 @@ A `/health` endpoint returns 200 when the node is `StateActive` and 503 otherwis
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/dkv/cmd/demo
-mkdir -p ~/go-exercises/dkv/cmd/dkv
-mkdir -p ~/go-exercises/dkv/cmd/dkv-admin
-cd ~/go-exercises/dkv
-go mod init example.com/dkv
+mkdir -p go-solutions/45-capstone-distributed-key-value-store/08-full-distributed-kv/08-full-distributed-kv/cmd/demo
+mkdir -p go-solutions/45-capstone-distributed-key-value-store/08-full-distributed-kv/08-full-distributed-kv/cmd/dkv
+mkdir -p go-solutions/45-capstone-distributed-key-value-store/08-full-distributed-kv/08-full-distributed-kv/cmd/dkv-admin
+cd go-solutions/45-capstone-distributed-key-value-store/08-full-distributed-kv/08-full-distributed-kv
 ```
 
 This is a library package plus executables. Verify with `go test`, not `go run`.

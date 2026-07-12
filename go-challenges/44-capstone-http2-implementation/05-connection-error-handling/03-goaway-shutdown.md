@@ -22,8 +22,7 @@ goaway_test.go         may-open before/after receive, idempotent send, two-phase
 Set up the module:
 
 ```bash
-mkdir -p goaway-shutdown/cmd/demo && cd goaway-shutdown
-go mod init example.com/goaway-shutdown
+mkdir -p go-solutions/44-capstone-http2-implementation/05-connection-error-handling/03-goaway-shutdown/cmd/demo && cd go-solutions/44-capstone-http2-implementation/05-connection-error-handling/03-goaway-shutdown
 go mod edit -go=1.26
 ```
 

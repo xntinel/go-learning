@@ -30,9 +30,8 @@ l2table/                     independent module: example.com/l2table
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/l2table/cmd/demo
-cd ~/go-exercises/l2table
-go mod init example.com/l2table
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/07-l2-device-table-mac-key/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/07-l2-device-table-mac-key
 ```
 
 ### Why the [6]byte MAC is the key directly

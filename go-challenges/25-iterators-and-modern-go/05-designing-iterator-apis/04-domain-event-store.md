@@ -22,8 +22,7 @@ eventstore_test.go   stable ordering, reusable iterators, break-safety, half-ope
 Set up the module:
 
 ```bash
-mkdir -p eventstore/cmd/demo && cd eventstore
-go mod init example.com/eventstore
+mkdir -p go-solutions/25-iterators-and-modern-go/05-designing-iterator-apis/04-domain-event-store/cmd/demo && cd go-solutions/25-iterators-and-modern-go/05-designing-iterator-apis/04-domain-event-store
 ```
 
 ### Designing the iterator surface around the domain's natural coordinate

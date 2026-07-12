@@ -24,9 +24,8 @@ Verify: `go test -count=1 ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/shardid
-cd ~/go-exercises/shardid
-go mod init example.com/shardid
+mkdir -p go-solutions/03-control-flow/09-range-over-integers-and-functions/11-sharded-request-id-generator
+cd go-solutions/03-control-flow/09-range-over-integers-and-functions/11-sharded-request-id-generator
 go mod edit -go=1.24
 ```
 

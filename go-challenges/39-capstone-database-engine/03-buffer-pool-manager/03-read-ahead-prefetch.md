@@ -24,8 +24,7 @@ prefetch_test.go         cold scan misses every page; warm scan hits every page;
 Set up the module:
 
 ```bash
-mkdir -p read-ahead-prefetch/cmd/demo && cd read-ahead-prefetch
-go mod init example.com/read-ahead-prefetch
+mkdir -p go-solutions/39-capstone-database-engine/03-buffer-pool-manager/03-read-ahead-prefetch/cmd/demo && cd go-solutions/39-capstone-database-engine/03-buffer-pool-manager/03-read-ahead-prefetch
 ```
 
 ### Prefetch is a hint, not a reservation

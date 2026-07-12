@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/shutdown/cmd/demo
-cd ~/go-exercises/shutdown
-go mod init example.com/shutdown
+mkdir -p go-solutions/04-functions/06-function-types-and-callbacks/10-shutdown-hook-stack/cmd/demo
+cd go-solutions/04-functions/06-function-types-and-callbacks/10-shutdown-hook-stack
 ```
 
 ### Why LIFO, and why run every hook

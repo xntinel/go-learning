@@ -80,9 +80,8 @@ A forward jump of N in `Jt` or `Jf` skips N instructions after the current one, 
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/seccomp/cmd/demo
-cd ~/go-exercises/seccomp
-go mod init example.com/seccomp
+mkdir -p go-solutions/47-capstone-systems-and-kernel/06-seccomp-filter/06-seccomp-filter/cmd/demo
+cd go-solutions/47-capstone-systems-and-kernel/06-seccomp-filter/06-seccomp-filter
 go get golang.org/x/sys
 ```
 

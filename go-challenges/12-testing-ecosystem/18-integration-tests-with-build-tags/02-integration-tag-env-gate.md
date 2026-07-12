@@ -29,9 +29,8 @@ intgstore/                 independent module: example.com/intgstore
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/intgstore/cmd/demo
-cd ~/go-exercises/intgstore
-go mod init example.com/intgstore
+mkdir -p go-solutions/12-testing-ecosystem/18-integration-tests-with-build-tags/02-integration-tag-env-gate/cmd/demo
+cd go-solutions/12-testing-ecosystem/18-integration-tests-with-build-tags/02-integration-tag-env-gate
 ```
 
 ### Two independent gates stacked on one test

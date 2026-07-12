@@ -30,9 +30,8 @@ exporter/                      independent module: example.com/exporter
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/exporter/cmd/demo
-cd ~/go-exercises/exporter
-go mod init example.com/exporter
+mkdir -p go-solutions/02-variables-types-and-constants/01-variable-declaration-and-short-assignment/09-named-returns-deferred-cleanup/cmd/demo
+cd go-solutions/02-variables-types-and-constants/01-variable-declaration-and-short-assignment/09-named-returns-deferred-cleanup
 ```
 
 ### Why named returns here, and only here

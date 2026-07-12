@@ -32,9 +32,8 @@ slicebuf/                  independent module: example.com/slicebuf
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/slicebuf/cmd/demo
-cd ~/go-exercises/slicebuf
-go mod init example.com/slicebuf
+mkdir -p go-solutions/09-pointers/09-pointer-aliasing-and-data-races/07-slice-backing-array-aliasing/cmd/demo
+cd go-solutions/09-pointers/09-pointer-aliasing-and-data-races/07-slice-backing-array-aliasing
 ```
 
 ### Why sub-slices are a data-dependent race

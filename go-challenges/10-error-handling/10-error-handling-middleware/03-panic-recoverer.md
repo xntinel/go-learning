@@ -33,9 +33,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/recoverer/cmd/demo
-cd ~/go-exercises/recoverer
-go mod init example.com/recoverer
+mkdir -p go-solutions/10-error-handling/10-error-handling-middleware/03-panic-recoverer/cmd/demo
+cd go-solutions/10-error-handling/10-error-handling-middleware/03-panic-recoverer
 ```
 
 ### Why recover, and why the carve-out

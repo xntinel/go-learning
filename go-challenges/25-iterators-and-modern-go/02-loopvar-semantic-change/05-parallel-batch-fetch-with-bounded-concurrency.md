@@ -23,8 +23,7 @@ example_test.go      ExampleFetchAll with a verified // Output block
 Set up the module:
 
 ```bash
-mkdir -p loop-batch-fetch/cmd/demo && cd loop-batch-fetch
-go mod init example.com/loop-batch-fetch
+mkdir -p go-solutions/25-iterators-and-modern-go/02-loopvar-semantic-change/05-parallel-batch-fetch-with-bounded-concurrency/cmd/demo && cd go-solutions/25-iterators-and-modern-go/02-loopvar-semantic-change/05-parallel-batch-fetch-with-bounded-concurrency
 ```
 
 ### The three jobs an errgroup-style fetch has to do at once

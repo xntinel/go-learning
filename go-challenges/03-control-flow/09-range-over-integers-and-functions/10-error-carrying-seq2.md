@@ -27,9 +27,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/decode/cmd/demo
-cd ~/go-exercises/decode
-go mod init example.com/decode
+mkdir -p go-solutions/03-control-flow/09-range-over-integers-and-functions/10-error-carrying-seq2/cmd/demo
+cd go-solutions/03-control-flow/09-range-over-integers-and-functions/10-error-carrying-seq2
 ```
 
 ## The design

@@ -24,8 +24,7 @@ txn_test.go           rollback is invisible, commit is visible, unknown-txn erro
 Set up the module:
 
 ```bash
-mkdir -p txn-store/cmd/demo && cd txn-store
-go mod init example.com/txn-store
+mkdir -p go-solutions/39-capstone-database-engine/10-full-embedded-database/06-transaction-lifecycle/cmd/demo && cd go-solutions/39-capstone-database-engine/10-full-embedded-database/06-transaction-lifecycle
 ```
 
 ### Why writes are private until commit, and what read-your-own-writes means

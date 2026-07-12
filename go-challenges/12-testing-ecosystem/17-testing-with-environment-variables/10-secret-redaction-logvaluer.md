@@ -26,9 +26,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/safeconfig/cmd/demo
-cd ~/go-exercises/safeconfig
-go mod init example.com/safeconfig
+mkdir -p go-solutions/12-testing-ecosystem/17-testing-with-environment-variables/10-secret-redaction-logvaluer/cmd/demo
+cd go-solutions/12-testing-ecosystem/17-testing-with-environment-variables/10-secret-redaction-logvaluer
 ```
 
 ## `slog.LogValuer` redacts at the source

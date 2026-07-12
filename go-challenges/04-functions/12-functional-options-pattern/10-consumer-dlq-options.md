@@ -26,9 +26,8 @@ consumer/                 independent module: example.com/consumer
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/consumer
-cd ~/go-exercises/consumer
-go mod init example.com/consumer
+mkdir -p go-solutions/04-functions/12-functional-options-pattern/10-consumer-dlq-options
+cd go-solutions/04-functions/12-functional-options-pattern/10-consumer-dlq-options
 go mod edit -go=1.24
 ```
 

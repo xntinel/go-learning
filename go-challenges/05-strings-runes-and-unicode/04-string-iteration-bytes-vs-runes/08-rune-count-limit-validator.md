@@ -27,9 +27,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/namecheck/cmd/demo
-cd ~/go-exercises/namecheck
-go mod init example.com/namecheck
+mkdir -p go-solutions/05-strings-runes-and-unicode/04-string-iteration-bytes-vs-runes/08-rune-count-limit-validator/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/04-string-iteration-bytes-vs-runes/08-rune-count-limit-validator
 ```
 
 ### The validation pipeline, and where runes stop being enough

@@ -31,9 +31,8 @@ ttlcache/                  independent module: example.com/ttlcache
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ttlcache/cmd/demo
-cd ~/go-exercises/ttlcache
-go mod init example.com/ttlcache
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/01-ttl-cache/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/01-ttl-cache
 ```
 
 ### Why RWMutex, comma-ok, and a zero deadline

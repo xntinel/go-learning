@@ -24,8 +24,7 @@ repo_test.go             base contract, caching hit/miss + invalidation, logging
 Set up the module:
 
 ```bash
-mkdir -p decorator-cache-and-logging/cmd/demo && cd decorator-cache-and-logging
-go mod init example.com/decorator-cache-and-logging
+mkdir -p go-solutions/24-design-patterns-in-go/05-repository-pattern/03-decorator-cache-and-logging/cmd/demo && cd go-solutions/24-design-patterns-in-go/05-repository-pattern/03-decorator-cache-and-logging
 ```
 
 ### Why a decorator instead of editing the storage code

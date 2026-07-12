@@ -32,9 +32,8 @@ Verify: `go test -count=1 -race ./...`, then observe boxing with
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/hotlogger/cmd/demo
-cd ~/go-exercises/hotlogger
-go mod init example.com/hotlogger
+mkdir -p go-solutions/09-pointers/07-escape-analysis/03-interface-boxing-in-hot-logger/cmd/demo
+cd go-solutions/09-pointers/07-escape-analysis/03-interface-boxing-in-hot-logger
 ```
 
 ### Where the allocation comes from

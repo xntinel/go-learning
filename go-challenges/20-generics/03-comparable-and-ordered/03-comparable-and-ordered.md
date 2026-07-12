@@ -70,9 +70,8 @@ a `cmp.Compare`-based function to `slices.SortFunc`.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/stats/cmd/demo
-cd ~/go-exercises/stats
-go mod init example.com/stats
+mkdir -p go-solutions/20-generics/03-comparable-and-ordered/03-comparable-and-ordered/cmd/demo
+cd go-solutions/20-generics/03-comparable-and-ordered/03-comparable-and-ordered
 ```
 
 ### Exercise 1: Identity, Equal, Clamp, MinMax

@@ -70,9 +70,8 @@ A concrete trace:
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ebr/cmd/demo
-cd ~/go-exercises/ebr
-go mod init example.com/ebr
+mkdir -p go-solutions/46-capstone-concurrency-deep-dive/04-epoch-based-reclamation/04-epoch-based-reclamation/cmd/demo
+cd go-solutions/46-capstone-concurrency-deep-dive/04-epoch-based-reclamation/04-epoch-based-reclamation
 ```
 
 This is a library; verification is through `go test`.

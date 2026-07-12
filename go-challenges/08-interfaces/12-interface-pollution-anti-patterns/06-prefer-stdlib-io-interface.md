@@ -26,9 +26,8 @@ auditsink/                  independent module: example.com/auditsink
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/auditsink/cmd/demo
-cd ~/go-exercises/auditsink
-go mod init example.com/auditsink
+mkdir -p go-solutions/08-interfaces/12-interface-pollution-anti-patterns/06-prefer-stdlib-io-interface/cmd/demo
+cd go-solutions/08-interfaces/12-interface-pollution-anti-patterns/06-prefer-stdlib-io-interface
 ```
 
 ### Why io.Writer beats a bespoke LineSink

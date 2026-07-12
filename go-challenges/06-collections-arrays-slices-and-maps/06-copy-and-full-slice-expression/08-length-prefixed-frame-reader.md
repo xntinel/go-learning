@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/frames/cmd/demo
-cd ~/go-exercises/frames
-go mod init example.com/frames
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/06-copy-and-full-slice-expression/08-length-prefixed-frame-reader/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/06-copy-and-full-slice-expression/08-length-prefixed-frame-reader
 ```
 
 ### Why `make` + `io.ReadFull`, not `append` growth

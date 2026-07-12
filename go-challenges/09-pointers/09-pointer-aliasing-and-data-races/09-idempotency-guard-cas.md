@@ -31,9 +31,8 @@ idemguard/                 independent module: example.com/idemguard
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/idemguard/cmd/demo
-cd ~/go-exercises/idemguard
-go mod init example.com/idemguard
+mkdir -p go-solutions/09-pointers/09-pointer-aliasing-and-data-races/09-idempotency-guard-cas/cmd/demo
+cd go-solutions/09-pointers/09-pointer-aliasing-and-data-races/09-idempotency-guard-cas
 ```
 
 ### Check-then-act is the failure mode; CAS is the fix

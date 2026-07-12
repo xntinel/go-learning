@@ -31,9 +31,8 @@ Verify: `go test -race ./...`, then `go test -fuzz=FuzzDecodeBody -fuzztime=2s`.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/apireq/cmd/demo
-cd ~/go-exercises/apireq
-go mod init example.com/apireq
+mkdir -p go-solutions/12-testing-ecosystem/06-fuzz-testing/05-json-body-decoder-limits/cmd/demo
+cd go-solutions/12-testing-ecosystem/06-fuzz-testing/05-json-body-decoder-limits
 ```
 
 ### Limiting the reader and rejecting unknown fields

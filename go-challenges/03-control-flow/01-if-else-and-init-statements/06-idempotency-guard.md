@@ -29,9 +29,8 @@ idempotency/                independent module: example.com/idempotency
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/idempotency/cmd/demo
-cd ~/go-exercises/idempotency
-go mod init example.com/idempotency
+mkdir -p go-solutions/03-control-flow/01-if-else-and-init-statements/06-idempotency-guard/cmd/demo
+cd go-solutions/03-control-flow/01-if-else-and-init-statements/06-idempotency-guard
 ```
 
 ## Guard, look up, capture, replay — all under one lock

@@ -27,9 +27,8 @@ statusapi/                  independent module: example.com/statusapi
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/statusapi/cmd/demo
-cd ~/go-exercises/statusapi
-go mod init example.com/statusapi
+mkdir -p go-solutions/07-structs-and-methods/10-implementing-stringer/07-json-api-enum-field/cmd/demo
+cd go-solutions/07-structs-and-methods/10-implementing-stringer/07-json-api-enum-field
 ```
 
 ### Why MarshalJSON here, not just MarshalText

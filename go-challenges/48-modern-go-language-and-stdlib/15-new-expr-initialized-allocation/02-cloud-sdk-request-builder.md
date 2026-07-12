@@ -31,9 +31,8 @@ sdkbuild/                    independent module: example.com/sdkbuild
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/sdkbuild/cmd/demo
-cd ~/go-exercises/sdkbuild
-go mod init example.com/sdkbuild
+mkdir -p go-solutions/48-modern-go-language-and-stdlib/15-new-expr-initialized-allocation/02-cloud-sdk-request-builder/cmd/demo
+cd go-solutions/48-modern-go-language-and-stdlib/15-new-expr-initialized-allocation/02-cloud-sdk-request-builder
 go mod edit -go=1.26
 ```
 

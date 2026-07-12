@@ -26,9 +26,8 @@ metricsboot/               independent module: example.com/metricsboot
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/metricsboot/cmd/demo
-cd ~/go-exercises/metricsboot
-go mod init example.com/metricsboot
+mkdir -p go-solutions/15-sync-primitives/12-sync-oncevalue-oncefunc/09-metrics-registrar-oncefunc/cmd/demo
+cd go-solutions/15-sync-primitives/12-sync-oncevalue-oncefunc/09-metrics-registrar-oncefunc
 ```
 
 ### Why registries panic, and why that panic finds you

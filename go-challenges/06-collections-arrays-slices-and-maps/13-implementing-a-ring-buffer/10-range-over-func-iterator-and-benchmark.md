@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...` and `go test -bench=. -benchmem`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ringiter/cmd/demo
-cd ~/go-exercises/ringiter
-go mod init example.com/ringiter
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/13-implementing-a-ring-buffer/10-range-over-func-iterator-and-benchmark/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/13-implementing-a-ring-buffer/10-range-over-func-iterator-and-benchmark
 go mod edit -go=1.24
 ```
 

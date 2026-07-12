@@ -25,8 +25,7 @@ checkpoint_test.go   marshal round-trip, length-mismatch errors, last-checkpoint
 Set up the module:
 
 ```bash
-mkdir -p checkpoint-gc/cmd/demo && cd checkpoint-gc
-go mod init example.com/checkpoint-gc
+mkdir -p go-solutions/39-capstone-database-engine/01-write-ahead-log/05-checkpoint-payloads-and-segment-gc/cmd/demo && cd go-solutions/39-capstone-database-engine/01-write-ahead-log/05-checkpoint-payloads-and-segment-gc
 ```
 
 ### Why an empty marker is not enough

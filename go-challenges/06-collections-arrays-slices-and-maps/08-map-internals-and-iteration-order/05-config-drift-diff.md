@@ -30,9 +30,8 @@ drift/                     independent module: example.com/drift
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/drift/cmd/demo
-cd ~/go-exercises/drift
-go mod init example.com/drift
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/05-config-drift-diff/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/05-config-drift-diff
 ```
 
 ### Computing the diff over two key spaces

@@ -28,9 +28,8 @@ vet-floor/                     module example.com/vet-floor
 Create the module:
 
 ```bash
-mkdir -p vet-floor/cmd/demo vet-floor/internal/netutil
-cd vet-floor
-go mod init example.com/vet-floor
+mkdir -p go-solutions/01-environment-and-tooling/04-go-tool-commands/04-go-vet-catches-real-bugs/cmd/demo go-solutions/01-environment-and-tooling/04-go-tool-commands/04-go-vet-catches-real-bugs/internal/netutil
+cd go-solutions/01-environment-and-tooling/04-go-tool-commands/04-go-vet-catches-real-bugs
 ```
 
 ### Why vet is a separate stage from build

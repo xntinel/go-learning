@@ -27,9 +27,8 @@ safefmt/                   independent module: example.com/safefmt
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/safefmt/cmd/demo
-cd ~/go-exercises/safefmt
-go mod init example.com/safefmt
+mkdir -p go-solutions/05-strings-runes-and-unicode/06-string-formatting-with-fmt/08-format-string-injection/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/06-string-formatting-with-fmt/08-format-string-injection
 go mod edit -go=1.24
 ```
 

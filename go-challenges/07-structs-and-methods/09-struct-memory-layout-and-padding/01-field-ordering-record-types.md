@@ -28,9 +28,8 @@ record/                    independent module: example.com/record
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/record/cmd/demo
-cd ~/go-exercises/record
-go mod init example.com/record
+mkdir -p go-solutions/07-structs-and-methods/09-struct-memory-layout-and-padding/01-field-ordering-record-types/cmd/demo
+cd go-solutions/07-structs-and-methods/09-struct-memory-layout-and-padding/01-field-ordering-record-types
 ```
 
 ### Why interleaving small fields between large ones costs bytes

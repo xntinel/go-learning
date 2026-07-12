@@ -30,9 +30,8 @@ workerpool/                  independent module: example.com/workerpool
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/workerpool/cmd/demo
-cd ~/go-exercises/workerpool
-go mod init example.com/workerpool
+mkdir -p go-solutions/13-goroutines-and-channels/08-goroutine-leak-detection/05-worker-pool-drain-on-cancel/cmd/demo
+cd go-solutions/13-goroutines-and-channels/08-goroutine-leak-detection/05-worker-pool-drain-on-cancel
 go get go.uber.org/goleak@v1.3.0
 ```
 

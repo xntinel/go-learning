@@ -33,9 +33,8 @@ admission/                  independent module: example.com/admission
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/admission/cmd/demo
-cd ~/go-exercises/admission
-go mod init example.com/admission
+mkdir -p go-solutions/03-control-flow/06-labels-break-continue-goto/29-admission-control-load-shedding/cmd/demo
+cd go-solutions/03-control-flow/06-labels-break-continue-goto/29-admission-control-load-shedding
 go mod edit -go=1.24
 ```
 

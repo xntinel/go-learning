@@ -70,9 +70,8 @@ type ResourceEventHandlerDetailedFuncs struct {
 Set up the module. This is a library package, not `package main`, so you verify it with `go test`, not `go run`.
 
 ```bash
-mkdir -p ~/go-exercises/podwatcher/cmd/demo
-cd ~/go-exercises/podwatcher
-go mod init example.com/podwatcher
+mkdir -p go-solutions/31-cloud-native-go/06-kubernetes-client-go/06-kubernetes-client-go/cmd/demo
+cd go-solutions/31-cloud-native-go/06-kubernetes-client-go/06-kubernetes-client-go
 go get k8s.io/client-go@v0.33.0
 go get k8s.io/api@v0.33.0
 go get k8s.io/apimachinery@v0.33.0

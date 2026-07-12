@@ -26,9 +26,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/httpsvc/cmd/demo
-cd ~/go-exercises/httpsvc
-go mod init example.com/httpsvc
+mkdir -p go-solutions/14-select-and-context/14-building-a-context-aware-service-framework/04-signal-driven-graceful-http-shutdown/cmd/demo
+cd go-solutions/14-select-and-context/14-building-a-context-aware-service-framework/04-signal-driven-graceful-http-shutdown
 ```
 
 ### The HTTP service shape

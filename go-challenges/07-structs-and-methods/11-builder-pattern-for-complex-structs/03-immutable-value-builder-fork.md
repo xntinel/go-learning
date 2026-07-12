@@ -30,9 +30,8 @@ specfork/                   independent module: example.com/specfork
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/specfork/cmd/demo
-cd ~/go-exercises/specfork
-go mod init example.com/specfork
+mkdir -p go-solutions/07-structs-and-methods/11-builder-pattern-for-complex-structs/03-immutable-value-builder-fork/cmd/demo
+cd go-solutions/07-structs-and-methods/11-builder-pattern-for-complex-structs/03-immutable-value-builder-fork
 ```
 
 ### Why a value receiver, and where the deep copy goes

@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pipeline/cmd/demo
-cd ~/go-exercises/pipeline
-go mod init example.com/pipeline
+mkdir -p go-solutions/10-error-handling/09-error-handling-in-goroutines/07-pipeline-error-propagation/cmd/demo
+cd go-solutions/10-error-handling/09-error-handling-in-goroutines/07-pipeline-error-propagation
 go mod edit -go=1.26
 ```
 

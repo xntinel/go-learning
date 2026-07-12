@@ -30,9 +30,8 @@ gcmnonce/                    independent module: example.com/gcmnonce
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/gcmnonce/cmd/demo
-cd ~/go-exercises/gcmnonce
-go mod init example.com/gcmnonce
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/06-gcm-nonce-and-tag-verify/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/06-gcm-nonce-and-tag-verify
 ```
 
 ### Why the nonce is an array and the compare is constant-time

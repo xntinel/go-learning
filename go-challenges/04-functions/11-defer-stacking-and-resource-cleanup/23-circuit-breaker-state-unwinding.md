@@ -28,9 +28,8 @@ breaker/                     independent module: example.com/breaker
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/breaker/breaker ~/go-exercises/breaker/cmd/demo
-cd ~/go-exercises/breaker
-go mod init example.com/breaker
+mkdir -p go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/23-circuit-breaker-state-unwinding/breaker go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/23-circuit-breaker-state-unwinding/cmd/demo
+cd go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/23-circuit-breaker-state-unwinding
 go mod edit -go=1.24
 ```
 

@@ -29,9 +29,8 @@ configmerge/               independent module: example.com/configmerge
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/configmerge/cmd/demo
-cd ~/go-exercises/configmerge
-go mod init example.com/configmerge
+mkdir -p go-solutions/09-pointers/01-pointer-basics/03-optional-config-fields-with-pointers/cmd/demo
+cd go-solutions/09-pointers/01-pointer-basics/03-optional-config-fields-with-pointers
 ```
 
 ### Absent, zero, and null are three different things

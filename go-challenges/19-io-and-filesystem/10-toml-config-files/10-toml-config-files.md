@@ -21,9 +21,8 @@ A default fills an omitted optional field. A required field must be present. Mix
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/simpletoml/cmd/demo
-cd ~/go-exercises/simpletoml
-go mod init example.com/simpletoml
+mkdir -p go-solutions/19-io-and-filesystem/10-toml-config-files/10-toml-config-files/cmd/demo
+cd go-solutions/19-io-and-filesystem/10-toml-config-files/10-toml-config-files
 ```
 
 ### Exercise 1: Implement A Config Loader

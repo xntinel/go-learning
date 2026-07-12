@@ -133,9 +133,8 @@ Without the named return, assigning to `err` inside `defer` modifies a local var
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/grpcmiddleware/cmd/demo
-cd ~/go-exercises/grpcmiddleware
-go mod init example.com/grpcmiddleware
+mkdir -p go-solutions/33-tcp-udp-and-networking/14-grpc-interceptors/14-grpc-interceptors/cmd/demo
+cd go-solutions/33-tcp-udp-and-networking/14-grpc-interceptors/14-grpc-interceptors
 go get google.golang.org/grpc@v1.73.0
 go mod tidy
 ```

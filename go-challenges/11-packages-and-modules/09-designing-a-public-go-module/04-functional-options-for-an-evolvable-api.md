@@ -30,9 +30,8 @@ publicstr/                 independent module: example.com/publicstr
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/publicstr/cmd/demo
-cd ~/go-exercises/publicstr
-go mod init example.com/publicstr
+mkdir -p go-solutions/11-packages-and-modules/09-designing-a-public-go-module/04-functional-options-for-an-evolvable-api/cmd/demo
+cd go-solutions/11-packages-and-modules/09-designing-a-public-go-module/04-functional-options-for-an-evolvable-api
 ```
 
 ### How the options pattern preserves the signature forever

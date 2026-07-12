@@ -32,9 +32,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cowconfig/cmd/demo
-cd ~/go-exercises/cowconfig
-go mod init example.com/cowconfig
+mkdir -p go-solutions/15-sync-primitives/02-sync-rwmutex/05-copy-on-write-snapshot-vs-rwmutex/cmd/demo
+cd go-solutions/15-sync-primitives/02-sync-rwmutex/05-copy-on-write-snapshot-vs-rwmutex
 ```
 
 ### Why copy-on-write beats the read lock for read-mostly snapshots

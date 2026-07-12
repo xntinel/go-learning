@@ -31,9 +31,8 @@ flag/                             independent module: example.com/feature-flag-e
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/flag/cmd/demo
-cd ~/go-exercises/flag
-go mod init example.com/feature-flag-evaluator-context
+mkdir -p go-solutions/04-functions/12-functional-options-pattern/31-feature-flag-evaluator-context/cmd/demo
+cd go-solutions/04-functions/12-functional-options-pattern/31-feature-flag-evaluator-context
 go mod edit -go=1.24
 ```
 

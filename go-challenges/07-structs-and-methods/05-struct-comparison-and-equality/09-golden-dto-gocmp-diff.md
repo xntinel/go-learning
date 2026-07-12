@@ -30,9 +30,8 @@ userapi/                    independent module: example.com/userapi
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/userapi/cmd/demo
-cd ~/go-exercises/userapi
-go mod init example.com/userapi
+mkdir -p go-solutions/07-structs-and-methods/05-struct-comparison-and-equality/09-golden-dto-gocmp-diff/cmd/demo
+cd go-solutions/07-structs-and-methods/05-struct-comparison-and-equality/09-golden-dto-gocmp-diff
 go get github.com/google/go-cmp/cmp
 ```
 

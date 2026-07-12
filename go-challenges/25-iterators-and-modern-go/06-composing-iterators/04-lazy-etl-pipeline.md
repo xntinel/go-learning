@@ -22,8 +22,7 @@ etl_test.go          pipeline output + batching, exact-pull laziness, Parse drop
 Set up the module:
 
 ```bash
-mkdir -p etl/cmd/demo && cd etl
-go mod init example.com/etl
+mkdir -p go-solutions/25-iterators-and-modern-go/06-composing-iterators/04-lazy-etl-pipeline/cmd/demo && cd go-solutions/25-iterators-and-modern-go/06-composing-iterators/04-lazy-etl-pipeline
 ```
 
 ### The pipeline is a chain of pull-driven stages

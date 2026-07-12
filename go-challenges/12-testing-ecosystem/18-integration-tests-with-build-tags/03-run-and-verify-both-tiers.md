@@ -29,9 +29,8 @@ twotiers/                  independent module: example.com/twotiers
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/twotiers/cmd/demo
-cd ~/go-exercises/twotiers
-go mod init example.com/twotiers
+mkdir -p go-solutions/12-testing-ecosystem/18-integration-tests-with-build-tags/03-run-and-verify-both-tiers/cmd/demo
+cd go-solutions/12-testing-ecosystem/18-integration-tests-with-build-tags/03-run-and-verify-both-tiers
 ```
 
 ### Make the gating logic itself testable

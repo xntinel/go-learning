@@ -27,9 +27,8 @@ lazyres/                      module example.com/lazyres
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/lazyres/cmd/demo
-cd ~/go-exercises/lazyres
-go mod init example.com/lazyres
+mkdir -p go-solutions/04-functions/05-anonymous-functions/04-lazy-init-oncevalue-resource/cmd/demo
+cd go-solutions/04-functions/05-anonymous-functions/04-lazy-init-oncevalue-resource
 ```
 
 ### OnceValue and OnceValues over a hand-rolled sync.Once

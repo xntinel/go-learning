@@ -28,9 +28,8 @@ Verify: `go test -count=1 ./...`
 Set up the module:
 
 ```bash
-mkdir -p apierr/cmd/demo
-cd apierr
-go mod init example.com/apierr
+mkdir -p go-solutions/02-variables-types-and-constants/04-constants-and-iota/10-api-error-code-registry/cmd/demo
+cd go-solutions/02-variables-types-and-constants/04-constants-and-iota/10-api-error-code-registry
 ```
 
 ## Why a registry, not a switch

@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pageindex/cmd/demo
-cd ~/go-exercises/pageindex
-go mod init example.com/pageindex
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/09-grouped-index-pagination/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/09-grouped-index-pagination
 ```
 
 ## Why a sorted key space plus a cursor

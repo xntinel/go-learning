@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/authguard/cmd/demo
-cd ~/go-exercises/authguard
-go mod init example.com/authguard
+mkdir -p go-solutions/14-select-and-context/06-context-withvalue/04-auth-principal-guard/cmd/demo
+cd go-solutions/14-select-and-context/06-context-withvalue/04-auth-principal-guard
 ```
 
 ### Why identity is context data and how the guard short-circuits

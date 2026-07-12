@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/inlinesnap/cmd/demo
-cd ~/go-exercises/inlinesnap
-go mod init example.com/inlinesnap
+mkdir -p go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/02-inline-snapshot-test/cmd/demo
+cd go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/02-inline-snapshot-test
 ```
 
 ### Why an inline snapshot, and when

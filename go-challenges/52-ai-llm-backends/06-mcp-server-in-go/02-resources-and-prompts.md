@@ -29,9 +29,8 @@ runbookmcp/                 independent module: example.com/runbookmcp
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/runbookmcp/cmd/demo
-cd ~/go-exercises/runbookmcp
-go mod init example.com/runbookmcp
+mkdir -p go-solutions/52-ai-llm-backends/06-mcp-server-in-go/02-resources-and-prompts/cmd/demo
+cd go-solutions/52-ai-llm-backends/06-mcp-server-in-go/02-resources-and-prompts
 go mod edit -go=1.26
 go get github.com/modelcontextprotocol/go-sdk@latest
 ```

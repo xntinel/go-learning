@@ -54,9 +54,8 @@ scrape/                  module example.com/scrape
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/scrape
-cd ~/go-exercises/scrape
-go mod init example.com/scrape
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/15-batch-collector-clear-vs-nil-reset
+cd go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/15-batch-collector-clear-vs-nil-reset
 go mod edit -go=1.24
 ```
 

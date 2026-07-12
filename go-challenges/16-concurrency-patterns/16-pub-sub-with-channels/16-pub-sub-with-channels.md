@@ -53,9 +53,8 @@ so callers can size backpressure explicitly.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pubsub/internal/pubsub ~/go-exercises/pubsub/cmd/pubsubdemo
-cd ~/go-exercises/pubsub
-go mod init example.com/pubsub
+mkdir -p go-solutions/16-concurrency-patterns/16-pub-sub-with-channels/16-pub-sub-with-channels/internal/pubsub go-solutions/16-concurrency-patterns/16-pub-sub-with-channels/16-pub-sub-with-channels/cmd/pubsubdemo
+cd go-solutions/16-concurrency-patterns/16-pub-sub-with-channels/16-pub-sub-with-channels
 ```
 
 ### Exercise 1: The Broker

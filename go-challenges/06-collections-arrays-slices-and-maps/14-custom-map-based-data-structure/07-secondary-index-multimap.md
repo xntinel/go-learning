@@ -31,9 +31,8 @@ repo/                      independent module: example.com/repo
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/repo/cmd/demo
-cd ~/go-exercises/repo
-go mod init example.com/repo
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/14-custom-map-based-data-structure/07-secondary-index-multimap/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/14-custom-map-based-data-structure/07-secondary-index-multimap
 ```
 
 ### The index is derived state — update it in the same critical section

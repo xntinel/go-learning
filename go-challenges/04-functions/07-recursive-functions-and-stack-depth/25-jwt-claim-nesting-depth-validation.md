@@ -37,9 +37,8 @@ claimdepth/                   independent module: example.com/claimdepth
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/claimdepth/cmd/demo
-cd ~/go-exercises/claimdepth
-go mod init example.com/claimdepth
+mkdir -p go-solutions/04-functions/07-recursive-functions-and-stack-depth/25-jwt-claim-nesting-depth-validation/cmd/demo
+cd go-solutions/04-functions/07-recursive-functions-and-stack-depth/25-jwt-claim-nesting-depth-validation
 go mod edit -go=1.24
 ```
 

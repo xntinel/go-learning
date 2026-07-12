@@ -27,9 +27,8 @@ Test: `Canonical` is byte-stable and equals `url.Values.Encode`; spaces/unicode/
 Verify: `go test -count=1 -race ./...`
 
 ```bash
-mkdir -p ~/go-exercises/qsign/cmd/demo
-cd ~/go-exercises/qsign
-go mod init example.com/qsign
+mkdir -p go-solutions/05-strings-runes-and-unicode/09-strings-builder-performance/09-canonical-querystring-signing-builder/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/09-strings-builder-performance/09-canonical-querystring-signing-builder
 ```
 
 ### Why canonicalization is a security property

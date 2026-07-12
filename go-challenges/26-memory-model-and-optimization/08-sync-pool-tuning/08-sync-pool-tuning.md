@@ -33,9 +33,8 @@ Pooling helps when allocation cost is significant and the object is reused many 
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pooljson/cmd/demo
-cd ~/go-exercises/pooljson
-go mod init pooljson
+mkdir -p go-solutions/26-memory-model-and-optimization/08-sync-pool-tuning/08-sync-pool-tuning/cmd/demo
+cd go-solutions/26-memory-model-and-optimization/08-sync-pool-tuning/08-sync-pool-tuning
 ```
 
 This package exposes a processor API. The pool is an implementation detail.

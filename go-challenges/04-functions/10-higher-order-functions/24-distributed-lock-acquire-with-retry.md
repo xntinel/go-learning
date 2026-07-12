@@ -28,9 +28,8 @@ lock/                        independent module: example.com/lock
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/lock/cmd/demo
-cd ~/go-exercises/lock
-go mod init example.com/lock
+mkdir -p go-solutions/04-functions/10-higher-order-functions/24-distributed-lock-acquire-with-retry/cmd/demo
+cd go-solutions/04-functions/10-higher-order-functions/24-distributed-lock-acquire-with-retry
 go mod edit -go=1.24
 ```
 

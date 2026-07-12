@@ -30,9 +30,8 @@ rangeerr/                   independent module: example.com/rangeerr
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/rangeerr/cmd/demo
-cd ~/go-exercises/rangeerr
-go mod init example.com/rangeerr
+mkdir -p go-solutions/04-functions/02-named-return-values/30-range-loop-err-shadowing-defer-trap/cmd/demo
+cd go-solutions/04-functions/02-named-return-values/30-range-loop-err-shadowing-defer-trap
 go mod edit -go=1.24
 ```
 

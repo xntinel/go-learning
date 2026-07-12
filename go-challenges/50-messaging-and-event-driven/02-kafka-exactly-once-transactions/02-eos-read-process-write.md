@@ -58,9 +58,8 @@ cleanly.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/eospipe/cmd/demo
-cd ~/go-exercises/eospipe
-go mod init example.com/eospipe
+mkdir -p go-solutions/50-messaging-and-event-driven/02-kafka-exactly-once-transactions/02-eos-read-process-write/cmd/demo
+cd go-solutions/50-messaging-and-event-driven/02-kafka-exactly-once-transactions/02-eos-read-process-write
 go mod edit -go=1.25
 go get github.com/twmb/franz-go@latest
 ```

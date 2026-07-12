@@ -33,9 +33,8 @@ Set up the module. This module uses `go.uber.org/goleak`, so `go mod tidy`
 resolves it before the first test run:
 
 ```bash
-mkdir -p ~/go-exercises/poller/cmd/demo
-cd ~/go-exercises/poller
-go mod init example.com/poller
+mkdir -p go-solutions/13-goroutines-and-channels/11-goroutine-lifecycle-management/11-restartable-poller-start-stop-cycles/cmd/demo
+cd go-solutions/13-goroutines-and-channels/11-goroutine-lifecycle-management/11-restartable-poller-start-stop-cycles
 go mod edit -go=1.26
 go get go.uber.org/goleak
 go mod tidy

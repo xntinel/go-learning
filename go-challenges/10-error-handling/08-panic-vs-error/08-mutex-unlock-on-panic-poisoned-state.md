@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/guardedmap/cmd/demo
-cd ~/go-exercises/guardedmap
-go mod init example.com/guardedmap
+mkdir -p go-solutions/10-error-handling/08-panic-vs-error/08-mutex-unlock-on-panic-poisoned-state/cmd/demo
+cd go-solutions/10-error-handling/08-panic-vs-error/08-mutex-unlock-on-panic-poisoned-state
 go mod edit -go=1.26
 ```
 

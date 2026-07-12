@@ -25,9 +25,8 @@ humanbytes/                independent module: example.com/humanbytes
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/humanbytes/cmd/demo
-cd ~/go-exercises/humanbytes
-go mod init example.com/humanbytes
+mkdir -p go-solutions/12-testing-ecosystem/01-your-first-test/08-humanize-bytes/cmd/demo
+cd go-solutions/12-testing-ecosystem/01-your-first-test/08-humanize-bytes
 ```
 
 ### Binary units and the precision choice

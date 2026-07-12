@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cancelconsumer/cmd/demo
-cd ~/go-exercises/cancelconsumer
-go mod init example.com/cancelconsumer
+mkdir -p go-solutions/13-goroutines-and-channels/06-ranging-over-channels/02-context-cancellable-consumer/cmd/demo
+cd go-solutions/13-goroutines-and-channels/06-ranging-over-channels/02-context-cancellable-consumer
 ```
 
 ### Why range cannot do this, and what replaces it

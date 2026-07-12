@@ -24,8 +24,7 @@ mqpipe_test.go       pipelined batch over net.Pipe, FIFO ordering, closed-pipeli
 Set up the module:
 
 ```bash
-mkdir -p mqpipe/cmd/demo && cd mqpipe
-go mod init example.com/mqpipe
+mkdir -p go-solutions/41-capstone-message-queue/07-tcp-protocol-client/03-request-pipelining/cmd/demo && cd go-solutions/41-capstone-message-queue/07-tcp-protocol-client/03-request-pipelining
 ```
 
 ### Why a FIFO queue is enough when responses keep their order

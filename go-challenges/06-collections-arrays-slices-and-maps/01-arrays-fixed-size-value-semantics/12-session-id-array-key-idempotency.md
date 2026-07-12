@@ -37,9 +37,8 @@ sessionidempotency/          module example.com/sessionidempotency
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/sessionidempotency
-cd ~/go-exercises/sessionidempotency
-go mod init example.com/sessionidempotency
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/12-session-id-array-key-idempotency
+cd go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/12-session-id-array-key-idempotency
 go mod edit -go=1.24
 ```
 

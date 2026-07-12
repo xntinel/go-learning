@@ -28,9 +28,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/runtimecfg/cmd/demo
-cd ~/go-exercises/runtimecfg
-go mod init example.com/runtimecfg
+mkdir -p go-solutions/02-variables-types-and-constants/10-type-inference-deep-dive/02-compile-time-type-contracts/cmd/demo
+cd go-solutions/02-variables-types-and-constants/10-type-inference-deep-dive/02-compile-time-type-contracts
 go mod edit -go=1.26
 ```
 

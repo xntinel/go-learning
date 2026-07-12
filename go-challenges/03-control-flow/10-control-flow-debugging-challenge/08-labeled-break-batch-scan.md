@@ -25,9 +25,8 @@ dedup/                     module example.com/dedup
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/dedup/cmd/demo
-cd ~/go-exercises/dedup
-go mod init example.com/dedup
+mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/08-labeled-break-batch-scan/cmd/demo
+cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/08-labeled-break-batch-scan
 ```
 
 ### The artifact and the planted bug

@@ -24,8 +24,7 @@ recover_test.go      append+recover round-trip, partial-tail repair, corrupt-CRC
 Set up the module:
 
 ```bash
-mkdir -p crash-recovery/cmd/demo && cd crash-recovery
-go mod init example.com/crash-recovery
+mkdir -p go-solutions/39-capstone-database-engine/01-write-ahead-log/03-crash-recovery/cmd/demo && cd go-solutions/39-capstone-database-engine/01-write-ahead-log/03-crash-recovery
 ```
 
 ### The scanner and the driver are two different jobs

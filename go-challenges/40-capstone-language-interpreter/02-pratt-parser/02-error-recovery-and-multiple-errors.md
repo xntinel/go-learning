@@ -22,8 +22,7 @@ recovery_test.go    multi-error collection, ErrParse wrapping, resume-after-erro
 Set up the module:
 
 ```bash
-mkdir -p parserrecovery/cmd/demo && cd parserrecovery
-go mod init example.com/parserrecovery
+mkdir -p go-solutions/40-capstone-language-interpreter/02-pratt-parser/02-error-recovery-and-multiple-errors/cmd/demo && cd go-solutions/40-capstone-language-interpreter/02-pratt-parser/02-error-recovery-and-multiple-errors
 ```
 
 ### Why recovery is a feature, not an afterthought

@@ -32,9 +32,8 @@ respool/                     independent module: example.com/respool
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/respool/cmd/demo
-cd ~/go-exercises/respool
-go mod init example.com/respool
+mkdir -p go-solutions/13-goroutines-and-channels/13-goroutine-pools/11-worker-local-resource-pool/cmd/demo
+cd go-solutions/13-goroutines-and-channels/13-goroutine-pools/11-worker-local-resource-pool
 ```
 
 ### Amortization is the pool value beyond fan-out capping

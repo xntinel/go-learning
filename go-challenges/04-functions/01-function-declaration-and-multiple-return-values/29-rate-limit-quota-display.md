@@ -33,9 +33,8 @@ ratelimit/                 independent module: example.com/rate-limit-quota-disp
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ratelimit/cmd/demo
-cd ~/go-exercises/ratelimit
-go mod init example.com/rate-limit-quota-display
+mkdir -p go-solutions/04-functions/01-function-declaration-and-multiple-return-values/29-rate-limit-quota-display/cmd/demo
+cd go-solutions/04-functions/01-function-declaration-and-multiple-return-values/29-rate-limit-quota-display
 go mod edit -go=1.24
 ```
 

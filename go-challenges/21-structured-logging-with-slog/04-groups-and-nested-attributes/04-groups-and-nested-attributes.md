@@ -21,9 +21,8 @@ Logging schema is an API for operators. Group names should be stable and meaning
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/slog-groups
-cd ~/go-exercises/slog-groups
-go mod init example.com/sloggroups
+mkdir -p go-solutions/21-structured-logging-with-slog/04-groups-and-nested-attributes/04-groups-and-nested-attributes
+cd go-solutions/21-structured-logging-with-slog/04-groups-and-nested-attributes/04-groups-and-nested-attributes
 ```
 
 Edit `go.mod`:

@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/lazyinit/cmd/demo
-cd ~/go-exercises/lazyinit
-go mod init example.com/lazyinit
+mkdir -p go-solutions/02-variables-types-and-constants/02-zero-values-and-default-initialization/07-sync-once-lazy-singleton/cmd/demo
+cd go-solutions/02-variables-types-and-constants/02-zero-values-and-default-initialization/07-sync-once-lazy-singleton
 ```
 
 ## Why sync.Once, and what OnceValue adds

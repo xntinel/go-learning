@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/linescan/cmd/demo
-cd ~/go-exercises/linescan
-go mod init example.com/linescan
+mkdir -p go-solutions/12-testing-ecosystem/10-testing-readers-with-iotest/07-line-framing-scanner-across-boundaries/cmd/demo
+cd go-solutions/12-testing-ecosystem/10-testing-readers-with-iotest/07-line-framing-scanner-across-boundaries
 ```
 
 ### Why the Scanner is boundary-agnostic, and where it still fails

@@ -29,9 +29,8 @@ hotconfig/                  independent module: example.com/hotconfig
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/hotconfig/cmd/demo
-cd ~/go-exercises/hotconfig
-go mod init example.com/hotconfig
+mkdir -p go-solutions/09-pointers/02-pointers-and-function-parameters/06-atomic-pointer-config-hot-reload/cmd/demo
+cd go-solutions/09-pointers/02-pointers-and-function-parameters/06-atomic-pointer-config-hot-reload
 ```
 
 ### Why swap a snapshot instead of mutating fields

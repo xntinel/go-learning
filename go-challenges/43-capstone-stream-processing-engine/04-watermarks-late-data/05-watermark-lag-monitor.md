@@ -23,8 +23,7 @@ example_test.go        runnable doc example for Observe
 Set up the module:
 
 ```bash
-mkdir -p watermark-lag-monitor/cmd/demo && cd watermark-lag-monitor
-go mod init example.com/watermark-lag-monitor
+mkdir -p go-solutions/43-capstone-stream-processing-engine/04-watermarks-late-data/05-watermark-lag-monitor/cmd/demo && cd go-solutions/43-capstone-stream-processing-engine/04-watermarks-late-data/05-watermark-lag-monitor
 go mod edit -go=1.26
 ```
 

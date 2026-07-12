@@ -30,9 +30,8 @@ leaselock/                    independent module: example.com/leaselock
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/leaselock/cmd/demo
-cd ~/go-exercises/leaselock
-go mod init example.com/leaselock
+mkdir -p go-solutions/04-functions/02-named-return-values/17-distributed-lock-ttl-extension/cmd/demo
+cd go-solutions/04-functions/02-named-return-values/17-distributed-lock-ttl-extension
 go mod edit -go=1.24
 ```
 

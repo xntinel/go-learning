@@ -28,9 +28,8 @@ cycledetect/               independent module: example.com/cycledetect
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cycledetect/cmd/demo
-cd ~/go-exercises/cycledetect
-go mod init example.com/cycledetect
+mkdir -p go-solutions/04-functions/07-recursive-functions-and-stack-depth/05-dependency-cycle-detection-dfs/cmd/demo
+cd go-solutions/04-functions/07-recursive-functions-and-stack-depth/05-dependency-cycle-detection-dfs
 ```
 
 ### Why three colors, not one set

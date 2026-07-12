@@ -29,9 +29,8 @@ sampler/                   independent module: example.com/tenant-sampler
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/sampler/cmd/demo
-cd ~/go-exercises/sampler
-go mod init example.com/tenant-sampler
+mkdir -p go-solutions/04-functions/04-first-class-functions-and-closures/16-per-tenant-request-sampler-closure/cmd/demo
+cd go-solutions/04-functions/04-first-class-functions-and-closures/16-per-tenant-request-sampler-closure
 go mod edit -go=1.24
 ```
 

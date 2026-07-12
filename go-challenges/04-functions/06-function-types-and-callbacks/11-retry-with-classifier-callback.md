@@ -31,9 +31,8 @@ Test: a table covering transient-then-success (3 calls), a permanent error
 Verify: `go test -count=1 ./...`
 
 ```bash
-mkdir -p ~/go-exercises/retry-callback/cmd/demo
-cd ~/go-exercises/retry-callback
-go mod init example.com/retry-callback
+mkdir -p go-solutions/04-functions/06-function-types-and-callbacks/11-retry-with-classifier-callback/cmd/demo
+cd go-solutions/04-functions/06-function-types-and-callbacks/11-retry-with-classifier-callback
 go mod edit -go=1.24
 ```
 

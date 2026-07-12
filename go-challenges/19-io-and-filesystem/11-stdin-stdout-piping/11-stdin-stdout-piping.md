@@ -21,9 +21,8 @@ The library returns errors. The command decides whether to log and exit. This ke
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/linefilter/cmd/demo
-cd ~/go-exercises/linefilter
-go mod init example.com/linefilter
+mkdir -p go-solutions/19-io-and-filesystem/11-stdin-stdout-piping/11-stdin-stdout-piping/cmd/demo
+cd go-solutions/19-io-and-filesystem/11-stdin-stdout-piping/11-stdin-stdout-piping
 ```
 
 ### Exercise 1: Implement The Filter

@@ -66,9 +66,8 @@ Container stdout and stderr are redirected to a log file by setting `exec.Cmd.St
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/lifecycle/cmd/demo
-cd ~/go-exercises/lifecycle
-go mod init example.com/lifecycle
+mkdir -p go-solutions/38-capstone-container-runtime/07-container-lifecycle/07-container-lifecycle/cmd/demo
+cd go-solutions/38-capstone-container-runtime/07-container-lifecycle/07-container-lifecycle
 ```
 
 ### Exercise 1: State Machine and Persistence (lifecycle.go)

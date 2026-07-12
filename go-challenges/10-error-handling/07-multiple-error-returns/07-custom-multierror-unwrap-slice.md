@@ -28,9 +28,8 @@ multierr/                  independent module: example.com/multierr
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/multierr/cmd/demo
-cd ~/go-exercises/multierr
-go mod init example.com/multierr
+mkdir -p go-solutions/10-error-handling/07-multiple-error-returns/07-custom-multierror-unwrap-slice/cmd/demo
+cd go-solutions/10-error-handling/07-multiple-error-returns/07-custom-multierror-unwrap-slice
 ```
 
 ### Why the `Unwrap() []error` method is the whole trick

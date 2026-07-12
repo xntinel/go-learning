@@ -30,9 +30,8 @@ retry/                     independent module: example.com/retry
 Set up the module:
 
 ```bash
-mkdir -p retry/cmd/demo
-cd retry
-go mod init example.com/retry
+mkdir -p go-solutions/14-select-and-context/04-context-withcancel/05-context-retry-backoff/cmd/demo
+cd go-solutions/14-select-and-context/04-context-withcancel/05-context-retry-backoff
 ```
 
 ### Why the sleep is a select, not time.Sleep

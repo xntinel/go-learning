@@ -50,9 +50,8 @@ Cooperative termination: a participant waiting for a decision can contact other 
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/twophasecommit/cmd/demo
-cd ~/go-exercises/twophasecommit
-go mod init example.com/twophasecommit
+mkdir -p go-solutions/37-distributed-systems-fundamentals/16-two-phase-commit/16-two-phase-commit/cmd/demo
+cd go-solutions/37-distributed-systems-fundamentals/16-two-phase-commit/16-two-phase-commit
 ```
 
 ### Exercise 1: Coordinator and Participant Types

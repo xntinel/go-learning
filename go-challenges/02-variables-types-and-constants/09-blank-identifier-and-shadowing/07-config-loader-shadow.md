@@ -30,9 +30,8 @@ appconfig/                      module: example.com/appconfig
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/appconfig/cmd/demo
-cd ~/go-exercises/appconfig
-go mod init example.com/appconfig
+mkdir -p go-solutions/02-variables-types-and-constants/09-blank-identifier-and-shadowing/07-config-loader-shadow/cmd/demo
+cd go-solutions/02-variables-types-and-constants/09-blank-identifier-and-shadowing/07-config-loader-shadow
 ```
 
 ### The shadow that leaks a half-built config

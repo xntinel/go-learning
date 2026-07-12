@@ -26,9 +26,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/mergefanin/cmd/demo
-cd ~/go-exercises/mergefanin
-go mod init example.com/mergefanin
+mkdir -p go-solutions/13-goroutines-and-channels/07-done-channel-pattern/04-merge-fan-in-cancel/cmd/demo
+cd go-solutions/13-goroutines-and-channels/07-done-channel-pattern/04-merge-fan-in-cancel
 ```
 
 ### The forwarder and the guarded send

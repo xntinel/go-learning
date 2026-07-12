@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...` and `go test -bench=. -benchtime=1x ./...
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/audit/cmd/demo
-cd ~/go-exercises/audit
-go mod init example.com/audit
+mkdir -p go-solutions/07-structs-and-methods/03-methods-value-vs-pointer-receivers/10-large-struct-copy-benchmark/cmd/demo
+cd go-solutions/07-structs-and-methods/03-methods-value-vs-pointer-receivers/10-large-struct-copy-benchmark
 ```
 
 ### Why a value receiver is not free

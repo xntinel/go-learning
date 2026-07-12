@@ -26,9 +26,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/envinject/cmd/demo
-cd ~/go-exercises/envinject
-go mod init example.com/envinject
+mkdir -p go-solutions/12-testing-ecosystem/17-testing-with-environment-variables/06-getenv-injection-parallel/cmd/demo
+cd go-solutions/12-testing-ecosystem/17-testing-with-environment-variables/06-getenv-injection-parallel
 ```
 
 ## Invert the dependency on `os`

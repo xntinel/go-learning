@@ -33,9 +33,8 @@ vulnrunner/                  independent module: example.com/vulnrunner
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/vulnrunner/cmd/demo
-cd ~/go-exercises/vulnrunner
-go mod init example.com/vulnrunner
+mkdir -p go-solutions/49-application-security-crypto-supplychain/09-govulncheck-in-ci/03-run-govulncheck-programmatically/cmd/demo
+cd go-solutions/49-application-security-crypto-supplychain/09-govulncheck-in-ci/03-run-govulncheck-programmatically
 go mod edit -go=1.26
 go get golang.org/x/vuln@latest   # only the integration build imports it
 ```

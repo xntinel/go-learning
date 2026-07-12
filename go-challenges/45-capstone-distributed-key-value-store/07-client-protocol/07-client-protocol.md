@@ -77,10 +77,9 @@ When `doOnNode` returns an error, `doWithRetry` walks clockwise to the next repl
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/kvstore-client/kvclient
-mkdir -p ~/go-exercises/kvstore-client/cmd/demo
-cd ~/go-exercises/kvstore-client
-go mod init example.com/kvstore-client
+mkdir -p go-solutions/45-capstone-distributed-key-value-store/07-client-protocol/07-client-protocol/kvclient
+mkdir -p go-solutions/45-capstone-distributed-key-value-store/07-client-protocol/07-client-protocol/cmd/demo
+cd go-solutions/45-capstone-distributed-key-value-store/07-client-protocol/07-client-protocol
 ```
 
 ### Exercise 1: Sentinel Errors

@@ -30,9 +30,8 @@ flagstore/                     independent module: example.com/flagstore
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/flagstore/cmd/demo
-cd ~/go-exercises/flagstore
-go mod init example.com/flagstore
+mkdir -p go-solutions/02-variables-types-and-constants/01-variable-declaration-and-short-assignment/04-comma-ok-cache-lookup/cmd/demo
+cd go-solutions/02-variables-types-and-constants/01-variable-declaration-and-short-assignment/04-comma-ok-cache-lookup
 ```
 
 ### Why the single-result map form is a bug here

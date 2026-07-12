@@ -27,9 +27,8 @@ error-codes/                       module example.com/error-codes
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/error-codes/cmd/demo
-cd ~/go-exercises/error-codes
-go mod init example.com/error-codes
+mkdir -p go-solutions/10-error-handling/13-designing-an-error-hierarchy/08-machine-readable-error-codes/cmd/demo
+cd go-solutions/10-error-handling/13-designing-an-error-hierarchy/08-machine-readable-error-codes
 ```
 
 ### The code is the contract, not the prose

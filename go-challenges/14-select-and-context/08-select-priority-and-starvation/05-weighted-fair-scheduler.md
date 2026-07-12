@@ -34,9 +34,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/qos/cmd/demo
-cd ~/go-exercises/qos
-go mod init example.com/qos
+mkdir -p go-solutions/14-select-and-context/08-select-priority-and-starvation/05-weighted-fair-scheduler/cmd/demo
+cd go-solutions/14-select-and-context/08-select-priority-and-starvation/05-weighted-fair-scheduler
 ```
 
 ### Deficit round-robin without reflect

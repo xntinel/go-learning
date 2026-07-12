@@ -37,9 +37,8 @@ Verify: `go test -count=1 ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/multi-phase-rollback-transaction/cmd/demo
-cd ~/go-exercises/multi-phase-rollback-transaction
-go mod init example.com/txn
+mkdir -p go-solutions/03-control-flow/08-panic-and-recover/26-multi-phase-rollback-transaction/cmd/demo
+cd go-solutions/03-control-flow/08-panic-and-recover/26-multi-phase-rollback-transaction
 go mod edit -go=1.24
 ```
 

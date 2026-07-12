@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pool/cmd/demo
-cd ~/go-exercises/pool
-go mod init example.com/pool
+mkdir -p go-solutions/04-functions/08-init-functions-and-package-initialization/17-connection-pool-lazy-oncevalue-per-dialect/cmd/demo
+cd go-solutions/04-functions/08-init-functions-and-package-initialization/17-connection-pool-lazy-oncevalue-per-dialect
 go mod edit -go=1.24
 ```
 

@@ -30,9 +30,8 @@ Set up the module. Each exercise is self-contained, so it bundles its own copy o
 the shared package under the same import path it would have in the real repo:
 
 ```bash
-mkdir -p ~/go-exercises/mono/platform/httpx ~/go-exercises/mono/cmd/api
-cd ~/go-exercises/mono
-go mod init example.com/mono
+mkdir -p go-solutions/11-packages-and-modules/10-monorepo-module-strategy/02-service-a-http-api/platform/httpx go-solutions/11-packages-and-modules/10-monorepo-module-strategy/02-service-a-http-api/cmd/api
+cd go-solutions/11-packages-and-modules/10-monorepo-module-strategy/02-service-a-http-api
 ```
 
 ### Why the handler is the unit, not main

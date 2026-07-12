@@ -27,9 +27,8 @@ typednil/                   independent module: example.com/typednil
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/typednil/cmd/demo
-cd ~/go-exercises/typednil
-go mod init example.com/typednil
+mkdir -p go-solutions/08-interfaces/12-interface-pollution-anti-patterns/07-typed-nil-interface-pitfall/cmd/demo
+cd go-solutions/08-interfaces/12-interface-pollution-anti-patterns/07-typed-nil-interface-pitfall
 ```
 
 ### Why the guard fires when nothing failed

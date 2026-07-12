@@ -29,9 +29,8 @@ ctxplugin/                independent module: example.com/ctxplugin
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ctxplugin/cmd/demo
-cd ~/go-exercises/ctxplugin
-go mod init example.com/ctxplugin
+mkdir -p go-solutions/08-interfaces/13-designing-a-plugin-system/05-context-aware-processing/cmd/demo
+cd go-solutions/08-interfaces/13-designing-a-plugin-system/05-context-aware-processing
 go mod edit -go=1.25
 ```
 

@@ -26,9 +26,8 @@ lazyinit/                  independent module: example.com/lazyinit
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/lazyinit/lazy ~/go-exercises/lazyinit/cmd/demo
-cd ~/go-exercises/lazyinit
-go mod init example.com/lazyinit
+mkdir -p go-solutions/15-sync-primitives/12-sync-oncevalue-oncefunc/01-lazy-init-library/lazy go-solutions/15-sync-primitives/12-sync-oncevalue-oncefunc/01-lazy-init-library/cmd/demo
+cd go-solutions/15-sync-primitives/12-sync-oncevalue-oncefunc/01-lazy-init-library
 ```
 
 ### Why a wrapper package at all

@@ -22,8 +22,7 @@ bus_test.go          retry/ack accounting + -race concurrent pub/sub + clean dra
 Set up the module:
 
 ```bash
-mkdir -p domain-event-bus/cmd/demo && cd domain-event-bus
-go mod init example.com/domain-event-bus
+mkdir -p go-solutions/24-design-patterns-in-go/09-observer-pattern-with-channels/04-domain-event-bus-at-least-once/cmd/demo && cd go-solutions/24-design-patterns-in-go/09-observer-pattern-with-channels/04-domain-event-bus-at-least-once
 ```
 
 ### Backpressure instead of loss, and where the goroutines live

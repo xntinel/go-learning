@@ -28,9 +28,8 @@ flags/                     independent module: example.com/flags
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/flags/cmd/demo
-cd ~/go-exercises/flags
-go mod init example.com/flags
+mkdir -p go-solutions/02-variables-types-and-constants/03-basic-types/09-feature-flag-tri-state/cmd/demo
+cd go-solutions/02-variables-types-and-constants/03-basic-types/09-feature-flag-tri-state
 ```
 
 ### Why a plain bool cannot carry "unset"

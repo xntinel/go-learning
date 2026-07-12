@@ -28,9 +28,8 @@ counter/                   independent module: example.com/counter
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/counter/cmd/demo
-cd ~/go-exercises/counter
-go mod init example.com/counter
+mkdir -p go-solutions/12-testing-ecosystem/05-benchmarks/06-contention-with-runparallel/cmd/demo
+cd go-solutions/12-testing-ecosystem/05-benchmarks/06-contention-with-runparallel
 go mod edit -go=1.24
 ```
 

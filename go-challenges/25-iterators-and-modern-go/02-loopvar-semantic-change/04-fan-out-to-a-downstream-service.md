@@ -23,8 +23,7 @@ example_test.go      ExampleFanOut with a verified // Output block
 Set up the module:
 
 ```bash
-mkdir -p loop-fanout-service/cmd/demo && cd loop-fanout-service
-go mod init example.com/loop-fanout-service
+mkdir -p go-solutions/25-iterators-and-modern-go/02-loopvar-semantic-change/04-fan-out-to-a-downstream-service/cmd/demo && cd go-solutions/25-iterators-and-modern-go/02-loopvar-semantic-change/04-fan-out-to-a-downstream-service
 ```
 
 ### Why the result slot, not a shared accumulator, is the architecture

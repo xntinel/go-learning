@@ -34,9 +34,8 @@ Verify: `go test -race ./...` offline; `go test -tags kafka -race ./...` against
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/kafkaconsumer/cmd/demo
-cd ~/go-exercises/kafkaconsumer
-go mod init example.com/kafkaconsumer
+mkdir -p go-solutions/50-messaging-and-event-driven/01-kafka-with-franz-go/02-consumer-group-manual-commit/cmd/demo
+cd go-solutions/50-messaging-and-event-driven/01-kafka-with-franz-go/02-consumer-group-manual-commit
 go mod edit -go=1.26
 go get github.com/twmb/franz-go/pkg/kgo
 go get github.com/twmb/franz-go/pkg/kadm

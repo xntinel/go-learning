@@ -37,9 +37,8 @@ ttlsweep/                     module example.com/ttlsweep
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ttlsweep
-cd ~/go-exercises/ttlsweep
-go mod init example.com/ttlsweep
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/12-delete-during-range-safe-sweep
+cd go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/12-delete-during-range-safe-sweep
 go mod edit -go=1.24
 ```
 

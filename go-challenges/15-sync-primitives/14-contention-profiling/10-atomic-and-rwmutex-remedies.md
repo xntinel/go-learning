@@ -35,9 +35,8 @@ reqmetrics/                   independent module: example.com/reqmetrics
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/reqmetrics/cmd/demo
-cd ~/go-exercises/reqmetrics
-go mod init example.com/reqmetrics
+mkdir -p go-solutions/15-sync-primitives/14-contention-profiling/10-atomic-and-rwmutex-remedies/cmd/demo
+cd go-solutions/15-sync-primitives/14-contention-profiling/10-atomic-and-rwmutex-remedies
 ```
 
 ### Remedy three: atomics for the hot counter

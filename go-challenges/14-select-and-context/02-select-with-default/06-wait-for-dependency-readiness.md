@@ -28,9 +28,8 @@ readiness/                  independent module: example.com/readiness
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/readiness/cmd/demo
-cd ~/go-exercises/readiness
-go mod init example.com/readiness
+mkdir -p go-solutions/14-select-and-context/02-select-with-default/06-wait-for-dependency-readiness/cmd/demo
+cd go-solutions/14-select-and-context/02-select-with-default/06-wait-for-dependency-readiness
 go mod edit -go=1.26
 ```
 

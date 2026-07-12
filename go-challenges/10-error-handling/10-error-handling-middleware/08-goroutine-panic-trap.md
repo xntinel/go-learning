@@ -33,9 +33,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/safego/cmd/demo
-cd ~/go-exercises/safego
-go mod init example.com/safego
+mkdir -p go-solutions/10-error-handling/10-error-handling-middleware/08-goroutine-panic-trap/cmd/demo
+cd go-solutions/10-error-handling/10-error-handling-middleware/08-goroutine-panic-trap
 ```
 
 ### Why Recoverer cannot help here

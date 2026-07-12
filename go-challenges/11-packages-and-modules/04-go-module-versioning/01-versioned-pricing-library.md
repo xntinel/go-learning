@@ -30,9 +30,8 @@ Set up the module. The module path is the import prefix for every package inside
 it, and it is the name you will tag as `v0.1.0`:
 
 ```bash
-mkdir -p ~/go-exercises/pricing/cmd/demo
-cd ~/go-exercises/pricing
-go mod init example.com/billing/pricing
+mkdir -p go-solutions/11-packages-and-modules/04-go-module-versioning/01-versioned-pricing-library/cmd/demo
+cd go-solutions/11-packages-and-modules/04-go-module-versioning/01-versioned-pricing-library
 go mod edit -go=1.26
 ```
 

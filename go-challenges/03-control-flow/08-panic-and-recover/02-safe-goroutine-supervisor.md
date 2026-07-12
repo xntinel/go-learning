@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/safego/cmd/demo
-cd ~/go-exercises/safego
-go mod init example.com/safego
+mkdir -p go-solutions/03-control-flow/08-panic-and-recover/02-safe-goroutine-supervisor/cmd/demo
+cd go-solutions/03-control-flow/08-panic-and-recover/02-safe-goroutine-supervisor
 ```
 
 ### The recover must live inside the spawned goroutine

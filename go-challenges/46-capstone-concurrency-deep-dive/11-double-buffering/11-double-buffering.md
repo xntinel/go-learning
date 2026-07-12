@@ -70,9 +70,8 @@ Because the writer calls `Write` sequentially (one swap per call) and must drain
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/doublebuf/cmd/demo
-cd ~/go-exercises/doublebuf
-go mod init example.com/doublebuf
+mkdir -p go-solutions/46-capstone-concurrency-deep-dive/11-double-buffering/11-double-buffering/cmd/demo
+cd go-solutions/46-capstone-concurrency-deep-dive/11-double-buffering/11-double-buffering
 ```
 
 ### Exercise 1: Core Types and Constructor

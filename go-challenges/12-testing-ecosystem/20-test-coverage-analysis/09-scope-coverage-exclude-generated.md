@@ -34,9 +34,8 @@ billing/                   independent module: example.com/billing
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/billing/{invoice,pb} ~/go-exercises/billing/cmd/app
-cd ~/go-exercises/billing
-go mod init example.com/billing
+mkdir -p go-solutions/12-testing-ecosystem/20-test-coverage-analysis/09-scope-coverage-exclude-generated/{invoice,pb} go-solutions/12-testing-ecosystem/20-test-coverage-analysis/09-scope-coverage-exclude-generated/cmd/app
+cd go-solutions/12-testing-ecosystem/20-test-coverage-analysis/09-scope-coverage-exclude-generated
 ```
 
 ### Why the naive number is the wrong denominator

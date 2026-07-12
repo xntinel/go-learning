@@ -87,9 +87,8 @@ Each SQE is exactly 64 bytes with a union layout defined in `<linux/io_uring.h>`
 Set up the module. This package requires Linux 5.1+ and will not link or run on other operating systems.
 
 ```bash
-mkdir -p ~/go-exercises/iouring/cmd/demo
-cd ~/go-exercises/iouring
-go mod init example.com/iouring
+mkdir -p go-solutions/47-capstone-systems-and-kernel/05-io-uring-integration/05-io-uring-integration/cmd/demo
+cd go-solutions/47-capstone-systems-and-kernel/05-io-uring-integration/05-io-uring-integration
 go get golang.org/x/sys@latest
 ```
 

@@ -22,8 +22,7 @@ merge_test.go        total-order union, duplicates, empty/no sources, all stops 
 Set up the module:
 
 ```bash
-mkdir -p kway-merge/cmd/demo && cd kway-merge
-go mod init example.com/kway-merge
+mkdir -p go-solutions/25-iterators-and-modern-go/04-range-over-func-pull-iterators/05-k-way-merge-with-heap/cmd/demo && cd go-solutions/25-iterators-and-modern-go/04-range-over-func-pull-iterators/05-k-way-merge-with-heap
 ```
 
 ### Why this needs k live cursors, and why a heap

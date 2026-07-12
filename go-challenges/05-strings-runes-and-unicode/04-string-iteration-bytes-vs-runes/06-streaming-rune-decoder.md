@@ -27,9 +27,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/runestream/cmd/demo
-cd ~/go-exercises/runestream
-go mod init example.com/runestream
+mkdir -p go-solutions/05-strings-runes-and-unicode/04-string-iteration-bytes-vs-runes/06-streaming-rune-decoder/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/04-string-iteration-bytes-vs-runes/06-streaming-rune-decoder
 ```
 
 ### Why ReadRune, and its exact contract

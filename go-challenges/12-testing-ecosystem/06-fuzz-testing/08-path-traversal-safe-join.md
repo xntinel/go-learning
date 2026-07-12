@@ -32,9 +32,8 @@ Verify: `go test -race ./...`, then `go test -fuzz=FuzzSafeJoinContained
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/safepath/cmd/demo
-cd ~/go-exercises/safepath
-go mod init example.com/safepath
+mkdir -p go-solutions/12-testing-ecosystem/06-fuzz-testing/08-path-traversal-safe-join/cmd/demo
+cd go-solutions/12-testing-ecosystem/06-fuzz-testing/08-path-traversal-safe-join
 ```
 
 ### Why filepath.IsLocal is the whole safety argument

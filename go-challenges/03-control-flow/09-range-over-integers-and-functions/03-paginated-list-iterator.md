@@ -27,9 +27,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/listing/cmd/demo
-cd ~/go-exercises/listing
-go mod init example.com/listing
+mkdir -p go-solutions/03-control-flow/09-range-over-integers-and-functions/03-paginated-list-iterator/cmd/demo
+cd go-solutions/03-control-flow/09-range-over-integers-and-functions/03-paginated-list-iterator
 ```
 
 ## The design

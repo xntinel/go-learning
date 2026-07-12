@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/eventbus/events ~/go-exercises/eventbus/cmd/demo
-cd ~/go-exercises/eventbus
-go mod init example.com/eventbus
+mkdir -p go-solutions/07-structs-and-methods/02-struct-tags-and-json-encoding/07-rawmessage-polymorphic-envelope/events go-solutions/07-structs-and-methods/02-struct-tags-and-json-encoding/07-rawmessage-polymorphic-envelope/cmd/demo
+cd go-solutions/07-structs-and-methods/02-struct-tags-and-json-encoding/07-rawmessage-polymorphic-envelope
 go mod edit -go=1.24
 ```
 

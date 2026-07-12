@@ -32,9 +32,8 @@ hotconfig/                 independent module: example.com/hotconfig
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/hotconfig/cmd/demo
-cd ~/go-exercises/hotconfig
-go mod init example.com/hotconfig
+mkdir -p go-solutions/09-pointers/09-pointer-aliasing-and-data-races/04-atomic-pointer-config-hotreload/cmd/demo
+cd go-solutions/09-pointers/09-pointer-aliasing-and-data-races/04-atomic-pointer-config-hotreload
 ```
 
 ### Copy-on-write, and the rule that makes it safe

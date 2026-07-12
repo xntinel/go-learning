@@ -28,9 +28,8 @@ grepcli/                           module: example.com/grepcli
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/grepcli/internal/grep ~/go-exercises/grepcli/cmd/pkgsimports
-cd ~/go-exercises/grepcli
-go mod init example.com/grepcli
+mkdir -p go-solutions/11-packages-and-modules/01-package-declaration-and-imports/02-grep-cli-executable/internal/grep go-solutions/11-packages-and-modules/01-package-declaration-and-imports/02-grep-cli-executable/cmd/pkgsimports
+cd go-solutions/11-packages-and-modules/01-package-declaration-and-imports/02-grep-cli-executable
 go mod edit -go=1.26
 ```
 

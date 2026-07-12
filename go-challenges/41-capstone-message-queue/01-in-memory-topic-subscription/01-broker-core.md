@@ -21,8 +21,7 @@ mq_test.go           offset uniqueness under load, broadcast fan-out, ack/nack,
 Set up the module:
 
 ```bash
-mkdir -p broker-core/cmd/demo && cd broker-core
-go mod init example.com/mq
+mkdir -p go-solutions/41-capstone-message-queue/01-in-memory-topic-subscription/01-broker-core/cmd/demo && cd go-solutions/41-capstone-message-queue/01-in-memory-topic-subscription/01-broker-core
 ```
 
 ### The log, the offset, and why the lock owns both

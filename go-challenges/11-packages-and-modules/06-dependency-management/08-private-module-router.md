@@ -30,9 +30,8 @@ modrouter/                 independent module: example.com/modrouter
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/modrouter/cmd/demo
-cd ~/go-exercises/modrouter
-go mod init example.com/modrouter
+mkdir -p go-solutions/11-packages-and-modules/06-dependency-management/08-private-module-router/cmd/demo
+cd go-solutions/11-packages-and-modules/06-dependency-management/08-private-module-router
 go get golang.org/x/mod
 ```
 

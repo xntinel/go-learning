@@ -29,9 +29,8 @@ pool/                      independent module: example.com/pool
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pool/cmd/demo
-cd ~/go-exercises/pool
-go mod init example.com/pool
+mkdir -p go-solutions/48-modern-go-language-and-stdlib/10-container-aware-gomaxprocs/03-gomaxprocs-tracking-worker-pool/cmd/demo
+cd go-solutions/48-modern-go-language-and-stdlib/10-container-aware-gomaxprocs/03-gomaxprocs-tracking-worker-pool
 go mod edit -go=1.25
 ```
 

@@ -32,9 +32,8 @@ goldenhelper/                independent module: example.com/goldenhelper
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/goldenhelper/cmd/demo ~/go-exercises/goldenhelper/testdata
-cd ~/go-exercises/goldenhelper
-go mod init example.com/goldenhelper
+mkdir -p go-solutions/12-testing-ecosystem/03-test-helpers/07-golden-file-assert-helper/cmd/demo go-solutions/12-testing-ecosystem/03-test-helpers/07-golden-file-assert-helper/testdata
+cd go-solutions/12-testing-ecosystem/03-test-helpers/07-golden-file-assert-helper
 ```
 
 ### Why `-update` and `testdata/`

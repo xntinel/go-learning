@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/bodyguard/cmd/demo
-cd ~/go-exercises/bodyguard
-go mod init example.com/bodyguard
+mkdir -p go-solutions/12-testing-ecosystem/10-testing-readers-with-iotest/06-bounded-body-reader-oom-guard/cmd/demo
+cd go-solutions/12-testing-ecosystem/10-testing-readers-with-iotest/06-bounded-body-reader-oom-guard
 ```
 
 ### Two caps that look alike and behave oppositely

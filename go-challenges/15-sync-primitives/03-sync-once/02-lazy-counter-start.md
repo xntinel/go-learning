@@ -29,9 +29,8 @@ lazy-counter-start/           module: example.com/lazy-counter-start
 Set up the module:
 
 ```bash
-mkdir -p lazy-counter-start/cmd/demo
-cd lazy-counter-start
-go mod init example.com/lazy-counter-start
+mkdir -p go-solutions/15-sync-primitives/03-sync-once/02-lazy-counter-start/cmd/demo
+cd go-solutions/15-sync-primitives/03-sync-once/02-lazy-counter-start
 ```
 
 ### Two kinds of state, two kinds of guard

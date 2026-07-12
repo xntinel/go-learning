@@ -28,9 +28,8 @@ originset/                    module example.com/originset
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/originset/cmd/demo
-cd ~/go-exercises/originset
-go mod init example.com/originset
+mkdir -p go-solutions/04-functions/05-anonymous-functions/02-iife-immediate-invocation-scoped-init/cmd/demo
+cd go-solutions/04-functions/05-anonymous-functions/02-iife-immediate-invocation-scoped-init
 ```
 
 ### IIFE for value, helper for error, IIFE for panic

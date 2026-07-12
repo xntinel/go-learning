@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/guard/cmd/demo
-cd ~/go-exercises/guard
-go mod init example.com/guard
+mkdir -p go-solutions/03-control-flow/08-panic-and-recover/08-repanic-preserve-crash/cmd/demo
+cd go-solutions/03-control-flow/08-panic-and-recover/08-repanic-preserve-crash
 ```
 
 ### Recover to classify, then decide

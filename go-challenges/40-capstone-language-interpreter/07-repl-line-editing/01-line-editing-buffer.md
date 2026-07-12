@@ -22,8 +22,7 @@ editor_test.go     insert, delete, move, word-delete, reset, set-content
 Set up the module:
 
 ```bash
-mkdir -p line-editor/cmd/demo && cd line-editor
-go mod init example.com/line-editor
+mkdir -p go-solutions/40-capstone-language-interpreter/07-repl-line-editing/01-line-editing-buffer/cmd/demo && cd go-solutions/40-capstone-language-interpreter/07-repl-line-editing/01-line-editing-buffer
 ```
 
 ### The buffer model

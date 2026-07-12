@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/readydrain/cmd/demo
-cd ~/go-exercises/readydrain
-go mod init example.com/readydrain
+mkdir -p go-solutions/14-select-and-context/11-graceful-shutdown-with-context/08-kubernetes-prestop-readiness-drain/cmd/demo
+cd go-solutions/14-select-and-context/11-graceful-shutdown-with-context/08-kubernetes-prestop-readiness-drain
 ```
 
 ## Why fail readiness before draining

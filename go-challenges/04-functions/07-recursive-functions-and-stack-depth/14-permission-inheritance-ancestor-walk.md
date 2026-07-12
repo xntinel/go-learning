@@ -31,9 +31,8 @@ detected via `ErrCycle`.
 Verify: `go test -count=1 ./...`
 
 ```bash
-mkdir -p ~/go-exercises/permresolve
-cd ~/go-exercises/permresolve
-go mod init example.com/permresolve
+mkdir -p go-solutions/04-functions/07-recursive-functions-and-stack-depth/14-permission-inheritance-ancestor-walk
+cd go-solutions/04-functions/07-recursive-functions-and-stack-depth/14-permission-inheritance-ancestor-walk
 go mod edit -go=1.24
 ```
 

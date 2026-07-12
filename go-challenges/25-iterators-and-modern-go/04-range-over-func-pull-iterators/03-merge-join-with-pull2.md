@@ -22,8 +22,7 @@ join_test.go         inner-match set, disjoint keys, empty input, early break
 Set up the module:
 
 ```bash
-mkdir -p merge-join/cmd/demo && cd merge-join
-go mod init example.com/merge-join
+mkdir -p go-solutions/25-iterators-and-modern-go/04-range-over-func-pull-iterators/03-merge-join-with-pull2/cmd/demo && cd go-solutions/25-iterators-and-modern-go/04-range-over-func-pull-iterators/03-merge-join-with-pull2
 ```
 
 ### Why `iter.Pull2`, and the three-way key comparison

@@ -22,8 +22,7 @@ collection_test.go   index pairs, reverse order, reusable passes, early break, S
 Set up the module:
 
 ```bash
-mkdir -p collection/cmd/demo && cd collection
-go mod init example.com/collection
+mkdir -p go-solutions/25-iterators-and-modern-go/05-designing-iterator-apis/01-collection-iterators/cmd/demo && cd go-solutions/25-iterators-and-modern-go/05-designing-iterator-apis/01-collection-iterators
 ```
 
 ### Why these four methods, and why these exact shapes

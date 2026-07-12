@@ -57,9 +57,8 @@ fanoutcollect/             module example.com/fanoutcollect
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/fanoutcollect
-cd ~/go-exercises/fanoutcollect
-go mod init example.com/fanoutcollect
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/02-slices-creation-append-capacity/13-per-goroutine-append-then-concat
+cd go-solutions/06-collections-arrays-slices-and-maps/02-slices-creation-append-capacity/13-per-goroutine-append-then-concat
 go mod edit -go=1.24
 ```
 

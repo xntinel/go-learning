@@ -33,9 +33,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/allocate/cmd/demo
-cd ~/go-exercises/allocate
-go mod init example.com/allocate
+mkdir -p go-solutions/02-variables-types-and-constants/07-numeric-precision-and-overflow/08-deterministic-remainder-allocation/cmd/demo
+cd go-solutions/02-variables-types-and-constants/07-numeric-precision-and-overflow/08-deterministic-remainder-allocation
 ```
 
 ### Why floor-and-distribute, and why it must be deterministic

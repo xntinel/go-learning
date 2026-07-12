@@ -39,9 +39,8 @@ protoval/                     independent module: example.com/protoval
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/protoval/cmd/demo
-cd ~/go-exercises/protoval
-go mod init example.com/protoval
+mkdir -p go-solutions/04-functions/07-recursive-functions-and-stack-depth/32-protobuf-message-nesting-validation/cmd/demo
+cd go-solutions/04-functions/07-recursive-functions-and-stack-depth/32-protobuf-message-nesting-validation
 go mod edit -go=1.24
 ```
 

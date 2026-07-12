@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/jsonwalk/cmd/demo
-cd ~/go-exercises/jsonwalk
-go mod init example.com/jsonwalk
+mkdir -p go-solutions/08-interfaces/03-type-assertions-and-type-switches/04-dynamic-json-walker/cmd/demo
+cd go-solutions/08-interfaces/03-type-assertions-and-type-switches/04-dynamic-json-walker
 ```
 
 ### The six shapes, and the float64 trap

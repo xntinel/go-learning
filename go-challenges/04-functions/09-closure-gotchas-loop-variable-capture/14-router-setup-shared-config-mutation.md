@@ -26,9 +26,8 @@ routergroup/                 independent module: example.com/routergroup
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/routergroup
-cd ~/go-exercises/routergroup
-go mod init example.com/routergroup
+mkdir -p go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/14-router-setup-shared-config-mutation
+cd go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/14-router-setup-shared-config-mutation
 go mod edit -go=1.24
 ```
 

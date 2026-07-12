@@ -31,9 +31,8 @@ redact/                     independent module: example.com/redact
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/redact/cmd/demo
-cd ~/go-exercises/redact
-go mod init example.com/redact
+mkdir -p go-solutions/05-strings-runes-and-unicode/02-byte-slices-vs-strings/09-inplace-log-redaction/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/02-byte-slices-vs-strings/09-inplace-log-redaction
 go mod edit -go=1.25
 ```
 

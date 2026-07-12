@@ -52,9 +52,8 @@ flagstore/               module example.com/flagstore
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/flagstore
-cd ~/go-exercises/flagstore
-go mod init example.com/flagstore
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/18-feature-flag-changeset-clone-and-swap
+cd go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/18-feature-flag-changeset-clone-and-swap
 go mod edit -go=1.24
 ```
 

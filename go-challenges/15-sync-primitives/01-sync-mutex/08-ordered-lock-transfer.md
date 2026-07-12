@@ -32,9 +32,8 @@ ledger/                      independent module: example.com/ledger
 - Verify: `go test -count=1 -race -timeout 30s ./...`
 
 ```bash
-mkdir -p ~/go-exercises/ledger/cmd/demo
-cd ~/go-exercises/ledger
-go mod init example.com/ledger
+mkdir -p go-solutions/15-sync-primitives/01-sync-mutex/08-ordered-lock-transfer/cmd/demo
+cd go-solutions/15-sync-primitives/01-sync-mutex/08-ordered-lock-transfer
 ```
 
 ### Why two locks, and why order is the whole game

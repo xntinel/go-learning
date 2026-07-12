@@ -39,9 +39,8 @@ Verify: `go test -race ./...` (checksum + negotiation are pure and deterministic
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pluginsecurity/{proto,shared,secure,cmd/demo}
-cd ~/go-exercises/pluginsecurity
-go mod init example.com/pluginsecurity
+mkdir -p go-solutions/53-wasm-and-extensibility/05-hashicorp-go-plugin/03-secure-plugins-mtls-versioning/{proto,shared,secure,cmd/demo}
+cd go-solutions/53-wasm-and-extensibility/05-hashicorp-go-plugin/03-secure-plugins-mtls-versioning
 go mod edit -go=1.26
 go get github.com/hashicorp/go-plugin@v1.6.3
 go get github.com/hashicorp/go-hclog@v1.6.3

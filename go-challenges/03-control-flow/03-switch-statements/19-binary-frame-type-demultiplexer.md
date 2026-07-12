@@ -28,9 +28,8 @@ framedemux/                 independent module: example.com/binary-frame-type-de
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/framedemux/cmd/demo
-cd ~/go-exercises/framedemux
-go mod init example.com/binary-frame-type-demultiplexer
+mkdir -p go-solutions/03-control-flow/03-switch-statements/19-binary-frame-type-demultiplexer/cmd/demo
+cd go-solutions/03-control-flow/03-switch-statements/19-binary-frame-type-demultiplexer
 go mod edit -go=1.24
 ```
 

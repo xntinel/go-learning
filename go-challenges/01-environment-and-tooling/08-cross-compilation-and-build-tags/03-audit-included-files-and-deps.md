@@ -30,9 +30,8 @@ auditfiles/                    module example.com/auditfiles
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/auditfiles/cmd/demo
-cd ~/go-exercises/auditfiles
-go mod init example.com/auditfiles
+mkdir -p go-solutions/01-environment-and-tooling/08-cross-compilation-and-build-tags/03-audit-included-files-and-deps/cmd/demo
+cd go-solutions/01-environment-and-tooling/08-cross-compilation-and-build-tags/03-audit-included-files-and-deps
 ```
 
 ### go list as a GOOS-parameterized query

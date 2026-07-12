@@ -34,9 +34,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/fairdrain/cmd/demo
-cd ~/go-exercises/fairdrain
-go mod init example.com/fairdrain
+mkdir -p go-solutions/14-select-and-context/08-select-priority-and-starvation/02-fair-priority-drain/cmd/demo
+cd go-solutions/14-select-and-context/08-select-priority-and-starvation/02-fair-priority-drain
 ```
 
 ### The bug this fixes: a knob that does nothing

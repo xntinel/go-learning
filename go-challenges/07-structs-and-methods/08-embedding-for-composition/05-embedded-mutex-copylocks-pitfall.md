@@ -28,9 +28,8 @@ counter/                   independent module: example.com/counter
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/counter/cmd/demo
-cd ~/go-exercises/counter
-go mod init example.com/counter
+mkdir -p go-solutions/07-structs-and-methods/08-embedding-for-composition/05-embedded-mutex-copylocks-pitfall/cmd/demo
+cd go-solutions/07-structs-and-methods/08-embedding-for-composition/05-embedded-mutex-copylocks-pitfall
 ```
 
 ### Why a value-embedded mutex makes the struct non-copyable

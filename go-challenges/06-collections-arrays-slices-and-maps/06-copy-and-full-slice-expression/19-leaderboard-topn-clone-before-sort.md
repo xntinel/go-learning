@@ -50,9 +50,8 @@ topn/                     module example.com/topn
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/topn
-cd ~/go-exercises/topn
-go mod init example.com/topn
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/06-copy-and-full-slice-expression/19-leaderboard-topn-clone-before-sort
+cd go-solutions/06-collections-arrays-slices-and-maps/06-copy-and-full-slice-expression/19-leaderboard-topn-clone-before-sort
 go mod edit -go=1.24
 ```
 

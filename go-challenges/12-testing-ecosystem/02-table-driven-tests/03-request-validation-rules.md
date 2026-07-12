@@ -30,9 +30,8 @@ uservalidate/             independent module: example.com/uservalidate
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/uservalidate/cmd/demo
-cd ~/go-exercises/uservalidate
-go mod init example.com/uservalidate
+mkdir -p go-solutions/12-testing-ecosystem/02-table-driven-tests/03-request-validation-rules/cmd/demo
+cd go-solutions/12-testing-ecosystem/02-table-driven-tests/03-request-validation-rules
 ```
 
 ### Why wantErr-bool and wantSentinel are different columns

@@ -31,9 +31,8 @@ latency/                     independent module: example.com/latency
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/latency/cmd/demo
-cd ~/go-exercises/latency
-go mod init example.com/latency
+mkdir -p go-solutions/03-control-flow/07-defer-semantics-and-ordering/06-request-latency-timer/cmd/demo
+cd go-solutions/03-control-flow/07-defer-semantics-and-ordering/06-request-latency-timer
 ```
 
 ### Why the closure moves the measurement to return time

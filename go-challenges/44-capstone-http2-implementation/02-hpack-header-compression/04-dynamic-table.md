@@ -22,8 +22,7 @@ dyntable/
 Set up the module:
 
 ```bash
-mkdir -p dyntable/cmd/demo && cd dyntable
-go mod init example.com/dyntable
+mkdir -p go-solutions/44-capstone-http2-implementation/02-hpack-header-compression/04-dynamic-table/cmd/demo && cd go-solutions/44-capstone-http2-implementation/02-hpack-header-compression/04-dynamic-table
 go mod edit -go=1.26
 ```
 

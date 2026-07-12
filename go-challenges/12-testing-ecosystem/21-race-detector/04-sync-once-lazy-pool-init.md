@@ -34,9 +34,8 @@ Verify: `go test -count=1 -race ./...`; then `go run -race ./cmd/racy`.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/connpool/cmd/demo ~/go-exercises/connpool/cmd/racy
-cd ~/go-exercises/connpool
-go mod init example.com/connpool
+mkdir -p go-solutions/12-testing-ecosystem/21-race-detector/04-sync-once-lazy-pool-init/cmd/demo go-solutions/12-testing-ecosystem/21-race-detector/04-sync-once-lazy-pool-init/cmd/racy
+cd go-solutions/12-testing-ecosystem/21-race-detector/04-sync-once-lazy-pool-init
 ```
 
 ### Why check-then-act races, and why sync.Once fixes it

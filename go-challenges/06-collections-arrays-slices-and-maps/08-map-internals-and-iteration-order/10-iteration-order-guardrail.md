@@ -32,9 +32,8 @@ listapi/                   independent module: example.com/listapi
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/listapi/cmd/demo
-cd ~/go-exercises/listapi
-go mod init example.com/listapi
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/10-iteration-order-guardrail/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/10-iteration-order-guardrail
 ```
 
 ### The bug, and why hand-testing misses it

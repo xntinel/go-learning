@@ -28,9 +28,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/retry/cmd/demo
-cd ~/go-exercises/retry
-go mod init example.com/retry
+mkdir -p go-solutions/04-functions/06-function-types-and-callbacks/05-retry-with-operation-callback/cmd/demo
+cd go-solutions/04-functions/06-function-types-and-callbacks/05-retry-with-operation-callback
 ```
 
 ### Why two callbacks, and why the backoff must watch ctx.Done

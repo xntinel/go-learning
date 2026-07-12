@@ -27,9 +27,8 @@ goprivmatch/               independent module: example.com/goprivmatch
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/goprivmatch/cmd/demo
-cd ~/go-exercises/goprivmatch
-go mod init example.com/goprivmatch
+mkdir -p go-solutions/11-packages-and-modules/07-module-proxies-and-goproxy/05-goprivate-pattern-matcher/cmd/demo
+cd go-solutions/11-packages-and-modules/07-module-proxies-and-goproxy/05-goprivate-pattern-matcher
 go mod edit -go=1.26
 go get golang.org/x/mod/module
 ```

@@ -27,9 +27,8 @@ notifyprefs/                independent module: example.com/notifyprefs
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/notifyprefs
-cd ~/go-exercises/notifyprefs
-go mod init example.com/notifyprefs
+mkdir -p go-solutions/04-functions/12-functional-options-pattern/12-notification-preferences-field-errors
+cd go-solutions/04-functions/12-functional-options-pattern/12-notification-preferences-field-errors
 go mod edit -go=1.24
 ```
 

@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/hedgedread/cmd/demo
-cd ~/go-exercises/hedgedread
-go mod init example.com/hedgedread
+mkdir -p go-solutions/14-select-and-context/01-select-statement-basics/06-hedged-replica-read/cmd/demo
+cd go-solutions/14-select-and-context/01-select-statement-basics/06-hedged-replica-read
 ```
 
 ## The two mechanisms that prevent the leak

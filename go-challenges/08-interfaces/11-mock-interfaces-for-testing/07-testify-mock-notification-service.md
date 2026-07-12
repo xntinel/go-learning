@@ -29,9 +29,8 @@ testifynotify/               independent module: example.com/notify
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/testifynotify/cmd/demo
-cd ~/go-exercises/testifynotify
-go mod init example.com/notify
+mkdir -p go-solutions/08-interfaces/11-mock-interfaces-for-testing/07-testify-mock-notification-service/cmd/demo
+cd go-solutions/08-interfaces/11-mock-interfaces-for-testing/07-testify-mock-notification-service
 go get github.com/stretchr/testify/mock
 ```
 

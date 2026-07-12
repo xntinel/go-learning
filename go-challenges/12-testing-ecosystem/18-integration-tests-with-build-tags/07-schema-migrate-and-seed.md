@@ -29,9 +29,8 @@ schemaseed/                independent module: example.com/schemaseed
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/schemaseed/cmd/demo
-cd ~/go-exercises/schemaseed
-go mod init example.com/schemaseed
+mkdir -p go-solutions/12-testing-ecosystem/18-integration-tests-with-build-tags/07-schema-migrate-and-seed/cmd/demo
+cd go-solutions/12-testing-ecosystem/18-integration-tests-with-build-tags/07-schema-migrate-and-seed
 ```
 
 ### Why idempotent, and why once in TestMain

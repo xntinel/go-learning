@@ -30,9 +30,8 @@ cacheaside/                  independent module: example.com/cacheaside
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cacheaside/cmd/demo
-cd ~/go-exercises/cacheaside
-go mod init example.com/cacheaside
+mkdir -p go-solutions/10-error-handling/01-error-interface-and-basic-patterns/04-cache-miss-error-value/cmd/demo
+cd go-solutions/10-error-handling/01-error-interface-and-basic-patterns/04-cache-miss-error-value
 ```
 
 ### Errors as flow signals, and why identity matters

@@ -51,9 +51,8 @@ connpool/                 module example.com/connpool
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/connpool
-cd ~/go-exercises/connpool
-go mod init example.com/connpool
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/13-implementing-a-ring-buffer/16-connection-pool-health-checked-release
+cd go-solutions/06-collections-arrays-slices-and-maps/13-implementing-a-ring-buffer/16-connection-pool-health-checked-release
 go mod edit -go=1.24
 ```
 

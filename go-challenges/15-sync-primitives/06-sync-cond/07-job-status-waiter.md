@@ -26,9 +26,8 @@ jobwait/                    independent module: example.com/jobwait
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/jobwait/cmd/demo
-cd ~/go-exercises/jobwait
-go mod init example.com/jobwait
+mkdir -p go-solutions/15-sync-primitives/06-sync-cond/07-job-status-waiter/cmd/demo
+cd go-solutions/15-sync-primitives/06-sync-cond/07-job-status-waiter
 ```
 
 ### Heterogeneous predicates force Broadcast

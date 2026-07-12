@@ -41,9 +41,8 @@ A real low-level scheduler switches context by saving register state and jumping
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/scheduler/cmd/demo
-cd ~/go-exercises/scheduler
-go mod init example.com/scheduler
+mkdir -p go-solutions/36-runtime-compiler-and-assembly/15-implementing-a-green-thread-scheduler/15-implementing-a-green-thread-scheduler/cmd/demo
+cd go-solutions/36-runtime-compiler-and-assembly/15-implementing-a-green-thread-scheduler/15-implementing-a-green-thread-scheduler
 ```
 
 This is a library; verify it with `go test`, not by running a main.

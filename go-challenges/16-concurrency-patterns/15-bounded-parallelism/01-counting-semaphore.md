@@ -22,8 +22,7 @@ sem_test.go           peak <= limit under -race; first-error propagation; cancel
 Set up the module:
 
 ```bash
-mkdir -p counting-semaphore/cmd/demo && cd counting-semaphore
-go mod init example.com/counting-semaphore
+mkdir -p go-solutions/16-concurrency-patterns/15-bounded-parallelism/01-counting-semaphore/cmd/demo && cd go-solutions/16-concurrency-patterns/15-bounded-parallelism/01-counting-semaphore
 ```
 
 ### How the bound is enforced

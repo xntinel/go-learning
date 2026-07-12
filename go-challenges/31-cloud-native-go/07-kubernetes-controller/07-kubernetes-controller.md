@@ -66,9 +66,8 @@ For integration tests that need a real API server, `sigs.k8s.io/controller-runti
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/configsync/cmd/demo
-cd ~/go-exercises/configsync
-go mod init example.com/configsync
+mkdir -p go-solutions/31-cloud-native-go/07-kubernetes-controller/07-kubernetes-controller/cmd/demo
+cd go-solutions/31-cloud-native-go/07-kubernetes-controller/07-kubernetes-controller
 go get sigs.k8s.io/controller-runtime@v0.19.0
 ```
 

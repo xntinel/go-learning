@@ -76,9 +76,8 @@ The `lower` pass replaces expensive operations with cheaper ones: `x*8` becomes 
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/optpasses/cmd/demo
-cd ~/go-exercises/optpasses
-go mod init example.com/optpasses
+mkdir -p go-solutions/36-runtime-compiler-and-assembly/02-compiler-optimization-passes/02-compiler-optimization-passes/cmd/demo
+cd go-solutions/36-runtime-compiler-and-assembly/02-compiler-optimization-passes/02-compiler-optimization-passes
 ```
 
 This is a library with a small demo binary. Verify it with `go test`.

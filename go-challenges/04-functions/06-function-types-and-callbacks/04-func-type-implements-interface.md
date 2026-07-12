@@ -28,9 +28,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/worker/cmd/demo
-cd ~/go-exercises/worker
-go mod init example.com/worker
+mkdir -p go-solutions/04-functions/06-function-types-and-callbacks/04-func-type-implements-interface/cmd/demo
+cd go-solutions/04-functions/06-function-types-and-callbacks/04-func-type-implements-interface
 ```
 
 ### The adapter, and why it removes struct boilerplate

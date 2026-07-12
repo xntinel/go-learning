@@ -22,8 +22,7 @@ tracing_test.go      header round-trip, malformed-header rejection, hop trace-id
 Set up the module:
 
 ```bash
-mkdir -p trace-context/cmd/demo && cd trace-context
-go mod init example.com/trace-context
+mkdir -p go-solutions/42-capstone-service-mesh-data-plane/08-observability/03-trace-context-propagation/cmd/demo && cd go-solutions/42-capstone-service-mesh-data-plane/08-observability/03-trace-context-propagation
 ```
 
 ### The traceparent wire format and why each field is validated

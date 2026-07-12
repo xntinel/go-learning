@@ -30,9 +30,8 @@ csvw/                       independent module: example.com/csvw
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/csvw/cmd/demo
-cd ~/go-exercises/csvw
-go mod init example.com/csvw
+mkdir -p go-solutions/05-strings-runes-and-unicode/02-byte-slices-vs-strings/01-csv-writer-byte-buffer/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/02-byte-slices-vs-strings/01-csv-writer-byte-buffer
 go mod edit -go=1.25
 ```
 

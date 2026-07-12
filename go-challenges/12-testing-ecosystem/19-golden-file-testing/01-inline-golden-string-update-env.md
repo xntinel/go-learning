@@ -28,9 +28,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/mdrender/cmd/demo
-cd ~/go-exercises/mdrender
-go mod init example.com/mdrender
+mkdir -p go-solutions/12-testing-ecosystem/19-golden-file-testing/01-inline-golden-string-update-env/cmd/demo
+cd go-solutions/12-testing-ecosystem/19-golden-file-testing/01-inline-golden-string-update-env
 ```
 
 ### Why start with an inline string

@@ -25,9 +25,8 @@ dedicated test for unsubscribe-then-republish.
 Verify: `go test -count=1 ./...`
 
 ```bash
-mkdir -p ~/go-exercises/eventbus-topics
-cd ~/go-exercises/eventbus-topics
-go mod init example.com/eventbus-topics
+mkdir -p go-solutions/04-functions/06-function-types-and-callbacks/12-pubsub-topic-subscribers
+cd go-solutions/04-functions/06-function-types-and-callbacks/12-pubsub-topic-subscribers
 go mod edit -go=1.24
 ```
 

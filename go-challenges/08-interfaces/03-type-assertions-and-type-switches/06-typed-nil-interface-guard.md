@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/typednil/cmd/demo
-cd ~/go-exercises/typednil
-go mod init example.com/typednil
+mkdir -p go-solutions/08-interfaces/03-type-assertions-and-type-switches/06-typed-nil-interface-guard/cmd/demo
+cd go-solutions/08-interfaces/03-type-assertions-and-type-switches/06-typed-nil-interface-guard
 ```
 
 ### Why the interface is non-nil

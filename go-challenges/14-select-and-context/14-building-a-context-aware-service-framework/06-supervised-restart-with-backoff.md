@@ -28,9 +28,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/supervisor/cmd/demo
-cd ~/go-exercises/supervisor
-go mod init example.com/supervisor
+mkdir -p go-solutions/14-select-and-context/14-building-a-context-aware-service-framework/06-supervised-restart-with-backoff/cmd/demo
+cd go-solutions/14-select-and-context/14-building-a-context-aware-service-framework/06-supervised-restart-with-backoff
 ```
 
 ### The supervision loop, piece by piece

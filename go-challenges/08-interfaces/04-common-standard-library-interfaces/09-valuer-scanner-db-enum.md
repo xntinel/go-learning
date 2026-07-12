@@ -29,9 +29,8 @@ dbenum/                     independent module: example.com/dbenum
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/dbenum/cmd/demo
-cd ~/go-exercises/dbenum
-go mod init example.com/dbenum
+mkdir -p go-solutions/08-interfaces/04-common-standard-library-interfaces/09-valuer-scanner-db-enum/cmd/demo
+cd go-solutions/08-interfaces/04-common-standard-library-interfaces/09-valuer-scanner-db-enum
 ```
 
 ### The restricted write set and the ambiguous read

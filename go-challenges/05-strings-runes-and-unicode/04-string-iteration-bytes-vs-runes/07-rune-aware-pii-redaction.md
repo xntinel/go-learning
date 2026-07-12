@@ -25,9 +25,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/redact/cmd/demo
-cd ~/go-exercises/redact
-go mod init example.com/redact
+mkdir -p go-solutions/05-strings-runes-and-unicode/04-string-iteration-bytes-vs-runes/07-rune-aware-pii-redaction/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/04-string-iteration-bytes-vs-runes/07-rune-aware-pii-redaction
 ```
 
 ### Count in runes, or leak

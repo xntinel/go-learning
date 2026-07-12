@@ -31,9 +31,8 @@ write-ahead-log/             independent module: example.com/write-ahead-log
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/write-ahead-log/cmd/demo
-cd ~/go-exercises/write-ahead-log
-go mod init example.com/write-ahead-log
+mkdir -p go-solutions/04-functions/04-first-class-functions-and-closures/29-write-ahead-log-sequential-replay/cmd/demo
+cd go-solutions/04-functions/04-first-class-functions-and-closures/29-write-ahead-log-sequential-replay
 go mod edit -go=1.24
 ```
 

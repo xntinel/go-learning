@@ -32,9 +32,8 @@ workerpool/                 independent module: example.com/workerpool
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/workerpool/cmd/demo
-cd ~/go-exercises/workerpool
-go mod init example.com/workerpool
+mkdir -p go-solutions/12-testing-ecosystem/04-subtests-and-t-run/08-parallel-goroutine-assertion-trap/cmd/demo
+cd go-solutions/12-testing-ecosystem/04-subtests-and-t-run/08-parallel-goroutine-assertion-trap
 ```
 
 ### Why t.Fatal in a goroutine is a silent bug

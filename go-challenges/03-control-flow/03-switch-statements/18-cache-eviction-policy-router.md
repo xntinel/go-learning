@@ -29,9 +29,8 @@ evictpolicy/                independent module: example.com/cache-eviction-polic
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/evictpolicy/cmd/demo
-cd ~/go-exercises/evictpolicy
-go mod init example.com/cache-eviction-policy-router
+mkdir -p go-solutions/03-control-flow/03-switch-statements/18-cache-eviction-policy-router/cmd/demo
+cd go-solutions/03-control-flow/03-switch-statements/18-cache-eviction-policy-router
 go mod edit -go=1.24
 ```
 

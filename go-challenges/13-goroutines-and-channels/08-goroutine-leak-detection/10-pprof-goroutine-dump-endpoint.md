@@ -29,9 +29,8 @@ pprofdump/                   independent module: example.com/pprofdump
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pprofdump/cmd/demo
-cd ~/go-exercises/pprofdump
-go mod init example.com/pprofdump
+mkdir -p go-solutions/13-goroutines-and-channels/08-goroutine-leak-detection/10-pprof-goroutine-dump-endpoint/cmd/demo
+cd go-solutions/13-goroutines-and-channels/08-goroutine-leak-detection/10-pprof-goroutine-dump-endpoint
 ```
 
 ### debug=2 is the human-readable full dump

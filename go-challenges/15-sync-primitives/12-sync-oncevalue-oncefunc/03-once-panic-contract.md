@@ -25,9 +25,8 @@ oncepanic/                 independent module: example.com/oncepanic
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/oncepanic/cmd/demo
-cd ~/go-exercises/oncepanic
-go mod init example.com/oncepanic
+mkdir -p go-solutions/15-sync-primitives/12-sync-oncevalue-oncefunc/03-once-panic-contract/cmd/demo
+cd go-solutions/15-sync-primitives/12-sync-oncevalue-oncefunc/03-once-panic-contract
 ```
 
 ### Two primitives, two contracts

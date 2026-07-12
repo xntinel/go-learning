@@ -28,9 +28,8 @@ repo-error-translation/            module example.com/repo-error-translation
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/repo-error-translation/cmd/demo
-cd ~/go-exercises/repo-error-translation
-go mod init example.com/repo-error-translation
+mkdir -p go-solutions/10-error-handling/13-designing-an-error-hierarchy/03-repository-error-translation/cmd/demo
+cd go-solutions/10-error-handling/13-designing-an-error-hierarchy/03-repository-error-translation
 ```
 
 ### Translation is the boundary's whole job

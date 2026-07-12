@@ -30,9 +30,8 @@ pipe/                       independent module: example.com/pipe
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pipe/cmd/demo
-cd ~/go-exercises/pipe
-go mod init example.com/pipe
+mkdir -p go-solutions/08-interfaces/04-common-standard-library-interfaces/01-io-copy-close-pipeline/cmd/demo
+cd go-solutions/08-interfaces/04-common-standard-library-interfaces/01-io-copy-close-pipeline
 ```
 
 ### Why these four pieces

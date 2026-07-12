@@ -32,9 +32,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/fixturestack/cmd/demo
-cd ~/go-exercises/fixturestack
-go mod init example.com/fixturestack
+mkdir -p go-solutions/12-testing-ecosystem/14-parallel-tests/07-parallel-cleanup-ordering-and-context/cmd/demo
+cd go-solutions/12-testing-ecosystem/14-parallel-tests/07-parallel-cleanup-ordering-and-context
 ```
 
 ### Why LIFO, and how to observe it

@@ -34,9 +34,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/mutex-critical-section-panic/cmd/demo
-cd ~/go-exercises/mutex-critical-section-panic
-go mod init example.com/safestore
+mkdir -p go-solutions/03-control-flow/08-panic-and-recover/25-mutex-critical-section-panic/cmd/demo
+cd go-solutions/03-control-flow/08-panic-and-recover/25-mutex-critical-section-panic
 go mod edit -go=1.24
 ```
 

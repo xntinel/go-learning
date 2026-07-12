@@ -21,9 +21,8 @@ Taking `&values[0]` on an empty slice panics. Validate length before deriving a 
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cgodata
-cd ~/go-exercises/cgodata
-go mod init example.com/cgodata
+mkdir -p go-solutions/28-unsafe-and-cgo/05-passing-data-go-and-c/05-passing-data-go-and-c
+cd go-solutions/28-unsafe-and-cgo/05-passing-data-go-and-c/05-passing-data-go-and-c
 ```
 
 ### Exercise 1: Wrap Buffer Functions

@@ -21,9 +21,8 @@ A deterministic counter sampler is easy to test: log every Nth record and attach
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/slog-sampling
-cd ~/go-exercises/slog-sampling
-go mod init example.com/slogsampling
+mkdir -p go-solutions/21-structured-logging-with-slog/08-log-sampling/08-log-sampling
+cd go-solutions/21-structured-logging-with-slog/08-log-sampling/08-log-sampling
 ```
 
 Edit `go.mod`:

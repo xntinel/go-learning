@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cancelcause/cmd/demo
-cd ~/go-exercises/cancelcause
-go mod init example.com/cancelcause
+mkdir -p go-solutions/10-error-handling/09-error-handling-in-goroutines/06-cancel-cause-fanout/cmd/demo
+cd go-solutions/10-error-handling/09-error-handling-in-goroutines/06-cancel-cause-fanout
 go mod edit -go=1.26
 ```
 

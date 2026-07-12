@@ -24,8 +24,7 @@ collections_test.go   arity, type, immutability, and edge-case coverage
 Set up the module:
 
 ```bash
-mkdir -p builtins/cmd/demo && cd builtins
-go mod init example.com/builtins
+mkdir -p go-solutions/40-capstone-language-interpreter/05-builtin-functions/01-registry-and-collections/cmd/demo && cd go-solutions/40-capstone-language-interpreter/05-builtin-functions/01-registry-and-collections
 ```
 
 ### The object system

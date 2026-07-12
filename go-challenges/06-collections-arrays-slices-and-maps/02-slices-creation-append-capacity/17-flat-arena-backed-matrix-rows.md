@@ -44,9 +44,8 @@ arenamatrix/                  module example.com/arenamatrix
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/arenamatrix
-cd ~/go-exercises/arenamatrix
-go mod init example.com/arenamatrix
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/02-slices-creation-append-capacity/17-flat-arena-backed-matrix-rows
+cd go-solutions/06-collections-arrays-slices-and-maps/02-slices-creation-append-capacity/17-flat-arena-backed-matrix-rows
 go mod edit -go=1.24
 ```
 

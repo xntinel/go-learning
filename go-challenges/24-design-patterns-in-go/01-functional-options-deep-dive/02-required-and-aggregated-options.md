@@ -22,8 +22,7 @@ client_test.go         required enforcement, cross-field rule, aggregation, per-
 Set up the module:
 
 ```bash
-mkdir -p required-options/cmd/demo && cd required-options
-go mod init example.com/required-options
+mkdir -p go-solutions/24-design-patterns-in-go/01-functional-options-deep-dive/02-required-and-aggregated-options/cmd/demo && cd go-solutions/24-design-patterns-in-go/01-functional-options-deep-dive/02-required-and-aggregated-options
 ```
 
 ### Why aggregate, and where required and cross-field checks belong

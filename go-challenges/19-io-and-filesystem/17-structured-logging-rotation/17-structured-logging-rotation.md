@@ -21,9 +21,8 @@ This lesson rotates before a write when `current size + len(p)` would exceed the
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/rotlog/cmd/demo
-cd ~/go-exercises/rotlog
-go mod init example.com/rotlog
+mkdir -p go-solutions/19-io-and-filesystem/17-structured-logging-rotation/17-structured-logging-rotation/cmd/demo
+cd go-solutions/19-io-and-filesystem/17-structured-logging-rotation/17-structured-logging-rotation
 ```
 
 ### Exercise 1: Implement A Rotating Writer

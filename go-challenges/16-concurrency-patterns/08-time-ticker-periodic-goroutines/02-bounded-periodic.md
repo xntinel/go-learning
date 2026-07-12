@@ -22,8 +22,7 @@ bounded_test.go          stops after max, external Stop ends it early, count is 
 Set up the module:
 
 ```bash
-mkdir -p bounded-periodic/cmd/demo && cd bounded-periodic
-go mod init example.com/bounded-periodic
+mkdir -p go-solutions/16-concurrency-patterns/08-time-ticker-periodic-goroutines/02-bounded-periodic/cmd/demo && cd go-solutions/16-concurrency-patterns/08-time-ticker-periodic-goroutines/02-bounded-periodic
 ```
 
 ### Two exits from one loop

@@ -22,8 +22,7 @@ groupcommit_test.go   parked-leader coalescing (N commits -> 2 flushes) + closed
 Set up the module:
 
 ```bash
-mkdir -p group-commit/cmd/demo && cd group-commit
-go mod init example.com/group-commit
+mkdir -p go-solutions/39-capstone-database-engine/01-write-ahead-log/06-leader-follower-group-commit/cmd/demo && cd go-solutions/39-capstone-database-engine/01-write-ahead-log/06-leader-follower-group-commit
 ```
 
 ### Why a second design, and why in isolation

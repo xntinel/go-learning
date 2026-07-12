@@ -21,9 +21,8 @@ The producer owns the writer and closes it exactly once. The consumer owns the r
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/jsonpipe/cmd/demo
-cd ~/go-exercises/jsonpipe
-go mod init example.com/jsonpipe
+mkdir -p go-solutions/19-io-and-filesystem/14-pipe-based-io/14-pipe-based-io/cmd/demo
+cd go-solutions/19-io-and-filesystem/14-pipe-based-io/14-pipe-based-io
 ```
 
 ### Exercise 1: Implement A Streaming Encoder

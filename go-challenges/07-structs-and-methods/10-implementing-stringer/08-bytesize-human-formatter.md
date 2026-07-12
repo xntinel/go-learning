@@ -28,9 +28,8 @@ bytesize/                   independent module: example.com/bytesize
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/bytesize/cmd/demo
-cd ~/go-exercises/bytesize
-go mod init example.com/bytesize
+mkdir -p go-solutions/07-structs-and-methods/10-implementing-stringer/08-bytesize-human-formatter/cmd/demo
+cd go-solutions/07-structs-and-methods/10-implementing-stringer/08-bytesize-human-formatter
 ```
 
 ### The rounding trap that motivates the design

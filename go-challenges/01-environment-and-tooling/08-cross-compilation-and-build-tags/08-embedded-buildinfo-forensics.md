@@ -27,9 +27,8 @@ forensics/                     module example.com/forensics
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/forensics/cmd/demo
-cd ~/go-exercises/forensics
-go mod init example.com/forensics
+mkdir -p go-solutions/01-environment-and-tooling/08-cross-compilation-and-build-tags/08-embedded-buildinfo-forensics/cmd/demo
+cd go-solutions/01-environment-and-tooling/08-cross-compilation-and-build-tags/08-embedded-buildinfo-forensics
 ```
 
 ### Two entry points, one BuildInfo

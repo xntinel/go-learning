@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/flagstore/cmd/demo
-cd ~/go-exercises/flagstore
-go mod init example.com/flagstore
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/06-copy-and-full-slice-expression/02-repository-getall-defensive-clone/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/06-copy-and-full-slice-expression/02-repository-getall-defensive-clone
 ```
 
 ### Why GetAll must clone

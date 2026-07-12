@@ -32,9 +32,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/jsoncompat/cmd/demo
-cd ~/go-exercises/jsoncompat
-go mod init example.com/jsoncompat
+mkdir -p go-solutions/48-modern-go-language-and-stdlib/12-encoding-json-v2/03-v2-semantics-and-compat-shim/cmd/demo
+cd go-solutions/48-modern-go-language-and-stdlib/12-encoding-json-v2/03-v2-semantics-and-compat-shim
 go mod edit -go=1.26
 export GOEXPERIMENT=jsonv2
 ```

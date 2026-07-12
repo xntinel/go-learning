@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/reqbuilder/cmd/demo
-cd ~/go-exercises/reqbuilder
-go mod init example.com/reqbuilder
+mkdir -p go-solutions/09-pointers/05-pointers-to-structs/07-request-builder-pointer-receiver/cmd/demo
+cd go-solutions/09-pointers/05-pointers-to-structs/07-request-builder-pointer-receiver
 ```
 
 ### Why the receiver must be a pointer

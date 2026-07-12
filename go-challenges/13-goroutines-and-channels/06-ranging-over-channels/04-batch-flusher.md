@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/batchflusher/cmd/demo
-cd ~/go-exercises/batchflusher
-go mod init example.com/batchflusher
+mkdir -p go-solutions/13-goroutines-and-channels/06-ranging-over-channels/04-batch-flusher/cmd/demo
+cd go-solutions/13-goroutines-and-channels/06-ranging-over-channels/04-batch-flusher
 ```
 
 ### The three flush triggers

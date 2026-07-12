@@ -30,9 +30,8 @@ lease/                     independent module: example.com/distributed-lock-leas
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/lease/cmd/demo
-cd ~/go-exercises/lease
-go mod init example.com/distributed-lock-lease-renewal
+mkdir -p go-solutions/04-functions/04-first-class-functions-and-closures/23-distributed-lock-lease-renewal-gate/cmd/demo
+cd go-solutions/04-functions/04-first-class-functions-and-closures/23-distributed-lock-lease-renewal-gate
 go mod edit -go=1.24
 ```
 

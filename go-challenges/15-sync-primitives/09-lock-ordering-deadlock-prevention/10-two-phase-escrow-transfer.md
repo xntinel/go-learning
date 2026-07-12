@@ -36,9 +36,8 @@ escrowbank/                independent module: example.com/escrowbank
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/escrowbank/cmd/demo
-cd ~/go-exercises/escrowbank
-go mod init example.com/escrowbank
+mkdir -p go-solutions/15-sync-primitives/09-lock-ordering-deadlock-prevention/10-two-phase-escrow-transfer/cmd/demo
+cd go-solutions/15-sync-primitives/09-lock-ordering-deadlock-prevention/10-two-phase-escrow-transfer
 ```
 
 ### Trading a lock for an invariant window

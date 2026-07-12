@@ -23,8 +23,7 @@ btree_test.go        RecordID bit-packing + leaf and internal page round-trips
 Set up the module:
 
 ```bash
-mkdir -p page-encoding-and-store/cmd/demo && cd page-encoding-and-store
-go mod init example.com/page-encoding-and-store
+mkdir -p go-solutions/39-capstone-database-engine/02-btree-index/01-page-encoding-and-store/cmd/demo && cd go-solutions/39-capstone-database-engine/02-btree-index/01-page-encoding-and-store
 ```
 
 ### Why a fixed binary layout, and what a RecordID is

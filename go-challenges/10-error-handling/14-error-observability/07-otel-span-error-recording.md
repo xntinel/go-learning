@@ -34,9 +34,8 @@ otelspan/                    independent module: example.com/otelspan
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/otelspan/cmd/demo
-cd ~/go-exercises/otelspan
-go mod init example.com/otelspan
+mkdir -p go-solutions/10-error-handling/14-error-observability/07-otel-span-error-recording/cmd/demo
+cd go-solutions/10-error-handling/14-error-observability/07-otel-span-error-recording
 go mod edit -go=1.25
 go get go.opentelemetry.io/otel@v1.44.0 go.opentelemetry.io/otel/sdk@v1.44.0
 ```

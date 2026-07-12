@@ -35,9 +35,8 @@ cursorpage/                 independent module: example.com/database-cursor-posi
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cursorpage/cmd/demo
-cd ~/go-exercises/cursorpage
-go mod init example.com/database-cursor-position-pagination
+mkdir -p go-solutions/04-functions/01-function-declaration-and-multiple-return-values/16-database-cursor-position-pagination/cmd/demo
+cd go-solutions/04-functions/01-function-declaration-and-multiple-return-values/16-database-cursor-position-pagination
 go mod edit -go=1.24
 ```
 

@@ -31,9 +31,8 @@ health/                        independent module: example.com/health
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/health/cmd/demo
-cd ~/go-exercises/health
-go mod init example.com/health
+mkdir -p go-solutions/10-error-handling/02-fmt-errorf-and-error-wrapping/04-fanout-multi-w-partial-failure/cmd/demo
+cd go-solutions/10-error-handling/02-fmt-errorf-and-error-wrapping/04-fanout-multi-w-partial-failure
 ```
 
 ### One error, two reachable sentinels

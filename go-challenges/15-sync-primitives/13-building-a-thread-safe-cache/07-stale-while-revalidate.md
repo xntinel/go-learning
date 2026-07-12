@@ -33,9 +33,8 @@ swrcache/                        independent module: example.com/swrcache
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/swrcache/swr ~/go-exercises/swrcache/cmd/demo
-cd ~/go-exercises/swrcache
-go mod init example.com/swrcache
+mkdir -p go-solutions/15-sync-primitives/13-building-a-thread-safe-cache/07-stale-while-revalidate/swr go-solutions/15-sync-primitives/13-building-a-thread-safe-cache/07-stale-while-revalidate/cmd/demo
+cd go-solutions/15-sync-primitives/13-building-a-thread-safe-cache/07-stale-while-revalidate
 ```
 
 ### Three states, three behaviors

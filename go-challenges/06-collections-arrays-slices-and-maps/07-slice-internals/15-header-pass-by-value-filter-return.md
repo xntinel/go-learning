@@ -57,9 +57,8 @@ logscrub/                module example.com/logscrub
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/logscrub
-cd ~/go-exercises/logscrub
-go mod init example.com/logscrub
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/15-header-pass-by-value-filter-return
+cd go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/15-header-pass-by-value-filter-return
 go mod edit -go=1.24
 ```
 

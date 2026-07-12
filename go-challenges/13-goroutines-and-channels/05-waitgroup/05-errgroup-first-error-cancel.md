@@ -30,9 +30,8 @@ prefetch/                  independent module: example.com/prefetch
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/prefetch/cmd/demo
-cd ~/go-exercises/prefetch
-go mod init example.com/prefetch
+mkdir -p go-solutions/13-goroutines-and-channels/05-waitgroup/05-errgroup-first-error-cancel/cmd/demo
+cd go-solutions/13-goroutines-and-channels/05-waitgroup/05-errgroup-first-error-cancel
 go mod edit -go=1.25
 go get golang.org/x/sync/errgroup
 ```

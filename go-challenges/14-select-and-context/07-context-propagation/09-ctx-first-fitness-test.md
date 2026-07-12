@@ -35,9 +35,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ctxfit/cmd/demo
-cd ~/go-exercises/ctxfit
-go mod init example.com/ctxfit
+mkdir -p go-solutions/14-select-and-context/07-context-propagation/09-ctx-first-fitness-test/cmd/demo
+cd go-solutions/14-select-and-context/07-context-propagation/09-ctx-first-fitness-test
 go mod edit -go=1.24
 ```
 

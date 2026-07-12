@@ -30,9 +30,8 @@ lru/                       independent module: example.com/lru
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/lru/cmd/demo
-cd ~/go-exercises/lru
-go mod init example.com/lru
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/14-custom-map-based-data-structure/04-lru-cache/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/14-custom-map-based-data-structure/04-lru-cache
 ```
 
 ### Two structures pointing at the same node

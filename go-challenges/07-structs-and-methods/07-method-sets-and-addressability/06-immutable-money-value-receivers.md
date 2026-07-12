@@ -29,9 +29,8 @@ money/                         independent module: example.com/money
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/money/cmd/demo
-cd ~/go-exercises/money
-go mod init example.com/money
+mkdir -p go-solutions/07-structs-and-methods/07-method-sets-and-addressability/06-immutable-money-value-receivers/cmd/demo
+cd go-solutions/07-structs-and-methods/07-method-sets-and-addressability/06-immutable-money-value-receivers
 ```
 
 ### Why value receivers are correct here

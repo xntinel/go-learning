@@ -136,9 +136,8 @@ opcode dispatch are independent of the payload codec.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/replication/{clock,protocol,replica,coordinator,cmd/demo}
-cd ~/go-exercises/replication
-go mod init example.com/replication
+mkdir -p go-solutions/45-capstone-distributed-key-value-store/02-replication-consistency/02-replication-consistency/{clock,protocol,replica,coordinator,cmd/demo}
+cd go-solutions/45-capstone-distributed-key-value-store/02-replication-consistency/02-replication-consistency
 ```
 
 This is a library with a demo CLI; verification uses `go test`.

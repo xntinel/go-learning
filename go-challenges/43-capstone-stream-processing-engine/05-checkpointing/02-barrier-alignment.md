@@ -23,8 +23,7 @@ aligner_test.go        pass-through, buffering, reset across checkpoints, mismat
 Set up the module:
 
 ```bash
-mkdir -p barrier-alignment/cmd/demo && cd barrier-alignment
-go mod init example.com/barrier-alignment
+mkdir -p go-solutions/43-capstone-stream-processing-engine/05-checkpointing/02-barrier-alignment/cmd/demo && cd go-solutions/43-capstone-stream-processing-engine/05-checkpointing/02-barrier-alignment
 go mod edit -go=1.26
 ```
 

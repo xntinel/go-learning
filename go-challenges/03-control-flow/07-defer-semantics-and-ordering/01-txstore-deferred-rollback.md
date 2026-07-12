@@ -29,9 +29,8 @@ txstore/                     independent module: example.com/txstore
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/txstore/cmd/demo
-cd ~/go-exercises/txstore
-go mod init example.com/txstore
+mkdir -p go-solutions/03-control-flow/07-defer-semantics-and-ordering/01-txstore-deferred-rollback/cmd/demo
+cd go-solutions/03-control-flow/07-defer-semantics-and-ordering/01-txstore-deferred-rollback
 ```
 
 ### Why the deferred-unlock pattern is the backbone

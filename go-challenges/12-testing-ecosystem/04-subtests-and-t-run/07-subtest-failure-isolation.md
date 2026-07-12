@@ -32,9 +32,8 @@ batchvalidate/              independent module: example.com/batchvalidate
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/batchvalidate/cmd/demo
-cd ~/go-exercises/batchvalidate
-go mod init example.com/batchvalidate
+mkdir -p go-solutions/12-testing-ecosystem/04-subtests-and-t-run/07-subtest-failure-isolation/cmd/demo
+cd go-solutions/12-testing-ecosystem/04-subtests-and-t-run/07-subtest-failure-isolation
 ```
 
 ### The two verbs and the isolation boundary

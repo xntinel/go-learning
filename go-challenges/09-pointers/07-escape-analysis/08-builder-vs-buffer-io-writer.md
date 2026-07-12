@@ -34,9 +34,8 @@ Verify: `go test -count=1 -race ./...`, then observe the interface escape with
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/serializer/cmd/demo
-cd ~/go-exercises/serializer
-go mod init example.com/serializer
+mkdir -p go-solutions/09-pointers/07-escape-analysis/08-builder-vs-buffer-io-writer/cmd/demo
+cd go-solutions/09-pointers/07-escape-analysis/08-builder-vs-buffer-io-writer
 ```
 
 ### The interface boundary is where the value escapes

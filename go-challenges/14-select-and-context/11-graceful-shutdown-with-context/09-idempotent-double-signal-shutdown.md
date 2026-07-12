@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/idempotentshutdown/cmd/demo
-cd ~/go-exercises/idempotentshutdown
-go mod init example.com/idempotentshutdown
+mkdir -p go-solutions/14-select-and-context/11-graceful-shutdown-with-context/09-idempotent-double-signal-shutdown/cmd/demo
+cd go-solutions/14-select-and-context/11-graceful-shutdown-with-context/09-idempotent-double-signal-shutdown
 ```
 
 ## Why sync.Once is the right guard

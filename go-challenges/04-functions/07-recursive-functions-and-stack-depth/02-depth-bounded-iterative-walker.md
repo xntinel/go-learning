@@ -30,9 +30,8 @@ boundedwalk/               independent module: example.com/boundedwalk
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/boundedwalk/walk ~/go-exercises/boundedwalk/cmd/demo
-cd ~/go-exercises/boundedwalk
-go mod init example.com/boundedwalk
+mkdir -p go-solutions/04-functions/07-recursive-functions-and-stack-depth/02-depth-bounded-iterative-walker/walk go-solutions/04-functions/07-recursive-functions-and-stack-depth/02-depth-bounded-iterative-walker/cmd/demo
+cd go-solutions/04-functions/07-recursive-functions-and-stack-depth/02-depth-bounded-iterative-walker
 ```
 
 ### The mechanical transformation

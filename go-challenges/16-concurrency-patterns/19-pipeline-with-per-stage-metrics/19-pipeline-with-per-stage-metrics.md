@@ -50,9 +50,8 @@ A `TrySend` variant records the drop and moves on.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pipemetrics/internal/pipemetrics ~/go-exercises/pipemetrics/cmd/pipemetricsdemo
-cd ~/go-exercises/pipemetrics
-go mod init example.com/pipemetrics
+mkdir -p go-solutions/16-concurrency-patterns/19-pipeline-with-per-stage-metrics/19-pipeline-with-per-stage-metrics/internal/pipemetrics go-solutions/16-concurrency-patterns/19-pipeline-with-per-stage-metrics/19-pipeline-with-per-stage-metrics/cmd/pipemetricsdemo
+cd go-solutions/16-concurrency-patterns/19-pipeline-with-per-stage-metrics/19-pipeline-with-per-stage-metrics
 ```
 
 ### Exercise 1: The Stage Wrapper

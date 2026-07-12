@@ -34,9 +34,8 @@ Verify: `go test -count=1 ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/config-loader-fallback-chain/cmd/demo
-cd ~/go-exercises/config-loader-fallback-chain
-go mod init example.com/configloader
+mkdir -p go-solutions/03-control-flow/08-panic-and-recover/17-config-loader-fallback-chain/cmd/demo
+cd go-solutions/03-control-flow/08-panic-and-recover/17-config-loader-fallback-chain
 go mod edit -go=1.24
 ```
 

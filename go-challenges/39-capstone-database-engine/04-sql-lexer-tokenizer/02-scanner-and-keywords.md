@@ -24,8 +24,7 @@ lexer_test.go        keyword case-folding, identifiers, operators, punctuation, 
 Set up the module:
 
 ```bash
-mkdir -p scanner-and-keywords/cmd/demo && cd scanner-and-keywords
-go mod init example.com/scanner-and-keywords
+mkdir -p go-solutions/39-capstone-database-engine/04-sql-lexer-tokenizer/02-scanner-and-keywords/cmd/demo && cd go-solutions/39-capstone-database-engine/04-sql-lexer-tokenizer/02-scanner-and-keywords
 ```
 
 ### Why a two-offset cursor and a keyword map, not a per-character branch

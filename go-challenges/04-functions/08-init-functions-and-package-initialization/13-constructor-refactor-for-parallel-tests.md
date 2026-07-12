@@ -24,9 +24,8 @@ Test: two `Cache` instances created by parallel subtests never see each other's 
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/wordcache
-cd ~/go-exercises/wordcache
-go mod init example.com/wordcache
+mkdir -p go-solutions/04-functions/08-init-functions-and-package-initialization/13-constructor-refactor-for-parallel-tests
+cd go-solutions/04-functions/08-init-functions-and-package-initialization/13-constructor-refactor-for-parallel-tests
 go mod edit -go=1.24
 ```
 

@@ -50,9 +50,8 @@ colidx/                        module example.com/colidx
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/colidx
-cd ~/go-exercises/colidx
-go mod init example.com/colidx
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/12-sorted-collections-binary-search/20-columnar-metrics-table-sort-interface
+cd go-solutions/06-collections-arrays-slices-and-maps/12-sorted-collections-binary-search/20-columnar-metrics-table-sort-interface
 go mod edit -go=1.24
 ```
 

@@ -32,9 +32,8 @@ lifecycle/                 independent module: example.com/lifecycle
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/lifecycle/cmd/demo
-cd ~/go-exercises/lifecycle
-go mod init example.com/lifecycle
+mkdir -p go-solutions/50-messaging-and-event-driven/09-river-postgres-job-queue/03-client-lifecycle-and-error-handling/cmd/demo
+cd go-solutions/50-messaging-and-event-driven/09-river-postgres-job-queue/03-client-lifecycle-and-error-handling
 go mod edit -go=1.24
 go get github.com/riverqueue/river
 go get github.com/riverqueue/river/riverdriver/riverpgxv5

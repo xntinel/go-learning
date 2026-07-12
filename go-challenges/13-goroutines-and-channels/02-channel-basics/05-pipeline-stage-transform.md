@@ -28,9 +28,8 @@ pipeline/                    independent module: example.com/pipeline
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pipeline/cmd/demo
-cd ~/go-exercises/pipeline
-go mod init example.com/pipeline
+mkdir -p go-solutions/13-goroutines-and-channels/02-channel-basics/05-pipeline-stage-transform/cmd/demo
+cd go-solutions/13-goroutines-and-channels/02-channel-basics/05-pipeline-stage-transform
 ```
 
 ### Directional channels enforce the stage contract

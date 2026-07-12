@@ -29,9 +29,8 @@ repofixture/                 independent module: example.com/repofixture
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/repofixture/cmd/demo
-cd ~/go-exercises/repofixture
-go mod init example.com/repofixture
+mkdir -p go-solutions/12-testing-ecosystem/03-test-helpers/04-tempdir-repository-fixture/cmd/demo
+cd go-solutions/12-testing-ecosystem/03-test-helpers/04-tempdir-repository-fixture
 ```
 
 ### The repository and why `t.TempDir` gives isolation

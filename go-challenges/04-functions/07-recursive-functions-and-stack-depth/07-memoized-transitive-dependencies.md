@@ -28,9 +28,8 @@ transitive/                independent module: example.com/transitive
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/transitive/cmd/demo
-cd ~/go-exercises/transitive
-go mod init example.com/transitive
+mkdir -p go-solutions/04-functions/07-recursive-functions-and-stack-depth/07-memoized-transitive-dependencies/cmd/demo
+cd go-solutions/04-functions/07-recursive-functions-and-stack-depth/07-memoized-transitive-dependencies
 ```
 
 ### Why memoization is not optional here

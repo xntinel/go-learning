@@ -79,9 +79,8 @@ The check runs in O(1) with a single mutex lock.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/tunnel/cmd/demo
-cd ~/go-exercises/tunnel
-go mod init example.com/tunnel
+mkdir -p go-solutions/33-tcp-udp-and-networking/26-vpn-tunnel-implementation/26-vpn-tunnel-implementation/cmd/demo
+cd go-solutions/33-tcp-udp-and-networking/26-vpn-tunnel-implementation/26-vpn-tunnel-implementation
 ```
 
 ### Exercise 1: The Wire Header

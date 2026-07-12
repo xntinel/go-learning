@@ -33,9 +33,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/patchdto/cmd/demo
-cd ~/go-exercises/patchdto
-go mod init example.com/patchdto
+mkdir -p go-solutions/09-pointers/03-new-vs-composite-literal/04-nullable-patch-dto/cmd/demo
+cd go-solutions/09-pointers/03-new-vs-composite-literal/04-nullable-patch-dto
 ```
 
 ### Why the fields are pointers

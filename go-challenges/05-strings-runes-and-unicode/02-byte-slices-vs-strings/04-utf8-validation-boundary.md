@@ -30,9 +30,8 @@ utf8guard/                  independent module: example.com/utf8guard
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/utf8guard/cmd/demo
-cd ~/go-exercises/utf8guard
-go mod init example.com/utf8guard
+mkdir -p go-solutions/05-strings-runes-and-unicode/02-byte-slices-vs-strings/04-utf8-validation-boundary/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/02-byte-slices-vs-strings/04-utf8-validation-boundary
 go mod edit -go=1.25
 ```
 

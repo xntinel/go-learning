@@ -36,9 +36,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/dynselect/cmd/demo
-cd ~/go-exercises/dynselect
-go mod init example.com/dynselect
+mkdir -p go-solutions/14-select-and-context/08-select-priority-and-starvation/08-dynamic-priority-reflect-select/cmd/demo
+cd go-solutions/14-select-and-context/08-select-priority-and-starvation/08-dynamic-priority-reflect-select
 ```
 
 ### reflect.Select is the runtime-N select

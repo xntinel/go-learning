@@ -28,8 +28,7 @@ planner_test.go   index-scan selection, predicate pushdown, pushed filter
 Set up the module:
 
 ```bash
-mkdir -p cost-based-planner/cmd/demo && cd cost-based-planner
-go mod init example.com/cost-based-planner
+mkdir -p go-solutions/39-capstone-database-engine/06-query-planner/07-cost-based-planner/cmd/demo && cd go-solutions/39-capstone-database-engine/06-query-planner/07-cost-based-planner
 ```
 
 ### Typed values and three-valued logic

@@ -30,9 +30,8 @@ list-audit/                    module example.com/list-audit
 Create the module:
 
 ```bash
-mkdir -p list-audit/cmd/demo list-audit/internal/circle list-audit/internal/guard
-cd list-audit
-go mod init example.com/list-audit
+mkdir -p go-solutions/01-environment-and-tooling/04-go-tool-commands/08-go-list-dependency-audit/cmd/demo go-solutions/01-environment-and-tooling/04-go-tool-commands/08-go-list-dependency-audit/internal/circle go-solutions/01-environment-and-tooling/04-go-tool-commands/08-go-list-dependency-audit/internal/guard
+cd go-solutions/01-environment-and-tooling/04-go-tool-commands/08-go-list-dependency-audit
 ```
 
 ### The graph as data

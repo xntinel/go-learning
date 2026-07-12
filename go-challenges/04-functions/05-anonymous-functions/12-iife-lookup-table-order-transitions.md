@@ -28,9 +28,8 @@ orderfsm/                     module example.com/orderfsm
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/orderfsm
-cd ~/go-exercises/orderfsm
-go mod init example.com/orderfsm
+mkdir -p go-solutions/04-functions/05-anonymous-functions/12-iife-lookup-table-order-transitions
+cd go-solutions/04-functions/05-anonymous-functions/12-iife-lookup-table-order-transitions
 go mod edit -go=1.24
 ```
 

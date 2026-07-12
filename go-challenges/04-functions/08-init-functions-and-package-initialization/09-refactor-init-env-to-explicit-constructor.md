@@ -26,9 +26,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/appconfig/cmd/demo
-cd ~/go-exercises/appconfig
-go mod init example.com/appconfig
+mkdir -p go-solutions/04-functions/08-init-functions-and-package-initialization/09-refactor-init-env-to-explicit-constructor/cmd/demo
+cd go-solutions/04-functions/08-init-functions-and-package-initialization/09-refactor-init-env-to-explicit-constructor
 ```
 
 ### The anti-pattern and the fix

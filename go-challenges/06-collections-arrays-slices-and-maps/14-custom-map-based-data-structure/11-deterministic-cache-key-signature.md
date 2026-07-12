@@ -54,9 +54,8 @@ cachekey/                module example.com/cachekey
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cachekey
-cd ~/go-exercises/cachekey
-go mod init example.com/cachekey
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/14-custom-map-based-data-structure/11-deterministic-cache-key-signature
+cd go-solutions/06-collections-arrays-slices-and-maps/14-custom-map-based-data-structure/11-deterministic-cache-key-signature
 go mod edit -go=1.24
 ```
 

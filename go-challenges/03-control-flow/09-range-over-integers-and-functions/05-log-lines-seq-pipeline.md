@@ -26,9 +26,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/logproc/cmd/demo
-cd ~/go-exercises/logproc
-go mod init example.com/logproc
+mkdir -p go-solutions/03-control-flow/09-range-over-integers-and-functions/05-log-lines-seq-pipeline/cmd/demo
+cd go-solutions/03-control-flow/09-range-over-integers-and-functions/05-log-lines-seq-pipeline
 ```
 
 ## The design

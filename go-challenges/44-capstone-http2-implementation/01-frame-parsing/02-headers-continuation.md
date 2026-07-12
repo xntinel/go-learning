@@ -22,8 +22,7 @@ h2hdr/
 Set up the module:
 
 ```bash
-mkdir -p h2hdr/cmd/demo && cd h2hdr
-go mod init example.com/h2hdr
+mkdir -p go-solutions/44-capstone-http2-implementation/01-frame-parsing/02-headers-continuation/cmd/demo && cd go-solutions/44-capstone-http2-implementation/01-frame-parsing/02-headers-continuation
 go mod edit -go=1.26
 ```
 

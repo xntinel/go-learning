@@ -31,9 +31,8 @@ gprofdelta/                  independent module: example.com/gprofdelta
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/gprofdelta/cmd/demo
-cd ~/go-exercises/gprofdelta
-go mod init example.com/gprofdelta
+mkdir -p go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/12-outbox-leak-localize-profile-delta/cmd/demo
+cd go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/12-outbox-leak-localize-profile-delta
 ```
 
 ### Why the delta, and why keying on symbols not addresses

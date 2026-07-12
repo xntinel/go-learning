@@ -29,8 +29,7 @@ gateway_test.go      chain ordering outside-in, request-ID propagation,
 Set up the module:
 
 ```bash
-mkdir -p api-gateway/cmd/demo && cd api-gateway
-go mod init example.com/api-gateway
+mkdir -p go-solutions/24-design-patterns-in-go/08-middleware-decorator-pattern/04-production-api-gateway-stack/cmd/demo && cd go-solutions/24-design-patterns-in-go/08-middleware-decorator-pattern/04-production-api-gateway-stack
 ```
 
 ### Why the order is the design

@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/worker/cmd/demo
-cd ~/go-exercises/worker
-go mod init example.com/worker
+mkdir -p go-solutions/14-select-and-context/11-graceful-shutdown-with-context/01-worker-lifecycle-cancellation/cmd/demo
+cd go-solutions/14-select-and-context/11-graceful-shutdown-with-context/01-worker-lifecycle-cancellation
 ```
 
 ## Why the stopped channel and the bounded Wait

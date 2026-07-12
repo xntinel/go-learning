@@ -57,9 +57,8 @@ byte-lowering is not Unicode-correct.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/match/internal/match ~/go-exercises/match/cmd/demo
-cd ~/go-exercises/match
-go mod init example.com/match
+mkdir -p go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/08-case-fold-header-compare/internal/match go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/08-case-fold-header-compare/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/08-case-fold-header-compare
 ```
 
 Create `internal/match/match.go`:

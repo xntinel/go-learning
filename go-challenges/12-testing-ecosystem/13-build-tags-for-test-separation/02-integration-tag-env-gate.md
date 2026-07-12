@@ -28,9 +28,8 @@ storegate/                 independent module: example.com/storegate
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/storegate/cmd/demo
-cd ~/go-exercises/storegate
-go mod init example.com/storegate
+mkdir -p go-solutions/12-testing-ecosystem/13-build-tags-for-test-separation/02-integration-tag-env-gate/cmd/demo
+cd go-solutions/12-testing-ecosystem/13-build-tags-for-test-separation/02-integration-tag-env-gate
 ```
 
 ### Two independent gates on one test

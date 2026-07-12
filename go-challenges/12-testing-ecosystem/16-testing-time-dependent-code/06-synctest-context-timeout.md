@@ -28,9 +28,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module (synctest is stable in Go 1.25):
 
 ```bash
-mkdir -p ~/go-exercises/reqtimeout/cmd/demo
-cd ~/go-exercises/reqtimeout
-go mod init example.com/reqtimeout
+mkdir -p go-solutions/12-testing-ecosystem/16-testing-time-dependent-code/06-synctest-context-timeout/cmd/demo
+cd go-solutions/12-testing-ecosystem/16-testing-time-dependent-code/06-synctest-context-timeout
 go mod edit -go=1.25
 ```
 

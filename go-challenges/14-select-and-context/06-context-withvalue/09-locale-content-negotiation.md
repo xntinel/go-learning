@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/locale/cmd/demo
-cd ~/go-exercises/locale
-go mod init example.com/locale
+mkdir -p go-solutions/14-select-and-context/06-context-withvalue/09-locale-content-negotiation/cmd/demo
+cd go-solutions/14-select-and-context/06-context-withvalue/09-locale-content-negotiation
 ```
 
 ### Why locale is request-scoped, and how negotiation works

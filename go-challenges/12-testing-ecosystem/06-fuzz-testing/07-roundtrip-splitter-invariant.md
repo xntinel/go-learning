@@ -30,9 +30,8 @@ Verify: `go test -race ./...`, then `go test -fuzz=FuzzSplitFields -fuzztime=2s`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/logsplit/cmd/demo
-cd ~/go-exercises/logsplit
-go mod init example.com/logsplit
+mkdir -p go-solutions/12-testing-ecosystem/06-fuzz-testing/07-roundtrip-splitter-invariant/cmd/demo
+cd go-solutions/12-testing-ecosystem/06-fuzz-testing/07-roundtrip-splitter-invariant
 ```
 
 ### The one-byte-separator trap, and the two invariants

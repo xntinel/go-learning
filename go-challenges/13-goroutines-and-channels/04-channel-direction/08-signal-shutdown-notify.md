@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/shutdown/cmd/demo
-cd ~/go-exercises/shutdown
-go mod init example.com/shutdown
+mkdir -p go-solutions/13-goroutines-and-channels/04-channel-direction/08-signal-shutdown-notify/cmd/demo
+cd go-solutions/13-goroutines-and-channels/04-channel-direction/08-signal-shutdown-notify
 ```
 
 ### Why direction and buffering are separate concerns here

@@ -22,8 +22,7 @@ deployment_test.go   full render, defaults, required-field enforcement, immutabi
 Set up the module:
 
 ```bash
-mkdir -p deployment-builder/cmd/demo && cd deployment-builder
-go mod init example.com/deployment-builder
+mkdir -p go-solutions/24-design-patterns-in-go/02-builder-pattern/05-deployment-spec-builder/cmd/demo && cd go-solutions/24-design-patterns-in-go/02-builder-pattern/05-deployment-spec-builder
 ```
 
 ### Why required fields are enforced at Build, not in setters

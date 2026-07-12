@@ -22,8 +22,7 @@ whileseq_test.go     TakeWhile/DropWhile output, exact-pull short-circuit, early
 Set up the module:
 
 ```bash
-mkdir -p whileseq/cmd/demo && cd whileseq
-go mod init example.com/whileseq
+mkdir -p go-solutions/25-iterators-and-modern-go/06-composing-iterators/03-take-while-and-drop-while/cmd/demo && cd go-solutions/25-iterators-and-modern-go/06-composing-iterators/03-take-while-and-drop-while
 ```
 
 ### Short-circuiting on a condition

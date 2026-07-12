@@ -30,9 +30,8 @@ apierr/                        independent module: example.com/apierr
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/apierr/cmd/demo
-cd ~/go-exercises/apierr
-go mod init example.com/apierr
+mkdir -p go-solutions/10-error-handling/02-fmt-errorf-and-error-wrapping/08-status-error-struct-vs-wraperror/cmd/demo
+cd go-solutions/10-error-handling/02-fmt-errorf-and-error-wrapping/08-status-error-struct-vs-wraperror
 ```
 
 ### Struct versus opaque wrapError

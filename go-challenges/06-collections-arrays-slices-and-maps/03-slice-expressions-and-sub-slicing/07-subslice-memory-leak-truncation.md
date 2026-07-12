@@ -32,9 +32,8 @@ logtrim/                   independent module: example.com/logtrim
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/logtrim/cmd/demo
-cd ~/go-exercises/logtrim
-go mod init example.com/logtrim
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/07-subslice-memory-leak-truncation/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/07-subslice-memory-leak-truncation
 go mod edit -go=1.24
 ```
 

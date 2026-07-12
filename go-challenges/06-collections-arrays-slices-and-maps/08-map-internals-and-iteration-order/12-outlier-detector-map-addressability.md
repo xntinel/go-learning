@@ -53,9 +53,8 @@ outlierdetector/          module example.com/outlierdetector
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/outlierdetector
-cd ~/go-exercises/outlierdetector
-go mod init example.com/outlierdetector
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/12-outlier-detector-map-addressability
+cd go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/12-outlier-detector-map-addressability
 go mod edit -go=1.24
 ```
 

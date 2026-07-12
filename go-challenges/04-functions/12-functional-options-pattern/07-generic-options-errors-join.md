@@ -29,9 +29,8 @@ optkit/                          independent module: example.com/optkit
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/optkit/cmd/demo
-cd ~/go-exercises/optkit
-go mod init example.com/optkit
+mkdir -p go-solutions/04-functions/12-functional-options-pattern/07-generic-options-errors-join/cmd/demo
+cd go-solutions/04-functions/12-functional-options-pattern/07-generic-options-errors-join
 ```
 
 ### One options engine, many types

@@ -28,9 +28,8 @@ Verify: `go test -count=1 ./...`
 Set up the module:
 
 ```bash
-mkdir -p statusjson/cmd/demo
-cd statusjson
-go mod init example.com/statusjson
+mkdir -p go-solutions/02-variables-types-and-constants/04-constants-and-iota/02-json-enum-textmarshaler-roundtrip/cmd/demo
+cd go-solutions/02-variables-types-and-constants/04-constants-and-iota/02-json-enum-textmarshaler-roundtrip
 ```
 
 ## Why default int marshaling is a latent bug

@@ -29,9 +29,8 @@ spscring/                        independent module: example.com/spscring
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/spscring/cmd/demo
-cd ~/go-exercises/spscring
-go mod init example.com/spscring
+mkdir -p go-solutions/15-sync-primitives/11-lock-free-data-structures/08-spsc-ring-buffer-telemetry/cmd/demo
+cd go-solutions/15-sync-primitives/11-lock-free-data-structures/08-spsc-ring-buffer-telemetry
 ```
 
 ### One writer per index means no CAS

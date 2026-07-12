@@ -52,9 +52,8 @@ walcompact/                module example.com/walcompact
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/walcompact
-cd ~/go-exercises/walcompact
-go mod init example.com/walcompact
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/06-copy-and-full-slice-expression/18-wal-compaction-scanner-token-in-map
+cd go-solutions/06-collections-arrays-slices-and-maps/06-copy-and-full-slice-expression/18-wal-compaction-scanner-token-in-map
 go mod edit -go=1.24
 ```
 

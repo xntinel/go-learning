@@ -31,9 +31,8 @@ segregate/                    independent module: example.com/segregate
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/segregate/cmd/demo
-cd ~/go-exercises/segregate
-go mod init example.com/segregate
+mkdir -p go-solutions/08-interfaces/01-implicit-interface-satisfaction/06-interface-composition-reader-writer-deleter/cmd/demo
+cd go-solutions/08-interfaces/01-implicit-interface-satisfaction/06-interface-composition-reader-writer-deleter
 ```
 
 ### Segregation: the call site drives the interface

@@ -30,9 +30,8 @@ breaker/                   independent module: example.com/breaker
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/breaker/cmd/demo
-cd ~/go-exercises/breaker
-go mod init example.com/breaker
+mkdir -p go-solutions/04-functions/04-first-class-functions-and-closures/07-circuit-breaker-closure/cmd/demo
+cd go-solutions/04-functions/04-first-class-functions-and-closures/07-circuit-breaker-closure
 ```
 
 ### The state machine as captured variables

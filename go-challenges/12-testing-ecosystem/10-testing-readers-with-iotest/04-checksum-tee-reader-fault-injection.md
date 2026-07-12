@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/teachecksum/cmd/demo
-cd ~/go-exercises/teachecksum
-go mod init example.com/teachecksum
+mkdir -p go-solutions/12-testing-ecosystem/10-testing-readers-with-iotest/04-checksum-tee-reader-fault-injection/cmd/demo
+cd go-solutions/12-testing-ecosystem/10-testing-readers-with-iotest/04-checksum-tee-reader-fault-injection
 ```
 
 ### How the tee tap works, and what a fault must not do

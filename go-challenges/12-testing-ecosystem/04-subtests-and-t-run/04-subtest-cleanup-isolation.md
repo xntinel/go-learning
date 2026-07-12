@@ -31,9 +31,8 @@ fileapi/                    independent module: example.com/fileapi
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/fileapi/cmd/demo
-cd ~/go-exercises/fileapi
-go mod init example.com/fileapi
+mkdir -p go-solutions/12-testing-ecosystem/04-subtests-and-t-run/04-subtest-cleanup-isolation/cmd/demo
+cd go-solutions/12-testing-ecosystem/04-subtests-and-t-run/04-subtest-cleanup-isolation
 ```
 
 ### Why these fixtures, and why not parallel

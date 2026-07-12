@@ -23,9 +23,8 @@ Library code should accept a logger instead of calling the package-level `slog.I
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/slog-basics
-cd ~/go-exercises/slog-basics
-go mod init example.com/slogbasics
+mkdir -p go-solutions/21-structured-logging-with-slog/01-slog-basics/01-slog-basics
+cd go-solutions/21-structured-logging-with-slog/01-slog-basics/01-slog-basics
 ```
 
 Edit `go.mod` so it pins the toolchain version used by this curriculum:

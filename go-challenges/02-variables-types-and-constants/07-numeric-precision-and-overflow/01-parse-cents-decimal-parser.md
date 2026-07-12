@@ -34,9 +34,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/parsecents/cmd/demo
-cd ~/go-exercises/parsecents
-go mod init example.com/parsecents
+mkdir -p go-solutions/02-variables-types-and-constants/07-numeric-precision-and-overflow/01-parse-cents-decimal-parser/cmd/demo
+cd go-solutions/02-variables-types-and-constants/07-numeric-precision-and-overflow/01-parse-cents-decimal-parser
 ```
 
 ### Why the parser is the trust boundary

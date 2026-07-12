@@ -25,8 +25,7 @@ wal_test.go          monotonic + restart-resumed LSNs, concurrent appends, rotat
 Set up the module:
 
 ```bash
-mkdir -p wal-core/cmd/demo && cd wal-core
-go mod init example.com/wal-core
+mkdir -p go-solutions/39-capstone-database-engine/01-write-ahead-log/02-wal-core/cmd/demo && cd go-solutions/39-capstone-database-engine/01-write-ahead-log/02-wal-core
 ```
 
 ### The four invariants the core upholds

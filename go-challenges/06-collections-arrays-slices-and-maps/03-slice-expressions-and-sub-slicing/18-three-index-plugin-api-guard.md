@@ -50,9 +50,8 @@ pluginguard/                   module example.com/pluginguard
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pluginguard
-cd ~/go-exercises/pluginguard
-go mod init example.com/pluginguard
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/18-three-index-plugin-api-guard
+cd go-solutions/06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/18-three-index-plugin-api-guard
 go mod edit -go=1.24
 ```
 

@@ -29,9 +29,8 @@ reqvalidate/                 independent module: example.com/reqvalidate
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/reqvalidate/cmd/demo
-cd ~/go-exercises/reqvalidate
-go mod init example.com/reqvalidate
+mkdir -p go-solutions/10-error-handling/01-error-interface-and-basic-patterns/06-request-validation-guard-clauses/cmd/demo
+cd go-solutions/10-error-handling/01-error-interface-and-basic-patterns/06-request-validation-guard-clauses
 ```
 
 ### Why flat guards beat a nested pyramid

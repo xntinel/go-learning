@@ -23,8 +23,7 @@ repository_test.go       runRepositoryContract shared suite + accessor + email-r
 Set up the module:
 
 ```bash
-mkdir -p user-repository/cmd/demo && cd user-repository
-go mod init example.com/user-repository
+mkdir -p go-solutions/24-design-patterns-in-go/05-repository-pattern/01-user-repository/cmd/demo && cd go-solutions/24-design-patterns-in-go/05-repository-pattern/01-user-repository
 ```
 
 ### Why an interface, two indexes, and domain sentinels

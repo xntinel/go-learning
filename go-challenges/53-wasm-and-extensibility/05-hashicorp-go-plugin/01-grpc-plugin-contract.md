@@ -39,9 +39,8 @@ Verify: `go test -race ./...` with the deps present (this is a bar-mode module; 
 Set up the module and generate the proto stubs:
 
 ```bash
-mkdir -p ~/go-exercises/processorplugin/{proto,shared,plugin,cmd/demo}
-cd ~/go-exercises/processorplugin
-go mod init example.com/processorplugin
+mkdir -p go-solutions/53-wasm-and-extensibility/05-hashicorp-go-plugin/01-grpc-plugin-contract/{proto,shared,plugin,cmd/demo}
+cd go-solutions/53-wasm-and-extensibility/05-hashicorp-go-plugin/01-grpc-plugin-contract
 go mod edit -go=1.26
 go get github.com/hashicorp/go-plugin@v1.6.3
 go get google.golang.org/grpc@v1.71.0

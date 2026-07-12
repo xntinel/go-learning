@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/retryread/cmd/demo
-cd ~/go-exercises/retryread
-go mod init example.com/retryread
+mkdir -p go-solutions/12-testing-ecosystem/10-testing-readers-with-iotest/05-timeout-reader-retry-loop/cmd/demo
+cd go-solutions/12-testing-ecosystem/10-testing-readers-with-iotest/05-timeout-reader-retry-loop
 ```
 
 ### Retry only what is retryable, and only bounded

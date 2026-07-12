@@ -28,9 +28,8 @@ repoerr/                   independent module: example.com/repoerr
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/repoerr/cmd/demo
-cd ~/go-exercises/repoerr
-go mod init example.com/repoerr
+mkdir -p go-solutions/05-strings-runes-and-unicode/06-string-formatting-with-fmt/04-error-wrapping-verbs/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/06-string-formatting-with-fmt/04-error-wrapping-verbs
 go mod edit -go=1.24
 ```
 

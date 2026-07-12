@@ -30,9 +30,8 @@ retrykit/                            module example.com/retrykit
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/retrykit/internal/retry ~/go-exercises/retrykit/cmd/demo
-cd ~/go-exercises/retrykit
-go mod init example.com/retrykit
+mkdir -p go-solutions/11-packages-and-modules/03-internal-packages/07-export-test-white-box-internal/internal/retry go-solutions/11-packages-and-modules/03-internal-packages/07-export-test-white-box-internal/cmd/demo
+cd go-solutions/11-packages-and-modules/03-internal-packages/07-export-test-white-box-internal
 ```
 
 ### Why export_test.go, and how it composes with internal

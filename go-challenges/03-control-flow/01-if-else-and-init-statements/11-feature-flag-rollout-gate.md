@@ -26,9 +26,8 @@ flaggate/                   independent module: example.com/flag-rollout-gate
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/flaggate
-cd ~/go-exercises/flaggate
-go mod init example.com/flag-rollout-gate
+mkdir -p go-solutions/03-control-flow/01-if-else-and-init-statements/11-feature-flag-rollout-gate
+cd go-solutions/03-control-flow/01-if-else-and-init-statements/11-feature-flag-rollout-gate
 go mod edit -go=1.24
 ```
 

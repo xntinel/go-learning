@@ -106,9 +106,8 @@ You get automatic propagation by using these two wrappers; you do not need to ca
 Set up the module. This lesson depends on external modules and cannot be compiled offline; see Verification.
 
 ```bash
-mkdir -p ~/go-exercises/tracing/cmd/demo
-cd ~/go-exercises/tracing
-go mod init example.com/tracing
+mkdir -p go-solutions/30-production-patterns/08-distributed-tracing-context/08-distributed-tracing-context/cmd/demo
+cd go-solutions/30-production-patterns/08-distributed-tracing-context/08-distributed-tracing-context
 go get go.opentelemetry.io/otel@v1.44.0
 go get go.opentelemetry.io/otel/sdk@v1.44.0
 go get go.opentelemetry.io/otel/exporters/stdout/stdouttrace@v1.44.0

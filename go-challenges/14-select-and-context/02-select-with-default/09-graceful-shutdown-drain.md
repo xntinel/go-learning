@@ -30,9 +30,8 @@ drainserver/                independent module: example.com/drainserver
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/drainserver/cmd/demo
-cd ~/go-exercises/drainserver
-go mod init example.com/drainserver
+mkdir -p go-solutions/14-select-and-context/02-select-with-default/09-graceful-shutdown-drain/cmd/demo
+cd go-solutions/14-select-and-context/02-select-with-default/09-graceful-shutdown-drain
 go mod edit -go=1.26
 ```
 

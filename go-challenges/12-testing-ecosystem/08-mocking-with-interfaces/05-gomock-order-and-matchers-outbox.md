@@ -33,9 +33,8 @@ gomockoutbox/                independent module: example.com/gomockoutbox
 Set up the module and pull gomock:
 
 ```bash
-mkdir -p ~/go-exercises/gomockoutbox/outbox/mocks ~/go-exercises/gomockoutbox/cmd/demo
-cd ~/go-exercises/gomockoutbox
-go mod init example.com/gomockoutbox
+mkdir -p go-solutions/12-testing-ecosystem/08-mocking-with-interfaces/05-gomock-order-and-matchers-outbox/outbox/mocks go-solutions/12-testing-ecosystem/08-mocking-with-interfaces/05-gomock-order-and-matchers-outbox/cmd/demo
+cd go-solutions/12-testing-ecosystem/08-mocking-with-interfaces/05-gomock-order-and-matchers-outbox
 go get go.uber.org/mock/gomock@latest
 ```
 

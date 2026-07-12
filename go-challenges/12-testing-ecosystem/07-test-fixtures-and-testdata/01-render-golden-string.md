@@ -22,9 +22,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/render/cmd/demo
-cd ~/go-exercises/render
-go mod init example.com/goldenstring
+mkdir -p go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/01-render-golden-string/cmd/demo
+cd go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/01-render-golden-string
 ```
 
 ### Why start with an inline golden

@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...` (runs unit tests; integration tests skip 
 Set up the module:
 
 ```bash
-mkdir -p pgstore/cmd/demo
-cd pgstore
-go mod init example.com/pgstore
+mkdir -p go-solutions/12-testing-ecosystem/22-testmain-setup-teardown/03-shared-postgres-pool-and-migrations/cmd/demo
+cd go-solutions/12-testing-ecosystem/22-testmain-setup-teardown/03-shared-postgres-pool-and-migrations
 ```
 
 ### Why the pool lives in TestMain

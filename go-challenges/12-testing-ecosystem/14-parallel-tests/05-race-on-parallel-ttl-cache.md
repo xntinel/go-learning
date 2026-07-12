@@ -32,9 +32,8 @@ Verify: `go test -race -count=10 ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ttlcache/cmd/demo
-cd ~/go-exercises/ttlcache
-go mod init example.com/ttlcache
+mkdir -p go-solutions/12-testing-ecosystem/14-parallel-tests/05-race-on-parallel-ttl-cache/cmd/demo
+cd go-solutions/12-testing-ecosystem/14-parallel-tests/05-race-on-parallel-ttl-cache
 ```
 
 ### The race, made concrete

@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/backendpool/cmd/demo
-cd ~/go-exercises/backendpool
-go mod init example.com/backendpool
+mkdir -p go-solutions/15-sync-primitives/02-sync-rwmutex/03-hot-reload-backend-pool/cmd/demo
+cd go-solutions/15-sync-primitives/02-sync-rwmutex/03-hot-reload-backend-pool
 ```
 
 ### Why the read lock and the atomic counter cooperate

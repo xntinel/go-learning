@@ -22,8 +22,7 @@ offset_test.go       commit/fetch isolation, race test, lag table, tracker lifec
 Set up the module:
 
 ```bash
-mkdir -p offset-tracking/cmd/demo && cd offset-tracking
-go mod init example.com/offset
+mkdir -p go-solutions/41-capstone-message-queue/03-consumer-groups-offset-tracking/02-offset-tracking-and-lag/cmd/demo && cd go-solutions/41-capstone-message-queue/03-consumer-groups-offset-tracking/02-offset-tracking-and-lag
 ```
 
 ### Why -1 is the sentinel, and why lag is a subtraction

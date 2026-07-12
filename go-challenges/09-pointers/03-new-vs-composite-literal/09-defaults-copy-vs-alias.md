@@ -33,9 +33,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/configcopy/cmd/demo
-cd ~/go-exercises/configcopy
-go mod init example.com/configcopy
+mkdir -p go-solutions/09-pointers/03-new-vs-composite-literal/09-defaults-copy-vs-alias/cmd/demo
+cd go-solutions/09-pointers/03-new-vs-composite-literal/09-defaults-copy-vs-alias
 ```
 
 ### Why the copy is isolated but shallow

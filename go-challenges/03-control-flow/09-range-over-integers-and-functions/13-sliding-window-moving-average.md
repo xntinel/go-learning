@@ -24,9 +24,8 @@ Verify: `go test -count=1 ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/movavg
-cd ~/go-exercises/movavg
-go mod init example.com/movavg
+mkdir -p go-solutions/03-control-flow/09-range-over-integers-and-functions/13-sliding-window-moving-average
+cd go-solutions/03-control-flow/09-range-over-integers-and-functions/13-sliding-window-moving-average
 go mod edit -go=1.24
 ```
 

@@ -28,9 +28,8 @@ pricingconverge/              module example.com/pricingconverge
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pricingconverge
-cd ~/go-exercises/pricingconverge
-go mod init example.com/pricingconverge
+mkdir -p go-solutions/03-control-flow/02-for-loops/14-pricing-fixed-point-convergence
+cd go-solutions/03-control-flow/02-for-loops/14-pricing-fixed-point-convergence
 go mod edit -go=1.24
 ```
 

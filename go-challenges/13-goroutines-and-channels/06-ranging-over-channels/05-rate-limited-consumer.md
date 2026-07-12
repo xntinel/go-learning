@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ratelimited/cmd/demo
-cd ~/go-exercises/ratelimited
-go mod init example.com/ratelimited
+mkdir -p go-solutions/13-goroutines-and-channels/06-ranging-over-channels/05-rate-limited-consumer/cmd/demo
+cd go-solutions/13-goroutines-and-channels/06-ranging-over-channels/05-rate-limited-consumer
 go get golang.org/x/time/rate
 ```
 

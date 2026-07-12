@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/sanitize/cmd/demo
-cd ~/go-exercises/sanitize
-go mod init example.com/sanitize
+mkdir -p go-solutions/05-strings-runes-and-unicode/01-string-basics/07-sanitize-valid-utf8/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/01-string-basics/07-sanitize-valid-utf8
 ```
 
 ## Two failure modes, two steps

@@ -24,8 +24,7 @@ io_test.go    capture print into a buffer; round-trip and missing-file cases
 Set up the module:
 
 ```bash
-mkdir -p iobuiltins/cmd/demo && cd iobuiltins
-go mod init example.com/iobuiltins
+mkdir -p go-solutions/40-capstone-language-interpreter/05-builtin-functions/07-io-builtins/cmd/demo && cd go-solutions/40-capstone-language-interpreter/05-builtin-functions/07-io-builtins
 ```
 
 ### Inject the boundary so the test can stand in for the world

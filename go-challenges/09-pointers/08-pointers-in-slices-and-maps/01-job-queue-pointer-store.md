@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ptrcoll/internal/jobs ~/go-exercises/ptrcoll/cmd/demo
-cd ~/go-exercises/ptrcoll
-go mod init example.com/ptrcoll
+mkdir -p go-solutions/09-pointers/08-pointers-in-slices-and-maps/01-job-queue-pointer-store/internal/jobs go-solutions/09-pointers/08-pointers-in-slices-and-maps/01-job-queue-pointer-store/cmd/demo
+cd go-solutions/09-pointers/08-pointers-in-slices-and-maps/01-job-queue-pointer-store
 ```
 
 ### Why pointers, and why a snapshot of values

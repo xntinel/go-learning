@@ -21,9 +21,8 @@ If the consumer is slow, should the watcher block, drop events, or buffer them? 
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pollwatch/cmd/demo
-cd ~/go-exercises/pollwatch
-go mod init example.com/pollwatch
+mkdir -p go-solutions/19-io-and-filesystem/18-building-a-file-watcher/18-building-a-file-watcher/cmd/demo
+cd go-solutions/19-io-and-filesystem/18-building-a-file-watcher/18-building-a-file-watcher
 ```
 
 ### Exercise 1: Implement The Watcher

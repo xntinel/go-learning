@@ -29,9 +29,8 @@ layoutaudit/               independent module: example.com/layoutaudit
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/layoutaudit/cmd/demo
-cd ~/go-exercises/layoutaudit
-go mod init example.com/layoutaudit
+mkdir -p go-solutions/07-structs-and-methods/09-struct-memory-layout-and-padding/03-reflect-layout-auditor/cmd/demo
+cd go-solutions/07-structs-and-methods/09-struct-memory-layout-and-padding/03-reflect-layout-auditor
 ```
 
 ### How the auditor computes wasted padding

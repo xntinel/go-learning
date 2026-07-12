@@ -30,9 +30,8 @@ janitor/                   independent module: example.com/janitor
 Set up the module (`testing/synctest` requires Go 1.25+):
 
 ```bash
-mkdir -p ~/go-exercises/janitor/cmd/demo
-cd ~/go-exercises/janitor
-go mod init example.com/janitor
+mkdir -p go-solutions/48-modern-go-language-and-stdlib/02-testing-synctest-deterministic-concurrency/02-background-janitor/cmd/demo
+cd go-solutions/48-modern-go-language-and-stdlib/02-testing-synctest-deterministic-concurrency/02-background-janitor
 go mod edit -go=1.25
 ```
 

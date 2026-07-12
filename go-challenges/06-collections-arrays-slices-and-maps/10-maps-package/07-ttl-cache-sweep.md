@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/sweepcache/cmd/demo
-cd ~/go-exercises/sweepcache
-go mod init example.com/sweepcache
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/07-ttl-cache-sweep/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/07-ttl-cache-sweep
 ```
 
 ## Why DeleteFunc-in-place beats rebuild-on-every-get

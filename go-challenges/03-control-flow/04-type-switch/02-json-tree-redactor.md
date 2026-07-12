@@ -33,9 +33,8 @@ redact/                      independent module: example.com/redact
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/redact/cmd/demo
-cd ~/go-exercises/redact
-go mod init example.com/redact
+mkdir -p go-solutions/03-control-flow/04-type-switch/02-json-tree-redactor/cmd/demo
+cd go-solutions/03-control-flow/04-type-switch/02-json-tree-redactor
 ```
 
 ## How the type switch drives a recursive walk

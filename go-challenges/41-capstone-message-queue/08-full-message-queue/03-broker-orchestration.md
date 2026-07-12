@@ -26,8 +26,7 @@ example_test.go   ExampleBroker with verified // Output
 Set up the module:
 
 ```bash
-mkdir -p broker/cmd/demo && cd broker
-go mod init example.com/broker
+mkdir -p go-solutions/41-capstone-message-queue/08-full-message-queue/03-broker-orchestration/cmd/demo && cd go-solutions/41-capstone-message-queue/08-full-message-queue/03-broker-orchestration
 ```
 
 ### Why the broker owns the lifecycle, and in what order

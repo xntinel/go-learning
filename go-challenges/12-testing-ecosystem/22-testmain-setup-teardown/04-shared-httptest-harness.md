@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p apiharness/cmd/demo
-cd apiharness
-go mod init example.com/apiharness
+mkdir -p go-solutions/12-testing-ecosystem/22-testmain-setup-teardown/04-shared-httptest-harness/cmd/demo
+cd go-solutions/12-testing-ecosystem/22-testmain-setup-teardown/04-shared-httptest-harness
 ```
 
 ### Why one server, and why it must be stateless to share safely

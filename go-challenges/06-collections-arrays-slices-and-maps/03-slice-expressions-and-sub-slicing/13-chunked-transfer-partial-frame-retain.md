@@ -46,9 +46,8 @@ framedecoder/               module example.com/framedecoder
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/framedecoder
-cd ~/go-exercises/framedecoder
-go mod init example.com/framedecoder
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/13-chunked-transfer-partial-frame-retain
+cd go-solutions/06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/13-chunked-transfer-partial-frame-retain
 go mod edit -go=1.24
 ```
 

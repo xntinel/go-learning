@@ -33,9 +33,8 @@ cfgsighup/                 independent module: example.com/cfgsighup
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cfgsighup/cmd/demo
-cd ~/go-exercises/cfgsighup
-go mod init example.com/cfgsighup
+mkdir -p go-solutions/15-sync-primitives/08-atomic-value-config-hot-reload/05-sighup-reload-worker/cmd/demo
+cd go-solutions/15-sync-primitives/08-atomic-value-config-hot-reload/05-sighup-reload-worker
 ```
 
 ### The three signal traps this design defuses

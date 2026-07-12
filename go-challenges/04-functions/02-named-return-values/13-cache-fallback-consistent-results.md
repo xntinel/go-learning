@@ -25,9 +25,8 @@ cachefallback/                independent module: example.com/cachefallback
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cachefallback
-cd ~/go-exercises/cachefallback
-go mod init example.com/cachefallback
+mkdir -p go-solutions/04-functions/02-named-return-values/13-cache-fallback-consistent-results
+cd go-solutions/04-functions/02-named-return-values/13-cache-fallback-consistent-results
 go mod edit -go=1.24
 ```
 

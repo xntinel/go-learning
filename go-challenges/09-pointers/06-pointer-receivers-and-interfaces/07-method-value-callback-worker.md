@@ -28,9 +28,8 @@ ratemeter/                  independent module: example.com/ratemeter
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ratemeter/cmd/demo
-cd ~/go-exercises/ratemeter
-go mod init example.com/ratemeter
+mkdir -p go-solutions/09-pointers/06-pointer-receivers-and-interfaces/07-method-value-callback-worker/cmd/demo
+cd go-solutions/09-pointers/06-pointer-receivers-and-interfaces/07-method-value-callback-worker
 go mod edit -go=1.25
 ```
 

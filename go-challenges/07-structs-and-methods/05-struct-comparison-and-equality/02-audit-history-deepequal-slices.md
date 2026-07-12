@@ -29,9 +29,8 @@ auditbucket/                independent module: example.com/auditbucket
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/auditbucket/cmd/demo
-cd ~/go-exercises/auditbucket
-go mod init example.com/auditbucket
+mkdir -p go-solutions/07-structs-and-methods/05-struct-comparison-and-equality/02-audit-history-deepequal-slices/cmd/demo
+cd go-solutions/07-structs-and-methods/05-struct-comparison-and-equality/02-audit-history-deepequal-slices
 ```
 
 ### Why `==` will not compile, and what replaces it

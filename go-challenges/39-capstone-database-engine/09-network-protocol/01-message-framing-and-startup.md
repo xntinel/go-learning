@@ -23,8 +23,7 @@ wire_test.go         framing round-trip, empty payload, startup parsing, C-strin
 Set up the module:
 
 ```bash
-mkdir -p framing/cmd/demo && cd framing
-go mod init example.com/framing
+mkdir -p go-solutions/39-capstone-database-engine/09-network-protocol/01-message-framing-and-startup/cmd/demo && cd go-solutions/39-capstone-database-engine/09-network-protocol/01-message-framing-and-startup
 ```
 
 ### How framing actually works

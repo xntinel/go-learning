@@ -25,9 +25,8 @@ visited-path sequence and Walk's returned bool.
 Verify: `go test -count=1 ./...`
 
 ```bash
-mkdir -p ~/go-exercises/config-tree-walk
-cd ~/go-exercises/config-tree-walk
-go mod init example.com/config-tree-walk
+mkdir -p go-solutions/04-functions/06-function-types-and-callbacks/13-config-tree-visitor-early-stop
+cd go-solutions/04-functions/06-function-types-and-callbacks/13-config-tree-visitor-early-stop
 go mod edit -go=1.24
 ```
 

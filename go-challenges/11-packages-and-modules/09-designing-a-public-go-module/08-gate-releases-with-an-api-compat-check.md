@@ -31,9 +31,8 @@ releasegate/               independent module: example.com/publicstr
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/releasegate/cmd/demo
-cd ~/go-exercises/releasegate
-go mod init example.com/publicstr
+mkdir -p go-solutions/11-packages-and-modules/09-designing-a-public-go-module/08-gate-releases-with-an-api-compat-check/cmd/demo
+cd go-solutions/11-packages-and-modules/09-designing-a-public-go-module/08-gate-releases-with-an-api-compat-check
 ```
 
 ### The three tiers, as a decision function

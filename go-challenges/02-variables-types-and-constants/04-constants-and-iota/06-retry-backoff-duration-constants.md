@@ -28,9 +28,8 @@ Verify: `go test -count=1 ./...`
 Set up the module:
 
 ```bash
-mkdir -p retry/cmd/demo
-cd retry
-go mod init example.com/retry
+mkdir -p go-solutions/02-variables-types-and-constants/04-constants-and-iota/06-retry-backoff-duration-constants/cmd/demo
+cd go-solutions/02-variables-types-and-constants/04-constants-and-iota/06-retry-backoff-duration-constants
 ```
 
 ## Why durations, and where the overflow hides

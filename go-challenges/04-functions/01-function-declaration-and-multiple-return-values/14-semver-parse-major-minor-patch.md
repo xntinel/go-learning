@@ -28,9 +28,8 @@ semver/                    independent module: example.com/semver-parse
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/semver
-cd ~/go-exercises/semver
-go mod init example.com/semver-parse
+mkdir -p go-solutions/04-functions/01-function-declaration-and-multiple-return-values/14-semver-parse-major-minor-patch
+cd go-solutions/04-functions/01-function-declaration-and-multiple-return-values/14-semver-parse-major-minor-patch
 go mod edit -go=1.24
 ```
 

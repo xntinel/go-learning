@@ -53,9 +53,8 @@ compactlog/                    module example.com/compactlog
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/compactlog
-cd ~/go-exercises/compactlog
-go mod init example.com/compactlog
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/13-compacted-log-tombstone-vs-empty
+cd go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/13-compacted-log-tombstone-vs-empty
 go mod edit -go=1.24
 ```
 

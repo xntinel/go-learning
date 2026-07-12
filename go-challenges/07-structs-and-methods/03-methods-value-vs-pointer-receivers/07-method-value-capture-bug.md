@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/router/cmd/demo
-cd ~/go-exercises/router
-go mod init example.com/router
+mkdir -p go-solutions/07-structs-and-methods/03-methods-value-vs-pointer-receivers/07-method-value-capture-bug/cmd/demo
+cd go-solutions/07-structs-and-methods/03-methods-value-vs-pointer-receivers/07-method-value-capture-bug
 ```
 
 ### What a method value captures

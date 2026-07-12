@@ -25,9 +25,8 @@ retryclass/                independent module: example.com/retryclass
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/retryclass/cmd/demo
-cd ~/go-exercises/retryclass
-go mod init example.com/retryclass
+mkdir -p go-solutions/12-testing-ecosystem/01-your-first-test/02-retryable-http-status-classifier/cmd/demo
+cd go-solutions/12-testing-ecosystem/01-your-first-test/02-retryable-http-status-classifier
 ```
 
 ### Which statuses are retryable, and why the test is not a table

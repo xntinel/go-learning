@@ -31,9 +31,8 @@ spanctx/                     independent module: example.com/spanctx
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/spanctx/cmd/demo
-cd ~/go-exercises/spanctx
-go mod init example.com/spanctx
+mkdir -p go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/26-observability-span-context-value-capture-propagation/cmd/demo
+cd go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/26-observability-span-context-value-capture-propagation
 go mod edit -go=1.24
 ```
 

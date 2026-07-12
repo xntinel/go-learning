@@ -32,9 +32,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/canon/cmd/demo
-cd ~/go-exercises/canon
-go mod init example.com/canon
+mkdir -p go-solutions/12-testing-ecosystem/24-property-based-testing/03-idempotent-canonicalization/cmd/demo
+cd go-solutions/12-testing-ecosystem/24-property-based-testing/03-idempotent-canonicalization
 go mod edit -go=1.26
 go get pgregory.net/rapid@latest
 ```

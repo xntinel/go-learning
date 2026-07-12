@@ -28,9 +28,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/rollup/cmd/demo
-cd ~/go-exercises/rollup
-go mod init example.com/rollup
+mkdir -p go-solutions/02-variables-types-and-constants/10-type-inference-deep-dive/06-rps-rate-metrics-truncation/cmd/demo
+cd go-solutions/02-variables-types-and-constants/10-type-inference-deep-dive/06-rps-rate-metrics-truncation
 go mod edit -go=1.26
 ```
 

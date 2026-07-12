@@ -41,9 +41,8 @@ When you need flags (`O_APPEND`, `O_CREATE`, `O_EXCL`, `O_TRUNC`), concurrent ac
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/notesstore/cmd/demo
-cd ~/go-exercises/notesstore
-go mod init example.com/notesstore
+mkdir -p go-solutions/19-io-and-filesystem/01-reading-and-writing-files/01-reading-and-writing-files/cmd/demo
+cd go-solutions/19-io-and-filesystem/01-reading-and-writing-files/01-reading-and-writing-files
 ```
 
 ### Exercise 1: The Store Type And The All-At-Once Helpers

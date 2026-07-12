@@ -34,9 +34,8 @@ migrationcheck/              independent module: example.com/schema-migration-co
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/migrationcheck/cmd/demo
-cd ~/go-exercises/migrationcheck
-go mod init example.com/schema-migration-compatibility-check
+mkdir -p go-solutions/04-functions/01-function-declaration-and-multiple-return-values/18-schema-migration-compatibility-check/cmd/demo
+cd go-solutions/04-functions/01-function-declaration-and-multiple-return-values/18-schema-migration-compatibility-check
 go mod edit -go=1.24
 ```
 

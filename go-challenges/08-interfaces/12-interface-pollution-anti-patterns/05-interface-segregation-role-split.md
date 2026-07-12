@@ -28,9 +28,8 @@ kvroles/                    independent module: example.com/kvroles
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/kvroles/cmd/demo
-cd ~/go-exercises/kvroles
-go mod init example.com/kvroles
+mkdir -p go-solutions/08-interfaces/12-interface-pollution-anti-patterns/05-interface-segregation-role-split/cmd/demo
+cd go-solutions/08-interfaces/12-interface-pollution-anti-patterns/05-interface-segregation-role-split
 ```
 
 ### Why segregate, and how embedding composes roles

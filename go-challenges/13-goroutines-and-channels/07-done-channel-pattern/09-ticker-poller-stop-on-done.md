@@ -25,9 +25,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/healthpoller/cmd/demo
-cd ~/go-exercises/healthpoller
-go mod init example.com/healthpoller
+mkdir -p go-solutions/13-goroutines-and-channels/07-done-channel-pattern/09-ticker-poller-stop-on-done/cmd/demo
+cd go-solutions/13-goroutines-and-channels/07-done-channel-pattern/09-ticker-poller-stop-on-done
 ```
 
 ### The ticker loop and why Stop matters

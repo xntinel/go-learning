@@ -33,8 +33,7 @@ tree_test.go         sorted in-order output, early-break prefix, list early brea
 Set up the module:
 
 ```bash
-mkdir -p tree-in-order-iterator/cmd/demo && cd tree-in-order-iterator
-go mod init example.com/tree-iter
+mkdir -p go-solutions/25-iterators-and-modern-go/03-range-over-func-push-iterators/03-tree-in-order-iterator/cmd/demo && cd go-solutions/25-iterators-and-modern-go/03-range-over-func-push-iterators/03-tree-in-order-iterator
 ```
 
 ### The easy case: a flat loop honors the protocol with return

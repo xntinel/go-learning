@@ -21,9 +21,8 @@ Use interfaces at package boundaries for behavior and dependency injection. Use 
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/choice/cmd/demo
-cd ~/go-exercises/choice
-go mod init example.com/verify
+mkdir -p go-solutions/20-generics/11-generics-vs-interfaces/11-generics-vs-interfaces/cmd/demo
+cd go-solutions/20-generics/11-generics-vs-interfaces/11-generics-vs-interfaces
 ```
 
 ### Exercise 1: Implement Both Cache Styles

@@ -34,9 +34,8 @@ wal/                        independent module: example.com/wal-deferred-flush-n
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/wal-deferred-flush-named-return/cmd/demo
-cd ~/go-exercises/wal-deferred-flush-named-return
-go mod init example.com/wal-deferred-flush-named-return
+mkdir -p go-solutions/03-control-flow/07-defer-semantics-and-ordering/24-wal-deferred-flush-named-return/cmd/demo
+cd go-solutions/03-control-flow/07-defer-semantics-and-ordering/24-wal-deferred-flush-named-return
 go mod edit -go=1.24
 ```
 

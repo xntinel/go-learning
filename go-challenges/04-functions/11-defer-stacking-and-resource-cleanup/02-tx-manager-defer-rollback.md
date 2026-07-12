@@ -27,9 +27,8 @@ txm/                        independent module: example.com/txm
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/txm/tx ~/go-exercises/txm/cmd/demo
-cd ~/go-exercises/txm
-go mod init example.com/txm
+mkdir -p go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/02-tx-manager-defer-rollback/tx go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/02-tx-manager-defer-rollback/cmd/demo
+cd go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/02-tx-manager-defer-rollback
 ```
 
 ### Interfaces, so the test needs no database

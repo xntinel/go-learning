@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/configval/cmd/demo
-cd ~/go-exercises/configval
-go mod init example.com/configval
+mkdir -p go-solutions/10-error-handling/04-custom-error-types/01-validationerror-structured-type/cmd/demo
+cd go-solutions/10-error-handling/04-custom-error-types/01-validationerror-structured-type
 go mod edit -go=1.24
 ```
 

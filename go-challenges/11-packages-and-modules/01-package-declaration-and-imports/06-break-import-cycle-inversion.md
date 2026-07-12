@@ -29,9 +29,8 @@ inversion/                         module: example.com/inversion
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/inversion/store ~/go-exercises/inversion/audit ~/go-exercises/inversion/cmd/demo
-cd ~/go-exercises/inversion
-go mod init example.com/inversion
+mkdir -p go-solutions/11-packages-and-modules/01-package-declaration-and-imports/06-break-import-cycle-inversion/store go-solutions/11-packages-and-modules/01-package-declaration-and-imports/06-break-import-cycle-inversion/audit go-solutions/11-packages-and-modules/01-package-declaration-and-imports/06-break-import-cycle-inversion/cmd/demo
+cd go-solutions/11-packages-and-modules/01-package-declaration-and-imports/06-break-import-cycle-inversion
 go mod edit -go=1.26
 ```
 

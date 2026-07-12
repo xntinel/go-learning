@@ -29,9 +29,8 @@ package-graph/                 module example.com/package-graph
 Create the module:
 
 ```bash
-mkdir -p package-graph/cmd/demo package-graph/internal/circle
-cd package-graph
-go mod init example.com/package-graph
+mkdir -p go-solutions/01-environment-and-tooling/04-go-tool-commands/01-package-graph-and-package-mode/cmd/demo go-solutions/01-environment-and-tooling/04-go-tool-commands/01-package-graph-and-package-mode/internal/circle
+cd go-solutions/01-environment-and-tooling/04-go-tool-commands/01-package-graph-and-package-mode
 ```
 
 ### Why the pattern, not the file, is the unit

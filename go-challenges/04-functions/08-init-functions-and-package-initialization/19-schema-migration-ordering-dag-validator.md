@@ -29,9 +29,8 @@ Verify: `go test -count=1 ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/migrations/cmd/demo
-cd ~/go-exercises/migrations
-go mod init example.com/migrations
+mkdir -p go-solutions/04-functions/08-init-functions-and-package-initialization/19-schema-migration-ordering-dag-validator/cmd/demo
+cd go-solutions/04-functions/08-init-functions-and-package-initialization/19-schema-migration-ordering-dag-validator
 go mod edit -go=1.24
 ```
 

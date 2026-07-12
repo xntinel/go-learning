@@ -29,9 +29,8 @@ reqcontext/                independent module: example.com/reqcontext
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/reqcontext/cmd/demo
-cd ~/go-exercises/reqcontext
-go mod init example.com/reqcontext
+mkdir -p go-solutions/08-interfaces/02-empty-interface-and-any/03-context-value-typed-keys/cmd/demo
+cd go-solutions/08-interfaces/02-empty-interface-and-any/03-context-value-typed-keys
 go mod edit -go=1.26
 ```
 

@@ -30,9 +30,8 @@ idempotency-dedup/           independent module: example.com/idempotency-dedup
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/idempotency-dedup/cmd/demo
-cd ~/go-exercises/idempotency-dedup
-go mod init example.com/idempotency-dedup
+mkdir -p go-solutions/04-functions/04-first-class-functions-and-closures/32-idempotency-key-dedup-with-ttl-window/cmd/demo
+cd go-solutions/04-functions/04-first-class-functions-and-closures/32-idempotency-key-dedup-with-ttl-window
 go mod edit -go=1.24
 ```
 

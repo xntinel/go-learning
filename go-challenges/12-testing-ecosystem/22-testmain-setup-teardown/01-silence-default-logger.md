@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p loggersilence/cmd/demo
-cd loggersilence
-go mod init example.com/loggersilence
+mkdir -p go-solutions/12-testing-ecosystem/22-testmain-setup-teardown/01-silence-default-logger/cmd/demo
+cd go-solutions/12-testing-ecosystem/22-testmain-setup-teardown/01-silence-default-logger
 ```
 
 ### Why the wrappers delegate to slog.Default()

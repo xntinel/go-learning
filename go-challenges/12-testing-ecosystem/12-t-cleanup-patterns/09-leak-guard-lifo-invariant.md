@@ -28,9 +28,8 @@ leakguard/                   independent module: example.com/leakguard
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/leakguard/cmd/demo
-cd ~/go-exercises/leakguard
-go mod init example.com/leakguard
+mkdir -p go-solutions/12-testing-ecosystem/12-t-cleanup-patterns/09-leak-guard-lifo-invariant/cmd/demo
+cd go-solutions/12-testing-ecosystem/12-t-cleanup-patterns/09-leak-guard-lifo-invariant
 go mod edit -go=1.24
 ```
 

@@ -76,9 +76,8 @@ a longer timeout, or just exit.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/drain/internal/drain ~/go-exercises/drain/cmd/demo
-cd ~/go-exercises/drain
-go mod init example.com/drain
+mkdir -p go-solutions/16-concurrency-patterns/21-graceful-goroutine-draining/21-graceful-goroutine-draining/internal/drain go-solutions/16-concurrency-patterns/21-graceful-goroutine-draining/21-graceful-goroutine-draining/cmd/demo
+cd go-solutions/16-concurrency-patterns/21-graceful-goroutine-draining/21-graceful-goroutine-draining
 ```
 
 ### Exercise 1: The Pool

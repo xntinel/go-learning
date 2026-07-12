@@ -30,9 +30,8 @@ dtxpool/                     independent module: example.com/dtxpool
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/dtxpool/cmd/demo
-cd ~/go-exercises/dtxpool
-go mod init example.com/dtxpool
+mkdir -p go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/18-distributed-transaction-connection-pool-lifo-close/cmd/demo
+cd go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/18-distributed-transaction-connection-pool-lifo-close
 go mod edit -go=1.24
 ```
 

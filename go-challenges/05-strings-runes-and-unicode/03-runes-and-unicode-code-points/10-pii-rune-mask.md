@@ -52,9 +52,8 @@ three bytes — intact and valid.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/redact/internal/redact ~/go-exercises/redact/cmd/demo
-cd ~/go-exercises/redact
-go mod init example.com/redact
+mkdir -p go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/10-pii-rune-mask/internal/redact go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/10-pii-rune-mask/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/10-pii-rune-mask
 ```
 
 Create `internal/redact/redact.go`:

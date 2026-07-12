@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...` must pass; `gofmt -l` empty.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/fanout/cmd/demo
-cd ~/go-exercises/fanout
-go mod init example.com/fanout
+mkdir -p go-solutions/01-environment-and-tooling/01-your-first-go-program/06-race-detector-and-test-cache/cmd/demo
+cd go-solutions/01-environment-and-tooling/01-your-first-go-program/06-race-detector-and-test-cache
 ```
 
 ### The bug the race detector exists to find

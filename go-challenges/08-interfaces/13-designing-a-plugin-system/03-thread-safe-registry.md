@@ -29,9 +29,8 @@ saferegistry/             independent module: example.com/saferegistry
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/saferegistry/cmd/demo
-cd ~/go-exercises/saferegistry
-go mod init example.com/saferegistry
+mkdir -p go-solutions/08-interfaces/13-designing-a-plugin-system/03-thread-safe-registry/cmd/demo
+cd go-solutions/08-interfaces/13-designing-a-plugin-system/03-thread-safe-registry
 go mod edit -go=1.25
 ```
 

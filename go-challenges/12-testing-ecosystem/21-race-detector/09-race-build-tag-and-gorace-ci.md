@@ -38,9 +38,8 @@ Verify: `go test -count=1 -race ./...` (green); `go test -bench . -run '^$'`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/racemode/cmd/demo
-cd ~/go-exercises/racemode
-go mod init example.com/racemode
+mkdir -p go-solutions/12-testing-ecosystem/21-race-detector/09-race-build-tag-and-gorace-ci/cmd/demo
+cd go-solutions/12-testing-ecosystem/21-race-detector/09-race-build-tag-and-gorace-ci
 ```
 
 ### The race build tag

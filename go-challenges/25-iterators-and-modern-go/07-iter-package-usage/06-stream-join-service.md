@@ -22,8 +22,7 @@ join_test.go         dedupe across sources, no-sources, and clean stop of every 
 Set up the module:
 
 ```bash
-mkdir -p stream-join-service/cmd/demo && cd stream-join-service
-go mod init example.com/stream-join-service
+mkdir -p go-solutions/25-iterators-and-modern-go/07-iter-package-usage/06-stream-join-service/cmd/demo && cd go-solutions/25-iterators-and-modern-go/07-iter-package-usage/06-stream-join-service
 ```
 
 ### Why a stream-join must pull, fan-in, and re-push

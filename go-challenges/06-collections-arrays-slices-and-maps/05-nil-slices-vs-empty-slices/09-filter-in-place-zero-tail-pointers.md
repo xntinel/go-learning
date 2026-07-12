@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/sessioncleanup/sessions ~/go-exercises/sessioncleanup/cmd/demo
-cd ~/go-exercises/sessioncleanup
-go mod init example.com/sessioncleanup
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/09-filter-in-place-zero-tail-pointers/sessions go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/09-filter-in-place-zero-tail-pointers/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/09-filter-in-place-zero-tail-pointers
 ```
 
 ### Filtering in place, and the leak it hides

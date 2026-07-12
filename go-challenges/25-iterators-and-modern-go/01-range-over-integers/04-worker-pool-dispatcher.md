@@ -22,8 +22,7 @@ pool_test.go         exactly-once under -race, order preservation, zero-workers,
 Set up the module:
 
 ```bash
-mkdir -p worker-pool-dispatcher/cmd/demo && cd worker-pool-dispatcher
-go mod init example.com/pool
+mkdir -p go-solutions/25-iterators-and-modern-go/01-range-over-integers/04-worker-pool-dispatcher/cmd/demo && cd go-solutions/25-iterators-and-modern-go/01-range-over-integers/04-worker-pool-dispatcher
 ```
 
 ### Why the pool is bounded, and how the parts fit together

@@ -29,9 +29,8 @@ optclient/                  independent module: example.com/optclient
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/optclient/cmd/demo
-cd ~/go-exercises/optclient
-go mod init example.com/optclient
+mkdir -p go-solutions/07-structs-and-methods/11-builder-pattern-for-complex-structs/02-functional-options-vs-builder/cmd/demo
+cd go-solutions/07-structs-and-methods/11-builder-pattern-for-complex-structs/02-functional-options-vs-builder
 ```
 
 ### Why options instead of a builder here

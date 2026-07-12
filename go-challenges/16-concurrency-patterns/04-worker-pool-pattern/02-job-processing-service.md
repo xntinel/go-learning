@@ -34,8 +34,7 @@ service_test.go          processes all jobs, counts success/failure, drains in-f
 Set up the module:
 
 ```bash
-mkdir -p job-processing-service/cmd/demo && cd job-processing-service
-go mod init example.com/job-processing-service
+mkdir -p go-solutions/16-concurrency-patterns/04-worker-pool-pattern/02-job-processing-service/cmd/demo && cd go-solutions/16-concurrency-patterns/04-worker-pool-pattern/02-job-processing-service
 ```
 
 ### The shutdown race, and the RWMutex that closes it

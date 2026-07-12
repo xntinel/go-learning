@@ -33,9 +33,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/bucketconfig/cmd/demo
-cd ~/go-exercises/bucketconfig
-go mod init example.com/bucketconfig
+mkdir -p go-solutions/02-variables-types-and-constants/08-untyped-constants-and-constant-expressions/07-rate-limiter-capacity-config/cmd/demo
+cd go-solutions/02-variables-types-and-constants/08-untyped-constants-and-constant-expressions/07-rate-limiter-capacity-config
 ```
 
 ### The refill interval is a derived constant, not a guess

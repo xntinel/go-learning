@@ -28,9 +28,8 @@ multipart/                   independent module: example.com/multipart
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/multipart/multipart ~/go-exercises/multipart/cmd/demo
-cd ~/go-exercises/multipart
-go mod init example.com/multipart
+mkdir -p go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/22-multipart-upload-abort-defer/multipart go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/22-multipart-upload-abort-defer/cmd/demo
+cd go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/22-multipart-upload-abort-defer
 go mod edit -go=1.24
 ```
 

@@ -27,9 +27,8 @@ Verify: `go test -count=1 -race ./... && go vet ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/repotrans/cmd/demo
-cd ~/go-exercises/repotrans
-go mod init example.com/repotrans
+mkdir -p go-solutions/10-error-handling/03-errors-is-and-errors-as/03-repository-driver-error-translation/cmd/demo
+cd go-solutions/10-error-handling/03-errors-is-and-errors-as/03-repository-driver-error-translation
 go mod edit -go=1.25
 ```
 

@@ -28,9 +28,8 @@ breaker/                    independent module: example.com/circuit-breaker-fall
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/breaker
-cd ~/go-exercises/breaker
-go mod init example.com/circuit-breaker-fallback-state-machine
+mkdir -p go-solutions/03-control-flow/01-if-else-and-init-statements/15-circuit-breaker-fallback-state-machine
+cd go-solutions/03-control-flow/01-if-else-and-init-statements/15-circuit-breaker-fallback-state-machine
 go mod edit -go=1.24
 ```
 

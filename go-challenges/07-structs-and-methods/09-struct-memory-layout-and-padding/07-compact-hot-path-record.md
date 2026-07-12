@@ -31,9 +31,8 @@ compactrecord/             independent module: example.com/compactrecord
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/compactrecord/cmd/demo
-cd ~/go-exercises/compactrecord
-go mod init example.com/compactrecord
+mkdir -p go-solutions/07-structs-and-methods/09-struct-memory-layout-and-padding/07-compact-hot-path-record/cmd/demo
+cd go-solutions/07-structs-and-methods/09-struct-memory-layout-and-padding/07-compact-hot-path-record
 ```
 
 ### What makes the naive record fat, and how the compact one slims it

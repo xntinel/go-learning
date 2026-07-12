@@ -29,9 +29,8 @@ zerosize/                  independent module: example.com/zerosize
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/zerosize/cmd/demo
-cd ~/go-exercises/zerosize
-go mod init example.com/zerosize
+mkdir -p go-solutions/07-structs-and-methods/09-struct-memory-layout-and-padding/09-empty-and-trailing-zero-size-fields/cmd/demo
+cd go-solutions/07-structs-and-methods/09-struct-memory-layout-and-padding/09-empty-and-trailing-zero-size-fields
 ```
 
 ### Zero-size types and why the last field is special

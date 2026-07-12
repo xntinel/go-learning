@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/allowlist/cmd/demo
-cd ~/go-exercises/allowlist
-go mod init example.com/allowlist
+mkdir -p go-solutions/05-strings-runes-and-unicode/05-strings-package/08-case-insensitive-header-lookup/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/05-strings-package/08-case-insensitive-header-lookup
 ```
 
 ### EqualFold for protocol tokens, and why not for identity

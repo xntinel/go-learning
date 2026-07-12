@@ -29,9 +29,8 @@ worker/                      module example.com/worker
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/worker/cmd/demo
-cd ~/go-exercises/worker
-go mod init example.com/worker
+mkdir -p go-solutions/03-control-flow/02-for-loops/07-graceful-shutdown-drain/cmd/demo
+cd go-solutions/03-control-flow/02-for-loops/07-graceful-shutdown-drain
 ```
 
 ### The two exits, and why the drain must be bounded

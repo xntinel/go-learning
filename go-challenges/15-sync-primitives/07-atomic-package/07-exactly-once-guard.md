@@ -29,9 +29,8 @@ doonce/                    independent module: example.com/doonce
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/doonce/cmd/demo
-cd ~/go-exercises/doonce
-go mod init example.com/doonce
+mkdir -p go-solutions/15-sync-primitives/07-atomic-package/07-exactly-once-guard/cmd/demo
+cd go-solutions/15-sync-primitives/07-atomic-package/07-exactly-once-guard
 ```
 
 ### CompareAndSwap as an exactly-once gate, and how it differs from sync.Once

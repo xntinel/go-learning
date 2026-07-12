@@ -30,9 +30,8 @@ apiclient/                 independent module: example.com/apiclient
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/apiclient/cmd/demo
-cd ~/go-exercises/apiclient
-go mod init example.com/apiclient
+mkdir -p go-solutions/11-packages-and-modules/02-exported-vs-unexported/08-constructor-enforced-invariant/cmd/demo
+cd go-solutions/11-packages-and-modules/02-exported-vs-unexported/08-constructor-enforced-invariant
 go mod edit -go=1.26
 ```
 

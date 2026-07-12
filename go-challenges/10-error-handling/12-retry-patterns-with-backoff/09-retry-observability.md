@@ -27,9 +27,8 @@ Test: a `slog.Handler` over a `bytes.Buffer` yields one record per attempt with 
 Verify: `go test -count=1 -race ./...`
 
 ```bash
-mkdir -p ~/go-exercises/retryobs/cmd/demo
-cd ~/go-exercises/retryobs
-go mod init example.com/retryobs
+mkdir -p go-solutions/10-error-handling/12-retry-patterns-with-backoff/09-retry-observability/cmd/demo
+cd go-solutions/10-error-handling/12-retry-patterns-with-backoff/09-retry-observability
 go mod edit -go=1.26
 ```
 

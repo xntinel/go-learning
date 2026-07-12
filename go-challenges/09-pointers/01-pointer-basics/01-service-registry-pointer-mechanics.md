@@ -29,9 +29,8 @@ registry/                  independent module: example.com/registry
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/registry/cmd/demo
-cd ~/go-exercises/registry
-go mod init example.com/registry
+mkdir -p go-solutions/09-pointers/01-pointer-basics/01-service-registry-pointer-mechanics/cmd/demo
+cd go-solutions/09-pointers/01-pointer-basics/01-service-registry-pointer-mechanics
 ```
 
 ### The five helpers and what each proves

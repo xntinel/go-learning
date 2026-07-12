@@ -33,9 +33,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/embedlog/cmd/demo
-cd ~/go-exercises/embedlog
-go mod init example.com/embedlog
+mkdir -p go-solutions/07-structs-and-methods/04-anonymous-structs-and-embedding/10-pointer-vs-value-embedding/cmd/demo
+cd go-solutions/07-structs-and-methods/04-anonymous-structs-and-embedding/10-pointer-vs-value-embedding
 ```
 
 ### Copy vs alias, and the nil trap

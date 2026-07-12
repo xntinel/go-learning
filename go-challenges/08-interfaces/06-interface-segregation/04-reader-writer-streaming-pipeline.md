@@ -27,9 +27,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/streamdigest/cmd/demo
-cd ~/go-exercises/streamdigest
-go mod init example.com/streamdigest
+mkdir -p go-solutions/08-interfaces/06-interface-segregation/04-reader-writer-streaming-pipeline/cmd/demo
+cd go-solutions/08-interfaces/06-interface-segregation/04-reader-writer-streaming-pipeline
 go mod edit -go=1.24
 ```
 

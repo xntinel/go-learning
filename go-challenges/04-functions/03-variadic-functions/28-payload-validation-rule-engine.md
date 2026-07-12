@@ -30,9 +30,8 @@ payloadval/                independent module: example.com/payloadval
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/payloadval/cmd/demo
-cd ~/go-exercises/payloadval
-go mod init example.com/payloadval
+mkdir -p go-solutions/04-functions/03-variadic-functions/28-payload-validation-rule-engine/cmd/demo
+cd go-solutions/04-functions/03-variadic-functions/28-payload-validation-rule-engine
 go mod edit -go=1.24
 ```
 

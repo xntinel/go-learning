@@ -26,9 +26,8 @@ rules/                       independent module: example.com/rules
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/rules
-cd ~/go-exercises/rules
-go mod init example.com/rules
+mkdir -p go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/13-rule-engine-config-pointer-mutation
+cd go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/13-rule-engine-config-pointer-mutation
 go mod edit -go=1.24
 ```
 

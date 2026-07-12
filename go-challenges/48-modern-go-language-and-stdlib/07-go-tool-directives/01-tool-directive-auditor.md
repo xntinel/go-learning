@@ -29,9 +29,8 @@ toolaudit/                    independent module: example.com/toolaudit
 Set up the module. The auditor depends on `golang.org/x/mod`:
 
 ```bash
-mkdir -p ~/go-exercises/toolaudit/cmd/demo
-cd ~/go-exercises/toolaudit
-go mod init example.com/toolaudit
+mkdir -p go-solutions/48-modern-go-language-and-stdlib/07-go-tool-directives/01-tool-directive-auditor/cmd/demo
+cd go-solutions/48-modern-go-language-and-stdlib/07-go-tool-directives/01-tool-directive-auditor
 go mod edit -go=1.25 -require=golang.org/x/mod@v0.37.0
 go mod tidy
 ```

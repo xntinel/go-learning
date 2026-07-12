@@ -23,8 +23,7 @@ example_test.go        runnable doc example for the periodic generator
 Set up the module:
 
 ```bash
-mkdir -p watermark-generators/cmd/demo && cd watermark-generators
-go mod init example.com/watermark-generators
+mkdir -p go-solutions/43-capstone-stream-processing-engine/04-watermarks-late-data/03-watermark-generators/cmd/demo && cd go-solutions/43-capstone-stream-processing-engine/04-watermarks-late-data/03-watermark-generators
 go mod edit -go=1.26
 ```
 

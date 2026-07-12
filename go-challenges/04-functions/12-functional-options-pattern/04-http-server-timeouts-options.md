@@ -32,9 +32,8 @@ httpserver/                      independent module: example.com/httpserver
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/httpserver/cmd/demo
-cd ~/go-exercises/httpserver
-go mod init example.com/httpserver
+mkdir -p go-solutions/04-functions/12-functional-options-pattern/04-http-server-timeouts-options/cmd/demo
+cd go-solutions/04-functions/12-functional-options-pattern/04-http-server-timeouts-options
 ```
 
 ### Options that enforce safe defaults for a dangerous zero value

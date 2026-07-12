@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/phasebudget/cmd/demo
-cd ~/go-exercises/phasebudget
-go mod init example.com/phasebudget
+mkdir -p go-solutions/14-select-and-context/11-graceful-shutdown-with-context/06-phase-timeout-budget-and-exit-code/cmd/demo
+cd go-solutions/14-select-and-context/11-graceful-shutdown-with-context/06-phase-timeout-budget-and-exit-code
 ```
 
 ## Why per-phase budgets and a named cause

@@ -30,9 +30,8 @@ chainmw/                   independent module: example.com/chainmw
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/chainmw/cmd/demo
-cd ~/go-exercises/chainmw
-go mod init example.com/chainmw
+mkdir -p go-solutions/04-functions/04-first-class-functions-and-closures/02-middleware-chain-compose/cmd/demo
+cd go-solutions/04-functions/04-first-class-functions-and-closures/02-middleware-chain-compose
 ```
 
 ### Folding functions into one function

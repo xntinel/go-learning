@@ -27,9 +27,8 @@ lookupfix/                  independent module: example.com/lookupfix
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/lookupfix/cmd/demo
-cd ~/go-exercises/lookupfix
-go mod init example.com/lookupfix
+mkdir -p go-solutions/04-functions/02-named-return-values/07-shadowed-named-return-bug/cmd/demo
+cd go-solutions/04-functions/02-named-return-values/07-shadowed-named-return-bug
 ```
 
 ### The bug: a `:=` in an inner block

@@ -30,9 +30,8 @@ readiness/                  independent module: example.com/readiness
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/readiness/cmd/demo
-cd ~/go-exercises/readiness
-go mod init example.com/readiness
+mkdir -p go-solutions/03-control-flow/01-if-else-and-init-statements/09-readiness-health-aggregator/cmd/demo
+cd go-solutions/03-control-flow/01-if-else-and-init-statements/09-readiness-health-aggregator
 ```
 
 ## Two shapes, chosen by what the caller needs

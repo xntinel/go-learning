@@ -26,9 +26,8 @@ pool/                     independent module: example.com/pool
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pool/cmd/demo
-cd ~/go-exercises/pool
-go mod init example.com/pool
+mkdir -p go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/07-diagnose-wedged-worker-pool/cmd/demo
+cd go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/07-diagnose-wedged-worker-pool
 ```
 
 ### The wedge, and the shape it makes

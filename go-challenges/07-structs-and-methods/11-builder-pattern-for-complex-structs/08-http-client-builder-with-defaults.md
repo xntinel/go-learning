@@ -29,9 +29,8 @@ clientbuild/                independent module: example.com/clientbuild
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/clientbuild/cmd/demo
-cd ~/go-exercises/clientbuild
-go mod init example.com/clientbuild
+mkdir -p go-solutions/07-structs-and-methods/11-builder-pattern-for-complex-structs/08-http-client-builder-with-defaults/cmd/demo
+cd go-solutions/07-structs-and-methods/11-builder-pattern-for-complex-structs/08-http-client-builder-with-defaults
 ```
 
 ### Why the timeout is tri-state but the pool defaults use cmp.Or

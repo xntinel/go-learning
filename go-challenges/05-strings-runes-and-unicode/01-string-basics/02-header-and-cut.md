@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/header/cmd/demo
-cd ~/go-exercises/header
-go mod init example.com/header
+mkdir -p go-solutions/05-strings-runes-and-unicode/01-string-basics/02-header-and-cut/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/01-string-basics/02-header-and-cut
 ```
 
 ## Why Cut and CutPrefix over SplitN and manual slicing

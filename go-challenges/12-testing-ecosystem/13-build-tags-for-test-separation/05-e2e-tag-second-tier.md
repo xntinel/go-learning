@@ -30,9 +30,8 @@ apismoke/                  independent module: example.com/apismoke
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/apismoke/cmd/demo
-cd ~/go-exercises/apismoke
-go mod init example.com/apismoke
+mkdir -p go-solutions/12-testing-ecosystem/13-build-tags-for-test-separation/05-e2e-tag-second-tier/cmd/demo
+cd go-solutions/12-testing-ecosystem/13-build-tags-for-test-separation/05-e2e-tag-second-tier
 go mod edit -go=1.26
 ```
 

@@ -29,9 +29,8 @@ readcache/                   independent module: example.com/readcache
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/readcache/cmd/demo
-cd ~/go-exercises/readcache
-go mod init example.com/readcache
+mkdir -p go-solutions/12-testing-ecosystem/12-t-cleanup-patterns/07-tb-shared-fixture/cmd/demo
+cd go-solutions/12-testing-ecosystem/12-t-cleanup-patterns/07-tb-shared-fixture
 go mod edit -go=1.24
 ```
 

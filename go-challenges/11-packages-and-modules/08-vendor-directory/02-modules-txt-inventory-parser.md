@@ -28,9 +28,8 @@ modtxt/                      independent module: example.com/modtxt
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/modtxt/cmd/demo
-cd ~/go-exercises/modtxt
-go mod init example.com/modtxt
+mkdir -p go-solutions/11-packages-and-modules/08-vendor-directory/02-modules-txt-inventory-parser/cmd/demo
+cd go-solutions/11-packages-and-modules/08-vendor-directory/02-modules-txt-inventory-parser
 ```
 
 ### The grammar of modules.txt

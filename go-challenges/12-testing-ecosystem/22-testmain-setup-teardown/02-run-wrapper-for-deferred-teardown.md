@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p runwrapper/cmd/demo
-cd runwrapper
-go mod init example.com/runwrapper
+mkdir -p go-solutions/12-testing-ecosystem/22-testmain-setup-teardown/02-run-wrapper-for-deferred-teardown/cmd/demo
+cd go-solutions/12-testing-ecosystem/22-testmain-setup-teardown/02-run-wrapper-for-deferred-teardown
 ```
 
 ### The bug, stated precisely

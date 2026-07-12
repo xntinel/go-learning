@@ -27,9 +27,8 @@ tokenbucket/                     independent module: example.com/tokenbucket
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/tokenbucket/cmd/demo
-cd ~/go-exercises/tokenbucket
-go mod init example.com/tokenbucket
+mkdir -p go-solutions/15-sync-primitives/11-lock-free-data-structures/05-cas-token-bucket-limiter/cmd/demo
+cd go-solutions/15-sync-primitives/11-lock-free-data-structures/05-cas-token-bucket-limiter
 ```
 
 ### The state is a value; the pointer is the variable

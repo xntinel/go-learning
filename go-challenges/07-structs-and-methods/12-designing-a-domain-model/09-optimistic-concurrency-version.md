@@ -29,9 +29,8 @@ versioned/                  independent module: example.com/versioned
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/versioned/cmd/demo
-cd ~/go-exercises/versioned
-go mod init example.com/versioned
+mkdir -p go-solutions/07-structs-and-methods/12-designing-a-domain-model/09-optimistic-concurrency-version/cmd/demo
+cd go-solutions/07-structs-and-methods/12-designing-a-domain-model/09-optimistic-concurrency-version
 ```
 
 ### The conditional update is the whole mechanism

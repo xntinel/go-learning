@@ -22,8 +22,7 @@ resource_test.go     forgotten-resource backstop, Close stops the cleanup, AddCl
 Set up the module:
 
 ```bash
-mkdir -p cleanup-backed-resource/cmd/demo && cd cleanup-backed-resource
-go mod init example.com/cleanup-backed-resource
+mkdir -p go-solutions/48-modern-go-language-and-stdlib/04-weak-pointers-and-runtime-cleanup/02-cleanup-backed-resource/cmd/demo && cd go-solutions/48-modern-go-language-and-stdlib/04-weak-pointers-and-runtime-cleanup/02-cleanup-backed-resource
 go mod edit -go=1.26
 ```
 

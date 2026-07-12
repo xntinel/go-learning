@@ -34,9 +34,8 @@ cmdrouter/                   independent module: example.com/cmdrouter
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cmdrouter/cmd/demo
-cd ~/go-exercises/cmdrouter
-go mod init example.com/cmdrouter
+mkdir -p go-solutions/03-control-flow/04-type-switch/07-command-router-worker/cmd/demo
+cd go-solutions/03-control-flow/04-type-switch/07-command-router-worker
 ```
 
 ## Type-switch dispatch versus a method on the command

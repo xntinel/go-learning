@@ -31,9 +31,8 @@ sloextremes/                   module example.com/sloextremes
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/sloextremes/cmd/demo
-cd ~/go-exercises/sloextremes
-go mod init example.com/sloextremes
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/09-slices-package/10-slo-extremes-max-min-func/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/09-slices-package/10-slo-extremes-max-min-func
 go mod edit -go=1.24
 ```
 

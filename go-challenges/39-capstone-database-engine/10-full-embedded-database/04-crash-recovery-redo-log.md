@@ -23,8 +23,7 @@ recovery_test.go     committed survives, uncommitted discarded, only-committed m
 Set up the module:
 
 ```bash
-mkdir -p crash-recovery/cmd/demo && cd crash-recovery
-go mod init example.com/crash-recovery
+mkdir -p go-solutions/39-capstone-database-engine/10-full-embedded-database/04-crash-recovery-redo-log/cmd/demo && cd go-solutions/39-capstone-database-engine/10-full-embedded-database/04-crash-recovery-redo-log
 ```
 
 ### Why the commit record is the single source of truth

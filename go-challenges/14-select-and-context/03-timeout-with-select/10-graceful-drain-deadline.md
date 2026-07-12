@@ -24,9 +24,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/draindeadline/cmd/demo
-cd ~/go-exercises/draindeadline
-go mod init example.com/pool
+mkdir -p go-solutions/14-select-and-context/03-timeout-with-select/10-graceful-drain-deadline/cmd/demo
+cd go-solutions/14-select-and-context/03-timeout-with-select/10-graceful-drain-deadline
 ```
 
 ### A WaitGroup surfaced through a channel

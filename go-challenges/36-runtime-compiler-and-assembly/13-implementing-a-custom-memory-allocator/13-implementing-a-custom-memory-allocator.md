@@ -99,9 +99,8 @@ Fragmentation ratio: `1 - float64(LargestFree) / float64(totalFreePayload)`. Zer
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/allocator/cmd/demo
-cd ~/go-exercises/allocator
-go mod init example.com/allocator
+mkdir -p go-solutions/36-runtime-compiler-and-assembly/13-implementing-a-custom-memory-allocator/13-implementing-a-custom-memory-allocator/cmd/demo
+cd go-solutions/36-runtime-compiler-and-assembly/13-implementing-a-custom-memory-allocator/13-implementing-a-custom-memory-allocator
 ```
 
 This is a library verified by `go test`, not by `go run`.

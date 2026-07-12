@@ -35,9 +35,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/checkedmoney/cmd/demo
-cd ~/go-exercises/checkedmoney
-go mod init example.com/checkedmoney
+mkdir -p go-solutions/02-variables-types-and-constants/07-numeric-precision-and-overflow/02-checked-add-multiply-arithmetic/cmd/demo
+cd go-solutions/02-variables-types-and-constants/07-numeric-precision-and-overflow/02-checked-add-multiply-arithmetic
 ```
 
 ### The two guards, and why they are written this way

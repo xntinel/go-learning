@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/permission-evaluator-callback-chain/cmd/demo
-cd ~/go-exercises/permission-evaluator-callback-chain
-go mod init example.com/permission-evaluator-callback-chain
+mkdir -p go-solutions/04-functions/06-function-types-and-callbacks/32-permission-evaluator-callback-chain/cmd/demo
+cd go-solutions/04-functions/06-function-types-and-callbacks/32-permission-evaluator-callback-chain
 go mod edit -go=1.24
 ```
 

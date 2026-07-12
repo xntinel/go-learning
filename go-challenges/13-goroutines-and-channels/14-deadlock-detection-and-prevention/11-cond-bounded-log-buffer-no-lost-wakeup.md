@@ -31,9 +31,8 @@ boundedbuf/                  independent module: example.com/boundedbuf
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/boundedbuf/cmd/demo
-cd ~/go-exercises/boundedbuf
-go mod init example.com/boundedbuf
+mkdir -p go-solutions/13-goroutines-and-channels/14-deadlock-detection-and-prevention/11-cond-bounded-log-buffer-no-lost-wakeup/cmd/demo
+cd go-solutions/13-goroutines-and-channels/14-deadlock-detection-and-prevention/11-cond-bounded-log-buffer-no-lost-wakeup
 go mod edit -go=1.26
 ```
 

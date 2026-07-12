@@ -30,9 +30,8 @@ orderrepo/                   independent module: example.com/orderrepo
 Set up the module and pull go-sqlmock:
 
 ```bash
-mkdir -p ~/go-exercises/orderrepo/cmd/demo
-cd ~/go-exercises/orderrepo
-go mod init example.com/orderrepo
+mkdir -p go-solutions/12-testing-ecosystem/08-mocking-with-interfaces/10-sqlmock-repository-layer/cmd/demo
+cd go-solutions/12-testing-ecosystem/08-mocking-with-interfaces/10-sqlmock-repository-layer
 go get github.com/DATA-DOG/go-sqlmock@latest
 ```
 

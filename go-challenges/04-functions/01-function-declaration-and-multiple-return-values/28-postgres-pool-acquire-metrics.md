@@ -34,9 +34,8 @@ pgpool/                     independent module: example.com/postgres-pool-acquir
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pgpool/cmd/demo
-cd ~/go-exercises/pgpool
-go mod init example.com/postgres-pool-acquire-metrics
+mkdir -p go-solutions/04-functions/01-function-declaration-and-multiple-return-values/28-postgres-pool-acquire-metrics/cmd/demo
+cd go-solutions/04-functions/01-function-declaration-and-multiple-return-values/28-postgres-pool-acquire-metrics
 go mod edit -go=1.24
 ```
 

@@ -88,9 +88,8 @@ the caller ever explicitly passing the ID to the log call.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/requestid/cmd/demo
-cd ~/go-exercises/requestid
-go mod init example.com/requestid
+mkdir -p go-solutions/30-production-patterns/05-request-id-propagation/05-request-id-propagation/cmd/demo
+cd go-solutions/30-production-patterns/05-request-id-propagation/05-request-id-propagation
 ```
 
 This is a library package. You verify it with `go test`.

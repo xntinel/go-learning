@@ -37,9 +37,8 @@ bloom/                        independent module: example.com/bloom-filter-dynam
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/bloom-filter-dynamic-hashfunc-finalization/cmd/demo
-cd ~/go-exercises/bloom-filter-dynamic-hashfunc-finalization
-go mod init example.com/bloom-filter-dynamic-hashfunc-finalization
+mkdir -p go-solutions/03-control-flow/07-defer-semantics-and-ordering/33-bloom-filter-dynamic-hashfunc-finalization/cmd/demo
+cd go-solutions/03-control-flow/07-defer-semantics-and-ordering/33-bloom-filter-dynamic-hashfunc-finalization
 go mod edit -go=1.24
 ```
 

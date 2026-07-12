@@ -43,9 +43,8 @@ depresolve/                   independent module: example.com/depresolve
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/depresolve/cmd/demo
-cd ~/go-exercises/depresolve
-go mod init example.com/depresolve
+mkdir -p go-solutions/04-functions/07-recursive-functions-and-stack-depth/24-semver-dependency-resolution-backtracking/cmd/demo
+cd go-solutions/04-functions/07-recursive-functions-and-stack-depth/24-semver-dependency-resolution-backtracking
 go mod edit -go=1.24
 ```
 

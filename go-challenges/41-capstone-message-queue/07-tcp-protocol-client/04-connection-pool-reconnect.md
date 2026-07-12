@@ -24,8 +24,7 @@ mqpool_test.go       reuse over loopback, broken-conn discard, backoff retry, ct
 Set up the module:
 
 ```bash
-mkdir -p mqpool/cmd/demo && cd mqpool
-go mod init example.com/mqpool
+mkdir -p go-solutions/41-capstone-message-queue/07-tcp-protocol-client/04-connection-pool-reconnect/cmd/demo && cd go-solutions/41-capstone-message-queue/07-tcp-protocol-client/04-connection-pool-reconnect
 ```
 
 ### Why bound the pool, and why backoff plus jitter on reconnect

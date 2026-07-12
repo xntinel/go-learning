@@ -30,9 +30,8 @@ classify/                  independent module: example.com/content-type-classifi
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/classify/cmd/demo
-cd ~/go-exercises/classify
-go mod init example.com/content-type-classifier
+mkdir -p go-solutions/03-control-flow/03-switch-statements/01-content-type-classifier/cmd/demo
+cd go-solutions/03-control-flow/03-switch-statements/01-content-type-classifier
 go mod edit -go=1.24
 ```
 

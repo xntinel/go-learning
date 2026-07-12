@@ -42,9 +42,8 @@ bloom-filter-existence-check/   independent module: example.com/bloom-filter-exi
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/bloom-filter-existence-check/cmd/demo
-cd ~/go-exercises/bloom-filter-existence-check
-go mod init example.com/bloom-filter-existence-check
+mkdir -p go-solutions/03-control-flow/04-type-switch/26-bloom-filter-existence-check/cmd/demo
+cd go-solutions/03-control-flow/04-type-switch/26-bloom-filter-existence-check
 go mod edit -go=1.24
 ```
 

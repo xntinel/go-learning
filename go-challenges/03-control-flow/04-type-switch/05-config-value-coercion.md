@@ -34,9 +34,8 @@ configcoerce/                independent module: example.com/configcoerce
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/configcoerce/cmd/demo
-cd ~/go-exercises/configcoerce
-go mod init example.com/configcoerce
+mkdir -p go-solutions/03-control-flow/04-type-switch/05-config-value-coercion/cmd/demo
+cd go-solutions/03-control-flow/04-type-switch/05-config-value-coercion
 ```
 
 ## One setting, many wire types

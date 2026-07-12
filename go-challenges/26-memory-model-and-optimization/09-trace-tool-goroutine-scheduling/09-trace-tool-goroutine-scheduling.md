@@ -33,9 +33,8 @@ The library below does not assert that one trace is always faster than another. 
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/tracepipe/cmd/demo
-cd ~/go-exercises/tracepipe
-go mod init tracepipe
+mkdir -p go-solutions/26-memory-model-and-optimization/09-trace-tool-goroutine-scheduling/09-trace-tool-goroutine-scheduling/cmd/demo
+cd go-solutions/26-memory-model-and-optimization/09-trace-tool-goroutine-scheduling/09-trace-tool-goroutine-scheduling
 ```
 
 This is a library package, not a `package main` exercise. The `cmd/demo` program is only a consumer of the exported API.

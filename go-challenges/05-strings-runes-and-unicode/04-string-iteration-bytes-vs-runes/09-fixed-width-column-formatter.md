@@ -26,9 +26,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/coltable/cmd/demo
-cd ~/go-exercises/coltable
-go mod init example.com/coltable
+mkdir -p go-solutions/05-strings-runes-and-unicode/04-string-iteration-bytes-vs-runes/09-fixed-width-column-formatter/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/04-string-iteration-bytes-vs-runes/09-fixed-width-column-formatter
 ```
 
 ### Pad by runes, and the myth about %-Ns

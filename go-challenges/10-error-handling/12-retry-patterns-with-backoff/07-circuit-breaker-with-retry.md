@@ -28,9 +28,8 @@ Test: N consecutive failures open it and freeze the op call count; advancing pas
 Verify: `go test -count=1 -race ./...`
 
 ```bash
-mkdir -p ~/go-exercises/breaker/cmd/demo
-cd ~/go-exercises/breaker
-go mod init example.com/breaker
+mkdir -p go-solutions/10-error-handling/12-retry-patterns-with-backoff/07-circuit-breaker-with-retry/cmd/demo
+cd go-solutions/10-error-handling/12-retry-patterns-with-backoff/07-circuit-breaker-with-retry
 go mod edit -go=1.26
 ```
 

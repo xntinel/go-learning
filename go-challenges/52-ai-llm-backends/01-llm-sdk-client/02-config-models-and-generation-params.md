@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/llmconfig/cmd/demo
-cd ~/go-exercises/llmconfig
-go mod init example.com/llmconfig
+mkdir -p go-solutions/52-ai-llm-backends/01-llm-sdk-client/02-config-models-and-generation-params/cmd/demo
+cd go-solutions/52-ai-llm-backends/01-llm-sdk-client/02-config-models-and-generation-params
 go get github.com/anthropics/anthropic-sdk-go@latest
 go get github.com/openai/openai-go/v3@latest
 ```

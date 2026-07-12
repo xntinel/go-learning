@@ -32,9 +32,8 @@ gateproof/                 independent module: example.com/gateproof
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/gateproof/cmd/demo
-cd ~/go-exercises/gateproof
-go mod init example.com/gateproof
+mkdir -p go-solutions/12-testing-ecosystem/13-build-tags-for-test-separation/03-run-and-verify-gates/cmd/demo
+cd go-solutions/12-testing-ecosystem/13-build-tags-for-test-separation/03-run-and-verify-gates
 ```
 
 ### Making the compile-time gate observable

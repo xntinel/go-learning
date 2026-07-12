@@ -28,9 +28,8 @@ broker/                      independent module: example.com/broker
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/broker/cmd/demo
-cd ~/go-exercises/broker
-go mod init example.com/broker
+mkdir -p go-solutions/13-goroutines-and-channels/02-channel-basics/06-safe-publish-after-close/cmd/demo
+cd go-solutions/13-goroutines-and-channels/02-channel-basics/06-safe-publish-after-close
 ```
 
 ### The whole difficulty is the shutdown race

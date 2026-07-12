@@ -67,9 +67,8 @@ falls back to `context.Canceled`, which the fallback branch handles.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cancelcause/cmd/demo
-cd ~/go-exercises/cancelcause
-go mod init example.com/cancelcause
+mkdir -p go-solutions/14-select-and-context/10-context-aware-database-queries/07-cancellation-cause-classifier/cmd/demo
+cd go-solutions/14-select-and-context/10-context-aware-database-queries/07-cancellation-cause-classifier
 go mod edit -go=1.25
 ```
 

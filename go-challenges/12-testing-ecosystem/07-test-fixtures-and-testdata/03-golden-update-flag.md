@@ -25,9 +25,8 @@ Verify: `go test -count=1 -race ./...`, and `go test -run TestRenderSummaryGolde
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/report/cmd/demo ~/go-exercises/report/testdata
-cd ~/go-exercises/report
-go mod init example.com/reportgold
+mkdir -p go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/03-golden-update-flag/cmd/demo go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/03-golden-update-flag/testdata
+cd go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/03-golden-update-flag
 ```
 
 ### The read/write asymmetry and why the diff must be reviewed

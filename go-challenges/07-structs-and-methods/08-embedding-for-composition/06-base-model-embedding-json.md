@@ -28,9 +28,8 @@ models/                    independent module: example.com/models
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/models/cmd/demo
-cd ~/go-exercises/models
-go mod init example.com/models
+mkdir -p go-solutions/07-structs-and-methods/08-embedding-for-composition/06-base-model-embedding-json/cmd/demo
+cd go-solutions/07-structs-and-methods/08-embedding-for-composition/06-base-model-embedding-json
 ```
 
 ### Flattening, shadowing, and forced nesting

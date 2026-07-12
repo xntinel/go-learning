@@ -23,8 +23,7 @@ ast_test.go          String() assertions across literals, infix, let, program
 Set up the module:
 
 ```bash
-mkdir -p core-ast-nodes/cmd/demo && cd core-ast-nodes
-go mod init example.com/core-ast-nodes
+mkdir -p go-solutions/40-capstone-language-interpreter/03-ast-representation/01-core-ast-nodes/cmd/demo && cd go-solutions/40-capstone-language-interpreter/03-ast-representation/01-core-ast-nodes
 ```
 
 ### Why marker interfaces, positions, and a canonical string form

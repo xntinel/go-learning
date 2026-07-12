@@ -78,9 +78,8 @@ parallel under the shared read lock; only the close is exclusive.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/workerpool/cmd/demo
-cd ~/go-exercises/workerpool
-go mod init example.com/workerpool
+mkdir -p go-solutions/13-goroutines-and-channels/10-signaling-with-closed-channels/02-broadcast-stop-to-worker-pool/cmd/demo
+cd go-solutions/13-goroutines-and-channels/10-signaling-with-closed-channels/02-broadcast-stop-to-worker-pool
 ```
 
 Create `pool.go`:

@@ -49,9 +49,8 @@ A new leader's log may diverge from a follower's log: the follower may have entr
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/raftlog/cmd/demo
-cd ~/go-exercises/raftlog
-go mod init example.com/raftlog
+mkdir -p go-solutions/37-distributed-systems-fundamentals/07-raft-log-replication/07-raft-log-replication/cmd/demo
+cd go-solutions/37-distributed-systems-fundamentals/07-raft-log-replication/07-raft-log-replication
 ```
 
 This is a library. You verify it with `go test`, not by running a program.

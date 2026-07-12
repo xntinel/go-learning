@@ -30,9 +30,8 @@ errcode/                    independent module: example.com/errcode
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/errcode/cmd/demo
-cd ~/go-exercises/errcode
-go mod init example.com/errcode
+mkdir -p go-solutions/07-structs-and-methods/10-implementing-stringer/09-go-generate-stringer/cmd/demo
+cd go-solutions/07-structs-and-methods/10-implementing-stringer/09-go-generate-stringer
 ```
 
 ### What stringer generates and why it is fast

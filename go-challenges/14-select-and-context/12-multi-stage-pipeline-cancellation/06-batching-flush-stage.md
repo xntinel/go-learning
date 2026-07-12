@@ -35,9 +35,8 @@ Set up the module. The timer-reset test drives virtual time under a
 `testing/synctest` bubble, which requires Go 1.25+, so pin the language version:
 
 ```bash
-mkdir -p ~/go-exercises/batch/cmd/demo
-cd ~/go-exercises/batch
-go mod init example.com/batch
+mkdir -p go-solutions/14-select-and-context/12-multi-stage-pipeline-cancellation/06-batching-flush-stage/cmd/demo
+cd go-solutions/14-select-and-context/12-multi-stage-pipeline-cancellation/06-batching-flush-stage
 go mod edit -go=1.25
 ```
 

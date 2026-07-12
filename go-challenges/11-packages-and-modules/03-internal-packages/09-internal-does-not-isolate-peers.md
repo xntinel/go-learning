@@ -28,9 +28,8 @@ peerprobe/                    module example.com/peerprobe
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/peerprobe/cmd/demo
-cd ~/go-exercises/peerprobe
-go mod init example.com/peerprobe
+mkdir -p go-solutions/11-packages-and-modules/03-internal-packages/09-internal-does-not-isolate-peers/cmd/demo
+cd go-solutions/11-packages-and-modules/03-internal-packages/09-internal-does-not-isolate-peers
 ```
 
 ### Why one shared internal does not isolate peers

@@ -34,9 +34,8 @@ ldapattr/                  independent module: example.com/ldap-directory-attrib
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ldapattr/cmd/demo
-cd ~/go-exercises/ldapattr
-go mod init example.com/ldap-directory-attribute-extract
+mkdir -p go-solutions/04-functions/01-function-declaration-and-multiple-return-values/27-ldap-directory-attribute-extract/cmd/demo
+cd go-solutions/04-functions/01-function-declaration-and-multiple-return-values/27-ldap-directory-attribute-extract
 go mod edit -go=1.24
 ```
 

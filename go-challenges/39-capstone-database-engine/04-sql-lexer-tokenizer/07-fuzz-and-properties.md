@@ -24,8 +24,7 @@ fuzz_test.go         never-panics fuzz + random property, two round-trip propert
 Set up the module:
 
 ```bash
-mkdir -p fuzz-and-properties/cmd/demo && cd fuzz-and-properties
-go mod init example.com/fuzz-and-properties
+mkdir -p go-solutions/39-capstone-database-engine/04-sql-lexer-tokenizer/07-fuzz-and-properties/cmd/demo && cd go-solutions/39-capstone-database-engine/04-sql-lexer-tokenizer/07-fuzz-and-properties
 ```
 
 ### Why fuzzing and properties, not just examples

@@ -21,9 +21,8 @@ Most production handlers are wrappers: they add fields, route levels, sample eve
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/slog-custom-handler
-cd ~/go-exercises/slog-custom-handler
-go mod init example.com/slogcustomhandler
+mkdir -p go-solutions/21-structured-logging-with-slog/06-custom-slog-handler/06-custom-slog-handler
+cd go-solutions/21-structured-logging-with-slog/06-custom-slog-handler/06-custom-slog-handler
 ```
 
 Edit `go.mod`:

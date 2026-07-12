@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/sessionstore/cmd/demo
-cd ~/go-exercises/sessionstore
-go mod init example.com/sessionstore
+mkdir -p go-solutions/07-structs-and-methods/03-methods-value-vs-pointer-receivers/09-map-element-addressability/cmd/demo
+cd go-solutions/07-structs-and-methods/03-methods-value-vs-pointer-receivers/09-map-element-addressability
 ```
 
 ### Why the map holds pointers

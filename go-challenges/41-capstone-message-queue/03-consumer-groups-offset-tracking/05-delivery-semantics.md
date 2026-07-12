@@ -22,8 +22,7 @@ delivery_test.go     lost-on-crash, redelivered-on-crash, clean run, resume-from
 Set up the module:
 
 ```bash
-mkdir -p delivery-semantics/cmd/demo && cd delivery-semantics
-go mod init example.com/delivery
+mkdir -p go-solutions/41-capstone-message-queue/03-consumer-groups-offset-tracking/05-delivery-semantics/cmd/demo && cd go-solutions/41-capstone-message-queue/03-consumer-groups-offset-tracking/05-delivery-semantics
 ```
 
 ### The vulnerable window between process and commit

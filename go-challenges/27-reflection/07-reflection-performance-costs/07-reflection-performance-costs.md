@@ -49,9 +49,8 @@ Reflection is not acceptable on the hot path when:
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/reflperf/cmd/demo
-cd ~/go-exercises/reflperf
-go mod init example.com/reflperf
+mkdir -p go-solutions/27-reflection/07-reflection-performance-costs/07-reflection-performance-costs/cmd/demo
+cd go-solutions/27-reflection/07-reflection-performance-costs/07-reflection-performance-costs
 ```
 
 ### Exercise 1: Field-Index Cache

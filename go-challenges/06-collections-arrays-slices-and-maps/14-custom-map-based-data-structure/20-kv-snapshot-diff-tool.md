@@ -58,9 +58,8 @@ kvdiff/                   module example.com/kvdiff
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/kvdiff
-cd ~/go-exercises/kvdiff
-go mod init example.com/kvdiff
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/14-custom-map-based-data-structure/20-kv-snapshot-diff-tool
+cd go-solutions/06-collections-arrays-slices-and-maps/14-custom-map-based-data-structure/20-kv-snapshot-diff-tool
 go mod edit -go=1.24
 ```
 

@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/patchprofile/cmd/demo
-cd ~/go-exercises/patchprofile
-go mod init example.com/patchprofile
+mkdir -p go-solutions/09-pointers/05-pointers-to-structs/02-patch-optional-pointer-fields/cmd/demo
+cd go-solutions/09-pointers/05-pointers-to-structs/02-patch-optional-pointer-fields
 ```
 
 ### The three-state problem, and why a pointer solves it

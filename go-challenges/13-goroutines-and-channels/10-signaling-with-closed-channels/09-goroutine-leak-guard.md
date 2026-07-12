@@ -60,9 +60,8 @@ alone would silently miss.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/leakguard/cmd/demo
-cd ~/go-exercises/leakguard
-go mod init example.com/leakguard
+mkdir -p go-solutions/13-goroutines-and-channels/10-signaling-with-closed-channels/09-goroutine-leak-guard/cmd/demo
+cd go-solutions/13-goroutines-and-channels/10-signaling-with-closed-channels/09-goroutine-leak-guard
 ```
 
 Create `manager.go`:

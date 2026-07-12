@@ -30,9 +30,8 @@ featureflag/                independent module: example.com/feature-flag-rule-ev
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/featureflag/cmd/demo
-cd ~/go-exercises/featureflag
-go mod init example.com/feature-flag-rule-evaluator
+mkdir -p go-solutions/03-control-flow/03-switch-statements/29-feature-flag-rule-evaluator/cmd/demo
+cd go-solutions/03-control-flow/03-switch-statements/29-feature-flag-rule-evaluator
 go mod edit -go=1.24
 ```
 

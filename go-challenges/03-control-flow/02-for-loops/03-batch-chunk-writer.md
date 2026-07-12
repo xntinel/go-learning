@@ -28,9 +28,8 @@ batch/                       module example.com/batch
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/batch/cmd/demo
-cd ~/go-exercises/batch
-go mod init example.com/batch
+mkdir -p go-solutions/03-control-flow/02-for-loops/03-batch-chunk-writer/cmd/demo
+cd go-solutions/03-control-flow/02-for-loops/03-batch-chunk-writer
 ```
 
 ### Why the final chunk is the whole problem

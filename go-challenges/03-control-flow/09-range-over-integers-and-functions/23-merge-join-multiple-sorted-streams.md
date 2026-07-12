@@ -31,9 +31,8 @@ Verify: `go test -count=1 ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/merge-join-multiple-sorted-streams/cmd/demo
-cd ~/go-exercises/merge-join-multiple-sorted-streams
-go mod init example.com/merge-join-multiple-sorted-streams
+mkdir -p go-solutions/03-control-flow/09-range-over-integers-and-functions/23-merge-join-multiple-sorted-streams/cmd/demo
+cd go-solutions/03-control-flow/09-range-over-integers-and-functions/23-merge-join-multiple-sorted-streams
 go mod edit -go=1.24
 ```
 

@@ -37,9 +37,8 @@ idxbuild/                     module example.com/idxbuild
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/idxbuild
-cd ~/go-exercises/idxbuild
-go mod init example.com/idxbuild
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/13-prealloc-map-index-build
+cd go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/13-prealloc-map-index-build
 go mod edit -go=1.24
 ```
 

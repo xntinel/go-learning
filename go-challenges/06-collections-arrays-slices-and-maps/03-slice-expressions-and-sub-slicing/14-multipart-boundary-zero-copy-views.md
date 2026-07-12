@@ -46,9 +46,8 @@ multipart/                  module example.com/multipart
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/multipart
-cd ~/go-exercises/multipart
-go mod init example.com/multipart
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/14-multipart-boundary-zero-copy-views
+cd go-solutions/06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/14-multipart-boundary-zero-copy-views
 go mod edit -go=1.24
 ```
 

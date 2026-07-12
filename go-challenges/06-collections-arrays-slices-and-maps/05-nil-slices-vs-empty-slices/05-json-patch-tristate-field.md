@@ -32,9 +32,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/patchprofile/profile ~/go-exercises/patchprofile/cmd/demo
-cd ~/go-exercises/patchprofile
-go mod init example.com/patchprofile
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/05-json-patch-tristate-field/profile go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/05-json-patch-tristate-field/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/05-json-patch-tristate-field
 ```
 
 ### Why a plain slice — and even a pointer — is not enough

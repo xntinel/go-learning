@@ -27,9 +27,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/hub/cmd/demo
-cd ~/go-exercises/hub
-go mod init example.com/hub
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/11-slice-memory-leaks/03-subscriber-registry-delete-zeroing/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/11-slice-memory-leaks/03-subscriber-registry-delete-zeroing
 go mod edit -go=1.24
 ```
 

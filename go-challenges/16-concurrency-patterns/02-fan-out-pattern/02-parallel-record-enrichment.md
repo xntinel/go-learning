@@ -22,8 +22,7 @@ enrich_test.go       order preservation, worker bound via a concurrency gauge, e
 Set up the module:
 
 ```bash
-mkdir -p parallel-enrichment/cmd/demo && cd parallel-enrichment
-go mod init example.com/parallel-enrichment
+mkdir -p go-solutions/16-concurrency-patterns/02-fan-out-pattern/02-parallel-record-enrichment/cmd/demo && cd go-solutions/16-concurrency-patterns/02-fan-out-pattern/02-parallel-record-enrichment
 ```
 
 ### Why an injected interface, ordered results, and joined errors

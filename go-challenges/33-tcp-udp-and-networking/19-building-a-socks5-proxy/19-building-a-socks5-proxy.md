@@ -88,9 +88,8 @@ are forwarded until both directions close.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/socks5/cmd/demo
-cd ~/go-exercises/socks5
-go mod init example.com/socks5
+mkdir -p go-solutions/33-tcp-udp-and-networking/19-building-a-socks5-proxy/19-building-a-socks5-proxy/cmd/demo
+cd go-solutions/33-tcp-udp-and-networking/19-building-a-socks5-proxy/19-building-a-socks5-proxy
 ```
 
 This is a library with a runnable demo. Verification is with `go test`.

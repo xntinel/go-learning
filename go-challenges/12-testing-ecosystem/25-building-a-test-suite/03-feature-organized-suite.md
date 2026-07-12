@@ -27,9 +27,8 @@ Verify: `go test -count=1 -race ./...` and `go test -run 'TestGet/expired' ./...
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/suite
-cd ~/go-exercises/suite
-go mod init example.com/suite
+mkdir -p go-solutions/12-testing-ecosystem/25-building-a-test-suite/03-feature-organized-suite
+cd go-solutions/12-testing-ecosystem/25-building-a-test-suite/03-feature-organized-suite
 ```
 
 ### The sharing decision that -race grades

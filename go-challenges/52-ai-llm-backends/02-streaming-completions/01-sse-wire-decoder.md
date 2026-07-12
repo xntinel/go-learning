@@ -31,9 +31,8 @@ ssedecode/                  independent module: example.com/ssedecode
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ssedecode/cmd/demo
-cd ~/go-exercises/ssedecode
-go mod init example.com/ssedecode
+mkdir -p go-solutions/52-ai-llm-backends/02-streaming-completions/01-sse-wire-decoder/cmd/demo
+cd go-solutions/52-ai-llm-backends/02-streaming-completions/01-sse-wire-decoder
 go mod edit -go=1.26
 ```
 

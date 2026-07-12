@@ -25,9 +25,8 @@ Use JSON tags so field names stay lowercase and predictable even if Go field nam
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/output-formatting
-cd ~/go-exercises/output-formatting
-go mod init example.com/outputformatting
+mkdir -p go-solutions/23-cli-applications/07-output-formatting/07-output-formatting
+cd go-solutions/23-cli-applications/07-output-formatting/07-output-formatting
 go mod edit -go=1.26
 ```
 

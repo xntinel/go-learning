@@ -34,9 +34,8 @@ Verify: `go test -count=1 -race ./...`, then `go test -bench=. -benchmem ./...`.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ratekey/cmd/demo
-cd ~/go-exercises/ratekey
-go mod init example.com/ratekey
+mkdir -p go-solutions/09-pointers/07-escape-analysis/09-zero-alloc-hotpath-guard/cmd/demo
+cd go-solutions/09-pointers/07-escape-analysis/09-zero-alloc-hotpath-guard
 ```
 
 ### Why a caller-owned buffer is the whole trick

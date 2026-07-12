@@ -26,9 +26,8 @@ Verify: `go test -race ./...` (`GOFLAGS=-mod=mod` to fetch go-git).
 Set up the module:
 
 ```bash
-mkdir -p gitdeliver/cmd/demo
-cd gitdeliver
-go mod init example.com/gitdeliver
+mkdir -p go-solutions/54-cloud-native-platform-and-orchestration/05-helm-and-gitops-patterns/03-git-delivery-idempotent-commit/cmd/demo
+cd go-solutions/54-cloud-native-platform-and-orchestration/05-helm-and-gitops-patterns/03-git-delivery-idempotent-commit
 go get github.com/go-git/go-git/v5@latest
 ```
 

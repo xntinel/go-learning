@@ -44,9 +44,8 @@ rulepublisher/                module example.com/rulepublisher
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/rulepublisher
-cd ~/go-exercises/rulepublisher
-go mod init example.com/rulepublisher
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/02-slices-creation-append-capacity/18-copy-on-write-snapshot-publisher
+cd go-solutions/06-collections-arrays-slices-and-maps/02-slices-creation-append-capacity/18-copy-on-write-snapshot-publisher
 go mod edit -go=1.24
 ```
 

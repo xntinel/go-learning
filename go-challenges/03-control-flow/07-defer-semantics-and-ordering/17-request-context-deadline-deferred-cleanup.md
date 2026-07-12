@@ -33,9 +33,8 @@ reqdeadline/                independent module: example.com/request-context-dead
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/request-context-deadline-deferred-cleanup/cmd/demo
-cd ~/go-exercises/request-context-deadline-deferred-cleanup
-go mod init example.com/request-context-deadline-deferred-cleanup
+mkdir -p go-solutions/03-control-flow/07-defer-semantics-and-ordering/17-request-context-deadline-deferred-cleanup/cmd/demo
+cd go-solutions/03-control-flow/07-defer-semantics-and-ordering/17-request-context-deadline-deferred-cleanup
 go mod edit -go=1.24
 ```
 

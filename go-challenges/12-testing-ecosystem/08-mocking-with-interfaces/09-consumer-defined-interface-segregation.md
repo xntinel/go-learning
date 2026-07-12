@@ -33,9 +33,8 @@ blobsvc/                     independent module: example.com/blobsvc
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/blobsvc/sdk ~/go-exercises/blobsvc/archive ~/go-exercises/blobsvc/cmd/demo
-cd ~/go-exercises/blobsvc
-go mod init example.com/blobsvc
+mkdir -p go-solutions/12-testing-ecosystem/08-mocking-with-interfaces/09-consumer-defined-interface-segregation/sdk go-solutions/12-testing-ecosystem/08-mocking-with-interfaces/09-consumer-defined-interface-segregation/archive go-solutions/12-testing-ecosystem/08-mocking-with-interfaces/09-consumer-defined-interface-segregation/cmd/demo
+cd go-solutions/12-testing-ecosystem/08-mocking-with-interfaces/09-consumer-defined-interface-segregation
 ```
 
 ### The fat SDK you do not own

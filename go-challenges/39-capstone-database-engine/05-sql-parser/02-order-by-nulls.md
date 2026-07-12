@@ -28,8 +28,7 @@ orderby/
 Set up the module:
 
 ```bash
-mkdir -p orderby/lexer orderby/cmd/demo && cd orderby
-go mod init example.com/orderby
+mkdir -p go-solutions/39-capstone-database-engine/05-sql-parser/02-order-by-nulls/lexer go-solutions/39-capstone-database-engine/05-sql-parser/02-order-by-nulls/cmd/demo && cd go-solutions/39-capstone-database-engine/05-sql-parser/02-order-by-nulls
 ```
 
 ### Why a separate clause parser, and why it reuses the Pratt engine

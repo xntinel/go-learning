@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p leakgate/cmd/demo
-cd leakgate
-go mod init example.com/leakgate
+mkdir -p go-solutions/12-testing-ecosystem/22-testmain-setup-teardown/09-goroutine-leak-gate-after-run/cmd/demo
+cd go-solutions/12-testing-ecosystem/22-testmain-setup-teardown/09-goroutine-leak-gate-after-run
 ```
 
 ### How the gate works, and why it must settle

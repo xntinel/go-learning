@@ -24,9 +24,8 @@ sandbox/                    independent module: example.com/sandbox
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/sandbox/sandbox
-cd ~/go-exercises/sandbox
-go mod init example.com/sandbox
+mkdir -p go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/10-sandbox-acquire-static-defer-unwind/sandbox
+cd go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/10-sandbox-acquire-static-defer-unwind
 go mod edit -go=1.24
 ```
 

@@ -23,8 +23,7 @@ strategy_test.go     per-strategy math, tier ordering, runtime swap, accessor
 Set up the module:
 
 ```bash
-mkdir -p strategy-via-interfaces/cmd/demo && cd strategy-via-interfaces
-go mod init example.com/pricing-strategy
+mkdir -p go-solutions/24-design-patterns-in-go/03-strategy-pattern-via-interfaces/01-strategy-via-interfaces/cmd/demo && cd go-solutions/24-design-patterns-in-go/03-strategy-pattern-via-interfaces/01-strategy-via-interfaces
 ```
 
 ### The interface is the family contract

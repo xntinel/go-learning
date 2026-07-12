@@ -30,9 +30,8 @@ weighted/                   independent module: example.com/weighted
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/weighted/cmd/demo
-cd ~/go-exercises/weighted
-go mod init example.com/weighted
+mkdir -p go-solutions/13-goroutines-and-channels/12-channel-patterns-semaphore-barrier/05-weighted-semaphore-cost-aware/cmd/demo
+cd go-solutions/13-goroutines-and-channels/12-channel-patterns-semaphore-barrier/05-weighted-semaphore-cost-aware
 go mod edit -go=1.26
 go get golang.org/x/sync/semaphore
 ```

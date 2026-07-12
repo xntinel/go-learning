@@ -27,9 +27,8 @@ tscache/                    independent module: example.com/tscache
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/tscache/cmd/demo
-cd ~/go-exercises/tscache
-go mod init example.com/tscache
+mkdir -p go-solutions/08-interfaces/12-interface-pollution-anti-patterns/09-generics-over-boxed-interface/cmd/demo
+cd go-solutions/08-interfaces/12-interface-pollution-anti-patterns/09-generics-over-boxed-interface
 ```
 
 ### Why a type parameter, not an interface

@@ -26,9 +26,8 @@ auditmw/                   independent module: example.com/auditmw
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/auditmw/cmd/demo
-cd ~/go-exercises/auditmw
-go mod init example.com/auditmw
+mkdir -p go-solutions/08-interfaces/07-nil-interface-values/09-middleware-optional-hook/cmd/demo
+cd go-solutions/08-interfaces/07-nil-interface-values/09-middleware-optional-hook
 ```
 
 ### Why normalize the hook, and why wrap the ResponseWriter

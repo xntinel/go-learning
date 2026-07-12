@@ -32,9 +32,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/tablegold/cmd/demo ~/go-exercises/tablegold/testdata
-cd ~/go-exercises/tablegold
-go mod init example.com/tablegold
+mkdir -p go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/08-table-driven-golden/cmd/demo go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/08-table-driven-golden/testdata
+cd go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/08-table-driven-golden
 ```
 
 ### One row, one golden, one subtest

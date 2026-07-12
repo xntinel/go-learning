@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/etl/cmd/demo
-cd ~/go-exercises/etl
-go mod init example.com/etl
+mkdir -p go-solutions/13-goroutines-and-channels/04-channel-direction/01-streaming-etl-pipeline/cmd/demo
+cd go-solutions/13-goroutines-and-channels/04-channel-direction/01-streaming-etl-pipeline
 ```
 
 ### Why direction on every stage

@@ -31,9 +31,8 @@ retriever/                   independent module: example.com/retriever
 Set up the module:
 
 ```bash
-mkdir -p ~/rag-exercises/retriever/cmd/demo
-cd ~/rag-exercises/retriever
-go mod init example.com/retriever
+mkdir -p go-solutions/52-ai-llm-backends/05-rag-pipeline/02-retriever/cmd/demo
+cd go-solutions/52-ai-llm-backends/05-rag-pipeline/02-retriever
 go mod edit -go=1.26
 ```
 

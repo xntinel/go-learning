@@ -35,9 +35,8 @@ tokenbucket/                 independent module: example.com/token-bucket-refill
 - Verify: `go test -count=1 -race ./...`.
 
 ```bash
-mkdir -p ~/go-exercises/token-bucket-refill-concurrent-race/cmd/demo
-cd ~/go-exercises/token-bucket-refill-concurrent-race
-go mod init example.com/token-bucket-refill-concurrent-race
+mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/27-token-bucket-refill-concurrent-race/cmd/demo
+cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/27-token-bucket-refill-concurrent-race
 ```
 
 ### Why an unguarded refill can hand back capacity a request already spent

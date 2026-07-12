@@ -82,9 +82,8 @@ if err != nil {
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/tcpserver/cmd/demo
-cd ~/go-exercises/tcpserver
-go mod init example.com/tcpserver
+mkdir -p go-solutions/33-tcp-udp-and-networking/03-concurrent-tcp-server/03-concurrent-tcp-server/cmd/demo
+cd go-solutions/33-tcp-udp-and-networking/03-concurrent-tcp-server/03-concurrent-tcp-server
 ```
 
 ### Exercise 1: The Server Core

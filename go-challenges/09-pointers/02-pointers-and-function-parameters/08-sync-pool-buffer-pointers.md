@@ -29,9 +29,8 @@ encoder/                    independent module: example.com/encoder
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/encoder/cmd/demo
-cd ~/go-exercises/encoder
-go mod init example.com/encoder
+mkdir -p go-solutions/09-pointers/02-pointers-and-function-parameters/08-sync-pool-buffer-pointers/cmd/demo
+cd go-solutions/09-pointers/02-pointers-and-function-parameters/08-sync-pool-buffer-pointers
 ```
 
 ### Why the pool holds pointers and Reset matters

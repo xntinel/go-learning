@@ -27,9 +27,8 @@ drain/                      independent module: example.com/drain
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/drain/cmd/demo
-cd ~/go-exercises/drain
-go mod init example.com/drain
+mkdir -p go-solutions/15-sync-primitives/06-sync-cond/05-drain-barrier/cmd/demo
+cd go-solutions/15-sync-primitives/06-sync-cond/05-drain-barrier
 ```
 
 ### One mutex, two roles: admission gate and zero-crossing barrier

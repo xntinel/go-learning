@@ -33,9 +33,8 @@ breaker/                      module example.com/breaker
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/breaker/cmd/demo
-cd ~/go-exercises/breaker
-go mod init example.com/breaker
+mkdir -p go-solutions/03-control-flow/02-for-loops/16-circuit-breaker-exponential-reset/cmd/demo
+cd go-solutions/03-control-flow/02-for-loops/16-circuit-breaker-exponential-reset
 go mod edit -go=1.24
 ```
 

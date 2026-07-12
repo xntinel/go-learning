@@ -27,8 +27,7 @@ server_test.go       a real TCP round-trip, per-connection state isolation, grac
 Set up the module:
 
 ```bash
-mkdir -p pgserver/cmd/demo && cd pgserver
-go mod init example.com/pgserver
+mkdir -p go-solutions/39-capstone-database-engine/09-network-protocol/03-concurrent-tcp-server/cmd/demo && cd go-solutions/39-capstone-database-engine/09-network-protocol/03-concurrent-tcp-server
 ```
 
 ### How the server stays correct under concurrency

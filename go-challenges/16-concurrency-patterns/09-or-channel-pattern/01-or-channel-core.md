@@ -22,8 +22,7 @@ orchann_test.go      zero/one/nil inputs, first-fires, race close-once, recursiv
 Set up the module:
 
 ```bash
-mkdir -p or-channel-core/cmd/demo && cd or-channel-core
-go mod init example.com/or-channel-core
+mkdir -p go-solutions/16-concurrency-patterns/09-or-channel-pattern/01-or-channel-core/cmd/demo && cd go-solutions/16-concurrency-patterns/09-or-channel-pattern/01-or-channel-core
 ```
 
 ### Why two forms, and the exactly-once close

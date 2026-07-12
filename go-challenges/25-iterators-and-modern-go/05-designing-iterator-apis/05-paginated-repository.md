@@ -22,8 +22,7 @@ repo_test.go         multi-page traversal yields every item; a mid-stream fetch 
 Set up the module:
 
 ```bash
-mkdir -p repo/cmd/demo && cd repo
-go mod init example.com/repo
+mkdir -p go-solutions/25-iterators-and-modern-go/05-designing-iterator-apis/05-paginated-repository/cmd/demo && cd go-solutions/25-iterators-and-modern-go/05-designing-iterator-apis/05-paginated-repository
 ```
 
 ### One iterator that hides the cursor loop

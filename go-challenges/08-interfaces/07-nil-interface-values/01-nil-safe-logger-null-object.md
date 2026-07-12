@@ -25,9 +25,8 @@ nillog/                    independent module: example.com/nillog
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/nillog/cmd/demo
-cd ~/go-exercises/nillog
-go mod init example.com/nillog
+mkdir -p go-solutions/08-interfaces/07-nil-interface-values/01-nil-safe-logger-null-object/cmd/demo
+cd go-solutions/08-interfaces/07-nil-interface-values/01-nil-safe-logger-null-object
 ```
 
 ### Why the constructor is the only place that touches nil

@@ -60,9 +60,8 @@ Health state is read by HTTP handler goroutines and written by application gorou
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/health/cmd/demo
-cd ~/go-exercises/health
-go mod init example.com/health
+mkdir -p go-solutions/31-cloud-native-go/09-container-health-checks/09-container-health-checks/cmd/demo
+cd go-solutions/31-cloud-native-go/09-container-health-checks/09-container-health-checks
 ```
 
 This is a library, not a program: the package is `package health`, verified with `go test`.

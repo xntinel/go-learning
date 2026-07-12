@@ -36,9 +36,8 @@ reloadcfg/                   independent module: example.com/reloadcfg
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/reloadcfg/cmd/demo
-cd ~/go-exercises/reloadcfg
-go mod init example.com/reloadcfg
+mkdir -p go-solutions/12-testing-ecosystem/11-testing-filesystems-with-fstest/09-modtime-hot-reload-cache/cmd/demo
+cd go-solutions/12-testing-ecosystem/11-testing-filesystems-with-fstest/09-modtime-hot-reload-cache
 ```
 
 ### ModTime is the reload trigger; make it an explicit value

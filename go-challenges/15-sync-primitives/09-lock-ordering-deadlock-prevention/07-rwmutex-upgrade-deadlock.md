@@ -32,9 +32,8 @@ flagcache/                 independent module: example.com/flagcache
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/flagcache/cmd/demo
-cd ~/go-exercises/flagcache
-go mod init example.com/flagcache
+mkdir -p go-solutions/15-sync-primitives/09-lock-ordering-deadlock-prevention/07-rwmutex-upgrade-deadlock/cmd/demo
+cd go-solutions/15-sync-primitives/09-lock-ordering-deadlock-prevention/07-rwmutex-upgrade-deadlock
 ```
 
 ### Why there is no upgrade, and what to do instead

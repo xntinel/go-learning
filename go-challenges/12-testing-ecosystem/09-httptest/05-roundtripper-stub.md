@@ -28,9 +28,8 @@ retryclient/                    independent module: example.com/roundtripper-stu
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/retryclient/cmd/demo
-cd ~/go-exercises/retryclient
-go mod init example.com/roundtripper-stub
+mkdir -p go-solutions/12-testing-ecosystem/09-httptest/05-roundtripper-stub/cmd/demo
+cd go-solutions/12-testing-ecosystem/09-httptest/05-roundtripper-stub
 ```
 
 ### The transport seam and when to use it

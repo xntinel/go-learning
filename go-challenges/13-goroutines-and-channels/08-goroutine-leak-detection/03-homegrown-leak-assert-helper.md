@@ -29,9 +29,8 @@ leakassert/                  independent module: example.com/leakassert
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/leakassert/cmd/demo
-cd ~/go-exercises/leakassert
-go mod init example.com/leakassert
+mkdir -p go-solutions/13-goroutines-and-channels/08-goroutine-leak-detection/03-homegrown-leak-assert-helper/cmd/demo
+cd go-solutions/13-goroutines-and-channels/08-goroutine-leak-detection/03-homegrown-leak-assert-helper
 ```
 
 ### Why an interface instead of *testing.T

@@ -24,9 +24,8 @@ multisink/                  independent module: example.com/multisink
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/multisink/multisink
-cd ~/go-exercises/multisink
-go mod init example.com/multisink
+mkdir -p go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/13-multi-sink-close-errors-join/multisink
+cd go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/13-multi-sink-close-errors-join
 go mod edit -go=1.24
 ```
 

@@ -21,9 +21,8 @@ Configuration errors are operational errors. Include the line number and wrap a 
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/simpleyaml/cmd/demo
-cd ~/go-exercises/simpleyaml
-go mod init example.com/simpleyaml
+mkdir -p go-solutions/19-io-and-filesystem/09-yaml-parsing/09-yaml-parsing/cmd/demo
+cd go-solutions/19-io-and-filesystem/09-yaml-parsing/09-yaml-parsing
 ```
 
 ### Exercise 1: Implement A Flat YAML Loader

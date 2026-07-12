@@ -29,9 +29,8 @@ jsonbcol/                  independent module: example.com/jsonbcol
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/jsonbcol/cmd/demo
-cd ~/go-exercises/jsonbcol
-go mod init example.com/jsonbcol
+mkdir -p go-solutions/08-interfaces/02-empty-interface-and-any/04-sql-driver-valuer-scanner/cmd/demo
+cd go-solutions/08-interfaces/02-empty-interface-and-any/04-sql-driver-valuer-scanner
 go mod edit -go=1.26
 ```
 

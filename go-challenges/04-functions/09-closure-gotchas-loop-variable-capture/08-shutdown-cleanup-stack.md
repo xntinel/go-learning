@@ -27,9 +27,8 @@ shutdown/                    independent module: example.com/shutdown
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/shutdown/cmd/demo
-cd ~/go-exercises/shutdown
-go mod init example.com/shutdown
+mkdir -p go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/08-shutdown-cleanup-stack/cmd/demo
+cd go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/08-shutdown-cleanup-stack
 go mod edit -go=1.26
 ```
 

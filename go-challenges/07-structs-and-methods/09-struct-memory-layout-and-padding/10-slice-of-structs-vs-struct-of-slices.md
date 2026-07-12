@@ -30,9 +30,8 @@ aossoa/                    independent module: example.com/aossoa
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/aossoa/cmd/demo
-cd ~/go-exercises/aossoa
-go mod init example.com/aossoa
+mkdir -p go-solutions/07-structs-and-methods/09-struct-memory-layout-and-padding/10-slice-of-structs-vs-struct-of-slices/cmd/demo
+cd go-solutions/07-structs-and-methods/09-struct-memory-layout-and-padding/10-slice-of-structs-vs-struct-of-slices
 ```
 
 ### Why columnar helps a single-field scan

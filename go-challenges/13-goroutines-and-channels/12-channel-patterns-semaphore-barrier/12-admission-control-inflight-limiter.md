@@ -32,9 +32,8 @@ admission/                   independent module: example.com/admission
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/admission/cmd/demo
-cd ~/go-exercises/admission
-go mod init example.com/admission
+mkdir -p go-solutions/13-goroutines-and-channels/12-channel-patterns-semaphore-barrier/12-admission-control-inflight-limiter/cmd/demo
+cd go-solutions/13-goroutines-and-channels/12-channel-patterns-semaphore-barrier/12-admission-control-inflight-limiter
 go mod edit -go=1.26
 ```
 

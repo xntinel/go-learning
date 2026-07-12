@@ -53,9 +53,8 @@ walseq/                   module example.com/walseq
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/walseq
-cd ~/go-exercises/walseq
-go mod init example.com/walseq
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/11-slice-memory-leaks/13-wal-lazy-iter-seq-reader
+cd go-solutions/06-collections-arrays-slices-and-maps/11-slice-memory-leaks/13-wal-lazy-iter-seq-reader
 go mod edit -go=1.24
 ```
 

@@ -42,9 +42,8 @@ Each entry in `MultiError` is `fmt.Errorf("%s: %w", task, err)`. `errors.Is(merr
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/multi/internal/multierror ~/go-exercises/multi/cmd/multidemo
-cd ~/go-exercises/multi
-go mod init example.com/multi
+mkdir -p go-solutions/16-concurrency-patterns/17-error-group-parallel-error-handling/17-error-group-parallel-error-handling/internal/multierror go-solutions/16-concurrency-patterns/17-error-group-parallel-error-handling/17-error-group-parallel-error-handling/cmd/multidemo
+cd go-solutions/16-concurrency-patterns/17-error-group-parallel-error-handling/17-error-group-parallel-error-handling
 ```
 
 ### Exercise 1: Implement The MultiError

@@ -34,9 +34,8 @@ svcdiscovery/                independent module: example.com/dns-service-discove
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/svcdiscovery/cmd/demo
-cd ~/go-exercises/svcdiscovery
-go mod init example.com/dns-service-discovery-with-staleness
+mkdir -p go-solutions/03-control-flow/03-switch-statements/34-dns-service-discovery-with-staleness/cmd/demo
+cd go-solutions/03-control-flow/03-switch-statements/34-dns-service-discovery-with-staleness
 go mod edit -go=1.24
 ```
 

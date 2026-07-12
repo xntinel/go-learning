@@ -30,9 +30,8 @@ httpclient/                independent module: example.com/httpclient
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/httpclient/cmd/demo
-cd ~/go-exercises/httpclient
-go mod init example.com/httpclient
+mkdir -p go-solutions/11-packages-and-modules/02-exported-vs-unexported/06-functional-options-constructor/cmd/demo
+cd go-solutions/11-packages-and-modules/02-exported-vs-unexported/06-functional-options-constructor
 go mod edit -go=1.26
 ```
 

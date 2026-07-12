@@ -29,9 +29,8 @@ sloburn/                     independent module: example.com/sloburn
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/sloburn/cmd/demo
-cd ~/go-exercises/sloburn
-go mod init example.com/sloburn
+mkdir -p go-solutions/10-error-handling/14-error-observability/10-error-severity-slo-burn/cmd/demo
+cd go-solutions/10-error-handling/14-error-observability/10-error-severity-slo-burn
 go mod edit -go=1.25
 ```
 

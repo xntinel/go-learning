@@ -28,9 +28,8 @@ fakerepo/                    independent module: example.com/fakerepo
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/fakerepo/cmd/demo
-cd ~/go-exercises/fakerepo
-go mod init example.com/fakerepo
+mkdir -p go-solutions/08-interfaces/11-mock-interfaces-for-testing/03-fake-in-memory-repository/cmd/demo
+cd go-solutions/08-interfaces/11-mock-interfaces-for-testing/03-fake-in-memory-repository
 ```
 
 ### Why a fake, not a mock, for a repository

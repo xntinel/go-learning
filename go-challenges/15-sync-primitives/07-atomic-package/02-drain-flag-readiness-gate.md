@@ -28,9 +28,8 @@ draingate/                 independent module: example.com/draingate
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/draingate/cmd/demo
-cd ~/go-exercises/draingate
-go mod init example.com/draingate
+mkdir -p go-solutions/15-sync-primitives/07-atomic-package/02-drain-flag-readiness-gate/cmd/demo
+cd go-solutions/15-sync-primitives/07-atomic-package/02-drain-flag-readiness-gate
 ```
 
 ### Why CompareAndSwap for a one-shot flag

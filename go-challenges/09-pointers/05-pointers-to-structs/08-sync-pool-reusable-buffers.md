@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/poolencoder/cmd/demo
-cd ~/go-exercises/poolencoder
-go mod init example.com/poolencoder
+mkdir -p go-solutions/09-pointers/05-pointers-to-structs/08-sync-pool-reusable-buffers/cmd/demo
+cd go-solutions/09-pointers/05-pointers-to-structs/08-sync-pool-reusable-buffers
 ```
 
 ### The pooled-pointer lifecycle and why Reset and copy-out both matter

@@ -29,9 +29,8 @@ correlate/                   independent module: example.com/correlate
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/correlate/cmd/demo
-cd ~/go-exercises/correlate
-go mod init example.com/correlate
+mkdir -p go-solutions/04-functions/10-higher-order-functions/34-request-correlation-id-propagator/cmd/demo
+cd go-solutions/04-functions/10-higher-order-functions/34-request-correlation-id-propagator
 go mod edit -go=1.24
 ```
 

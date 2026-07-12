@@ -30,9 +30,8 @@ truncate/                 independent module: example.com/truncate
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/truncate/cmd/demo
-cd ~/go-exercises/truncate
-go mod init example.com/truncate
+mkdir -p go-solutions/05-strings-runes-and-unicode/10-building-a-text-processing-pipeline/08-rune-safe-length-truncation/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/10-building-a-text-processing-pipeline/08-rune-safe-length-truncation
 ```
 
 ### Cutting on a rune boundary, not a byte offset

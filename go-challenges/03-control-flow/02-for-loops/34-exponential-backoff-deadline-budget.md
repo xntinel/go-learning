@@ -34,9 +34,8 @@ backoff/                       module example.com/backoff
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/backoff/cmd/demo
-cd ~/go-exercises/backoff
-go mod init example.com/backoff
+mkdir -p go-solutions/03-control-flow/02-for-loops/34-exponential-backoff-deadline-budget/cmd/demo
+cd go-solutions/03-control-flow/02-for-loops/34-exponential-backoff-deadline-budget
 go mod edit -go=1.24
 ```
 

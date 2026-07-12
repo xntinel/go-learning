@@ -22,8 +22,7 @@ cmd/
 Set up the module:
 
 ```bash
-mkdir -p log-event-pipeline/cmd/demo && cd log-event-pipeline
-go mod init example.com/log-event-pipeline
+mkdir -p go-solutions/16-concurrency-patterns/01-pipeline-pattern/03-log-event-pipeline-draining/cmd/demo && cd go-solutions/16-concurrency-patterns/01-pipeline-pattern/03-log-event-pipeline-draining
 ```
 
 ### Drain, do not drop: the shutdown protocol

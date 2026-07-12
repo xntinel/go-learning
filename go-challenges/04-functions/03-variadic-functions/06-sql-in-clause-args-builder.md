@@ -28,9 +28,8 @@ inclause/                  independent module: example.com/inclause
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/inclause/cmd/demo
-cd ~/go-exercises/inclause
-go mod init example.com/inclause
+mkdir -p go-solutions/04-functions/03-variadic-functions/06-sql-in-clause-args-builder/cmd/demo
+cd go-solutions/04-functions/03-variadic-functions/06-sql-in-clause-args-builder
 go mod edit -go=1.25
 ```
 

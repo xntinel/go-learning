@@ -32,9 +32,8 @@ framedecoder/                  module example.com/framedecoder
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/framedecoder/cmd/demo
-cd ~/go-exercises/framedecoder
-go mod init example.com/framedecoder
+mkdir -p go-solutions/03-control-flow/02-for-loops/20-stream-frame-decoder-bounded/cmd/demo
+cd go-solutions/03-control-flow/02-for-loops/20-stream-frame-decoder-bounded
 go mod edit -go=1.24
 ```
 

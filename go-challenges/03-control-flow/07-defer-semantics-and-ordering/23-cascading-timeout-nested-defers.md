@@ -34,9 +34,8 @@ rpcchain/                   independent module: example.com/cascading-timeout-ne
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cascading-timeout-nested-defers/cmd/demo
-cd ~/go-exercises/cascading-timeout-nested-defers
-go mod init example.com/cascading-timeout-nested-defers
+mkdir -p go-solutions/03-control-flow/07-defer-semantics-and-ordering/23-cascading-timeout-nested-defers/cmd/demo
+cd go-solutions/03-control-flow/07-defer-semantics-and-ordering/23-cascading-timeout-nested-defers
 go mod edit -go=1.24
 ```
 

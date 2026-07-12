@@ -29,9 +29,8 @@ ttlcache/                   independent module: example.com/ttlcache
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ttlcache/cmd/demo
-cd ~/go-exercises/ttlcache
-go mod init example.com/ttlcache
+mkdir -p go-solutions/03-control-flow/01-if-else-and-init-statements/04-cache-comma-ok-ttl/cmd/demo
+cd go-solutions/03-control-flow/01-if-else-and-init-statements/04-cache-comma-ok-ttl
 ```
 
 ## Get is the comma-ok decision, and it is lazy

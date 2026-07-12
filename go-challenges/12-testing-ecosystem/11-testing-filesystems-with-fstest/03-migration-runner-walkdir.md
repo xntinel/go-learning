@@ -34,9 +34,8 @@ migrations/                  independent module: example.com/migrations
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/migrations/cmd/demo
-cd ~/go-exercises/migrations
-go mod init example.com/migrations
+mkdir -p go-solutions/12-testing-ecosystem/11-testing-filesystems-with-fstest/03-migration-runner-walkdir/cmd/demo
+cd go-solutions/12-testing-ecosystem/11-testing-filesystems-with-fstest/03-migration-runner-walkdir
 ```
 
 ### Why WalkDir, and where the errors hide

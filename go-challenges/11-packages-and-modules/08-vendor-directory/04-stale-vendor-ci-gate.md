@@ -30,9 +30,8 @@ vendorgate/                  independent module: example.com/vendorgate
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/vendorgate/cmd/demo
-cd ~/go-exercises/vendorgate
-go mod init example.com/vendorgate
+mkdir -p go-solutions/11-packages-and-modules/08-vendor-directory/04-stale-vendor-ci-gate/cmd/demo
+cd go-solutions/11-packages-and-modules/08-vendor-directory/04-stale-vendor-ci-gate
 go get golang.org/x/mod
 ```
 

@@ -23,9 +23,8 @@ cmd/
 Set up the module:
 
 ```bash
-mkdir -p module-cache/module module-cache/cmd/demo
-cd module-cache
-go mod init example.com/module-cache
+mkdir -p go-solutions/40-capstone-language-interpreter/08-full-interpreter-monkey/02-module-cache-circular-import/module go-solutions/40-capstone-language-interpreter/08-full-interpreter-monkey/02-module-cache-circular-import/cmd/demo
+cd go-solutions/40-capstone-language-interpreter/08-full-interpreter-monkey/02-module-cache-circular-import
 ```
 
 ### The three asymmetric rules

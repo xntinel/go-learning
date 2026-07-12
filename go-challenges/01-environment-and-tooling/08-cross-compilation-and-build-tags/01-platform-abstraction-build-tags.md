@@ -30,9 +30,8 @@ platformfact/                  module example.com/platformfact
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/platformfact/cmd/demo
-cd ~/go-exercises/platformfact
-go mod init example.com/platformfact
+mkdir -p go-solutions/01-environment-and-tooling/08-cross-compilation-and-build-tags/01-platform-abstraction-build-tags/cmd/demo
+cd go-solutions/01-environment-and-tooling/08-cross-compilation-and-build-tags/01-platform-abstraction-build-tags
 ```
 
 ### Why one symbol, four files, and a fallback

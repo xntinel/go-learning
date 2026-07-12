@@ -32,9 +32,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/bodylimit/cmd/demo
-cd ~/go-exercises/bodylimit
-go mod init example.com/bodylimit
+mkdir -p go-solutions/10-error-handling/10-error-handling-middleware/09-request-body-limit/cmd/demo
+cd go-solutions/10-error-handling/10-error-handling-middleware/09-request-body-limit
 ```
 
 ### Why bounding the body is not optional

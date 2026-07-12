@@ -22,8 +22,7 @@ ptwindow_test.go       synctest: two windows fire exactly, empty interval emits 
 Set up the module:
 
 ```bash
-mkdir -p processing-time-timers/cmd/demo && cd processing-time-timers
-go mod init example.com/ptwindow
+mkdir -p go-solutions/43-capstone-stream-processing-engine/03-windowing/04-processing-time-timers/cmd/demo && cd go-solutions/43-capstone-stream-processing-engine/03-windowing/04-processing-time-timers
 go mod edit -go=1.26
 ```
 

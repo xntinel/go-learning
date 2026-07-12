@@ -31,9 +31,8 @@ schema/                          independent module: example.com/schema-validato
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/schema/cmd/demo
-cd ~/go-exercises/schema
-go mod init example.com/schema-validator-rule-engine
+mkdir -p go-solutions/04-functions/12-functional-options-pattern/28-schema-validator-rule-engine/cmd/demo
+cd go-solutions/04-functions/12-functional-options-pattern/28-schema-validator-rule-engine
 go mod edit -go=1.24
 ```
 

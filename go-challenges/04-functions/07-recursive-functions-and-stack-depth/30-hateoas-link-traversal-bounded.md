@@ -41,9 +41,8 @@ hateoas/                      independent module: example.com/hateoas
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/hateoas/cmd/demo
-cd ~/go-exercises/hateoas
-go mod init example.com/hateoas
+mkdir -p go-solutions/04-functions/07-recursive-functions-and-stack-depth/30-hateoas-link-traversal-bounded/cmd/demo
+cd go-solutions/04-functions/07-recursive-functions-and-stack-depth/30-hateoas-link-traversal-bounded
 go mod edit -go=1.24
 ```
 

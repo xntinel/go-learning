@@ -29,9 +29,8 @@ joinshape/                 independent module: example.com/joinshape
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/joinshape/cmd/demo
-cd ~/go-exercises/joinshape
-go mod init example.com/joinshape
+mkdir -p go-solutions/10-error-handling/07-multiple-error-returns/02-joined-error-message-shape/cmd/demo
+cd go-solutions/10-error-handling/07-multiple-error-returns/02-joined-error-message-shape
 ```
 
 ### What the joined `Error()` guarantees, and what it does not

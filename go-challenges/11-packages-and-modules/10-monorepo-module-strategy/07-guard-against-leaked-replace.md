@@ -26,9 +26,8 @@ relguard/                     module: example.com/mono/relguard
 Set up the module. This one has a real dependency, so let `go` fetch it:
 
 ```bash
-mkdir -p ~/go-exercises/relguard/cmd/demo
-cd ~/go-exercises/relguard
-go mod init example.com/mono/relguard
+mkdir -p go-solutions/11-packages-and-modules/10-monorepo-module-strategy/07-guard-against-leaked-replace/cmd/demo
+cd go-solutions/11-packages-and-modules/10-monorepo-module-strategy/07-guard-against-leaked-replace
 go get golang.org/x/mod
 ```
 

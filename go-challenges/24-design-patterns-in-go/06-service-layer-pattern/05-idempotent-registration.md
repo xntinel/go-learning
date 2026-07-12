@@ -28,8 +28,7 @@ signup_test.go       validation, idempotent retry, conflict mapping, transport
 Set up the module:
 
 ```bash
-mkdir -p signup/cmd/demo && cd signup
-go mod init example.com/signup
+mkdir -p go-solutions/24-design-patterns-in-go/06-service-layer-pattern/05-idempotent-registration/cmd/demo && cd go-solutions/24-design-patterns-in-go/06-service-layer-pattern/05-idempotent-registration
 ```
 
 ### Four responsibilities at the public edge

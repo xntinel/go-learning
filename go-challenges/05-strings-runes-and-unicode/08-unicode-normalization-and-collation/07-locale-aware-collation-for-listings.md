@@ -27,9 +27,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/collatelist/cmd/demo
-cd ~/go-exercises/collatelist
-go mod init example.com/collatelist
+mkdir -p go-solutions/05-strings-runes-and-unicode/08-unicode-normalization-and-collation/07-locale-aware-collation-for-listings/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/08-unicode-normalization-and-collation/07-locale-aware-collation-for-listings
 go get golang.org/x/text/collate
 ```
 

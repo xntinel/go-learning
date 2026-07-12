@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/casematch/cmd/demo
-cd ~/go-exercises/casematch
-go mod init example.com/casematch
+mkdir -p go-solutions/05-strings-runes-and-unicode/01-string-basics/04-case-insensitive-lookup/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/01-string-basics/04-case-insensitive-lookup
 ```
 
 ## Why EqualFold, not ToLower, on the request path

@@ -28,9 +28,8 @@ seqgen/                    independent module: example.com/seqgen
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/seqgen/cmd/demo
-cd ~/go-exercises/seqgen
-go mod init example.com/seqgen
+mkdir -p go-solutions/15-sync-primitives/07-atomic-package/04-monotonic-sequence-generator/cmd/demo
+cd go-solutions/15-sync-primitives/07-atomic-package/04-monotonic-sequence-generator
 ```
 
 ### Why Add(1), and the double-generate bug it avoids

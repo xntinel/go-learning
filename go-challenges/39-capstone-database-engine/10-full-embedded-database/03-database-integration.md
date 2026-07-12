@@ -25,8 +25,7 @@ dbengine_test.go     mock subsystems + open/close, create, duplicate, drop, afte
 Set up the module:
 
 ```bash
-mkdir -p database-integration/cmd/demo && cd database-integration
-go mod init example.com/database-integration
+mkdir -p go-solutions/39-capstone-database-engine/10-full-embedded-database/03-database-integration/cmd/demo && cd go-solutions/39-capstone-database-engine/10-full-embedded-database/03-database-integration
 ```
 
 ### Why narrow interfaces, and why the order of operations in CreateTable is the whole point

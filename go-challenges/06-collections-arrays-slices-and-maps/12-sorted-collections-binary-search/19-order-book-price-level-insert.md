@@ -50,9 +50,8 @@ orderbook/                module example.com/orderbook
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/orderbook
-cd ~/go-exercises/orderbook
-go mod init example.com/orderbook
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/12-sorted-collections-binary-search/19-order-book-price-level-insert
+cd go-solutions/06-collections-arrays-slices-and-maps/12-sorted-collections-binary-search/19-order-book-price-level-insert
 go mod edit -go=1.24
 ```
 

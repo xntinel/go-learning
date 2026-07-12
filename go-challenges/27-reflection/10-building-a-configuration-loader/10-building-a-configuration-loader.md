@@ -61,9 +61,8 @@ A `*string` field that receives no value from any source stays `nil`. The `requi
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/configloader/cmd/demo
-cd ~/go-exercises/configloader
-go mod init example.com/configloader
+mkdir -p go-solutions/27-reflection/10-building-a-configuration-loader/10-building-a-configuration-loader/cmd/demo
+cd go-solutions/27-reflection/10-building-a-configuration-loader/10-building-a-configuration-loader
 ```
 
 ### Exercise 1: Provider Interface and Built-in Providers

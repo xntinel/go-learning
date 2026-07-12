@@ -31,9 +31,8 @@ fipsprovenance/              independent module: example.com/fipsprovenance
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/fipsprovenance/cmd/demo
-cd ~/go-exercises/fipsprovenance
-go mod init example.com/fipsprovenance
+mkdir -p go-solutions/49-application-security-crypto-supplychain/08-fips-140-3-mode/03-fips-build-attestation/cmd/demo
+cd go-solutions/49-application-security-crypto-supplychain/08-fips-140-3-mode/03-fips-build-attestation
 go mod edit -go=1.26
 ```
 

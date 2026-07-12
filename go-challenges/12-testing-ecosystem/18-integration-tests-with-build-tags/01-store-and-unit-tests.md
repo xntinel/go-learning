@@ -28,9 +28,8 @@ intgtest/                  independent module: example.com/intgtest
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/intgtest/cmd/demo
-cd ~/go-exercises/intgtest
-go mod init example.com/intgtest
+mkdir -p go-solutions/12-testing-ecosystem/18-integration-tests-with-build-tags/01-store-and-unit-tests/cmd/demo
+cd go-solutions/12-testing-ecosystem/18-integration-tests-with-build-tags/01-store-and-unit-tests
 ```
 
 ### Why the hermetic tier comes first

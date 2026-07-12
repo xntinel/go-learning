@@ -28,9 +28,8 @@ retry/                     independent module: example.com/retry
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/retry/cmd/demo
-cd ~/go-exercises/retry
-go mod init example.com/retry
+mkdir -p go-solutions/04-functions/04-first-class-functions-and-closures/04-retry-with-backoff-higher-order/cmd/demo
+cd go-solutions/04-functions/04-first-class-functions-and-closures/04-retry-with-backoff-higher-order
 ```
 
 ### The operation is a parameter, and so is time

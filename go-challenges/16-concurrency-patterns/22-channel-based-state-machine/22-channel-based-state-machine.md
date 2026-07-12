@@ -68,9 +68,8 @@ to stop a machine that is waiting for an event that never arrives.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/statemachine/internal/statemachine ~/go-exercises/statemachine/cmd/demo
-cd ~/go-exercises/statemachine
-go mod init example.com/statemachine
+mkdir -p go-solutions/16-concurrency-patterns/22-channel-based-state-machine/22-channel-based-state-machine/internal/statemachine go-solutions/16-concurrency-patterns/22-channel-based-state-machine/22-channel-based-state-machine/cmd/demo
+cd go-solutions/16-concurrency-patterns/22-channel-based-state-machine/22-channel-based-state-machine
 ```
 
 ### Exercise 1: Types and State Functions

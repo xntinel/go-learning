@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/bgtask/cmd/demo
-cd ~/go-exercises/bgtask
-go mod init example.com/bgtask
+mkdir -p go-solutions/10-error-handling/09-error-handling-in-goroutines/09-safe-background-task-sink/cmd/demo
+cd go-solutions/10-error-handling/09-error-handling-in-goroutines/09-safe-background-task-sink
 go mod edit -go=1.26
 ```
 

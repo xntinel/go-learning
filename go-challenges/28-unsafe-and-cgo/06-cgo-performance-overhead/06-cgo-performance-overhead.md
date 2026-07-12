@@ -60,9 +60,8 @@ Do not use cgo when:
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cgoperf
-cd ~/go-exercises/cgoperf
-go mod init cgoperf
+mkdir -p go-solutions/28-unsafe-and-cgo/06-cgo-performance-overhead/06-cgo-performance-overhead
+cd go-solutions/28-unsafe-and-cgo/06-cgo-performance-overhead/06-cgo-performance-overhead
 ```
 
 This module requires a C compiler (`gcc` or `clang`). Check availability:

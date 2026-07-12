@@ -35,9 +35,8 @@ publicstr/                       independent module: example.com/publicstr
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/publicstr/internal/normalize ~/go-exercises/publicstr/cmd/demo
-cd ~/go-exercises/publicstr
-go mod init example.com/publicstr
+mkdir -p go-solutions/11-packages-and-modules/09-designing-a-public-go-module/06-shrink-the-surface-with-internal-packages/internal/normalize go-solutions/11-packages-and-modules/09-designing-a-public-go-module/06-shrink-the-surface-with-internal-packages/cmd/demo
+cd go-solutions/11-packages-and-modules/09-designing-a-public-go-module/06-shrink-the-surface-with-internal-packages
 ```
 
 ### The internal/ rule, and why the smallest surface is the safest

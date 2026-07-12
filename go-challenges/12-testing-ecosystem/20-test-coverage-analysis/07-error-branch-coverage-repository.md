@@ -30,9 +30,8 @@ repo/                      independent module: example.com/repo
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/repo/cmd/demo
-cd ~/go-exercises/repo
-go mod init example.com/repo
+mkdir -p go-solutions/12-testing-ecosystem/20-test-coverage-analysis/07-error-branch-coverage-repository/cmd/demo
+cd go-solutions/12-testing-ecosystem/20-test-coverage-analysis/07-error-branch-coverage-repository
 ```
 
 ### The branches a happy-path test never sees

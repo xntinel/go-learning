@@ -50,9 +50,8 @@ transform allocates one buffer instead of one string per rune.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/slug/internal/slug ~/go-exercises/slug/cmd/demo
-cd ~/go-exercises/slug
-go mod init example.com/slug
+mkdir -p go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/01-slug-generator-code-point-loop/internal/slug go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/01-slug-generator-code-point-loop/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/01-slug-generator-code-point-loop
 ```
 
 Create `internal/slug/slug.go`:

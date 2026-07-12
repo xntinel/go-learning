@@ -102,9 +102,8 @@ Karn's algorithm: do not update the smoothed RTT estimate when retransmitting a 
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/netstack/cmd/demo
-cd ~/go-exercises/netstack
-go mod init example.com/netstack
+mkdir -p go-solutions/47-capstone-systems-and-kernel/09-custom-network-protocol-stack/09-custom-network-protocol-stack/cmd/demo
+cd go-solutions/47-capstone-systems-and-kernel/09-custom-network-protocol-stack/09-custom-network-protocol-stack
 ```
 
 This is a library with a demo binary. Verify with `go test`, not `go run`.

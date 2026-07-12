@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/signalshutdown/service ~/go-exercises/signalshutdown/cmd/demo
-cd ~/go-exercises/signalshutdown
-go mod init example.com/signalshutdown
+mkdir -p go-solutions/14-select-and-context/11-graceful-shutdown-with-context/04-signal-notify-context-shutdown/service go-solutions/14-select-and-context/11-graceful-shutdown-with-context/04-signal-notify-context-shutdown/cmd/demo
+cd go-solutions/14-select-and-context/11-graceful-shutdown-with-context/04-signal-notify-context-shutdown
 ```
 
 ## Why the shell/core split

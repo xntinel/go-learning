@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/apierr/cmd/demo
-cd ~/go-exercises/apierr
-go mod init example.com/apierr
+mkdir -p go-solutions/10-error-handling/04-custom-error-types/04-http-apierror-status-mapping/cmd/demo
+cd go-solutions/10-error-handling/04-custom-error-types/04-http-apierror-status-mapping
 go mod edit -go=1.24
 ```
 

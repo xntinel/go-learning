@@ -28,9 +28,8 @@ metrics/                     independent module: example.com/metrics
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/metrics/cmd/demo
-cd ~/go-exercises/metrics
-go mod init example.com/metrics
+mkdir -p go-solutions/13-goroutines-and-channels/02-channel-basics/08-graceful-drain-on-shutdown/cmd/demo
+cd go-solutions/13-goroutines-and-channels/02-channel-basics/08-graceful-drain-on-shutdown
 ```
 
 ### Close, then drain to completion

@@ -22,8 +22,7 @@ upgrade_test.go       S/U/X matrix + upgrade-deadlock-avoidance under -race
 Set up the module:
 
 ```bash
-mkdir -p update-lock/cmd/demo && cd update-lock
-go mod init example.com/update-lock
+mkdir -p go-solutions/39-capstone-database-engine/08-transaction-manager/03-update-lock/cmd/demo && cd go-solutions/39-capstone-database-engine/08-transaction-manager/03-update-lock
 ```
 
 ### Why a third mode fixes the symmetric upgrade

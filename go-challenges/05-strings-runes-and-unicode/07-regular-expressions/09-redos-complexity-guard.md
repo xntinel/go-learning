@@ -30,9 +30,8 @@ patternguard/               independent module: example.com/patternguard
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/patternguard/cmd/demo
-cd ~/go-exercises/patternguard
-go mod init example.com/patternguard
+mkdir -p go-solutions/05-strings-runes-and-unicode/07-regular-expressions/09-redos-complexity-guard/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/07-regular-expressions/09-redos-complexity-guard
 ```
 
 ### What RE2 gives you, and what it does not

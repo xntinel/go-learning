@@ -32,9 +32,8 @@ userloader/                  independent module: example.com/userloader
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/userloader/cmd/demo
-cd ~/go-exercises/userloader
-go mod init example.com/userloader
+mkdir -p go-solutions/51-rpc-and-api-design/05-graphql-dataloaders-n-plus-1/02-dataloadgen-loaders/cmd/demo
+cd go-solutions/51-rpc-and-api-design/05-graphql-dataloaders-n-plus-1/02-dataloadgen-loaders
 go mod edit -go=1.26
 go get github.com/vikstrous/dataloadgen@v0.0.10
 ```

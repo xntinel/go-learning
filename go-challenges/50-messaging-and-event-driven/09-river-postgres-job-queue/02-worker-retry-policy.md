@@ -33,9 +33,8 @@ retrytaxonomy/             independent module: example.com/retrytaxonomy
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/retrytaxonomy/cmd/demo
-cd ~/go-exercises/retrytaxonomy
-go mod init example.com/retrytaxonomy
+mkdir -p go-solutions/50-messaging-and-event-driven/09-river-postgres-job-queue/02-worker-retry-policy/cmd/demo
+cd go-solutions/50-messaging-and-event-driven/09-river-postgres-job-queue/02-worker-retry-policy
 go mod edit -go=1.24
 go get github.com/riverqueue/river
 go get github.com/riverqueue/river/riverdriver/riverpgxv5

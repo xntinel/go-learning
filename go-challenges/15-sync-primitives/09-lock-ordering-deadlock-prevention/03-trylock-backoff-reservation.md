@@ -36,9 +36,8 @@ stockreserve/              independent module: example.com/stockreserve
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/stockreserve/warehouse ~/go-exercises/stockreserve/cmd/demo
-cd ~/go-exercises/stockreserve
-go mod init example.com/stockreserve
+mkdir -p go-solutions/15-sync-primitives/09-lock-ordering-deadlock-prevention/03-trylock-backoff-reservation/warehouse go-solutions/15-sync-primitives/09-lock-ordering-deadlock-prevention/03-trylock-backoff-reservation/cmd/demo
+cd go-solutions/15-sync-primitives/09-lock-ordering-deadlock-prevention/03-trylock-backoff-reservation
 ```
 
 ### Breaking hold-and-wait instead of circular wait

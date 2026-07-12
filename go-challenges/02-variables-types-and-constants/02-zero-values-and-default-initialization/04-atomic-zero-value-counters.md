@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/metrics/cmd/demo
-cd ~/go-exercises/metrics
-go mod init example.com/metrics
+mkdir -p go-solutions/02-variables-types-and-constants/02-zero-values-and-default-initialization/04-atomic-zero-value-counters/cmd/demo
+cd go-solutions/02-variables-types-and-constants/02-zero-values-and-default-initialization/04-atomic-zero-value-counters
 ```
 
 ## Why the zero value is a working instrument — and must not be copied

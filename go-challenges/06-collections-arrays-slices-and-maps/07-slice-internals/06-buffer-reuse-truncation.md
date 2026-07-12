@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/writebatch/cmd/demo
-cd ~/go-exercises/writebatch
-go mod init example.com/writebatch
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/06-buffer-reuse-truncation/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/06-buffer-reuse-truncation
 ```
 
 ### Two resets that look the same and are opposite

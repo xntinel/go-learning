@@ -25,9 +25,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/teardown/cmd/demo
-cd ~/go-exercises/teardown
-go mod init example.com/teardown
+mkdir -p go-solutions/14-select-and-context/14-building-a-context-aware-service-framework/03-reverse-order-stop-with-budget/cmd/demo
+cd go-solutions/14-select-and-context/14-building-a-context-aware-service-framework/03-reverse-order-stop-with-budget
 ```
 
 ### Why reverse order, and why a fresh budget

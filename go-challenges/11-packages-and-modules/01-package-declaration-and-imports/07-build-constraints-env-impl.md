@@ -30,9 +30,8 @@ secretsource/                      module: example.com/secretsource
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/secretsource/secretsource ~/go-exercises/secretsource/cmd/demo
-cd ~/go-exercises/secretsource
-go mod init example.com/secretsource
+mkdir -p go-solutions/11-packages-and-modules/01-package-declaration-and-imports/07-build-constraints-env-impl/secretsource go-solutions/11-packages-and-modules/01-package-declaration-and-imports/07-build-constraints-env-impl/cmd/demo
+cd go-solutions/11-packages-and-modules/01-package-declaration-and-imports/07-build-constraints-env-impl
 go mod edit -go=1.26
 ```
 

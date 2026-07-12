@@ -30,9 +30,8 @@ config-cache/                        independent module: example.com/configcache
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/config-cache/cmd/demo
-cd ~/go-exercises/config-cache
-go mod init example.com/configcache
+mkdir -p go-solutions/14-select-and-context/05-context-withtimeout-withdeadline/09-cache-fallback-fast-timeout/cmd/demo
+cd go-solutions/14-select-and-context/05-context-withtimeout-withdeadline/09-cache-fallback-fast-timeout
 ```
 
 ### The short timeout that must not leak

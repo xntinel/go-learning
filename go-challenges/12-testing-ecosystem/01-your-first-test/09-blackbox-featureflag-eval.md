@@ -25,9 +25,8 @@ featureflag/               independent module: example.com/featureflag
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/featureflag/cmd/demo
-cd ~/go-exercises/featureflag
-go mod init example.com/featureflag
+mkdir -p go-solutions/12-testing-ecosystem/01-your-first-test/09-blackbox-featureflag-eval/cmd/demo
+cd go-solutions/12-testing-ecosystem/01-your-first-test/09-blackbox-featureflag-eval
 ```
 
 ### White-box versus black-box, as an API-design pressure

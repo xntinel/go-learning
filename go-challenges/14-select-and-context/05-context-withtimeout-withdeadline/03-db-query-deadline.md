@@ -31,9 +31,8 @@ user-repo/                           independent module: example.com/userrepo
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/user-repo/cmd/demo
-cd ~/go-exercises/user-repo
-go mod init example.com/userrepo
+mkdir -p go-solutions/14-select-and-context/05-context-withtimeout-withdeadline/03-db-query-deadline/cmd/demo
+cd go-solutions/14-select-and-context/05-context-withtimeout-withdeadline/03-db-query-deadline
 ```
 
 ### Why an interface instead of *sql.DB

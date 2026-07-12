@@ -29,9 +29,8 @@ feeacc/                     independent module: example.com/feeacc
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/feeacc/cmd/demo
-cd ~/go-exercises/feeacc
-go mod init example.com/feeacc
+mkdir -p go-solutions/04-functions/03-variadic-functions/25-transaction-fee-accumulator-rules/cmd/demo
+cd go-solutions/04-functions/03-variadic-functions/25-transaction-fee-accumulator-rules
 go mod edit -go=1.24
 ```
 

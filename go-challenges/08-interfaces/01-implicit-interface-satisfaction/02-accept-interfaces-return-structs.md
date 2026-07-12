@@ -31,9 +31,8 @@ usersvc/                      independent module: example.com/usersvc
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/usersvc/cmd/demo
-cd ~/go-exercises/usersvc
-go mod init example.com/usersvc
+mkdir -p go-solutions/08-interfaces/01-implicit-interface-satisfaction/02-accept-interfaces-return-structs/cmd/demo
+cd go-solutions/08-interfaces/01-implicit-interface-satisfaction/02-accept-interfaces-return-structs
 ```
 
 ### The seam: consumer declares the interface, producer returns a struct

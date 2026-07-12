@@ -22,8 +22,7 @@ session_test.go      rejection, happy path, concurrent pings under -race, termin
 Set up the module:
 
 ```bash
-mkdir -p session-lifecycle/cmd/demo && cd session-lifecycle
-go mod init example.com/session-lifecycle
+mkdir -p go-solutions/16-concurrency-patterns/22-channel-based-state-machine/02-session-lifecycle-owning-goroutine/cmd/demo && cd go-solutions/16-concurrency-patterns/22-channel-based-state-machine/02-session-lifecycle-owning-goroutine
 ```
 
 ### Why the state must not live in the struct

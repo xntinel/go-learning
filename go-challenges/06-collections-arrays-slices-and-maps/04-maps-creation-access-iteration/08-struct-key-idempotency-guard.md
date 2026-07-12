@@ -30,9 +30,8 @@ idemguard/                 independent module: example.com/idemguard
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/idemguard/cmd/demo
-cd ~/go-exercises/idemguard
-go mod init example.com/idemguard
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/08-struct-key-idempotency-guard/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/08-struct-key-idempotency-guard
 ```
 
 ### Why a struct key, and the comparability rule

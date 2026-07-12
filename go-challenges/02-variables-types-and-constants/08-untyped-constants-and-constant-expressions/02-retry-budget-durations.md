@@ -33,9 +33,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/retrybudget/cmd/demo
-cd ~/go-exercises/retrybudget
-go mod init example.com/retrybudget
+mkdir -p go-solutions/02-variables-types-and-constants/08-untyped-constants-and-constant-expressions/02-retry-budget-durations/cmd/demo
+cd go-solutions/02-variables-types-and-constants/08-untyped-constants-and-constant-expressions/02-retry-budget-durations
 ```
 
 ### Typed Duration constants are the contract

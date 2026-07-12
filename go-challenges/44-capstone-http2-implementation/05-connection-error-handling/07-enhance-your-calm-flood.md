@@ -22,8 +22,7 @@ calm_test.go           trips over budget, progress resets the counter, interleav
 Set up the module:
 
 ```bash
-mkdir -p enhance-your-calm/cmd/demo && cd enhance-your-calm
-go mod init example.com/enhance-your-calm
+mkdir -p go-solutions/44-capstone-http2-implementation/05-connection-error-handling/07-enhance-your-calm-flood/cmd/demo && cd go-solutions/44-capstone-http2-implementation/05-connection-error-handling/07-enhance-your-calm-flood
 go mod edit -go=1.26
 ```
 

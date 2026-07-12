@@ -29,9 +29,8 @@ bufrwc/                     independent module: example.com/bufrwc
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/bufrwc/cmd/demo
-cd ~/go-exercises/bufrwc
-go mod init example.com/bufrwc
+mkdir -p go-solutions/08-interfaces/05-interface-composition-and-embedding/09-buffered-readwritecloser/cmd/demo
+cd go-solutions/08-interfaces/05-interface-composition-and-embedding/09-buffered-readwritecloser
 ```
 
 ### Why Close order is a correctness property

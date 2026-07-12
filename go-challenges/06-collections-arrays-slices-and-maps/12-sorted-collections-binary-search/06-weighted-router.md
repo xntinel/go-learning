@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/weightedrouter/cmd/demo
-cd ~/go-exercises/weightedrouter
-go mod init example.com/weightedrouter
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/12-sorted-collections-binary-search/06-weighted-router/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/12-sorted-collections-binary-search/06-weighted-router
 ```
 
 ### Prefix sums turn weights into half-open buckets

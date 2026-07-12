@@ -43,9 +43,8 @@ The package uses `Loader.Value` to initialize a value once. All callers either r
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/hbstore/cmd/demo
-cd ~/go-exercises/hbstore
-go mod init hbstore
+mkdir -p go-solutions/26-memory-model-and-optimization/01-happens-before-relationships/01-happens-before-relationships/cmd/demo
+cd go-solutions/26-memory-model-and-optimization/01-happens-before-relationships/01-happens-before-relationships
 ```
 
 ### Exercise 1: Build The Synchronized Store

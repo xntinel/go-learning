@@ -30,9 +30,8 @@ drain/                      independent module: example.com/drain
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/drain/cmd/demo
-cd ~/go-exercises/drain
-go mod init example.com/drain
+mkdir -p go-solutions/13-goroutines-and-channels/12-channel-patterns-semaphore-barrier/09-drain-on-shutdown-semaphore/cmd/demo
+cd go-solutions/13-goroutines-and-channels/12-channel-patterns-semaphore-barrier/09-drain-on-shutdown-semaphore
 go mod edit -go=1.26
 go get golang.org/x/sync/semaphore
 ```

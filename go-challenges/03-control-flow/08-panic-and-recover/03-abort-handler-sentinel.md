@@ -32,9 +32,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/abortmw/cmd/demo
-cd ~/go-exercises/abortmw
-go mod init example.com/abortmw
+mkdir -p go-solutions/03-control-flow/08-panic-and-recover/03-abort-handler-sentinel/cmd/demo
+cd go-solutions/03-control-flow/08-panic-and-recover/03-abort-handler-sentinel
 ```
 
 ### Why re-panic instead of return

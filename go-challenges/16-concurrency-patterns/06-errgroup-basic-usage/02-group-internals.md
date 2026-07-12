@@ -22,8 +22,7 @@ group_test.go          all-succeed, returns-an-error-from-the-set, cancels-on-er
 Set up the module:
 
 ```bash
-mkdir -p group-internals/cmd/demo && cd group-internals
-go mod init example.com/group-internals
+mkdir -p go-solutions/16-concurrency-patterns/06-errgroup-basic-usage/02-group-internals/cmd/demo && cd go-solutions/16-concurrency-patterns/06-errgroup-basic-usage/02-group-internals
 ```
 
 ### How the three primitives combine

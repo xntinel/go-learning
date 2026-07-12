@@ -29,9 +29,8 @@ generator/                 independent module: example.com/generator
 Set up the module:
 
 ```bash
-mkdir -p generator/cmd/demo
-cd generator
-go mod init example.com/generator
+mkdir -p go-solutions/14-select-and-context/04-context-withcancel/02-context-aware-generator/cmd/demo
+cd go-solutions/14-select-and-context/04-context-withcancel/02-context-aware-generator
 ```
 
 ### Why the send must be a select

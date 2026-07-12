@@ -31,9 +31,8 @@ atomicwrite/                 independent module: example.com/atomicwrite
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/atomicwrite/cmd/demo
-cd ~/go-exercises/atomicwrite
-go mod init example.com/atomicwrite
+mkdir -p go-solutions/03-control-flow/07-defer-semantics-and-ordering/05-deferred-close-error-capture/cmd/demo
+cd go-solutions/03-control-flow/07-defer-semantics-and-ordering/05-deferred-close-error-capture
 ```
 
 ### Why the buffer makes this a write path, not a read path

@@ -29,9 +29,8 @@ jwtverify/                   independent module: example.com/jwtverify
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/jwtverify/cmd/demo
-cd ~/go-exercises/jwtverify
-go mod init example.com/jwtverify
+mkdir -p go-solutions/49-application-security-crypto-supplychain/05-paseto-vs-jwt-tokens/03-jose-alg-confusion-hardened-verifier/cmd/demo
+cd go-solutions/49-application-security-crypto-supplychain/05-paseto-vs-jwt-tokens/03-jose-alg-confusion-hardened-verifier
 go mod edit -go=1.25
 go get github.com/golang-jwt/jwt/v5@latest
 ```

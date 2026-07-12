@@ -34,9 +34,8 @@ offsetcommit/                 independent module: example.com/kafka-offset-commi
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/offsetcommit/cmd/demo
-cd ~/go-exercises/offsetcommit
-go mod init example.com/kafka-offset-commit-verify
+mkdir -p go-solutions/04-functions/01-function-declaration-and-multiple-return-values/25-kafka-offset-commit-verify/cmd/demo
+cd go-solutions/04-functions/01-function-declaration-and-multiple-return-values/25-kafka-offset-commit-verify
 go mod edit -go=1.24
 ```
 

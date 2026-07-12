@@ -28,9 +28,8 @@ server/                     independent module: example.com/server
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/server/cmd/demo
-cd ~/go-exercises/server
-go mod init example.com/server
+mkdir -p go-solutions/09-pointers/02-pointers-and-function-parameters/03-functional-options-constructor/cmd/demo
+cd go-solutions/09-pointers/02-pointers-and-function-parameters/03-functional-options-constructor
 ```
 
 ### Why the option is a func(*Config)

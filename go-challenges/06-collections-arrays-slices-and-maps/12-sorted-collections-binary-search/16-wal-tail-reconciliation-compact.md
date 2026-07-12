@@ -48,9 +48,8 @@ walreconcile/            module example.com/walreconcile
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/walreconcile
-cd ~/go-exercises/walreconcile
-go mod init example.com/walreconcile
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/12-sorted-collections-binary-search/16-wal-tail-reconciliation-compact
+cd go-solutions/06-collections-arrays-slices-and-maps/12-sorted-collections-binary-search/16-wal-tail-reconciliation-compact
 go mod edit -go=1.24
 ```
 

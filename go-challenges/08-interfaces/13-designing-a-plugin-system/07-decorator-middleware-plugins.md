@@ -30,9 +30,8 @@ decorators/               independent module: example.com/decorators
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/decorators/cmd/demo
-cd ~/go-exercises/decorators
-go mod init example.com/decorators
+mkdir -p go-solutions/08-interfaces/13-designing-a-plugin-system/07-decorator-middleware-plugins/cmd/demo
+cd go-solutions/08-interfaces/13-designing-a-plugin-system/07-decorator-middleware-plugins
 go mod edit -go=1.25
 ```
 

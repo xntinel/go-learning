@@ -30,9 +30,8 @@ circuitbreaker/                  independent module: example.com/circuitbreaker
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/circuitbreaker/cmd/demo
-cd ~/go-exercises/circuitbreaker
-go mod init example.com/circuitbreaker
+mkdir -p go-solutions/15-sync-primitives/11-lock-free-data-structures/06-atomic-circuit-breaker/cmd/demo
+cd go-solutions/15-sync-primitives/11-lock-free-data-structures/06-atomic-circuit-breaker
 ```
 
 ### CAS as an exactly-once transition

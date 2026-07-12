@@ -25,9 +25,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/leakdemo/cmd/demo
-cd ~/go-exercises/leakdemo
-go mod init example.com/leakdemo
+mkdir -p go-solutions/14-select-and-context/03-timeout-with-select/02-timeout-demo-and-goroutine-leak/cmd/demo
+cd go-solutions/14-select-and-context/03-timeout-with-select/02-timeout-demo-and-goroutine-leak
 ```
 
 ### The only difference that matters

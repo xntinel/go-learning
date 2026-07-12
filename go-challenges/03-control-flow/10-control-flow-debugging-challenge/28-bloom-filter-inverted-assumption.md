@@ -35,9 +35,8 @@ dedup/                       independent module: example.com/bloom-filter-invert
 - Verify: `go test -count=1 ./...`.
 
 ```bash
-mkdir -p ~/go-exercises/bloom-filter-inverted-assumption/cmd/demo
-cd ~/go-exercises/bloom-filter-inverted-assumption
-go mod init example.com/bloom-filter-inverted-assumption
+mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/28-bloom-filter-inverted-assumption/cmd/demo
+cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/28-bloom-filter-inverted-assumption
 ```
 
 ### Why a filter hit is a question, not an answer

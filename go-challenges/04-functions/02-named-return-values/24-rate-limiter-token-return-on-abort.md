@@ -28,9 +28,8 @@ tokenlimiter/                    independent module: example.com/tokenlimiter
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/tokenlimiter/cmd/demo
-cd ~/go-exercises/tokenlimiter
-go mod init example.com/tokenlimiter
+mkdir -p go-solutions/04-functions/02-named-return-values/24-rate-limiter-token-return-on-abort/cmd/demo
+cd go-solutions/04-functions/02-named-return-values/24-rate-limiter-token-return-on-abort
 go mod edit -go=1.24
 ```
 

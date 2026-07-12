@@ -28,9 +28,8 @@ statussql/                  independent module: example.com/statussql
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/statussql/cmd/demo
-cd ~/go-exercises/statussql
-go mod init example.com/statussql
+mkdir -p go-solutions/07-structs-and-methods/10-implementing-stringer/06-sql-valuer-scanner-enum-column/cmd/demo
+cd go-solutions/07-structs-and-methods/10-implementing-stringer/06-sql-valuer-scanner-enum-column
 ```
 
 ### The storage contract

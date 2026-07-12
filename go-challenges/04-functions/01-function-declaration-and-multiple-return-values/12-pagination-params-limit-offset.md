@@ -28,9 +28,8 @@ pagination/                independent module: example.com/pagination-params
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pagination
-cd ~/go-exercises/pagination
-go mod init example.com/pagination-params
+mkdir -p go-solutions/04-functions/01-function-declaration-and-multiple-return-values/12-pagination-params-limit-offset
+cd go-solutions/04-functions/01-function-declaration-and-multiple-return-values/12-pagination-params-limit-offset
 go mod edit -go=1.24
 ```
 

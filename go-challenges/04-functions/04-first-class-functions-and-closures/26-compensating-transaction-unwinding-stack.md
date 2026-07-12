@@ -33,9 +33,8 @@ compensating-saga/          independent module: example.com/compensating-saga
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/compensating-saga/cmd/demo
-cd ~/go-exercises/compensating-saga
-go mod init example.com/compensating-saga
+mkdir -p go-solutions/04-functions/04-first-class-functions-and-closures/26-compensating-transaction-unwinding-stack/cmd/demo
+cd go-solutions/04-functions/04-first-class-functions-and-closures/26-compensating-transaction-unwinding-stack
 go mod edit -go=1.24
 ```
 

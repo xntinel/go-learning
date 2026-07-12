@@ -29,9 +29,8 @@ pollretry/                  independent module: example.com/polling-retry-unhand
 - Verify: `go test -count=1 ./...`.
 
 ```bash
-mkdir -p ~/go-exercises/polling-retry-unhandled-error-case/cmd/demo
-cd ~/go-exercises/polling-retry-unhandled-error-case
-go mod init example.com/polling-retry-unhandled-error-case
+mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/17-polling-retry-unhandled-error-case/cmd/demo
+cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/17-polling-retry-unhandled-error-case
 ```
 
 ### Why a switch without a default silently retries the unknown

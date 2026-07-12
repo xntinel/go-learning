@@ -28,9 +28,8 @@ svcconfig/                         module example.com/svcconfig
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/svcconfig/internal/config ~/go-exercises/svcconfig/cmd/demo
-cd ~/go-exercises/svcconfig
-go mod init example.com/svcconfig
+mkdir -p go-solutions/11-packages-and-modules/03-internal-packages/05-internal-config-loader/internal/config go-solutions/11-packages-and-modules/03-internal-packages/05-internal-config-loader/cmd/demo
+cd go-solutions/11-packages-and-modules/03-internal-packages/05-internal-config-loader
 ```
 
 ### Why the config loader is internal

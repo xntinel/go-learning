@@ -39,9 +39,8 @@ jsdlq/                        independent module: example.com/jsdlq
 Set up the module. The pure core needs no dependency; the integration file does:
 
 ```bash
-mkdir -p ~/go-exercises/jsdlq/cmd/demo
-cd ~/go-exercises/jsdlq
-go mod init example.com/jsdlq
+mkdir -p go-solutions/50-messaging-and-event-driven/10-dead-letter-and-retry-topologies/02-jetstream-dlq-topology/cmd/demo
+cd go-solutions/50-messaging-and-event-driven/10-dead-letter-and-retry-topologies/02-jetstream-dlq-topology
 go mod edit -go=1.26
 go get github.com/nats-io/nats.go   # only needed to compile/run with -tags integration
 ```

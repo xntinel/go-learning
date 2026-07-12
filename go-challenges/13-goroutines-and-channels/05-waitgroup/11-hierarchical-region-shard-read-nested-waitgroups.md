@@ -32,9 +32,8 @@ shardread/                   independent module: example.com/shardread
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/shardread/cmd/demo
-cd ~/go-exercises/shardread
-go mod init example.com/shardread
+mkdir -p go-solutions/13-goroutines-and-channels/05-waitgroup/11-hierarchical-region-shard-read-nested-waitgroups/cmd/demo
+cd go-solutions/13-goroutines-and-channels/05-waitgroup/11-hierarchical-region-shard-read-nested-waitgroups
 go mod edit -go=1.26
 ```
 

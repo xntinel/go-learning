@@ -26,8 +26,7 @@ topn_test.go        ordering cases, negative-parameter rejection, NULL-sorts-fir
 Set up the module:
 
 ```bash
-mkdir -p top-n/cmd/demo && cd top-n
-go mod init example.com/top-n
+mkdir -p go-solutions/39-capstone-database-engine/06-query-planner/09-top-n-bounded-heap/cmd/demo && cd go-solutions/39-capstone-database-engine/06-query-planner/09-top-n-bounded-heap
 ```
 
 ### Why a heap and not a sort

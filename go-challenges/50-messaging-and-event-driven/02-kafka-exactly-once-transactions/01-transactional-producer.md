@@ -62,9 +62,8 @@ original produce failure for logging.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/txnproducer/cmd/demo
-cd ~/go-exercises/txnproducer
-go mod init example.com/txnproducer
+mkdir -p go-solutions/50-messaging-and-event-driven/02-kafka-exactly-once-transactions/01-transactional-producer/cmd/demo
+cd go-solutions/50-messaging-and-event-driven/02-kafka-exactly-once-transactions/01-transactional-producer
 go mod edit -go=1.25
 go get github.com/twmb/franz-go@latest
 ```

@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/grpc-interceptor-chain-composition/cmd/demo
-cd ~/go-exercises/grpc-interceptor-chain-composition
-go mod init example.com/grpc-interceptor-chain-composition
+mkdir -p go-solutions/04-functions/06-function-types-and-callbacks/28-grpc-interceptor-chain-composition/cmd/demo
+cd go-solutions/04-functions/06-function-types-and-callbacks/28-grpc-interceptor-chain-composition
 go mod edit -go=1.24
 ```
 

@@ -31,8 +31,7 @@ metricsreg/                   independent module: example.com/metricsreg
 Set up the module:
 
 ```bash
-mkdir metricsreg && cd metricsreg
-go mod init example.com/metricsreg
+mkdir go-solutions/15-sync-primitives/04-sync-map/05-metrics-registry && cd go-solutions/15-sync-primitives/04-sync-map/05-metrics-registry
 ```
 
 ### Why LoadOrStore per label and Range to scrape

@@ -29,9 +29,8 @@ instrument/                  independent module: example.com/instrument
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/instrument/cmd/demo
-cd ~/go-exercises/instrument
-go mod init example.com/instrument
+mkdir -p go-solutions/04-functions/10-higher-order-functions/31-result-wrapper-timing-and-metadata/cmd/demo
+cd go-solutions/04-functions/10-higher-order-functions/31-result-wrapper-timing-and-metadata
 go mod edit -go=1.24
 ```
 

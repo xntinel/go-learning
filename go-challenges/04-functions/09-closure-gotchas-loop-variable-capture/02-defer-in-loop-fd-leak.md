@@ -27,9 +27,8 @@ batchproc/                   independent module: example.com/batchproc
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/batchproc/cmd/demo
-cd ~/go-exercises/batchproc
-go mod init example.com/batchproc
+mkdir -p go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/02-defer-in-loop-fd-leak/cmd/demo
+cd go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/02-defer-in-loop-fd-leak
 go mod edit -go=1.26
 ```
 

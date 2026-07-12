@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/data-pipeline-transform-callback/cmd/demo
-cd ~/go-exercises/data-pipeline-transform-callback
-go mod init example.com/data-pipeline-transform-callback
+mkdir -p go-solutions/04-functions/06-function-types-and-callbacks/25-data-pipeline-transform-callback/cmd/demo
+cd go-solutions/04-functions/06-function-types-and-callbacks/25-data-pipeline-transform-callback
 go mod edit -go=1.24
 ```
 

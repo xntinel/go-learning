@@ -22,8 +22,7 @@ cmd/
 Set up the module:
 
 ```bash
-mkdir -p etl-pipeline-service/cmd/demo && cd etl-pipeline-service
-go mod init example.com/etl-pipeline-service
+mkdir -p go-solutions/16-concurrency-patterns/01-pipeline-pattern/02-etl-pipeline-service/cmd/demo && cd go-solutions/16-concurrency-patterns/01-pipeline-pattern/02-etl-pipeline-service
 ```
 
 ### Three stages, bounded channels, one context

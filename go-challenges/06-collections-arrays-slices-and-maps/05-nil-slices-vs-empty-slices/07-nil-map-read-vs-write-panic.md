@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/metrics/metrics ~/go-exercises/metrics/cmd/demo
-cd ~/go-exercises/metrics
-go mod init example.com/metrics
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/07-nil-map-read-vs-write-panic/metrics go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/07-nil-map-read-vs-write-panic/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/07-nil-map-read-vs-write-panic
 ```
 
 ### The asymmetry: reads are safe, the first write panics

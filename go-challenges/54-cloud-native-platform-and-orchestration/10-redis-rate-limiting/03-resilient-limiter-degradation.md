@@ -32,9 +32,8 @@ Verify: `go test -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/reslimit/cmd/demo
-cd ~/go-exercises/reslimit
-go mod init example.com/reslimit
+mkdir -p go-solutions/54-cloud-native-platform-and-orchestration/10-redis-rate-limiting/03-resilient-limiter-degradation/cmd/demo
+cd go-solutions/54-cloud-native-platform-and-orchestration/10-redis-rate-limiting/03-resilient-limiter-degradation
 go mod edit -go=1.26
 ```
 

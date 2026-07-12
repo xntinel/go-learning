@@ -29,9 +29,8 @@ validator/                 independent module: example.com/validator
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/validator/cmd/demo
-cd ~/go-exercises/validator
-go mod init example.com/validator
+mkdir -p go-solutions/04-functions/04-first-class-functions-and-closures/08-validator-pipeline/cmd/demo
+cd go-solutions/04-functions/04-first-class-functions-and-closures/08-validator-pipeline
 ```
 
 ### Predicates as values, aggregation as composition

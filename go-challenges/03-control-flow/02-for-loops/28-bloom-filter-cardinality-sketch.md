@@ -33,9 +33,8 @@ bloom/                         module example.com/bloom
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/bloom/cmd/demo
-cd ~/go-exercises/bloom
-go mod init example.com/bloom
+mkdir -p go-solutions/03-control-flow/02-for-loops/28-bloom-filter-cardinality-sketch/cmd/demo
+cd go-solutions/03-control-flow/02-for-loops/28-bloom-filter-cardinality-sketch
 go mod edit -go=1.24
 ```
 

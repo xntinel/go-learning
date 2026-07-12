@@ -23,8 +23,7 @@ registry_test.go     known keys, unknown-key error, overwrite, extension, sort
 Set up the module:
 
 ```bash
-mkdir -p strategy-registry/cmd/demo && cd strategy-registry
-go mod init example.com/pricing-registry
+mkdir -p go-solutions/24-design-patterns-in-go/03-strategy-pattern-via-interfaces/03-strategy-registry/cmd/demo && cd go-solutions/24-design-patterns-in-go/03-strategy-pattern-via-interfaces/03-strategy-registry
 ```
 
 ### Open extension, closed dispatch

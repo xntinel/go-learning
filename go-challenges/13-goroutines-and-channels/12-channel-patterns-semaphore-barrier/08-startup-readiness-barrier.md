@@ -31,9 +31,8 @@ readiness/                  independent module: example.com/readiness
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/readiness/cmd/demo
-cd ~/go-exercises/readiness
-go mod init example.com/readiness
+mkdir -p go-solutions/13-goroutines-and-channels/12-channel-patterns-semaphore-barrier/08-startup-readiness-barrier/cmd/demo
+cd go-solutions/13-goroutines-and-channels/12-channel-patterns-semaphore-barrier/08-startup-readiness-barrier
 go mod edit -go=1.26
 ```
 

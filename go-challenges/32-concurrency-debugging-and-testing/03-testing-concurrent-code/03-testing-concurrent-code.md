@@ -61,9 +61,8 @@ The 5-second deadline is long enough for any reasonable scheduler; the test pass
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/workerpool/cmd/demo
-cd ~/go-exercises/workerpool
-go mod init example.com/workerpool
+mkdir -p go-solutions/32-concurrency-debugging-and-testing/03-testing-concurrent-code/03-testing-concurrent-code/cmd/demo
+cd go-solutions/32-concurrency-debugging-and-testing/03-testing-concurrent-code/03-testing-concurrent-code
 ```
 
 ### Exercise 1: Worker Pool

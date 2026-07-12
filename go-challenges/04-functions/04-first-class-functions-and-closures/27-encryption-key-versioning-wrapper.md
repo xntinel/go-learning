@@ -36,9 +36,8 @@ key-rotation/                independent module: example.com/key-rotation
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/key-rotation/cmd/demo
-cd ~/go-exercises/key-rotation
-go mod init example.com/key-rotation
+mkdir -p go-solutions/04-functions/04-first-class-functions-and-closures/27-encryption-key-versioning-wrapper/cmd/demo
+cd go-solutions/04-functions/04-first-class-functions-and-closures/27-encryption-key-versioning-wrapper
 go mod edit -go=1.24
 ```
 

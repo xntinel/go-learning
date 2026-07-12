@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/modhash/cmd/demo
-cd ~/go-exercises/modhash
-go mod init example.com/modhash
+mkdir -p go-solutions/01-environment-and-tooling/05-go-install-and-third-party-packages/09-supply-chain-integrity-gosum-and-checksumdb/cmd/demo
+cd go-solutions/01-environment-and-tooling/05-go-install-and-third-party-packages/09-supply-chain-integrity-gosum-and-checksumdb
 ```
 
 ### The trust boundary, in one function

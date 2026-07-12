@@ -27,8 +27,7 @@ registration_test.go all-fields-at-once validation, conflict mapping, internal
 Set up the module:
 
 ```bash
-mkdir -p user-registration/cmd/demo && cd user-registration
-go mod init example.com/user-registration
+mkdir -p go-solutions/24-design-patterns-in-go/06-service-layer-pattern/03-validation-and-error-mapping/cmd/demo && cd go-solutions/24-design-patterns-in-go/06-service-layer-pattern/03-validation-and-error-mapping
 ```
 
 ### Why validation and mapping are border control

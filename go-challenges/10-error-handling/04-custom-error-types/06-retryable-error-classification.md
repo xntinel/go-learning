@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/retryclass/cmd/demo
-cd ~/go-exercises/retryclass
-go mod init example.com/retryclass
+mkdir -p go-solutions/10-error-handling/04-custom-error-types/06-retryable-error-classification/cmd/demo
+cd go-solutions/10-error-handling/04-custom-error-types/06-retryable-error-classification
 go mod edit -go=1.24
 ```
 

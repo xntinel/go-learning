@@ -29,9 +29,8 @@ worker/                    independent module: example.com/worker
 Set up the module:
 
 ```bash
-mkdir -p worker/cmd/demo
-cd worker
-go mod init example.com/worker
+mkdir -p go-solutions/14-select-and-context/04-context-withcancel/01-worker-cancel-loop/cmd/demo
+cd go-solutions/14-select-and-context/04-context-withcancel/01-worker-cancel-loop
 ```
 
 ### Why the loop has exactly two exits

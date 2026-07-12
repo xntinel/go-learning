@@ -31,9 +31,8 @@ validate/                      independent module: example.com/validate
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/validate/cmd/demo
-cd ~/go-exercises/validate
-go mod init example.com/validate
+mkdir -p go-solutions/10-error-handling/02-fmt-errorf-and-error-wrapping/05-validation-join-accumulate/cmd/demo
+cd go-solutions/10-error-handling/02-fmt-errorf-and-error-wrapping/05-validation-join-accumulate
 ```
 
 ### Accumulate, do not short-circuit

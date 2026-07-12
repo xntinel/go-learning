@@ -30,9 +30,8 @@ sortedindex/                   module example.com/sortedindex
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/sortedindex/cmd/demo
-cd ~/go-exercises/sortedindex
-go mod init example.com/sortedindex
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/09-slices-package/04-sorted-index-insert-binarysearchfunc/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/09-slices-package/04-sorted-index-insert-binarysearchfunc
 go mod edit -go=1.24
 ```
 

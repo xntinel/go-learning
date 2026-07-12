@@ -53,9 +53,8 @@ ctleaf/                   module example.com/ctleaf
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ctleaf
-cd ~/go-exercises/ctleaf
-go mod init example.com/ctleaf
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/11-slice-memory-leaks/11-ct-merkle-leaf-array-dedup
+cd go-solutions/06-collections-arrays-slices-and-maps/11-slice-memory-leaks/11-ct-merkle-leaf-array-dedup
 go mod edit -go=1.24
 ```
 

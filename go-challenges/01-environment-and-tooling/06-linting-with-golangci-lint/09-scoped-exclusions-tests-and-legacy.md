@@ -30,9 +30,8 @@ scopedexcl/                   independent module: example.com/scopedexcl
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/scopedexcl/cmd/demo
-cd ~/go-exercises/scopedexcl
-go mod init example.com/scopedexcl
+mkdir -p go-solutions/01-environment-and-tooling/06-linting-with-golangci-lint/09-scoped-exclusions-tests-and-legacy/cmd/demo
+cd go-solutions/01-environment-and-tooling/06-linting-with-golangci-lint/09-scoped-exclusions-tests-and-legacy
 ```
 
 ### Narrow the exclusion, never the linter

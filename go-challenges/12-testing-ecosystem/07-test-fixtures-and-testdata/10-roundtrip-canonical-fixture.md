@@ -24,9 +24,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/roundtrip/cmd/demo ~/go-exercises/roundtrip/testdata
-cd ~/go-exercises/roundtrip
-go mod init example.com/roundtrip
+mkdir -p go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/10-roundtrip-canonical-fixture/cmd/demo go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/10-roundtrip-canonical-fixture/testdata
+cd go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/10-roundtrip-canonical-fixture
 go get github.com/google/go-cmp/cmp
 ```
 

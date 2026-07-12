@@ -22,8 +22,7 @@ errclass_test.go       code names, the four classification rules, error unwrappi
 Set up the module:
 
 ```bash
-mkdir -p error-classification/cmd/demo && cd error-classification
-go mod init example.com/error-classification
+mkdir -p go-solutions/44-capstone-http2-implementation/05-connection-error-handling/01-error-classification/cmd/demo && cd go-solutions/44-capstone-http2-implementation/05-connection-error-handling/01-error-classification
 go mod edit -go=1.26
 ```
 

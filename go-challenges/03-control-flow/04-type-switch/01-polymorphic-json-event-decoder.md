@@ -34,9 +34,8 @@ eventdecode/                 independent module: example.com/eventdecode
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/eventdecode/cmd/demo
-cd ~/go-exercises/eventdecode
-go mod init example.com/eventdecode
+mkdir -p go-solutions/03-control-flow/04-type-switch/01-polymorphic-json-event-decoder/cmd/demo
+cd go-solutions/03-control-flow/04-type-switch/01-polymorphic-json-event-decoder
 ```
 
 ## Why UseNumber, and why json.Number is its own case

@@ -22,8 +22,7 @@ orderevents_test.go  completeness under backpressure + -race concurrent publish
 Set up the module:
 
 ```bash
-mkdir -p order-events-fanout/cmd/demo && cd order-events-fanout
-go mod init example.com/order-events-fanout
+mkdir -p go-solutions/24-design-patterns-in-go/09-observer-pattern-with-channels/05-order-events-fanout/cmd/demo && cd go-solutions/24-design-patterns-in-go/09-observer-pattern-with-channels/05-order-events-fanout
 ```
 
 ### Three consumers, three queues, one fan-out

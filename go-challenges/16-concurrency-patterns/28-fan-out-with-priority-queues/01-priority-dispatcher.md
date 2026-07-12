@@ -24,8 +24,7 @@ dispatcher_test.go     heap order, single-worker dispatch order, FIFO within a
 Set up the module:
 
 ```bash
-mkdir -p priority-dispatcher/cmd/demo && cd priority-dispatcher
-go mod init example.com/priority-dispatcher
+mkdir -p go-solutions/16-concurrency-patterns/28-fan-out-with-priority-queues/01-priority-dispatcher/cmd/demo && cd go-solutions/16-concurrency-patterns/28-fan-out-with-priority-queues/01-priority-dispatcher
 ```
 
 ## How the pieces fit

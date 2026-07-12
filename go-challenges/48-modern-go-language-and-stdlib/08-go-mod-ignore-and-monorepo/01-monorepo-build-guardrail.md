@@ -31,9 +31,8 @@ Set up the module. The directive is a Go 1.25 feature, so pin the language
 version:
 
 ```bash
-mkdir -p ~/go-exercises/monorepoguard/cmd/demo
-cd ~/go-exercises/monorepoguard
-go mod init example.com/monorepoguard
+mkdir -p go-solutions/48-modern-go-language-and-stdlib/08-go-mod-ignore-and-monorepo/01-monorepo-build-guardrail/cmd/demo
+cd go-solutions/48-modern-go-language-and-stdlib/08-go-mod-ignore-and-monorepo/01-monorepo-build-guardrail
 go mod edit -go=1.25
 ```
 

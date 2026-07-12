@@ -30,9 +30,8 @@ causestop/                 independent module: example.com/causestop
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/causestop/cmd/demo
-cd ~/go-exercises/causestop
-go mod init example.com/causestop
+mkdir -p go-solutions/13-goroutines-and-channels/11-goroutine-lifecycle-management/08-cancel-cause-diagnostics/cmd/demo
+cd go-solutions/13-goroutines-and-channels/11-goroutine-lifecycle-management/08-cancel-cause-diagnostics
 ```
 
 ### Cause versus Err, and how they combine

@@ -29,9 +29,8 @@ domainstr/                  independent module: example.com/domainstr
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/domainstr/cmd/demo
-cd ~/go-exercises/domainstr
-go mod init example.com/domainstr
+mkdir -p go-solutions/08-interfaces/04-common-standard-library-interfaces/04-domain-stringer/cmd/demo
+cd go-solutions/08-interfaces/04-common-standard-library-interfaces/04-domain-stringer
 ```
 
 ### How fmt dispatches, and the recursion trap

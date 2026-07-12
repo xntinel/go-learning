@@ -30,9 +30,8 @@ sagacoord/                     independent module: example.com/sagacoord
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/sagacoord/cmd/demo
-cd ~/go-exercises/sagacoord
-go mod init example.com/sagacoord
+mkdir -p go-solutions/50-messaging-and-event-driven/08-temporal-durable-execution/02-saga-coordinator-disconnected-ctx/cmd/demo
+cd go-solutions/50-messaging-and-event-driven/08-temporal-durable-execution/02-saga-coordinator-disconnected-ctx
 go get go.temporal.io/sdk@latest
 ```
 

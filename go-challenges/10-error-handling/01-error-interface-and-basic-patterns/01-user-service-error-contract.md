@@ -29,9 +29,8 @@ userservice/                 independent module: example.com/userservice
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/userservice/cmd/demo
-cd ~/go-exercises/userservice
-go mod init example.com/userservice
+mkdir -p go-solutions/10-error-handling/01-error-interface-and-basic-patterns/01-user-service-error-contract/cmd/demo
+cd go-solutions/10-error-handling/01-error-interface-and-basic-patterns/01-user-service-error-contract
 ```
 
 ### Why a wrapping ServiceError instead of a bare sentinel

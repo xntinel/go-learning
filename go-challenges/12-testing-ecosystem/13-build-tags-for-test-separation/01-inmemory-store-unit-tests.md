@@ -28,9 +28,8 @@ kvstore/                   independent module: example.com/kvstore
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/kvstore/cmd/demo
-cd ~/go-exercises/kvstore
-go mod init example.com/kvstore
+mkdir -p go-solutions/12-testing-ecosystem/13-build-tags-for-test-separation/01-inmemory-store-unit-tests/cmd/demo
+cd go-solutions/12-testing-ecosystem/13-build-tags-for-test-separation/01-inmemory-store-unit-tests
 ```
 
 ### Why this tier is the untagged baseline

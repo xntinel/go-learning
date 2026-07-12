@@ -30,9 +30,8 @@ ttlcache/                  independent module: example.com/ttlcache
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ttlcache/cmd/demo
-cd ~/go-exercises/ttlcache
-go mod init example.com/ttlcache
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/14-custom-map-based-data-structure/05-ttl-cache/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/14-custom-map-based-data-structure/05-ttl-cache
 ```
 
 ### Lazy plus active, and why the clock is injected

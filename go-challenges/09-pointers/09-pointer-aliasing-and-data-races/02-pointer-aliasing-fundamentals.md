@@ -30,9 +30,8 @@ alias/                     independent module: example.com/alias
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/alias/cmd/demo
-cd ~/go-exercises/alias
-go mod init example.com/alias
+mkdir -p go-solutions/09-pointers/09-pointer-aliasing-and-data-races/02-pointer-aliasing-fundamentals/cmd/demo
+cd go-solutions/09-pointers/09-pointer-aliasing-and-data-races/02-pointer-aliasing-fundamentals
 ```
 
 ### What aliasing is, at the level of a single variable

@@ -29,9 +29,8 @@ caserunner/                  independent module: example.com/caserunner
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/caserunner/cmd/demo
-cd ~/go-exercises/caserunner
-go mod init example.com/caserunner
+mkdir -p go-solutions/12-testing-ecosystem/03-test-helpers/09-generic-case-runner/cmd/demo
+cd go-solutions/12-testing-ecosystem/03-test-helpers/09-generic-case-runner
 ```
 
 ### What the runner buys and why it stays generic

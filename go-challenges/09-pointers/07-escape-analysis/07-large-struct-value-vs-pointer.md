@@ -34,9 +34,8 @@ Verify: `go test -count=1 -race ./...`, then observe the leak with
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/configval/cmd/demo
-cd ~/go-exercises/configval
-go mod init example.com/configval
+mkdir -p go-solutions/09-pointers/07-escape-analysis/07-large-struct-value-vs-pointer/cmd/demo
+cd go-solutions/09-pointers/07-escape-analysis/07-large-struct-value-vs-pointer
 ```
 
 ### The crossover, and the leak that decides it

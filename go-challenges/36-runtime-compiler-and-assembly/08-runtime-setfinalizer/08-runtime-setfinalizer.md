@@ -104,9 +104,8 @@ The canonical pattern is: `Close()` for normal cleanup, `SetFinalizer` as a last
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/setfinalizer/cmd/demo
-cd ~/go-exercises/setfinalizer
-go mod init example.com/setfinalizer
+mkdir -p go-solutions/36-runtime-compiler-and-assembly/08-runtime-setfinalizer/08-runtime-setfinalizer/cmd/demo
+cd go-solutions/36-runtime-compiler-and-assembly/08-runtime-setfinalizer/08-runtime-setfinalizer
 ```
 
 This is a library with a `cmd/demo` program. The library is verified with `go test`; the demo is for manual inspection.

@@ -28,9 +28,8 @@ errtax/                     independent module: example.com/errtax
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/errtax/cmd/demo
-cd ~/go-exercises/errtax
-go mod init example.com/errtax
+mkdir -p go-solutions/08-interfaces/09-interface-internals/06-errors-as-itab-taxonomy/cmd/demo
+cd go-solutions/08-interfaces/09-interface-internals/06-errors-as-itab-taxonomy
 go mod edit -go=1.26
 ```
 

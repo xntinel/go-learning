@@ -26,9 +26,8 @@ leakguard/                  independent module: example.com/leakguard
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/leakguard/cmd/demo
-cd ~/go-exercises/leakguard
-go mod init example.com/leakguard
+mkdir -p go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/03-goroutine-leak-guard-in-tests/cmd/demo
+cd go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/03-goroutine-leak-guard-in-tests
 ```
 
 ### Why a baseline diff and a poll, not a raw count

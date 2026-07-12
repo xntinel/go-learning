@@ -51,9 +51,8 @@ mvheaders/                module example.com/mvheaders
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/mvheaders
-cd ~/go-exercises/mvheaders
-go mod init example.com/mvheaders
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/19-multiheader-deep-clone
+cd go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/19-multiheader-deep-clone
 go mod edit -go=1.24
 ```
 

@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/heartbeat/cmd/demo
-cd ~/go-exercises/heartbeat
-go mod init example.com/heartbeat
+mkdir -p go-solutions/02-variables-types-and-constants/02-zero-values-and-default-initialization/05-last-seen-time-iszero/cmd/demo
+cd go-solutions/02-variables-types-and-constants/02-zero-values-and-default-initialization/05-last-seen-time-iszero
 ```
 
 ## Why IsZero, and why the clock is injected

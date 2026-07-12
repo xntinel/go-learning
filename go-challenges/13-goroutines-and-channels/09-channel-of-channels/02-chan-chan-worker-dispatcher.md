@@ -31,9 +31,8 @@ dispatcher/                independent module: example.com/dispatcher
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/dispatcher/cmd/demo
-cd ~/go-exercises/dispatcher
-go mod init example.com/dispatcher
+mkdir -p go-solutions/13-goroutines-and-channels/09-channel-of-channels/02-chan-chan-worker-dispatcher/cmd/demo
+cd go-solutions/13-goroutines-and-channels/09-channel-of-channels/02-chan-chan-worker-dispatcher
 ```
 
 ### The taxi-rank model

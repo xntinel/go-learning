@@ -32,9 +32,8 @@ Verify: `go test -count=1 -race -shuffle=on ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/uservalidate/cmd/demo
-cd ~/go-exercises/uservalidate
-go mod init example.com/uservalidate
+mkdir -p go-solutions/12-testing-ecosystem/14-parallel-tests/02-parallel-table-http-validation/cmd/demo
+cd go-solutions/12-testing-ecosystem/14-parallel-tests/02-parallel-table-http-validation
 ```
 
 ### Why sentinel errors, and why email via net/mail

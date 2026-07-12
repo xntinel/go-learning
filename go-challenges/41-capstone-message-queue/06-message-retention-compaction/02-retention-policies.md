@@ -22,8 +22,7 @@ policy_test.go         time boundary cases, oldest-first eviction, the never-emp
 Set up the module:
 
 ```bash
-mkdir -p retention-policies/cmd/demo && cd retention-policies
-go mod init example.com/retention-policies
+mkdir -p go-solutions/41-capstone-message-queue/06-message-retention-compaction/02-retention-policies/cmd/demo && cd go-solutions/41-capstone-message-queue/06-message-retention-compaction/02-retention-policies
 ```
 
 ### Time retention: ask the youngest message

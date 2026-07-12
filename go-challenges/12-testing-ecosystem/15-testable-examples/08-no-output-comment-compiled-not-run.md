@@ -26,9 +26,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/idgen/cmd/demo
-cd ~/go-exercises/idgen
-go mod init example.com/idgen
+mkdir -p go-solutions/12-testing-ecosystem/15-testable-examples/08-no-output-comment-compiled-not-run/cmd/demo
+cd go-solutions/12-testing-ecosystem/15-testable-examples/08-no-output-comment-compiled-not-run
 ```
 
 ## Compiled, not executed — and why that is exactly right

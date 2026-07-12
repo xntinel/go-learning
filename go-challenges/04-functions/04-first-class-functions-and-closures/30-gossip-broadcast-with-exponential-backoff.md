@@ -32,9 +32,8 @@ gossip-broadcast/            independent module: example.com/gossip-broadcast
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/gossip-broadcast/cmd/demo
-cd ~/go-exercises/gossip-broadcast
-go mod init example.com/gossip-broadcast
+mkdir -p go-solutions/04-functions/04-first-class-functions-and-closures/30-gossip-broadcast-with-exponential-backoff/cmd/demo
+cd go-solutions/04-functions/04-first-class-functions-and-closures/30-gossip-broadcast-with-exponential-backoff
 go mod edit -go=1.24
 ```
 

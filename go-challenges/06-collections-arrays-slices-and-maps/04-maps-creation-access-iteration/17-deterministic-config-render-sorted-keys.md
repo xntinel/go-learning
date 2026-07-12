@@ -47,9 +47,8 @@ configrender/                  module example.com/configrender
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/configrender
-cd ~/go-exercises/configrender
-go mod init example.com/configrender
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/17-deterministic-config-render-sorted-keys
+cd go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/17-deterministic-config-render-sorted-keys
 go mod edit -go=1.24
 ```
 

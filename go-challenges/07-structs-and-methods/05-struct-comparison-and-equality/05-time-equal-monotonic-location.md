@@ -29,9 +29,8 @@ eventdedup/                 independent module: example.com/eventdedup
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/eventdedup/cmd/demo
-cd ~/go-exercises/eventdedup
-go mod init example.com/eventdedup
+mkdir -p go-solutions/07-structs-and-methods/05-struct-comparison-and-equality/05-time-equal-monotonic-location/cmd/demo
+cd go-solutions/07-structs-and-methods/05-struct-comparison-and-equality/05-time-equal-monotonic-location
 ```
 
 ### Why `==` is the wrong instant comparison

@@ -27,9 +27,8 @@ lease/                        module example.com/lease
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/lease/cmd/demo
-cd ~/go-exercises/lease
-go mod init example.com/lease
+mkdir -p go-solutions/04-functions/05-anonymous-functions/08-context-afterfunc-cleanup-hook/cmd/demo
+cd go-solutions/04-functions/05-anonymous-functions/08-context-afterfunc-cleanup-hook
 ```
 
 ### AfterFunc registers a cleanup; stop deregisters it

@@ -27,9 +27,8 @@ transient-retry/                   module example.com/transient-retry
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/transient-retry/cmd/demo
-cd ~/go-exercises/transient-retry
-go mod init example.com/transient-retry
+mkdir -p go-solutions/10-error-handling/13-designing-an-error-hierarchy/06-transient-vs-permanent-retry/cmd/demo
+cd go-solutions/10-error-handling/13-designing-an-error-hierarchy/06-transient-vs-permanent-retry
 ```
 
 ### Retryability is orthogonal to the domain category

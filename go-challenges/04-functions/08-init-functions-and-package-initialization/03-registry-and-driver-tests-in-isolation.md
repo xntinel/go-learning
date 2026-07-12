@@ -26,9 +26,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/regtest/cmd/demo
-cd ~/go-exercises/regtest
-go mod init example.com/regtest
+mkdir -p go-solutions/04-functions/08-init-functions-and-package-initialization/03-registry-and-driver-tests-in-isolation/cmd/demo
+cd go-solutions/04-functions/08-init-functions-and-package-initialization/03-registry-and-driver-tests-in-isolation
 ```
 
 ### Why fakes, and why the concurrency test matters

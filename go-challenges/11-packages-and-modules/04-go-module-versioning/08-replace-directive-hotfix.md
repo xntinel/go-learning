@@ -34,9 +34,8 @@ hotfix/                     independent module: example.com/hotfix
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/hotfix/upstream ~/go-exercises/hotfix/fork ~/go-exercises/hotfix/cmd/demo
-cd ~/go-exercises/hotfix
-go mod init example.com/hotfix
+mkdir -p go-solutions/11-packages-and-modules/04-go-module-versioning/08-replace-directive-hotfix/upstream go-solutions/11-packages-and-modules/04-go-module-versioning/08-replace-directive-hotfix/fork go-solutions/11-packages-and-modules/04-go-module-versioning/08-replace-directive-hotfix/cmd/demo
+cd go-solutions/11-packages-and-modules/04-go-module-versioning/08-replace-directive-hotfix
 go mod edit -go=1.26
 ```
 

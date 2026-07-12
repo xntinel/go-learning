@@ -32,9 +32,8 @@ cachesweeper/                    independent module: example.com/cachesweeper
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cachesweeper/cache ~/go-exercises/cachesweeper/cmd/demo
-cd ~/go-exercises/cachesweeper
-go mod init example.com/cachesweeper
+mkdir -p go-solutions/15-sync-primitives/13-building-a-thread-safe-cache/02-background-sweeper-lifecycle/cache go-solutions/15-sync-primitives/13-building-a-thread-safe-cache/02-background-sweeper-lifecycle/cmd/demo
+cd go-solutions/15-sync-primitives/13-building-a-thread-safe-cache/02-background-sweeper-lifecycle
 ```
 
 ### The core cache (self-contained copy)

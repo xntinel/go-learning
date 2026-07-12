@@ -32,9 +32,8 @@ interceptorchain/                independent module: example.com/interceptorchai
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/interceptorchain/cmd/demo
-cd ~/go-exercises/interceptorchain
-go mod init example.com/interceptorchain
+mkdir -p go-solutions/04-functions/12-functional-options-pattern/18-grpc-service-interceptor-chain/cmd/demo
+cd go-solutions/04-functions/12-functional-options-pattern/18-grpc-service-interceptor-chain
 go mod edit -go=1.24
 ```
 

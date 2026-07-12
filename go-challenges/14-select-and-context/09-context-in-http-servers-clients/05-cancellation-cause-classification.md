@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/causeclass/cmd/demo
-cd ~/go-exercises/causeclass
-go mod init example.com/causeclass
+mkdir -p go-solutions/14-select-and-context/09-context-in-http-servers-clients/05-cancellation-cause-classification/cmd/demo
+cd go-solutions/14-select-and-context/09-context-in-http-servers-clients/05-cancellation-cause-classification
 ```
 
 ## The design

@@ -30,9 +30,8 @@ dbready/                   independent module: example.com/dbready
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/dbready/cmd/demo
-cd ~/go-exercises/dbready
-go mod init example.com/dbready
+mkdir -p go-solutions/12-testing-ecosystem/18-integration-tests-with-build-tags/06-db-readiness-retry-connect/cmd/demo
+cd go-solutions/12-testing-ecosystem/18-integration-tests-with-build-tags/06-db-readiness-retry-connect
 ```
 
 ### Why not a sleep, and why not an unbounded loop

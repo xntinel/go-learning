@@ -34,9 +34,8 @@ eventenc/                 independent module: example.com/eventenc
 Set up the module. It depends on go-cmp:
 
 ```bash
-mkdir -p ~/go-exercises/eventenc/cmd/demo ~/go-exercises/eventenc/testdata
-cd ~/go-exercises/eventenc
-go mod init example.com/eventenc
+mkdir -p go-solutions/12-testing-ecosystem/02-table-driven-tests/08-json-serializer-golden/cmd/demo go-solutions/12-testing-ecosystem/02-table-driven-tests/08-json-serializer-golden/testdata
+cd go-solutions/12-testing-ecosystem/02-table-driven-tests/08-json-serializer-golden
 go get github.com/google/go-cmp/cmp@v0.7.0
 ```
 

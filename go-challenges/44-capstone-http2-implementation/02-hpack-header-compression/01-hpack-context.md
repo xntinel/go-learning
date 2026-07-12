@@ -22,8 +22,7 @@ hpcomp/
 Set up the module:
 
 ```bash
-mkdir -p hpcomp/cmd/demo && cd hpcomp
-go mod init example.com/hpcomp
+mkdir -p go-solutions/44-capstone-http2-implementation/02-hpack-header-compression/01-hpack-context/cmd/demo && cd go-solutions/44-capstone-http2-implementation/02-hpack-header-compression/01-hpack-context
 go mod edit -go=1.26
 go get golang.org/x/net/http2/hpack
 ```

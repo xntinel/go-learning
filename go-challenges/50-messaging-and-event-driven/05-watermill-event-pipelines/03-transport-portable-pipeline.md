@@ -32,9 +32,8 @@ portable/                    independent module: example.com/portable
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/portable/cmd/demo
-cd ~/go-exercises/portable
-go mod init example.com/portable
+mkdir -p go-solutions/50-messaging-and-event-driven/05-watermill-event-pipelines/03-transport-portable-pipeline/cmd/demo
+cd go-solutions/50-messaging-and-event-driven/05-watermill-event-pipelines/03-transport-portable-pipeline
 go mod edit -go=1.26
 go get github.com/ThreeDotsLabs/watermill@v1.5.2
 go get github.com/ThreeDotsLabs/watermill-redisstream@v1.4.5

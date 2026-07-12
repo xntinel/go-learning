@@ -22,8 +22,7 @@ log_test.go            sealing math, tombstone detection, concurrent Append/Segm
 Set up the module:
 
 ```bash
-mkdir -p segmented-log/cmd/demo && cd segmented-log
-go mod init example.com/segmented-log
+mkdir -p go-solutions/41-capstone-message-queue/06-message-retention-compaction/01-segmented-log/cmd/demo && cd go-solutions/41-capstone-message-queue/06-message-retention-compaction/01-segmented-log
 ```
 
 ### Why a sealed segment is the unit of everything

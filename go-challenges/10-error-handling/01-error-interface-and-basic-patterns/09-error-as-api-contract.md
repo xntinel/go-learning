@@ -29,9 +29,8 @@ ratelimit/                   independent module: example.com/ratelimit
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ratelimit/cmd/demo
-cd ~/go-exercises/ratelimit
-go mod init example.com/ratelimit
+mkdir -p go-solutions/10-error-handling/01-error-interface-and-basic-patterns/09-error-as-api-contract/cmd/demo
+cd go-solutions/10-error-handling/01-error-interface-and-basic-patterns/09-error-as-api-contract
 ```
 
 ### The returned error set is a versioned promise

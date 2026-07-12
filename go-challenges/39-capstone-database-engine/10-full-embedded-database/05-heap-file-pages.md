@@ -23,8 +23,7 @@ heapfile_test.go     scan count == inserts-deletes, TID stable across compaction
 Set up the module:
 
 ```bash
-mkdir -p heap-file/cmd/demo && cd heap-file
-go mod init example.com/heap-file
+mkdir -p go-solutions/39-capstone-database-engine/10-full-embedded-database/05-heap-file-pages/cmd/demo && cd go-solutions/39-capstone-database-engine/10-full-embedded-database/05-heap-file-pages
 ```
 
 ### Why a TID, and why the heap grows at the tail

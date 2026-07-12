@@ -31,9 +31,8 @@ toolaudit/                   independent module: example.com/toolaudit
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/toolaudit/cmd/demo
-cd ~/go-exercises/toolaudit
-go mod init example.com/toolaudit
+mkdir -p go-solutions/11-packages-and-modules/08-vendor-directory/09-vendored-tool-directive-audit/cmd/demo
+cd go-solutions/11-packages-and-modules/08-vendor-directory/09-vendored-tool-directive-audit
 go get golang.org/x/mod
 ```
 

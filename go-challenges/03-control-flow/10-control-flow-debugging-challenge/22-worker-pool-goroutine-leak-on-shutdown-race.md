@@ -32,9 +32,8 @@ workerpool/                 independent module: example.com/worker-pool-goroutin
 - Verify: `go test -count=1 -race ./...`.
 
 ```bash
-mkdir -p ~/go-exercises/worker-pool-goroutine-leak-on-shutdown-race/cmd/demo
-cd ~/go-exercises/worker-pool-goroutine-leak-on-shutdown-race
-go mod init example.com/worker-pool-goroutine-leak-on-shutdown-race
+mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/22-worker-pool-goroutine-leak-on-shutdown-race/cmd/demo
+cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/22-worker-pool-goroutine-leak-on-shutdown-race
 ```
 
 ### Why Add has to happen before go, not inside it

@@ -27,9 +27,8 @@ featureflag/                   module example.com/featureflag
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/featureflag/cmd/demo
-cd ~/go-exercises/featureflag
-go mod init example.com/featureflag
+mkdir -p go-solutions/01-environment-and-tooling/08-cross-compilation-and-build-tags/04-custom-build-tag-feature-flag/cmd/demo
+cd go-solutions/01-environment-and-tooling/08-cross-compilation-and-build-tags/04-custom-build-tag-feature-flag
 ```
 
 ### Compiled out, not skipped

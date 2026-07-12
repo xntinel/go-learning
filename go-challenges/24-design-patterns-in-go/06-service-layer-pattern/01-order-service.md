@@ -23,8 +23,7 @@ service_test.go      pin the pipeline, the validators, and both rollback paths
 Set up the module:
 
 ```bash
-mkdir -p order-service/cmd/demo && cd order-service
-go mod init example.com/order-service
+mkdir -p go-solutions/24-design-patterns-in-go/06-service-layer-pattern/01-order-service/cmd/demo && cd go-solutions/24-design-patterns-in-go/06-service-layer-pattern/01-order-service
 ```
 
 ### Why orchestration belongs here, and how compensation works

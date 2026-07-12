@@ -30,9 +30,8 @@ pseudover/                  independent module: example.com/pseudover
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pseudover/cmd/demo
-cd ~/go-exercises/pseudover
-go mod init example.com/pseudover
+mkdir -p go-solutions/11-packages-and-modules/04-go-module-versioning/10-pseudo-version-inspector/cmd/demo
+cd go-solutions/11-packages-and-modules/04-go-module-versioning/10-pseudo-version-inspector
 go mod edit -go=1.26
 ```
 

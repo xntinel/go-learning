@@ -29,9 +29,8 @@ worker/                       independent module: example.com/worker
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/worker/cmd/demo
-cd ~/go-exercises/worker
-go mod init example.com/worker
+mkdir -p go-solutions/10-error-handling/05-sentinel-errors/06-context-cancellation-sentinels/cmd/demo
+cd go-solutions/10-error-handling/05-sentinel-errors/06-context-cancellation-sentinels
 ```
 
 ### Two sentinels, two operational meanings

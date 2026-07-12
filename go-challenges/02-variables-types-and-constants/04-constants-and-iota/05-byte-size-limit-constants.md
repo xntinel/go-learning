@@ -28,9 +28,8 @@ Verify: `go test -count=1 ./...`
 Set up the module:
 
 ```bash
-mkdir -p sizelimit/cmd/demo
-cd sizelimit
-go mod init example.com/sizelimit
+mkdir -p go-solutions/02-variables-types-and-constants/04-constants-and-iota/05-byte-size-limit-constants/cmd/demo
+cd go-solutions/02-variables-types-and-constants/04-constants-and-iota/05-byte-size-limit-constants
 ```
 
 ## Why the shift idiom, and why int64

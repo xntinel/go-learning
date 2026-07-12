@@ -24,8 +24,7 @@ cmd/
 Set up the module:
 
 ```bash
-mkdir -p loopscope/cmd/demo && cd loopscope
-go mod init example.com/loopscope
+mkdir -p go-solutions/40-capstone-language-interpreter/06-closures-first-class-functions/04-closures-in-loops-per-iteration-scope/cmd/demo && cd go-solutions/40-capstone-language-interpreter/06-closures-first-class-functions/04-closures-in-loops-per-iteration-scope
 ```
 
 ### Why one scope per iteration

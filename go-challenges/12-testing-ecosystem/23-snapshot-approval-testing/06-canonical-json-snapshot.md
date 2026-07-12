@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/canonsnap/cmd/demo
-cd ~/go-exercises/canonsnap
-go mod init example.com/canonsnap
+mkdir -p go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/06-canonical-json-snapshot/cmd/demo
+cd go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/06-canonical-json-snapshot
 ```
 
 ### Why a Marshal round-trip is the canonical form

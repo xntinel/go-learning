@@ -22,8 +22,7 @@ ack_test.go           nonce uniqueness, stale-nonce rejection, NACK leaves acked
 Set up the module:
 
 ```bash
-mkdir -p ack-protocol/cmd/demo && cd ack-protocol
-go mod init example.com/ack-protocol
+mkdir -p go-solutions/42-capstone-service-mesh-data-plane/09-control-plane-grpc/02-ack-nack-protocol/cmd/demo && cd go-solutions/42-capstone-service-mesh-data-plane/09-control-plane-grpc/02-ack-nack-protocol
 go mod edit -go=1.26
 ```
 

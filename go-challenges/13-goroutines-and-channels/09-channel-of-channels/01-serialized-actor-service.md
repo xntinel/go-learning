@@ -29,9 +29,8 @@ allocator/                 independent module: example.com/allocator
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/allocator/cmd/demo
-cd ~/go-exercises/allocator
-go mod init example.com/allocator
+mkdir -p go-solutions/13-goroutines-and-channels/09-channel-of-channels/01-serialized-actor-service/cmd/demo
+cd go-solutions/13-goroutines-and-channels/09-channel-of-channels/01-serialized-actor-service
 ```
 
 ### The actor that owns the counter

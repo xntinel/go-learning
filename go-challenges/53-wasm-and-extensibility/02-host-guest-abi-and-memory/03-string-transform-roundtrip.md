@@ -31,9 +31,8 @@ transform/                 independent module: example.com/transform
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/transform/cmd/demo
-cd ~/go-exercises/transform
-go mod init example.com/transform
+mkdir -p go-solutions/53-wasm-and-extensibility/02-host-guest-abi-and-memory/03-string-transform-roundtrip/cmd/demo
+cd go-solutions/53-wasm-and-extensibility/02-host-guest-abi-and-memory/03-string-transform-roundtrip
 ```
 
 ### What the guest does, and the contract it exposes

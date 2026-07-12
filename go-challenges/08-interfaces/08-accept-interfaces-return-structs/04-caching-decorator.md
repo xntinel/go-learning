@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cachedecorator/cmd/demo
-cd ~/go-exercises/cachedecorator
-go mod init example.com/cachedecorator
+mkdir -p go-solutions/08-interfaces/08-accept-interfaces-return-structs/04-caching-decorator/cmd/demo
+cd go-solutions/08-interfaces/08-accept-interfaces-return-structs/04-caching-decorator
 go mod edit -go=1.26
 ```
 

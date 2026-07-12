@@ -23,8 +23,7 @@ consumergroup_test.go  join/leave/rebalance, heartbeat expiry via fake clock, la
 Set up the module:
 
 ```bash
-mkdir -p consumer-group/cmd/demo && cd consumer-group
-go mod init example.com/consumergroup
+mkdir -p go-solutions/41-capstone-message-queue/03-consumer-groups-offset-tracking/03-consumer-group-coordinator/cmd/demo && cd go-solutions/41-capstone-message-queue/03-consumer-groups-offset-tracking/03-consumer-group-coordinator
 ```
 
 ### The coordinator's locking discipline and the rebalance state machine

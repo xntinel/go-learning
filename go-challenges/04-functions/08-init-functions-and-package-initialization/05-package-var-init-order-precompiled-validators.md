@@ -28,9 +28,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/validate/cmd/demo
-cd ~/go-exercises/validate
-go mod init example.com/validate
+mkdir -p go-solutions/04-functions/08-init-functions-and-package-initialization/05-package-var-init-order-precompiled-validators/cmd/demo
+cd go-solutions/04-functions/08-init-functions-and-package-initialization/05-package-var-init-order-precompiled-validators
 ```
 
 ### Why precompile, and why order is not source order

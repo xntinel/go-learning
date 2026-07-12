@@ -72,9 +72,8 @@ The GC tracks pointers only when they are stored in pointer-typed variables. The
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/slicestring/cmd/demo
-cd ~/go-exercises/slicestring
-go mod init example.com/slicestring
+mkdir -p go-solutions/28-unsafe-and-cgo/07-unsafe-slice-and-string/07-unsafe-slice-and-string/cmd/demo
+cd go-solutions/28-unsafe-and-cgo/07-unsafe-slice-and-string/07-unsafe-slice-and-string
 ```
 
 This is a library package, not a program. You verify it with `go test`.

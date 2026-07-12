@@ -59,9 +59,8 @@ rotate/                        module example.com/rotate
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/rotate
-cd ~/go-exercises/rotate
-go mod init example.com/rotate
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/16-rotate-segments-three-reversals
+cd go-solutions/06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/16-rotate-segments-three-reversals
 go mod edit -go=1.24
 ```
 

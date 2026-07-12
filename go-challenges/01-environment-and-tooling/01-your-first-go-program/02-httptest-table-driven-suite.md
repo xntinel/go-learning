@@ -32,9 +32,8 @@ Verify: `go test -count=1 -race ./...`, `gofmt -l` empty.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/httptestsuite/cmd/demo
-cd ~/go-exercises/httptestsuite
-go mod init example.com/httptestsuite
+mkdir -p go-solutions/01-environment-and-tooling/01-your-first-go-program/02-httptest-table-driven-suite/cmd/demo
+cd go-solutions/01-environment-and-tooling/01-your-first-go-program/02-httptest-table-driven-suite
 ```
 
 ### httptest gives you a real server, not a mock

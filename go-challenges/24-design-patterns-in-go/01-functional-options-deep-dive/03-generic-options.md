@@ -22,8 +22,7 @@ config_test.go         defaults, per-type validation, reuse across both types, o
 Set up the module:
 
 ```bash
-mkdir -p generic-options/cmd/demo && cd generic-options
-go mod init example.com/genoptions
+mkdir -p go-solutions/24-design-patterns-in-go/01-functional-options-deep-dive/03-generic-options/cmd/demo && cd go-solutions/24-design-patterns-in-go/01-functional-options-deep-dive/03-generic-options
 ```
 
 ### Why generics here, and the trade-off it makes

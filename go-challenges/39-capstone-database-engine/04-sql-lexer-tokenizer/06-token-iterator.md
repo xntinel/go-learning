@@ -25,8 +25,7 @@ iter_test.go         iterator agrees with Tokenize, early break, filtering
 Set up the module:
 
 ```bash
-mkdir -p token-iterator/cmd/demo && cd token-iterator
-go mod init example.com/token-iterator
+mkdir -p go-solutions/39-capstone-database-engine/04-sql-lexer-tokenizer/06-token-iterator/cmd/demo && cd go-solutions/39-capstone-database-engine/04-sql-lexer-tokenizer/06-token-iterator
 ```
 
 ### Why an iterator, and why it must agree with the slice

@@ -29,9 +29,8 @@ cgroupmax/                 independent module: example.com/cgroupmax
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cgroupmax/cmd/demo
-cd ~/go-exercises/cgroupmax
-go mod init example.com/cgroupmax
+mkdir -p go-solutions/48-modern-go-language-and-stdlib/10-container-aware-gomaxprocs/01-cgroup-cpu-limit-parser/cmd/demo
+cd go-solutions/48-modern-go-language-and-stdlib/10-container-aware-gomaxprocs/01-cgroup-cpu-limit-parser
 go mod edit -go=1.25
 ```
 

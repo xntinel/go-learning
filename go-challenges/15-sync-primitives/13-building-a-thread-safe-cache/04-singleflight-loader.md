@@ -32,9 +32,8 @@ loadingcache/                    independent module: example.com/loadingcache
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/loadingcache/loadingcache ~/go-exercises/loadingcache/cmd/demo
-cd ~/go-exercises/loadingcache
-go mod init example.com/loadingcache
+mkdir -p go-solutions/15-sync-primitives/13-building-a-thread-safe-cache/04-singleflight-loader/loadingcache go-solutions/15-sync-primitives/13-building-a-thread-safe-cache/04-singleflight-loader/cmd/demo
+cd go-solutions/15-sync-primitives/13-building-a-thread-safe-cache/04-singleflight-loader
 go get golang.org/x/sync
 ```
 

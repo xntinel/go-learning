@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/frameproto/cmd/demo
-cd ~/go-exercises/frameproto
-go mod init example.com/frameproto
+mkdir -p go-solutions/12-testing-ecosystem/10-testing-readers-with-iotest/03-dataerr-eof-with-final-data/cmd/demo
+cd go-solutions/12-testing-ecosystem/10-testing-readers-with-iotest/03-dataerr-eof-with-final-data
 ```
 
 ### The EOF-with-data trap, and why io.ReadFull defuses it

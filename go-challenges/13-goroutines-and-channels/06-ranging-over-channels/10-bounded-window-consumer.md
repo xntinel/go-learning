@@ -28,9 +28,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/boundedwindow/cmd/demo
-cd ~/go-exercises/boundedwindow
-go mod init example.com/boundedwindow
+mkdir -p go-solutions/13-goroutines-and-channels/06-ranging-over-channels/10-bounded-window-consumer/cmd/demo
+cd go-solutions/13-goroutines-and-channels/06-ranging-over-channels/10-bounded-window-consumer
 ```
 
 ### Finished versus timed-out: the boolean matters

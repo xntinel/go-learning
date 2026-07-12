@@ -29,9 +29,8 @@ fees/                      independent module: example.com/fees
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/fees/cmd/demo
-cd ~/go-exercises/fees
-go mod init example.com/fees
+mkdir -p go-solutions/12-testing-ecosystem/20-test-coverage-analysis/08-assertion-free-coverage-trap/cmd/demo
+cd go-solutions/12-testing-ecosystem/20-test-coverage-analysis/08-assertion-free-coverage-trap
 ```
 
 ### Where the trap lives: the rounding tie

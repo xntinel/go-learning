@@ -25,8 +25,7 @@ affinity_test.go       stability, in-range, distribution, rescale moves fewer
 Set up the module:
 
 ```bash
-mkdir -p affinity/cmd/demo && cd affinity
-go mod init example.com/affinity
+mkdir -p go-solutions/43-capstone-stream-processing-engine/06-parallel-execution/02-affinity-partitioner/cmd/demo && cd go-solutions/43-capstone-stream-processing-engine/06-parallel-execution/02-affinity-partitioner
 go mod edit -go=1.26
 ```
 

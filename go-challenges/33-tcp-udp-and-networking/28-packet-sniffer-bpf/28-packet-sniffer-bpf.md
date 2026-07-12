@@ -108,9 +108,8 @@ from the default CI gate.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/sniffer/cmd/demo
-cd ~/go-exercises/sniffer
-go mod init example.com/sniffer
+mkdir -p go-solutions/33-tcp-udp-and-networking/28-packet-sniffer-bpf/28-packet-sniffer-bpf/cmd/demo
+cd go-solutions/33-tcp-udp-and-networking/28-packet-sniffer-bpf/28-packet-sniffer-bpf
 go get golang.org/x/net@latest
 go get github.com/google/gopacket@latest
 ```

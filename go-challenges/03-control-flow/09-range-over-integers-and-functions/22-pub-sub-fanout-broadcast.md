@@ -30,9 +30,8 @@ Verify: `go test -count=1 ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pub-sub-fanout-broadcast/cmd/demo
-cd ~/go-exercises/pub-sub-fanout-broadcast
-go mod init example.com/pub-sub-fanout-broadcast
+mkdir -p go-solutions/03-control-flow/09-range-over-integers-and-functions/22-pub-sub-fanout-broadcast/cmd/demo
+cd go-solutions/03-control-flow/09-range-over-integers-and-functions/22-pub-sub-fanout-broadcast
 go mod edit -go=1.24
 ```
 

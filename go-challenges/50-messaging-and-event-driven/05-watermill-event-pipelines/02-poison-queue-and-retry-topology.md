@@ -30,9 +30,8 @@ dlq/                         independent module: example.com/dlq
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/dlq/cmd/demo
-cd ~/go-exercises/dlq
-go mod init example.com/dlq
+mkdir -p go-solutions/50-messaging-and-event-driven/05-watermill-event-pipelines/02-poison-queue-and-retry-topology/cmd/demo
+cd go-solutions/50-messaging-and-event-driven/05-watermill-event-pipelines/02-poison-queue-and-retry-topology
 go mod edit -go=1.26
 go get github.com/ThreeDotsLabs/watermill@v1.5.2
 ```

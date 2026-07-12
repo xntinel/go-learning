@@ -21,9 +21,8 @@ The demo runs through exported API, but `go test` is the gate. Table-driven test
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/08-sqlc-type-safe-sql.md
-cd ~/go-exercises/08-sqlc-type-safe-sql.md
-go mod init example.com/08-sqlc-type-safe-sql.md
+mkdir -p go-solutions/22-database-patterns/08-sqlc-type-safe-sql/08-sqlc-type-safe-sql
+cd go-solutions/22-database-patterns/08-sqlc-type-safe-sql/08-sqlc-type-safe-sql
 go mod edit -go=1.26
 ```
 

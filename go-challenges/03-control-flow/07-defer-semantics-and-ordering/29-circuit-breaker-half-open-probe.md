@@ -37,9 +37,8 @@ breaker/                     independent module: example.com/circuit-breaker-hal
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/circuit-breaker-half-open-probe/cmd/demo
-cd ~/go-exercises/circuit-breaker-half-open-probe
-go mod init example.com/circuit-breaker-half-open-probe
+mkdir -p go-solutions/03-control-flow/07-defer-semantics-and-ordering/29-circuit-breaker-half-open-probe/cmd/demo
+cd go-solutions/03-control-flow/07-defer-semantics-and-ordering/29-circuit-breaker-half-open-probe
 go mod edit -go=1.24
 ```
 

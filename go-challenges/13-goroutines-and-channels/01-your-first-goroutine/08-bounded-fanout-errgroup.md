@@ -31,9 +31,8 @@ Verify: `GOFLAGS=-mod=mod go test -race -count=1 ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/batch/cmd/demo
-cd ~/go-exercises/batch
-go mod init example.com/batch
+mkdir -p go-solutions/13-goroutines-and-channels/01-your-first-goroutine/08-bounded-fanout-errgroup/cmd/demo
+cd go-solutions/13-goroutines-and-channels/01-your-first-goroutine/08-bounded-fanout-errgroup
 go get golang.org/x/sync/errgroup
 ```
 

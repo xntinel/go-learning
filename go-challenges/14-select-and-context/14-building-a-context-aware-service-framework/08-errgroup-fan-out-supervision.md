@@ -28,9 +28,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/groupsup/cmd/demo
-cd ~/go-exercises/groupsup
-go mod init example.com/groupsup
+mkdir -p go-solutions/14-select-and-context/14-building-a-context-aware-service-framework/08-errgroup-fan-out-supervision/cmd/demo
+cd go-solutions/14-select-and-context/14-building-a-context-aware-service-framework/08-errgroup-fan-out-supervision
 go get golang.org/x/sync/errgroup
 ```
 

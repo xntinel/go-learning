@@ -25,9 +25,8 @@ configdefaults/            independent module: example.com/configdefaults
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/configdefaults/cmd/demo
-cd ~/go-exercises/configdefaults
-go mod init example.com/configdefaults
+mkdir -p go-solutions/12-testing-ecosystem/01-your-first-test/07-config-apply-defaults/cmd/demo
+cd go-solutions/12-testing-ecosystem/01-your-first-test/07-config-apply-defaults
 ```
 
 ### Zero-value defaulting, and comparing structs

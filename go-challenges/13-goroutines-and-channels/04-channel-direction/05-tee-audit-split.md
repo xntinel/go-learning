@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/tee/cmd/demo
-cd ~/go-exercises/tee
-go mod init example.com/tee
+mkdir -p go-solutions/13-goroutines-and-channels/04-channel-direction/05-tee-audit-split/cmd/demo
+cd go-solutions/13-goroutines-and-channels/04-channel-direction/05-tee-audit-split
 ```
 
 ### Why the nil-channel select trick

@@ -34,9 +34,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/logonce/cmd/demo
-cd ~/go-exercises/logonce
-go mod init example.com/logonce
+mkdir -p go-solutions/10-error-handling/10-error-handling-middleware/10-log-once-at-boundary/cmd/demo
+cd go-solutions/10-error-handling/10-error-handling-middleware/10-log-once-at-boundary
 ```
 
 ### Why once, and why at the boundary

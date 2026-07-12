@@ -28,9 +28,8 @@ semaphore/                  independent module: example.com/semaphore
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/semaphore/cmd/demo
-cd ~/go-exercises/semaphore
-go mod init example.com/semaphore
+mkdir -p go-solutions/14-select-and-context/02-select-with-default/08-try-acquire-semaphore/cmd/demo
+cd go-solutions/14-select-and-context/02-select-with-default/08-try-acquire-semaphore
 go mod edit -go=1.26
 ```
 

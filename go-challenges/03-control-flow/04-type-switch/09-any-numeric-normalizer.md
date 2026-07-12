@@ -34,9 +34,8 @@ numnorm/                     independent module: example.com/numnorm
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/numnorm/cmd/demo
-cd ~/go-exercises/numnorm
-go mod init example.com/numnorm
+mkdir -p go-solutions/03-control-flow/04-type-switch/09-any-numeric-normalizer/cmd/demo
+cd go-solutions/03-control-flow/04-type-switch/09-any-numeric-normalizer
 ```
 
 ## The two guards: precision and overflow

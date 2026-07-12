@@ -36,9 +36,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pipeline/cmd/demo
-cd ~/go-exercises/pipeline
-go mod init example.com/pipeline
+mkdir -p go-solutions/14-select-and-context/12-multi-stage-pipeline-cancellation/01-stage-primitives-generate-transform-collect/cmd/demo
+cd go-solutions/14-select-and-context/12-multi-stage-pipeline-cancellation/01-stage-primitives-generate-transform-collect
 ```
 
 ### Why each stage owns and closes its own output

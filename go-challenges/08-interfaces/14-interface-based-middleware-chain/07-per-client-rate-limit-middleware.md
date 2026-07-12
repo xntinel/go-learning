@@ -27,9 +27,8 @@ ratelimit/                   independent module: example.com/ratelimit
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ratelimit/cmd/demo
-cd ~/go-exercises/ratelimit
-go mod init example.com/ratelimit
+mkdir -p go-solutions/08-interfaces/14-interface-based-middleware-chain/07-per-client-rate-limit-middleware/cmd/demo
+cd go-solutions/08-interfaces/14-interface-based-middleware-chain/07-per-client-rate-limit-middleware
 go mod edit -go=1.26
 go get golang.org/x/time/rate
 ```

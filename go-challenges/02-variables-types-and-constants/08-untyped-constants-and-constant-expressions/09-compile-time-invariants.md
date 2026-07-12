@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/constguards/cmd/demo
-cd ~/go-exercises/constguards
-go mod init example.com/constguards
+mkdir -p go-solutions/02-variables-types-and-constants/08-untyped-constants-and-constant-expressions/09-compile-time-invariants/cmd/demo
+cd go-solutions/02-variables-types-and-constants/08-untyped-constants-and-constant-expressions/09-compile-time-invariants
 ```
 
 ### The const _ = uint(expr) assertion idiom

@@ -29,9 +29,8 @@ workerpool/                  module example.com/workerpool
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/workerpool/cmd/demo
-cd ~/go-exercises/workerpool
-go mod init example.com/workerpool
+mkdir -p go-solutions/03-control-flow/02-for-loops/05-bounded-worker-pool/cmd/demo
+cd go-solutions/03-control-flow/02-for-loops/05-bounded-worker-pool
 ```
 
 ### The close-then-drain shutdown, and who closes what

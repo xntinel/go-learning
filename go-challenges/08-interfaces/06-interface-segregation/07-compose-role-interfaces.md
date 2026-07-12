@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/session/cmd/demo
-cd ~/go-exercises/session
-go mod init example.com/session
+mkdir -p go-solutions/08-interfaces/06-interface-segregation/07-compose-role-interfaces/cmd/demo
+cd go-solutions/08-interfaces/06-interface-segregation/07-compose-role-interfaces
 go mod edit -go=1.24
 ```
 

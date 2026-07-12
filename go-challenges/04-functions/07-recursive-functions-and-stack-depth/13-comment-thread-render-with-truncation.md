@@ -29,9 +29,8 @@ single leaf comment producing exactly one line with no truncation marker.
 Verify: `go test -count=1 ./...`
 
 ```bash
-mkdir -p ~/go-exercises/commentthread
-cd ~/go-exercises/commentthread
-go mod init example.com/commentthread
+mkdir -p go-solutions/04-functions/07-recursive-functions-and-stack-depth/13-comment-thread-render-with-truncation
+cd go-solutions/04-functions/07-recursive-functions-and-stack-depth/13-comment-thread-render-with-truncation
 go mod edit -go=1.24
 ```
 

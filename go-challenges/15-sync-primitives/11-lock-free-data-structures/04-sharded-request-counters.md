@@ -28,9 +28,8 @@ httpmetrics/                     independent module: example.com/httpmetrics
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/httpmetrics/cmd/demo
-cd ~/go-exercises/httpmetrics
-go mod init example.com/httpmetrics
+mkdir -p go-solutions/15-sync-primitives/11-lock-free-data-structures/04-sharded-request-counters/cmd/demo
+cd go-solutions/15-sync-primitives/11-lock-free-data-structures/04-sharded-request-counters
 ```
 
 ### False sharing, and why padding is not superstition

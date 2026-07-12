@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/counter/cmd/demo
-cd ~/go-exercises/counter
-go mod init example.com/counter
+mkdir -p go-solutions/12-testing-ecosystem/14-parallel-tests/01-parallel-safe-counter/cmd/demo
+cd go-solutions/12-testing-ecosystem/14-parallel-tests/01-parallel-safe-counter
 ```
 
 ### Why atomic and not a mutex

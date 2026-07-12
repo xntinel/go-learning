@@ -65,9 +65,8 @@ Single-Decree Paxos agrees on one value. Multi-Paxos runs one Paxos instance per
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/paxos/cmd/demo
-cd ~/go-exercises/paxos
-go mod init example.com/paxos
+mkdir -p go-solutions/37-distributed-systems-fundamentals/15-paxos-consensus/15-paxos-consensus/cmd/demo
+cd go-solutions/37-distributed-systems-fundamentals/15-paxos-consensus/15-paxos-consensus
 ```
 
 This is a library, not a program: the Paxos logic lives in `package paxos`. Verify it with `go test`.

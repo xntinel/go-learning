@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/swapcounter/cmd/demo
-cd ~/go-exercises/swapcounter
-go mod init example.com/swapcounter
+mkdir -p go-solutions/07-structs-and-methods/03-methods-value-vs-pointer-receivers/02-counter-swap-two-pointers/cmd/demo
+cd go-solutions/07-structs-and-methods/03-methods-value-vs-pointer-receivers/02-counter-swap-two-pointers
 ```
 
 ### One method, two mutations

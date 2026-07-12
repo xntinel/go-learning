@@ -53,9 +53,8 @@ deduplicate before comparing.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/fanin/internal/fanin ~/go-exercises/fanin/cmd/fanindemo
-cd ~/go-exercises/fanin
-go mod init example.com/fanin
+mkdir -p go-solutions/16-concurrency-patterns/03-fan-in-pattern/03-fan-in-pattern/internal/fanin go-solutions/16-concurrency-patterns/03-fan-in-pattern/03-fan-in-pattern/cmd/fanindemo
+cd go-solutions/16-concurrency-patterns/03-fan-in-pattern/03-fan-in-pattern
 ```
 
 ### Exercise 1: The Producer And The Upstream Stage

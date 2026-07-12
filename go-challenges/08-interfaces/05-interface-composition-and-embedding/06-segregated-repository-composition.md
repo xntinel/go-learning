@@ -29,9 +29,8 @@ repo/                       independent module: example.com/repo
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/repo/cmd/demo
-cd ~/go-exercises/repo
-go mod init example.com/repo
+mkdir -p go-solutions/08-interfaces/05-interface-composition-and-embedding/06-segregated-repository-composition/cmd/demo
+cd go-solutions/08-interfaces/05-interface-composition-and-embedding/06-segregated-repository-composition
 ```
 
 ### Why segregate, then compose

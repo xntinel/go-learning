@@ -35,9 +35,8 @@ singleflight/                  module example.com/singleflight
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/singleflight/cmd/demo
-cd ~/go-exercises/singleflight
-go mod init example.com/singleflight
+mkdir -p go-solutions/03-control-flow/02-for-loops/33-request-singleflight-deduplication/cmd/demo
+cd go-solutions/03-control-flow/02-for-loops/33-request-singleflight-deduplication
 go mod edit -go=1.24
 ```
 

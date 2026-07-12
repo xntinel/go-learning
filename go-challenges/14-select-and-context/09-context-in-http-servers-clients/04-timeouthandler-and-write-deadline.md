@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/writedeadline/cmd/demo
-cd ~/go-exercises/writedeadline
-go mod init example.com/writedeadline
+mkdir -p go-solutions/14-select-and-context/09-context-in-http-servers-clients/04-timeouthandler-and-write-deadline/cmd/demo
+cd go-solutions/14-select-and-context/09-context-in-http-servers-clients/04-timeouthandler-and-write-deadline
 ```
 
 ## The design

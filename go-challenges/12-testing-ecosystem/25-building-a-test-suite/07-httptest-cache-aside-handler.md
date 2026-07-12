@@ -27,9 +27,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cachehttp/cmd/demo
-cd ~/go-exercises/cachehttp
-go mod init example.com/cachehttp
+mkdir -p go-solutions/12-testing-ecosystem/25-building-a-test-suite/07-httptest-cache-aside-handler/cmd/demo
+cd go-solutions/12-testing-ecosystem/25-building-a-test-suite/07-httptest-cache-aside-handler
 ```
 
 ### The cache-aside contract and its four status codes

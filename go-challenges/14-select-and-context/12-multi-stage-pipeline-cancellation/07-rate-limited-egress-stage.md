@@ -35,9 +35,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/egress/cmd/demo
-cd ~/go-exercises/egress
-go mod init example.com/egress
+mkdir -p go-solutions/14-select-and-context/12-multi-stage-pipeline-cancellation/07-rate-limited-egress-stage/cmd/demo
+cd go-solutions/14-select-and-context/12-multi-stage-pipeline-cancellation/07-rate-limited-egress-stage
 go get golang.org/x/time/rate
 ```
 

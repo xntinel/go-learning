@@ -95,9 +95,8 @@ For everything else — including the `SumInt64s` example in this lesson — the
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/asmfuncs/cmd/demo
-cd ~/go-exercises/asmfuncs
-go mod init example.com/asmfuncs
+mkdir -p go-solutions/36-runtime-compiler-and-assembly/10-writing-assembly-functions/10-writing-assembly-functions/cmd/demo
+cd go-solutions/36-runtime-compiler-and-assembly/10-writing-assembly-functions/10-writing-assembly-functions
 ```
 
 ### Exercise 1: Pure-Go Implementations (the correctness oracle)

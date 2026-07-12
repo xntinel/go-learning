@@ -26,9 +26,8 @@ mutexprof/                independent module: example.com/mutexprof
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/mutexprof/cmd/demo
-cd ~/go-exercises/mutexprof
-go mod init example.com/mutexprof
+mkdir -p go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/06-mutex-profile-lock-contention/cmd/demo
+cd go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/06-mutex-profile-lock-contention
 ```
 
 ### What the mutex profile records

@@ -31,9 +31,8 @@ cfgdebug/                  independent module: example.com/cfgdebug
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cfgdebug/cmd/demo
-cd ~/go-exercises/cfgdebug
-go mod init example.com/cfgdebug
+mkdir -p go-solutions/15-sync-primitives/08-atomic-value-config-hot-reload/09-config-observability-endpoint/cmd/demo
+cd go-solutions/15-sync-primitives/08-atomic-value-config-hot-reload/09-config-observability-endpoint
 ```
 
 ### One snapshot for the status, too

@@ -26,9 +26,8 @@ greetserver/                    independent module: example.com/newserver-e2e-ha
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/greetserver/cmd/demo
-cd ~/go-exercises/greetserver
-go mod init example.com/newserver-e2e-handler
+mkdir -p go-solutions/12-testing-ecosystem/09-httptest/02-newserver-e2e-handler/cmd/demo
+cd go-solutions/12-testing-ecosystem/09-httptest/02-newserver-e2e-handler
 ```
 
 ### Recorder routing vs real server routing

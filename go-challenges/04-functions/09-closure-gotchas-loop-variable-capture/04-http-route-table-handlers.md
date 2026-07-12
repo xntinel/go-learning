@@ -27,9 +27,8 @@ routetable/                  independent module: example.com/routetable
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/routetable/cmd/demo
-cd ~/go-exercises/routetable
-go mod init example.com/routetable
+mkdir -p go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/04-http-route-table-handlers/cmd/demo
+cd go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/04-http-route-table-handlers
 go mod edit -go=1.26
 ```
 

@@ -30,9 +30,8 @@ upstream-client/                     independent module: example.com/upstream
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/upstream-client/cmd/demo
-cd ~/go-exercises/upstream-client
-go mod init example.com/upstream
+mkdir -p go-solutions/14-select-and-context/05-context-withtimeout-withdeadline/02-outbound-http-timeout/cmd/demo
+cd go-solutions/14-select-and-context/05-context-withtimeout-withdeadline/02-outbound-http-timeout
 ```
 
 ### Why the timeout must live on the request, not just the client

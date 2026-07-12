@@ -24,8 +24,7 @@ cmd/
 Set up the module:
 
 ```bash
-mkdir -p counter/cmd/demo && cd counter
-go mod init example.com/counter
+mkdir -p go-solutions/40-capstone-language-interpreter/06-closures-first-class-functions/02-mutable-closures-the-counter-pattern/cmd/demo && cd go-solutions/40-capstone-language-interpreter/06-closures-first-class-functions/02-mutable-closures-the-counter-pattern
 ```
 
 ### Why Update, not Set

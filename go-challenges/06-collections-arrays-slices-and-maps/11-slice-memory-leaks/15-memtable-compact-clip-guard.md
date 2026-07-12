@@ -52,9 +52,8 @@ memtable/                module example.com/memtable
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/memtable
-cd ~/go-exercises/memtable
-go mod init example.com/memtable
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/11-slice-memory-leaks/15-memtable-compact-clip-guard
+cd go-solutions/06-collections-arrays-slices-and-maps/11-slice-memory-leaks/15-memtable-compact-clip-guard
 go mod edit -go=1.24
 ```
 

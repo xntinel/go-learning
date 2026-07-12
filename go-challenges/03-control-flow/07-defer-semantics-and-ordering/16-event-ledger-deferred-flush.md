@@ -33,9 +33,8 @@ ledger/                     independent module: example.com/event-ledger-deferre
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/event-ledger-deferred-flush/cmd/demo
-cd ~/go-exercises/event-ledger-deferred-flush
-go mod init example.com/event-ledger-deferred-flush
+mkdir -p go-solutions/03-control-flow/07-defer-semantics-and-ordering/16-event-ledger-deferred-flush/cmd/demo
+cd go-solutions/03-control-flow/07-defer-semantics-and-ordering/16-event-ledger-deferred-flush
 go mod edit -go=1.24
 ```
 

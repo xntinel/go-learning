@@ -29,9 +29,8 @@ single-store/                 independent module: example.com/single-store
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/single-store/cmd/demo
-cd ~/go-exercises/single-store
-go mod init example.com/single-store
+mkdir -p go-solutions/15-sync-primitives/14-contention-profiling/01-contended-single-mutex-store/cmd/demo
+cd go-solutions/15-sync-primitives/14-contention-profiling/01-contended-single-mutex-store
 ```
 
 ### Why one lock across a real critical section

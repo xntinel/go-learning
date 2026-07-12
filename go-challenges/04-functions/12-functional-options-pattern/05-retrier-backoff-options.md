@@ -30,9 +30,8 @@ retrier/                         independent module: example.com/retrier
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/retrier/cmd/demo
-cd ~/go-exercises/retrier
-go mod init example.com/retrier
+mkdir -p go-solutions/04-functions/12-functional-options-pattern/05-retrier-backoff-options/cmd/demo
+cd go-solutions/04-functions/12-functional-options-pattern/05-retrier-backoff-options
 ```
 
 ### Injecting time and randomness

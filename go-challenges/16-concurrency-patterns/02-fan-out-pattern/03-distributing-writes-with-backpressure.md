@@ -22,8 +22,7 @@ distribute_test.go   all-writes-land, in-flight bound, error aggregation, cancel
 Set up the module:
 
 ```bash
-mkdir -p distributing-writes/cmd/demo && cd distributing-writes
-go mod init example.com/distributing-writes
+mkdir -p go-solutions/16-concurrency-patterns/02-fan-out-pattern/03-distributing-writes-with-backpressure/cmd/demo && cd go-solutions/16-concurrency-patterns/02-fan-out-pattern/03-distributing-writes-with-backpressure
 ```
 
 ### Why an unbuffered channel is the backpressure valve

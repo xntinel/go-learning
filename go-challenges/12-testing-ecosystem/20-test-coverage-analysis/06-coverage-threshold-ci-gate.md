@@ -28,9 +28,8 @@ covgate/                   independent module: example.com/covgate
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/covgate/cmd/demo
-cd ~/go-exercises/covgate
-go mod init example.com/covgate
+mkdir -p go-solutions/12-testing-ecosystem/20-test-coverage-analysis/06-coverage-threshold-ci-gate/cmd/demo
+cd go-solutions/12-testing-ecosystem/20-test-coverage-analysis/06-coverage-threshold-ci-gate
 ```
 
 ### Parse the total line robustly, not by index

@@ -26,9 +26,8 @@ timeoutmw/                   independent module: example.com/timeoutmw
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/timeoutmw/cmd/demo
-cd ~/go-exercises/timeoutmw
-go mod init example.com/timeoutmw
+mkdir -p go-solutions/08-interfaces/14-interface-based-middleware-chain/08-request-timeout-middleware/cmd/demo
+cd go-solutions/08-interfaces/14-interface-based-middleware-chain/08-request-timeout-middleware
 go mod edit -go=1.26
 ```
 

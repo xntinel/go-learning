@@ -33,9 +33,8 @@ Verify: `go test -count=1 ./...`, `go vet ./...` (which catches malformed
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/errcontract/cmd/demo
-cd ~/go-exercises/errcontract
-go mod init example.com/errcontract
+mkdir -p go-solutions/01-environment-and-tooling/01-your-first-go-program/05-error-contract-is-as-join/cmd/demo
+cd go-solutions/01-environment-and-tooling/01-your-first-go-program/05-error-contract-is-as-join
 ```
 
 ### Four tools, four jobs

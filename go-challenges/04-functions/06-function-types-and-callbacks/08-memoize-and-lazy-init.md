@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/memo/cmd/demo
-cd ~/go-exercises/memo
-go mod init example.com/memo
+mkdir -p go-solutions/04-functions/06-function-types-and-callbacks/08-memoize-and-lazy-init/cmd/demo
+cd go-solutions/04-functions/06-function-types-and-callbacks/08-memoize-and-lazy-init
 ```
 
 ### Memoize caches successes only; OnceValues initializes exactly once

@@ -29,9 +29,8 @@ redactlog/                   independent module: example.com/redactlog
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/redactlog/cmd/demo
-cd ~/go-exercises/redactlog
-go mod init example.com/redactlog
+mkdir -p go-solutions/10-error-handling/14-error-observability/05-redact-sensitive-fields/cmd/demo
+cd go-solutions/10-error-handling/14-error-observability/05-redact-sensitive-fields
 go mod edit -go=1.25
 ```
 

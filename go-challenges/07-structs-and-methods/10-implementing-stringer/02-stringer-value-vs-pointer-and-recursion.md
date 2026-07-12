@@ -29,9 +29,8 @@ loglevel/                   independent module: example.com/loglevel
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/loglevel/cmd/demo
-cd ~/go-exercises/loglevel
-go mod init example.com/loglevel
+mkdir -p go-solutions/07-structs-and-methods/10-implementing-stringer/02-stringer-value-vs-pointer-and-recursion/cmd/demo
+cd go-solutions/07-structs-and-methods/10-implementing-stringer/02-stringer-value-vs-pointer-and-recursion
 ```
 
 ### Bug 1: recursing through the receiver

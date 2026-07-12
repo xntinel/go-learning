@@ -31,8 +31,7 @@ secretstore/                  independent module: example.com/secretstore
 Set up the module:
 
 ```bash
-mkdir secretstore && cd secretstore
-go mod init example.com/secretstore
+mkdir go-solutions/15-sync-primitives/04-sync-map/08-credential-hot-swap && cd go-solutions/15-sync-primitives/04-sync-map/08-credential-hot-swap
 ```
 
 ### Why Swap, and why readers need no lock

@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/logfmt/cmd/demo
-cd ~/go-exercises/logfmt
-go mod init example.com/logfmt
+mkdir -p go-solutions/08-interfaces/03-type-assertions-and-type-switches/08-loggable-value-detection/cmd/demo
+cd go-solutions/08-interfaces/03-type-assertions-and-type-switches/08-loggable-value-detection
 ```
 
 ### Precedence is the whole design

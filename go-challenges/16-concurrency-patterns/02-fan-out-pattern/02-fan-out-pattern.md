@@ -55,9 +55,8 @@ correct.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/fanout/internal/fanout ~/go-exercises/fanout/cmd/fanoutdemo
-cd ~/go-exercises/fanout
-go mod init example.com/fanout
+mkdir -p go-solutions/16-concurrency-patterns/02-fan-out-pattern/02-fan-out-pattern/internal/fanout go-solutions/16-concurrency-patterns/02-fan-out-pattern/02-fan-out-pattern/cmd/fanoutdemo
+cd go-solutions/16-concurrency-patterns/02-fan-out-pattern/02-fan-out-pattern
 ```
 
 ### Exercise 1: The Worker Function

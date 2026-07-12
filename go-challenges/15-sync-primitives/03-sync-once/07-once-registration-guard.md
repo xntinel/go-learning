@@ -31,9 +31,8 @@ once-registration-guard/      module: example.com/once-registration-guard
 Set up the module:
 
 ```bash
-mkdir -p once-registration-guard/cmd/demo
-cd once-registration-guard
-go mod init example.com/once-registration-guard
+mkdir -p go-solutions/15-sync-primitives/03-sync-once/07-once-registration-guard/cmd/demo
+cd go-solutions/15-sync-primitives/03-sync-once/07-once-registration-guard
 ```
 
 ### Why registries panic, and why constructors re-run

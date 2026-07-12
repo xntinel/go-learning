@@ -31,9 +31,8 @@ writerlib/                    independent module: example.com/writerlib
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/writerlib/cmd/demo ~/go-exercises/writerlib/internal/writer
-cd ~/go-exercises/writerlib
-go mod init example.com/writerlib
+mkdir -p go-solutions/01-environment-and-tooling/06-linting-with-golangci-lint/01-errcheck-unchecked-io-error/cmd/demo go-solutions/01-environment-and-tooling/06-linting-with-golangci-lint/01-errcheck-unchecked-io-error/internal/writer
+cd go-solutions/01-environment-and-tooling/06-linting-with-golangci-lint/01-errcheck-unchecked-io-error
 ```
 
 ### The bug: a discarded os.MkdirAll error

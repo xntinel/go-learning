@@ -28,9 +28,8 @@ statusenum/                 independent module: example.com/statusenum
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/statusenum/cmd/demo
-cd ~/go-exercises/statusenum
-go mod init example.com/statusenum
+mkdir -p go-solutions/07-structs-and-methods/10-implementing-stringer/01-status-enum-stringer/cmd/demo
+cd go-solutions/07-structs-and-methods/10-implementing-stringer/01-status-enum-stringer
 ```
 
 ### Why a value receiver and a TypeName(N) default

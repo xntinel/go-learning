@@ -29,9 +29,8 @@ dedupkey/                   independent module: example.com/dedupkey
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/dedupkey/cmd/demo
-cd ~/go-exercises/dedupkey
-go mod init example.com/dedupkey
+mkdir -p go-solutions/07-structs-and-methods/05-struct-comparison-and-equality/03-composite-idempotency-map-key/cmd/demo
+cd go-solutions/07-structs-and-methods/05-struct-comparison-and-equality/03-composite-idempotency-map-key
 ```
 
 ### Why comparability *is* map-key-ability

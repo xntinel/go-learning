@@ -34,9 +34,8 @@ schedule/                  independent module: example.com/schedule
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/schedule/cmd/demo
-cd ~/go-exercises/schedule
-go mod init example.com/schedule
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/09-ordered-schedule-insert-delete/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/09-ordered-schedule-insert-delete
 go mod edit -go=1.24
 ```
 

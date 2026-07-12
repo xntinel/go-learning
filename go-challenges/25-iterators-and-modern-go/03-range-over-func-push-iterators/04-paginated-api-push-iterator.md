@@ -35,8 +35,7 @@ pageiter_test.go     full walk, fetch-count == page-count, early break fetches f
 Set up the module:
 
 ```bash
-mkdir -p paginated-api-push-iterator/cmd/demo && cd paginated-api-push-iterator
-go mod init example.com/pageiter
+mkdir -p go-solutions/25-iterators-and-modern-go/03-range-over-func-push-iterators/04-paginated-api-push-iterator/cmd/demo && cd go-solutions/25-iterators-and-modern-go/03-range-over-func-push-iterators/04-paginated-api-push-iterator
 ```
 
 ### The shape of a cursor-paginated source

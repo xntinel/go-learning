@@ -30,9 +30,8 @@ statusclass/                  independent module: example.com/statusclass
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/statusclass/cmd/demo
-cd ~/go-exercises/statusclass
-go mod init example.com/statusclass
+mkdir -p go-solutions/01-environment-and-tooling/06-linting-with-golangci-lint/05-expanding-linter-set-gocritic/cmd/demo
+cd go-solutions/01-environment-and-tooling/06-linting-with-golangci-lint/05-expanding-linter-set-gocritic
 ```
 
 ### Reading the linter catalog

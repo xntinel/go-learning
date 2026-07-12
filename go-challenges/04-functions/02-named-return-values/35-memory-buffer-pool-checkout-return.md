@@ -29,9 +29,8 @@ bufpool/                    independent module: example.com/bufpool
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/bufpool/cmd/demo
-cd ~/go-exercises/bufpool
-go mod init example.com/bufpool
+mkdir -p go-solutions/04-functions/02-named-return-values/35-memory-buffer-pool-checkout-return/cmd/demo
+cd go-solutions/04-functions/02-named-return-values/35-memory-buffer-pool-checkout-return
 go mod edit -go=1.24
 ```
 

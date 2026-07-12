@@ -31,9 +31,8 @@ shardedttl/                      independent module: example.com/shardedttl
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/shardedttl/cache ~/go-exercises/shardedttl/cmd/demo
-cd ~/go-exercises/shardedttl
-go mod init example.com/shardedttl
+mkdir -p go-solutions/15-sync-primitives/13-building-a-thread-safe-cache/01-sharded-ttl-cache-core/cache go-solutions/15-sync-primitives/13-building-a-thread-safe-cache/01-sharded-ttl-cache-core/cmd/demo
+cd go-solutions/15-sync-primitives/13-building-a-thread-safe-cache/01-sharded-ttl-cache-core
 ```
 
 ### The design: shards, not one lock

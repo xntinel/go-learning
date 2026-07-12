@@ -32,9 +32,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/tracesampler/cmd/demo
-cd ~/go-exercises/tracesampler
-go mod init example.com/tracesampler
+mkdir -p go-solutions/02-variables-types-and-constants/08-untyped-constants-and-constant-expressions/06-sampler-rate-float-precision/cmd/demo
+cd go-solutions/02-variables-types-and-constants/08-untyped-constants-and-constant-expressions/06-sampler-rate-float-precision
 ```
 
 ### The kind of the operands decides the division

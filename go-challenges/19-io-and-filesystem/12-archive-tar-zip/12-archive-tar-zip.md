@@ -21,9 +21,8 @@ Archive entries can contain timestamps and modes. Set the fields you care about 
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/archivezip/cmd/demo
-cd ~/go-exercises/archivezip
-go mod init example.com/archivezip
+mkdir -p go-solutions/19-io-and-filesystem/12-archive-tar-zip/12-archive-tar-zip/cmd/demo
+cd go-solutions/19-io-and-filesystem/12-archive-tar-zip/12-archive-tar-zip
 ```
 
 ### Exercise 1: Create And Read A Zip Archive

@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/mustinit/cmd/demo
-cd ~/go-exercises/mustinit
-go mod init example.com/mustinit
+mkdir -p go-solutions/10-error-handling/08-panic-vs-error/04-generic-must-helper-and-package-init/cmd/demo
+cd go-solutions/10-error-handling/08-panic-vs-error/04-generic-must-helper-and-package-init
 go mod edit -go=1.26
 ```
 

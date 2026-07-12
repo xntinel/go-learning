@@ -23,9 +23,8 @@ billing_test.go                   asserts unit/currency translation and decline/
 Set up the module:
 
 ```bash
-mkdir -p billing/legacy billing/cmd/demo
-cd billing
-go mod init example.com/billing
+mkdir -p go-solutions/24-design-patterns-in-go/07-adapter-pattern/05-legacy-api-anti-corruption/legacy go-solutions/24-design-patterns-in-go/07-adapter-pattern/05-legacy-api-anti-corruption/cmd/demo
+cd go-solutions/24-design-patterns-in-go/07-adapter-pattern/05-legacy-api-anti-corruption
 ```
 
 ### The vendor we do not control

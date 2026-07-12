@@ -30,9 +30,8 @@ resstack/                    independent module: example.com/resstack
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/resstack/cmd/demo
-cd ~/go-exercises/resstack
-go mod init example.com/resstack
+mkdir -p go-solutions/03-control-flow/07-defer-semantics-and-ordering/02-defer-lifo-resource-stack/cmd/demo
+cd go-solutions/03-control-flow/07-defer-semantics-and-ordering/02-defer-lifo-resource-stack
 ```
 
 ### Why LIFO is the correct default for a resource stack

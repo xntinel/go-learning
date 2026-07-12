@@ -24,8 +24,7 @@ lexer_test.go        numeric grammar, trailing dot, nested/line comments, errors
 Set up the module:
 
 ```bash
-mkdir -p numbers-and-comments/cmd/demo && cd numbers-and-comments
-go mod init example.com/numbers-and-comments
+mkdir -p go-solutions/39-capstone-database-engine/04-sql-lexer-tokenizer/04-numbers-and-comments/cmd/demo && cd go-solutions/39-capstone-database-engine/04-sql-lexer-tokenizer/04-numbers-and-comments
 ```
 
 ### Why a depth counter and a conditional dot

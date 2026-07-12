@@ -32,9 +32,8 @@ index/                     independent module: example.com/index
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/index/cmd/demo
-cd ~/go-exercises/index
-go mod init example.com/index
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/06-prealloc-index-build/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/06-prealloc-index-build
 ```
 
 ### Why the capacity hint pays

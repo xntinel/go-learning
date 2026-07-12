@@ -28,9 +28,8 @@ drain/                       module example.com/paginated-drain
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/drain
-cd ~/go-exercises/drain
-go mod init example.com/paginated-drain
+mkdir -p go-solutions/03-control-flow/02-for-loops/11-paginated-drain-safety-cap
+cd go-solutions/03-control-flow/02-for-loops/11-paginated-drain-safety-cap
 go mod edit -go=1.24
 ```
 

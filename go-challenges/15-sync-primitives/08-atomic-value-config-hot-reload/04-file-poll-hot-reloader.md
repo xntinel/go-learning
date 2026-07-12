@@ -31,9 +31,8 @@ cfgfile/                   independent module: example.com/cfgfile
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cfgfile/cmd/demo
-cd ~/go-exercises/cfgfile
-go mod init example.com/cfgfile
+mkdir -p go-solutions/15-sync-primitives/08-atomic-value-config-hot-reload/04-file-poll-hot-reloader/cmd/demo
+cd go-solutions/15-sync-primitives/08-atomic-value-config-hot-reload/04-file-poll-hot-reloader
 ```
 
 ### Design: fail fast at boot, never fail at runtime

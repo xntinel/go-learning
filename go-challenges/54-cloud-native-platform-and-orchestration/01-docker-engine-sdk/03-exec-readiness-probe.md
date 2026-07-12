@@ -29,9 +29,8 @@ Verify: `go test -race ./...` for the unit path; `go test -tags docker -race ./.
 Set up the module:
 
 ```bash
-mkdir -p readyprobe/cmd/demo
-cd readyprobe
-go mod init example.com/readyprobe
+mkdir -p go-solutions/54-cloud-native-platform-and-orchestration/01-docker-engine-sdk/03-exec-readiness-probe/cmd/demo
+cd go-solutions/54-cloud-native-platform-and-orchestration/01-docker-engine-sdk/03-exec-readiness-probe
 go get github.com/docker/docker@latest
 ```
 

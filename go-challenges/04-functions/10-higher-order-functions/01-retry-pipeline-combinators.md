@@ -25,9 +25,8 @@ retrypipe/                       independent module: example.com/retrypipe
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/retrypipe/internal/retry ~/go-exercises/retrypipe/cmd/demo
-cd ~/go-exercises/retrypipe
-go mod init example.com/retrypipe
+mkdir -p go-solutions/04-functions/10-higher-order-functions/01-retry-pipeline-combinators/internal/retry go-solutions/04-functions/10-higher-order-functions/01-retry-pipeline-combinators/cmd/demo
+cd go-solutions/04-functions/10-higher-order-functions/01-retry-pipeline-combinators
 go mod edit -go=1.25
 ```
 

@@ -29,9 +29,8 @@ canon/                     independent module: example.com/header-canon
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/canon
-cd ~/go-exercises/canon
-go mod init example.com/header-canon
+mkdir -p go-solutions/03-control-flow/05-range-over-collections/12-header-canonicalization
+cd go-solutions/03-control-flow/05-range-over-collections/12-header-canonicalization
 go mod edit -go=1.24
 ```
 

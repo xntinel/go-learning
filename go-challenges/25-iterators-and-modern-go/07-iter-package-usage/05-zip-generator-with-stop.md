@@ -22,8 +22,7 @@ zip_test.go          equal lengths, uneven lengths stop the longer input, early 
 Set up the module:
 
 ```bash
-mkdir -p zip-generator-with-stop/cmd/demo && cd zip-generator-with-stop
-go mod init example.com/zip-generator-with-stop
+mkdir -p go-solutions/25-iterators-and-modern-go/07-iter-package-usage/05-zip-generator-with-stop/cmd/demo && cd go-solutions/25-iterators-and-modern-go/07-iter-package-usage/05-zip-generator-with-stop
 ```
 
 ### Why stop is the whole point of Zip

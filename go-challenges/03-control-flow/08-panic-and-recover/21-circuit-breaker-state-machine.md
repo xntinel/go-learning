@@ -35,9 +35,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/circuit-breaker-state-machine/cmd/demo
-cd ~/go-exercises/circuit-breaker-state-machine
-go mod init example.com/circuitbreaker
+mkdir -p go-solutions/03-control-flow/08-panic-and-recover/21-circuit-breaker-state-machine/cmd/demo
+cd go-solutions/03-control-flow/08-panic-and-recover/21-circuit-breaker-state-machine
 go mod edit -go=1.24
 ```
 

@@ -56,9 +56,8 @@ Because all events carry a timestamp, the state at any past instant can be recov
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/eventsource/cmd/demo
-cd ~/go-exercises/eventsource
-go mod init example.com/eventsource
+mkdir -p go-solutions/37-distributed-systems-fundamentals/18-event-sourcing-engine/18-event-sourcing-engine/cmd/demo
+cd go-solutions/37-distributed-systems-fundamentals/18-event-sourcing-engine/18-event-sourcing-engine
 ```
 
 This is a library, not a program: there is no top-level `main`. You verify it with `go test`.

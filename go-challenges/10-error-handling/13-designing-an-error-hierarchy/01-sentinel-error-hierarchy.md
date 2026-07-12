@@ -27,10 +27,9 @@ sentinel-error-hierarchy/          module example.com/sentinel-error-hierarchy
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/sentinel-error-hierarchy/internal/domain
-mkdir -p ~/go-exercises/sentinel-error-hierarchy/cmd/demo
-cd ~/go-exercises/sentinel-error-hierarchy
-go mod init example.com/sentinel-error-hierarchy
+mkdir -p go-solutions/10-error-handling/13-designing-an-error-hierarchy/01-sentinel-error-hierarchy/internal/domain
+mkdir -p go-solutions/10-error-handling/13-designing-an-error-hierarchy/01-sentinel-error-hierarchy/cmd/demo
+cd go-solutions/10-error-handling/13-designing-an-error-hierarchy/01-sentinel-error-hierarchy
 ```
 
 ### Why sentinels, and how the tree matches

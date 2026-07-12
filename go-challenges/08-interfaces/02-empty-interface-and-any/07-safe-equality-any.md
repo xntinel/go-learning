@@ -30,9 +30,8 @@ safeequal/                 independent module: example.com/safeequal
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/safeequal/cmd/demo
-cd ~/go-exercises/safeequal
-go mod init example.com/safeequal
+mkdir -p go-solutions/08-interfaces/02-empty-interface-and-any/07-safe-equality-any/cmd/demo
+cd go-solutions/08-interfaces/02-empty-interface-and-any/07-safe-equality-any
 go mod edit -go=1.26
 ```
 

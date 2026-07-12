@@ -29,9 +29,8 @@ cancelbox/                 independent module: example.com/cancelbox
 Set up the module:
 
 ```bash
-mkdir -p cancelbox/cmd/demo
-cd cancelbox
-go mod init example.com/cancelbox
+mkdir -p go-solutions/14-select-and-context/04-context-withcancel/03-idempotent-cancel-no-leak/cmd/demo
+cd go-solutions/14-select-and-context/04-context-withcancel/03-idempotent-cancel-no-leak
 ```
 
 ### Why idempotent cancel and leak-freedom are the invariants that matter

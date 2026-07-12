@@ -39,9 +39,8 @@ fswalk/                       independent module: example.com/fswalk
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/fswalk/cmd/demo
-cd ~/go-exercises/fswalk
-go mod init example.com/fswalk
+mkdir -p go-solutions/04-functions/07-recursive-functions-and-stack-depth/34-filesystem-inode-hardlink-detection/cmd/demo
+cd go-solutions/04-functions/07-recursive-functions-and-stack-depth/34-filesystem-inode-hardlink-detection
 go mod edit -go=1.24
 ```
 

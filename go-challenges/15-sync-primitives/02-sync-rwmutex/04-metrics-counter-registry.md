@@ -32,9 +32,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/metricsreg/cmd/demo
-cd ~/go-exercises/metricsreg
-go mod init example.com/metricsreg
+mkdir -p go-solutions/15-sync-primitives/02-sync-rwmutex/04-metrics-counter-registry/cmd/demo
+cd go-solutions/15-sync-primitives/02-sync-rwmutex/04-metrics-counter-registry
 ```
 
 ### Two locks for two jobs

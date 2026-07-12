@@ -29,9 +29,8 @@ money/                     independent module: example.com/money
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/money/cmd/demo
-cd ~/go-exercises/money
-go mod init example.com/money
+mkdir -p go-solutions/02-variables-types-and-constants/03-basic-types/03-money-minor-units/cmd/demo
+cd go-solutions/02-variables-types-and-constants/03-basic-types/03-money-minor-units
 ```
 
 ### Why cents, and where the overflow guard goes

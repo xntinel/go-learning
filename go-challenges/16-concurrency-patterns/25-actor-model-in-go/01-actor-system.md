@@ -28,8 +28,7 @@ actor_test.go         ordered delivery, panic recovery, unknown-actor error,
 Set up the module:
 
 ```bash
-mkdir -p actor-system/cmd/demo && cd actor-system
-go mod init example.com/actor-system
+mkdir -p go-solutions/16-concurrency-patterns/25-actor-model-in-go/01-actor-system/cmd/demo && cd go-solutions/16-concurrency-patterns/25-actor-model-in-go/01-actor-system
 ```
 
 ### The design, one piece at a time

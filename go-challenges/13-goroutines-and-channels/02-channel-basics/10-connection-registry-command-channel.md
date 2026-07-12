@@ -32,9 +32,8 @@ connreg/                     independent module: example.com/connreg
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/connreg/cmd/demo
-cd ~/go-exercises/connreg
-go mod init example.com/connreg
+mkdir -p go-solutions/13-goroutines-and-channels/02-channel-basics/10-connection-registry-command-channel/cmd/demo
+cd go-solutions/13-goroutines-and-channels/02-channel-basics/10-connection-registry-command-channel
 ```
 
 ### One channel, several tagged commands

@@ -29,9 +29,8 @@ widget/                         module example.com/widget
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/widget/internal/impl ~/go-exercises/widget/cmd/demo
-cd ~/go-exercises/widget
-go mod init example.com/widget
+mkdir -p go-solutions/11-packages-and-modules/03-internal-packages/03-module-root-internal-api-surface/internal/impl go-solutions/11-packages-and-modules/03-internal-packages/03-module-root-internal-api-surface/cmd/demo
+cd go-solutions/11-packages-and-modules/03-internal-packages/03-module-root-internal-api-surface
 ```
 
 ### Why the implementation goes under a module-root internal

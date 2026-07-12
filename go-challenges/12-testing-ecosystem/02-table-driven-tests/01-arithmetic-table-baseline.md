@@ -30,9 +30,8 @@ arith/                     independent module: example.com/arith
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/arith/cmd/demo
-cd ~/go-exercises/arith
-go mod init example.com/arith
+mkdir -p go-solutions/12-testing-ecosystem/02-table-driven-tests/01-arithmetic-table-baseline/cmd/demo
+cd go-solutions/12-testing-ecosystem/02-table-driven-tests/01-arithmetic-table-baseline
 ```
 
 ### Why this shape is the template

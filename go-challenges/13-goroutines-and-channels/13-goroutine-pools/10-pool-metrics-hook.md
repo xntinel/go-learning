@@ -29,9 +29,8 @@ metricpool/                independent module: example.com/metricpool
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/metricpool/cmd/demo
-cd ~/go-exercises/metricpool
-go mod init example.com/metricpool
+mkdir -p go-solutions/13-goroutines-and-channels/13-goroutine-pools/10-pool-metrics-hook/cmd/demo
+cd go-solutions/13-goroutines-and-channels/13-goroutine-pools/10-pool-metrics-hook
 ```
 
 ### Measure the queueing, not just the work

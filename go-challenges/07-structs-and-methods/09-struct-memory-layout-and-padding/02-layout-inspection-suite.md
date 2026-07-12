@@ -31,9 +31,8 @@ layout/                    independent module: example.com/layout
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/layout/cmd/demo
-cd ~/go-exercises/layout
-go mod init example.com/layout
+mkdir -p go-solutions/07-structs-and-methods/09-struct-memory-layout-and-padding/02-layout-inspection-suite/cmd/demo
+cd go-solutions/07-structs-and-methods/09-struct-memory-layout-and-padding/02-layout-inspection-suite
 ```
 
 ### The real invariant, and the bug it replaces

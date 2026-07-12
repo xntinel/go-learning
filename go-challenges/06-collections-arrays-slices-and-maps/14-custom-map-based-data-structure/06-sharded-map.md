@@ -30,9 +30,8 @@ shardedmap/                independent module: example.com/shardedmap
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/shardedmap/cmd/demo
-cd ~/go-exercises/shardedmap
-go mod init example.com/shardedmap
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/14-custom-map-based-data-structure/06-sharded-map/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/14-custom-map-based-data-structure/06-sharded-map
 ```
 
 ### Stripe locking, and why the hash must be a real hash

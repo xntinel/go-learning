@@ -22,8 +22,7 @@ process_test.go       peak <= N under -race; every error aggregated; order prese
 Set up the module:
 
 ```bash
-mkdir -p bounded-object-processing/cmd/demo && cd bounded-object-processing
-go mod init example.com/bounded-object-processing
+mkdir -p go-solutions/16-concurrency-patterns/15-bounded-parallelism/04-bounded-object-processing/cmd/demo && cd go-solutions/16-concurrency-patterns/15-bounded-parallelism/04-bounded-object-processing
 ```
 
 ### Aggregate-all instead of fail-fast

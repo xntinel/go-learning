@@ -21,9 +21,8 @@ Payloads are mutable slices. A library should copy payloads on input and output 
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/packetbin/cmd/demo
-cd ~/go-exercises/packetbin
-go mod init example.com/packetbin
+mkdir -p go-solutions/18-encoding-json-xml-protobuf/10-binary-encoding/10-binary-encoding/cmd/demo
+cd go-solutions/18-encoding-json-xml-protobuf/10-binary-encoding/10-binary-encoding
 go mod edit -go=1.26
 ```
 

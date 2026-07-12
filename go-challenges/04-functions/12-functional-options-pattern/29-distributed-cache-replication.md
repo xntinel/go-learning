@@ -33,9 +33,8 @@ cache/                            independent module: example.com/distributed-ca
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cache/cmd/demo
-cd ~/go-exercises/cache
-go mod init example.com/distributed-cache-replication
+mkdir -p go-solutions/04-functions/12-functional-options-pattern/29-distributed-cache-replication/cmd/demo
+cd go-solutions/04-functions/12-functional-options-pattern/29-distributed-cache-replication
 go mod edit -go=1.24
 ```
 

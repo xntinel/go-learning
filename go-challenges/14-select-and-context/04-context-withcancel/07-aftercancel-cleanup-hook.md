@@ -30,9 +30,8 @@ lease/                     independent module: example.com/lease
 Set up the module:
 
 ```bash
-mkdir -p lease/cmd/demo
-cd lease
-go mod init example.com/lease
+mkdir -p go-solutions/14-select-and-context/04-context-withcancel/07-aftercancel-cleanup-hook/cmd/demo
+cd go-solutions/14-select-and-context/04-context-withcancel/07-aftercancel-cleanup-hook
 ```
 
 ### Why AfterFunc replaces the babysitter goroutine

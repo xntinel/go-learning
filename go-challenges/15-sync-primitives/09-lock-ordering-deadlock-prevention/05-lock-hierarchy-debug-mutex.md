@@ -35,9 +35,8 @@ lockrank/                  independent module: example.com/lockrank
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/lockrank/cmd/demo
-cd ~/go-exercises/lockrank
-go mod init example.com/lockrank
+mkdir -p go-solutions/15-sync-primitives/09-lock-ordering-deadlock-prevention/05-lock-hierarchy-debug-mutex/cmd/demo
+cd go-solutions/15-sync-primitives/09-lock-ordering-deadlock-prevention/05-lock-hierarchy-debug-mutex
 ```
 
 ### Turning a latent ordering bug into an immediate panic

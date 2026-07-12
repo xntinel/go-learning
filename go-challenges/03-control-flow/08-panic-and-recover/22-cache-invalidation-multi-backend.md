@@ -33,9 +33,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cache-invalidation-multi-backend/cmd/demo
-cd ~/go-exercises/cache-invalidation-multi-backend
-go mod init example.com/cacheinvalidate
+mkdir -p go-solutions/03-control-flow/08-panic-and-recover/22-cache-invalidation-multi-backend/cmd/demo
+cd go-solutions/03-control-flow/08-panic-and-recover/22-cache-invalidation-multi-backend
 go mod edit -go=1.24
 ```
 

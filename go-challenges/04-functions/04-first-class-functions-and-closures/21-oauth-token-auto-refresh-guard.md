@@ -30,9 +30,8 @@ oauth/                     independent module: example.com/oauth-token-auto-refr
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/oauth/cmd/demo
-cd ~/go-exercises/oauth
-go mod init example.com/oauth-token-auto-refresh
+mkdir -p go-solutions/04-functions/04-first-class-functions-and-closures/21-oauth-token-auto-refresh-guard/cmd/demo
+cd go-solutions/04-functions/04-first-class-functions-and-closures/21-oauth-token-auto-refresh-guard
 go mod edit -go=1.24
 ```
 

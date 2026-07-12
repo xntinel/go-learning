@@ -25,9 +25,8 @@ outbox/                      independent module: example.com/outbox
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/outbox/cmd/demo
-cd ~/go-exercises/outbox
-go mod init example.com/outbox
+mkdir -p go-solutions/13-goroutines-and-channels/15-building-a-concurrent-task-scheduler/10-outbox-microbatch-size-or-linger-flush/cmd/demo
+cd go-solutions/13-goroutines-and-channels/15-building-a-concurrent-task-scheduler/10-outbox-microbatch-size-or-linger-flush
 go mod edit -go=1.26
 go get go.uber.org/goleak
 go mod tidy

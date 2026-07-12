@@ -27,9 +27,8 @@ resultinspect/                  independent module: example.com/result-response-
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/resultinspect/cmd/demo
-cd ~/go-exercises/resultinspect
-go mod init example.com/result-response-inspection
+mkdir -p go-solutions/12-testing-ecosystem/09-httptest/03-result-response-inspection/cmd/demo
+cd go-solutions/12-testing-ecosystem/09-httptest/03-result-response-inspection
 ```
 
 ### The snapshot boundary: why Result() is the truth

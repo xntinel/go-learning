@@ -26,9 +26,8 @@ Test: exact exposition for a fixed metric set; float edge cases (integers withou
 Verify: `go test -count=1 -race ./...`
 
 ```bash
-mkdir -p ~/go-exercises/promexpo/cmd/demo
-cd ~/go-exercises/promexpo
-go mod init example.com/promexpo
+mkdir -p go-solutions/05-strings-runes-and-unicode/09-strings-builder-performance/05-prometheus-text-exposition-builder/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/09-strings-builder-performance/05-prometheus-text-exposition-builder
 ```
 
 ### Determinism and escaping are the whole job

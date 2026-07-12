@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/serverconfig/cmd/demo
-cd ~/go-exercises/serverconfig
-go mod init example.com/serverconfig
+mkdir -p go-solutions/09-pointers/05-pointers-to-structs/04-functional-options-config/cmd/demo
+cd go-solutions/09-pointers/05-pointers-to-structs/04-functional-options-config
 ```
 
 ### Why options are `func(*Config)` and the constructor returns `*Config`

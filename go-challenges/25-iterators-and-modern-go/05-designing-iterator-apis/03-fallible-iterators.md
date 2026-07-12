@@ -22,8 +22,7 @@ stream_test.go       reads lines, nil-FS and missing-file errors, Collect stops 
 Set up the module:
 
 ```bash
-mkdir -p stream/cmd/demo && cd stream
-go mod init example.com/stream
+mkdir -p go-solutions/25-iterators-and-modern-go/05-designing-iterator-apis/03-fallible-iterators/cmd/demo && cd go-solutions/25-iterators-and-modern-go/05-designing-iterator-apis/03-fallible-iterators
 ```
 
 ### Why `Seq2[V, error]`, and the three rules that make it safe

@@ -49,9 +49,8 @@ To confirm that a latency spike is GC-caused, compare request timestamps against
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/gctaillatency/cmd/demo
-cd ~/go-exercises/gctaillatency
-go mod init example.com/gctaillatency
+mkdir -p go-solutions/35-runtime-garbage-collector/08-gc-impact-tail-latency/08-gc-impact-tail-latency/cmd/demo
+cd go-solutions/35-runtime-garbage-collector/08-gc-impact-tail-latency/08-gc-impact-tail-latency
 ```
 
 ### Exercise 1: Latency Histogram and Measurement

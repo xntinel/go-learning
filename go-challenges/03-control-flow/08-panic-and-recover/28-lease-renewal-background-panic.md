@@ -37,9 +37,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/lease-renewal-background-panic/cmd/demo
-cd ~/go-exercises/lease-renewal-background-panic
-go mod init example.com/lease
+mkdir -p go-solutions/03-control-flow/08-panic-and-recover/28-lease-renewal-background-panic/cmd/demo
+cd go-solutions/03-control-flow/08-panic-and-recover/28-lease-renewal-background-panic
 go mod edit -go=1.24
 ```
 

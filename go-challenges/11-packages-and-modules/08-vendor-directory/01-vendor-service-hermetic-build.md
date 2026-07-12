@@ -31,9 +31,8 @@ normalizer/                    independent module: example.com/normalizer
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/normalizer/cmd/demo
-cd ~/go-exercises/normalizer
-go mod init example.com/normalizer
+mkdir -p go-solutions/11-packages-and-modules/08-vendor-directory/01-vendor-service-hermetic-build/cmd/demo
+cd go-solutions/11-packages-and-modules/08-vendor-directory/01-vendor-service-hermetic-build
 ```
 
 ### Why the artifact is split into a package and a CLI

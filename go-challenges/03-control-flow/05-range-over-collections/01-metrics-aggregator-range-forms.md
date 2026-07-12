@@ -30,9 +30,8 @@ metricsagg/                 independent module: example.com/metricsagg
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/metricsagg/agg ~/go-exercises/metricsagg/cmd/demo
-cd ~/go-exercises/metricsagg
-go mod init example.com/metricsagg
+mkdir -p go-solutions/03-control-flow/05-range-over-collections/01-metrics-aggregator-range-forms/agg go-solutions/03-control-flow/05-range-over-collections/01-metrics-aggregator-range-forms/cmd/demo
+cd go-solutions/03-control-flow/05-range-over-collections/01-metrics-aggregator-range-forms
 go mod edit -go=1.24
 ```
 

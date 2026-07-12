@@ -40,9 +40,8 @@ A goroutine that takes 200ms should not run for 200ms if a sibling failed at 5ms
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/grpdemo/internal/group ~/go-exercises/grpdemo/cmd/grpdemo
-cd ~/go-exercises/grpdemo
-go mod init example.com/grpdemo
+mkdir -p go-solutions/16-concurrency-patterns/06-errgroup-basic-usage/06-errgroup-basic-usage/internal/group go-solutions/16-concurrency-patterns/06-errgroup-basic-usage/06-errgroup-basic-usage/cmd/grpdemo
+cd go-solutions/16-concurrency-patterns/06-errgroup-basic-usage/06-errgroup-basic-usage
 ```
 
 ### Exercise 1: Implement The Group

@@ -52,9 +52,8 @@ panic.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pos/internal/pos ~/go-exercises/pos/cmd/demo
-cd ~/go-exercises/pos
-go mod init example.com/pos
+mkdir -p go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/09-byte-offset-to-line-column/internal/pos go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/09-byte-offset-to-line-column/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/09-byte-offset-to-line-column
 ```
 
 Create `internal/pos/pos.go`:

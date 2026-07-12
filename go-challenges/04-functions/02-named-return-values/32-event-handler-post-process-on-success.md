@@ -30,9 +30,8 @@ eventpost/                  independent module: example.com/eventpost
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/eventpost/cmd/demo
-cd ~/go-exercises/eventpost
-go mod init example.com/eventpost
+mkdir -p go-solutions/04-functions/02-named-return-values/32-event-handler-post-process-on-success/cmd/demo
+cd go-solutions/04-functions/02-named-return-values/32-event-handler-post-process-on-success
 go mod edit -go=1.24
 ```
 

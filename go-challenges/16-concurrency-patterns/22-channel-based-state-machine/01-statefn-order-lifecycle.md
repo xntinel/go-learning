@@ -22,8 +22,7 @@ lifecycle_test.go    happy path, cancel branches, illegal-event rejection, conte
 Set up the module:
 
 ```bash
-mkdir -p order-lifecycle/cmd/demo && cd order-lifecycle
-go mod init example.com/order-lifecycle
+mkdir -p go-solutions/16-concurrency-patterns/22-channel-based-state-machine/01-statefn-order-lifecycle/cmd/demo && cd go-solutions/16-concurrency-patterns/22-channel-based-state-machine/01-statefn-order-lifecycle
 ```
 
 ### Why state-as-a-function, and what it buys

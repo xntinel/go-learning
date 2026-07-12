@@ -28,9 +28,8 @@ ingest/                      module: example.com/ingest
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ingest/cmd/demo
-cd ~/go-exercises/ingest
-go mod init example.com/ingest
+mkdir -p go-solutions/13-goroutines-and-channels/03-buffered-vs-unbuffered-channels/04-load-shedding-nonblocking-enqueue/cmd/demo
+cd go-solutions/13-goroutines-and-channels/03-buffered-vs-unbuffered-channels/04-load-shedding-nonblocking-enqueue
 go mod edit -go=1.26
 ```
 

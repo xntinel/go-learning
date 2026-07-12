@@ -29,9 +29,8 @@ metrics/                       independent module: example.com/metrics
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/metrics/cmd/demo
-cd ~/go-exercises/metrics
-go mod init example.com/metrics
+mkdir -p go-solutions/07-structs-and-methods/07-method-sets-and-addressability/03-metrics-registry-map-value-addressability/cmd/demo
+cd go-solutions/07-structs-and-methods/07-method-sets-and-addressability/03-metrics-registry-map-value-addressability
 ```
 
 ### Why the map must hold *Counter

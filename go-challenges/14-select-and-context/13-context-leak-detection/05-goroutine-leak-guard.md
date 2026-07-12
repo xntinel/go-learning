@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/workerpool/cmd/demo
-cd ~/go-exercises/workerpool
-go mod init example.com/workerpool
+mkdir -p go-solutions/14-select-and-context/13-context-leak-detection/05-goroutine-leak-guard/cmd/demo
+cd go-solutions/14-select-and-context/13-context-leak-detection/05-goroutine-leak-guard
 go get go.uber.org/goleak
 ```
 

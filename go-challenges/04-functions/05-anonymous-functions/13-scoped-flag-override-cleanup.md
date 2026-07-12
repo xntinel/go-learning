@@ -28,9 +28,8 @@ flagscope/                    module example.com/flagscope
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/flagscope
-cd ~/go-exercises/flagscope
-go mod init example.com/flagscope
+mkdir -p go-solutions/04-functions/05-anonymous-functions/13-scoped-flag-override-cleanup
+cd go-solutions/04-functions/05-anonymous-functions/13-scoped-flag-override-cleanup
 go mod edit -go=1.24
 ```
 

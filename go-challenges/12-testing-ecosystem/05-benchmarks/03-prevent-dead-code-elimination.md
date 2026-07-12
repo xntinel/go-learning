@@ -27,9 +27,8 @@ hashing/                   independent module: example.com/hashing
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/hashing/cmd/demo
-cd ~/go-exercises/hashing
-go mod init example.com/hashing
+mkdir -p go-solutions/12-testing-ecosystem/05-benchmarks/03-prevent-dead-code-elimination/cmd/demo
+cd go-solutions/12-testing-ecosystem/05-benchmarks/03-prevent-dead-code-elimination
 go mod edit -go=1.24
 ```
 

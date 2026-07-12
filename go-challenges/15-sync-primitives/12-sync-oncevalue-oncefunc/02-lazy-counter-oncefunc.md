@@ -27,9 +27,8 @@ lazycounter/               independent module: example.com/lazycounter
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/lazycounter/counter ~/go-exercises/lazycounter/cmd/demo
-cd ~/go-exercises/lazycounter
-go mod init example.com/lazycounter
+mkdir -p go-solutions/15-sync-primitives/12-sync-oncevalue-oncefunc/02-lazy-counter-oncefunc/counter go-solutions/15-sync-primitives/12-sync-oncevalue-oncefunc/02-lazy-counter-oncefunc/cmd/demo
+cd go-solutions/15-sync-primitives/12-sync-oncevalue-oncefunc/02-lazy-counter-oncefunc
 ```
 
 ### The pattern: OnceFunc over a method, stored in a field

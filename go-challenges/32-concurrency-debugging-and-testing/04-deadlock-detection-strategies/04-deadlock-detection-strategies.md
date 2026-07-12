@@ -43,10 +43,9 @@ For lock acquisitions that may fail in partial-deadlock scenarios, a `context.Wi
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/deadlocks/locker
-mkdir -p ~/go-exercises/deadlocks/cmd/demo
-cd ~/go-exercises/deadlocks
-go mod init example.com/deadlocks
+mkdir -p go-solutions/32-concurrency-debugging-and-testing/04-deadlock-detection-strategies/04-deadlock-detection-strategies/locker
+mkdir -p go-solutions/32-concurrency-debugging-and-testing/04-deadlock-detection-strategies/04-deadlock-detection-strategies/cmd/demo
+cd go-solutions/32-concurrency-debugging-and-testing/04-deadlock-detection-strategies/04-deadlock-detection-strategies
 ```
 
 ### Exercise 1: Safe Ordered Locker

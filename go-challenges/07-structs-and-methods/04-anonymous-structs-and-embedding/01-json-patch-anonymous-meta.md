@@ -35,9 +35,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/patch/cmd/demo
-cd ~/go-exercises/patch
-go mod init example.com/patch
+mkdir -p go-solutions/07-structs-and-methods/04-anonymous-structs-and-embedding/01-json-patch-anonymous-meta/cmd/demo
+cd go-solutions/07-structs-and-methods/04-anonymous-structs-and-embedding/01-json-patch-anonymous-meta
 ```
 
 ### Why the metadata is an anonymous struct

@@ -26,9 +26,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/startup/cmd/demo
-cd ~/go-exercises/startup
-go mod init example.com/startup
+mkdir -p go-solutions/12-testing-ecosystem/17-testing-with-environment-variables/03-required-vs-optional-lookupenv/cmd/demo
+cd go-solutions/12-testing-ecosystem/17-testing-with-environment-variables/03-required-vs-optional-lookupenv
 ```
 
 ## Unset and empty are different failures

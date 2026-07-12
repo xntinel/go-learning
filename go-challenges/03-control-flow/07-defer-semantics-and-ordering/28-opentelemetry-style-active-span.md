@@ -36,9 +36,8 @@ tracer/                      independent module: example.com/opentelemetry-style
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/opentelemetry-style-active-span/cmd/demo
-cd ~/go-exercises/opentelemetry-style-active-span
-go mod init example.com/opentelemetry-style-active-span
+mkdir -p go-solutions/03-control-flow/07-defer-semantics-and-ordering/28-opentelemetry-style-active-span/cmd/demo
+cd go-solutions/03-control-flow/07-defer-semantics-and-ordering/28-opentelemetry-style-active-span
 go mod edit -go=1.24
 ```
 

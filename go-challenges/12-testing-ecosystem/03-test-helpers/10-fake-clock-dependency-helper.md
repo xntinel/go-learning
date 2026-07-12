@@ -29,9 +29,8 @@ fakeclock/                   independent module: example.com/fakeclock
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/fakeclock/cmd/demo
-cd ~/go-exercises/fakeclock
-go mod init example.com/fakeclock
+mkdir -p go-solutions/12-testing-ecosystem/03-test-helpers/10-fake-clock-dependency-helper/cmd/demo
+cd go-solutions/12-testing-ecosystem/03-test-helpers/10-fake-clock-dependency-helper
 ```
 
 ### Why inject a Clock, and why verify in Cleanup

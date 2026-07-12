@@ -24,8 +24,7 @@ client_test.go         defaults, precedence, aggregated invalid combos, retry/gi
 Set up the module:
 
 ```bash
-mkdir -p apiclient/cmd/demo && cd apiclient
-go mod init example.com/apiclient
+mkdir -p go-solutions/24-design-patterns-in-go/01-functional-options-deep-dive/04-production-api-client/cmd/demo && cd go-solutions/24-design-patterns-in-go/01-functional-options-deep-dive/04-production-api-client
 ```
 
 ### Why a client constructor is the canonical home for functional options

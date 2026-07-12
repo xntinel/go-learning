@@ -38,9 +38,8 @@ tokens/                     independent module: example.com/tokens
 Set up the module and add the dependencies:
 
 ```bash
-mkdir -p ~/go-exercises/tokens/cmd/demo
-cd ~/go-exercises/tokens
-go mod init example.com/tokens
+mkdir -p go-solutions/52-ai-llm-backends/07-prompt-templating-token-budgeting/02-token-counting/cmd/demo
+cd go-solutions/52-ai-llm-backends/07-prompt-templating-token-budgeting/02-token-counting
 go mod edit -go=1.26
 go get github.com/tiktoken-go/tokenizer@latest
 go get github.com/anthropics/anthropic-sdk-go@latest

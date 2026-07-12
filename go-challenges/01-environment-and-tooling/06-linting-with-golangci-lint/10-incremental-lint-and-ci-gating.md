@@ -32,9 +32,8 @@ healthgate/                   independent module: example.com/healthgate
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/healthgate/cmd/demo
-cd ~/go-exercises/healthgate
-go mod init example.com/healthgate
+mkdir -p go-solutions/01-environment-and-tooling/06-linting-with-golangci-lint/10-incremental-lint-and-ci-gating/cmd/demo
+cd go-solutions/01-environment-and-tooling/06-linting-with-golangci-lint/10-incremental-lint-and-ci-gating
 ```
 
 ### How the incremental gate works

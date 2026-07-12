@@ -37,9 +37,8 @@ keyless/                     independent module: example.com/keyless
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/keyless/cmd/demo
-cd ~/go-exercises/keyless
-go mod init example.com/keyless
+mkdir -p go-solutions/49-application-security-crypto-supplychain/11-sigstore-cosign-signing/03-keyless-sign-release/cmd/demo
+cd go-solutions/49-application-security-crypto-supplychain/11-sigstore-cosign-signing/03-keyless-sign-release
 go mod edit -go=1.25
 go get github.com/sigstore/sigstore-go@v1.2.1
 ```

@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cfgcache/cmd/demo
-cd ~/go-exercises/cfgcache
-go mod init example.com/cfgcache
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/02-slices-creation-append-capacity/04-cache-aliasing-append-bug/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/02-slices-creation-append-capacity/04-cache-aliasing-append-bug
 go mod edit -go=1.26
 ```
 

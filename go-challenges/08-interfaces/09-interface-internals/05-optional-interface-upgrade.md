@@ -29,9 +29,8 @@ statusmw/                   independent module: example.com/statusmw
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/statusmw/cmd/demo
-cd ~/go-exercises/statusmw
-go mod init example.com/statusmw
+mkdir -p go-solutions/08-interfaces/09-interface-internals/05-optional-interface-upgrade/cmd/demo
+cd go-solutions/08-interfaces/09-interface-internals/05-optional-interface-upgrade
 go mod edit -go=1.26
 ```
 

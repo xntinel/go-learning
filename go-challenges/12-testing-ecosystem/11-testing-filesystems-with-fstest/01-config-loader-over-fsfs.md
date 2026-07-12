@@ -34,9 +34,8 @@ configloader/                 independent module: example.com/configloader
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/configloader/cmd/demo
-cd ~/go-exercises/configloader
-go mod init example.com/configloader
+mkdir -p go-solutions/12-testing-ecosystem/11-testing-filesystems-with-fstest/01-config-loader-over-fsfs/cmd/demo
+cd go-solutions/12-testing-ecosystem/11-testing-filesystems-with-fstest/01-config-loader-over-fsfs
 ```
 
 ### Why the signature is the whole design

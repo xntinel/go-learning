@@ -28,9 +28,8 @@ pipeline/                     module example.com/pipeline
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pipeline
-cd ~/go-exercises/pipeline
-go mod init example.com/pipeline
+mkdir -p go-solutions/04-functions/05-anonymous-functions/15-functional-filter-map-reduce-pipeline
+cd go-solutions/04-functions/05-anonymous-functions/15-functional-filter-map-reduce-pipeline
 go mod edit -go=1.24
 ```
 

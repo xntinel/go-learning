@@ -25,8 +25,7 @@ middleware_test.go   chain ordering, identity chain, request-ID propagation,
 Set up the module:
 
 ```bash
-mkdir -p http-middleware/cmd/demo && cd http-middleware
-go mod init example.com/http-middleware
+mkdir -p go-solutions/24-design-patterns-in-go/08-middleware-decorator-pattern/02-http-middleware-chain/cmd/demo && cd go-solutions/24-design-patterns-in-go/08-middleware-decorator-pattern/02-http-middleware-chain
 ```
 
 ### Why `func(http.Handler) http.Handler` is the whole pattern

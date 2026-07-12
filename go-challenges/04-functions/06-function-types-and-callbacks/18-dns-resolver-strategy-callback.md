@@ -29,9 +29,8 @@ Verify: `go test -count=1 ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/dns-resolver-strategy-callback/cmd/demo
-cd ~/go-exercises/dns-resolver-strategy-callback
-go mod init example.com/dns-resolver-strategy-callback
+mkdir -p go-solutions/04-functions/06-function-types-and-callbacks/18-dns-resolver-strategy-callback/cmd/demo
+cd go-solutions/04-functions/06-function-types-and-callbacks/18-dns-resolver-strategy-callback
 go mod edit -go=1.24
 ```
 

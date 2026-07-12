@@ -27,9 +27,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/backoffretry/cmd/demo
-cd ~/go-exercises/backoffretry
-go mod init example.com/backoffretry
+mkdir -p go-solutions/12-testing-ecosystem/16-testing-time-dependent-code/02-backoff-retry-injected-sleep/cmd/demo
+cd go-solutions/12-testing-ecosystem/16-testing-time-dependent-code/02-backoff-retry-injected-sleep
 ```
 
 ### The injected Sleeper is the whole seam

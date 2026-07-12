@@ -29,9 +29,8 @@ fanout/                      independent module: example.com/fanout
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/fanout/cmd/demo
-cd ~/go-exercises/fanout
-go mod init example.com/fanout
+mkdir -p go-solutions/13-goroutines-and-channels/08-goroutine-leak-detection/04-fanout-timeout-send-leak/cmd/demo
+cd go-solutions/13-goroutines-and-channels/08-goroutine-leak-detection/04-fanout-timeout-send-leak
 ```
 
 ### Why the naive version leaks

@@ -29,9 +29,8 @@ settle/                    independent module: example.com/settle
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/settle/cmd/demo
-cd ~/go-exercises/settle
-go mod init example.com/settle
+mkdir -p go-solutions/13-goroutines-and-channels/14-deadlock-detection-and-prevention/03-n-resource-lock-manager/cmd/demo
+cd go-solutions/13-goroutines-and-channels/14-deadlock-detection-and-prevention/03-n-resource-lock-manager
 go mod edit -go=1.25
 ```
 

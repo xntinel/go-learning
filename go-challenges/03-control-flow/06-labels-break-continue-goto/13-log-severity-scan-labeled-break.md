@@ -20,9 +20,8 @@ logscan/                     independent module: example.com/logscan
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/logscan
-cd ~/go-exercises/logscan
-go mod init example.com/logscan
+mkdir -p go-solutions/03-control-flow/06-labels-break-continue-goto/13-log-severity-scan-labeled-break
+cd go-solutions/03-control-flow/06-labels-break-continue-goto/13-log-severity-scan-labeled-break
 go mod edit -go=1.24
 ```
 

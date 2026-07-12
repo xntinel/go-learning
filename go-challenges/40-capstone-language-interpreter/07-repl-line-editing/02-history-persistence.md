@@ -22,8 +22,7 @@ history_test.go    dedup, max-size eviction, navigation, search, round-trip pers
 Set up the module:
 
 ```bash
-mkdir -p history/cmd/demo && cd history
-go mod init example.com/history
+mkdir -p go-solutions/40-capstone-language-interpreter/07-repl-line-editing/02-history-persistence/cmd/demo && cd go-solutions/40-capstone-language-interpreter/07-repl-line-editing/02-history-persistence
 ```
 
 ### The navigation cursor

@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/txguard/cmd/demo
-cd ~/go-exercises/txguard
-go mod init example.com/txguard
+mkdir -p go-solutions/10-error-handling/08-panic-vs-error/07-defer-rollback-transaction-on-panic/cmd/demo
+cd go-solutions/10-error-handling/08-panic-vs-error/07-defer-rollback-transaction-on-panic
 go mod edit -go=1.26
 ```
 

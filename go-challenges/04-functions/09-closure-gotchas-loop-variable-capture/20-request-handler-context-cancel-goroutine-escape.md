@@ -29,9 +29,8 @@ reqsetup/                    independent module: example.com/reqsetup
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/reqsetup/cmd/demo
-cd ~/go-exercises/reqsetup
-go mod init example.com/reqsetup
+mkdir -p go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/20-request-handler-context-cancel-goroutine-escape/cmd/demo
+cd go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/20-request-handler-context-cancel-goroutine-escape
 go mod edit -go=1.24
 ```
 

@@ -25,9 +25,8 @@ messaging_test.go                 fakes assert translation, retry policy, and fa
 Set up the module:
 
 ```bash
-mkdir -p messaging/thirdparty/smtpx messaging/thirdparty/smsx messaging/thirdparty/hookx messaging/cmd/demo
-cd messaging
-go mod init example.com/messaging
+mkdir -p go-solutions/24-design-patterns-in-go/07-adapter-pattern/04-messaging-failover-adapter/thirdparty/smtpx go-solutions/24-design-patterns-in-go/07-adapter-pattern/04-messaging-failover-adapter/thirdparty/smsx go-solutions/24-design-patterns-in-go/07-adapter-pattern/04-messaging-failover-adapter/thirdparty/hookx go-solutions/24-design-patterns-in-go/07-adapter-pattern/04-messaging-failover-adapter/cmd/demo
+cd go-solutions/24-design-patterns-in-go/07-adapter-pattern/04-messaging-failover-adapter
 ```
 
 ### Three vendors, three failure models

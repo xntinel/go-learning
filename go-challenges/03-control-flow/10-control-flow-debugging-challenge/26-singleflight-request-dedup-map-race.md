@@ -35,9 +35,8 @@ dedup/                      independent module: example.com/singleflight-request
 - Verify: `go test -count=1 -race ./...`.
 
 ```bash
-mkdir -p ~/go-exercises/singleflight-request-dedup-map-race/cmd/demo
-cd ~/go-exercises/singleflight-request-dedup-map-race
-go mod init example.com/singleflight-request-dedup-map-race
+mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/26-singleflight-request-dedup-map-race/cmd/demo
+cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/26-singleflight-request-dedup-map-race
 go mod edit -go=1.22
 ```
 

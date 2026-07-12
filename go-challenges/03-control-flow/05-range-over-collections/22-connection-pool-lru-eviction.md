@@ -35,9 +35,8 @@ pool/                       independent module: example.com/connection-pool-lru-
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/connection-pool-lru-eviction/cmd/demo
-cd ~/go-exercises/connection-pool-lru-eviction
-go mod init example.com/connection-pool-lru-eviction
+mkdir -p go-solutions/03-control-flow/05-range-over-collections/22-connection-pool-lru-eviction/cmd/demo
+cd go-solutions/03-control-flow/05-range-over-collections/22-connection-pool-lru-eviction
 go mod edit -go=1.24
 ```
 

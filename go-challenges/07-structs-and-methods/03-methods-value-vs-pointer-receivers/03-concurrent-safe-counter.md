@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...` and `go vet ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/racecounter/cmd/demo
-cd ~/go-exercises/racecounter
-go mod init example.com/racecounter
+mkdir -p go-solutions/07-structs-and-methods/03-methods-value-vs-pointer-receivers/03-concurrent-safe-counter/cmd/demo
+cd go-solutions/07-structs-and-methods/03-methods-value-vs-pointer-receivers/03-concurrent-safe-counter
 ```
 
 ### Why these types cannot use value receivers

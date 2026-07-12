@@ -74,9 +74,8 @@ an unbounded `range`.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/drainer/cmd/demo
-cd ~/go-exercises/drainer
-go mod init example.com/drainer
+mkdir -p go-solutions/13-goroutines-and-channels/10-signaling-with-closed-channels/07-drain-vs-cancel/cmd/demo
+cd go-solutions/13-goroutines-and-channels/10-signaling-with-closed-channels/07-drain-vs-cancel
 ```
 
 Create `processor.go`:

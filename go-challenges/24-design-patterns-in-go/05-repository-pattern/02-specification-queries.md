@@ -24,8 +24,7 @@ catalog_test.go          atomic specs, combinator truth tables, Find integration
 Set up the module:
 
 ```bash
-mkdir -p specification-queries/cmd/demo && cd specification-queries
-go mod init example.com/specification-queries
+mkdir -p go-solutions/24-design-patterns-in-go/05-repository-pattern/02-specification-queries/cmd/demo && cd go-solutions/24-design-patterns-in-go/05-repository-pattern/02-specification-queries
 ```
 
 ### Why a predicate object instead of more methods

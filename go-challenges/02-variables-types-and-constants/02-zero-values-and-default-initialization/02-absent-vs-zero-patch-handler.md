@@ -28,9 +28,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/patch/cmd/demo
-cd ~/go-exercises/patch
-go mod init example.com/patch
+mkdir -p go-solutions/02-variables-types-and-constants/02-zero-values-and-default-initialization/02-absent-vs-zero-patch-handler/cmd/demo
+cd go-solutions/02-variables-types-and-constants/02-zero-values-and-default-initialization/02-absent-vs-zero-patch-handler
 ```
 
 ## Why pointer fields, and nothing else, work here

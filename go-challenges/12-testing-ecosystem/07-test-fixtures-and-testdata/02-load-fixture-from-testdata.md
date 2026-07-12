@@ -25,9 +25,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/webhook/cmd/demo ~/go-exercises/webhook/testdata
-cd ~/go-exercises/webhook
-go mod init example.com/webhook
+mkdir -p go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/02-load-fixture-from-testdata/cmd/demo go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/02-load-fixture-from-testdata/testdata
+cd go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/02-load-fixture-from-testdata
 ```
 
 ### Why testdata/ and why the path is stable

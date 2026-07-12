@@ -29,9 +29,8 @@ workerfixture/               independent module: example.com/workerfixture
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/workerfixture/cmd/demo
-cd ~/go-exercises/workerfixture
-go mod init example.com/workerfixture
+mkdir -p go-solutions/12-testing-ecosystem/03-test-helpers/05-cleanup-lifecycle-worker/cmd/demo
+cd go-solutions/12-testing-ecosystem/03-test-helpers/05-cleanup-lifecycle-worker
 ```
 
 ### Why `t.Context()` is the correct shutdown signal

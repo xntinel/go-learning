@@ -31,9 +31,8 @@ changelogsync/              independent module: example.com/changelogsync
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/changelogsync/cmd/demo
-cd ~/go-exercises/changelogsync
-go mod init example.com/changelogsync
+mkdir -p go-solutions/03-control-flow/06-labels-break-continue-goto/23-distributed-changelog-sync/cmd/demo
+cd go-solutions/03-control-flow/06-labels-break-continue-goto/23-distributed-changelog-sync
 go mod edit -go=1.24
 ```
 

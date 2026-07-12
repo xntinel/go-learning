@@ -25,9 +25,8 @@ shutdown/                 independent module: example.com/shutdown
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/shutdown/cmd/demo
-cd ~/go-exercises/shutdown
-go mod init example.com/shutdown
+mkdir -p go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/09-dump-stacks-on-shutdown-timeout/cmd/demo
+cd go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/09-dump-stacks-on-shutdown-timeout
 ```
 
 ### Bounded wait, then dump

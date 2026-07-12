@@ -31,9 +31,8 @@ validate/                     independent module: example.com/validate
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/validate/cmd/demo
-cd ~/go-exercises/validate
-go mod init example.com/validate
+mkdir -p go-solutions/08-interfaces/01-implicit-interface-satisfaction/05-typed-nil-error-trap/cmd/demo
+cd go-solutions/08-interfaces/01-implicit-interface-satisfaction/05-typed-nil-error-trap
 ```
 
 ### Why the buggy version fails on valid input

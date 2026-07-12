@@ -24,8 +24,7 @@ proxy_test.go        routing, hop-by-hop strip, X-Forwarded-*, header rules, 502
 Set up the module:
 
 ```bash
-mkdir -p http-reverse-proxy/cmd/demo && cd http-reverse-proxy
-go mod init example.com/http-reverse-proxy
+mkdir -p go-solutions/42-capstone-service-mesh-data-plane/02-l7-http-proxy/03-http-reverse-proxy/cmd/demo && cd go-solutions/42-capstone-service-mesh-data-plane/02-l7-http-proxy/03-http-reverse-proxy
 go mod edit -go=1.26
 ```
 

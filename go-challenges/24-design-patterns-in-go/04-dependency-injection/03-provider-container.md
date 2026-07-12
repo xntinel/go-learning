@@ -34,8 +34,7 @@ container_test.go    singletons are shared, construction is lazy, and concurrent
 Set up the module:
 
 ```bash
-mkdir -p provider-container/cmd/demo && cd provider-container
-go mod init example.com/provider-container
+mkdir -p go-solutions/24-design-patterns-in-go/04-dependency-injection/03-provider-container/cmd/demo && cd go-solutions/24-design-patterns-in-go/04-dependency-injection/03-provider-container
 ```
 
 ### Why memoized providers, and why `sync.Once`

@@ -33,9 +33,8 @@ flagresolve/                  independent module: example.com/feature-flag-resol
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/flagresolve/cmd/demo
-cd ~/go-exercises/flagresolve
-go mod init example.com/feature-flag-resolve-audited
+mkdir -p go-solutions/04-functions/01-function-declaration-and-multiple-return-values/24-feature-flag-resolve-audited/cmd/demo
+cd go-solutions/04-functions/01-function-declaration-and-multiple-return-values/24-feature-flag-resolve-audited
 go mod edit -go=1.24
 ```
 

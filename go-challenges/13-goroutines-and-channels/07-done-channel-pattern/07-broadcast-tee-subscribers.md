@@ -26,9 +26,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/teebroadcast/cmd/demo
-cd ~/go-exercises/teebroadcast
-go mod init example.com/teebroadcast
+mkdir -p go-solutions/13-goroutines-and-channels/07-done-channel-pattern/07-broadcast-tee-subscribers/cmd/demo
+cd go-solutions/13-goroutines-and-channels/07-done-channel-pattern/07-broadcast-tee-subscribers
 ```
 
 ### Per-subscriber done is what enables clean detach

@@ -22,8 +22,7 @@ incremental_test.go    cadence, delta carries only changed keys, restore round-t
 Set up the module:
 
 ```bash
-mkdir -p incremental-snapshots/cmd/demo && cd incremental-snapshots
-go mod init example.com/incremental-snapshots
+mkdir -p go-solutions/43-capstone-stream-processing-engine/05-checkpointing/06-incremental-snapshots/cmd/demo && cd go-solutions/43-capstone-stream-processing-engine/05-checkpointing/06-incremental-snapshots
 go mod edit -go=1.26
 ```
 

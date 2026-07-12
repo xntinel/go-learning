@@ -34,9 +34,8 @@ lockwait-gauge/               independent module: example.com/lockwait-gauge
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/lockwait-gauge/cmd/demo
-cd ~/go-exercises/lockwait-gauge
-go mod init example.com/lockwait-gauge
+mkdir -p go-solutions/15-sync-primitives/14-contention-profiling/07-lock-wait-slo-gauge/cmd/demo
+cd go-solutions/15-sync-primitives/14-contention-profiling/07-lock-wait-slo-gauge
 ```
 
 ### Why a gauge, when we already have profiles

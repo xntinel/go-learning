@@ -29,9 +29,8 @@ supervisor/                independent module: example.com/supervisor
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/supervisor/cmd/demo
-cd ~/go-exercises/supervisor
-go mod init example.com/supervisor
+mkdir -p go-solutions/13-goroutines-and-channels/11-goroutine-lifecycle-management/06-supervisor-restart-backoff/cmd/demo
+cd go-solutions/13-goroutines-and-channels/11-goroutine-lifecycle-management/06-supervisor-restart-backoff
 ```
 
 ### Recovering a panic without losing the goroutine

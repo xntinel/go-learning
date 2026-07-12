@@ -31,9 +31,8 @@ Verify: `go test -race ./...`, then `go test -fuzz=FuzzFrameRoundTrip
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/wire/cmd/demo
-cd ~/go-exercises/wire
-go mod init example.com/wire
+mkdir -p go-solutions/12-testing-ecosystem/06-fuzz-testing/02-roundtrip-uvarint-codec/cmd/demo
+cd go-solutions/12-testing-ecosystem/06-fuzz-testing/02-roundtrip-uvarint-codec
 ```
 
 ### The framing format and the round-trip property

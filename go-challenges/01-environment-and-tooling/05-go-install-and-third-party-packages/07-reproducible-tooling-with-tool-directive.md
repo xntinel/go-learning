@@ -28,9 +28,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/fmtguard/cmd/demo
-cd ~/go-exercises/fmtguard
-go mod init example.com/fmtguard
+mkdir -p go-solutions/01-environment-and-tooling/05-go-install-and-third-party-packages/07-reproducible-tooling-with-tool-directive/cmd/demo
+cd go-solutions/01-environment-and-tooling/05-go-install-and-third-party-packages/07-reproducible-tooling-with-tool-directive
 ```
 
 ### The directive, and what it replaces

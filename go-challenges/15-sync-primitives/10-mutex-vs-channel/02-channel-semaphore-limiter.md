@@ -30,9 +30,8 @@ chanlimiter/                    independent module: example.com/chanlimiter
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/chanlimiter/limiter ~/go-exercises/chanlimiter/cmd/demo
-cd ~/go-exercises/chanlimiter
-go mod init example.com/chanlimiter
+mkdir -p go-solutions/15-sync-primitives/10-mutex-vs-channel/02-channel-semaphore-limiter/limiter go-solutions/15-sync-primitives/10-mutex-vs-channel/02-channel-semaphore-limiter/cmd/demo
+cd go-solutions/15-sync-primitives/10-mutex-vs-channel/02-channel-semaphore-limiter
 ```
 
 ### A buffered channel is a counting semaphore

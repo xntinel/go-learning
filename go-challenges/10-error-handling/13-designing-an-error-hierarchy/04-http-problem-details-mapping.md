@@ -27,9 +27,8 @@ http-problem-details/              module example.com/http-problem-details
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/http-problem-details/cmd/demo
-cd ~/go-exercises/http-problem-details
-go mod init example.com/http-problem-details
+mkdir -p go-solutions/10-error-handling/13-designing-an-error-hierarchy/04-http-problem-details-mapping/cmd/demo
+cd go-solutions/10-error-handling/13-designing-an-error-hierarchy/04-http-problem-details-mapping
 ```
 
 ### Why errors.Is and not a type switch

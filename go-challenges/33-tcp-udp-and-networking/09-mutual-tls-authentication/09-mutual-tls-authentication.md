@@ -95,9 +95,8 @@ if len(state.PeerCertificates) > 0 {
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/mtls/cmd/demo
-cd ~/go-exercises/mtls
-go mod init example.com/mtls
+mkdir -p go-solutions/33-tcp-udp-and-networking/09-mutual-tls-authentication/09-mutual-tls-authentication/cmd/demo
+cd go-solutions/33-tcp-udp-and-networking/09-mutual-tls-authentication/09-mutual-tls-authentication
 ```
 
 This is a library verified by `go test`, not by running a program.

@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module. This lesson uses external modules, so fetch them:
 
 ```bash
-mkdir -p ~/go-exercises/lockguard/cmd/demo
-cd ~/go-exercises/lockguard
-go mod init example.com/lockguard
+mkdir -p go-solutions/54-cloud-native-platform-and-orchestration/09-redis-distributed-locks-redsync/01-redlock-mutex-lifecycle/cmd/demo
+cd go-solutions/54-cloud-native-platform-and-orchestration/09-redis-distributed-locks-redsync/01-redlock-mutex-lifecycle
 go mod edit -go=1.26
 go get github.com/go-redsync/redsync/v4@latest
 go get github.com/redis/go-redis/v9@latest

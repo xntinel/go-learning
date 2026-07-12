@@ -33,9 +33,8 @@ Verify: `go test -count=1 ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/request-trace-boundary/cmd/demo
-cd ~/go-exercises/request-trace-boundary
-go mod init example.com/tracehandler
+mkdir -p go-solutions/03-control-flow/08-panic-and-recover/19-request-trace-boundary/cmd/demo
+cd go-solutions/03-control-flow/08-panic-and-recover/19-request-trace-boundary
 go mod edit -go=1.24
 ```
 

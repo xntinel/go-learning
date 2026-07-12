@@ -23,9 +23,8 @@ tieredcache/                 independent module: example.com/tiered-cache-fallba
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/tieredcache
-cd ~/go-exercises/tieredcache
-go mod init example.com/tiered-cache-fallback
+mkdir -p go-solutions/03-control-flow/01-if-else-and-init-statements/12-tiered-cache-fallback
+cd go-solutions/03-control-flow/01-if-else-and-init-statements/12-tiered-cache-fallback
 go mod edit -go=1.24
 ```
 

@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module. `errors.AsType` requires Go 1.26, so pin the language version:
 
 ```bash
-mkdir -p ~/go-exercises/httperr/cmd/demo
-cd ~/go-exercises/httperr
-go mod init example.com/httperr
+mkdir -p go-solutions/48-modern-go-language-and-stdlib/14-errors-astype-generic-matching/01-http-error-mapper/cmd/demo
+cd go-solutions/48-modern-go-language-and-stdlib/14-errors-astype-generic-matching/01-http-error-mapper
 go mod edit -go=1.26
 ```
 

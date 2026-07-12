@@ -28,9 +28,8 @@ hotpath/                    independent module: example.com/hotpath
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/hotpath/cmd/demo
-cd ~/go-exercises/hotpath
-go mod init example.com/hotpath
+mkdir -p go-solutions/09-pointers/02-pointers-and-function-parameters/09-large-struct-copy-cost-benchmark/cmd/demo
+cd go-solutions/09-pointers/02-pointers-and-function-parameters/09-large-struct-copy-cost-benchmark
 ```
 
 ### Why measure instead of reaching for the pointer

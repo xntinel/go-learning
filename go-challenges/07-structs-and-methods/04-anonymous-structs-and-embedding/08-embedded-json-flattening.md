@@ -34,9 +34,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/envelope/cmd/demo
-cd ~/go-exercises/envelope
-go mod init example.com/envelope
+mkdir -p go-solutions/07-structs-and-methods/04-anonymous-structs-and-embedding/08-embedded-json-flattening/cmd/demo
+cd go-solutions/07-structs-and-methods/04-anonymous-structs-and-embedding/08-embedded-json-flattening
 ```
 
 ### The three shapes, and why they differ

@@ -31,9 +31,8 @@ config/                        module example.com/config
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/config/cmd/demo
-cd ~/go-exercises/config
-go mod init example.com/config
+mkdir -p go-solutions/03-control-flow/02-for-loops/18-config-loader-fallback-chain/cmd/demo
+cd go-solutions/03-control-flow/02-for-loops/18-config-loader-fallback-chain
 go mod edit -go=1.24
 ```
 

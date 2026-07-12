@@ -25,9 +25,8 @@ finalize/                    independent module: example.com/finalize
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/finalize
-cd ~/go-exercises/finalize
-go mod init example.com/finalize
+mkdir -p go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/11-defer-named-return-shadowed-err
+cd go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/11-defer-named-return-shadowed-err
 go mod edit -go=1.24
 ```
 

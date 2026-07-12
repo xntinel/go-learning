@@ -29,9 +29,8 @@ pool/                       independent module: example.com/pool
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pool/cmd/demo
-cd ~/go-exercises/pool
-go mod init example.com/pool
+mkdir -p go-solutions/15-sync-primitives/06-sync-cond/03-connection-pool/cmd/demo
+cd go-solutions/15-sync-primitives/06-sync-cond/03-connection-pool
 ```
 
 ### Signal to hand off one slot, Broadcast to drain on shutdown

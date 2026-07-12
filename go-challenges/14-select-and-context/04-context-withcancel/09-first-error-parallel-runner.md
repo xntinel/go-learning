@@ -30,9 +30,8 @@ group/                     independent module: example.com/group
 Set up the module:
 
 ```bash
-mkdir -p group/cmd/demo
-cd group
-go mod init example.com/group
+mkdir -p go-solutions/14-select-and-context/04-context-withcancel/09-first-error-parallel-runner/cmd/demo
+cd go-solutions/14-select-and-context/04-context-withcancel/09-first-error-parallel-runner
 ```
 
 ### The three primitives that are errgroup

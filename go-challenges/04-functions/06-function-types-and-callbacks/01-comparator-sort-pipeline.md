@@ -28,9 +28,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/sortx/cmd/demo
-cd ~/go-exercises/sortx
-go mod init example.com/sortx
+mkdir -p go-solutions/04-functions/06-function-types-and-callbacks/01-comparator-sort-pipeline/cmd/demo
+cd go-solutions/04-functions/06-function-types-and-callbacks/01-comparator-sort-pipeline
 ```
 
 ### Why value-based callbacks, and where each function fits

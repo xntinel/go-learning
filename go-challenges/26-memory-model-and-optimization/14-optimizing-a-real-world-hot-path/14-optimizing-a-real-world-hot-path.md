@@ -35,9 +35,8 @@ Manual JSON construction is justified here because the schema is tiny, fixed, an
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/hotgate/cmd/demo
-cd ~/go-exercises/hotgate
-go mod init hotgate
+mkdir -p go-solutions/26-memory-model-and-optimization/14-optimizing-a-real-world-hot-path/14-optimizing-a-real-world-hot-path/cmd/demo
+cd go-solutions/26-memory-model-and-optimization/14-optimizing-a-real-world-hot-path/14-optimizing-a-real-world-hot-path
 ```
 
 This is a library. The command under `cmd/demo` is only a consumer of the exported API.

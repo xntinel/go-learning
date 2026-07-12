@@ -28,9 +28,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/collector/cmd/demo
-cd ~/go-exercises/collector
-go mod init example.com/collector
+mkdir -p go-solutions/02-variables-types-and-constants/02-zero-values-and-default-initialization/01-zero-value-metrics-collector/cmd/demo
+cd go-solutions/02-variables-types-and-constants/02-zero-values-and-default-initialization/01-zero-value-metrics-collector
 ```
 
 ## Why there is no constructor

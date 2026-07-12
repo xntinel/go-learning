@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/reportexport/cmd/demo
-cd ~/go-exercises/reportexport
-go mod init example.com/reportexport
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/09-two-dim-shared-row/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/09-two-dim-shared-row
 ```
 
 ### Why every row ends up identical

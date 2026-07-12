@@ -58,9 +58,8 @@ TCP keep-alive is handled by the kernel, but many corporate firewalls and cloud 
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/keepalive/cmd/demo
-cd ~/go-exercises/keepalive
-go mod init example.com/keepalive
+mkdir -p go-solutions/33-tcp-udp-and-networking/05-tcp-keep-alive/05-tcp-keep-alive/cmd/demo
+cd go-solutions/33-tcp-udp-and-networking/05-tcp-keep-alive/05-tcp-keep-alive
 ```
 
 This is a library package, not a program: verification is done with `go test`.

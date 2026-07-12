@@ -24,8 +24,7 @@ delete_test.go       full-tree invariant check across random deletes, parity del
 Set up the module:
 
 ```bash
-mkdir -p delete-balanced-borrow-and-merge/cmd/demo && cd delete-balanced-borrow-and-merge
-go mod init example.com/delete-balanced-borrow-and-merge
+mkdir -p go-solutions/39-capstone-database-engine/02-btree-index/05-delete-balanced-borrow-and-merge/cmd/demo && cd go-solutions/39-capstone-database-engine/02-btree-index/05-delete-balanced-borrow-and-merge
 ```
 
 ### The baseline

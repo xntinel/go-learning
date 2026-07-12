@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/userservice/cmd/demo
-cd ~/go-exercises/userservice
-go mod init example.com/userservice
+mkdir -p go-solutions/09-pointers/05-pointers-to-structs/01-user-service-shared-mutable-state/cmd/demo
+cd go-solutions/09-pointers/05-pointers-to-structs/01-user-service-shared-mutable-state
 ```
 
 ### Why the store holds pointers, and why identity is a contract

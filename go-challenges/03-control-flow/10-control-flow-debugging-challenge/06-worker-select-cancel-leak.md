@@ -26,9 +26,8 @@ worker/                    module example.com/worker
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/worker/cmd/demo
-cd ~/go-exercises/worker
-go mod init example.com/worker
+mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/06-worker-select-cancel-leak/cmd/demo
+cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/06-worker-select-cancel-leak
 ```
 
 ### The artifact and the planted bug

@@ -30,9 +30,8 @@ httpvalid/                   independent module: example.com/validate-interface-
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/httpvalid/cmd/demo
-cd ~/go-exercises/httpvalid
-go mod init example.com/validate-interface-pipeline
+mkdir -p go-solutions/07-structs-and-methods/06-constructor-functions-and-validation/05-validate-interface-pipeline/cmd/demo
+cd go-solutions/07-structs-and-methods/06-constructor-functions-and-validation/05-validate-interface-pipeline
 ```
 
 ### Keep transport out of the domain

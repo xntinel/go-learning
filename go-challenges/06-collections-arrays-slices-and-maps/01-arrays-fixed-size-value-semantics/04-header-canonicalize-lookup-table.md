@@ -30,9 +30,8 @@ headercanon/                 independent module: example.com/headercanon
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/headercanon/cmd/demo
-cd ~/go-exercises/headercanon
-go mod init example.com/headercanon
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/04-header-canonicalize-lookup-table/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/04-header-canonicalize-lookup-table
 ```
 
 ### Why a [256]byte table, built once

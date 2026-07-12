@@ -28,9 +28,8 @@ latency/                    independent module: example.com/latency
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/latency/latency ~/go-exercises/latency/cmd/demo
-cd ~/go-exercises/latency
-go mod init example.com/latency
+mkdir -p go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/06-latency-timing-defer-and-arg-eval/latency go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/06-latency-timing-defer-and-arg-eval/cmd/demo
+cd go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/06-latency-timing-defer-and-arg-eval
 ```
 
 ### The rule, stated precisely

@@ -46,9 +46,8 @@ hierarchical-quota-token-enforcement/   independent module: example.com/hierarch
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/hierarchical-quota-token-enforcement/cmd/demo
-cd ~/go-exercises/hierarchical-quota-token-enforcement
-go mod init example.com/hierarchical-quota-token-enforcement
+mkdir -p go-solutions/03-control-flow/04-type-switch/34-hierarchical-quota-token-enforcement/cmd/demo
+cd go-solutions/03-control-flow/04-type-switch/34-hierarchical-quota-token-enforcement
 go mod edit -go=1.24
 ```
 

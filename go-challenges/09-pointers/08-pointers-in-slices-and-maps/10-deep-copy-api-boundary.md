@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/snapexport/cmd/demo
-cd ~/go-exercises/snapexport
-go mod init example.com/snapexport
+mkdir -p go-solutions/09-pointers/08-pointers-in-slices-and-maps/10-deep-copy-api-boundary/cmd/demo
+cd go-solutions/09-pointers/08-pointers-in-slices-and-maps/10-deep-copy-api-boundary
 ```
 
 ### Why a value copy is still not independent

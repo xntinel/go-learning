@@ -31,9 +31,8 @@ publicstr/                 independent module: example.com/publicstr
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/publicstr/cmd/demo
-cd ~/go-exercises/publicstr
-go mod init example.com/publicstr
+mkdir -p go-solutions/11-packages-and-modules/09-designing-a-public-go-module/02-package-doc-and-godoc-contract/cmd/demo
+cd go-solutions/11-packages-and-modules/09-designing-a-public-go-module/02-package-doc-and-godoc-contract
 ```
 
 ### The two conventions that make docs a contract

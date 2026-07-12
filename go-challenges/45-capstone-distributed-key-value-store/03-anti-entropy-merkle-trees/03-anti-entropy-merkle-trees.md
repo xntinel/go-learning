@@ -102,9 +102,8 @@ the duration of data access.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/merkle/cmd/demo
-cd ~/go-exercises/merkle
-go mod init example.com/merkle
+mkdir -p go-solutions/45-capstone-distributed-key-value-store/03-anti-entropy-merkle-trees/03-anti-entropy-merkle-trees/cmd/demo
+cd go-solutions/45-capstone-distributed-key-value-store/03-anti-entropy-merkle-trees/03-anti-entropy-merkle-trees
 ```
 
 This is a library, not a program. The core package is `package merkle`; the

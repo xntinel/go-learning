@@ -31,9 +31,8 @@ resilience/                  independent module: example.com/resilience
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/resilience/cmd/demo
-cd ~/go-exercises/resilience
-go mod init example.com/resilience
+mkdir -p go-solutions/52-ai-llm-backends/08-llm-resilience-and-caching/02-timeout-budgets-and-circuit-breaker/cmd/demo
+cd go-solutions/52-ai-llm-backends/08-llm-resilience-and-caching/02-timeout-budgets-and-circuit-breaker
 go mod edit -go=1.26
 ```
 

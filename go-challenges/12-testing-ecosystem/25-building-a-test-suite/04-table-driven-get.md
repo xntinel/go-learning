@@ -26,9 +26,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/tablecache/cmd/demo
-cd ~/go-exercises/tablecache
-go mod init example.com/tablecache
+mkdir -p go-solutions/12-testing-ecosystem/25-building-a-test-suite/04-table-driven-get/cmd/demo
+cd go-solutions/12-testing-ecosystem/25-building-a-test-suite/04-table-driven-get
 ```
 
 ### When a table beats subtests, and the nil-error trap

@@ -31,9 +31,8 @@ racegate/                  independent module: example.com/racegate
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/racegate/cmd/demo
-cd ~/go-exercises/racegate
-go mod init example.com/racegate
+mkdir -p go-solutions/09-pointers/09-pointer-aliasing-and-data-races/03-race-detector-as-ci-gate/cmd/demo
+cd go-solutions/09-pointers/09-pointer-aliasing-and-data-races/03-race-detector-as-ci-gate
 ```
 
 ### How to read a race report

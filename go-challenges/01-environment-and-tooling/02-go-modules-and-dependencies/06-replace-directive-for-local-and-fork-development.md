@@ -30,9 +30,8 @@ Set up the fork module (its path is the *upstream* module path — a fork keeps 
 original import path so consumers do not have to rewrite imports):
 
 ```bash
-mkdir -p ~/go-exercises/greeterfork/cmd/demo
-cd ~/go-exercises/greeterfork
-go mod init example.com/greeter
+mkdir -p go-solutions/01-environment-and-tooling/02-go-modules-and-dependencies/06-replace-directive-for-local-and-fork-development/cmd/demo
+cd go-solutions/01-environment-and-tooling/02-go-modules-and-dependencies/06-replace-directive-for-local-and-fork-development
 ```
 
 ### Why replace, and its two hard rules
@@ -168,9 +167,8 @@ Now create the consuming app in a sibling directory and wire the `replace` with
 `go mod edit` (which edits `go.mod` mechanically, no manual editing):
 
 ```bash
-mkdir -p ~/go-exercises/greetapp/cmd/demo
-cd ~/go-exercises/greetapp
-go mod init example.com/greetapp
+mkdir -p go-solutions/01-environment-and-tooling/02-go-modules-and-dependencies/06-replace-directive-for-local-and-fork-development/cmd/demo
+cd go-solutions/01-environment-and-tooling/02-go-modules-and-dependencies/06-replace-directive-for-local-and-fork-development
 go mod edit -require example.com/greeter@v0.0.0
 go mod edit -replace example.com/greeter@v0.0.0=../greeterfork
 ```

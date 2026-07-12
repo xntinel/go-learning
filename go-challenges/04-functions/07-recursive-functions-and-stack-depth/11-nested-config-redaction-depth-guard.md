@@ -30,9 +30,8 @@ and a bare scalar passing through unchanged.
 Verify: `go test -count=1 ./...`
 
 ```bash
-mkdir -p ~/go-exercises/configredact
-cd ~/go-exercises/configredact
-go mod init example.com/configredact
+mkdir -p go-solutions/04-functions/07-recursive-functions-and-stack-depth/11-nested-config-redaction-depth-guard
+cd go-solutions/04-functions/07-recursive-functions-and-stack-depth/11-nested-config-redaction-depth-guard
 go mod edit -go=1.24
 ```
 

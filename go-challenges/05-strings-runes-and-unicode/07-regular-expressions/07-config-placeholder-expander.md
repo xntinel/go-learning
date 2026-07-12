@@ -29,9 +29,8 @@ configtmpl/                 independent module: example.com/configtmpl
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/configtmpl/cmd/demo
-cd ~/go-exercises/configtmpl
-go mod init example.com/configtmpl
+mkdir -p go-solutions/05-strings-runes-and-unicode/07-regular-expressions/07-config-placeholder-expander/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/07-regular-expressions/07-config-placeholder-expander
 ```
 
 ### Why the closure of ReplaceAllStringFunc is the right shape

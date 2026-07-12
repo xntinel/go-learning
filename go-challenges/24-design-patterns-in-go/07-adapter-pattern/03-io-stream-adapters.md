@@ -21,9 +21,8 @@ bridge_test.go                    ReadAll round-trip, 1-byte reads, bufio.Scanne
 Set up the module:
 
 ```bash
-mkdir -p iobridge/cmd/demo
-cd iobridge
-go mod init example.com/iobridge
+mkdir -p go-solutions/24-design-patterns-in-go/07-adapter-pattern/03-io-stream-adapters/cmd/demo
+cd go-solutions/24-design-patterns-in-go/07-adapter-pattern/03-io-stream-adapters
 ```
 
 ### Reading: the io.Reader contract is the hard part

@@ -51,9 +51,8 @@ The raw `SYS_MMAP` call returns a `uintptr`. Converting that to a `[]byte` requi
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/rawsys/cmd/demo
-cd ~/go-exercises/rawsys
-go mod init example.com/rawsys
+mkdir -p go-solutions/47-capstone-systems-and-kernel/01-direct-syscalls/01-direct-syscalls/cmd/demo
+cd go-solutions/47-capstone-systems-and-kernel/01-direct-syscalls/01-direct-syscalls
 ```
 
 ### Exercise 1: Build the rawsys Package

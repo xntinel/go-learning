@@ -31,9 +31,8 @@ blobstore/                   independent module: example.com/blobstore
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/blobstore/cmd/demo
-cd ~/go-exercises/blobstore
-go mod init example.com/blobstore
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/02-content-addressed-dedup-store/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/02-content-addressed-dedup-store
 ```
 
 ### Why the [32]byte key needs no hex string

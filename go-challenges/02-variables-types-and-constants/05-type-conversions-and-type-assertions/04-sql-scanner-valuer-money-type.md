@@ -30,9 +30,8 @@ moneytype/                   independent module: example.com/moneytype
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/moneytype/cmd/demo
-cd ~/go-exercises/moneytype
-go mod init example.com/moneytype
+mkdir -p go-solutions/02-variables-types-and-constants/05-type-conversions-and-type-assertions/04-sql-scanner-valuer-money-type/cmd/demo
+cd go-solutions/02-variables-types-and-constants/05-type-conversions-and-type-assertions/04-sql-scanner-valuer-money-type
 go mod edit -go=1.26
 ```
 

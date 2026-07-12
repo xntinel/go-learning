@@ -91,9 +91,8 @@ Reads acquire a read lock; they compute offsets from `s.mapped` directly. Writes
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/mmapstore/cmd/demo
-cd ~/go-exercises/mmapstore
-go mod init example.com/mmapstore
+mkdir -p go-solutions/28-unsafe-and-cgo/10-memory-mapped-data-store/10-memory-mapped-data-store/cmd/demo
+cd go-solutions/28-unsafe-and-cgo/10-memory-mapped-data-store/10-memory-mapped-data-store
 ```
 
 ### Exercise 1: Implement the Store

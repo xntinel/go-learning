@@ -33,9 +33,8 @@ ratelimit/                  independent module: example.com/sliding-window-rate-
 - Verify: `go test -count=1 ./...`.
 
 ```bash
-mkdir -p ~/go-exercises/sliding-window-rate-limiter/cmd/demo
-cd ~/go-exercises/sliding-window-rate-limiter
-go mod init example.com/sliding-window-rate-limiter
+mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/25-sliding-window-rate-limiter/cmd/demo
+cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/25-sliding-window-rate-limiter
 ```
 
 ### Why a clean window reset admits double the limit

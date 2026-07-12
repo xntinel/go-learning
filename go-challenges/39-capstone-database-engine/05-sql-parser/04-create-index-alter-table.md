@@ -28,8 +28,7 @@ sqlddl/
 Set up the module:
 
 ```bash
-mkdir -p sqlddl/lexer sqlddl/cmd/demo && cd sqlddl
-go mod init example.com/sqlddl
+mkdir -p go-solutions/39-capstone-database-engine/05-sql-parser/04-create-index-alter-table/lexer go-solutions/39-capstone-database-engine/05-sql-parser/04-create-index-alter-table/cmd/demo && cd go-solutions/39-capstone-database-engine/05-sql-parser/04-create-index-alter-table
 ```
 
 ### A separate entry point, and reuse where it counts

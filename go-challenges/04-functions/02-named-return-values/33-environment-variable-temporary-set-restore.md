@@ -29,9 +29,8 @@ envtemp/                    independent module: example.com/envtemp
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/envtemp/cmd/demo
-cd ~/go-exercises/envtemp
-go mod init example.com/envtemp
+mkdir -p go-solutions/04-functions/02-named-return-values/33-environment-variable-temporary-set-restore/cmd/demo
+cd go-solutions/04-functions/02-named-return-values/33-environment-variable-temporary-set-restore
 go mod edit -go=1.24
 ```
 

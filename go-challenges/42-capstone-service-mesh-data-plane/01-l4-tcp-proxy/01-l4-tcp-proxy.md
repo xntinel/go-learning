@@ -25,8 +25,7 @@ proxy_test.go       state strings, option validation, round-robin, bidirectional
 Set up the module:
 
 ```bash
-mkdir -p l4proxy/cmd/demo && cd l4proxy
-go mod init example.com/l4proxy
+mkdir -p go-solutions/42-capstone-service-mesh-data-plane/01-l4-tcp-proxy/01-l4-tcp-proxy/cmd/demo && cd go-solutions/42-capstone-service-mesh-data-plane/01-l4-tcp-proxy/01-l4-tcp-proxy
 go mod edit -go=1.26
 ```
 

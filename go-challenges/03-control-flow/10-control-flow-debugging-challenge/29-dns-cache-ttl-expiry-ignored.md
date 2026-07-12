@@ -35,9 +35,8 @@ resolver/                    independent module: example.com/dns-cache-ttl-expir
 - Verify: `go test -count=1 ./...`.
 
 ```bash
-mkdir -p ~/go-exercises/dns-cache-ttl-expiry-ignored/cmd/demo
-cd ~/go-exercises/dns-cache-ttl-expiry-ignored
-go mod init example.com/dns-cache-ttl-expiry-ignored
+mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/29-dns-cache-ttl-expiry-ignored/cmd/demo
+cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/29-dns-cache-ttl-expiry-ignored
 ```
 
 ### Why storing the TTL is not the same as checking it

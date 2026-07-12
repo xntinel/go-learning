@@ -27,8 +27,7 @@ repl_test.go       editing, commands, bracket depth, and scripted runLoop sessio
 Set up the module:
 
 ```bash
-mkdir -p repl/cmd/demo && cd repl
-go mod init example.com/repl
+mkdir -p go-solutions/40-capstone-language-interpreter/07-repl-line-editing/05-interactive-repl/cmd/demo && cd go-solutions/40-capstone-language-interpreter/07-repl-line-editing/05-interactive-repl
 go get golang.org/x/term
 ```
 

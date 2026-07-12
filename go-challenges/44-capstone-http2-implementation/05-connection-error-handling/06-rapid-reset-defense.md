@@ -22,8 +22,7 @@ rapidreset_test.go     trips over budget, legitimate cancels ignored, spread-out
 Set up the module:
 
 ```bash
-mkdir -p rapid-reset-defense/cmd/demo && cd rapid-reset-defense
-go mod init example.com/rapid-reset-defense
+mkdir -p go-solutions/44-capstone-http2-implementation/05-connection-error-handling/06-rapid-reset-defense/cmd/demo && cd go-solutions/44-capstone-http2-implementation/05-connection-error-handling/06-rapid-reset-defense
 go mod edit -go=1.26
 ```
 

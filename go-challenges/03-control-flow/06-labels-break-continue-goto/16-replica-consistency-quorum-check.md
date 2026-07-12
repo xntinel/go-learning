@@ -30,9 +30,8 @@ quorum/                     independent module: example.com/quorum
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/quorum/cmd/demo
-cd ~/go-exercises/quorum
-go mod init example.com/quorum
+mkdir -p go-solutions/03-control-flow/06-labels-break-continue-goto/16-replica-consistency-quorum-check/cmd/demo
+cd go-solutions/03-control-flow/06-labels-break-continue-goto/16-replica-consistency-quorum-check
 go mod edit -go=1.24
 ```
 

@@ -61,9 +61,8 @@ only one probe is in flight at a time.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/circuitbreaker/internal/circuitbreaker ~/go-exercises/circuitbreaker/cmd/circuitbreakerdemo
-cd ~/go-exercises/circuitbreaker
-go mod init example.com/circuitbreaker
+mkdir -p go-solutions/16-concurrency-patterns/14-circuit-breaker-pattern/14-circuit-breaker-pattern/internal/circuitbreaker go-solutions/16-concurrency-patterns/14-circuit-breaker-pattern/14-circuit-breaker-pattern/cmd/circuitbreakerdemo
+cd go-solutions/16-concurrency-patterns/14-circuit-breaker-pattern/14-circuit-breaker-pattern
 ```
 
 ### Exercise 1: Sentinel Errors And State

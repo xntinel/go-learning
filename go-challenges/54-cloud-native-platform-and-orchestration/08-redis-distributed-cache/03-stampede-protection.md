@@ -31,9 +31,8 @@ stampede/                     independent module: example.com/stampede
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/stampede/cmd/demo
-cd ~/go-exercises/stampede
-go mod init example.com/stampede
+mkdir -p go-solutions/54-cloud-native-platform-and-orchestration/08-redis-distributed-cache/03-stampede-protection/cmd/demo
+cd go-solutions/54-cloud-native-platform-and-orchestration/08-redis-distributed-cache/03-stampede-protection
 go get github.com/redis/go-redis/v9@latest
 go get github.com/alicebob/miniredis/v2@latest
 go get golang.org/x/sync/singleflight@latest

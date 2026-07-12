@@ -29,9 +29,8 @@ ptrtype/                   independent module: example.com/ptrtype
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ptrtype/cmd/demo
-cd ~/go-exercises/ptrtype
-go mod init example.com/ptrtype
+mkdir -p go-solutions/09-pointers/01-pointer-basics/02-distinct-pointer-type-contract/cmd/demo
+cd go-solutions/09-pointers/01-pointer-basics/02-distinct-pointer-type-contract
 ```
 
 ### Why reflect proves what the compiler already knows

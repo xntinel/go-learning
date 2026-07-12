@@ -27,9 +27,8 @@ attribution/                 independent module: example.com/attribution
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/attribution/cmd/demo
-cd ~/go-exercises/attribution
-go mod init example.com/attribution
+mkdir -p go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/04-pprof-labels-attribute-goroutines/cmd/demo
+cd go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/04-pprof-labels-attribute-goroutines
 ```
 
 ### How labels attach and propagate

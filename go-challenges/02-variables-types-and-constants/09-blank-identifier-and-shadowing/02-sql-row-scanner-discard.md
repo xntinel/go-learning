@@ -28,9 +28,8 @@ rowscanner/                     module: example.com/rowscanner
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/rowscanner/cmd/demo
-cd ~/go-exercises/rowscanner
-go mod init example.com/rowscanner
+mkdir -p go-solutions/02-variables-types-and-constants/09-blank-identifier-and-shadowing/02-sql-row-scanner-discard/cmd/demo
+cd go-solutions/02-variables-types-and-constants/09-blank-identifier-and-shadowing/02-sql-row-scanner-discard
 ```
 
 ### Why `_` cannot be a Scan destination, and why rows.Err() is not optional

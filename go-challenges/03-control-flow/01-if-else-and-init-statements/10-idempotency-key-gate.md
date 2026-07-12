@@ -29,9 +29,8 @@ idem/                       independent module: example.com/idempotency-key-gate
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/idem/cmd/demo
-cd ~/go-exercises/idem
-go mod init example.com/idempotency-key-gate
+mkdir -p go-solutions/03-control-flow/01-if-else-and-init-statements/10-idempotency-key-gate/cmd/demo
+cd go-solutions/03-control-flow/01-if-else-and-init-statements/10-idempotency-key-gate
 go mod edit -go=1.24
 ```
 

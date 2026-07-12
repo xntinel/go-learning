@@ -31,9 +31,8 @@ busywork/                     independent module: example.com/busywork
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/busywork/cmd/demo
-cd ~/go-exercises/busywork
-go mod init example.com/busywork
+mkdir -p go-solutions/15-sync-primitives/14-contention-profiling/03-busywork-critical-section-helper/cmd/demo
+cd go-solutions/15-sync-primitives/14-contention-profiling/03-busywork-critical-section-helper
 ```
 
 ### Why elision would silence the whole chapter

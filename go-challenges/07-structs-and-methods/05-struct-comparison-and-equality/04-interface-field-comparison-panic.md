@@ -29,9 +29,8 @@ changecache/                independent module: example.com/changecache
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/changecache/cmd/demo
-cd ~/go-exercises/changecache
-go mod init example.com/changecache
+mkdir -p go-solutions/07-structs-and-methods/05-struct-comparison-and-equality/04-interface-field-comparison-panic/cmd/demo
+cd go-solutions/07-structs-and-methods/05-struct-comparison-and-equality/04-interface-field-comparison-panic
 ```
 
 ### Why `oldVal == newVal` is a landmine on `any`

@@ -34,9 +34,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/repo/cmd/demo
-cd ~/go-exercises/repo
-go mod init example.com/repo
+mkdir -p go-solutions/07-structs-and-methods/04-anonymous-structs-and-embedding/04-base-repository-embedding/cmd/demo
+cd go-solutions/07-structs-and-methods/04-anonymous-structs-and-embedding/04-base-repository-embedding
 ```
 
 ### Why embed the base by value and what promotion buys

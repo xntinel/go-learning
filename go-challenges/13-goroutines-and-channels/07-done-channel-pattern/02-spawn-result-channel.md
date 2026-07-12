@@ -28,9 +28,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/spawnresult/cmd/demo
-cd ~/go-exercises/spawnresult
-go mod init example.com/spawnresult
+mkdir -p go-solutions/13-goroutines-and-channels/07-done-channel-pattern/02-spawn-result-channel/cmd/demo
+cd go-solutions/13-goroutines-and-channels/07-done-channel-pattern/02-spawn-result-channel
 ```
 
 ### Why the out channel has capacity 1

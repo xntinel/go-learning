@@ -31,9 +31,8 @@ bloomcheck/                 independent module: example.com/bloom-filter-members
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/bloomcheck/cmd/demo
-cd ~/go-exercises/bloomcheck
-go mod init example.com/bloom-filter-membership-checker
+mkdir -p go-solutions/03-control-flow/03-switch-statements/31-bloom-filter-membership-checker/cmd/demo
+cd go-solutions/03-control-flow/03-switch-statements/31-bloom-filter-membership-checker
 go mod edit -go=1.24
 ```
 

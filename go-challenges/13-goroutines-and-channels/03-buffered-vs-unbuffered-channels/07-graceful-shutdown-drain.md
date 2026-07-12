@@ -29,9 +29,8 @@ drain/                       module: example.com/drain
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/drain/cmd/demo
-cd ~/go-exercises/drain
-go mod init example.com/drain
+mkdir -p go-solutions/13-goroutines-and-channels/03-buffered-vs-unbuffered-channels/07-graceful-shutdown-drain/cmd/demo
+cd go-solutions/13-goroutines-and-channels/03-buffered-vs-unbuffered-channels/07-graceful-shutdown-drain
 go mod edit -go=1.26
 ```
 

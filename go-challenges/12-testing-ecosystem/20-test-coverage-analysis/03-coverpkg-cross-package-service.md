@@ -36,9 +36,8 @@ svc/                       independent module: example.com/svc
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/svc/{repo,service,handler} ~/go-exercises/svc/cmd/demo
-cd ~/go-exercises/svc
-go mod init example.com/svc
+mkdir -p go-solutions/12-testing-ecosystem/20-test-coverage-analysis/03-coverpkg-cross-package-service/{repo,service,handler} go-solutions/12-testing-ecosystem/20-test-coverage-analysis/03-coverpkg-cross-package-service/cmd/demo
+cd go-solutions/12-testing-ecosystem/20-test-coverage-analysis/03-coverpkg-cross-package-service
 ```
 
 ### Why the default number lies about layered code

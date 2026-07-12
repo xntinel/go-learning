@@ -22,8 +22,7 @@ lockstep_test.go     zip stops at shorter, merge drains both sides, stability
 Set up the module:
 
 ```bash
-mkdir -p lockstep/cmd/demo && cd lockstep
-go mod init example.com/lockstep
+mkdir -p go-solutions/25-iterators-and-modern-go/04-range-over-func-pull-iterators/02-lockstep-zip-and-merge/cmd/demo && cd go-solutions/25-iterators-and-modern-go/04-range-over-func-pull-iterators/02-lockstep-zip-and-merge
 ```
 
 ### Why this needs two pull cursors, and the two stop calls

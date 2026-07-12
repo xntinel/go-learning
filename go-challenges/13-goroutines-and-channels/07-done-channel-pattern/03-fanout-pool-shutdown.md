@@ -27,9 +27,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/fanoutpool/cmd/demo
-cd ~/go-exercises/fanoutpool
-go mod init example.com/fanoutpool
+mkdir -p go-solutions/13-goroutines-and-channels/07-done-channel-pattern/03-fanout-pool-shutdown/cmd/demo
+cd go-solutions/13-goroutines-and-channels/07-done-channel-pattern/03-fanout-pool-shutdown
 ```
 
 ### One close broadcasts to N workers

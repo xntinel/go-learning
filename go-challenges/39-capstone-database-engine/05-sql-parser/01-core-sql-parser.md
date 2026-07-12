@@ -27,8 +27,7 @@ sqlparser/
 Set up the module:
 
 ```bash
-mkdir -p sqlparser/lexer sqlparser/cmd/demo && cd sqlparser
-go mod init example.com/sqlparser
+mkdir -p go-solutions/39-capstone-database-engine/05-sql-parser/01-core-sql-parser/lexer go-solutions/39-capstone-database-engine/05-sql-parser/01-core-sql-parser/cmd/demo && cd go-solutions/39-capstone-database-engine/05-sql-parser/01-core-sql-parser
 ```
 
 ### The lexer boundary

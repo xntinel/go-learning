@@ -28,9 +28,8 @@ nestedcfg/                  independent module: example.com/nestedcfg
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/nestedcfg/cmd/demo
-cd ~/go-exercises/nestedcfg
-go mod init example.com/nestedcfg
+mkdir -p go-solutions/07-structs-and-methods/01-struct-declaration-and-initialization/08-anonymous-and-nested-struct-literals/cmd/demo
+cd go-solutions/07-structs-and-methods/01-struct-declaration-and-initialization/08-anonymous-and-nested-struct-literals
 go mod edit -go=1.24
 ```
 

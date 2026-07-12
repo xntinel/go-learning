@@ -50,12 +50,11 @@ The reflection-based implementation iterates fields at runtime, reads `json` tag
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/jsongen/cmd/jsongen
-mkdir -p ~/go-exercises/jsongen/cmd/demo
-mkdir -p ~/go-exercises/jsongen/reflectmarshal
-mkdir -p ~/go-exercises/jsongen/testdata
-cd ~/go-exercises/jsongen
-go mod init example.com/jsongen
+mkdir -p go-solutions/27-reflection/09-code-generation-vs-reflection/09-code-generation-vs-reflection/cmd/jsongen
+mkdir -p go-solutions/27-reflection/09-code-generation-vs-reflection/09-code-generation-vs-reflection/cmd/demo
+mkdir -p go-solutions/27-reflection/09-code-generation-vs-reflection/09-code-generation-vs-reflection/reflectmarshal
+mkdir -p go-solutions/27-reflection/09-code-generation-vs-reflection/09-code-generation-vs-reflection/testdata
+cd go-solutions/27-reflection/09-code-generation-vs-reflection/09-code-generation-vs-reflection
 ```
 
 ### Exercise 1: Reflection-Based Marshal

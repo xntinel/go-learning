@@ -27,9 +27,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/readiness/cmd/demo
-cd ~/go-exercises/readiness
-go mod init example.com/readiness
+mkdir -p go-solutions/14-select-and-context/14-building-a-context-aware-service-framework/05-readiness-and-health-aggregation/cmd/demo
+cd go-solutions/14-select-and-context/14-building-a-context-aware-service-framework/05-readiness-and-health-aggregation
 ```
 
 ### The aggregation model

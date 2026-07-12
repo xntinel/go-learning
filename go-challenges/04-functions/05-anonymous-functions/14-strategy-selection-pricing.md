@@ -28,9 +28,8 @@ pricing/                      module example.com/pricing
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pricing
-cd ~/go-exercises/pricing
-go mod init example.com/pricing
+mkdir -p go-solutions/04-functions/05-anonymous-functions/14-strategy-selection-pricing
+cd go-solutions/04-functions/05-anonymous-functions/14-strategy-selection-pricing
 go mod edit -go=1.24
 ```
 

@@ -25,9 +25,8 @@ retrylazy/                 independent module: example.com/retrylazy
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/retrylazy/cmd/demo
-cd ~/go-exercises/retrylazy
-go mod init example.com/retrylazy
+mkdir -p go-solutions/15-sync-primitives/12-sync-oncevalue-oncefunc/05-retryable-lazy-init/cmd/demo
+cd go-solutions/15-sync-primitives/12-sync-oncevalue-oncefunc/05-retryable-lazy-init
 ```
 
 ### Why Once cannot express this

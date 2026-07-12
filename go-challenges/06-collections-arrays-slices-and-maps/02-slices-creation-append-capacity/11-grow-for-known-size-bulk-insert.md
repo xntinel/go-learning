@@ -50,9 +50,8 @@ bulkinsert/               module example.com/bulkinsert
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/bulkinsert
-cd ~/go-exercises/bulkinsert
-go mod init example.com/bulkinsert
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/02-slices-creation-append-capacity/11-grow-for-known-size-bulk-insert
+cd go-solutions/06-collections-arrays-slices-and-maps/02-slices-creation-append-capacity/11-grow-for-known-size-bulk-insert
 go mod edit -go=1.24
 ```
 

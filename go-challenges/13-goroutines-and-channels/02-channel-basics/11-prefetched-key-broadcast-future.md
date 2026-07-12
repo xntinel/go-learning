@@ -32,9 +32,8 @@ prefetch/                    independent module: example.com/prefetch
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/prefetch/cmd/demo
-cd ~/go-exercises/prefetch
-go mod init example.com/prefetch
+mkdir -p go-solutions/13-goroutines-and-channels/02-channel-basics/11-prefetched-key-broadcast-future/cmd/demo
+cd go-solutions/13-goroutines-and-channels/02-channel-basics/11-prefetched-key-broadcast-future
 go get go.uber.org/goleak
 go mod tidy
 ```

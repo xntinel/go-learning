@@ -40,8 +40,7 @@ cmd/
 Set up the module:
 
 ```bash
-mkdir -p layered/{domain,repository,service,transport,cmd/server} && cd layered
-go mod init example.com/layered
+mkdir -p go-solutions/24-design-patterns-in-go/04-dependency-injection/04-layered-http-service/{domain,repository,service,transport,cmd/server} && cd go-solutions/24-design-patterns-in-go/04-dependency-injection/04-layered-http-service
 ```
 
 ### Why each layer owns the interface it consumes

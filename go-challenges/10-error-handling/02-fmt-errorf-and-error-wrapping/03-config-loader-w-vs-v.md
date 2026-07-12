@@ -32,9 +32,8 @@ config/                        independent module: example.com/config
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/config/cmd/demo
-cd ~/go-exercises/config
-go mod init example.com/config
+mkdir -p go-solutions/10-error-handling/02-fmt-errorf-and-error-wrapping/03-config-loader-w-vs-v/cmd/demo
+cd go-solutions/10-error-handling/02-fmt-errorf-and-error-wrapping/03-config-loader-w-vs-v
 ```
 
 ### Two wrap decisions, one loader

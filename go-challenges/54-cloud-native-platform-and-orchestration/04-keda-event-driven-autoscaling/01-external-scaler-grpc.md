@@ -38,9 +38,8 @@ external-scaler/                    independent module: example.com/external-sca
 Set up the module and generate the stubs:
 
 ```bash
-mkdir -p ~/scalers/external-scaler/cmd/demo ~/scalers/external-scaler/cmd/scaler
-cd ~/scalers/external-scaler
-go mod init example.com/external-scaler
+mkdir -p go-solutions/54-cloud-native-platform-and-orchestration/04-keda-event-driven-autoscaling/01-external-scaler-grpc/cmd/demo go-solutions/54-cloud-native-platform-and-orchestration/04-keda-event-driven-autoscaling/01-external-scaler-grpc/cmd/scaler
+cd go-solutions/54-cloud-native-platform-and-orchestration/04-keda-event-driven-autoscaling/01-external-scaler-grpc
 go mod edit -go=1.24
 go get google.golang.org/grpc@v1.68.0 google.golang.org/protobuf@v1.35.1
 

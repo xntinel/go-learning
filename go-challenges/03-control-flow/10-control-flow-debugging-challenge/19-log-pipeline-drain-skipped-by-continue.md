@@ -31,9 +31,8 @@ logpipe/                    independent module: example.com/log-pipeline-drain-s
 - Verify: `go test -count=1 ./...`.
 
 ```bash
-mkdir -p ~/go-exercises/log-pipeline-drain-skipped-by-continue/cmd/demo
-cd ~/go-exercises/log-pipeline-drain-skipped-by-continue
-go mod init example.com/log-pipeline-drain-skipped-by-continue
+mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/19-log-pipeline-drain-skipped-by-continue/cmd/demo
+cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/19-log-pipeline-drain-skipped-by-continue
 ```
 
 ### Why tying Sync to loop position is the trap

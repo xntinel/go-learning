@@ -31,9 +31,8 @@ context-once-getter/          module: example.com/context-once-getter
 Set up the module:
 
 ```bash
-mkdir -p context-once-getter/cmd/demo
-cd context-once-getter
-go mod init example.com/context-once-getter
+mkdir -p go-solutions/15-sync-primitives/03-sync-once/10-context-aware-once-getter/cmd/demo
+cd go-solutions/15-sync-primitives/03-sync-once/10-context-aware-once-getter
 ```
 
 ### Cancellation detaches the waiter, never the work

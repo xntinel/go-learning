@@ -30,9 +30,8 @@ atomicmetrics/             independent module: example.com/atomicmetrics
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/atomicmetrics/cmd/demo
-cd ~/go-exercises/atomicmetrics
-go mod init example.com/atomicmetrics
+mkdir -p go-solutions/07-structs-and-methods/09-struct-memory-layout-and-padding/06-atomic-alignment-32bit/cmd/demo
+cd go-solutions/07-structs-and-methods/09-struct-memory-layout-and-padding/06-atomic-alignment-32bit
 ```
 
 ### The failure mode, and the fix

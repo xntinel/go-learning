@@ -22,8 +22,7 @@ hierarchical_test.go  25-cell intention matrix + intention-protocol + row confli
 Set up the module:
 
 ```bash
-mkdir -p hierarchical-locking/cmd/demo && cd hierarchical-locking
-go mod init example.com/hierarchical-locking
+mkdir -p go-solutions/39-capstone-database-engine/08-transaction-manager/04-hierarchical-locking/cmd/demo && cd go-solutions/39-capstone-database-engine/08-transaction-manager/04-hierarchical-locking
 ```
 
 ### The five-mode matrix and the parent rule

@@ -26,9 +26,8 @@ requestid/                   independent module: example.com/requestid
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/requestid/cmd/demo
-cd ~/go-exercises/requestid
-go mod init example.com/requestid
+mkdir -p go-solutions/08-interfaces/14-interface-based-middleware-chain/06-request-id-context-middleware/cmd/demo
+cd go-solutions/08-interfaces/14-interface-based-middleware-chain/06-request-id-context-middleware
 go mod edit -go=1.26
 ```
 

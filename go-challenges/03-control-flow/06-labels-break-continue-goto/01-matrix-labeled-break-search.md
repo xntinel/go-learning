@@ -28,9 +28,8 @@ tileindex/                 independent module: example.com/tileindex
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/tileindex/cmd/demo
-cd ~/go-exercises/tileindex
-go mod init example.com/tileindex
+mkdir -p go-solutions/03-control-flow/06-labels-break-continue-goto/01-matrix-labeled-break-search/cmd/demo
+cd go-solutions/03-control-flow/06-labels-break-continue-goto/01-matrix-labeled-break-search
 go mod edit -go=1.24
 ```
 

@@ -31,9 +31,8 @@ quota/                            independent module: example.com/api-request-qu
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/quota/cmd/demo
-cd ~/go-exercises/quota
-go mod init example.com/api-request-quota-manager
+mkdir -p go-solutions/04-functions/12-functional-options-pattern/33-api-request-quota-manager/cmd/demo
+cd go-solutions/04-functions/12-functional-options-pattern/33-api-request-quota-manager
 go mod edit -go=1.24
 ```
 

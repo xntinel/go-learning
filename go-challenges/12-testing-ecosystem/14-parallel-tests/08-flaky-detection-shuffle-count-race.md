@@ -30,9 +30,8 @@ Verify: `go test -race -count=20 -shuffle=on ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/routereg/cmd/demo
-cd ~/go-exercises/routereg
-go mod init example.com/routereg
+mkdir -p go-solutions/12-testing-ecosystem/14-parallel-tests/08-flaky-detection-shuffle-count-race/cmd/demo
+cd go-solutions/12-testing-ecosystem/14-parallel-tests/08-flaky-detection-shuffle-count-race
 ```
 
 ### The coupling bug, and how the gate exposes it

@@ -30,9 +30,8 @@ limiterport/                    independent module: example.com/limiterport
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/limiterport/limiter ~/go-exercises/limiterport/cmd/demo
-cd ~/go-exercises/limiterport
-go mod init example.com/limiterport
+mkdir -p go-solutions/15-sync-primitives/10-mutex-vs-channel/03-limiter-interface/limiter go-solutions/15-sync-primitives/10-mutex-vs-channel/03-limiter-interface/cmd/demo
+cd go-solutions/15-sync-primitives/10-mutex-vs-channel/03-limiter-interface
 ```
 
 ### The port: one method, defined by the consumer

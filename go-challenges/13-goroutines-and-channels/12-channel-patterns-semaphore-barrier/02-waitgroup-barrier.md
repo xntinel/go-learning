@@ -29,9 +29,8 @@ barrier/                    independent module: example.com/barrier
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/barrier/cmd/demo
-cd ~/go-exercises/barrier
-go mod init example.com/barrier
+mkdir -p go-solutions/13-goroutines-and-channels/12-channel-patterns-semaphore-barrier/02-waitgroup-barrier/cmd/demo
+cd go-solutions/13-goroutines-and-channels/12-channel-patterns-semaphore-barrier/02-waitgroup-barrier
 go mod edit -go=1.26
 ```
 

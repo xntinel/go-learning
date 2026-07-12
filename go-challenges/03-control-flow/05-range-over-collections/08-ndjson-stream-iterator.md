@@ -30,9 +30,8 @@ ndjson/                     independent module: example.com/ndjson
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ndjson/cmd/demo
-cd ~/go-exercises/ndjson
-go mod init example.com/ndjson
+mkdir -p go-solutions/03-control-flow/05-range-over-collections/08-ndjson-stream-iterator/cmd/demo
+cd go-solutions/03-control-flow/05-range-over-collections/08-ndjson-stream-iterator
 go mod edit -go=1.24
 ```
 

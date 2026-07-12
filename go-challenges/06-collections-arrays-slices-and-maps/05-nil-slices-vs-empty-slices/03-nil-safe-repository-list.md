@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/userrepo/repo ~/go-exercises/userrepo/cmd/demo
-cd ~/go-exercises/userrepo
-go mod init example.com/userrepo
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/03-nil-safe-repository-list/repo go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/03-nil-safe-repository-list/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/03-nil-safe-repository-list
 ```
 
 ### Normalize once, at the boundary

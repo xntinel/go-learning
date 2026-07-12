@@ -24,8 +24,7 @@ strings_test.go  delegation correctness, the non-string-element join error, form
 Set up the module:
 
 ```bash
-mkdir -p strbuiltins/cmd/demo && cd strbuiltins
-go mod init example.com/strbuiltins
+mkdir -p go-solutions/40-capstone-language-interpreter/05-builtin-functions/03-string-builtins/cmd/demo && cd go-solutions/40-capstone-language-interpreter/05-builtin-functions/03-string-builtins
 ```
 
 ### What the wrappers share, and where format differs

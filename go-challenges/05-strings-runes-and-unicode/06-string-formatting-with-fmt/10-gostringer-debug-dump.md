@@ -27,9 +27,8 @@ dbgdump/                   independent module: example.com/dbgdump
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/dbgdump/cmd/demo
-cd ~/go-exercises/dbgdump
-go mod init example.com/dbgdump
+mkdir -p go-solutions/05-strings-runes-and-unicode/06-string-formatting-with-fmt/10-gostringer-debug-dump/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/06-string-formatting-with-fmt/10-gostringer-debug-dump
 go mod edit -go=1.24
 ```
 

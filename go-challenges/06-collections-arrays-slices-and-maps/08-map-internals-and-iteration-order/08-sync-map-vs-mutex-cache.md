@@ -32,9 +32,8 @@ metacache/                 independent module: example.com/metacache
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/metacache/cmd/demo
-cd ~/go-exercises/metacache
-go mod init example.com/metacache
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/08-sync-map-vs-mutex-cache/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/08-sync-map-vs-mutex-cache
 ```
 
 ### The decision rule, not the cargo cult

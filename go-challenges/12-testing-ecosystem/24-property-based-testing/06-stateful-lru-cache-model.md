@@ -32,9 +32,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/lrucache/cmd/demo
-cd ~/go-exercises/lrucache
-go mod init example.com/lrucache
+mkdir -p go-solutions/12-testing-ecosystem/24-property-based-testing/06-stateful-lru-cache-model/cmd/demo
+cd go-solutions/12-testing-ecosystem/24-property-based-testing/06-stateful-lru-cache-model
 go mod edit -go=1.26
 go get pgregory.net/rapid@latest
 ```

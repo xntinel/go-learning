@@ -27,9 +27,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/suite
-cd ~/go-exercises/suite
-go mod init example.com/suite
+mkdir -p go-solutions/12-testing-ecosystem/25-building-a-test-suite/02-helpers-and-t-helper
+cd go-solutions/12-testing-ecosystem/25-building-a-test-suite/02-helpers-and-t-helper
 ```
 
 ### Why t.Helper is a correctness property

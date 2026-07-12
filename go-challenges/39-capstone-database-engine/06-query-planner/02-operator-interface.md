@@ -23,8 +23,7 @@ operator_test.go      ColIndex resolution and Tuple.Clone independence
 Set up the module:
 
 ```bash
-mkdir -p operator-interface/cmd/demo && cd operator-interface
-go mod init example.com/operator-interface
+mkdir -p go-solutions/39-capstone-database-engine/06-query-planner/02-operator-interface/cmd/demo && cd go-solutions/39-capstone-database-engine/06-query-planner/02-operator-interface
 ```
 
 ### The four-method contract

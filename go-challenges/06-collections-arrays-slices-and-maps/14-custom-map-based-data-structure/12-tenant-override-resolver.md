@@ -52,9 +52,8 @@ limitconfig/             module example.com/limitconfig
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/limitconfig
-cd ~/go-exercises/limitconfig
-go mod init example.com/limitconfig
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/14-custom-map-based-data-structure/12-tenant-override-resolver
+cd go-solutions/06-collections-arrays-slices-and-maps/14-custom-map-based-data-structure/12-tenant-override-resolver
 go mod edit -go=1.24
 ```
 

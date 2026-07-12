@@ -27,8 +27,7 @@ engine_test.go end-to-end counts, parallelism invariance, map+filter,
 Set up the module:
 
 ```bash
-mkdir -p windowengine/cmd/demo && cd windowengine
-go mod init example.com/windowengine
+mkdir -p go-solutions/43-capstone-stream-processing-engine/08-full-stream-engine/02-runnable-windowed-engine/cmd/demo && cd go-solutions/43-capstone-stream-processing-engine/08-full-stream-engine/02-runnable-windowed-engine
 go mod edit -go=1.26
 ```
 

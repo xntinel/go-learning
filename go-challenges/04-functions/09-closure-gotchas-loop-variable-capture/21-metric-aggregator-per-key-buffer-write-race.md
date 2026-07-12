@@ -29,9 +29,8 @@ metricagg/                   independent module: example.com/metricagg
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/metricagg/cmd/demo
-cd ~/go-exercises/metricagg
-go mod init example.com/metricagg
+mkdir -p go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/21-metric-aggregator-per-key-buffer-write-race/cmd/demo
+cd go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/21-metric-aggregator-per-key-buffer-write-race
 go mod edit -go=1.24
 ```
 

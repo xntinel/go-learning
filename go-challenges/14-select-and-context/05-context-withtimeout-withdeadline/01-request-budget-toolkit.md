@@ -33,10 +33,9 @@ context-deadline/                    independent module: example.com/deadlines
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/context-deadline/internal/deadlines
-mkdir -p ~/go-exercises/context-deadline/cmd/demo
-cd ~/go-exercises/context-deadline
-go mod init example.com/deadlines
+mkdir -p go-solutions/14-select-and-context/05-context-withtimeout-withdeadline/01-request-budget-toolkit/internal/deadlines
+mkdir -p go-solutions/14-select-and-context/05-context-withtimeout-withdeadline/01-request-budget-toolkit/cmd/demo
+cd go-solutions/14-select-and-context/05-context-withtimeout-withdeadline/01-request-budget-toolkit
 ```
 
 ### The three patterns and why they belong together

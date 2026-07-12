@@ -27,9 +27,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/limiter/cmd/demo
-cd ~/go-exercises/limiter
-go mod init example.com/limiter
+mkdir -p go-solutions/12-testing-ecosystem/15-testable-examples/07-whole-file-package-example/cmd/demo
+cd go-solutions/12-testing-ecosystem/15-testable-examples/07-whole-file-package-example
 ```
 
 ## What makes a file a whole-file example

@@ -30,9 +30,8 @@ netutil/                       independent module: example.com/netutil
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/netutil/cmd/demo
-cd ~/go-exercises/netutil
-go mod init example.com/netutil
+mkdir -p go-solutions/02-variables-types-and-constants/01-variable-declaration-and-short-assignment/07-multiple-assignment-address-parsing/cmd/demo
+cd go-solutions/02-variables-types-and-constants/01-variable-declaration-and-short-assignment/07-multiple-assignment-address-parsing
 ```
 
 ### Tuple assignment parses in one total statement

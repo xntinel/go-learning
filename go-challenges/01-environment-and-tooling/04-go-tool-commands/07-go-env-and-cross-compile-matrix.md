@@ -31,9 +31,8 @@ env-matrix/                    module example.com/env-matrix
 Create the module:
 
 ```bash
-mkdir -p env-matrix/cmd/demo env-matrix/cmd/envcheck env-matrix/internal/circle
-cd env-matrix
-go mod init example.com/env-matrix
+mkdir -p go-solutions/01-environment-and-tooling/04-go-tool-commands/07-go-env-and-cross-compile-matrix/cmd/demo go-solutions/01-environment-and-tooling/04-go-tool-commands/07-go-env-and-cross-compile-matrix/cmd/envcheck go-solutions/01-environment-and-tooling/04-go-tool-commands/07-go-env-and-cross-compile-matrix/internal/circle
+cd go-solutions/01-environment-and-tooling/04-go-tool-commands/07-go-env-and-cross-compile-matrix
 ```
 
 ### The configuration surface

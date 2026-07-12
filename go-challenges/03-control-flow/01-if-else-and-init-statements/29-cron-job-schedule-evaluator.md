@@ -32,9 +32,8 @@ cron/                        independent module: example.com/cron-job-schedule-e
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cron/cmd/demo
-cd ~/go-exercises/cron
-go mod init example.com/cron-job-schedule-evaluator
+mkdir -p go-solutions/03-control-flow/01-if-else-and-init-statements/29-cron-job-schedule-evaluator/cmd/demo
+cd go-solutions/03-control-flow/01-if-else-and-init-statements/29-cron-job-schedule-evaluator
 go mod edit -go=1.24
 ```
 

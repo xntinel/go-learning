@@ -32,9 +32,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/authzperm/cmd/demo
-cd ~/go-exercises/authzperm
-go mod init example.com/authzperm
+mkdir -p go-solutions/02-variables-types-and-constants/08-untyped-constants-and-constant-expressions/04-permission-bitmask-iota/cmd/demo
+cd go-solutions/02-variables-types-and-constants/08-untyped-constants-and-constant-expressions/04-permission-bitmask-iota
 ```
 
 ### iota shift constants, typed by a defined type

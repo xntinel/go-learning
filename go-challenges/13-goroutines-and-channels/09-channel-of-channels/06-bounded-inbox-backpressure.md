@@ -30,9 +30,8 @@ shedding/                  independent module: example.com/shedding
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/shedding/cmd/demo
-cd ~/go-exercises/shedding
-go mod init example.com/shedding
+mkdir -p go-solutions/13-goroutines-and-channels/09-channel-of-channels/06-bounded-inbox-backpressure/cmd/demo
+cd go-solutions/13-goroutines-and-channels/09-channel-of-channels/06-bounded-inbox-backpressure
 ```
 
 ### Admission control with a non-blocking send

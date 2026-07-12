@@ -21,9 +21,8 @@ Generics do not make maps safe for concurrent access. The in-memory implementati
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/repository/cmd/demo
-cd ~/go-exercises/repository
-go mod init example.com/verify
+mkdir -p go-solutions/20-generics/10-generic-repository-pattern/10-generic-repository-pattern/cmd/demo
+cd go-solutions/20-generics/10-generic-repository-pattern/10-generic-repository-pattern
 ```
 
 ### Exercise 1: Build The Repository

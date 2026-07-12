@@ -30,9 +30,8 @@ attest/                     independent module: example.com/attest
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/attest/cmd/demo
-cd ~/go-exercises/attest
-go mod init example.com/attest
+mkdir -p go-solutions/49-application-security-crypto-supplychain/10-supply-chain-slsa-sbom/03-slsa-provenance-attestation/cmd/demo
+cd go-solutions/49-application-security-crypto-supplychain/10-supply-chain-slsa-sbom/03-slsa-provenance-attestation
 go mod edit -go=1.26
 go get github.com/in-toto/attestation/go/v1
 go get github.com/in-toto/attestation/go/predicates/provenance/v1

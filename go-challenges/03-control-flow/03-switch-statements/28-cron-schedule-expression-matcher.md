@@ -30,9 +30,8 @@ cronmatch/                 independent module: example.com/cron-schedule-express
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cronmatch/cmd/demo
-cd ~/go-exercises/cronmatch
-go mod init example.com/cron-schedule-expression-matcher
+mkdir -p go-solutions/03-control-flow/03-switch-statements/28-cron-schedule-expression-matcher/cmd/demo
+cd go-solutions/03-control-flow/03-switch-statements/28-cron-schedule-expression-matcher
 go mod edit -go=1.24
 ```
 

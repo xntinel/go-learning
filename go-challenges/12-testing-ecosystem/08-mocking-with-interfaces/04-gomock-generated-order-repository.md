@@ -33,9 +33,8 @@ gomockorder/                 independent module: example.com/gomockorder
 Set up the module and pull gomock:
 
 ```bash
-mkdir -p ~/go-exercises/gomockorder/order/mocks ~/go-exercises/gomockorder/cmd/demo
-cd ~/go-exercises/gomockorder
-go mod init example.com/gomockorder
+mkdir -p go-solutions/12-testing-ecosystem/08-mocking-with-interfaces/04-gomock-generated-order-repository/order/mocks go-solutions/12-testing-ecosystem/08-mocking-with-interfaces/04-gomock-generated-order-repository/cmd/demo
+cd go-solutions/12-testing-ecosystem/08-mocking-with-interfaces/04-gomock-generated-order-repository
 go get go.uber.org/mock/gomock@latest
 go install go.uber.org/mock/mockgen@latest
 ```

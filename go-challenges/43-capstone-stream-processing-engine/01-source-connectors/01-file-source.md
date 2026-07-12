@@ -23,8 +23,7 @@ file-source/
 Set up the module:
 
 ```bash
-mkdir -p file-source/cmd/demo && cd file-source
-go mod init example.com/file-source
+mkdir -p go-solutions/43-capstone-stream-processing-engine/01-source-connectors/01-file-source/cmd/demo && cd go-solutions/43-capstone-stream-processing-engine/01-source-connectors/01-file-source
 ```
 
 ### The lifecycle contract, in one source

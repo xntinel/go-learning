@@ -27,9 +27,8 @@ Test: an `httptest.Server` returning 503+`Retry-After: 1` then 200 (assert the t
 Verify: `go test -count=1 -race ./...`
 
 ```bash
-mkdir -p ~/go-exercises/retryrt/cmd/demo
-cd ~/go-exercises/retryrt
-go mod init example.com/retryrt
+mkdir -p go-solutions/10-error-handling/12-retry-patterns-with-backoff/06-retryable-http-transport/cmd/demo
+cd go-solutions/10-error-handling/12-retry-patterns-with-backoff/06-retryable-http-transport
 go mod edit -go=1.26
 ```
 

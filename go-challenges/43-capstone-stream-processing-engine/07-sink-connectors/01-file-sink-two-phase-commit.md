@@ -23,8 +23,7 @@ file_sink_test.go      flush, 2PC, stale-temp cleanup, rotation, implicit-close-
 Set up the module:
 
 ```bash
-mkdir -p file-sink-two-phase-commit/cmd/demo && cd file-sink-two-phase-commit
-go mod init example.com/file-sink-two-phase-commit
+mkdir -p go-solutions/43-capstone-stream-processing-engine/07-sink-connectors/01-file-sink-two-phase-commit/cmd/demo && cd go-solutions/43-capstone-stream-processing-engine/07-sink-connectors/01-file-sink-two-phase-commit
 go mod edit -go=1.26
 ```
 

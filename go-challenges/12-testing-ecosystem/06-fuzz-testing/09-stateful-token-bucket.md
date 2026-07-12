@@ -32,9 +32,8 @@ Verify: `go test -race ./...`, then `go test -fuzz=FuzzBucketInvariant
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ratelimit/cmd/demo
-cd ~/go-exercises/ratelimit
-go mod init example.com/ratelimit
+mkdir -p go-solutions/12-testing-ecosystem/06-fuzz-testing/09-stateful-token-bucket/cmd/demo
+cd go-solutions/12-testing-ecosystem/06-fuzz-testing/09-stateful-token-bucket
 ```
 
 ### A pure limiter, and model-based fuzzing

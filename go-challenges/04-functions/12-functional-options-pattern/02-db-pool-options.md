@@ -32,9 +32,8 @@ dbpool/                          independent module: example.com/dbpool
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/dbpool/cmd/demo
-cd ~/go-exercises/dbpool
-go mod init example.com/dbpool
+mkdir -p go-solutions/04-functions/12-functional-options-pattern/02-db-pool-options/cmd/demo
+cd go-solutions/04-functions/12-functional-options-pattern/02-db-pool-options
 ```
 
 ### A mandatory dependency plus optional tuning

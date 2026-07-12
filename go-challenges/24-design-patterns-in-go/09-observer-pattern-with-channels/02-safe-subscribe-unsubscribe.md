@@ -22,8 +22,7 @@ broadcast_test.go    idempotent-unsubscribe + a -race subscribe/unsubscribe/broa
 Set up the module:
 
 ```bash
-mkdir -p safe-subscribe-unsubscribe/cmd/demo && cd safe-subscribe-unsubscribe
-go mod init example.com/safe-subscribe-unsubscribe
+mkdir -p go-solutions/24-design-patterns-in-go/09-observer-pattern-with-channels/02-safe-subscribe-unsubscribe/cmd/demo && cd go-solutions/24-design-patterns-in-go/09-observer-pattern-with-channels/02-safe-subscribe-unsubscribe
 ```
 
 ### Identity by id, exactly-once close, and the lock that ties it together

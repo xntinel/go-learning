@@ -21,9 +21,8 @@ The generic algorithm can require the method, but constructors should still vali
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/methodconstraints/cmd/demo
-cd ~/go-exercises/methodconstraints
-go mod init example.com/verify
+mkdir -p go-solutions/20-generics/05-interface-constraints-with-methods/05-interface-constraints-with-methods/cmd/demo
+cd go-solutions/20-generics/05-interface-constraints-with-methods/05-interface-constraints-with-methods
 ```
 
 ### Exercise 1: Build The Generic Label Functions

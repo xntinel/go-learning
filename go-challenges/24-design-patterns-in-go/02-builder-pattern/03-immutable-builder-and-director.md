@@ -22,8 +22,7 @@ config_test.go       immutability, fork independence, concurrent forks under -ra
 Set up the module:
 
 ```bash
-mkdir -p immutable-builder/cmd/demo && cd immutable-builder
-go mod init example.com/immutable-builder
+mkdir -p go-solutions/24-design-patterns-in-go/02-builder-pattern/03-immutable-builder-and-director/cmd/demo && cd go-solutions/24-design-patterns-in-go/02-builder-pattern/03-immutable-builder-and-director
 ```
 
 ### Why a value receiver makes the builder safe to share

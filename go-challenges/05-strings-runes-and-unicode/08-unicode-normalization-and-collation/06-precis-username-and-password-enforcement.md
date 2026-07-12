@@ -28,9 +28,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/precisid/cmd/demo
-cd ~/go-exercises/precisid
-go mod init example.com/precisid
+mkdir -p go-solutions/05-strings-runes-and-unicode/08-unicode-normalization-and-collation/06-precis-username-and-password-enforcement/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/08-unicode-normalization-and-collation/06-precis-username-and-password-enforcement
 go get golang.org/x/text/secure/precis
 ```
 

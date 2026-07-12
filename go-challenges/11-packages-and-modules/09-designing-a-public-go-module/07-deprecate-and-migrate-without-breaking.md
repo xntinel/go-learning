@@ -31,9 +31,8 @@ publicstr/                 independent module: example.com/publicstr
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/publicstr/cmd/demo
-cd ~/go-exercises/publicstr
-go mod init example.com/publicstr
+mkdir -p go-solutions/11-packages-and-modules/09-designing-a-public-go-module/07-deprecate-and-migrate-without-breaking/cmd/demo
+cd go-solutions/11-packages-and-modules/09-designing-a-public-go-module/07-deprecate-and-migrate-without-breaking
 ```
 
 ### What the Deprecated convention actually does

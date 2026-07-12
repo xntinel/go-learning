@@ -31,9 +31,8 @@ metriccache/                     independent module: example.com/metriccache
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/metriccache/cache ~/go-exercises/metriccache/cmd/demo
-cd ~/go-exercises/metriccache
-go mod init example.com/metriccache
+mkdir -p go-solutions/15-sync-primitives/13-building-a-thread-safe-cache/08-cache-metrics-expvar/cache go-solutions/15-sync-primitives/13-building-a-thread-safe-cache/08-cache-metrics-expvar/cmd/demo
+cd go-solutions/15-sync-primitives/13-building-a-thread-safe-cache/08-cache-metrics-expvar
 ```
 
 ### Counters live outside the lock's story

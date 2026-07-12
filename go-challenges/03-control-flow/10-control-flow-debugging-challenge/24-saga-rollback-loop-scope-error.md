@@ -33,9 +33,8 @@ saga/                        independent module: example.com/saga-rollback-loop-
 - Verify: `go test -count=1 -race ./...`.
 
 ```bash
-mkdir -p ~/go-exercises/saga-rollback-loop-scope-error/cmd/demo
-cd ~/go-exercises/saga-rollback-loop-scope-error
-go mod init example.com/saga-rollback-loop-scope-error
+mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/24-saga-rollback-loop-scope-error/cmd/demo
+cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/24-saga-rollback-loop-scope-error
 ```
 
 ### Why reusing the forward index breaks the backward loop's bounds

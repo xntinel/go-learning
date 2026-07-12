@@ -37,9 +37,8 @@ external `google.golang.org/protobuf` module, so it lives behind `//go:build
 online` and is validated by `gofmt`/`vet` and by shape. Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/wirecost/cmd/demo
-cd ~/go-exercises/wirecost
-go mod init example.com/wirecost
+mkdir -p go-solutions/51-rpc-and-api-design/07-rpc-style-tradeoffs/01-wire-format-cost-model/cmd/demo
+cd go-solutions/51-rpc-and-api-design/07-rpc-style-tradeoffs/01-wire-format-cost-model
 go mod edit -go=1.26
 ```
 

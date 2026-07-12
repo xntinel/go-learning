@@ -35,9 +35,8 @@ Verify: `go test -count=20 -race ./...`; then `go run -race ./cmd/racy`.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cowconfig/cmd/demo ~/go-exercises/cowconfig/cmd/racy
-cd ~/go-exercises/cowconfig
-go mod init example.com/cowconfig
+mkdir -p go-solutions/12-testing-ecosystem/21-race-detector/05-copy-on-write-config-snapshot/cmd/demo go-solutions/12-testing-ecosystem/21-race-detector/05-copy-on-write-config-snapshot/cmd/racy
+cd go-solutions/12-testing-ecosystem/21-race-detector/05-copy-on-write-config-snapshot
 ```
 
 ### Why copy-on-write, and why the memory model makes it correct

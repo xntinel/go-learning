@@ -22,8 +22,7 @@ settings_test.go       defaults valid, range rejection, ack unblocks, timeout, i
 Set up the module:
 
 ```bash
-mkdir -p settings-negotiation/cmd/demo && cd settings-negotiation
-go mod init example.com/settings-negotiation
+mkdir -p go-solutions/44-capstone-http2-implementation/05-connection-error-handling/02-settings-negotiation/cmd/demo && cd go-solutions/44-capstone-http2-implementation/05-connection-error-handling/02-settings-negotiation
 go mod edit -go=1.26
 ```
 

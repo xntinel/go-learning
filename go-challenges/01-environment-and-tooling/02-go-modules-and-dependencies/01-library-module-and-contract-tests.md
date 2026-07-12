@@ -28,9 +28,8 @@ greeter/                    independent module: example.com/greeter
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/greeter/cmd/demo
-cd ~/go-exercises/greeter
-go mod init example.com/greeter
+mkdir -p go-solutions/01-environment-and-tooling/02-go-modules-and-dependencies/01-library-module-and-contract-tests/cmd/demo
+cd go-solutions/01-environment-and-tooling/02-go-modules-and-dependencies/01-library-module-and-contract-tests
 ```
 
 `go mod init` writes a two-line `go.mod`: the module path and the `go` directive.

@@ -31,9 +31,8 @@ commit/                      independent module: example.com/commit
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/commit/cmd/demo
-cd ~/go-exercises/commit
-go mod init example.com/commit
+mkdir -p go-solutions/13-goroutines-and-channels/02-channel-basics/13-two-phase-shard-commit-barrier/cmd/demo
+cd go-solutions/13-goroutines-and-channels/02-channel-basics/13-two-phase-shard-commit-barrier
 ```
 
 ### A two-phase barrier built from request/reply channels

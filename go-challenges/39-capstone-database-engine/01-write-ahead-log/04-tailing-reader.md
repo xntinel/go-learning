@@ -24,8 +24,7 @@ reader_test.go       tail a live WAL across writes; resume from a chosen LSN acr
 Set up the module:
 
 ```bash
-mkdir -p tailing-reader/cmd/demo && cd tailing-reader
-go mod init example.com/tailing-reader
+mkdir -p go-solutions/39-capstone-database-engine/01-write-ahead-log/04-tailing-reader/cmd/demo && cd go-solutions/39-capstone-database-engine/01-write-ahead-log/04-tailing-reader
 ```
 
 ### Why tailing is its own problem

@@ -30,9 +30,8 @@ Verify: `go test -count=1 ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/token-bucket-rate-limiter/cmd/demo
-cd ~/go-exercises/token-bucket-rate-limiter
-go mod init example.com/token-bucket-rate-limiter
+mkdir -p go-solutions/03-control-flow/09-range-over-integers-and-functions/16-token-bucket-rate-limiter/cmd/demo
+cd go-solutions/03-control-flow/09-range-over-integers-and-functions/16-token-bucket-rate-limiter
 go mod edit -go=1.24
 ```
 

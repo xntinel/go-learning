@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/clientcfg/cmd/demo
-cd ~/go-exercises/clientcfg
-go mod init example.com/clientcfg
+mkdir -p go-solutions/02-variables-types-and-constants/02-zero-values-and-default-initialization/08-zero-value-default-options/cmd/demo
+cd go-solutions/02-variables-types-and-constants/02-zero-values-and-default-initialization/08-zero-value-default-options
 ```
 
 ## Why cmp.Or, and the explicit-zero policy

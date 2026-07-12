@@ -22,8 +22,7 @@ record_test.go       round-trip table, exhaustive bit-flip detection, short-buff
 Set up the module:
 
 ```bash
-mkdir -p record-encoding/cmd/demo && cd record-encoding
-go mod init example.com/record-encoding
+mkdir -p go-solutions/39-capstone-database-engine/01-write-ahead-log/01-record-encoding/cmd/demo && cd go-solutions/39-capstone-database-engine/01-write-ahead-log/01-record-encoding
 ```
 
 ### Why framing and a checksum, and why this exact layout

@@ -28,9 +28,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/backoff/cmd/demo
-cd ~/go-exercises/backoff
-go mod init example.com/backoff
+mkdir -p go-solutions/02-variables-types-and-constants/10-type-inference-deep-dive/07-exponential-backoff-duration-arith/cmd/demo
+cd go-solutions/02-variables-types-and-constants/10-type-inference-deep-dive/07-exponential-backoff-duration-arith
 go mod edit -go=1.26
 ```
 

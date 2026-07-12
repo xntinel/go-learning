@@ -27,9 +27,8 @@ peakgauge/                 independent module: example.com/peakgauge
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/peakgauge/cmd/demo
-cd ~/go-exercises/peakgauge
-go mod init example.com/peakgauge
+mkdir -p go-solutions/15-sync-primitives/07-atomic-package/05-peak-gauge-highwater-cas/cmd/demo
+cd go-solutions/15-sync-primitives/07-atomic-package/05-peak-gauge-highwater-cas
 ```
 
 ### Building max from CompareAndSwap

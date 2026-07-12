@@ -32,9 +32,8 @@ refreshguard/                independent module: example.com/refreshguard
 - Verify: `go test -count=1 -race ./...`
 
 ```bash
-mkdir -p ~/go-exercises/refreshguard/cmd/demo
-cd ~/go-exercises/refreshguard
-go mod init example.com/refreshguard
+mkdir -p go-solutions/15-sync-primitives/01-sync-mutex/09-trylock-refresh-guard/cmd/demo
+cd go-solutions/15-sync-primitives/01-sync-mutex/09-trylock-refresh-guard
 ```
 
 ### Why this is the rare legitimate TryLock

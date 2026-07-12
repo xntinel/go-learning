@@ -28,9 +28,8 @@ dedup/                     independent module: example.com/dedup
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/dedup/cmd/demo
-cd ~/go-exercises/dedup
-go mod init example.com/dedup
+mkdir -p go-solutions/12-testing-ecosystem/05-benchmarks/10-ab-comparison-with-benchstat/cmd/demo
+cd go-solutions/12-testing-ecosystem/05-benchmarks/10-ab-comparison-with-benchstat
 go mod edit -go=1.24
 ```
 

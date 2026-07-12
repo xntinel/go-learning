@@ -33,9 +33,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/config/cmd/demo
-cd ~/go-exercises/config
-go mod init example.com/config
+mkdir -p go-solutions/07-structs-and-methods/04-anonymous-structs-and-embedding/07-ambiguous-embedded-selector/cmd/demo
+cd go-solutions/07-structs-and-methods/04-anonymous-structs-and-embedding/07-ambiguous-embedded-selector
 ```
 
 ### Why the bare selector will not compile, and how to fix it

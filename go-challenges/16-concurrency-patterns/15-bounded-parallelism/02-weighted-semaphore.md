@@ -22,8 +22,7 @@ sem_test.go           peak weight <= capacity under -race; clamp; cancellation
 Set up the module:
 
 ```bash
-mkdir -p weighted-semaphore/cmd/demo && cd weighted-semaphore
-go mod init example.com/weighted-semaphore
+mkdir -p go-solutions/16-concurrency-patterns/15-bounded-parallelism/02-weighted-semaphore/cmd/demo && cd go-solutions/16-concurrency-patterns/15-bounded-parallelism/02-weighted-semaphore
 ```
 
 ### What the invariant actually is

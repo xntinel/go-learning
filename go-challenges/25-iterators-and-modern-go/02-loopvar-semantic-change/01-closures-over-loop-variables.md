@@ -23,8 +23,7 @@ example_test.go      ExampleNameClosures with a verified // Output block
 Set up the module:
 
 ```bash
-mkdir -p loop-closures/cmd/demo && cd loop-closures
-go mod init example.com/loop-closures
+mkdir -p go-solutions/25-iterators-and-modern-go/02-loopvar-semantic-change/01-closures-over-loop-variables/cmd/demo && cd go-solutions/25-iterators-and-modern-go/02-loopvar-semantic-change/01-closures-over-loop-variables
 ```
 
 ### Why the direct capture is now correct

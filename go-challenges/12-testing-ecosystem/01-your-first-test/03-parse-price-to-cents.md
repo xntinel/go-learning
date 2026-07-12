@@ -24,9 +24,8 @@ pricecents/                independent module: example.com/pricecents
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pricecents/cmd/demo
-cd ~/go-exercises/pricecents
-go mod init example.com/pricecents
+mkdir -p go-solutions/12-testing-ecosystem/01-your-first-test/03-parse-price-to-cents/cmd/demo
+cd go-solutions/12-testing-ecosystem/01-your-first-test/03-parse-price-to-cents
 ```
 
 ### Why integer cents, and why exactly two decimals

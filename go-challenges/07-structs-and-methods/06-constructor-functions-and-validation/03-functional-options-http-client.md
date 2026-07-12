@@ -30,9 +30,8 @@ svcclient/                   independent module: example.com/functional-options-
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/svcclient/cmd/demo
-cd ~/go-exercises/svcclient
-go mod init example.com/functional-options-http-client
+mkdir -p go-solutions/07-structs-and-methods/06-constructor-functions-and-validation/03-functional-options-http-client/cmd/demo
+cd go-solutions/07-structs-and-methods/06-constructor-functions-and-validation/03-functional-options-http-client
 ```
 
 ### How the pattern works, and where validation goes

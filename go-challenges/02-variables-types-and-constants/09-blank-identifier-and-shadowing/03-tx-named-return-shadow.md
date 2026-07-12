@@ -29,9 +29,8 @@ bank/                           module: example.com/bank
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/bank/cmd/demo
-cd ~/go-exercises/bank
-go mod init example.com/bank
+mkdir -p go-solutions/02-variables-types-and-constants/09-blank-identifier-and-shadowing/03-tx-named-return-shadow/cmd/demo
+cd go-solutions/02-variables-types-and-constants/09-blank-identifier-and-shadowing/03-tx-named-return-shadow
 ```
 
 ### Why the named return must be assigned with `=`

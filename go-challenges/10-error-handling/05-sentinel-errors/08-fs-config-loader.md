@@ -28,9 +28,8 @@ config/                       independent module: example.com/config
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/config/cmd/demo
-cd ~/go-exercises/config
-go mod init example.com/config
+mkdir -p go-solutions/10-error-handling/05-sentinel-errors/08-fs-config-loader/cmd/demo
+cd go-solutions/10-error-handling/05-sentinel-errors/08-fs-config-loader
 ```
 
 ### Missing is fine; unreadable is not

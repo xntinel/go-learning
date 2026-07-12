@@ -35,9 +35,8 @@ tlsverify/                 independent module: example.com/tls-cert-verify-with-
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/tlsverify/cmd/demo
-cd ~/go-exercises/tlsverify
-go mod init example.com/tls-cert-verify-with-subject
+mkdir -p go-solutions/04-functions/01-function-declaration-and-multiple-return-values/34-tls-cert-verify-with-subject/cmd/demo
+cd go-solutions/04-functions/01-function-declaration-and-multiple-return-values/34-tls-cert-verify-with-subject
 go mod edit -go=1.24
 ```
 

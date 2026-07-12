@@ -30,9 +30,8 @@ configloader/                independent module: example.com/configloader
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/configloader/cmd/demo
-cd ~/go-exercises/configloader
-go mod init example.com/configloader
+mkdir -p go-solutions/10-error-handling/01-error-interface-and-basic-patterns/02-config-loader-zero-value/cmd/demo
+cd go-solutions/10-error-handling/01-error-interface-and-basic-patterns/02-config-loader-zero-value
 ```
 
 ### Why the zero value must be total, and why getenv is injected

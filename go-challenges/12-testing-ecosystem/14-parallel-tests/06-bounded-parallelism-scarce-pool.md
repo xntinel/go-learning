@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/poolbound/cmd/demo
-cd ~/go-exercises/poolbound
-go mod init example.com/poolbound
+mkdir -p go-solutions/12-testing-ecosystem/14-parallel-tests/06-bounded-parallelism-scarce-pool/cmd/demo
+cd go-solutions/12-testing-ecosystem/14-parallel-tests/06-bounded-parallelism-scarce-pool
 ```
 
 ### Why -parallel and GOMAXPROCS are the wrong knob alone

@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/fsm-transition-callback-handler/cmd/demo
-cd ~/go-exercises/fsm-transition-callback-handler
-go mod init example.com/fsm-transition-callback-handler
+mkdir -p go-solutions/04-functions/06-function-types-and-callbacks/27-fsm-transition-callback-handler/cmd/demo
+cd go-solutions/04-functions/06-function-types-and-callbacks/27-fsm-transition-callback-handler
 go mod edit -go=1.24
 ```
 

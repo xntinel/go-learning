@@ -77,9 +77,8 @@ Graceful shutdown always needs at least two contexts:
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/gracefulshutdown/cmd/demo
-cd ~/go-exercises/gracefulshutdown
-go mod init example.com/gracefulshutdown
+mkdir -p go-solutions/30-production-patterns/01-graceful-shutdown/01-graceful-shutdown/cmd/demo
+cd go-solutions/30-production-patterns/01-graceful-shutdown/01-graceful-shutdown
 ```
 
 This is a library plus a demo program. The library is verified with `go test`.

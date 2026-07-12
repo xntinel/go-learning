@@ -27,9 +27,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/retry/cmd/demo
-cd ~/go-exercises/retry
-go mod init example.com/retry
+mkdir -p go-solutions/03-control-flow/09-range-over-integers-and-functions/08-retry-backoff-seq/cmd/demo
+cd go-solutions/03-control-flow/09-range-over-integers-and-functions/08-retry-backoff-seq
 ```
 
 ## The design

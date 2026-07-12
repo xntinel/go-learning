@@ -31,9 +31,8 @@ metricsmw/                 independent module: example.com/metricsmw
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/metricsmw/cmd/demo
-cd ~/go-exercises/metricsmw
-go mod init example.com/metricsmw
+mkdir -p go-solutions/04-functions/04-first-class-functions-and-closures/01-metrics-middleware-factory/cmd/demo
+cd go-solutions/04-functions/04-first-class-functions-and-closures/01-metrics-middleware-factory
 ```
 
 ### The chain of closures

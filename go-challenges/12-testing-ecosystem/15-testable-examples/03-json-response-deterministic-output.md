@@ -26,9 +26,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/statusdto/cmd/demo
-cd ~/go-exercises/statusdto
-go mod init example.com/statusdto
+mkdir -p go-solutions/12-testing-ecosystem/15-testable-examples/03-json-response-deterministic-output/cmd/demo
+cd go-solutions/12-testing-ecosystem/15-testable-examples/03-json-response-deterministic-output
 ```
 
 ## Which stdout is safe to pin

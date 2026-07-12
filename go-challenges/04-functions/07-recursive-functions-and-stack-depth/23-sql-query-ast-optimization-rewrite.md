@@ -44,9 +44,8 @@ queryopt/                     independent module: example.com/queryopt
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/queryopt/cmd/demo
-cd ~/go-exercises/queryopt
-go mod init example.com/queryopt
+mkdir -p go-solutions/04-functions/07-recursive-functions-and-stack-depth/23-sql-query-ast-optimization-rewrite/cmd/demo
+cd go-solutions/04-functions/07-recursive-functions-and-stack-depth/23-sql-query-ast-optimization-rewrite
 go mod edit -go=1.24
 ```
 

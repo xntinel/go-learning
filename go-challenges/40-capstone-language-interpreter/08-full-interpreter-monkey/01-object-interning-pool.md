@@ -23,9 +23,8 @@ cmd/
 Set up the module:
 
 ```bash
-mkdir -p object-interning-pool/object object-interning-pool/cmd/demo
-cd object-interning-pool
-go mod init example.com/object-interning-pool
+mkdir -p go-solutions/40-capstone-language-interpreter/08-full-interpreter-monkey/01-object-interning-pool/object go-solutions/40-capstone-language-interpreter/08-full-interpreter-monkey/01-object-interning-pool/cmd/demo
+cd go-solutions/40-capstone-language-interpreter/08-full-interpreter-monkey/01-object-interning-pool
 ```
 
 ### Why interning, and why a fixed array

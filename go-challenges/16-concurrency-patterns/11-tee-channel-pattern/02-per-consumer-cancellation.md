@@ -20,8 +20,7 @@ tee_test.go          cancelled output never stalls the other; both-live delivery
 Set up the module:
 
 ```bash
-mkdir -p cancellable-tee/cmd/demo && cd cancellable-tee
-go mod init example.com/cancellable-tee
+mkdir -p go-solutions/16-concurrency-patterns/11-tee-channel-pattern/02-per-consumer-cancellation/cmd/demo && cd go-solutions/16-concurrency-patterns/11-tee-channel-pattern/02-per-consumer-cancellation
 ```
 
 ### What a done channel per output actually isolates

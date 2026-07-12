@@ -29,9 +29,8 @@ versionsvc/                 independent module: example.com/billing/versionsvc
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/versionsvc/cmd/demo
-cd ~/go-exercises/versionsvc
-go mod init example.com/billing/versionsvc
+mkdir -p go-solutions/11-packages-and-modules/04-go-module-versioning/04-runtime-build-version-endpoint/cmd/demo
+cd go-solutions/11-packages-and-modules/04-go-module-versioning/04-runtime-build-version-endpoint
 go mod edit -go=1.26
 ```
 

@@ -53,9 +53,8 @@ frameinspect/             module example.com/frameinspect
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/frameinspect
-cd ~/go-exercises/frameinspect
-go mod init example.com/frameinspect
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/06-copy-and-full-slice-expression/15-frame-inspector-eof-vs-unexpected-eof
+cd go-solutions/06-collections-arrays-slices-and-maps/06-copy-and-full-slice-expression/15-frame-inspector-eof-vs-unexpected-eof
 go mod edit -go=1.24
 ```
 

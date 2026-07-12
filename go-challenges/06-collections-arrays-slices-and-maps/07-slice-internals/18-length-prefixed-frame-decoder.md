@@ -55,9 +55,8 @@ framedecode/                   module example.com/framedecode
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/framedecode
-cd ~/go-exercises/framedecode
-go mod init example.com/framedecode
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/18-length-prefixed-frame-decoder
+cd go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/18-length-prefixed-frame-decoder
 go mod edit -go=1.24
 ```
 

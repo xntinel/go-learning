@@ -26,9 +26,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/lazyclient/cmd/demo
-cd ~/go-exercises/lazyclient
-go mod init example.com/lazyclient
+mkdir -p go-solutions/04-functions/08-init-functions-and-package-initialization/06-sync-once-lazy-init-vs-init/cmd/demo
+cd go-solutions/04-functions/08-init-functions-and-package-initialization/06-sync-once-lazy-init-vs-init
 ```
 
 ### Why lazy beats an init()-built global

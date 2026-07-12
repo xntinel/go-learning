@@ -30,9 +30,8 @@ lazy-tls-config/              module: example.com/lazy-tls-config
 Set up the module:
 
 ```bash
-mkdir -p lazy-tls-config/cmd/demo
-cd lazy-tls-config
-go mod init example.com/lazy-tls-config
+mkdir -p go-solutions/15-sync-primitives/03-sync-once/09-lazy-tls-config/cmd/demo
+cd go-solutions/15-sync-primitives/03-sync-once/09-lazy-tls-config
 ```
 
 ### Publish-then-freeze: why the config is built fully inside the closure

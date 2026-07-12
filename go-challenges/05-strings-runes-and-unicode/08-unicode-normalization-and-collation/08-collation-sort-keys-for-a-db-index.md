@@ -28,9 +28,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/sortkeys/cmd/demo
-cd ~/go-exercises/sortkeys
-go mod init example.com/sortkeys
+mkdir -p go-solutions/05-strings-runes-and-unicode/08-unicode-normalization-and-collation/08-collation-sort-keys-for-a-db-index/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/08-unicode-normalization-and-collation/08-collation-sort-keys-for-a-db-index
 go get golang.org/x/text/collate
 ```
 

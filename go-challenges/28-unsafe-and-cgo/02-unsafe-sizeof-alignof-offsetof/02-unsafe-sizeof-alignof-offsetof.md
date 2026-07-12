@@ -21,9 +21,8 @@ Grouping wider fields first often reduces padding. The correct lesson is not "al
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/layout
-cd ~/go-exercises/layout
-go mod init example.com/layout
+mkdir -p go-solutions/28-unsafe-and-cgo/02-unsafe-sizeof-alignof-offsetof/02-unsafe-sizeof-alignof-offsetof
+cd go-solutions/28-unsafe-and-cgo/02-unsafe-sizeof-alignof-offsetof/02-unsafe-sizeof-alignof-offsetof
 ```
 
 ### Exercise 1: Describe Two Struct Layouts

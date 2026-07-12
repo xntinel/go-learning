@@ -30,9 +30,8 @@ logscan/                    independent module: example.com/logscan
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/logscan/cmd/demo
-cd ~/go-exercises/logscan
-go mod init example.com/logscan
+mkdir -p go-solutions/05-strings-runes-and-unicode/02-byte-slices-vs-strings/05-streaming-line-scanner/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/02-byte-slices-vs-strings/05-streaming-line-scanner
 go mod edit -go=1.25
 ```
 

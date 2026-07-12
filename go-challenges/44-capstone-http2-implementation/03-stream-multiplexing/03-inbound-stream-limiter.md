@@ -22,8 +22,7 @@ inbound/
 Set up the module:
 
 ```bash
-mkdir -p inbound/cmd/demo && cd inbound
-go mod init example.com/inbound
+mkdir -p go-solutions/44-capstone-http2-implementation/03-stream-multiplexing/03-inbound-stream-limiter/cmd/demo && cd go-solutions/44-capstone-http2-implementation/03-stream-multiplexing/03-inbound-stream-limiter
 go mod edit -go=1.26
 ```
 

@@ -28,9 +28,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/nilvsempty/internal/enc ~/go-exercises/nilvsempty/cmd/demo
-cd ~/go-exercises/nilvsempty
-go mod init example.com/nilvsempty
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/01-json-null-vs-empty-encoder/internal/enc go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/01-json-null-vs-empty-encoder/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/01-json-null-vs-empty-encoder
 ```
 
 ### Two encoders, two contracts

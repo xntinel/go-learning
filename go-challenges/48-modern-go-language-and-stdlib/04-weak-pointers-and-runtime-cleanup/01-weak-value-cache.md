@@ -23,8 +23,7 @@ weakcache_test.go    sharing, reload-after-collection, cleanup pruning, identity
 Set up the module:
 
 ```bash
-mkdir -p weak-value-cache/cmd/demo && cd weak-value-cache
-go mod init example.com/weak-value-cache
+mkdir -p go-solutions/48-modern-go-language-and-stdlib/04-weak-pointers-and-runtime-cleanup/01-weak-value-cache/cmd/demo && cd go-solutions/48-modern-go-language-and-stdlib/04-weak-pointers-and-runtime-cleanup/01-weak-value-cache
 go mod edit -go=1.26
 ```
 

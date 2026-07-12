@@ -36,9 +36,8 @@ cachejitter/                     independent module: example.com/cachejitter
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cachejitter/cache ~/go-exercises/cachejitter/store ~/go-exercises/cachejitter/cmd/demo
-cd ~/go-exercises/cachejitter
-go mod init example.com/cachejitter
+mkdir -p go-solutions/15-sync-primitives/13-building-a-thread-safe-cache/06-ttl-jitter-negative-caching/cache go-solutions/15-sync-primitives/13-building-a-thread-safe-cache/06-ttl-jitter-negative-caching/store go-solutions/15-sync-primitives/13-building-a-thread-safe-cache/06-ttl-jitter-negative-caching/cmd/demo
+cd go-solutions/15-sync-primitives/13-building-a-thread-safe-cache/06-ttl-jitter-negative-caching
 ```
 
 ### The cache core (self-contained copy, plus one debug accessor)

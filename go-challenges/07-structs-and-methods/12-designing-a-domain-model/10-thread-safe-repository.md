@@ -30,9 +30,8 @@ repo/                       independent module: example.com/repo
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/repo/cmd/demo
-cd ~/go-exercises/repo
-go mod init example.com/repo
+mkdir -p go-solutions/07-structs-and-methods/12-designing-a-domain-model/10-thread-safe-repository/cmd/demo
+cd go-solutions/07-structs-and-methods/12-designing-a-domain-model/10-thread-safe-repository
 ```
 
 ### Guard the store, and hand out copies

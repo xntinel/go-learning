@@ -32,9 +32,8 @@ Verify: `go test -count=1 -race ./...` and `go vet ./...`, with `gofmt -l` empty
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/check/cmd/demo
-cd ~/go-exercises/check
-go mod init example.com/check
+mkdir -p go-solutions/01-environment-and-tooling/01-your-first-go-program/01-check-package-and-error-contract/cmd/demo
+cd go-solutions/01-environment-and-tooling/01-your-first-go-program/01-check-package-and-error-contract
 ```
 
 ### Why the interface is one method wide

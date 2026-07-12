@@ -27,9 +27,8 @@ fmt-gate/                      module example.com/fmt-gate
 Create the module:
 
 ```bash
-mkdir -p fmt-gate/cmd/demo fmt-gate/internal/slice
-cd fmt-gate
-go mod init example.com/fmt-gate
+mkdir -p go-solutions/01-environment-and-tooling/04-go-tool-commands/06-gofmt-canonical-gate/cmd/demo go-solutions/01-environment-and-tooling/04-go-tool-commands/06-gofmt-canonical-gate/internal/slice
+cd go-solutions/01-environment-and-tooling/04-go-tool-commands/06-gofmt-canonical-gate
 ```
 
 ### The four modes and the one gate

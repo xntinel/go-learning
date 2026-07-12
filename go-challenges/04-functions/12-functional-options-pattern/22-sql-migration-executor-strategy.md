@@ -31,9 +31,8 @@ migrator/                        independent module: example.com/migrator
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/migrator/cmd/demo
-cd ~/go-exercises/migrator
-go mod init example.com/migrator
+mkdir -p go-solutions/04-functions/12-functional-options-pattern/22-sql-migration-executor-strategy/cmd/demo
+cd go-solutions/04-functions/12-functional-options-pattern/22-sql-migration-executor-strategy
 go mod edit -go=1.24
 ```
 

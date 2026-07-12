@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module. `errors.AsType` requires Go 1.26:
 
 ```bash
-mkdir -p ~/go-exercises/astypeextract/cmd/demo
-cd ~/go-exercises/astypeextract
-go mod init example.com/astypeextract
+mkdir -p go-solutions/10-error-handling/04-custom-error-types/09-astype-generic-matching/cmd/demo
+cd go-solutions/10-error-handling/04-custom-error-types/09-astype-generic-matching
 go mod edit -go=1.26
 ```
 

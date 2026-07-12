@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p cappedpool/logbuf cappedpool/cmd/demo
-cd cappedpool
-go mod init example.com/cappedpool
+mkdir -p go-solutions/15-sync-primitives/05-sync-pool/08-capacity-capped-pool/logbuf go-solutions/15-sync-primitives/05-sync-pool/08-capacity-capped-pool/cmd/demo
+cd go-solutions/15-sync-primitives/05-sync-pool/08-capacity-capped-pool
 ```
 
 ### The ratchet: why an uncapped pool leaks by design

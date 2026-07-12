@@ -30,9 +30,8 @@ cowregistry/                     independent module: example.com/cowregistry
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cowregistry/cmd/demo
-cd ~/go-exercises/cowregistry
-go mod init example.com/cowregistry
+mkdir -p go-solutions/15-sync-primitives/11-lock-free-data-structures/07-cow-subscriber-registry/cmd/demo
+cd go-solutions/15-sync-primitives/11-lock-free-data-structures/07-cow-subscriber-registry
 ```
 
 ### Publish immutable snapshots, never edit shared state

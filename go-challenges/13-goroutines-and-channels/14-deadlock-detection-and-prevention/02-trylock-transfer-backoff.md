@@ -30,9 +30,8 @@ trytransfer/               independent module: example.com/trytransfer
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/trytransfer/cmd/demo
-cd ~/go-exercises/trytransfer
-go mod init example.com/trytransfer
+mkdir -p go-solutions/13-goroutines-and-channels/14-deadlock-detection-and-prevention/02-trylock-transfer-backoff/cmd/demo
+cd go-solutions/13-goroutines-and-channels/14-deadlock-detection-and-prevention/02-trylock-transfer-backoff
 go mod edit -go=1.25
 ```
 

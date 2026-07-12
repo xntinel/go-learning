@@ -34,9 +34,8 @@ health/                        module example.com/health
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/health/cmd/demo
-cd ~/go-exercises/health
-go mod init example.com/health
+mkdir -p go-solutions/03-control-flow/02-for-loops/17-health-check-aggregator/cmd/demo
+cd go-solutions/03-control-flow/02-for-loops/17-health-check-aggregator
 go mod edit -go=1.24
 ```
 

@@ -28,9 +28,8 @@ cursor/                      independent module: example.com/cursor
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cursor/cmd/demo
-cd ~/go-exercises/cursor
-go mod init example.com/cursor
+mkdir -p go-solutions/13-goroutines-and-channels/02-channel-basics/03-cursor-stream-close-comma-ok/cmd/demo
+cd go-solutions/13-goroutines-and-channels/02-channel-basics/03-cursor-stream-close-comma-ok
 ```
 
 ### Modeling a cursor: values, then maybe an error, then close

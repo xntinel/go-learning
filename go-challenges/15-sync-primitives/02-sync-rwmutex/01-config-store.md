@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/configstore/cmd/demo
-cd ~/go-exercises/configstore
-go mod init example.com/configstore
+mkdir -p go-solutions/15-sync-primitives/02-sync-rwmutex/01-config-store/cmd/demo
+cd go-solutions/15-sync-primitives/02-sync-rwmutex/01-config-store
 ```
 
 ### Why RWMutex is the right guard here

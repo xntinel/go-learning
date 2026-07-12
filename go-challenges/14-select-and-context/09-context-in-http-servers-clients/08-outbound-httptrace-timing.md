@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/tracefetch/cmd/demo
-cd ~/go-exercises/tracefetch
-go mod init example.com/tracefetch
+mkdir -p go-solutions/14-select-and-context/09-context-in-http-servers-clients/08-outbound-httptrace-timing/cmd/demo
+cd go-solutions/14-select-and-context/09-context-in-http-servers-clients/08-outbound-httptrace-timing
 ```
 
 ## The design

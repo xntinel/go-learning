@@ -31,9 +31,8 @@ fanout/                    independent module: example.com/fanout
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/fanout/cmd/demo
-cd ~/go-exercises/fanout
-go mod init example.com/fanout
+mkdir -p go-solutions/13-goroutines-and-channels/14-deadlock-detection-and-prevention/09-bounded-fanout-semaphore/cmd/demo
+cd go-solutions/13-goroutines-and-channels/14-deadlock-detection-and-prevention/09-bounded-fanout-semaphore
 go mod edit -go=1.25
 go get golang.org/x/sync/errgroup
 ```

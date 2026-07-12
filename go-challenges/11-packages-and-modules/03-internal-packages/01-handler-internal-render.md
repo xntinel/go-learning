@@ -29,9 +29,8 @@ pkginternal/                        module example.com/pkginternal
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pkginternal/pkg/handler/internal/render ~/go-exercises/pkginternal/cmd/demo
-cd ~/go-exercises/pkginternal
-go mod init example.com/pkginternal
+mkdir -p go-solutions/11-packages-and-modules/03-internal-packages/01-handler-internal-render/pkg/handler/internal/render go-solutions/11-packages-and-modules/03-internal-packages/01-handler-internal-render/cmd/demo
+cd go-solutions/11-packages-and-modules/03-internal-packages/01-handler-internal-render
 ```
 
 ### Why the render helper belongs under internal

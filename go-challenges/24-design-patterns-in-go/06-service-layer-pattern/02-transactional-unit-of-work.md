@@ -26,8 +26,7 @@ transfer_test.go     conservation of total, every rollback path, one-transaction
 Set up the module:
 
 ```bash
-mkdir -p transactional-transfer/cmd/demo && cd transactional-transfer
-go mod init example.com/transactional-transfer
+mkdir -p go-solutions/24-design-patterns-in-go/06-service-layer-pattern/02-transactional-unit-of-work/cmd/demo && cd go-solutions/24-design-patterns-in-go/06-service-layer-pattern/02-transactional-unit-of-work
 ```
 
 ### Why the transaction boundary is an interface

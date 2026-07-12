@@ -64,9 +64,8 @@ rows created on one call are visible to the next — with the default pool, each
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/userrepo/cmd/demo
-cd ~/go-exercises/userrepo
-go mod init example.com/userrepo
+mkdir -p go-solutions/14-select-and-context/10-context-aware-database-queries/04-sql-repository-not-found-mapping/cmd/demo
+cd go-solutions/14-select-and-context/10-context-aware-database-queries/04-sql-repository-not-found-mapping
 go mod edit -go=1.25
 go get modernc.org/sqlite
 ```

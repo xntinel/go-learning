@@ -29,9 +29,8 @@ domainerr/                  independent module: example.com/domainerr
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/domainerr/cmd/demo
-cd ~/go-exercises/domainerr
-go mod init example.com/domainerr
+mkdir -p go-solutions/08-interfaces/04-common-standard-library-interfaces/05-error-interface-classification/cmd/demo
+cd go-solutions/08-interfaces/04-common-standard-library-interfaces/05-error-interface-classification
 ```
 
 ### Sentinels, typed errors, and the Unwrap chain

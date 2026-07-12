@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/windowq/internal/windowq ~/go-exercises/windowq/cmd/demo
-cd ~/go-exercises/windowq
-go mod init example.com/windowq
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/06-copy-and-full-slice-expression/01-window-queue-copy-on-push/internal/windowq go-solutions/06-collections-arrays-slices-and-maps/06-copy-and-full-slice-expression/01-window-queue-copy-on-push/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/06-copy-and-full-slice-expression/01-window-queue-copy-on-push
 ```
 
 ### Why the queue must copy on push

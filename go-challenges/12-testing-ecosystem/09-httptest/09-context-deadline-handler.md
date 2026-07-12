@@ -27,9 +27,8 @@ deadlinehandler/                independent module: example.com/context-deadline
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/deadlinehandler/cmd/demo
-cd ~/go-exercises/deadlinehandler
-go mod init example.com/context-deadline-handler
+mkdir -p go-solutions/12-testing-ecosystem/09-httptest/09-context-deadline-handler/cmd/demo
+cd go-solutions/12-testing-ecosystem/09-httptest/09-context-deadline-handler
 ```
 
 ### r.Context() is the cancellation signal

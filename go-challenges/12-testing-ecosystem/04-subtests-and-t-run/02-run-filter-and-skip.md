@@ -31,9 +31,8 @@ regvalidate/                independent module: example.com/regvalidate
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/regvalidate/cmd/demo
-cd ~/go-exercises/regvalidate
-go mod init example.com/regvalidate
+mkdir -p go-solutions/12-testing-ecosystem/04-subtests-and-t-run/02-run-filter-and-skip/cmd/demo
+cd go-solutions/12-testing-ecosystem/04-subtests-and-t-run/02-run-filter-and-skip
 ```
 
 ### How -run and -skip carve the tree

@@ -30,9 +30,8 @@ slugfmt/                      independent module: example.com/slugfmt
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/slugfmt/cmd/demo
-cd ~/go-exercises/slugfmt
-go mod init example.com/slugfmt
+mkdir -p go-solutions/01-environment-and-tooling/06-linting-with-golangci-lint/07-formatters-section-and-fmt-gate/cmd/demo
+cd go-solutions/01-environment-and-tooling/06-linting-with-golangci-lint/07-formatters-section-and-fmt-gate
 ```
 
 ### Why formatting belongs in the lint gate

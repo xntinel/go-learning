@@ -29,9 +29,8 @@ Verify: `go test -count=1 ./...`
 Set up the module:
 
 ```bash
-mkdir -p pagelimits/cmd/demo
-cd pagelimits
-go mod init example.com/pagelimits
+mkdir -p go-solutions/02-variables-types-and-constants/04-constants-and-iota/07-untyped-const-boundaries-overflow/cmd/demo
+cd go-solutions/02-variables-types-and-constants/04-constants-and-iota/07-untyped-const-boundaries-overflow
 ```
 
 ## Two boundaries: one the compiler checks, one you must

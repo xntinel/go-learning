@@ -30,9 +30,8 @@ lb/                              independent module: example.com/endpoint-health
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/lb/cmd/demo
-cd ~/go-exercises/lb
-go mod init example.com/endpoint-health-checker
+mkdir -p go-solutions/04-functions/12-functional-options-pattern/25-endpoint-health-checker/cmd/demo
+cd go-solutions/04-functions/12-functional-options-pattern/25-endpoint-health-checker
 go mod edit -go=1.24
 ```
 

@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/orderedset/cmd/demo
-cd ~/go-exercises/orderedset
-go mod init example.com/orderedset
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/12-sorted-collections-binary-search/02-generic-sorted-set/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/12-sorted-collections-binary-search/02-generic-sorted-set
 ```
 
 ### The (pos, found) result is the whole point

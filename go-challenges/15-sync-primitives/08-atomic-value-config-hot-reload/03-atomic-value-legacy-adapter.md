@@ -32,9 +32,8 @@ cfglegacy/                 independent module: example.com/cfglegacy
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cfglegacy/cmd/demo
-cd ~/go-exercises/cfglegacy
-go mod init example.com/cfglegacy
+mkdir -p go-solutions/15-sync-primitives/08-atomic-value-config-hot-reload/03-atomic-value-legacy-adapter/cmd/demo
+cd go-solutions/15-sync-primitives/08-atomic-value-config-hot-reload/03-atomic-value-legacy-adapter
 ```
 
 ### What atomic.Value actually promises, and where it bites

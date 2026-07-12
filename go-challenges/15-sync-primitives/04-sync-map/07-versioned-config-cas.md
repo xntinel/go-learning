@@ -31,8 +31,7 @@ configstore/                  independent module: example.com/configstore
 Set up the module:
 
 ```bash
-mkdir configstore && cd configstore
-go mod init example.com/configstore
+mkdir go-solutions/15-sync-primitives/04-sync-map/07-versioned-config-cas && cd go-solutions/15-sync-primitives/04-sync-map/07-versioned-config-cas
 ```
 
 ### Why the value type must be comparable

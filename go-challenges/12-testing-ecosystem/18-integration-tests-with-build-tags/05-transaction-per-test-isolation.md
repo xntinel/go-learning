@@ -30,9 +30,8 @@ txrepo/                    independent module: example.com/txrepo
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/txrepo/cmd/demo
-cd ~/go-exercises/txrepo
-go mod init example.com/txrepo
+mkdir -p go-solutions/12-testing-ecosystem/18-integration-tests-with-build-tags/05-transaction-per-test-isolation/cmd/demo
+cd go-solutions/12-testing-ecosystem/18-integration-tests-with-build-tags/05-transaction-per-test-isolation
 ```
 
 ### The three isolation strategies, and why rollback is the default

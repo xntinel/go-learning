@@ -28,9 +28,8 @@ archguard/                    module example.com/archguard
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/archguard/cmd/demo
-cd ~/go-exercises/archguard
-go mod init example.com/archguard
+mkdir -p go-solutions/11-packages-and-modules/03-internal-packages/02-prove-internal-rule-in-ci/cmd/demo
+cd go-solutions/11-packages-and-modules/03-internal-packages/02-prove-internal-rule-in-ci
 ```
 
 ### Why shell out to the toolchain

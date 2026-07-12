@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/featureflags/cmd/demo
-cd ~/go-exercises/featureflags
-go mod init example.com/featureflags
+mkdir -p go-solutions/07-structs-and-methods/03-methods-value-vs-pointer-receivers/06-nil-receiver-noop-methods/cmd/demo
+cd go-solutions/07-structs-and-methods/03-methods-value-vs-pointer-receivers/06-nil-receiver-noop-methods
 ```
 
 ### Making nil a usable zero value

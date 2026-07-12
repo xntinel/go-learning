@@ -31,9 +31,8 @@ orderdomain/                  independent module: example.com/orderdomain
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/orderdomain/cmd/demo
-cd ~/go-exercises/orderdomain
-go mod init example.com/orderdomain
+mkdir -p go-solutions/08-interfaces/01-implicit-interface-satisfaction/08-satisfy-stdlib-stringer-error-json/cmd/demo
+cd go-solutions/08-interfaces/01-implicit-interface-satisfaction/08-satisfy-stdlib-stringer-error-json
 ```
 
 ### One concrete type, several stdlib interfaces

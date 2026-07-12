@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/httpclient/cmd/demo
-cd ~/go-exercises/httpclient
-go mod init example.com/httpclient
+mkdir -p go-solutions/04-functions/06-function-types-and-callbacks/02-functional-options-constructor/cmd/demo
+cd go-solutions/04-functions/06-function-types-and-callbacks/02-functional-options-constructor
 ```
 
 ### Why options beat a giant struct literal

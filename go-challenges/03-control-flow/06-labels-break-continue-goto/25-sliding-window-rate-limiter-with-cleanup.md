@@ -31,9 +31,8 @@ ratewindow/                 independent module: example.com/ratewindow
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ratewindow/cmd/demo
-cd ~/go-exercises/ratewindow
-go mod init example.com/ratewindow
+mkdir -p go-solutions/03-control-flow/06-labels-break-continue-goto/25-sliding-window-rate-limiter-with-cleanup/cmd/demo
+cd go-solutions/03-control-flow/06-labels-break-continue-goto/25-sliding-window-rate-limiter-with-cleanup
 go mod edit -go=1.24
 ```
 

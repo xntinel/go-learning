@@ -88,9 +88,8 @@ The `Router` type wraps the processors so tests can inject recorded calls and as
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/orderrouter/cmd/demo
-cd ~/go-exercises/orderrouter
-go mod init example.com/orderrouter
+mkdir -p go-solutions/31-cloud-native-go/04-eventbridge-event-routing/04-eventbridge-event-routing/cmd/demo
+cd go-solutions/31-cloud-native-go/04-eventbridge-event-routing/04-eventbridge-event-routing
 go get github.com/aws/aws-lambda-go@v1.47.0
 ```
 

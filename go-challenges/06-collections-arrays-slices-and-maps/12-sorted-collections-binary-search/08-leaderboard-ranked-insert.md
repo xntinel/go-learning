@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/leaderboard/cmd/demo
-cd ~/go-exercises/leaderboard
-go mod init example.com/leaderboard
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/12-sorted-collections-binary-search/08-leaderboard-ranked-insert/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/12-sorted-collections-binary-search/08-leaderboard-ranked-insert
 ```
 
 ### A compound comparator with cmp.Or, and upsert as delete-then-insert

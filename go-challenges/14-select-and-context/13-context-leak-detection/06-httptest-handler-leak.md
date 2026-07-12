@@ -32,10 +32,9 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/handlerleak/internal/leakdetect
-mkdir -p ~/go-exercises/handlerleak/cmd/demo
-cd ~/go-exercises/handlerleak
-go mod init example.com/handlerleak
+mkdir -p go-solutions/14-select-and-context/13-context-leak-detection/06-httptest-handler-leak/internal/leakdetect
+mkdir -p go-solutions/14-select-and-context/13-context-leak-detection/06-httptest-handler-leak/cmd/demo
+cd go-solutions/14-select-and-context/13-context-leak-detection/06-httptest-handler-leak
 ```
 
 ### Why the leaked context is parented on Background, not r.Context

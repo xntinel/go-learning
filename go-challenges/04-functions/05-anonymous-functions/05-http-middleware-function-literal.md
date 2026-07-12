@@ -27,9 +27,8 @@ middleware/                   module example.com/middleware
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/middleware/cmd/demo
-cd ~/go-exercises/middleware
-go mod init example.com/middleware
+mkdir -p go-solutions/04-functions/05-anonymous-functions/05-http-middleware-function-literal/cmd/demo
+cd go-solutions/04-functions/05-anonymous-functions/05-http-middleware-function-literal
 ```
 
 ### A middleware is a closure returning a handler literal

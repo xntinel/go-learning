@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pubsub/cmd/demo
-cd ~/go-exercises/pubsub
-go mod init example.com/pubsub
+mkdir -p go-solutions/14-select-and-context/01-select-statement-basics/08-pubsub-broadcast-dispatcher/cmd/demo
+cd go-solutions/14-select-and-context/01-select-statement-basics/08-pubsub-broadcast-dispatcher
 ```
 
 ## Sending to a dynamic set without head-of-line blocking

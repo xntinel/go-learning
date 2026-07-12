@@ -29,9 +29,8 @@ snappub/                   independent module: example.com/snappub
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/snappub/cmd/demo
-cd ~/go-exercises/snappub
-go mod init example.com/snappub
+mkdir -p go-solutions/15-sync-primitives/07-atomic-package/08-snapshot-publisher-atomic-pointer/cmd/demo
+cd go-solutions/15-sync-primitives/07-atomic-package/08-snapshot-publisher-atomic-pointer
 ```
 
 ### Immutable snapshots and the single-swap publish

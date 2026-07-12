@@ -34,9 +34,8 @@ gqlserver/                   independent module: example.com/gqlserver
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/gqlserver/cmd/demo
-cd ~/go-exercises/gqlserver
-go mod init example.com/gqlserver
+mkdir -p go-solutions/51-rpc-and-api-design/05-graphql-dataloaders-n-plus-1/03-gqlgen-request-scoped-wiring/cmd/demo
+cd go-solutions/51-rpc-and-api-design/05-graphql-dataloaders-n-plus-1/03-gqlgen-request-scoped-wiring
 go mod edit -go=1.26
 go get github.com/vikstrous/dataloadgen@v0.0.10
 ```

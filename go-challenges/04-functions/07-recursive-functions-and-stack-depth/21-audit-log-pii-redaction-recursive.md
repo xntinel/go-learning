@@ -40,9 +40,8 @@ piiredact/                    independent module: example.com/piiredact
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/piiredact/cmd/demo
-cd ~/go-exercises/piiredact
-go mod init example.com/piiredact
+mkdir -p go-solutions/04-functions/07-recursive-functions-and-stack-depth/21-audit-log-pii-redaction-recursive/cmd/demo
+cd go-solutions/04-functions/07-recursive-functions-and-stack-depth/21-audit-log-pii-redaction-recursive
 go mod edit -go=1.24
 ```
 

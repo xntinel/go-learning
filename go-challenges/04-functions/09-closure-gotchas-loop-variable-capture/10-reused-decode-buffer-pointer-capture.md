@@ -26,9 +26,8 @@ batchimport/                 independent module: example.com/batchimport
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/batchimport
-cd ~/go-exercises/batchimport
-go mod init example.com/batchimport
+mkdir -p go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/10-reused-decode-buffer-pointer-capture
+cd go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/10-reused-decode-buffer-pointer-capture
 go mod edit -go=1.24
 ```
 

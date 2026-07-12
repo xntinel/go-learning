@@ -40,9 +40,8 @@ admission-control-load-shedding/   independent module: example.com/admission-con
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/admission-control-load-shedding/cmd/demo
-cd ~/go-exercises/admission-control-load-shedding
-go mod init example.com/admission-control-load-shedding
+mkdir -p go-solutions/03-control-flow/04-type-switch/27-admission-control-load-shedding/cmd/demo
+cd go-solutions/03-control-flow/04-type-switch/27-admission-control-load-shedding
 go mod edit -go=1.24
 ```
 

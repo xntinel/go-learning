@@ -28,9 +28,8 @@ marshal/                   independent module: example.com/marshal
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/marshal/cmd/demo
-cd ~/go-exercises/marshal
-go mod init example.com/marshal
+mkdir -p go-solutions/12-testing-ecosystem/05-benchmarks/02-b-loop-modern-benchmark/cmd/demo
+cd go-solutions/12-testing-ecosystem/05-benchmarks/02-b-loop-modern-benchmark
 go mod edit -go=1.24
 ```
 

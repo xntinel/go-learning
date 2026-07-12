@@ -30,9 +30,8 @@ Verify: `go test -count=1 ./...`, `go vet ./...`, then
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/urlcheck/cmd/urlcheck ~/go-exercises/urlcheck/internal/check
-cd ~/go-exercises/urlcheck
-go mod init example.com/urlcheck
+mkdir -p go-solutions/01-environment-and-tooling/01-your-first-go-program/03-urlcheck-command-adapter/cmd/urlcheck go-solutions/01-environment-and-tooling/01-your-first-go-program/03-urlcheck-command-adapter/internal/check
+cd go-solutions/01-environment-and-tooling/01-your-first-go-program/03-urlcheck-command-adapter
 ```
 
 ### The exit-code policy is a pure function

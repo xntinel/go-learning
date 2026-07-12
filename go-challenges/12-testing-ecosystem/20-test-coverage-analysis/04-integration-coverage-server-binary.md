@@ -31,9 +31,8 @@ apisrv/                    independent module: example.com/apisrv
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/apisrv/cmd/demo
-cd ~/go-exercises/apisrv
-go mod init example.com/apisrv
+mkdir -p go-solutions/12-testing-ecosystem/20-test-coverage-analysis/04-integration-coverage-server-binary/cmd/demo
+cd go-solutions/12-testing-ecosystem/20-test-coverage-analysis/04-integration-coverage-server-binary
 ```
 
 ### Why graceful shutdown is a prerequisite for integration coverage

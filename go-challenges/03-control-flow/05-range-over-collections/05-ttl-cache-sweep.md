@@ -30,9 +30,8 @@ ttlsweep/                   independent module: example.com/ttlsweep
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ttlsweep/cmd/demo
-cd ~/go-exercises/ttlsweep
-go mod init example.com/ttlsweep
+mkdir -p go-solutions/03-control-flow/05-range-over-collections/05-ttl-cache-sweep/cmd/demo
+cd go-solutions/03-control-flow/05-range-over-collections/05-ttl-cache-sweep
 go mod edit -go=1.24
 ```
 

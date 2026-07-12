@@ -25,9 +25,8 @@ vendorcheck/                  module: example.com/mono/vendorcheck
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/vendorcheck/cmd/demo
-cd ~/go-exercises/vendorcheck
-go mod init example.com/mono/vendorcheck
+mkdir -p go-solutions/11-packages-and-modules/10-monorepo-module-strategy/10-vendor-the-workspace-for-ci/cmd/demo
+cd go-solutions/11-packages-and-modules/10-monorepo-module-strategy/10-vendor-the-workspace-for-ci
 ```
 
 ### Two ways to vendor, and when each fits

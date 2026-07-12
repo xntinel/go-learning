@@ -28,9 +28,8 @@ idem/                        independent module: example.com/idem
 - Verify: `go test -count=1 -race ./...`
 
 ```bash
-mkdir -p ~/go-exercises/idem/cmd/demo
-cd ~/go-exercises/idem
-go mod init example.com/idem
+mkdir -p go-solutions/15-sync-primitives/01-sync-mutex/06-idempotency-dedupe-store/cmd/demo
+cd go-solutions/15-sync-primitives/01-sync-mutex/06-idempotency-dedupe-store
 ```
 
 ### Why the check and the claim must be one critical section

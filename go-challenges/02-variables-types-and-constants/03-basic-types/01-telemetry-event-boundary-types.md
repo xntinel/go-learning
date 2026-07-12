@@ -29,9 +29,8 @@ telemetry/                 independent module: example.com/telemetry
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/telemetry/cmd/demo
-cd ~/go-exercises/telemetry
-go mod init example.com/telemetry
+mkdir -p go-solutions/02-variables-types-and-constants/03-basic-types/01-telemetry-event-boundary-types/cmd/demo
+cd go-solutions/02-variables-types-and-constants/03-basic-types/01-telemetry-event-boundary-types
 ```
 
 ### Why each field gets the type it does

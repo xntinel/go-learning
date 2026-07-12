@@ -29,9 +29,8 @@ batch/                     independent module: example.com/batch
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/batch/cmd/demo
-cd ~/go-exercises/batch
-go mod init example.com/batch
+mkdir -p go-solutions/13-goroutines-and-channels/13-goroutine-pools/02-fan-out-fan-in-results/cmd/demo
+cd go-solutions/13-goroutines-and-channels/13-goroutine-pools/02-fan-out-fan-in-results
 ```
 
 ### The index is the correlation key

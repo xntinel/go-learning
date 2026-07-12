@@ -35,9 +35,8 @@ deadtest/                  independent module: example.com/deadtest
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/deadtest/cmd/demo
-cd ~/go-exercises/deadtest
-go mod init example.com/deadtest
+mkdir -p go-solutions/15-sync-primitives/09-lock-ordering-deadlock-prevention/09-deadlock-watchdog-harness/cmd/demo
+cd go-solutions/15-sync-primitives/09-lock-ordering-deadlock-prevention/09-deadlock-watchdog-harness
 ```
 
 ### Why tests need their own watchdog

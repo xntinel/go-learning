@@ -28,9 +28,8 @@ Verify: `go test -count=1 -race ./... && go vet ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/erris/service ~/go-exercises/erris/cmd/demo
-cd ~/go-exercises/erris
-go mod init example.com/erris
+mkdir -p go-solutions/10-error-handling/03-errors-is-and-errors-as/01-service-layer-is-as/service go-solutions/10-error-handling/03-errors-is-and-errors-as/01-service-layer-is-as/cmd/demo
+cd go-solutions/10-error-handling/03-errors-is-and-errors-as/01-service-layer-is-as
 go mod edit -go=1.25
 ```
 

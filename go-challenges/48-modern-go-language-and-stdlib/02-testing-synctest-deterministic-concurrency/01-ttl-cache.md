@@ -31,9 +31,8 @@ Set up the module. `testing/synctest` requires Go 1.25+, so pin the language
 version:
 
 ```bash
-mkdir -p ~/go-exercises/ttlcache/cmd/demo
-cd ~/go-exercises/ttlcache
-go mod init example.com/ttlcache
+mkdir -p go-solutions/48-modern-go-language-and-stdlib/02-testing-synctest-deterministic-concurrency/01-ttl-cache/cmd/demo
+cd go-solutions/48-modern-go-language-and-stdlib/02-testing-synctest-deterministic-concurrency/01-ttl-cache
 go mod edit -go=1.25
 ```
 

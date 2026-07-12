@@ -32,9 +32,8 @@ repowrite/                   independent module: example.com/repowrite
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/repowrite/cmd/demo
-cd ~/go-exercises/repowrite
-go mod init example.com/repowrite
+mkdir -p go-solutions/03-control-flow/07-defer-semantics-and-ordering/04-named-return-rollback/cmd/demo
+cd go-solutions/03-control-flow/07-defer-semantics-and-ordering/04-named-return-rollback
 ```
 
 ### Why the closure form is mandatory here

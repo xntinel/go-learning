@@ -28,9 +28,8 @@ casstate/                  independent module: example.com/casstate
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/casstate/cmd/demo
-cd ~/go-exercises/casstate
-go mod init example.com/casstate
+mkdir -p go-solutions/15-sync-primitives/07-atomic-package/03-cas-state-machine/cmd/demo
+cd go-solutions/15-sync-primitives/07-atomic-package/03-cas-state-machine
 ```
 
 ### Why a CAS loop and not Add

@@ -30,9 +30,8 @@ cacheload/                       independent module: example.com/cacheload
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cacheload/cache ~/go-exercises/cacheload/cmd/demo
-cd ~/go-exercises/cacheload
-go mod init example.com/cacheload
+mkdir -p go-solutions/15-sync-primitives/13-building-a-thread-safe-cache/03-concurrent-load-harness/cache go-solutions/15-sync-primitives/13-building-a-thread-safe-cache/03-concurrent-load-harness/cmd/demo
+cd go-solutions/15-sync-primitives/13-building-a-thread-safe-cache/03-concurrent-load-harness
 ```
 
 ### The cache under test (self-contained copy)

@@ -28,9 +28,8 @@ ttlcache/                    independent module: example.com/ttlcache
 - Verify: `go test -count=1 -race ./...`
 
 ```bash
-mkdir -p ~/go-exercises/ttlcache/cmd/demo
-cd ~/go-exercises/ttlcache
-go mod init example.com/ttlcache
+mkdir -p go-solutions/15-sync-primitives/01-sync-mutex/04-ttl-cache/cmd/demo
+cd go-solutions/15-sync-primitives/01-sync-mutex/04-ttl-cache
 ```
 
 ### Lazy expiry, and an injectable clock for honest tests

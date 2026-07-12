@@ -25,9 +25,8 @@ retryreport/                 independent module: example.com/retryreport
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/retryreport
-cd ~/go-exercises/retryreport
-go mod init example.com/retryreport
+mkdir -p go-solutions/04-functions/02-named-return-values/12-retry-loop-attempt-count
+cd go-solutions/04-functions/02-named-return-values/12-retry-loop-attempt-count
 go mod edit -go=1.24
 ```
 

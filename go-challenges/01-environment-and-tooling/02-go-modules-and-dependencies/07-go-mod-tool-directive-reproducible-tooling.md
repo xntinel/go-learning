@@ -30,9 +30,8 @@ jobstate/                   independent module: example.com/jobstate
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/jobstate/cmd/demo
-cd ~/go-exercises/jobstate
-go mod init example.com/jobstate
+mkdir -p go-solutions/01-environment-and-tooling/02-go-modules-and-dependencies/07-go-mod-tool-directive-reproducible-tooling/cmd/demo
+cd go-solutions/01-environment-and-tooling/02-go-modules-and-dependencies/07-go-mod-tool-directive-reproducible-tooling
 ```
 
 ### The tool directive versus tools.go

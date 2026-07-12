@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/latencywindow/cmd/demo
-cd ~/go-exercises/latencywindow
-go mod init example.com/latencywindow
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/13-implementing-a-ring-buffer/05-sliding-window-latency-percentiles/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/13-implementing-a-ring-buffer/05-sliding-window-latency-percentiles
 go mod edit -go=1.24
 ```
 

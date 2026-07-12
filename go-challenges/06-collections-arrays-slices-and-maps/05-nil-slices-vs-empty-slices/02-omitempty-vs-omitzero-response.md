@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/listresp/api ~/go-exercises/listresp/cmd/demo
-cd ~/go-exercises/listresp
-go mod init example.com/listresp
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/02-omitempty-vs-omitzero-response/api go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/02-omitempty-vs-omitzero-response/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/02-omitempty-vs-omitzero-response
 go mod edit -go=1.24
 ```
 

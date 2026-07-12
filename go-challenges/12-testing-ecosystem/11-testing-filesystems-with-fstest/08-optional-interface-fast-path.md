@@ -34,9 +34,8 @@ fastpath/                    independent module: example.com/fastpath
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/fastpath/cmd/demo
-cd ~/go-exercises/fastpath
-go mod init example.com/fastpath
+mkdir -p go-solutions/12-testing-ecosystem/11-testing-filesystems-with-fstest/08-optional-interface-fast-path/cmd/demo
+cd go-solutions/12-testing-ecosystem/11-testing-filesystems-with-fstest/08-optional-interface-fast-path
 ```
 
 ### How the helpers choose a path, and why it is measurable

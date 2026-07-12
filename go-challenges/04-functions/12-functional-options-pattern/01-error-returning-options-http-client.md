@@ -32,9 +32,8 @@ apiclient/                       independent module: example.com/apiclient
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/apiclient/internal/httpx ~/go-exercises/apiclient/cmd/demo
-cd ~/go-exercises/apiclient
-go mod init example.com/apiclient
+mkdir -p go-solutions/04-functions/12-functional-options-pattern/01-error-returning-options-http-client/internal/httpx go-solutions/04-functions/12-functional-options-pattern/01-error-returning-options-http-client/cmd/demo
+cd go-solutions/04-functions/12-functional-options-pattern/01-error-returning-options-http-client
 ```
 
 ### Why error-returning options here

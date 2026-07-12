@@ -31,8 +31,7 @@ visitcounter/                 independent module: example.com/visitcounter
 Set up the module:
 
 ```bash
-mkdir visitcounter && cd visitcounter
-go mod init example.com/visitcounter
+mkdir go-solutions/15-sync-primitives/04-sync-map/01-visit-counter && cd go-solutions/15-sync-primitives/04-sync-map/01-visit-counter
 ```
 
 ### Why a shared atomic pointer, not a stored int

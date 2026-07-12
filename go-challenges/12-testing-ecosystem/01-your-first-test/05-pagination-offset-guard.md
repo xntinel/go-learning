@@ -25,9 +25,8 @@ pageoffset/                independent module: example.com/pageoffset
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pageoffset/cmd/demo
-cd ~/go-exercises/pageoffset
-go mod init example.com/pageoffset
+mkdir -p go-solutions/12-testing-ecosystem/01-your-first-test/05-pagination-offset-guard/cmd/demo
+cd go-solutions/12-testing-ecosystem/01-your-first-test/05-pagination-offset-guard
 ```
 
 ### The off-by-one and the two clamps

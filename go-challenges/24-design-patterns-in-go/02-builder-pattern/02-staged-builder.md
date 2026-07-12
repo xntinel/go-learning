@@ -22,8 +22,7 @@ email_test.go        required+optional fields, required-only, repeatable optiona
 Set up the module:
 
 ```bash
-mkdir -p staged-builder/cmd/demo && cd staged-builder
-go mod init example.com/staged-builder
+mkdir -p go-solutions/24-design-patterns-in-go/02-builder-pattern/02-staged-builder/cmd/demo && cd go-solutions/24-design-patterns-in-go/02-builder-pattern/02-staged-builder
 ```
 
 ### Why interfaces enforce order, and how Build loses its error

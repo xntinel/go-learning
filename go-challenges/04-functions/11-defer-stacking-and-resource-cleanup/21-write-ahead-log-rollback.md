@@ -28,9 +28,8 @@ wal/                        independent module: example.com/wal
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/wal/wal ~/go-exercises/wal/cmd/demo
-cd ~/go-exercises/wal
-go mod init example.com/wal
+mkdir -p go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/21-write-ahead-log-rollback/wal go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/21-write-ahead-log-rollback/cmd/demo
+cd go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/21-write-ahead-log-rollback
 go mod edit -go=1.24
 ```
 

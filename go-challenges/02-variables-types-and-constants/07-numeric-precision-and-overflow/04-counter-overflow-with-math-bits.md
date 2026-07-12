@@ -33,9 +33,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/bytescounter/cmd/demo
-cd ~/go-exercises/bytescounter
-go mod init example.com/bytescounter
+mkdir -p go-solutions/02-variables-types-and-constants/07-numeric-precision-and-overflow/04-counter-overflow-with-math-bits/cmd/demo
+cd go-solutions/02-variables-types-and-constants/07-numeric-precision-and-overflow/04-counter-overflow-with-math-bits
 ```
 
 ### How math/bits turns overflow into a value you can test

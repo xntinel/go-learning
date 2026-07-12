@@ -29,9 +29,8 @@ panic-safe-init/              module: example.com/panic-safe-init
 Set up the module:
 
 ```bash
-mkdir -p panic-safe-init/cmd/demo
-cd panic-safe-init
-go mod init example.com/panic-safe-init
+mkdir -p go-solutions/15-sync-primitives/03-sync-once/06-panic-safe-init/cmd/demo
+cd go-solutions/15-sync-primitives/03-sync-once/06-panic-safe-init
 ```
 
 ### Recover inside the closure, not outside it

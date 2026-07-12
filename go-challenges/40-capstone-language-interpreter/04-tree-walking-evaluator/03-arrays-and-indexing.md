@@ -25,8 +25,7 @@ cmd/
 Set up the module:
 
 ```bash
-mkdir -p arrays/cmd/demo && cd arrays
-go mod init example.com/arrays
+mkdir -p go-solutions/40-capstone-language-interpreter/04-tree-walking-evaluator/03-arrays-and-indexing/cmd/demo && cd go-solutions/40-capstone-language-interpreter/04-tree-walking-evaluator/03-arrays-and-indexing
 ```
 
 ### Evaluating an array literal

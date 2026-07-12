@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ratelimit/cmd/demo
-cd ~/go-exercises/ratelimit
-go mod init example.com/ratelimit
+mkdir -p go-solutions/13-goroutines-and-channels/04-channel-direction/09-rate-limiter-ticker-refill/cmd/demo
+cd go-solutions/13-goroutines-and-channels/04-channel-direction/09-rate-limiter-ticker-refill
 ```
 
 ### Why every channel here is directional, and why the token send is non-blocking

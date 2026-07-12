@@ -33,9 +33,8 @@ assetserver/                 independent module: example.com/assetserver
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/assetserver/cmd/demo
-cd ~/go-exercises/assetserver
-go mod init example.com/assetserver
+mkdir -p go-solutions/12-testing-ecosystem/11-testing-filesystems-with-fstest/04-asset-server-fileserverfs/cmd/demo
+cd go-solutions/12-testing-ecosystem/11-testing-filesystems-with-fstest/04-asset-server-fileserverfs
 ```
 
 ### What net/http gives you for free once you speak fs.FS

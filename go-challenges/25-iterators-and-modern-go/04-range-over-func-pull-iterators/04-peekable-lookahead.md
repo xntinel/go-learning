@@ -22,8 +22,7 @@ peek_test.go         peek is non-destructive, end-of-input, TakeWhile, Close sto
 Set up the module:
 
 ```bash
-mkdir -p peekable/cmd/demo && cd peekable
-go mod init example.com/peekable
+mkdir -p go-solutions/25-iterators-and-modern-go/04-range-over-func-pull-iterators/04-peekable-lookahead/cmd/demo && cd go-solutions/25-iterators-and-modern-go/04-range-over-func-pull-iterators/04-peekable-lookahead
 ```
 
 ### Why peek is pull-only, and the one-slot buffer

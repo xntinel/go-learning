@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/retrydecorator/cmd/demo
-cd ~/go-exercises/retrydecorator
-go mod init example.com/retrydecorator
+mkdir -p go-solutions/08-interfaces/08-accept-interfaces-return-structs/05-retry-decorator/cmd/demo
+cd go-solutions/08-interfaces/08-accept-interfaces-return-structs/05-retry-decorator
 go mod edit -go=1.26
 ```
 

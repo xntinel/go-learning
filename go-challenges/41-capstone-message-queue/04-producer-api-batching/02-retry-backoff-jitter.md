@@ -25,8 +25,7 @@ retry_test.go        success after transient, exhaustion, permanent skip, bounds
 Set up the module:
 
 ```bash
-mkdir -p retry-backoff-jitter/cmd/demo && cd retry-backoff-jitter
-go mod init example.com/retry-backoff-jitter
+mkdir -p go-solutions/41-capstone-message-queue/04-producer-api-batching/02-retry-backoff-jitter/cmd/demo && cd go-solutions/41-capstone-message-queue/04-producer-api-batching/02-retry-backoff-jitter
 ```
 
 ### Why exponential, and why jitter is not optional

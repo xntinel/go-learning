@@ -26,8 +26,7 @@ drain/
 Set up the module:
 
 ```bash
-mkdir -p drain/cmd/demo && cd drain
-go mod init example.com/drain
+mkdir -p go-solutions/16-concurrency-patterns/21-graceful-goroutine-draining/01-draining-worker-pool/cmd/demo && cd go-solutions/16-concurrency-patterns/21-graceful-goroutine-draining/01-draining-worker-pool
 ```
 
 ## Why a quit channel, not a closed jobs channel

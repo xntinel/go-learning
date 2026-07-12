@@ -25,9 +25,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/gracefulrunner/cmd/demo
-cd ~/go-exercises/gracefulrunner
-go mod init example.com/gracefulrunner
+mkdir -p go-solutions/13-goroutines-and-channels/07-done-channel-pattern/08-graceful-shutdown-coordinator/cmd/demo
+cd go-solutions/13-goroutines-and-channels/07-done-channel-pattern/08-graceful-shutdown-coordinator
 ```
 
 ### The three ordered steps

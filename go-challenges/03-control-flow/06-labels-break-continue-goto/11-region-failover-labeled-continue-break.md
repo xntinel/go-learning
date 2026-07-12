@@ -20,9 +20,8 @@ failover/                    independent module: example.com/failover
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/failover
-cd ~/go-exercises/failover
-go mod init example.com/failover
+mkdir -p go-solutions/03-control-flow/06-labels-break-continue-goto/11-region-failover-labeled-continue-break
+cd go-solutions/03-control-flow/06-labels-break-continue-goto/11-region-failover-labeled-continue-break
 go mod edit -go=1.24
 ```
 

@@ -29,9 +29,8 @@ dispatch/                  independent module: example.com/dispatch
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/dispatch/cmd/demo
-cd ~/go-exercises/dispatch
-go mod init example.com/dispatch
+mkdir -p go-solutions/13-goroutines-and-channels/14-deadlock-detection-and-prevention/04-context-bounded-channel-send/cmd/demo
+cd go-solutions/13-goroutines-and-channels/14-deadlock-detection-and-prevention/04-context-bounded-channel-send
 go mod edit -go=1.25
 ```
 

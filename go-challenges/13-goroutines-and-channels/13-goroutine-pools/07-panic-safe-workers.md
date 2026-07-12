@@ -30,9 +30,8 @@ safepool/                  independent module: example.com/safepool
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/safepool/cmd/demo
-cd ~/go-exercises/safepool
-go mod init example.com/safepool
+mkdir -p go-solutions/13-goroutines-and-channels/13-goroutine-pools/07-panic-safe-workers/cmd/demo
+cd go-solutions/13-goroutines-and-channels/13-goroutine-pools/07-panic-safe-workers
 ```
 
 ### Recover belongs in the worker loop, once per job

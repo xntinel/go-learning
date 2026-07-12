@@ -34,9 +34,8 @@ headerparse/               independent module: example.com/headerparse
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/headerparse/cmd/demo
-cd ~/go-exercises/headerparse
-go mod init example.com/headerparse
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/03-request-header-slice-aliasing/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/03-request-header-slice-aliasing
 go mod edit -go=1.24
 ```
 

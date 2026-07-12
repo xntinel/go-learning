@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/reconcile/cmd/demo
-cd ~/go-exercises/reconcile
-go mod init example.com/reconcile
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/04-state-reconcile-diff/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/04-state-reconcile-diff
 ```
 
 ## Why the diff is three sorted slices, and why equality has two flavors

@@ -60,9 +60,8 @@ No coordination strategy is strictly better than the others; they trade accuracy
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ratelimiter/cmd/demo
-cd ~/go-exercises/ratelimiter
-go mod init example.com/ratelimiter
+mkdir -p go-solutions/37-distributed-systems-fundamentals/12-distributed-rate-limiter/12-distributed-rate-limiter/cmd/demo
+cd go-solutions/37-distributed-systems-fundamentals/12-distributed-rate-limiter/12-distributed-rate-limiter
 ```
 
 This is a library. Verify it with `go test`.

@@ -30,9 +30,8 @@ cfgmigrate/                   independent module: example.com/cfgmigrate
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cfgmigrate/cmd/demo
-cd ~/go-exercises/cfgmigrate
-go mod init example.com/cfgmigrate
+mkdir -p go-solutions/01-environment-and-tooling/06-linting-with-golangci-lint/06-migrate-v1-config-to-v2/cmd/demo
+cd go-solutions/01-environment-and-tooling/06-linting-with-golangci-lint/06-migrate-v1-config-to-v2
 ```
 
 ### The starting point: a representative v1 config

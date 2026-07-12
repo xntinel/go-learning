@@ -25,8 +25,7 @@ params_test.go       every form, the cast operator, and the sentinel-error cases
 Set up the module:
 
 ```bash
-mkdir -p bind-parameters/cmd/demo && cd bind-parameters
-go mod init example.com/bind-parameters
+mkdir -p go-solutions/39-capstone-database-engine/04-sql-lexer-tokenizer/05-bind-parameters/cmd/demo && cd go-solutions/39-capstone-database-engine/04-sql-lexer-tokenizer/05-bind-parameters
 ```
 
 ### Why an additive const block and a separate scanner

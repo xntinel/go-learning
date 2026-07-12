@@ -32,9 +32,8 @@ Verify: `go test -count=1 ./...`, `gofmt -l` empty; a shell harness confirms
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/buildinfo/cmd/demo
-cd ~/go-exercises/buildinfo
-go mod init example.com/buildinfo
+mkdir -p go-solutions/01-environment-and-tooling/01-your-first-go-program/04-build-info-version-stamping/cmd/demo
+cd go-solutions/01-environment-and-tooling/01-your-first-go-program/04-build-info-version-stamping
 ```
 
 ### Why the logic is split from ReadBuildInfo

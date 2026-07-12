@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pipelinestage/cmd/demo
-cd ~/go-exercises/pipelinestage
-go mod init example.com/pipelinestage
+mkdir -p go-solutions/14-select-and-context/01-select-statement-basics/07-drain-without-busyspin/cmd/demo
+cd go-solutions/14-select-and-context/01-select-statement-basics/07-drain-without-busyspin
 ```
 
 ## The bug, then the fix

@@ -32,9 +32,8 @@ repoguard/                    independent module: example.com/repoguard
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/repoguard/cmd/demo
-cd ~/go-exercises/repoguard
-go mod init example.com/repoguard
+mkdir -p go-solutions/08-interfaces/01-implicit-interface-satisfaction/04-compile-time-interface-guards/cmd/demo
+cd go-solutions/08-interfaces/01-implicit-interface-satisfaction/04-compile-time-interface-guards
 ```
 
 ### What a guard buys you, and the drift it catches

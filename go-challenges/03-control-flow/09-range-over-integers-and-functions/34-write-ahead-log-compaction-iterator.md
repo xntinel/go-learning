@@ -31,9 +31,8 @@ Verify: `go test -race -count=1 ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/write-ahead-log-compaction-iterator/cmd/demo
-cd ~/go-exercises/write-ahead-log-compaction-iterator
-go mod init example.com/write-ahead-log-compaction-iterator
+mkdir -p go-solutions/03-control-flow/09-range-over-integers-and-functions/34-write-ahead-log-compaction-iterator/cmd/demo
+cd go-solutions/03-control-flow/09-range-over-integers-and-functions/34-write-ahead-log-compaction-iterator
 go mod edit -go=1.24
 ```
 

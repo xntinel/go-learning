@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/faninmerge/cmd/demo
-cd ~/go-exercises/faninmerge
-go mod init example.com/faninmerge
+mkdir -p go-solutions/13-goroutines-and-channels/06-ranging-over-channels/03-fan-in-merge/cmd/demo
+cd go-solutions/13-goroutines-and-channels/06-ranging-over-channels/03-fan-in-merge
 ```
 
 ### The single-close discipline

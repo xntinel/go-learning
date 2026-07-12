@@ -23,8 +23,7 @@ http-source/
 Set up the module:
 
 ```bash
-mkdir -p http-source/cmd/demo && cd http-source
-go mod init example.com/http-source
+mkdir -p go-solutions/43-capstone-stream-processing-engine/01-source-connectors/03-http-source/cmd/demo && cd go-solutions/43-capstone-stream-processing-engine/01-source-connectors/03-http-source
 ```
 
 ### Two sentinels this time

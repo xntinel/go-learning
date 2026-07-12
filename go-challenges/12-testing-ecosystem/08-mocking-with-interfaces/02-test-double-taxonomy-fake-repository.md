@@ -29,9 +29,8 @@ signup/                      independent module: example.com/signup
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/signup/cmd/demo
-cd ~/go-exercises/signup
-go mod init example.com/signup
+mkdir -p go-solutions/12-testing-ecosystem/08-mocking-with-interfaces/02-test-double-taxonomy-fake-repository/cmd/demo
+cd go-solutions/12-testing-ecosystem/08-mocking-with-interfaces/02-test-double-taxonomy-fake-repository
 ```
 
 ### The service and its port

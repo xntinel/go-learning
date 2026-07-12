@@ -26,9 +26,8 @@ Test: concurrent encode under `-race` gives uncorrupted output; no bleed-through
 Verify: `go test -count=1 -race ./...`
 
 ```bash
-mkdir -p ~/go-exercises/bufpool/cmd/demo
-cd ~/go-exercises/bufpool
-go mod init example.com/bufpool
+mkdir -p go-solutions/05-strings-runes-and-unicode/09-strings-builder-performance/06-buffer-pool-hot-path/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/09-strings-builder-performance/06-buffer-pool-hot-path
 ```
 
 ### The two disciplines of a correct pool

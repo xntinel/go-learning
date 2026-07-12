@@ -31,9 +31,8 @@ shutdownctx/                 independent module: example.com/shutdownctx
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/shutdownctx/cmd/demo
-cd ~/go-exercises/shutdownctx
-go mod init example.com/shutdownctx
+mkdir -p go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/34-shutdown-cleanup-stack-cancelctx-capture-timing/cmd/demo
+cd go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/34-shutdown-cleanup-stack-cancelctx-capture-timing
 go mod edit -go=1.24
 ```
 

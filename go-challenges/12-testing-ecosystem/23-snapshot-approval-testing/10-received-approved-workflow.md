@@ -32,9 +32,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/approval/cmd/demo ~/go-exercises/approval/testdata
-cd ~/go-exercises/approval
-go mod init example.com/approval
+mkdir -p go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/10-received-approved-workflow/cmd/demo go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/10-received-approved-workflow/testdata
+cd go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/10-received-approved-workflow
 ```
 
 ### The received/approved state machine

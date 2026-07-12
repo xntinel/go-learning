@@ -29,9 +29,8 @@ hitcount/                  independent module: example.com/hitcount
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/hitcount/cmd/demo
-cd ~/go-exercises/hitcount
-go mod init example.com/hitcount
+mkdir -p go-solutions/09-pointers/09-pointer-aliasing-and-data-races/01-racy-counter-vs-atomic/cmd/demo
+cd go-solutions/09-pointers/09-pointer-aliasing-and-data-races/01-racy-counter-vs-atomic
 ```
 
 ### Why `c.value++` is a race and `atomic.Int64.Add` is not

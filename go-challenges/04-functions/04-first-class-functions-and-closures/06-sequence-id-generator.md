@@ -29,9 +29,8 @@ sequence/                  independent module: example.com/sequence
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/sequence/cmd/demo
-cd ~/go-exercises/sequence
-go mod init example.com/sequence
+mkdir -p go-solutions/04-functions/04-first-class-functions-and-closures/06-sequence-id-generator/cmd/demo
+cd go-solutions/04-functions/04-first-class-functions-and-closures/06-sequence-id-generator
 ```
 
 ### One factory call, one private counter

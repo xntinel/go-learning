@@ -28,9 +28,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/eventbus/cmd/demo
-cd ~/go-exercises/eventbus
-go mod init example.com/eventbus
+mkdir -p go-solutions/08-interfaces/03-type-assertions-and-type-switches/07-event-dispatcher-type-switch/cmd/demo
+cd go-solutions/08-interfaces/03-type-assertions-and-type-switches/07-event-dispatcher-type-switch
 ```
 
 ### The marker interface and the total switch

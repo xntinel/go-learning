@@ -31,9 +31,8 @@ Set up the single module. One `go.mod` at the root is the whole point of the
 single-module topology:
 
 ```bash
-mkdir -p ~/go-exercises/mono/platform/httpx ~/go-exercises/mono/cmd/demo
-cd ~/go-exercises/mono
-go mod init example.com/mono
+mkdir -p go-solutions/11-packages-and-modules/10-monorepo-module-strategy/01-shared-platform-library/platform/httpx go-solutions/11-packages-and-modules/10-monorepo-module-strategy/01-shared-platform-library/cmd/demo
+cd go-solutions/11-packages-and-modules/10-monorepo-module-strategy/01-shared-platform-library
 ```
 
 ### Why a shared envelope, and why it lives here

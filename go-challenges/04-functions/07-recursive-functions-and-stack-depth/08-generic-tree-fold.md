@@ -28,9 +28,8 @@ treefold/                  independent module: example.com/treefold
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/treefold/cmd/demo
-cd ~/go-exercises/treefold
-go mod init example.com/treefold
+mkdir -p go-solutions/04-functions/07-recursive-functions-and-stack-depth/08-generic-tree-fold/cmd/demo
+cd go-solutions/04-functions/07-recursive-functions-and-stack-depth/08-generic-tree-fold
 ```
 
 ### Separating traversal from aggregation with generics

@@ -27,9 +27,8 @@ secret/                    independent module: example.com/secret
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/secret/cmd/demo
-cd ~/go-exercises/secret
-go mod init example.com/secret
+mkdir -p go-solutions/05-strings-runes-and-unicode/06-string-formatting-with-fmt/03-formatter-secret-redaction/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/06-string-formatting-with-fmt/03-formatter-secret-redaction
 go mod edit -go=1.24
 ```
 

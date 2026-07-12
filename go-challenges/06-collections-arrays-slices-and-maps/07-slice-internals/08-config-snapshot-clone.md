@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/flagstore/cmd/demo
-cd ~/go-exercises/flagstore
-go mod init example.com/flagstore
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/08-config-snapshot-clone/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/08-config-snapshot-clone
 ```
 
 ### Why the read path must clone

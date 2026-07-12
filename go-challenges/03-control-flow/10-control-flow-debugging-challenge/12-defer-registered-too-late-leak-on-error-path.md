@@ -25,9 +25,8 @@ config/                     module example.com/config
 - Verify: `go test -count=1 ./...`.
 
 ```bash
-mkdir -p ~/go-exercises/config
-cd ~/go-exercises/config
-go mod init example.com/config
+mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/12-defer-registered-too-late-leak-on-error-path
+cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/12-defer-registered-too-late-leak-on-error-path
 ```
 
 ### The artifact and the planted bug

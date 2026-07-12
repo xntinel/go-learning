@@ -28,9 +28,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/typednil/cmd/demo
-cd ~/go-exercises/typednil
-go mod init example.com/typednil
+mkdir -p go-solutions/09-pointers/04-nil-pointers-and-guard-checks/04-typed-nil-interface-error-trap/cmd/demo
+cd go-solutions/09-pointers/04-nil-pointers-and-guard-checks/04-typed-nil-interface-error-trap
 go mod edit -go=1.24
 ```
 

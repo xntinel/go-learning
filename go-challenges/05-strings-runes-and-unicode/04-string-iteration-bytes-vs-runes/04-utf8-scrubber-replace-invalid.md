@@ -26,9 +26,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/scrub/cmd/demo
-cd ~/go-exercises/scrub
-go mod init example.com/scrub
+mkdir -p go-solutions/05-strings-runes-and-unicode/04-string-iteration-bytes-vs-runes/04-utf8-scrubber-replace-invalid/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/04-string-iteration-bytes-vs-runes/04-utf8-scrubber-replace-invalid
 ```
 
 ### Repair, and the fast path that matters

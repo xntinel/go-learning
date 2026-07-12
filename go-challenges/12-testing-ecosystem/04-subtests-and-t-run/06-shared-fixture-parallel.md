@@ -31,9 +31,8 @@ userrepo/                   independent module: example.com/userrepo
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/userrepo/cmd/demo
-cd ~/go-exercises/userrepo
-go mod init example.com/userrepo
+mkdir -p go-solutions/12-testing-ecosystem/04-subtests-and-t-run/06-shared-fixture-parallel/cmd/demo
+cd go-solutions/12-testing-ecosystem/04-subtests-and-t-run/06-shared-fixture-parallel
 ```
 
 ### Why parent Cleanup is the right teardown hook

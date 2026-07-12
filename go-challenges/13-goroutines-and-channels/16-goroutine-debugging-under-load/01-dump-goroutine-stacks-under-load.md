@@ -26,9 +26,8 @@ gdebug/                          independent module: example.com/gdebug
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/gdebug/internal/service ~/go-exercises/gdebug/cmd/demo
-cd ~/go-exercises/gdebug
-go mod init example.com/gdebug
+mkdir -p go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/01-dump-goroutine-stacks-under-load/internal/service go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/01-dump-goroutine-stacks-under-load/cmd/demo
+cd go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/01-dump-goroutine-stacks-under-load
 ```
 
 ### Why the dump is the artifact

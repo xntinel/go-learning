@@ -31,9 +31,8 @@ circuitbreaker/                  independent module: example.com/circuitbreaker
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/circuitbreaker/cmd/demo
-cd ~/go-exercises/circuitbreaker
-go mod init example.com/circuitbreaker
+mkdir -p go-solutions/04-functions/12-functional-options-pattern/16-circuit-breaker-state-machine/cmd/demo
+cd go-solutions/04-functions/12-functional-options-pattern/16-circuit-breaker-state-machine
 go mod edit -go=1.24
 ```
 

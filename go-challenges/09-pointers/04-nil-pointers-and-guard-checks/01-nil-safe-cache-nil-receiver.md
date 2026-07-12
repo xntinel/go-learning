@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/nilcache/cmd/demo
-cd ~/go-exercises/nilcache
-go mod init example.com/nilcache
+mkdir -p go-solutions/09-pointers/04-nil-pointers-and-guard-checks/01-nil-safe-cache-nil-receiver/cmd/demo
+cd go-solutions/09-pointers/04-nil-pointers-and-guard-checks/01-nil-safe-cache-nil-receiver
 go mod edit -go=1.24
 ```
 

@@ -29,8 +29,7 @@ group-by-aggregation/
 Set up the module:
 
 ```bash
-mkdir -p group-by-aggregation/cmd/demo && cd group-by-aggregation
-go mod init example.com/group-by-aggregation
+mkdir -p go-solutions/39-capstone-database-engine/06-query-planner/06-group-by-and-aggregation/cmd/demo && cd go-solutions/39-capstone-database-engine/06-query-planner/06-group-by-and-aggregation
 ```
 
 ### How grouping works

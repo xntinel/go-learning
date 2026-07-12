@@ -80,9 +80,8 @@ The mapping is kind-based, with a special case for `time.Time`:
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/orm/cmd/demo
-cd ~/go-exercises/orm
-go mod init example.com/orm
+mkdir -p go-solutions/27-reflection/08-building-a-simple-orm/08-building-a-simple-orm/cmd/demo
+cd go-solutions/27-reflection/08-building-a-simple-orm/08-building-a-simple-orm
 ```
 
 The schema and ORM logic compile with no external modules. Tests that require a SQL driver are gated behind `//go:build online`.

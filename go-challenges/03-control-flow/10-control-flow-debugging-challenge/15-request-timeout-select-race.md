@@ -29,9 +29,8 @@ reqwait/                    independent module: example.com/request-timeout-sele
 - Verify: `go test -count=1 ./...`.
 
 ```bash
-mkdir -p ~/go-exercises/request-timeout-select-race/cmd/demo
-cd ~/go-exercises/request-timeout-select-race
-go mod init example.com/request-timeout-select-race
+mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/15-request-timeout-select-race/cmd/demo
+cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/15-request-timeout-select-race
 ```
 
 ### Why both Done() channels have to be in the same select

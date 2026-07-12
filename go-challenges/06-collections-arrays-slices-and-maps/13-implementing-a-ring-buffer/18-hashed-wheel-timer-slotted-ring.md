@@ -54,9 +54,8 @@ hashedwheel/               module example.com/hashedwheel
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/hashedwheel
-cd ~/go-exercises/hashedwheel
-go mod init example.com/hashedwheel
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/13-implementing-a-ring-buffer/18-hashed-wheel-timer-slotted-ring
+cd go-solutions/06-collections-arrays-slices-and-maps/13-implementing-a-ring-buffer/18-hashed-wheel-timer-slotted-ring
 go mod edit -go=1.24
 ```
 

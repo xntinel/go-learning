@@ -22,8 +22,7 @@ bus_test.go          contract tests + a -race concurrent publish/cancel sweep
 Set up the module:
 
 ```bash
-mkdir -p event-bus/cmd/demo && cd event-bus
-go mod init example.com/event-bus
+mkdir -p go-solutions/24-design-patterns-in-go/09-observer-pattern-with-channels/01-event-bus/cmd/demo && cd go-solutions/24-design-patterns-in-go/09-observer-pattern-with-channels/01-event-bus
 ```
 
 ### The shape of the bus, and the one hazard that drives its design

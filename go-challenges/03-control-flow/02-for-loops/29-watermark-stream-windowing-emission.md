@@ -35,9 +35,8 @@ window/                        module example.com/window
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/window/cmd/demo
-cd ~/go-exercises/window
-go mod init example.com/window
+mkdir -p go-solutions/03-control-flow/02-for-loops/29-watermark-stream-windowing-emission/cmd/demo
+cd go-solutions/03-control-flow/02-for-loops/29-watermark-stream-windowing-emission
 go mod edit -go=1.24
 ```
 

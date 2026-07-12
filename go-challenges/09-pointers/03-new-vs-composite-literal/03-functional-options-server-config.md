@@ -32,9 +32,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/serverconfig/cmd/demo
-cd ~/go-exercises/serverconfig
-go mod init example.com/serverconfig
+mkdir -p go-solutions/09-pointers/03-new-vs-composite-literal/03-functional-options-server-config/cmd/demo
+cd go-solutions/09-pointers/03-new-vs-composite-literal/03-functional-options-server-config
 ```
 
 ### Why options beat new-then-assign

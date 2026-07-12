@@ -50,9 +50,8 @@ A breaker adds latency on the happy path (a mutex acquire per call). It also int
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/breaker/cmd/demo
-cd ~/go-exercises/breaker
-go mod init example.com/breaker
+mkdir -p go-solutions/30-production-patterns/09-circuit-breaker-half-open/09-circuit-breaker-half-open/cmd/demo
+cd go-solutions/30-production-patterns/09-circuit-breaker-half-open/09-circuit-breaker-half-open
 ```
 
 This is a library, not a program: there is no top-level `main`. Verify with `go test`.

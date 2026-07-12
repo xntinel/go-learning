@@ -25,9 +25,8 @@ httpclass/                 module example.com/httpclass
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/httpclass/cmd/demo
-cd ~/go-exercises/httpclass
-go mod init example.com/httpclass
+mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/04-status-class-switch-fallthrough/cmd/demo
+cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/04-status-class-switch-fallthrough
 ```
 
 ### The artifact and the planted bug

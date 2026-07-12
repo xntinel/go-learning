@@ -22,8 +22,7 @@ store_test.go        round-trip table, exhaustive bit-flip detection, short-buff
 Set up the module:
 
 ```bash
-mkdir -p message-encoding/cmd/demo && cd message-encoding
-go mod init example.com/message-encoding
+mkdir -p go-solutions/41-capstone-message-queue/02-persistent-message-storage/01-message-encoding/cmd/demo && cd go-solutions/41-capstone-message-queue/02-persistent-message-storage/01-message-encoding
 ```
 
 ### Why this exact layout

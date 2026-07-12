@@ -30,9 +30,8 @@ wireheader/                independent module: example.com/wireheader
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/wireheader/cmd/demo
-cd ~/go-exercises/wireheader
-go mod init example.com/wireheader
+mkdir -p go-solutions/07-structs-and-methods/09-struct-memory-layout-and-padding/08-wire-header-padding-trap/cmd/demo
+cd go-solutions/07-structs-and-methods/09-struct-memory-layout-and-padding/08-wire-header-padding-trap
 ```
 
 ### The padding gap between memory and the wire

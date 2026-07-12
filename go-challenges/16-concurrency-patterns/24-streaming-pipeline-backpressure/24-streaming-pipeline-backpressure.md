@@ -20,9 +20,8 @@ pipeline/
 Module path: `example.com/pipeline`. Set up with:
 
 ```bash
-mkdir -p ~/go-exercises/pipeline/internal/pipeline ~/go-exercises/pipeline/cmd/demo
-cd ~/go-exercises/pipeline
-go mod init example.com/pipeline
+mkdir -p go-solutions/16-concurrency-patterns/24-streaming-pipeline-backpressure/24-streaming-pipeline-backpressure/internal/pipeline go-solutions/16-concurrency-patterns/24-streaming-pipeline-backpressure/24-streaming-pipeline-backpressure/cmd/demo
+cd go-solutions/16-concurrency-patterns/24-streaming-pipeline-backpressure/24-streaming-pipeline-backpressure
 ```
 
 ## Concepts

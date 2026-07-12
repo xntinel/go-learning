@@ -25,8 +25,7 @@ idempotent_test.go   exactly-once under lost acks, the naive double-append, sequ
 Set up the module:
 
 ```bash
-mkdir -p idempotent-producer/cmd/demo && cd idempotent-producer
-go mod init example.com/idempotent-producer
+mkdir -p go-solutions/41-capstone-message-queue/04-producer-api-batching/04-idempotent-producer/cmd/demo && cd go-solutions/41-capstone-message-queue/04-producer-api-batching/04-idempotent-producer
 ```
 
 ### The problem retries create

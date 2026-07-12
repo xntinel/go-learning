@@ -31,9 +31,8 @@ composition/                independent module: example.com/composition
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/composition/cmd/demo
-cd ~/go-exercises/composition
-go mod init example.com/composition
+mkdir -p go-solutions/08-interfaces/10-dependency-injection-with-interfaces/06-composition-root-wiring-main/cmd/demo
+cd go-solutions/08-interfaces/10-dependency-injection-with-interfaces/06-composition-root-wiring-main
 ```
 
 ### The one place allowed to import adapters

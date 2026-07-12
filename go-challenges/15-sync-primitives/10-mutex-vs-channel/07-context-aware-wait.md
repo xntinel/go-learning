@@ -33,9 +33,8 @@ waitlimiter/                    independent module: example.com/waitlimiter
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/waitlimiter/limiter ~/go-exercises/waitlimiter/cmd/demo
-cd ~/go-exercises/waitlimiter
-go mod init example.com/waitlimiter
+mkdir -p go-solutions/15-sync-primitives/10-mutex-vs-channel/07-context-aware-wait/limiter go-solutions/15-sync-primitives/10-mutex-vs-channel/07-context-aware-wait/cmd/demo
+cd go-solutions/15-sync-primitives/10-mutex-vs-channel/07-context-aware-wait
 ```
 
 ### Channels block natively; mutexes must be taught to

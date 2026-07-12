@@ -30,9 +30,8 @@ spanattrs/                  independent module: example.com/spanattrs
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/spanattrs/cmd/demo
-cd ~/go-exercises/spanattrs
-go mod init example.com/spanattrs
+mkdir -p go-solutions/04-functions/03-variadic-functions/21-span-attribute-enricher-otel/cmd/demo
+cd go-solutions/04-functions/03-variadic-functions/21-span-attribute-enricher-otel
 go mod edit -go=1.24
 ```
 

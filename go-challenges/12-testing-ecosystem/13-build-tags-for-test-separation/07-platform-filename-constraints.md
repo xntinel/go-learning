@@ -34,9 +34,8 @@ filelock/                  independent module: example.com/filelock
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/filelock/cmd/demo
-cd ~/go-exercises/filelock
-go mod init example.com/filelock
+mkdir -p go-solutions/12-testing-ecosystem/13-build-tags-for-test-separation/07-platform-filename-constraints/cmd/demo
+cd go-solutions/12-testing-ecosystem/13-build-tags-for-test-separation/07-platform-filename-constraints
 go mod edit -go=1.26
 ```
 

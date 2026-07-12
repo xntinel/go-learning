@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p pooldemo/harness pooldemo/cmd/demo
-cd pooldemo
-go mod init example.com/pooldemo
+mkdir -p go-solutions/15-sync-primitives/05-sync-pool/03-pool-demo-cli/harness go-solutions/15-sync-primitives/05-sync-pool/03-pool-demo-cli/cmd/demo
+cd go-solutions/15-sync-primitives/05-sync-pool/03-pool-demo-cli
 ```
 
 ### Why write the harness against an io.Writer

@@ -31,9 +31,8 @@ pgrepo/                    independent module: example.com/pgrepo
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pgrepo/cmd/demo
-cd ~/go-exercises/pgrepo
-go mod init example.com/pgrepo
+mkdir -p go-solutions/12-testing-ecosystem/18-integration-tests-with-build-tags/04-testmain-integration-fixture/cmd/demo
+cd go-solutions/12-testing-ecosystem/18-integration-tests-with-build-tags/04-testmain-integration-fixture
 ```
 
 ### Why the interface, and why sql.go compiles by default

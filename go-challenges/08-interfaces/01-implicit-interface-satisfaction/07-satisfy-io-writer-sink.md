@@ -29,9 +29,8 @@ auditsink/                    independent module: example.com/auditsink
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/auditsink/cmd/demo
-cd ~/go-exercises/auditsink
-go mod init example.com/auditsink
+mkdir -p go-solutions/08-interfaces/01-implicit-interface-satisfaction/07-satisfy-io-writer-sink/cmd/demo
+cd go-solutions/08-interfaces/01-implicit-interface-satisfaction/07-satisfy-io-writer-sink
 ```
 
 ### The io.Writer contract and the redaction subtlety

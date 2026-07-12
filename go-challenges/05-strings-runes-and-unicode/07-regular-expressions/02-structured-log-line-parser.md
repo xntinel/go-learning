@@ -29,9 +29,8 @@ logparse/                   independent module: example.com/logparse
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/logparse/cmd/demo
-cd ~/go-exercises/logparse
-go mod init example.com/logparse
+mkdir -p go-solutions/05-strings-runes-and-unicode/07-regular-expressions/02-structured-log-line-parser/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/07-regular-expressions/02-structured-log-line-parser
 ```
 
 ### Why named groups and SubexpIndex, not m[1]

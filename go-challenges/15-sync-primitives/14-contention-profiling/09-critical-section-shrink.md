@@ -33,9 +33,8 @@ stats-snapshot/               independent module: example.com/stats-snapshot
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/stats-snapshot/cmd/demo
-cd ~/go-exercises/stats-snapshot
-go mod init example.com/stats-snapshot
+mkdir -p go-solutions/15-sync-primitives/14-contention-profiling/09-critical-section-shrink/cmd/demo
+cd go-solutions/15-sync-primitives/14-contention-profiling/09-critical-section-shrink
 ```
 
 ### The failure mode: encoding work inside the lock

@@ -29,9 +29,8 @@ redact/                     independent module: example.com/redact
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/redact/cmd/demo
-cd ~/go-exercises/redact
-go mod init example.com/redact
+mkdir -p go-solutions/05-strings-runes-and-unicode/07-regular-expressions/04-log-secret-redactor/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/07-regular-expressions/04-log-secret-redactor
 ```
 
 ### Why ReplaceAllStringFunc, and why preserve structure

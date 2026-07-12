@@ -28,9 +28,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/goproxycfg/cmd/demo
-cd ~/go-exercises/goproxycfg
-go mod init example.com/goproxycfg
+mkdir -p go-solutions/01-environment-and-tooling/05-go-install-and-third-party-packages/08-installing-from-private-module-servers/cmd/demo
+cd go-solutions/01-environment-and-tooling/05-go-install-and-third-party-packages/08-installing-from-private-module-servers
 ```
 
 ### The environment a private module needs

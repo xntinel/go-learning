@@ -27,9 +27,8 @@ validate/                    independent module: example.com/validate
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/validate/cmd/demo
-cd ~/go-exercises/validate
-go mod init example.com/validate
+mkdir -p go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/06-validation-rule-chain/cmd/demo
+cd go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/06-validation-rule-chain
 go mod edit -go=1.26
 ```
 

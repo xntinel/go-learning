@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/idcodec/cmd/demo
-cd ~/go-exercises/idcodec
-go mod init example.com/idcodec
+mkdir -p go-solutions/12-testing-ecosystem/24-property-based-testing/09-roundtrip-and-bounds-id-codec/cmd/demo
+cd go-solutions/12-testing-ecosystem/24-property-based-testing/09-roundtrip-and-bounds-id-codec
 go mod edit -go=1.26
 go get pgregory.net/rapid@latest
 ```

@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/recordindex/cmd/demo
-cd ~/go-exercises/recordindex
-go mod init example.com/recordindex
+mkdir -p go-solutions/09-pointers/05-pointers-to-structs/05-slice-index-address-indexer/cmd/demo
+cd go-solutions/09-pointers/05-pointers-to-structs/05-slice-index-address-indexer
 ```
 
 ### `&records[i]` addresses the element; `&v` addresses a copy

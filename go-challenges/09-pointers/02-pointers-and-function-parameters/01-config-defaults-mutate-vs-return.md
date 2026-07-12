@@ -30,9 +30,8 @@ config/                     independent module: example.com/config
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/config/cmd/demo
-cd ~/go-exercises/config
-go mod init example.com/config
+mkdir -p go-solutions/09-pointers/02-pointers-and-function-parameters/01-config-defaults-mutate-vs-return/cmd/demo
+cd go-solutions/09-pointers/02-pointers-and-function-parameters/01-config-defaults-mutate-vs-return
 ```
 
 ### Why one package needs all three forms

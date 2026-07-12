@@ -35,9 +35,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/moneyjson/cmd/demo
-cd ~/go-exercises/moneyjson
-go mod init example.com/moneyjson
+mkdir -p go-solutions/02-variables-types-and-constants/07-numeric-precision-and-overflow/03-money-json-codec-no-float/cmd/demo
+cd go-solutions/02-variables-types-and-constants/07-numeric-precision-and-overflow/03-money-json-codec-no-float
 ```
 
 ### Why the default decode is dangerous, and how the custom codec fixes it

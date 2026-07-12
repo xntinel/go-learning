@@ -27,9 +27,8 @@ pluginset/                 independent module: example.com/pluginset
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pluginset/cmd/demo
-cd ~/go-exercises/pluginset
-go mod init example.com/pluginset
+mkdir -p go-solutions/08-interfaces/07-nil-interface-values/07-nil-interface-equality-registry/cmd/demo
+cd go-solutions/08-interfaces/07-nil-interface-values/07-nil-interface-equality-registry
 ```
 
 ### Why interface equality is subtle and sometimes fatal

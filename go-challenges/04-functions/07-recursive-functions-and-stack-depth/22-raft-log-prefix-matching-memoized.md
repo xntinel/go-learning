@@ -43,9 +43,8 @@ raftmatch/                    independent module: example.com/raftmatch
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/raftmatch/cmd/demo
-cd ~/go-exercises/raftmatch
-go mod init example.com/raftmatch
+mkdir -p go-solutions/04-functions/07-recursive-functions-and-stack-depth/22-raft-log-prefix-matching-memoized/cmd/demo
+cd go-solutions/04-functions/07-recursive-functions-and-stack-depth/22-raft-log-prefix-matching-memoized
 go mod edit -go=1.24
 ```
 

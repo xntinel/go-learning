@@ -32,9 +32,8 @@ bridge/                      independent module: example.com/bridge
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/bridge/cmd/demo
-cd ~/go-exercises/bridge
-go mod init example.com/bridge
+mkdir -p go-solutions/13-goroutines-and-channels/04-channel-direction/12-bridge-nested-result-streams/cmd/demo
+cd go-solutions/13-goroutines-and-channels/04-channel-direction/12-bridge-nested-result-streams
 go get go.uber.org/goleak
 go mod tidy
 ```

@@ -28,9 +28,8 @@ readcache/                 independent module: example.com/readcache
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/readcache/cmd/demo
-cd ~/go-exercises/readcache
-go mod init example.com/readcache
+mkdir -p go-solutions/12-testing-ecosystem/05-benchmarks/04-exclude-setup-with-timers/cmd/demo
+cd go-solutions/12-testing-ecosystem/05-benchmarks/04-exclude-setup-with-timers
 go mod edit -go=1.24
 ```
 

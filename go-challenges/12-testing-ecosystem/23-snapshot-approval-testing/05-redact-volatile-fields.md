@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/redactsnap/cmd/demo ~/go-exercises/redactsnap/testdata
-cd ~/go-exercises/redactsnap
-go mod init example.com/redactsnap
+mkdir -p go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/05-redact-volatile-fields/cmd/demo go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/05-redact-volatile-fields/testdata
+cd go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/05-redact-volatile-fields
 ```
 
 ### Two ways to redact, and why regex here

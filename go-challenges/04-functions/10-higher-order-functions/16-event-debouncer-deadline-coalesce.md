@@ -28,9 +28,8 @@ debounce/                    independent module: example.com/debounce
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/debounce/cmd/demo
-cd ~/go-exercises/debounce
-go mod init example.com/debounce
+mkdir -p go-solutions/04-functions/10-higher-order-functions/16-event-debouncer-deadline-coalesce/cmd/demo
+cd go-solutions/04-functions/10-higher-order-functions/16-event-debouncer-deadline-coalesce
 go mod edit -go=1.24
 ```
 

@@ -42,9 +42,8 @@ hotp/                          module example.com/hotp
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/hotp
-cd ~/go-exercises/hotp
-go mod init example.com/hotp
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/16-hotp-truncation-hmac-array
+cd go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/16-hotp-truncation-hmac-array
 go mod edit -go=1.24
 ```
 

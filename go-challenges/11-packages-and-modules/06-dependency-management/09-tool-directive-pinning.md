@@ -30,9 +30,8 @@ toolgate/                  independent module: example.com/toolgate
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/toolgate/cmd/demo
-cd ~/go-exercises/toolgate
-go mod init example.com/toolgate
+mkdir -p go-solutions/11-packages-and-modules/06-dependency-management/09-tool-directive-pinning/cmd/demo
+cd go-solutions/11-packages-and-modules/06-dependency-management/09-tool-directive-pinning
 go get golang.org/x/mod
 ```
 

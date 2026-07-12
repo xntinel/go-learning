@@ -27,9 +27,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/clockscheduler/cmd/demo
-cd ~/go-exercises/clockscheduler
-go mod init example.com/clockscheduler
+mkdir -p go-solutions/12-testing-ecosystem/16-testing-time-dependent-code/01-injectable-clock-scheduler/cmd/demo
+cd go-solutions/12-testing-ecosystem/16-testing-time-dependent-code/01-injectable-clock-scheduler
 ```
 
 ### Why a Clock interface, and why exactly two methods

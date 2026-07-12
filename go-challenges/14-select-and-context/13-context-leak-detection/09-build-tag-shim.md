@@ -32,9 +32,8 @@ Verify: `go test -count=1 -race ./...` (default = shim) and `go test -race -tags
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/leakshim/cmd/demo
-cd ~/go-exercises/leakshim
-go mod init example.com/leakshim
+mkdir -p go-solutions/14-select-and-context/13-context-leak-detection/09-build-tag-shim/cmd/demo
+cd go-solutions/14-select-and-context/13-context-leak-detection/09-build-tag-shim
 ```
 
 ### One API, two implementations, chosen at compile time

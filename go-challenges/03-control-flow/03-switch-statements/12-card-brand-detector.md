@@ -24,9 +24,8 @@ cardbrand/                 independent module: example.com/card-brand-detector
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cardbrand
-cd ~/go-exercises/cardbrand
-go mod init example.com/card-brand-detector
+mkdir -p go-solutions/03-control-flow/03-switch-statements/12-card-brand-detector
+cd go-solutions/03-control-flow/03-switch-statements/12-card-brand-detector
 go mod edit -go=1.24
 ```
 

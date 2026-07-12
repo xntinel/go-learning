@@ -29,9 +29,8 @@ boundedstop/               independent module: example.com/boundedstop
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/boundedstop/cmd/demo
-cd ~/go-exercises/boundedstop
-go mod init example.com/boundedstop
+mkdir -p go-solutions/13-goroutines-and-channels/11-goroutine-lifecycle-management/07-deadline-bounded-stop/cmd/demo
+cd go-solutions/13-goroutines-and-channels/11-goroutine-lifecycle-management/07-deadline-bounded-stop
 ```
 
 ### Racing the drain against the deadline

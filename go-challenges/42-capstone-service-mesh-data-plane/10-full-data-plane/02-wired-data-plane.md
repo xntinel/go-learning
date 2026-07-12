@@ -28,8 +28,7 @@ dataplane_test.go each middleware in isolation, admin handlers, end-to-end
 Set up the module:
 
 ```bash
-mkdir -p dataplane/cmd/demo && cd dataplane
-go mod init example.com/dataplane
+mkdir -p go-solutions/42-capstone-service-mesh-data-plane/10-full-data-plane/02-wired-data-plane/cmd/demo && cd go-solutions/42-capstone-service-mesh-data-plane/10-full-data-plane/02-wired-data-plane
 go mod edit -go=1.26
 ```
 

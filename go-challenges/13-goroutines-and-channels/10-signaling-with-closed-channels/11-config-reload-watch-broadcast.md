@@ -33,9 +33,8 @@ confwatch/                   independent module: example.com/confwatch
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/confwatch/cmd/demo
-cd ~/go-exercises/confwatch
-go mod init example.com/confwatch
+mkdir -p go-solutions/13-goroutines-and-channels/10-signaling-with-closed-channels/11-config-reload-watch-broadcast/cmd/demo
+cd go-solutions/13-goroutines-and-channels/10-signaling-with-closed-channels/11-config-reload-watch-broadcast
 go get go.uber.org/goleak
 ```
 

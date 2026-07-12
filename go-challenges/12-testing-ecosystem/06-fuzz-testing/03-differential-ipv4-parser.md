@@ -32,9 +32,8 @@ Verify: `go test -race ./...`, then `go test -fuzz=FuzzParseIPv4 -fuzztime=2s`.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ipv4/cmd/demo
-cd ~/go-exercises/ipv4
-go mod init example.com/ipv4
+mkdir -p go-solutions/12-testing-ecosystem/06-fuzz-testing/03-differential-ipv4-parser/cmd/demo
+cd go-solutions/12-testing-ecosystem/06-fuzz-testing/03-differential-ipv4-parser
 ```
 
 ### Why differential fuzzing, and what "agree" means precisely

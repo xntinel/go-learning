@@ -22,8 +22,7 @@ prefetch_test.go     full-drain order, window<1 normalization, no-leak on early 
 Set up the module:
 
 ```bash
-mkdir -p job-queue-prefetch/cmd/demo && cd job-queue-prefetch
-go mod init example.com/job-queue-prefetch
+mkdir -p go-solutions/25-iterators-and-modern-go/07-iter-package-usage/07-job-queue-prefetch/cmd/demo && cd go-solutions/25-iterators-and-modern-go/07-iter-package-usage/07-job-queue-prefetch
 ```
 
 ### Who owns the pull, and why it must be the worker

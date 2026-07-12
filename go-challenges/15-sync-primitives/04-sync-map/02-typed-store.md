@@ -30,8 +30,7 @@ typedstore/                   independent module: example.com/typedstore
 Set up the module:
 
 ```bash
-mkdir typedstore && cd typedstore
-go mod init example.com/typedstore
+mkdir go-solutions/15-sync-primitives/04-sync-map/02-typed-store && cd go-solutions/15-sync-primitives/04-sync-map/02-typed-store
 ```
 
 ### Why wrap the map at all

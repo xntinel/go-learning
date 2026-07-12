@@ -30,9 +30,8 @@ treewalk/                  independent module: example.com/treewalk
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/treewalk/walk ~/go-exercises/treewalk/cmd/demo
-cd ~/go-exercises/treewalk
-go mod init example.com/treewalk
+mkdir -p go-solutions/04-functions/07-recursive-functions-and-stack-depth/01-recursive-fs-tree-walker/walk go-solutions/04-functions/07-recursive-functions-and-stack-depth/01-recursive-fs-tree-walker/cmd/demo
+cd go-solutions/04-functions/07-recursive-functions-and-stack-depth/01-recursive-fs-tree-walker
 ```
 
 ### Why recursion is the right default here

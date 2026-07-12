@@ -24,9 +24,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/schemacheck/cmd/demo ~/go-exercises/schemacheck/testdata
-cd ~/go-exercises/schemacheck
-go mod init example.com/schemacheck
+mkdir -p go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/05-embed-fixtures/cmd/demo go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/05-embed-fixtures/testdata
+cd go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/05-embed-fixtures
 ```
 
 ### Why embed, and the embed rules that bite

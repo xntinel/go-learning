@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...` (compares); `go test -update` (rewrites g
 Set up the module:
 
 ```bash
-mkdir -p goldenflag/cmd/demo goldenflag/testdata
-cd goldenflag
-go mod init example.com/goldenflag
+mkdir -p go-solutions/12-testing-ecosystem/22-testmain-setup-teardown/06-golden-update-flag-wiring/cmd/demo go-solutions/12-testing-ecosystem/22-testmain-setup-teardown/06-golden-update-flag-wiring/testdata
+cd go-solutions/12-testing-ecosystem/22-testmain-setup-teardown/06-golden-update-flag-wiring
 ```
 
 ### Why a flag, and why it must never run in CI

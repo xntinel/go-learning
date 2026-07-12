@@ -26,9 +26,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/confsnap/cmd/demo
-cd ~/go-exercises/confsnap
-go mod init example.com/confsnap
+mkdir -p go-solutions/12-testing-ecosystem/15-testable-examples/05-sorted-keys-stable-output/cmd/demo
+cd go-solutions/12-testing-ecosystem/15-testable-examples/05-sorted-keys-stable-output
 ```
 
 ## Sort-then-print versus // Unordered output:

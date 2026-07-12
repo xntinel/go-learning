@@ -31,9 +31,8 @@ reqmetrics/                independent module: example.com/reqmetrics
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/reqmetrics/cmd/demo
-cd ~/go-exercises/reqmetrics
-go mod init example.com/reqmetrics
+mkdir -p go-solutions/09-pointers/09-pointer-aliasing-and-data-races/08-lockfree-request-metrics/cmd/demo
+cd go-solutions/09-pointers/09-pointer-aliasing-and-data-races/08-lockfree-request-metrics
 ```
 
 ### Why atomics beat a mutex here, and the defer-decrement contract

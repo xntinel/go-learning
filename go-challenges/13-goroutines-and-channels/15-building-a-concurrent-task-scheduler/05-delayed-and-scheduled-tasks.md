@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/delayed-scheduler/cmd/demo
-cd ~/go-exercises/delayed-scheduler
-go mod init example.com/delayed-scheduler
+mkdir -p go-solutions/13-goroutines-and-channels/15-building-a-concurrent-task-scheduler/05-delayed-and-scheduled-tasks/cmd/demo
+cd go-solutions/13-goroutines-and-channels/15-building-a-concurrent-task-scheduler/05-delayed-and-scheduled-tasks
 go mod edit -go=1.25
 ```
 

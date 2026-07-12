@@ -55,9 +55,8 @@ A slab allocator maintains a freelist of fixed-size blocks. Allocation pops from
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/arena/cmd/demo
-cd ~/go-exercises/arena
-go mod init example.com/arena
+mkdir -p go-solutions/35-runtime-garbage-collector/10-arena-allocation-patterns/10-arena-allocation-patterns/cmd/demo
+cd go-solutions/35-runtime-garbage-collector/10-arena-allocation-patterns/10-arena-allocation-patterns
 ```
 
 ### Exercise 1: ByteArena and TypedArena

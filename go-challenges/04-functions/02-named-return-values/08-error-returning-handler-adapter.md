@@ -28,9 +28,8 @@ handlererr/                 independent module: example.com/handlererr
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/handlererr/cmd/demo
-cd ~/go-exercises/handlererr
-go mod init example.com/handlererr
+mkdir -p go-solutions/04-functions/02-named-return-values/08-error-returning-handler-adapter/cmd/demo
+cd go-solutions/04-functions/02-named-return-values/08-error-returning-handler-adapter
 ```
 
 ### One boundary, one map, one log line

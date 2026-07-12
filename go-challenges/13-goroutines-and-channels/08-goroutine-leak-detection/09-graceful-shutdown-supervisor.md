@@ -29,9 +29,8 @@ supervisor/                  independent module: example.com/supervisor
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/supervisor/cmd/demo
-cd ~/go-exercises/supervisor
-go mod init example.com/supervisor
+mkdir -p go-solutions/13-goroutines-and-channels/08-goroutine-leak-detection/09-graceful-shutdown-supervisor/cmd/demo
+cd go-solutions/13-goroutines-and-channels/08-goroutine-leak-detection/09-graceful-shutdown-supervisor
 go get go.uber.org/goleak@v1.3.0
 ```
 

@@ -33,9 +33,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/fanin/cmd/demo
-cd ~/go-exercises/fanin
-go mod init example.com/fanin
+mkdir -p go-solutions/14-select-and-context/08-select-priority-and-starvation/04-error-channel-precedence/cmd/demo
+cd go-solutions/14-select-and-context/08-select-priority-and-starvation/04-error-channel-precedence
 ```
 
 ### Fail-fast is priority over an error channel

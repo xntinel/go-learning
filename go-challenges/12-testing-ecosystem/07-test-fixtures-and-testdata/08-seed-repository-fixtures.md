@@ -24,9 +24,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/repofixture/cmd/demo ~/go-exercises/repofixture/testdata
-cd ~/go-exercises/repofixture
-go mod init example.com/repofixture
+mkdir -p go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/08-seed-repository-fixtures/cmd/demo go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/08-seed-repository-fixtures/testdata
+cd go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/08-seed-repository-fixtures
 ```
 
 ### Seed data as the source of truth for query tests

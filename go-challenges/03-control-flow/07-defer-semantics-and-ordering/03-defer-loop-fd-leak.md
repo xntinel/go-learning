@@ -30,9 +30,8 @@ cfgload/                     independent module: example.com/cfgload
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cfgload/cmd/demo
-cd ~/go-exercises/cfgload
-go mod init example.com/cfgload
+mkdir -p go-solutions/03-control-flow/07-defer-semantics-and-ordering/03-defer-loop-fd-leak/cmd/demo
+cd go-solutions/03-control-flow/07-defer-semantics-and-ordering/03-defer-loop-fd-leak
 ```
 
 ### Why the helper is the fix, not a style preference

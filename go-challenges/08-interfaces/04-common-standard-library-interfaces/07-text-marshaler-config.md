@@ -29,9 +29,8 @@ loglevel/                   independent module: example.com/loglevel
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/loglevel/cmd/demo
-cd ~/go-exercises/loglevel
-go mod init example.com/loglevel
+mkdir -p go-solutions/08-interfaces/04-common-standard-library-interfaces/07-text-marshaler-config/cmd/demo
+cd go-solutions/08-interfaces/04-common-standard-library-interfaces/07-text-marshaler-config
 ```
 
 ### One text hook, four decoders

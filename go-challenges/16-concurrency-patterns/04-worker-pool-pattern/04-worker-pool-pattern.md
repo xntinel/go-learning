@@ -51,9 +51,8 @@ more jobs to send. The pool's closer is independent.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/workerpool/internal/workerpool ~/go-exercises/workerpool/cmd/workerpooldemo
-cd ~/go-exercises/workerpool
-go mod init example.com/workerpool
+mkdir -p go-solutions/16-concurrency-patterns/04-worker-pool-pattern/04-worker-pool-pattern/internal/workerpool go-solutions/16-concurrency-patterns/04-worker-pool-pattern/04-worker-pool-pattern/cmd/workerpooldemo
+cd go-solutions/16-concurrency-patterns/04-worker-pool-pattern/04-worker-pool-pattern
 ```
 
 ### Exercise 1: The Pool Type

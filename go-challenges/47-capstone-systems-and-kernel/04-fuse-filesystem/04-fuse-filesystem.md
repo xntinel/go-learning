@@ -87,10 +87,9 @@ FUSE dispatches concurrent requests from multiple kernel threads. go-fuse handle
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/overlay-fs/overlay
-mkdir -p ~/go-exercises/overlay-fs/cmd/overlay-fs
-cd ~/go-exercises/overlay-fs
-go mod init example.com/overlay-fs
+mkdir -p go-solutions/47-capstone-systems-and-kernel/04-fuse-filesystem/04-fuse-filesystem/overlay
+mkdir -p go-solutions/47-capstone-systems-and-kernel/04-fuse-filesystem/04-fuse-filesystem/cmd/overlay-fs
+cd go-solutions/47-capstone-systems-and-kernel/04-fuse-filesystem/04-fuse-filesystem
 go get github.com/hanwen/go-fuse/v2@latest
 ```
 

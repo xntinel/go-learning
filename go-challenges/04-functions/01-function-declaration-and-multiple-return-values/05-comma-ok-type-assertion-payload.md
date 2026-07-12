@@ -29,9 +29,8 @@ webhook/                   independent module: example.com/webhook
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/webhook/cmd/demo
-cd ~/go-exercises/webhook
-go mod init example.com/webhook
+mkdir -p go-solutions/04-functions/01-function-declaration-and-multiple-return-values/05-comma-ok-type-assertion-payload/cmd/demo
+cd go-solutions/04-functions/01-function-declaration-and-multiple-return-values/05-comma-ok-type-assertion-payload
 go mod edit -go=1.25
 ```
 

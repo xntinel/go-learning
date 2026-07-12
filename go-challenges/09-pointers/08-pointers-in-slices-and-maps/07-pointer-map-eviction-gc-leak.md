@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/evictcache/cmd/demo
-cd ~/go-exercises/evictcache
-go mod init example.com/evictcache
+mkdir -p go-solutions/09-pointers/08-pointers-in-slices-and-maps/07-pointer-map-eviction-gc-leak/cmd/demo
+cd go-solutions/09-pointers/08-pointers-in-slices-and-maps/07-pointer-map-eviction-gc-leak
 ```
 
 ### Why delete is not enough, and how to prove it

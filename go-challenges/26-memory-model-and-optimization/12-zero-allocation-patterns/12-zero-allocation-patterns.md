@@ -35,9 +35,8 @@ Hot paths often focus on success-path allocations, but malformed input still nee
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/zerolog/cmd/demo
-cd ~/go-exercises/zerolog
-go mod init zerolog
+mkdir -p go-solutions/26-memory-model-and-optimization/12-zero-allocation-patterns/12-zero-allocation-patterns/cmd/demo
+cd go-solutions/26-memory-model-and-optimization/12-zero-allocation-patterns/12-zero-allocation-patterns
 ```
 
 This is a library package. The demo is only a consumer of the exported API; verification is done with `go test`.

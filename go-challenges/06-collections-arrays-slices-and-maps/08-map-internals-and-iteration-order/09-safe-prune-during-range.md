@@ -30,9 +30,8 @@ sweep/                     independent module: example.com/sweep
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/sweep/cmd/demo
-cd ~/go-exercises/sweep
-go mod init example.com/sweep
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/09-safe-prune-during-range/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/09-safe-prune-during-range
 ```
 
 ### The spec's rule, stated exactly

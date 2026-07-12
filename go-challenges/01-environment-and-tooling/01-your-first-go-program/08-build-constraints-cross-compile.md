@@ -35,9 +35,8 @@ Verify: `go test -count=1 ./...` on the host; a shell harness cross-compiles for
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/platform/cmd/demo
-cd ~/go-exercises/platform
-go mod init example.com/platform
+mkdir -p go-solutions/01-environment-and-tooling/01-your-first-go-program/08-build-constraints-cross-compile/cmd/demo
+cd go-solutions/01-environment-and-tooling/01-your-first-go-program/08-build-constraints-cross-compile
 ```
 
 ### One file per platform, selected at compile time

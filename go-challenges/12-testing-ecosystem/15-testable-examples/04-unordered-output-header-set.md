@@ -26,9 +26,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/headerset/cmd/demo
-cd ~/go-exercises/headerset
-go mod init example.com/headerset
+mkdir -p go-solutions/12-testing-ecosystem/15-testable-examples/04-unordered-output-header-set/cmd/demo
+cd go-solutions/12-testing-ecosystem/15-testable-examples/04-unordered-output-header-set
 ```
 
 ## Why a plain // Output: flakes, and what fixes it

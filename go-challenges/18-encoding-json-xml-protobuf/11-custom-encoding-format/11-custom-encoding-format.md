@@ -21,9 +21,8 @@ If one message is expected, trailing bytes are suspicious. Rejecting them catche
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/custom-format/cmd/demo
-cd ~/go-exercises/custom-format
-go mod init example.com/custom-format
+mkdir -p go-solutions/18-encoding-json-xml-protobuf/11-custom-encoding-format/11-custom-encoding-format/cmd/demo
+cd go-solutions/18-encoding-json-xml-protobuf/11-custom-encoding-format/11-custom-encoding-format
 go mod edit -go=1.26
 ```
 

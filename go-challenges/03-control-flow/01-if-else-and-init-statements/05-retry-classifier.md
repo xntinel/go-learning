@@ -30,9 +30,8 @@ retryclass/                 independent module: example.com/retryclass
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/retryclass/cmd/demo
-cd ~/go-exercises/retryclass
-go mod init example.com/retryclass
+mkdir -p go-solutions/03-control-flow/01-if-else-and-init-statements/05-retry-classifier/cmd/demo
+cd go-solutions/03-control-flow/01-if-else-and-init-statements/05-retry-classifier
 ```
 
 ## Classify by type and sentinel, never by string or Temporary()

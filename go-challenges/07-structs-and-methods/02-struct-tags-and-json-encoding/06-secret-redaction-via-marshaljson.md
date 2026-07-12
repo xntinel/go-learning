@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/secretbox/secret ~/go-exercises/secretbox/cmd/demo
-cd ~/go-exercises/secretbox
-go mod init example.com/secretbox
+mkdir -p go-solutions/07-structs-and-methods/02-struct-tags-and-json-encoding/06-secret-redaction-via-marshaljson/secret go-solutions/07-structs-and-methods/02-struct-tags-and-json-encoding/06-secret-redaction-via-marshaljson/cmd/demo
+cd go-solutions/07-structs-and-methods/02-struct-tags-and-json-encoding/06-secret-redaction-via-marshaljson
 go mod edit -go=1.24
 ```
 

@@ -28,9 +28,8 @@ depthprobe/                   module example.com/depthprobe
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/depthprobe/cmd/demo
-cd ~/go-exercises/depthprobe
-go mod init example.com/depthprobe
+mkdir -p go-solutions/11-packages-and-modules/03-internal-packages/06-scoping-internal-by-depth/cmd/demo
+cd go-solutions/11-packages-and-modules/03-internal-packages/06-scoping-internal-by-depth
 ```
 
 ### The rule stated as a tree

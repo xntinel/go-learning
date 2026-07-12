@@ -34,9 +34,8 @@ orderedbank/               independent module: example.com/orderedbank
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/orderedbank/bank ~/go-exercises/orderedbank/cmd/demo
-cd ~/go-exercises/orderedbank
-go mod init example.com/orderedbank
+mkdir -p go-solutions/15-sync-primitives/09-lock-ordering-deadlock-prevention/01-ordered-transfer-bank/bank go-solutions/15-sync-primitives/09-lock-ordering-deadlock-prevention/01-ordered-transfer-bank/cmd/demo
+cd go-solutions/15-sync-primitives/09-lock-ordering-deadlock-prevention/01-ordered-transfer-bank
 ```
 
 ### Why the order must belong to the account, not the caller

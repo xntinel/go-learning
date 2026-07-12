@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/envelopeconfig/cmd/demo
-cd ~/go-exercises/envelopeconfig
-go mod init example.com/envelopeconfig
+mkdir -p go-solutions/54-cloud-native-platform-and-orchestration/07-cloud-config-and-secrets-portability/03-envelope-encrypted-config/cmd/demo
+cd go-solutions/54-cloud-native-platform-and-orchestration/07-cloud-config-and-secrets-portability/03-envelope-encrypted-config
 go get gocloud.dev@latest
 ```
 

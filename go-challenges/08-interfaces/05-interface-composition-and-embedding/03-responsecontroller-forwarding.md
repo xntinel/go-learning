@@ -30,9 +30,8 @@ streamwriter/               independent module: example.com/streamwriter
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/streamwriter/cmd/demo
-cd ~/go-exercises/streamwriter
-go mod init example.com/streamwriter
+mkdir -p go-solutions/08-interfaces/05-interface-composition-and-embedding/03-responsecontroller-forwarding/cmd/demo
+cd go-solutions/08-interfaces/05-interface-composition-and-embedding/03-responsecontroller-forwarding
 ```
 
 ### The bug, stated precisely

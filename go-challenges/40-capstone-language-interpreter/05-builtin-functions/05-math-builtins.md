@@ -24,8 +24,7 @@ math_test.go  type preservation, rounding, domain guards, random ranges
 Set up the module:
 
 ```bash
-mkdir -p mathbuiltins/cmd/demo && cd mathbuiltins
-go mod init example.com/mathbuiltins
+mkdir -p go-solutions/40-capstone-language-interpreter/05-builtin-functions/05-math-builtins/cmd/demo && cd go-solutions/40-capstone-language-interpreter/05-builtin-functions/05-math-builtins
 ```
 
 ### Type preservation, domain guards, and the float bridge

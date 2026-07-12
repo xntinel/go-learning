@@ -29,9 +29,8 @@ httperr/                   independent module: example.com/domain-error-to-statu
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/httperr/cmd/demo
-cd ~/go-exercises/httperr
-go mod init example.com/domain-error-to-status
+mkdir -p go-solutions/03-control-flow/03-switch-statements/07-domain-error-to-status/cmd/demo
+cd go-solutions/03-control-flow/03-switch-statements/07-domain-error-to-status
 go mod edit -go=1.24
 ```
 

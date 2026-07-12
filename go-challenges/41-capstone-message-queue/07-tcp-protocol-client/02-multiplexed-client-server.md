@@ -25,8 +25,7 @@ mqmux_test.go        echo over net.Pipe, 100 concurrent round trips, closed-clie
 Set up the module:
 
 ```bash
-mkdir -p mqmux/cmd/demo && cd mqmux
-go mod init example.com/mqmux
+mkdir -p go-solutions/41-capstone-message-queue/07-tcp-protocol-client/02-multiplexed-client-server/cmd/demo && cd go-solutions/41-capstone-message-queue/07-tcp-protocol-client/02-multiplexed-client-server
 ```
 
 ### Why one reader, one write mutex, and a correlation-ID map

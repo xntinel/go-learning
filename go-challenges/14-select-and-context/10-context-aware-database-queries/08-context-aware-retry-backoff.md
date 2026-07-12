@@ -67,9 +67,8 @@ thundering herd of retriers does not resynchronize on the same schedule.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/dbretry/cmd/demo
-cd ~/go-exercises/dbretry
-go mod init example.com/dbretry
+mkdir -p go-solutions/14-select-and-context/10-context-aware-database-queries/08-context-aware-retry-backoff/cmd/demo
+cd go-solutions/14-select-and-context/10-context-aware-database-queries/08-context-aware-retry-backoff
 go mod edit -go=1.25
 ```
 

@@ -26,9 +26,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/durparse/cmd/demo
-cd ~/go-exercises/durparse
-go mod init example.com/durparse
+mkdir -p go-solutions/12-testing-ecosystem/15-testable-examples/09-multiple-scenario-suffix-examples/cmd/demo
+cd go-solutions/12-testing-ecosystem/15-testable-examples/09-multiple-scenario-suffix-examples
 ```
 
 ## One symbol, several scenarios

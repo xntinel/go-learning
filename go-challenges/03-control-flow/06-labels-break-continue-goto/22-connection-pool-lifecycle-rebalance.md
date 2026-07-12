@@ -31,9 +31,8 @@ pooldrain/                  independent module: example.com/pooldrain
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pooldrain/cmd/demo
-cd ~/go-exercises/pooldrain
-go mod init example.com/pooldrain
+mkdir -p go-solutions/03-control-flow/06-labels-break-continue-goto/22-connection-pool-lifecycle-rebalance/cmd/demo
+cd go-solutions/03-control-flow/06-labels-break-continue-goto/22-connection-pool-lifecycle-rebalance
 go mod edit -go=1.24
 ```
 

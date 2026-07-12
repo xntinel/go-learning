@@ -28,9 +28,8 @@ reqbuilder/                 independent module: example.com/reqbuilder
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/reqbuilder/cmd/demo
-cd ~/go-exercises/reqbuilder
-go mod init example.com/reqbuilder
+mkdir -p go-solutions/07-structs-and-methods/11-builder-pattern-for-complex-structs/01-request-builder-with-validation/cmd/demo
+cd go-solutions/07-structs-and-methods/11-builder-pattern-for-complex-structs/01-request-builder-with-validation
 ```
 
 ### Why the terminal is the only validation point

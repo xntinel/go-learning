@@ -32,9 +32,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/sharedfixture/cmd/demo
-cd ~/go-exercises/sharedfixture
-go mod init example.com/sharedfixture
+mkdir -p go-solutions/12-testing-ecosystem/14-parallel-tests/03-shared-server-fixture-teardown/cmd/demo
+cd go-solutions/12-testing-ecosystem/14-parallel-tests/03-shared-server-fixture-teardown
 ```
 
 ### Why the server is a shared read-only fixture

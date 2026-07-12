@@ -30,9 +30,8 @@ flatten/                   independent module: example.com/flatten
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/flatten/cmd/demo
-cd ~/go-exercises/flatten
-go mod init example.com/flatten
+mkdir -p go-solutions/10-error-handling/07-multiple-error-returns/08-unwrap-does-not-unwrap-join/cmd/demo
+cd go-solutions/10-error-handling/07-multiple-error-returns/08-unwrap-does-not-unwrap-join
 ```
 
 ### Why errors.Unwrap comes up empty

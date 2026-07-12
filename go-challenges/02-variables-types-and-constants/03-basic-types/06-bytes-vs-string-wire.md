@@ -29,9 +29,8 @@ wire/                      independent module: example.com/wire
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/wire/cmd/demo
-cd ~/go-exercises/wire
-go mod init example.com/wire
+mkdir -p go-solutions/02-variables-types-and-constants/03-basic-types/06-bytes-vs-string-wire/cmd/demo
+cd go-solutions/02-variables-types-and-constants/03-basic-types/06-bytes-vs-string-wire
 ```
 
 ### Why bytes, and why the copy matters

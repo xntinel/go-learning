@@ -21,9 +21,8 @@ Unknown JSON fields are a policy decision. Ignoring them gives forward compatibi
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/eventjson/cmd/demo
-cd ~/go-exercises/eventjson
-go mod init example.com/eventjson
+mkdir -p go-solutions/18-encoding-json-xml-protobuf/05-handling-unknown-json-fields/05-handling-unknown-json-fields/cmd/demo
+cd go-solutions/18-encoding-json-xml-protobuf/05-handling-unknown-json-fields/05-handling-unknown-json-fields
 go mod edit -go=1.26
 ```
 

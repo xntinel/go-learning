@@ -31,9 +31,8 @@ timeout/                    independent module: example.com/timeout
 Set up the module. `testing/synctest` requires Go 1.25+:
 
 ```bash
-mkdir -p ~/go-exercises/timeout/cmd/demo
-cd ~/go-exercises/timeout
-go mod init example.com/timeout
+mkdir -p go-solutions/08-interfaces/10-dependency-injection-with-interfaces/08-synctest-time-dependent-timeout/cmd/demo
+cd go-solutions/08-interfaces/10-dependency-injection-with-interfaces/08-synctest-time-dependent-timeout
 go mod edit -go=1.25
 ```
 

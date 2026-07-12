@@ -29,8 +29,7 @@ sort-limit-join/
 Set up the module:
 
 ```bash
-mkdir -p sort-limit-join/cmd/demo && cd sort-limit-join
-go mod init example.com/sort-limit-join
+mkdir -p go-solutions/39-capstone-database-engine/06-query-planner/05-sort-limit-and-joins/cmd/demo && cd go-solutions/39-capstone-database-engine/06-query-planner/05-sort-limit-and-joins
 ```
 
 ### The reused scaffolding

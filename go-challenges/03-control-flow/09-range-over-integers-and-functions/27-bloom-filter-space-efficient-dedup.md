@@ -31,9 +31,8 @@ Verify: `go test -count=1 ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/bloom-filter-space-efficient-dedup/cmd/demo
-cd ~/go-exercises/bloom-filter-space-efficient-dedup
-go mod init example.com/bloom-filter-space-efficient-dedup
+mkdir -p go-solutions/03-control-flow/09-range-over-integers-and-functions/27-bloom-filter-space-efficient-dedup/cmd/demo
+cd go-solutions/03-control-flow/09-range-over-integers-and-functions/27-bloom-filter-space-efficient-dedup
 go mod edit -go=1.24
 ```
 

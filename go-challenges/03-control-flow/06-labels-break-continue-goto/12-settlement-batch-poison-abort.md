@@ -20,9 +20,8 @@ settlement/                  independent module: example.com/settlement
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/settlement
-cd ~/go-exercises/settlement
-go mod init example.com/settlement
+mkdir -p go-solutions/03-control-flow/06-labels-break-continue-goto/12-settlement-batch-poison-abort
+cd go-solutions/03-control-flow/06-labels-break-continue-goto/12-settlement-batch-poison-abort
 go mod edit -go=1.24
 ```
 

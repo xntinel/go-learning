@@ -26,8 +26,7 @@ writeskew_test.go  write-skew anomaly, ForUpdate guard (table-driven), ForUpdate
 Set up the module:
 
 ```bash
-mkdir -p mvcc-write-skew/cmd/demo && cd mvcc-write-skew
-go mod init example.com/mvcc-write-skew
+mkdir -p go-solutions/39-capstone-database-engine/07-mvcc/03-write-skew-and-for-update/cmd/demo && cd go-solutions/39-capstone-database-engine/07-mvcc/03-write-skew-and-for-update
 ```
 
 ### Why write skew slips past first-writer-wins

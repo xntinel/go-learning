@@ -46,9 +46,8 @@ fpdedup/                       module example.com/fpdedup
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/fpdedup
-cd ~/go-exercises/fpdedup
-go mod init example.com/fpdedup
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/17-fingerprint-dedup-stream-filter
+cd go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/17-fingerprint-dedup-stream-filter
 go mod edit -go=1.24
 ```
 

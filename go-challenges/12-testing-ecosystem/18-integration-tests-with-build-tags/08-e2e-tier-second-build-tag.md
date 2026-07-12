@@ -31,9 +31,8 @@ e2eclient/                 independent module: example.com/e2eclient
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/e2eclient/cmd/demo
-cd ~/go-exercises/e2eclient
-go mod init example.com/e2eclient
+mkdir -p go-solutions/12-testing-ecosystem/18-integration-tests-with-build-tags/08-e2e-tier-second-build-tag/cmd/demo
+cd go-solutions/12-testing-ecosystem/18-integration-tests-with-build-tags/08-e2e-tier-second-build-tag
 ```
 
 ### Three tiers, three tags, three stages

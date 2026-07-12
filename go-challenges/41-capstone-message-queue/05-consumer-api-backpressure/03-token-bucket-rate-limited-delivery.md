@@ -23,8 +23,7 @@ ratelimit_test.go    deterministic bound (fake clock) + live bound under -race +
 Set up the module:
 
 ```bash
-mkdir -p ratelimit/cmd/demo && cd ratelimit
-go mod init example.com/ratelimit
+mkdir -p go-solutions/41-capstone-message-queue/05-consumer-api-backpressure/03-token-bucket-rate-limited-delivery/cmd/demo && cd go-solutions/41-capstone-message-queue/05-consumer-api-backpressure/03-token-bucket-rate-limited-delivery
 ```
 
 ### The token bucket: lazy refill and an injectable clock

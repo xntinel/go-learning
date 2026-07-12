@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/bodyguard/cmd/demo
-cd ~/go-exercises/bodyguard
-go mod init example.com/bodyguard
+mkdir -p go-solutions/14-select-and-context/09-context-in-http-servers-clients/09-bounded-body-read-guard/cmd/demo
+cd go-solutions/14-select-and-context/09-context-in-http-servers-clients/09-bounded-body-read-guard
 ```
 
 ## The design

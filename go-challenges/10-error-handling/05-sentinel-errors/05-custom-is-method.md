@@ -29,9 +29,8 @@ apierr/                       independent module: example.com/apierr
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/apierr/cmd/demo
-cd ~/go-exercises/apierr
-go mod init example.com/apierr
+mkdir -p go-solutions/10-error-handling/05-sentinel-errors/05-custom-is-method/cmd/demo
+cd go-solutions/10-error-handling/05-sentinel-errors/05-custom-is-method
 ```
 
 ### One category sentinel, many members

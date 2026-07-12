@@ -29,9 +29,8 @@ ratelimiter/               independent module: example.com/ratelimiter
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ratelimiter/cmd/demo
-cd ~/go-exercises/ratelimiter
-go mod init example.com/ratelimiter
+mkdir -p go-solutions/04-functions/04-first-class-functions-and-closures/03-rate-limiter-token-bucket-closure/cmd/demo
+cd go-solutions/04-functions/04-first-class-functions-and-closures/03-rate-limiter-token-bucket-closure
 ```
 
 ### Why the clock is a parameter

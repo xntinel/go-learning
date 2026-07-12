@@ -28,9 +28,8 @@ context-error-distinction/         module example.com/context-error-distinction
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/context-error-distinction/cmd/demo
-cd ~/go-exercises/context-error-distinction
-go mod init example.com/context-error-distinction
+mkdir -p go-solutions/10-error-handling/13-designing-an-error-hierarchy/07-context-error-distinction/cmd/demo
+cd go-solutions/10-error-handling/13-designing-an-error-hierarchy/07-context-error-distinction
 ```
 
 ### Order matters: context first, domain second

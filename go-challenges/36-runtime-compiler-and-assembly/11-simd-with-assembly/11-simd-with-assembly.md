@@ -94,9 +94,8 @@ Mixing legacy SSE instructions with VEX-encoded instructions (those starting wit
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/simdvec/cmd/demo
-cd ~/go-exercises/simdvec
-go mod init example.com/simdvec
+mkdir -p go-solutions/36-runtime-compiler-and-assembly/11-simd-with-assembly/11-simd-with-assembly/cmd/demo
+cd go-solutions/36-runtime-compiler-and-assembly/11-simd-with-assembly/11-simd-with-assembly
 ```
 
 This is a library verified by `go test`. There is no `main` in the package itself.

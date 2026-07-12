@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/flightrecorder/cmd/demo
-cd ~/go-exercises/flightrecorder
-go mod init example.com/flightrecorder
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/13-implementing-a-ring-buffer/08-flight-recorder-crash-dump/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/13-implementing-a-ring-buffer/08-flight-recorder-crash-dump
 go mod edit -go=1.24
 ```
 

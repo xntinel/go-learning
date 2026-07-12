@@ -32,9 +32,8 @@ runner/                      independent module: example.com/runner
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/runner/cmd/demo
-cd ~/go-exercises/runner
-go mod init example.com/runner
+mkdir -p go-solutions/53-wasm-and-extensibility/01-wazero-host-runtime/03-execution-limits/cmd/demo
+cd go-solutions/53-wasm-and-extensibility/01-wazero-host-runtime/03-execution-limits
 go mod edit -go=1.26
 go get github.com/tetratelabs/wazero@latest
 ```

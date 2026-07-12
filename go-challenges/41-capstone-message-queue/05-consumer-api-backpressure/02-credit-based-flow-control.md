@@ -22,8 +22,7 @@ credit_test.go       deterministic bound (3 credits) + concurrent stress (bound 
 Set up the module:
 
 ```bash
-mkdir -p credit/cmd/demo && cd credit
-go mod init example.com/credit
+mkdir -p go-solutions/41-capstone-message-queue/05-consumer-api-backpressure/02-credit-based-flow-control/cmd/demo && cd go-solutions/41-capstone-message-queue/05-consumer-api-backpressure/02-credit-based-flow-control
 ```
 
 ### Credits as a counting semaphore

@@ -28,9 +28,8 @@ lazy-pool-provider/           module: example.com/lazy-pool-provider
 Set up the module:
 
 ```bash
-mkdir -p lazy-pool-provider/cmd/demo
-cd lazy-pool-provider
-go mod init example.com/lazy-pool-provider
+mkdir -p go-solutions/15-sync-primitives/03-sync-once/04-lazy-pool-provider/cmd/demo
+cd go-solutions/15-sync-primitives/03-sync-once/04-lazy-pool-provider
 ```
 
 ### Why the shared read after Do is legal

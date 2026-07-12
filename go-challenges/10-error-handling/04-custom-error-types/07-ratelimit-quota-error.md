@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/quotaerr/cmd/demo
-cd ~/go-exercises/quotaerr
-go mod init example.com/quotaerr
+mkdir -p go-solutions/10-error-handling/04-custom-error-types/07-ratelimit-quota-error/cmd/demo
+cd go-solutions/10-error-handling/04-custom-error-types/07-ratelimit-quota-error
 go mod edit -go=1.24
 ```
 

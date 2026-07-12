@@ -27,9 +27,8 @@ expiry/                      independent module: example.com/expiry
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/expiry/cmd/demo
-cd ~/go-exercises/expiry
-go mod init example.com/expiry
+mkdir -p go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/05-timer-expiry-scheduler/cmd/demo
+cd go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/05-timer-expiry-scheduler
 go mod edit -go=1.26
 ```
 

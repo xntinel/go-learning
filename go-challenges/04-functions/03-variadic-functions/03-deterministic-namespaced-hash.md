@@ -29,9 +29,8 @@ keyhash/                   independent module: example.com/keyhash
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/keyhash/cmd/demo
-cd ~/go-exercises/keyhash
-go mod init example.com/keyhash
+mkdir -p go-solutions/04-functions/03-variadic-functions/03-deterministic-namespaced-hash/cmd/demo
+cd go-solutions/04-functions/03-variadic-functions/03-deterministic-namespaced-hash
 go mod edit -go=1.25
 ```
 

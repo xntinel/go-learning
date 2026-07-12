@@ -23,8 +23,7 @@ sink_test.go           idempotency, last-write-wins, stale rejection, concurrenc
 Set up the module:
 
 ```bash
-mkdir -p idempotent-upsert-sink/cmd/demo && cd idempotent-upsert-sink
-go mod init example.com/idempotent-upsert-sink
+mkdir -p go-solutions/43-capstone-stream-processing-engine/07-sink-connectors/04-idempotent-upsert-sink/cmd/demo && cd go-solutions/43-capstone-stream-processing-engine/07-sink-connectors/04-idempotent-upsert-sink
 go mod edit -go=1.26
 ```
 

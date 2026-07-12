@@ -28,9 +28,8 @@ buildlist/                  independent module: example.com/buildlist
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/buildlist/cmd/demo
-cd ~/go-exercises/buildlist
-go mod init example.com/buildlist
+mkdir -p go-solutions/01-environment-and-tooling/02-go-modules-and-dependencies/05-pin-and-inspect-the-build-list/cmd/demo
+cd go-solutions/01-environment-and-tooling/02-go-modules-and-dependencies/05-pin-and-inspect-the-build-list
 go get golang.org/x/text/cases
 ```
 

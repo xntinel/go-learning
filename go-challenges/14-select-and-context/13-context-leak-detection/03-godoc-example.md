@@ -30,10 +30,9 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/leakdetect/internal/leakdetect
-mkdir -p ~/go-exercises/leakdetect/cmd/demo
-cd ~/go-exercises/leakdetect
-go mod init example.com/leakdetect
+mkdir -p go-solutions/14-select-and-context/13-context-leak-detection/03-godoc-example/internal/leakdetect
+mkdir -p go-solutions/14-select-and-context/13-context-leak-detection/03-godoc-example/cmd/demo
+cd go-solutions/14-select-and-context/13-context-leak-detection/03-godoc-example
 ```
 
 ### Why the example lives in package leakdetect_test

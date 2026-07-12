@@ -33,9 +33,8 @@ shutdown/                  independent module: example.com/graceful-shutdown-coo
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/shutdown/cmd/demo
-cd ~/go-exercises/shutdown
-go mod init example.com/graceful-shutdown-coordinated
+mkdir -p go-solutions/04-functions/01-function-declaration-and-multiple-return-values/31-graceful-shutdown-coordinated/cmd/demo
+cd go-solutions/04-functions/01-function-declaration-and-multiple-return-values/31-graceful-shutdown-coordinated
 go mod edit -go=1.24
 ```
 

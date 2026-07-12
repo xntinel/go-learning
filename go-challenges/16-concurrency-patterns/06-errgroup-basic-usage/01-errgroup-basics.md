@@ -22,8 +22,7 @@ runner_test.go         all-succeed, first-error-wins, sibling-cancellation, cont
 Set up the module:
 
 ```bash
-mkdir -p errgroup-basics/cmd/demo && cd errgroup-basics
-go mod init example.com/errgroup-basics
+mkdir -p go-solutions/16-concurrency-patterns/06-errgroup-basic-usage/01-errgroup-basics/cmd/demo && cd go-solutions/16-concurrency-patterns/06-errgroup-basic-usage/01-errgroup-basics
 go get golang.org/x/sync/errgroup
 ```
 

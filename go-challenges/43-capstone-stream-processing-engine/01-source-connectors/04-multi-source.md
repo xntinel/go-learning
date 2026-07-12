@@ -24,8 +24,7 @@ multi-source/
 Set up the module:
 
 ```bash
-mkdir -p multi-source/cmd/demo && cd multi-source
-go mod init example.com/multi-source
+mkdir -p go-solutions/43-capstone-stream-processing-engine/01-source-connectors/04-multi-source/cmd/demo && cd go-solutions/43-capstone-stream-processing-engine/01-source-connectors/04-multi-source
 ```
 
 ### A deterministic child to merge

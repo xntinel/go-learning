@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/traceprop/cmd/demo
-cd ~/go-exercises/traceprop
-go mod init example.com/traceprop
+mkdir -p go-solutions/14-select-and-context/06-context-withvalue/05-trace-propagation-across-boundary/cmd/demo
+cd go-solutions/14-select-and-context/06-context-withvalue/05-trace-propagation-across-boundary
 ```
 
 ### Why a value cannot cross the wire on its own

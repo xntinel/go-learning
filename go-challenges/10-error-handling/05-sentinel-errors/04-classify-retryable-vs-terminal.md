@@ -29,9 +29,8 @@ retry/                        independent module: example.com/retry
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/retry/cmd/demo
-cd ~/go-exercises/retry
-go mod init example.com/retry
+mkdir -p go-solutions/10-error-handling/05-sentinel-errors/04-classify-retryable-vs-terminal/cmd/demo
+cd go-solutions/10-error-handling/05-sentinel-errors/04-classify-retryable-vs-terminal
 ```
 
 ### Fail fast on terminal errors

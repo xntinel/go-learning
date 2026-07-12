@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/framer/cmd/demo
-cd ~/go-exercises/framer
-go mod init example.com/framer
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/06-copy-and-full-slice-expression/03-three-index-buffer-handoff/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/06-copy-and-full-slice-expression/03-three-index-buffer-handoff
 ```
 
 ### Why three-index, exactly

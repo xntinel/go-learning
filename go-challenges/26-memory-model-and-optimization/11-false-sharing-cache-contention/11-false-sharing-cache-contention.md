@@ -33,9 +33,8 @@ A benchmark for false sharing should compare contiguous slots against padded slo
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cachepad/cmd/demo
-cd ~/go-exercises/cachepad
-go mod init cachepad
+mkdir -p go-solutions/26-memory-model-and-optimization/11-false-sharing-cache-contention/11-false-sharing-cache-contention/cmd/demo
+cd go-solutions/26-memory-model-and-optimization/11-false-sharing-cache-contention/11-false-sharing-cache-contention
 ```
 
 This is a library package. The demo program imports the library and uses only exported identifiers.

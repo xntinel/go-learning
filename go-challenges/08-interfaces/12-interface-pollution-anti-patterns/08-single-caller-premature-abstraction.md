@@ -28,9 +28,8 @@ configload/                 independent module: example.com/configload
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/configload/cmd/demo
-cd ~/go-exercises/configload
-go mod init example.com/configload
+mkdir -p go-solutions/08-interfaces/12-interface-pollution-anti-patterns/08-single-caller-premature-abstraction/cmd/demo
+cd go-solutions/08-interfaces/12-interface-pollution-anti-patterns/08-single-caller-premature-abstraction
 ```
 
 ### Why the interface had to go, and what deleting it buys

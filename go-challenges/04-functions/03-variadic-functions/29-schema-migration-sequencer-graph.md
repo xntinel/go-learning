@@ -30,9 +30,8 @@ migseq/                    independent module: example.com/migseq
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/migseq/cmd/demo
-cd ~/go-exercises/migseq
-go mod init example.com/migseq
+mkdir -p go-solutions/04-functions/03-variadic-functions/29-schema-migration-sequencer-graph/cmd/demo
+cd go-solutions/04-functions/03-variadic-functions/29-schema-migration-sequencer-graph
 go mod edit -go=1.24
 ```
 

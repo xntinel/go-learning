@@ -48,9 +48,8 @@ The lesson's `compare` mode shows the trade-off: with 50 items at 20ms each, cap
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/bp/internal/limit ~/go-exercises/bp/cmd/bpdemo
-cd ~/go-exercises/bp
-go mod init example.com/bp
+mkdir -p go-solutions/16-concurrency-patterns/15-bounded-parallelism/15-bounded-parallelism/internal/limit go-solutions/16-concurrency-patterns/15-bounded-parallelism/15-bounded-parallelism/cmd/bpdemo
+cd go-solutions/16-concurrency-patterns/15-bounded-parallelism/15-bounded-parallelism
 ```
 
 ### Exercise 1: The Limit Package

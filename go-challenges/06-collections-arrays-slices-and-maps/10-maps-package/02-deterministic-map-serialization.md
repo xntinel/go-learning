@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/canonmap/cmd/demo
-cd ~/go-exercises/canonmap
-go mod init example.com/canonmap
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/02-deterministic-map-serialization/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/02-deterministic-map-serialization
 ```
 
 ## Why sorting the keys is the whole job

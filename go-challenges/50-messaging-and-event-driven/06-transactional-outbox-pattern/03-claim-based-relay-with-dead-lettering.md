@@ -32,9 +32,8 @@ claimrelay/                   independent module: example.com/claimrelay
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/claimrelay/cmd/demo
-cd ~/go-exercises/claimrelay
-go mod init example.com/claimrelay
+mkdir -p go-solutions/50-messaging-and-event-driven/06-transactional-outbox-pattern/03-claim-based-relay-with-dead-lettering/cmd/demo
+cd go-solutions/50-messaging-and-event-driven/06-transactional-outbox-pattern/03-claim-based-relay-with-dead-lettering
 go get modernc.org/sqlite
 ```
 

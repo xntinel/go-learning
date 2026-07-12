@@ -29,9 +29,8 @@ reportsort/                 independent module: example.com/reportsort
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/reportsort/cmd/demo
-cd ~/go-exercises/reportsort
-go mod init example.com/reportsort
+mkdir -p go-solutions/08-interfaces/04-common-standard-library-interfaces/08-sort-interface-multikey/cmd/demo
+cd go-solutions/08-interfaces/04-common-standard-library-interfaces/08-sort-interface-multikey
 ```
 
 ### Two ways to say the same ordering

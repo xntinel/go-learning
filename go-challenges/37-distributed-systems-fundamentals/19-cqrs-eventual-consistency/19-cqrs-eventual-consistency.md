@@ -85,9 +85,8 @@ immutable; replaying them always produces the same deterministic state.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cqrs/cmd/demo
-cd ~/go-exercises/cqrs
-go mod init example.com/cqrs
+mkdir -p go-solutions/37-distributed-systems-fundamentals/19-cqrs-eventual-consistency/19-cqrs-eventual-consistency/cmd/demo
+cd go-solutions/37-distributed-systems-fundamentals/19-cqrs-eventual-consistency/19-cqrs-eventual-consistency
 ```
 
 This is a library plus a demo binary. Verify with `go test`.

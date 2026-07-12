@@ -26,9 +26,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/recordstore/cmd/demo
-cd ~/go-exercises/recordstore
-go mod init example.com/recordstore
+mkdir -p go-solutions/12-testing-ecosystem/15-testable-examples/06-error-contract-example/cmd/demo
+cd go-solutions/12-testing-ecosystem/15-testable-examples/06-error-contract-example
 ```
 
 ## Examples are where error contracts get documented

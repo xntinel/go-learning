@@ -25,8 +25,7 @@ cmd/
 Set up the module:
 
 ```bash
-mkdir -p loops/cmd/demo && cd loops
-go mod init example.com/loops
+mkdir -p go-solutions/40-capstone-language-interpreter/04-tree-walking-evaluator/02-loops-and-control-flow/cmd/demo && cd go-solutions/40-capstone-language-interpreter/04-tree-walking-evaluator/02-loops-and-control-flow
 ```
 
 ### Why break and continue are signals, not jumps

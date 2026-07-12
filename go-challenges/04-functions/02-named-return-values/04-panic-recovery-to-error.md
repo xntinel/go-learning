@@ -27,9 +27,8 @@ safe/                       independent module: example.com/safe
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/safe/cmd/demo
-cd ~/go-exercises/safe
-go mod init example.com/safe
+mkdir -p go-solutions/04-functions/02-named-return-values/04-panic-recovery-to-error/cmd/demo
+cd go-solutions/04-functions/02-named-return-values/04-panic-recovery-to-error
 ```
 
 ### Recover into the named result

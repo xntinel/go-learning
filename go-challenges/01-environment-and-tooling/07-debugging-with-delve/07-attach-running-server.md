@@ -29,9 +29,8 @@ livesrv/                   independent module: example.com/livesrv
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/livesrv/server ~/go-exercises/livesrv/cmd/demo
-cd ~/go-exercises/livesrv
-go mod init example.com/livesrv
+mkdir -p go-solutions/01-environment-and-tooling/07-debugging-with-delve/07-attach-running-server/server go-solutions/01-environment-and-tooling/07-debugging-with-delve/07-attach-running-server/cmd/demo
+cd go-solutions/01-environment-and-tooling/07-debugging-with-delve/07-attach-running-server
 go mod edit -go=1.24
 ```
 

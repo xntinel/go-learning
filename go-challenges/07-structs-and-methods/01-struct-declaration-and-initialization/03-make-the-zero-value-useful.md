@@ -28,9 +28,8 @@ zeroreg/                    independent module: example.com/zeroreg
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/zeroreg/cmd/demo
-cd ~/go-exercises/zeroreg
-go mod init example.com/zeroreg
+mkdir -p go-solutions/07-structs-and-methods/01-struct-declaration-and-initialization/03-make-the-zero-value-useful/cmd/demo
+cd go-solutions/07-structs-and-methods/01-struct-declaration-and-initialization/03-make-the-zero-value-useful
 go mod edit -go=1.24
 ```
 

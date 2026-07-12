@@ -27,9 +27,8 @@ releasematrix/                 module example.com/releasematrix
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/releasematrix/cmd/demo
-cd ~/go-exercises/releasematrix
-go mod init example.com/releasematrix
+mkdir -p go-solutions/01-environment-and-tooling/08-cross-compilation-and-build-tags/10-reproducible-release-matrix/cmd/demo
+cd go-solutions/01-environment-and-tooling/08-cross-compilation-and-build-tags/10-reproducible-release-matrix
 ```
 
 ### Separating the logic from the orchestrator

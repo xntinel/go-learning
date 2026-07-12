@@ -28,9 +28,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/breaker/cmd/demo
-cd ~/go-exercises/breaker
-go mod init example.com/breaker
+mkdir -p go-solutions/12-testing-ecosystem/16-testing-time-dependent-code/08-circuit-breaker-half-open/cmd/demo
+cd go-solutions/12-testing-ecosystem/16-testing-time-dependent-code/08-circuit-breaker-half-open
 ```
 
 ### The state machine and its two time-sensitive contracts

@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/streamindex/cmd/demo
-cd ~/go-exercises/streamindex
-go mod init example.com/streamindex
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/06-streaming-map-collect/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/06-streaming-map-collect
 ```
 
 ## Why iterators, and what collision means here

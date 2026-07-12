@@ -31,8 +31,7 @@ sessionstore/                 independent module: example.com/sessionstore
 Set up the module:
 
 ```bash
-mkdir sessionstore && cd sessionstore
-go mod init example.com/sessionstore
+mkdir go-solutions/15-sync-primitives/04-sync-map/06-session-store-expiry && cd go-solutions/15-sync-primitives/04-sync-map/06-session-store-expiry
 ```
 
 ### Why LoadAndDelete, not Delete, in the sweeper

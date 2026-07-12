@@ -56,9 +56,8 @@ audithooks/               module example.com/audithooks
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/audithooks
-cd ~/go-exercises/audithooks
-go mod init example.com/audithooks
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/11-slice-memory-leaks/10-audit-hook-closure-buffer-pin
+cd go-solutions/06-collections-arrays-slices-and-maps/11-slice-memory-leaks/10-audit-hook-closure-buffer-pin
 go mod edit -go=1.24
 ```
 

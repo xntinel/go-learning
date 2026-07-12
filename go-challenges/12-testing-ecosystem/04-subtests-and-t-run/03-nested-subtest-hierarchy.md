@@ -32,9 +32,8 @@ signupdto/                  independent module: example.com/signupdto
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/signupdto/cmd/demo
-cd ~/go-exercises/signupdto
-go mod init example.com/signupdto
+mkdir -p go-solutions/12-testing-ecosystem/04-subtests-and-t-run/03-nested-subtest-hierarchy/cmd/demo
+cd go-solutions/12-testing-ecosystem/04-subtests-and-t-run/03-nested-subtest-hierarchy
 ```
 
 ### How nesting maps to names and filters

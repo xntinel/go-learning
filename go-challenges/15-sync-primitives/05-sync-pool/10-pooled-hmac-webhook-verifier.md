@@ -32,9 +32,8 @@ Verify: `go test -count=1 -race ./...` then `go test -bench=. -benchmem -run=^$ 
 Set up the module:
 
 ```bash
-mkdir -p webhookverify/webhook webhookverify/cmd/demo
-cd webhookverify
-go mod init example.com/webhookverify
+mkdir -p go-solutions/15-sync-primitives/05-sync-pool/10-pooled-hmac-webhook-verifier/webhook go-solutions/15-sync-primitives/05-sync-pool/10-pooled-hmac-webhook-verifier/cmd/demo
+cd go-solutions/15-sync-primitives/05-sync-pool/10-pooled-hmac-webhook-verifier
 ```
 
 ### What the pool amortizes: keying, not hashing

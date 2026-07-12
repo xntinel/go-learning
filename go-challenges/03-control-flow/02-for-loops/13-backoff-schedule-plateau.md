@@ -27,9 +27,8 @@ backoffschedule/              module example.com/backoffschedule
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/backoffschedule
-cd ~/go-exercises/backoffschedule
-go mod init example.com/backoffschedule
+mkdir -p go-solutions/03-control-flow/02-for-loops/13-backoff-schedule-plateau
+cd go-solutions/03-control-flow/02-for-loops/13-backoff-schedule-plateau
 go mod edit -go=1.24
 ```
 

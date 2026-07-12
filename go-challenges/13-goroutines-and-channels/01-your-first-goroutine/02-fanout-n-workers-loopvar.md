@@ -28,9 +28,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/healthprobe/cmd/demo
-cd ~/go-exercises/healthprobe
-go mod init example.com/healthprobe
+mkdir -p go-solutions/13-goroutines-and-channels/01-your-first-goroutine/02-fanout-n-workers-loopvar/cmd/demo
+cd go-solutions/13-goroutines-and-channels/01-your-first-goroutine/02-fanout-n-workers-loopvar
 ```
 
 ### The per-index capture contract

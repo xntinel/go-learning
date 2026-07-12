@@ -26,9 +26,8 @@ page/                       module example.com/page
 - Verify: `go test -count=1 ./...`.
 
 ```bash
-mkdir -p ~/go-exercises/page
-cd ~/go-exercises/page
-go mod init example.com/page
+mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/13-range-over-map-assumed-ordered-pagination
+cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/13-range-over-map-assumed-ordered-pagination
 ```
 
 ### The artifact and the planted bug

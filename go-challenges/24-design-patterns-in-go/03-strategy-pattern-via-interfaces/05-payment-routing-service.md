@@ -24,8 +24,7 @@ routing_test.go      primary selection, fallback on unhealthy, unserved region,
 Set up the module:
 
 ```bash
-mkdir -p payment-routing-service/cmd/demo && cd payment-routing-service
-go mod init example.com/paymentrouting
+mkdir -p go-solutions/24-design-patterns-in-go/03-strategy-pattern-via-interfaces/05-payment-routing-service/cmd/demo && cd go-solutions/24-design-patterns-in-go/03-strategy-pattern-via-interfaces/05-payment-routing-service
 ```
 
 ### Each processor is a strategy

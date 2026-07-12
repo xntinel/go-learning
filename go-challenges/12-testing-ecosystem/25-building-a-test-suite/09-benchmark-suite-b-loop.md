@@ -26,9 +26,8 @@ Verify: `go test -count=1 -race ./...` and `go test -bench . -benchmem -run '^$'
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/benchcache/cmd/demo
-cd ~/go-exercises/benchcache
-go mod init example.com/benchcache
+mkdir -p go-solutions/12-testing-ecosystem/25-building-a-test-suite/09-benchmark-suite-b-loop/cmd/demo
+cd go-solutions/12-testing-ecosystem/25-building-a-test-suite/09-benchmark-suite-b-loop
 ```
 
 ### Why b.Loop replaces the b.N loop

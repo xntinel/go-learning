@@ -82,9 +82,8 @@ Each stage calls `setErr` when it encounters an error and also selects on `ctx.D
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pipeline/cmd/demo
-cd ~/go-exercises/pipeline
-go mod init example.com/pipeline
+mkdir -p go-solutions/32-concurrency-debugging-and-testing/08-chaos-testing-concurrent-code/08-chaos-testing-concurrent-code/cmd/demo
+cd go-solutions/32-concurrency-debugging-and-testing/08-chaos-testing-concurrent-code/08-chaos-testing-concurrent-code
 ```
 
 ### Exercise 1: Fault Injector

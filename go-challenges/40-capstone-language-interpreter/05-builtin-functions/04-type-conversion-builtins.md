@@ -24,8 +24,7 @@ convert_test.go  truncation, parse failure, truthiness coercion
 Set up the module:
 
 ```bash
-mkdir -p convert/cmd/demo && cd convert
-go mod init example.com/convert
+mkdir -p go-solutions/40-capstone-language-interpreter/05-builtin-functions/04-type-conversion-builtins/cmd/demo && cd go-solutions/40-capstone-language-interpreter/05-builtin-functions/04-type-conversion-builtins
 ```
 
 ### Conversions that can fail, and conversions that cannot

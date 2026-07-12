@@ -32,9 +32,8 @@ config/                    independent module: example.com/config
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/config/cmd/demo
-cd ~/go-exercises/config
-go mod init example.com/config
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/03-nil-safe-layered-config-merge/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/03-nil-safe-layered-config-merge
 ```
 
 ### The two faces of a nil map, and why they bite

@@ -31,9 +31,8 @@ keymaterial/                 independent module: example.com/keymaterial
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/keymaterial/cmd/demo
-cd ~/go-exercises/keymaterial
-go mod init example.com/keymaterial
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/03-keymaterial-defensive-copy/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/03-keymaterial-defensive-copy
 ```
 
 ### Why the array field is a real defensive copy

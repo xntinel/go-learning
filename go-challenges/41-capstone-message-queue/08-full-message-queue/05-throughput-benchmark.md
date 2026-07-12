@@ -24,8 +24,7 @@ load_test.go      assert counts are exact and deterministic; BenchmarkProduce
 Set up the module:
 
 ```bash
-mkdir -p throughput/cmd/demo && cd throughput
-go mod init example.com/throughput
+mkdir -p go-solutions/41-capstone-message-queue/08-full-message-queue/05-throughput-benchmark/cmd/demo && cd go-solutions/41-capstone-message-queue/08-full-message-queue/05-throughput-benchmark
 ```
 
 ### Why counts, not timings

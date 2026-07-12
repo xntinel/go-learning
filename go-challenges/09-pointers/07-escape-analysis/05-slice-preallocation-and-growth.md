@@ -33,9 +33,8 @@ Verify: `go test -count=1 -race ./...`, then `go test -bench=. -benchmem ./...`.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/rowmapper/cmd/demo
-cd ~/go-exercises/rowmapper
-go mod init example.com/rowmapper
+mkdir -p go-solutions/09-pointers/07-escape-analysis/05-slice-preallocation-and-growth/cmd/demo
+cd go-solutions/09-pointers/07-escape-analysis/05-slice-preallocation-and-growth
 ```
 
 ### Why growth costs N allocations and a hint costs one

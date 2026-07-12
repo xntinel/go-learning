@@ -27,9 +27,8 @@ pipeline/                   independent module: example.com/pipeline
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pipeline/cmd/demo
-cd ~/go-exercises/pipeline
-go mod init example.com/pipeline
+mkdir -p go-solutions/04-functions/02-named-return-values/10-acquire-all-or-none-cleanup/cmd/demo
+cd go-solutions/04-functions/02-named-return-values/10-acquire-all-or-none-cleanup
 ```
 
 ### Release exactly what you grabbed

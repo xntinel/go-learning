@@ -26,9 +26,8 @@ Verify: `go test -count=1 -race ./...` and `go test -fuzz=FuzzRoundTrip -fuzztim
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/fuzzcache/cmd/demo
-cd ~/go-exercises/fuzzcache
-go mod init example.com/fuzzcache
+mkdir -p go-solutions/12-testing-ecosystem/25-building-a-test-suite/10-fuzz-key-value-roundtrip/cmd/demo
+cd go-solutions/12-testing-ecosystem/25-building-a-test-suite/10-fuzz-key-value-roundtrip
 ```
 
 ### Asserting an invariant, and the copy bug fuzzing catches

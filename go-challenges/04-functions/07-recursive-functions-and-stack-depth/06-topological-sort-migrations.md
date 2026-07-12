@@ -28,9 +28,8 @@ toposort/                  independent module: example.com/toposort
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/toposort/cmd/demo
-cd ~/go-exercises/toposort
-go mod init example.com/toposort
+mkdir -p go-solutions/04-functions/07-recursive-functions-and-stack-depth/06-topological-sort-migrations/cmd/demo
+cd go-solutions/04-functions/07-recursive-functions-and-stack-depth/06-topological-sort-migrations
 ```
 
 ### The map convention and postorder-plus-reverse

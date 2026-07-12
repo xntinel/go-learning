@@ -30,9 +30,8 @@ logvaluer/                   independent module: example.com/logvaluer
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/logvaluer/cmd/demo
-cd ~/go-exercises/logvaluer
-go mod init example.com/logvaluer
+mkdir -p go-solutions/10-error-handling/14-error-observability/04-logvaluer-error-enrichment/cmd/demo
+cd go-solutions/10-error-handling/14-error-observability/04-logvaluer-error-enrichment
 go mod edit -go=1.25
 ```
 

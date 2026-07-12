@@ -25,9 +25,8 @@ sampler/                     independent module: example.com/sampler
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/sampler
-cd ~/go-exercises/sampler
-go mod init example.com/sampler
+mkdir -p go-solutions/04-functions/10-higher-order-functions/18-probability-sampler-for-observability
+cd go-solutions/04-functions/10-higher-order-functions/18-probability-sampler-for-observability
 go mod edit -go=1.24
 ```
 

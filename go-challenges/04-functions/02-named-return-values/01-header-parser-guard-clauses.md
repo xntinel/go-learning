@@ -30,9 +30,8 @@ headparse/                        independent module: example.com/headparse
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/headparse/internal/hparse ~/go-exercises/headparse/cmd/demo
-cd ~/go-exercises/headparse
-go mod init example.com/headparse
+mkdir -p go-solutions/04-functions/02-named-return-values/01-header-parser-guard-clauses/internal/hparse go-solutions/04-functions/02-named-return-values/01-header-parser-guard-clauses/cmd/demo
+cd go-solutions/04-functions/02-named-return-values/01-header-parser-guard-clauses
 ```
 
 ### Why named returns here, and why not in ParseMany

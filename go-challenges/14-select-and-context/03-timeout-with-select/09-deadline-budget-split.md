@@ -24,9 +24,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/budgetsplit/cmd/demo
-cd ~/go-exercises/budgetsplit
-go mod init example.com/pipeline
+mkdir -p go-solutions/14-select-and-context/03-timeout-with-select/09-deadline-budget-split/cmd/demo
+cd go-solutions/14-select-and-context/03-timeout-with-select/09-deadline-budget-split
 ```
 
 ### Remaining budget, computed per step

@@ -32,9 +32,8 @@ set/                       independent module: example.com/set
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/set/cmd/demo
-cd ~/go-exercises/set
-go mod init example.com/set
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/04-generic-set-membership/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/04-generic-set-membership
 ```
 
 ### Why struct{} and not bool

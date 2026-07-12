@@ -23,8 +23,7 @@ example_test.go      ExampleFanOut with a verified // Output block
 Set up the module:
 
 ```bash
-mkdir -p loop-goroutines/cmd/demo && cd loop-goroutines
-go mod init example.com/loop-goroutines
+mkdir -p go-solutions/25-iterators-and-modern-go/02-loopvar-semantic-change/02-goroutines-in-loops/cmd/demo && cd go-solutions/25-iterators-and-modern-go/02-loopvar-semantic-change/02-goroutines-in-loops
 ```
 
 ### Why this used to be a race, and why it no longer is

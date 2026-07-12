@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/counter/cmd/demo
-cd ~/go-exercises/counter
-go mod init example.com/counter
+mkdir -p go-solutions/07-structs-and-methods/03-methods-value-vs-pointer-receivers/01-mutable-metrics-counter/cmd/demo
+cd go-solutions/07-structs-and-methods/03-methods-value-vs-pointer-receivers/01-mutable-metrics-counter
 ```
 
 ### Why every method is a pointer receiver

@@ -113,9 +113,8 @@ Per-packet record header (16 bytes) + raw frame data:
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/capture/cmd/demo
-cd ~/go-exercises/capture
-go mod init example.com/capture
+mkdir -p go-solutions/47-capstone-systems-and-kernel/08-raw-socket-packet-capture/08-raw-socket-packet-capture/cmd/demo
+cd go-solutions/47-capstone-systems-and-kernel/08-raw-socket-packet-capture/08-raw-socket-packet-capture
 ```
 
 Create `go.mod`:

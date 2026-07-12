@@ -33,9 +33,8 @@ pprof-admin/                  independent module: example.com/pprof-admin
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pprof-admin/cmd/demo
-cd ~/go-exercises/pprof-admin
-go mod init example.com/pprof-admin
+mkdir -p go-solutions/15-sync-primitives/14-contention-profiling/06-http-pprof-debug-endpoint/cmd/demo
+cd go-solutions/15-sync-primitives/14-contention-profiling/06-http-pprof-debug-endpoint
 ```
 
 ### Why the blank import is a trap

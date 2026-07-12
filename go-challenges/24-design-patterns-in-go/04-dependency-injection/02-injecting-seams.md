@@ -32,8 +32,7 @@ audit_test.go        fixed and advancing fake clocks, a counter IDGen; assert ex
 Set up the module:
 
 ```bash
-mkdir -p injecting-seams/cmd/demo && cd injecting-seams
-go mod init example.com/injecting-seams
+mkdir -p go-solutions/24-design-patterns-in-go/04-dependency-injection/02-injecting-seams/cmd/demo && cd go-solutions/24-design-patterns-in-go/04-dependency-injection/02-injecting-seams
 ```
 
 ### Why time and randomness must be dependencies

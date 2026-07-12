@@ -29,9 +29,8 @@ connpool/                   independent module: example.com/connection-pool-defe
 - Verify: `go test -count=1 ./...`.
 
 ```bash
-mkdir -p ~/go-exercises/connection-pool-defer-before-validation/cmd/demo
-cd ~/go-exercises/connection-pool-defer-before-validation
-go mod init example.com/connection-pool-defer-before-validation
+mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/16-connection-pool-defer-before-validation/cmd/demo
+cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/16-connection-pool-defer-before-validation
 ```
 
 ### Why the defer has to be registered right after Acquire, not after validate

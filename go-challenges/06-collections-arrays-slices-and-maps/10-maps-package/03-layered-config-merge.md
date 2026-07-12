@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/configmerge/cmd/demo
-cd ~/go-exercises/configmerge
-go mod init example.com/configmerge
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/03-layered-config-merge/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/03-layered-config-merge
 ```
 
 ## Why clone-then-copy, and never copy-into-input

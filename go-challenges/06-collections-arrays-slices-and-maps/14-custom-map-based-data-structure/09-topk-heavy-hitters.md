@@ -30,9 +30,8 @@ topk/                      independent module: example.com/topk
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/topk/cmd/demo
-cd ~/go-exercises/topk
-go mod init example.com/topk
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/14-custom-map-based-data-structure/09-topk-heavy-hitters/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/14-custom-map-based-data-structure/09-topk-heavy-hitters
 ```
 
 ### Why a bounded min-heap, and how ties stay deterministic

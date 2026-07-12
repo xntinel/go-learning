@@ -24,8 +24,7 @@ checkpoint_test.go       checkpoint flushes all dirty pages obeying WAL order;
 Set up the module:
 
 ```bash
-mkdir -p checkpoint-wal-ordering/cmd/demo && cd checkpoint-wal-ordering
-go mod init example.com/checkpoint-wal-ordering
+mkdir -p go-solutions/39-capstone-database-engine/03-buffer-pool-manager/04-checkpoint-wal-ordering/cmd/demo && cd go-solutions/39-capstone-database-engine/03-buffer-pool-manager/04-checkpoint-wal-ordering
 ```
 
 ### Checkpoint reuses the one write-back choke point

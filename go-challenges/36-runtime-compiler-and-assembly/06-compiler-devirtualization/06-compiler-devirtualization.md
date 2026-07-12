@@ -77,9 +77,8 @@ The common thread: any path that hides the concrete type from the compiler's vie
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/devirt/cmd/demo
-cd ~/go-exercises/devirt
-go mod init example.com/devirt
+mkdir -p go-solutions/36-runtime-compiler-and-assembly/06-compiler-devirtualization/06-compiler-devirtualization/cmd/demo
+cd go-solutions/36-runtime-compiler-and-assembly/06-compiler-devirtualization/06-compiler-devirtualization
 ```
 
 ### Exercise 1: A Package With Direct and Indirect Call Sites

@@ -28,9 +28,8 @@ meteredbody/                independent module: example.com/meteredbody
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/meteredbody/cmd/demo
-cd ~/go-exercises/meteredbody
-go mod init example.com/meteredbody
+mkdir -p go-solutions/08-interfaces/05-interface-composition-and-embedding/04-metered-request-body/cmd/demo
+cd go-solutions/08-interfaces/05-interface-composition-and-embedding/04-metered-request-body
 ```
 
 ### The overflow-detection subtlety and why Close uses sync.Once

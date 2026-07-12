@@ -29,9 +29,8 @@ errstatus/                independent module: example.com/errstatus
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/errstatus/cmd/demo
-cd ~/go-exercises/errstatus
-go mod init example.com/errstatus
+mkdir -p go-solutions/12-testing-ecosystem/02-table-driven-tests/04-domain-error-to-http-status/cmd/demo
+cd go-solutions/12-testing-ecosystem/02-table-driven-tests/04-domain-error-to-http-status
 ```
 
 ### Why one table is the whole policy

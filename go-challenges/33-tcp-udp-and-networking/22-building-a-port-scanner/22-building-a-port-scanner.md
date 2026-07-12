@@ -65,9 +65,8 @@ The scanner accepts options at construction time via the functional-options patt
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/portscanner/cmd/demo
-cd ~/go-exercises/portscanner
-go mod init example.com/portscanner
+mkdir -p go-solutions/33-tcp-udp-and-networking/22-building-a-port-scanner/22-building-a-port-scanner/cmd/demo
+cd go-solutions/33-tcp-udp-and-networking/22-building-a-port-scanner/22-building-a-port-scanner
 ```
 
 This is a library with a thin demo; verification is via `go test`.

@@ -33,9 +33,8 @@ keyed/                       independent module: example.com/keyed
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/keyed/cmd/demo
-cd ~/go-exercises/keyed
-go mod init example.com/keyed
+mkdir -p go-solutions/13-goroutines-and-channels/15-building-a-concurrent-task-scheduler/13-per-aggregate-ordered-key-scheduler/cmd/demo
+cd go-solutions/13-goroutines-and-channels/15-building-a-concurrent-task-scheduler/13-per-aggregate-ordered-key-scheduler
 go mod edit -go=1.26
 go mod tidy
 ```

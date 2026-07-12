@@ -27,9 +27,8 @@ querymetrics/               independent module: example.com/querymetrics
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/querymetrics/cmd/demo
-cd ~/go-exercises/querymetrics
-go mod init example.com/querymetrics
+mkdir -p go-solutions/04-functions/02-named-return-values/06-latency-and-outcome-metrics/cmd/demo
+cd go-solutions/04-functions/02-named-return-values/06-latency-and-outcome-metrics
 ```
 
 ### The one place that sees both duration and outcome

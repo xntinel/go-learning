@@ -33,9 +33,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/priority/cmd/demo
-cd ~/go-exercises/priority
-go mod init example.com/priority
+mkdir -p go-solutions/14-select-and-context/08-select-priority-and-starvation/01-priority-peek-consumer/cmd/demo
+cd go-solutions/14-select-and-context/08-select-priority-and-starvation/01-priority-peek-consumer
 ```
 
 ### Why three selects, not two

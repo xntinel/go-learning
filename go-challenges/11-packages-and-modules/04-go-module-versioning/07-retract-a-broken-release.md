@@ -30,9 +30,8 @@ retract/                    independent module: example.com/billing/retract
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/retract/cmd/demo
-cd ~/go-exercises/retract
-go mod init example.com/billing/retract
+mkdir -p go-solutions/11-packages-and-modules/04-go-module-versioning/07-retract-a-broken-release/cmd/demo
+cd go-solutions/11-packages-and-modules/04-go-module-versioning/07-retract-a-broken-release
 go mod edit -go=1.26
 ```
 

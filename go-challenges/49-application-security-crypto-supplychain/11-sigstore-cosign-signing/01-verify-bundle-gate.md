@@ -35,9 +35,8 @@ Set up the module. The `sigstore-go` library and its protobuf/attestation
 dependencies are external modules, so fetch them, then vendor the two fixtures:
 
 ```bash
-mkdir -p ~/go-exercises/bundleverify/cmd/demo ~/go-exercises/bundleverify/testdata
-cd ~/go-exercises/bundleverify
-go mod init example.com/bundleverify
+mkdir -p go-solutions/49-application-security-crypto-supplychain/11-sigstore-cosign-signing/01-verify-bundle-gate/cmd/demo go-solutions/49-application-security-crypto-supplychain/11-sigstore-cosign-signing/01-verify-bundle-gate/testdata
+cd go-solutions/49-application-security-crypto-supplychain/11-sigstore-cosign-signing/01-verify-bundle-gate
 go mod edit -go=1.25
 go get github.com/sigstore/sigstore-go@v1.2.1
 

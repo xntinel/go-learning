@@ -33,9 +33,8 @@ An unbounded interner is a memory leak for high-cardinality data. A production d
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/internpool/cmd/demo
-cd ~/go-exercises/internpool
-go mod init internpool
+mkdir -p go-solutions/26-memory-model-and-optimization/07-string-interning/07-string-interning/cmd/demo
+cd go-solutions/26-memory-model-and-optimization/07-string-interning/07-string-interning
 ```
 
 This is a library package. The demo imports the package and uses only exported API.

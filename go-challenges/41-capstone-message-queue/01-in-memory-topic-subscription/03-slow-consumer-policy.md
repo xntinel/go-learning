@@ -20,8 +20,7 @@ fanout_test.go       drop-oldest, drop-newest, disconnect, and a no-loss race te
 Set up the module:
 
 ```bash
-mkdir -p slow-consumer-policy/cmd/demo && cd slow-consumer-policy
-go mod init example.com/fanout
+mkdir -p go-solutions/41-capstone-message-queue/01-in-memory-topic-subscription/03-slow-consumer-policy/cmd/demo && cd go-solutions/41-capstone-message-queue/01-in-memory-topic-subscription/03-slow-consumer-policy
 ```
 
 ### Why per-subscriber buffers, and what the three policies trade

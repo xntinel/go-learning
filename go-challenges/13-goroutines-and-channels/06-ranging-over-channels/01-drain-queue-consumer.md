@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/drainqueue/cmd/demo
-cd ~/go-exercises/drainqueue
-go mod init example.com/drainqueue
+mkdir -p go-solutions/13-goroutines-and-channels/06-ranging-over-channels/01-drain-queue-consumer/cmd/demo
+cd go-solutions/13-goroutines-and-channels/06-ranging-over-channels/01-drain-queue-consumer
 ```
 
 ### Why the parameter is a receive-only channel

@@ -24,8 +24,7 @@ log_test.go          append/read round-trip, rotation, sparse-index seek, trunca
 Set up the module:
 
 ```bash
-mkdir -p segmented-log/cmd/demo && cd segmented-log
-go mod init example.com/segmented-log
+mkdir -p go-solutions/41-capstone-message-queue/02-persistent-message-storage/02-segmented-log/cmd/demo && cd go-solutions/41-capstone-message-queue/02-persistent-message-storage/02-segmented-log
 ```
 
 ### How the segment lays records on disk

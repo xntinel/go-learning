@@ -29,9 +29,8 @@ optimistic/                 independent module: example.com/optimistic
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/optimistic/cmd/demo
-cd ~/go-exercises/optimistic
-go mod init example.com/optimistic
+mkdir -p go-solutions/03-control-flow/01-if-else-and-init-statements/07-optimistic-lock-update/cmd/demo
+cd go-solutions/03-control-flow/01-if-else-and-init-statements/07-optimistic-lock-update
 ```
 
 ## Exists, version-matches, apply — under one lock

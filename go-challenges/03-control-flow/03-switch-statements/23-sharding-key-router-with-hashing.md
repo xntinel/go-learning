@@ -29,9 +29,8 @@ shardrouter/                 independent module: example.com/sharding-key-router
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/shardrouter/cmd/demo
-cd ~/go-exercises/shardrouter
-go mod init example.com/sharding-key-router-with-hashing
+mkdir -p go-solutions/03-control-flow/03-switch-statements/23-sharding-key-router-with-hashing/cmd/demo
+cd go-solutions/03-control-flow/03-switch-statements/23-sharding-key-router-with-hashing
 go mod edit -go=1.24
 ```
 

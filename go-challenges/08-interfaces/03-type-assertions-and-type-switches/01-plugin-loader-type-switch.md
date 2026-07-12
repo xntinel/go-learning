@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pluginload/cmd/demo
-cd ~/go-exercises/pluginload
-go mod init example.com/pluginload
+mkdir -p go-solutions/08-interfaces/03-type-assertions-and-type-switches/01-plugin-loader-type-switch/cmd/demo
+cd go-solutions/08-interfaces/03-type-assertions-and-type-switches/01-plugin-loader-type-switch
 ```
 
 ### Why a type switch here

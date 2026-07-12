@@ -29,9 +29,8 @@ idempotency/                    module: example.com/idempotency
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/idempotency/cmd/demo
-cd ~/go-exercises/idempotency
-go mod init example.com/idempotency
+mkdir -p go-solutions/02-variables-types-and-constants/09-blank-identifier-and-shadowing/06-idempotency-cache-comma-ok/cmd/demo
+cd go-solutions/02-variables-types-and-constants/09-blank-identifier-and-shadowing/06-idempotency-cache-comma-ok
 ```
 
 ### Why the ok is the whole signal

@@ -57,9 +57,8 @@ dispatch/                module example.com/dispatch
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/dispatch
-cd ~/go-exercises/dispatch
-go mod init example.com/dispatch
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/11-slice-memory-leaks/18-dispatch-context-cancel-goroutine-leak
+cd go-solutions/06-collections-arrays-slices-and-maps/11-slice-memory-leaks/18-dispatch-context-cancel-goroutine-leak
 go mod edit -go=1.24
 ```
 

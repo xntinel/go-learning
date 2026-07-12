@@ -25,9 +25,8 @@ tmplregistry/              independent module: example.com/tmplregistry
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/tmplregistry/cmd/demo
-cd ~/go-exercises/tmplregistry
-go mod init example.com/tmplregistry
+mkdir -p go-solutions/15-sync-primitives/12-sync-oncevalue-oncefunc/06-per-key-template-cache/cmd/demo
+cd go-solutions/15-sync-primitives/12-sync-oncevalue-oncefunc/06-per-key-template-cache
 ```
 
 ### The idiom: LoadOrStore a closure, let the loser discard

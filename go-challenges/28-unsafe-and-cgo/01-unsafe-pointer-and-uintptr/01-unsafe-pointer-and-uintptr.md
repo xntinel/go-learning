@@ -21,9 +21,8 @@ The public API should describe domain behavior, not memory tricks. Callers of th
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/unsafeptr
-cd ~/go-exercises/unsafeptr
-go mod init example.com/unsafeptr
+mkdir -p go-solutions/28-unsafe-and-cgo/01-unsafe-pointer-and-uintptr/01-unsafe-pointer-and-uintptr
+cd go-solutions/28-unsafe-and-cgo/01-unsafe-pointer-and-uintptr/01-unsafe-pointer-and-uintptr
 ```
 
 ### Exercise 1: Build A Word Inspector

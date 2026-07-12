@@ -28,9 +28,8 @@ idempotent-close/             module: example.com/idempotent-close
 Set up the module:
 
 ```bash
-mkdir -p idempotent-close/cmd/demo
-cd idempotent-close
-go mod init example.com/idempotent-close
+mkdir -p go-solutions/15-sync-primitives/03-sync-once/03-idempotent-close/cmd/demo
+cd go-solutions/15-sync-primitives/03-sync-once/03-idempotent-close
 ```
 
 ### Why Once is the right guard for Close

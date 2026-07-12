@@ -23,8 +23,7 @@ periodic_test.go         fires repeatedly, stops cleanly, Reset shortens the per
 Set up the module:
 
 ```bash
-mkdir -p periodic-runner/cmd/demo && cd periodic-runner
-go mod init example.com/periodic-runner
+mkdir -p go-solutions/16-concurrency-patterns/08-time-ticker-periodic-goroutines/01-periodic-runner/cmd/demo && cd go-solutions/16-concurrency-patterns/08-time-ticker-periodic-goroutines/01-periodic-runner
 ```
 
 ### How the receive loop and Stop fit together

@@ -31,9 +31,8 @@ ratelimiter/                     independent module: example.com/ratelimiter
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ratelimiter/cmd/demo
-cd ~/go-exercises/ratelimiter
-go mod init example.com/ratelimiter
+mkdir -p go-solutions/04-functions/12-functional-options-pattern/17-sliding-window-rate-limiter/cmd/demo
+cd go-solutions/04-functions/12-functional-options-pattern/17-sliding-window-rate-limiter
 go mod edit -go=1.24
 ```
 

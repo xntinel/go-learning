@@ -29,9 +29,8 @@ mutexbucket/                    independent module: example.com/mutexbucket
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/mutexbucket/limiter ~/go-exercises/mutexbucket/cmd/demo
-cd ~/go-exercises/mutexbucket
-go mod init example.com/mutexbucket
+mkdir -p go-solutions/15-sync-primitives/10-mutex-vs-channel/01-mutex-token-bucket/limiter go-solutions/15-sync-primitives/10-mutex-vs-channel/01-mutex-token-bucket/cmd/demo
+cd go-solutions/15-sync-primitives/10-mutex-vs-channel/01-mutex-token-bucket
 ```
 
 ### The design: one critical section, no check-then-act gap

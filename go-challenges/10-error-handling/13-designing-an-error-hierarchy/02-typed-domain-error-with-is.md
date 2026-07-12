@@ -27,9 +27,8 @@ typed-domain-error/                module example.com/typed-domain-error
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/typed-domain-error/cmd/demo
-cd ~/go-exercises/typed-domain-error
-go mod init example.com/typed-domain-error
+mkdir -p go-solutions/10-error-handling/13-designing-an-error-hierarchy/02-typed-domain-error-with-is/cmd/demo
+cd go-solutions/10-error-handling/13-designing-an-error-hierarchy/02-typed-domain-error-with-is
 ```
 
 ### How a typed error opts into a category

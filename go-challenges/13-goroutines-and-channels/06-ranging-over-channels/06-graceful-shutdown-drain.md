@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/gracefuldrain/cmd/demo
-cd ~/go-exercises/gracefuldrain
-go mod init example.com/gracefuldrain
+mkdir -p go-solutions/13-goroutines-and-channels/06-ranging-over-channels/06-graceful-shutdown-drain/cmd/demo
+cd go-solutions/13-goroutines-and-channels/06-ranging-over-channels/06-graceful-shutdown-drain
 ```
 
 ### Why graceful drain is a plain range, and hard cancel is not

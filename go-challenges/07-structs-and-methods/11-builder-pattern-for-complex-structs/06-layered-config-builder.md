@@ -29,9 +29,8 @@ cfgbuild/                   independent module: example.com/cfgbuild
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cfgbuild/cmd/demo
-cd ~/go-exercises/cfgbuild
-go mod init example.com/cfgbuild
+mkdir -p go-solutions/07-structs-and-methods/11-builder-pattern-for-complex-structs/06-layered-config-builder/cmd/demo
+cd go-solutions/07-structs-and-methods/11-builder-pattern-for-complex-structs/06-layered-config-builder
 ```
 
 ### Two correct ways to say "unset", and when each applies

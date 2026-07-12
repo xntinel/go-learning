@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/eventhistory/cmd/demo
-cd ~/go-exercises/eventhistory
-go mod init example.com/eventhistory
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/01-bounded-event-history/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/01-bounded-event-history
 ```
 
 ### Why a ring buffer behind a slice

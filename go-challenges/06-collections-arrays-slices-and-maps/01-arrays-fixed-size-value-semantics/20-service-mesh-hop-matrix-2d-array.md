@@ -43,9 +43,8 @@ hopmatrix/                     module example.com/hopmatrix
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/hopmatrix
-cd ~/go-exercises/hopmatrix
-go mod init example.com/hopmatrix
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/20-service-mesh-hop-matrix-2d-array
+cd go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/20-service-mesh-hop-matrix-2d-array
 go mod edit -go=1.24
 ```
 

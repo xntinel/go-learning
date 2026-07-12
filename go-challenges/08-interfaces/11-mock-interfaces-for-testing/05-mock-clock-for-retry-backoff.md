@@ -29,9 +29,8 @@ retryclock/                  independent module: example.com/retryclock
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/retryclock/cmd/demo
-cd ~/go-exercises/retryclock
-go mod init example.com/retryclock
+mkdir -p go-solutions/08-interfaces/11-mock-interfaces-for-testing/05-mock-clock-for-retry-backoff/cmd/demo
+cd go-solutions/08-interfaces/11-mock-interfaces-for-testing/05-mock-clock-for-retry-backoff
 ```
 
 ### The Clock seam

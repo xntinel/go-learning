@@ -72,9 +72,8 @@ A `--publish hostPort:containerPort` mapping needs two iptables rules. The DNAT 
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/bridge/cmd/demo
-cd ~/go-exercises/bridge
-go mod init example.com/bridge
+mkdir -p go-solutions/38-capstone-container-runtime/09-container-networking-bridge-nat/09-container-networking-bridge-nat/cmd/demo
+cd go-solutions/38-capstone-container-runtime/09-container-networking-bridge-nat/09-container-networking-bridge-nat
 go get github.com/vishvananda/netlink@v1.3.0
 go get github.com/coreos/go-iptables@v0.8.0
 ```

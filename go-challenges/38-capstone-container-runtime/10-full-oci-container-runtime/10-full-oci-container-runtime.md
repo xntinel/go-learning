@@ -150,10 +150,9 @@ The `start` operation:
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/oci-runtime/runtime
-mkdir -p ~/go-exercises/oci-runtime/cmd/oci-runtime
-cd ~/go-exercises/oci-runtime
-go mod init example.com/oci-runtime
+mkdir -p go-solutions/38-capstone-container-runtime/10-full-oci-container-runtime/10-full-oci-container-runtime/runtime
+mkdir -p go-solutions/38-capstone-container-runtime/10-full-oci-container-runtime/10-full-oci-container-runtime/cmd/oci-runtime
+cd go-solutions/38-capstone-container-runtime/10-full-oci-container-runtime/10-full-oci-container-runtime
 ```
 
 The `runtime` package is verified with `go test`. The CLI is verified with `go build ./cmd/oci-runtime`.

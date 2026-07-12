@@ -24,8 +24,7 @@ cmd/
 Set up the module:
 
 ```bash
-mkdir -p recursion/cmd/demo && cd recursion
-go mod init example.com/recursion
+mkdir -p go-solutions/40-capstone-language-interpreter/06-closures-first-class-functions/03-recursive-closures-forward-reference/cmd/demo && cd go-solutions/40-capstone-language-interpreter/06-closures-first-class-functions/03-recursive-closures-forward-reference
 ```
 
 ### Why the order does not matter here

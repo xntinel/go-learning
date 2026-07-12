@@ -30,9 +30,8 @@ transforms/               independent module: example.com/transforms
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/transforms/cmd/demo
-cd ~/go-exercises/transforms
-go mod init example.com/transforms
+mkdir -p go-solutions/05-strings-runes-and-unicode/10-building-a-text-processing-pipeline/02-pure-cleanup-transforms/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/10-building-a-text-processing-pipeline/02-pure-cleanup-transforms
 ```
 
 ### What each transform does, and why order matters

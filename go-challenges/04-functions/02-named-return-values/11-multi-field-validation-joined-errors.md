@@ -24,9 +24,8 @@ ordervalidate/              independent module: example.com/ordervalidate
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ordervalidate
-cd ~/go-exercises/ordervalidate
-go mod init example.com/ordervalidate
+mkdir -p go-solutions/04-functions/02-named-return-values/11-multi-field-validation-joined-errors
+cd go-solutions/04-functions/02-named-return-values/11-multi-field-validation-joined-errors
 go mod edit -go=1.24
 ```
 

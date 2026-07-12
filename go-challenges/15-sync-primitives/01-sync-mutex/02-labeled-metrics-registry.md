@@ -28,9 +28,8 @@ metricsreg/                  independent module: example.com/metricsreg
 - Verify: `go test -count=1 -race ./...`
 
 ```bash
-mkdir -p ~/go-exercises/metricsreg/cmd/demo
-cd ~/go-exercises/metricsreg
-go mod init example.com/metricsreg
+mkdir -p go-solutions/15-sync-primitives/01-sync-mutex/02-labeled-metrics-registry/cmd/demo
+cd go-solutions/15-sync-primitives/01-sync-mutex/02-labeled-metrics-registry
 ```
 
 ### Why a bare map needs a lock, and why Snapshot copies

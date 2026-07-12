@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pipelinestage/cmd/demo
-cd ~/go-exercises/pipelinestage
-go mod init example.com/pipelinestage
+mkdir -p go-solutions/13-goroutines-and-channels/06-ranging-over-channels/07-pipeline-stage/cmd/demo
+cd go-solutions/13-goroutines-and-channels/06-ranging-over-channels/07-pipeline-stage
 ```
 
 ### The close-downstream-when-upstream-closes contract

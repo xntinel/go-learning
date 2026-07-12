@@ -27,9 +27,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ttlcache/cmd/demo
-cd ~/go-exercises/ttlcache
-go mod init example.com/ttlcache
+mkdir -p go-solutions/12-testing-ecosystem/16-testing-time-dependent-code/04-ttl-cache-expiry/cmd/demo
+cd go-solutions/12-testing-ecosystem/16-testing-time-dependent-code/04-ttl-cache-expiry
 ```
 
 ### Lazy expiry vs. the janitor, and the boundary

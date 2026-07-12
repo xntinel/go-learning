@@ -32,9 +32,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/mailtmpl/cmd/demo ~/go-exercises/mailtmpl/testdata
-cd ~/go-exercises/mailtmpl
-go mod init example.com/mailtmpl
+mkdir -p go-solutions/12-testing-ecosystem/19-golden-file-testing/08-table-driven-per-case-goldens/cmd/demo go-solutions/12-testing-ecosystem/19-golden-file-testing/08-table-driven-per-case-goldens/testdata
+cd go-solutions/12-testing-ecosystem/19-golden-file-testing/08-table-driven-per-case-goldens
 ```
 
 ### One golden per subtest, and the name mapping

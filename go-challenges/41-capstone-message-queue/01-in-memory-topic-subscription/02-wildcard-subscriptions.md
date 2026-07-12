@@ -20,8 +20,7 @@ pubsub_test.go       exhaustive match table, invalid-pattern rejection, concurre
 Set up the module:
 
 ```bash
-mkdir -p wildcard-subscriptions/cmd/demo && cd wildcard-subscriptions
-go mod init example.com/pubsub
+mkdir -p go-solutions/41-capstone-message-queue/01-in-memory-topic-subscription/02-wildcard-subscriptions/cmd/demo && cd go-solutions/41-capstone-message-queue/01-in-memory-topic-subscription/02-wildcard-subscriptions
 ```
 
 ### Subjects, segments, and the meaning of the two wildcards

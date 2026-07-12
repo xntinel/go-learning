@@ -29,9 +29,8 @@ nolintdemo/                   independent module: example.com/nolintdemo
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/nolintdemo/cmd/demo
-cd ~/go-exercises/nolintdemo
-go mod init example.com/nolintdemo
+mkdir -p go-solutions/01-environment-and-tooling/06-linting-with-golangci-lint/08-disciplined-nolint-with-nolintlint/cmd/demo
+cd go-solutions/01-environment-and-tooling/06-linting-with-golangci-lint/08-disciplined-nolint-with-nolintlint
 ```
 
 ### When a suppression is legitimate — and how to make it auditable

@@ -32,9 +32,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ordersapi/cmd/demo ~/go-exercises/ordersapi/testdata
-cd ~/go-exercises/ordersapi
-go mod init example.com/ordersapi
+mkdir -p go-solutions/12-testing-ecosystem/19-golden-file-testing/03-http-handler-golden-response/cmd/demo go-solutions/12-testing-ecosystem/19-golden-file-testing/03-http-handler-golden-response/testdata
+cd go-solutions/12-testing-ecosystem/19-golden-file-testing/03-http-handler-golden-response
 ```
 
 ### Why golden the body but assert status and headers separately

@@ -29,9 +29,8 @@ gracefulhttp/              independent module: example.com/gracefulhttp
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/gracefulhttp/cmd/demo
-cd ~/go-exercises/gracefulhttp
-go mod init example.com/gracefulhttp
+mkdir -p go-solutions/13-goroutines-and-channels/11-goroutine-lifecycle-management/02-graceful-http-shutdown/cmd/demo
+cd go-solutions/13-goroutines-and-channels/11-goroutine-lifecycle-management/02-graceful-http-shutdown
 ```
 
 ### The teardown handshake, step by step

@@ -29,8 +29,7 @@ textiter_test.go     line counting, newline trimming, word counts, column extrac
 Set up the module:
 
 ```bash
-mkdir -p text-iterators/cmd/demo && cd text-iterators
-go mod init example.com/text-iterators
+mkdir -p go-solutions/25-iterators-and-modern-go/08-standard-library-iterators/03-text-iterators/cmd/demo && cd go-solutions/25-iterators-and-modern-go/08-standard-library-iterators/03-text-iterators
 ```
 
 ### The newline detail, and composing text iterators

@@ -29,9 +29,8 @@ validate/                    independent module: example.com/validate
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/validate/cmd/demo
-cd ~/go-exercises/validate
-go mod init example.com/validate
+mkdir -p go-solutions/12-testing-ecosystem/03-test-helpers/01-validator-assert-helpers/cmd/demo
+cd go-solutions/12-testing-ecosystem/03-test-helpers/01-validator-assert-helpers
 ```
 
 ### Why a sentinel wrapped with `%w`

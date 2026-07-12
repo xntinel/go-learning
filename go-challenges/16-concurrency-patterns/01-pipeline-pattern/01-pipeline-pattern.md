@@ -71,9 +71,8 @@ hard to reason about. Prefer `done`.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pipeline/internal/pipeline ~/go-exercises/pipeline/cmd/pipelinedemo
-cd ~/go-exercises/pipeline
-go mod init example.com/pipeline
+mkdir -p go-solutions/16-concurrency-patterns/01-pipeline-pattern/01-pipeline-pattern/internal/pipeline go-solutions/16-concurrency-patterns/01-pipeline-pattern/01-pipeline-pattern/cmd/pipelinedemo
+cd go-solutions/16-concurrency-patterns/01-pipeline-pattern/01-pipeline-pattern
 ```
 
 This is a library, not a program. Verification is `go test`.

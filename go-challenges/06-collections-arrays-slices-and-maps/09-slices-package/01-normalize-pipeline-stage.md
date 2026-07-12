@@ -31,9 +31,8 @@ normalize/                     module example.com/normalize
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/normalize/cmd/demo
-cd ~/go-exercises/normalize
-go mod init example.com/normalize
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/09-slices-package/01-normalize-pipeline-stage/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/09-slices-package/01-normalize-pipeline-stage
 go mod edit -go=1.24
 ```
 

@@ -25,9 +25,8 @@ manifest/                  independent module: example.com/manifest
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/manifest/cmd/demo
-cd ~/go-exercises/manifest
-go mod init example.com/manifest
+mkdir -p go-solutions/12-testing-ecosystem/01-your-first-test/10-skippable-slow-check/cmd/demo
+cd go-solutions/12-testing-ecosystem/01-your-first-test/10-skippable-slow-check
 ```
 
 ### One validator, two test speeds

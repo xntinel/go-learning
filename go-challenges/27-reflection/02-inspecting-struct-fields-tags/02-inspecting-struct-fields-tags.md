@@ -21,9 +21,8 @@ Reflection can see unexported field metadata, but packages outside the declaring
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/tagdoc/cmd/demo
-cd ~/go-exercises/tagdoc
-go mod init example.com/tagdoc
+mkdir -p go-solutions/27-reflection/02-inspecting-struct-fields-tags/02-inspecting-struct-fields-tags/cmd/demo
+cd go-solutions/27-reflection/02-inspecting-struct-fields-tags/02-inspecting-struct-fields-tags
 ```
 
 ### Exercise 1: Extract Field Metadata

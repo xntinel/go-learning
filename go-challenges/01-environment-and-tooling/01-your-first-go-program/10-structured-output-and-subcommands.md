@@ -32,9 +32,8 @@ checks exit codes. `gofmt -l` empty.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/urlcheckcli
-cd ~/go-exercises/urlcheckcli
-go mod init example.com/urlcheckcli
+mkdir -p go-solutions/01-environment-and-tooling/01-your-first-go-program/10-structured-output-and-subcommands
+cd go-solutions/01-environment-and-tooling/01-your-first-go-program/10-structured-output-and-subcommands
 ```
 
 ### A testable dispatcher, not an untestable main

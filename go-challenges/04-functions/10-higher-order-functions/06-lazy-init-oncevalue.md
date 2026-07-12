@@ -24,9 +24,8 @@ lazyinit/                    independent module: example.com/lazyinit
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/lazyinit/cmd/demo
-cd ~/go-exercises/lazyinit
-go mod init example.com/lazyinit
+mkdir -p go-solutions/04-functions/10-higher-order-functions/06-lazy-init-oncevalue/cmd/demo
+cd go-solutions/04-functions/10-higher-order-functions/06-lazy-init-oncevalue
 go mod edit -go=1.25
 ```
 

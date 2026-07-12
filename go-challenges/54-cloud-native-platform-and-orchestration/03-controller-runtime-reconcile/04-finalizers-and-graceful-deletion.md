@@ -33,9 +33,8 @@ finalizer-reconcile/              independent module: example.com/finalizer-reco
 Set up the module:
 
 ```bash
-mkdir -p ~/operators/finalizer-reconcile/cmd/demo
-cd ~/operators/finalizer-reconcile
-go mod init example.com/finalizer-reconcile
+mkdir -p go-solutions/54-cloud-native-platform-and-orchestration/03-controller-runtime-reconcile/04-finalizers-and-graceful-deletion/cmd/demo
+cd go-solutions/54-cloud-native-platform-and-orchestration/03-controller-runtime-reconcile/04-finalizers-and-graceful-deletion
 go mod edit -go=1.24
 go get sigs.k8s.io/controller-runtime@v0.20.4
 go get k8s.io/api@v0.32.0 k8s.io/apimachinery@v0.32.0 k8s.io/client-go@v0.32.0

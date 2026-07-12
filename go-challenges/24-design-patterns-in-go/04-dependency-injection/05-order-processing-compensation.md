@@ -36,8 +36,7 @@ processor_test.go    recording fakes; happy path, payment-failure releases the
 Set up the module:
 
 ```bash
-mkdir -p order-processing/cmd/demo && cd order-processing
-go mod init example.com/order-processing
+mkdir -p go-solutions/24-design-patterns-in-go/04-dependency-injection/05-order-processing-compensation/cmd/demo && cd go-solutions/24-design-patterns-in-go/04-dependency-injection/05-order-processing-compensation
 ```
 
 ### Why compensation, and why reverse order

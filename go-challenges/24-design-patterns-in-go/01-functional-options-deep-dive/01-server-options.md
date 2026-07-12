@@ -22,8 +22,7 @@ server_test.go         defaults, per-option validation, order invariants, preset
 Set up the module:
 
 ```bash
-mkdir -p server-options/cmd/demo && cd server-options
-go mod init example.com/funcoptions
+mkdir -p go-solutions/24-design-patterns-in-go/01-functional-options-deep-dive/01-server-options/cmd/demo && cd go-solutions/24-design-patterns-in-go/01-functional-options-deep-dive/01-server-options
 ```
 
 ### Why this shape

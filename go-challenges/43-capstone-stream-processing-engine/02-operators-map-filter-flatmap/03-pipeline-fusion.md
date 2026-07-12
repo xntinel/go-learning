@@ -26,8 +26,7 @@ operators_test.go      chaining, expansion, fusion merges/skips, error channel c
 Set up the module:
 
 ```bash
-mkdir -p pipeline-fusion/cmd/demo && cd pipeline-fusion
-go mod init example.com/pipeline-fusion
+mkdir -p go-solutions/43-capstone-stream-processing-engine/02-operators-map-filter-flatmap/03-pipeline-fusion/cmd/demo && cd go-solutions/43-capstone-stream-processing-engine/02-operators-map-filter-flatmap/03-pipeline-fusion
 go mod edit -go=1.26
 ```
 

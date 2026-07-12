@@ -30,8 +30,7 @@ typedmap/                     independent module: example.com/typedmap
 Set up the module:
 
 ```bash
-mkdir typedmap && cd typedmap
-go mod init example.com/typedmap
+mkdir go-solutions/15-sync-primitives/04-sync-map/03-generic-typed-map && cd go-solutions/15-sync-primitives/04-sync-map/03-generic-typed-map
 ```
 
 ### What generics do and do not remove

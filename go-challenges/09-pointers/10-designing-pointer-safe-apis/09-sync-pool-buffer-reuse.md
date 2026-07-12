@@ -29,9 +29,8 @@ encoder/                    independent module: example.com/encoder
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/encoder/cmd/demo
-cd ~/go-exercises/encoder
-go mod init example.com/encoder
+mkdir -p go-solutions/09-pointers/10-designing-pointer-safe-apis/09-sync-pool-buffer-reuse/cmd/demo
+cd go-solutions/09-pointers/10-designing-pointer-safe-apis/09-sync-pool-buffer-reuse
 go mod edit -go=1.25
 ```
 

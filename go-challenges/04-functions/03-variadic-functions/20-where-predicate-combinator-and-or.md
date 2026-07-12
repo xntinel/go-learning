@@ -30,9 +30,8 @@ wherebuild/                 independent module: example.com/wherebuild
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/wherebuild/cmd/demo
-cd ~/go-exercises/wherebuild
-go mod init example.com/wherebuild
+mkdir -p go-solutions/04-functions/03-variadic-functions/20-where-predicate-combinator-and-or/cmd/demo
+cd go-solutions/04-functions/03-variadic-functions/20-where-predicate-combinator-and-or
 go mod edit -go=1.24
 ```
 

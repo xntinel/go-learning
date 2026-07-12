@@ -31,9 +31,8 @@ querymatch/                 independent module: example.com/querymatch
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/querymatch/cmd/demo
-cd ~/go-exercises/querymatch
-go mod init example.com/querymatch
+mkdir -p go-solutions/12-testing-ecosystem/04-subtests-and-t-run/01-table-driven-subtests/cmd/demo
+cd go-solutions/12-testing-ecosystem/04-subtests-and-t-run/01-table-driven-subtests
 ```
 
 ### Why a table plus t.Run is the baseline

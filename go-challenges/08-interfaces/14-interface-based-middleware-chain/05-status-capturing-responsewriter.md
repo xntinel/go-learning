@@ -27,9 +27,8 @@ capturewriter/               independent module: example.com/capturewriter
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/capturewriter/cmd/demo
-cd ~/go-exercises/capturewriter
-go mod init example.com/capturewriter
+mkdir -p go-solutions/08-interfaces/14-interface-based-middleware-chain/05-status-capturing-responsewriter/cmd/demo
+cd go-solutions/08-interfaces/14-interface-based-middleware-chain/05-status-capturing-responsewriter
 go mod edit -go=1.26
 ```
 

@@ -82,9 +82,8 @@ OCI layers are gzip-compressed tar archives (`archive/tar` inside `compress/gzip
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ociimage/cmd/demo
-cd ~/go-exercises/ociimage
-go mod init example.com/ociimage
+mkdir -p go-solutions/38-capstone-container-runtime/06-oci-image-pulling/06-oci-image-pulling/cmd/demo
+cd go-solutions/38-capstone-container-runtime/06-oci-image-pulling/06-oci-image-pulling
 ```
 
 ### Exercise 1: Image Reference Parsing

@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/runner/cmd/demo
-cd ~/go-exercises/runner
-go mod init example.com/runner
+mkdir -p go-solutions/10-error-handling/09-error-handling-in-goroutines/01-concurrent-runner-channel-join/cmd/demo
+cd go-solutions/10-error-handling/09-error-handling-in-goroutines/01-concurrent-runner-channel-join
 go mod edit -go=1.26
 ```
 

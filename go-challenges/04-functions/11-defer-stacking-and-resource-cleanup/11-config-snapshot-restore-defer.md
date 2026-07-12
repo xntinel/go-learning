@@ -24,9 +24,8 @@ routetable/                 independent module: example.com/routetable
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/routetable/routetable
-cd ~/go-exercises/routetable
-go mod init example.com/routetable
+mkdir -p go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/11-config-snapshot-restore-defer/routetable
+cd go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/11-config-snapshot-restore-defer
 go mod edit -go=1.24
 ```
 

@@ -27,9 +27,8 @@ Test: exact wire framing through `httptest.ResponseRecorder`; a multi-line paylo
 Verify: `go test -count=1 -race ./...`
 
 ```bash
-mkdir -p ~/go-exercises/sseframe/cmd/demo
-cd ~/go-exercises/sseframe
-go mod init example.com/sseframe
+mkdir -p go-solutions/05-strings-runes-and-unicode/09-strings-builder-performance/08-sse-frame-writer-streaming/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/09-strings-builder-performance/08-sse-frame-writer-streaming
 ```
 
 ### Framing and flushing

@@ -32,9 +32,8 @@ decorate/                     independent module: example.com/decorate
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/decorate/cmd/demo
-cd ~/go-exercises/decorate
-go mod init example.com/decorate
+mkdir -p go-solutions/08-interfaces/01-implicit-interface-satisfaction/10-decorator-preserves-interface/cmd/demo
+cd go-solutions/08-interfaces/01-implicit-interface-satisfaction/10-decorator-preserves-interface
 ```
 
 ### Why decoration is clean only over a narrow interface

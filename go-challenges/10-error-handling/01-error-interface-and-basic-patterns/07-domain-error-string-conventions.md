@@ -29,9 +29,8 @@ paymenterr/                  independent module: example.com/paymenterr
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/paymenterr/cmd/demo
-cd ~/go-exercises/paymenterr
-go mod init example.com/paymenterr
+mkdir -p go-solutions/10-error-handling/01-error-interface-and-basic-patterns/07-domain-error-string-conventions/cmd/demo
+cd go-solutions/10-error-handling/01-error-interface-and-basic-patterns/07-domain-error-string-conventions
 ```
 
 ### Why the message string is an interface concern, not a UI string

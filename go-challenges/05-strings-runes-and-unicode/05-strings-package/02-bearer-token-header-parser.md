@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/bearer/cmd/demo
-cd ~/go-exercises/bearer
-go mod init example.com/bearer
+mkdir -p go-solutions/05-strings-runes-and-unicode/05-strings-package/02-bearer-token-header-parser/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/05-strings-package/02-bearer-token-header-parser
 ```
 
 ### Why Cut and EqualFold, and why the token is untouched

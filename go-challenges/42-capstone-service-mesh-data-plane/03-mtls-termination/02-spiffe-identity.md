@@ -22,8 +22,7 @@ identity_test.go     no-cert error, SPIFFE SAN, DNS-only fallback, String preced
 Set up the module:
 
 ```bash
-mkdir -p spiffe-identity/cmd/demo && cd spiffe-identity
-go mod init example.com/spiffe-identity
+mkdir -p go-solutions/42-capstone-service-mesh-data-plane/03-mtls-termination/02-spiffe-identity/cmd/demo && cd go-solutions/42-capstone-service-mesh-data-plane/03-mtls-termination/02-spiffe-identity
 go mod edit -go=1.26
 ```
 

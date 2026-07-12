@@ -62,9 +62,8 @@ These concerns are orthogonal to binary framing. The application server sends an
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/wsbinary/cmd/demo
-cd ~/go-exercises/wsbinary
-go mod init example.com/wsbinary
+mkdir -p go-solutions/33-tcp-udp-and-networking/17-websocket-binary-frames/17-websocket-binary-frames/cmd/demo
+cd go-solutions/33-tcp-udp-and-networking/17-websocket-binary-frames/17-websocket-binary-frames
 ```
 
 This is a library plus a demo binary: the library is verified with `go test`, the demo with `go run ./cmd/demo`.

@@ -22,8 +22,7 @@ coordinator_test.go   coverage with no overlap, rebalance on join, offset commit
 Set up the module:
 
 ```bash
-mkdir -p consumer-group/cmd/demo && cd consumer-group
-go mod init example.com/consumer-group
+mkdir -p go-solutions/41-capstone-message-queue/08-full-message-queue/02-consumer-group-coordinator/cmd/demo && cd go-solutions/41-capstone-message-queue/08-full-message-queue/02-consumer-group-coordinator
 ```
 
 ### Why a deterministic range assignment and a rebalance on every change

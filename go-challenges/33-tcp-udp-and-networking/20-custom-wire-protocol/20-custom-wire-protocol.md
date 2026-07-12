@@ -46,9 +46,8 @@ Callers distinguish error kinds with `errors.Is`, not string matching. Each prot
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/wirep
-cd ~/go-exercises/wirep
-go mod init example.com/wirep
+mkdir -p go-solutions/33-tcp-udp-and-networking/20-custom-wire-protocol/20-custom-wire-protocol
+cd go-solutions/33-tcp-udp-and-networking/20-custom-wire-protocol/20-custom-wire-protocol
 ```
 
 This is a library, not a program. Verify it with `go test`, not `go run`.

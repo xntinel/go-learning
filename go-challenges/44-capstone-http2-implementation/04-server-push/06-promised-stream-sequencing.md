@@ -22,8 +22,7 @@ promised-stream-sequencing/
 Set up the module:
 
 ```bash
-mkdir -p promised-stream-sequencing/cmd/demo && cd promised-stream-sequencing
-go mod init example.com/promised-stream-sequencing
+mkdir -p go-solutions/44-capstone-http2-implementation/04-server-push/06-promised-stream-sequencing/cmd/demo && cd go-solutions/44-capstone-http2-implementation/04-server-push/06-promised-stream-sequencing
 go mod edit -go=1.26
 ```
 

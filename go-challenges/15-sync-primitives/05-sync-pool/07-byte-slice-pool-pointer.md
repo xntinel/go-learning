@@ -32,9 +32,8 @@ Verify: `go test -count=1 -race ./...` then `go test -bench=. -benchmem -run=^$ 
 Set up the module:
 
 ```bash
-mkdir -p scratchcopy/scratch scratchcopy/cmd/demo
-cd scratchcopy
-go mod init example.com/scratchcopy
+mkdir -p go-solutions/15-sync-primitives/05-sync-pool/07-byte-slice-pool-pointer/scratch go-solutions/15-sync-primitives/05-sync-pool/07-byte-slice-pool-pointer/cmd/demo
+cd go-solutions/15-sync-primitives/05-sync-pool/07-byte-slice-pool-pointer
 ```
 
 ### Why *[]byte and not []byte: the boxing allocation

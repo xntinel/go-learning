@@ -22,8 +22,7 @@ batch_test.go        remainder, exact multiple, empty input, invalid size, capac
 Set up the module:
 
 ```bash
-mkdir -p batch-pagination/cmd/demo && cd batch-pagination
-go mod init example.com/batch
+mkdir -p go-solutions/25-iterators-and-modern-go/01-range-over-integers/05-batch-pagination/cmd/demo && cd go-solutions/25-iterators-and-modern-go/01-range-over-integers/05-batch-pagination
 ```
 
 ### Why the count is a ceiling, and why each page is capacity-bounded

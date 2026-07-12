@@ -29,9 +29,8 @@ money/                       independent module: example.com/money-value-object-
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/money/cmd/demo
-cd ~/go-exercises/money
-go mod init example.com/money-value-object-invariants
+mkdir -p go-solutions/07-structs-and-methods/06-constructor-functions-and-validation/06-money-value-object-invariants/cmd/demo
+cd go-solutions/07-structs-and-methods/06-constructor-functions-and-validation/06-money-value-object-invariants
 ```
 
 ### Why the invariant must be unbypassable

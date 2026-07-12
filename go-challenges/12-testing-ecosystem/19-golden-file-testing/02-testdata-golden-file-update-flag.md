@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/invoicegold/cmd/demo ~/go-exercises/invoicegold/testdata
-cd ~/go-exercises/invoicegold
-go mod init example.com/invoicegold
+mkdir -p go-solutions/12-testing-ecosystem/19-golden-file-testing/02-testdata-golden-file-update-flag/cmd/demo go-solutions/12-testing-ecosystem/19-golden-file-testing/02-testdata-golden-file-update-flag/testdata
+cd go-solutions/12-testing-ecosystem/19-golden-file-testing/02-testdata-golden-file-update-flag
 ```
 
 ### The -update flag and the goldenFile helper

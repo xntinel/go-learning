@@ -55,9 +55,8 @@ cursorpage/                module example.com/cursorpage
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cursorpage
-cd ~/go-exercises/cursorpage
-go mod init example.com/cursorpage
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/10-cursor-pagination-bounds-clamp
+cd go-solutions/06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/10-cursor-pagination-bounds-clamp
 go mod edit -go=1.24
 ```
 

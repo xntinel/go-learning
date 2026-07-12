@@ -25,8 +25,7 @@ scan_test.go    sequential scan, index point lookup, missing-table error
 Set up the module:
 
 ```bash
-mkdir -p catalog-and-scan/cmd/demo && cd catalog-and-scan
-go mod init example.com/catalog-and-scan
+mkdir -p go-solutions/39-capstone-database-engine/06-query-planner/03-catalog-and-sequential-scan/cmd/demo && cd go-solutions/39-capstone-database-engine/06-query-planner/03-catalog-and-sequential-scan
 ```
 
 ### The value type and the operator protocol

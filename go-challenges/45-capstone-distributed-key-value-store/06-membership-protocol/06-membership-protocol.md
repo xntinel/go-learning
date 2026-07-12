@@ -65,9 +65,8 @@ With 21-byte addresses ("192.168.255.255:65535") and six gossip entries plus a t
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/membership/cmd/demo
-cd ~/go-exercises/membership
-go mod init example.com/membership
+mkdir -p go-solutions/45-capstone-distributed-key-value-store/06-membership-protocol/06-membership-protocol/cmd/demo
+cd go-solutions/45-capstone-distributed-key-value-store/06-membership-protocol/06-membership-protocol
 ```
 
 ### Exercise 1: Core Types and the Gossip Queue

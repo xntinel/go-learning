@@ -33,9 +33,8 @@ sflight/                     independent module: example.com/sflight
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/sflight/cmd/demo
-cd ~/go-exercises/sflight
-go mod init example.com/sflight
+mkdir -p go-solutions/13-goroutines-and-channels/10-signaling-with-closed-channels/12-singleflight-stampede-completion-barrier/cmd/demo
+cd go-solutions/13-goroutines-and-channels/10-signaling-with-closed-channels/12-singleflight-stampede-completion-barrier
 go get go.uber.org/goleak
 ```
 

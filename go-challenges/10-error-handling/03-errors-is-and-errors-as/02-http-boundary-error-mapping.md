@@ -27,9 +27,8 @@ Verify: `go test -count=1 -race ./... && go vet ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/httpmap/cmd/demo
-cd ~/go-exercises/httpmap
-go mod init example.com/httpmap
+mkdir -p go-solutions/10-error-handling/03-errors-is-and-errors-as/02-http-boundary-error-mapping/cmd/demo
+cd go-solutions/10-error-handling/03-errors-is-and-errors-as/02-http-boundary-error-mapping
 go mod edit -go=1.25
 ```
 

@@ -26,9 +26,8 @@ repotypednil/              independent module: example.com/repotypednil
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/repotypednil/cmd/demo
-cd ~/go-exercises/repotypednil
-go mod init example.com/repotypednil
+mkdir -p go-solutions/08-interfaces/07-nil-interface-values/02-typed-nil-error-return-bug/cmd/demo
+cd go-solutions/08-interfaces/07-nil-interface-values/02-typed-nil-error-return-bug
 ```
 
 ### Why the bug is invisible until it isn't

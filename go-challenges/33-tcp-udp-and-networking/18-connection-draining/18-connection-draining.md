@@ -79,9 +79,8 @@ When the LB sees 503 it stops sending new connections. The drain phase must last
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/drain/cmd/demo
-cd ~/go-exercises/drain
-go mod init example.com/drain
+mkdir -p go-solutions/33-tcp-udp-and-networking/18-connection-draining/18-connection-draining/cmd/demo
+cd go-solutions/33-tcp-udp-and-networking/18-connection-draining/18-connection-draining
 ```
 
 This is a library package verified with `go test`, not a standalone program.

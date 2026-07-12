@@ -29,9 +29,8 @@ countersvc/                 independent module: example.com/countersvc
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/countersvc/cmd/demo
-cd ~/go-exercises/countersvc
-go mod init example.com/countersvc
+mkdir -p go-solutions/09-pointers/06-pointer-receivers-and-interfaces/01-counter-service-pointer-receivers/cmd/demo
+cd go-solutions/09-pointers/06-pointer-receivers-and-interfaces/01-counter-service-pointer-receivers
 go mod edit -go=1.25
 ```
 

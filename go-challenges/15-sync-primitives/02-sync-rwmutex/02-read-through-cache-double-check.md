@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/rtcache/cmd/demo
-cd ~/go-exercises/rtcache
-go mod init example.com/rtcache
+mkdir -p go-solutions/15-sync-primitives/02-sync-rwmutex/02-read-through-cache-double-check/cmd/demo
+cd go-solutions/15-sync-primitives/02-sync-rwmutex/02-read-through-cache-double-check
 ```
 
 ### The double-check, step by step

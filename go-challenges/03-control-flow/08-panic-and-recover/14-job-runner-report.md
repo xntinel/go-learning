@@ -28,9 +28,8 @@ Verify: `go test -count=1 ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/jobrunner
-cd ~/go-exercises/jobrunner
-go mod init example.com/jobrunner
+mkdir -p go-solutions/03-control-flow/08-panic-and-recover/14-job-runner-report
+cd go-solutions/03-control-flow/08-panic-and-recover/14-job-runner-report
 go mod edit -go=1.24
 ```
 

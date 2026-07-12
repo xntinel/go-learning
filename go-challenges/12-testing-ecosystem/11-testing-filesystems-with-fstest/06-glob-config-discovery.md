@@ -34,9 +34,8 @@ configdisco/                 independent module: example.com/configdisco
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/configdisco/cmd/demo
-cd ~/go-exercises/configdisco
-go mod init example.com/configdisco
+mkdir -p go-solutions/12-testing-ecosystem/11-testing-filesystems-with-fstest/06-glob-config-discovery/cmd/demo
+cd go-solutions/12-testing-ecosystem/11-testing-filesystems-with-fstest/06-glob-config-discovery
 ```
 
 ### Sort the matches; do not trust glob order for precedence

@@ -30,9 +30,8 @@ matcher/                     independent module: example.com/must-constructor-in
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/matcher/cmd/demo
-cd ~/go-exercises/matcher
-go mod init example.com/must-constructor-init-invariants
+mkdir -p go-solutions/07-structs-and-methods/06-constructor-functions-and-validation/07-must-constructor-init-invariants/cmd/demo
+cd go-solutions/07-structs-and-methods/06-constructor-functions-and-validation/07-must-constructor-init-invariants
 ```
 
 ### When panic-at-init is correct, and when it is a latent crash

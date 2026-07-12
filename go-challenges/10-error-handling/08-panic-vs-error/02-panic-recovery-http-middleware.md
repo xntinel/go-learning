@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/recovermw/cmd/demo
-cd ~/go-exercises/recovermw
-go mod init example.com/recovermw
+mkdir -p go-solutions/10-error-handling/08-panic-vs-error/02-panic-recovery-http-middleware/cmd/demo
+cd go-solutions/10-error-handling/08-panic-vs-error/02-panic-recovery-http-middleware
 go mod edit -go=1.26
 ```
 

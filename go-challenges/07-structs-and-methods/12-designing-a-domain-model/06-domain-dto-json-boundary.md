@@ -29,9 +29,8 @@ userjson/                   independent module: example.com/userjson
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/userjson/cmd/demo
-cd ~/go-exercises/userjson
-go mod init example.com/userjson
+mkdir -p go-solutions/07-structs-and-methods/12-designing-a-domain-model/06-domain-dto-json-boundary/cmd/demo
+cd go-solutions/07-structs-and-methods/12-designing-a-domain-model/06-domain-dto-json-boundary
 ```
 
 ### Two shapes, mapped explicitly, re-validated on decode

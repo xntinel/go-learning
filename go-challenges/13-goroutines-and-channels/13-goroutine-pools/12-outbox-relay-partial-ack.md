@@ -31,9 +31,8 @@ outbox/                      independent module: example.com/outbox
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/outbox/cmd/demo
-cd ~/go-exercises/outbox
-go mod init example.com/outbox
+mkdir -p go-solutions/13-goroutines-and-channels/13-goroutine-pools/12-outbox-relay-partial-ack/cmd/demo
+cd go-solutions/13-goroutines-and-channels/13-goroutine-pools/12-outbox-relay-partial-ack
 ```
 
 ### Run-to-completion, not first-error-abort

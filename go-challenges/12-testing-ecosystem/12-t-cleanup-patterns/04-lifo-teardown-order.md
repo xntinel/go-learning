@@ -30,9 +30,8 @@ lifoharness/                 independent module: example.com/lifoharness
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/lifoharness/cmd/demo
-cd ~/go-exercises/lifoharness
-go mod init example.com/lifoharness
+mkdir -p go-solutions/12-testing-ecosystem/12-t-cleanup-patterns/04-lifo-teardown-order/cmd/demo
+cd go-solutions/12-testing-ecosystem/12-t-cleanup-patterns/04-lifo-teardown-order
 go mod edit -go=1.24
 ```
 

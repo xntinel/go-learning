@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/hashring/cmd/demo
-cd ~/go-exercises/hashring
-go mod init example.com/hashring
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/12-sorted-collections-binary-search/04-consistent-hash-ring/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/12-sorted-collections-binary-search/04-consistent-hash-ring
 ```
 
 ### Virtual nodes, the circle, and the wraparound

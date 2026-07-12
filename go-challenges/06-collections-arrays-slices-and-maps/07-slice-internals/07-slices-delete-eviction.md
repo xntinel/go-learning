@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/connpool/cmd/demo
-cd ~/go-exercises/connpool
-go mod init example.com/connpool
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/07-slices-delete-eviction/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/07-slices-delete-eviction
 ```
 
 ### The tail-pointer leak and how slices.Delete fixes it

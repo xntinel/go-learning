@@ -28,9 +28,8 @@ api/                          independent module: example.com/api
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/api/cmd/demo
-cd ~/go-exercises/api
-go mod init example.com/api
+mkdir -p go-solutions/10-error-handling/05-sentinel-errors/02-map-sentinels-to-http-status/cmd/demo
+cd go-solutions/10-error-handling/05-sentinel-errors/02-map-sentinels-to-http-status
 ```
 
 ### One seam, decided once

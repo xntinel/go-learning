@@ -36,9 +36,8 @@ sessionstore/              independent module: example.com/sessionstore
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/sessionstore/cmd/demo
-cd ~/go-exercises/sessionstore
-go mod init example.com/sessionstore
+mkdir -p go-solutions/15-sync-primitives/09-lock-ordering-deadlock-prevention/06-sharded-store-two-shard-move/cmd/demo
+cd go-solutions/15-sync-primitives/09-lock-ordering-deadlock-prevention/06-sharded-store-two-shard-move
 ```
 
 ### Striped locks, and the operation that spans two stripes

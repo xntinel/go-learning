@@ -27,9 +27,8 @@ Test: `AppendTo(nil)` equals the `fmt.Sprintf` reference for representative and 
 Verify: `go test -count=1 -race ./...`
 
 ```bash
-mkdir -p ~/go-exercises/appendser/cmd/demo
-cd ~/go-exercises/appendser
-go mod init example.com/appendser
+mkdir -p go-solutions/05-strings-runes-and-unicode/09-strings-builder-performance/07-append-based-zero-intermediate-serializer/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/09-strings-builder-performance/07-append-based-zero-intermediate-serializer
 ```
 
 ### The append idiom and what it buys

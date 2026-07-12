@@ -29,9 +29,8 @@ readiness/                  independent module: example.com/readiness
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/readiness/cmd/demo
-cd ~/go-exercises/readiness
-go mod init example.com/readiness
+mkdir -p go-solutions/08-interfaces/04-common-standard-library-interfaces/10-http-handler-readiness/cmd/demo
+cd go-solutions/08-interfaces/04-common-standard-library-interfaces/10-http-handler-readiness
 ```
 
 ### One interface, three roles

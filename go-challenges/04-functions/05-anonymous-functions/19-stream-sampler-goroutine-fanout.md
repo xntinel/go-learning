@@ -28,9 +28,8 @@ sampler/                       module example.com/sampler
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/sampler/cmd/demo
-cd ~/go-exercises/sampler
-go mod init example.com/sampler
+mkdir -p go-solutions/04-functions/05-anonymous-functions/19-stream-sampler-goroutine-fanout/cmd/demo
+cd go-solutions/04-functions/05-anonymous-functions/19-stream-sampler-goroutine-fanout
 go mod edit -go=1.24
 ```
 

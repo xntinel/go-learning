@@ -35,9 +35,8 @@ mvcc/                         independent module: example.com/mvcc-snapshot-isol
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/mvcc-snapshot-isolation-transaction/cmd/demo
-cd ~/go-exercises/mvcc-snapshot-isolation-transaction
-go mod init example.com/mvcc-snapshot-isolation-transaction
+mkdir -p go-solutions/03-control-flow/07-defer-semantics-and-ordering/31-mvcc-snapshot-isolation-transaction/cmd/demo
+cd go-solutions/03-control-flow/07-defer-semantics-and-ordering/31-mvcc-snapshot-isolation-transaction
 go mod edit -go=1.24
 ```
 

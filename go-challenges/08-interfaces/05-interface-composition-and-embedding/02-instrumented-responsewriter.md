@@ -28,9 +28,8 @@ accesslog/                  independent module: example.com/accesslog
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/accesslog/cmd/demo
-cd ~/go-exercises/accesslog
-go mod init example.com/accesslog
+mkdir -p go-solutions/08-interfaces/05-interface-composition-and-embedding/02-instrumented-responsewriter/cmd/demo
+cd go-solutions/08-interfaces/05-interface-composition-and-embedding/02-instrumented-responsewriter
 ```
 
 ### Why embed, and the two behaviors that must match the stdlib

@@ -28,9 +28,8 @@ heartbeat/                    module example.com/heartbeat
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/heartbeat/cmd/demo
-cd ~/go-exercises/heartbeat
-go mod init example.com/heartbeat
+mkdir -p go-solutions/04-functions/05-anonymous-functions/16-background-workers-heartbeat/cmd/demo
+cd go-solutions/04-functions/05-anonymous-functions/16-background-workers-heartbeat
 go mod edit -go=1.24
 ```
 

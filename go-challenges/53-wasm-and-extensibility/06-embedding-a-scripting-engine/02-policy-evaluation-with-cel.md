@@ -33,9 +33,8 @@ Verify: `go test -race ./...` with the dependency present (bar-mode: the offline
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/policy/cmd/demo
-cd ~/go-exercises/policy
-go mod init example.com/policy
+mkdir -p go-solutions/53-wasm-and-extensibility/06-embedding-a-scripting-engine/02-policy-evaluation-with-cel/cmd/demo
+cd go-solutions/53-wasm-and-extensibility/06-embedding-a-scripting-engine/02-policy-evaluation-with-cel
 go mod edit -go=1.26
 go get github.com/google/cel-go@v0.24.1
 ```

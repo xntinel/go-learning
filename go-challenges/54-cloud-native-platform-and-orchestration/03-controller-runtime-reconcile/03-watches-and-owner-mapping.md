@@ -32,9 +32,8 @@ watch-mapping/                    independent module: example.com/watch-mapping
 Set up the module:
 
 ```bash
-mkdir -p ~/operators/watch-mapping/cmd/demo
-cd ~/operators/watch-mapping
-go mod init example.com/watch-mapping
+mkdir -p go-solutions/54-cloud-native-platform-and-orchestration/03-controller-runtime-reconcile/03-watches-and-owner-mapping/cmd/demo
+cd go-solutions/54-cloud-native-platform-and-orchestration/03-controller-runtime-reconcile/03-watches-and-owner-mapping
 go mod edit -go=1.24
 go get sigs.k8s.io/controller-runtime@v0.20.4
 go get k8s.io/api@v0.32.0 k8s.io/apimachinery@v0.32.0 k8s.io/client-go@v0.32.0

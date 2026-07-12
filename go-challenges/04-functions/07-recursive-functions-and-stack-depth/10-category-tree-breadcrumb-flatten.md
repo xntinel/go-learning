@@ -30,9 +30,8 @@ failing with `ErrMaxDepthExceeded` (checked via `errors.Is`).
 Verify: `go test -count=1 ./...`
 
 ```bash
-mkdir -p ~/go-exercises/categorybreadcrumb
-cd ~/go-exercises/categorybreadcrumb
-go mod init example.com/categorybreadcrumb
+mkdir -p go-solutions/04-functions/07-recursive-functions-and-stack-depth/10-category-tree-breadcrumb-flatten
+cd go-solutions/04-functions/07-recursive-functions-and-stack-depth/10-category-tree-breadcrumb-flatten
 go mod edit -go=1.24
 ```
 

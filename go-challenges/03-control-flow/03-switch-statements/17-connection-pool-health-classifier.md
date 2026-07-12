@@ -28,9 +28,8 @@ connpool/                  independent module: example.com/connection-pool-healt
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/connpool/cmd/demo
-cd ~/go-exercises/connpool
-go mod init example.com/connection-pool-health-classifier
+mkdir -p go-solutions/03-control-flow/03-switch-statements/17-connection-pool-health-classifier/cmd/demo
+cd go-solutions/03-control-flow/03-switch-statements/17-connection-pool-health-classifier
 go mod edit -go=1.24
 ```
 

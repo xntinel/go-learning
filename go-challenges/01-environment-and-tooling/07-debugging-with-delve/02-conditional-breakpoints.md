@@ -29,9 +29,8 @@ batchval/                  independent module: example.com/batchval
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/batchval/batch ~/go-exercises/batchval/cmd/demo
-cd ~/go-exercises/batchval
-go mod init example.com/batchval
+mkdir -p go-solutions/01-environment-and-tooling/07-debugging-with-delve/02-conditional-breakpoints/batch go-solutions/01-environment-and-tooling/07-debugging-with-delve/02-conditional-breakpoints/cmd/demo
+cd go-solutions/01-environment-and-tooling/07-debugging-with-delve/02-conditional-breakpoints
 go mod edit -go=1.24
 ```
 

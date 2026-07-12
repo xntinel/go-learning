@@ -28,9 +28,8 @@ rollback/                   independent module: example.com/rollback
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/rollback/rollback ~/go-exercises/rollback/cmd/demo
-cd ~/go-exercises/rollback
-go mod init example.com/rollback
+mkdir -p go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/08-cleanup-stack-lifo-rollback/rollback go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/08-cleanup-stack-lifo-rollback/cmd/demo
+cd go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/08-cleanup-stack-lifo-rollback
 ```
 
 ### Why not just use defers

@@ -31,9 +31,8 @@ aadbind/                    independent module: example.com/aadbind
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/aadbind/cmd/demo
-cd ~/go-exercises/aadbind
-go mod init example.com/aadbind
+mkdir -p go-solutions/49-application-security-crypto-supplychain/03-envelope-encryption-kek-dek/03-aad-context-binding/cmd/demo
+cd go-solutions/49-application-security-crypto-supplychain/03-envelope-encryption-kek-dek/03-aad-context-binding
 go mod edit -go=1.24
 ```
 

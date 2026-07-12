@@ -22,8 +22,7 @@ producers_test.go    full-range collection, early-break honored, validation erro
 Set up the module:
 
 ```bash
-mkdir -p seq-and-seq2-producers/cmd/demo && cd seq-and-seq2-producers
-go mod init example.com/seq-and-seq2-producers
+mkdir -p go-solutions/25-iterators-and-modern-go/07-iter-package-usage/01-seq-and-seq2-producers/cmd/demo && cd go-solutions/25-iterators-and-modern-go/07-iter-package-usage/01-seq-and-seq2-producers
 ```
 
 ### The yield protocol and why the boolean is not optional

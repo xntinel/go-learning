@@ -23,9 +23,8 @@ payment_test.go                   approval round-trip, decline sentinel + code, 
 Set up the module:
 
 ```bash
-mkdir -p payments/thirdparty/paypro payments/cmd/demo
-cd payments
-go mod init example.com/payments
+mkdir -p go-solutions/24-design-patterns-in-go/07-adapter-pattern/02-payment-gateway-acl/thirdparty/paypro go-solutions/24-design-patterns-in-go/07-adapter-pattern/02-payment-gateway-acl/cmd/demo
+cd go-solutions/24-design-patterns-in-go/07-adapter-pattern/02-payment-gateway-acl
 ```
 
 ### A vendor that does not believe in errors

@@ -30,9 +30,8 @@ querybuilder/                independent module: example.com/builder-accumulate-
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/querybuilder/cmd/demo
-cd ~/go-exercises/querybuilder
-go mod init example.com/builder-accumulate-errors
+mkdir -p go-solutions/07-structs-and-methods/06-constructor-functions-and-validation/08-builder-accumulate-errors/cmd/demo
+cd go-solutions/07-structs-and-methods/06-constructor-functions-and-validation/08-builder-accumulate-errors
 ```
 
 ### Builder versus functional options

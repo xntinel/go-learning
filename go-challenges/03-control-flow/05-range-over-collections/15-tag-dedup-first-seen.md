@@ -29,9 +29,8 @@ tagdedup/                   independent module: example.com/tag-dedup
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/tagdedup
-cd ~/go-exercises/tagdedup
-go mod init example.com/tag-dedup
+mkdir -p go-solutions/03-control-flow/05-range-over-collections/15-tag-dedup-first-seen
+cd go-solutions/03-control-flow/05-range-over-collections/15-tag-dedup-first-seen
 go mod edit -go=1.24
 ```
 

@@ -34,9 +34,8 @@ lrucache/                        independent module: example.com/lrucache
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/lrucache/cache ~/go-exercises/lrucache/cmd/demo
-cd ~/go-exercises/lrucache
-go mod init example.com/lrucache
+mkdir -p go-solutions/15-sync-primitives/13-building-a-thread-safe-cache/05-lru-bounded-shards/cache go-solutions/15-sync-primitives/13-building-a-thread-safe-cache/05-lru-bounded-shards/cmd/demo
+cd go-solutions/15-sync-primitives/13-building-a-thread-safe-cache/05-lru-bounded-shards
 ```
 
 ### The data structure: a map into a list

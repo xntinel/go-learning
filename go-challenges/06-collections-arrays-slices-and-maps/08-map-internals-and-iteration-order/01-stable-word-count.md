@@ -30,9 +30,8 @@ wordcount/                 independent module: example.com/wordcount
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/wordcount/cmd/demo
-cd ~/go-exercises/wordcount
-go mod init example.com/wordcount
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/01-stable-word-count/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/01-stable-word-count
 ```
 
 ### Why the sorted slice is the contract, not the map

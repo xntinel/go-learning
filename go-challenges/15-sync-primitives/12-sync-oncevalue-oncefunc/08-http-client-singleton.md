@@ -25,9 +25,8 @@ outbound/                  independent module: example.com/outbound
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/outbound/cmd/demo
-cd ~/go-exercises/outbound
-go mod init example.com/outbound
+mkdir -p go-solutions/15-sync-primitives/12-sync-oncevalue-oncefunc/08-http-client-singleton/cmd/demo
+cd go-solutions/15-sync-primitives/12-sync-oncevalue-oncefunc/08-http-client-singleton
 ```
 
 ### The incident, mechanically

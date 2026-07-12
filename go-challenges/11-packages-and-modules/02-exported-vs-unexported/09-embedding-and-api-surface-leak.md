@@ -30,9 +30,8 @@ counter/                   independent module: example.com/counter
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/counter/cmd/demo
-cd ~/go-exercises/counter
-go mod init example.com/counter
+mkdir -p go-solutions/11-packages-and-modules/02-exported-vs-unexported/09-embedding-and-api-surface-leak/cmd/demo
+cd go-solutions/11-packages-and-modules/02-exported-vs-unexported/09-embedding-and-api-surface-leak
 go mod edit -go=1.26
 ```
 

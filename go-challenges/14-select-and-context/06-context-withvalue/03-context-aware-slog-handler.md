@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ctxslog/cmd/demo
-cd ~/go-exercises/ctxslog
-go mod init example.com/ctxslog
+mkdir -p go-solutions/14-select-and-context/06-context-withvalue/03-context-aware-slog-handler/cmd/demo
+cd go-solutions/14-select-and-context/06-context-withvalue/03-context-aware-slog-handler
 ```
 
 ### Why wrap the handler, clone the record, and re-wrap on WithAttrs

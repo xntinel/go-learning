@@ -31,8 +31,7 @@ ingest_test.go       tally correctness, missing-key handling, top-N ordering and
 Set up the module:
 
 ```bash
-mkdir -p log-metrics-ingest/cmd/demo && cd log-metrics-ingest
-go mod init example.com/log-metrics-ingest
+mkdir -p go-solutions/25-iterators-and-modern-go/08-standard-library-iterators/05-log-metrics-ingest/cmd/demo && cd go-solutions/25-iterators-and-modern-go/08-standard-library-iterators/05-log-metrics-ingest
 ```
 
 ### Three text iterators, one parse

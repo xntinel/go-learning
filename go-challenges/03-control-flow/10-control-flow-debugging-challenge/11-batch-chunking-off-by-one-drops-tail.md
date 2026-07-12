@@ -24,9 +24,8 @@ chunk/                     module example.com/chunk
 - Verify: `go test -count=1 ./...`.
 
 ```bash
-mkdir -p ~/go-exercises/chunk
-cd ~/go-exercises/chunk
-go mod init example.com/chunk
+mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/11-batch-chunking-off-by-one-drops-tail
+cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/11-batch-chunking-off-by-one-drops-tail
 ```
 
 ### The artifact and the planted bug

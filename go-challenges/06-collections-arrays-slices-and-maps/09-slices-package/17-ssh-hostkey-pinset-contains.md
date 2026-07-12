@@ -50,9 +50,8 @@ pinverify/                    module example.com/pinverify
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pinverify
-cd ~/go-exercises/pinverify
-go mod init example.com/pinverify
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/09-slices-package/17-ssh-hostkey-pinset-contains
+cd go-solutions/06-collections-arrays-slices-and-maps/09-slices-package/17-ssh-hostkey-pinset-contains
 go mod edit -go=1.24
 ```
 

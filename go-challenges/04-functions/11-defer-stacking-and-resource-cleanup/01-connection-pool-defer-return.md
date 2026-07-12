@@ -29,9 +29,8 @@ connpool/                       independent module: example.com/connpool
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/connpool/internal/pool ~/go-exercises/connpool/cmd/demo
-cd ~/go-exercises/connpool
-go mod init example.com/connpool
+mkdir -p go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/01-connection-pool-defer-return/internal/pool go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/01-connection-pool-defer-return/cmd/demo
+cd go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/01-connection-pool-defer-return
 ```
 
 ### The free list is a buffered channel, and that is correct

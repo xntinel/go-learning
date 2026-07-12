@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pubsub/cmd/demo
-cd ~/go-exercises/pubsub
-go mod init example.com/pubsub
+mkdir -p go-solutions/08-interfaces/06-interface-segregation/09-segregate-pubsub-port/cmd/demo
+cd go-solutions/08-interfaces/06-interface-segregation/09-segregate-pubsub-port
 go mod edit -go=1.24
 ```
 

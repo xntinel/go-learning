@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/casenorm/cmd/demo
-cd ~/go-exercises/casenorm
-go mod init example.com/casenorm
+mkdir -p go-solutions/12-testing-ecosystem/10-testing-readers-with-iotest/01-transforming-reader-passes-iotest/cmd/demo
+cd go-solutions/12-testing-ecosystem/10-testing-readers-with-iotest/01-transforming-reader-passes-iotest
 ```
 
 ### Why a transform is the right shape to prove the contract

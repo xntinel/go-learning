@@ -32,9 +32,8 @@ checkout/                  independent module: example.com/checkout
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/checkout/cmd/server ~/go-exercises/checkout/cmd/demo
-cd ~/go-exercises/checkout
-go mod init example.com/checkout
+mkdir -p go-solutions/12-testing-ecosystem/20-test-coverage-analysis/05-merge-unit-integration-coverage/cmd/server go-solutions/12-testing-ecosystem/20-test-coverage-analysis/05-merge-unit-integration-coverage/cmd/demo
+cd go-solutions/12-testing-ecosystem/20-test-coverage-analysis/05-merge-unit-integration-coverage
 ```
 
 ### Why two tiers need merging

@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/tenantmetrics/cmd/demo
-cd ~/go-exercises/tenantmetrics
-go mod init example.com/tenantmetrics
+mkdir -p go-solutions/09-pointers/08-pointers-in-slices-and-maps/08-sync-map-pointer-registry/cmd/demo
+cd go-solutions/09-pointers/08-pointers-in-slices-and-maps/08-sync-map-pointer-registry
 ```
 
 ### Why sync.Map, and why the value must be a pointer

@@ -34,9 +34,8 @@ faultfs/                     independent module: example.com/faultfs
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/faultfs/cmd/demo
-cd ~/go-exercises/faultfs
-go mod init example.com/faultfs
+mkdir -p go-solutions/12-testing-ecosystem/11-testing-filesystems-with-fstest/07-fault-injection-fs-wrapper/cmd/demo
+cd go-solutions/12-testing-ecosystem/11-testing-filesystems-with-fstest/07-fault-injection-fs-wrapper
 ```
 
 ### Why a wrapper, and what an fs.File actually is

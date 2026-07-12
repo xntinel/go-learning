@@ -62,9 +62,8 @@ histobuckets/            module example.com/histobuckets
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/histobuckets
-cd ~/go-exercises/histobuckets
-go mod init example.com/histobuckets
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/09-slices-package/18-prometheus-bucket-sorted-dedup
+cd go-solutions/06-collections-arrays-slices-and-maps/09-slices-package/18-prometheus-bucket-sorted-dedup
 go mod edit -go=1.24
 ```
 

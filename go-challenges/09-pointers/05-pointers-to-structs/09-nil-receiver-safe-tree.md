@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/niltree/cmd/demo
-cd ~/go-exercises/niltree
-go mod init example.com/niltree
+mkdir -p go-solutions/09-pointers/05-pointers-to-structs/09-nil-receiver-safe-tree/cmd/demo
+cd go-solutions/09-pointers/05-pointers-to-structs/09-nil-receiver-safe-tree
 ```
 
 ### A typed nil is a valid receiver

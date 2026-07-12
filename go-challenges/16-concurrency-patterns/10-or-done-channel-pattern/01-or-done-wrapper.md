@@ -32,8 +32,7 @@ ordone_test.go       source-drains, done-mid-stream, done-already-closed,
 Set up the module:
 
 ```bash
-mkdir -p or-done-wrapper/cmd/demo && cd or-done-wrapper
-go mod init example.com/ordone
+mkdir -p go-solutions/16-concurrency-patterns/10-or-done-channel-pattern/01-or-done-wrapper/cmd/demo && cd go-solutions/16-concurrency-patterns/10-or-done-channel-pattern/01-or-done-wrapper
 ```
 
 ### Why two selects, and why the output is always closed

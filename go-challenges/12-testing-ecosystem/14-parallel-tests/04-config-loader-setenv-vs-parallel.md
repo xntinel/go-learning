@@ -32,9 +32,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/configload/cmd/demo
-cd ~/go-exercises/configload
-go mod init example.com/configload
+mkdir -p go-solutions/12-testing-ecosystem/14-parallel-tests/04-config-loader-setenv-vs-parallel/cmd/demo
+cd go-solutions/12-testing-ecosystem/14-parallel-tests/04-config-loader-setenv-vs-parallel
 ```
 
 ### Why t.Setenv and t.Parallel are mutually exclusive

@@ -30,9 +30,8 @@ idpolicy/                    independent module: example.com/idpolicy
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/idpolicy/cmd/demo
-cd ~/go-exercises/idpolicy
-go mod init example.com/idpolicy
+mkdir -p go-solutions/49-application-security-crypto-supplychain/11-sigstore-cosign-signing/02-identity-policy-as-code/cmd/demo
+cd go-solutions/49-application-security-crypto-supplychain/11-sigstore-cosign-signing/02-identity-policy-as-code
 go mod edit -go=1.25
 go get github.com/sigstore/sigstore-go@v1.2.1
 ```

@@ -32,9 +32,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/money/cmd/demo
-cd ~/go-exercises/money
-go mod init example.com/money
+mkdir -p go-solutions/12-testing-ecosystem/24-property-based-testing/01-money-algebraic-invariants/cmd/demo
+cd go-solutions/12-testing-ecosystem/24-property-based-testing/01-money-algebraic-invariants
 go mod edit -go=1.26
 ```
 

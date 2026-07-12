@@ -30,9 +30,8 @@ ingester/                 independent module: example.com/ingester
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ingester/cmd/demo
-cd ~/go-exercises/ingester
-go mod init example.com/ingester
+mkdir -p go-solutions/05-strings-runes-and-unicode/10-building-a-text-processing-pipeline/03-jsonl-streaming-ingester/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/10-building-a-text-processing-pipeline/03-jsonl-streaming-ingester
 ```
 
 ### Buffer sizing, line numbering, and error wrapping

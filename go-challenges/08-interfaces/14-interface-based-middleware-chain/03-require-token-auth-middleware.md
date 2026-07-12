@@ -26,9 +26,8 @@ authmw/                      independent module: example.com/authmw
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/authmw/cmd/demo
-cd ~/go-exercises/authmw
-go mod init example.com/authmw
+mkdir -p go-solutions/08-interfaces/14-interface-based-middleware-chain/03-require-token-auth-middleware/cmd/demo
+cd go-solutions/08-interfaces/14-interface-based-middleware-chain/03-require-token-auth-middleware
 go mod edit -go=1.26
 ```
 

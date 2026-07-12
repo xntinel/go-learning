@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/driverkit/internal/registry ~/go-exercises/driverkit/drivers/mem ~/go-exercises/driverkit/drivers/null ~/go-exercises/driverkit/cmd/demo
-cd ~/go-exercises/driverkit
-go mod init example.com/driverkit
+mkdir -p go-solutions/04-functions/08-init-functions-and-package-initialization/02-explicit-driver-implementations/internal/registry go-solutions/04-functions/08-init-functions-and-package-initialization/02-explicit-driver-implementations/drivers/mem go-solutions/04-functions/08-init-functions-and-package-initialization/02-explicit-driver-implementations/drivers/null go-solutions/04-functions/08-init-functions-and-package-initialization/02-explicit-driver-implementations/cmd/demo
+cd go-solutions/04-functions/08-init-functions-and-package-initialization/02-explicit-driver-implementations
 ```
 
 ### Why the dependency arrow points one way

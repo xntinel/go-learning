@@ -82,9 +82,8 @@ The same classification drives the readiness probe: a `Critical` pool returns HT
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/poolmon/cmd/demo
-cd ~/go-exercises/poolmon
-go mod init example.com/poolmon
+mkdir -p go-solutions/30-production-patterns/12-connection-pool-health-monitoring/12-connection-pool-health-monitoring/cmd/demo
+cd go-solutions/30-production-patterns/12-connection-pool-health-monitoring/12-connection-pool-health-monitoring
 ```
 
 This is a library package. Verification is `go test`, not `go run`.

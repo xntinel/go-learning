@@ -31,9 +31,8 @@ cfgbench/                  independent module: example.com/cfgbench
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cfgbench/cmd/demo
-cd ~/go-exercises/cfgbench
-go mod init example.com/cfgbench
+mkdir -p go-solutions/15-sync-primitives/08-atomic-value-config-hot-reload/10-rwmutex-vs-atomic-benchmark/cmd/demo
+cd go-solutions/15-sync-primitives/08-atomic-value-config-hot-reload/10-rwmutex-vs-atomic-benchmark
 ```
 
 ### Measuring the claim instead of asserting it

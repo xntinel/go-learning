@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/idempotency/cmd/demo
-cd ~/go-exercises/idempotency
-go mod init example.com/idempotency
+mkdir -p go-solutions/14-select-and-context/06-context-withvalue/07-idempotency-key-guard/cmd/demo
+cd go-solutions/14-select-and-context/06-context-withvalue/07-idempotency-key-guard
 ```
 
 ### Why the key rides the context and how single-execution is enforced

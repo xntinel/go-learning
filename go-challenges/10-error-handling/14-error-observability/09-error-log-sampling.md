@@ -31,9 +31,8 @@ logsample/                   independent module: example.com/logsample
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/logsample/cmd/demo
-cd ~/go-exercises/logsample
-go mod init example.com/logsample
+mkdir -p go-solutions/10-error-handling/14-error-observability/09-error-log-sampling/cmd/demo
+cd go-solutions/10-error-handling/14-error-observability/09-error-log-sampling
 go mod edit -go=1.25
 ```
 

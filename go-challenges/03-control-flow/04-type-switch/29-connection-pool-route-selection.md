@@ -39,9 +39,8 @@ connection-pool-route-selection/   independent module: example.com/connection-po
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/connection-pool-route-selection/cmd/demo
-cd ~/go-exercises/connection-pool-route-selection
-go mod init example.com/connection-pool-route-selection
+mkdir -p go-solutions/03-control-flow/04-type-switch/29-connection-pool-route-selection/cmd/demo
+cd go-solutions/03-control-flow/04-type-switch/29-connection-pool-route-selection
 go mod edit -go=1.24
 ```
 

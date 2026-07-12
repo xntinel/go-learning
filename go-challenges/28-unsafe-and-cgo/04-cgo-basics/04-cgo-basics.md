@@ -21,9 +21,8 @@ C APIs often use return codes or sentinel values. A wrapper should translate tho
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cgobasics
-cd ~/go-exercises/cgobasics
-go mod init example.com/cgobasics
+mkdir -p go-solutions/28-unsafe-and-cgo/04-cgo-basics/04-cgo-basics
+cd go-solutions/28-unsafe-and-cgo/04-cgo-basics/04-cgo-basics
 ```
 
 ### Exercise 1: Wrap C Functions

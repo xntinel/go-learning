@@ -31,9 +31,8 @@ budget-guard/                        independent module: example.com/budgetguard
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/budget-guard/cmd/demo
-cd ~/go-exercises/budget-guard
-go mod init example.com/budgetguard
+mkdir -p go-solutions/14-select-and-context/05-context-withtimeout-withdeadline/05-budget-guard-skip-work/cmd/demo
+cd go-solutions/14-select-and-context/05-context-withtimeout-withdeadline/05-budget-guard-skip-work
 ```
 
 ### Measuring the budget before spending it

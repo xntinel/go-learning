@@ -29,9 +29,8 @@ users/                        independent module: example.com/users
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/users/cmd/demo
-cd ~/go-exercises/users
-go mod init example.com/users
+mkdir -p go-solutions/10-error-handling/05-sentinel-errors/03-translate-driver-sentinels/cmd/demo
+cd go-solutions/10-error-handling/05-sentinel-errors/03-translate-driver-sentinels
 ```
 
 ### The boundary rule: infrastructure sentinels stop at the adapter

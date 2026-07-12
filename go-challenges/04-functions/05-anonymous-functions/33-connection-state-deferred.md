@@ -30,9 +30,8 @@ connstate/                    module example.com/connstate
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/connstate/cmd/demo
-cd ~/go-exercises/connstate
-go mod init example.com/connstate
+mkdir -p go-solutions/04-functions/05-anonymous-functions/33-connection-state-deferred/cmd/demo
+cd go-solutions/04-functions/05-anonymous-functions/33-connection-state-deferred
 go mod edit -go=1.24
 ```
 

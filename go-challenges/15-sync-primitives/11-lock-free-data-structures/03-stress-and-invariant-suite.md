@@ -32,9 +32,8 @@ stackstress/                     independent module: example.com/stackstress
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/stackstress/stack ~/go-exercises/stackstress/cmd/demo
-cd ~/go-exercises/stackstress
-go mod init example.com/stackstress
+mkdir -p go-solutions/15-sync-primitives/11-lock-free-data-structures/03-stress-and-invariant-suite/stack go-solutions/15-sync-primitives/11-lock-free-data-structures/03-stress-and-invariant-suite/cmd/demo
+cd go-solutions/15-sync-primitives/11-lock-free-data-structures/03-stress-and-invariant-suite
 ```
 
 ### What a stress test must prove

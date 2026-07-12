@@ -34,9 +34,8 @@ walcompact/                 independent module: example.com/walcompact
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/walcompact/cmd/demo
-cd ~/go-exercises/walcompact
-go mod init example.com/walcompact
+mkdir -p go-solutions/03-control-flow/06-labels-break-continue-goto/27-wal-compaction-grooming/cmd/demo
+cd go-solutions/03-control-flow/06-labels-break-continue-goto/27-wal-compaction-grooming
 go mod edit -go=1.24
 ```
 

@@ -34,9 +34,8 @@ streamrecover/                independent module: example.com/streamrecover
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/streamrecover/cmd/demo
-cd ~/go-exercises/streamrecover
-go mod init example.com/streamrecover
+mkdir -p go-solutions/50-messaging-and-event-driven/04-redis-streams-consumer-groups/02-pending-entries-and-crash-recovery/cmd/demo
+cd go-solutions/50-messaging-and-event-driven/04-redis-streams-consumer-groups/02-pending-entries-and-crash-recovery
 go mod edit -go=1.24
 go get github.com/redis/go-redis/v9
 go get github.com/alicebob/miniredis/v2

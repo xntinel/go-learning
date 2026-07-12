@@ -42,9 +42,8 @@ shardmap/               module example.com/shardmap
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/shardmap
-cd ~/go-exercises/shardmap
-go mod init example.com/shardmap
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/16-sharded-map-vs-rwmutex-contention
+cd go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/16-sharded-map-vs-rwmutex-contention
 go mod edit -go=1.24
 ```
 

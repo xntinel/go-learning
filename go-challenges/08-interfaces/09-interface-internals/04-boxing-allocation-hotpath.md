@@ -27,9 +27,8 @@ logfields/                  independent module: example.com/logfields
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/logfields/cmd/demo
-cd ~/go-exercises/logfields
-go mod init example.com/logfields
+mkdir -p go-solutions/08-interfaces/09-interface-internals/04-boxing-allocation-hotpath/cmd/demo
+cd go-solutions/08-interfaces/09-interface-internals/04-boxing-allocation-hotpath
 go mod edit -go=1.26
 ```
 

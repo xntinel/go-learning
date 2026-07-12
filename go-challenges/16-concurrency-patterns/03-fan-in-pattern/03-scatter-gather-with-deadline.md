@@ -22,8 +22,7 @@ scattergather_test.go all-complete, abandon-slow, per-source error, no-leak late
 Set up the module:
 
 ```bash
-mkdir -p scattergather/cmd/demo && cd scattergather
-go mod init example.com/scattergather
+mkdir -p go-solutions/16-concurrency-patterns/03-fan-in-pattern/03-scatter-gather-with-deadline/cmd/demo && cd go-solutions/16-concurrency-patterns/03-fan-in-pattern/03-scatter-gather-with-deadline
 ```
 
 ### The gather loop, the deadline, and why the sink must be buffered

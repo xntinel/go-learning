@@ -26,9 +26,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/normalizer/cmd/demo ~/go-exercises/normalizer/testdata
-cd ~/go-exercises/normalizer
-go mod init example.com/normalizer
+mkdir -p go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/04-glob-driven-table/cmd/demo go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/04-glob-driven-table/testdata
+cd go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/04-glob-driven-table
 ```
 
 ### Discovery turns adding a case into adding files

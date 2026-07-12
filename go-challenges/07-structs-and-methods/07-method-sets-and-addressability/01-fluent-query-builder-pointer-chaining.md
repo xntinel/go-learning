@@ -29,9 +29,8 @@ querybuilder/                  independent module: example.com/querybuilder
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/querybuilder/cmd/demo
-cd ~/go-exercises/querybuilder
-go mod init example.com/querybuilder
+mkdir -p go-solutions/07-structs-and-methods/07-method-sets-and-addressability/01-fluent-query-builder-pointer-chaining/cmd/demo
+cd go-solutions/07-structs-and-methods/07-method-sets-and-addressability/01-fluent-query-builder-pointer-chaining
 ```
 
 ### Why a chainable method must return *T

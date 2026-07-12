@@ -22,8 +22,7 @@ partition_test.go      same key same partition, all elements delivered, ctx abor
 Set up the module:
 
 ```bash
-mkdir -p keyby-partition/cmd/demo && cd keyby-partition
-go mod init example.com/keyby-partition
+mkdir -p go-solutions/43-capstone-stream-processing-engine/02-operators-map-filter-flatmap/05-keyby-partition/cmd/demo && cd go-solutions/43-capstone-stream-processing-engine/02-operators-map-filter-flatmap/05-keyby-partition
 go mod edit -go=1.26
 ```
 

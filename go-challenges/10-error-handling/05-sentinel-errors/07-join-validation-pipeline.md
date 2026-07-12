@@ -28,9 +28,8 @@ validate/                     independent module: example.com/validate
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/validate/cmd/demo
-cd ~/go-exercises/validate
-go mod init example.com/validate
+mkdir -p go-solutions/10-error-handling/05-sentinel-errors/07-join-validation-pipeline/cmd/demo
+cd go-solutions/10-error-handling/05-sentinel-errors/07-join-validation-pipeline
 ```
 
 ### Why errors.Join fits accumulation exactly

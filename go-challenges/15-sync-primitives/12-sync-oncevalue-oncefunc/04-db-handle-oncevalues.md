@@ -25,9 +25,8 @@ dbhandle/                  independent module: example.com/dbhandle
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/dbhandle/cmd/demo
-cd ~/go-exercises/dbhandle
-go mod init example.com/dbhandle
+mkdir -p go-solutions/15-sync-primitives/12-sync-oncevalue-oncefunc/04-db-handle-oncevalues/cmd/demo
+cd go-solutions/15-sync-primitives/12-sync-oncevalue-oncefunc/04-db-handle-oncevalues
 ```
 
 ### The right shape for a shared handle

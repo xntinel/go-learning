@@ -60,9 +60,8 @@ return type, the caller must be explicit (covered in lesson 7).
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/greet/cmd/demo
-cd ~/go-exercises/greet
-go mod init example.com/greet
+mkdir -p go-solutions/20-generics/01-type-parameters-and-constraints/01-type-parameters-and-constraints/cmd/demo
+cd go-solutions/20-generics/01-type-parameters-and-constraints/01-type-parameters-and-constraints
 ```
 
 ### Exercise 1: A Greet Function Constrained By fmt.Stringer

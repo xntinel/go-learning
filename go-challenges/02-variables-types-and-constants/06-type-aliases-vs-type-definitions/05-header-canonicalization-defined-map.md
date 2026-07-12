@@ -29,9 +29,8 @@ header/                   independent module: example.com/header
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/header/cmd/demo
-cd ~/go-exercises/header
-go mod init example.com/header
+mkdir -p go-solutions/02-variables-types-and-constants/06-type-aliases-vs-type-definitions/05-header-canonicalization-defined-map/cmd/demo
+cd go-solutions/02-variables-types-and-constants/06-type-aliases-vs-type-definitions/05-header-canonicalization-defined-map
 go mod edit -go=1.24
 ```
 

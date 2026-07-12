@@ -28,9 +28,8 @@ boundedrunner/             independent module: example.com/boundedrunner
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/boundedrunner/cmd/demo
-cd ~/go-exercises/boundedrunner
-go mod init example.com/boundedrunner
+mkdir -p go-solutions/13-goroutines-and-channels/05-waitgroup/02-bounded-fanout-runner/cmd/demo
+cd go-solutions/13-goroutines-and-channels/05-waitgroup/02-bounded-fanout-runner
 go mod edit -go=1.25
 ```
 

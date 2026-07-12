@@ -26,9 +26,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pipelinecancel/cmd/demo
-cd ~/go-exercises/pipelinecancel
-go mod init example.com/pipelinecancel
+mkdir -p go-solutions/13-goroutines-and-channels/07-done-channel-pattern/05-pipeline-stage-cancellation/cmd/demo
+cd go-solutions/13-goroutines-and-channels/07-done-channel-pattern/05-pipeline-stage-cancellation
 ```
 
 ### Every stage owns its output and guards its send

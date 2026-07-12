@@ -26,9 +26,8 @@ sse/                            independent module: example.com/sse-streaming-fl
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/sse/cmd/demo
-cd ~/go-exercises/sse
-go mod init example.com/sse-streaming-flush
+mkdir -p go-solutions/12-testing-ecosystem/09-httptest/08-sse-streaming-flush/cmd/demo
+cd go-solutions/12-testing-ecosystem/09-httptest/08-sse-streaming-flush
 ```
 
 ### Why a recorder cannot prove streaming, and Flusher

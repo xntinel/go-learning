@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/shortwrite/cmd/demo
-cd ~/go-exercises/shortwrite
-go mod init example.com/shortwrite
+mkdir -p go-solutions/12-testing-ecosystem/10-testing-readers-with-iotest/09-truncating-writer-short-write/cmd/demo
+cd go-solutions/12-testing-ecosystem/10-testing-readers-with-iotest/09-truncating-writer-short-write
 ```
 
 ### An honest short write vs. a lying one

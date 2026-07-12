@@ -32,9 +32,8 @@ logagg/                     independent module: example.com/log-error-aggregator
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/log-error-aggregator-by-type/cmd/demo
-cd ~/go-exercises/log-error-aggregator-by-type
-go mod init example.com/log-error-aggregator-by-type
+mkdir -p go-solutions/03-control-flow/05-range-over-collections/17-log-error-aggregator-by-type/cmd/demo
+cd go-solutions/03-control-flow/05-range-over-collections/17-log-error-aggregator-by-type
 go mod edit -go=1.24
 ```
 

@@ -59,9 +59,8 @@ wrapped errors.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/batch/internal/batch ~/go-exercises/batch/cmd/demo
-cd ~/go-exercises/batch
-go mod init example.com/batch
+mkdir -p go-solutions/16-concurrency-patterns/20-batch-processing-partial-failure/20-batch-processing-partial-failure/internal/batch go-solutions/16-concurrency-patterns/20-batch-processing-partial-failure/20-batch-processing-partial-failure/cmd/demo
+cd go-solutions/16-concurrency-patterns/20-batch-processing-partial-failure/20-batch-processing-partial-failure
 ```
 
 ### Exercise 1: Core Types and Sentinel Errors

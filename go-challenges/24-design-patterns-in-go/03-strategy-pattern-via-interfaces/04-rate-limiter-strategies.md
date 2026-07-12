@@ -24,8 +24,7 @@ ratelimit_test.go    per-algorithm behavior, config selection, unknown-strategy
 Set up the module:
 
 ```bash
-mkdir -p rate-limiter-strategies/cmd/demo && cd rate-limiter-strategies
-go mod init example.com/ratelimit
+mkdir -p go-solutions/24-design-patterns-in-go/03-strategy-pattern-via-interfaces/04-rate-limiter-strategies/cmd/demo && cd go-solutions/24-design-patterns-in-go/03-strategy-pattern-via-interfaces/04-rate-limiter-strategies
 ```
 
 ### One interface, three time models

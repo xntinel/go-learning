@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/requestmeta/cmd/demo
-cd ~/go-exercises/requestmeta
-go mod init example.com/requestmeta
+mkdir -p go-solutions/14-select-and-context/06-context-withvalue/01-type-safe-meta-carrier/cmd/demo
+cd go-solutions/14-select-and-context/06-context-withvalue/01-type-safe-meta-carrier
 ```
 
 ### Why the key is `struct{}` and the accessor returns comma-ok

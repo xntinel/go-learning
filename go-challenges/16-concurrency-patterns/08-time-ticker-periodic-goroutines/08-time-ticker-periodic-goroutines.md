@@ -68,9 +68,8 @@ to change the period at runtime, call `t.Reset(newD)` from inside the loop.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/periodic/internal/periodic ~/go-exercises/periodic/cmd/periodicdemo
-cd ~/go-exercises/periodic
-go mod init example.com/periodic
+mkdir -p go-solutions/16-concurrency-patterns/08-time-ticker-periodic-goroutines/08-time-ticker-periodic-goroutines/internal/periodic go-solutions/16-concurrency-patterns/08-time-ticker-periodic-goroutines/08-time-ticker-periodic-goroutines/cmd/periodicdemo
+cd go-solutions/16-concurrency-patterns/08-time-ticker-periodic-goroutines/08-time-ticker-periodic-goroutines
 ```
 
 ### Exercise 1: The Periodic Runner

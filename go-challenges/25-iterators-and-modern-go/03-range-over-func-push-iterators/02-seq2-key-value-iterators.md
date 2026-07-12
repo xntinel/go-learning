@@ -32,8 +32,7 @@ seq2_test.go         index/value pairs, deterministic sorted order, early-break
 Set up the module:
 
 ```bash
-mkdir -p seq2-key-value-iterators/cmd/demo && cd seq2-key-value-iterators
-go mod init example.com/seq2-kv
+mkdir -p go-solutions/25-iterators-and-modern-go/03-range-over-func-push-iterators/02-seq2-key-value-iterators/cmd/demo && cd go-solutions/25-iterators-and-modern-go/03-range-over-func-push-iterators/02-seq2-key-value-iterators
 ```
 
 ### Why a pair shape, and how its yield protocol differs

@@ -26,9 +26,8 @@ exercising all three outcomes in one pass.
 Verify: `go test -count=1 ./...`
 
 ```bash
-mkdir -p ~/go-exercises/reconcile-differ
-cd ~/go-exercises/reconcile-differ
-go mod init example.com/reconcile-differ
+mkdir -p go-solutions/04-functions/06-function-types-and-callbacks/15-reconciliation-differ-callback
+cd go-solutions/04-functions/06-function-types-and-callbacks/15-reconciliation-differ-callback
 go mod edit -go=1.24
 ```
 

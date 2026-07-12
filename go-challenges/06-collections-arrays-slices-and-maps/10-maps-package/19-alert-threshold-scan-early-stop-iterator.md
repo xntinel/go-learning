@@ -55,9 +55,8 @@ alertscan/                    module example.com/alertscan
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/alertscan
-cd ~/go-exercises/alertscan
-go mod init example.com/alertscan
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/19-alert-threshold-scan-early-stop-iterator
+cd go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/19-alert-threshold-scan-early-stop-iterator
 go mod edit -go=1.24
 ```
 

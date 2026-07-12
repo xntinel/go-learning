@@ -36,9 +36,8 @@ batchpool/                 independent module: example.com/batchpool
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/batchpool/cmd/demo
-cd ~/go-exercises/batchpool
-go mod init example.com/batchpool
+mkdir -p go-solutions/15-sync-primitives/09-lock-ordering-deadlock-prevention/08-mixed-resource-hierarchy-pool/cmd/demo
+cd go-solutions/15-sync-primitives/09-lock-ordering-deadlock-prevention/08-mixed-resource-hierarchy-pool
 ```
 
 ### A deadlock with only one mutex in it

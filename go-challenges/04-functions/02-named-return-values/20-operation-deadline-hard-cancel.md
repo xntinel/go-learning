@@ -29,9 +29,8 @@ harddeadline/                    independent module: example.com/harddeadline
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/harddeadline/cmd/demo
-cd ~/go-exercises/harddeadline
-go mod init example.com/harddeadline
+mkdir -p go-solutions/04-functions/02-named-return-values/20-operation-deadline-hard-cancel/cmd/demo
+cd go-solutions/04-functions/02-named-return-values/20-operation-deadline-hard-cancel
 go mod edit -go=1.24
 ```
 

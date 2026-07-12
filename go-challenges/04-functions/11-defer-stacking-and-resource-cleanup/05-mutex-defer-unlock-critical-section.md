@@ -29,9 +29,8 @@ metrics/                    independent module: example.com/metrics
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/metrics/metrics ~/go-exercises/metrics/cmd/demo
-cd ~/go-exercises/metrics
-go mod init example.com/metrics
+mkdir -p go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/05-mutex-defer-unlock-critical-section/metrics go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/05-mutex-defer-unlock-critical-section/cmd/demo
+cd go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/05-mutex-defer-unlock-critical-section
 ```
 
 ### Two patterns, one lock

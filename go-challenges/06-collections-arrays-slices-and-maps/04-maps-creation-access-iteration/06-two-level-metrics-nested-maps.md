@@ -30,9 +30,8 @@ metrics/                   independent module: example.com/metrics
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/metrics/cmd/demo
-cd ~/go-exercises/metrics
-go mod init example.com/metrics
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/06-two-level-metrics-nested-maps/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/06-two-level-metrics-nested-maps
 ```
 
 ### Why the inner map must be lazily allocated

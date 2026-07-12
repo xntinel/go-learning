@@ -33,9 +33,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/reqtimeout/cmd/demo
-cd ~/go-exercises/reqtimeout
-go mod init example.com/reqtimeout
+mkdir -p go-solutions/10-error-handling/10-error-handling-middleware/07-request-timeout-mapping/cmd/demo
+cd go-solutions/10-error-handling/10-error-handling-middleware/07-request-timeout-mapping
 ```
 
 ### Two ways to time out, and why they differ

@@ -22,8 +22,7 @@ log_test.go            reclamation accounting, latest-per-key survival, tombston
 Set up the module:
 
 ```bash
-mkdir -p self-compacting-log/cmd/demo && cd self-compacting-log
-go mod init example.com/self-compacting-log
+mkdir -p go-solutions/41-capstone-message-queue/06-message-retention-compaction/05-self-compacting-log/cmd/demo && cd go-solutions/41-capstone-message-queue/06-message-retention-compaction/05-self-compacting-log
 ```
 
 ### Triggering on the dirty ratio, not on every write

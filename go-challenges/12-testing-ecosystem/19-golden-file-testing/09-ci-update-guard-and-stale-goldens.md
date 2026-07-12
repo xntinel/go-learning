@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/notifygold/cmd/demo ~/go-exercises/notifygold/testdata
-cd ~/go-exercises/notifygold
-go mod init example.com/notifygold
+mkdir -p go-solutions/12-testing-ecosystem/19-golden-file-testing/09-ci-update-guard-and-stale-goldens/cmd/demo go-solutions/12-testing-ecosystem/19-golden-file-testing/09-ci-update-guard-and-stale-goldens/testdata
+cd go-solutions/12-testing-ecosystem/19-golden-file-testing/09-ci-update-guard-and-stale-goldens
 ```
 
 ### Two guards that make the suite self-policing

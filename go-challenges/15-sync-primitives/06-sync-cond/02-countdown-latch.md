@@ -28,9 +28,8 @@ latch/                      independent module: example.com/latch
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/latch/cmd/demo
-cd ~/go-exercises/latch
-go mod init example.com/latch
+mkdir -p go-solutions/15-sync-primitives/06-sync-cond/02-countdown-latch/cmd/demo
+cd go-solutions/15-sync-primitives/06-sync-cond/02-countdown-latch
 ```
 
 ### Why Broadcast, and why the overshoot guard matters

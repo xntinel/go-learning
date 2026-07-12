@@ -27,9 +27,8 @@ table-tests/                   module example.com/table-tests
 Create the module:
 
 ```bash
-mkdir -p table-tests/cmd/demo table-tests/internal/circle
-cd table-tests
-go mod init example.com/table-tests
+mkdir -p go-solutions/01-environment-and-tooling/04-go-tool-commands/02-table-driven-parallel-tests/cmd/demo go-solutions/01-environment-and-tooling/04-go-tool-commands/02-table-driven-parallel-tests/internal/circle
+cd go-solutions/01-environment-and-tooling/04-go-tool-commands/02-table-driven-parallel-tests
 ```
 
 ### The shape and why each flag matters

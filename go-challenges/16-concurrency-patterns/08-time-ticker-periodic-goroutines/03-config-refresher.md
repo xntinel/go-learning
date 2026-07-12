@@ -25,8 +25,7 @@ refresher_test.go        initial load, tick refreshes, error keeps last good,
 Set up the module:
 
 ```bash
-mkdir -p config-refresher/cmd/demo && cd config-refresher
-go mod init example.com/config-refresher
+mkdir -p go-solutions/16-concurrency-patterns/08-time-ticker-periodic-goroutines/03-config-refresher/cmd/demo && cd go-solutions/16-concurrency-patterns/08-time-ticker-periodic-goroutines/03-config-refresher
 ```
 
 ### Why an injectable clock, and why jitter

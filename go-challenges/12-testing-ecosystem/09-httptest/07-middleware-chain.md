@@ -26,9 +26,8 @@ middlewarechain/                independent module: example.com/middleware-chain
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/middlewarechain/cmd/demo
-cd ~/go-exercises/middlewarechain
-go mod init example.com/middleware-chain
+mkdir -p go-solutions/12-testing-ecosystem/09-httptest/07-middleware-chain/cmd/demo
+cd go-solutions/12-testing-ecosystem/09-httptest/07-middleware-chain
 ```
 
 ### The responsibility boundary is what you test

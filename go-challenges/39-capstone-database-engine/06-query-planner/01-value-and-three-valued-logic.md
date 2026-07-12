@@ -22,8 +22,7 @@ value_test.go         NULL ordering, int/float coercion, incomparable types, ToB
 Set up the module:
 
 ```bash
-mkdir -p three-valued-logic/cmd/demo && cd three-valued-logic
-go mod init example.com/three-valued-logic
+mkdir -p go-solutions/39-capstone-database-engine/06-query-planner/01-value-and-three-valued-logic/cmd/demo && cd go-solutions/39-capstone-database-engine/06-query-planner/01-value-and-three-valued-logic
 ```
 
 ### Why a tagged union, and why NULL is special

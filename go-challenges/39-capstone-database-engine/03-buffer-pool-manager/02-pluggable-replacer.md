@@ -23,8 +23,7 @@ replacer_test.go       evicts only evictable frames; LRU-K resists flooding; LRU
 Set up the module:
 
 ```bash
-mkdir -p pluggable-replacer/cmd/demo && cd pluggable-replacer
-go mod init example.com/pluggable-replacer
+mkdir -p go-solutions/39-capstone-database-engine/03-buffer-pool-manager/02-pluggable-replacer/cmd/demo && cd go-solutions/39-capstone-database-engine/03-buffer-pool-manager/02-pluggable-replacer
 ```
 
 ### One interface, three policies, and why the abstraction holds

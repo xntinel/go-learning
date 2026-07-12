@@ -31,9 +31,8 @@ ci-gate/                       module example.com/ci-gate
 Create the module:
 
 ```bash
-mkdir -p ci-gate/cmd/demo ci-gate/internal/circle
-cd ci-gate
-go mod init example.com/ci-gate
+mkdir -p go-solutions/01-environment-and-tooling/04-go-tool-commands/10-ci-toolchain-gate/cmd/demo go-solutions/01-environment-and-tooling/04-go-tool-commands/10-ci-toolchain-gate/internal/circle
+cd go-solutions/01-environment-and-tooling/04-go-tool-commands/10-ci-toolchain-gate
 ```
 
 ### Why one composed gate, and why this order

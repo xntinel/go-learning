@@ -32,9 +32,8 @@ ratemw/                         independent module: example.com/ratemw
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ratemw/ratemw ~/go-exercises/ratemw/cmd/demo
-cd ~/go-exercises/ratemw
-go mod init example.com/ratemw
+mkdir -p go-solutions/15-sync-primitives/10-mutex-vs-channel/06-per-client-limiter-registry/ratemw go-solutions/15-sync-primitives/10-mutex-vs-channel/06-per-client-limiter-registry/cmd/demo
+cd go-solutions/15-sync-primitives/10-mutex-vs-channel/06-per-client-limiter-registry
 ```
 
 ### Two-level locking: registry mutex, then bucket mutex

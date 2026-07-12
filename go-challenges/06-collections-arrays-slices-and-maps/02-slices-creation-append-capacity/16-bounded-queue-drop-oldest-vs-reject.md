@@ -42,9 +42,8 @@ boundedqueue/                 module example.com/boundedqueue
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/boundedqueue
-cd ~/go-exercises/boundedqueue
-go mod init example.com/boundedqueue
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/02-slices-creation-append-capacity/16-bounded-queue-drop-oldest-vs-reject
+cd go-solutions/06-collections-arrays-slices-and-maps/02-slices-creation-append-capacity/16-bounded-queue-drop-oldest-vs-reject
 go mod edit -go=1.24
 ```
 

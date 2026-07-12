@@ -33,9 +33,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/service/cmd/demo
-cd ~/go-exercises/service
-go mod init example.com/service
+mkdir -p go-solutions/07-structs-and-methods/04-anonymous-structs-and-embedding/06-grpc-forward-compat-embedding/cmd/demo
+cd go-solutions/07-structs-and-methods/04-anonymous-structs-and-embedding/06-grpc-forward-compat-embedding
 ```
 
 ### Why embedding a default gives forward compatibility

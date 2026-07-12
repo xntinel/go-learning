@@ -31,9 +31,8 @@ Verify: `go test -count=1 ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/graceful-drain-ordered-shutdown/cmd/demo
-cd ~/go-exercises/graceful-drain-ordered-shutdown
-go mod init example.com/graceful-drain-ordered-shutdown
+mkdir -p go-solutions/03-control-flow/09-range-over-integers-and-functions/24-graceful-drain-ordered-shutdown/cmd/demo
+cd go-solutions/03-control-flow/09-range-over-integers-and-functions/24-graceful-drain-ordered-shutdown
 go mod edit -go=1.24
 ```
 

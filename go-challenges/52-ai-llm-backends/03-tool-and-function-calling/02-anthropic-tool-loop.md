@@ -31,9 +31,8 @@ anthropictools/             independent module: example.com/anthropictools
 Set up the module and add the SDK:
 
 ```bash
-mkdir -p ~/go-exercises/anthropictools/cmd/demo
-cd ~/go-exercises/anthropictools
-go mod init example.com/anthropictools
+mkdir -p go-solutions/52-ai-llm-backends/03-tool-and-function-calling/02-anthropic-tool-loop/cmd/demo
+cd go-solutions/52-ai-llm-backends/03-tool-and-function-calling/02-anthropic-tool-loop
 go mod edit -go=1.26
 go get github.com/anthropics/anthropic-sdk-go@latest
 ```

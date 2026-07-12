@@ -12,7 +12,6 @@ measurement, and Go ships the tools to get it: `testing.B`, `b.N`, and
 
 ```text
 07-atomic-vs-mutex-benchmark/
-  go.mod                  module for the benchmark suite (go mod init)
   counter_bench_test.go   atomic/mutex/RWMutex counters + Benchmark functions
   main.go                 standalone runner timing all three patterns
 ```
@@ -271,9 +270,8 @@ func BenchmarkStats_Mutex_HighContention(b *testing.B) {
 
 ### Verification
 
-This file must be placed in a directory with a `go.mod`. Initialize and run:
+Run it from `go-solutions/concurrency/05-atomic-and-memory-ordering/07-atomic-vs-mutex-benchmark/07-atomic-vs-mutex-benchmark/`:
 ```bash
-go mod init bench_demo
 go test -bench=Counter_Atomic_Sequential -benchmem -count=1
 ```
 Expected: a benchmark result with ns/op.

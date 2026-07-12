@@ -30,9 +30,8 @@ allowset/                  independent module: example.com/allowset
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/allowset/cmd/demo
-cd ~/go-exercises/allowset
-go mod init example.com/allowset
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/03-set-membership-allowlist/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/03-set-membership-allowlist
 ```
 
 ### Why struct{} and not bool

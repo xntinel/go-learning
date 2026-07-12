@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/greetcli/internal/hello ~/go-exercises/greetcli/cmd/demo
-cd ~/go-exercises/greetcli
-go mod init example.com/greetcli
+mkdir -p go-solutions/01-environment-and-tooling/05-go-install-and-third-party-packages/02-demo-cli-with-run-pattern/internal/hello go-solutions/01-environment-and-tooling/05-go-install-and-third-party-packages/02-demo-cli-with-run-pattern/cmd/demo
+cd go-solutions/01-environment-and-tooling/05-go-install-and-third-party-packages/02-demo-cli-with-run-pattern
 ```
 
 ### The run pattern, and why output is a parameter

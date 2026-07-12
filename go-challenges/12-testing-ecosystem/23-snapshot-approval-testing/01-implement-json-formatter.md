@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/jsonfmt/cmd/demo
-cd ~/go-exercises/jsonfmt
-go mod init example.com/jsonfmt
+mkdir -p go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/01-implement-json-formatter/cmd/demo
+cd go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/01-implement-json-formatter
 ```
 
 ### Why determinism starts here

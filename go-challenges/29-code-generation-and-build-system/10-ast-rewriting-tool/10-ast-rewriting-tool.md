@@ -80,9 +80,8 @@ For production refactoring tools, prefer `astutil.Apply` over direct AST mutatio
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/rewriter/cmd/rewriter
-cd ~/go-exercises/rewriter
-go mod init example.com/rewriter
+mkdir -p go-solutions/29-code-generation-and-build-system/10-ast-rewriting-tool/10-ast-rewriting-tool/cmd/rewriter
+cd go-solutions/29-code-generation-and-build-system/10-ast-rewriting-tool/10-ast-rewriting-tool
 ```
 
 ### Exercise 1: Implement the rewriter library

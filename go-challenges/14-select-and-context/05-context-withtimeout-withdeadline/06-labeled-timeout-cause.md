@@ -31,9 +31,8 @@ staged-cause/                        independent module: example.com/stagedcause
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/staged-cause/cmd/demo
-cd ~/go-exercises/staged-cause
-go mod init example.com/stagedcause
+mkdir -p go-solutions/14-select-and-context/05-context-withtimeout-withdeadline/06-labeled-timeout-cause/cmd/demo
+cd go-solutions/14-select-and-context/05-context-withtimeout-withdeadline/06-labeled-timeout-cause
 ```
 
 ### The cause API, and why Err stays DeadlineExceeded

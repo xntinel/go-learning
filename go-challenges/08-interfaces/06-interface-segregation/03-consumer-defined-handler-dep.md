@@ -28,9 +28,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/userhandler/cmd/demo
-cd ~/go-exercises/userhandler
-go mod init example.com/userhandler
+mkdir -p go-solutions/08-interfaces/06-interface-segregation/03-consumer-defined-handler-dep/cmd/demo
+cd go-solutions/08-interfaces/06-interface-segregation/03-consumer-defined-handler-dep
 go mod edit -go=1.24
 ```
 

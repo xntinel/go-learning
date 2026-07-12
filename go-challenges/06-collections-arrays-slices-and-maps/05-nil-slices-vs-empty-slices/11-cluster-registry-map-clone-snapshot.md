@@ -50,9 +50,8 @@ registry/                module example.com/registry
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/registry
-cd ~/go-exercises/registry
-go mod init example.com/registry
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/11-cluster-registry-map-clone-snapshot
+cd go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/11-cluster-registry-map-clone-snapshot
 go mod edit -go=1.24
 ```
 

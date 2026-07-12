@@ -29,9 +29,8 @@ loggrep/                    independent module: example.com/loggrep
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/loggrep/cmd/demo
-cd ~/go-exercises/loggrep
-go mod init example.com/loggrep
+mkdir -p go-solutions/05-strings-runes-and-unicode/07-regular-expressions/08-streaming-log-grep/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/07-regular-expressions/08-streaming-log-grep
 ```
 
 ### Byte offsets, a raised buffer, and the RuneReader variant

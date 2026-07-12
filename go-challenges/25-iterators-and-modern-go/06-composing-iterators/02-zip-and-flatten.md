@@ -22,8 +22,7 @@ combine_test.go      Zip stops at shorter, Flatten output, Flatten early-break l
 Set up the module:
 
 ```bash
-mkdir -p combine/cmd/demo && cd combine
-go mod init example.com/combine
+mkdir -p go-solutions/25-iterators-and-modern-go/06-composing-iterators/02-zip-and-flatten/cmd/demo && cd go-solutions/25-iterators-and-modern-go/06-composing-iterators/02-zip-and-flatten
 ```
 
 ### Why Zip needs iter.Pull

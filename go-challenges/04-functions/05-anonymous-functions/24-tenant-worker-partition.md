@@ -29,9 +29,8 @@ tenant/                        module example.com/tenant
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/tenant/cmd/demo
-cd ~/go-exercises/tenant
-go mod init example.com/tenant
+mkdir -p go-solutions/04-functions/05-anonymous-functions/24-tenant-worker-partition/cmd/demo
+cd go-solutions/04-functions/05-anonymous-functions/24-tenant-worker-partition
 go mod edit -go=1.24
 ```
 

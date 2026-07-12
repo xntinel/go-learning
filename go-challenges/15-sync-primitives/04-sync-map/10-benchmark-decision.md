@@ -33,8 +33,7 @@ benchdecision/                independent module: example.com/benchdecision
 Set up the module:
 
 ```bash
-mkdir benchdecision && cd benchdecision
-go mod init example.com/benchdecision
+mkdir go-solutions/15-sync-primitives/04-sync-map/10-benchmark-decision && cd go-solutions/15-sync-primitives/04-sync-map/10-benchmark-decision
 ```
 
 ### Correctness before speed

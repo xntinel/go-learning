@@ -31,9 +31,8 @@ Set up the module. wazero requires a recent toolchain, so pin the language
 version and add the dependency:
 
 ```bash
-mkdir -p ~/go-exercises/engine/cmd/demo
-cd ~/go-exercises/engine
-go mod init example.com/engine
+mkdir -p go-solutions/53-wasm-and-extensibility/01-wazero-host-runtime/01-module-loader/cmd/demo
+cd go-solutions/53-wasm-and-extensibility/01-wazero-host-runtime/01-module-loader
 go mod edit -go=1.26
 go get github.com/tetratelabs/wazero@latest
 ```

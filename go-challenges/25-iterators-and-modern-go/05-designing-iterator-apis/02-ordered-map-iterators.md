@@ -22,8 +22,7 @@ omap_test.go         insertion order, update-keeps-order, All/Keys/Values agree,
 Set up the module:
 
 ```bash
-mkdir -p omap/cmd/demo && cd omap
-go mod init example.com/omap
+mkdir -p go-solutions/25-iterators-and-modern-go/05-designing-iterator-apis/02-ordered-map-iterators/cmd/demo && cd go-solutions/25-iterators-and-modern-go/05-designing-iterator-apis/02-ordered-map-iterators
 ```
 
 ### Why `All` is `Seq2[K, V]` here and what insertion order buys

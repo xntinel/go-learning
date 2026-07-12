@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/composereader/cmd/demo
-cd ~/go-exercises/composereader
-go mod init example.com/composereader
+mkdir -p go-solutions/12-testing-ecosystem/10-testing-readers-with-iotest/08-composite-multireader-preamble/cmd/demo
+cd go-solutions/12-testing-ecosystem/10-testing-readers-with-iotest/08-composite-multireader-preamble
 ```
 
 ### Why MultiReader, and the seam that must be seamless

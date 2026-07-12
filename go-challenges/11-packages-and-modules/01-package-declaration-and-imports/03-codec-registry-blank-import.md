@@ -30,10 +30,9 @@ codecreg/                          module: example.com/codecreg
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/codecreg/registry ~/go-exercises/codecreg/codec/jsoncodec \
-  ~/go-exercises/codecreg/codec/gobcodec ~/go-exercises/codecreg/cmd/demo
-cd ~/go-exercises/codecreg
-go mod init example.com/codecreg
+mkdir -p go-solutions/11-packages-and-modules/01-package-declaration-and-imports/03-codec-registry-blank-import/registry go-solutions/11-packages-and-modules/01-package-declaration-and-imports/03-codec-registry-blank-import/codec/jsoncodec \
+  go-solutions/11-packages-and-modules/01-package-declaration-and-imports/03-codec-registry-blank-import/codec/gobcodec go-solutions/11-packages-and-modules/01-package-declaration-and-imports/03-codec-registry-blank-import/cmd/demo
+cd go-solutions/11-packages-and-modules/01-package-declaration-and-imports/03-codec-registry-blank-import
 go mod edit -go=1.26
 ```
 

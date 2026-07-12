@@ -24,9 +24,8 @@ slugify/                   independent module: example.com/slugify
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/slugify/cmd/demo
-cd ~/go-exercises/slugify
-go mod init example.com/slugify
+mkdir -p go-solutions/12-testing-ecosystem/01-your-first-test/04-slugify-url-path/cmd/demo
+cd go-solutions/12-testing-ecosystem/01-your-first-test/04-slugify-url-path
 ```
 
 ### The transform, and why `%q` not `%s`

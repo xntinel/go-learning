@@ -27,9 +27,8 @@ workqueue/                   independent module: example.com/workqueue
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/workqueue/workqueue ~/go-exercises/workqueue/cmd/demo
-cd ~/go-exercises/workqueue
-go mod init example.com/workqueue
+mkdir -p go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/32-queue-item-requeue-on-error/workqueue go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/32-queue-item-requeue-on-error/cmd/demo
+cd go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/32-queue-item-requeue-on-error
 go mod edit -go=1.24
 ```
 

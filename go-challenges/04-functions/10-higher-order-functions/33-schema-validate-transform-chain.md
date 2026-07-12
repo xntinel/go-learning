@@ -29,9 +29,8 @@ schemapipe/                  independent module: example.com/schemapipe
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/schemapipe/cmd/demo
-cd ~/go-exercises/schemapipe
-go mod init example.com/schemapipe
+mkdir -p go-solutions/04-functions/10-higher-order-functions/33-schema-validate-transform-chain/cmd/demo
+cd go-solutions/04-functions/10-higher-order-functions/33-schema-validate-transform-chain
 go mod edit -go=1.24
 ```
 

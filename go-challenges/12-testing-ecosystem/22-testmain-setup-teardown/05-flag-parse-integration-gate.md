@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...` (integration test skips by default; `go t
 Set up the module:
 
 ```bash
-mkdir -p flaggate/cmd/demo
-cd flaggate
-go mod init example.com/flaggate
+mkdir -p go-solutions/12-testing-ecosystem/22-testmain-setup-teardown/05-flag-parse-integration-gate/cmd/demo
+cd go-solutions/12-testing-ecosystem/22-testmain-setup-teardown/05-flag-parse-integration-gate
 ```
 
 ### Why flag.Parse must happen in TestMain

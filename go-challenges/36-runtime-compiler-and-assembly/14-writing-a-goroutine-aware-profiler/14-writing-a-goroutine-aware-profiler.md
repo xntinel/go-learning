@@ -89,9 +89,8 @@ Buffer reuse is essential: allocating a new 1 MiB slice on every tick triggers g
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/profiler/cmd/demo
-cd ~/go-exercises/profiler
-go mod init example.com/profiler
+mkdir -p go-solutions/36-runtime-compiler-and-assembly/14-writing-a-goroutine-aware-profiler/14-writing-a-goroutine-aware-profiler/cmd/demo
+cd go-solutions/36-runtime-compiler-and-assembly/14-writing-a-goroutine-aware-profiler/14-writing-a-goroutine-aware-profiler
 ```
 
 This is a library plus a CLI demo. Verify it with `go test`.

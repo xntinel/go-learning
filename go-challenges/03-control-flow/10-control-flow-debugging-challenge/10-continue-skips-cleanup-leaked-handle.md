@@ -24,9 +24,8 @@ rowimport/                module example.com/rowimport
 - Verify: `go test -count=1 ./...`.
 
 ```bash
-mkdir -p ~/go-exercises/rowimport
-cd ~/go-exercises/rowimport
-go mod init example.com/rowimport
+mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/10-continue-skips-cleanup-leaked-handle
+cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/10-continue-skips-cleanup-leaked-handle
 ```
 
 ### The artifact and the planted bug

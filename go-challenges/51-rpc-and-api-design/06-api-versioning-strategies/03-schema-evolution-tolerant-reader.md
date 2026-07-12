@@ -29,9 +29,8 @@ schemaevolution/               independent module: example.com/schemaevolution
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/schemaevolution/cmd/demo
-cd ~/go-exercises/schemaevolution
-go mod init example.com/schemaevolution
+mkdir -p go-solutions/51-rpc-and-api-design/06-api-versioning-strategies/03-schema-evolution-tolerant-reader/cmd/demo
+cd go-solutions/51-rpc-and-api-design/06-api-versioning-strategies/03-schema-evolution-tolerant-reader
 ```
 
 ### Additive change is free; renames need an alias

@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ingestbuf/cmd/demo
-cd ~/go-exercises/ingestbuf
-go mod init example.com/ingestbuf
+mkdir -p go-solutions/09-pointers/08-pointers-in-slices-and-maps/05-append-reslice-dangling-pointers/cmd/demo
+cd go-solutions/09-pointers/08-pointers-in-slices-and-maps/05-append-reslice-dangling-pointers
 ```
 
 ### Why the interior pointer goes stale

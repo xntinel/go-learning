@@ -32,9 +32,8 @@ Verify: `go test -count=1 -race ./...` then `go test -bench=. -benchmem -run=^$ 
 Set up the module:
 
 ```bash
-mkdir -p lineingest/ingest lineingest/cmd/demo
-cd lineingest
-go mod init example.com/lineingest
+mkdir -p go-solutions/15-sync-primitives/05-sync-pool/09-pooled-bufio-reader-line-protocol/ingest go-solutions/15-sync-primitives/05-sync-pool/09-pooled-bufio-reader-line-protocol/cmd/demo
+cd go-solutions/15-sync-primitives/05-sync-pool/09-pooled-bufio-reader-line-protocol
 ```
 
 ### Reset(conn) is a data-integrity boundary, not bookkeeping

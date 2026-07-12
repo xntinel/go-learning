@@ -29,9 +29,8 @@ redact/                     independent module: example.com/redact
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/redact/cmd/demo
-cd ~/go-exercises/redact
-go mod init example.com/redact
+mkdir -p go-solutions/08-interfaces/04-common-standard-library-interfaces/03-redacting-writer/cmd/demo
+cd go-solutions/08-interfaces/04-common-standard-library-interfaces/03-redacting-writer
 ```
 
 ### The len(p) contract is the whole lesson

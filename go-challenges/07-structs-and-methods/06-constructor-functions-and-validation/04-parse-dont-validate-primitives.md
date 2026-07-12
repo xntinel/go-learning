@@ -30,9 +30,8 @@ primitives/                  independent module: example.com/parse-dont-validate
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/primitives/cmd/demo
-cd ~/go-exercises/primitives
-go mod init example.com/parse-dont-validate-primitives
+mkdir -p go-solutions/07-structs-and-methods/06-constructor-functions-and-validation/04-parse-dont-validate-primitives/cmd/demo
+cd go-solutions/07-structs-and-methods/06-constructor-functions-and-validation/04-parse-dont-validate-primitives
 ```
 
 ### Parsing that returns a type discharges the obligation

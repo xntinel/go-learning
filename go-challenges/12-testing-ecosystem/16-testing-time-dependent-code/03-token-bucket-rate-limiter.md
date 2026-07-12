@@ -28,9 +28,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/tokenbucket/cmd/demo
-cd ~/go-exercises/tokenbucket
-go mod init example.com/tokenbucket
+mkdir -p go-solutions/12-testing-ecosystem/16-testing-time-dependent-code/03-token-bucket-rate-limiter/cmd/demo
+cd go-solutions/12-testing-ecosystem/16-testing-time-dependent-code/03-token-bucket-rate-limiter
 ```
 
 ### Lazy refill: the design that makes the boundary exact

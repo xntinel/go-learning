@@ -29,8 +29,7 @@ example_test.go      Example with // Output: a runnable doc example
 Set up the module:
 
 ```bash
-mkdir -p bounded-parallel-map/cmd/demo && cd bounded-parallel-map
-go mod init example.com/parallel
+mkdir -p go-solutions/48-modern-go-language-and-stdlib/05-sync-waitgroup-go/01-bounded-parallel-map/cmd/demo && cd go-solutions/48-modern-go-language-and-stdlib/05-sync-waitgroup-go/01-bounded-parallel-map
 go mod edit -go=1.25
 ```
 

@@ -29,9 +29,8 @@ batchmigrate/                  independent module: example.com/batchmigrate
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/batchmigrate/cmd/demo
-cd ~/go-exercises/batchmigrate
-go mod init example.com/batchmigrate
+mkdir -p go-solutions/07-structs-and-methods/07-method-sets-and-addressability/09-batch-update-slice-range-copy/cmd/demo
+cd go-solutions/07-structs-and-methods/07-method-sets-and-addressability/09-batch-update-slice-range-copy
 ```
 
 ### Why ranging by value is a no-op

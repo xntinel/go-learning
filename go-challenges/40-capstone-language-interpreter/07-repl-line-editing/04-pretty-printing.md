@@ -22,8 +22,7 @@ pretty_test.go     each value type, color stripping, sorted-hash determinism
 Set up the module:
 
 ```bash
-mkdir -p pretty/cmd/demo && cd pretty
-go mod init example.com/pretty
+mkdir -p go-solutions/40-capstone-language-interpreter/07-repl-line-editing/04-pretty-printing/cmd/demo && cd go-solutions/40-capstone-language-interpreter/07-repl-line-editing/04-pretty-printing
 ```
 
 ### One entry point, color injected inline

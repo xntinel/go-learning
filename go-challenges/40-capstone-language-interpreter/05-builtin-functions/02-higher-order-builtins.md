@@ -24,8 +24,7 @@ higherorder_test.go   callable application, truthiness filtering, error propagat
 Set up the module:
 
 ```bash
-mkdir -p higherorder/cmd/demo && cd higherorder
-go mod init example.com/higherorder
+mkdir -p go-solutions/40-capstone-language-interpreter/05-builtin-functions/02-higher-order-builtins/cmd/demo && cd go-solutions/40-capstone-language-interpreter/05-builtin-functions/02-higher-order-builtins
 ```
 
 ### Why an interface, not a concrete function type

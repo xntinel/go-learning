@@ -46,9 +46,8 @@ All three are avoided by the implementation below.
 ### Setup
 
 ```bash
-mkdir -p ~/go-exercises/crawler/internal/crawler ~/go-exercises/crawler/cmd/demo
-cd ~/go-exercises/crawler
-go mod init example.com/crawler
+mkdir -p go-solutions/16-concurrency-patterns/27-building-a-concurrent-web-crawler/27-building-a-concurrent-web-crawler/internal/crawler go-solutions/16-concurrency-patterns/27-building-a-concurrent-web-crawler/27-building-a-concurrent-web-crawler/cmd/demo
+cd go-solutions/16-concurrency-patterns/27-building-a-concurrent-web-crawler/27-building-a-concurrent-web-crawler
 ```
 
 ### Exercise 1: Core crawler package

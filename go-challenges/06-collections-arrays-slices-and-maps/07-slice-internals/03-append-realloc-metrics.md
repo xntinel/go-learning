@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/payloadbuild/cmd/demo
-cd ~/go-exercises/payloadbuild
-go mod init example.com/payloadbuild
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/03-append-realloc-metrics/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/03-append-realloc-metrics
 ```
 
 ### Why a run of N appends is cheap but not free

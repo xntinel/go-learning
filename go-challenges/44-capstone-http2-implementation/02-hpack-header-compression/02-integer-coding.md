@@ -22,8 +22,7 @@ hpackint/
 Set up the module:
 
 ```bash
-mkdir -p hpackint/cmd/demo && cd hpackint
-go mod init example.com/hpackint
+mkdir -p go-solutions/44-capstone-http2-implementation/02-hpack-header-compression/02-integer-coding/cmd/demo && cd go-solutions/44-capstone-http2-implementation/02-hpack-header-compression/02-integer-coding
 go mod edit -go=1.26
 ```
 

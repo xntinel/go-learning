@@ -26,9 +26,8 @@ saverepo/                     module example.com/saverepo
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/saverepo/cmd/demo
-cd ~/go-exercises/saverepo
-go mod init example.com/saverepo
+mkdir -p go-solutions/04-functions/05-anonymous-functions/03-deferred-closure-named-return-observability/cmd/demo
+cd go-solutions/04-functions/05-anonymous-functions/03-deferred-closure-named-return-observability
 ```
 
 ### Why the closure must capture the named return

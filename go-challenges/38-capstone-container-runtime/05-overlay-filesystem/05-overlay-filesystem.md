@@ -80,9 +80,8 @@ Both policies leave lower layers intact. The only difference is whether upperdir
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/overlayfs/cmd/demo
-cd ~/go-exercises/overlayfs
-go mod init example.com/overlayfs
+mkdir -p go-solutions/38-capstone-container-runtime/05-overlay-filesystem/05-overlay-filesystem/cmd/demo
+cd go-solutions/38-capstone-container-runtime/05-overlay-filesystem/05-overlay-filesystem
 ```
 
 This package uses `syscall.Mount`, which requires Linux with CAP_SYS_ADMIN (root). The whiteout and size logic is platform-independent and can be tested anywhere. Test the full mount path inside a Linux VM or a rootful container.

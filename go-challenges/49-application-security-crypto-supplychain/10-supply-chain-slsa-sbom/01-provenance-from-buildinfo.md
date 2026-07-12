@@ -30,9 +30,8 @@ provenance/                 independent module: example.com/provenance
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/provenance/cmd/demo
-cd ~/go-exercises/provenance
-go mod init example.com/provenance
+mkdir -p go-solutions/49-application-security-crypto-supplychain/10-supply-chain-slsa-sbom/01-provenance-from-buildinfo/cmd/demo
+cd go-solutions/49-application-security-crypto-supplychain/10-supply-chain-slsa-sbom/01-provenance-from-buildinfo
 go mod edit -go=1.26
 ```
 

@@ -31,9 +31,8 @@ typednil/                    independent module: example.com/typednil
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/typednil/cmd/demo
-cd ~/go-exercises/typednil
-go mod init example.com/typednil
+mkdir -p go-solutions/10-error-handling/01-error-interface-and-basic-patterns/03-typed-nil-interface-trap/cmd/demo
+cd go-solutions/10-error-handling/01-error-interface-and-basic-patterns/03-typed-nil-interface-trap
 ```
 
 ### Why a nil pointer is not a nil interface

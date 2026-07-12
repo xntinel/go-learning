@@ -26,9 +26,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/srcpos/cmd/demo
-cd ~/go-exercises/srcpos
-go mod init example.com/srcpos
+mkdir -p go-solutions/05-strings-runes-and-unicode/04-string-iteration-bytes-vs-runes/05-byte-offset-to-line-column/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/04-string-iteration-bytes-vs-runes/05-byte-offset-to-line-column
 ```
 
 ### Two counts, in the right units

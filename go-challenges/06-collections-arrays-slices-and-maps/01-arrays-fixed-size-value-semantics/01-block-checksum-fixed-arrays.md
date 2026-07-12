@@ -31,9 +31,8 @@ blockchecksum/               independent module: example.com/blockchecksum
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/blockchecksum/cmd/demo
-cd ~/go-exercises/blockchecksum
-go mod init example.com/blockchecksum
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/01-block-checksum-fixed-arrays/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/01-block-checksum-fixed-arrays
 ```
 
 ### Why the array sizes are the spec

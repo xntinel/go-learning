@@ -54,9 +54,8 @@ JSON unmarshal decodes all numbers as `float64`, so a JSON decoder handing you `
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/fillstruct/cmd/demo
-cd ~/go-exercises/fillstruct
-go mod init example.com/fillstruct
+mkdir -p go-solutions/27-reflection/04-setting-values-with-reflect/04-setting-values-with-reflect/cmd/demo
+cd go-solutions/27-reflection/04-setting-values-with-reflect/04-setting-values-with-reflect
 ```
 
 ### Exercise 1: Addressability Exploration and setField

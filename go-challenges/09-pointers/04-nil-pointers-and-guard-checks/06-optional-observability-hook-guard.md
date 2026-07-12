@@ -28,9 +28,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/observ/cmd/demo
-cd ~/go-exercises/observ
-go mod init example.com/observ
+mkdir -p go-solutions/09-pointers/04-nil-pointers-and-guard-checks/06-optional-observability-hook-guard/cmd/demo
+cd go-solutions/09-pointers/04-nil-pointers-and-guard-checks/06-optional-observability-hook-guard
 go mod edit -go=1.24
 ```
 

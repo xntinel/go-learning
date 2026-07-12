@@ -28,9 +28,8 @@ dispatcher/                 independent module: example.com/dispatcher
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/dispatcher/cmd/demo
-cd ~/go-exercises/dispatcher
-go mod init example.com/dispatcher
+mkdir -p go-solutions/08-interfaces/09-interface-internals/01-type-switch-dispatcher/cmd/demo
+cd go-solutions/08-interfaces/09-interface-internals/01-type-switch-dispatcher
 go mod edit -go=1.26
 ```
 

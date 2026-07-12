@@ -42,9 +42,8 @@ uploadchunk/               module example.com/uploadchunk
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/uploadchunk
-cd ~/go-exercises/uploadchunk
-go mod init example.com/uploadchunk
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/02-slices-creation-append-capacity/15-chunked-upload-three-index-split
+cd go-solutions/06-collections-arrays-slices-and-maps/02-slices-creation-append-capacity/15-chunked-upload-three-index-split
 go mod edit -go=1.24
 ```
 

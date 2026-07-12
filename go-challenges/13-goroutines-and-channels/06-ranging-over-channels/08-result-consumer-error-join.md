@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/resultconsumer/cmd/demo
-cd ~/go-exercises/resultconsumer
-go mod init example.com/resultconsumer
+mkdir -p go-solutions/13-goroutines-and-channels/06-ranging-over-channels/08-result-consumer-error-join/cmd/demo
+cd go-solutions/13-goroutines-and-channels/06-ranging-over-channels/08-result-consumer-error-join
 ```
 
 ### Why errors.Join is the right aggregator

@@ -27,9 +27,8 @@ Verify: `go test -count=1 ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/plugindispatch
-cd ~/go-exercises/plugindispatch
-go mod init example.com/plugindispatch
+mkdir -p go-solutions/03-control-flow/08-panic-and-recover/10-plugin-dispatch-boundary
+cd go-solutions/03-control-flow/08-panic-and-recover/10-plugin-dispatch-boundary
 go mod edit -go=1.24
 ```
 

@@ -29,9 +29,8 @@ invoicesplit/               independent module: example.com/invoice-split
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/invoicesplit
-cd ~/go-exercises/invoicesplit
-go mod init example.com/invoice-split
+mkdir -p go-solutions/04-functions/01-function-declaration-and-multiple-return-values/13-invoice-split-quotient-remainder
+cd go-solutions/04-functions/01-function-declaration-and-multiple-return-values/13-invoice-split-quotient-remainder
 go mod edit -go=1.24
 ```
 

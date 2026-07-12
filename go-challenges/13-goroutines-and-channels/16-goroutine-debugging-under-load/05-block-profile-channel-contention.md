@@ -25,9 +25,8 @@ blockprof/                independent module: example.com/blockprof
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/blockprof/cmd/demo
-cd ~/go-exercises/blockprof
-go mod init example.com/blockprof
+mkdir -p go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/05-block-profile-channel-contention/cmd/demo
+cd go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/05-block-profile-channel-contention
 ```
 
 ### Why block profiling is off by default, and how to read it

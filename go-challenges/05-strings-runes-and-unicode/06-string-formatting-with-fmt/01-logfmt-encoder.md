@@ -28,9 +28,8 @@ logfmt/                    independent module: example.com/logfmt
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/logfmt/cmd/demo
-cd ~/go-exercises/logfmt
-go mod init example.com/logfmt
+mkdir -p go-solutions/05-strings-runes-and-unicode/06-string-formatting-with-fmt/01-logfmt-encoder/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/06-string-formatting-with-fmt/01-logfmt-encoder
 go mod edit -go=1.24
 ```
 

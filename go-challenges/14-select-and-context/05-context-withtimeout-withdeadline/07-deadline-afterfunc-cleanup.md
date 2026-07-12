@@ -31,9 +31,8 @@ lease-runner/                        independent module: example.com/leaserunner
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/lease-runner/cmd/demo
-cd ~/go-exercises/lease-runner
-go mod init example.com/leaserunner
+mkdir -p go-solutions/14-select-and-context/05-context-withtimeout-withdeadline/07-deadline-afterfunc-cleanup/cmd/demo
+cd go-solutions/14-select-and-context/05-context-withtimeout-withdeadline/07-deadline-afterfunc-cleanup
 ```
 
 ### The AfterFunc contract and the race it creates

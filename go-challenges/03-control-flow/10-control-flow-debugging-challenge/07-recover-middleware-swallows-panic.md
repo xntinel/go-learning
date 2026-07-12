@@ -25,9 +25,8 @@ recovery/                  module example.com/recovery
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/recovery/cmd/demo
-cd ~/go-exercises/recovery
-go mod init example.com/recovery
+mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/07-recover-middleware-swallows-panic/cmd/demo
+cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/07-recover-middleware-swallows-panic
 ```
 
 ### The artifact and the planted bug

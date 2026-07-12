@@ -28,9 +28,8 @@ Test: with the fake clock, assert `Do` slept the exact backoff sequence with no 
 Verify: `go test -count=1 -race ./...`
 
 ```bash
-mkdir -p ~/go-exercises/retryclock/cmd/demo
-cd ~/go-exercises/retryclock
-go mod init example.com/retryclock
+mkdir -p go-solutions/10-error-handling/12-retry-patterns-with-backoff/10-deterministic-testing-clock/cmd/demo
+cd go-solutions/10-error-handling/12-retry-patterns-with-backoff/10-deterministic-testing-clock
 go mod edit -go=1.26
 ```
 

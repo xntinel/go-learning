@@ -30,9 +30,8 @@ clientctor/                  independent module: example.com/clientctor
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/clientctor/cmd/demo
-cd ~/go-exercises/clientctor
-go mod init example.com/clientctor
+mkdir -p go-solutions/10-error-handling/01-error-interface-and-basic-patterns/05-validated-client-constructor/cmd/demo
+cd go-solutions/10-error-handling/01-error-interface-and-basic-patterns/05-validated-client-constructor
 ```
 
 ### Make invalid states unrepresentable at the boundary

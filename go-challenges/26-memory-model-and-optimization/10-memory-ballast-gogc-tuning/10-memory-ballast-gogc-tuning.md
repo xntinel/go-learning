@@ -33,9 +33,8 @@ Changing GC settings is process-global. Parallel tests that call `debug.SetGCPer
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/gctune/cmd/demo
-cd ~/go-exercises/gctune
-go mod init gctune
+mkdir -p go-solutions/26-memory-model-and-optimization/10-memory-ballast-gogc-tuning/10-memory-ballast-gogc-tuning/cmd/demo
+cd go-solutions/26-memory-model-and-optimization/10-memory-ballast-gogc-tuning/10-memory-ballast-gogc-tuning
 ```
 
 This is a library package. The demo is a separate program that imports the package through its public API.

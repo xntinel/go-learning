@@ -33,9 +33,8 @@ webhook/                          independent module: example.com/webhook-batch-
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/webhook/cmd/demo
-cd ~/go-exercises/webhook
-go mod init example.com/webhook-batch-delivery-service
+mkdir -p go-solutions/04-functions/12-functional-options-pattern/34-webhook-batch-delivery-service/cmd/demo
+cd go-solutions/04-functions/12-functional-options-pattern/34-webhook-batch-delivery-service
 go mod edit -go=1.24
 ```
 

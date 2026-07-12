@@ -30,9 +30,8 @@ username/                 independent module: example.com/username
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/username/cmd/demo
-cd ~/go-exercises/username
-go mod init example.com/username
+mkdir -p go-solutions/05-strings-runes-and-unicode/10-building-a-text-processing-pipeline/07-unicode-caseless-username-canonicalization/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/10-building-a-text-processing-pipeline/07-unicode-caseless-username-canonicalization
 go get golang.org/x/text/cases golang.org/x/text/unicode/norm
 ```
 

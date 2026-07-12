@@ -31,9 +31,8 @@ latstats/                    independent module: example.com/latstats
 - Verify: `go test -count=1 -race ./...` and `go vet ./...` (both clean), then `go vet -tags copybug ./...` (must report copylocks diagnostics).
 
 ```bash
-mkdir -p ~/go-exercises/latstats/cmd/demo
-cd ~/go-exercises/latstats
-go mod init example.com/latstats
+mkdir -p go-solutions/15-sync-primitives/01-sync-mutex/07-copylocks-bug-fix/cmd/demo
+cd go-solutions/15-sync-primitives/01-sync-mutex/07-copylocks-bug-fix
 ```
 
 ### Why a copied mutex is invisible until production

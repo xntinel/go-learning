@@ -33,9 +33,8 @@ hedge/                       independent module: example.com/hedge
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/hedge/cmd/demo
-cd ~/go-exercises/hedge
-go mod init example.com/hedge
+mkdir -p go-solutions/13-goroutines-and-channels/10-signaling-with-closed-channels/13-request-hedging-first-success-cancel/cmd/demo
+cd go-solutions/13-goroutines-and-channels/10-signaling-with-closed-channels/13-request-hedging-first-success-cancel
 go get go.uber.org/goleak
 go mod tidy
 ```

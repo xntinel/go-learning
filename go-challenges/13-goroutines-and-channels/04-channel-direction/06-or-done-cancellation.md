@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ordone/cmd/demo
-cd ~/go-exercises/ordone
-go mod init example.com/ordone
+mkdir -p go-solutions/13-goroutines-and-channels/04-channel-direction/06-or-done-cancellation/cmd/demo
+cd go-solutions/13-goroutines-and-channels/04-channel-direction/06-or-done-cancellation
 ```
 
 ### Why the doubled select

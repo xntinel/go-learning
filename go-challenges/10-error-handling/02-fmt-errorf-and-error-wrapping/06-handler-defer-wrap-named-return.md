@@ -30,9 +30,8 @@ order/                         independent module: example.com/order
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/order/cmd/demo
-cd ~/go-exercises/order
-go mod init example.com/order
+mkdir -p go-solutions/10-error-handling/02-fmt-errorf-and-error-wrapping/06-handler-defer-wrap-named-return/cmd/demo
+cd go-solutions/10-error-handling/02-fmt-errorf-and-error-wrapping/06-handler-defer-wrap-named-return
 ```
 
 ### One defer, every exit path

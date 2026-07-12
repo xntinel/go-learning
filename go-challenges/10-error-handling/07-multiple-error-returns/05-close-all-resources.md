@@ -28,9 +28,8 @@ shutdown/                  independent module: example.com/shutdown
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/shutdown/cmd/demo
-cd ~/go-exercises/shutdown
-go mod init example.com/shutdown
+mkdir -p go-solutions/10-error-handling/07-multiple-error-returns/05-close-all-resources/cmd/demo
+cd go-solutions/10-error-handling/07-multiple-error-returns/05-close-all-resources
 ```
 
 ### Why reverse order, and why continue past failures

@@ -24,8 +24,7 @@ isolation_test.go   level contrast (table-driven), watermark advance, concurrent
 Set up the module:
 
 ```bash
-mkdir -p mvcc-isolation/cmd/demo && cd mvcc-isolation
-go mod init example.com/mvcc-isolation
+mkdir -p go-solutions/39-capstone-database-engine/07-mvcc/04-statement-vs-transaction-snapshots/cmd/demo && cd go-solutions/39-capstone-database-engine/07-mvcc/04-statement-vs-transaction-snapshots
 ```
 
 ### Snapshot acquisition is the only difference

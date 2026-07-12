@@ -67,9 +67,8 @@ the return value and the deadline path is cleanly cancelled when size wins.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/batcher/cmd/demo
-cd ~/go-exercises/batcher
-go mod init example.com/batcher
+mkdir -p go-solutions/13-goroutines-and-channels/10-signaling-with-closed-channels/08-deadline-broadcast-flush/cmd/demo
+cd go-solutions/13-goroutines-and-channels/10-signaling-with-closed-channels/08-deadline-broadcast-flush
 ```
 
 Create `batcher.go`:

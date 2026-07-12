@@ -36,9 +36,8 @@ semaphore/                  independent module: example.com/semaphore-bounded-re
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/semaphore-bounded-resource-acquire/cmd/demo
-cd ~/go-exercises/semaphore-bounded-resource-acquire
-go mod init example.com/semaphore-bounded-resource-acquire
+mkdir -p go-solutions/03-control-flow/07-defer-semantics-and-ordering/26-semaphore-bounded-resource-acquire/cmd/demo
+cd go-solutions/03-control-flow/07-defer-semantics-and-ordering/26-semaphore-bounded-resource-acquire
 go mod edit -go=1.24
 ```
 

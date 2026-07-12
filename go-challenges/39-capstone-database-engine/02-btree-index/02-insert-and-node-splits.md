@@ -23,8 +23,7 @@ btree_test.go        leaf-chain order after splits, root split, duplicate, key-t
 Set up the module:
 
 ```bash
-mkdir -p insert-and-node-splits/cmd/demo && cd insert-and-node-splits
-go mod init example.com/insert-and-node-splits
+mkdir -p go-solutions/39-capstone-database-engine/02-btree-index/02-insert-and-node-splits/cmd/demo && cd go-solutions/39-capstone-database-engine/02-btree-index/02-insert-and-node-splits
 ```
 
 ### The baseline: pages, store, and descent

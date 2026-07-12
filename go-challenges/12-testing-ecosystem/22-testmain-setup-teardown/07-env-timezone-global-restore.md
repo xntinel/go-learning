@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p tznorm/cmd/demo
-cd tznorm
-go mod init example.com/tznorm
+mkdir -p go-solutions/12-testing-ecosystem/22-testmain-setup-teardown/07-env-timezone-global-restore/cmd/demo
+cd go-solutions/12-testing-ecosystem/22-testmain-setup-teardown/07-env-timezone-global-restore
 ```
 
 ### Why this belongs in TestMain, not in a test

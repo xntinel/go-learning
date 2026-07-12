@@ -33,8 +33,7 @@ service_test.go      local fakes; happy path, payment short-circuit, nil rejecti
 Set up the module:
 
 ```bash
-mkdir -p constructor-injection/cmd/demo && cd constructor-injection
-go mod init example.com/constructor-injection
+mkdir -p go-solutions/24-design-patterns-in-go/04-dependency-injection/01-constructor-injection/cmd/demo && cd go-solutions/24-design-patterns-in-go/04-dependency-injection/01-constructor-injection
 ```
 
 ### Why the interfaces live here and the constructor validates

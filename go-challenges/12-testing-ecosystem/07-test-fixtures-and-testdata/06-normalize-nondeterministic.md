@@ -24,9 +24,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/audit/cmd/demo ~/go-exercises/audit/testdata
-cd ~/go-exercises/audit
-go mod init example.com/auditgold
+mkdir -p go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/06-normalize-nondeterministic/cmd/demo go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/06-normalize-nondeterministic/testdata
+cd go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/06-normalize-nondeterministic
 ```
 
 ### The golden-file tax: determinism

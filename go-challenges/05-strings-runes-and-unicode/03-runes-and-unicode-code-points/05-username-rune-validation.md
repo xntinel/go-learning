@@ -50,9 +50,8 @@ handler can map `ErrTooShort` and `ErrTooLong` to a helpful `422` message and
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/account/internal/account ~/go-exercises/account/cmd/demo
-cd ~/go-exercises/account
-go mod init example.com/account
+mkdir -p go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/05-username-rune-validation/internal/account go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/05-username-rune-validation/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/05-username-rune-validation
 ```
 
 Create `internal/account/account.go`:

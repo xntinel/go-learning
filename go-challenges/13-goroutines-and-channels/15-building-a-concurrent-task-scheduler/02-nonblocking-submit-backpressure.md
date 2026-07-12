@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/nonblocking-submit-backpressure/cmd/demo
-cd ~/go-exercises/nonblocking-submit-backpressure
-go mod init example.com/nonblocking-submit-backpressure
+mkdir -p go-solutions/13-goroutines-and-channels/15-building-a-concurrent-task-scheduler/02-nonblocking-submit-backpressure/cmd/demo
+cd go-solutions/13-goroutines-and-channels/15-building-a-concurrent-task-scheduler/02-nonblocking-submit-backpressure
 go mod edit -go=1.25
 ```
 

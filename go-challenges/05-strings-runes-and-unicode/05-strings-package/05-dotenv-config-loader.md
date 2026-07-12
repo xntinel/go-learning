@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/dotenv/cmd/demo
-cd ~/go-exercises/dotenv
-go mod init example.com/dotenv
+mkdir -p go-solutions/05-strings-runes-and-unicode/05-strings-package/05-dotenv-config-loader/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/05-strings-package/05-dotenv-config-loader
 ```
 
 ### Reading line by line, splitting on the first =

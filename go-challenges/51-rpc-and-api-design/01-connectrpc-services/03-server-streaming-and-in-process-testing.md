@@ -34,9 +34,8 @@ eventsvc/                    independent module: example.com/eventsvc
 ### Set up the module and schema
 
 ```bash
-mkdir -p ~/go-exercises/eventsvc/proto/event/v1 ~/go-exercises/eventsvc/cmd/demo
-cd ~/go-exercises/eventsvc
-go mod init example.com/eventsvc
+mkdir -p go-solutions/51-rpc-and-api-design/01-connectrpc-services/03-server-streaming-and-in-process-testing/proto/event/v1 go-solutions/51-rpc-and-api-design/01-connectrpc-services/03-server-streaming-and-in-process-testing/cmd/demo
+cd go-solutions/51-rpc-and-api-design/01-connectrpc-services/03-server-streaming-and-in-process-testing
 go mod edit -go=1.26
 go get connectrpc.com/connect@latest
 go get google.golang.org/protobuf@latest

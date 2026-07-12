@@ -22,8 +22,7 @@ fanin_test.go        two-source correctness, empty-input close, race-free load, 
 Set up the module:
 
 ```bash
-mkdir -p fanin/cmd/demo && cd fanin
-go mod init example.com/fanin
+mkdir -p go-solutions/16-concurrency-patterns/03-fan-in-pattern/01-merging-channels/cmd/demo && cd go-solutions/16-concurrency-patterns/03-fan-in-pattern/01-merging-channels
 ```
 
 ### Why a WaitGroup, and why the Add comes first

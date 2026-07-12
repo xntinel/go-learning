@@ -28,9 +28,8 @@ reqmetrics/                independent module: example.com/reqmetrics
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/reqmetrics/cmd/demo
-cd ~/go-exercises/reqmetrics
-go mod init example.com/reqmetrics
+mkdir -p go-solutions/15-sync-primitives/07-atomic-package/01-request-metrics-counters/cmd/demo
+cd go-solutions/15-sync-primitives/07-atomic-package/01-request-metrics-counters
 ```
 
 ### Why atomics, not a mutex, here

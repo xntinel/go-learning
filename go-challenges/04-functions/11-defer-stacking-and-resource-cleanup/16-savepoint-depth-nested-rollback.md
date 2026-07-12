@@ -27,9 +27,8 @@ savepoint/                    independent module: example.com/savepoint
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/savepoint/savepoint ~/go-exercises/savepoint/cmd/demo
-cd ~/go-exercises/savepoint
-go mod init example.com/savepoint
+mkdir -p go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/16-savepoint-depth-nested-rollback/savepoint go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/16-savepoint-depth-nested-rollback/cmd/demo
+cd go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/16-savepoint-depth-nested-rollback
 go mod edit -go=1.24
 ```
 

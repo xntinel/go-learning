@@ -30,9 +30,8 @@ corruption/                 independent module: example.com/corruption
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/corruption/cmd/demo
-cd ~/go-exercises/corruption
-go mod init example.com/corruption
+mkdir -p go-solutions/03-control-flow/06-labels-break-continue-goto/19-event-stream-corruption-detector/cmd/demo
+cd go-solutions/03-control-flow/06-labels-break-continue-goto/19-event-stream-corruption-detector
 go mod edit -go=1.24
 ```
 

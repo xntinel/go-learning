@@ -28,9 +28,8 @@ Verify: `go test -count=1 ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/fieldrender
-cd ~/go-exercises/fieldrender
-go mod init example.com/fieldrender
+mkdir -p go-solutions/03-control-flow/08-panic-and-recover/11-template-render-guard
+cd go-solutions/03-control-flow/08-panic-and-recover/11-template-render-guard
 go mod edit -go=1.24
 ```
 

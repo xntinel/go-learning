@@ -25,8 +25,7 @@ mqframe_test.go      frame round-trips, malformed-length and truncated-body reje
 Set up the module:
 
 ```bash
-mkdir -p mqframe/cmd/demo && cd mqframe
-go mod init example.com/mqframe
+mkdir -p go-solutions/41-capstone-message-queue/07-tcp-protocol-client/01-binary-frame-codec/cmd/demo && cd go-solutions/41-capstone-message-queue/07-tcp-protocol-client/01-binary-frame-codec
 ```
 
 ### Why a length prefix and a correlation ID, and why this exact layout

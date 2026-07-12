@@ -31,9 +31,8 @@ tracespan/                       independent module: example.com/tracespan
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/tracespan/cmd/demo
-cd ~/go-exercises/tracespan
-go mod init example.com/tracespan
+mkdir -p go-solutions/04-functions/12-functional-options-pattern/15-distributed-trace-span-options/cmd/demo
+cd go-solutions/04-functions/12-functional-options-pattern/15-distributed-trace-span-options
 go mod edit -go=1.24
 ```
 

@@ -23,8 +23,7 @@ segment_test.go      read-equivalence before and after seal, append-after-seal, 
 Set up the module:
 
 ```bash
-mkdir -p mmap-reads/cmd/demo && cd mmap-reads
-go mod init example.com/mmap-reads
+mkdir -p go-solutions/41-capstone-message-queue/02-persistent-message-storage/04-mmap-reads/cmd/demo && cd go-solutions/41-capstone-message-queue/02-persistent-message-storage/04-mmap-reads
 ```
 
 ### Why only a sealed segment can be mapped

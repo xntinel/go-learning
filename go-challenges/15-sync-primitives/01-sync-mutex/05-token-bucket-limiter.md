@@ -27,9 +27,8 @@ tokenbucket/                 independent module: example.com/tokenbucket
 - Verify: `go test -count=1 -race ./...`
 
 ```bash
-mkdir -p ~/go-exercises/tokenbucket/cmd/demo
-cd ~/go-exercises/tokenbucket
-go mod init example.com/tokenbucket
+mkdir -p go-solutions/15-sync-primitives/01-sync-mutex/05-token-bucket-limiter/cmd/demo
+cd go-solutions/15-sync-primitives/01-sync-mutex/05-token-bucket-limiter
 ```
 
 ### Lazy refill under the lock, and why the whole thing is the critical section

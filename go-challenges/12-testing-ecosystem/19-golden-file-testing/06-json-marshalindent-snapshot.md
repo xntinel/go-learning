@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/configsnap/cmd/demo ~/go-exercises/configsnap/testdata
-cd ~/go-exercises/configsnap
-go mod init example.com/configsnap
+mkdir -p go-solutions/12-testing-ecosystem/19-golden-file-testing/06-json-marshalindent-snapshot/cmd/demo go-solutions/12-testing-ecosystem/19-golden-file-testing/06-json-marshalindent-snapshot/testdata
+cd go-solutions/12-testing-ecosystem/19-golden-file-testing/06-json-marshalindent-snapshot
 ```
 
 ### The three determinism levers, and the two policies you must set

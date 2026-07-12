@@ -30,9 +30,8 @@ urlext/                     independent module: example.com/urlext
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/urlext/cmd/demo
-cd ~/go-exercises/urlext
-go mod init example.com/urlext
+mkdir -p go-solutions/05-strings-runes-and-unicode/07-regular-expressions/01-url-parts-extractor/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/07-regular-expressions/01-url-parts-extractor
 ```
 
 ### Why net/url does the parsing and the regex does almost nothing

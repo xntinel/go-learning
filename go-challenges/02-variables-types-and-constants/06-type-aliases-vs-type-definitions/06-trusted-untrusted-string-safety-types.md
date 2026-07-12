@@ -29,9 +29,8 @@ safehtml/                 independent module: example.com/safehtml
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/safehtml/cmd/demo
-cd ~/go-exercises/safehtml
-go mod init example.com/safehtml
+mkdir -p go-solutions/02-variables-types-and-constants/06-type-aliases-vs-type-definitions/06-trusted-untrusted-string-safety-types/cmd/demo
+cd go-solutions/02-variables-types-and-constants/06-type-aliases-vs-type-definitions/06-trusted-untrusted-string-safety-types
 go mod edit -go=1.24
 ```
 

@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/mwchain/cmd/demo
-cd ~/go-exercises/mwchain
-go mod init example.com/mwchain
+mkdir -p go-solutions/10-error-handling/10-error-handling-middleware/04-middleware-stack-composition/cmd/demo
+cd go-solutions/10-error-handling/10-error-handling-middleware/04-middleware-stack-composition
 ```
 
 ### Why order is a correctness property, not a preference

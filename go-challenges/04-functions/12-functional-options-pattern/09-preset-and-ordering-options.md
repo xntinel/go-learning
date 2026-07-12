@@ -31,9 +31,8 @@ publisher/                       independent module: example.com/publisher
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/publisher/cmd/demo
-cd ~/go-exercises/publisher
-go mod init example.com/publisher
+mkdir -p go-solutions/04-functions/12-functional-options-pattern/09-preset-and-ordering-options/cmd/demo
+cd go-solutions/04-functions/12-functional-options-pattern/09-preset-and-ordering-options
 ```
 
 ### An option that applies options

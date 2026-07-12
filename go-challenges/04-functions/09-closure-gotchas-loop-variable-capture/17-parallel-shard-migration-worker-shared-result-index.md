@@ -29,9 +29,8 @@ shardmigrate/                independent module: example.com/shardmigrate
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/shardmigrate/cmd/demo
-cd ~/go-exercises/shardmigrate
-go mod init example.com/shardmigrate
+mkdir -p go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/17-parallel-shard-migration-worker-shared-result-index/cmd/demo
+cd go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/17-parallel-shard-migration-worker-shared-result-index
 go mod edit -go=1.24
 ```
 

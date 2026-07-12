@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/budgetretry/cmd/demo
-cd ~/go-exercises/budgetretry
-go mod init example.com/budgetretry
+mkdir -p go-solutions/14-select-and-context/09-context-in-http-servers-clients/07-deadline-budget-retry-client/cmd/demo
+cd go-solutions/14-select-and-context/09-context-in-http-servers-clients/07-deadline-budget-retry-client
 ```
 
 ## The design

@@ -31,9 +31,8 @@ softdelete/                  independent module: example.com/softdelete
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/softdelete/cmd/demo
-cd ~/go-exercises/softdelete
-go mod init example.com/softdelete
+mkdir -p go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/31-batch-soft-delete-with-error-joined-defer/cmd/demo
+cd go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/31-batch-soft-delete-with-error-joined-defer
 go mod edit -go=1.24
 ```
 

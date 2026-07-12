@@ -24,9 +24,8 @@ staged/                     independent module: example.com/staged
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/staged/staged
-cd ~/go-exercises/staged
-go mod init example.com/staged
+mkdir -p go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/14-staged-write-discard-unless-committed/staged
+cd go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/14-staged-write-discard-unless-committed
 go mod edit -go=1.24
 ```
 

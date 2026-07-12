@@ -29,9 +29,8 @@ entity/                     independent module: example.com/entity
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/entity/cmd/demo
-cd ~/go-exercises/entity
-go mod init example.com/entity
+mkdir -p go-solutions/07-structs-and-methods/01-struct-declaration-and-initialization/06-embedded-entity-composition/cmd/demo
+cd go-solutions/07-structs-and-methods/01-struct-declaration-and-initialization/06-embedded-entity-composition
 go mod edit -go=1.24
 ```
 

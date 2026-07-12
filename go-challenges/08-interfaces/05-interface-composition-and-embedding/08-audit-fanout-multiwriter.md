@@ -28,9 +28,8 @@ auditfanout/                independent module: example.com/auditfanout
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/auditfanout/cmd/demo
-cd ~/go-exercises/auditfanout
-go mod init example.com/auditfanout
+mkdir -p go-solutions/08-interfaces/05-interface-composition-and-embedding/08-audit-fanout-multiwriter/cmd/demo
+cd go-solutions/08-interfaces/05-interface-composition-and-embedding/08-audit-fanout-multiwriter
 ```
 
 ### What io.MultiWriter does, and where it hurts

@@ -22,8 +22,7 @@ pull_test.go         take N, take fewer than available, take zero, validation er
 Set up the module:
 
 ```bash
-mkdir -p pull-adapters/cmd/demo && cd pull-adapters
-go mod init example.com/pull-adapters
+mkdir -p go-solutions/25-iterators-and-modern-go/07-iter-package-usage/02-pull-adapters/cmd/demo && cd go-solutions/25-iterators-and-modern-go/07-iter-package-usage/02-pull-adapters
 ```
 
 ### Why Pull exists, and why stop is mandatory

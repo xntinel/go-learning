@@ -79,9 +79,8 @@ _ = stm.Atomically(func(tx *stm.Tx) error {
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/stm/cmd/demo
-cd ~/go-exercises/stm
-go mod init example.com/stm
+mkdir -p go-solutions/46-capstone-concurrency-deep-dive/06-software-transactional-memory/06-software-transactional-memory/cmd/demo
+cd go-solutions/46-capstone-concurrency-deep-dive/06-software-transactional-memory/06-software-transactional-memory
 ```
 
 This is a library; there is no `main`. Verification is `go test`.

@@ -35,9 +35,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/fan-in-aggregator-partial-failure/cmd/demo
-cd ~/go-exercises/fan-in-aggregator-partial-failure
-go mod init example.com/faninagg
+mkdir -p go-solutions/03-control-flow/08-panic-and-recover/31-fan-in-aggregator-partial-failure/cmd/demo
+cd go-solutions/03-control-flow/08-panic-and-recover/31-fan-in-aggregator-partial-failure
 go mod edit -go=1.24
 ```
 

@@ -29,9 +29,8 @@ payments/                   independent module: example.com/payments
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/payments/cmd/demo
-cd ~/go-exercises/payments
-go mod init example.com/payments
+mkdir -p go-solutions/08-interfaces/12-interface-pollution-anti-patterns/10-payment-gateway-seam-narrow-interface/cmd/demo
+cd go-solutions/08-interfaces/12-interface-pollution-anti-patterns/10-payment-gateway-seam-narrow-interface
 ```
 
 ### Why this is where an interface belongs

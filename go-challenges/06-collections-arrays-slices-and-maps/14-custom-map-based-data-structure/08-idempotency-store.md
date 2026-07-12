@@ -31,9 +31,8 @@ idempotency/               independent module: example.com/idempotency
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/idempotency/cmd/demo
-cd ~/go-exercises/idempotency
-go mod init example.com/idempotency
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/14-custom-map-based-data-structure/08-idempotency-store/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/14-custom-map-based-data-structure/08-idempotency-store
 ```
 
 ### Capture the first response, and serialize the duplicates

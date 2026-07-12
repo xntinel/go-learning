@@ -29,9 +29,8 @@ checkout/                    independent module: example.com/checkout
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/checkout/cmd/demo
-cd ~/go-exercises/checkout
-go mod init example.com/checkout
+mkdir -p go-solutions/12-testing-ecosystem/08-mocking-with-interfaces/03-function-field-stub-payment-gateway/cmd/demo
+cd go-solutions/12-testing-ecosystem/08-mocking-with-interfaces/03-function-field-stub-payment-gateway
 ```
 
 ### Why a function field beats a bespoke stub per test

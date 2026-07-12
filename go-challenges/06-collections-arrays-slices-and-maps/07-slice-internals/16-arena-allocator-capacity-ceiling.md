@@ -52,9 +52,8 @@ arena/                   module example.com/arena
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/arena
-cd ~/go-exercises/arena
-go mod init example.com/arena
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/16-arena-allocator-capacity-ceiling
+cd go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/16-arena-allocator-capacity-ceiling
 go mod edit -go=1.24
 ```
 

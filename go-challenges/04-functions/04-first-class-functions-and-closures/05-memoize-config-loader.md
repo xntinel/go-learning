@@ -29,9 +29,8 @@ memoize/                   independent module: example.com/memoize
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/memoize/cmd/demo
-cd ~/go-exercises/memoize
-go mod init example.com/memoize
+mkdir -p go-solutions/04-functions/04-first-class-functions-and-closures/05-memoize-config-loader/cmd/demo
+cd go-solutions/04-functions/04-first-class-functions-and-closures/05-memoize-config-loader
 ```
 
 ### The cache is the captured environment

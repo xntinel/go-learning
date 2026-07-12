@@ -22,8 +22,7 @@ h2frame/
 Set up the module:
 
 ```bash
-mkdir -p h2frame/cmd/demo && cd h2frame
-go mod init example.com/h2frame
+mkdir -p go-solutions/44-capstone-http2-implementation/01-frame-parsing/01-frame-codec/cmd/demo && cd go-solutions/44-capstone-http2-implementation/01-frame-parsing/01-frame-codec
 go mod edit -go=1.26
 ```
 

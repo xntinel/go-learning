@@ -26,9 +26,8 @@ debounce/                  independent module: example.com/logical-clock-debounc
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/debounce
-cd ~/go-exercises/debounce
-go mod init example.com/logical-clock-debounce
+mkdir -p go-solutions/04-functions/04-first-class-functions-and-closures/14-key-scoped-debounce-detector
+cd go-solutions/04-functions/04-first-class-functions-and-closures/14-key-scoped-debounce-detector
 go mod edit -go=1.24
 ```
 

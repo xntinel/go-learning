@@ -31,9 +31,8 @@ pool/                      independent module: example.com/pool
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pool/cmd/demo
-cd ~/go-exercises/pool
-go mod init example.com/pool
+mkdir -p go-solutions/13-goroutines-and-channels/13-goroutine-pools/01-bounded-worker-pool/cmd/demo
+cd go-solutions/13-goroutines-and-channels/13-goroutine-pools/01-bounded-worker-pool
 ```
 
 ### The shape of the pool

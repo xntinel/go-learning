@@ -29,9 +29,8 @@ depsvc/                    independent module: example.com/depsvc
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/depsvc/cmd/demo
-cd ~/go-exercises/depsvc
-go mod init example.com/depsvc
+mkdir -p go-solutions/11-packages-and-modules/06-dependency-management/01-dep-hygiene-cli/cmd/demo
+cd go-solutions/11-packages-and-modules/06-dependency-management/01-dep-hygiene-cli
 ```
 
 ### Why extract Run instead of writing main

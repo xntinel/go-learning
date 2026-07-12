@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/configvalidator/cmd/demo
-cd ~/go-exercises/configvalidator
-go mod init example.com/configvalidator
+mkdir -p go-solutions/03-control-flow/08-panic-and-recover/06-parser-internal-panic/cmd/demo
+cd go-solutions/03-control-flow/08-panic-and-recover/06-parser-internal-panic
 ```
 
 ### Why panic here, and why the re-panic rule is sacred

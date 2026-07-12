@@ -29,9 +29,8 @@ storageiface/                 independent module: example.com/storageiface
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/storageiface/cmd/demo
-cd ~/go-exercises/storageiface
-go mod init example.com/storageiface
+mkdir -p go-solutions/08-interfaces/01-implicit-interface-satisfaction/01-store-satisfies-consumer-interface/cmd/demo
+cd go-solutions/08-interfaces/01-implicit-interface-satisfaction/01-store-satisfies-consumer-interface
 ```
 
 ### Why the interface has three narrow methods

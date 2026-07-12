@@ -29,9 +29,8 @@ connpool/                    independent module: example.com/connpool
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/connpool/cmd/demo
-cd ~/go-exercises/connpool
-go mod init example.com/connpool
+mkdir -p go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/27-resource-pool-checkout-defer-release-starvation/cmd/demo
+cd go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/27-resource-pool-checkout-defer-release-starvation
 go mod edit -go=1.24
 ```
 

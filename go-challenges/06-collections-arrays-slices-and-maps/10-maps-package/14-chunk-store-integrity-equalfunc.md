@@ -49,9 +49,8 @@ chunkstore/                module example.com/chunkstore
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/chunkstore
-cd ~/go-exercises/chunkstore
-go mod init example.com/chunkstore
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/14-chunk-store-integrity-equalfunc
+cd go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/14-chunk-store-integrity-equalfunc
 go mod edit -go=1.24
 ```
 

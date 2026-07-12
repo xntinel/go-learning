@@ -31,9 +31,8 @@ hedge/                       independent module: example.com/hedge
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/hedge/cmd/demo
-cd ~/go-exercises/hedge
-go mod init example.com/hedge
+mkdir -p go-solutions/13-goroutines-and-channels/02-channel-basics/12-hedged-replica-read-leak-free/cmd/demo
+cd go-solutions/13-goroutines-and-channels/02-channel-basics/12-hedged-replica-read-leak-free
 go get go.uber.org/goleak
 ```
 

@@ -26,9 +26,8 @@ events/                    module example.com/events
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/events/cmd/demo
-cd ~/go-exercises/events
-go mod init example.com/events
+mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/09-type-switch-event-dispatch-default/cmd/demo
+cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/09-type-switch-event-dispatch-default
 ```
 
 ### The artifact and the planted bug

@@ -29,9 +29,8 @@ Verify: `go test -race -count=10 ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/scatter/cmd/demo
-cd ~/go-exercises/scatter
-go mod init example.com/scatter
+mkdir -p go-solutions/13-goroutines-and-channels/01-your-first-goroutine/07-scatter-gather-results-channel/cmd/demo
+cd go-solutions/13-goroutines-and-channels/01-your-first-goroutine/07-scatter-gather-results-channel
 ```
 
 ### Why the buffer must be sized to the senders

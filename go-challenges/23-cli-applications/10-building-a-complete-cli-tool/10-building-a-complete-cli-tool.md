@@ -25,9 +25,8 @@ Use sentinel errors for missing commands, missing notes, invalid formats, and ba
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/notectl
-cd ~/go-exercises/notectl
-go mod init example.com/notectl
+mkdir -p go-solutions/23-cli-applications/10-building-a-complete-cli-tool/10-building-a-complete-cli-tool
+cd go-solutions/23-cli-applications/10-building-a-complete-cli-tool/10-building-a-complete-cli-tool
 go mod edit -go=1.26
 ```
 

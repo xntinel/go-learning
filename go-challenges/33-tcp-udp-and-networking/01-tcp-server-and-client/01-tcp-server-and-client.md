@@ -75,9 +75,8 @@ This sends a TCP FIN. The server's `io.Copy` sees `io.EOF` on its next `Read`, w
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/tcpecho/cmd/demo
-cd ~/go-exercises/tcpecho
-go mod init example.com/tcpecho
+mkdir -p go-solutions/33-tcp-udp-and-networking/01-tcp-server-and-client/01-tcp-server-and-client/cmd/demo
+cd go-solutions/33-tcp-udp-and-networking/01-tcp-server-and-client/01-tcp-server-and-client
 ```
 
 ### Exercise 1: The EchoServer Type

@@ -28,9 +28,8 @@ batchlog/                    independent module: example.com/batchlog
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/batchlog/cmd/demo
-cd ~/go-exercises/batchlog
-go mod init example.com/batchlog
+mkdir -p go-solutions/04-functions/02-named-return-values/21-batch-operation-success-position-log/cmd/demo
+cd go-solutions/04-functions/02-named-return-values/21-batch-operation-success-position-log
 go mod edit -go=1.24
 ```
 

@@ -28,9 +28,8 @@ compat/                     independent module: example.com/billing/compat
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/compat/cmd/demo
-cd ~/go-exercises/compat
-go mod init example.com/billing/compat
+mkdir -p go-solutions/11-packages-and-modules/04-go-module-versioning/05-semver-compatibility-gate/cmd/demo
+cd go-solutions/11-packages-and-modules/04-go-module-versioning/05-semver-compatibility-gate
 go mod edit -go=1.26
 ```
 

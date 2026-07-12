@@ -29,9 +29,8 @@ handlers/                       module: example.com/handlers
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/handlers/cmd/demo
-cd ~/go-exercises/handlers
-go mod init example.com/handlers
+mkdir -p go-solutions/02-variables-types-and-constants/09-blank-identifier-and-shadowing/05-interface-compliance-guards/cmd/demo
+cd go-solutions/02-variables-types-and-constants/09-blank-identifier-and-shadowing/05-interface-compliance-guards
 ```
 
 ### Why the nil-pointer guard, and where comma-ok takes over

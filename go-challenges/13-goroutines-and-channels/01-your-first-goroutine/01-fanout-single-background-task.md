@@ -28,9 +28,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/prewarm/cmd/demo
-cd ~/go-exercises/prewarm
-go mod init example.com/prewarm
+mkdir -p go-solutions/13-goroutines-and-channels/01-your-first-goroutine/01-fanout-single-background-task/cmd/demo
+cd go-solutions/13-goroutines-and-channels/01-your-first-goroutine/01-fanout-single-background-task
 ```
 
 ### Why waiting is the whole point

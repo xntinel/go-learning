@@ -28,9 +28,8 @@ hotlog/                    independent module: example.com/hotlog
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/hotlog/cmd/demo
-cd ~/go-exercises/hotlog
-go mod init example.com/hotlog
+mkdir -p go-solutions/05-strings-runes-and-unicode/06-string-formatting-with-fmt/05-sprintf-hotpath-alloc/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/06-string-formatting-with-fmt/05-sprintf-hotpath-alloc
 go mod edit -go=1.24
 ```
 

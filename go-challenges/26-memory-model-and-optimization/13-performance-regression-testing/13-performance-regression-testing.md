@@ -35,9 +35,8 @@ Unit tests for regression policy should be deterministic and fast. They should n
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/benchguard/cmd/demo
-cd ~/go-exercises/benchguard
-go mod init benchguard
+mkdir -p go-solutions/26-memory-model-and-optimization/13-performance-regression-testing/13-performance-regression-testing/cmd/demo
+cd go-solutions/26-memory-model-and-optimization/13-performance-regression-testing/13-performance-regression-testing
 ```
 
 This package does not invoke Git or `benchstat`; it implements the comparison core that a CI wrapper can call after benchmark data has been collected.

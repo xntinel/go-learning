@@ -28,9 +28,8 @@ validate/                  independent module: example.com/validate
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/validate/cmd/demo
-cd ~/go-exercises/validate
-go mod init example.com/validate
+mkdir -p go-solutions/07-structs-and-methods/08-embedding-for-composition/08-method-shadowing-base-validator/cmd/demo
+cd go-solutions/07-structs-and-methods/08-embedding-for-composition/08-method-shadowing-base-validator
 ```
 
 ### Promotion is not virtual dispatch — so call the base by hand

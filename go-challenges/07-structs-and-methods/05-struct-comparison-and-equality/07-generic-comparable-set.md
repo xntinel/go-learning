@@ -29,9 +29,8 @@ idset/                      independent module: example.com/idset
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/idset/cmd/demo
-cd ~/go-exercises/idset
-go mod init example.com/idset
+mkdir -p go-solutions/07-structs-and-methods/05-struct-comparison-and-equality/07-generic-comparable-set/cmd/demo
+cd go-solutions/07-structs-and-methods/05-struct-comparison-and-equality/07-generic-comparable-set
 ```
 
 ### Why `comparable` is the constraint that makes this work

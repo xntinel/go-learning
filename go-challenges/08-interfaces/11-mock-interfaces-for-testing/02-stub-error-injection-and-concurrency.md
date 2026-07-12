@@ -28,9 +28,8 @@ stubcounter/                 independent module: example.com/stubcounter
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/stubcounter/cmd/demo
-cd ~/go-exercises/stubcounter
-go mod init example.com/stubcounter
+mkdir -p go-solutions/08-interfaces/11-mock-interfaces-for-testing/02-stub-error-injection-and-concurrency/cmd/demo
+cd go-solutions/08-interfaces/11-mock-interfaces-for-testing/02-stub-error-injection-and-concurrency
 ```
 
 ### The error-propagation contract, and why state still advances

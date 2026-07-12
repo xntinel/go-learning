@@ -30,9 +30,8 @@ pool/                      independent module: example.com/pool
 Set up the module:
 
 ```bash
-mkdir -p pool/cmd/demo
-cd pool
-go mod init example.com/pool
+mkdir -p go-solutions/14-select-and-context/04-context-withcancel/06-worker-pool-shutdown/cmd/demo
+cd go-solutions/14-select-and-context/04-context-withcancel/06-worker-pool-shutdown
 ```
 
 ### Why one shared context is enough

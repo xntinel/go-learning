@@ -22,8 +22,7 @@ stream_test.go       a large streamed result with backpressure, decode table, re
 Set up the module:
 
 ```bash
-mkdir -p streaming/cmd/demo && cd streaming
-go mod init example.com/streaming
+mkdir -p go-solutions/39-capstone-database-engine/09-network-protocol/06-streaming-result-set/cmd/demo && cd go-solutions/39-capstone-database-engine/09-network-protocol/06-streaming-result-set
 ```
 
 ### Why chunked framing and what backpressure buys

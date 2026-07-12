@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/confignum/config ~/go-exercises/confignum/cmd/demo
-cd ~/go-exercises/confignum
-go mod init example.com/confignum
+mkdir -p go-solutions/07-structs-and-methods/02-struct-tags-and-json-encoding/09-number-precision-usenumber/config go-solutions/07-structs-and-methods/02-struct-tags-and-json-encoding/09-number-precision-usenumber/cmd/demo
+cd go-solutions/07-structs-and-methods/02-struct-tags-and-json-encoding/09-number-precision-usenumber
 go mod edit -go=1.24
 ```
 

@@ -31,9 +31,8 @@ sliding/                   independent module: example.com/sliding
 Set up the module (`testing/synctest` requires Go 1.25+):
 
 ```bash
-mkdir -p ~/go-exercises/sliding/cmd/demo
-cd ~/go-exercises/sliding
-go mod init example.com/sliding
+mkdir -p go-solutions/48-modern-go-language-and-stdlib/02-testing-synctest-deterministic-concurrency/03-sliding-expiration/cmd/demo
+cd go-solutions/48-modern-go-language-and-stdlib/02-testing-synctest-deterministic-concurrency/03-sliding-expiration
 go mod edit -go=1.25
 ```
 

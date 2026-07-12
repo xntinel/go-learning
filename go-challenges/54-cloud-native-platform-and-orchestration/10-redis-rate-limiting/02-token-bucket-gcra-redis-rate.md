@@ -32,9 +32,8 @@ Verify: `go test -race ./...` offline; `go test -tags integration -race ./...` a
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/gcralimit/cmd/demo
-cd ~/go-exercises/gcralimit
-go mod init example.com/gcralimit
+mkdir -p go-solutions/54-cloud-native-platform-and-orchestration/10-redis-rate-limiting/02-token-bucket-gcra-redis-rate/cmd/demo
+cd go-solutions/54-cloud-native-platform-and-orchestration/10-redis-rate-limiting/02-token-bucket-gcra-redis-rate
 go mod edit -go=1.26
 go get github.com/go-redis/redis_rate/v10
 go get github.com/redis/go-redis/v9

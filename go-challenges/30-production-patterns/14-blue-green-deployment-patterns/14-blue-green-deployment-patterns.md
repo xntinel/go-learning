@@ -70,9 +70,8 @@ A canary sends a small percentage of traffic to the new version before a full sw
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/bluegreen/cmd/demo
-cd ~/go-exercises/bluegreen
-go mod init example.com/bluegreen
+mkdir -p go-solutions/30-production-patterns/14-blue-green-deployment-patterns/14-blue-green-deployment-patterns/cmd/demo
+cd go-solutions/30-production-patterns/14-blue-green-deployment-patterns/14-blue-green-deployment-patterns
 ```
 
 This is a library, not a program. Verify it with `go test`.

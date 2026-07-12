@@ -39,9 +39,8 @@ hotkeys/                    independent module: example.com/zipf-distribution-ho
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/zipf-distribution-hot-key-tracker/cmd/demo
-cd ~/go-exercises/zipf-distribution-hot-key-tracker
-go mod init example.com/zipf-distribution-hot-key-tracker
+mkdir -p go-solutions/03-control-flow/05-range-over-collections/29-zipf-distribution-hot-key-tracker/cmd/demo
+cd go-solutions/03-control-flow/05-range-over-collections/29-zipf-distribution-hot-key-tracker
 go mod edit -go=1.24
 ```
 

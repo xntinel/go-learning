@@ -29,9 +29,8 @@ leakservice/                 independent module: example.com/leakservice
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/leakservice/cmd/demo
-cd ~/go-exercises/leakservice
-go mod init example.com/leakservice
+mkdir -p go-solutions/13-goroutines-and-channels/08-goroutine-leak-detection/01-leak-detection-service/cmd/demo
+cd go-solutions/13-goroutines-and-channels/08-goroutine-leak-detection/01-leak-detection-service
 ```
 
 ### The exit contract, made explicit

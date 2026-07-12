@@ -30,9 +30,8 @@ licensescan/                 independent module: example.com/licensescan
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/licensescan/cmd/demo
-cd ~/go-exercises/licensescan
-go mod init example.com/licensescan
+mkdir -p go-solutions/11-packages-and-modules/08-vendor-directory/05-vendor-license-scanner/cmd/demo
+cd go-solutions/11-packages-and-modules/08-vendor-directory/05-vendor-license-scanner
 ```
 
 ### Why scan over `fs.FS`, not a real directory

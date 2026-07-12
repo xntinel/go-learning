@@ -28,9 +28,8 @@ Verify: `go test -count=1 ./...`
 Set up the module:
 
 ```bash
-mkdir -p retryclass/cmd/demo
-cd retryclass
-go mod init example.com/retryclass
+mkdir -p go-solutions/02-variables-types-and-constants/04-constants-and-iota/09-http-retry-classifier-constants/cmd/demo
+cd go-solutions/02-variables-types-and-constants/04-constants-and-iota/09-http-retry-classifier-constants
 ```
 
 ## Why an enum plus named constants

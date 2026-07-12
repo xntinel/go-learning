@@ -30,9 +30,8 @@ mergejoin/                 independent module: example.com/mergejoin
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/mergejoin/cmd/demo
-cd ~/go-exercises/mergejoin
-go mod init example.com/mergejoin
+mkdir -p go-solutions/03-control-flow/06-labels-break-continue-goto/09-two-way-merge-join-labeled-break/cmd/demo
+cd go-solutions/03-control-flow/06-labels-break-continue-goto/09-two-way-merge-join-labeled-break
 go mod edit -go=1.24
 ```
 

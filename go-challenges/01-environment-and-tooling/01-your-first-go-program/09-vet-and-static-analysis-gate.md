@@ -32,9 +32,8 @@ end to end.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/vetgate/cmd/demo
-cd ~/go-exercises/vetgate
-go mod init example.com/vetgate
+mkdir -p go-solutions/01-environment-and-tooling/01-your-first-go-program/09-vet-and-static-analysis-gate/cmd/demo
+cd go-solutions/01-environment-and-tooling/01-your-first-go-program/09-vet-and-static-analysis-gate
 ```
 
 ### The defects vet catches, and why the compiler does not

@@ -31,9 +31,8 @@ cfgmgr/                    independent module: example.com/cfgmgr
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cfgmgr/cmd/demo
-cd ~/go-exercises/cfgmgr
-go mod init example.com/cfgmgr
+mkdir -p go-solutions/15-sync-primitives/08-atomic-value-config-hot-reload/01-atomic-pointer-config-manager/cmd/demo
+cd go-solutions/15-sync-primitives/08-atomic-value-config-hot-reload/01-atomic-pointer-config-manager
 ```
 
 ### The design: one pointer, zero locks

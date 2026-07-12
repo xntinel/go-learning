@@ -57,9 +57,8 @@ HTTP/2 uses HPACK (RFC 7541), which encodes header changes against a shared dyna
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/h3server/cmd/demo
-cd ~/go-exercises/h3server
-go mod init example.com/h3server
+mkdir -p go-solutions/33-tcp-udp-and-networking/25-http3-over-quic/25-http3-over-quic/cmd/demo
+cd go-solutions/33-tcp-udp-and-networking/25-http3-over-quic/25-http3-over-quic
 go get github.com/quic-go/quic-go@latest
 ```
 

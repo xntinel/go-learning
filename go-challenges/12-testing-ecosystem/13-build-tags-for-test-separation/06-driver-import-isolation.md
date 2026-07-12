@@ -35,9 +35,8 @@ buildgraph/                independent module: example.com/buildgraph
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/buildgraph/{registry,heavydep,cmd/demo}
-cd ~/go-exercises/buildgraph
-go mod init example.com/buildgraph
+mkdir -p go-solutions/12-testing-ecosystem/13-build-tags-for-test-separation/06-driver-import-isolation/{registry,heavydep,cmd/demo}
+cd go-solutions/12-testing-ecosystem/13-build-tags-for-test-separation/06-driver-import-isolation
 go mod edit -go=1.26
 ```
 

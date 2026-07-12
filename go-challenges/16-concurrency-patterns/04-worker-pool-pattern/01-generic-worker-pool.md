@@ -30,8 +30,7 @@ workerpool_test.go       squares + strings, bounded-concurrency probe, no-dup/no
 Set up the module:
 
 ```bash
-mkdir -p generic-worker-pool/cmd/demo && cd generic-worker-pool
-go mod init example.com/generic-worker-pool
+mkdir -p go-solutions/16-concurrency-patterns/04-worker-pool-pattern/01-generic-worker-pool/cmd/demo && cd go-solutions/16-concurrency-patterns/04-worker-pool-pattern/01-generic-worker-pool
 ```
 
 ### Why a closer goroutine, and why generics

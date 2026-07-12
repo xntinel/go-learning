@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/goldenflag/cmd/demo ~/go-exercises/goldenflag/testdata
-cd ~/go-exercises/goldenflag
-go mod init example.com/goldenflag
+mkdir -p go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/04-update-flag-golden-file/cmd/demo go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/04-update-flag-golden-file/testdata
+cd go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/04-update-flag-golden-file
 ```
 
 ### The -update flag, the helper, and the testdata rule

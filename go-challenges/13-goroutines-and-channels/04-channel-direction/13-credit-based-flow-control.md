@@ -26,9 +26,8 @@ credit/                      independent module: example.com/credit
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/credit/cmd/demo
-cd ~/go-exercises/credit
-go mod init example.com/credit
+mkdir -p go-solutions/13-goroutines-and-channels/04-channel-direction/13-credit-based-flow-control/cmd/demo
+cd go-solutions/13-goroutines-and-channels/04-channel-direction/13-credit-based-flow-control
 go get go.uber.org/goleak
 ```
 

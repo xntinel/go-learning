@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/handlersnap/cmd/demo ~/go-exercises/handlersnap/testdata
-cd ~/go-exercises/handlersnap
-go mod init example.com/handlersnap
+mkdir -p go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/07-http-handler-approval/cmd/demo go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/07-http-handler-approval/testdata
+cd go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/07-http-handler-approval
 ```
 
 ### Capturing a handler's response as a contract

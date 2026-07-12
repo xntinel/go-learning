@@ -30,9 +30,8 @@ shutdown/                  independent module: example.com/shutdown
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/shutdown/cmd/demo
-cd ~/go-exercises/shutdown
-go mod init example.com/shutdown
+mkdir -p go-solutions/04-functions/04-first-class-functions-and-closures/09-method-value-shutdown-registry/cmd/demo
+cd go-solutions/04-functions/04-first-class-functions-and-closures/09-method-value-shutdown-registry
 ```
 
 ### Method values bind the receiver

@@ -22,8 +22,7 @@ request_test.go      happy paths, each validator, error aggregation, reuse, cont
 Set up the module:
 
 ```bash
-mkdir -p request-builder/cmd/demo && cd request-builder
-go mod init example.com/request-builder
+mkdir -p go-solutions/24-design-patterns-in-go/02-builder-pattern/01-fluent-request-builder/cmd/demo && cd go-solutions/24-design-patterns-in-go/02-builder-pattern/01-fluent-request-builder
 ```
 
 ### Why setters record and Build decides

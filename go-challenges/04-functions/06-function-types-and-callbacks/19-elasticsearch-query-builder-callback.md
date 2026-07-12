@@ -28,9 +28,8 @@ Verify: `go test -count=1 ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/elasticsearch-query-builder-callback/cmd/demo
-cd ~/go-exercises/elasticsearch-query-builder-callback
-go mod init example.com/elasticsearch-query-builder-callback
+mkdir -p go-solutions/04-functions/06-function-types-and-callbacks/19-elasticsearch-query-builder-callback/cmd/demo
+cd go-solutions/04-functions/06-function-types-and-callbacks/19-elasticsearch-query-builder-callback
 go mod edit -go=1.24
 ```
 

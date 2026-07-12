@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/eventwindow/cmd/demo
-cd ~/go-exercises/eventwindow
-go mod init example.com/eventwindow
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/12-sorted-collections-binary-search/03-timeseries-window-query/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/12-sorted-collections-binary-search/03-timeseries-window-query
 ```
 
 ### Two boundary searches, and why the interval is half-open

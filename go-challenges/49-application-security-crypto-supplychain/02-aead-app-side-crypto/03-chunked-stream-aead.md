@@ -30,9 +30,8 @@ chunkstream/               independent module: example.com/chunkstream
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/chunkstream/cmd/demo
-cd ~/go-exercises/chunkstream
-go mod init example.com/chunkstream
+mkdir -p go-solutions/49-application-security-crypto-supplychain/02-aead-app-side-crypto/03-chunked-stream-aead/cmd/demo
+cd go-solutions/49-application-security-crypto-supplychain/02-aead-app-side-crypto/03-chunked-stream-aead
 go mod edit -go=1.24
 ```
 

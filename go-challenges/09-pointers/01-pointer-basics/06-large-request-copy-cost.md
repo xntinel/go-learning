@@ -30,9 +30,8 @@ reqcost/                   independent module: example.com/reqcost
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/reqcost/cmd/demo
-cd ~/go-exercises/reqcost
-go mod init example.com/reqcost
+mkdir -p go-solutions/09-pointers/01-pointer-basics/06-large-request-copy-cost/cmd/demo
+cd go-solutions/09-pointers/01-pointer-basics/06-large-request-copy-cost
 ```
 
 ### The copy is real and its size is knowable

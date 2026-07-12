@@ -28,9 +28,8 @@ mutexstack/                      independent module: example.com/mutexstack
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/mutexstack/stack ~/go-exercises/mutexstack/cmd/demo
-cd ~/go-exercises/mutexstack
-go mod init example.com/mutexstack
+mkdir -p go-solutions/15-sync-primitives/11-lock-free-data-structures/02-mutex-stack-baseline/stack go-solutions/15-sync-primitives/11-lock-free-data-structures/02-mutex-stack-baseline/cmd/demo
+cd go-solutions/15-sync-primitives/11-lock-free-data-structures/02-mutex-stack-baseline
 ```
 
 ### Why the boring version comes first

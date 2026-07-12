@@ -29,9 +29,8 @@ gomodaudit/                independent module: example.com/gomodaudit
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/gomodaudit/cmd/demo
-cd ~/go-exercises/gomodaudit
-go mod init example.com/gomodaudit
+mkdir -p go-solutions/11-packages-and-modules/06-dependency-management/04-gomod-directive-auditor/cmd/demo
+cd go-solutions/11-packages-and-modules/06-dependency-management/04-gomod-directive-auditor
 go get golang.org/x/mod
 ```
 

@@ -40,9 +40,8 @@ xmlflatten/                  independent module: example.com/xmlflatten
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/xmlflatten/cmd/demo
-cd ~/go-exercises/xmlflatten
-go mod init example.com/xmlflatten
+mkdir -p go-solutions/04-functions/07-recursive-functions-and-stack-depth/16-xml-element-streaming-depth-validation/cmd/demo
+cd go-solutions/04-functions/07-recursive-functions-and-stack-depth/16-xml-element-streaming-depth-validation
 go mod edit -go=1.24
 ```
 

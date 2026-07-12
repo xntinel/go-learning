@@ -41,9 +41,8 @@ Go 1.24 introduced `b.Loop`, which excludes setup before the loop and cleanup af
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/benchmethod/cmd/demo
-cd ~/go-exercises/benchmethod
-go mod init benchmethod
+mkdir -p go-solutions/26-memory-model-and-optimization/04-benchmarking-methodology/04-benchmarking-methodology/cmd/demo
+cd go-solutions/26-memory-model-and-optimization/04-benchmarking-methodology/04-benchmarking-methodology
 ```
 
 ### Exercise 1: Build The Search Library

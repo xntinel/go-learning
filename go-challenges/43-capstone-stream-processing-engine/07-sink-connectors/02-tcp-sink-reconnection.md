@@ -23,8 +23,7 @@ tcp_sink_test.go       happy path, empty-addr guard, retry exhaustion, cancellat
 Set up the module:
 
 ```bash
-mkdir -p tcp-sink-reconnection/cmd/demo && cd tcp-sink-reconnection
-go mod init example.com/tcp-sink-reconnection
+mkdir -p go-solutions/43-capstone-stream-processing-engine/07-sink-connectors/02-tcp-sink-reconnection/cmd/demo && cd go-solutions/43-capstone-stream-processing-engine/07-sink-connectors/02-tcp-sink-reconnection
 go mod edit -go=1.26
 ```
 

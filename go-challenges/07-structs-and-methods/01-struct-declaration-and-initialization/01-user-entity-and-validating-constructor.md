@@ -29,9 +29,8 @@ userentity/                 independent module: example.com/userentity
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/userentity/cmd/demo
-cd ~/go-exercises/userentity
-go mod init example.com/userentity
+mkdir -p go-solutions/07-structs-and-methods/01-struct-declaration-and-initialization/01-user-entity-and-validating-constructor/cmd/demo
+cd go-solutions/07-structs-and-methods/01-struct-declaration-and-initialization/01-user-entity-and-validating-constructor
 go mod edit -go=1.24
 ```
 

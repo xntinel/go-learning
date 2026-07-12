@@ -24,9 +24,8 @@ sumtest/                   independent module: example.com/sumtest
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/sumtest/cmd/demo
-cd ~/go-exercises/sumtest
-go mod init example.com/sumtest
+mkdir -p go-solutions/12-testing-ecosystem/01-your-first-test/01-sum-library-first-test/cmd/demo
+cd go-solutions/12-testing-ecosystem/01-your-first-test/01-sum-library-first-test
 ```
 
 ### Why this trivial function earns a test

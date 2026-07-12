@@ -35,9 +35,8 @@ secretsprovider/               independent module: example.com/secretsprovider
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/secretsprovider/cmd/demo
-cd ~/go-exercises/secretsprovider
-go mod init example.com/secretsprovider
+mkdir -p go-solutions/49-application-security-crypto-supplychain/07-secrets-management-vault/03-secrets-provider-cache-degradation/cmd/demo
+cd go-solutions/49-application-security-crypto-supplychain/07-secrets-management-vault/03-secrets-provider-cache-degradation
 go mod edit -go=1.26
 go get github.com/hashicorp/vault/api
 go get golang.org/x/sync/singleflight

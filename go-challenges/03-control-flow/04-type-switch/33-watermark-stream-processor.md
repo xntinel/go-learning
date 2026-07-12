@@ -46,9 +46,8 @@ watermark-stream-processor/   independent module: example.com/watermark-stream-p
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/watermark-stream-processor/cmd/demo
-cd ~/go-exercises/watermark-stream-processor
-go mod init example.com/watermark-stream-processor
+mkdir -p go-solutions/03-control-flow/04-type-switch/33-watermark-stream-processor/cmd/demo
+cd go-solutions/03-control-flow/04-type-switch/33-watermark-stream-processor
 go mod edit -go=1.24
 ```
 

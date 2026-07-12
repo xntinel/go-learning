@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/retryheap/cmd/demo
-cd ~/go-exercises/retryheap
-go mod init example.com/retryheap
+mkdir -p go-solutions/09-pointers/08-pointers-in-slices-and-maps/09-retry-scheduler-heap-of-pointers/cmd/demo
+cd go-solutions/09-pointers/08-pointers-in-slices-and-maps/09-retry-scheduler-heap-of-pointers
 ```
 
 ### Why pointers and an index field

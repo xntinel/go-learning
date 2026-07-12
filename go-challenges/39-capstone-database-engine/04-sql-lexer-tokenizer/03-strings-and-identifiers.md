@@ -24,8 +24,7 @@ lexer_test.go        string escapes, quoted-identifier escapes, unterminated err
 Set up the module:
 
 ```bash
-mkdir -p strings-and-identifiers/cmd/demo && cd strings-and-identifiers
-go mod init example.com/strings-and-identifiers
+mkdir -p go-solutions/39-capstone-database-engine/04-sql-lexer-tokenizer/03-strings-and-identifiers/cmd/demo && cd go-solutions/39-capstone-database-engine/04-sql-lexer-tokenizer/03-strings-and-identifiers
 ```
 
 ### Why a doubling escape, and why a builder instead of a slice

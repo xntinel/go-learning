@@ -46,9 +46,8 @@ Anti-entropy must be safe to run repeatedly. Running repair twice on two already
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/antientropy/cmd/demo
-cd ~/go-exercises/antientropy
-go mod init example.com/antientropy
+mkdir -p go-solutions/37-distributed-systems-fundamentals/21-anti-entropy-protocol/21-anti-entropy-protocol/cmd/demo
+cd go-solutions/37-distributed-systems-fundamentals/21-anti-entropy-protocol/21-anti-entropy-protocol
 ```
 
 This is a library, not a program: the core package is verified with `go test`.

@@ -23,8 +23,7 @@ btree_test.go        point lookup, missing key, bounded + unbounded scans, 1000-
 Set up the module:
 
 ```bash
-mkdir -p search-and-range-scan/cmd/demo && cd search-and-range-scan
-go mod init example.com/search-and-range-scan
+mkdir -p go-solutions/39-capstone-database-engine/02-btree-index/03-search-and-range-scan/cmd/demo && cd go-solutions/39-capstone-database-engine/02-btree-index/03-search-and-range-scan
 ```
 
 ### The baseline: a tree you can already fill

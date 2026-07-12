@@ -29,9 +29,8 @@ ctxsem/                     independent module: example.com/ctxsem
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ctxsem/cmd/demo
-cd ~/go-exercises/ctxsem
-go mod init example.com/ctxsem
+mkdir -p go-solutions/13-goroutines-and-channels/12-channel-patterns-semaphore-barrier/03-context-aware-semaphore-acquire/cmd/demo
+cd go-solutions/13-goroutines-and-channels/12-channel-patterns-semaphore-barrier/03-context-aware-semaphore-acquire
 go mod edit -go=1.26
 ```
 

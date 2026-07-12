@@ -33,9 +33,8 @@ This module uses `sync.WaitGroup.Go`, which requires Go 1.25+, so the setup pins
 the module's Go version accordingly.
 
 ```bash
-mkdir -p ~/go-exercises/refresher/cmd/demo
-cd ~/go-exercises/refresher
-go mod init example.com/refresher
+mkdir -p go-solutions/13-goroutines-and-channels/11-goroutine-lifecycle-management/09-once-guarded-closer/cmd/demo
+cd go-solutions/13-goroutines-and-channels/11-goroutine-lifecycle-management/09-once-guarded-closer
 go mod edit -go=1.25
 ```
 

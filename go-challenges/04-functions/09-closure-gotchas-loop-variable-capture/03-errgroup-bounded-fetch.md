@@ -27,9 +27,8 @@ bfetch/                      independent module: example.com/bfetch
 Set up the module (it needs the `golang.org/x/sync` dependency):
 
 ```bash
-mkdir -p ~/go-exercises/bfetch/cmd/demo
-cd ~/go-exercises/bfetch
-go mod init example.com/bfetch
+mkdir -p go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/03-errgroup-bounded-fetch/cmd/demo
+cd go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/03-errgroup-bounded-fetch
 go mod edit -go=1.26
 go get golang.org/x/sync/errgroup@latest
 ```

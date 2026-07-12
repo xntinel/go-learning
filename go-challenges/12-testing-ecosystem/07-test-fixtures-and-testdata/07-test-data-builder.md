@@ -22,9 +22,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/order/cmd/demo
-cd ~/go-exercises/order
-go mod init example.com/orderbuilder
+mkdir -p go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/07-test-data-builder/cmd/demo
+cd go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/07-test-data-builder
 go get github.com/google/go-cmp/cmp
 ```
 

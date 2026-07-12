@@ -28,9 +28,8 @@ rangefunc/                   module example.com/rangefunc
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/rangefunc/cmd/demo
-cd ~/go-exercises/rangefunc
-go mod init example.com/rangefunc
+mkdir -p go-solutions/03-control-flow/02-for-loops/09-rangefunc-paginator/cmd/demo
+cd go-solutions/03-control-flow/02-for-loops/09-rangefunc-paginator
 ```
 
 ### How `iter.Seq` inverts control, and the two obligations it creates

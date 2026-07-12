@@ -23,8 +23,7 @@ example_test.go        runnable doc examples for IsLate and SourceTracker
 Set up the module:
 
 ```bash
-mkdir -p watermark-tracking/cmd/demo && cd watermark-tracking
-go mod init example.com/watermark-tracking
+mkdir -p go-solutions/43-capstone-stream-processing-engine/04-watermarks-late-data/01-watermark-tracking/cmd/demo && cd go-solutions/43-capstone-stream-processing-engine/04-watermarks-late-data/01-watermark-tracking
 go mod edit -go=1.26
 ```
 

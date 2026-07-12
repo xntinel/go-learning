@@ -27,9 +27,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/enrich/cmd/demo ~/go-exercises/enrich/testdata/cases
-cd ~/go-exercises/enrich
-go mod init example.com/enrich
+mkdir -p go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/09-per-case-directories/cmd/demo go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/09-per-case-directories/testdata/cases
+cd go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/09-per-case-directories
 ```
 
 ### When a case needs more than two files

@@ -39,9 +39,8 @@ sliding-window-request-classifier/   independent module: example.com/sliding-win
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/sliding-window-request-classifier/cmd/demo
-cd ~/go-exercises/sliding-window-request-classifier
-go mod init example.com/sliding-window-request-classifier
+mkdir -p go-solutions/03-control-flow/04-type-switch/25-sliding-window-request-classifier/cmd/demo
+cd go-solutions/03-control-flow/04-type-switch/25-sliding-window-request-classifier
 go mod edit -go=1.24
 ```
 

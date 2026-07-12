@@ -30,9 +30,8 @@ ctxservice/                independent module: example.com/ctxservice
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ctxservice/cmd/demo
-cd ~/go-exercises/ctxservice
-go mod init example.com/ctxservice
+mkdir -p go-solutions/13-goroutines-and-channels/09-channel-of-channels/03-reply-with-context-cancellation/cmd/demo
+cd go-solutions/13-goroutines-and-channels/09-channel-of-channels/03-reply-with-context-cancellation
 ```
 
 ### Two places context must be honored

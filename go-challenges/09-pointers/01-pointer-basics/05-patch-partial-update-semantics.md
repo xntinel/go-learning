@@ -30,9 +30,8 @@ userpatch/                 independent module: example.com/userpatch
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/userpatch/cmd/demo
-cd ~/go-exercises/userpatch
-go mod init example.com/userpatch
+mkdir -p go-solutions/09-pointers/01-pointer-basics/05-patch-partial-update-semantics/cmd/demo
+cd go-solutions/09-pointers/01-pointer-basics/05-patch-partial-update-semantics
 ```
 
 ### PATCH is "touch only what was provided"

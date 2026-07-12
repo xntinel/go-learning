@@ -30,9 +30,8 @@ account/                    independent module: example.com/account
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/account/cmd/demo
-cd ~/go-exercises/account
-go mod init example.com/account
+mkdir -p go-solutions/07-structs-and-methods/12-designing-a-domain-model/05-constructor-functional-options/cmd/demo
+cd go-solutions/07-structs-and-methods/12-designing-a-domain-model/05-constructor-functional-options
 ```
 
 ### Options apply, then the constructor validates once

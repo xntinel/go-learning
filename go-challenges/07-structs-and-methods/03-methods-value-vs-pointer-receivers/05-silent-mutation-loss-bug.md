@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/serverconfig/cmd/demo
-cd ~/go-exercises/serverconfig
-go mod init example.com/serverconfig
+mkdir -p go-solutions/07-structs-and-methods/03-methods-value-vs-pointer-receivers/05-silent-mutation-loss-bug/cmd/demo
+cd go-solutions/07-structs-and-methods/03-methods-value-vs-pointer-receivers/05-silent-mutation-loss-bug
 ```
 
 ### The bug: a value receiver drops the write

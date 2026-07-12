@@ -57,9 +57,8 @@ runs all three deliberately.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/sanitize/internal/sanitize ~/go-exercises/sanitize/cmd/demo
-cd ~/go-exercises/sanitize
-go mod init example.com/sanitize
+mkdir -p go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/07-strip-unicode-control-and-bidi/internal/sanitize go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/07-strip-unicode-control-and-bidi/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/07-strip-unicode-control-and-bidi
 ```
 
 Create `internal/sanitize/sanitize.go`:

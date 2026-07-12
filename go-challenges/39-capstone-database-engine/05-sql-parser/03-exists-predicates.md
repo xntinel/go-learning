@@ -28,8 +28,7 @@ exists/
 Set up the module:
 
 ```bash
-mkdir -p exists/lexer exists/cmd/demo && cd exists
-go mod init example.com/exists
+mkdir -p go-solutions/39-capstone-database-engine/05-sql-parser/03-exists-predicates/lexer go-solutions/39-capstone-database-engine/05-sql-parser/03-exists-predicates/cmd/demo && cd go-solutions/39-capstone-database-engine/05-sql-parser/03-exists-predicates
 ```
 
 ### EXISTS is a prefix predicate, and that is the whole design

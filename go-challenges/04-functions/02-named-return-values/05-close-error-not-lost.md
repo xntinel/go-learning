@@ -27,9 +27,8 @@ cfgwrite/                   independent module: example.com/cfgwrite
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cfgwrite/cmd/demo
-cd ~/go-exercises/cfgwrite
-go mod init example.com/cfgwrite
+mkdir -p go-solutions/04-functions/02-named-return-values/05-close-error-not-lost/cmd/demo
+cd go-solutions/04-functions/02-named-return-values/05-close-error-not-lost
 ```
 
 ### Promote the close error, but never clobber

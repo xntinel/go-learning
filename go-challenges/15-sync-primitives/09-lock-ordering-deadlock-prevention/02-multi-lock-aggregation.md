@@ -35,9 +35,8 @@ banktotal/                 independent module: example.com/banktotal
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/banktotal/bank ~/go-exercises/banktotal/cmd/demo
-cd ~/go-exercises/banktotal
-go mod init example.com/banktotal
+mkdir -p go-solutions/15-sync-primitives/09-lock-ordering-deadlock-prevention/02-multi-lock-aggregation/bank go-solutions/15-sync-primitives/09-lock-ordering-deadlock-prevention/02-multi-lock-aggregation/cmd/demo
+cd go-solutions/15-sync-primitives/09-lock-ordering-deadlock-prevention/02-multi-lock-aggregation
 ```
 
 ### Two aggregations, two contracts

@@ -30,9 +30,8 @@ memio/                     independent module: example.com/memio
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/memio/cmd/demo
-cd ~/go-exercises/memio
-go mod init example.com/memio
+mkdir -p go-solutions/53-wasm-and-extensibility/02-host-guest-abi-and-memory/02-linear-memory-io/cmd/demo
+cd go-solutions/53-wasm-and-extensibility/02-host-guest-abi-and-memory/02-linear-memory-io
 ```
 
 ### The embedded guest, and why it is 25 bytes

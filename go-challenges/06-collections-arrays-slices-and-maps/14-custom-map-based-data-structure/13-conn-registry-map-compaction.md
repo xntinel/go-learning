@@ -57,9 +57,8 @@ connregistry/            module example.com/connregistry
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/connregistry
-cd ~/go-exercises/connregistry
-go mod init example.com/connregistry
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/14-custom-map-based-data-structure/13-conn-registry-map-compaction
+cd go-solutions/06-collections-arrays-slices-and-maps/14-custom-map-based-data-structure/13-conn-registry-map-compaction
 go mod edit -go=1.24
 ```
 

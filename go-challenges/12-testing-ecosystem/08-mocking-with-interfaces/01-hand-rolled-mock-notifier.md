@@ -29,9 +29,8 @@ notifier/                    independent module: example.com/notifier
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/notifier/cmd/demo
-cd ~/go-exercises/notifier
-go mod init example.com/notifier
+mkdir -p go-solutions/12-testing-ecosystem/08-mocking-with-interfaces/01-hand-rolled-mock-notifier/cmd/demo
+cd go-solutions/12-testing-ecosystem/08-mocking-with-interfaces/01-hand-rolled-mock-notifier
 ```
 
 ### Why the port is one method

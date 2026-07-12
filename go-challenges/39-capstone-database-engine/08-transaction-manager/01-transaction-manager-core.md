@@ -24,8 +24,7 @@ txmgr_test.go         lifecycle, locking, deadlock, recovery, savepoint tests (-
 Set up the module:
 
 ```bash
-mkdir -p txmgr/cmd/demo && cd txmgr
-go mod init example.com/txmgr
+mkdir -p go-solutions/39-capstone-database-engine/08-transaction-manager/01-transaction-manager-core/cmd/demo && cd go-solutions/39-capstone-database-engine/08-transaction-manager/01-transaction-manager-core
 ```
 
 ### How the pieces interact

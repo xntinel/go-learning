@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/inflight/cmd/demo
-cd ~/go-exercises/inflight
-go mod init example.com/inflight
+mkdir -p go-solutions/14-select-and-context/11-graceful-shutdown-with-context/07-inflight-request-tracking-drain/cmd/demo
+cd go-solutions/14-select-and-context/11-graceful-shutdown-with-context/07-inflight-request-tracking-drain
 ```
 
 ## Why a gauge, and what BaseContext buys you

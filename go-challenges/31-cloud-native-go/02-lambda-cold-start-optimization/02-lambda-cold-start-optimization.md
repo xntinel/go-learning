@@ -202,10 +202,9 @@ round-trip on revival.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cold-start/handler
-mkdir -p ~/go-exercises/cold-start/cmd/demo
-cd ~/go-exercises/cold-start
-go mod init example.com/cold-start
+mkdir -p go-solutions/31-cloud-native-go/02-lambda-cold-start-optimization/02-lambda-cold-start-optimization/handler
+mkdir -p go-solutions/31-cloud-native-go/02-lambda-cold-start-optimization/02-lambda-cold-start-optimization/cmd/demo
+cd go-solutions/31-cloud-native-go/02-lambda-cold-start-optimization/02-lambda-cold-start-optimization
 ```
 
 This is a library plus an entry point. The handler package is verified with

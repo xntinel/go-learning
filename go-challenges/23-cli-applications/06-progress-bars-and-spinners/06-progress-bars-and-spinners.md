@@ -25,9 +25,8 @@ Real progress can receive duplicate, late, or over-total updates. Clamp current 
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/progress-cli
-cd ~/go-exercises/progress-cli
-go mod init example.com/progresscli
+mkdir -p go-solutions/23-cli-applications/06-progress-bars-and-spinners/06-progress-bars-and-spinners
+cd go-solutions/23-cli-applications/06-progress-bars-and-spinners/06-progress-bars-and-spinners
 go mod edit -go=1.26
 ```
 

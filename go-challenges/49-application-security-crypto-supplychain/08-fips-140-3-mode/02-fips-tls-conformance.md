@@ -32,9 +32,8 @@ fipstls/                     independent module: example.com/fipstls
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/fipstls/cmd/demo
-cd ~/go-exercises/fipstls
-go mod init example.com/fipstls
+mkdir -p go-solutions/49-application-security-crypto-supplychain/08-fips-140-3-mode/02-fips-tls-conformance/cmd/demo
+cd go-solutions/49-application-security-crypto-supplychain/08-fips-140-3-mode/02-fips-tls-conformance
 go mod edit -go=1.26
 ```
 

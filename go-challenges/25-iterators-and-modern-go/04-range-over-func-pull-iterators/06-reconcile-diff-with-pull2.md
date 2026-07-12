@@ -22,8 +22,7 @@ reconcile_test.go    add-only, remove-only, change-only, mixed, both stops fire
 Set up the module:
 
 ```bash
-mkdir -p reconcile/cmd/demo && cd reconcile
-go mod init example.com/reconcile
+mkdir -p go-solutions/25-iterators-and-modern-go/04-range-over-func-pull-iterators/06-reconcile-diff-with-pull2/cmd/demo && cd go-solutions/25-iterators-and-modern-go/04-range-over-func-pull-iterators/06-reconcile-diff-with-pull2
 ```
 
 ### Why reconciliation is a lockstep walk, and the three cases

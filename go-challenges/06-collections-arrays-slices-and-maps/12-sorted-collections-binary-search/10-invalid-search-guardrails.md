@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/searchguard/cmd/demo
-cd ~/go-exercises/searchguard
-go mod init example.com/searchguard
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/12-sorted-collections-binary-search/10-invalid-search-guardrails/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/12-sorted-collections-binary-search/10-invalid-search-guardrails
 ```
 
 ### Validate at the boundary, because the search never will

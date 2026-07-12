@@ -44,9 +44,8 @@ On the read side the coordinator collects R responses and picks the one with the
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/quorum/cmd/demo
-cd ~/go-exercises/quorum
-go mod init example.com/quorum
+mkdir -p go-solutions/37-distributed-systems-fundamentals/23-quorum-based-replication/23-quorum-based-replication/cmd/demo
+cd go-solutions/37-distributed-systems-fundamentals/23-quorum-based-replication/23-quorum-based-replication
 ```
 
 ### Exercise 1: Replica And Coordinator Types

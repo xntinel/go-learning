@@ -38,9 +38,8 @@ Reuse the schema and generated code from Exercise 1; this module adds one more
 dependency, the well-known error-detail protos.
 
 ```bash
-mkdir -p ~/go-exercises/usersvc/proto/user/v1 ~/go-exercises/usersvc/cmd/demo
-cd ~/go-exercises/usersvc
-go mod init example.com/usersvc
+mkdir -p go-solutions/51-rpc-and-api-design/01-connectrpc-services/02-errors-interceptors-metadata/proto/user/v1 go-solutions/51-rpc-and-api-design/01-connectrpc-services/02-errors-interceptors-metadata/cmd/demo
+cd go-solutions/51-rpc-and-api-design/01-connectrpc-services/02-errors-interceptors-metadata
 go mod edit -go=1.26
 go get connectrpc.com/connect@latest
 go get google.golang.org/protobuf@latest

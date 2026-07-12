@@ -32,9 +32,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/byteunits/cmd/demo
-cd ~/go-exercises/byteunits
-go mod init example.com/byteunits
+mkdir -p go-solutions/02-variables-types-and-constants/08-untyped-constants-and-constant-expressions/03-byte-unit-ladder-si-vs-binary/cmd/demo
+cd go-solutions/02-variables-types-and-constants/08-untyped-constants-and-constant-expressions/03-byte-unit-ladder-si-vs-binary
 ```
 
 ### Two ladders, one package, never mixed

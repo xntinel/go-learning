@@ -23,8 +23,7 @@ recovery_test.go     append+recover round-trip, torn-tail truncation, corrupt-ta
 Set up the module:
 
 ```bash
-mkdir -p crash-recovery/cmd/demo && cd crash-recovery
-go mod init example.com/crash-recovery
+mkdir -p go-solutions/41-capstone-message-queue/02-persistent-message-storage/03-crash-recovery/cmd/demo && cd go-solutions/41-capstone-message-queue/02-persistent-message-storage/03-crash-recovery
 ```
 
 ### Recovery is a single forward pass that rebuilds state

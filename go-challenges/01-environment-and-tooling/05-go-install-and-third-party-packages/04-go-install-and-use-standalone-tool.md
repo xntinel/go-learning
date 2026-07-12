@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/importfix/cmd/demo
-cd ~/go-exercises/importfix
-go mod init example.com/importfix
+mkdir -p go-solutions/01-environment-and-tooling/05-go-install-and-third-party-packages/04-go-install-and-use-standalone-tool/cmd/demo
+cd go-solutions/01-environment-and-tooling/05-go-install-and-third-party-packages/04-go-install-and-use-standalone-tool
 ```
 
 ### Installing the tool, and where it goes

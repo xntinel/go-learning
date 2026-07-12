@@ -30,9 +30,8 @@ Verify: `go test -race -count=10 ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/prefetch/cmd/demo
-cd ~/go-exercises/prefetch
-go mod init example.com/prefetch
+mkdir -p go-solutions/13-goroutines-and-channels/01-your-first-goroutine/10-context-scoped-background-task/cmd/demo
+cd go-solutions/13-goroutines-and-channels/01-your-first-goroutine/10-context-scoped-background-task
 ```
 
 ### The ctx.Done() + select termination contract

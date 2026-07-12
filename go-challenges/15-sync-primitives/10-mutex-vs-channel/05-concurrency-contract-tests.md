@@ -32,9 +32,8 @@ limitercontract/                independent module: example.com/limitercontract
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/limitercontract/limiter ~/go-exercises/limitercontract/cmd/demo
-cd ~/go-exercises/limitercontract
-go mod init example.com/limitercontract
+mkdir -p go-solutions/15-sync-primitives/10-mutex-vs-channel/05-concurrency-contract-tests/limiter go-solutions/15-sync-primitives/10-mutex-vs-channel/05-concurrency-contract-tests/cmd/demo
+cd go-solutions/15-sync-primitives/10-mutex-vs-channel/05-concurrency-contract-tests
 ```
 
 ### Why exact-N is assertable, and why it matters

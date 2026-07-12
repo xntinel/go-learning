@@ -23,8 +23,7 @@ example_test.go      ExampleElementPointers with a verified // Output block
 Set up the module:
 
 ```bash
-mkdir -p loop-pointers/cmd/demo && cd loop-pointers
-go mod init example.com/loop-pointers
+mkdir -p go-solutions/25-iterators-and-modern-go/02-loopvar-semantic-change/03-pointer-capture-strategies/cmd/demo && cd go-solutions/25-iterators-and-modern-go/02-loopvar-semantic-change/03-pointer-capture-strategies
 ```
 
 ### The difference per-iteration scope did not erase

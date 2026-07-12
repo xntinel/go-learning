@@ -21,9 +21,8 @@ If a test must touch the default logger, restore it with `t.Cleanup`. Prefer pac
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/slog-global-migration
-cd ~/go-exercises/slog-global-migration
-go mod init example.com/slogglobal
+mkdir -p go-solutions/21-structured-logging-with-slog/09-replacing-global-logger-patterns/09-replacing-global-logger-patterns
+cd go-solutions/21-structured-logging-with-slog/09-replacing-global-logger-patterns/09-replacing-global-logger-patterns
 ```
 
 Edit `go.mod`:

@@ -32,9 +32,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p pooledappend/buffers pooledappend/cmd/demo
-cd pooledappend
-go mod init example.com/pooledappend
+mkdir -p go-solutions/15-sync-primitives/05-sync-pool/02-pooled-append-helper/buffers go-solutions/15-sync-primitives/05-sync-pool/02-pooled-append-helper/cmd/demo
+cd go-solutions/15-sync-primitives/05-sync-pool/02-pooled-append-helper
 ```
 
 ### The encapsulation contract

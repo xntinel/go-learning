@@ -31,8 +31,7 @@ tenantreg/                    independent module: example.com/tenantreg
 Set up the module:
 
 ```bash
-mkdir tenantreg && cd tenantreg
-go mod init example.com/tenantreg
+mkdir go-solutions/15-sync-primitives/04-sync-map/04-connection-registry && cd go-solutions/15-sync-primitives/04-sync-map/04-connection-registry
 ```
 
 ### Why LoadOrStore a *sync.Once, not the client

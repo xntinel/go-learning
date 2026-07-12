@@ -28,9 +28,8 @@ deprecation/                   independent module: example.com/deprecation
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/deprecation/cmd/demo
-cd ~/go-exercises/deprecation
-go mod init example.com/deprecation
+mkdir -p go-solutions/51-rpc-and-api-design/06-api-versioning-strategies/02-deprecation-sunset-lifecycle/cmd/demo
+cd go-solutions/51-rpc-and-api-design/06-api-versioning-strategies/02-deprecation-sunset-lifecycle
 ```
 
 ### The two header formats are different on purpose

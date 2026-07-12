@@ -23,8 +23,7 @@ leastconn_test.go    min-conns selection, release tracking, even spread, concurr
 Set up the module:
 
 ```bash
-mkdir -p least-connections/cmd/demo && cd least-connections
-go mod init example.com/least-connections
+mkdir -p go-solutions/42-capstone-service-mesh-data-plane/04-load-balancing/02-least-connections/cmd/demo && cd go-solutions/42-capstone-service-mesh-data-plane/04-load-balancing/02-least-connections
 go mod edit -go=1.26
 ```
 

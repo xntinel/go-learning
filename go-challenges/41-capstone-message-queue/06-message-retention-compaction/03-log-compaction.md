@@ -22,8 +22,7 @@ compaction_test.go     latest-per-key, keyless pass-through, tombstone window, d
 Set up the module:
 
 ```bash
-mkdir -p log-compaction/cmd/demo && cd log-compaction
-go mod init example.com/log-compaction
+mkdir -p go-solutions/41-capstone-message-queue/06-message-retention-compaction/03-log-compaction/cmd/demo && cd go-solutions/41-capstone-message-queue/06-message-retention-compaction/03-log-compaction
 ```
 
 ### Why two passes, and why forward both times

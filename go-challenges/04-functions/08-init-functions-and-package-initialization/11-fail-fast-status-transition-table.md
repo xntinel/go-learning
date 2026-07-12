@@ -24,9 +24,8 @@ Test: the package loads without panicking; `validateTransitions` rejects a table
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/orderfsm
-cd ~/go-exercises/orderfsm
-go mod init example.com/orderfsm
+mkdir -p go-solutions/04-functions/08-init-functions-and-package-initialization/11-fail-fast-status-transition-table
+cd go-solutions/04-functions/08-init-functions-and-package-initialization/11-fail-fast-status-transition-table
 go mod edit -go=1.24
 ```
 

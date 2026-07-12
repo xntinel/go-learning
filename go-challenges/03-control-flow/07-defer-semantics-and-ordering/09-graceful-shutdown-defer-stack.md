@@ -32,9 +32,8 @@ bootstrap/                   independent module: example.com/bootstrap
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/bootstrap/cmd/demo
-cd ~/go-exercises/bootstrap
-go mod init example.com/bootstrap
+mkdir -p go-solutions/03-control-flow/07-defer-semantics-and-ordering/09-graceful-shutdown-defer-stack/cmd/demo
+cd go-solutions/03-control-flow/07-defer-semantics-and-ordering/09-graceful-shutdown-defer-stack
 ```
 
 ### Why register the shutdown right after each start

@@ -26,9 +26,8 @@ connstate/                        module example.com/connstate
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/connstate/internal/conn ~/go-exercises/connstate/cmd/connstate
-cd ~/go-exercises/connstate
-go mod init example.com/connstate
+mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/01-connection-state-machine-closed-twice/internal/conn go-solutions/03-control-flow/10-control-flow-debugging-challenge/01-connection-state-machine-closed-twice/cmd/connstate
+cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/01-connection-state-machine-closed-twice
 ```
 
 ### The artifact and the planted bug

@@ -30,9 +30,8 @@ modlint/                    independent module: example.com/billing/modlint
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/modlint/cmd/demo
-cd ~/go-exercises/modlint
-go mod init example.com/billing/modlint
+mkdir -p go-solutions/11-packages-and-modules/04-go-module-versioning/06-gomod-supply-chain-linter/cmd/demo
+cd go-solutions/11-packages-and-modules/04-go-module-versioning/06-gomod-supply-chain-linter
 go mod edit -go=1.26
 ```
 

@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cachekey/cmd/demo
-cd ~/go-exercises/cachekey
-go mod init example.com/cachekey
+mkdir -p go-solutions/02-variables-types-and-constants/02-zero-values-and-default-initialization/09-comparable-struct-cache-key/cmd/demo
+cd go-solutions/02-variables-types-and-constants/02-zero-values-and-default-initialization/09-comparable-struct-cache-key
 ```
 
 ## Why struct keys work, and where they break

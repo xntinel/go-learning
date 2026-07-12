@@ -43,9 +43,8 @@ A single stale replica is not alarming. A burst of divergence — 5% of reads ov
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/readrepair/cmd/demo
-cd ~/go-exercises/readrepair
-go mod init example.com/readrepair
+mkdir -p go-solutions/45-capstone-distributed-key-value-store/05-read-repair/05-read-repair/cmd/demo
+cd go-solutions/45-capstone-distributed-key-value-store/05-read-repair/05-read-repair
 ```
 
 This is a library, not a program; the entry point is `go test`.

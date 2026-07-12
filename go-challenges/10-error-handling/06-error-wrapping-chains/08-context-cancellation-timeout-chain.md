@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/downstream/cmd/demo
-cd ~/go-exercises/downstream
-go mod init example.com/downstream
+mkdir -p go-solutions/10-error-handling/06-error-wrapping-chains/08-context-cancellation-timeout-chain/cmd/demo
+cd go-solutions/10-error-handling/06-error-wrapping-chains/08-context-cancellation-timeout-chain
 go mod edit -go=1.24
 ```
 

@@ -26,9 +26,8 @@ tracing/                  independent module: example.com/tracing
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/tracing/cmd/demo
-cd ~/go-exercises/tracing
-go mod init example.com/tracing
+mkdir -p go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/10-execution-trace-scheduler-stalls/cmd/demo
+cd go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/10-execution-trace-scheduler-stalls
 ```
 
 ### When a trace beats a profile, and the Start/Stop contract

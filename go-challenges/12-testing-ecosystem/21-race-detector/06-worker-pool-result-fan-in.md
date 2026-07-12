@@ -34,9 +34,8 @@ Verify: `go test -count=1 -race ./...`; then `go run -race ./cmd/racy`.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/fanin/cmd/demo ~/go-exercises/fanin/cmd/racy
-cd ~/go-exercises/fanin
-go mod init example.com/fanin
+mkdir -p go-solutions/12-testing-ecosystem/21-race-detector/06-worker-pool-result-fan-in/cmd/demo go-solutions/12-testing-ecosystem/21-race-detector/06-worker-pool-result-fan-in/cmd/racy
+cd go-solutions/12-testing-ecosystem/21-race-detector/06-worker-pool-result-fan-in
 ```
 
 ### The race is in the aggregation, not the work

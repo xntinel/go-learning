@@ -27,9 +27,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/foldkey/cmd/demo
-cd ~/go-exercises/foldkey
-go mod init example.com/foldkey
+mkdir -p go-solutions/05-strings-runes-and-unicode/08-unicode-normalization-and-collation/04-accent-folding-search-key/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/08-unicode-normalization-and-collation/04-accent-folding-search-key
 go get golang.org/x/text
 ```
 

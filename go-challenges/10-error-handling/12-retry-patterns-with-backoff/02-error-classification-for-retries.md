@@ -28,9 +28,8 @@ Test: a wrapped `*net.OpError` timeout (retryable), `context.Canceled`/`Deadline
 Verify: `go test -count=1 -race ./...`
 
 ```bash
-mkdir -p ~/go-exercises/retryclass/cmd/demo
-cd ~/go-exercises/retryclass
-go mod init example.com/retryclass
+mkdir -p go-solutions/10-error-handling/12-retry-patterns-with-backoff/02-error-classification-for-retries/cmd/demo
+cd go-solutions/10-error-handling/12-retry-patterns-with-backoff/02-error-classification-for-retries
 go mod edit -go=1.26
 ```
 

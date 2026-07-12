@@ -33,9 +33,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ratelimit/cmd/demo
-cd ~/go-exercises/ratelimit
-go mod init example.com/ratelimit
+mkdir -p go-solutions/14-select-and-context/08-select-priority-and-starvation/06-rate-limited-priority-dispatcher/cmd/demo
+cd go-solutions/14-select-and-context/08-select-priority-and-starvation/06-rate-limited-priority-dispatcher
 ```
 
 ### Priority reorders within the cap, it does not escape it

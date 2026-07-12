@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/provenance/cmd/demo
-cd ~/go-exercises/provenance
-go mod init example.com/provenance
+mkdir -p go-solutions/01-environment-and-tooling/05-go-install-and-third-party-packages/06-read-binary-build-metadata/cmd/demo
+cd go-solutions/01-environment-and-tooling/05-go-install-and-third-party-packages/06-read-binary-build-metadata
 ```
 
 ### Why format `BuildInfo` from a value, not the live binary

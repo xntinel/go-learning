@@ -29,9 +29,8 @@ greetdoc/                   independent module: example.com/greetdoc
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/greetdoc/cmd/demo
-cd ~/go-exercises/greetdoc
-go mod init example.com/greetdoc
+mkdir -p go-solutions/01-environment-and-tooling/02-go-modules-and-dependencies/03-testable-examples-as-documentation/cmd/demo
+cd go-solutions/01-environment-and-tooling/02-go-modules-and-dependencies/03-testable-examples-as-documentation
 ```
 
 ### How an Example becomes a test

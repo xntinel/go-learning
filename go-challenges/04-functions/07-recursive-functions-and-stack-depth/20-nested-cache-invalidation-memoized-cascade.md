@@ -45,9 +45,8 @@ cacheinvalidate/               independent module: example.com/cacheinvalidate
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cacheinvalidate/cmd/demo
-cd ~/go-exercises/cacheinvalidate
-go mod init example.com/cacheinvalidate
+mkdir -p go-solutions/04-functions/07-recursive-functions-and-stack-depth/20-nested-cache-invalidation-memoized-cascade/cmd/demo
+cd go-solutions/04-functions/07-recursive-functions-and-stack-depth/20-nested-cache-invalidation-memoized-cascade
 go mod edit -go=1.24
 ```
 

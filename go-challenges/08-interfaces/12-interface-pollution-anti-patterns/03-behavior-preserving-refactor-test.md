@@ -27,9 +27,8 @@ pollute/                    independent module: example.com/pollute
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pollute/cmd/demo
-cd ~/go-exercises/pollute
-go mod init example.com/pollute
+mkdir -p go-solutions/08-interfaces/12-interface-pollution-anti-patterns/03-behavior-preserving-refactor-test/cmd/demo
+cd go-solutions/08-interfaces/12-interface-pollution-anti-patterns/03-behavior-preserving-refactor-test
 ```
 
 ### Why a differential test is the right proof

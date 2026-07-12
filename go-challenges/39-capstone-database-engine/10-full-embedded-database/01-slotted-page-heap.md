@@ -22,8 +22,7 @@ page_test.go         insert/read round-trips, tombstone-on-delete, fill-to-full,
 Set up the module:
 
 ```bash
-mkdir -p slotted-page/cmd/demo && cd slotted-page
-go mod init example.com/slotted-page
+mkdir -p go-solutions/39-capstone-database-engine/10-full-embedded-database/01-slotted-page-heap/cmd/demo && cd go-solutions/39-capstone-database-engine/10-full-embedded-database/01-slotted-page-heap
 ```
 
 ### Why a slot directory, and why tuples grow from the bottom

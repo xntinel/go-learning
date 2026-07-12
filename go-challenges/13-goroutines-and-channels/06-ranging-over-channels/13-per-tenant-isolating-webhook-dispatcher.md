@@ -33,9 +33,8 @@ tenantfanout/                independent module: example.com/tenantfanout
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/tenantfanout/cmd/demo
-cd ~/go-exercises/tenantfanout
-go mod init example.com/tenantfanout
+mkdir -p go-solutions/13-goroutines-and-channels/06-ranging-over-channels/13-per-tenant-isolating-webhook-dispatcher/cmd/demo
+cd go-solutions/13-goroutines-and-channels/06-ranging-over-channels/13-per-tenant-isolating-webhook-dispatcher
 go get go.uber.org/goleak
 go mod tidy
 ```

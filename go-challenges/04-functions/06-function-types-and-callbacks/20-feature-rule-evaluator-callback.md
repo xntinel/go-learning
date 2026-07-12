@@ -28,9 +28,8 @@ Verify: `go test -count=1 ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/feature-rule-evaluator-callback/cmd/demo
-cd ~/go-exercises/feature-rule-evaluator-callback
-go mod init example.com/feature-rule-evaluator-callback
+mkdir -p go-solutions/04-functions/06-function-types-and-callbacks/20-feature-rule-evaluator-callback/cmd/demo
+cd go-solutions/04-functions/06-function-types-and-callbacks/20-feature-rule-evaluator-callback
 go mod edit -go=1.24
 ```
 

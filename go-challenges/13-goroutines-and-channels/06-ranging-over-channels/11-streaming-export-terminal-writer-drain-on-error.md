@@ -31,9 +31,8 @@ exportsink/                  independent module: example.com/exportsink
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/exportsink/cmd/demo
-cd ~/go-exercises/exportsink
-go mod init example.com/exportsink
+mkdir -p go-solutions/13-goroutines-and-channels/06-ranging-over-channels/11-streaming-export-terminal-writer-drain-on-error/cmd/demo
+cd go-solutions/13-goroutines-and-channels/06-ranging-over-channels/11-streaming-export-terminal-writer-drain-on-error
 go get go.uber.org/goleak
 go mod tidy
 ```

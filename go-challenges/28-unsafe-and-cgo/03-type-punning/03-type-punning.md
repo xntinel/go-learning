@@ -21,9 +21,8 @@ For floats, use `math.Float64bits` and `math.Float64frombits`. Unsafe punning is
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/punning
-cd ~/go-exercises/punning
-go mod init example.com/punning
+mkdir -p go-solutions/28-unsafe-and-cgo/03-type-punning/03-type-punning
+cd go-solutions/28-unsafe-and-cgo/03-type-punning/03-type-punning
 ```
 
 ### Exercise 1: Parse A Header

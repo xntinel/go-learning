@@ -26,9 +26,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/envprobe/cmd/demo
-cd ~/go-exercises/envprobe
-go mod init example.com/envprobe
+mkdir -p go-solutions/12-testing-ecosystem/17-testing-with-environment-variables/02-hermetic-env-restore/cmd/demo
+cd go-solutions/12-testing-ecosystem/17-testing-with-environment-variables/02-hermetic-env-restore
 ```
 
 ## Why hermeticity is a property you assert

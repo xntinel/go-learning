@@ -29,9 +29,8 @@ rangeidx/                  independent module: example.com/rangeidx
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/rangeidx/cmd/demo
-cd ~/go-exercises/rangeidx
-go mod init example.com/rangeidx
+mkdir -p go-solutions/09-pointers/01-pointer-basics/08-range-copy-address-trap/cmd/demo
+cd go-solutions/09-pointers/01-pointer-basics/08-range-copy-address-trap
 ```
 
 ### A range value is a copy; its address is not the element's address

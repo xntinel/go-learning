@@ -31,9 +31,8 @@ outbox/                      independent module: example.com/outbox
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/outbox/cmd/demo
-cd ~/go-exercises/outbox
-go mod init example.com/outbox
+mkdir -p go-solutions/13-goroutines-and-channels/08-goroutine-leak-detection/12-outbox-relay-join-inflight-dispatch/cmd/demo
+cd go-solutions/13-goroutines-and-channels/08-goroutine-leak-detection/12-outbox-relay-join-inflight-dispatch
 go get go.uber.org/goleak
 go mod tidy
 ```

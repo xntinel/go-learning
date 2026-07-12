@@ -26,8 +26,7 @@ cmd/
 Set up the module:
 
 ```bash
-mkdir -p interpreter-pipeline/cmd/demo && cd interpreter-pipeline
-go mod init example.com/interpreter-pipeline
+mkdir -p go-solutions/40-capstone-language-interpreter/08-full-interpreter-monkey/04-interpreter-pipeline-dispatch/cmd/demo && cd go-solutions/40-capstone-language-interpreter/08-full-interpreter-monkey/04-interpreter-pipeline-dispatch
 ```
 
 ### The pipeline as composed stages

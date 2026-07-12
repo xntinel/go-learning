@@ -30,9 +30,8 @@ mono/                         module: example.com/mono/api
 Set up the `api` module:
 
 ```bash
-mkdir -p ~/go-exercises/api/internal/store ~/go-exercises/api/cmd/demo
-cd ~/go-exercises/api
-go mod init example.com/mono/api
+mkdir -p go-solutions/11-packages-and-modules/10-monorepo-module-strategy/06-internal-boundary-across-services/internal/store go-solutions/11-packages-and-modules/10-monorepo-module-strategy/06-internal-boundary-across-services/cmd/demo
+cd go-solutions/11-packages-and-modules/10-monorepo-module-strategy/06-internal-boundary-across-services
 ```
 
 ### The rule, precisely

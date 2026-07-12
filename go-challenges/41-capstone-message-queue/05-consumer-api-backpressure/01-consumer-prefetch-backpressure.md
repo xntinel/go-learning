@@ -24,8 +24,7 @@ example_test.go      ExampleNew (external consumer_test package)
 Set up the module:
 
 ```bash
-mkdir -p consumer/cmd/demo && cd consumer
-go mod init example.com/consumer
+mkdir -p go-solutions/41-capstone-message-queue/05-consumer-api-backpressure/01-consumer-prefetch-backpressure/cmd/demo && cd go-solutions/41-capstone-message-queue/05-consumer-api-backpressure/01-consumer-prefetch-backpressure
 ```
 
 ### The Broker interface: a seam for the network

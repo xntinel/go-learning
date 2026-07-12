@@ -29,9 +29,8 @@ errclassify/                 independent module: example.com/errclassify
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/errclassify/cmd/demo
-cd ~/go-exercises/errclassify
-go mod init example.com/errclassify
+mkdir -p go-solutions/08-interfaces/11-mock-interfaces-for-testing/09-table-driven-stubbed-error-classification/cmd/demo
+cd go-solutions/08-interfaces/11-mock-interfaces-for-testing/09-table-driven-stubbed-error-classification
 ```
 
 ### Classification is the contract, and a stub steers it

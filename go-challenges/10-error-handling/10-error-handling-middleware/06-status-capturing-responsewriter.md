@@ -34,9 +34,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/statusrec/cmd/demo
-cd ~/go-exercises/statusrec
-go mod init example.com/statusrec
+mkdir -p go-solutions/10-error-handling/10-error-handling-middleware/06-status-capturing-responsewriter/cmd/demo
+cd go-solutions/10-error-handling/10-error-handling-middleware/06-status-capturing-responsewriter
 ```
 
 ### Why the wrapper is subtle

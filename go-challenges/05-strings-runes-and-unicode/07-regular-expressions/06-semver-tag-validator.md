@@ -28,9 +28,8 @@ semver/                     independent module: example.com/semver
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/semver/cmd/demo
-cd ~/go-exercises/semver
-go mod init example.com/semver
+mkdir -p go-solutions/05-strings-runes-and-unicode/07-regular-expressions/06-semver-tag-validator/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/07-regular-expressions/06-semver-tag-validator
 ```
 
 ### The official regex, anchors, and the leading v

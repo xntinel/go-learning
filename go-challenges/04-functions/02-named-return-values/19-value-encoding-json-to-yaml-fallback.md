@@ -29,9 +29,8 @@ flexenc/                    independent module: example.com/flexenc
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/flexenc/cmd/demo
-cd ~/go-exercises/flexenc
-go mod init example.com/flexenc
+mkdir -p go-solutions/04-functions/02-named-return-values/19-value-encoding-json-to-yaml-fallback/cmd/demo
+cd go-solutions/04-functions/02-named-return-values/19-value-encoding-json-to-yaml-fallback
 go mod edit -go=1.24
 ```
 

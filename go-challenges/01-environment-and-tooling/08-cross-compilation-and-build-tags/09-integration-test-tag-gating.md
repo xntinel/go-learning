@@ -27,9 +27,8 @@ filestore/                     module example.com/filestore
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/filestore/cmd/demo
-cd ~/go-exercises/filestore
-go mod init example.com/filestore
+mkdir -p go-solutions/01-environment-and-tooling/08-cross-compilation-and-build-tags/09-integration-test-tag-gating/cmd/demo
+cd go-solutions/01-environment-and-tooling/08-cross-compilation-and-build-tags/09-integration-test-tag-gating
 ```
 
 ### Compiled out versus compiled-and-skipped

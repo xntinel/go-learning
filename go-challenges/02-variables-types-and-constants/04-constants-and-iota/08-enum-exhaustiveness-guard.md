@@ -29,9 +29,8 @@ Verify: `go test -count=1 ./...`
 Set up the module:
 
 ```bash
-mkdir -p enumguard/cmd/demo
-cd enumguard
-go mod init example.com/enumguard
+mkdir -p go-solutions/02-variables-types-and-constants/04-constants-and-iota/08-enum-exhaustiveness-guard/cmd/demo
+cd go-solutions/02-variables-types-and-constants/04-constants-and-iota/08-enum-exhaustiveness-guard
 ```
 
 ## Why a sentinel and a round-trip test

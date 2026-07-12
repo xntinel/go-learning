@@ -26,9 +26,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/reqctx/cmd/demo
-cd ~/go-exercises/reqctx
-go mod init example.com/reqctx
+mkdir -p go-solutions/14-select-and-context/14-building-a-context-aware-service-framework/09-request-scoped-context-and-detached-background-work/cmd/demo
+cd go-solutions/14-select-and-context/14-building-a-context-aware-service-framework/09-request-scoped-context-and-detached-background-work
 ```
 
 ### Typed keys and detached work

@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/qcodec/cmd/demo
-cd ~/go-exercises/qcodec
-go mod init example.com/qcodec
+mkdir -p go-solutions/12-testing-ecosystem/24-property-based-testing/02-roundtrip-queryparam-codec/cmd/demo
+cd go-solutions/12-testing-ecosystem/24-property-based-testing/02-roundtrip-queryparam-codec
 go mod edit -go=1.26
 go get pgregory.net/rapid@latest
 ```

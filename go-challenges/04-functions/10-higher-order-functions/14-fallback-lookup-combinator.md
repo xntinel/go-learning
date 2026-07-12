@@ -24,9 +24,8 @@ fallback/                   independent module: example.com/fallback
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/fallback
-cd ~/go-exercises/fallback
-go mod init example.com/fallback
+mkdir -p go-solutions/04-functions/10-higher-order-functions/14-fallback-lookup-combinator
+cd go-solutions/04-functions/10-higher-order-functions/14-fallback-lookup-combinator
 go mod edit -go=1.24
 ```
 

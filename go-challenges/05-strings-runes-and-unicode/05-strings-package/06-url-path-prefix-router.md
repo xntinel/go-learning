@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/router/cmd/demo
-cd ~/go-exercises/router
-go mod init example.com/router
+mkdir -p go-solutions/05-strings-runes-and-unicode/05-strings-package/06-url-path-prefix-router/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/05-strings-package/06-url-path-prefix-router
 ```
 
 ### The boundary bug that HasPrefix alone creates

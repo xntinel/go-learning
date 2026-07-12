@@ -28,9 +28,8 @@ admission/                 independent module: example.com/admission
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/admission/cmd/demo
-cd ~/go-exercises/admission
-go mod init example.com/admission
+mkdir -p go-solutions/15-sync-primitives/07-atomic-package/06-admission-inflight-limiter/cmd/demo
+cd go-solutions/15-sync-primitives/07-atomic-package/06-admission-inflight-limiter
 ```
 
 ### Why a naive Add makes a bad limiter

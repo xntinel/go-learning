@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/broker/cmd/demo
-cd ~/go-exercises/broker
-go mod init example.com/broker
+mkdir -p go-solutions/13-goroutines-and-channels/04-channel-direction/07-broker-pubsub-directional/cmd/demo
+cd go-solutions/13-goroutines-and-channels/04-channel-direction/07-broker-pubsub-directional
 ```
 
 ### Why the field is bidirectional and the method return is directional

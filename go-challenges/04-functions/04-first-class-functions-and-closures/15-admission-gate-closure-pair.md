@@ -26,9 +26,8 @@ admission/                 independent module: example.com/admission-gate-pair
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/admission
-cd ~/go-exercises/admission
-go mod init example.com/admission-gate-pair
+mkdir -p go-solutions/04-functions/04-first-class-functions-and-closures/15-admission-gate-closure-pair
+cd go-solutions/04-functions/04-first-class-functions-and-closures/15-admission-gate-closure-pair
 go mod edit -go=1.24
 ```
 

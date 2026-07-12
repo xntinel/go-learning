@@ -33,9 +33,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/problemjson/cmd/demo
-cd ~/go-exercises/problemjson
-go mod init example.com/problemjson
+mkdir -p go-solutions/10-error-handling/10-error-handling-middleware/05-problem-json-error-response/cmd/demo
+cd go-solutions/10-error-handling/10-error-handling-middleware/05-problem-json-error-response
 ```
 
 ### Why RFC 9457 and why redaction

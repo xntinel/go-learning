@@ -30,9 +30,8 @@ nfckey/                   independent module: example.com/nfckey
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/nfckey/cmd/demo
-cd ~/go-exercises/nfckey
-go mod init example.com/nfckey
+mkdir -p go-solutions/05-strings-runes-and-unicode/10-building-a-text-processing-pipeline/05-nfc-normalization-for-dedup-keys/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/10-building-a-text-processing-pipeline/05-nfc-normalization-for-dedup-keys
 go get golang.org/x/text/unicode/norm
 ```
 

@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/logscan/cmd/demo
-cd ~/go-exercises/logscan
-go mod init example.com/logscan
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/06-copy-and-full-slice-expression/05-scanner-token-must-be-copied/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/06-copy-and-full-slice-expression/05-scanner-token-must-be-copied
 ```
 
 ### Why the token is only valid until the next Scan

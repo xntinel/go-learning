@@ -28,8 +28,7 @@ monkey-lexer/
 Set up the module:
 
 ```bash
-mkdir -p monkey-lexer/lexer monkey-lexer/cmd/demo && cd monkey-lexer
-go mod init example.com/monkey-lexer
+mkdir -p go-solutions/40-capstone-language-interpreter/01-lexer-tokenizer/01-monkey-lexer/lexer go-solutions/40-capstone-language-interpreter/01-lexer-tokenizer/01-monkey-lexer/cmd/demo && cd go-solutions/40-capstone-language-interpreter/01-lexer-tokenizer/01-monkey-lexer
 ```
 
 ### Token types and the data the scanner produces

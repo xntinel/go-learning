@@ -26,9 +26,8 @@ watchdog/                 independent module: example.com/watchdog
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/watchdog/cmd/demo
-cd ~/go-exercises/watchdog
-go mod init example.com/watchdog
+mkdir -p go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/08-goroutine-count-regression-watchdog/cmd/demo
+cd go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/08-goroutine-count-regression-watchdog
 ```
 
 ### What the watchdog measures, and why a high-water mark

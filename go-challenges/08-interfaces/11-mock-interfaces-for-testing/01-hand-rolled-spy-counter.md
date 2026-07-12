@@ -29,9 +29,8 @@ spycounter/                  independent module: example.com/spycounter
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/spycounter/cmd/demo
-cd ~/go-exercises/spycounter
-go mod init example.com/spycounter
+mkdir -p go-solutions/08-interfaces/11-mock-interfaces-for-testing/01-hand-rolled-spy-counter/cmd/demo
+cd go-solutions/08-interfaces/11-mock-interfaces-for-testing/01-hand-rolled-spy-counter
 ```
 
 ### Why a spy, and why state-based verification

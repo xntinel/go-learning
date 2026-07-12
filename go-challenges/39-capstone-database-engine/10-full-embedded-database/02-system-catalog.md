@@ -23,8 +23,7 @@ catalog_test.go      create/lookup, duplicate rejection, drop clears metadata, i
 Set up the module:
 
 ```bash
-mkdir -p system-catalog/cmd/demo && cd system-catalog
-go mod init example.com/system-catalog
+mkdir -p go-solutions/39-capstone-database-engine/10-full-embedded-database/02-system-catalog/cmd/demo && cd go-solutions/39-capstone-database-engine/10-full-embedded-database/02-system-catalog
 ```
 
 ### Why the catalog is a registry, and why ordinals are assigned not copied

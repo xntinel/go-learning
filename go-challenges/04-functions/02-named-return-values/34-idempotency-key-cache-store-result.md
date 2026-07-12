@@ -30,9 +30,8 @@ idemcache/                  independent module: example.com/idemcache
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/idemcache/cmd/demo
-cd ~/go-exercises/idemcache
-go mod init example.com/idemcache
+mkdir -p go-solutions/04-functions/02-named-return-values/34-idempotency-key-cache-store-result/cmd/demo
+cd go-solutions/04-functions/02-named-return-values/34-idempotency-key-cache-store-result
 go mod edit -go=1.24
 ```
 

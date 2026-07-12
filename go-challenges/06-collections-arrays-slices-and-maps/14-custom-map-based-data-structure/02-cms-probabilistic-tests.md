@@ -31,9 +31,8 @@ cms/                       independent module: example.com/cms
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cms/cmd/demo
-cd ~/go-exercises/cms
-go mod init example.com/cms
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/14-custom-map-based-data-structure/02-cms-probabilistic-tests/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/14-custom-map-based-data-structure/02-cms-probabilistic-tests
 ```
 
 ### Why every assertion here is one-sided

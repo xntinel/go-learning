@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/origincache/cache ~/go-exercises/origincache/cmd/demo
-cd ~/go-exercises/origincache
-go mod init example.com/origincache
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/04-slices-clone-defensive-copy/cache go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/04-slices-clone-defensive-copy/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/04-slices-clone-defensive-copy
 ```
 
 ### Why returning the internal slice is a bug

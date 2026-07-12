@@ -29,9 +29,8 @@ cyclic/                     independent module: example.com/cyclic
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cyclic/cmd/demo
-cd ~/go-exercises/cyclic
-go mod init example.com/cyclic
+mkdir -p go-solutions/13-goroutines-and-channels/12-channel-patterns-semaphore-barrier/07-reusable-cyclic-barrier/cmd/demo
+cd go-solutions/13-goroutines-and-channels/12-channel-patterns-semaphore-barrier/07-reusable-cyclic-barrier
 go mod edit -go=1.26
 ```
 

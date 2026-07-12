@@ -30,9 +30,8 @@ hdrparse/                   independent module: example.com/hdrparse
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/hdrparse/cmd/demo
-cd ~/go-exercises/hdrparse
-go mod init example.com/hdrparse
+mkdir -p go-solutions/05-strings-runes-and-unicode/02-byte-slices-vs-strings/06-bytes-package-header-parser/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/02-byte-slices-vs-strings/06-bytes-package-header-parser
 go mod edit -go=1.25
 ```
 

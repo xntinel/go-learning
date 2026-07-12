@@ -30,9 +30,8 @@ fetchsvc/                     independent module: example.com/fetchsvc
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/fetchsvc/cmd/demo
-cd ~/go-exercises/fetchsvc
-go mod init example.com/fetchsvc
+mkdir -p go-solutions/01-environment-and-tooling/06-linting-with-golangci-lint/04-reproducible-golangci-config-v2/cmd/demo
+cd go-solutions/01-environment-and-tooling/06-linting-with-golangci-lint/04-reproducible-golangci-config-v2
 ```
 
 ### Why default: none plus an explicit enable list

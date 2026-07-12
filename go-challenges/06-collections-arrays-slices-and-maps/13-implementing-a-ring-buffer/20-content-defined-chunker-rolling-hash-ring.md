@@ -59,9 +59,8 @@ cdcchunk/                    module example.com/cdcchunk
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cdcchunk
-cd ~/go-exercises/cdcchunk
-go mod init example.com/cdcchunk
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/13-implementing-a-ring-buffer/20-content-defined-chunker-rolling-hash-ring
+cd go-solutions/06-collections-arrays-slices-and-maps/13-implementing-a-ring-buffer/20-content-defined-chunker-rolling-hash-ring
 go mod edit -go=1.24
 ```
 

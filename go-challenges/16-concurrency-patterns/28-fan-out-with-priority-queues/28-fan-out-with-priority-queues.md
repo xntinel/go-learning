@@ -44,9 +44,8 @@ A dispatcher owns goroutines. Cancelling the context stops the loop and all work
 ### Setup
 
 ```bash
-mkdir -p ~/go-exercises/pqueue/internal/pqueue ~/go-exercises/pqueue/cmd/demo
-cd ~/go-exercises/pqueue
-go mod init example.com/pqueue
+mkdir -p go-solutions/16-concurrency-patterns/28-fan-out-with-priority-queues/28-fan-out-with-priority-queues/internal/pqueue go-solutions/16-concurrency-patterns/28-fan-out-with-priority-queues/28-fan-out-with-priority-queues/cmd/demo
+cd go-solutions/16-concurrency-patterns/28-fan-out-with-priority-queues/28-fan-out-with-priority-queues
 ```
 
 ### Exercise 1: Priority queue and dispatcher

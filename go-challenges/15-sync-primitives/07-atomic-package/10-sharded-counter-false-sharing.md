@@ -28,9 +28,8 @@ shardcount/                independent module: example.com/shardcount
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/shardcount/cmd/demo
-cd ~/go-exercises/shardcount
-go mod init example.com/shardcount
+mkdir -p go-solutions/15-sync-primitives/07-atomic-package/10-sharded-counter-false-sharing/cmd/demo
+cd go-solutions/15-sync-primitives/07-atomic-package/10-sharded-counter-false-sharing
 ```
 
 ### Why a lock-free counter still hits a wall

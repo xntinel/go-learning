@@ -31,9 +31,8 @@ utf8guard/                independent module: example.com/utf8guard
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/utf8guard/cmd/demo
-cd ~/go-exercises/utf8guard
-go mod init example.com/utf8guard
+mkdir -p go-solutions/05-strings-runes-and-unicode/10-building-a-text-processing-pipeline/04-utf8-validation-and-repair/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/10-building-a-text-processing-pipeline/04-utf8-validation-and-repair
 ```
 
 ### Reject versus repair, and why validity is a boundary invariant

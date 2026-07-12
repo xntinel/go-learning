@@ -34,9 +34,8 @@ codecreg/                       module: example.com/codecreg
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/codecreg/gzipcodec ~/go-exercises/codecreg/cmd/demo
-cd ~/go-exercises/codecreg
-go mod init example.com/codecreg
+mkdir -p go-solutions/02-variables-types-and-constants/09-blank-identifier-and-shadowing/04-codec-registry-blank-import/gzipcodec go-solutions/02-variables-types-and-constants/09-blank-identifier-and-shadowing/04-codec-registry-blank-import/cmd/demo
+cd go-solutions/02-variables-types-and-constants/09-blank-identifier-and-shadowing/04-codec-registry-blank-import
 ```
 
 ### Why the blank import lives at the composition root

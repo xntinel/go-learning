@@ -28,9 +28,8 @@ durable/                     independent module: example.com/durable
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/durable/cmd/demo
-cd ~/go-exercises/durable
-go mod init example.com/durable
+mkdir -p go-solutions/13-goroutines-and-channels/02-channel-basics/04-synchronous-handoff-backpressure/cmd/demo
+cd go-solutions/13-goroutines-and-channels/02-channel-basics/04-synchronous-handoff-backpressure
 ```
 
 ### Why unbuffered, and why an explicit ack

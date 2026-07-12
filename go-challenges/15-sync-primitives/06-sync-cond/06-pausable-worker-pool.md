@@ -27,9 +27,8 @@ pauser/                     independent module: example.com/pauser
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pauser/cmd/demo
-cd ~/go-exercises/pauser
-go mod init example.com/pauser
+mkdir -p go-solutions/15-sync-primitives/06-sync-cond/06-pausable-worker-pool/cmd/demo
+cd go-solutions/15-sync-primitives/06-sync-cond/06-pausable-worker-pool
 ```
 
 ### One Cond, one waiter class, three-part predicate

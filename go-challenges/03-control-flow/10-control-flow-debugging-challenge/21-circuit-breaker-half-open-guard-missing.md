@@ -33,9 +33,8 @@ breaker/                    independent module: example.com/circuit-breaker-half
 - Verify: `go test -count=1 -race ./...`.
 
 ```bash
-mkdir -p ~/go-exercises/circuit-breaker-half-open-guard-missing/cmd/demo
-cd ~/go-exercises/circuit-breaker-half-open-guard-missing
-go mod init example.com/circuit-breaker-half-open-guard-missing
+mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/21-circuit-breaker-half-open-guard-missing/cmd/demo
+cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/21-circuit-breaker-half-open-guard-missing
 ```
 
 ### Why half-open needs its own guard, not just a state

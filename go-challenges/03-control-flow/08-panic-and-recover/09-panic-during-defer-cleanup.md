@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cleanup/cmd/demo
-cd ~/go-exercises/cleanup
-go mod init example.com/cleanup
+mkdir -p go-solutions/03-control-flow/08-panic-and-recover/09-panic-during-defer-cleanup/cmd/demo
+cd go-solutions/03-control-flow/08-panic-and-recover/09-panic-during-defer-cleanup
 ```
 
 ### Why the naive defer loses the primary error

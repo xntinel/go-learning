@@ -29,9 +29,8 @@ batcher/                     module: example.com/batcher
 Set up the module. `testing/synctest` needs Go 1.25+, so pin the language version:
 
 ```bash
-mkdir -p ~/go-exercises/batcher/cmd/demo
-cd ~/go-exercises/batcher
-go mod init example.com/batcher
+mkdir -p go-solutions/13-goroutines-and-channels/03-buffered-vs-unbuffered-channels/06-batch-flush-buffer/cmd/demo
+cd go-solutions/13-goroutines-and-channels/03-buffered-vs-unbuffered-channels/06-batch-flush-buffer
 go mod edit -go=1.26
 ```
 

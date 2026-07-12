@@ -30,9 +30,8 @@ featuremask/               independent module: example.com/featuremask
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/featuremask/cmd/demo
-cd ~/go-exercises/featuremask
-go mod init example.com/featuremask
+mkdir -p go-solutions/15-sync-primitives/07-atomic-package/09-atomic-bitmask-feature-flags/cmd/demo
+cd go-solutions/15-sync-primitives/07-atomic-package/09-atomic-bitmask-feature-flags
 ```
 
 ### Why a bitmask, and why Or/And instead of Load-then-Store

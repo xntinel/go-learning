@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module. `omitzero` requires Go 1.24+:
 
 ```bash
-mkdir -p ~/go-exercises/auditjson/audit ~/go-exercises/auditjson/cmd/demo
-cd ~/go-exercises/auditjson
-go mod init example.com/auditjson
+mkdir -p go-solutions/07-structs-and-methods/02-struct-tags-and-json-encoding/02-omitzero-vs-omitempty-timestamps/audit go-solutions/07-structs-and-methods/02-struct-tags-and-json-encoding/02-omitzero-vs-omitempty-timestamps/cmd/demo
+cd go-solutions/07-structs-and-methods/02-struct-tags-and-json-encoding/02-omitzero-vs-omitempty-timestamps
 go mod edit -go=1.24
 ```
 

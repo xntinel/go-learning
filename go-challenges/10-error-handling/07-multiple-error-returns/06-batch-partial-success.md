@@ -29,9 +29,8 @@ batch/                     independent module: example.com/batch
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/batch/cmd/demo
-cd ~/go-exercises/batch
-go mod init example.com/batch
+mkdir -p go-solutions/10-error-handling/07-multiple-error-returns/06-batch-partial-success/cmd/demo
+cd go-solutions/10-error-handling/07-multiple-error-returns/06-batch-partial-success
 ```
 
 ### Why return both a count and an aggregate

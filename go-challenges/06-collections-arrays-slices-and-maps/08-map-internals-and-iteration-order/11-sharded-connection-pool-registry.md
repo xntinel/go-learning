@@ -50,9 +50,8 @@ shardedregistry/          module example.com/shardedregistry
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/shardedregistry
-cd ~/go-exercises/shardedregistry
-go mod init example.com/shardedregistry
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/11-sharded-connection-pool-registry
+cd go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/11-sharded-connection-pool-registry
 go mod edit -go=1.24
 ```
 

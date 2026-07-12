@@ -26,9 +26,8 @@ corsmw/                      independent module: example.com/corsmw
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/corsmw/cmd/demo
-cd ~/go-exercises/corsmw
-go mod init example.com/corsmw
+mkdir -p go-solutions/08-interfaces/14-interface-based-middleware-chain/09-cors-and-security-headers-middleware/cmd/demo
+cd go-solutions/08-interfaces/14-interface-based-middleware-chain/09-cors-and-security-headers-middleware
 go mod edit -go=1.26
 ```
 

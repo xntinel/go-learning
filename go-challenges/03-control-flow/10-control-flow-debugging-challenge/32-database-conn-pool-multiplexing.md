@@ -37,9 +37,8 @@ connpool/                     independent module: example.com/database-conn-pool
 - Verify: `go test -count=1 -race ./...`.
 
 ```bash
-mkdir -p ~/go-exercises/database-conn-pool-multiplexing/cmd/demo
-cd ~/go-exercises/database-conn-pool-multiplexing
-go mod init example.com/database-conn-pool-multiplexing
+mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/32-database-conn-pool-multiplexing/cmd/demo
+cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/32-database-conn-pool-multiplexing
 ```
 
 ### Why the socket needs a guard, not just the pool's bookkeeping

@@ -30,9 +30,8 @@ writereport/                 independent module: example.com/writereport
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/writereport/cmd/demo
-cd ~/go-exercises/writereport
-go mod init example.com/writereport
+mkdir -p go-solutions/10-error-handling/01-error-interface-and-basic-patterns/08-defer-close-error-capture/cmd/demo
+cd go-solutions/10-error-handling/01-error-interface-and-basic-patterns/08-defer-close-error-capture
 ```
 
 ### Why the close error must be captured, and how the named return does it

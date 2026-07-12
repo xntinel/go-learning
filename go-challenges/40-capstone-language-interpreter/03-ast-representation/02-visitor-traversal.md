@@ -24,8 +24,7 @@ visitor_test.go      pre-order count, subtree pruning, Collect, visit order
 Set up the module:
 
 ```bash
-mkdir -p visitor-traversal/cmd/demo && cd visitor-traversal
-go mod init example.com/visitor-traversal
+mkdir -p go-solutions/40-capstone-language-interpreter/03-ast-representation/02-visitor-traversal/cmd/demo && cd go-solutions/40-capstone-language-interpreter/03-ast-representation/02-visitor-traversal
 ```
 
 ### Why a single-method visitor, pre-order, with a nil return

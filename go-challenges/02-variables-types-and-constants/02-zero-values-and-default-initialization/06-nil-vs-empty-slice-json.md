@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/listapi/cmd/demo
-cd ~/go-exercises/listapi
-go mod init example.com/listapi
+mkdir -p go-solutions/02-variables-types-and-constants/02-zero-values-and-default-initialization/06-nil-vs-empty-slice-json/cmd/demo
+cd go-solutions/02-variables-types-and-constants/02-zero-values-and-default-initialization/06-nil-vs-empty-slice-json
 ```
 
 ## Why nil marshals to null, and the boundary fix

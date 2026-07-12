@@ -35,9 +35,8 @@ dnsresolver/                 independent module: example.com/dns-resolver-with-t
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/dnsresolver/cmd/demo
-cd ~/go-exercises/dnsresolver
-go mod init example.com/dns-resolver-with-ttl
+mkdir -p go-solutions/04-functions/01-function-declaration-and-multiple-return-values/19-dns-resolver-with-ttl/cmd/demo
+cd go-solutions/04-functions/01-function-declaration-and-multiple-return-values/19-dns-resolver-with-ttl
 go mod edit -go=1.24
 ```
 

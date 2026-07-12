@@ -30,9 +30,8 @@ connstats/                 independent module: example.com/connstats
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/connstats/cmd/demo
-cd ~/go-exercises/connstats
-go mod init example.com/connstats
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/09-map-value-addressability-pointers/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/09-map-value-addressability-pointers
 ```
 
 ### Why m[k].Field = x does not compile

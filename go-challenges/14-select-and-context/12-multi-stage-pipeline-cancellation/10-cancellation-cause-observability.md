@@ -35,9 +35,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/outcome/cmd/demo
-cd ~/go-exercises/outcome
-go mod init example.com/outcome
+mkdir -p go-solutions/14-select-and-context/12-multi-stage-pipeline-cancellation/10-cancellation-cause-observability/cmd/demo
+cd go-solutions/14-select-and-context/12-multi-stage-pipeline-cancellation/10-cancellation-cause-observability
 ```
 
 ### Classifying with Cause, not Err

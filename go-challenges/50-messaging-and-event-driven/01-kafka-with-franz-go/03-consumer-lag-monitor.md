@@ -34,9 +34,8 @@ Verify: `go test -race ./...` offline; `go test -tags kafka -race ./...` against
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/lagmonitor/cmd/demo
-cd ~/go-exercises/lagmonitor
-go mod init example.com/lagmonitor
+mkdir -p go-solutions/50-messaging-and-event-driven/01-kafka-with-franz-go/03-consumer-lag-monitor/cmd/demo
+cd go-solutions/50-messaging-and-event-driven/01-kafka-with-franz-go/03-consumer-lag-monitor
 go mod edit -go=1.26
 go get github.com/twmb/franz-go/pkg/kgo
 go get github.com/twmb/franz-go/pkg/kadm

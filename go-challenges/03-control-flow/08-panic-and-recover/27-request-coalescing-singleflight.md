@@ -36,9 +36,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/request-coalescing-singleflight/cmd/demo
-cd ~/go-exercises/request-coalescing-singleflight
-go mod init example.com/coalesce
+mkdir -p go-solutions/03-control-flow/08-panic-and-recover/27-request-coalescing-singleflight/cmd/demo
+cd go-solutions/03-control-flow/08-panic-and-recover/27-request-coalescing-singleflight
 go mod edit -go=1.24
 ```
 

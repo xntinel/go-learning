@@ -33,9 +33,8 @@ Escape analysis is an optimization aid, not a reason to make every API pointer-f
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/escapeplan/cmd/demo
-cd ~/go-exercises/escapeplan
-go mod init escapeplan
+mkdir -p go-solutions/26-memory-model-and-optimization/05-escape-analysis/05-escape-analysis/cmd/demo
+cd go-solutions/26-memory-model-and-optimization/05-escape-analysis/05-escape-analysis
 ```
 
 This is a library package. The demo is only a consumer of the exported API; `go test` is the verification mechanism.

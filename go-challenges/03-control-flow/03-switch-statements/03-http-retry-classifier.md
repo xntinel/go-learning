@@ -29,9 +29,8 @@ retry/                     independent module: example.com/http-retry-classifier
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/retry/cmd/demo
-cd ~/go-exercises/retry
-go mod init example.com/http-retry-classifier
+mkdir -p go-solutions/03-control-flow/03-switch-statements/03-http-retry-classifier/cmd/demo
+cd go-solutions/03-control-flow/03-switch-statements/03-http-retry-classifier
 go mod edit -go=1.24
 ```
 

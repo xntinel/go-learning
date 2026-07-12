@@ -24,8 +24,7 @@ cmd/
 Set up the module:
 
 ```bash
-mkdir -p closures/cmd/demo && cd closures
-go mod init example.com/closures
+mkdir -p go-solutions/40-capstone-language-interpreter/06-closures-first-class-functions/01-environment-chain-and-first-class-functions/cmd/demo && cd go-solutions/40-capstone-language-interpreter/06-closures-first-class-functions/01-environment-chain-and-first-class-functions
 ```
 
 ### The object system

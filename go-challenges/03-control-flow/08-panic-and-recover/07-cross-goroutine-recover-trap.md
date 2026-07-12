@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/gosafe/cmd/demo
-cd ~/go-exercises/gosafe
-go mod init example.com/gosafe
+mkdir -p go-solutions/03-control-flow/08-panic-and-recover/07-cross-goroutine-recover-trap/cmd/demo
+cd go-solutions/03-control-flow/08-panic-and-recover/07-cross-goroutine-recover-trap
 ```
 
 ### The scope rule, made unambiguous

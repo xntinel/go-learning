@@ -27,9 +27,8 @@ Test: N transient failures produce exactly ONE recorded charge (constant key); t
 Verify: `go test -count=1 -race ./...`
 
 ```bash
-mkdir -p ~/go-exercises/idem/cmd/demo
-cd ~/go-exercises/idem
-go mod init example.com/idem
+mkdir -p go-solutions/10-error-handling/12-retry-patterns-with-backoff/05-idempotency-safe-retries/cmd/demo
+cd go-solutions/10-error-handling/12-retry-patterns-with-backoff/05-idempotency-safe-retries
 go mod edit -go=1.26
 ```
 

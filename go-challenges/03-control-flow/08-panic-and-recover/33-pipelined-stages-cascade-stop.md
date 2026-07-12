@@ -38,9 +38,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pipelined-stages-cascade-stop/cmd/demo
-cd ~/go-exercises/pipelined-stages-cascade-stop
-go mod init example.com/pipeline
+mkdir -p go-solutions/03-control-flow/08-panic-and-recover/33-pipelined-stages-cascade-stop/cmd/demo
+cd go-solutions/03-control-flow/08-panic-and-recover/33-pipelined-stages-cascade-stop
 go mod edit -go=1.24
 ```
 

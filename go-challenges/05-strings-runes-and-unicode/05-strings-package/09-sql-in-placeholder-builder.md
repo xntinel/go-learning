@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/sqlin/cmd/demo
-cd ~/go-exercises/sqlin
-go mod init example.com/sqlin
+mkdir -p go-solutions/05-strings-runes-and-unicode/05-strings-package/09-sql-in-placeholder-builder/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/05-strings-package/09-sql-in-placeholder-builder
 ```
 
 ### Skeleton in the query, values in the args

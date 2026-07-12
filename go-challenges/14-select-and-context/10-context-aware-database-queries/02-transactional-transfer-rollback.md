@@ -58,9 +58,8 @@ essential: a cancelled context could not perform the verification read.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/simtx/cmd/demo
-cd ~/go-exercises/simtx
-go mod init example.com/simtx
+mkdir -p go-solutions/14-select-and-context/10-context-aware-database-queries/02-transactional-transfer-rollback/cmd/demo
+cd go-solutions/14-select-and-context/10-context-aware-database-queries/02-transactional-transfer-rollback
 go mod edit -go=1.25
 ```
 

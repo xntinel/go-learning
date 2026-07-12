@@ -22,8 +22,7 @@ pubsub_test.go       delivery, topic filtering, drop accounting, and a concurren
 Set up the module:
 
 ```bash
-mkdir -p channel-broker/cmd/demo && cd channel-broker
-go mod init example.com/channel-broker
+mkdir -p go-solutions/16-concurrency-patterns/16-pub-sub-with-channels/01-channel-broker/cmd/demo && cd go-solutions/16-concurrency-patterns/16-pub-sub-with-channels/01-channel-broker
 ```
 
 ### Why send and close must be mutually exclusive

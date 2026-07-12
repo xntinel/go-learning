@@ -30,9 +30,8 @@ shutdown/                     independent module: example.com/shutdown
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/shutdown/cmd/demo
-cd ~/go-exercises/shutdown
-go mod init example.com/shutdown
+mkdir -p go-solutions/08-interfaces/01-implicit-interface-satisfaction/09-optional-interface-capability-detection/cmd/demo
+cd go-solutions/08-interfaces/01-implicit-interface-satisfaction/09-optional-interface-capability-detection
 ```
 
 ### Optional interfaces keep the primary interface narrow

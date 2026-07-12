@@ -29,9 +29,8 @@ readiness/                   module example.com/readiness
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/readiness/cmd/demo
-cd ~/go-exercises/readiness
-go mod init example.com/readiness
+mkdir -p go-solutions/03-control-flow/02-for-loops/08-readiness-poll/cmd/demo
+cd go-solutions/03-control-flow/02-for-loops/08-readiness-poll
 ```
 
 ### A condition loop needs a provable stop and a cancel

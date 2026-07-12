@@ -23,8 +23,7 @@ torn_test.go     clean boundary + torn header + torn body + corrupt CRC, all byt
 Set up the module:
 
 ```bash
-mkdir -p torn-write/cmd/demo && cd torn-write
-go mod init example.com/torn-write
+mkdir -p go-solutions/39-capstone-database-engine/01-write-ahead-log/07-torn-write-detection/cmd/demo && cd go-solutions/39-capstone-database-engine/01-write-ahead-log/07-torn-write-detection
 ```
 
 ### Why a pure scanner separates torn from corrupt

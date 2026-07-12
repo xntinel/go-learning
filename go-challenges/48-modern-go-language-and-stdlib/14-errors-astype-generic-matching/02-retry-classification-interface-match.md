@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module. `errors.AsType` requires Go 1.26:
 
 ```bash
-mkdir -p ~/go-exercises/retryclass/cmd/demo
-cd ~/go-exercises/retryclass
-go mod init example.com/retryclass
+mkdir -p go-solutions/48-modern-go-language-and-stdlib/14-errors-astype-generic-matching/02-retry-classification-interface-match/cmd/demo
+cd go-solutions/48-modern-go-language-and-stdlib/14-errors-astype-generic-matching/02-retry-classification-interface-match
 go mod edit -go=1.26
 ```
 

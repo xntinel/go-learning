@@ -25,9 +25,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/initcapture/cmd/demo
-cd ~/go-exercises/initcapture
-go mod init example.com/initcapture
+mkdir -p go-solutions/12-testing-ecosystem/17-testing-with-environment-variables/09-init-time-capture-pitfall/cmd/demo
+cd go-solutions/12-testing-ecosystem/17-testing-with-environment-variables/09-init-time-capture-pitfall
 ```
 
 ## Why the env test does nothing

@@ -29,9 +29,8 @@ backoff/                   independent module: example.com/backoff
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/backoff/cmd/demo
-cd ~/go-exercises/backoff
-go mod init example.com/backoff
+mkdir -p go-solutions/02-variables-types-and-constants/03-basic-types/08-duration-timeout-config/cmd/demo
+cd go-solutions/02-variables-types-and-constants/03-basic-types/08-duration-timeout-config
 ```
 
 ### Why zero is dangerous and how backoff overflows

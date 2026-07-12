@@ -50,9 +50,8 @@ segmentlog/              module example.com/segmentlog
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/segmentlog
-cd ~/go-exercises/segmentlog
-go mod init example.com/segmentlog
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/09-slices-package/16-kafka-segment-prefix-compaction-delete
+cd go-solutions/06-collections-arrays-slices-and-maps/09-slices-package/16-kafka-segment-prefix-compaction-delete
 go mod edit -go=1.24
 ```
 

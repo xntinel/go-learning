@@ -29,9 +29,8 @@ cache/                     independent module: example.com/cache
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cache/cmd/demo
-cd ~/go-exercises/cache
-go mod init example.com/cache
+mkdir -p go-solutions/13-goroutines-and-channels/14-deadlock-detection-and-prevention/05-rwmutex-readthrough-cache/cmd/demo
+cd go-solutions/13-goroutines-and-channels/14-deadlock-detection-and-prevention/05-rwmutex-readthrough-cache
 go mod edit -go=1.25
 ```
 

@@ -35,9 +35,8 @@ Verify: `go test -count=1 -race ./...`, then observe the closure escape with
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/workerpool/cmd/demo
-cd ~/go-exercises/workerpool
-go mod init example.com/workerpool
+mkdir -p go-solutions/09-pointers/07-escape-analysis/06-closure-capture-escape/cmd/demo
+cd go-solutions/09-pointers/07-escape-analysis/06-closure-capture-escape
 ```
 
 ### Why a dispatched closure escapes, and why the loop variable is safe now

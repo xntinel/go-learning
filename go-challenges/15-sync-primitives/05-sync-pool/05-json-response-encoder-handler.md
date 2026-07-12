@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p jsonhandler/api jsonhandler/cmd/demo
-cd jsonhandler
-go mod init example.com/jsonhandler
+mkdir -p go-solutions/15-sync-primitives/05-sync-pool/05-json-response-encoder-handler/api go-solutions/15-sync-primitives/05-sync-pool/05-json-response-encoder-handler/cmd/demo
+cd go-solutions/15-sync-primitives/05-sync-pool/05-json-response-encoder-handler
 ```
 
 ### Why encode into a buffer first, not straight to the ResponseWriter

@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/causedetect/cmd/demo
-cd ~/go-exercises/causedetect
-go mod init example.com/causedetect
+mkdir -p go-solutions/14-select-and-context/13-context-leak-detection/07-cancelcause-diagnostics/cmd/demo
+cd go-solutions/14-select-and-context/13-context-leak-detection/07-cancelcause-diagnostics
 ```
 
 ### Cause is the diagnosability upgrade over Err

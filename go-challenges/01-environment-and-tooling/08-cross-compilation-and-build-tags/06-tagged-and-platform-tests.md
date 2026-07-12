@@ -30,9 +30,8 @@ buildsel/                      module example.com/buildsel
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/buildsel/cmd/demo
-cd ~/go-exercises/buildsel
-go mod init example.com/buildsel
+mkdir -p go-solutions/01-environment-and-tooling/08-cross-compilation-and-build-tags/06-tagged-and-platform-tests/cmd/demo
+cd go-solutions/01-environment-and-tooling/08-cross-compilation-and-build-tags/06-tagged-and-platform-tests
 ```
 
 ### Two axes of test selection, and why default_test.go is separate

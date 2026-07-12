@@ -29,9 +29,8 @@ vulngate/                  independent module: example.com/vulngate
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/vulngate/cmd/demo
-cd ~/go-exercises/vulngate
-go mod init example.com/vulngate
+mkdir -p go-solutions/11-packages-and-modules/06-dependency-management/10-govulncheck-reachability-gate/cmd/demo
+cd go-solutions/11-packages-and-modules/06-dependency-management/10-govulncheck-reachability-gate
 ```
 
 ### The govulncheck -json stream and reachability

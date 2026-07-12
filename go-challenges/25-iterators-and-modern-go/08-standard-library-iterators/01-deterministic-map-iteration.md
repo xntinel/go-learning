@@ -29,8 +29,7 @@ mapiter_test.go      determinism, filtering, totals, invalid-input rejection
 Set up the module:
 
 ```bash
-mkdir -p deterministic-map-iteration/cmd/demo && cd deterministic-map-iteration
-go mod init example.com/deterministic-map-iteration
+mkdir -p go-solutions/25-iterators-and-modern-go/08-standard-library-iterators/01-deterministic-map-iteration/cmd/demo && cd go-solutions/25-iterators-and-modern-go/08-standard-library-iterators/01-deterministic-map-iteration
 ```
 
 ### Why sorting is the consumer that makes a map readable

@@ -30,9 +30,8 @@ usernorm/                 independent module: example.com/usernorm
 Set up the module. It depends on go-cmp:
 
 ```bash
-mkdir -p ~/go-exercises/usernorm/cmd/demo
-cd ~/go-exercises/usernorm
-go mod init example.com/usernorm
+mkdir -p go-solutions/12-testing-ecosystem/02-table-driven-tests/09-cmp-diff-structs/cmd/demo
+cd go-solutions/12-testing-ecosystem/02-table-driven-tests/09-cmp-diff-structs
 go get github.com/google/go-cmp/cmp@v0.7.0
 ```
 

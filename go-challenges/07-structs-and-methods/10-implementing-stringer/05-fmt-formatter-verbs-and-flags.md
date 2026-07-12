@@ -27,9 +27,8 @@ money/                      independent module: example.com/money
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/money/cmd/demo
-cd ~/go-exercises/money
-go mod init example.com/money
+mkdir -p go-solutions/07-structs-and-methods/10-implementing-stringer/05-fmt-formatter-verbs-and-flags/cmd/demo
+cd go-solutions/07-structs-and-methods/10-implementing-stringer/05-fmt-formatter-verbs-and-flags
 ```
 
 ### Why Formatter, and how it takes over

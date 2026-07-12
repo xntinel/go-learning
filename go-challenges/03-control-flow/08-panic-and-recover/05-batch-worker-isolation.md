@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/batch/cmd/demo
-cd ~/go-exercises/batch
-go mod init example.com/batch
+mkdir -p go-solutions/03-control-flow/08-panic-and-recover/05-batch-worker-isolation/cmd/demo
+cd go-solutions/03-control-flow/08-panic-and-recover/05-batch-worker-isolation
 ```
 
 ### Why the recover goes inside a per-item helper

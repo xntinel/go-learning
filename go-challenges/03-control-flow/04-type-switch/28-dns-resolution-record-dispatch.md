@@ -39,9 +39,8 @@ dns-resolution-record-dispatch/   independent module: example.com/dns-resolution
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/dns-resolution-record-dispatch/cmd/demo
-cd ~/go-exercises/dns-resolution-record-dispatch
-go mod init example.com/dns-resolution-record-dispatch
+mkdir -p go-solutions/03-control-flow/04-type-switch/28-dns-resolution-record-dispatch/cmd/demo
+cd go-solutions/03-control-flow/04-type-switch/28-dns-resolution-record-dispatch
 go mod edit -go=1.24
 ```
 

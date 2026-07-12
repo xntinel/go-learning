@@ -33,9 +33,8 @@ resequencer/                independent module: example.com/ordered-event-resequ
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ordered-event-resequencer/cmd/demo
-cd ~/go-exercises/ordered-event-resequencer
-go mod init example.com/ordered-event-resequencer
+mkdir -p go-solutions/03-control-flow/05-range-over-collections/19-ordered-event-resequencer/cmd/demo
+cd go-solutions/03-control-flow/05-range-over-collections/19-ordered-event-resequencer
 go mod edit -go=1.24
 ```
 

@@ -26,9 +26,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/truncate/cmd/demo
-cd ~/go-exercises/truncate
-go mod init example.com/truncate
+mkdir -p go-solutions/05-strings-runes-and-unicode/04-string-iteration-bytes-vs-runes/02-rune-safe-truncate-to-byte-budget/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/04-string-iteration-bytes-vs-runes/02-rune-safe-truncate-to-byte-budget
 ```
 
 ### The algorithm and why it is correct

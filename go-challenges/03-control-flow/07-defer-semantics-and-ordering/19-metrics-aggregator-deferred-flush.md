@@ -33,9 +33,8 @@ metrics/                    independent module: example.com/metrics-aggregator-d
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/metrics-aggregator-deferred-flush/cmd/demo
-cd ~/go-exercises/metrics-aggregator-deferred-flush
-go mod init example.com/metrics-aggregator-deferred-flush
+mkdir -p go-solutions/03-control-flow/07-defer-semantics-and-ordering/19-metrics-aggregator-deferred-flush/cmd/demo
+cd go-solutions/03-control-flow/07-defer-semantics-and-ordering/19-metrics-aggregator-deferred-flush
 go mod edit -go=1.24
 ```
 

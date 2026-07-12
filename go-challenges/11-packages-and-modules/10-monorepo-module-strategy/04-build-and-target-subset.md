@@ -29,9 +29,8 @@ mono/                         single module: example.com/mono
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/mono/changeset ~/go-exercises/mono/cmd/demo
-cd ~/go-exercises/mono
-go mod init example.com/mono
+mkdir -p go-solutions/11-packages-and-modules/10-monorepo-module-strategy/04-build-and-target-subset/changeset go-solutions/11-packages-and-modules/10-monorepo-module-strategy/04-build-and-target-subset/cmd/demo
+cd go-solutions/11-packages-and-modules/10-monorepo-module-strategy/04-build-and-target-subset
 ```
 
 ### The whole-module commands, and why they still matter

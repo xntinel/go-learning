@@ -26,9 +26,8 @@ Test: exact placeholder string for 1x1, 2x3, and 0-row inputs; `len(args) == row
 Verify: `go test -count=1 -race ./...`
 
 ```bash
-mkdir -p ~/go-exercises/bulkinsert/cmd/demo
-cd ~/go-exercises/bulkinsert
-go mod init example.com/bulkinsert
+mkdir -p go-solutions/05-strings-runes-and-unicode/09-strings-builder-performance/03-sql-bulk-insert-placeholder-builder/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/09-strings-builder-performance/03-sql-bulk-insert-placeholder-builder
 ```
 
 ### The one rule: text is built, values are parameterized

@@ -32,9 +32,8 @@ batch/                      independent module: example.com/batch
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/batch/cmd/demo
-cd ~/go-exercises/batch
-go mod init example.com/batch
+mkdir -p go-solutions/13-goroutines-and-channels/12-channel-patterns-semaphore-barrier/10-semaphore-vs-workerpool-tradeoffs/cmd/demo
+cd go-solutions/13-goroutines-and-channels/12-channel-patterns-semaphore-barrier/10-semaphore-vs-workerpool-tradeoffs
 go mod edit -go=1.26
 go get golang.org/x/sync/errgroup
 ```

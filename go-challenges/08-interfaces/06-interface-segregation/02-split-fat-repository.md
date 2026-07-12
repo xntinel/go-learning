@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/orderstore/cmd/demo
-cd ~/go-exercises/orderstore
-go mod init example.com/orderstore
+mkdir -p go-solutions/08-interfaces/06-interface-segregation/02-split-fat-repository/cmd/demo
+cd go-solutions/08-interfaces/06-interface-segregation/02-split-fat-repository
 go mod edit -go=1.24
 ```
 

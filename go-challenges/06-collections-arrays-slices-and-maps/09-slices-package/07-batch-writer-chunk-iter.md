@@ -30,9 +30,8 @@ batchwriter/                   module example.com/batchwriter
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/batchwriter/cmd/demo
-cd ~/go-exercises/batchwriter
-go mod init example.com/batchwriter
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/09-slices-package/07-batch-writer-chunk-iter/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/09-slices-package/07-batch-writer-chunk-iter
 go mod edit -go=1.24
 ```
 

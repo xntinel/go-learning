@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/per-task-timeout/cmd/demo
-cd ~/go-exercises/per-task-timeout
-go mod init example.com/per-task-timeout
+mkdir -p go-solutions/13-goroutines-and-channels/15-building-a-concurrent-task-scheduler/06-per-task-timeout-and-cancellation/cmd/demo
+cd go-solutions/13-goroutines-and-channels/15-building-a-concurrent-task-scheduler/06-per-task-timeout-and-cancellation
 go mod edit -go=1.25
 ```
 

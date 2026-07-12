@@ -71,9 +71,8 @@ propagation come for free.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/fanout/cmd/demo
-cd ~/go-exercises/fanout
-go mod init example.com/fanout
+mkdir -p go-solutions/13-goroutines-and-channels/10-signaling-with-closed-channels/06-first-error-abort-fanout/cmd/demo
+cd go-solutions/13-goroutines-and-channels/10-signaling-with-closed-channels/06-first-error-abort-fanout
 ```
 
 Create `group.go`:

@@ -22,8 +22,7 @@ reconnect_test.go     happy path, invalid transitions, backoff values + monotoni
 Set up the module:
 
 ```bash
-mkdir -p reconnect/cmd/demo && cd reconnect
-go mod init example.com/reconnect
+mkdir -p go-solutions/42-capstone-service-mesh-data-plane/09-control-plane-grpc/03-reconnect-state-machine/cmd/demo && cd go-solutions/42-capstone-service-mesh-data-plane/09-control-plane-grpc/03-reconnect-state-machine
 go mod edit -go=1.26
 ```
 

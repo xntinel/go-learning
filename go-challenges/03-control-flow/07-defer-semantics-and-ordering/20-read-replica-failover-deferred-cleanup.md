@@ -32,9 +32,8 @@ dbread/                     independent module: example.com/read-replica-failove
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/read-replica-failover-deferred-cleanup/cmd/demo
-cd ~/go-exercises/read-replica-failover-deferred-cleanup
-go mod init example.com/read-replica-failover-deferred-cleanup
+mkdir -p go-solutions/03-control-flow/07-defer-semantics-and-ordering/20-read-replica-failover-deferred-cleanup/cmd/demo
+cd go-solutions/03-control-flow/07-defer-semantics-and-ordering/20-read-replica-failover-deferred-cleanup
 go mod edit -go=1.24
 ```
 

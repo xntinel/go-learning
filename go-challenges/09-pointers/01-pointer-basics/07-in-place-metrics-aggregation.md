@@ -29,9 +29,8 @@ metrics/                   independent module: example.com/metrics
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/metrics/cmd/demo
-cd ~/go-exercises/metrics
-go mod init example.com/metrics
+mkdir -p go-solutions/09-pointers/01-pointer-basics/07-in-place-metrics-aggregation/cmd/demo
+cd go-solutions/09-pointers/01-pointer-basics/07-in-place-metrics-aggregation
 ```
 
 ### Why the accumulator must be shared by pointer

@@ -31,9 +31,8 @@ wireheader/                  independent module: example.com/wireheader
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/wireheader/cmd/demo
-cd ~/go-exercises/wireheader
-go mod init example.com/wireheader
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/10-binary-header-slice-to-array/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/10-binary-header-slice-to-array
 ```
 
 ### Why the length guard is mandatory

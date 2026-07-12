@@ -72,9 +72,8 @@ In the parent, a `SIGWINCH` signal handler calls `IoctlGetWinsize` on the caller
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/containerexec/cmd/demo
-cd ~/go-exercises/containerexec
-go mod init example.com/containerexec
+mkdir -p go-solutions/38-capstone-container-runtime/08-exec-into-running-container/08-exec-into-running-container/cmd/demo
+cd go-solutions/38-capstone-container-runtime/08-exec-into-running-container/08-exec-into-running-container
 go get golang.org/x/sys/unix
 ```
 

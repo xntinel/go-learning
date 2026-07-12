@@ -26,9 +26,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/dedup/cmd/demo
-cd ~/go-exercises/dedup
-go mod init example.com/dedup
+mkdir -p go-solutions/03-control-flow/09-range-over-integers-and-functions/09-dedup-idempotency-combinator/cmd/demo
+cd go-solutions/03-control-flow/09-range-over-integers-and-functions/09-dedup-idempotency-combinator
 ```
 
 ## The design

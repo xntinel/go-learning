@@ -28,9 +28,8 @@ Verify: `go test -count=1 ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/media-type-codec-strategy/cmd/demo
-cd ~/go-exercises/media-type-codec-strategy
-go mod init example.com/media-type-codec-strategy
+mkdir -p go-solutions/04-functions/06-function-types-and-callbacks/21-media-type-codec-strategy/cmd/demo
+cd go-solutions/04-functions/06-function-types-and-callbacks/21-media-type-codec-strategy
 go mod edit -go=1.24
 ```
 

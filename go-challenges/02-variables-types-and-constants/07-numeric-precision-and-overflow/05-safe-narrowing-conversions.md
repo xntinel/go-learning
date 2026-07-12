@@ -34,9 +34,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/narrowing/cmd/demo
-cd ~/go-exercises/narrowing
-go mod init example.com/narrowing
+mkdir -p go-solutions/02-variables-types-and-constants/07-numeric-precision-and-overflow/05-safe-narrowing-conversions/cmd/demo
+cd go-solutions/02-variables-types-and-constants/07-numeric-precision-and-overflow/05-safe-narrowing-conversions
 ```
 
 ### Why an explicit conversion is not a safe conversion

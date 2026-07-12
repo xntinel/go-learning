@@ -19,9 +19,8 @@ shardlookup/                independent module: example.com/shardlookup
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/shardlookup
-cd ~/go-exercises/shardlookup
-go mod init example.com/shardlookup
+mkdir -p go-solutions/03-control-flow/06-labels-break-continue-goto/10-shard-fanout-labeled-break-continue
+cd go-solutions/03-control-flow/06-labels-break-continue-goto/10-shard-fanout-labeled-break-continue
 go mod edit -go=1.24
 ```
 

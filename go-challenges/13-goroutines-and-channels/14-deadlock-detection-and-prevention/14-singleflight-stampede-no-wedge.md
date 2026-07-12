@@ -25,9 +25,8 @@ singleflight/                independent module: example.com/singleflight
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/singleflight/cmd/demo
-cd ~/go-exercises/singleflight
-go mod init example.com/singleflight
+mkdir -p go-solutions/13-goroutines-and-channels/14-deadlock-detection-and-prevention/14-singleflight-stampede-no-wedge/cmd/demo
+cd go-solutions/13-goroutines-and-channels/14-deadlock-detection-and-prevention/14-singleflight-stampede-no-wedge
 go mod edit -go=1.26
 go get go.uber.org/goleak
 go mod tidy

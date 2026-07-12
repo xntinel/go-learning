@@ -30,9 +30,8 @@ exampledocs/                       module: example.com/exampledocs
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/exampledocs/cmd/demo
-cd ~/go-exercises/exampledocs
-go mod init example.com/exampledocs
+mkdir -p go-solutions/11-packages-and-modules/01-package-declaration-and-imports/09-example-tests-as-compiled-docs/cmd/demo
+cd go-solutions/11-packages-and-modules/01-package-declaration-and-imports/09-example-tests-as-compiled-docs
 go mod edit -go=1.26
 ```
 

@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/migration/cmd/demo
-cd ~/go-exercises/migration
-go mod init example.com/migration
+mkdir -p go-solutions/10-error-handling/06-error-wrapping-chains/01-migration-tool-wrapping-chain/cmd/demo
+cd go-solutions/10-error-handling/06-error-wrapping-chains/01-migration-tool-wrapping-chain
 go mod edit -go=1.24
 ```
 

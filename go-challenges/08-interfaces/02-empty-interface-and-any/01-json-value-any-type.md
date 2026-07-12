@@ -29,9 +29,8 @@ jsonvalue/                 independent module: example.com/jsonvalue
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/jsonvalue/cmd/demo
-cd ~/go-exercises/jsonvalue
-go mod init example.com/jsonvalue
+mkdir -p go-solutions/08-interfaces/02-empty-interface-and-any/01-json-value-any-type/cmd/demo
+cd go-solutions/08-interfaces/02-empty-interface-and-any/01-json-value-any-type
 go mod edit -go=1.26
 ```
 

@@ -29,9 +29,8 @@ statusmap/                 independent module: example.com/statusmap
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/statusmap/cmd/demo
-cd ~/go-exercises/statusmap
-go mod init example.com/statusmap
+mkdir -p go-solutions/10-error-handling/11-structured-error-types/07-error-code-to-http-status-mapper/cmd/demo
+cd go-solutions/10-error-handling/11-structured-error-types/07-error-code-to-http-status-mapper
 go mod edit -go=1.26
 ```
 

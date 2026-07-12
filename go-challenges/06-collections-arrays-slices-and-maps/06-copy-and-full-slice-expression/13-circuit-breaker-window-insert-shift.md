@@ -48,9 +48,8 @@ breaker/                   module example.com/breaker
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/breaker
-cd ~/go-exercises/breaker
-go mod init example.com/breaker
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/06-copy-and-full-slice-expression/13-circuit-breaker-window-insert-shift
+cd go-solutions/06-collections-arrays-slices-and-maps/06-copy-and-full-slice-expression/13-circuit-breaker-window-insert-shift
 go mod edit -go=1.24
 ```
 

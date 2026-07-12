@@ -52,9 +52,8 @@ shardtable/                module example.com/shardtable
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/shardtable
-cd ~/go-exercises/shardtable
-go mod init example.com/shardtable
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/09-slices-package/14-shard-slot-table-repeat-sentinel
+cd go-solutions/06-collections-arrays-slices-and-maps/09-slices-package/14-shard-slot-table-repeat-sentinel
 go mod edit -go=1.24
 ```
 

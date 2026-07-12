@@ -29,9 +29,8 @@ attrenc/                     independent module: example.com/attrenc
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/attrenc/cmd/demo
-cd ~/go-exercises/attrenc
-go mod init example.com/attrenc
+mkdir -p go-solutions/02-variables-types-and-constants/05-type-conversions-and-type-assertions/08-any-attr-value-type-switch/cmd/demo
+cd go-solutions/02-variables-types-and-constants/05-type-conversions-and-type-assertions/08-any-attr-value-type-switch
 go mod edit -go=1.26
 ```
 

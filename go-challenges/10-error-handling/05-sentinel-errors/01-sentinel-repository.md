@@ -29,9 +29,8 @@ repo/                         independent module: example.com/repo
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/repo/cmd/demo
-cd ~/go-exercises/repo
-go mod init example.com/repo
+mkdir -p go-solutions/10-error-handling/05-sentinel-errors/01-sentinel-repository/cmd/demo
+cd go-solutions/10-error-handling/05-sentinel-errors/01-sentinel-repository
 ```
 
 ### Why wrapped sentinels, not bare strings

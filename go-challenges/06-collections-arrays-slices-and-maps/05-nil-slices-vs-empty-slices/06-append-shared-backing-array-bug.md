@@ -32,9 +32,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/reqheaders/headers ~/go-exercises/reqheaders/cmd/demo
-cd ~/go-exercises/reqheaders
-go mod init example.com/reqheaders
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/06-append-shared-backing-array-bug/headers go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/06-append-shared-backing-array-bug/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/06-append-shared-backing-array-bug
 ```
 
 ### How the shared backing array corrupts requests

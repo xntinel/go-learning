@@ -31,9 +31,8 @@ Verify: `go test -count=10 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/flagstore/cmd/demo
-cd ~/go-exercises/flagstore
-go mod init example.com/flagstore
+mkdir -p go-solutions/12-testing-ecosystem/21-race-detector/03-rwmutex-feature-flag-store/cmd/demo
+cd go-solutions/12-testing-ecosystem/21-race-detector/03-rwmutex-feature-flag-store
 ```
 
 ### Why RWMutex, and why the defensive copy is non-negotiable

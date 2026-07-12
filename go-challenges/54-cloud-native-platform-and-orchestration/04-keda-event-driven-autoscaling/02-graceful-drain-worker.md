@@ -33,9 +33,8 @@ drainworker/                 independent module: example.com/drainworker
 Set up the module:
 
 ```bash
-mkdir -p ~/workers/drainworker/cmd/demo
-cd ~/workers/drainworker
-go mod init example.com/drainworker
+mkdir -p go-solutions/54-cloud-native-platform-and-orchestration/04-keda-event-driven-autoscaling/02-graceful-drain-worker/cmd/demo
+cd go-solutions/54-cloud-native-platform-and-orchestration/04-keda-event-driven-autoscaling/02-graceful-drain-worker
 go mod edit -go=1.24
 ```
 

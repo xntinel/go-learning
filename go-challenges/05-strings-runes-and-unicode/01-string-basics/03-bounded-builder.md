@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/bulkinsert/cmd/demo
-cd ~/go-exercises/bulkinsert
-go mod init example.com/bulkinsert
+mkdir -p go-solutions/05-strings-runes-and-unicode/01-string-basics/03-bounded-builder/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/01-string-basics/03-bounded-builder
 ```
 
 ## Why += is a latency bug and Builder is the fix

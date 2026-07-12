@@ -38,9 +38,8 @@ cache-invalidation-broadcaster/  independent module: example.com/cache-invalidat
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cache-invalidation-broadcaster/cmd/demo
-cd ~/go-exercises/cache-invalidation-broadcaster
-go mod init example.com/cache-invalidation-broadcaster
+mkdir -p go-solutions/03-control-flow/04-type-switch/23-cache-invalidation-broadcaster/cmd/demo
+cd go-solutions/03-control-flow/04-type-switch/23-cache-invalidation-broadcaster
 go mod edit -go=1.24
 ```
 

@@ -27,9 +27,8 @@ Verify: `buf generate && go test -count=1 -race ./...` (codegen produces `gen/or
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/gateway/proto/order/v1 ~/go-exercises/gateway/cmd/demo
-cd ~/go-exercises/gateway
-go mod init example.com/gateway
+mkdir -p go-solutions/51-rpc-and-api-design/02-grpc-gateway-rest-json/01-annotated-gateway-transcoding/proto/order/v1 go-solutions/51-rpc-and-api-design/02-grpc-gateway-rest-json/01-annotated-gateway-transcoding/cmd/demo
+cd go-solutions/51-rpc-and-api-design/02-grpc-gateway-rest-json/01-annotated-gateway-transcoding
 go get github.com/grpc-ecosystem/grpc-gateway/v2/runtime
 go get google.golang.org/grpc google.golang.org/protobuf
 ```

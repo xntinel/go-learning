@@ -31,9 +31,8 @@ jsonreport/                 independent module: example.com/jsonreport
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/jsonreport/cmd/demo
-cd ~/go-exercises/jsonreport
-go mod init example.com/jsonreport
+mkdir -p go-solutions/12-testing-ecosystem/04-subtests-and-t-run/09-dynamic-golden-subtests/cmd/demo
+cd go-solutions/12-testing-ecosystem/04-subtests-and-t-run/09-dynamic-golden-subtests
 ```
 
 ### The golden-file workflow and dynamic subtests

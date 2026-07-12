@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/classify/cmd/demo
-cd ~/go-exercises/classify
-go mod init example.com/classify
+mkdir -p go-solutions/03-control-flow/08-panic-and-recover/04-classify-runtime-panics/cmd/demo
+cd go-solutions/03-control-flow/08-panic-and-recover/04-classify-runtime-panics
 ```
 
 ### The three severities and why they differ

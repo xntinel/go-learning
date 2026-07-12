@@ -26,9 +26,8 @@ workerpool/               independent module: example.com/workerpool
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/workerpool
-cd ~/go-exercises/workerpool
-go mod init example.com/workerpool
+mkdir -p go-solutions/04-functions/12-functional-options-pattern/11-worker-pool-overflow-options
+cd go-solutions/04-functions/12-functional-options-pattern/11-worker-pool-overflow-options
 go mod edit -go=1.24
 ```
 

@@ -29,9 +29,8 @@ orderpath/                 independent module: example.com/orderpath
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/orderpath/cmd/demo
-cd ~/go-exercises/orderpath
-go mod init example.com/orderpath
+mkdir -p go-solutions/10-error-handling/11-structured-error-types/03-dotted-path-nested-validator/cmd/demo
+cd go-solutions/10-error-handling/11-structured-error-types/03-dotted-path-nested-validator
 go mod edit -go=1.26
 ```
 

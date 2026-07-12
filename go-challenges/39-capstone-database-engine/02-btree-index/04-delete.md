@@ -22,8 +22,7 @@ btree_test.go        delete present key, delete missing key, key-too-long, bulk 
 Set up the module:
 
 ```bash
-mkdir -p delete/cmd/demo && cd delete
-go mod init example.com/delete
+mkdir -p go-solutions/39-capstone-database-engine/02-btree-index/04-delete/cmd/demo && cd go-solutions/39-capstone-database-engine/02-btree-index/04-delete
 ```
 
 ### Why delete is the asymmetric, harder operation

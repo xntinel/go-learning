@@ -31,9 +31,8 @@ accounts/                  independent module: example.com/accounts
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/accounts/cmd/demo
-cd ~/go-exercises/accounts
-go mod init example.com/accounts
+mkdir -p go-solutions/11-packages-and-modules/02-exported-vs-unexported/07-sentinel-errors-and-error-type/cmd/demo
+cd go-solutions/11-packages-and-modules/02-exported-vs-unexported/07-sentinel-errors-and-error-type
 go mod edit -go=1.26
 ```
 

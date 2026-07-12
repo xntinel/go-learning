@@ -27,9 +27,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/bootbound/cmd/demo
-cd ~/go-exercises/bootbound
-go mod init example.com/bootbound
+mkdir -p go-solutions/14-select-and-context/14-building-a-context-aware-service-framework/07-bounded-startup-with-deadline-cause/cmd/demo
+cd go-solutions/14-select-and-context/14-building-a-context-aware-service-framework/07-bounded-startup-with-deadline-cause
 ```
 
 ### Bounding Start and naming the culprit

@@ -32,9 +32,8 @@ fairsem/                     independent module: example.com/fairsem
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/fairsem/cmd/demo
-cd ~/go-exercises/fairsem
-go mod init example.com/fairsem
+mkdir -p go-solutions/13-goroutines-and-channels/12-channel-patterns-semaphore-barrier/14-fair-fifo-semaphore-pool-acquire/cmd/demo
+cd go-solutions/13-goroutines-and-channels/12-channel-patterns-semaphore-barrier/14-fair-fifo-semaphore-pool-acquire
 go mod edit -go=1.26
 go get go.uber.org/goleak
 ```

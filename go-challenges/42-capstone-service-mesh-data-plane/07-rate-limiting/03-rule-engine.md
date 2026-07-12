@@ -24,9 +24,8 @@ ratelimit_test.go     matching, most-restrictive, isolation, eviction, synctest
 Set up the module. The bundled token bucket pulls in `golang.org/x/time/rate`:
 
 ```bash
-mkdir -p ~/go-exercises/ruleengine/cmd/demo
-cd ~/go-exercises/ruleengine
-go mod init example.com/rule-engine
+mkdir -p go-solutions/42-capstone-service-mesh-data-plane/07-rate-limiting/03-rule-engine/cmd/demo
+cd go-solutions/42-capstone-service-mesh-data-plane/07-rate-limiting/03-rule-engine
 go mod edit -go=1.26
 go get golang.org/x/time@latest
 ```

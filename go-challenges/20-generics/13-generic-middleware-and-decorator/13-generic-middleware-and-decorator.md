@@ -21,9 +21,8 @@ Retry middleware needs a positive attempt count. The constructor returns a wrapp
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/genericmiddleware/cmd/demo
-cd ~/go-exercises/genericmiddleware
-go mod init example.com/verify
+mkdir -p go-solutions/20-generics/13-generic-middleware-and-decorator/13-generic-middleware-and-decorator/cmd/demo
+cd go-solutions/20-generics/13-generic-middleware-and-decorator/13-generic-middleware-and-decorator
 ```
 
 ### Exercise 1: Build The Chain And Retry Middleware

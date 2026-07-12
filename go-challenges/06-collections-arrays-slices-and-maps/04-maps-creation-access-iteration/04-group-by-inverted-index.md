@@ -30,9 +30,8 @@ logindex/                  independent module: example.com/logindex
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/logindex/cmd/demo
-cd ~/go-exercises/logindex
-go mod init example.com/logindex
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/04-group-by-inverted-index/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/04-group-by-inverted-index
 ```
 
 ### Why append to a missing key needs no setup

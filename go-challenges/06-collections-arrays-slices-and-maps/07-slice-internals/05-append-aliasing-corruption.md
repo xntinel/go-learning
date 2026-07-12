@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/tenantfanout/cmd/demo
-cd ~/go-exercises/tenantfanout
-go mod init example.com/tenantfanout
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/05-append-aliasing-corruption/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/05-append-aliasing-corruption
 ```
 
 ### The bug: append into shared spare capacity

@@ -24,8 +24,7 @@ compression_test.go  gzip and none round-trips, the compression win, edge cases
 Set up the module:
 
 ```bash
-mkdir -p batch-compression/cmd/demo && cd batch-compression
-go mod init example.com/batch-compression
+mkdir -p go-solutions/41-capstone-message-queue/04-producer-api-batching/03-batch-compression/cmd/demo && cd go-solutions/41-capstone-message-queue/04-producer-api-batching/03-batch-compression
 ```
 
 ### A reversible frame, then a codec on top

@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/jwksrefresh/cmd/demo
-cd ~/go-exercises/jwksrefresh
-go mod init example.com/jwksrefresh
+mkdir -p go-solutions/15-sync-primitives/02-sync-rwmutex/08-single-flight-refresh-with-trylock/cmd/demo
+cd go-solutions/15-sync-primitives/02-sync-rwmutex/08-single-flight-refresh-with-trylock
 ```
 
 ### Two mutexes because there are two resources

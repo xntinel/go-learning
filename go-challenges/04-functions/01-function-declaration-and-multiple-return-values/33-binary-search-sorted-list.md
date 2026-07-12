@@ -33,9 +33,8 @@ binsearch/                 independent module: example.com/binary-search-sorted-
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/binsearch/cmd/demo
-cd ~/go-exercises/binsearch
-go mod init example.com/binary-search-sorted-list
+mkdir -p go-solutions/04-functions/01-function-declaration-and-multiple-return-values/33-binary-search-sorted-list/cmd/demo
+cd go-solutions/04-functions/01-function-declaration-and-multiple-return-values/33-binary-search-sorted-list
 go mod edit -go=1.24
 ```
 

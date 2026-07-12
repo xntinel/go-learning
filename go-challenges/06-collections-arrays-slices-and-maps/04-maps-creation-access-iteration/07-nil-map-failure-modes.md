@@ -30,9 +30,8 @@ niloader/                  independent module: example.com/niloader
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/niloader/cmd/demo
-cd ~/go-exercises/niloader
-go mod init example.com/niloader
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/07-nil-map-failure-modes/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/07-nil-map-failure-modes
 ```
 
 ### What is and isn't safe on a nil map

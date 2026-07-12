@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/dedupconsumer/cmd/demo
-cd ~/go-exercises/dedupconsumer
-go mod init example.com/dedupconsumer
+mkdir -p go-solutions/13-goroutines-and-channels/06-ranging-over-channels/09-dedup-idempotent-consumer/cmd/demo
+cd go-solutions/13-goroutines-and-channels/06-ranging-over-channels/09-dedup-idempotent-consumer
 ```
 
 ### The seen-set and first-seen ordering

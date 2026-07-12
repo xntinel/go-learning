@@ -121,9 +121,8 @@ Note: `-S` output lines are prefixed with the full module path (e.g. `example.co
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/compilercheck/cmd/demo
-cd ~/go-exercises/compilercheck
-go mod init example.com/compilercheck
+mkdir -p go-solutions/36-runtime-compiler-and-assembly/12-analyzing-compiler-output/12-analyzing-compiler-output/cmd/demo
+cd go-solutions/36-runtime-compiler-and-assembly/12-analyzing-compiler-output/12-analyzing-compiler-output
 ```
 
 This is a library package verified by `go test`. The `cmd/demo` program shows live commands the learner can run to inspect the compiler output.

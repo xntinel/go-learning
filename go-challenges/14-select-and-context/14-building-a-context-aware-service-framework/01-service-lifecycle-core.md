@@ -25,9 +25,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/svcframe/cmd/demo
-cd ~/go-exercises/svcframe
-go mod init example.com/svcframe
+mkdir -p go-solutions/14-select-and-context/14-building-a-context-aware-service-framework/01-service-lifecycle-core/cmd/demo
+cd go-solutions/14-select-and-context/14-building-a-context-aware-service-framework/01-service-lifecycle-core
 ```
 
 ### The contract and why Start must not block

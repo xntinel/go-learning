@@ -31,8 +31,7 @@ seq_test.go          full-range collection, early-break prefix, negative-input e
 Set up the module:
 
 ```bash
-mkdir -p seq-and-the-yield-protocol/cmd/demo && cd seq-and-the-yield-protocol
-go mod init example.com/seq-yield
+mkdir -p go-solutions/25-iterators-and-modern-go/03-range-over-func-push-iterators/01-seq-and-the-yield-protocol/cmd/demo && cd go-solutions/25-iterators-and-modern-go/03-range-over-func-push-iterators/01-seq-and-the-yield-protocol
 ```
 
 ### What iter.Seq actually is, and what yield's bool means

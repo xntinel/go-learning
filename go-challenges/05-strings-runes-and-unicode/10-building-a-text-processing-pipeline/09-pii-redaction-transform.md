@@ -30,9 +30,8 @@ redact/                   independent module: example.com/redact
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/redact/cmd/demo
-cd ~/go-exercises/redact
-go mod init example.com/redact
+mkdir -p go-solutions/05-strings-runes-and-unicode/10-building-a-text-processing-pipeline/09-pii-redaction-transform/cmd/demo
+cd go-solutions/05-strings-runes-and-unicode/10-building-a-text-processing-pipeline/09-pii-redaction-transform
 ```
 
 ### Regex for token grammars, not for markup

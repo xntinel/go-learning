@@ -55,9 +55,8 @@ bulkbatch/                module example.com/bulkbatch
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/bulkbatch
-cd ~/go-exercises/bulkbatch
-go mod init example.com/bulkbatch
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/14-slices-chunk-batch-aliasing
+cd go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/14-slices-chunk-batch-aliasing
 go mod edit -go=1.24
 ```
 

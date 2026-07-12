@@ -26,9 +26,8 @@ adminpprof/                    independent module: example.com/adminpprof
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/adminpprof/cmd/demo
-cd ~/go-exercises/adminpprof
-go mod init example.com/adminpprof
+mkdir -p go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/02-expose-pprof-behind-admin-auth/cmd/demo
+cd go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/02-expose-pprof-behind-admin-auth
 ```
 
 ### The side effect you are defending against

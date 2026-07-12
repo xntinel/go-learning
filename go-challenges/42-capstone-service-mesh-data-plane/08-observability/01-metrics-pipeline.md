@@ -22,8 +22,7 @@ metrics_test.go      counter/gauge/histogram contracts, cardinality limit, HTTP 
 Set up the module:
 
 ```bash
-mkdir -p metrics-pipeline/cmd/demo && cd metrics-pipeline
-go mod init example.com/metrics-pipeline
+mkdir -p go-solutions/42-capstone-service-mesh-data-plane/08-observability/01-metrics-pipeline/cmd/demo && cd go-solutions/42-capstone-service-mesh-data-plane/08-observability/01-metrics-pipeline
 ```
 
 ### Why atomics, and why a float stored as Uint64

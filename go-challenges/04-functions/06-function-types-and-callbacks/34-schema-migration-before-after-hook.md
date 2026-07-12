@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/schema-migration-before-after-hook/cmd/demo
-cd ~/go-exercises/schema-migration-before-after-hook
-go mod init example.com/schema-migration-before-after-hook
+mkdir -p go-solutions/04-functions/06-function-types-and-callbacks/34-schema-migration-before-after-hook/cmd/demo
+cd go-solutions/04-functions/06-function-types-and-callbacks/34-schema-migration-before-after-hook
 go mod edit -go=1.24
 ```
 

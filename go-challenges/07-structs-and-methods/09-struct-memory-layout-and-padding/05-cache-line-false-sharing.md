@@ -29,9 +29,8 @@ shardcounter/              independent module: example.com/shardcounter
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/shardcounter/cmd/demo
-cd ~/go-exercises/shardcounter
-go mod init example.com/shardcounter
+mkdir -p go-solutions/07-structs-and-methods/09-struct-memory-layout-and-padding/05-cache-line-false-sharing/cmd/demo
+cd go-solutions/07-structs-and-methods/09-struct-memory-layout-and-padding/05-cache-line-false-sharing
 ```
 
 ### Why padding to a cache line matters

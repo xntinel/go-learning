@@ -30,9 +30,8 @@ txn/                           independent module: example.com/txn
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/txn/cmd/demo
-cd ~/go-exercises/txn
-go mod init example.com/txn
+mkdir -p go-solutions/02-variables-types-and-constants/01-variable-declaration-and-short-assignment/03-shadowing-in-transaction-commit/cmd/demo
+cd go-solutions/02-variables-types-and-constants/01-variable-declaration-and-short-assignment/03-shadowing-in-transaction-commit
 ```
 
 ### The bug, stated precisely

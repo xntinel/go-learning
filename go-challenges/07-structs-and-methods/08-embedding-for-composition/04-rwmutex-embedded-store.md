@@ -29,9 +29,8 @@ store/                     independent module: example.com/store
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/store/cmd/demo
-cd ~/go-exercises/store
-go mod init example.com/store
+mkdir -p go-solutions/07-structs-and-methods/08-embedding-for-composition/04-rwmutex-embedded-store/cmd/demo
+cd go-solutions/07-structs-and-methods/08-embedding-for-composition/04-rwmutex-embedded-store
 ```
 
 ### Promoted locking, and the API cost of it

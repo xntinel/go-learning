@@ -29,9 +29,8 @@ enrich/                    independent module: example.com/enrich
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/enrich/cmd/demo
-cd ~/go-exercises/enrich
-go mod init example.com/enrich
+mkdir -p go-solutions/13-goroutines-and-channels/13-goroutine-pools/03-errgroup-bounded-enrichment/cmd/demo
+cd go-solutions/13-goroutines-and-channels/13-goroutine-pools/03-errgroup-bounded-enrichment
 go get golang.org/x/sync/errgroup
 ```
 

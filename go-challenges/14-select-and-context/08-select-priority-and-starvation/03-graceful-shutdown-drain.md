@@ -34,9 +34,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/shutdown/cmd/demo
-cd ~/go-exercises/shutdown
-go mod init example.com/shutdown
+mkdir -p go-solutions/14-select-and-context/08-select-priority-and-starvation/03-graceful-shutdown-drain/cmd/demo
+cd go-solutions/14-select-and-context/08-select-priority-and-starvation/03-graceful-shutdown-drain
 ```
 
 ### Shutdown is priority on the time axis

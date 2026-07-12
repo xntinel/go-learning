@@ -30,9 +30,8 @@ idtokenverify/                independent module: example.com/idtokenverify
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/idtokenverify/cmd/demo
-cd ~/go-exercises/idtokenverify
-go mod init example.com/idtokenverify
+mkdir -p go-solutions/49-application-security-crypto-supplychain/06-oauth2-oidc-flows/02-oidc-idtoken-verify/cmd/demo
+cd go-solutions/49-application-security-crypto-supplychain/06-oauth2-oidc-flows/02-oidc-idtoken-verify
 go get github.com/coreos/go-oidc/v3/oidc@latest
 ```
 

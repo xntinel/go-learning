@@ -30,9 +30,8 @@ workerpool/                     module: example.com/workerpool
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/workerpool/cmd/demo
-cd ~/go-exercises/workerpool
-go mod init example.com/workerpool
+mkdir -p go-solutions/02-variables-types-and-constants/09-blank-identifier-and-shadowing/09-worker-pool-index-discard/cmd/demo
+cd go-solutions/02-variables-types-and-constants/09-blank-identifier-and-shadowing/09-worker-pool-index-discard
 ```
 
 ### The index discard, and the aggregation that must not shadow

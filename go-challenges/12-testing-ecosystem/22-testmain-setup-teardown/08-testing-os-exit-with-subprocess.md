@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p cliexit/cmd/demo
-cd cliexit
-go mod init example.com/cliexit
+mkdir -p go-solutions/12-testing-ecosystem/22-testmain-setup-teardown/08-testing-os-exit-with-subprocess/cmd/demo
+cd go-solutions/12-testing-ecosystem/22-testmain-setup-teardown/08-testing-os-exit-with-subprocess
 ```
 
 ### Why you cannot test os.Exit in-process

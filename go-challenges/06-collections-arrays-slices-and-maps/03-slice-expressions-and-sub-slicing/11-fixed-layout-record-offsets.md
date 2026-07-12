@@ -57,9 +57,8 @@ settle/                        module example.com/settle
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/settle
-cd ~/go-exercises/settle
-go mod init example.com/settle
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/11-fixed-layout-record-offsets
+cd go-solutions/06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/11-fixed-layout-record-offsets
 go mod edit -go=1.24
 ```
 

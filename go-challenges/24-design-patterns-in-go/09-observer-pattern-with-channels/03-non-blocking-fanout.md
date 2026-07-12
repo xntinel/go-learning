@@ -22,8 +22,7 @@ fanout_test.go       drop accounting + a -race concurrent send/subscribe sweep
 Set up the module:
 
 ```bash
-mkdir -p non-blocking-fanout/cmd/demo && cd non-blocking-fanout
-go mod init example.com/non-blocking-fanout
+mkdir -p go-solutions/24-design-patterns-in-go/09-observer-pattern-with-channels/03-non-blocking-fanout/cmd/demo && cd go-solutions/24-design-patterns-in-go/09-observer-pattern-with-channels/03-non-blocking-fanout
 ```
 
 ### Availability over delivery, made countable

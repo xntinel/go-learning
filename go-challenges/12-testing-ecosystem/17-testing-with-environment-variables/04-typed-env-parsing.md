@@ -25,9 +25,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/typedconfig/cmd/demo
-cd ~/go-exercises/typedconfig
-go mod init example.com/typedconfig
+mkdir -p go-solutions/12-testing-ecosystem/17-testing-with-environment-variables/04-typed-env-parsing/cmd/demo
+cd go-solutions/12-testing-ecosystem/17-testing-with-environment-variables/04-typed-env-parsing
 ```
 
 ## Typed parsing, and why the error message is half the job

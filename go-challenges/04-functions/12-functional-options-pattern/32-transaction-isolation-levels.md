@@ -33,9 +33,8 @@ txmanager/                        independent module: example.com/transaction-is
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/txmanager/cmd/demo
-cd ~/go-exercises/txmanager
-go mod init example.com/transaction-isolation-levels
+mkdir -p go-solutions/04-functions/12-functional-options-pattern/32-transaction-isolation-levels/cmd/demo
+cd go-solutions/04-functions/12-functional-options-pattern/32-transaction-isolation-levels
 go mod edit -go=1.24
 ```
 

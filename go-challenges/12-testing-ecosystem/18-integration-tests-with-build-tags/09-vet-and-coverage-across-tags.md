@@ -29,9 +29,8 @@ covtags/                   independent module: example.com/covtags
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/covtags/cmd/demo
-cd ~/go-exercises/covtags
-go mod init example.com/covtags
+mkdir -p go-solutions/12-testing-ecosystem/18-integration-tests-with-build-tags/09-vet-and-coverage-across-tags/cmd/demo
+cd go-solutions/12-testing-ecosystem/18-integration-tests-with-build-tags/09-vet-and-coverage-across-tags
 ```
 
 ### The silent-green trap, made concrete

@@ -28,9 +28,8 @@ consensus/                   independent module: example.com/consensus
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/consensus/cmd/demo
-cd ~/go-exercises/consensus
-go mod init example.com/consensus
+mkdir -p go-solutions/04-functions/10-higher-order-functions/30-consensus-aggregate-with-quorum/cmd/demo
+cd go-solutions/04-functions/10-higher-order-functions/30-consensus-aggregate-with-quorum
 go mod edit -go=1.24
 ```
 

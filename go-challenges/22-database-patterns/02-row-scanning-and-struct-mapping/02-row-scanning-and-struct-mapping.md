@@ -49,9 +49,8 @@ The `database/sql` driver converts its internal values to Go types based on what
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/rowscan/cmd/demo
-cd ~/go-exercises/rowscan
-go mod init example.com/rowscan
+mkdir -p go-solutions/22-database-patterns/02-row-scanning-and-struct-mapping/02-row-scanning-and-struct-mapping/cmd/demo
+cd go-solutions/22-database-patterns/02-row-scanning-and-struct-mapping/02-row-scanning-and-struct-mapping
 go mod edit -go=1.26
 ```
 

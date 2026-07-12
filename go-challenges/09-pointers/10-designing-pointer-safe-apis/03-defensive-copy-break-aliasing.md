@@ -29,9 +29,8 @@ snapshot/                   independent module: example.com/snapshot
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/snapshot/cmd/demo
-cd ~/go-exercises/snapshot
-go mod init example.com/snapshot
+mkdir -p go-solutions/09-pointers/10-designing-pointer-safe-apis/03-defensive-copy-break-aliasing/cmd/demo
+cd go-solutions/09-pointers/10-designing-pointer-safe-apis/03-defensive-copy-break-aliasing
 go mod edit -go=1.25
 ```
 

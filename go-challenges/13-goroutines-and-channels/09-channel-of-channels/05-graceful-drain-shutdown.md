@@ -29,9 +29,8 @@ draining/                  independent module: example.com/draining
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/draining/cmd/demo
-cd ~/go-exercises/draining
-go mod init example.com/draining
+mkdir -p go-solutions/13-goroutines-and-channels/09-channel-of-channels/05-graceful-drain-shutdown/cmd/demo
+cd go-solutions/13-goroutines-and-channels/09-channel-of-channels/05-graceful-drain-shutdown
 ```
 
 ### Two shutdowns, one loop

@@ -26,9 +26,8 @@ paymentsclient/                 independent module: example.com/testing-outbound
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/paymentsclient/cmd/demo
-cd ~/go-exercises/paymentsclient
-go mod init example.com/testing-outbound-client
+mkdir -p go-solutions/12-testing-ecosystem/09-httptest/04-testing-outbound-client/cmd/demo
+cd go-solutions/12-testing-ecosystem/09-httptest/04-testing-outbound-client
 ```
 
 ### Testing the outbound half: the server is your assertion surface

@@ -30,9 +30,8 @@ health/                     independent module: example.com/health
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/health/cmd/demo
-cd ~/go-exercises/health
-go mod init example.com/health
+mkdir -p go-solutions/08-interfaces/10-dependency-injection-with-interfaces/09-health-check-aggregator/cmd/demo
+cd go-solutions/08-interfaces/10-dependency-injection-with-interfaces/09-health-check-aggregator
 ```
 
 ### Injection makes each dependency independently fakeable

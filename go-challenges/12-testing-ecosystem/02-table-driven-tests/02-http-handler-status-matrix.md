@@ -29,9 +29,8 @@ usersapi/                  independent module: example.com/usersapi
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/usersapi/cmd/demo
-cd ~/go-exercises/usersapi
-go mod init example.com/usersapi
+mkdir -p go-solutions/12-testing-ecosystem/02-table-driven-tests/02-http-handler-status-matrix/cmd/demo
+cd go-solutions/12-testing-ecosystem/02-table-driven-tests/02-http-handler-status-matrix
 ```
 
 ### Why httptest makes the matrix a table

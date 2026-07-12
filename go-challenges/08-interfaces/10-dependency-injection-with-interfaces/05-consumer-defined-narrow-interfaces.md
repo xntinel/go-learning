@@ -30,9 +30,8 @@ narrowiface/                independent module: example.com/narrowiface
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/narrowiface/cmd/demo
-cd ~/go-exercises/narrowiface
-go mod init example.com/narrowiface
+mkdir -p go-solutions/08-interfaces/10-dependency-injection-with-interfaces/05-consumer-defined-narrow-interfaces/cmd/demo
+cd go-solutions/08-interfaces/10-dependency-injection-with-interfaces/05-consumer-defined-narrow-interfaces
 ```
 
 ### Who owns the interface

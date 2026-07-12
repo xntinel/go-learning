@@ -26,9 +26,8 @@ before/                     independent module: example.com/before
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/before/cmd/demo
-cd ~/go-exercises/before
-go mod init example.com/before
+mkdir -p go-solutions/08-interfaces/12-interface-pollution-anti-patterns/01-before-fat-service-interface/cmd/demo
+cd go-solutions/08-interfaces/12-interface-pollution-anti-patterns/01-before-fat-service-interface
 ```
 
 ### Why this is the anti-pattern

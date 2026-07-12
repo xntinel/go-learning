@@ -32,9 +32,8 @@ Verify: `go test -count=1 -race ./...`, then `go test -bench=. -benchmem ./...`.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/allocguard/cmd/demo
-cd ~/go-exercises/allocguard
-go mod init example.com/allocguard
+mkdir -p go-solutions/09-pointers/07-escape-analysis/02-observe-escapes-in-tests/cmd/demo
+cd go-solutions/09-pointers/07-escape-analysis/02-observe-escapes-in-tests
 ```
 
 ### Why a sink, and why noinline

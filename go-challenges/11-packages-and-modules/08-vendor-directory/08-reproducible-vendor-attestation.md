@@ -29,9 +29,8 @@ attest/                      independent module: example.com/attest
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/attest/cmd/demo
-cd ~/go-exercises/attest
-go mod init example.com/attest
+mkdir -p go-solutions/11-packages-and-modules/08-vendor-directory/08-reproducible-vendor-attestation/cmd/demo
+cd go-solutions/11-packages-and-modules/08-vendor-directory/08-reproducible-vendor-attestation
 go get golang.org/x/mod
 ```
 

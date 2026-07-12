@@ -30,9 +30,8 @@ cms/                       independent module: example.com/cms
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cms/cmd/demo
-cd ~/go-exercises/cms
-go mod init example.com/cms
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/14-custom-map-based-data-structure/01-cms-sketch-implement/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/14-custom-map-based-data-structure/01-cms-sketch-implement
 ```
 
 ### The shape: a 2D counter table plus one hash per row

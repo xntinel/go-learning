@@ -24,9 +24,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/slacall/cmd/demo
-cd ~/go-exercises/slacall
-go mod init example.com/sla
+mkdir -p go-solutions/14-select-and-context/03-timeout-with-select/04-downstream-call-sla/cmd/demo
+cd go-solutions/14-select-and-context/03-timeout-with-select/04-downstream-call-sla
 ```
 
 ### Result and error on one buffered channel

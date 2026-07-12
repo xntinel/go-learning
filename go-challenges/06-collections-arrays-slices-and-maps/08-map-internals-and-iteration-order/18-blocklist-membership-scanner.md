@@ -56,9 +56,8 @@ scanblock/                    module example.com/scanblock
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/scanblock
-cd ~/go-exercises/scanblock
-go mod init example.com/scanblock
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/18-blocklist-membership-scanner
+cd go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/18-blocklist-membership-scanner
 go mod edit -go=1.24
 ```
 

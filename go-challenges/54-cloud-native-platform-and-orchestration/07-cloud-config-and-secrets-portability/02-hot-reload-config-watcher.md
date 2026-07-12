@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/hotreload/cmd/demo
-cd ~/go-exercises/hotreload
-go mod init example.com/hotreload
+mkdir -p go-solutions/54-cloud-native-platform-and-orchestration/07-cloud-config-and-secrets-portability/02-hot-reload-config-watcher/cmd/demo
+cd go-solutions/54-cloud-native-platform-and-orchestration/07-cloud-config-and-secrets-portability/02-hot-reload-config-watcher
 go get gocloud.dev@latest
 ```
 

@@ -33,9 +33,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/overflowguard/cmd/demo
-cd ~/go-exercises/overflowguard
-go mod init example.com/overflowguard
+mkdir -p go-solutions/02-variables-types-and-constants/08-untyped-constants-and-constant-expressions/05-overflow-guardrails-math-consts/cmd/demo
+cd go-solutions/02-variables-types-and-constants/08-untyped-constants-and-constant-expressions/05-overflow-guardrails-math-consts
 ```
 
 ### Why math constants are untyped

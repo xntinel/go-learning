@@ -28,9 +28,8 @@ batchbuild/                 independent module: example.com/batchbuild
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/batchbuild/cmd/demo
-cd ~/go-exercises/batchbuild
-go mod init example.com/batchbuild
+mkdir -p go-solutions/07-structs-and-methods/11-builder-pattern-for-complex-structs/07-generic-batch-builder/cmd/demo
+cd go-solutions/07-structs-and-methods/11-builder-pattern-for-complex-structs/07-generic-batch-builder
 ```
 
 ### Generics, ownership, and capacity in one accumulator

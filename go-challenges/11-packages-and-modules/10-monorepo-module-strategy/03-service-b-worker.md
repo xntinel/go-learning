@@ -29,9 +29,8 @@ mono/                         single module: example.com/mono
 Set up the module (self-contained, with its own copy of the shared package):
 
 ```bash
-mkdir -p ~/go-exercises/mono/platform/httpx ~/go-exercises/mono/cmd/worker
-cd ~/go-exercises/mono
-go mod init example.com/mono
+mkdir -p go-solutions/11-packages-and-modules/10-monorepo-module-strategy/03-service-b-worker/platform/httpx go-solutions/11-packages-and-modules/10-monorepo-module-strategy/03-service-b-worker/cmd/worker
+cd go-solutions/11-packages-and-modules/10-monorepo-module-strategy/03-service-b-worker
 ```
 
 ### One library, two very different consumers

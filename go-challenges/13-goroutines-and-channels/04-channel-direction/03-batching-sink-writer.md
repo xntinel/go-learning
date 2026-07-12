@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/sink/cmd/demo
-cd ~/go-exercises/sink
-go mod init example.com/sink
+mkdir -p go-solutions/13-goroutines-and-channels/04-channel-direction/03-batching-sink-writer/cmd/demo
+cd go-solutions/13-goroutines-and-channels/04-channel-direction/03-batching-sink-writer
 ```
 
 ### Why receive-only, and how close drives the final flush

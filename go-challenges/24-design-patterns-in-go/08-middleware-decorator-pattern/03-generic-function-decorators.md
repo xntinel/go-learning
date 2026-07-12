@@ -25,8 +25,7 @@ decorator_test.go    retry success-after-transient, stop-on-permanent,
 Set up the module:
 
 ```bash
-mkdir -p func-decorators/cmd/demo && cd func-decorators
-go mod init example.com/func-decorators
+mkdir -p go-solutions/24-design-patterns-in-go/08-middleware-decorator-pattern/03-generic-function-decorators/cmd/demo && cd go-solutions/24-design-patterns-in-go/08-middleware-decorator-pattern/03-generic-function-decorators
 ```
 
 ### One decorator for every return type

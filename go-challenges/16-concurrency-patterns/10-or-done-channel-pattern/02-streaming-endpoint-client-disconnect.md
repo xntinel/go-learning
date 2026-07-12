@@ -34,8 +34,7 @@ stream_test.go       disconnect-stops-stream + no-leak, eventSource-stops-on-can
 Set up the module:
 
 ```bash
-mkdir -p streaming-endpoint/cmd/demo && cd streaming-endpoint
-go mod init example.com/stream
+mkdir -p go-solutions/16-concurrency-patterns/10-or-done-channel-pattern/02-streaming-endpoint-client-disconnect/cmd/demo && cd go-solutions/16-concurrency-patterns/10-or-done-channel-pattern/02-streaming-endpoint-client-disconnect
 ```
 
 ### Why the request context is the right done channel

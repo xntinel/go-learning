@@ -27,9 +27,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/config/cmd/demo
-cd ~/go-exercises/config
-go mod init example.com/config
+mkdir -p go-solutions/03-control-flow/09-range-over-integers-and-functions/07-layered-config-maps-seq/cmd/demo
+cd go-solutions/03-control-flow/09-range-over-integers-and-functions/07-layered-config-maps-seq
 ```
 
 ## The design

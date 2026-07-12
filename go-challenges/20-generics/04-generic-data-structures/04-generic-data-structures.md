@@ -62,9 +62,8 @@ type-safe; `nil` is not (it is not assignable to a non-pointer `T`).
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ds/cmd/demo
-cd ~/go-exercises/ds
-go mod init example.com/ds
+mkdir -p go-solutions/20-generics/04-generic-data-structures/04-generic-data-structures/cmd/demo
+cd go-solutions/20-generics/04-generic-data-structures/04-generic-data-structures
 ```
 
 ### Exercise 1: The Stack

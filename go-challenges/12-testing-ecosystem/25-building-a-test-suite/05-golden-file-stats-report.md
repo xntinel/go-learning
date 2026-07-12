@@ -28,9 +28,8 @@ Verify: `go test -count=1 -race ./...` and `go test -run TestStatsGolden -update
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/statscache/cmd/demo
-cd ~/go-exercises/statscache
-go mod init example.com/statscache
+mkdir -p go-solutions/12-testing-ecosystem/25-building-a-test-suite/05-golden-file-stats-report/cmd/demo
+cd go-solutions/12-testing-ecosystem/25-building-a-test-suite/05-golden-file-stats-report
 ```
 
 ### Determinism is the whole prerequisite

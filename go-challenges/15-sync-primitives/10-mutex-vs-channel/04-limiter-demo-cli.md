@@ -30,9 +30,8 @@ limitercli/                     independent module: example.com/limitercli
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/limitercli/harness ~/go-exercises/limitercli/cmd/demo
-cd ~/go-exercises/limitercli
-go mod init example.com/limitercli
+mkdir -p go-solutions/15-sync-primitives/10-mutex-vs-channel/04-limiter-demo-cli/harness go-solutions/15-sync-primitives/10-mutex-vs-channel/04-limiter-demo-cli/cmd/demo
+cd go-solutions/15-sync-primitives/10-mutex-vs-channel/04-limiter-demo-cli
 ```
 
 ### Keep main() too thin to need testing

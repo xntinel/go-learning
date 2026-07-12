@@ -23,8 +23,7 @@ example_test.go      ExampleCount (a compiled, output-checked doc example)
 Set up the module:
 
 ```bash
-mkdir -p counter-package/cmd/demo && cd counter-package
-go mod init example.com/counter
+mkdir -p go-solutions/25-iterators-and-modern-go/01-range-over-integers/01-counter-package/cmd/demo && cd go-solutions/25-iterators-and-modern-go/01-range-over-integers/01-counter-package
 ```
 
 ### Why each function looks the way it does

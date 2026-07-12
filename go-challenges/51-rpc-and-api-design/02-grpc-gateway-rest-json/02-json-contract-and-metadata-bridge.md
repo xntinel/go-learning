@@ -26,9 +26,8 @@ Verify: `buf generate && go test -count=1 -race ./...` (bar mode: builds only af
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/contract/proto/order/v1 ~/go-exercises/contract/cmd/demo
-cd ~/go-exercises/contract
-go mod init example.com/contract
+mkdir -p go-solutions/51-rpc-and-api-design/02-grpc-gateway-rest-json/02-json-contract-and-metadata-bridge/proto/order/v1 go-solutions/51-rpc-and-api-design/02-grpc-gateway-rest-json/02-json-contract-and-metadata-bridge/cmd/demo
+cd go-solutions/51-rpc-and-api-design/02-grpc-gateway-rest-json/02-json-contract-and-metadata-bridge
 go get github.com/grpc-ecosystem/grpc-gateway/v2/runtime
 go get google.golang.org/grpc google.golang.org/protobuf
 ```

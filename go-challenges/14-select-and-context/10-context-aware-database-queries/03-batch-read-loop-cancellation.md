@@ -59,9 +59,8 @@ and keeps the partial data.
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/batchread/cmd/demo
-cd ~/go-exercises/batchread
-go mod init example.com/batchread
+mkdir -p go-solutions/14-select-and-context/10-context-aware-database-queries/03-batch-read-loop-cancellation/cmd/demo
+cd go-solutions/14-select-and-context/10-context-aware-database-queries/03-batch-read-loop-cancellation
 go mod edit -go=1.25
 ```
 

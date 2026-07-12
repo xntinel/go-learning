@@ -22,8 +22,7 @@ logtop_test.go       top-3 aggregate + early-stop pull count, filter/parse corre
 Set up the module:
 
 ```bash
-mkdir -p logtop/cmd/demo && cd logtop
-go mod init example.com/logtop
+mkdir -p go-solutions/25-iterators-and-modern-go/06-composing-iterators/05-log-top-n-pipeline/cmd/demo && cd go-solutions/25-iterators-and-modern-go/06-composing-iterators/05-log-top-n-pipeline
 ```
 
 ### Lines in, records out, stop at N

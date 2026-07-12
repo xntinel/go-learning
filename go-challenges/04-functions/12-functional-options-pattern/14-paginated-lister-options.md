@@ -26,9 +26,8 @@ lister/                    independent module: example.com/lister
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/lister
-cd ~/go-exercises/lister
-go mod init example.com/lister
+mkdir -p go-solutions/04-functions/12-functional-options-pattern/14-paginated-lister-options
+cd go-solutions/04-functions/12-functional-options-pattern/14-paginated-lister-options
 go mod edit -go=1.24
 ```
 

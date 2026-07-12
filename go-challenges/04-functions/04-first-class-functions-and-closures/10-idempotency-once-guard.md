@@ -29,9 +29,8 @@ onceguard/                 independent module: example.com/onceguard
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/onceguard/cmd/demo
-cd ~/go-exercises/onceguard
-go mod init example.com/onceguard
+mkdir -p go-solutions/04-functions/04-first-class-functions-and-closures/10-idempotency-once-guard/cmd/demo
+cd go-solutions/04-functions/04-first-class-functions-and-closures/10-idempotency-once-guard
 ```
 
 ### sync.Once versus the memoize map

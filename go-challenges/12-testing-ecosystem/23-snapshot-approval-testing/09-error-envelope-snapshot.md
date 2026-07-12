@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/errsnap/cmd/demo ~/go-exercises/errsnap/testdata
-cd ~/go-exercises/errsnap
-go mod init example.com/errsnap
+mkdir -p go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/09-error-envelope-snapshot/cmd/demo go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/09-error-envelope-snapshot/testdata
+cd go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/09-error-envelope-snapshot
 ```
 
 ### Why error envelopes are prime snapshot candidates

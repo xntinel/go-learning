@@ -38,9 +38,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/graceful-shutdown-coordinator/cmd/demo
-cd ~/go-exercises/graceful-shutdown-coordinator
-go mod init example.com/shutdown
+mkdir -p go-solutions/03-control-flow/08-panic-and-recover/34-graceful-shutdown-coordinator/cmd/demo
+cd go-solutions/03-control-flow/08-panic-and-recover/34-graceful-shutdown-coordinator
 go mod edit -go=1.24
 ```
 

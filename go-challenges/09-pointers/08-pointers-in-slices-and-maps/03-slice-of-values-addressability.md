@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/batchreconcile/cmd/demo
-cd ~/go-exercises/batchreconcile
-go mod init example.com/batchreconcile
+mkdir -p go-solutions/09-pointers/08-pointers-in-slices-and-maps/03-slice-of-values-addressability/cmd/demo
+cd go-solutions/09-pointers/08-pointers-in-slices-and-maps/03-slice-of-values-addressability
 ```
 
 ### Why the copy loop drops the write

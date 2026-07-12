@@ -22,8 +22,7 @@ pulliter_test.go     bounded pull, negative-limit rejection, stop unwinds produc
 Set up the module:
 
 ```bash
-mkdir -p pull-bridge/cmd/demo && cd pull-bridge
-go mod init example.com/pull-bridge
+mkdir -p go-solutions/25-iterators-and-modern-go/04-range-over-func-pull-iterators/01-bridge-push-to-pull/cmd/demo && cd go-solutions/25-iterators-and-modern-go/04-range-over-func-pull-iterators/01-bridge-push-to-pull
 ```
 
 ### Why `PullN` is a pull iterator, and why `defer stop()` comes first

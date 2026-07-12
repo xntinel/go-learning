@@ -33,9 +33,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/worker-pool-supervisor/cmd/demo
-cd ~/go-exercises/worker-pool-supervisor
-go mod init example.com/workerpool
+mkdir -p go-solutions/03-control-flow/08-panic-and-recover/23-worker-pool-supervisor/cmd/demo
+cd go-solutions/03-control-flow/08-panic-and-recover/23-worker-pool-supervisor
 go mod edit -go=1.24
 ```
 

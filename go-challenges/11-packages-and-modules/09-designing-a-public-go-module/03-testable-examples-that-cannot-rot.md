@@ -29,9 +29,8 @@ publicstr/                 independent module: example.com/publicstr
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/publicstr/cmd/demo
-cd ~/go-exercises/publicstr
-go mod init example.com/publicstr
+mkdir -p go-solutions/11-packages-and-modules/09-designing-a-public-go-module/03-testable-examples-that-cannot-rot/cmd/demo
+cd go-solutions/11-packages-and-modules/09-designing-a-public-go-module/03-testable-examples-that-cannot-rot
 ```
 
 ### Why examples cannot rot, and how the naming maps to rendering

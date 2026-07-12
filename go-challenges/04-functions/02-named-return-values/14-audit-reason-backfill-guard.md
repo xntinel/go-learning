@@ -25,9 +25,8 @@ accessdecision/               independent module: example.com/accessdecision
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/accessdecision
-cd ~/go-exercises/accessdecision
-go mod init example.com/accessdecision
+mkdir -p go-solutions/04-functions/02-named-return-values/14-audit-reason-backfill-guard
+cd go-solutions/04-functions/02-named-return-values/14-audit-reason-backfill-guard
 go mod edit -go=1.24
 ```
 

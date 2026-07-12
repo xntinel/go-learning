@@ -32,9 +32,8 @@ Verify: `go test -count=1 ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/time-series-bucketing-aggregator/cmd/demo
-cd ~/go-exercises/time-series-bucketing-aggregator
-go mod init example.com/time-series-bucketing-aggregator
+mkdir -p go-solutions/03-control-flow/09-range-over-integers-and-functions/31-time-series-bucketing-aggregator/cmd/demo
+cd go-solutions/03-control-flow/09-range-over-integers-and-functions/31-time-series-bucketing-aggregator
 go mod edit -go=1.24
 ```
 

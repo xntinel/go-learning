@@ -62,9 +62,8 @@ Knowing the tri-color model helps you:
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/tricolor/cmd/demo
-cd ~/go-exercises/tricolor
-go mod init example.com/tricolor
+mkdir -p go-solutions/35-runtime-garbage-collector/01-tri-color-mark-and-sweep/01-tri-color-mark-and-sweep/cmd/demo
+cd go-solutions/35-runtime-garbage-collector/01-tri-color-mark-and-sweep/01-tri-color-mark-and-sweep
 ```
 
 This is a library verified by `go test`, not a `main` program.

@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/retryclass/cmd/demo
-cd ~/go-exercises/retryclass
-go mod init example.com/retryclass
+mkdir -p go-solutions/08-interfaces/03-type-assertions-and-type-switches/02-retry-classifier-net-error/cmd/demo
+cd go-solutions/08-interfaces/03-type-assertions-and-type-switches/02-retry-classifier-net-error
 ```
 
 ### The classification order

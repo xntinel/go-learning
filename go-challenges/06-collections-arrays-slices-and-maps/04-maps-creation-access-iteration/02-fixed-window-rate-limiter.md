@@ -30,9 +30,8 @@ ratelimit/                 independent module: example.com/ratelimit
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ratelimit/cmd/demo
-cd ~/go-exercises/ratelimit
-go mod init example.com/ratelimit
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/02-fixed-window-rate-limiter/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/02-fixed-window-rate-limiter
 ```
 
 ### Why the zero value is the starting counter, and why the clock is injected

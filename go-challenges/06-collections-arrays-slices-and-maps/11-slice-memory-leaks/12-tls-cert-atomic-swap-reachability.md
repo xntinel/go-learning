@@ -55,9 +55,8 @@ certstore/                module example.com/certstore
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/certstore
-cd ~/go-exercises/certstore
-go mod init example.com/certstore
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/11-slice-memory-leaks/12-tls-cert-atomic-swap-reachability
+cd go-solutions/06-collections-arrays-slices-and-maps/11-slice-memory-leaks/12-tls-cert-atomic-swap-reachability
 go mod edit -go=1.24
 ```
 

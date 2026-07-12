@@ -31,8 +31,7 @@ rule-based-optimizer/
 Set up the module:
 
 ```bash
-mkdir -p rule-based-optimizer/cmd/demo && cd rule-based-optimizer
-go mod init example.com/rule-based-optimizer
+mkdir -p go-solutions/39-capstone-database-engine/06-query-planner/11-rule-based-optimizer/cmd/demo && cd go-solutions/39-capstone-database-engine/06-query-planner/11-rule-based-optimizer
 ```
 
 ### Why rewrite the logical plan, and why these two rules

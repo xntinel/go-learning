@@ -30,9 +30,8 @@ batchagg/                   independent module: example.com/batch-aggregator-con
 - Verify: `go test -count=1 -race ./...`.
 
 ```bash
-mkdir -p ~/go-exercises/batch-aggregator-continue-blocks-shutdown/cmd/demo
-cd ~/go-exercises/batch-aggregator-continue-blocks-shutdown
-go mod init example.com/batch-aggregator-continue-blocks-shutdown
+mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/18-batch-aggregator-continue-blocks-shutdown/cmd/demo
+cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/18-batch-aggregator-continue-blocks-shutdown
 ```
 
 ### Why continue is not a smaller version of return here

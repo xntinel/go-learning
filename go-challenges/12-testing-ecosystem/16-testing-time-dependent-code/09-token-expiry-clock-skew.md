@@ -28,9 +28,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/tokenvalidate/cmd/demo
-cd ~/go-exercises/tokenvalidate
-go mod init example.com/tokenvalidate
+mkdir -p go-solutions/12-testing-ecosystem/16-testing-time-dependent-code/09-token-expiry-clock-skew/cmd/demo
+cd go-solutions/12-testing-ecosystem/16-testing-time-dependent-code/09-token-expiry-clock-skew
 ```
 
 ### Why now is a parameter, and why leeway exists

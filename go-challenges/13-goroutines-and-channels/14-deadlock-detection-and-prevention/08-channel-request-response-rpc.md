@@ -29,9 +29,8 @@ actor/                     independent module: example.com/actor
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/actor/cmd/demo
-cd ~/go-exercises/actor
-go mod init example.com/actor
+mkdir -p go-solutions/13-goroutines-and-channels/14-deadlock-detection-and-prevention/08-channel-request-response-rpc/cmd/demo
+cd go-solutions/13-goroutines-and-channels/14-deadlock-detection-and-prevention/08-channel-request-response-rpc
 go mod edit -go=1.25
 ```
 

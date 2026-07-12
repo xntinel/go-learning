@@ -23,8 +23,7 @@ http_sink_test.go      size batching, key uniqueness, retry-key reuse, exhaustio
 Set up the module:
 
 ```bash
-mkdir -p http-sink-batching-idempotency/cmd/demo && cd http-sink-batching-idempotency
-go mod init example.com/http-sink-batching-idempotency
+mkdir -p go-solutions/43-capstone-stream-processing-engine/07-sink-connectors/03-http-sink-batching-idempotency/cmd/demo && cd go-solutions/43-capstone-stream-processing-engine/07-sink-connectors/03-http-sink-batching-idempotency
 go mod edit -go=1.26
 ```
 

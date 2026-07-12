@@ -28,9 +28,8 @@ versioned/                     module example.com/versioned
 Create the module:
 
 ```bash
-mkdir -p versioned/cmd/demo versioned/internal/circle
-cd versioned
-go mod init example.com/versioned
+mkdir -p go-solutions/01-environment-and-tooling/04-go-tool-commands/09-version-injection-and-reproducible-builds/cmd/demo go-solutions/01-environment-and-tooling/04-go-tool-commands/09-version-injection-and-reproducible-builds/internal/circle
+cd go-solutions/01-environment-and-tooling/04-go-tool-commands/09-version-injection-and-reproducible-builds
 ```
 
 ### Link-time configuration

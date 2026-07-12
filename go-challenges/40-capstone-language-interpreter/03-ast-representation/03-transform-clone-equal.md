@@ -25,8 +25,7 @@ transform_test.go    clone independence, position-blind Equal, multi-level fold
 Set up the module:
 
 ```bash
-mkdir -p transform-clone-equal/cmd/demo && cd transform-clone-equal
-go mod init example.com/transform-clone-equal
+mkdir -p go-solutions/40-capstone-language-interpreter/03-ast-representation/03-transform-clone-equal/cmd/demo && cd go-solutions/40-capstone-language-interpreter/03-ast-representation/03-transform-clone-equal
 ```
 
 ### Why deep clone, position-blind equality, and bottom-up transform

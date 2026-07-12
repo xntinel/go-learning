@@ -32,9 +32,8 @@ Verify: `go test -race ./...` offline against miniredis; `go test -tags integrat
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/rlwindow/cmd/demo
-cd ~/go-exercises/rlwindow
-go mod init example.com/rlwindow
+mkdir -p go-solutions/54-cloud-native-platform-and-orchestration/10-redis-rate-limiting/01-sliding-window-atomic-lua/cmd/demo
+cd go-solutions/54-cloud-native-platform-and-orchestration/10-redis-rate-limiting/01-sliding-window-atomic-lua
 go mod edit -go=1.26
 go get github.com/redis/go-redis/v9
 go get github.com/alicebob/miniredis/v2

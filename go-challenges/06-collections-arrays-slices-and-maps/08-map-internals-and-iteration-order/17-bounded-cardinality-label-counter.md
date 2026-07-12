@@ -54,9 +54,8 @@ labelcounter/              module example.com/labelcounter
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/labelcounter
-cd ~/go-exercises/labelcounter
-go mod init example.com/labelcounter
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/17-bounded-cardinality-label-counter
+cd go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/17-bounded-cardinality-label-counter
 go mod edit -go=1.24
 ```
 

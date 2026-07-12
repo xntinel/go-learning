@@ -30,9 +30,8 @@ bytesize/                 independent module: example.com/bytesize
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/bytesize/cmd/demo
-cd ~/go-exercises/bytesize
-go mod init example.com/bytesize
+mkdir -p go-solutions/12-testing-ecosystem/02-table-driven-tests/07-parser-with-error-cases/cmd/demo
+cd go-solutions/12-testing-ecosystem/02-table-driven-tests/07-parser-with-error-cases
 ```
 
 ### Why the table splits into success and failure, and why the guard

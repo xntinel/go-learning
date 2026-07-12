@@ -30,9 +30,8 @@ order/                      independent module: example.com/order
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/order/cmd/demo
-cd ~/go-exercises/order
-go mod init example.com/order
+mkdir -p go-solutions/07-structs-and-methods/12-designing-a-domain-model/08-order-state-machine-transitions/cmd/demo
+cd go-solutions/07-structs-and-methods/12-designing-a-domain-model/08-order-state-machine-transitions
 ```
 
 ### Lifecycle rules belong in a table, not in scattered conditionals

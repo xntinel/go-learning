@@ -30,9 +30,8 @@ retry/                          module: example.com/retry
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/retry/cmd/demo
-cd ~/go-exercises/retry
-go mod init example.com/retry
+mkdir -p go-solutions/02-variables-types-and-constants/09-blank-identifier-and-shadowing/08-retryable-error-assertion/cmd/demo
+cd go-solutions/02-variables-types-and-constants/09-blank-identifier-and-shadowing/08-retryable-error-assertion
 ```
 
 ### Why comma-ok, and why errors.As beats a bare assertion

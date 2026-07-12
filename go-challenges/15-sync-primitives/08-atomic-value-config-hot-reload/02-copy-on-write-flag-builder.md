@@ -30,9 +30,8 @@ cfgbuild/                  independent module: example.com/cfgbuild
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cfgbuild/cmd/demo
-cd ~/go-exercises/cfgbuild
-go mod init example.com/cfgbuild
+mkdir -p go-solutions/15-sync-primitives/08-atomic-value-config-hot-reload/02-copy-on-write-flag-builder/cmd/demo
+cd go-solutions/15-sync-primitives/08-atomic-value-config-hot-reload/02-copy-on-write-flag-builder
 ```
 
 ### Why the copy happens in the constructor, not at the call site

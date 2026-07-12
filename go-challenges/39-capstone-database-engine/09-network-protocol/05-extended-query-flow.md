@@ -22,8 +22,7 @@ proto_test.go        message round-trips over net.Pipe, the apply flow, and shor
 Set up the module:
 
 ```bash
-mkdir -p extended/cmd/demo && cd extended
-go mod init example.com/extended
+mkdir -p go-solutions/39-capstone-database-engine/09-network-protocol/05-extended-query-flow/cmd/demo && cd go-solutions/39-capstone-database-engine/09-network-protocol/05-extended-query-flow
 ```
 
 ### Why parsing is split from execution

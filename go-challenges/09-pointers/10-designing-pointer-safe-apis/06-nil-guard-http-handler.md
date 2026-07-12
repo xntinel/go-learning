@@ -30,9 +30,8 @@ handler/                    independent module: example.com/handler
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/handler/cmd/demo
-cd ~/go-exercises/handler
-go mod init example.com/handler
+mkdir -p go-solutions/09-pointers/10-designing-pointer-safe-apis/06-nil-guard-http-handler/cmd/demo
+cd go-solutions/09-pointers/10-designing-pointer-safe-apis/06-nil-guard-http-handler
 go mod edit -go=1.25
 ```
 

@@ -62,9 +62,8 @@ A single request's timing is a data point; a fleet's timing needs aggregates. P9
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/clienttrace/cmd/demo
-cd ~/go-exercises/clienttrace
-go mod init example.com/clienttrace
+mkdir -p go-solutions/33-tcp-udp-and-networking/12-http-client-instrumentation/12-http-client-instrumentation/cmd/demo
+cd go-solutions/33-tcp-udp-and-networking/12-http-client-instrumentation/12-http-client-instrumentation
 ```
 
 This is a library, not a program. Verification is with `go test`.

@@ -25,9 +25,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/donebridge/cmd/demo
-cd ~/go-exercises/donebridge
-go mod init example.com/donebridge
+mkdir -p go-solutions/13-goroutines-and-channels/07-done-channel-pattern/10-bridge-done-to-context/cmd/demo
+cd go-solutions/13-goroutines-and-channels/07-done-channel-pattern/10-bridge-done-to-context
 ```
 
 ### The two directions, and the stdlib's own bridge

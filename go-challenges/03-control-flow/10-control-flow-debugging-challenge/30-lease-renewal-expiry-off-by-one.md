@@ -37,9 +37,8 @@ lease/                       independent module: example.com/lease-renewal-expir
 - Verify: `go test -count=1 ./...`.
 
 ```bash
-mkdir -p ~/go-exercises/lease-renewal-expiry-off-by-one/cmd/demo
-cd ~/go-exercises/lease-renewal-expiry-off-by-one
-go mod init example.com/lease-renewal-expiry-off-by-one
+mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/30-lease-renewal-expiry-off-by-one/cmd/demo
+cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/30-lease-renewal-expiry-off-by-one
 ```
 
 ### Why "already past the deadline" is the wrong question to ask

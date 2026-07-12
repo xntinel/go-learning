@@ -51,10 +51,9 @@ Start goroutine -> register cleanup with t.Cleanup(cancel + wg.Wait) -> test bod
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/leakcheck/patterns
-mkdir -p ~/go-exercises/leakcheck/cmd/demo
-cd ~/go-exercises/leakcheck
-go mod init example.com/leakcheck
+mkdir -p go-solutions/32-concurrency-debugging-and-testing/02-goroutine-leak-detection-goleak/02-goroutine-leak-detection-goleak/patterns
+mkdir -p go-solutions/32-concurrency-debugging-and-testing/02-goroutine-leak-detection-goleak/02-goroutine-leak-detection-goleak/cmd/demo
+cd go-solutions/32-concurrency-debugging-and-testing/02-goroutine-leak-detection-goleak/02-goroutine-leak-detection-goleak
 ```
 
 ### Exercise 1: Goroutine Leak Checker

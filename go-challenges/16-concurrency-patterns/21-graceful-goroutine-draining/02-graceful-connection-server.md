@@ -26,8 +26,7 @@ gracefulsrv/
 Set up the module:
 
 ```bash
-mkdir -p gracefulsrv/cmd/demo && cd gracefulsrv
-go mod init example.com/gracefulsrv
+mkdir -p go-solutions/16-concurrency-patterns/21-graceful-goroutine-draining/02-graceful-connection-server/cmd/demo && cd go-solutions/16-concurrency-patterns/21-graceful-goroutine-draining/02-graceful-connection-server
 ```
 
 ## The protocol and the shape of the drain

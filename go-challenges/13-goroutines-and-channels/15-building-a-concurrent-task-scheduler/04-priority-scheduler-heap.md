@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/priority-scheduler/cmd/demo
-cd ~/go-exercises/priority-scheduler
-go mod init example.com/priority-scheduler
+mkdir -p go-solutions/13-goroutines-and-channels/15-building-a-concurrent-task-scheduler/04-priority-scheduler-heap/cmd/demo
+cd go-solutions/13-goroutines-and-channels/15-building-a-concurrent-task-scheduler/04-priority-scheduler-heap
 go mod edit -go=1.25
 ```
 

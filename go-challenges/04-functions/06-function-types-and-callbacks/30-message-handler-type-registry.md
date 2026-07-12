@@ -30,9 +30,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/message-handler-type-registry/cmd/demo
-cd ~/go-exercises/message-handler-type-registry
-go mod init example.com/message-handler-type-registry
+mkdir -p go-solutions/04-functions/06-function-types-and-callbacks/30-message-handler-type-registry/cmd/demo
+cd go-solutions/04-functions/06-function-types-and-callbacks/30-message-handler-type-registry
 go mod edit -go=1.24
 ```
 

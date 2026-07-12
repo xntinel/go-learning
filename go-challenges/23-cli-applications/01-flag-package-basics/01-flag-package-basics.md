@@ -25,9 +25,8 @@ The package accepts `-flag`, `--flag`, `-flag=value`, and `-flag value` for non-
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/flag-basics
-cd ~/go-exercises/flag-basics
-go mod init example.com/flagbasics
+mkdir -p go-solutions/23-cli-applications/01-flag-package-basics/01-flag-package-basics
+cd go-solutions/23-cli-applications/01-flag-package-basics/01-flag-package-basics
 go mod edit -go=1.26
 ```
 

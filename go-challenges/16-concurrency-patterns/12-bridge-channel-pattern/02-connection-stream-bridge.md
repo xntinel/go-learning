@@ -22,8 +22,7 @@ hub_test.go          ordered-block delivery, concurrent registration, done cance
 Set up the module:
 
 ```bash
-mkdir -p connbridge/cmd/demo && cd connbridge
-go mod init example.com/connbridge
+mkdir -p go-solutions/16-concurrency-patterns/12-bridge-channel-pattern/02-connection-stream-bridge/cmd/demo && cd go-solutions/16-concurrency-patterns/12-bridge-channel-pattern/02-connection-stream-bridge
 ```
 
 ### Why registration over a channel, and what the serialization buys

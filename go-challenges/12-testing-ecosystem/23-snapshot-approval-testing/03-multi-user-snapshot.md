@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/multisnap/cmd/demo
-cd ~/go-exercises/multisnap
-go mod init example.com/multisnap
+mkdir -p go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/03-multi-user-snapshot/cmd/demo
+cd go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/03-multi-user-snapshot
 ```
 
 ### Composition and ordering are part of the contract

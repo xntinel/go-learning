@@ -30,9 +30,8 @@ cappedbody/                 independent module: example.com/cappedbody
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/cappedbody/cmd/demo
-cd ~/go-exercises/cappedbody
-go mod init example.com/cappedbody
+mkdir -p go-solutions/08-interfaces/04-common-standard-library-interfaces/02-capped-body-reader/cmd/demo
+cd go-solutions/08-interfaces/04-common-standard-library-interfaces/02-capped-body-reader
 ```
 
 ### How MaxBytesReader actually works

@@ -32,9 +32,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/tenantrepo/cmd/demo
-cd ~/go-exercises/tenantrepo
-go mod init example.com/tenantrepo
+mkdir -p go-solutions/14-select-and-context/06-context-withvalue/06-tenant-scoped-repository/cmd/demo
+cd go-solutions/14-select-and-context/06-context-withvalue/06-tenant-scoped-repository
 ```
 
 ### Why tenant-in-context is defensible — but still a guard

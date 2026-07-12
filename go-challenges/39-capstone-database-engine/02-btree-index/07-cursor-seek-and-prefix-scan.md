@@ -23,8 +23,7 @@ cursor_test.go       seek + walk across leaves, seek past end, prefix-scan table
 Set up the module:
 
 ```bash
-mkdir -p cursor-seek-and-prefix-scan/cmd/demo && cd cursor-seek-and-prefix-scan
-go mod init example.com/cursor-seek-and-prefix-scan
+mkdir -p go-solutions/39-capstone-database-engine/02-btree-index/07-cursor-seek-and-prefix-scan/cmd/demo && cd go-solutions/39-capstone-database-engine/02-btree-index/07-cursor-seek-and-prefix-scan
 ```
 
 ### The baseline

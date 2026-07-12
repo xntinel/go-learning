@@ -29,9 +29,8 @@ order/                     independent module: example.com/order-state-machine
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/order/cmd/demo
-cd ~/go-exercises/order
-go mod init example.com/order-state-machine
+mkdir -p go-solutions/03-control-flow/03-switch-statements/06-order-state-machine/cmd/demo
+cd go-solutions/03-control-flow/03-switch-statements/06-order-state-machine
 go mod edit -go=1.24
 ```
 

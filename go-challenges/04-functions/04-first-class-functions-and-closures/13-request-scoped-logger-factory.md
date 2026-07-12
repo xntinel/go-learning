@@ -26,9 +26,8 @@ requestlog/                 independent module: example.com/request-scoped-logge
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/requestlog
-cd ~/go-exercises/requestlog
-go mod init example.com/request-scoped-logger
+mkdir -p go-solutions/04-functions/04-first-class-functions-and-closures/13-request-scoped-logger-factory
+cd go-solutions/04-functions/04-first-class-functions-and-closures/13-request-scoped-logger-factory
 go mod edit -go=1.24
 ```
 

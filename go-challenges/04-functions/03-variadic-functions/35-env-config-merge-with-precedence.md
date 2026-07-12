@@ -30,9 +30,8 @@ envmerge/                  independent module: example.com/envmerge
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/envmerge/cmd/demo
-cd ~/go-exercises/envmerge
-go mod init example.com/envmerge
+mkdir -p go-solutions/04-functions/03-variadic-functions/35-env-config-merge-with-precedence/cmd/demo
+cd go-solutions/04-functions/03-variadic-functions/35-env-config-merge-with-precedence
 go mod edit -go=1.24
 ```
 

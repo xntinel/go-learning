@@ -76,9 +76,8 @@ Key fields used in this lesson:
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/dnsdialer/cmd/demo
-cd ~/go-exercises/dnsdialer
-go mod init example.com/dnsdialer
+mkdir -p go-solutions/33-tcp-udp-and-networking/10-dns-resolver-and-custom-dialer/10-dns-resolver-and-custom-dialer/cmd/demo
+cd go-solutions/33-tcp-udp-and-networking/10-dns-resolver-and-custom-dialer/10-dns-resolver-and-custom-dialer
 ```
 
 ### Exercise 1: The Resolver Interface and OverrideMap

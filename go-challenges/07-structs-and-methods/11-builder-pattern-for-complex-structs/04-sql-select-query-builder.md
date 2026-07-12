@@ -29,9 +29,8 @@ sqlbuild/                   independent module: example.com/sqlbuild
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/sqlbuild/cmd/demo
-cd ~/go-exercises/sqlbuild
-go mod init example.com/sqlbuild
+mkdir -p go-solutions/07-structs-and-methods/11-builder-pattern-for-complex-structs/04-sql-select-query-builder/cmd/demo
+cd go-solutions/07-structs-and-methods/11-builder-pattern-for-complex-structs/04-sql-select-query-builder
 ```
 
 ### The security invariant, structurally

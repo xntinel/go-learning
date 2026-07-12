@@ -63,9 +63,8 @@ idindex/                 module example.com/idindex
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/idindex
-cd ~/go-exercises/idindex
-go mod init example.com/idindex
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/10-correlation-id-capacity-pinning
+cd go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/10-correlation-id-capacity-pinning
 go mod edit -go=1.24
 ```
 

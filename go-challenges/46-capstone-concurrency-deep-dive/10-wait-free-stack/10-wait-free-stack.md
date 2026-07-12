@@ -71,9 +71,8 @@ True wait-freedom requires that slow operations be completed by fast threads on 
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/wfstack/cmd/demo
-cd ~/go-exercises/wfstack
-go mod init example.com/wfstack
+mkdir -p go-solutions/46-capstone-concurrency-deep-dive/10-wait-free-stack/10-wait-free-stack/cmd/demo
+cd go-solutions/46-capstone-concurrency-deep-dive/10-wait-free-stack/10-wait-free-stack
 ```
 
 This is a library, not a program. Verification uses `go test`.

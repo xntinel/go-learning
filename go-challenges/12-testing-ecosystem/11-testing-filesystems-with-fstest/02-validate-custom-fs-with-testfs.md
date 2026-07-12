@@ -33,9 +33,8 @@ prefixfs/                    independent module: example.com/prefixfs
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/prefixfs/cmd/demo
-cd ~/go-exercises/prefixfs
-go mod init example.com/prefixfs
+mkdir -p go-solutions/12-testing-ecosystem/11-testing-filesystems-with-fstest/02-validate-custom-fs-with-testfs/cmd/demo
+cd go-solutions/12-testing-ecosystem/11-testing-filesystems-with-fstest/02-validate-custom-fs-with-testfs
 ```
 
 ### The contract is the hard part, not the Open

@@ -69,9 +69,8 @@ The outermost wrapper runs first; the innermost layer calls the base transport. 
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/transport/cmd/demo
-cd ~/go-exercises/transport
-go mod init example.com/transport
+mkdir -p go-solutions/33-tcp-udp-and-networking/15-custom-http-transport/15-custom-http-transport/cmd/demo
+cd go-solutions/33-tcp-udp-and-networking/15-custom-http-transport/15-custom-http-transport
 ```
 
 ### Exercise 1: Base Transport and Middleware Types

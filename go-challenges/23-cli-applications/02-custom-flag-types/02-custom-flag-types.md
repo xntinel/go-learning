@@ -25,9 +25,8 @@ Maps are useful for key-value flags, but iteration order is not stable. Sort key
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/custom-flags
-cd ~/go-exercises/custom-flags
-go mod init example.com/customflags
+mkdir -p go-solutions/23-cli-applications/02-custom-flag-types/02-custom-flag-types
+cd go-solutions/23-cli-applications/02-custom-flag-types/02-custom-flag-types
 go mod edit -go=1.26
 ```
 

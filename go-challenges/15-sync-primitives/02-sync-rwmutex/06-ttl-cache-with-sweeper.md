@@ -31,9 +31,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ttlcache/cmd/demo
-cd ~/go-exercises/ttlcache
-go mod init example.com/ttlcache
+mkdir -p go-solutions/15-sync-primitives/02-sync-rwmutex/06-ttl-cache-with-sweeper/cmd/demo
+cd go-solutions/15-sync-primitives/02-sync-rwmutex/06-ttl-cache-with-sweeper
 ```
 
 ### Why the read path must not delete

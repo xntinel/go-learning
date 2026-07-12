@@ -30,9 +30,8 @@ retry/                      independent module: example.com/retry
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/retry/cmd/demo
-cd ~/go-exercises/retry
-go mod init example.com/retry
+mkdir -p go-solutions/08-interfaces/10-dependency-injection-with-interfaces/07-injected-clock-retry-backoff/cmd/demo
+cd go-solutions/08-interfaces/10-dependency-injection-with-interfaces/07-injected-clock-retry-backoff
 ```
 
 ### Why the wait is a dependency

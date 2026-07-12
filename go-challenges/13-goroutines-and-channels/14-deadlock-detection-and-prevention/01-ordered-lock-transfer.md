@@ -29,9 +29,8 @@ transfer/                  independent module: example.com/transfer
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/transfer/cmd/demo
-cd ~/go-exercises/transfer
-go mod init example.com/transfer
+mkdir -p go-solutions/13-goroutines-and-channels/14-deadlock-detection-and-prevention/01-ordered-lock-transfer/cmd/demo
+cd go-solutions/13-goroutines-and-channels/14-deadlock-detection-and-prevention/01-ordered-lock-transfer
 go mod edit -go=1.25
 ```
 

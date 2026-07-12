@@ -29,9 +29,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/requestid/cmd/demo
-cd ~/go-exercises/requestid
-go mod init example.com/requestid
+mkdir -p go-solutions/14-select-and-context/06-context-withvalue/02-request-id-middleware/cmd/demo
+cd go-solutions/14-select-and-context/06-context-withvalue/02-request-id-middleware
 ```
 
 ### Why a middleware, an unexported key, and an injectable generator

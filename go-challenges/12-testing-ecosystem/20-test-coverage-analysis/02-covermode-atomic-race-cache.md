@@ -30,9 +30,8 @@ ttlcov/                    independent module: example.com/ttlcov
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/ttlcov/cmd/demo
-cd ~/go-exercises/ttlcov
-go mod init example.com/ttlcov
+mkdir -p go-solutions/12-testing-ecosystem/20-test-coverage-analysis/02-covermode-atomic-race-cache/cmd/demo
+cd go-solutions/12-testing-ecosystem/20-test-coverage-analysis/02-covermode-atomic-race-cache
 ```
 
 ### Why this cache needs atomic coverage

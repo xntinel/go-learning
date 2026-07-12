@@ -30,9 +30,8 @@ pollingrelay/                 independent module: example.com/pollingrelay
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/pollingrelay/cmd/demo
-cd ~/go-exercises/pollingrelay
-go mod init example.com/pollingrelay
+mkdir -p go-solutions/50-messaging-and-event-driven/06-transactional-outbox-pattern/02-polling-relay-publisher/cmd/demo
+cd go-solutions/50-messaging-and-event-driven/06-transactional-outbox-pattern/02-polling-relay-publisher
 go get modernc.org/sqlite
 ```
 

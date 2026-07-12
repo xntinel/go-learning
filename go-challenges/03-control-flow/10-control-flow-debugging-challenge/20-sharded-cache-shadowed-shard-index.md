@@ -32,9 +32,8 @@ shardcache/                 independent module: example.com/sharded-cache-shadow
 - Verify: `go test -count=1 ./...`.
 
 ```bash
-mkdir -p ~/go-exercises/sharded-cache-shadowed-shard-index/cmd/demo
-cd ~/go-exercises/sharded-cache-shadowed-shard-index
-go mod init example.com/sharded-cache-shadowed-shard-index
+mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/20-sharded-cache-shadowed-shard-index/cmd/demo
+cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/20-sharded-cache-shadowed-shard-index
 ```
 
 ### Why Get alone cannot catch this bug

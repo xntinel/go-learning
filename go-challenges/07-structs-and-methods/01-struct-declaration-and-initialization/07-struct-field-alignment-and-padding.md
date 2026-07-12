@@ -29,9 +29,8 @@ padding/                    independent module: example.com/padding
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/padding/cmd/demo
-cd ~/go-exercises/padding
-go mod init example.com/padding
+mkdir -p go-solutions/07-structs-and-methods/01-struct-declaration-and-initialization/07-struct-field-alignment-and-padding/cmd/demo
+cd go-solutions/07-structs-and-methods/01-struct-declaration-and-initialization/07-struct-field-alignment-and-padding
 go mod edit -go=1.24
 ```
 

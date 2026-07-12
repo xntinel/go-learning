@@ -33,9 +33,8 @@ wal/                           module example.com/wal
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/wal/cmd/demo
-cd ~/go-exercises/wal
-go mod init example.com/wal
+mkdir -p go-solutions/03-control-flow/02-for-loops/30-write-ahead-log-compaction-snapshot/cmd/demo
+cd go-solutions/03-control-flow/02-for-loops/30-write-ahead-log-compaction-snapshot
 go mod edit -go=1.24
 ```
 

@@ -22,8 +22,7 @@ partition_test.go    round-trip with keys, recovery, tail truncation, long-poll
 Set up the module:
 
 ```bash
-mkdir -p partition-log/cmd/demo && cd partition-log
-go mod init example.com/partition-log
+mkdir -p go-solutions/41-capstone-message-queue/08-full-message-queue/01-partition-log/cmd/demo && cd go-solutions/41-capstone-message-queue/08-full-message-queue/01-partition-log
 ```
 
 ### Why a fixed header, ReadAt, and a condition variable

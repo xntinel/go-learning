@@ -30,9 +30,8 @@ counter/                   independent module: example.com/counter
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/counter/cmd/demo
-cd ~/go-exercises/counter
-go mod init example.com/counter
+mkdir -p go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/07-concurrent-counter-map/cmd/demo
+cd go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/07-concurrent-counter-map
 ```
 
 ### The broken version, and why it is worse than a race warning

@@ -29,9 +29,8 @@ tieredconfig/               independent module: example.com/tiered-config-lookup
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/tieredconfig
-cd ~/go-exercises/tieredconfig
-go mod init example.com/tiered-config-lookup
+mkdir -p go-solutions/04-functions/01-function-declaration-and-multiple-return-values/15-tiered-config-lookup-value-found-source
+cd go-solutions/04-functions/01-function-declaration-and-multiple-return-values/15-tiered-config-lookup-value-found-source
 go mod edit -go=1.24
 ```
 

@@ -28,9 +28,8 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/loglevel/cmd/demo
-cd ~/go-exercises/loglevel
-go mod init example.com/loglevel
+mkdir -p go-solutions/02-variables-types-and-constants/10-type-inference-deep-dive/05-log-level-iota-enum/cmd/demo
+cd go-solutions/02-variables-types-and-constants/10-type-inference-deep-dive/05-log-level-iota-enum
 go mod edit -go=1.26
 ```
 

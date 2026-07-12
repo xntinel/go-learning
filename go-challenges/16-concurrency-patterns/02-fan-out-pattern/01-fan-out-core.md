@@ -22,8 +22,7 @@ fanout_test.go       set correctness, exactly-once delivery under -race, single-
 Set up the module:
 
 ```bash
-mkdir -p fan-out-core/cmd/demo && cd fan-out-core
-go mod init example.com/fan-out-core
+mkdir -p go-solutions/16-concurrency-patterns/02-fan-out-pattern/01-fan-out-core/cmd/demo && cd go-solutions/16-concurrency-patterns/02-fan-out-pattern/01-fan-out-core
 ```
 
 ### Why one inbound channel and one closer goroutine

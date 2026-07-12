@@ -27,9 +27,8 @@ report/                     independent module: example.com/report
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/report/report ~/go-exercises/report/cmd/demo
-cd ~/go-exercises/report
-go mod init example.com/report
+mkdir -p go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/03-defer-close-error-into-named-return/report go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/03-defer-close-error-into-named-return/cmd/demo
+cd go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/03-defer-close-error-into-named-return
 ```
 
 ### Why the buffered writer makes this trap so easy to fall into

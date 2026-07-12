@@ -29,9 +29,8 @@ emitter/                    independent module: example.com/emitter
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/emitter/cmd/demo
-cd ~/go-exercises/emitter
-go mod init example.com/emitter
+mkdir -p go-solutions/14-select-and-context/02-select-with-default/02-drop-when-full-telemetry-emitter/cmd/demo
+cd go-solutions/14-select-and-context/02-select-with-default/02-drop-when-full-telemetry-emitter
 go mod edit -go=1.26
 ```
 

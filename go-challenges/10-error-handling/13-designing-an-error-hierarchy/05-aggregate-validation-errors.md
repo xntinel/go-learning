@@ -27,9 +27,8 @@ aggregate-validation/              module example.com/aggregate-validation
 Set up the module:
 
 ```bash
-mkdir -p ~/go-exercises/aggregate-validation/cmd/demo
-cd ~/go-exercises/aggregate-validation
-go mod init example.com/aggregate-validation
+mkdir -p go-solutions/10-error-handling/13-designing-an-error-hierarchy/05-aggregate-validation-errors/cmd/demo
+cd go-solutions/10-error-handling/13-designing-an-error-hierarchy/05-aggregate-validation-errors
 ```
 
 ### Why errors.Join is the right tool here
