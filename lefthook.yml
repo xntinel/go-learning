@@ -3,3 +3,4 @@ pre-commit:
     progress:
       run: go run ./tools/progress
       stage_fixed: true
+      files: echo README.md

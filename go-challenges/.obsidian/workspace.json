@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04-functions/01-function-declaration-and-multiple-return-values/05-comma-ok-type-assertion-payload.md",
+                "file": "04-functions/01-function-declaration-and-multiple-return-values/06-constructor-returns-cleanup-func.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "05-comma-ok-type-assertion-payload"
+              "title": "06-constructor-returns-cleanup-func"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "04-functions/01-function-declaration-and-multiple-return-values/05-comma-ok-type-assertion-payload.md",
+                "file": "04-functions/01-function-declaration-and-multiple-return-values/06-constructor-returns-cleanup-func.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 05-comma-ok-type-assertion-payload"
+              "title": "Backlinks for 06-constructor-returns-cleanup-func"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "04-functions/01-function-declaration-and-multiple-return-values/05-comma-ok-type-assertion-payload.md",
+                "file": "04-functions/01-function-declaration-and-multiple-return-values/06-constructor-returns-cleanup-func.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 05-comma-ok-type-assertion-payload"
+              "title": "Outgoing links from 06-constructor-returns-cleanup-func"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04-functions/01-function-declaration-and-multiple-return-values/05-comma-ok-type-assertion-payload.md",
+                "file": "04-functions/01-function-declaration-and-multiple-return-values/06-constructor-returns-cleanup-func.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 05-comma-ok-type-assertion-payload"
+              "title": "Outline of 06-constructor-returns-cleanup-func"
             }
           }
         ]
@@ -185,6 +185,7 @@
   },
   "active": "0c7dc44833088d1b",
   "lastOpenFiles": [
+    "04-functions/01-function-declaration-and-multiple-return-values/05-comma-ok-type-assertion-payload.md",
     "04-functions/01-function-declaration-and-multiple-return-values/04-repository-notfound-vs-failure.md",
     "04-functions/01-function-declaration-and-multiple-return-values/02-value-ok-lookup-and-embedding.md",
     "04-functions/01-function-declaration-and-multiple-return-values/01-typed-accessors-value-error.md",
