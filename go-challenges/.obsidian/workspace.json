@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/01-log-window-pagination.md",
+                "file": "06-collections-arrays-slices-and-maps/09-slices-package/05-reconcile-drift-equal-compare.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01-log-window-pagination"
+              "title": "05-reconcile-drift-equal-compare"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/01-log-window-pagination.md",
+                "file": "06-collections-arrays-slices-and-maps/09-slices-package/05-reconcile-drift-equal-compare.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 01-log-window-pagination"
+              "title": "Backlinks for 05-reconcile-drift-equal-compare"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/01-log-window-pagination.md",
+                "file": "06-collections-arrays-slices-and-maps/09-slices-package/05-reconcile-drift-equal-compare.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 01-log-window-pagination"
+              "title": "Outgoing links from 05-reconcile-drift-equal-compare"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/01-log-window-pagination.md",
+                "file": "06-collections-arrays-slices-and-maps/09-slices-package/05-reconcile-drift-equal-compare.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 01-log-window-pagination"
+              "title": "Outline of 05-reconcile-drift-equal-compare"
             }
           }
         ]
@@ -185,31 +185,31 @@
   },
   "active": "0c7dc44833088d1b",
   "lastOpenFiles": [
+    "06-collections-arrays-slices-and-maps/09-slices-package/04-sorted-index-insert-binarysearchfunc.md",
+    "06-collections-arrays-slices-and-maps/09-slices-package/03-evict-expired-in-place-deletefunc.md",
+    "06-collections-arrays-slices-and-maps/09-slices-package/02-dedup-sorted-stream-compact-tail.md",
+    "06-collections-arrays-slices-and-maps/09-slices-package/01-normalize-pipeline-stage.md",
+    "06-collections-arrays-slices-and-maps/09-slices-package/00-concepts.md",
+    "06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/19-dependency-dag-cycle-detection.md",
+    "06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/20-approximate-lru-random-sampling.md",
+    "06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/03-set-membership-allowlist.md",
+    "06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/02-fixed-window-rate-limiter.md",
+    "06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/01-ttl-cache.md",
+    "06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/14-multipart-boundary-zero-copy-views.md",
+    "06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/15-rabin-rolling-window-chunking.md",
+    "06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/16-rotate-segments-three-reversals.md",
+    "06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/17-ring-wraparound-two-subslices-writev.md",
+    "06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/18-three-index-plugin-api-guard.md",
+    "06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/19-ndjson-splitter-no-alloc-window.md",
+    "06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/11-fixed-layout-record-offsets.md",
+    "06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/10-cursor-pagination-bounds-clamp.md",
+    "06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/09-ordered-schedule-insert-delete.md",
+    "06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/08-repository-page-defensive-copy.md",
+    "06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/07-subslice-memory-leak-truncation.md",
+    "06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/06-csv-line-field-slicing.md",
+    "06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/01-log-window-pagination.md",
     "06-collections-arrays-slices-and-maps/02-slices-creation-append-capacity/09-defensive-copy-of-pooled-read-buffer.md",
     "06-collections-arrays-slices-and-maps/02-slices-creation-append-capacity/01-ring-buffer-fixed-capacity.md",
-    "06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/06-gcm-nonce-and-tag-verify.md",
-    "06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/05-in-place-xor-whitening-pointer.md",
-    "06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/18-dns-header-12-byte-codec.md",
-    "06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/19-bitset-array-value-copy-trap.md",
-    "05-strings-runes-and-unicode/02-byte-slices-vs-strings/07-constant-time-token-compare.md",
-    "05-strings-runes-and-unicode/02-byte-slices-vs-strings/01-csv-writer-byte-buffer.md",
-    "05-strings-runes-and-unicode/02-byte-slices-vs-strings/00-concepts.md",
-    "05-strings-runes-and-unicode/01-string-basics/05-substring-retention.md",
-    "05-strings-runes-and-unicode/01-string-basics/09-prefix-router.md",
-    "05-strings-runes-and-unicode/01-string-basics/02-header-and-cut.md",
-    "05-strings-runes-and-unicode/01-string-basics/01-log-line-parser.md",
-    "04-functions/01-function-declaration-and-multiple-return-values/06-constructor-returns-cleanup-func.md",
-    "04-functions/01-function-declaration-and-multiple-return-values/05-comma-ok-type-assertion-payload.md",
-    "04-functions/01-function-declaration-and-multiple-return-values/04-repository-notfound-vs-failure.md",
-    "04-functions/01-function-declaration-and-multiple-return-values/02-value-ok-lookup-and-embedding.md",
-    "04-functions/01-function-declaration-and-multiple-return-values/01-typed-accessors-value-error.md",
-    "04-functions/01-function-declaration-and-multiple-return-values/00-concepts.md",
-    "03-control-flow/01-if-else-and-init-statements/07-optimistic-lock-update.md",
-    "03-control-flow/01-if-else-and-init-statements/06-idempotency-guard.md",
-    "03-control-flow/01-if-else-and-init-statements/05-retry-classifier.md",
-    "03-control-flow/01-if-else-and-init-statements/04-cache-comma-ok-ttl.md",
-    "03-control-flow/01-if-else-and-init-statements/03-env-config-loader.md",
-    "03-control-flow/01-if-else-and-init-statements/02-guard-middleware-status-mapping.md",
-    "03-control-flow/01-if-else-and-init-statements/01-request-guard-check.md"
+    "06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/06-gcm-nonce-and-tag-verify.md"
   ]
 }
