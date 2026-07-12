@@ -1,7 +1,7 @@
 # go-learning
 
 <!-- PROGRESS:START -->
-**Progress: 7 / 3586 exercises solved (0.2%)**
+**Progress: 8 / 3586 exercises solved (0.2%)**
 
 ### Solved exercises
 
@@ -18,6 +18,7 @@
 └── Functions
     └── Function Declaration And Multiple Return Values
         ├── Repository Notfound Vs Failure
-        └── Comma Ok Type Assertion Payload
+        ├── Comma Ok Type Assertion Payload
+        └── Constructor Returns Cleanup Func
 ```
 <!-- PROGRESS:END -->
