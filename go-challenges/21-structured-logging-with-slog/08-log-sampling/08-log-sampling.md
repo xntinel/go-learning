@@ -18,13 +18,6 @@ A deterministic counter sampler is easy to test: log every Nth record and attach
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/21-structured-logging-with-slog/08-log-sampling/08-log-sampling
-cd go-solutions/21-structured-logging-with-slog/08-log-sampling/08-log-sampling
-```
-
 Edit `go.mod`:
 
 ```go

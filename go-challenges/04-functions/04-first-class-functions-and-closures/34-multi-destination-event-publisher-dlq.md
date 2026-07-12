@@ -30,8 +30,6 @@ multi-destination-publisher/ independent module: example.com/multi-destination-p
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/04-first-class-functions-and-closures/34-multi-destination-event-publisher-dlq/cmd/demo
-cd go-solutions/04-functions/04-first-class-functions-and-closures/34-multi-destination-event-publisher-dlq
 go mod edit -go=1.24
 ```
 

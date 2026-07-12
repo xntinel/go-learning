@@ -47,13 +47,6 @@ A breaker adds latency on the happy path (a mutex acquire per call). It also int
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/30-production-patterns/09-circuit-breaker-half-open/09-circuit-breaker-half-open/cmd/demo
-cd go-solutions/30-production-patterns/09-circuit-breaker-half-open/09-circuit-breaker-half-open
-```
-
 This is a library, not a program: there is no top-level `main`. Verify with `go test`.
 
 ### Exercise 1: Define the State Type and Sentinel Error

@@ -26,13 +26,6 @@ money/                         independent module: example.com/money
 - Test: `Add`/`Sub` leave the original unchanged; currency mismatch errors; `Money` works as a map key; the property `a.Add(b).Sub(b) == a`.
 - Verify: `gofmt -l .`, `go vet ./...`, `go test -count=1 -race ./...`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/07-method-sets-and-addressability/06-immutable-money-value-receivers/cmd/demo
-cd go-solutions/07-structs-and-methods/07-method-sets-and-addressability/06-immutable-money-value-receivers
-```
-
 ### Why value receivers are correct here
 
 `Money` holds two small fields: an `int64` amount in minor units (cents) and a

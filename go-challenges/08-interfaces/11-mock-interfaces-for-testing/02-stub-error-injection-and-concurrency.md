@@ -25,13 +25,6 @@ stubcounter/                 independent module: example.com/stubcounter
 - Test: a stub whose `Save` returns a configured error once (assert `err != nil` and `Value()==1`); a mutex-guarded spy under 100 concurrent `Inc` goroutines (assert `Value()==100` and `len(Calls())==100`).
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/11-mock-interfaces-for-testing/02-stub-error-injection-and-concurrency/cmd/demo
-cd go-solutions/08-interfaces/11-mock-interfaces-for-testing/02-stub-error-injection-and-concurrency
-```
-
 ### The error-propagation contract, and why state still advances
 
 `Inc` computes the new total with `c.value.Add(1)` and *then* calls

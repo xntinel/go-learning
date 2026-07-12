@@ -18,13 +18,6 @@ Generics do not make maps safe for concurrent access. The in-memory implementati
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/20-generics/10-generic-repository-pattern/10-generic-repository-pattern/cmd/demo
-cd go-solutions/20-generics/10-generic-repository-pattern/10-generic-repository-pattern
-```
-
 ### Exercise 1: Build The Repository
 
 Create `repository.go`:

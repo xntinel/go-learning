@@ -18,13 +18,6 @@ C APIs often use return codes or sentinel values. A wrapper should translate tho
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/28-unsafe-and-cgo/04-cgo-basics/04-cgo-basics
-cd go-solutions/28-unsafe-and-cgo/04-cgo-basics/04-cgo-basics
-```
-
 ### Exercise 1: Wrap C Functions
 
 Create `calc.go`:

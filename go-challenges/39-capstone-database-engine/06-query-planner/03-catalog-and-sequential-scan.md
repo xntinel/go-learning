@@ -22,12 +22,6 @@ scan_test.go    sequential scan, index point lookup, missing-table error
 - Test: a full sequential scan yields every row, an index lookup returns the single matching row, and an unknown table reports `ErrTableNotFound`.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/06-query-planner/03-catalog-and-sequential-scan/cmd/demo && cd go-solutions/39-capstone-database-engine/06-query-planner/03-catalog-and-sequential-scan
-```
-
 ### The value type and the operator protocol
 
 Before any operator exists there has to be something to carry through it. A `Value` is a nullable SQL scalar: it tags its own runtime kind (int, float, string, bool, or NULL) so that three-valued logic and ordering can be decided per value rather than per column. `CompareValues` defines a total order in which NULL sorts before every concrete value; sort and merge-join lean on that determinism even though SQL leaves NULL ordering implementation-defined.

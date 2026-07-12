@@ -27,13 +27,6 @@ Implement: a `Tracker` mapping node id -> last-seen `time.Time`; `Seen(id, now)`
 Test: a never-seen node is `NeverSeen` via `IsZero`, not treated as infinitely stale; a node just past `ttl` is `Stale`; exactly at `ttl` is `Stale`; all times injected — no `time.Now()` in tests.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/02-zero-values-and-default-initialization/05-last-seen-time-iszero/cmd/demo
-cd go-solutions/02-variables-types-and-constants/02-zero-values-and-default-initialization/05-last-seen-time-iszero
-```
-
 ## Why IsZero, and why the clock is injected
 
 Reading a missing key from the `map[string]time.Time` returns the zero

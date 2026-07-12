@@ -38,8 +38,6 @@ quota/                      independent module: example.com/hierarchical-quota-c
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/05-range-over-collections/35-hierarchical-quota-cascading-enforcement/cmd/demo
-cd go-solutions/03-control-flow/05-range-over-collections/35-hierarchical-quota-cascading-enforcement
 go mod edit -go=1.24
 ```
 

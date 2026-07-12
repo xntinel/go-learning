@@ -22,7 +22,6 @@ headers_test.go      standard set, Connection nomination, multi-line Connection,
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/42-capstone-service-mesh-data-plane/02-l7-http-proxy/02-header-rewriting/cmd/demo && cd go-solutions/42-capstone-service-mesh-data-plane/02-l7-http-proxy/02-header-rewriting
 go mod edit -go=1.26
 ```
 

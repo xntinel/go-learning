@@ -29,8 +29,6 @@ limiter/                    independent module: example.com/limiter
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/14-select-and-context/02-select-with-default/04-token-bucket-allow-limiter/cmd/demo
-cd go-solutions/14-select-and-context/02-select-with-default/04-token-bucket-allow-limiter
 go mod edit -go=1.26
 ```
 

@@ -28,13 +28,6 @@ shows the pooled path allocates fewer buffers than the naive one; a `-race`
 concurrent test; a test proving a buffer is Reset before reuse.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/03-new-vs-composite-literal/08-sync-pool-buffer-reuse/cmd/demo
-cd go-solutions/09-pointers/03-new-vs-composite-literal/08-sync-pool-buffer-reuse
-```
-
 ### Why pool, and why Reset
 
 Encoding a value to JSON needs a scratch buffer. The naive version allocates one

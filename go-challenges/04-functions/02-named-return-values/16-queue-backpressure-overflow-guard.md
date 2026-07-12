@@ -29,8 +29,6 @@ jobqueue/                    independent module: example.com/jobqueue
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/02-named-return-values/16-queue-backpressure-overflow-guard/cmd/demo
-cd go-solutions/04-functions/02-named-return-values/16-queue-backpressure-overflow-guard
 go mod edit -go=1.24
 ```
 

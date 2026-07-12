@@ -26,13 +26,6 @@ ratelimit/                   independent module: example.com/ratelimit
 - Test: N allowed calls return nil then the next returns `errors.Is(err, ErrRateLimited)`; a refill after a simulated clock advance restores capacity; a contract test asserting the only non-nil error `Allow` ever returns is `ErrRateLimited`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/01-error-interface-and-basic-patterns/09-error-as-api-contract/cmd/demo
-cd go-solutions/10-error-handling/01-error-interface-and-basic-patterns/09-error-as-api-contract
-```
-
 ### The returned error set is a versioned promise
 
 `Allow` has a tiny surface — it returns `nil` or `ErrRateLimited` — and that

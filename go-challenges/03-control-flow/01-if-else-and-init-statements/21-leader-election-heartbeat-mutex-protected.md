@@ -32,8 +32,6 @@ leaderlease/                independent module: example.com/leader-election-hear
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/01-if-else-and-init-statements/21-leader-election-heartbeat-mutex-protected/cmd/demo
-cd go-solutions/03-control-flow/01-if-else-and-init-statements/21-leader-election-heartbeat-mutex-protected
 go mod edit -go=1.24
 ```
 

@@ -27,8 +27,6 @@ userstore/                  independent module: example.com/userstore
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/09-pointers/06-pointer-receivers-and-interfaces/06-repository-port-interface/cmd/demo
-cd go-solutions/09-pointers/06-pointer-receivers-and-interfaces/06-repository-port-interface
 go mod edit -go=1.25
 ```
 

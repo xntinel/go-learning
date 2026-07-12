@@ -18,13 +18,6 @@ A default fills an omitted optional field. A required field must be present. Mix
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/19-io-and-filesystem/10-toml-config-files/10-toml-config-files/cmd/demo
-cd go-solutions/19-io-and-filesystem/10-toml-config-files/10-toml-config-files
-```
-
 ### Exercise 1: Implement A Config Loader
 
 Create `config.go`:

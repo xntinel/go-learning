@@ -26,13 +26,6 @@ loglevel/                   independent module: example.com/loglevel
 - Test: `UnmarshalText` parses each level name case-insensitively and errors on unknown; `MarshalText` emits the canonical name; a struct with a `LogLevel` field decodes from JSON via the text hook with no `UnmarshalJSON`; it satisfies `flag.Value`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/04-common-standard-library-interfaces/07-text-marshaler-config/cmd/demo
-cd go-solutions/08-interfaces/04-common-standard-library-interfaces/07-text-marshaler-config
-```
-
 ### One text hook, four decoders
 
 The reason `MarshalText`/`UnmarshalText` is higher-leverage than `MarshalJSON` is

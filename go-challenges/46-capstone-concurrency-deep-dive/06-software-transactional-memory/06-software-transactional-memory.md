@@ -76,13 +76,6 @@ _ = stm.Atomically(func(tx *stm.Tx) error {
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/46-capstone-concurrency-deep-dive/06-software-transactional-memory/06-software-transactional-memory/cmd/demo
-cd go-solutions/46-capstone-concurrency-deep-dive/06-software-transactional-memory/06-software-transactional-memory
-```
-
 This is a library; there is no `main`. Verification is `go test`.
 
 ### Exercise 1: TVar and the Transaction Context

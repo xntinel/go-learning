@@ -29,8 +29,6 @@ webhookbatch/                independent module: example.com/webhookbatch
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/16-webhook-batch-async-timeout-defer-accumulation/cmd/demo
-cd go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/16-webhook-batch-async-timeout-defer-accumulation
 go mod edit -go=1.24
 ```
 

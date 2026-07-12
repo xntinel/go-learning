@@ -65,13 +65,6 @@ For production services:
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/35-runtime-garbage-collector/05-observing-gc-godebug/05-observing-gc-godebug/cmd/demo
-cd go-solutions/35-runtime-garbage-collector/05-observing-gc-godebug/05-observing-gc-godebug
-```
-
 ### Exercise 1: GC Monitor Using MemStats
 
 Create `monitor.go`:

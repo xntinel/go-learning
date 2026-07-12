@@ -53,13 +53,6 @@ In MPSC `Poll`, the spin on `slot.committed.Load()` returning `true` establishes
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/46-capstone-concurrency-deep-dive/12-ring-buffer-lock-free/12-ring-buffer-lock-free/cmd/demo
-cd go-solutions/46-capstone-concurrency-deep-dive/12-ring-buffer-lock-free/12-ring-buffer-lock-free
-```
-
 ### Exercise 1: The paddedUint64 Helper, SPSC Type, and Batch Operations
 
 Create `ringbuf.go`. This is a library, not a program: verify it with `go test`, not `go run`.

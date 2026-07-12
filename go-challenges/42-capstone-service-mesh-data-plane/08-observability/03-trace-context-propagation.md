@@ -19,12 +19,6 @@ tracing_test.go      header round-trip, malformed-header rejection, hop trace-id
 - Test: assert the propagated outbound header preserves the trace id, replaces the span id, and rejects every malformed `traceparent`.
 - Verify: `go test -race -count=1 ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/42-capstone-service-mesh-data-plane/08-observability/03-trace-context-propagation/cmd/demo && cd go-solutions/42-capstone-service-mesh-data-plane/08-observability/03-trace-context-propagation
-```
-
 ### The traceparent wire format and why each field is validated
 
 W3C Trace Context defines one header, `traceparent`, with four hyphen-separated fields: `version-traceid-spanid-traceflags`. A live example is `00-4bf92f3577b34da6a3ce929d0e0e4736-00f067aa0ba902b7-01`. The version is `00` (the only version this code emits); the trace id is 16 bytes rendered as 32 lowercase hex chars and is shared by every hop of one logical request; the parent/span id is 8 bytes as 16 hex chars and is unique to the hop that wrote the header; the trace flags are one byte (2 hex chars) whose low bit is the sampled flag. The spec forbids an all-zero trace id or span id, because all-zero is the sentinel for "no id."

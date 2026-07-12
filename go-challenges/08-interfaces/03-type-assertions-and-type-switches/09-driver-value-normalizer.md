@@ -26,13 +26,6 @@ Implement: `Cell`, `NormalizeCell(driver.Value) (Cell, error)` and `NormalizeRow
 Test: a row with one of each `driver.Value` type plus `nil`; an out-of-set type (`int`) hitting the typed-error default; the `Valuer` round-tripping a domain type to an allowed value.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/03-type-assertions-and-type-switches/09-driver-value-normalizer/cmd/demo
-cd go-solutions/08-interfaces/03-type-assertions-and-type-switches/09-driver-value-normalizer
-```
-
 ### The closed set, both directions
 
 `database/sql/driver.Value` is documented as `any` restricted to exactly seven

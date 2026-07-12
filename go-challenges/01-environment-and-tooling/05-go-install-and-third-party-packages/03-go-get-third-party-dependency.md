@@ -30,8 +30,6 @@ Verify: `go mod tidy && go build ./... && go test -count=1 ./...`
 Set up the module and add the dependency:
 
 ```bash
-mkdir -p go-solutions/01-environment-and-tooling/05-go-install-and-third-party-packages/03-go-get-third-party-dependency/internal/hello go-solutions/01-environment-and-tooling/05-go-install-and-third-party-packages/03-go-get-third-party-dependency/cmd/demo
-cd go-solutions/01-environment-and-tooling/05-go-install-and-third-party-packages/03-go-get-third-party-dependency
 go get golang.org/x/text@latest
 ```
 

@@ -27,13 +27,6 @@ Implement: an `Order` with an `Items []Item` field, a `Repo` over `map[string]*O
 Test: mutating a `GetAliased` result changes the store (documents the bug); mutating a `Get` result — including its `Items` elements — does NOT change the store; run under `-race`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/05-pointers-to-structs/03-repository-defensive-copy-vs-aliasing/cmd/demo
-cd go-solutions/09-pointers/05-pointers-to-structs/03-repository-defensive-copy-vs-aliasing
-```
-
 ### Aliasing, and why a shallow copy is not enough
 
 A repository that stores `map[string]*Order` and returns the stored pointer is

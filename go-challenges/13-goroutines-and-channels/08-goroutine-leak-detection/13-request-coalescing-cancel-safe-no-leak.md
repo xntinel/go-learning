@@ -32,8 +32,6 @@ coalesce/                    independent module: example.com/coalesce
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/13-goroutines-and-channels/08-goroutine-leak-detection/13-request-coalescing-cancel-safe-no-leak/cmd/demo
-cd go-solutions/13-goroutines-and-channels/08-goroutine-leak-detection/13-request-coalescing-cancel-safe-no-leak
 go get go.uber.org/goleak
 go mod tidy
 ```

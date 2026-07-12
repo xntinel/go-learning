@@ -26,13 +26,6 @@ ptrtype/                   independent module: example.com/ptrtype
 - Test: `reflect.TypeOf(p).Kind() == reflect.Pointer`; `reflect.TypeOf(p).Elem() == reflect.TypeOf(Service{})`; a `*Service` type is not the `Service` type.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/01-pointer-basics/02-distinct-pointer-type-contract/cmd/demo
-cd go-solutions/09-pointers/01-pointer-basics/02-distinct-pointer-type-contract
-```
-
 ### Why reflect proves what the compiler already knows
 
 The compiler enforces the type distinction at build time — you simply cannot write

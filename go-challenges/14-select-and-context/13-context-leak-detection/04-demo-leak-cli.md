@@ -27,14 +27,6 @@ Implement: `goodCode` (defer cancel), `leakyCode` (returns the cancel instead of
 Test: `run` reports `TotalCreated == 2`, exactly one leak whose `FuncName` contains `leakyCode`, and `ActiveContexts == 0` after the returned cancel is called.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/13-context-leak-detection/04-demo-leak-cli/internal/leakdetect
-mkdir -p go-solutions/14-select-and-context/13-context-leak-detection/04-demo-leak-cli/cmd/demo
-cd go-solutions/14-select-and-context/13-context-leak-detection/04-demo-leak-cli
-```
-
 ### Why the logic lives in run(), not main()
 
 `main()` is unreachable from a test: it takes no arguments, returns nothing, and

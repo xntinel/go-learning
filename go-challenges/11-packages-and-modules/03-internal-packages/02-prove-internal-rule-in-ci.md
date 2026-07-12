@@ -25,13 +25,6 @@ archguard/                    module example.com/archguard
 - Test: assert `go build` of the illegal importer returns a non-nil error whose output contains `use of internal package`, and that the legal importer builds clean; skip if no `go` binary is on `PATH`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/11-packages-and-modules/03-internal-packages/02-prove-internal-rule-in-ci/cmd/demo
-cd go-solutions/11-packages-and-modules/03-internal-packages/02-prove-internal-rule-in-ci
-```
-
 ### Why shell out to the toolchain
 
 You cannot assert the `internal` violation by compiling the fixture into your own

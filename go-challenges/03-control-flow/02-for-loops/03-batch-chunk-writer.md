@@ -25,13 +25,6 @@ batch/                       module example.com/batch
 - Test: exact multiples, non-multiples, empty input (zero flushes), size larger than len (one chunk), `size <= 0` rejected with a sentinel, batches reconstruct the input, flush called ceil(n/size) times, a flush error surfaced.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/02-for-loops/03-batch-chunk-writer/cmd/demo
-cd go-solutions/03-control-flow/02-for-loops/03-batch-chunk-writer
-```
-
 ### Why the final chunk is the whole problem
 
 The loop is `for i := 0; i < len(records); i += size`. The index does not advance

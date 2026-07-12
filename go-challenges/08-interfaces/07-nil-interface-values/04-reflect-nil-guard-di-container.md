@@ -23,13 +23,6 @@ diregistry/                independent module: example.com/diregistry
 - Test: a table over nil interface, typed-nil pointer, live pointer, nil/live map, nil slice, nil func, and non-nilable kinds (int, struct) — `isNilValue` returns the right answer and never panics.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/07-nil-interface-values/04-reflect-nil-guard-di-container/cmd/demo
-cd go-solutions/08-interfaces/07-nil-interface-values/04-reflect-nil-guard-di-container
-```
-
 ### Why a plain nil check is not enough
 
 `Register(name string, dep any)` accepts `any`, so the dependency is already

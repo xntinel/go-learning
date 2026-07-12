@@ -31,8 +31,6 @@ outbox/                     independent module: example.com/outbox
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/06-labels-break-continue-goto/17-outbox-event-batcher/cmd/demo
-cd go-solutions/03-control-flow/06-labels-break-continue-goto/17-outbox-event-batcher
 go mod edit -go=1.24
 ```
 

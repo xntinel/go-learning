@@ -25,13 +25,6 @@ greeter/                    independent module: example.com/greeter
 - Test: table-driven parallel cases over success and `ErrEmptyName`, a Unicode trim case, and a `recover`-based panic test for `MustGreeting`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/02-go-modules-and-dependencies/01-library-module-and-contract-tests/cmd/demo
-cd go-solutions/01-environment-and-tooling/02-go-modules-and-dependencies/01-library-module-and-contract-tests
-```
-
 `go mod init` writes a two-line `go.mod`: the module path and the `go` directive.
 That path is the root of every import inside the module — `cmd/demo` will import
 the library as `example.com/greeter`, not by a relative path. Go has no relative

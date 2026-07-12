@@ -21,12 +21,6 @@ wire_test.go         an end-to-end round-trip assertion plus the CommandTag tabl
 - Test: `wire_test.go` runs a client and server over `net.Pipe`, sends a `SELECT`, and asserts the three rows and the `CommandComplete` tag come back in order, terminated by `ReadyForQuery`.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/09-network-protocol/04-client-server-round-trip/cmd/demo && cd go-solutions/39-capstone-database-engine/09-network-protocol/04-client-server-round-trip
-```
-
 ### The simple-query conversation, end to end
 
 The simple-query protocol is one round trip and a fixed message order, and this exercise exists to make that order concrete. The client opens with a typeless startup message; the server replies with the handshake sequence (`AuthenticationOk`, `ParameterStatus*`, `BackendKeyData`, `ReadyForQuery`) and then waits. Crucially, the client does nothing until it sees that first `ReadyForQuery` — it is the synchronization point. Only then does the client send a `Query` (type `'Q'`) carrying a null-terminated SQL string. The server answers with one result sequence — `RowDescription`, then a `DataRow` per row, then `CommandComplete`, then `ReadyForQuery` again — and returns to the ready state.

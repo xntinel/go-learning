@@ -42,7 +42,6 @@ editing `platform` and want the services to see your edits immediately. A
 workspace solves exactly that. From the repo root:
 
 ```bash
-cd go-solutions/11-packages-and-modules/10-monorepo-module-strategy/05-convert-to-workspace
 go work init ./platform ./api ./worker
 ```
 
@@ -77,8 +76,6 @@ module's helpers assert:
 Set up the `platform` module (the one this exercise builds and gates):
 
 ```bash
-mkdir -p go-solutions/11-packages-and-modules/10-monorepo-module-strategy/05-convert-to-workspace/platform/cmd/demo
-cd go-solutions/11-packages-and-modules/10-monorepo-module-strategy/05-convert-to-workspace/platform
 ```
 
 Create `platform.go`:

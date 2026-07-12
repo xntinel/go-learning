@@ -26,13 +26,6 @@ Implement: a `Pool` over `sync.Pool` for `*bytes.Buffer` with `New`, `Get` (retu
 Test: `Get` returns a non-nil usable buffer; a `Get` after `Put` is clean (len 0); counters increment; run under `-race`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/05-sync-pool/01-typed-buffer-pool/buffers go-solutions/15-sync-primitives/05-sync-pool/01-typed-buffer-pool/cmd/demo
-cd go-solutions/15-sync-primitives/05-sync-pool/01-typed-buffer-pool
-```
-
 ### Why wrap the pool at all
 
 A bare `sync.Pool` has two ergonomic problems on a hot path. First, every call

@@ -28,13 +28,6 @@ Implement: `RenderNotification(kind string, data map[string]any) (string, error)
 Test: a `forbidUpdateInCI` guard (sentinel `ErrUpdateInCI`), a `findOrphans` walk of `testdata/` diffed against the case set with `maps`/`slices` helpers, and the per-case goldens themselves.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/19-golden-file-testing/09-ci-update-guard-and-stale-goldens/cmd/demo go-solutions/12-testing-ecosystem/19-golden-file-testing/09-ci-update-guard-and-stale-goldens/testdata
-cd go-solutions/12-testing-ecosystem/19-golden-file-testing/09-ci-update-guard-and-stale-goldens
-```
-
 ### Two guards that make the suite self-policing
 
 A golden suite has two long-term failure modes that no single test catches, and

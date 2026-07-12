@@ -18,13 +18,6 @@ Build a small streaming package that copies bytes once, computes a SHA-256 diges
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/19-io-and-filesystem/04-io-copy-teereader-multiwriter/04-io-copy-teereader-multiwriter/cmd/demo
-cd go-solutions/19-io-and-filesystem/04-io-copy-teereader-multiwriter/04-io-copy-teereader-multiwriter
-```
-
 ### Exercise 1: Copy And Hash
 
 Create `streamcopy.go`:
@@ -201,7 +194,6 @@ func main() {
 ## Common Mistakes
 
 ### Hashing After Copying From The Same Reader
-
 
 Wrong: call `io.Copy(dst, src)` and then try to read `src` again to hash it. Most readers are consumed after the first copy.
 

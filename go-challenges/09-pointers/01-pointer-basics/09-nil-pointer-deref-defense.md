@@ -26,13 +26,6 @@ nilchain/                  independent module: example.com/nilchain
 - Test: a fully-populated config returns `(path, true)`; a config with a nil `Cert` returns `("", false)` without panicking; a `defer`/`recover` test asserts the naive deref path panics.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/01-pointer-basics/09-nil-pointer-deref-defense/cmd/demo
-cd go-solutions/09-pointers/01-pointer-basics/09-nil-pointer-deref-defense
-```
-
 ### Guard each link before stepping to the next
 
 `Config` has an optional `*TLSConfig`; `TLSConfig` has an optional `*CertConfig`;

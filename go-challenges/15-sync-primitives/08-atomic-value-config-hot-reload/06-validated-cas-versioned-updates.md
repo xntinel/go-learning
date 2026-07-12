@@ -27,13 +27,6 @@ cfgcas/                    independent module: example.com/cfgcas
 - Test: `errors.Is` assertions on both sentinels; a concurrent test firing N goroutines with shuffled versions 1..N asserting the final snapshot is exactly version N and accepted+stale-rejected counters sum to N, under `-race`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/08-atomic-value-config-hot-reload/06-validated-cas-versioned-updates/cmd/demo
-cd go-solutions/15-sync-primitives/08-atomic-value-config-hot-reload/06-validated-cas-versioned-updates
-```
-
 ### Why Load-then-Store cannot enforce "never roll back"
 
 The naive versioned update reads the current snapshot, compares versions, and

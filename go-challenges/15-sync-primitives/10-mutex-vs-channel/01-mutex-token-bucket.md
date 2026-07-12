@@ -26,13 +26,6 @@ mutexbucket/                    independent module: example.com/mutexbucket
 - Test: table-driven refill tests against a fake clock (no sleeps), a 50-goroutine storm asserting exactly `maxTokens` allows with refill disabled, a cap-at-max test, and an `Example` with `// Output:`.
 - Verify: `go test -count=1 -race ./...` and `go run ./cmd/demo`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/10-mutex-vs-channel/01-mutex-token-bucket/limiter go-solutions/15-sync-primitives/10-mutex-vs-channel/01-mutex-token-bucket/cmd/demo
-cd go-solutions/15-sync-primitives/10-mutex-vs-channel/01-mutex-token-bucket
-```
-
 ### The design: one critical section, no check-then-act gap
 
 A token bucket has two numbers that must stay mutually consistent: the token

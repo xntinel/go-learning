@@ -28,13 +28,6 @@ Implement: `Session{ID string, LastSeen time.Time}` with a pointer-receiver `Tou
 Test: `Touch` advances `LastSeen` using an injected clock; a `map[string]Session` copy path loses the mutation (documented); `Revoke` removes the session.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/03-methods-value-vs-pointer-receivers/09-map-element-addressability/cmd/demo
-cd go-solutions/07-structs-and-methods/03-methods-value-vs-pointer-receivers/09-map-element-addressability
-```
-
 ### Why the map holds pointers
 
 Two facts collide here. First, a pointer-receiver method needs an *addressable*

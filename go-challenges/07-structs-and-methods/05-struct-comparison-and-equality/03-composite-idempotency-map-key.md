@@ -26,13 +26,6 @@ dedupkey/                   independent module: example.com/dedupkey
 - Test: duplicate keys increment one logical slot; two independently built equal keys collapse to one entry; `maps.Equal` compares two counter snapshots.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/05-struct-comparison-and-equality/03-composite-idempotency-map-key/cmd/demo
-cd go-solutions/07-structs-and-methods/05-struct-comparison-and-equality/03-composite-idempotency-map-key
-```
-
 ### Why comparability *is* map-key-ability
 
 Go requires a map key type to be comparable — the runtime uses `==` (and the type's

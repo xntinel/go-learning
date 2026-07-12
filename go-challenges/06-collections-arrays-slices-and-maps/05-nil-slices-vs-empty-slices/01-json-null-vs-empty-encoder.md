@@ -25,13 +25,6 @@ Test: golden JSON for nil, `[]string{}`, and populated input; the append-on-nil
 contract; an IsNil/IsEmpty truth table.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/01-json-null-vs-empty-encoder/internal/enc go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/01-json-null-vs-empty-encoder/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/01-json-null-vs-empty-encoder
-```
-
 ### Two encoders, two contracts
 
 `EncodeNames` marshals whatever slice it is handed. If the caller passes a nil

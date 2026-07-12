@@ -26,13 +26,6 @@ sfcache/                    independent module: example.com/sfcache
 - Test: `K` concurrent `Get(key)` run the loader exactly once and all observe the same value; a loader error is delivered to every current waiter and a later `Get` retries.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/06-sync-cond/04-single-flight-cache/cmd/demo
-cd go-solutions/15-sync-primitives/06-sync-cond/04-single-flight-cache
-```
-
 ### The in-flight generation, and why Broadcast
 
 On a miss, the first goroutine records an in-flight `*call` for the key, drops the

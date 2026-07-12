@@ -26,13 +26,6 @@ Implement: `Assemble(records [][]byte) []byte`, `GrowthSequence(records [][]byte
 Test: capacity is non-decreasing, each growth strictly larger, reallocations logarithmic in N, and `testing.AllocsPerRun` counts the unpreallocated build's allocations.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/03-append-realloc-metrics/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/03-append-realloc-metrics
-```
-
 ### Why a run of N appends is cheap but not free
 
 `Assemble` starts from a `nil` slice and appends each record's bytes. Every time

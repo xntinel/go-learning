@@ -26,13 +26,6 @@ usersapi/                  independent module: example.com/usersapi
 - Test: one table whose rows are `{name, method, path, contentType, body, wantStatus, wantBodyContains}`, each driven with `httptest.NewRequest` + a fresh `httptest.NewRecorder`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/02-table-driven-tests/02-http-handler-status-matrix/cmd/demo
-cd go-solutions/12-testing-ecosystem/02-table-driven-tests/02-http-handler-status-matrix
-```
-
 ### Why httptest makes the matrix a table
 
 `httptest.NewRequest(method, target, body)` builds a `*http.Request` with no

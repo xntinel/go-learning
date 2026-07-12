@@ -24,8 +24,6 @@ memoize/                     independent module: example.com/memoize
 Set up the module (this one has an external dependency):
 
 ```bash
-mkdir -p go-solutions/04-functions/10-higher-order-functions/05-memoize-singleflight/cmd/demo
-cd go-solutions/04-functions/10-higher-order-functions/05-memoize-singleflight
 go mod edit -go=1.25
 go get golang.org/x/sync/singleflight
 ```

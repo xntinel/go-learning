@@ -99,13 +99,6 @@ Karn's algorithm: do not update the smoothed RTT estimate when retransmitting a 
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/47-capstone-systems-and-kernel/09-custom-network-protocol-stack/09-custom-network-protocol-stack/cmd/demo
-cd go-solutions/47-capstone-systems-and-kernel/09-custom-network-protocol-stack/09-custom-network-protocol-stack
-```
-
 This is a library with a demo binary. Verify with `go test`, not `go run`.
 
 ### Exercise 1: Protocol Types, Parsing, and Serialization

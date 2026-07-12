@@ -29,13 +29,6 @@ Verify: the composite gate
 `test -z "$(gofmt -l .)" && go vet ./... && go test -race -count=1 ./...` passes
 end to end.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/01-your-first-go-program/09-vet-and-static-analysis-gate/cmd/demo
-cd go-solutions/01-environment-and-tooling/01-your-first-go-program/09-vet-and-static-analysis-gate
-```
-
 ### The defects vet catches, and why the compiler does not
 
 Here is the package as a careless first draft. Every line compiles; every marked

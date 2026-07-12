@@ -25,13 +25,6 @@ record/                    independent module: example.com/record
 - Test: table-driven `unsafe.Sizeof` comparison; the anchor assertion is `Good <= Bad`, with a comment documenting the exact 64-bit sizes.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/09-struct-memory-layout-and-padding/01-field-ordering-record-types/cmd/demo
-cd go-solutions/07-structs-and-methods/09-struct-memory-layout-and-padding/01-field-ordering-record-types
-```
-
 ### Why interleaving small fields between large ones costs bytes
 
 `Bad` and `Good` carry identical data: a `float64` score, an `int64` count, an

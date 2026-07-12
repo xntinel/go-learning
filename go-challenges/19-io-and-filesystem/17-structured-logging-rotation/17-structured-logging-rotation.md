@@ -18,13 +18,6 @@ This lesson rotates before a write when `current size + len(p)` would exceed the
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/19-io-and-filesystem/17-structured-logging-rotation/17-structured-logging-rotation/cmd/demo
-cd go-solutions/19-io-and-filesystem/17-structured-logging-rotation/17-structured-logging-rotation
-```
-
 ### Exercise 1: Implement A Rotating Writer
 
 Create `writer.go`:

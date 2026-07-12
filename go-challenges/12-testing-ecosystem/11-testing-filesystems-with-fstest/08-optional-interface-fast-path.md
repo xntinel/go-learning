@@ -31,13 +31,6 @@ fastpath/                    independent module: example.com/fastpath
   `fs.ReadDir` likewise for `ReadDir` vs `Open`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/11-testing-filesystems-with-fstest/08-optional-interface-fast-path/cmd/demo
-cd go-solutions/12-testing-ecosystem/11-testing-filesystems-with-fstest/08-optional-interface-fast-path
-```
-
 ### How the helpers choose a path, and why it is measurable
 
 `fs.ReadFile(fsys, name)` has exactly one branch at the top:

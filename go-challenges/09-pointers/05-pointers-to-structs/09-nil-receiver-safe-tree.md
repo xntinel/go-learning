@@ -27,13 +27,6 @@ Implement: a `node` with `val int` and `left, right *node`; methods `Insert(v in
 Test: `Count`/`Contains`/`InOrder` on a nil `*node` return `0`/`false`/empty without panicking; `Insert` on nil returns a fresh single-node tree; a built tree reports correct `Count`, `Contains` for present/absent values, and in-order (sorted) traversal.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/05-pointers-to-structs/09-nil-receiver-safe-tree/cmd/demo
-cd go-solutions/09-pointers/05-pointers-to-structs/09-nil-receiver-safe-tree
-```
-
 ### A typed nil is a valid receiver
 
 In Go, a method call `n.Count()` is sugar for `(*node).Count(n)`, passing the pointer

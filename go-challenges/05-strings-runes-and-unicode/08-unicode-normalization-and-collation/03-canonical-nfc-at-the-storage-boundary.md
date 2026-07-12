@@ -29,8 +29,6 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/08-unicode-normalization-and-collation/03-canonical-nfc-at-the-storage-boundary/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/08-unicode-normalization-and-collation/03-canonical-nfc-at-the-storage-boundary
 go get golang.org/x/text/unicode/norm
 ```
 

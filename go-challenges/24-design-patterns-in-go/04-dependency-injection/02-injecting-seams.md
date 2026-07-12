@@ -29,12 +29,6 @@ audit_test.go        fixed and advancing fake clocks, a counter IDGen; assert ex
 - Test: assert exact IDs and timestamps with fake doubles; assert an advancing clock yields increasing timestamps; assert the real `RandomIDGen` is non-empty and distinct.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/24-design-patterns-in-go/04-dependency-injection/02-injecting-seams/cmd/demo && cd go-solutions/24-design-patterns-in-go/04-dependency-injection/02-injecting-seams
-```
-
 ### Why time and randomness must be dependencies
 
 Consider the natural way to write `Record`: stamp the event with `time.Now()` and

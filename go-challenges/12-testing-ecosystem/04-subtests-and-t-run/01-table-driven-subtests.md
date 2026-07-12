@@ -28,13 +28,6 @@ querymatch/                 independent module: example.com/querymatch
   and an overlapping-needle first-occurrence contract test.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/04-subtests-and-t-run/01-table-driven-subtests/cmd/demo
-cd go-solutions/12-testing-ecosystem/04-subtests-and-t-run/01-table-driven-subtests
-```
-
 ### Why a table plus t.Run is the baseline
 
 A bare `for` loop that asserts each case works, but when case four fails you get a

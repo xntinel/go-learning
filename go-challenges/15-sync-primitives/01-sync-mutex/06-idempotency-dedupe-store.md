@@ -27,11 +27,6 @@ idem/                        independent module: example.com/idem
 - Test: M goroutines with the same key assert `fn` ran exactly once (atomic counter) and all callers got the identical result; distinct keys all execute; `fn`'s error is propagated to every caller.
 - Verify: `go test -count=1 -race ./...`
 
-```bash
-mkdir -p go-solutions/15-sync-primitives/01-sync-mutex/06-idempotency-dedupe-store/cmd/demo
-cd go-solutions/15-sync-primitives/01-sync-mutex/06-idempotency-dedupe-store
-```
-
 ### Why the check and the claim must be one critical section
 
 The naive idempotency guard is two steps: "is this key already in the map? no —

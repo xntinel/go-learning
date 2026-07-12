@@ -28,13 +28,6 @@ cfgfanout/                 independent module: example.com/cfgfanout
 - Test: the rebuilt client reflects a new `TimeoutMillis` after `Update`; a deliberately-stalled subscriber proves `Update` completes and pending wakeups coalesce to exactly one; unsubscribe terminates the subscriber goroutine, observed via a done channel.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/08-atomic-value-config-hot-reload/07-reload-subscriber-fanout/cmd/demo
-cd go-solutions/15-sync-primitives/08-atomic-value-config-hot-reload/07-reload-subscriber-fanout
-```
-
 ### Events say "changed", snapshots say what changed to
 
 The fan-out's design hinges on separating two channels of information. The

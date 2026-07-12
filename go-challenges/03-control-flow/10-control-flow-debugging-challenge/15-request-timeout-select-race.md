@@ -28,11 +28,6 @@ reqwait/                    independent module: example.com/request-timeout-sele
 - Test: cancel the cancellation context immediately and assert the call returns within a short bound with `ErrCancelled`, not after blocking on an unrelated deadline; a second test asserts a delivered value wins over both.
 - Verify: `go test -count=1 ./...`.
 
-```bash
-mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/15-request-timeout-select-race/cmd/demo
-cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/15-request-timeout-select-race
-```
-
 ### Why both Done() channels have to be in the same select
 
 `WaitForResult` is handed two independent contexts on purpose: `deadline`

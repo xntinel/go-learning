@@ -26,13 +26,6 @@ Implement: `Normalize(email string) string` — a real normalization used before
 Test: declare `var integration = flag.Bool(...)`, call `flag.Parse()` in `TestMain`, run a fast unit test always, and gate a slow test with `if !*integration || testing.Short() { t.Skip(...) }`.
 Verify: `go test -count=1 -race ./...` (integration test skips by default; `go test -run Integration -integration` runs it)
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/22-testmain-setup-teardown/05-flag-parse-integration-gate/cmd/demo
-cd go-solutions/12-testing-ecosystem/22-testmain-setup-teardown/05-flag-parse-integration-gate
-```
-
 ### Why flag.Parse must happen in TestMain
 
 `go test` and your test binary share a single flag set. The `-test.*` flags

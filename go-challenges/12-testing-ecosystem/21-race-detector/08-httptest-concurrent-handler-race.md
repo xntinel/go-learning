@@ -32,13 +32,6 @@ Test: `TestHandlerConcurrentRequests` drives the `httptest.Server` from N client
 and asserts the server-side count equals the successful requests, under `-race`.
 Verify: `go test -count=1 -race ./...`; then `go run -race ./cmd/racy`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/21-race-detector/08-httptest-concurrent-handler-race/cmd/demo go-solutions/12-testing-ecosystem/21-race-detector/08-httptest-concurrent-handler-race/cmd/racy
-cd go-solutions/12-testing-ecosystem/21-race-detector/08-httptest-concurrent-handler-race
-```
-
 ### Why the handler races, and how the test surfaces it
 
 `net/http` serves each request in its own goroutine. So a handler that does

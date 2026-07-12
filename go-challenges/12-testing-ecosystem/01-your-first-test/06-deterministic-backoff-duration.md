@@ -22,13 +22,6 @@ backoff/                   independent module: example.com/backoff
 - Test: exact `time.Duration` values for attempts 0, 1, 2 and the cap at a high attempt.
 - Verify: `gofmt -l .`, `go vet ./...`, `go test -count=1 -race ./...`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/01-your-first-test/06-deterministic-backoff-duration/cmd/demo
-cd go-solutions/12-testing-ecosystem/01-your-first-test/06-deterministic-backoff-duration
-```
-
 ### Capped exponential backoff, and why jitter is excluded
 
 Exponential backoff doubles the wait after each failed attempt so a struggling

@@ -23,13 +23,6 @@ Implement: a `Status` struct with JSON tags and a `MarshalStatus` helper wrappin
 Test: a table-driven `Test`, plus `ExampleMarshalStatus` pinning the exact JSON bytes and `ExampleMarshalStatus_map` showing map-key sorting.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/15-testable-examples/03-json-response-deterministic-output/cmd/demo
-cd go-solutions/12-testing-ecosystem/15-testable-examples/03-json-response-deterministic-output
-```
-
 ## Which stdout is safe to pin
 
 An executed example bets that its stdout is reproducible. `json.Marshal` gives you

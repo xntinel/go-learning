@@ -28,13 +28,6 @@ orderdomain/                  independent module: example.com/orderdomain
 - Test: `fmt.Sprintf("%v", status)` uses `String`; `json.Marshal` emits the custom wire format byte-for-byte; `errors.As` extracts `*OrderError`; `%v` on the error uses `Error`, not `String`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/01-implicit-interface-satisfaction/08-satisfy-stdlib-stringer-error-json/cmd/demo
-cd go-solutions/08-interfaces/01-implicit-interface-satisfaction/08-satisfy-stdlib-stringer-error-json
-```
-
 ### One concrete type, several stdlib interfaces
 
 `OrderStatus` is an `int` with named constants. On its own an `int` prints as a

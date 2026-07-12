@@ -26,8 +26,6 @@ Verify: `go test -race ./...` (needs the helm module fetched; `GOFLAGS=-mod=mod`
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/54-cloud-native-platform-and-orchestration/05-helm-and-gitops-patterns/01-render-and-validate-chart/cmd/demo
-cd go-solutions/54-cloud-native-platform-and-orchestration/05-helm-and-gitops-patterns/01-render-and-validate-chart
 go get helm.sh/helm/v3@latest
 ```
 

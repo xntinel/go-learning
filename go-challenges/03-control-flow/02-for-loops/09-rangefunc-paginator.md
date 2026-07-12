@@ -25,13 +25,6 @@ rangefunc/                   module example.com/rangefunc
 - Test: full consumption yields all items in order; an early `break` stops after the expected number of fetches (no extra page); a fetch error halts iteration and is exposed via `Err()`; an empty source yields zero iterations.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/02-for-loops/09-rangefunc-paginator/cmd/demo
-cd go-solutions/03-control-flow/02-for-loops/09-rangefunc-paginator
-```
-
 ### How `iter.Seq` inverts control, and the two obligations it creates
 
 `iter.Seq[V]` is defined as `func(yield func(V) bool)`. When you write `for item :=

@@ -29,13 +29,6 @@ Implement: `NewVerifier(secret)` holding a `sync.Pool` of keyed `hmac.New(sha256
 Test: valid signature reaches the inner handler; tampered body, truncated signature, non-hex signature, and missing header all yield 401 with the handler never invoked; the same body signs identically before and after a different body (Reset-wipe proof) and matches an independently computed HMAC; 300 concurrent distinct-payload requests under `-race`; a pooled-vs-`hmac.New`-per-request benchmark.
 Verify: `go test -count=1 -race ./...` then `go test -bench=. -benchmem -run=^$ ./webhook`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/05-sync-pool/10-pooled-hmac-webhook-verifier/webhook go-solutions/15-sync-primitives/05-sync-pool/10-pooled-hmac-webhook-verifier/cmd/demo
-cd go-solutions/15-sync-primitives/05-sync-pool/10-pooled-hmac-webhook-verifier
-```
-
 ### What the pool amortizes: keying, not hashing
 
 HMAC-SHA256 derives two padded keys (ipad, opad) and absorbs each into its own

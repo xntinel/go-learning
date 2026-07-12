@@ -38,8 +38,6 @@ generated code and the external module; the SSE and NDJSON halves are pure stdli
 and pass the full race gate. Set up the module:
 
 ```bash
-mkdir -p go-solutions/51-rpc-and-api-design/07-rpc-style-tradeoffs/03-streaming-decision-sse-vs-ndjson-vs-grpc/cmd/demo
-cd go-solutions/51-rpc-and-api-design/07-rpc-style-tradeoffs/03-streaming-decision-sse-vs-ndjson-vs-grpc
 go mod edit -go=1.26
 ```
 

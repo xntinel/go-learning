@@ -32,8 +32,6 @@ mvcc/                       independent module: example.com/mvcc
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/06-labels-break-continue-goto/32-mvcc-snapshot-isolation-reads/cmd/demo
-cd go-solutions/03-control-flow/06-labels-break-continue-goto/32-mvcc-snapshot-isolation-reads
 go mod edit -go=1.24
 ```
 

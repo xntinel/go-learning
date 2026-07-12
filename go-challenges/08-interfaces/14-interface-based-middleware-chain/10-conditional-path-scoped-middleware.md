@@ -26,8 +26,6 @@ condmw/                      independent module: example.com/condmw
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/08-interfaces/14-interface-based-middleware-chain/10-conditional-path-scoped-middleware/cmd/demo
-cd go-solutions/08-interfaces/14-interface-based-middleware-chain/10-conditional-path-scoped-middleware
 go mod edit -go=1.26
 ```
 

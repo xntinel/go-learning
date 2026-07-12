@@ -38,13 +38,6 @@ When you need flags (`O_APPEND`, `O_CREATE`, `O_EXCL`, `O_TRUNC`), concurrent ac
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/19-io-and-filesystem/01-reading-and-writing-files/01-reading-and-writing-files/cmd/demo
-cd go-solutions/19-io-and-filesystem/01-reading-and-writing-files/01-reading-and-writing-files
-```
-
 ### Exercise 1: The Store Type And The All-At-Once Helpers
 
 Create `notes.go`:

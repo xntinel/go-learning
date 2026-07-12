@@ -28,13 +28,6 @@ Implement: a `Writer` whose `Write` enqueues a record and whose `Close` closes t
 Test: feed K records to `Writer`, `Close`, assert the store holds exactly K; a controlled `BrokenWriter` test shows a count below K to document the loss.
 Verify: `go test -race -count=5 ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/01-your-first-goroutine/05-shutdown-flush-fire-and-forget-trap/cmd/demo
-cd go-solutions/13-goroutines-and-channels/01-your-first-goroutine/05-shutdown-flush-fire-and-forget-trap
-```
-
 ### The shutdown-flush contract
 
 A background writer decouples the hot path from the slow persistence: callers

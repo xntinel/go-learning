@@ -19,12 +19,6 @@ peek_test.go         peek is non-destructive, end-of-input, TakeWhile, Close sto
 - Test: `peek_test.go` checks that `Peek` does not advance, end-of-input behavior, `TakeWhile` stopping at the predicate, and that `Close` unwinds the producer.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/25-iterators-and-modern-go/04-range-over-func-pull-iterators/04-peekable-lookahead/cmd/demo && cd go-solutions/25-iterators-and-modern-go/04-range-over-func-pull-iterators/04-peekable-lookahead
-```
-
 ### Why peek is pull-only, and the one-slot buffer
 
 Lookahead means answering "what is next?" without committing to consuming it. A push iterator cannot do this: its loop pushes each value into your callback and moves on; there is no point at which you hold a value, look at it, and put it back. Pull inverts that — `next` hands you one value when you ask — but `iter.Pull` on its own has no "un-pull." So `Peekable` adds exactly one slot of buffer on top of `iter.Pull`: `Peek` pulls a value into the slot and leaves it there; `Next` returns the slot's value and empties it; a `Peek` while the slot is full returns the buffered value without pulling again.

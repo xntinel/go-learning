@@ -27,8 +27,6 @@ ratelimiter/               independent module: example.com/token-bucket-closure
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/04-first-class-functions-and-closures/11-token-bucket-closure/cmd/demo
-cd go-solutions/04-functions/04-first-class-functions-and-closures/11-token-bucket-closure
 go mod edit -go=1.24
 ```
 

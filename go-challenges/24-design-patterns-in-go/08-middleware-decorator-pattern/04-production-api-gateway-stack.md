@@ -26,12 +26,6 @@ gateway_test.go      chain ordering outside-in, request-ID propagation,
 - Test: a tracing chain runs outside-in; the request ID reaches the log line and the response header; an unauthenticated request short-circuits to 401 before auth's inner layers; a token bucket of capacity N admits N requests then returns 429 until the clock advances enough to refill; a slow handler becomes a 503; a panic becomes a 500; and the assembled stack rejects and admits as configured.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/24-design-patterns-in-go/08-middleware-decorator-pattern/04-production-api-gateway-stack/cmd/demo && cd go-solutions/24-design-patterns-in-go/08-middleware-decorator-pattern/04-production-api-gateway-stack
-```
-
 ### Why the order is the design
 
 Every middleware has the mirror-image shape: code before `next.ServeHTTP` runs on the way in, code after runs on the way out, and `Chain` makes the first argument the outermost wrapper. For a gateway the order is not stylistic — each position encodes an operational requirement, and getting it wrong produces a subtly broken edge that still compiles and mostly works.

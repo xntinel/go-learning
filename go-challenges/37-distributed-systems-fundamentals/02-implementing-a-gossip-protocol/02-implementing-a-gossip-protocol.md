@@ -47,13 +47,6 @@ The digest is cheap to send (keys and version numbers only, no values). The repl
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/37-distributed-systems-fundamentals/02-implementing-a-gossip-protocol/02-implementing-a-gossip-protocol/cmd/demo
-cd go-solutions/37-distributed-systems-fundamentals/02-implementing-a-gossip-protocol/02-implementing-a-gossip-protocol
-```
-
 This is a library, not a program: there is no top-level `main`. Verify with `go test`.
 
 ### Exercise 1: Core Types

@@ -30,8 +30,6 @@ callchain/                 independent module: example.com/callchain
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/01-environment-and-tooling/07-debugging-with-delve/03-stack-and-frames/orders go-solutions/01-environment-and-tooling/07-debugging-with-delve/03-stack-and-frames/cmd/demo
-cd go-solutions/01-environment-and-tooling/07-debugging-with-delve/03-stack-and-frames
 go mod edit -go=1.24
 ```
 

@@ -17,12 +17,6 @@ tee_test.go          both outputs get every value, source-close closes both, OrD
 - Test: both outputs receive every value in order, closing the input closes both outputs, `OrDone` forwards until `done` fires, and a 1000-value run is clean under `-race`.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/16-concurrency-patterns/11-tee-channel-pattern/01-basic-tee/cmd/demo && cd go-solutions/16-concurrency-patterns/11-tee-channel-pattern/01-basic-tee
-```
-
 ### Why the sequential form is correct, and what it costs
 
 The whole tee is one goroutine that ranges over the input and, for each value, sends it to both outputs:

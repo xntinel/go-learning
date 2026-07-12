@@ -22,13 +22,6 @@ Implement: `Resolve(defaults, fileValues map[string]string, getenv LookupFunc) m
 Test: for each key, three parallel subtests proving default-used, file-over-default, env-over-file; uses the injected `getenv` so the whole suite is pure.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/17-testing-with-environment-variables/08-config-precedence-layering/cmd/demo
-cd go-solutions/12-testing-ecosystem/17-testing-with-environment-variables/08-config-precedence-layering
-```
-
 ## Layering by priority
 
 `Resolve` starts from a copy of the defaults and, for each key, replaces the value

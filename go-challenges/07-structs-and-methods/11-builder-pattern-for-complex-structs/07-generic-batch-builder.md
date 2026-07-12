@@ -25,13 +25,6 @@ batchbuild/                 independent module: example.com/batchbuild
 - Test: instantiate for `int` and for a struct; prove `Build` returns an independent copy; over-limit `Add`/`AddAll` returns `ErrBatchFull`; an empty batch builds to a non-nil empty slice.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/11-builder-pattern-for-complex-structs/07-generic-batch-builder/cmd/demo
-cd go-solutions/07-structs-and-methods/11-builder-pattern-for-complex-structs/07-generic-batch-builder
-```
-
 ### Generics, ownership, and capacity in one accumulator
 
 The type parameter `[T any]` lets one implementation serve `Batch[int]`,

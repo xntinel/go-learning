@@ -21,12 +21,6 @@ catalog_test.go          atomic specs, combinator truth tables, Find integration
 - Test: truth tables for each combinator plus an integration test that runs a composed spec through `Find`.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/24-design-patterns-in-go/05-repository-pattern/02-specification-queries/cmd/demo && cd go-solutions/24-design-patterns-in-go/05-repository-pattern/02-specification-queries
-```
-
 ### Why a predicate object instead of more methods
 
 The instinct when a caller needs "books under twenty dollars that are in stock" is to add `ListBooksUnderPriceInStock`. The next caller needs a different combination, and the interface grows one method per query shape until it is unmaintainable, and each method is a separate query to write and test. A specification inverts that: instead of the repository knowing every question, the caller hands the repository the question as an object, and the repository's single `Find` method evaluates it.

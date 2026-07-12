@@ -36,8 +36,6 @@ cache/                      independent module: example.com/multi-layer-cache-in
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/05-range-over-collections/23-multi-layer-cache-invalidation/cmd/demo
-cd go-solutions/03-control-flow/05-range-over-collections/23-multi-layer-cache-invalidation
 go mod edit -go=1.24
 ```
 

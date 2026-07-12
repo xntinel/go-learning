@@ -27,13 +27,6 @@ config/                     independent module: example.com/config
 - Test: prove `ApplyDefaults` mutates the caller, the value forms do not, the pointer and value forms produce `==` results, and `Validate` returns wrapped sentinels asserted with `errors.Is`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/02-pointers-and-function-parameters/01-config-defaults-mutate-vs-return/cmd/demo
-cd go-solutions/09-pointers/02-pointers-and-function-parameters/01-config-defaults-mutate-vs-return
-```
-
 ### Why one package needs all three forms
 
 `ApplyDefaults(c *Config)` copies the *pointer*, so writes through it land on the

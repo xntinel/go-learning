@@ -21,13 +21,6 @@ Implement: `Run(deadline time.Time, validate, fetch, persist func() (string, err
 Test: all fast completes with each result; a slow step returns `ErrTimeout` and does not start later steps; remaining budget shrinks monotonically; a step consuming nearly the whole budget starves the tail.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/03-timeout-with-select/09-deadline-budget-split/cmd/demo
-cd go-solutions/14-select-and-context/03-timeout-with-select/09-deadline-budget-split
-```
-
 ### Remaining budget, computed per step
 
 `Run` holds a single `deadline time.Time` for the whole request. Before each step

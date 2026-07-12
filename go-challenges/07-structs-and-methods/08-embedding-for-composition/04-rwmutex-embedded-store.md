@@ -26,13 +26,6 @@ store/                     independent module: example.com/store
 - Test: concurrent `Set`/`Get`/`Delete` under `-race` with a `WaitGroup`, a final-state consistency check, and a subtest documenting that `s.Lock()` is callable from outside.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/08-embedding-for-composition/04-rwmutex-embedded-store/cmd/demo
-cd go-solutions/07-structs-and-methods/08-embedding-for-composition/04-rwmutex-embedded-store
-```
-
 ### Promoted locking, and the API cost of it
 
 Embedding `sync.RWMutex` promotes `Lock`, `Unlock`, `RLock`, `RUnlock`, and

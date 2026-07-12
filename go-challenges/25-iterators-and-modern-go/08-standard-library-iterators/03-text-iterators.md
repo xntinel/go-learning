@@ -26,12 +26,6 @@ textiter_test.go     line counting, newline trimming, word counts, column extrac
 - Test: `textiter_test.go` checks line counting including the no-trailing-newline case, newline trimming, word tallies, and column extraction with short rows.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/25-iterators-and-modern-go/08-standard-library-iterators/03-text-iterators/cmd/demo && cd go-solutions/25-iterators-and-modern-go/08-standard-library-iterators/03-text-iterators
-```
-
 ### The newline detail, and composing text iterators
 
 The one fact that governs this whole exercise is how `strings.Lines` yields:

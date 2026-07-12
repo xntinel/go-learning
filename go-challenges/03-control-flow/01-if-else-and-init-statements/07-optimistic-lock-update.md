@@ -26,13 +26,6 @@ optimistic/                 independent module: example.com/optimistic
 - Test: unknown id returns `ErrNotFound`; stale version returns `ErrVersionConflict` with the row unchanged; matching version succeeds, increments the version, applies the mutation; two updates with the same expected version yield exactly one winner.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/01-if-else-and-init-statements/07-optimistic-lock-update/cmd/demo
-cd go-solutions/03-control-flow/01-if-else-and-init-statements/07-optimistic-lock-update
-```
-
 ## Exists, version-matches, apply — under one lock
 
 `Update` is three guard clauses in sequence, and the order is the logic:

@@ -24,13 +24,6 @@ forensics/                     module example.com/forensics
 - Test: assert `Self()` returns build info with a non-empty `GoVersion`, and that inspecting the running test binary agrees with `runtime.Version()`.
 - Verify: `go test -race ./...`; `go run ./cmd/demo`; and `go version -m <binary>` on a built binary to cross-check.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/08-cross-compilation-and-build-tags/08-embedded-buildinfo-forensics/cmd/demo
-cd go-solutions/01-environment-and-tooling/08-cross-compilation-and-build-tags/08-embedded-buildinfo-forensics
-```
-
 ### Two entry points, one BuildInfo
 
 Go records build provenance into the binary automatically. There are two ways to

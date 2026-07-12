@@ -19,12 +19,6 @@ server_test.go         defaults, per-option validation, order invariants, preset
 - Test: `server_test.go` pins the defaults, every validator's sentinel, the order invariants (later wins, preset then override), short-circuit on the first failure, and that accessors reflect state.
 - Verify: `go test -race ./...` then `go run ./cmd/demo`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/24-design-patterns-in-go/01-functional-options-deep-dive/01-server-options/cmd/demo && cd go-solutions/24-design-patterns-in-go/01-functional-options-deep-dive/01-server-options
-```
-
 ### Why this shape
 
 The package is a library, not a program: there is no `main` in the package root. The artifact is verified by `go test`, and `cmd/demo` is a separate `package main` that consumes the exported API the way a real caller would.

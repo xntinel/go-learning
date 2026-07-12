@@ -28,13 +28,6 @@ Implement: `HedgedRead(replicas []func(stop <-chan struct{}) (string, error)) (s
 Test: the fast replica's value wins; goroutine count returns to baseline (losers exit); all-fail returns an aggregated error.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/01-select-statement-basics/06-hedged-replica-read/cmd/demo
-cd go-solutions/14-select-and-context/01-select-statement-basics/06-hedged-replica-read
-```
-
 ## The two mechanisms that prevent the leak
 
 `HedgedRead` launches one goroutine per replica, each calling the replica function

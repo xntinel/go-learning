@@ -34,8 +34,6 @@ ring/                          module example.com/ring
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/02-for-loops/26-consistent-hash-ring-shard-lookup/cmd/demo
-cd go-solutions/03-control-flow/02-for-loops/26-consistent-hash-ring-shard-lookup
 go mod edit -go=1.24
 ```
 

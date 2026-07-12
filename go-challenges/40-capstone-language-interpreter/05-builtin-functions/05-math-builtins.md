@@ -21,12 +21,6 @@ math_test.go  type preservation, rounding, domain guards, random ranges
 - Test: that `abs` preserves the argument's type, that `floor`/`ceil`/`round` return integers, that `sqrt(-1)` and a reversed `randomInt` range error, and that `random`/`randomInt` stay in range.
 - Verify: `go test -race ./...` and `go run ./cmd/demo`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/40-capstone-language-interpreter/05-builtin-functions/05-math-builtins/cmd/demo && cd go-solutions/40-capstone-language-interpreter/05-builtin-functions/05-math-builtins
-```
-
 ### Type preservation, domain guards, and the float bridge
 
 The defining decision is `abs`. A naive implementation converts to `float64`, takes `math.Abs`, and returns a FLOAT — which means `abs(-5)` is `5` the float, and an expression that was pure integer arithmetic suddenly carries floating-point values. The correct `abs` type-switches: INTEGER in, INTEGER out (negating the `int64` directly); FLOAT in, FLOAT out (via `math.Abs`). `min` and `max` follow the same instinct: when both arguments are integers they compare and return an integer, preserving the type; only a mixed or float pair falls back to a float comparison.

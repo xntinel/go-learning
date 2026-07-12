@@ -27,13 +27,6 @@ Implement: a `Config{Timeout, MaxRetries, BaseBackoff}` and a `withDefaults` tha
 Test: a zero `Config` normalizes to the documented defaults; explicit values pass through; invalid/negative values are clamped; the documented "explicit 0 -> default" policy holds.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/02-zero-values-and-default-initialization/08-zero-value-default-options/cmd/demo
-cd go-solutions/02-variables-types-and-constants/02-zero-values-and-default-initialization/08-zero-value-default-options
-```
-
 ## Why cmp.Or, and the explicit-zero policy
 
 `cmp.Or` (Go 1.22+) returns its first non-zero argument, which makes it the exact

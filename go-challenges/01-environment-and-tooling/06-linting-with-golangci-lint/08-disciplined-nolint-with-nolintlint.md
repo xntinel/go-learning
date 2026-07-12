@@ -26,13 +26,6 @@ nolintdemo/                   independent module: example.com/nolintdemo
 - Test: an `httptest.Server` returning 200 (true) and one returning 500 (false).
 - Verify: `go test -count=1 -race ./...`; then `golangci-lint run ./...` with `nolintlint` on.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/06-linting-with-golangci-lint/08-disciplined-nolint-with-nolintlint/cmd/demo
-cd go-solutions/01-environment-and-tooling/06-linting-with-golangci-lint/08-disciplined-nolint-with-nolintlint
-```
-
 ### When a suppression is legitimate — and how to make it auditable
 
 `Ping` only cares about the *status* of an endpoint, not its body. It still must

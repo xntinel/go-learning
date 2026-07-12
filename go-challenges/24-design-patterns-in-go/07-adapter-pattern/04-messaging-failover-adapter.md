@@ -22,13 +22,6 @@ messaging_test.go                 fakes assert translation, retry policy, and fa
 - Test: each adapter's error translation via `errors.Is`/`errors.As`, that retry repeats only transient failures and gives up after N, that failover falls through to a healthy provider but short-circuits a bad message, and that the two decorators compose.
 - Verify: `go test -race ./...` and `go run ./cmd/demo`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/24-design-patterns-in-go/07-adapter-pattern/04-messaging-failover-adapter/thirdparty/smtpx go-solutions/24-design-patterns-in-go/07-adapter-pattern/04-messaging-failover-adapter/thirdparty/smsx go-solutions/24-design-patterns-in-go/07-adapter-pattern/04-messaging-failover-adapter/thirdparty/hookx go-solutions/24-design-patterns-in-go/07-adapter-pattern/04-messaging-failover-adapter/cmd/demo
-cd go-solutions/24-design-patterns-in-go/07-adapter-pattern/04-messaging-failover-adapter
-```
-
 ### Three vendors, three failure models
 
 The whole reason an adapter earns its keep here is that the three vendors disagree about how to report a failure, and a retry policy needs them to agree. The SMTP stand-in returns idiomatic wrapped sentinels: `ErrGreylisted` is a transient 4xx that will likely succeed on a retry, and `ErrBadRecipient` is a permanent 5xx that never will. The SMS stand-in returns a structured `*APIError` carrying an HTTP-style numeric `Code`, the kind of error a caller reaches with `errors.As`. The webhook stand-in is the awkward one: it reports failure as an `(int, error)` pair where the `int` is an HTTP status the domain never models, so the adapter has to read the status to decide the class. Build all three first.

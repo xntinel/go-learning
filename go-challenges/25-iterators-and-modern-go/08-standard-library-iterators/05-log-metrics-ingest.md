@@ -28,12 +28,6 @@ ingest_test.go       tally correctness, missing-key handling, top-N ordering and
 - Test: `ingest_test.go` checks the tally counts, that a missing key yields an empty tally, that `TopN` orders by count then key, that the order is stable across runs, that it clamps to the available entries, and the rendered report.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/25-iterators-and-modern-go/08-standard-library-iterators/05-log-metrics-ingest/cmd/demo && cd go-solutions/25-iterators-and-modern-go/08-standard-library-iterators/05-log-metrics-ingest
-```
-
 ### Three text iterators, one parse
 
 The input is a multi-line string where each line is a run of whitespace-separated

@@ -19,12 +19,6 @@ coordinator_test.go   coverage with no overlap, rebalance on join, offset commit
 - Test: range assignment covers all partitions with no overlap, every join triggers a rebalance, committed offsets round-trip, and an uncommitted offset reads as `-1`.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/41-capstone-message-queue/08-full-message-queue/02-consumer-group-coordinator/cmd/demo && cd go-solutions/41-capstone-message-queue/08-full-message-queue/02-consumer-group-coordinator
-```
-
 ### Why a deterministic range assignment and a rebalance on every change
 
 The coordinator answers two questions: who owns which partitions, and how far has each group read. Both must be reproducible.

@@ -25,13 +25,6 @@ statusenum/                 independent module: example.com/statusenum
 - Test: each status maps to its expected string; `Status(99)` yields `unknown(99)`; `%s` and `%v` both equal `String()`; a compile-time `var _ fmt.Stringer = Status(0)`; the `IsTerminal` truth table.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/10-implementing-stringer/01-status-enum-stringer/cmd/demo
-cd go-solutions/07-structs-and-methods/10-implementing-stringer/01-status-enum-stringer
-```
-
 ### Why a value receiver and a TypeName(N) default
 
 Two decisions define this type. First, `String()` is declared on a *value*

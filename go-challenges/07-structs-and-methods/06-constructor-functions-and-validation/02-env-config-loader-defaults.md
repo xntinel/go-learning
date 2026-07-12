@@ -27,13 +27,6 @@ envconfig/                   independent module: example.com/env-config-loader-d
 - Test: fully-populated env yields the typed Config; minimal env fills defaults; missing required and unparseable int/bool/duration each surface their sentinel via `errors.Is`; a maximally-broken env joins all failures; and an explicit `MAX_RETRIES=0` is not masked by the non-zero default.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/06-constructor-functions-and-validation/02-env-config-loader-defaults/cmd/demo
-cd go-solutions/07-structs-and-methods/06-constructor-functions-and-validation/02-env-config-loader-defaults
-```
-
 ### Inject the lookup; distinguish unset from zero
 
 The single most important design decision here is not calling `os.Getenv`

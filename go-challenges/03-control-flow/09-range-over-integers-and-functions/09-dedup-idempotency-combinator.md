@@ -23,13 +23,6 @@ Implement: `DistinctBy[T, K](seq iter.Seq[T], key func(T) K) iter.Seq[T]` and a 
 Test: duplicates collapse to first-seen order; unique/empty passthrough; early break stops upstream; a windowed key re-emits after eviction.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/09-range-over-integers-and-functions/09-dedup-idempotency-combinator/cmd/demo
-cd go-solutions/03-control-flow/09-range-over-integers-and-functions/09-dedup-idempotency-combinator
-```
-
 ## The design
 
 `DistinctBy` carries a `map[K]struct{}` of seen keys in its closure. For each

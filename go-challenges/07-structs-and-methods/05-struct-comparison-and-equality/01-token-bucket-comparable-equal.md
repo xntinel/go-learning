@@ -27,13 +27,6 @@ tbucket/                    independent module: example.com/tbucket
 - Test: fresh buckets equal; `Take` diverges state; pointer identity irrelevant; different `max` not equal; `(a == b) == a.Equal(b)` for the comparable case.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/05-struct-comparison-and-equality/01-token-bucket-comparable-equal/cmd/demo
-cd go-solutions/07-structs-and-methods/05-struct-comparison-and-equality/01-token-bucket-comparable-equal
-```
-
 ### Why a custom Equal when `==` already works
 
 `Bucket` holds two `int` fields, so it is fully comparable and `a == b` is legal,

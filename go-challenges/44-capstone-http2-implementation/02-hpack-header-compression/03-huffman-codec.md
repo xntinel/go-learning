@@ -22,7 +22,6 @@ huffcodec/
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/44-capstone-http2-implementation/02-hpack-header-compression/03-huffman-codec/cmd/demo && cd go-solutions/44-capstone-http2-implementation/02-hpack-header-compression/03-huffman-codec
 go mod edit -go=1.26
 ```
 
@@ -394,7 +393,6 @@ func Decode(data []byte) (string, error) {
 }
 ```
 
-
 ### The runnable demo
 
 The demo Huffman-codes three real header values, shows the byte savings, decodes them back, and then feeds the decoder two malformed streams — one with a whole extra byte of "padding" and one that decodes to EOS — to show both are rejected.
@@ -428,7 +426,6 @@ func main() {
 	fmt.Printf("EOS in input rejected:      %v\n", errors.Is(err, huffcodec.ErrInvalidHuffman))
 }
 ```
-
 
 Run it:
 
@@ -569,7 +566,6 @@ func bytesEqual(a, b []byte) bool {
 	return true
 }
 ```
-
 
 ## Review
 

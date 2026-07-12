@@ -28,13 +28,6 @@ Implement: `CountGoroutinesOnFrame(target)` (parse the goroutine profile, count 
 Test: N goroutines parked on a named function are counted exactly; `NumGoroutine` and the profile `Count` agree within tolerance; the endpoint's `ActiveContexts` matches the detector.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/13-context-leak-detection/08-pprof-goroutine-triage/cmd/demo
-cd go-solutions/14-select-and-context/13-context-leak-detection/08-pprof-goroutine-triage
-```
-
 ### The goroutine profile is a text document you can grep
 
 `pprof.Lookup("goroutine")` returns a `*pprof.Profile`. Its `Count()` is the

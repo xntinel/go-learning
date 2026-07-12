@@ -24,13 +24,6 @@ error-codes/                       module example.com/error-codes
 - Test: `CodeOf(NotFound(...))` is `USER_NOT_FOUND` even after `fmt.Errorf("svc: %w", ...)`; an error with no `Coder` yields `INTERNAL`; a reworded message does not change the code; `errors.As` and `errors.AsType` agree.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/13-designing-an-error-hierarchy/08-machine-readable-error-codes/cmd/demo
-cd go-solutions/10-error-handling/13-designing-an-error-hierarchy/08-machine-readable-error-codes
-```
-
 ### The code is the contract, not the prose
 
 A machine-readable code decouples the wire contract from the message text. The

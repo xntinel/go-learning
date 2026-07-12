@@ -32,8 +32,6 @@ pubsub/                      independent module: example.com/pubsub
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/25-pubsub-topic-handler-registration-loop-capture/cmd/demo
-cd go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/25-pubsub-topic-handler-registration-loop-capture
 go mod edit -go=1.24
 ```
 

@@ -27,8 +27,6 @@ validate/                   independent module: example.com/validate
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/08-interfaces/09-interface-internals/07-reflect-vs-typeswitch-validator/cmd/demo
-cd go-solutions/08-interfaces/09-interface-internals/07-reflect-vs-typeswitch-validator
 go mod edit -go=1.26
 ```
 

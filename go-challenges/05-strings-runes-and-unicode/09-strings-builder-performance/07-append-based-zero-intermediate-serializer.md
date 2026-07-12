@@ -26,11 +26,6 @@ Implement: `(Record).AppendTo(dst []byte) []byte` using `strconv.AppendInt/Appen
 Test: `AppendTo(nil)` equals the `fmt.Sprintf` reference for representative and control-character inputs; a benchmark with a reused `dst` shows 0 allocs/op.
 Verify: `go test -count=1 -race ./...`
 
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/09-strings-builder-performance/07-append-based-zero-intermediate-serializer/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/09-strings-builder-performance/07-append-based-zero-intermediate-serializer
-```
-
 ### The append idiom and what it buys
 
 Every function in the `strconv.Append*` family has the same shape: it takes a

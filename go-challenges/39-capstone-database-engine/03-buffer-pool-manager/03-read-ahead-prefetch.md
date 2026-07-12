@@ -21,12 +21,6 @@ prefetch_test.go         cold scan misses every page; warm scan hits every page;
 - Test: `prefetch_test.go` measures scan-phase disk reads with and without read-ahead, asserts prefetch never writes a page, and asserts prefetch into a fully pinned pool returns `ErrPoolExhausted`.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/03-buffer-pool-manager/03-read-ahead-prefetch/cmd/demo && cd go-solutions/39-capstone-database-engine/03-buffer-pool-manager/03-read-ahead-prefetch
-```
-
 ### Prefetch is a hint, not a reservation
 
 The defining property of read-ahead is that it holds no pins. `Prefetch` fetches each page — paying the disk read once, up front — and then immediately unpins it, leaving the page resident but evictable. This matters because read-ahead is speculative: it warms pages the scan is likely to want, but if the pool is under pressure some of those pages may be evicted again before the scan reaches them. That is fine. A page evicted before the scan arrives simply pays its miss then, exactly as if no prefetch had happened. Prefetch can never make a scan slower or incorrect; at worst it does redundant work. This is why it must not hold pins: a prefetch that kept pages pinned would reserve frames the rest of the workload needs and could exhaust the pool for pages nobody has asked for yet.

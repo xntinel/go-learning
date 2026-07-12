@@ -19,12 +19,6 @@ config_test.go       immutability, fork independence, concurrent forks under -ra
 - Test: `config_test.go` proves forking does not mutate the base, that two forks are independent, that concurrent forks of one base do not race, and that `Production` yields the expected config without mutating its base.
 - Verify: `go test -race -count=1 ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/24-design-patterns-in-go/02-builder-pattern/03-immutable-builder-and-director/cmd/demo && cd go-solutions/24-design-patterns-in-go/02-builder-pattern/03-immutable-builder-and-director
-```
-
 ### Why a value receiver makes the builder safe to share
 
 The fluent builder of Exercise 1 used a pointer receiver: every setter mutated the one struct the pointer pointed at, so two goroutines chaining on the same `*RequestBuilder` wrote to the same maps and raced. Switch the receiver to a *value* and the whole hazard disappears. When a method declares `func (b Builder) Host(h string) Builder`, Go passes the receiver *by copy*: `b` inside the method is a private copy of the caller's builder. Mutating `b.cfg.Host` mutates only that copy, and returning `b` hands the caller the modified copy. The builder the caller started from is never touched.

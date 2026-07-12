@@ -30,8 +30,6 @@ serveropts/                 independent module: example.com/serveropts
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/09-pointers/10-designing-pointer-safe-apis/05-functional-options-constructor/cmd/demo
-cd go-solutions/09-pointers/10-designing-pointer-safe-apis/05-functional-options-constructor
 go mod edit -go=1.25
 ```
 

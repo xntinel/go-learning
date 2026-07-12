@@ -26,13 +26,6 @@ allocator/                 independent module: example.com/allocator
 - Test: sequential `Call` returns a strictly increasing sequence; `Call` after `Shutdown` returns `ErrShuttingDown` (asserted with `errors.Is`); 100 concurrent `Call`s return a gap-free set of size 100 under `-race`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/09-channel-of-channels/01-serialized-actor-service/cmd/demo
-cd go-solutions/13-goroutines-and-channels/09-channel-of-channels/01-serialized-actor-service
-```
-
 ### The actor that owns the counter
 
 The counter is an ordinary `uint64` local variable inside `Run`. It is never a

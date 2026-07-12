@@ -28,13 +28,6 @@ apisrv/                    independent module: example.com/apisrv
 - Test: handler tests via the mux and a test that starts `Run`, drives it with a real client, cancels the context, and asserts a clean shutdown.
 - Verify: `go test -count=1 -race ./...`, then the GOCOVERDIR workflow below.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/20-test-coverage-analysis/04-integration-coverage-server-binary/cmd/demo
-cd go-solutions/12-testing-ecosystem/20-test-coverage-analysis/04-integration-coverage-server-binary
-```
-
 ### Why graceful shutdown is a prerequisite for integration coverage
 
 An instrumented binary flushes its coverage counters to `GOCOVERDIR` in a runtime

@@ -26,13 +26,6 @@ doonce/                    independent module: example.com/doonce
 - Test: many goroutines race to `Do` an action that increments a counter; assert it ran exactly once and later calls return `false`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/07-atomic-package/07-exactly-once-guard/cmd/demo
-cd go-solutions/15-sync-primitives/07-atomic-package/07-exactly-once-guard
-```
-
 ### CompareAndSwap as an exactly-once gate, and how it differs from sync.Once
 
 `CompareAndSwap(false, true)` is a race that has exactly one winner. Every goroutine

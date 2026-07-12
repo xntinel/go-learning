@@ -88,14 +88,6 @@ Three pseudo-filesystems are expected inside a container:
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/38-capstone-container-runtime/02-mount-namespace-root-filesystem/02-mount-namespace-root-filesystem/rootfs
-mkdir -p go-solutions/38-capstone-container-runtime/02-mount-namespace-root-filesystem/02-mount-namespace-root-filesystem/cmd/demo
-cd go-solutions/38-capstone-container-runtime/02-mount-namespace-root-filesystem/02-mount-namespace-root-filesystem
-```
-
 This is a library verified with `go test`. The demo binary in `cmd/demo` shows how to wire the library into a real namespace entry.
 
 ### Exercise 1: Configuration and Portable Validation

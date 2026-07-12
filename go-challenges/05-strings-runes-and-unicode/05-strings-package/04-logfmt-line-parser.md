@@ -28,13 +28,6 @@ bare key, value containing `=`, empty value, trailing space, unterminated quote
 (error); a round-trip property test.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/05-strings-package/04-logfmt-line-parser/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/05-strings-package/04-logfmt-line-parser
-```
-
 ### Why strings.Fields is the wrong baseline
 
 `strings.Fields(line)` splits on every run of whitespace. For

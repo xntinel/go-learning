@@ -25,13 +25,6 @@ svc/                       independent module: example.com/svc
 - Test: a `Service` from `New` has a working promoted `Ping`; the zero-value `Service` panics on a promoted call (asserted with `recover`); `New` rejects invalid input.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/08-embedding-for-composition/10-nil-embedded-pointer-panic/cmd/demo
-cd go-solutions/07-structs-and-methods/08-embedding-for-composition/10-nil-embedded-pointer-panic
-```
-
 ### Why the zero value bites, and how the constructor fixes it
 
 When you embed `*Client`, the embedded field is a pointer, and the zero value of a

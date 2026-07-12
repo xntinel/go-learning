@@ -30,8 +30,6 @@ bughunt/                   independent module: example.com/bughunt
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/01-environment-and-tooling/07-debugging-with-delve/01-interactive-bug-hunt/sum go-solutions/01-environment-and-tooling/07-debugging-with-delve/01-interactive-bug-hunt/cmd/demo
-cd go-solutions/01-environment-and-tooling/07-debugging-with-delve/01-interactive-bug-hunt
 go mod edit -go=1.24
 ```
 

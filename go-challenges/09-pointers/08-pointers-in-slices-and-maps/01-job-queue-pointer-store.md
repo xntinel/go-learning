@@ -27,13 +27,6 @@ Test: pointer identity from `Get`, in-place mutation visible to the original
 holder, snapshot independence, insertion order.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/08-pointers-in-slices-and-maps/01-job-queue-pointer-store/internal/jobs go-solutions/09-pointers/08-pointers-in-slices-and-maps/01-job-queue-pointer-store/cmd/demo
-cd go-solutions/09-pointers/08-pointers-in-slices-and-maps/01-job-queue-pointer-store
-```
-
 ### Why pointers, and why a snapshot of values
 
 The queue must do two things that pull in opposite directions. It must let

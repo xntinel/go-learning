@@ -28,13 +28,6 @@ Implement: `Principal{Subject, Roles}`, `WithPrincipal`/`PrincipalFromContext`, 
 Test: no principal -> 401 and inner handler not called; principal without the role -> 403; principal with the role -> 200 and handler sees the correct `Subject`; a forged string-key principal is not read.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/06-context-withvalue/04-auth-principal-guard/cmd/demo
-cd go-solutions/14-select-and-context/06-context-withvalue/04-auth-principal-guard
-```
-
 ### Why identity is context data and how the guard short-circuits
 
 The principal passes the boundary rule cleanly. Deleting it does not change what a

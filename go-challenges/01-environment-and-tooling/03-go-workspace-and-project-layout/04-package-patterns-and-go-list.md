@@ -33,8 +33,6 @@ myapp/                         module github.com/example/myapp
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/01-environment-and-tooling/03-go-workspace-and-project-layout/04-package-patterns-and-go-list/internal/config go-solutions/01-environment-and-tooling/03-go-workspace-and-project-layout/04-package-patterns-and-go-list/internal/greeting go-solutions/01-environment-and-tooling/03-go-workspace-and-project-layout/04-package-patterns-and-go-list/internal/layout go-solutions/01-environment-and-tooling/03-go-workspace-and-project-layout/04-package-patterns-and-go-list/cmd/cli go-solutions/01-environment-and-tooling/03-go-workspace-and-project-layout/04-package-patterns-and-go-list/cmd/server go-solutions/01-environment-and-tooling/03-go-workspace-and-project-layout/04-package-patterns-and-go-list/cmd/demo
-cd go-solutions/01-environment-and-tooling/03-go-workspace-and-project-layout/04-package-patterns-and-go-list
 go mod edit -go=1.24
 ```
 

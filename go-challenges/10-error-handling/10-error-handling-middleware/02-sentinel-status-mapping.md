@@ -30,13 +30,6 @@ Test: a table over (wrapped sentinel -> expected status) asserting status,
 doubly-wrapped error to prove `errors.Is` traverses the whole chain.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/10-error-handling-middleware/02-sentinel-status-mapping/cmd/demo
-cd go-solutions/10-error-handling/10-error-handling-middleware/02-sentinel-status-mapping
-```
-
 ### Why errors.Is and not a type switch
 
 The failure happens deep — a repository returns `ErrNotFound`, a validator

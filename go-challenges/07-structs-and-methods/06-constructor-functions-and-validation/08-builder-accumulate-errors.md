@@ -27,13 +27,6 @@ querybuilder/                independent module: example.com/builder-accumulate-
 - Test: a valid chain builds the expected value; each bad setter contributes its sentinel and `Build` aggregates via `errors.Is`; `Build` returns the zero `Query` plus error on any failure; and calling `Build` twice is idempotent (pinned by a test).
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/06-constructor-functions-and-validation/08-builder-accumulate-errors/cmd/demo
-cd go-solutions/07-structs-and-methods/06-constructor-functions-and-validation/08-builder-accumulate-errors
-```
-
 ### Builder versus functional options
 
 Both patterns solve "many optional settings", but they make opposite trade-offs.

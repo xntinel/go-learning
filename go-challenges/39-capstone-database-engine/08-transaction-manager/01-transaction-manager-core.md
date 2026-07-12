@@ -21,12 +21,6 @@ txmgr_test.go         lifecycle, locking, deadlock, recovery, savepoint tests (-
 - Test: same-package tests cover commit durability, abort rollback, shared/exclusive lock behavior, lock upgrade, a crossed deadlock resolved by the detector, redo/undo recovery and its idempotence, savepoint partial rollback, and a concurrent stress test.
 - Verify: `go test -count=1 -race ./...` and `go run ./cmd/demo`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/08-transaction-manager/01-transaction-manager-core/cmd/demo && cd go-solutions/39-capstone-database-engine/08-transaction-manager/01-transaction-manager-core
-```
-
 ### How the pieces interact
 
 The manager is one struct because every subsystem touches the same state. A `Write` takes an exclusive lock from the lock table, appends a before/after record to the WAL, and mutates the store — three subsystems in one call. A `Commit` writes a COMMIT record, flushes, and only then releases the locks. An `Abort` walks the WAL undo chain (touching the store and writing CLRs) before it releases locks. The deadlock detector reads a wait-for graph that `LockShared` and `LockExclusive` populate as they block, and it resolves a cycle by calling `Abort` on a victim and broadcasting every lock's condition variable. Recovery reads only the WAL and rebuilds the store. Because the interactions are this dense, the type definitions live in one file and all the manager methods in another, but they are one package.

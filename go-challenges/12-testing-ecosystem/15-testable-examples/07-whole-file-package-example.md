@@ -24,13 +24,6 @@ Implement: a `Bucket` burst limiter with `New(capacity)`, `Allow() bool`, and `R
 Test: a whole-file `Example` in its own file, plus a table-driven `Test` in a separate file.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/15-testable-examples/07-whole-file-package-example/cmd/demo
-cd go-solutions/12-testing-ecosystem/15-testable-examples/07-whole-file-package-example
-```
-
 ## What makes a file a whole-file example
 
 `pkg.go.dev` renders a file — imports and all — as the package's headline usage

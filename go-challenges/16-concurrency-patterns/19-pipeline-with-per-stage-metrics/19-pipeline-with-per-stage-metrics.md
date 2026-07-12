@@ -47,13 +47,6 @@ A `TrySend` variant records the drop and moves on.
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/16-concurrency-patterns/19-pipeline-with-per-stage-metrics/19-pipeline-with-per-stage-metrics/internal/pipemetrics go-solutions/16-concurrency-patterns/19-pipeline-with-per-stage-metrics/19-pipeline-with-per-stage-metrics/cmd/pipemetricsdemo
-cd go-solutions/16-concurrency-patterns/19-pipeline-with-per-stage-metrics/19-pipeline-with-per-stage-metrics
-```
-
 ### Exercise 1: The Stage Wrapper
 
 Create `internal/pipemetrics/pipemetrics.go`:

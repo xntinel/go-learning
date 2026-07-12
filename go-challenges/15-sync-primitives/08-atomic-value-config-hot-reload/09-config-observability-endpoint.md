@@ -28,13 +28,6 @@ cfgdebug/                  independent module: example.com/cfgdebug
 - Test: httptest asserts the JSON body after simulated successful and failed reloads (deterministic via the fake clock); readiness flips 200 to 503 when staleness exceeds the threshold, when config was never loaded, and back to 200 on recovery.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/08-atomic-value-config-hot-reload/09-config-observability-endpoint/cmd/demo
-cd go-solutions/15-sync-primitives/08-atomic-value-config-hot-reload/09-config-observability-endpoint
-```
-
 ### One snapshot for the status, too
 
 The tempting layout is three parallel atomics — a config pointer, an

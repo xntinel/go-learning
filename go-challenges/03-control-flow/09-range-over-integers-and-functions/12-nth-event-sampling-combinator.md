@@ -24,8 +24,6 @@ Verify: `go test -count=1 ./...`
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/09-range-over-integers-and-functions/12-nth-event-sampling-combinator
-cd go-solutions/03-control-flow/09-range-over-integers-and-functions/12-nth-event-sampling-combinator
 go mod edit -go=1.24
 ```
 

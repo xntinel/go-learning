@@ -36,8 +36,6 @@ stdlib, while the Connect handler and clients need generated code and the extern
 the module:
 
 ```bash
-mkdir -p go-solutions/51-rpc-and-api-design/07-rpc-style-tradeoffs/02-one-endpoint-three-protocols/cmd/demo
-cd go-solutions/51-rpc-and-api-design/07-rpc-style-tradeoffs/02-one-endpoint-three-protocols
 go mod edit -go=1.26
 ```
 

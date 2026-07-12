@@ -26,13 +26,6 @@ joinshape/                 independent module: example.com/joinshape
 - Test: split `Error()` on `\n` and assert the count equals the number of non-nil inputs; assert each source name is `strings.Contains`-present in the aggregated message.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/07-multiple-error-returns/02-joined-error-message-shape/cmd/demo
-cd go-solutions/10-error-handling/07-multiple-error-returns/02-joined-error-message-shape
-```
-
 ### What the joined `Error()` guarantees, and what it does not
 
 `errors.Join` documents its `Error()` as "the concatenation of the strings obtained

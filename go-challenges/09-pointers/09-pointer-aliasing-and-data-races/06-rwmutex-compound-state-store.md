@@ -28,13 +28,6 @@ statcache/                 independent module: example.com/statcache
 - Test: concurrent `Get`/`Set`/`Evict`; after `Wait`, assert `len(entries) == reported size` and the hits counter equals observed hits, under `-race`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/09-pointer-aliasing-and-data-races/06-rwmutex-compound-state-store/cmd/demo
-cd go-solutions/09-pointers/09-pointer-aliasing-and-data-races/06-rwmutex-compound-state-store
-```
-
 ### Why a single atomic cannot guard this invariant
 
 The cache maintains three pieces of state that must agree: the `entries` map, a

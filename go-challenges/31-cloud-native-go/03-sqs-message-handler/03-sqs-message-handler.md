@@ -66,8 +66,6 @@ A message that exhausts its receive-count retries lands in the DLQ. Malformed me
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/31-cloud-native-go/03-sqs-message-handler/03-sqs-message-handler/cmd/demo
-cd go-solutions/31-cloud-native-go/03-sqs-message-handler/03-sqs-message-handler
 go get github.com/aws/aws-lambda-go@v1.47.0
 ```
 

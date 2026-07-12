@@ -30,13 +30,6 @@ cfgsighup/                 independent module: example.com/cfgsighup
 - Test: send `syscall.Kill(os.Getpid(), syscall.SIGHUP)` after arming and wait (deadline-bounded) for the version to advance; cancel the context and prove the worker goroutine exits via its done channel; a failing source keeps the old snapshot and counts the error.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/08-atomic-value-config-hot-reload/05-sighup-reload-worker/cmd/demo
-cd go-solutions/15-sync-primitives/08-atomic-value-config-hot-reload/05-sighup-reload-worker
-```
-
 ### The three signal traps this design defuses
 
 Signal handling in Go looks trivial — `signal.Notify` and a channel — and

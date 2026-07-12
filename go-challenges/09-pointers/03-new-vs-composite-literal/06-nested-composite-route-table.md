@@ -29,13 +29,6 @@ index groups routes by prefix; per-route middleware slices are independent;
 a golden assertion on the built table.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/03-new-vs-composite-literal/06-nested-composite-route-table/cmd/demo
-cd go-solutions/09-pointers/03-new-vs-composite-literal/06-nested-composite-route-table
-```
-
 ### Why a nested literal
 
 A routing table is a tree: routes, each carrying a handler and an ordered list of

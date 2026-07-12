@@ -29,13 +29,6 @@ concurrent `Get` on a primed counter asserting every read is valid; 10000 serial
 increments.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/21-race-detector/01-concurrent-metrics-counter/cmd/demo
-cd go-solutions/12-testing-ecosystem/21-race-detector/01-concurrent-metrics-counter
-```
-
 ### Why atomic and not a mutex here
 
 The counter's entire state is a single 64-bit integer, and the only operation is

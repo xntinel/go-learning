@@ -22,12 +22,6 @@ checkpoint_test.go   marshal round-trip, length-mismatch errors, last-checkpoint
 - Test: `checkpoint_test.go` asserts the wire round-trip preserves `RedoLSN` and `ActiveTxns`, that short and length-mismatched buffers return the right sentinels, that `LastCheckpoint` selects the highest-LSN checkpoint, and that `Truncate(redoLSN)` frees segments end to end.
 - Verify: `go test -run 'TestUnmarshalCheckpoint|TestCheckpointRoundTrip|TestLastCheckpoint|TestCheckpointGC' -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/01-write-ahead-log/05-checkpoint-payloads-and-segment-gc/cmd/demo && cd go-solutions/39-capstone-database-engine/01-write-ahead-log/05-checkpoint-payloads-and-segment-gc
-```
-
 ### Why an empty marker is not enough
 
 A checkpoint exists to bound recovery work: it names a redo point, a single LSN such that replaying only from there forward is guaranteed correct because everything earlier is already reflected in the data files. To skip the replay of everything before it, the marker has to carry the redo LSN itself. It also has to carry the set of transactions that were still active when the checkpoint was taken, because those are exactly the ones recovery may need to undo — a fuzzy checkpoint runs concurrently with live traffic, so transactions straddle it, and recovery must know which were unfinished. That is two pieces of state, and packing them into the record's payload is the job of `CheckpointPayload`.

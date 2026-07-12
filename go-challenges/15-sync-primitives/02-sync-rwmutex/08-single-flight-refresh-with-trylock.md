@@ -27,13 +27,6 @@ Implement: `Refresher` holding a `*Document` behind an `RWMutex`; `Get` under `R
 Test: N concurrent `Refresh` calls against a channel-stalled loader invoke the loader exactly once while N-1 callers get `ErrRefreshInFlight` without blocking; `Get` during the stall serves the previous document; a loader error preserves the last-good document and surfaces via `LastError`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/02-sync-rwmutex/08-single-flight-refresh-with-trylock/cmd/demo
-cd go-solutions/15-sync-primitives/02-sync-rwmutex/08-single-flight-refresh-with-trylock
-```
-
 ### Two mutexes because there are two resources
 
 The mistake this design refuses to make is using one lock for two different

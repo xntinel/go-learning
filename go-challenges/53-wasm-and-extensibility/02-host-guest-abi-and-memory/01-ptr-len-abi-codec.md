@@ -27,13 +27,6 @@ abi/                       independent module: example.com/abi
 - Test: table-driven round-trip over edge values asserting no field bleed, agreement with the `api.EncodeU32` spelling, and bounds cases (fits, exactly fills, overflow) asserted with `errors.Is`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/53-wasm-and-extensibility/02-host-guest-abi-and-memory/01-ptr-len-abi-codec/cmd/demo
-cd go-solutions/53-wasm-and-extensibility/02-host-guest-abi-and-memory/01-ptr-len-abi-codec
-```
-
 ### Why a codec, and why one `i64`
 
 The boundary can only move numbers, so a region of guest memory is described by

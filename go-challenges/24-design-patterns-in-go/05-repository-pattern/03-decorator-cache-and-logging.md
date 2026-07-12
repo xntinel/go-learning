@@ -21,12 +21,6 @@ repo_test.go             base contract, caching hit/miss + invalidation, logging
 - Test: the base contract, that caching serves hits and invalidates on write, and that logging records every call.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/24-design-patterns-in-go/05-repository-pattern/03-decorator-cache-and-logging/cmd/demo && cd go-solutions/24-design-patterns-in-go/05-repository-pattern/03-decorator-cache-and-logging
-```
-
 ### Why a decorator instead of editing the storage code
 
 The wrong way to add a cache is to reach into the storage implementation and sprinkle a map and a logger through every method. That bloats the storage code with concerns it should not own, forces a second implementation (a SQL one, say) to reimplement the same plumbing, and makes the cache impossible to remove or reorder without editing storage. The decorator avoids all of it by exploiting the interface: a `CachingRepository[T]` holds a `Repository[T]` (the inner one), implements `Repository[T]` itself, and on each call decides whether to answer locally or delegate.

@@ -26,13 +26,6 @@ Test: 0/1/N rows, values needing quote-escaping, and an `AllocsPerRun` assertion
 that the pre-sized builder stays at a small constant allocation count.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/01-string-basics/03-bounded-builder/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/01-string-basics/03-bounded-builder
-```
-
 ## Why += is a latency bug and Builder is the fix
 
 The naive version is seductive:

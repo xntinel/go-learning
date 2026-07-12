@@ -31,13 +31,6 @@ passes under `-race`.
 Verify: `go test -count=1 -race ./...`; then `go run -race ./cmd/racy` to observe
 the report; then `GORACE="exitcode=77 halt_on_error=1" go run -race ./cmd/racy`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/21-race-detector/02-diagnose-the-race-report/cmd/racy
-cd go-solutions/12-testing-ecosystem/21-race-detector/02-diagnose-the-race-report
-```
-
 ### The racy artifact lives under cmd/racy on purpose
 
 The whole point of this exercise is to see a real report, but a deliberately

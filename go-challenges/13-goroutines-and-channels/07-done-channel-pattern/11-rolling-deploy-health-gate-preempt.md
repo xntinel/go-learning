@@ -22,13 +22,6 @@ promoter/                    independent module: example.com/promoter
 - Test: a pre-closed abort with a full queue promotes exactly zero; a never-closed abort with a closed queue promotes every batch in order; an abort that closes during the K-th promotion admits nothing beyond K.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/07-done-channel-pattern/11-rolling-deploy-health-gate-preempt/cmd/demo
-cd go-solutions/13-goroutines-and-channels/07-done-channel-pattern/11-rolling-deploy-health-gate-preempt
-```
-
 Set the `go` directive in `go.mod` to `go 1.26`; the toolchain auto-downloads.
 
 ### Why a bare select leaks a promotion

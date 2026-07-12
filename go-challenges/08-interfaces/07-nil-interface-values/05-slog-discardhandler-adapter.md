@@ -23,13 +23,6 @@ slogwiring/                independent module: example.com/slogwiring
 - Test: `NewLogger(nil).Info(...)` does not panic and emits nothing; the JSON path writes parseable JSON to a buffer; the wrapper honors `Enabled` at the configured level and forwards `WithAttrs`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/07-nil-interface-values/05-slog-discardhandler-adapter/cmd/demo
-cd go-solutions/08-interfaces/07-nil-interface-values/05-slog-discardhandler-adapter
-```
-
 ### Why normalize the Handler, and what the four methods mean
 
 `slog.New` stores the Handler and dispatches every log call to it; if the

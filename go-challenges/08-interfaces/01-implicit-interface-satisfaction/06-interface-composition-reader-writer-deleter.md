@@ -28,13 +28,6 @@ segregate/                    independent module: example.com/segregate
 - Test: pass the same `*MemoryStore` to a read-only consumer, a backup consumer, and a purge consumer; fake `KeyReader` with a single method; assert `*MemoryStore` satisfies the composition.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/01-implicit-interface-satisfaction/06-interface-composition-reader-writer-deleter/cmd/demo
-cd go-solutions/08-interfaces/01-implicit-interface-satisfaction/06-interface-composition-reader-writer-deleter
-```
-
 ### Segregation: the call site drives the interface
 
 The canonical example is the standard library itself: `io.Reader` is one method,

@@ -102,13 +102,6 @@ transactions. Mitigated by FIFO lock queues (not in scope for this lesson).
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/37-distributed-systems-fundamentals/20-distributed-transaction-coordinator/20-distributed-transaction-coordinator/cmd/demo
-cd go-solutions/37-distributed-systems-fundamentals/20-distributed-transaction-coordinator/20-distributed-transaction-coordinator
-```
-
 This is a library. Verification is done with `go test`, not by running a
 program.
 

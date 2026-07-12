@@ -64,8 +64,6 @@ slowdown becomes unbounded connection growth.
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/14-select-and-context/10-context-aware-database-queries/09-healthcheck-ping-and-pool/cmd/demo
-cd go-solutions/14-select-and-context/10-context-aware-database-queries/09-healthcheck-ping-and-pool
 go mod edit -go=1.25
 go get modernc.org/sqlite
 ```

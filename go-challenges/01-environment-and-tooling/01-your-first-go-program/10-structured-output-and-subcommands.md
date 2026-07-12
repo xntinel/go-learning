@@ -29,13 +29,6 @@ wired to a `bytes.Buffer` asserting one JSON line whose keys round-trip through
 Verify: `go test -count=1 -race ./...`; a shell harness runs the subcommands and
 checks exit codes. `gofmt -l` empty.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/01-your-first-go-program/10-structured-output-and-subcommands
-cd go-solutions/01-environment-and-tooling/01-your-first-go-program/10-structured-output-and-subcommands
-```
-
 ### A testable dispatcher, not an untestable main
 
 `main` shrinks to one line: `os.Exit(run(os.Args[1:], os.Stdout, os.Stderr))`. All

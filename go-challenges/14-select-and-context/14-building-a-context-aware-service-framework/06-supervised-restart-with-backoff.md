@@ -25,13 +25,6 @@ Implement: `Supervisor.Run` that calls `Runnable.Run`, and on a non-nil error wa
 Test: a `Runnable` that fails N times then succeeds is restarted exactly N times; `backoffCap` is monotonic and capped; cancelling `ctx` during a backoff returns promptly; exceeding max-retries surfaces a wrapped fatal error.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/14-building-a-context-aware-service-framework/06-supervised-restart-with-backoff/cmd/demo
-cd go-solutions/14-select-and-context/14-building-a-context-aware-service-framework/06-supervised-restart-with-backoff
-```
-
 ### The supervision loop, piece by piece
 
 The supervised unit is a `Runnable` whose `Run(ctx)` *blocks* until it either

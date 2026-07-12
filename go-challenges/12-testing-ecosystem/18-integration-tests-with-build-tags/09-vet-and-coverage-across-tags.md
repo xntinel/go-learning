@@ -26,13 +26,6 @@ covtags/                   independent module: example.com/covtags
 - Test: table-driven coverage of `FormatAudit` in the default build; the tagged file demonstrates the vet-under-tags requirement.
 - Verify: `go vet ./...` misses a defect in a tagged file; `go vet -tags=integration ./...` catches it; `go test -tags=integration -coverprofile` measures the tagged tier.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/18-integration-tests-with-build-tags/09-vet-and-coverage-across-tags/cmd/demo
-cd go-solutions/12-testing-ecosystem/18-integration-tests-with-build-tags/09-vet-and-coverage-across-tags
-```
-
 ### The silent-green trap, made concrete
 
 Here is the bug that hides. Suppose the integration tier has a helper that formats an

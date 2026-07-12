@@ -23,13 +23,6 @@ Implement: `PadRight(s string, width int) string`, `RenderTable(rows [][]string)
 Test: `PadRight("café",6)` is 6 runes wide; Go's `%-6s` produces the same (dispelling the byte-width myth); already-wide row untouched; no panic at width 0; documented CJK wide-char misalignment.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/04-string-iteration-bytes-vs-runes/09-fixed-width-column-formatter/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/04-string-iteration-bytes-vs-runes/09-fixed-width-column-formatter
-```
-
 ### Pad by runes, and the myth about %-Ns
 
 `PadRight` measures the cell in runes with `utf8.RuneCountInString` and appends spaces to

@@ -27,13 +27,6 @@ Implement: a `Config` struct, `Option = func(*Config) error`, `New(opts ...Optio
 Test: defaults applied with no options; each option mutates only its field; options compose in order (last-writer-wins on the same field); a failing option returns an error; `New` returns a non-nil `*Config` on success.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/05-pointers-to-structs/04-functional-options-config/cmd/demo
-cd go-solutions/09-pointers/05-pointers-to-structs/04-functional-options-config
-```
-
 ### Why options are `func(*Config)` and the constructor returns `*Config`
 
 The pattern rests entirely on pointer receivers-by-argument. An `Option` is

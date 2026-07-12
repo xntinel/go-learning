@@ -22,12 +22,6 @@ mqmux_test.go        echo over net.Pipe, 100 concurrent round trips, closed-clie
 - Test: round-trip an echo over `net.Pipe`, drive 100 concurrent round trips, assert a closed client returns `ErrConnClosed`, and run one round trip over a real loopback listener.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/41-capstone-message-queue/07-tcp-protocol-client/02-multiplexed-client-server/cmd/demo && cd go-solutions/41-capstone-message-queue/07-tcp-protocol-client/02-multiplexed-client-server
-```
-
 ### Why one reader, one write mutex, and a correlation-ID map
 
 The client's job is to let many goroutines share one connection without blocking each other and without corrupting the byte stream. Three pieces make that safe, and each addresses a distinct hazard.

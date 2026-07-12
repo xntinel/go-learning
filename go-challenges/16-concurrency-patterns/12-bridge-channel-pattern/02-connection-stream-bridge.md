@@ -19,12 +19,6 @@ hub_test.go          ordered-block delivery, concurrent registration, done cance
 - Test: `hub_test.go` proves sequential registration yields exact ordered blocks, concurrent registration delivers every message with each connection contiguous, closing `done` terminates the bridge, and shutting down a hub with no connections closes the output.
 - Verify: `go test -run 'TestHub|TestBridge' -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/16-concurrency-patterns/12-bridge-channel-pattern/02-connection-stream-bridge/cmd/demo && cd go-solutions/16-concurrency-patterns/12-bridge-channel-pattern/02-connection-stream-bridge
-```
-
 ### Why registration over a channel, and what the serialization buys
 
 The `Hub` turns "a connection exists" into "a channel is on the outer stream." `Open` creates an unbuffered `chan Message`, hands its receive end to the bridge by sending it on the hub's outer channel, and returns its send end to the caller. Because the outer channel is unbuffered, `Open` blocks until the bridge actually receives the connection — and the bridge only receives the next connection after it has fully drained the current one. That single fact is the design's backbone: connections are *serialized* by the bridge, so each connection's messages land in the flat output as one contiguous, in-order block, and the next connection cannot even start streaming until the current one closes.

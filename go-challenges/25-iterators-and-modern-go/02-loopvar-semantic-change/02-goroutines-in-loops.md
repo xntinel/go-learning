@@ -20,12 +20,6 @@ example_test.go      ExampleFanOut with a verified // Output block
 - Test: assert the full sorted result for several inputs, drive parallel subtests over a per-iteration loop variable, and check the empty-input error with `errors.Is`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/25-iterators-and-modern-go/02-loopvar-semantic-change/02-goroutines-in-loops/cmd/demo && cd go-solutions/25-iterators-and-modern-go/02-loopvar-semantic-change/02-goroutines-in-loops
-```
-
 ### Why this used to be a race, and why it no longer is
 
 A goroutine launched inside a loop captures the loop variable exactly the way a closure does, but it adds the one ingredient that turns a logic bug into undefined behavior: concurrency. Under the pre-1.22 per-loop rule, `go func() { out <- v * v }()` captured the single shared `v`. The launched goroutines usually did not start running until the loop had already advanced or finished, so they read a later value — but worse, the loop's `range` step was *writing* the next element into `v` on the main goroutine at the same time the launched goroutines were *reading* `v`, with no synchronization between the two. That is the textbook definition of a data race: concurrent access to the same memory, at least one of them a write, unordered by any happens-before edge. `go test -race` reported it as a `WARNING: DATA RACE`, not as a failed assertion, and the program's output was not just wrong but undefined.

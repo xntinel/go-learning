@@ -29,8 +29,6 @@ vendorcheck/               independent module: example.com/vendorcheck
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/11-packages-and-modules/06-dependency-management/03-reproducible-add-and-vendor/cmd/demo
-cd go-solutions/11-packages-and-modules/06-dependency-management/03-reproducible-add-and-vendor
 go get golang.org/x/mod
 ```
 

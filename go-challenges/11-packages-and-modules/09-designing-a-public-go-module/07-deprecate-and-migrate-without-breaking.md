@@ -28,13 +28,6 @@ publicstr/                 independent module: example.com/publicstr
 - Test: `ReverseRunes` reverses multi-byte input correctly (`"abç"` round-trips); byte `Reverse` keeps its documented byte behavior; a `go/doc` check that `Reverse`'s comment contains a `Deprecated:` paragraph so tooling flags uses.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/11-packages-and-modules/09-designing-a-public-go-module/07-deprecate-and-migrate-without-breaking/cmd/demo
-cd go-solutions/11-packages-and-modules/09-designing-a-public-go-module/07-deprecate-and-migrate-without-breaking
-```
-
 ### What the Deprecated convention actually does
 
 `// Deprecated:` is not a comment style — it is a recognized marker. A doc comment

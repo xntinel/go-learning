@@ -40,13 +40,6 @@ A backend is marked unhealthy when a dial attempt fails. Restoring it to healthy
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/33-tcp-udp-and-networking/21-tcp-load-balancer/21-tcp-load-balancer/cmd/demo
-cd go-solutions/33-tcp-udp-and-networking/21-tcp-load-balancer/21-tcp-load-balancer
-```
-
 ### Exercise 1: Backend Pool and Balancing Algorithms
 
 Create `lb.go`:

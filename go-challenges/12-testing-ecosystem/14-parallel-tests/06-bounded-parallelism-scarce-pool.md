@@ -28,13 +28,6 @@ Test: parallel tests that each acquire a package-level weighted semaphore
 (sized to the pool) via `t.Cleanup`, asserting `ErrPoolExhausted` never occurs.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/14-parallel-tests/06-bounded-parallelism-scarce-pool/cmd/demo
-cd go-solutions/12-testing-ecosystem/14-parallel-tests/06-bounded-parallelism-scarce-pool
-```
-
 ### Why -parallel and GOMAXPROCS are the wrong knob alone
 
 The default parallelism is `GOMAXPROCS`, i.e. CPU count. But the scarce resource is

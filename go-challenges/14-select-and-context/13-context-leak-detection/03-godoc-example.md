@@ -27,14 +27,6 @@ Implement: nothing new in the detector; the deliverable is the examples.
 Test: `ExampleDetector_WithCancel` asserts `leaks after cancel: 0`; `ExampleDetector_leak` asserts a dropped cancel reports `1`, both via `// Output:`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/13-context-leak-detection/03-godoc-example/internal/leakdetect
-mkdir -p go-solutions/14-select-and-context/13-context-leak-detection/03-godoc-example/cmd/demo
-cd go-solutions/14-select-and-context/13-context-leak-detection/03-godoc-example
-```
-
 ### Why the example lives in package leakdetect_test
 
 A test file declared `package leakdetect_test` (note the `_test` suffix on the

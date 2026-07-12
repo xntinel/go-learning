@@ -23,13 +23,6 @@ Implement: `TruncateBytes(s string, max int) string`, `TruncateRunes(s string, m
 Test: result is valid UTF-8 and within budget for mid-rune cutoffs; already-fits returns identity; property test over random UTF-8.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/04-string-iteration-bytes-vs-runes/02-rune-safe-truncate-to-byte-budget/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/04-string-iteration-bytes-vs-runes/02-rune-safe-truncate-to-byte-budget
-```
-
 ### The algorithm and why it is correct
 
 The contract of `TruncateBytes(s, max)` is: return the longest prefix of `s` that is

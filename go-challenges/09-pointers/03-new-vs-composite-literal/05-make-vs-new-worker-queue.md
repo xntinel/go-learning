@@ -29,13 +29,6 @@ Test: N jobs across W workers produce N results; the nil-channel helper proves a
 goroutine leak (count before/after).
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/03-new-vs-composite-literal/05-make-vs-new-worker-queue/cmd/demo
-cd go-solutions/09-pointers/03-new-vs-composite-literal/05-make-vs-new-worker-queue
-```
-
 ### Why make, not new
 
 A dispatcher needs three things that are usable, not zero: a buffered channel to

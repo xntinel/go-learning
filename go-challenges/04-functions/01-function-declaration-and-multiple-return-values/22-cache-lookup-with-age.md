@@ -33,8 +33,6 @@ agedcache/                   independent module: example.com/cache-lookup-with-a
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/01-function-declaration-and-multiple-return-values/22-cache-lookup-with-age/cmd/demo
-cd go-solutions/04-functions/01-function-declaration-and-multiple-return-values/22-cache-lookup-with-age
 go mod edit -go=1.24
 ```
 

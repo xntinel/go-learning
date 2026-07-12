@@ -27,13 +27,6 @@ resstack/                    independent module: example.com/resstack
 - Test: register N defers appending their index and assert the order is `[N-1..0]`; drive `Setup` and assert teardown events are the exact reverse of acquisition; drive `SetupWrongOrder` and assert its teardown order is wrong.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/07-defer-semantics-and-ordering/02-defer-lifo-resource-stack/cmd/demo
-cd go-solutions/03-control-flow/07-defer-semantics-and-ordering/02-defer-lifo-resource-stack
-```
-
 ### Why LIFO is the correct default for a resource stack
 
 Layered resources have a dependency order. The advisory lock is taken *inside* the

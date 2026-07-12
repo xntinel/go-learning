@@ -26,13 +26,6 @@ Implement: an `io.Reader` that ASCII-uppercases bytes as they stream through, wr
 Test: `iotest.TestReader` against the transformed content, plus EOF propagation, partial read, `io.ReadAll`, `bytes.Buffer.ReadFrom`, and empty input.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/10-testing-readers-with-iotest/01-transforming-reader-passes-iotest/cmd/demo
-cd go-solutions/12-testing-ecosystem/10-testing-readers-with-iotest/01-transforming-reader-passes-iotest
-```
-
 ### Why a transform is the right shape to prove the contract
 
 A transforming reader is a passthrough that touches each byte, so it inherits the

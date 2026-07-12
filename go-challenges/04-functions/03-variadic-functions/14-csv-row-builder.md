@@ -27,8 +27,6 @@ csvrow/                     independent module: example.com/csv-row
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/03-variadic-functions/14-csv-row-builder
-cd go-solutions/04-functions/03-variadic-functions/14-csv-row-builder
 go mod edit -go=1.24
 ```
 

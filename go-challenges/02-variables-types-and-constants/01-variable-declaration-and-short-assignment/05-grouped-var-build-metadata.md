@@ -27,13 +27,6 @@ buildinfo/                     independent module: example.com/buildinfo
 - Test: fallback fills from `Settings`; an ldflags-set version ignores build info; defaults returned when build info is unavailable; `String()` formats every field.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/01-variable-declaration-and-short-assignment/05-grouped-var-build-metadata/cmd/demo
-cd go-solutions/02-variables-types-and-constants/01-variable-declaration-and-short-assignment/05-grouped-var-build-metadata
-```
-
 ### Why these must be package-level string `var`s
 
 Build metadata is injected at link time:

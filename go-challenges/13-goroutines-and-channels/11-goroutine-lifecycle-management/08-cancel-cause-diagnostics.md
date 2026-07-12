@@ -27,13 +27,6 @@ causestop/                 independent module: example.com/causestop
 - Test: cancelling with a sentinel cause makes `context.Cause` return it while `ctx.Err()` is `context.Canceled`; a deadline parent makes both `Cause` and `Err` be `context.DeadlineExceeded`; the recorded reason matches the cause.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/11-goroutine-lifecycle-management/08-cancel-cause-diagnostics/cmd/demo
-cd go-solutions/13-goroutines-and-channels/11-goroutine-lifecycle-management/08-cancel-cause-diagnostics
-```
-
 ### Cause versus Err, and how they combine
 
 `context.WithCancelCause(parent)` returns a context and a

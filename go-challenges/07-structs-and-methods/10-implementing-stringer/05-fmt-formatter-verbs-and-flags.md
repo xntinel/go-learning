@@ -24,13 +24,6 @@ money/                      independent module: example.com/money
 - Test: a table over `%s`, `%d`, `%+v`, `%#v`, `%8s`, `%-8s`; padding applied when `Width()` is set; `+` toggles the currency code; a negative amount; `go vet` printf checker clean.
 - Verify: `go test -count=1 -race ./...` and `go vet ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/10-implementing-stringer/05-fmt-formatter-verbs-and-flags/cmd/demo
-cd go-solutions/07-structs-and-methods/10-implementing-stringer/05-fmt-formatter-verbs-and-flags
-```
-
 ### Why Formatter, and how it takes over
 
 `Money` needs verb-dependent output, which a single `String()` cannot give. So it

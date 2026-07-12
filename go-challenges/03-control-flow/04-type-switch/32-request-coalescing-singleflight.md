@@ -43,8 +43,6 @@ request-coalescing-singleflight/   independent module: example.com/request-coale
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/04-type-switch/32-request-coalescing-singleflight/cmd/demo
-cd go-solutions/03-control-flow/04-type-switch/32-request-coalescing-singleflight
 go mod edit -go=1.24
 ```
 

@@ -24,13 +24,6 @@ Implement: a 2-method `Clock`, a production `RealClock`, a `Scheduler` that retu
 Test: table/unit tests injecting `FakeClock` — only due events return, `Advance` makes a future event due, `RealClock.Now()` falls between two `time.Now()` reads, an empty scheduler returns nothing, and `After` fires at the advanced instant.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/16-testing-time-dependent-code/01-injectable-clock-scheduler/cmd/demo
-cd go-solutions/12-testing-ecosystem/16-testing-time-dependent-code/01-injectable-clock-scheduler
-```
-
 ### Why a Clock interface, and why exactly two methods
 
 A `Scheduler` that called `time.Now()` internally would be untestable without

@@ -21,8 +21,6 @@ The demo runs through exported API, but `go test` is the gate. Table-driven test
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/22-database-patterns/10-testing-with-in-memory-sqlite/10-testing-with-in-memory-sqlite
-cd go-solutions/22-database-patterns/10-testing-with-in-memory-sqlite/10-testing-with-in-memory-sqlite
 go mod edit -go=1.26
 ```
 

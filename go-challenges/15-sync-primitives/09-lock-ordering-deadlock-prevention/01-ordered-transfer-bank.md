@@ -31,13 +31,6 @@ orderedbank/               independent module: example.com/orderedbank
 - Test: table-driven error cases asserted with `errors.Is`, a 50-goroutine conservation test, and `TestTransferBothDirections` — the test that deadlocks without ordering.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/09-lock-ordering-deadlock-prevention/01-ordered-transfer-bank/bank go-solutions/15-sync-primitives/09-lock-ordering-deadlock-prevention/01-ordered-transfer-bank/cmd/demo
-cd go-solutions/15-sync-primitives/09-lock-ordering-deadlock-prevention/01-ordered-transfer-bank
-```
-
 ### Why the order must belong to the account, not the caller
 
 The naive transfer locks its arguments in the order it received them:

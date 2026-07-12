@@ -26,13 +26,6 @@ Implement: `FetchWithTimeout(ctx context.Context, client *http.Client, url strin
 Test: a slow handler + a 30 ms caller context asserts `errors.Is(err, context.DeadlineExceeded)`; a fast handler asserts `200`+body; plus the shipped `TestClientTimeoutReturnsDeadline` (1 ms context vs 50 ms handler).
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/09-context-in-http-servers-clients/03-client-fetch-with-context/cmd/demo
-cd go-solutions/14-select-and-context/09-context-in-http-servers-clients/03-client-fetch-with-context
-```
-
 ## The design
 
 `http.NewRequest` hardcodes `context.Background()` into the request, so a deadline

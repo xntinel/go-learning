@@ -28,8 +28,6 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/02-variables-types-and-constants/10-type-inference-deep-dive/09-json-number-float64-boundary/cmd/demo
-cd go-solutions/02-variables-types-and-constants/10-type-inference-deep-dive/09-json-number-float64-boundary
 go mod edit -go=1.26
 ```
 

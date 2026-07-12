@@ -30,8 +30,6 @@ wrapcfg/                  independent module: example.com/wrapcfg
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/02-variables-types-and-constants/06-type-aliases-vs-type-definitions/09-method-set-loss-when-wrapping/cmd/demo
-cd go-solutions/02-variables-types-and-constants/06-type-aliases-vs-type-definitions/09-method-set-loss-when-wrapping
 go mod edit -go=1.24
 ```
 

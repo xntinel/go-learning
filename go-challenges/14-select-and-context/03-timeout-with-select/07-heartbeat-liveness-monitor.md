@@ -21,13 +21,6 @@ Implement: `Monitor(beats <-chan time.Time, deadline time.Duration, events chan<
 Test: steady beats stay healthy; a gap flips unhealthy exactly once and records last-seen; resumed beats flip back to healthy; the fire lands within a band, not early.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/03-timeout-with-select/07-heartbeat-liveness-monitor/cmd/demo
-cd go-solutions/14-select-and-context/03-timeout-with-select/07-heartbeat-liveness-monitor
-```
-
 ### A two-state machine driven by one timer
 
 `Monitor` holds a `status` (Healthy or Unhealthy) and a deadline `timer`. The loop

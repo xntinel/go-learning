@@ -48,13 +48,6 @@ Services that call other services over HTTP benefit from forwarding the remainin
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/30-production-patterns/11-timeout-budgets/11-timeout-budgets/cmd/demo
-cd go-solutions/30-production-patterns/11-timeout-budgets/11-timeout-budgets
-```
-
 This is a library, not a program. Verify it with `go test`.
 
 ### Exercise 1: The Budget Type

@@ -25,13 +25,6 @@ workerpool/                        module example.com/workerpool
 - Test: runs-each-job-once, respects-worker-limit (atomic peak tracking), reports-each-error, `RunWithErrors`-joins, serializes-results-to-index, single-worker-is-serial. Under `-race`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/05-anonymous-functions/01-worker-pool-goroutine-literals/internal/pool go-solutions/04-functions/05-anonymous-functions/01-worker-pool-goroutine-literals/cmd/workerpool
-cd go-solutions/04-functions/05-anonymous-functions/01-worker-pool-goroutine-literals
-```
-
 ### How the pool uses anonymous functions
 
 `Run` launches one goroutine per job. The goroutine body is a function literal, and

@@ -25,13 +25,6 @@ rowscanner/                     module: example.com/rowscanner
 - Test: a `fakeRows` driving a normal multi-row scan, a mid-iteration error surfaced only through `Err()`, and a row with an unwanted middle column proving the throwaway destination.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/09-blank-identifier-and-shadowing/02-sql-row-scanner-discard/cmd/demo
-cd go-solutions/02-variables-types-and-constants/09-blank-identifier-and-shadowing/02-sql-row-scanner-discard
-```
-
 ### Why `_` cannot be a Scan destination, and why rows.Err() is not optional
 
 `sql.Rows.Scan(dest ...any)` writes each column into the pointer you hand it. A

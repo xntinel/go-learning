@@ -44,8 +44,6 @@ shortestpath/                 independent module: example.com/shortestpath
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/07-recursive-functions-and-stack-depth/18-graph-shortest-path-explicit-stack/cmd/demo
-cd go-solutions/04-functions/07-recursive-functions-and-stack-depth/18-graph-shortest-path-explicit-stack
 go mod edit -go=1.24
 ```
 

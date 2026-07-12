@@ -31,13 +31,6 @@ dumpscan/                    independent module: example.com/dumpscan
   wedging N workers on a reader-less send, the live dump classifies as `chan send`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/11-consumer-drain-stall-state-histogram/cmd/demo
-cd go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/11-consumer-drain-stall-state-histogram
-```
-
 ### The state keyword is the diagnosis, and it lives in the header line
 
 Every entry in a dump begins with a header of the form `goroutine <id> [<state>...]:`.

@@ -25,8 +25,6 @@ multipart/                   independent module: example.com/multipart
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/13-goroutines-and-channels/03-buffered-vs-unbuffered-channels/13-multipart-upload-bounded-inflight-parts/cmd/demo
-cd go-solutions/13-goroutines-and-channels/03-buffered-vs-unbuffered-channels/13-multipart-upload-bounded-inflight-parts
 go mod edit -go=1.26
 go get go.uber.org/goleak
 go mod tidy

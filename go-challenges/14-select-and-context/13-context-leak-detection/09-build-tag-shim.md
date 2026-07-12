@@ -29,13 +29,6 @@ Implement: identical `Detector` API — `New`, `WithCancel`, `ActiveContexts`, `
 Test: under the default build the shim's `ActiveContexts`/`TotalCreated` are always 0; under `-tags leakdetect` they track. Both configurations compile and `go vet` clean.
 Verify: `go test -count=1 -race ./...` (default = shim) and `go test -race -tags leakdetect ./...` (instrumented).
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/13-context-leak-detection/09-build-tag-shim/cmd/demo
-cd go-solutions/14-select-and-context/13-context-leak-detection/09-build-tag-shim
-```
-
 ### One API, two implementations, chosen at compile time
 
 A `//go:build` constraint on the first line of a file decides whether that file is

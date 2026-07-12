@@ -23,7 +23,6 @@ enable-push/
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/44-capstone-http2-implementation/04-server-push/04-enable-push-negotiation/cmd/demo && cd go-solutions/44-capstone-http2-implementation/04-server-push/04-enable-push-negotiation
 go mod edit -go=1.26
 ```
 

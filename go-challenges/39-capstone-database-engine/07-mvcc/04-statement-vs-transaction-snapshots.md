@@ -21,12 +21,6 @@ isolation_test.go   level contrast (table-driven), watermark advance, concurrent
 - Test: `isolation_test.go` contrasts the two levels across a concurrent commit, proves a Read Committed refresh advances the low watermark it was pinning, and runs concurrent Read Committed sessions under `-race`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/07-mvcc/04-statement-vs-transaction-snapshots/cmd/demo && cd go-solutions/39-capstone-database-engine/07-mvcc/04-statement-vs-transaction-snapshots
-```
-
 ### Snapshot acquisition is the only difference
 
 The visibility predicate consults `tx.startedAt`. Repeatable Read sets that value once, at Begin, and never touches it again — so every read in the transaction asks the same question against the same snapshot and the answers are stable. Read Committed re-reads the commit sequence at the start of each statement and overwrites `tx.startedAt` with it, so the next read asks its question against a fresher snapshot that includes everything committed since the previous statement. Nothing else changes: the same `IsVisible` runs, the same chains are walked, only the `startedAt` it compares against moves.

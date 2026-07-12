@@ -21,13 +21,6 @@ Implement: `Validate` decoding a `ServiceConfig` strictly and enforcing schema r
 Test: a `var fixtures embed.FS` with `//go:embed testdata`; iterate `fixtures.ReadDir("testdata")`, `ReadFile` each, and assert `valid-*` pass and `invalid-*` return `ErrSchema`; a second test proves the embedded read is independent of the working directory.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/05-embed-fixtures/cmd/demo go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/05-embed-fixtures/testdata
-cd go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/05-embed-fixtures
-```
-
 ### Why embed, and the embed rules that bite
 
 `os.ReadFile` couples the test to the filesystem: the fixture must exist on disk, at a path relative to the package directory, at the moment the test runs. That coupling is usually harmless, but it breaks the moment you want a hermetic test binary (`go test -c` produces a binary you can run anywhere) or you invoke the test from a working directory where the loose `testdata/` is not reachable. `//go:embed` removes the coupling entirely: the compiler reads the files at build time and bakes their bytes into the binary. At runtime there is no filesystem access, so the test cannot fail on a missing or misplaced file.

@@ -29,8 +29,6 @@ mvs/                        independent module: example.com/mvs
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/11-packages-and-modules/04-go-module-versioning/09-mvs-version-resolver/cmd/demo
-cd go-solutions/11-packages-and-modules/04-go-module-versioning/09-mvs-version-resolver
 go mod edit -go=1.26
 ```
 

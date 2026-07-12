@@ -29,8 +29,6 @@ retry/                     independent module: example.com/retry
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/01-function-declaration-and-multiple-return-values/08-generic-retry-wrapper/cmd/demo
-cd go-solutions/04-functions/01-function-declaration-and-multiple-return-values/08-generic-retry-wrapper
 go mod edit -go=1.25
 ```
 

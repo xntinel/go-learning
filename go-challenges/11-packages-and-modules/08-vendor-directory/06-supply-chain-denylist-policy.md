@@ -29,8 +29,6 @@ denylist/                    independent module: example.com/denylist
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/11-packages-and-modules/08-vendor-directory/06-supply-chain-denylist-policy/cmd/demo
-cd go-solutions/11-packages-and-modules/08-vendor-directory/06-supply-chain-denylist-policy
 go get golang.org/x/mod
 ```
 

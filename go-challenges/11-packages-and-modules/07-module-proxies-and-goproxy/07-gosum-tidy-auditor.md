@@ -27,8 +27,6 @@ gosumaudit/                independent module: example.com/gosumaudit
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/11-packages-and-modules/07-module-proxies-and-goproxy/07-gosum-tidy-auditor/cmd/demo
-cd go-solutions/11-packages-and-modules/07-module-proxies-and-goproxy/07-gosum-tidy-auditor
 go mod edit -go=1.26
 go get golang.org/x/mod/modfile
 ```

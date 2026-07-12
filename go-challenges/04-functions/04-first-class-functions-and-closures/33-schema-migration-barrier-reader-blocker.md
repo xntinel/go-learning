@@ -31,8 +31,6 @@ schema-migration-barrier/    independent module: example.com/schema-migration-ba
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/04-first-class-functions-and-closures/33-schema-migration-barrier-reader-blocker/cmd/demo
-cd go-solutions/04-functions/04-first-class-functions-and-closures/33-schema-migration-barrier-reader-blocker
 go mod edit -go=1.24
 ```
 

@@ -49,8 +49,6 @@ lbrotate/                 module example.com/lbrotate
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/06-copy-and-full-slice-expression/17-loadbalancer-rotate-in-place
-cd go-solutions/06-collections-arrays-slices-and-maps/06-copy-and-full-slice-expression/17-loadbalancer-rotate-in-place
 go mod edit -go=1.24
 ```
 

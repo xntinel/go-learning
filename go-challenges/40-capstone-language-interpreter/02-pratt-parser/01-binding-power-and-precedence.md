@@ -21,12 +21,6 @@ cmd/
 - Test: `parser_test.go` pins precedence and associativity as parenthesized strings, checks calls, indexing, `if`, `fn`, and collection literals, and uses `Example` functions whose `// Output:` lines are auto-verified.
 - Verify: `go test -race ./...` and `go run ./cmd/demo`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/40-capstone-language-interpreter/02-pratt-parser/01-binding-power-and-precedence/cmd/demo && cd go-solutions/40-capstone-language-interpreter/02-pratt-parser/01-binding-power-and-precedence
-```
-
 ### The token layer
 
 The parser consumes tokens, so the first file defines them and the lexer that produces them. The lexer takes the source string and returns `Token` values on demand through `Next`; the parser pulls from it one token at a time. Two facts about the lexer matter for the parser above it. First, two-character operators (`**`, `<=`, `==`, `&&`, ...) are matched before single-character ones, so `**` is never mis-scanned as two separate `*` tokens — the maximal-munch rule that keeps exponentiation a single operator. Second, every token carries its line and column, which is what lets a parse error point at a location rather than a vague "somewhere."

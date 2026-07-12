@@ -35,8 +35,6 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/14-select-and-context/07-context-propagation/05-errgroup-bounded-fanout/cmd/demo
-cd go-solutions/14-select-and-context/07-context-propagation/05-errgroup-bounded-fanout
 go mod edit -go=1.24
 go get golang.org/x/sync/errgroup
 ```

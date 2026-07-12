@@ -28,13 +28,6 @@ pgrepo/                    independent module: example.com/pgrepo
 - Test: MemStore in the default build; `TestSQLStoreRoundTrip` and a once-only setup counter in the integration build.
 - Verify: the default build compiles `sql.go` (no driver import) and runs the MemStore tests; the tagged `TestMain` and driver import exist only under `-tags=integration`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/18-integration-tests-with-build-tags/04-testmain-integration-fixture/cmd/demo
-cd go-solutions/12-testing-ecosystem/18-integration-tests-with-build-tags/04-testmain-integration-fixture
-```
-
 ### Why the interface, and why sql.go compiles by default
 
 The repository is defined by an interface so the fast tier can test the not-found

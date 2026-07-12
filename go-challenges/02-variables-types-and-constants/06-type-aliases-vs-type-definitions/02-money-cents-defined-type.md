@@ -29,8 +29,6 @@ money/                    independent module: example.com/money
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/02-variables-types-and-constants/06-type-aliases-vs-type-definitions/02-money-cents-defined-type/cmd/demo
-cd go-solutions/02-variables-types-and-constants/06-type-aliases-vs-type-definitions/02-money-cents-defined-type
 go mod edit -go=1.24
 ```
 

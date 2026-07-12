@@ -30,8 +30,6 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/54-cloud-native-platform-and-orchestration/09-redis-distributed-locks-redsync/03-fencing-tokens/cmd/demo
-cd go-solutions/54-cloud-native-platform-and-orchestration/09-redis-distributed-locks-redsync/03-fencing-tokens
 go mod edit -go=1.26
 go get github.com/go-redsync/redsync/v4@latest
 go get github.com/redis/go-redis/v9@latest

@@ -26,13 +26,6 @@ Implement: the same deterministic `Format(User) (string, error)`, so the module 
 Test: compare `Format` output to a hard-coded `want` snapshot literal held in the test; a separate test asserts the `ErrEmpty` rejection.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/02-inline-snapshot-test/cmd/demo
-cd go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/02-inline-snapshot-test
-```
-
 ### Why an inline snapshot, and when
 
 An inline snapshot is a stored expected value that happens to live in the test

@@ -21,12 +21,6 @@ mqpipe_test.go       pipelined batch over net.Pipe, FIFO ordering, closed-pipeli
 - Test: send a batch without waiting, assert every reply matches its request in order, and assert a closed pipeline returns `ErrConnClosed`.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/41-capstone-message-queue/07-tcp-protocol-client/03-request-pipelining/cmd/demo && cd go-solutions/41-capstone-message-queue/07-tcp-protocol-client/03-request-pipelining
-```
-
 ### Why a FIFO queue is enough when responses keep their order
 
 The previous exercise multiplexed with a correlation-ID map because its server dispatched each frame to a goroutine and could answer them out of order. Pipelining makes a different bargain: it requires the server to answer strictly in request order, and in exchange the client's matching collapses from a map to a queue. If the nth response is guaranteed to belong to the nth request, the client does not need to read an ID to know whose reply it holds — it just dequeues the oldest waiting call. This is precisely how HTTP/1.1 pipelining and Redis pipelining match replies, and why both are sensitive to head-of-line blocking: one slow request stalls every request queued behind it.

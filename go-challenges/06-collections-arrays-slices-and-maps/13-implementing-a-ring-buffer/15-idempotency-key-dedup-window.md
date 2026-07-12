@@ -49,8 +49,6 @@ dedupring/                    module example.com/dedupring
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/13-implementing-a-ring-buffer/15-idempotency-key-dedup-window
-cd go-solutions/06-collections-arrays-slices-and-maps/13-implementing-a-ring-buffer/15-idempotency-key-dedup-window
 go mod edit -go=1.24
 ```
 

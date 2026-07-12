@@ -31,13 +31,6 @@ lrucache/                        independent module: example.com/lrucache
 - Test: single-shard deterministic evictions (capacity 3), a `Get` that saves a key from eviction, overwrite not evicting, and a concurrent churn test asserting `Size <= capacity*shards`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/13-building-a-thread-safe-cache/05-lru-bounded-shards/cache go-solutions/15-sync-primitives/13-building-a-thread-safe-cache/05-lru-bounded-shards/cmd/demo
-cd go-solutions/15-sync-primitives/13-building-a-thread-safe-cache/05-lru-bounded-shards
-```
-
 ### The data structure: a map into a list
 
 Strict LRU needs two lookups to be O(1): "find by key" and "find the oldest".

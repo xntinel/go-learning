@@ -27,13 +27,6 @@ safepool/                  independent module: example.com/safepool
 - Test: a panicking job is reported as an error containing the recovered value, normal jobs still complete, and after a panic the pool still reaches full concurrency (no worker was lost).
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/13-goroutine-pools/07-panic-safe-workers/cmd/demo
-cd go-solutions/13-goroutines-and-channels/13-goroutine-pools/07-panic-safe-workers
-```
-
 ### Recover belongs in the worker loop, once per job
 
 `recover` only works inside a deferred function, and only stops a panic unwinding

@@ -30,8 +30,6 @@ pubsub/                     independent module: example.com/pubsub
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/02-named-return-values/27-topic-subscription-unsubscribe-on-handler-error/cmd/demo
-cd go-solutions/04-functions/02-named-return-values/27-topic-subscription-unsubscribe-on-handler-error
 go mod edit -go=1.24
 ```
 

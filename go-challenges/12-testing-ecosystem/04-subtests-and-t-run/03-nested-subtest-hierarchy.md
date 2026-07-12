@@ -29,13 +29,6 @@ signupdto/                  independent module: example.com/signupdto
   assert `t.Name()` yields the slash path; include a duplicate name to see `#01`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/04-subtests-and-t-run/03-nested-subtest-hierarchy/cmd/demo
-cd go-solutions/12-testing-ecosystem/04-subtests-and-t-run/03-nested-subtest-hierarchy
-```
-
 ### How nesting maps to names and filters
 
 Each `t.Run` pushes a segment onto the subtest name. A child of

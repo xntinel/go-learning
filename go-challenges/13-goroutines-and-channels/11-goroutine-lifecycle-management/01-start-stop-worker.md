@@ -27,13 +27,6 @@ lifecycle/                 independent module: example.com/lifecycle
 - Test: `TestStartAndStop`, `TestStartRejectsDouble`, `TestStopRejectsNotStarted`, `TestResultReflectsWork`, `TestStopRespectsContext`, `TestStopIsIdempotent`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/11-goroutine-lifecycle-management/01-start-stop-worker/cmd/demo
-cd go-solutions/13-goroutines-and-channels/11-goroutine-lifecycle-management/01-start-stop-worker
-```
-
 ### Why the shape is what it is
 
 The `Worker` holds four fields: a `sync.Mutex`, a `stop chan struct{}`, a

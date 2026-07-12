@@ -28,13 +28,6 @@ Implement: `context.WithoutCancel(r.Context())` bounded by its own `context.With
 Test: cancel `r.Context()` right after the handler returns; the detached write still completes and carries the correct request id; the control write is aborted.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/09-context-in-http-servers-clients/06-detached-background-work/cmd/demo
-cd go-solutions/14-select-and-context/09-context-in-http-servers-clients/06-detached-background-work
-```
-
 ## The design
 
 The handler responds to the client first, then persists an audit record in a

@@ -19,12 +19,6 @@ orderevents_test.go  completeness under backpressure + -race concurrent publish
 - Test: `orderevents_test.go` proves every committed event reaches all three consumers under backpressure, the per-consumer domain outputs are complete, and concurrent publish plus shutdown is race-free with no leak.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/24-design-patterns-in-go/09-observer-pattern-with-channels/05-order-events-fanout/cmd/demo && cd go-solutions/24-design-patterns-in-go/09-observer-pattern-with-channels/05-order-events-fanout
-```
-
 ### Three consumers, three queues, one fan-out
 
 The `Publisher` owns a fixed set of consumers, each a small struct: a name, a bounded queue (buffered channel), and an `apply` function that does the consumer's domain work. When the publisher is built, it starts one worker goroutine per consumer. `Publish` assigns the event a monotonic sequence number and does a *blocking* send into each consumer's queue. Blocking is deliberate: it is the backpressure. If the email sender's queue fills because the upstream SMTP service is slow, the publisher waits on that one send — but the audit and metrics queues, being separate channels drained by separate workers, keep flowing at their own pace. Each consumer gets its own buffer size at construction, so you can tune backpressure per consumer: a roomy audit queue, a tight email queue.

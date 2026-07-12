@@ -24,8 +24,6 @@ collops/                     independent module: example.com/collops
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/10-higher-order-functions/07-generic-collection-ops/cmd/demo
-cd go-solutions/04-functions/10-higher-order-functions/07-generic-collection-ops
 go mod edit -go=1.25
 ```
 

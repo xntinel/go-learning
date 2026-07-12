@@ -22,13 +22,6 @@ Implement: a `Runner` with `Start(job func(done <-chan struct{}))` tracked by a 
 Test: workers that respect `done` drain to a nil error; a worker that ignores `done` past the budget yields `ErrShutdownTimeout`; calling `Shutdown` twice does not panic.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/07-done-channel-pattern/08-graceful-shutdown-coordinator/cmd/demo
-cd go-solutions/13-goroutines-and-channels/07-done-channel-pattern/08-graceful-shutdown-coordinator
-```
-
 ### The three ordered steps
 
 `Shutdown` is the whole lesson, in order:

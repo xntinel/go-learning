@@ -29,13 +29,6 @@ Test: a concurrent readers/writers test to run under `-race`, and an expiry test
 that advances an injected clock instead of sleeping.
 Verify: `go test -race -count=10 ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/14-parallel-tests/05-race-on-parallel-ttl-cache/cmd/demo
-cd go-solutions/12-testing-ecosystem/14-parallel-tests/05-race-on-parallel-ttl-cache
-```
-
 ### The race, made concrete
 
 Go maps are not safe for concurrent use: one goroutine writing a map while another

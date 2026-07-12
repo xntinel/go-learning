@@ -27,13 +27,6 @@ batch/                     independent module: example.com/batch
 - Test: a mixed batch of hits and misses returns values aligned to input indices with per-item `ErrNotFound` wrapped; the aggregate satisfies `errors.Is(err, ErrNotFound)`; a cancelled context aborts the batch with the context cause.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/09-channel-of-channels/08-batch-fan-out-collect/cmd/demo
-cd go-solutions/13-goroutines-and-channels/09-channel-of-channels/08-batch-fan-out-collect
-```
-
 ### Fan out, then collect in order
 
 `BatchGet` runs in two phases. In the fan-out phase it loops over the input keys

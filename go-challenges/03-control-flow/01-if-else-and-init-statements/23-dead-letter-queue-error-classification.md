@@ -33,8 +33,6 @@ dlqrouter/                  independent module: example.com/dead-letter-queue-er
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/01-if-else-and-init-statements/23-dead-letter-queue-error-classification/cmd/demo
-cd go-solutions/03-control-flow/01-if-else-and-init-statements/23-dead-letter-queue-error-classification
 go mod edit -go=1.24
 ```
 

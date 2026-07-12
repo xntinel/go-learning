@@ -25,8 +25,6 @@ backoff/                     independent module: example.com/backoff
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/10-higher-order-functions/09-backoff-with-jitter/cmd/demo
-cd go-solutions/04-functions/10-higher-order-functions/09-backoff-with-jitter
 go mod edit -go=1.25
 ```
 

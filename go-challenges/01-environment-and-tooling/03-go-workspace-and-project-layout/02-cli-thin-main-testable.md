@@ -34,8 +34,6 @@ myapp/                         module github.com/example/myapp
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/01-environment-and-tooling/03-go-workspace-and-project-layout/02-cli-thin-main-testable/internal/config go-solutions/01-environment-and-tooling/03-go-workspace-and-project-layout/02-cli-thin-main-testable/internal/greeting go-solutions/01-environment-and-tooling/03-go-workspace-and-project-layout/02-cli-thin-main-testable/internal/cli go-solutions/01-environment-and-tooling/03-go-workspace-and-project-layout/02-cli-thin-main-testable/cmd/cli go-solutions/01-environment-and-tooling/03-go-workspace-and-project-layout/02-cli-thin-main-testable/cmd/demo
-cd go-solutions/01-environment-and-tooling/03-go-workspace-and-project-layout/02-cli-thin-main-testable
 go mod edit -go=1.24
 ```
 

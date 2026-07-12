@@ -32,8 +32,6 @@ tracing/                    independent module: example.com/tracing
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/06-labels-break-continue-goto/31-distributed-trace-span-propagation/cmd/demo
-cd go-solutions/03-control-flow/06-labels-break-continue-goto/31-distributed-trace-span-propagation
 go mod edit -go=1.24
 ```
 

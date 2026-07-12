@@ -29,13 +29,6 @@ so `debug.ReadBuildInfo` is never called in the unit test.
 Verify: `go test -count=1 ./...`, `gofmt -l` empty; a shell harness confirms
 `-ldflags '-X ...'` and `go version -m`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/01-your-first-go-program/04-build-info-version-stamping/cmd/demo
-cd go-solutions/01-environment-and-tooling/01-your-first-go-program/04-build-info-version-stamping
-```
-
 ### Why the logic is split from ReadBuildInfo
 
 `debug.ReadBuildInfo()` reads metadata the linker embedded into the running

@@ -51,14 +51,6 @@ Tags control the encoding of values whose static type is in the struct definitio
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/18-encoding-json-xml-protobuf/02-struct-tags-for-json/02-struct-tags-for-json/internal/response
-mkdir -p go-solutions/18-encoding-json-xml-protobuf/02-struct-tags-for-json/02-struct-tags-for-json/cmd/demo
-cd go-solutions/18-encoding-json-xml-protobuf/02-struct-tags-for-json/02-struct-tags-for-json
-```
-
 This is a library plus a small demo. The verification is `go test -race`.
 
 ### Exercise 1: The Response Type And Its Tags

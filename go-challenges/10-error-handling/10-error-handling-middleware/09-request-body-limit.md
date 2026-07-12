@@ -29,13 +29,6 @@ Test: oversized body -> 413 (assert `errors.As` finds `*http.MaxBytesError`);
 malformed JSON -> 400; unknown field -> 400; valid body -> 201.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/10-error-handling-middleware/09-request-body-limit/cmd/demo
-cd go-solutions/10-error-handling/10-error-handling-middleware/09-request-body-limit
-```
-
 ### Why bounding the body is not optional
 
 `json.NewDecoder(r.Body).Decode(&v)` reads until the body ends. A client that

@@ -18,13 +18,6 @@ Filtering happens after call arguments are evaluated. Avoid expensive work in di
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/21-structured-logging-with-slog/02-log-levels-and-filtering/02-log-levels-and-filtering
-cd go-solutions/21-structured-logging-with-slog/02-log-levels-and-filtering/02-log-levels-and-filtering
-```
-
 Edit `go.mod`:
 
 ```go

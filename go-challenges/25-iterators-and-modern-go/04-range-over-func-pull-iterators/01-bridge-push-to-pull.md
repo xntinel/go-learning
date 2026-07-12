@@ -19,12 +19,6 @@ pulliter_test.go     bounded pull, negative-limit rejection, stop unwinds produc
 - Test: `pulliter_test.go` checks bounded pull against a short sequence, rejects a negative limit, and asserts `stop` runs the producer's deferred cleanup.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/25-iterators-and-modern-go/04-range-over-func-pull-iterators/01-bridge-push-to-pull/cmd/demo && cd go-solutions/25-iterators-and-modern-go/04-range-over-func-pull-iterators/01-bridge-push-to-pull
-```
-
 ### Why `PullN` is a pull iterator, and why `defer stop()` comes first
 
 `iter.Pull(seq)` returns `(next func() (T, bool), stop func())`. The whole point of `PullN` is that it does not drain `seq`; it takes at most `n` values and then walks away. That is precisely the case where forgetting `stop` bites. Under the hood, `iter.Pull` is running `seq`'s push loop on a separate goroutine, parked inside `yield`. If `PullN` returns after pulling three of a thousand values, that goroutine is still parked, holding whatever the producer deferred. Calling `stop` resumes it one last time with `yield` returning `false`, so the producer's loop exits and its `defer`s run. Writing `defer stop()` on the line right after `iter.Pull` makes that fire on every exit path — the normal return, the early `break` inside the loop when the sequence ends, and any panic.

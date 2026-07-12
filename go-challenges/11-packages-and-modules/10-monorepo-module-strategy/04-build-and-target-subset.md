@@ -26,13 +26,6 @@ mono/                         single module: example.com/mono
 - Test: table-driven cases for single-service, multi-service, shared-fan-out, and no-op diffs, asserting the exact sorted target set.
 - Verify: `go build ./...`, `go vet ./...`, `go test -race -count=1 ./...`, `gofmt -l .` (empty).
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/11-packages-and-modules/10-monorepo-module-strategy/04-build-and-target-subset/changeset go-solutions/11-packages-and-modules/10-monorepo-module-strategy/04-build-and-target-subset/cmd/demo
-cd go-solutions/11-packages-and-modules/10-monorepo-module-strategy/04-build-and-target-subset
-```
-
 ### The whole-module commands, and why they still matter
 
 Even with selective builds, the whole-module commands are the baseline every

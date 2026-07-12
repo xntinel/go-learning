@@ -20,12 +20,6 @@ file-source/
 - Test: lines appended after `Open` are emitted in order; `Close` returns quickly; a non-existent path surfaces an error on the error channel.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/43-capstone-stream-processing-engine/01-source-connectors/01-file-source/cmd/demo && cd go-solutions/43-capstone-stream-processing-engine/01-source-connectors/01-file-source
-```
-
 ### The lifecycle contract, in one source
 
 `source.go` holds the vocabulary every source in this lesson shares. `Record` is the atomic unit that flows downstream: `Key` and `Value` are raw bytes, `Source` identifies the origin, and `Metadata` carries optional per-source annotations. `Metrics` is a point-in-time counter snapshot. `Source` is the interface the rest of the pipeline programs against — it never names `FileSource`, only `Open`, `Close`, and `Metrics`. `ErrSourceClosed` is the sentinel `Close` returns when the source was never opened, so a double `Close` or a `Close` before `Open` is a typed error rather than a nil-pointer panic.

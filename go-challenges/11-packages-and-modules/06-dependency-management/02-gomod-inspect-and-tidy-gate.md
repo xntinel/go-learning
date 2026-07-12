@@ -30,8 +30,6 @@ gomodgate/                 independent module: example.com/gomodgate
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/11-packages-and-modules/06-dependency-management/02-gomod-inspect-and-tidy-gate/cmd/demo
-cd go-solutions/11-packages-and-modules/06-dependency-management/02-gomod-inspect-and-tidy-gate
 go get golang.org/x/mod
 ```
 

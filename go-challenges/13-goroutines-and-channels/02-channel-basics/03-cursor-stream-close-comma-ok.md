@@ -25,13 +25,6 @@ cursor/                      independent module: example.com/cursor
 - Test: all rows delivered; the consumer sees `ok == false` exactly once after the last value; an empty source closes immediately; a mid-stream error terminates with `ErrStreamAborted`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/02-channel-basics/03-cursor-stream-close-comma-ok/cmd/demo
-cd go-solutions/13-goroutines-and-channels/02-channel-basics/03-cursor-stream-close-comma-ok
-```
-
 ### Modeling a cursor: values, then maybe an error, then close
 
 A real cursor delivers a stream of rows and can fail partway through — a dropped

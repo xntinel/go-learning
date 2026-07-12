@@ -26,13 +26,6 @@ intgstore/                 independent module: example.com/intgstore
 - Test: `go test ./...` excludes the integration test; `DATABASE_URL=... go test -tags=integration -v ./...` runs it.
 - Verify: the tagged file compiles only under `-tags=integration`; the env var gates the run; an unset env produces `SKIP`, never `FAIL`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/18-integration-tests-with-build-tags/02-integration-tag-env-gate/cmd/demo
-cd go-solutions/12-testing-ecosystem/18-integration-tests-with-build-tags/02-integration-tag-env-gate
-```
-
 ### Two independent gates stacked on one test
 
 Read the integration file top to bottom and both gating axes are visible:

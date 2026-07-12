@@ -28,13 +28,6 @@ userrepo/                   independent module: example.com/userrepo
   close it in a parent `t.Cleanup` that asserts all children completed first.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/04-subtests-and-t-run/06-shared-fixture-parallel/cmd/demo
-cd go-solutions/12-testing-ecosystem/04-subtests-and-t-run/06-shared-fixture-parallel
-```
-
 ### Why parent Cleanup is the right teardown hook
 
 A parent's `t.Cleanup` runs when the test *and all its subtests* have finished —

@@ -91,13 +91,6 @@ GOSSAFUNC=sumSlice+ go build -o /dev/null .
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/36-runtime-compiler-and-assembly/01-reading-ssa-output/01-reading-ssa-output/cmd/demo
-cd go-solutions/36-runtime-compiler-and-assembly/01-reading-ssa-output/01-reading-ssa-output
-```
-
 ### Exercise 1: The Package Under Analysis
 
 The functions in this package are what you will inspect with `GOSSAFUNC`. They are designed to surface distinct SSA patterns: a loop accumulator (induction variable + phi), a conditional merge (phi from an if-else), and arithmetic that constant folding can eliminate.

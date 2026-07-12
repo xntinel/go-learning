@@ -30,8 +30,6 @@ vendored/                   independent module: example.com/vendored
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/01-environment-and-tooling/02-go-modules-and-dependencies/10-vendoring-for-hermetic-builds/cmd/demo
-cd go-solutions/01-environment-and-tooling/02-go-modules-and-dependencies/10-vendoring-for-hermetic-builds
 go get golang.org/x/text/cases
 ```
 

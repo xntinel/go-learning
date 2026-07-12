@@ -26,13 +26,6 @@ payments/                   independent module: example.com/payments
 - Test: a `fakeGateway` that fails `Authorize` once then succeeds — assert the service retries with the same idempotency key and does not double-`Capture`; a second fake returning a permanent `ErrDeclined` — assert the service surfaces it without retrying.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/12-interface-pollution-anti-patterns/10-payment-gateway-seam-narrow-interface/cmd/demo
-cd go-solutions/08-interfaces/12-interface-pollution-anti-patterns/10-payment-gateway-seam-narrow-interface
-```
-
 ### Why this is where an interface belongs
 
 Every earlier module argued against interfaces. This one shows the case that

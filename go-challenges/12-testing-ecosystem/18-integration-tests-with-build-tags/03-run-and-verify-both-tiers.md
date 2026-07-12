@@ -26,13 +26,6 @@ twotiers/                  independent module: example.com/twotiers
 - Test: `TestIntegrationStoreSkipWithoutEnv` (default build) asserts the gate is closed when `DATABASE_URL` is empty; the integration test uses the same helper.
 - Verify: the four-command CI gate — `gofmt -l .`, `go test -count=1 -race ./...`, `go vet ./...`, then `go test -tags=integration -v ./...` with a DSN — and note that `go vet -tags=integration` must also run or the tagged file is never checked.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/18-integration-tests-with-build-tags/03-run-and-verify-both-tiers/cmd/demo
-cd go-solutions/12-testing-ecosystem/18-integration-tests-with-build-tags/03-run-and-verify-both-tiers
-```
-
 ### Make the gating logic itself testable
 
 The skip decision — "run the integration body only when a DSN is present" — is

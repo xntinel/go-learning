@@ -26,13 +26,6 @@ idleconn/                   independent module: example.com/idleconn
 - Test: with `net.Pipe`, a silent peer makes `Read` return `os.ErrDeadlineExceeded`; a timely write/read succeeds; promoted `LocalAddr` delegates to the embedded conn; a static assertion the wrapper still satisfies `net.Conn`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/05-interface-composition-and-embedding/07-idle-timeout-conn/cmd/demo
-cd go-solutions/08-interfaces/05-interface-composition-and-embedding/07-idle-timeout-conn
-```
-
 ### Why embedding is exactly right here
 
 `net.Conn` has eight methods (`Read`, `Write`, `Close`, `LocalAddr`, `RemoteAddr`,

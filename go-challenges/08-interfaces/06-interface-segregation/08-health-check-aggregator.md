@@ -27,8 +27,6 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/08-interfaces/06-interface-segregation/08-health-check-aggregator/cmd/demo
-cd go-solutions/08-interfaces/06-interface-segregation/08-health-check-aggregator
 go mod edit -go=1.24
 ```
 

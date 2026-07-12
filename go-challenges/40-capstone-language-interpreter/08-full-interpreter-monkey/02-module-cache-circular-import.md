@@ -20,13 +20,6 @@ cmd/
 - Test: `cache_test.go` proves a second resolve hits the cache, a self-importing loader returns `ErrCircularImport`, a failed load is not cached, equivalent paths normalize to one entry, and `Len` counts only successes.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/40-capstone-language-interpreter/08-full-interpreter-monkey/02-module-cache-circular-import/module go-solutions/40-capstone-language-interpreter/08-full-interpreter-monkey/02-module-cache-circular-import/cmd/demo
-cd go-solutions/40-capstone-language-interpreter/08-full-interpreter-monkey/02-module-cache-circular-import
-```
-
 ### The three asymmetric rules
 
 `Resolve` looks linear but encodes three rules that are deliberately not symmetric, and the asymmetry is the whole correctness argument. First, a cache hit short-circuits before any work: if the path is already in the entries map, return it and never call the loader again. Second, a pending mark is set before evaluation and cleared after it on every exit path; that mark is the cycle detector. Third, the entries map is written only when the loader returned no error, while the pending mark is cleared whether the loader succeeded or failed.

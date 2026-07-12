@@ -25,8 +25,6 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/54-cloud-native-platform-and-orchestration/06-multi-cloud-blob-storage-gocloud/02-list-and-paginate/cmd/demo
-cd go-solutions/54-cloud-native-platform-and-orchestration/06-multi-cloud-blob-storage-gocloud/02-list-and-paginate
 go get gocloud.dev/blob@latest
 go mod edit -go=1.26
 ```

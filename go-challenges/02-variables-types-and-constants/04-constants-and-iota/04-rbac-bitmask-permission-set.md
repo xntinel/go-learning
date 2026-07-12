@@ -25,13 +25,6 @@ Implement: `Grant`, `Revoke`, `HasAll`, `HasAny`, `Count`, and composite constan
 Test: grant/revoke transitions; `Revoke` uses `&^` and leaves unrelated bits; `Count` equals `bits.OnesCount16`; every single permission is a distinct power of two.
 Verify: `go test -count=1 ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/04-constants-and-iota/04-rbac-bitmask-permission-set/cmd/demo
-cd go-solutions/02-variables-types-and-constants/04-constants-and-iota/04-rbac-bitmask-permission-set
-```
-
 ## Why a set is powers of two, and what the operations are
 
 A permission set is fundamentally different from a state enum. A state is one

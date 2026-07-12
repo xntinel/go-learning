@@ -27,13 +27,6 @@ retryclass/               independent module: example.com/retryclass
 - Test: a table of `{name, err, wantRetry}` that reaches sentinels with `errors.Is` and typed errors with `errors.As`, including a `context.Canceled` row that must be terminal despite looking transient.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/02-table-driven-tests/05-retry-classifier/cmd/demo
-cd go-solutions/12-testing-ecosystem/02-table-driven-tests/05-retry-classifier
-```
-
 ### Why order matters, and why Is and As both appear
 
 This classifier is the clearest case in the lesson of *assert the weakest

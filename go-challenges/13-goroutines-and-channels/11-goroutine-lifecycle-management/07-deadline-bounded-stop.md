@@ -26,13 +26,6 @@ boundedstop/               independent module: example.com/boundedstop
 - Test: a fast-draining worker returns `nil`; a slow worker exceeding the deadline returns `ErrStopTimeout`, the caller unblocks within the deadline, and the detached goroutine still completes cleanly (no panic, no double-close).
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/11-goroutine-lifecycle-management/07-deadline-bounded-stop/cmd/demo
-cd go-solutions/13-goroutines-and-channels/11-goroutine-lifecycle-management/07-deadline-bounded-stop
-```
-
 ### Racing the drain against the deadline
 
 The worker keeps the Exercise 1 shape — a `run` loop selecting over a `stop`

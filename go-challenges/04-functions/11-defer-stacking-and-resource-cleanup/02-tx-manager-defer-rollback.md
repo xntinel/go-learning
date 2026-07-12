@@ -24,13 +24,6 @@ txm/                        independent module: example.com/txm
 - Test: `fn` returns nil (commit, no rollback); `fn` returns an error (rollback, error propagated, no commit); `fn` panics (rollback then re-panic); `Commit` fails (error surfaced). Assert the exactly-one-of {commit, rollback} invariant on every path.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/02-tx-manager-defer-rollback/tx go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/02-tx-manager-defer-rollback/cmd/demo
-cd go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/02-tx-manager-defer-rollback
-```
-
 ### Interfaces, so the test needs no database
 
 The real types are `*sql.DB` and `*sql.Tx`. But `*sql.DB.BeginTx` returns a

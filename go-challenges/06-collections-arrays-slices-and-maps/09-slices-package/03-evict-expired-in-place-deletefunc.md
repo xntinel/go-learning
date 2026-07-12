@@ -30,8 +30,6 @@ poolsweep/                     module example.com/poolsweep
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/09-slices-package/03-evict-expired-in-place-deletefunc/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/09-slices-package/03-evict-expired-in-place-deletefunc
 go mod edit -go=1.24
 ```
 

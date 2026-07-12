@@ -25,13 +25,6 @@ hotpath/                    independent module: example.com/hotpath
 - Test: both variants compute the same result, `BumpByValue` does not mutate the caller while `BumpByPointer` does, and `BenchmarkByValue`/`BenchmarkByPointer` use `b.Loop()` with `ReportAllocs`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/02-pointers-and-function-parameters/09-large-struct-copy-cost-benchmark/cmd/demo
-cd go-solutions/09-pointers/02-pointers-and-function-parameters/09-large-struct-copy-cost-benchmark
-```
-
 ### Why measure instead of reaching for the pointer
 
 `Big` embeds a 256-element `int64` array plus a 64-element bool array — roughly two

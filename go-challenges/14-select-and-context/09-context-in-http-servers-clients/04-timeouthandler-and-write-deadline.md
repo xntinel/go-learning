@@ -28,13 +28,6 @@ Implement: `Timeout(h http.Handler, dt time.Duration, msg string) http.Handler` 
 Test: a handler behind `Timeout` asserts `503`+message body on deadline; `FlushWithDeadline` with an already-passed deadline asserts the returned error is an `os.ErrDeadlineExceeded`-class (net timeout) error.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/09-context-in-http-servers-clients/04-timeouthandler-and-write-deadline/cmd/demo
-cd go-solutions/14-select-and-context/09-context-in-http-servers-clients/04-timeouthandler-and-write-deadline
-```
-
 ## The design
 
 `http.TimeoutHandler(h, dt, msg)` runs `h` in a goroutine under a context derived

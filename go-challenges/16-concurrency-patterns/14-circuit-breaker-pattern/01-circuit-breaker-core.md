@@ -20,12 +20,6 @@ breaker_test.go       pass-through, trip on MaxFailures, success-resets, half-op
 - Test: `breaker_test.go` pins the closed-to-open transition, the success reset, the half-open probe in both directions, the single-probe contract under concurrency, the callback, the defaults, and race-freedom.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/16-concurrency-patterns/14-circuit-breaker-pattern/01-circuit-breaker-core/cmd/demo && cd go-solutions/16-concurrency-patterns/14-circuit-breaker-pattern/01-circuit-breaker-core
-```
-
 ### Why consecutive failures, and why the mutex spans the whole call
 
 The trip policy here is the simplest one that is safe: count failures that happen back to back, and reset that count to zero the instant any call succeeds. The reset is the whole point. A dependency that hiccups once every few seconds but mostly works should never trip the breaker, and resetting on success guarantees it cannot — only an uninterrupted run of `MaxFailures` failures, with no success between them, trips the circuit. A counter that merely accumulated lifetime failures would eventually trip a perfectly healthy dependency, which is the canonical beginner mistake.

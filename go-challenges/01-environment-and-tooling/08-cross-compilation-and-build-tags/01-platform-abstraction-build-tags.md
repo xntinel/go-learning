@@ -27,13 +27,6 @@ platformfact/                  module example.com/platformfact
 - Test: assert `Fact()` on the host returns a real platform note, not the fallback string.
 - Verify: `go build ./... && go test -race ./...`, then `GOOS=freebsd GOARCH=amd64 go build ./cmd/demo` to prove the fallback keeps every target compilable.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/08-cross-compilation-and-build-tags/01-platform-abstraction-build-tags/cmd/demo
-cd go-solutions/01-environment-and-tooling/08-cross-compilation-and-build-tags/01-platform-abstraction-build-tags
-```
-
 ### Why one symbol, four files, and a fallback
 
 The design goal is that callers write `platform.Fact()` and never branch on the

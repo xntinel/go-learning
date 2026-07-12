@@ -27,13 +27,6 @@ configmgr/                 independent module: example.com/configmgr
 - Test: `Clone` is independent and `Clone(nil)==nil`, `Equal` distinguishes differing values, `Copy` overwrites on collision, `DeleteFunc` removes only matching keys, and the shallow-clone caveat with a slice value.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/05-maps-package-config-snapshots/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/05-maps-package-config-snapshots
-```
-
 ### Why each maps function, and the shallow-clone trap
 
 Four `maps` functions map onto four config operations. `maps.Copy(dst, src)`

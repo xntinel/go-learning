@@ -21,12 +21,6 @@ convert_test.go  truncation, parse failure, truthiness coercion
 - Test: that `int` truncates a float and errors on a non-numeric string, that `float` parses and errors symmetrically, that `str` renders any value, and that `bool`/`isNull` follow the truthiness and null rules.
 - Verify: `go test -race ./...` and `go run ./cmd/demo`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/40-capstone-language-interpreter/05-builtin-functions/04-type-conversion-builtins/cmd/demo && cd go-solutions/40-capstone-language-interpreter/05-builtin-functions/04-type-conversion-builtins
-```
-
 ### Conversions that can fail, and conversions that cannot
 
 `type`, `str`, `bool`, and `isNull` are total: every value has a type name, a string rendering, a truthiness, and a null-ness, so these never error. `int` and `float` are partial: a string argument may not be a valid number, so they return an `*Error` rather than a silent zero. This is the important design choice — `int("notanumber")` must surface a diagnostic, not produce `0` and hide the bug. The parse goes through `strconv.ParseInt` / `strconv.ParseFloat`, and a parse error is translated into the language's error value.

@@ -27,13 +27,6 @@ urlext/                     independent module: example.com/urlext
 - Test: standard URL with all parts, port stripping, empty rejection via `errors.Is(ErrEmpty)`, relative reference, fragment-only, IPv6 bracketed host, and a helper-pinning subtest suite.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/07-regular-expressions/01-url-parts-extractor/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/07-regular-expressions/01-url-parts-extractor
-```
-
 ### Why net/url does the parsing and the regex does almost nothing
 
 A URL has a grammar (RFC 3986) that a regex can only approximate. Percent-encoding

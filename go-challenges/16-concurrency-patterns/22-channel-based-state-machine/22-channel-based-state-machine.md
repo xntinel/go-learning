@@ -65,13 +65,6 @@ to stop a machine that is waiting for an event that never arrives.
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/16-concurrency-patterns/22-channel-based-state-machine/22-channel-based-state-machine/internal/statemachine go-solutions/16-concurrency-patterns/22-channel-based-state-machine/22-channel-based-state-machine/cmd/demo
-cd go-solutions/16-concurrency-patterns/22-channel-based-state-machine/22-channel-based-state-machine
-```
-
 ### Exercise 1: Types and State Functions
 
 Create `internal/statemachine/statemachine.go`:

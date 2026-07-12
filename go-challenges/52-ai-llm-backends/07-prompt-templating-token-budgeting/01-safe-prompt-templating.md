@@ -32,8 +32,6 @@ prompt/                     independent module: example.com/prompt
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/52-ai-llm-backends/07-prompt-templating-token-budgeting/01-safe-prompt-templating/cmd/demo
-cd go-solutions/52-ai-llm-backends/07-prompt-templating-token-budgeting/01-safe-prompt-templating
 go mod edit -go=1.26
 ```
 

@@ -132,10 +132,6 @@ runs the same handler logic as a local CLI.
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/31-cloud-native-go/01-lambda-handler-patterns/01-lambda-handler-patterns/handler
-mkdir -p go-solutions/31-cloud-native-go/01-lambda-handler-patterns/01-lambda-handler-patterns/cmd/lambda
-mkdir -p go-solutions/31-cloud-native-go/01-lambda-handler-patterns/01-lambda-handler-patterns/cmd/demo
-cd go-solutions/31-cloud-native-go/01-lambda-handler-patterns/01-lambda-handler-patterns
 go get github.com/aws/aws-lambda-go@latest
 ```
 

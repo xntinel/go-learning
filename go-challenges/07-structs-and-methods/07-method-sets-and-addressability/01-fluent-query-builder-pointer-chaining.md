@@ -26,13 +26,6 @@ querybuilder/                  independent module: example.com/querybuilder
 - Test: empty query, single and multi `WHERE`, `ORDER BY`, `LIMIT`, the full chain, empty-table rejection, and a table-driven test pinning exact rendered SQL.
 - Verify: `gofmt -l .`, `go vet ./...`, `go test -count=1 -race ./...`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/07-method-sets-and-addressability/01-fluent-query-builder-pointer-chaining/cmd/demo
-cd go-solutions/07-structs-and-methods/07-method-sets-and-addressability/01-fluent-query-builder-pointer-chaining
-```
-
 ### Why a chainable method must return *T
 
 The builder accumulates state — a list of `WHERE` conditions, a list of

@@ -26,13 +26,6 @@ panic-safe-init/              module: example.com/panic-safe-init
 - Test: a panicking init makes `Load` return an `ErrInitFailed`-wrapped error, and a second `Load` returns the same error without re-running (panic-is-done); a successful init returns nil and sets the resource; concurrent `Load` with a panicking init runs init once, all callers see the same error, and no goroutine crashes.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/03-sync-once/06-panic-safe-init/cmd/demo
-cd go-solutions/15-sync-primitives/03-sync-once/06-panic-safe-init
-```
-
 ### Recover inside the closure, not outside it
 
 The naive loader calls `init` directly inside `once.Do`. If `init` panics, two

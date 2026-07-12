@@ -27,13 +27,6 @@ service/                    independent module: example.com/service
 - Test: `TestServiceGetReturnsValue`, `TestServiceGetReturnsError` (error propagates from the repo), `TestServiceUsesInjectedClock` (the fake's fixed time is the one the service observes and it is unchanged after the call).
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/10-dependency-injection-with-interfaces/02-fake-driven-service-tests/cmd/demo
-cd go-solutions/08-interfaces/10-dependency-injection-with-interfaces/02-fake-driven-service-tests
-```
-
 ### The fakes are the point
 
 A fake is a hand-written implementation of an interface, built for a test. Because

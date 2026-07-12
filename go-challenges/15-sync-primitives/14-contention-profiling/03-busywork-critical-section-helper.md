@@ -28,13 +28,6 @@ busywork/                     independent module: example.com/busywork
 - Test: a table test pinning `busyWork`'s arithmetic; a `BenchmarkBusyWork` that records ns/op with `b.ReportMetric` so a reviewer can confirm the helper does real, non-zero work.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/14-contention-profiling/03-busywork-critical-section-helper/cmd/demo
-cd go-solutions/15-sync-primitives/14-contention-profiling/03-busywork-critical-section-helper
-```
-
 ### Why elision would silence the whole chapter
 
 The point of `busyWork` is to occupy the lock. A store's `Increment` does

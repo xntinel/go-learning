@@ -24,8 +24,6 @@ permission/                  independent module: example.com/permission-level-ca
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/03-switch-statements/15-permission-level-cascade
-cd go-solutions/03-control-flow/03-switch-statements/15-permission-level-cascade
 go mod edit -go=1.24
 ```
 

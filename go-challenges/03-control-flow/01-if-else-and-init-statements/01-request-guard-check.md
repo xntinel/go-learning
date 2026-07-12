@@ -26,13 +26,6 @@ requestguard/               independent module: example.com/requestguard
 - Test: table-driven acceptance for GET-with-auth, POST JSON, POST form; rejection table asserting `errors.Is(err, sentinel)` and `Rejection.Field` via `errors.As`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/01-if-else-and-init-statements/01-request-guard-check/cmd/demo
-cd go-solutions/03-control-flow/01-if-else-and-init-statements/01-request-guard-check
-```
-
 ## The decision tree, in order
 
 `Check` is a sequence of guard clauses. Each precondition that fails returns a

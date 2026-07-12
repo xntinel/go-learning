@@ -27,13 +27,6 @@ streamwriter/               independent module: example.com/streamwriter
 - Test: assert a naive wrapper does NOT satisfy `http.Flusher`; assert `http.NewResponseController(w).Flush()` returns nil and sets the recorder's `Flushed` flag through the `Unwrap` seam.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/05-interface-composition-and-embedding/03-responsecontroller-forwarding/cmd/demo
-cd go-solutions/08-interfaces/05-interface-composition-and-embedding/03-responsecontroller-forwarding
-```
-
 ### The bug, stated precisely
 
 An `http.ResponseWriter` handed to a handler by `net/http` almost always *also*

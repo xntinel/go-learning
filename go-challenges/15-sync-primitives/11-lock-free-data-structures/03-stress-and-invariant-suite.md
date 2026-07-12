@@ -29,13 +29,6 @@ stackstress/                     independent module: example.com/stackstress
 - Test: `TestStackNoLostItems` (50 goroutines x 200 pushes, concurrent drain counts exactly 10000), `TestStackMixedPushPop`, and the old demo scenario as a deterministic test.
 - Verify: `go test -count=1 -race ./...` then `go test -bench=. -benchmem ./stack`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/11-lock-free-data-structures/03-stress-and-invariant-suite/stack go-solutions/15-sync-primitives/11-lock-free-data-structures/03-stress-and-invariant-suite/cmd/demo
-cd go-solutions/15-sync-primitives/11-lock-free-data-structures/03-stress-and-invariant-suite
-```
-
 ### What a stress test must prove
 
 Unit tests prove the sequential contract. A stress test proves the *linearized*

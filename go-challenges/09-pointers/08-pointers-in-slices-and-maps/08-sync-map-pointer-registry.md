@@ -26,13 +26,6 @@ Test: concurrent `Incr` on one key sums to the total (one shared instance); `Ran
 snapshots current values; disjoint keys accumulate independently. Run `-race`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/08-pointers-in-slices-and-maps/08-sync-map-pointer-registry/cmd/demo
-cd go-solutions/09-pointers/08-pointers-in-slices-and-maps/08-sync-map-pointer-registry
-```
-
 ### Why sync.Map, and why the value must be a pointer
 
 `sync.Map` trades generality for a specific win: it is optimized for two access

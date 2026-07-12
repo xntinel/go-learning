@@ -27,13 +27,6 @@ Implement: `Coordinator` serving `/readyz` (503 once draining), `/livez` (always
 Test: `/readyz` fails immediately while `/livez` stays 200; a request in the propagation window still succeeds; `Shutdown` is called only after the delay; the sequence fits a budget.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/11-graceful-shutdown-with-context/08-kubernetes-prestop-readiness-drain/cmd/demo
-cd go-solutions/14-select-and-context/11-graceful-shutdown-with-context/08-kubernetes-prestop-readiness-drain
-```
-
 ## Why fail readiness before draining
 
 The termination sequence has an ordering that is not intuitive until you have

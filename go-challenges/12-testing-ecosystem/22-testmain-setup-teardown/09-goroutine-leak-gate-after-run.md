@@ -28,13 +28,6 @@ Implement: `Heartbeat(ctx, interval, tick, wg)` — a worker that stops promptly
 Test: a `TestMain`/`run()` that captures `runtime.NumGoroutine()` before `m.Run()`, settles-and-polls after, and returns non-zero if goroutines leaked; a well-behaved test that starts and stops a worker.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/22-testmain-setup-teardown/09-goroutine-leak-gate-after-run/cmd/demo
-cd go-solutions/12-testing-ecosystem/22-testmain-setup-teardown/09-goroutine-leak-gate-after-run
-```
-
 ### How the gate works, and why it must settle
 
 The gate is three lines of logic wrapped in patience. Before any test runs,

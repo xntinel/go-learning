@@ -38,8 +38,6 @@ invoicetree/                  independent module: example.com/invoicetree
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/07-recursive-functions-and-stack-depth/31-invoice-tree-line-item-aggregation/cmd/demo
-cd go-solutions/04-functions/07-recursive-functions-and-stack-depth/31-invoice-tree-line-item-aggregation
 go mod edit -go=1.24
 ```
 

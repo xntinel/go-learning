@@ -25,13 +25,6 @@ apidto/                     independent module: example.com/apidto
 - Test: `Marshal` then `Unmarshal` round-trips; the wire format is an integer for `EpochMillis` and a quoted string for the enum; unknown enum names error on decode; a struct embedding both serializes as expected.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/04-common-standard-library-interfaces/06-json-marshaler-unmarshaler/cmd/demo
-cd go-solutions/08-interfaces/04-common-standard-library-interfaces/06-json-marshaler-unmarshaler
-```
-
 ### Receiver rules and the encode/decode split
 
 `MarshalJSON() ([]byte, error)` returns the *raw* JSON for the value — you must

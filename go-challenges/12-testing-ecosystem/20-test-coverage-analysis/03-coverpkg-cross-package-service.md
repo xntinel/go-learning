@@ -33,13 +33,6 @@ svc/                       independent module: example.com/svc
 - Test: `handler_test.go` sends requests through the real handler → service → repo chain with `httptest`, asserting both the created and not-found paths.
 - Verify: `go test -coverpkg=./... -coverprofile=cover.out ./... && go tool cover -func=cover.out`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/20-test-coverage-analysis/03-coverpkg-cross-package-service/{repo,service,handler} go-solutions/12-testing-ecosystem/20-test-coverage-analysis/03-coverpkg-cross-package-service/cmd/demo
-cd go-solutions/12-testing-ecosystem/20-test-coverage-analysis/03-coverpkg-cross-package-service
-```
-
 ### Why the default number lies about layered code
 
 `go test ./handler` instruments the `handler` package and reports the fraction of

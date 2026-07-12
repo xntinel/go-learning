@@ -19,12 +19,6 @@ sem_test.go           peak <= limit under -race; first-error propagation; cancel
 - Test: `sem_test.go` asserts the measured peak never exceeds the limit, that the first non-nil error is returned, and that a cancelled parent stops the runner.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/16-concurrency-patterns/15-bounded-parallelism/01-counting-semaphore/cmd/demo && cd go-solutions/16-concurrency-patterns/15-bounded-parallelism/01-counting-semaphore
-```
-
 ### How the bound is enforced
 
 The semaphore is a `chan struct{}` whose capacity is the concurrency limit. The producer loop does the acquire — `sem <- struct{}{}` — before it starts the goroutine, so that the loop itself blocks the moment the buffer is full. This is the load-bearing detail: the bound exists because the loop stops admitting work, not because the goroutines politely wait their turn. If you moved the acquire inside the goroutine, every item would spawn a goroutine immediately and the only thing the semaphore would limit is how many of those already-running goroutines reach `fn`, which is not a bound on anything that costs memory.

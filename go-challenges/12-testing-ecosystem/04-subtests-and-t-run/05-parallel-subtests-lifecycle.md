@@ -29,13 +29,6 @@ healthprobe/                independent module: example.com/healthprobe
   after the group observes all three completed; close servers there.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/04-subtests-and-t-run/05-parallel-subtests-lifecycle/cmd/demo
-cd go-solutions/12-testing-ecosystem/04-subtests-and-t-run/05-parallel-subtests-lifecycle
-```
-
 ### The pause-resume model and why the wrapper group exists
 
 `t.Parallel()` does not start a subtest running concurrently on the spot. It

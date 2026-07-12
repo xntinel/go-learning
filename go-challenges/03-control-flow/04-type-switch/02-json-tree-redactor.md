@@ -30,13 +30,6 @@ redact/                      independent module: example.com/redact
   re-marshaled output to expected JSON.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/04-type-switch/02-json-tree-redactor/cmd/demo
-cd go-solutions/03-control-flow/04-type-switch/02-json-tree-redactor
-```
-
 ## How the type switch drives a recursive walk
 
 A decoded JSON tree has exactly three shapes at every node: an object

@@ -33,8 +33,6 @@ streamdlq/                    independent module: example.com/streamdlq
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/50-messaging-and-event-driven/04-redis-streams-consumer-groups/03-poison-messages-and-dead-letter-stream/cmd/demo
-cd go-solutions/50-messaging-and-event-driven/04-redis-streams-consumer-groups/03-poison-messages-and-dead-letter-stream
 go mod edit -go=1.24
 go get github.com/redis/go-redis/v9
 go get github.com/alicebob/miniredis/v2

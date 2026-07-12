@@ -17,12 +17,6 @@ pubsub_test.go       exhaustive match table, invalid-pattern rejection, concurre
 - Test: a table of subject/pattern pairs pins `*` (exactly one segment) and `#` (zero or more trailing segments); invalid patterns are rejected; concurrent publishers lose nothing.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/41-capstone-message-queue/01-in-memory-topic-subscription/02-wildcard-subscriptions/cmd/demo && cd go-solutions/41-capstone-message-queue/01-in-memory-topic-subscription/02-wildcard-subscriptions
-```
-
 ### Subjects, segments, and the meaning of the two wildcards
 
 A subject is a dotted string — `orders.eu.created` — which the router treats as an ordered list of segments: `["orders", "eu", "created"]`. A pattern is the same shape, except two of its segments may be wildcards, and the two wildcards mean precisely different things.

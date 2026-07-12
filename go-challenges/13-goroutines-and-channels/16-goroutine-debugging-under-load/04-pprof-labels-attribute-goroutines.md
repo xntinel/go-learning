@@ -24,13 +24,6 @@ attribution/                 independent module: example.com/attribution
 - Test: inside `Handle`, `LabelOf(ctx, "tenant")` returns the tenant; a labeled parked goroutine's tenant appears in the dump; labels do not leak outside `Do`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/04-pprof-labels-attribute-goroutines/cmd/demo
-cd go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/04-pprof-labels-attribute-goroutines
-```
-
 ### How labels attach and propagate
 
 `pprof.Do(ctx, labels, fn)` sets the given labels on the *current* goroutine for the

@@ -27,13 +27,6 @@ featuremask/               independent module: example.com/featuremask
 - Test: a concurrent Set/Clear storm on disjoint bits loses no updates; exactly one of 100 racing `Set` callers gets `true`; httptest proves 200 normally and 503 while degraded; an Example pins `SnapshotNames`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/07-atomic-package/09-atomic-bitmask-feature-flags/cmd/demo
-cd go-solutions/15-sync-primitives/07-atomic-package/09-atomic-bitmask-feature-flags
-```
-
 ### Why a bitmask, and why Or/And instead of Load-then-Store
 
 The state here is genuinely one value: a set of independent boolean bits packed

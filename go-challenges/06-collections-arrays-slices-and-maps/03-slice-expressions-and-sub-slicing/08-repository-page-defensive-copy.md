@@ -33,8 +33,6 @@ repo/                      independent module: example.com/repo
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/08-repository-page-defensive-copy/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/08-repository-page-defensive-copy
 go mod edit -go=1.24
 ```
 

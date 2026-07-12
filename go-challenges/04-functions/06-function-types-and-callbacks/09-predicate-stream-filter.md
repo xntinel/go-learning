@@ -26,13 +26,6 @@ Implement: `type Predicate[T any] func(T) bool`, `Filter[T](iter.Seq[T], Predica
 Test: `Filter`+`Map`+`slices.Collect` yields the transformed slice; `TakeWhile` stops at the boundary; a consumer that breaks after one element stops the source (counted side effect); combinators are lazy (no work until ranged).
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/06-function-types-and-callbacks/09-predicate-stream-filter/cmd/demo
-cd go-solutions/04-functions/06-function-types-and-callbacks/09-predicate-stream-filter
-```
-
 ### The yield contract is the whole thing
 
 An `iter.Seq[T]` is `func(yield func(T) bool)`. A producer calls `yield` once per

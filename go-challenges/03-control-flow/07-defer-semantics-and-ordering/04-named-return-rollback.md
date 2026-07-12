@@ -29,13 +29,6 @@ repowrite/                   independent module: example.com/repowrite
 - Test (fake `Tx`): happy path commits and `err` stays nil; a mid-write error triggers rollback and preserves the original error; a `Commit` error is propagated; a rollback error is joined with the original, not swallowed.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/07-defer-semantics-and-ordering/04-named-return-rollback/cmd/demo
-cd go-solutions/03-control-flow/07-defer-semantics-and-ordering/04-named-return-rollback
-```
-
 ### Why the closure form is mandatory here
 
 The deferred cleanup must *decide* between commit and rollback based on how the

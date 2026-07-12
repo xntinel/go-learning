@@ -22,13 +22,6 @@ manifest/                  independent module: example.com/manifest
 - Test: a fast test that always runs; an exhaustive test that begins with `if testing.Short() { t.Skip(...) }`.
 - Verify: `gofmt -l .`, `go vet ./...`, `go test -count=1 -race ./...` (full), and `go test -short ./...` (skips the slow path).
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/01-your-first-test/10-skippable-slow-check/cmd/demo
-cd go-solutions/12-testing-ecosystem/01-your-first-test/10-skippable-slow-check
-```
-
 ### One validator, two test speeds
 
 `ValidateManifest` is the check a deploy or backup tool runs over a manifest of

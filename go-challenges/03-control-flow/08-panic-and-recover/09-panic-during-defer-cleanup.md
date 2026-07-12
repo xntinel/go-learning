@@ -27,13 +27,6 @@ Implement: `Do(r *Resource, op func(*Resource) error) error` that guarantees `r.
 Test: primary panic + clean Close returns the primary; primary panic + Close that panics returns BOTH (`errors.Is` each); no primary + Close error surfaces just the cleanup error.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/08-panic-and-recover/09-panic-during-defer-cleanup/cmd/demo
-cd go-solutions/03-control-flow/08-panic-and-recover/09-panic-during-defer-cleanup
-```
-
 ### Why the naive defer loses the primary error
 
 Consider the obvious code: `defer r.Close()` inside a function that panics. As the

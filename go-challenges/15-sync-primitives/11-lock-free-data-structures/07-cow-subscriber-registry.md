@@ -27,13 +27,6 @@ cowregistry/                     independent module: example.com/cowregistry
 - Test: continuous `Notify` while writers churn under `-race`; N concurrent `Subscribe` calls all land (the CAS retry proves itself); no reader ever observes nil or a half-built slice; `BenchmarkNotifyCOW` vs `BenchmarkNotifyRWMutex`.
 - Verify: `go test -count=1 -race ./...` then `go test -bench=Notify ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/11-lock-free-data-structures/07-cow-subscriber-registry/cmd/demo
-cd go-solutions/15-sync-primitives/11-lock-free-data-structures/07-cow-subscriber-registry
-```
-
 ### Publish immutable snapshots, never edit shared state
 
 The registry's single mutable cell is `atomic.Pointer[[]Subscriber]`. The slice

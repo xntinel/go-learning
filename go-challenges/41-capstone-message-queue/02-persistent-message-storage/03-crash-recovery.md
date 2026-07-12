@@ -20,12 +20,6 @@ recovery_test.go     append+recover round-trip, torn-tail truncation, corrupt-ta
 - Test: `recovery_test.go` asserts every appended message comes back after a reopen, that a garbage tail is truncated, and that a record with a flipped CRC at the end is dropped.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/41-capstone-message-queue/02-persistent-message-storage/03-crash-recovery/cmd/demo && cd go-solutions/41-capstone-message-queue/02-persistent-message-storage/03-crash-recovery
-```
-
 ### Recovery is a single forward pass that rebuilds state
 
 When `Open` is handed an existing file, it knows nothing about it: not how many records it holds, not where the last good one ends, not whether the process that wrote it died mid-append. The only way to learn is to read the file from byte zero, record by record, and the same pass answers every question at once. For each record it reads the 4-byte length prefix, then the body, validates the CRC32 through `Decode`, and on success records the message's offset and the byte position where its length prefix began. That `offset to position` map is the in-memory state that lets a later `Read` jump straight to a record instead of rescanning; the running `nextOffset` is the counter the next `Append` continues from.

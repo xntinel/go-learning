@@ -27,13 +27,6 @@ buildsel/                      module example.com/buildsel
 - Test: assert the host chose a real platform file; assert the debug counter is 0 without the tag and 1 with it, using `!debug`/`debug`-guarded test files.
 - Verify: `go test -count=1 -race ./...` and `go test -count=1 -tags debug ./...` both pass; `go list -tags debug -f '{{.TestGoFiles}}'` shows `debug_test.go` only under the tag.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/08-cross-compilation-and-build-tags/06-tagged-and-platform-tests/cmd/demo
-cd go-solutions/01-environment-and-tooling/08-cross-compilation-and-build-tags/06-tagged-and-platform-tests
-```
-
 ### Two axes of test selection, and why default_test.go is separate
 
 There are two independent things to test here. First, that the host build selected

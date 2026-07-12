@@ -26,13 +26,6 @@ sizegate/                  independent module: example.com/sizegate
 - Test: a test that fails if `unsafe.Sizeof(CacheEntry{})` exceeds `budget`, printing the current size, the budget, and each field's offset so the author sees which field pushed it over.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/09-struct-memory-layout-and-padding/04-size-regression-gate/cmd/demo
-cd go-solutions/07-structs-and-methods/09-struct-memory-layout-and-padding/04-size-regression-gate
-```
-
 ### Why a size budget belongs in CI
 
 `CacheEntry` models a session-cache row: a user id, issue/expiry timestamps, a

@@ -26,13 +26,6 @@ hotconfig/                  independent module: example.com/hotconfig
 - Test: N reader goroutines call `Current()` while a writer `Reload()`s; assert every observed snapshot is internally consistent and the final `Load` matches the last `Store`; add a CAS guard test.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/02-pointers-and-function-parameters/06-atomic-pointer-config-hot-reload/cmd/demo
-cd go-solutions/09-pointers/02-pointers-and-function-parameters/06-atomic-pointer-config-hot-reload
-```
-
 ### Why swap a snapshot instead of mutating fields
 
 If a reloader did `cfg.Host = newHost; cfg.Port = newPort` while handlers read

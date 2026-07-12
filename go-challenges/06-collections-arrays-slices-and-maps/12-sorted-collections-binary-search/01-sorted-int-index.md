@@ -27,13 +27,6 @@ Implement: `Index` over a sorted `[]int` with `New`, `Add(id)`, `Has(id) bool`, 
 Test: sorted invariant after shuffled inserts, duplicate rejection, membership true/false, range-all-in-range, empty range, empty table, single-element range, and a proof that `Range` returns a copy.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/12-sorted-collections-binary-search/01-sorted-int-index/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/12-sorted-collections-binary-search/01-sorted-int-index
-```
-
 ### Why insertion is O(n) and Range must copy
 
 `Add` finds the insertion point with `sort.SearchInts`, which returns the first

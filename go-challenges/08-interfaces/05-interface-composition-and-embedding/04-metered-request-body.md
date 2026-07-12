@@ -25,13 +25,6 @@ meteredbody/                independent module: example.com/meteredbody
 - Test: full read under the limit with correct `Count()`; the typed error over the limit with `Count()` pinned at the ceiling; idempotent `Close` with the underlying closer invoked exactly once (spy); a comparison test asserting `http.MaxBytesReader` yields `*http.MaxBytesError`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/05-interface-composition-and-embedding/04-metered-request-body/cmd/demo
-cd go-solutions/08-interfaces/05-interface-composition-and-embedding/04-metered-request-body
-```
-
 ### The overflow-detection subtlety and why Close uses sync.Once
 
 Counting bytes is easy; detecting "too large" without lying about the count is the

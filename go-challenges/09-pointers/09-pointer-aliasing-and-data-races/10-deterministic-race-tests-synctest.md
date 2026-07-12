@@ -32,8 +32,6 @@ Set up the module. `testing/synctest` requires Go 1.25+, so pin the language
 version:
 
 ```bash
-mkdir -p go-solutions/09-pointers/09-pointer-aliasing-and-data-races/10-deterministic-race-tests-synctest/cmd/demo
-cd go-solutions/09-pointers/09-pointer-aliasing-and-data-races/10-deterministic-race-tests-synctest
 go mod edit -go=1.25
 ```
 

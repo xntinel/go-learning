@@ -18,13 +18,6 @@ bridge_test.go                    ReadAll round-trip, 1-byte reads, bufio.Scanne
 - Test: `io.ReadAll` round-trip, reassembly under 1-byte reads, integration with `bufio.Scanner`, line splitting across `Write` boundaries, `Flush` of a trailing partial line, and propagation of a sink error.
 - Verify: `go test -race ./...` and `go run ./cmd/demo`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/24-design-patterns-in-go/07-adapter-pattern/03-io-stream-adapters/cmd/demo
-cd go-solutions/24-design-patterns-in-go/07-adapter-pattern/03-io-stream-adapters
-```
-
 ### Reading: the io.Reader contract is the hard part
 
 A domain `LineSource` is a pull API: call `Next()` and it hands back the next line and a boolean that goes `false` at the end. The standard library, by contrast, wants to *pull bytes* on its own schedule, through `Read(p []byte) (int, error)`, into a buffer it owns and sizes. The `SourceReader` bridges the two, and the entire difficulty is honoring the `io.Reader` contract, which is more subtle than it looks.

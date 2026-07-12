@@ -28,13 +28,6 @@ writerlib/                    independent module: example.com/writerlib
 - Test: the success path writes the exact bytes; the empty-name path returns `ErrEmptyName` via `errors.Is`.
 - Verify: `go test -count=1 -race ./...`, then `golangci-lint run ./...`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/06-linting-with-golangci-lint/01-errcheck-unchecked-io-error/cmd/demo go-solutions/01-environment-and-tooling/06-linting-with-golangci-lint/01-errcheck-unchecked-io-error/internal/writer
-cd go-solutions/01-environment-and-tooling/06-linting-with-golangci-lint/01-errcheck-unchecked-io-error
-```
-
 ### The bug: a discarded os.MkdirAll error
 
 The writer ensures the destination's parent directory exists before creating the

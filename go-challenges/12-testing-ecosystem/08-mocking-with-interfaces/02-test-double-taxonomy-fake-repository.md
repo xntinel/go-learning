@@ -26,13 +26,6 @@ signup/                      independent module: example.com/signup
 - Test: a fake (map-backed) driving pure state verification; a spy asserting the normalized email reached `Save` exactly once; a stub returning a fixed `GetByEmail`; a dummy filling an unused slot.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/08-mocking-with-interfaces/02-test-double-taxonomy-fake-repository/cmd/demo
-cd go-solutions/12-testing-ecosystem/08-mocking-with-interfaces/02-test-double-taxonomy-fake-repository
-```
-
 ### The service and its port
 
 The signup service enforces one real invariant: an email address is unique. To do

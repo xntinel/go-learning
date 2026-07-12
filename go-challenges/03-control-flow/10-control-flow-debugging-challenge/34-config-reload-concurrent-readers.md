@@ -36,11 +36,6 @@ configmgr/                    independent module: example.com/config-reload-conc
 - Test: 20 goroutines holding an acquired reference to the old config while `Reload` runs concurrently, asserting the resource is never observed closed while a reader still holds it; a further case confirming the old resource is eventually closed once no readers remain.
 - Verify: `go test -count=1 -race ./...`.
 
-```bash
-mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/34-config-reload-concurrent-readers/cmd/demo
-cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/34-config-reload-concurrent-readers
-```
-
 ### Why swapping the pointer is not enough to make reload safe
 
 The version that ships first gets the pointer swap right — new

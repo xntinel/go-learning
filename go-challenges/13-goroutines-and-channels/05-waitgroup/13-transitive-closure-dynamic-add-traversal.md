@@ -31,8 +31,6 @@ closure/                     independent module: example.com/closure
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/13-goroutines-and-channels/05-waitgroup/13-transitive-closure-dynamic-add-traversal/cmd/demo
-cd go-solutions/13-goroutines-and-channels/05-waitgroup/13-transitive-closure-dynamic-add-traversal
 go mod edit -go=1.26
 go get go.uber.org/goleak
 go mod tidy

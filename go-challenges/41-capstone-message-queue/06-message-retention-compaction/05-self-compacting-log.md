@@ -19,12 +19,6 @@ log_test.go            reclamation accounting, latest-per-key survival, tombston
 - Test: that writing many versions reclaims bytes (`Reclaimed() > 0`), that only the latest value per key survives, and that a within-window tombstone survives.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/41-capstone-message-queue/06-message-retention-compaction/05-self-compacting-log/cmd/demo && cd go-solutions/41-capstone-message-queue/06-message-retention-compaction/05-self-compacting-log
-```
-
 ### Triggering on the dirty ratio, not on every write
 
 Compaction is sequential I/O over the whole keyed log, so running it on every append would dominate the cost of writing. The `CompactingLog` instead measures the dirty ratio after each append and compacts only when it crosses a configured `threshold`. Dirty bytes are bytes in segments whose base offset is above `compactedUpTo` — everything written since the last cycle. When `dirty / total` reaches the threshold, enough redundancy has accumulated that a cycle pays for itself; below it, the log is lean enough to leave alone.

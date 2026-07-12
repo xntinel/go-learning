@@ -30,13 +30,6 @@ Changing GC settings is process-global. Parallel tests that call `debug.SetGCPer
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/26-memory-model-and-optimization/10-memory-ballast-gogc-tuning/10-memory-ballast-gogc-tuning/cmd/demo
-cd go-solutions/26-memory-model-and-optimization/10-memory-ballast-gogc-tuning/10-memory-ballast-gogc-tuning
-```
-
 This is a library package. The demo is a separate program that imports the package through its public API.
 
 ### Exercise 1: Build A GC Tuning Planner

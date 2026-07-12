@@ -23,13 +23,6 @@ paymentsclient/                 independent module: example.com/testing-outbound
 - Test: a server handler asserts `r.Method`, `r.URL.Path`, the `Authorization` header, and the decoded body, then writes a fixture; construct the client with `baseURL = srv.URL` and `srv.Client()`; assert the returned struct, the 500-to-`ErrUpstream` path, and context cancellation propagating into `Do`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/09-httptest/04-testing-outbound-client/cmd/demo
-cd go-solutions/12-testing-ecosystem/09-httptest/04-testing-outbound-client
-```
-
 ### Testing the outbound half: the server is your assertion surface
 
 When you test a client, the roles invert: *your* code sends the request and *the

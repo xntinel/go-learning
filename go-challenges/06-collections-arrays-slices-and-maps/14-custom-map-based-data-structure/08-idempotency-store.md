@@ -28,13 +28,6 @@ idempotency/               independent module: example.com/idempotency
 - Test: two identical requests execute the handler once and return identical bodies; distinct keys execute independently; concurrent duplicates still execute once.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/14-custom-map-based-data-structure/08-idempotency-store/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/14-custom-map-based-data-structure/08-idempotency-store
-```
-
 ### Capture the first response, and serialize the duplicates
 
 The guard is middleware wrapping the real handler. On a request with an

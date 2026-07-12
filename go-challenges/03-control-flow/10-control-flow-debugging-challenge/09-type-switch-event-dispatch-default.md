@@ -23,13 +23,6 @@ events/                    module example.com/events
 - Test: a table over each concrete type asserting the correct side effect; a row with an unregistered type asserting `errors.Is(err, ErrUnhandledEvent)`; a nil row; a check that `PaymentFailed` lands in the failed bucket, not another.
 - Verify: `go test -count=1 -race ./...`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/09-type-switch-event-dispatch-default/cmd/demo
-cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/09-type-switch-event-dispatch-default
-```
-
 ### The artifact and the planted bug
 
 The dispatcher is a policy point: every event on the stream is either handled or

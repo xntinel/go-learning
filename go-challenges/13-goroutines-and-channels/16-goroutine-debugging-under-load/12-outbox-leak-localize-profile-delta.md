@@ -28,13 +28,6 @@ gprofdelta/                  independent module: example.com/gprofdelta
 - Test: the parser aggregates identical symbol stacks and dedups; keys are address-independent; a spawned set of `K` parked workers appears as one `Diff` entry naming `leakWorker` with `Count == K`; a start-and-join workload is not attributed.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/12-outbox-leak-localize-profile-delta/cmd/demo
-cd go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/12-outbox-leak-localize-profile-delta
-```
-
 ### Why the delta, and why keying on symbols not addresses
 
 A single goroutine profile answers "how many goroutines, in what stacks, right now?"

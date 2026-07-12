@@ -28,8 +28,6 @@ Verify: `go test -count=1 -race ./...`
 Set up the module and fetch the SDKs:
 
 ```bash
-mkdir -p go-solutions/52-ai-llm-backends/01-llm-sdk-client/01-provider-port-and-adapters/cmd/demo
-cd go-solutions/52-ai-llm-backends/01-llm-sdk-client/01-provider-port-and-adapters
 go get github.com/anthropics/anthropic-sdk-go@latest
 go get github.com/openai/openai-go/v3@latest
 ```

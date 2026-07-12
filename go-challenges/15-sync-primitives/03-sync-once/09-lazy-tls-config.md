@@ -27,13 +27,6 @@ lazy-tls-config/              module: example.com/lazy-tls-config
 - Test: a helper generates a self-signed ed25519 certificate entirely in memory (`x509.CreateCertificate` + `pem.EncodeToMemory`, no fixture files); 100 concurrent `Get` calls observe one build and pointer-identical configs; corrupt PEM yields the same cached `ErrTLSConfig` on every call.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/03-sync-once/09-lazy-tls-config/cmd/demo
-cd go-solutions/15-sync-primitives/03-sync-once/09-lazy-tls-config
-```
-
 ### Publish-then-freeze: why the config is built fully inside the closure
 
 The `Once` here buys two things beyond deduplicating an expensive parse. First,

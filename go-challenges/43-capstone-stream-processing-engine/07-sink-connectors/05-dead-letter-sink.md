@@ -22,7 +22,6 @@ sink_test.go           healthy delivery, poison isolation, transient retry, canc
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/43-capstone-stream-processing-engine/07-sink-connectors/05-dead-letter-sink/cmd/demo && cd go-solutions/43-capstone-stream-processing-engine/07-sink-connectors/05-dead-letter-sink
 go mod edit -go=1.26
 ```
 

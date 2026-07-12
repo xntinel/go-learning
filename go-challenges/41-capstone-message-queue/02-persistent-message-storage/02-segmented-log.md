@@ -21,12 +21,6 @@ log_test.go          append/read round-trip, rotation, sparse-index seek, trunca
 - Test: `log_test.go` round-trips many messages, forces rotation, exercises the sparse-index seek with a small interval, and checks `TruncateBefore` drops sealed segments.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/41-capstone-message-queue/02-persistent-message-storage/02-segmented-log/cmd/demo && cd go-solutions/41-capstone-message-queue/02-persistent-message-storage/02-segmented-log
-```
-
 ### How the segment lays records on disk
 
 Each segment owns a single `.log` file opened with `os.O_APPEND`, so the kernel moves the write cursor to the end before every write — even after the file is reopened on restart — which is what guarantees a new append never overwrites existing data. A record is written as a 4-byte big-endian length prefix followed by the encoded message. The length prefix is the framing that lets a reader (and recovery) advance record by record with two `io.ReadFull` calls and never decode a field just to find the next boundary.

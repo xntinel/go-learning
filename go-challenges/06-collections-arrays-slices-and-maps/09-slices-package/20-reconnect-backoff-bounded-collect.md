@@ -65,8 +65,6 @@ retrybackoff/                module example.com/retrybackoff
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/09-slices-package/20-reconnect-backoff-bounded-collect
-cd go-solutions/06-collections-arrays-slices-and-maps/09-slices-package/20-reconnect-backoff-bounded-collect
 go mod edit -go=1.24
 ```
 

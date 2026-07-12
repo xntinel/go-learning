@@ -23,13 +23,6 @@ Implement: the same `Registry` contract, bundled locally so this module stands a
 Test: duplicate `Register` is `ErrDriverExists`; missing `Open` is `ErrDriverNotFound`; N goroutines register N distinct names and `len(Names()) == N` with every name present.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/08-init-functions-and-package-initialization/03-registry-and-driver-tests-in-isolation/cmd/demo
-cd go-solutions/04-functions/08-init-functions-and-package-initialization/03-registry-and-driver-tests-in-isolation
-```
-
 ### Why fakes, and why the concurrency test matters
 
 The registry's whole value proposition is that a test controls what is registered.

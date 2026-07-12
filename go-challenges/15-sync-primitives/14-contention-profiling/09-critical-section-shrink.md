@@ -30,13 +30,6 @@ stats-snapshot/               independent module: example.com/stats-snapshot
 - Test: naive and shrunk emit byte-identical JSON for the same state; concurrent writers during repeated snapshots stay exact under `-race`; both handlers serve correct JSON over `httptest`; `BenchmarkNaive`/`BenchmarkShrunk` under `b.RunParallel` are the profile-capture vehicle.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/14-contention-profiling/09-critical-section-shrink/cmd/demo
-cd go-solutions/15-sync-primitives/14-contention-profiling/09-critical-section-shrink
-```
-
 ### The failure mode: encoding work inside the lock
 
 The naive handler is how this code gets written the first time, and it looks

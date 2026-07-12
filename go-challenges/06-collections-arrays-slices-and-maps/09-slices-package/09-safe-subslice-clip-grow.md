@@ -31,8 +31,6 @@ subslice/                      module example.com/subslice
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/09-slices-package/09-safe-subslice-clip-grow/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/09-slices-package/09-safe-subslice-clip-grow
 go mod edit -go=1.24
 ```
 

@@ -23,13 +23,6 @@ adminpprof/                    independent module: example.com/adminpprof
 - Test: unauthenticated `GET /debug/pprof/` returns 401; authenticated `GET /debug/pprof/goroutine?debug=2` returns 200 with a body containing `goroutine `; the public mux returns 404 for `/debug/pprof/`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/02-expose-pprof-behind-admin-auth/cmd/demo
-cd go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/02-expose-pprof-behind-admin-auth
-```
-
 ### The side effect you are defending against
 
 `net/http/pprof` has an `init` that calls `http.HandleFunc("/debug/pprof/", ...)`

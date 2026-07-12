@@ -43,13 +43,6 @@ Generated files are typically committed. This allows consumers to `go get` the p
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/29-code-generation-and-build-system/03-writing-a-custom-code-generator/03-writing-a-custom-code-generator/cmd/enumgen
-cd go-solutions/29-code-generation-and-build-system/03-writing-a-custom-code-generator/03-writing-a-custom-code-generator
-```
-
 ### Exercise 1: Write The Color Enum And Generator
 
 Create `color.go`:

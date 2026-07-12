@@ -26,13 +26,6 @@ Implement: `Store` holding events sorted by `UnixNano`, with `Append(Event)`, `W
 Test: duplicate timestamps at the boundaries, windows before/after/covering all data, `from == to`, and a copy proof.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/12-sorted-collections-binary-search/03-timeseries-window-query/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/12-sorted-collections-binary-search/03-timeseries-window-query
-```
-
 ### Two boundary searches, and why the interval is half-open
 
 An event carries a timestamp and a payload; the store keeps them sorted by

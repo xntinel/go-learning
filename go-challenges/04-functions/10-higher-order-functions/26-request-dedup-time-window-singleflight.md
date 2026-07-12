@@ -28,8 +28,6 @@ dedupflight/                 independent module: example.com/dedupflight
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/10-higher-order-functions/26-request-dedup-time-window-singleflight/cmd/demo
-cd go-solutions/04-functions/10-higher-order-functions/26-request-dedup-time-window-singleflight
 go mod edit -go=1.24
 ```
 

@@ -57,13 +57,6 @@ No coordination strategy is strictly better than the others; they trade accuracy
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/37-distributed-systems-fundamentals/12-distributed-rate-limiter/12-distributed-rate-limiter/cmd/demo
-cd go-solutions/37-distributed-systems-fundamentals/12-distributed-rate-limiter/12-distributed-rate-limiter
-```
-
 This is a library. Verify it with `go test`.
 
 ### Exercise 1: Token Bucket

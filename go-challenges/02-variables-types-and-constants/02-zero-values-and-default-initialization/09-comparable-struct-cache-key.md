@@ -28,13 +28,6 @@ Implement: a comparable `Key{Tenant, Resource string; Version int}`, a generic `
 Test: two structs with equal fields map to one entry; the zero-value key stores and reads correctly; dedup collapses duplicates. Document why a struct with a slice field cannot be a key.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/02-zero-values-and-default-initialization/09-comparable-struct-cache-key/cmd/demo
-cd go-solutions/02-variables-types-and-constants/02-zero-values-and-default-initialization/09-comparable-struct-cache-key
-```
-
 ## Why struct keys work, and where they break
 
 A Go map requires a comparable key type, and a struct is comparable exactly when

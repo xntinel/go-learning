@@ -23,12 +23,6 @@ drain/
 - Test: every accepted job runs before `Shutdown` returns; a too-short deadline yields `context.DeadlineExceeded`; `Submit` after `Shutdown` returns `ErrPoolClosed`; `Shutdown` is idempotent; the goroutine count returns to baseline.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/16-concurrency-patterns/21-graceful-goroutine-draining/01-draining-worker-pool/cmd/demo && cd go-solutions/16-concurrency-patterns/21-graceful-goroutine-draining/01-draining-worker-pool
-```
-
 ## Why a quit channel, not a closed jobs channel
 
 The classic worker-pool sketch closes the jobs channel to signal shutdown: workers `for job := range jobs`, and `close(jobs)` ends every loop. That design is correct only when nothing can still send. Here `Submit` is called by arbitrary external goroutines, so it can run concurrently with `Shutdown`. A send on a closed channel panics, and an atomic "closed" flag checked before the send does not save you: the channel can be closed in the gap between the check and the send, and a `Submit` already blocked on a full channel is past any check. The send path is not guardable.

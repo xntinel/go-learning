@@ -26,13 +26,6 @@ Implement: `NewWorker(name string, work func(context.Context)) *Worker` with `St
 Test: a ticking worker increments a counter and stops on cancel; a worker ignoring its context makes `Wait` return a timeout error; `Name` round-trips.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/11-graceful-shutdown-with-context/01-worker-lifecycle-cancellation/cmd/demo
-cd go-solutions/14-select-and-context/11-graceful-shutdown-with-context/01-worker-lifecycle-cancellation
-```
-
 ## Why the stopped channel and the bounded Wait
 
 A worker has two jobs beyond doing its work: it must exit when told to, and it

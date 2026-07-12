@@ -24,13 +24,6 @@ querymetrics/               independent module: example.com/querymetrics
 - Test: a fake recorder; success -> one observation with status ok and the rows value; failure -> status error and rows zero; duration non-negative; the defer sees the final `err`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/02-named-return-values/06-latency-and-outcome-metrics/cmd/demo
-cd go-solutions/04-functions/02-named-return-values/06-latency-and-outcome-metrics
-```
-
 ### The one place that sees both duration and outcome
 
 There is no way to emit "how long, and did it work, and how much" from a single

@@ -26,8 +26,6 @@ Verify: `go test -count=1 -race ./...`
 Set up the module. The Go CDK requires network access to fetch on first build:
 
 ```bash
-mkdir -p go-solutions/54-cloud-native-platform-and-orchestration/06-multi-cloud-blob-storage-gocloud/01-portable-object-store/cmd/demo
-cd go-solutions/54-cloud-native-platform-and-orchestration/06-multi-cloud-blob-storage-gocloud/01-portable-object-store
 go get gocloud.dev/blob@latest
 go mod edit -go=1.26
 ```

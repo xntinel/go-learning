@@ -29,8 +29,6 @@ sessiontoken/                independent module: example.com/sessiontoken
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/49-application-security-crypto-supplychain/05-paseto-vs-jwt-tokens/02-v4-local-encrypted-tokens/cmd/demo
-cd go-solutions/49-application-security-crypto-supplychain/05-paseto-vs-jwt-tokens/02-v4-local-encrypted-tokens
 go mod edit -go=1.25
 go get aidanwoods.dev/go-paseto@latest
 ```

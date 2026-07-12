@@ -31,8 +31,6 @@ cachekit/                  independent module: example.com/cachekit
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/11-packages-and-modules/02-exported-vs-unexported/04-export-test-seam/cmd/demo
-cd go-solutions/11-packages-and-modules/02-exported-vs-unexported/04-export-test-seam
 go mod edit -go=1.26
 ```
 

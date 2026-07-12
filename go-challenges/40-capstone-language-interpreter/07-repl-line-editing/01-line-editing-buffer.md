@@ -19,12 +19,6 @@ editor_test.go     insert, delete, move, word-delete, reset, set-content
 - Test: `editor_test.go` drives the buffer with method calls and asserts on `String()` and `Cursor()`; no terminal is involved.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/40-capstone-language-interpreter/07-repl-line-editing/01-line-editing-buffer/cmd/demo && cd go-solutions/40-capstone-language-interpreter/07-repl-line-editing/01-line-editing-buffer
-```
-
 ### The buffer model
 
 `LineEditor` holds exactly two fields: `buf []rune` and `cursor int`. The cursor is the index *between* runes where the next inserted character will go, so it ranges from `0` (before the first rune) to `len(buf)` (after the last). Insert places a rune at the cursor and advances it; the two backspace-family operations remove the rune just before the cursor, and the delete-family operations remove the rune just at the cursor. Keeping the cursor as a half-open position is what makes Home (`cursor = 0`) and End (`cursor = len(buf)`) one-liners and what makes "insert in the middle" identical to "insert at the end".

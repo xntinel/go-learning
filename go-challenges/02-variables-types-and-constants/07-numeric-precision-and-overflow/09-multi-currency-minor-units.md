@@ -31,13 +31,6 @@ USD); `Add` of two currencies returns `ErrCurrencyMismatch`; a JPY amount never 
 with decimals; a signed `Sub` underflow near `MinInt64` returns `ErrOverflow`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/07-numeric-precision-and-overflow/09-multi-currency-minor-units/cmd/demo
-cd go-solutions/02-variables-types-and-constants/07-numeric-precision-and-overflow/09-multi-currency-minor-units
-```
-
 ### Scale is a property of the currency, not a constant
 
 The minor-unit exponent is defined per currency by ISO 4217: JPY and KRW have

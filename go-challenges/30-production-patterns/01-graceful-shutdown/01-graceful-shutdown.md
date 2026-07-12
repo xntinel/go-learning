@@ -74,13 +74,6 @@ Graceful shutdown always needs at least two contexts:
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/30-production-patterns/01-graceful-shutdown/01-graceful-shutdown/cmd/demo
-cd go-solutions/30-production-patterns/01-graceful-shutdown/01-graceful-shutdown
-```
-
 This is a library plus a demo program. The library is verified with `go test`.
 
 ### Exercise 1: The Manager Type

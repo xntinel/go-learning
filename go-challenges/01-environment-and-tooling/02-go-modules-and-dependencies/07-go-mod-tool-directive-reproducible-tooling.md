@@ -27,13 +27,6 @@ jobstate/                   independent module: example.com/jobstate
 - Test: assert `String()` for each known state and the out-of-range fallback.
 - Verify: `go get -tool`, `go generate ./...`, `go tool` lists the tool; `go build`, `go test -race`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/02-go-modules-and-dependencies/07-go-mod-tool-directive-reproducible-tooling/cmd/demo
-cd go-solutions/01-environment-and-tooling/02-go-modules-and-dependencies/07-go-mod-tool-directive-reproducible-tooling
-```
-
 ### The tool directive versus tools.go
 
 Before Go 1.24, the way to pin a code-generation tool to a module was a `tools.go`

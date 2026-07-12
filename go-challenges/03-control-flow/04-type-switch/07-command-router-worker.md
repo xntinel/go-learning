@@ -31,13 +31,6 @@ cmdrouter/                   independent module: example.com/cmdrouter
   routes but its pointer form does not (type switch distinguishes `T` from `*T`).
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/04-type-switch/07-command-router-worker/cmd/demo
-cd go-solutions/03-control-flow/04-type-switch/07-command-router-worker
-```
-
 ## Type-switch dispatch versus a method on the command
 
 Two shapes solve "run the right handler for each command". A type switch

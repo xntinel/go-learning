@@ -26,13 +26,6 @@ eventdedup/                 independent module: example.com/eventdedup
 - Test: same instant in UTC vs Beijing is not `==` but is `.Equal`; a monotonic reading breaks `==` but not `.Equal`; normalization makes two representations collapse to one map key.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/05-struct-comparison-and-equality/05-time-equal-monotonic-location/cmd/demo
-cd go-solutions/07-structs-and-methods/05-struct-comparison-and-equality/05-time-equal-monotonic-location
-```
-
 ### Why `==` is the wrong instant comparison
 
 A `time.Time` is a struct, and `==` compares its fields. Two of those fields are not

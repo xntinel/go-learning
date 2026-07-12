@@ -30,13 +30,6 @@ A benchmark for false sharing should compare contiguous slots against padded slo
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/26-memory-model-and-optimization/11-false-sharing-cache-contention/11-false-sharing-cache-contention/cmd/demo
-cd go-solutions/26-memory-model-and-optimization/11-false-sharing-cache-contention/11-false-sharing-cache-contention
-```
-
 This is a library package. The demo program imports the library and uses only exported identifiers.
 
 ### Exercise 1: Build Sharded Counters

@@ -23,7 +23,6 @@ consistenthash_test.go  same-key stability, even distribution, minimal remap, bo
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/42-capstone-service-mesh-data-plane/04-load-balancing/03-consistent-hashing/cmd/demo && cd go-solutions/42-capstone-service-mesh-data-plane/04-load-balancing/03-consistent-hashing
 go mod edit -go=1.26
 ```
 

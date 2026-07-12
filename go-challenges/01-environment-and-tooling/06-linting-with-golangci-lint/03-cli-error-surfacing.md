@@ -27,13 +27,6 @@ greetcli/                     independent module: example.com/greetcli
 - Test: a table test that calls `run` with argument slices and asserts the returned error (via `errors.Is`) and the captured stdout.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/06-linting-with-golangci-lint/03-cli-error-surfacing/cmd/demo go-solutions/01-environment-and-tooling/06-linting-with-golangci-lint/03-cli-error-surfacing/internal/writer
-cd go-solutions/01-environment-and-tooling/06-linting-with-golangci-lint/03-cli-error-surfacing
-```
-
 ### Why split main() from run()
 
 `func main()` takes no arguments, returns nothing, and its only way to signal

@@ -25,8 +25,6 @@ storageclass/               independent module: example.com/file-extension-stora
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/03-switch-statements/13-file-extension-storage-class
-cd go-solutions/03-control-flow/03-switch-statements/13-file-extension-storage-class
 go mod edit -go=1.24
 ```
 

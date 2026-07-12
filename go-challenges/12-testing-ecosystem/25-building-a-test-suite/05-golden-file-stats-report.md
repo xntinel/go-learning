@@ -25,13 +25,6 @@ Implement: `NewWithClock`, `Set`, `Stats()` returning deterministic indented JSO
 Test: render the report and byte-compare against `testdata/stats.golden`; `-update` regenerates it.
 Verify: `go test -count=1 -race ./...` and `go test -run TestStatsGolden -update ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/25-building-a-test-suite/05-golden-file-stats-report/cmd/demo
-cd go-solutions/12-testing-ecosystem/25-building-a-test-suite/05-golden-file-stats-report
-```
-
 ### Determinism is the whole prerequisite
 
 A golden test is only as trustworthy as the determinism of the output it pins. Two

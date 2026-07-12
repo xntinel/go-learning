@@ -59,14 +59,6 @@ Never expose `/debug/pprof` without authentication in production. Add an authent
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/32-concurrency-debugging-and-testing/06-goroutine-dump-analysis/06-goroutine-dump-analysis/server
-mkdir -p go-solutions/32-concurrency-debugging-and-testing/06-goroutine-dump-analysis/06-goroutine-dump-analysis/cmd/demo
-cd go-solutions/32-concurrency-debugging-and-testing/06-goroutine-dump-analysis/06-goroutine-dump-analysis
-```
-
 ### Exercise 1: Server With Goroutine Dump Endpoint
 
 Create `server/server.go`:

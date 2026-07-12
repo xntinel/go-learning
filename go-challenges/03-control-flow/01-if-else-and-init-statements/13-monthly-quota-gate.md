@@ -25,8 +25,6 @@ quotagate/                  independent module: example.com/monthly-quota-gate
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/01-if-else-and-init-statements/13-monthly-quota-gate
-cd go-solutions/03-control-flow/01-if-else-and-init-statements/13-monthly-quota-gate
 go mod edit -go=1.24
 ```
 

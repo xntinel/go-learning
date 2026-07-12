@@ -32,8 +32,6 @@ Set up the module. `runtime/trace.FlightRecorder` requires Go 1.25+, so pin the
 language version:
 
 ```bash
-mkdir -p go-solutions/48-modern-go-language-and-stdlib/13-flight-recorder-runtime-trace/01-armed-recorder-snapshot/cmd/demo
-cd go-solutions/48-modern-go-language-and-stdlib/13-flight-recorder-runtime-trace/01-armed-recorder-snapshot
 go mod edit -go=1.25
 ```
 

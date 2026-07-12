@@ -19,12 +19,6 @@ value_test.go         NULL ordering, int/float coercion, incomparable types, ToB
 - Test: `value_test.go` pins NULL-before-everything ordering, int/float coercion, incomparable-type detection, and the `ToBool` coercion.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/06-query-planner/01-value-and-three-valued-logic/cmd/demo && cd go-solutions/39-capstone-database-engine/06-query-planner/01-value-and-three-valued-logic
-```
-
 ### Why a tagged union, and why NULL is special
 
 A SQL scalar is a tagged union: a `Kind` discriminator plus storage for each possible payload. Booleans piggyback on the integer slot (0 or 1) so the struct stays small and comparable. The constructors (`IntVal`, `FloatVal`, `StrVal`, `BoolVal`) are the only way to build a non-NULL value, and `Null` is a package-level value with `kind == KindNull`, so "is this NULL?" is one field check.

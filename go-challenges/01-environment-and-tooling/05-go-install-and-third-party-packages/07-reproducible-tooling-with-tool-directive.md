@@ -25,13 +25,6 @@ Implement: `Check(src []byte) (formatted bool, want []byte, err error)` using `g
 Test: unformatted source is reported unformatted with a corrected `want`; clean source is reported formatted.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/05-go-install-and-third-party-packages/07-reproducible-tooling-with-tool-directive/cmd/demo
-cd go-solutions/01-environment-and-tooling/05-go-install-and-third-party-packages/07-reproducible-tooling-with-tool-directive
-```
-
 ### The directive, and what it replaces
 
 Before Go 1.24 the trick for pinning tools was a `tools.go` file with blank

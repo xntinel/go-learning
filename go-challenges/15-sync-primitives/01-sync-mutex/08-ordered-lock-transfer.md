@@ -31,11 +31,6 @@ ledger/                      independent module: example.com/ledger
 - Test: 100 goroutines transferring A to B interleaved with 100 transferring B to A must terminate (run under `go test -timeout 30s`); total balance across all accounts is exactly conserved after the storm; every error path asserts `errors.Is` and unchanged balances.
 - Verify: `go test -count=1 -race -timeout 30s ./...`
 
-```bash
-mkdir -p go-solutions/15-sync-primitives/01-sync-mutex/08-ordered-lock-transfer/cmd/demo
-cd go-solutions/15-sync-primitives/01-sync-mutex/08-ordered-lock-transfer
-```
-
 ### Why two locks, and why order is the whole game
 
 One mutex per account is the right granularity for a ledger: transfers between

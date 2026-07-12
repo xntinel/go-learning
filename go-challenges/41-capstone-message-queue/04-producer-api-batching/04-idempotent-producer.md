@@ -22,12 +22,6 @@ idempotent_test.go   exactly-once under lost acks, the naive double-append, sequ
 - Test: a lost ack against the dedup broker commits each record once, the same scenario against the naive broker double-commits, and per-partition sequences are independent and stable across retries.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/41-capstone-message-queue/04-producer-api-batching/04-idempotent-producer/cmd/demo && cd go-solutions/41-capstone-message-queue/04-producer-api-batching/04-idempotent-producer
-```
-
 ### The problem retries create
 
 Picture the failure that idempotence exists to fix. The producer sends a batch; the broker appends it durably and assigns offsets; then the acknowledgment is dropped on the way back. The producer waited for an ack, never got one, and cannot tell "the commit failed" apart from "the commit succeeded but the ack was lost." Its only safe move is to retry. A broker that simply appends whatever arrives now holds the records twice, and the stream is corrupted in a way no downstream consumer can untangle. This is the gap between at-least-once and exactly-once, and no amount of network reliability closes it, because the ambiguous case is fundamental.

@@ -32,8 +32,6 @@ checkpoint/                    module example.com/checkpoint
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/02-for-loops/19-checkpoint-recovery-retries/cmd/demo
-cd go-solutions/03-control-flow/02-for-loops/19-checkpoint-recovery-retries
 go mod edit -go=1.24
 ```
 

@@ -61,8 +61,6 @@ now yields `cafe-resume` instead of `caf-rsum`.
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/02-ascii-fold-transliteration/internal/fold go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/02-ascii-fold-transliteration/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/02-ascii-fold-transliteration
 go get golang.org/x/text
 ```
 

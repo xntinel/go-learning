@@ -33,13 +33,6 @@ success, `Collect` stops on `DeadlineExceeded`, full-pipeline propagates
 `ErrTransform` as Cause, and an `Example`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/12-multi-stage-pipeline-cancellation/01-stage-primitives-generate-transform-collect/cmd/demo
-cd go-solutions/14-select-and-context/12-multi-stage-pipeline-cancellation/01-stage-primitives-generate-transform-collect
-```
-
 ### Why each stage owns and closes its own output
 
 Each stage function creates its output channel, launches exactly one goroutine

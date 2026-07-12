@@ -25,8 +25,6 @@ hedge/                       independent module: example.com/hedge
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/13-goroutines-and-channels/07-done-channel-pattern/13-two-replica-request-hedging-cancel-loser/cmd/demo
-cd go-solutions/13-goroutines-and-channels/07-done-channel-pattern/13-two-replica-request-hedging-cancel-loser
 go get go.uber.org/goleak
 go mod tidy
 ```

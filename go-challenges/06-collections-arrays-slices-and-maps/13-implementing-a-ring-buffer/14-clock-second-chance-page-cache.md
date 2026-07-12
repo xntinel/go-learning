@@ -50,8 +50,6 @@ clockcache/               module example.com/clockcache
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/13-implementing-a-ring-buffer/14-clock-second-chance-page-cache
-cd go-solutions/06-collections-arrays-slices-and-maps/13-implementing-a-ring-buffer/14-clock-second-chance-page-cache
 go mod edit -go=1.24
 ```
 

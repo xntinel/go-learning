@@ -27,13 +27,6 @@ Test: order-independent parallel tests, each owning its own `Registry`, that pas
 under `-race -count -shuffle=on`.
 Verify: `go test -race -count=20 -shuffle=on ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/14-parallel-tests/08-flaky-detection-shuffle-count-race/cmd/demo
-cd go-solutions/12-testing-ecosystem/14-parallel-tests/08-flaky-detection-shuffle-count-race
-```
-
 ### The coupling bug, and how the gate exposes it
 
 Here is the trap, using a package-level default registry (illustrative — do not

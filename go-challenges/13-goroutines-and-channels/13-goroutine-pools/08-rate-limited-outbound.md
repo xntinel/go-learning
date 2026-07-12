@@ -29,8 +29,6 @@ webhook/                   independent module: example.com/webhook
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/13-goroutines-and-channels/13-goroutine-pools/08-rate-limited-outbound/cmd/demo
-cd go-solutions/13-goroutines-and-channels/13-goroutine-pools/08-rate-limited-outbound
 go get golang.org/x/time/rate
 ```
 

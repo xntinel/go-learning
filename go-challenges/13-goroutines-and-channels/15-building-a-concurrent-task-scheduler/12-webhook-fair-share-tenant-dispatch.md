@@ -31,8 +31,6 @@ fairshare/                   independent module: example.com/fairshare
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/13-goroutines-and-channels/15-building-a-concurrent-task-scheduler/12-webhook-fair-share-tenant-dispatch/cmd/demo
-cd go-solutions/13-goroutines-and-channels/15-building-a-concurrent-task-scheduler/12-webhook-fair-share-tenant-dispatch
 go mod edit -go=1.26
 go get go.uber.org/goleak
 go mod tidy

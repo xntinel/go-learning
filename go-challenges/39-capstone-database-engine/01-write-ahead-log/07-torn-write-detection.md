@@ -20,12 +20,6 @@ torn_test.go     clean boundary + torn header + torn body + corrupt CRC, all byt
 - Test: `torn_test.go` constructs a buffer of good records plus each bad-tail shape and asserts the record count, the good-prefix length, and which sentinel is returned.
 - Verify: `go test -run 'TestScanSegment|ExampleScanSegment' -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/01-write-ahead-log/07-torn-write-detection/cmd/demo && cd go-solutions/39-capstone-database-engine/01-write-ahead-log/07-torn-write-detection
-```
-
 ### Why a pure scanner separates torn from corrupt
 
 A streaming file scanner reports torn tails and CRC failures the same way — records-so-far plus a stop offset, no error — which is the right call for the file path, where both are just "the writer died here." But there are two physically different things happening, and some callers need to tell them apart. A torn record means the frame is incomplete — the writer got partway through the length prefix or the body and stopped, so there literally are not enough bytes to form a full record. A corrupt record means the frame is fully present, all its declared bytes are there, but the CRC over them does not match — a torn write of a *complete* record, or bit rot on disk. The distinction matters because the appropriate response can differ: a torn tail is always benign (truncate and move on), while a CRC failure in the middle of a sealed segment is acknowledged data gone bad, which a strict engine treats as fatal.

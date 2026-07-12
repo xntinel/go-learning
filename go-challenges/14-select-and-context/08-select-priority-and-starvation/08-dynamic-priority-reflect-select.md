@@ -33,13 +33,6 @@ static-select oracle for a fixed set; a closed channel is pruned; the blocking
 pass wakes on a late item and on `ctx.Done()`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/08-select-priority-and-starvation/08-dynamic-priority-reflect-select/cmd/demo
-cd go-solutions/14-select-and-context/08-select-priority-and-starvation/08-dynamic-priority-reflect-select
-```
-
 ### reflect.Select is the runtime-N select
 
 `reflect.Select(cases []reflect.SelectCase) (chosen int, recv reflect.Value,

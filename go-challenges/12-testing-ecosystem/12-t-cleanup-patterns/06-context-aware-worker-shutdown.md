@@ -29,8 +29,6 @@ worker/                      independent module: example.com/worker
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/12-testing-ecosystem/12-t-cleanup-patterns/06-context-aware-worker-shutdown/cmd/demo
-cd go-solutions/12-testing-ecosystem/12-t-cleanup-patterns/06-context-aware-worker-shutdown
 go mod edit -go=1.24
 ```
 

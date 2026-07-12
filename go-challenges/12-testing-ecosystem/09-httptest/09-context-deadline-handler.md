@@ -24,13 +24,6 @@ deadlinehandler/                independent module: example.com/context-deadline
 - Test: (a) an already-canceled context yields `503` and a spy dependency records zero calls; (b) a short deadline against a slow dependency returns before the dependency's own work completes; (c) via `httptest.NewServer`, a client that cancels its context makes the server-side handler observe `ctx.Done`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/09-httptest/09-context-deadline-handler/cmd/demo
-cd go-solutions/12-testing-ecosystem/09-httptest/09-context-deadline-handler
-```
-
 ### r.Context() is the cancellation signal
 
 Every request carries a context via `r.Context()`. The server cancels it when the

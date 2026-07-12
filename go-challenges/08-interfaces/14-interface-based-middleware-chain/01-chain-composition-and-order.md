@@ -28,8 +28,6 @@ mwchain/                     independent module: example.com/mwchain
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/08-interfaces/14-interface-based-middleware-chain/01-chain-composition-and-order/cmd/demo
-cd go-solutions/08-interfaces/14-interface-based-middleware-chain/01-chain-composition-and-order
 go mod edit -go=1.26
 ```
 

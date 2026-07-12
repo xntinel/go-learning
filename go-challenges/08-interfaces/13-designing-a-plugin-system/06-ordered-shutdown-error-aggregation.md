@@ -29,8 +29,6 @@ gshutdown/                independent module: example.com/gshutdown
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/08-interfaces/13-designing-a-plugin-system/06-ordered-shutdown-error-aggregation/cmd/demo
-cd go-solutions/08-interfaces/13-designing-a-plugin-system/06-ordered-shutdown-error-aggregation
 go mod edit -go=1.25
 ```
 

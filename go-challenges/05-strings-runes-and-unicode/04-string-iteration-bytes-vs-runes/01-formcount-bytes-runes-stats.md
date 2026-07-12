@@ -23,13 +23,6 @@ Implement: `Bytes(s) int`, `Runes(s) int`, `Stats(s) RuneStat`.
 Test: byte/rune split over ASCII, Latin, CJK, empty; one-pass stats; `Runes` equals range-iteration count.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/04-string-iteration-bytes-vs-runes/01-formcount-bytes-runes-stats/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/04-string-iteration-bytes-vs-runes/01-formcount-bytes-runes-stats
-```
-
 ### Why two counters and one pass
 
 `Bytes(s)` is `len(s)` — a single field read, O(1), the number your storage layer

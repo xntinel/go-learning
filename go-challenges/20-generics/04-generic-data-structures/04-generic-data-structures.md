@@ -59,13 +59,6 @@ type-safe; `nil` is not (it is not assignable to a non-pointer `T`).
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/20-generics/04-generic-data-structures/04-generic-data-structures/cmd/demo
-cd go-solutions/20-generics/04-generic-data-structures/04-generic-data-structures
-```
-
 ### Exercise 1: The Stack
 
 Create `stack.go`:

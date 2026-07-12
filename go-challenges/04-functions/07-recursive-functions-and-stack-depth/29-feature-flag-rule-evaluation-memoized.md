@@ -38,8 +38,6 @@ flagrules/                    independent module: example.com/flagrules
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/07-recursive-functions-and-stack-depth/29-feature-flag-rule-evaluation-memoized/cmd/demo
-cd go-solutions/04-functions/07-recursive-functions-and-stack-depth/29-feature-flag-rule-evaluation-memoized
 go mod edit -go=1.24
 ```
 

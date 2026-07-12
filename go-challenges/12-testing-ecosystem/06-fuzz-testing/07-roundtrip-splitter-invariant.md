@@ -27,13 +27,6 @@ Test: a table test for the edge cases; `FuzzSplitFields` asserting the two
 invariants over `(string, byte)` inputs.
 Verify: `go test -race ./...`, then `go test -fuzz=FuzzSplitFields -fuzztime=2s`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/06-fuzz-testing/07-roundtrip-splitter-invariant/cmd/demo
-cd go-solutions/12-testing-ecosystem/06-fuzz-testing/07-roundtrip-splitter-invariant
-```
-
 ### The one-byte-separator trap, and the two invariants
 
 The natural implementation is `strings.Split(line, string(sep))` — and it hides a

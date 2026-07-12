@@ -19,12 +19,6 @@ tasks_test.go        distinct-closure capture, per-index check, retry success/ex
 - Test: prove each stage closure captures its own index, that `Retry` returns on first success, exhausts after the last failure, and treats zero attempts as exhausted without calling `fn`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/25-iterators-and-modern-go/01-range-over-integers/03-closures-and-retries/cmd/demo && cd go-solutions/25-iterators-and-modern-go/01-range-over-integers/03-closures-and-retries
-```
-
 ### Why each stage captures its own index, and why Retry drops the counter
 
 `Stages` builds a slice of `n` functions in a `for i := range n` loop, and the body of each function refers to `i`. The behavior that makes this useful is Go 1.22's per-iteration scope: each pass through the loop gets a fresh `i`, so each closure captures a distinct value. `Stages(3)` returns three functions that tag their input with `>stage0`, `>stage1`, and `>stage2` respectively. Run them in sequence over `"input"` and you get `input>stage0>stage1>stage2`. Under the pre-1.22 rules, the same source produced three closures that all shared one `i` whose final value was `n-1`, so every stage would have tagged `>stage2` — the canonical loop-variable-capture bug. Here it is simply correct, and the test asserts the three numbers are distinct. (The history of that semantic change is the next lesson; this exercise depends on the post-1.22 behavior as a fact.)

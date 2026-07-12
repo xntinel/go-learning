@@ -149,13 +149,6 @@ blocks that ICE relies on.
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/33-tcp-udp-and-networking/27-nat-traversal-stun-turn/27-nat-traversal-stun-turn/cmd/demo
-cd go-solutions/33-tcp-udp-and-networking/27-nat-traversal-stun-turn/27-nat-traversal-stun-turn
-```
-
 This is a library, not a program: there is no `main`. You verify it with
 `go test`.
 

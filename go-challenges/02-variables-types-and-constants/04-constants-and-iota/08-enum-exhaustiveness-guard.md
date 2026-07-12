@@ -26,13 +26,6 @@ Implement: a `State` enum ending in a `maxState` sentinel, plus `String`, `Parse
 Test: every real state has a non-`"unknown"` `String`, `ParseState(String())` round-trips, the codes are distinct, and `Terminal` is true only for the end states.
 Verify: `go test -count=1 ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/04-constants-and-iota/08-enum-exhaustiveness-guard/cmd/demo
-cd go-solutions/02-variables-types-and-constants/04-constants-and-iota/08-enum-exhaustiveness-guard
-```
-
 ## Why a sentinel and a round-trip test
 
 An enum defined with `iota` has no built-in notion of "how many values are

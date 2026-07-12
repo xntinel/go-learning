@@ -18,13 +18,6 @@ coalesce/
   cmd/demo/main.go
 ```
 
-Module path: `example.com/coalesce`. Set up with:
-
-```bash
-mkdir -p go-solutions/16-concurrency-patterns/23-request-coalescing-singleflight/23-request-coalescing-singleflight/internal/coalesce go-solutions/16-concurrency-patterns/23-request-coalescing-singleflight/23-request-coalescing-singleflight/cmd/demo
-cd go-solutions/16-concurrency-patterns/23-request-coalescing-singleflight/23-request-coalescing-singleflight
-```
-
 ## Concepts
 
 ### The Thundering Herd Problem

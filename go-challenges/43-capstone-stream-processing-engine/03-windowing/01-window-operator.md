@@ -26,7 +26,6 @@ windowing_test.go      assigners, triggers, operator routing, keyed isolation
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/43-capstone-stream-processing-engine/03-windowing/01-window-operator/cmd/demo && cd go-solutions/43-capstone-stream-processing-engine/03-windowing/01-window-operator
 go mod edit -go=1.26
 ```
 

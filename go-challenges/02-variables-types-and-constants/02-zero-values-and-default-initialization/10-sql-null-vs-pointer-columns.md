@@ -28,13 +28,6 @@ Implement: a domain `User{ID int64; Nickname *string; DeletedAt *time.Time}`; a 
 Test: `Valid=false` yields a nil domain pointer, not the zero value; `Valid=true` carries the value through; a genuinely-present empty string is preserved as a non-nil `*string`; a scan error is wrapped with `%w`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/02-zero-values-and-default-initialization/10-sql-null-vs-pointer-columns/cmd/demo
-cd go-solutions/02-variables-types-and-constants/02-zero-values-and-default-initialization/10-sql-null-vs-pointer-columns
-```
-
 ## Why sql.Null[T] first, pointer second
 
 `database/sql` cannot scan a SQL `NULL` into a plain `string` or `int64` — the

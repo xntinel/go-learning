@@ -26,13 +26,6 @@ ttlcache/                   independent module: example.com/ttlcache
 - Test: hit before expiry, miss after expiry (advance an injected clock), miss on unknown key, overwrite via `Set`, lazy deletion shrinking `Len`; a concurrent `-race` test.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/01-if-else-and-init-statements/04-cache-comma-ok-ttl/cmd/demo
-cd go-solutions/03-control-flow/01-if-else-and-init-statements/04-cache-comma-ok-ttl
-```
-
 ## Get is the comma-ok decision, and it is lazy
 
 The heart of the exercise is one line of control flow:

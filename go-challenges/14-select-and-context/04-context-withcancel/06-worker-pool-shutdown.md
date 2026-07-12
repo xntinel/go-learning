@@ -27,13 +27,6 @@ pool/                      independent module: example.com/pool
 - Test: closing the input drains every job exactly once; a cancel mid-stream stops the workers promptly with no job run after cancel; no goroutine leaks after `Wait`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/04-context-withcancel/06-worker-pool-shutdown/cmd/demo
-cd go-solutions/14-select-and-context/04-context-withcancel/06-worker-pool-shutdown
-```
-
 ### Why one shared context is enough
 
 A pool is a fan-out: `N` worker goroutines, each running the same loop, all

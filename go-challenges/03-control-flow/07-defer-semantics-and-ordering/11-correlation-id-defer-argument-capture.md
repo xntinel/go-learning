@@ -25,8 +25,6 @@ corrid/                    independent module: example.com/correlation-id-defer-
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/07-defer-semantics-and-ordering/11-correlation-id-defer-argument-capture
-cd go-solutions/03-control-flow/07-defer-semantics-and-ordering/11-correlation-id-defer-argument-capture
 go mod edit -go=1.24
 ```
 

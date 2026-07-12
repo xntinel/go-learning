@@ -31,13 +31,6 @@ configcoerce/                independent module: example.com/configcoerce
   error naming the source `%T`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/04-type-switch/05-config-value-coercion/cmd/demo
-cd go-solutions/03-control-flow/04-type-switch/05-config-value-coercion
-```
-
 ## One setting, many wire types
 
 The reason this coercion is necessary is that decoders disagree about number

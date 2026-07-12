@@ -29,13 +29,6 @@ config/                        independent module: example.com/config
 - Test: malformed numeric is `errors.Is(err, ErrMalformedConfig)` and names the key; bad secret is `errors.Is(err, ErrMalformedConfig)` but `err.Error()` does not contain the secret and does contain `redacted`; valid config parses to the right struct with `nil`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/02-fmt-errorf-and-error-wrapping/03-config-loader-w-vs-v/cmd/demo
-cd go-solutions/10-error-handling/02-fmt-errorf-and-error-wrapping/03-config-loader-w-vs-v
-```
-
 ### Two wrap decisions, one loader
 
 The loader parses `KEY=VALUE` lines with `strings.Cut`, trimming whitespace and

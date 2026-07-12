@@ -32,13 +32,6 @@ banktotal/                 independent module: example.com/banktotal
 - Test: `TestTotalOrdersByID` with unsorted input, proof that the caller's slice is not reordered, and `TestTotalDuringTransferStorm` — `Total` racing 8 goroutines of transfers, asserting every returned total equals the invariant sum.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/09-lock-ordering-deadlock-prevention/02-multi-lock-aggregation/bank go-solutions/15-sync-primitives/09-lock-ordering-deadlock-prevention/02-multi-lock-aggregation/cmd/demo
-cd go-solutions/15-sync-primitives/09-lock-ordering-deadlock-prevention/02-multi-lock-aggregation
-```
-
 ### Two aggregations, two contracts
 
 There are two honest ways to sum N mutex-guarded balances, and they differ in

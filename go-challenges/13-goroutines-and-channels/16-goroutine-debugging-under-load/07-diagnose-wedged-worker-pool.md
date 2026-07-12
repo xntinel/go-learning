@@ -23,13 +23,6 @@ pool/                     independent module: example.com/pool
 - Test: the wedge dump contains `chan send` and `pool.stuckWorker`; the fixed pool delivers every result and returns before a timeout; cancelling stops the workers.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/07-diagnose-wedged-worker-pool/cmd/demo
-cd go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/07-diagnose-wedged-worker-pool
-```
-
 ### The wedge, and the shape it makes
 
 A bounded pool produces results faster than they are consumed, and buffers them on a

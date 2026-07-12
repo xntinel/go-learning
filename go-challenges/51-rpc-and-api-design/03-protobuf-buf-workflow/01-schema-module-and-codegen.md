@@ -34,13 +34,6 @@ orderschema/                         buf module + Go module: example.com/ordersc
 - Test: after `buf generate`, a `bufgen`-tagged test that constructs the generated request/response types and asserts the generated Connect service name.
 - Verify: `buf format -w && buf lint && buf build` (all clean), then `buf generate && go build -tags bufgen ./... && go test -tags bufgen ./...`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/51-rpc-and-api-design/03-protobuf-buf-workflow/01-schema-module-and-codegen/proto/acme/order/v1 go-solutions/51-rpc-and-api-design/03-protobuf-buf-workflow/01-schema-module-and-codegen/cmd/demo
-cd go-solutions/51-rpc-and-api-design/03-protobuf-buf-workflow/01-schema-module-and-codegen
-```
-
 ### The schema: designing acme.order.v1 to pass STANDARD
 
 Every rule in the `STANDARD` lint category is a design decision made for you, so

@@ -20,12 +20,6 @@ http-source/
 - Test: a POST body arrives as a record with 202; a full buffer yields 429; a GET yields 405; an `Example` documents the handler via `httptest`.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/43-capstone-stream-processing-engine/01-source-connectors/03-http-source/cmd/demo && cd go-solutions/43-capstone-stream-processing-engine/01-source-connectors/03-http-source
-```
-
 ### Two sentinels this time
 
 `source.go` adds `ErrBufferFull` alongside `ErrSourceClosed`. The HTTP source is the one place in this lesson where a full buffer is a first-class, reportable condition rather than a reason to block, so it deserves a named error whose text the handler returns in the 429 body.

@@ -28,13 +28,6 @@ Test: `TestFlagStoreConcurrentReadDuringReload` runs readers in a loop while a
 writer reloads, asserting every snapshot is internally consistent, under `-race`.
 Verify: `go test -count=10 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/21-race-detector/03-rwmutex-feature-flag-store/cmd/demo
-cd go-solutions/12-testing-ecosystem/21-race-detector/03-rwmutex-feature-flag-store
-```
-
 ### Why RWMutex, and why the defensive copy is non-negotiable
 
 `IsEnabled` is called by every request goroutine; `Reload` is called rarely by a

@@ -37,12 +37,6 @@ cmd/
 - Test: drive the whole stack through `httptest`, asserting 201/200/404/400 and a 500 from an injected failing repository.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/24-design-patterns-in-go/04-dependency-injection/04-layered-http-service/{domain,repository,service,transport,cmd/server} && cd go-solutions/24-design-patterns-in-go/04-dependency-injection/04-layered-http-service
-```
-
 ### Why each layer owns the interface it consumes
 
 The single rule that makes this architecture hold together is that an interface

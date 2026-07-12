@@ -19,12 +19,6 @@ email_test.go        required+optional fields, required-only, repeatable optiona
 - Test: `email_test.go` builds a message with and without optional fields, confirms optional setters repeat, and pins the interface type each stage returns.
 - Verify: `go test -race -count=1 ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/24-design-patterns-in-go/02-builder-pattern/02-staged-builder/cmd/demo && cd go-solutions/24-design-patterns-in-go/02-builder-pattern/02-staged-builder
-```
-
 ### Why interfaces enforce order, and how Build loses its error
 
 The whole technique rests on a single Go fact: a method set is fixed by the static type of the value you hold, not by the concrete value underneath. So if `New` hands the caller back a value typed as `FromStep`, and `FromStep` declares exactly one method, `From`, then `From` is the *only* thing the caller can call. Have `From` return a value typed as `ToStep`, whose one method is `To`, and the caller's only next move is `To`. Continue the chain — `To` returns `SubjectStep` (only `Subject`), `Subject` returns `ContentStep` — and you have encoded a mandatory order, `From -> To -> Subject`, directly in the types. Each arrow is a required field, and skipping one is not a run-time error to be tested for; it is a program that the compiler refuses to build, because the method you tried to call is not in the interface you are holding.

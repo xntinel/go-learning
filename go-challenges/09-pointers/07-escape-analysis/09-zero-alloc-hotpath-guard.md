@@ -31,13 +31,6 @@ Test: a budget table asserting `AllocsPerRun <= budget` per builder (AppendKey i
 `0`), a uniqueness/stability test, and `b.Loop`/`ReportAllocs` benchmarks.
 Verify: `go test -count=1 -race ./...`, then `go test -bench=. -benchmem ./...`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/07-escape-analysis/09-zero-alloc-hotpath-guard/cmd/demo
-cd go-solutions/09-pointers/07-escape-analysis/09-zero-alloc-hotpath-guard
-```
-
 ### Why a caller-owned buffer is the whole trick
 
 A function that returns a fresh `string` on the request path cannot be zero-alloc:

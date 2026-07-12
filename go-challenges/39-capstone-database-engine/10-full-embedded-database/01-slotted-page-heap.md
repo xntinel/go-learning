@@ -19,12 +19,6 @@ page_test.go         insert/read round-trips, tombstone-on-delete, fill-to-full,
 - Test: `page_test.go` round-trips several tuples, asserts a deleted slot reads back as a tombstone, fills a page until `ErrPageFull`, and proves compaction recovers space while keeping live slot indices valid.
 - Verify: `go test -run 'TestSlottedPage|ExampleSlottedPage' -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/10-full-embedded-database/01-slotted-page-heap/cmd/demo && cd go-solutions/39-capstone-database-engine/10-full-embedded-database/01-slotted-page-heap
-```
-
 ### Why a slot directory, and why tuples grow from the bottom
 
 The hard requirement a heap page must satisfy is that a row's address stays valid even though rows have different sizes and come and go. If you stored tuples back-to-back and addressed a row by its byte offset, then deleting an earlier row and compacting would shift every later row and invalidate every address an index was holding. The slot directory breaks that coupling. Each row gets a fixed-size, four-byte directory entry — a two-byte offset and a two-byte length — and the row's external identity is its *slot index*, the position of that entry in the directory, not the byte offset of the data. The data can move; the entry's index does not. That indirection is the whole reason indexes can keep a tuple identifier across a vacuum.

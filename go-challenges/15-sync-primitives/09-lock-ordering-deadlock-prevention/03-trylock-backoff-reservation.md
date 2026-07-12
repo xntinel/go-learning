@@ -33,13 +33,6 @@ stockreserve/              independent module: example.com/stockreserve
 - Test: a deterministic contention test that pre-locks the second location and asserts `ErrContended` without hanging; a 2x500-iteration opposite-order stress test asserting stock conservation.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/09-lock-ordering-deadlock-prevention/03-trylock-backoff-reservation/warehouse go-solutions/15-sync-primitives/09-lock-ordering-deadlock-prevention/03-trylock-backoff-reservation/cmd/demo
-cd go-solutions/15-sync-primitives/09-lock-ordering-deadlock-prevention/03-trylock-backoff-reservation
-```
-
 ### Breaking hold-and-wait instead of circular wait
 
 The ordered-locking discipline from the transfer engine assumed a total order

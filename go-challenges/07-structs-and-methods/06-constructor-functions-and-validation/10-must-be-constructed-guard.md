@@ -27,13 +27,6 @@ guardedrepo/                 independent module: example.com/must-be-constructed
 - Test: a constructed repo serves calls; a zero-value repo returns `ErrNotInitialized` via `errors.Is` on every method; `New` with an invalid DSN returns a validation sentinel and no half-live object; and the zero-value `LazyStore` works without a constructor.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/06-constructor-functions-and-validation/10-must-be-constructed-guard/cmd/demo
-cd go-solutions/07-structs-and-methods/06-constructor-functions-and-validation/10-must-be-constructed-guard
-```
-
 ### Two honest answers, one dishonest one
 
 A type whose internal map is nil until `New` runs has a zero value that will

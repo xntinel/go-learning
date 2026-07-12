@@ -24,13 +24,6 @@ lazyres/                      module example.com/lazyres
 - Test: under `-race`, many goroutines call the getter and the init runs exactly once (atomic counter == 1) and every caller receives the identical instance; the `OnceValues` variant returns the cached error on repeat calls without re-running.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/05-anonymous-functions/04-lazy-init-oncevalue-resource/cmd/demo
-cd go-solutions/04-functions/05-anonymous-functions/04-lazy-init-oncevalue-resource
-```
-
 ### OnceValue and OnceValues over a hand-rolled sync.Once
 
 `sync.OnceValue(f func() T) func() T` returns a function that, no matter how many

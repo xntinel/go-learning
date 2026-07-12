@@ -25,13 +25,6 @@ server/                     independent module: example.com/server
 - Test: zero options yields defaults, each option sets exactly its field, a later option overrides an earlier one, and no options never panics.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/02-pointers-and-function-parameters/03-functional-options-constructor/cmd/demo
-cd go-solutions/09-pointers/02-pointers-and-function-parameters/03-functional-options-constructor
-```
-
 ### Why the option is a func(*Config)
 
 `NewServer` builds one `serverConfig` seeded with defaults, then loops over the

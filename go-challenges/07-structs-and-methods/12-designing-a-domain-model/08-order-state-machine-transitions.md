@@ -27,13 +27,6 @@ order/                      independent module: example.com/order
 - Test: a table of legal transitions all succeed; a representative set of illegal ones all return `ErrIllegalTransition`; a terminal state rejects every further move; `String()` renders known values and an unknown fallback.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/12-designing-a-domain-model/08-order-state-machine-transitions/cmd/demo
-cd go-solutions/07-structs-and-methods/12-designing-a-domain-model/08-order-state-machine-transitions
-```
-
 ### Lifecycle rules belong in a table, not in scattered conditionals
 
 The order lifecycle is `Pending -> Paid -> Shipped -> Delivered`, with `Cancelled`

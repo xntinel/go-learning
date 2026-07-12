@@ -26,13 +26,6 @@ batch/                     independent module: example.com/batch
 - Test: mixed batch — exact `succeeded` count, aggregate `errors.Is` each failed cause, message contains each failing index; all-success — `succeeded == len`, `err == nil`; all-fail — `succeeded == 0`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/07-multiple-error-returns/06-batch-partial-success/cmd/demo
-cd go-solutions/10-error-handling/07-multiple-error-returns/06-batch-partial-success
-```
-
 ### Why return both a count and an aggregate
 
 A bulk operation has three possible outcomes the caller must distinguish: all

@@ -26,13 +26,6 @@ configmerge/               independent module: example.com/configmerge
 - Test: `{}` leaves all defaults; `{"max_conns":0}` overrides to `0`; `{"max_conns":50}` overrides to `50`; `{"max_conns":null}` leaves the pointer `nil` (default wins).
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/01-pointer-basics/03-optional-config-fields-with-pointers/cmd/demo
-cd go-solutions/09-pointers/01-pointer-basics/03-optional-config-fields-with-pointers
-```
-
 ### Absent, zero, and null are three different things
 
 `Config` is the resolved, fully-populated configuration the service runs on: plain

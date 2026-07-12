@@ -25,13 +25,6 @@ patch/                      independent module: example.com/patch
 - Test: prove an omitted field leaves the target unchanged, a field set to a zero value overwrites it, a full body updates everything, and the handler mutates the stored user through the pointer.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/02-pointers-and-function-parameters/02-patch-semantics-optional-pointer-fields/cmd/demo
-cd go-solutions/09-pointers/02-pointers-and-function-parameters/02-patch-semantics-optional-pointer-fields
-```
-
 ### Why the fields must be pointers
 
 `json.Unmarshal` into a struct leaves a field at its zero value if the JSON omits

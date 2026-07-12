@@ -29,8 +29,6 @@ batchupdate/                independent module: example.com/batchupdate
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/05-range-over-collections/07-record-batch-inplace-update/cmd/demo
-cd go-solutions/03-control-flow/05-range-over-collections/07-record-batch-inplace-update
 go mod edit -go=1.24
 ```
 

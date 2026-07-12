@@ -32,13 +32,6 @@ profile-triage/               independent module: example.com/profile-triage
 - Test: `Capture` produces two non-empty files from one run; a second capture attempted while a CPU profile is active fails with `errors.Is(err, ErrCPUProfileActive)`; the mutex fraction is restored; workload arithmetic is exact under `-race`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/14-contention-profiling/08-cpu-vs-mutex-triage/cmd/demo
-cd go-solutions/15-sync-primitives/14-contention-profiling/08-cpu-vs-mutex-triage
-```
-
 ### Wait-bound versus CPU-bound: the diagnosis that decides the fix
 
 Two services can show the identical symptom — a locked path is slow under load —

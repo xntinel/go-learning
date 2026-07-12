@@ -28,13 +28,6 @@ reqmetrics/                independent module: example.com/reqmetrics
 - Test: fire N concurrent requests via `httptest`; assert `total==N`, `inflight==0`, `errors` matches injected failures, under `-race`; a subtest injects a recovered panic and asserts `inflight` returns to zero.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/09-pointer-aliasing-and-data-races/08-lockfree-request-metrics/cmd/demo
-cd go-solutions/09-pointers/09-pointer-aliasing-and-data-races/08-lockfree-request-metrics
-```
-
 ### Why atomics beat a mutex here, and the defer-decrement contract
 
 Each metric is a single machine word incremented independently: `total` on entry,

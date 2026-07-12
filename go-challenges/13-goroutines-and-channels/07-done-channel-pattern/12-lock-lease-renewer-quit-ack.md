@@ -25,8 +25,6 @@ lease/                       independent module: example.com/lease
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/13-goroutines-and-channels/07-done-channel-pattern/12-lock-lease-renewer-quit-ack/cmd/demo
-cd go-solutions/13-goroutines-and-channels/07-done-channel-pattern/12-lock-lease-renewer-quit-ack
 go get go.uber.org/goleak
 ```
 

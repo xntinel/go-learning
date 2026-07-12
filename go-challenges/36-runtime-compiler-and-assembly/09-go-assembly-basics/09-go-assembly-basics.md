@@ -137,13 +137,6 @@ to learn the mnemonic names for instructions you want to use.
 
 ## Exercises
 
-Set up the module (run once):
-
-```bash
-mkdir -p go-solutions/36-runtime-compiler-and-assembly/09-go-assembly-basics/09-go-assembly-basics/cmd/demo
-cd go-solutions/36-runtime-compiler-and-assembly/09-go-assembly-basics/09-go-assembly-basics
-```
-
 This is a library, not a program. Verification is `go test`.
 
 ### Exercise 1: The Go Prototype

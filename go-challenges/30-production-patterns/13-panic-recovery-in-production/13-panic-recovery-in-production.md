@@ -52,13 +52,6 @@ HTTP middleware only covers goroutines spawned by the server to handle requests.
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/30-production-patterns/13-panic-recovery-in-production/13-panic-recovery-in-production/cmd/demo
-cd go-solutions/30-production-patterns/13-panic-recovery-in-production/13-panic-recovery-in-production
-```
-
 This is a library package (`package panicmw`), not `package main`. Verify it with `go test`.
 
 ### Exercise 1: ResponseWriter Wrapper and Recovery Middleware

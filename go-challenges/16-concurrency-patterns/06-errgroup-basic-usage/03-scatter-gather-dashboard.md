@@ -22,7 +22,6 @@ dashboard_test.go      request-order preservation, fail-fast with sibling cancel
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/16-concurrency-patterns/06-errgroup-basic-usage/03-scatter-gather-dashboard/cmd/demo && cd go-solutions/16-concurrency-patterns/06-errgroup-basic-usage/03-scatter-gather-dashboard
 go get golang.org/x/sync/errgroup
 ```
 

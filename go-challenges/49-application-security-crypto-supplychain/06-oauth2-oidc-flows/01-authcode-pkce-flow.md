@@ -30,8 +30,6 @@ authpkce/                     independent module: example.com/authpkce
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/49-application-security-crypto-supplychain/06-oauth2-oidc-flows/01-authcode-pkce-flow/cmd/demo
-cd go-solutions/49-application-security-crypto-supplychain/06-oauth2-oidc-flows/01-authcode-pkce-flow
 go get golang.org/x/oauth2@latest
 ```
 

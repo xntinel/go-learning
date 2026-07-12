@@ -26,13 +26,6 @@ Implement: a generic `Lazy[T]` whose `Get` runs the builder exactly once under `
 Test: launch many goroutines calling the accessor simultaneously and assert the builder ran exactly once (atomic counter) and every caller observes the same instance, under `-race`; verify a panicking `OnceValue` builder re-panics with the same value.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/02-zero-values-and-default-initialization/07-sync-once-lazy-singleton/cmd/demo
-cd go-solutions/02-variables-types-and-constants/02-zero-values-and-default-initialization/07-sync-once-lazy-singleton
-```
-
 ## Why sync.Once, and what OnceValue adds
 
 `sync.Once` is usable at its zero value: a `Once` field needs no constructor, and

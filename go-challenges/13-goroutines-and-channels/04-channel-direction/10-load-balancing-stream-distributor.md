@@ -31,13 +31,6 @@ distributor/                 independent module: example.com/distributor
 - Test: the multiset union across lanes equals the input multiset, each value lands in exactly one lane, every lane is closed after drain, `n==1` is a pass-through, empty input closes all lanes, and a stalled lane does not gate the others.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/04-channel-direction/10-load-balancing-stream-distributor/cmd/demo
-cd go-solutions/13-goroutines-and-channels/04-channel-direction/10-load-balancing-stream-distributor
-```
-
 ### One value per lane, and why a single owner per lane makes close trivial
 
 A distributor is a fan-out, but not a broadcast. In a tee, every output must see

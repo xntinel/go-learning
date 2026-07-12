@@ -25,12 +25,6 @@ monkey-lexer/
 - Test: operators (single and two-character), keywords versus identifiers, Unicode identifiers, byte-offset-versus-rune-column, integers in four bases, floats, the ambiguous dot, strings and escapes, the three error categories, error recovery, line/column tracking, comment skipping, and batch/stream agreement.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/40-capstone-language-interpreter/01-lexer-tokenizer/01-monkey-lexer/lexer go-solutions/40-capstone-language-interpreter/01-lexer-tokenizer/01-monkey-lexer/cmd/demo && cd go-solutions/40-capstone-language-interpreter/01-lexer-tokenizer/01-monkey-lexer
-```
-
 ### Token types and the data the scanner produces
 
 A token needs a type, the original text, and a position. The type is modeled as `type TokenType string` so the constant values are also their display names: the equality operator's type is literally `"=="`, an identifier's is `"IDENT"`, the `let` keyword's is `"let"`. That makes a failing test read `got IDENT, want let` with no lookup table, at the cost of no compiler exhaustiveness check on a switch — the trade argued in the concepts file. The `Token` struct then carries both an `Offset` (byte position, for slicing the source) and a `Column` (rune position, for editor-style diagnostics); these agree for ASCII and diverge for any multi-byte character, which is why both exist.

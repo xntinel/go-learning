@@ -26,13 +26,6 @@ sequence/                  independent module: example.com/sequence
 - Test: sequential calls return `start, start+1, ...`; two generators do not share state; 1000 goroutines calling `Next` produce 1000 distinct values under `-race`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/04-first-class-functions-and-closures/06-sequence-id-generator/cmd/demo
-cd go-solutions/04-functions/04-first-class-functions-and-closures/06-sequence-id-generator
-```
-
 ### One factory call, one private counter
 
 `NewSequence` declares an `atomic.Int64`, seeds it to `start-1`, and returns a

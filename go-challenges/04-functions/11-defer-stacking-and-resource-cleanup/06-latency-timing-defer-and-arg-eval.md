@@ -25,13 +25,6 @@ latency/                    independent module: example.com/latency
 - Test: with an injected fake clock, work that advances the clock a fixed amount is recorded exactly by `Timed`; `TimedBuggy` records ~0 for the same work; an error in the body is recorded as the mapped status because the closure reads `err` at return time.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/06-latency-timing-defer-and-arg-eval/latency go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/06-latency-timing-defer-and-arg-eval/cmd/demo
-cd go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/06-latency-timing-defer-and-arg-eval
-```
-
 ### The rule, stated precisely
 
 When Go executes a `defer` statement, it evaluates the deferred function's value,

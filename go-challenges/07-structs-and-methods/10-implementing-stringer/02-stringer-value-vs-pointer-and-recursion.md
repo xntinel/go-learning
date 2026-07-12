@@ -26,13 +26,6 @@ loglevel/                   independent module: example.com/loglevel
 - Test: a `[]Level` and a struct field of type `Level` both render via `String()`; the `raw` fallback yields `Level(N)`; a guard call that returns normally (no recursion).
 - Verify: `go test -count=1 -race ./...` and `go vet ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/10-implementing-stringer/02-stringer-value-vs-pointer-and-recursion/cmd/demo
-cd go-solutions/07-structs-and-methods/10-implementing-stringer/02-stringer-value-vs-pointer-and-recursion
-```
-
 ### Bug 1: recursing through the receiver
 
 The tempting one-liner is to build the string by formatting the receiver:

@@ -26,13 +26,6 @@ schemaseed/                independent module: example.com/schemaseed
 - Test: assert `migrate` is idempotent (runs twice, no error) and uses `IF NOT EXISTS`; assert `seed` uses `ON CONFLICT` and returns a known row count.
 - Verify: the default build tests the idempotent shape with a fake; the tag-gated `TestMain` runs migrate+seed once and aborts with a non-zero exit if migration fails.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/18-integration-tests-with-build-tags/07-schema-migrate-and-seed/cmd/demo
-cd go-solutions/12-testing-ecosystem/18-integration-tests-with-build-tags/07-schema-migrate-and-seed
-```
-
 ### Why idempotent, and why once in TestMain
 
 The integration tests depend on a known baseline: specific tables, and a fixed set

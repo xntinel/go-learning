@@ -34,8 +34,6 @@ myapp/                         module github.com/example/myapp
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/01-environment-and-tooling/03-go-workspace-and-project-layout/01-shared-internal-packages/internal/config go-solutions/01-environment-and-tooling/03-go-workspace-and-project-layout/01-shared-internal-packages/internal/greeting go-solutions/01-environment-and-tooling/03-go-workspace-and-project-layout/01-shared-internal-packages/cmd/demo
-cd go-solutions/01-environment-and-tooling/03-go-workspace-and-project-layout/01-shared-internal-packages
 go mod edit -go=1.24
 ```
 

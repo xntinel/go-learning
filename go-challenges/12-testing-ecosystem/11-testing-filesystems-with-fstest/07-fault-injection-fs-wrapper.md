@@ -31,13 +31,6 @@ faultfs/                     independent module: example.com/faultfs
   `errors.Is` and returns a zero `Config`, never a partial one.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/11-testing-filesystems-with-fstest/07-fault-injection-fs-wrapper/cmd/demo
-cd go-solutions/12-testing-ecosystem/11-testing-filesystems-with-fstest/07-fault-injection-fs-wrapper
-```
-
 ### Why a wrapper, and what an fs.File actually is
 
 `MapFS` cannot fail a read because a map has no I/O to fail — so the "read

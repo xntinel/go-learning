@@ -26,8 +26,6 @@ reduce/                      independent module: example.com/reduce
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/10-higher-order-functions/22-reduce-fold-with-early-stop
-cd go-solutions/04-functions/10-higher-order-functions/22-reduce-fold-with-early-stop
 go mod edit -go=1.24
 ```
 

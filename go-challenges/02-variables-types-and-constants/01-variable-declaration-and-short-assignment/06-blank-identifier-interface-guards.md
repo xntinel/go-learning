@@ -29,13 +29,6 @@ storage/                       independent module: example.com/storage
 - Test: assign both concrete types to `Store`; prove identical behavior for the same operations; show a discard that is provably safe vs one that would not be.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/01-variable-declaration-and-short-assignment/06-blank-identifier-interface-guards/cmd/demo
-cd go-solutions/02-variables-types-and-constants/01-variable-declaration-and-short-assignment/06-blank-identifier-interface-guards
-```
-
 ### Why the interface guard exists
 
 `var _ Store = (*PostgresStore)(nil)` declares a variable named `_` (discarded)

@@ -28,13 +28,6 @@ env-matrix/                    module example.com/env-matrix
 - Test: `circle` math and `envcheck`'s `validate` on good and bad input.
 - Verify: `go env -json | go run ./cmd/envcheck` prints `valid JSON`; `GOOS=linux GOARCH=amd64 go build` produces an ELF binary.
 
-Create the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/04-go-tool-commands/07-go-env-and-cross-compile-matrix/cmd/demo go-solutions/01-environment-and-tooling/04-go-tool-commands/07-go-env-and-cross-compile-matrix/cmd/envcheck go-solutions/01-environment-and-tooling/04-go-tool-commands/07-go-env-and-cross-compile-matrix/internal/circle
-cd go-solutions/01-environment-and-tooling/04-go-tool-commands/07-go-env-and-cross-compile-matrix
-```
-
 ### The configuration surface
 
 `go env` prints the settings that govern every build. Passing names filters it:

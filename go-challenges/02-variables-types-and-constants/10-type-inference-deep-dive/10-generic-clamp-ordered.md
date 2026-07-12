@@ -30,8 +30,6 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/02-variables-types-and-constants/10-type-inference-deep-dive/10-generic-clamp-ordered/cmd/demo
-cd go-solutions/02-variables-types-and-constants/10-type-inference-deep-dive/10-generic-clamp-ordered
 go mod edit -go=1.26
 ```
 

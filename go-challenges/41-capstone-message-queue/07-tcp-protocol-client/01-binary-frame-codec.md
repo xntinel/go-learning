@@ -22,12 +22,6 @@ mqframe_test.go      frame round-trips, malformed-length and truncated-body reje
 - Test: round-trip a table of frames, reject a sub-header length with `ErrBadFrame`, reject a truncated body, round-trip the codec, and map error codes to sentinels.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/41-capstone-message-queue/07-tcp-protocol-client/01-binary-frame-codec/cmd/demo && cd go-solutions/41-capstone-message-queue/07-tcp-protocol-client/01-binary-frame-codec
-```
-
 ### Why a length prefix and a correlation ID, and why this exact layout
 
 TCP is a byte stream, not a message stream: a single `Write` of one frame may arrive at the peer as several `Read` calls, and several frames may arrive coalesced into one. The receiver therefore cannot find message boundaries by reading "until the data stops" — it must be told, in band, how long each message is. A 4-byte big-endian length prefix does exactly that: the receiver issues one `io.ReadFull` for the 4 length bytes, learns the body size, then issues one more `io.ReadFull` for that many bytes. `io.ReadFull` is the right primitive precisely because it loops internally until it has filled the buffer or hit an error, absorbing the short reads that a stream protocol produces.

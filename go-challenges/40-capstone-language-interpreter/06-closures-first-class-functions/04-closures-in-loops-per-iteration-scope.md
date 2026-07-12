@@ -21,12 +21,6 @@ cmd/
 - Test: the per-iteration closures capture 0..n-1, the shared closures all capture n-1.
 - Verify: `go test -race ./...` then `go run ./cmd/demo`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/40-capstone-language-interpreter/06-closures-first-class-functions/04-closures-in-loops-per-iteration-scope/cmd/demo && cd go-solutions/40-capstone-language-interpreter/06-closures-first-class-functions/04-closures-in-loops-per-iteration-scope
-```
-
 ### Why one scope per iteration
 
 A closure captures its environment by pointer, so the value it later reports is whatever the captured environment holds at lookup time, not at capture time. When a loop reuses one environment and rebinds `i` on each pass with `Set`, all closures hold a pointer to that single environment. After the loop, the environment's `i` is the last value assigned, so every closure reports it — five closures over a 0..4 loop all report 4. Nothing was copied per closure, so nothing distinguishes them.

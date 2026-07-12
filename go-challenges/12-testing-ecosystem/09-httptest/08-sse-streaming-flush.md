@@ -23,13 +23,6 @@ sse/                            independent module: example.com/sse-streaming-fl
 - Test: unit — run against a recorder with a pre-filled closed channel, assert `rec.Flushed` and the buffered event lines; e2e — start a server, read events incrementally with a `bufio.Scanner`, then cancel the context and assert the producer goroutine observes `Done()` and stops (guarded by a timeout so a leak fails).
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/09-httptest/08-sse-streaming-flush/cmd/demo
-cd go-solutions/12-testing-ecosystem/09-httptest/08-sse-streaming-flush
-```
-
 ### Why a recorder cannot prove streaming, and Flusher
 
 An `http.ResponseWriter` buffers writes; the bytes do not necessarily leave the

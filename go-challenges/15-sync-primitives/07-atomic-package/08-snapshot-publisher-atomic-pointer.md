@@ -26,13 +26,6 @@ snappub/                   independent module: example.com/snappub
 - Test: a writer swaps monotonically-versioned snapshots while many readers `Load`; each reader always sees a fully-coherent, non-nil snapshot with a non-decreasing version.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/07-atomic-package/08-snapshot-publisher-atomic-pointer/cmd/demo
-cd go-solutions/15-sync-primitives/07-atomic-package/08-snapshot-publisher-atomic-pointer
-```
-
 ### Immutable snapshots and the single-swap publish
 
 The type published is *immutable by convention*: once a `Snapshot` is built and its

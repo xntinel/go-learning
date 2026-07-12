@@ -28,13 +28,6 @@ outbox/                      independent module: example.com/outbox
 - Test: an all-success batch advances to the last ID; a failure at position k holds the cursor at `batch[k-1].ID` even when later records succeed; empty batch is a no-op; per-record outcomes written by index are race-free; peak in flight never exceeds the cap; every record is attempted even after a failure.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/01-your-first-goroutine/11-outbox-relay-batch-contiguous-cursor/cmd/demo
-cd go-solutions/13-goroutines-and-channels/01-your-first-goroutine/11-outbox-relay-batch-contiguous-cursor
-```
-
 ### Join before you trust the side effect, then advance only across the gap-free prefix
 
 The relay's job is a two-phase contract. Phase one dispatches every record in the

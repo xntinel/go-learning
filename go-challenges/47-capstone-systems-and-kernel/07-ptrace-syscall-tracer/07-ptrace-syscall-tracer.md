@@ -68,14 +68,6 @@ With `PTRACE_O_TRACEFORK | PTRACE_O_TRACECLONE`, the kernel delivers a clone-eve
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/47-capstone-systems-and-kernel/07-ptrace-syscall-tracer/07-ptrace-syscall-tracer/tracer
-mkdir -p go-solutions/47-capstone-systems-and-kernel/07-ptrace-syscall-tracer/07-ptrace-syscall-tracer/cmd/tracer
-cd go-solutions/47-capstone-systems-and-kernel/07-ptrace-syscall-tracer/07-ptrace-syscall-tracer
-```
-
 ### Exercise 1: SyscallEvent and Flag Decoders
 
 Create `tracer/event.go`. This file has no build constraint and compiles on all platforms.

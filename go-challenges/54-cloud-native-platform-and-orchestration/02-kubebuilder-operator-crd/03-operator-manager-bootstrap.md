@@ -37,8 +37,6 @@ Verify: `go test -count=1 -race ./...` (the cluster path builds only under `-tag
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/54-cloud-native-platform-and-orchestration/02-kubebuilder-operator-crd/03-operator-manager-bootstrap/api/v1 go-solutions/54-cloud-native-platform-and-orchestration/02-kubebuilder-operator-crd/03-operator-manager-bootstrap/cmd/demo
-cd go-solutions/54-cloud-native-platform-and-orchestration/02-kubebuilder-operator-crd/03-operator-manager-bootstrap
 go mod edit -go=1.26
 go get k8s.io/api@v0.32.0 k8s.io/apimachinery@v0.32.0 k8s.io/client-go@v0.32.0
 go get sigs.k8s.io/controller-runtime@v0.20.0

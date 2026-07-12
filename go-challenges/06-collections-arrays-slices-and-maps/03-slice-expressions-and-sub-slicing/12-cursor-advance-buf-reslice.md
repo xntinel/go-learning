@@ -49,8 +49,6 @@ binreader/                 module example.com/binreader
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/12-cursor-advance-buf-reslice
-cd go-solutions/06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/12-cursor-advance-buf-reslice
 go mod edit -go=1.24
 ```
 

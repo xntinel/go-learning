@@ -26,13 +26,6 @@ money/                     independent module: example.com/money
 - Test: `0.10 + 0.20` is exactly 30 cents; a million one-cent adds are exact; `Add` near `math.MaxInt64` errors instead of wrapping; a float accumulation diverges from `Money`; `Format` round-trips.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/03-basic-types/03-money-minor-units/cmd/demo
-cd go-solutions/02-variables-types-and-constants/03-basic-types/03-money-minor-units
-```
-
 ### Why cents, and where the overflow guard goes
 
 `float64` cannot represent `0.10` exactly, so a `float64` ledger drifts: sum ten

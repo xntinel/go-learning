@@ -19,12 +19,6 @@ lifecycle_test.go    happy path, cancel branches, illegal-event rejection, conte
 - Test: the happy path reaches Delivered with three transitions, Cancel works from Pending and Shipped, an illegal event is recorded in `Rejected` and never in `History`, and a cancelled context stops a waiting machine.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/16-concurrency-patterns/22-channel-based-state-machine/01-statefn-order-lifecycle/cmd/demo && cd go-solutions/16-concurrency-patterns/22-channel-based-state-machine/01-statefn-order-lifecycle
-```
-
 ### Why state-as-a-function, and what it buys
 
 A mutex-guarded machine stores `current State` and locks it on every read and write. The lock has to cover the whole read-decide-write step or two callers both read `Pending` and both advance; the scope leaks on early returns; and the single lock is the point everything contends on. The `StateFn` pattern removes the variable. The state type is recursive — a state function returns the next state function:

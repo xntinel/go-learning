@@ -27,13 +27,6 @@ repo/                          independent module: example.com/repo
 - Test: `errors.Is(err, ErrUserNotFound)` after a wrapped return, `ErrDuplicateKey` on double-insert, and a caller-side switch mapping sentinels to 404/409; never compare `err.Error()`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/01-variable-declaration-and-short-assignment/02-sentinel-errors-repository-layer/cmd/demo
-cd go-solutions/02-variables-types-and-constants/01-variable-declaration-and-short-assignment/02-sentinel-errors-repository-layer
-```
-
 ### Why sentinels are `var`, not `const` or local
 
 `errors.New` is a function call. A `const` may only bind a compile-time constant

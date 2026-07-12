@@ -27,13 +27,6 @@ config-cache/                        independent module: example.com/configcache
 - Test: a fast cache serves the value and the source is never queried (spy); a cache that blocks past the short timeout falls back to the source value; a cache miss falls back to the source; the short cache timeout does not cancel the parent, so the source runs on the full parent budget; the slow-cache path returns near the short cache timeout.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/05-context-withtimeout-withdeadline/09-cache-fallback-fast-timeout/cmd/demo
-cd go-solutions/14-select-and-context/05-context-withtimeout-withdeadline/09-cache-fallback-fast-timeout
-```
-
 ### The short timeout that must not leak
 
 The single most important line is the cache read's own budget:

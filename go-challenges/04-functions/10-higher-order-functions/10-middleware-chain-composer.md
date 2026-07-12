@@ -26,8 +26,6 @@ chain/                     independent module: example.com/middleware-chain
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/10-higher-order-functions/10-middleware-chain-composer
-cd go-solutions/04-functions/10-higher-order-functions/10-middleware-chain-composer
 go mod edit -go=1.24
 ```
 

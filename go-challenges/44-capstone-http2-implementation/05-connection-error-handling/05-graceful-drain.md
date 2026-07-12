@@ -22,7 +22,6 @@ drain_test.go          refusal boundary, clean drain, drains within grace, force
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/44-capstone-http2-implementation/05-connection-error-handling/05-graceful-drain/cmd/demo && cd go-solutions/44-capstone-http2-implementation/05-connection-error-handling/05-graceful-drain
 go mod edit -go=1.26
 ```
 

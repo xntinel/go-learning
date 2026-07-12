@@ -28,13 +28,6 @@ cfgmgr/                    independent module: example.com/cfgmgr
 - Test: the contract suite (initial read, swap, previous-snapshot immutability, monotonic versions, an `Example`) plus a 50-reader/20-writer stress test and a `t.Context()`-driven reader stress test, all under `-race`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/08-atomic-value-config-hot-reload/01-atomic-pointer-config-manager/cmd/demo
-cd go-solutions/15-sync-primitives/08-atomic-value-config-hot-reload/01-atomic-pointer-config-manager
-```
-
 ### The design: one pointer, zero locks
 
 The `Manager` is deliberately tiny. All state is one `atomic.Pointer[Config]`

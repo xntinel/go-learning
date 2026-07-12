@@ -62,13 +62,6 @@ In tests, bind to `"127.0.0.1:0"`. The kernel picks a free port and returns it v
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/33-tcp-udp-and-networking/06-building-a-line-based-protocol/06-building-a-line-based-protocol/cmd/demo
-cd go-solutions/33-tcp-udp-and-networking/06-building-a-line-based-protocol/06-building-a-line-based-protocol
-```
-
 There is no `main` in the library; verification is `go test`, not `go run`.
 
 ### Exercise 1: Thread-Safe Store

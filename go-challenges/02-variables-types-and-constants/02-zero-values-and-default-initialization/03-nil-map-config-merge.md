@@ -26,13 +26,6 @@ Implement: `Merge(base, over)` returning a new independent map, `Resolve(default
 Test: merging into a nil base does not panic; the override layer wins; the result is a distinct map (mutating it does not change the defaults); nil/empty layers are no-ops; reading a nil map returns the zero value with `ok == false`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/02-zero-values-and-default-initialization/03-nil-map-config-merge/cmd/demo
-cd go-solutions/02-variables-types-and-constants/02-zero-values-and-default-initialization/03-nil-map-config-merge
-```
-
 ## The nil-map hazard, and how maps.Clone/Copy defuse it
 
 The panic this exercise guards against is "assignment to entry in nil map": a

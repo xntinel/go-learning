@@ -26,8 +26,6 @@ mvs/                          module: example.com/mono/mvs
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/11-packages-and-modules/10-monorepo-module-strategy/08-reconcile-versions-with-work-sync/cmd/demo
-cd go-solutions/11-packages-and-modules/10-monorepo-module-strategy/08-reconcile-versions-with-work-sync
 go get golang.org/x/mod
 ```
 

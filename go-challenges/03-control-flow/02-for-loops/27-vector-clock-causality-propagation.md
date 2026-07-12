@@ -34,8 +34,6 @@ vclock/                        module example.com/vclock
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/02-for-loops/27-vector-clock-causality-propagation/cmd/demo
-cd go-solutions/03-control-flow/02-for-loops/27-vector-clock-causality-propagation
 go mod edit -go=1.24
 ```
 

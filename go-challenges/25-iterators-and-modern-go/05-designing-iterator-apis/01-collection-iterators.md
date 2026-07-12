@@ -19,12 +19,6 @@ collection_test.go   index pairs, reverse order, reusable passes, early break, S
 - Test: `collection_test.go` checks `All` pairs each element with its index, `Backward` reverses, both `Values` passes match (reusable), `break` stops iteration, and `Sorted` returns an ordered slice.
 - Verify: `go test -run TestList -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/25-iterators-and-modern-go/05-designing-iterator-apis/01-collection-iterators/cmd/demo && cd go-solutions/25-iterators-and-modern-go/05-designing-iterator-apis/01-collection-iterators
-```
-
 ### Why these four methods, and why these exact shapes
 
 A caller who has used `slices.All`, `slices.Values`, and `slices.Backward` already knows what your collection's methods should be called and what they should return. The entire value of the convention is that it lets that knowledge transfer without reading your code. So the shapes are not free choices; they are matches against the standard library.

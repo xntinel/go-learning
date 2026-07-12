@@ -23,13 +23,6 @@ saverepo/                     module example.com/saverepo
 - Test: on success `err` is nil and the log records `ok=true` with the elapsed duration; a panicking write becomes a non-nil error wrapping `ErrPanic` and logs `ok=false`; a validation failure is observable through the named return.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/05-anonymous-functions/03-deferred-closure-named-return-observability/cmd/demo
-cd go-solutions/04-functions/05-anonymous-functions/03-deferred-closure-named-return-observability
-```
-
 ### Why the closure must capture the named return
 
 `Save` declares a *named* return, `(err error)`. That name is a real variable in

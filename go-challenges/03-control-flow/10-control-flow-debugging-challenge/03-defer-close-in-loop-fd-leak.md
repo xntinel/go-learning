@@ -22,13 +22,6 @@ importer/                  module example.com/importer
 - Test: a fake opener that tracks live and max-concurrent handles, asserting `maxOpen == 1`; a mid-batch open failure that must still close everything opened before it.
 - Verify: `go test -count=1 -race ./...`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/03-defer-close-in-loop-fd-leak/cmd/demo
-cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/03-defer-close-in-loop-fd-leak
-```
-
 ### The artifact and the planted bug
 
 The importer walks a slice of paths, opens each, processes it, and moves on. The

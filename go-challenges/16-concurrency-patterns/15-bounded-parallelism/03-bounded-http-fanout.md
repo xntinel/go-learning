@@ -19,12 +19,6 @@ fanout_test.go        downstream-observed peak <= N under -race; error capture
 - Test: `fanout_test.go` runs a downstream that records its own peak concurrency and asserts it never exceeds N; a second test confirms transport errors are captured per-URL.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/16-concurrency-patterns/15-bounded-parallelism/03-bounded-http-fanout/cmd/demo && cd go-solutions/16-concurrency-patterns/15-bounded-parallelism/03-bounded-http-fanout
-```
-
 ### The design, and why the proof must come from the server
 
 `Fetch` takes a list of URLs and a concurrency ceiling. It allocates a results slice indexed one-to-one with the input, so the output preserves input order without any locking — each goroutine owns its own slot and no two goroutines touch the same index. The bound is the familiar buffered-channel semaphore: acquire a token in the loop before launching, release it in a deferred receive. Every request is built with `http.NewRequestWithContext` so a cancelled parent aborts the in-flight HTTP calls rather than waiting them out, and the response body is drained and closed so the transport can reuse the connection — a fan-out that leaks bodies will exhaust its connection pool and stall under load.

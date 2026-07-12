@@ -33,8 +33,6 @@ reqdedup/                     independent module: example.com/singleflight-reque
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/03-switch-statements/35-singleflight-request-deduplicator/cmd/demo
-cd go-solutions/03-control-flow/03-switch-statements/35-singleflight-request-deduplicator
 go mod edit -go=1.24
 ```
 

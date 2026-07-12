@@ -37,8 +37,6 @@ ring/                       independent module: example.com/consistent-hashing-r
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/05-range-over-collections/26-consistent-hashing-ring-sharding/cmd/demo
-cd go-solutions/03-control-flow/05-range-over-collections/26-consistent-hashing-ring-sharding
 go mod edit -go=1.24
 ```
 

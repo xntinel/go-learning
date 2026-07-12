@@ -18,13 +18,6 @@ Configuration errors are operational errors. Include the line number and wrap a 
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/19-io-and-filesystem/09-yaml-parsing/09-yaml-parsing/cmd/demo
-cd go-solutions/19-io-and-filesystem/09-yaml-parsing/09-yaml-parsing
-```
-
 ### Exercise 1: Implement A Flat YAML Loader
 
 Create `yaml.go`:

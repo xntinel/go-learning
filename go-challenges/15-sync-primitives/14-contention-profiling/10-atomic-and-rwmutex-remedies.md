@@ -32,13 +32,6 @@ reqmetrics/                   independent module: example.com/reqmetrics
 - Test: N concurrent requests through `httptest` produce exact totals and status breakdown under `-race`; readers see a consistent flag during concurrent flips; a mutex profile captured under identical load contains the `MutexMetrics` stack and cannot contain the atomic path.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/14-contention-profiling/10-atomic-and-rwmutex-remedies/cmd/demo
-cd go-solutions/15-sync-primitives/14-contention-profiling/10-atomic-and-rwmutex-remedies
-```
-
 ### Remedy three: atomics for the hot counter
 
 When the mutex profile's top stack is a lock that guards nothing but integer

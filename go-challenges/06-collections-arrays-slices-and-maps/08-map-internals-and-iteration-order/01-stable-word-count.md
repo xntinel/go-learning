@@ -27,13 +27,6 @@ wordcount/                 independent module: example.com/wordcount
   identical) and `TestTopNTruncates`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/01-stable-word-count/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/01-stable-word-count
-```
-
 ### Why the sorted slice is the contract, not the map
 
 `Count` returns a `map[string]int` — the natural accumulator, O(1) per increment. But

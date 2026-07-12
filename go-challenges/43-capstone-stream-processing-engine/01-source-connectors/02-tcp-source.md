@@ -20,12 +20,6 @@ tcp-source/
 - Test: a single client's lines arrive in order; ten concurrent clients lose no records; `Close` before `Open` returns the sentinel.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/43-capstone-stream-processing-engine/01-source-connectors/02-tcp-source/cmd/demo && cd go-solutions/43-capstone-stream-processing-engine/01-source-connectors/02-tcp-source
-```
-
 ### The shared vocabulary
 
 `source.go` carries the same `Record`, `Metrics`, and `Source` definitions every module bundles, plus `ErrSourceClosed`. Keeping it in each module is what makes the module independently buildable and gateable.

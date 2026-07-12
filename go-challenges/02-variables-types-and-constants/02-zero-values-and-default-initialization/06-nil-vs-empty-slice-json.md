@@ -26,13 +26,6 @@ Implement: `NewListResponse(items)` that forces a non-nil slice so it marshals t
 Test: a nil slice under naive encoding produces `null` (demonstrated), the fixed constructor produces `[]`, a populated slice produces the expected array, and the `omitempty` field is dropped when empty. Assert exact JSON bytes.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/02-zero-values-and-default-initialization/06-nil-vs-empty-slice-json/cmd/demo
-cd go-solutions/02-variables-types-and-constants/02-zero-values-and-default-initialization/06-nil-vs-empty-slice-json
-```
-
 ## Why nil marshals to null, and the boundary fix
 
 `encoding/json` distinguishes a nil slice from an empty non-nil slice on the

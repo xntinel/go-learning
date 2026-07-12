@@ -21,12 +21,6 @@ example_test.go      ExampleNew (external consumer_test package)
 - Test: backpressure bounds the fetch position, `Pause` halts the fetcher, `Seek` repositions safely, delivery modes commit at the right time, and auto-commit flushes on a tick and on `Close`.
 - Verify: `go test -race ./... && go run ./cmd/demo`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/41-capstone-message-queue/05-consumer-api-backpressure/01-consumer-prefetch-backpressure/cmd/demo && cd go-solutions/41-capstone-message-queue/05-consumer-api-backpressure/01-consumer-prefetch-backpressure
-```
-
 ### The Broker interface: a seam for the network
 
 The `Consumer` depends on the message store through one small interface, `Broker`. In production a `Broker` wraps a TCP connection to the server; in this module `InMemoryBroker` satisfies it with a plain in-memory log, which is what lets the entire consumer be exercised under the race detector with no sockets and no goroutine timing tricks. The interface has exactly four methods: `Fetch` (block until at least one record is available at an offset, then return up to `maxCount` of them), `LatestOffset` (the next offset to be written, used for lag and seek-to-end), `CommitOffset` (durably store the next-to-fetch offset), and `CommittedOffset` (read it back, or `-1` if nothing was ever committed).

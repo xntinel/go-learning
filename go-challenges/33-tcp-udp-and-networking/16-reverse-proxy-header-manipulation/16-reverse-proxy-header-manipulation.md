@@ -46,13 +46,6 @@ Hop-by-hop headers describe the link between two adjacent nodes and must not be 
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/33-tcp-udp-and-networking/16-reverse-proxy-header-manipulation/16-reverse-proxy-header-manipulation/cmd/demo
-cd go-solutions/33-tcp-udp-and-networking/16-reverse-proxy-header-manipulation/16-reverse-proxy-header-manipulation
-```
-
 This is a library verified by `go test`. There is no standalone program in the root package.
 
 ### Exercise 1: Routing Table and Core Proxy

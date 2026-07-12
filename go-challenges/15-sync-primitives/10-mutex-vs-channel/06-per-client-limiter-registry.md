@@ -29,13 +29,6 @@ ratemw/                         independent module: example.com/ratemw
 - Test: same key exhausts its bucket to 429 while another key gets 200; 20 concurrent goroutines on one key admit exactly the burst; an injected clock drives eviction; the janitor stops cleanly.
 - Verify: `go test -count=1 -race ./...` and `go run ./cmd/demo`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/10-mutex-vs-channel/06-per-client-limiter-registry/ratemw go-solutions/15-sync-primitives/10-mutex-vs-channel/06-per-client-limiter-registry/cmd/demo
-cd go-solutions/15-sync-primitives/10-mutex-vs-channel/06-per-client-limiter-registry
-```
-
 ### Two-level locking: registry mutex, then bucket mutex
 
 The registry holds `map[string]*client` under its own mutex; each client

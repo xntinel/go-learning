@@ -47,13 +47,6 @@ A variadic method `func (T) Foo(args ...int)` has `t.IsVariadic() == true`. Call
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/27-reflection/03-dynamic-method-invocation/03-dynamic-method-invocation/cmd/demo
-cd go-solutions/27-reflection/03-dynamic-method-invocation/03-dynamic-method-invocation
-```
-
 This is a library, not a program: verification is done with `go test`.
 
 ### Exercise 1: The Dispatcher Type

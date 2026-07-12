@@ -24,13 +24,6 @@ resultinspect/                  independent module: example.com/result-response-
 - Test: `res := rec.Result(); defer res.Body.Close()`; assert `res.StatusCode`, `res.Header.Get(...)`, `res.Cookies()` and a specific cookie's attributes; contrast the too-late header's absence from `res.Header` with its presence in the live `rec.Header()`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/09-httptest/03-result-response-inspection/cmd/demo
-cd go-solutions/12-testing-ecosystem/09-httptest/03-result-response-inspection
-```
-
 ### The snapshot boundary: why Result() is the truth
 
 An `http.ResponseWriter` commits its status and headers the moment `WriteHeader`

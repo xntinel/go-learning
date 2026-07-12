@@ -28,13 +28,6 @@ Implement: a `Server` wrapping `http.Server` with counting middleware, `InFlight
 Test: N concurrent requests drive the gauge to N then to zero on a clean drain; a handler ignoring `r.Context()` leaves a residual after a timed-out `Shutdown`; cancelling the base context cuts handlers that `Shutdown` would not.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/11-graceful-shutdown-with-context/07-inflight-request-tracking-drain/cmd/demo
-cd go-solutions/14-select-and-context/11-graceful-shutdown-with-context/07-inflight-request-tracking-drain
-```
-
 ## Why a gauge, and what BaseContext buys you
 
 Counting middleware wraps the handler: increment an `atomic.Int64` on entry,

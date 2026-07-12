@@ -32,8 +32,6 @@ pipeline/                   independent module: example.com/pipeline
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/06-labels-break-continue-goto/24-pipeline-stage-graceful-shutdown/cmd/demo
-cd go-solutions/03-control-flow/06-labels-break-continue-goto/24-pipeline-stage-graceful-shutdown
 go mod edit -go=1.24
 ```
 

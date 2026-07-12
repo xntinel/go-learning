@@ -26,13 +26,6 @@ generator/                 independent module: example.com/generator
 - Test: a full drain yields `0..count-1`; an `Example` with verified output; a cancel-after-one-read leaves no goroutine behind.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/04-context-withcancel/02-context-aware-generator/cmd/demo
-cd go-solutions/14-select-and-context/04-context-withcancel/02-context-aware-generator
-```
-
 ### Why the send must be a select
 
 The naive generator writes `out <- i` directly. That is a latent leak. The

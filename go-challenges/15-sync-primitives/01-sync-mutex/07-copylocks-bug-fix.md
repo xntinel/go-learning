@@ -30,11 +30,6 @@ latstats/                    independent module: example.com/latstats
 - Test: 100 goroutines x 100 `Record` calls assert exact count, exact sum, and correct max under `-race`; mutating the returned `Stats` provably cannot touch the recorder.
 - Verify: `go test -count=1 -race ./...` and `go vet ./...` (both clean), then `go vet -tags copybug ./...` (must report copylocks diagnostics).
 
-```bash
-mkdir -p go-solutions/15-sync-primitives/01-sync-mutex/07-copylocks-bug-fix/cmd/demo
-cd go-solutions/15-sync-primitives/01-sync-mutex/07-copylocks-bug-fix
-```
-
 ### Why a copied mutex is invisible until production
 
 `sync.Mutex` is an ordinary struct value. Assigning it, passing it as a

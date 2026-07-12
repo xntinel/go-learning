@@ -28,8 +28,6 @@ Verify: `go test -count=1 ./...`
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/08-panic-and-recover/12-must-style-config
-cd go-solutions/03-control-flow/08-panic-and-recover/12-must-style-config
 go mod edit -go=1.24
 ```
 

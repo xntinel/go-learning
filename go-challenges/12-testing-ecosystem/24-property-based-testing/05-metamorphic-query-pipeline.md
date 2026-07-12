@@ -32,8 +32,6 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/12-testing-ecosystem/24-property-based-testing/05-metamorphic-query-pipeline/cmd/demo
-cd go-solutions/12-testing-ecosystem/24-property-based-testing/05-metamorphic-query-pipeline
 go mod edit -go=1.26
 go get pgregory.net/rapid@latest
 ```

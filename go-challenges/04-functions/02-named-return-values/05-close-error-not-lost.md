@@ -24,13 +24,6 @@ cfgwrite/                   independent module: example.com/cfgwrite
 - Test: a fake writer whose Write/Flush/Close return sentinels; happy path surfaces a close error; a write failure is preserved and not overwritten by the close error; Close is invoked exactly once.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/02-named-return-values/05-close-error-not-lost/cmd/demo
-cd go-solutions/04-functions/02-named-return-values/05-close-error-not-lost
-```
-
 ### Promote the close error, but never clobber
 
 The core is `WriteThrough`, which owns a writer that must be flushed and closed:

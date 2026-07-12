@@ -24,13 +24,6 @@ Implement: `Count(r io.Reader) (Counts, error)`, `CountRunes(r io.Reader) (runes
 Test: totals over ASCII/Latin/CJK; `iotest.OneByteReader` forces seam-spanning runes; invalid bytes yield the `(RuneError, size 1)` contract; clean EOF; a mid-stream read error propagates.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/04-string-iteration-bytes-vs-runes/06-streaming-rune-decoder/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/04-string-iteration-bytes-vs-runes/06-streaming-rune-decoder
-```
-
 ### Why ReadRune, and its exact contract
 
 `bufio.NewReader(r)` wraps any `io.Reader` in a buffer, and `(*bufio.Reader).ReadRune`

@@ -70,13 +70,6 @@ Write barriers add a small but measurable overhead to pointer-write-heavy code. 
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/35-runtime-garbage-collector/04-write-barriers/04-write-barriers/cmd/demo
-cd go-solutions/35-runtime-garbage-collector/04-write-barriers/04-write-barriers
-```
-
 ### Exercise 1: Object Graph and Barrier Implementations
 
 Create `barrier.go`:

@@ -27,13 +27,6 @@ repo/                      independent module: example.com/repo
 - Test: a fake `Store` that injects each failure; one table-driven test that drives and asserts every documented error branch with `errors.Is`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/20-test-coverage-analysis/07-error-branch-coverage-repository/cmd/demo
-cd go-solutions/12-testing-ecosystem/20-test-coverage-analysis/07-error-branch-coverage-repository
-```
-
 ### The branches a happy-path test never sees
 
 `GetUserWithRetry` is a realistic repository call: it takes a context, asks the

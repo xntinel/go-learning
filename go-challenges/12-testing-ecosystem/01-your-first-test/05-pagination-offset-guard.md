@@ -22,13 +22,6 @@ pageoffset/                independent module: example.com/pageoffset
 - Test: the happy cases and, more importantly, the defensive cases `page=0` and `size=-5`, each as a discrete assertion.
 - Verify: `gofmt -l .`, `go vet ./...`, `go test -count=1 -race ./...`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/01-your-first-test/05-pagination-offset-guard/cmd/demo
-cd go-solutions/12-testing-ecosystem/01-your-first-test/05-pagination-offset-guard
-```
-
 ### The off-by-one and the two clamps
 
 Pages are one-based for humans and offsets are zero-based for the database, so

@@ -25,13 +25,6 @@ idgen/                       independent module: example.com/idgen
 - Test: IDs are strictly increasing; 100 concurrent callers get 100 distinct values; `Next` after `Close` is safe.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/02-channel-basics/02-request-reply-command-channel/cmd/demo
-cd go-solutions/13-goroutines-and-channels/02-channel-basics/02-request-reply-command-channel
-```
-
 ### The command struct carries its own reply channel
 
 The mechanism is "share memory by communicating". The counter — a single `uint64`

@@ -27,13 +27,6 @@ matcher/                     independent module: example.com/must-constructor-in
 - Test: `NewMatcher` returns the sentinel for an invalid pattern and matches for a valid one; `MustCompileMatcher` returns a usable matcher for a valid pattern and panics for an invalid one (asserted via `recover`); and a comment documents that `Must` takes only compile-time-constant patterns.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/06-constructor-functions-and-validation/07-must-constructor-init-invariants/cmd/demo
-cd go-solutions/07-structs-and-methods/06-constructor-functions-and-validation/07-must-constructor-init-invariants
-```
-
 ### When panic-at-init is correct, and when it is a latent crash
 
 The choice between returning an error and panicking is a statement about where the

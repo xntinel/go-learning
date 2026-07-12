@@ -25,13 +25,6 @@ accesslog/                 independent module: example.com/accesslog
 - Test: captured status equals what the handler wrote, default 200 when unset, byte count equals body length, and streaming still works through `http.NewResponseController`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/08-embedding-for-composition/02-responsewriter-capture-middleware/cmd/demo
-cd go-solutions/07-structs-and-methods/08-embedding-for-composition/02-responsewriter-capture-middleware
-```
-
 ### Capturing the status without breaking the writer
 
 A handler tells the client its status by calling `w.WriteHeader(code)`, or by

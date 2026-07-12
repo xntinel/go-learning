@@ -26,13 +26,6 @@ pool/                       independent module: example.com/pool
 - Test: `Acquire` beyond capacity blocks until a `Release`; `Close` wakes every blocked `Acquire` with `ErrPoolClosed`; a concurrent stress test asserts checked-out never exceeds size.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/06-sync-cond/03-connection-pool/cmd/demo
-cd go-solutions/15-sync-primitives/06-sync-cond/03-connection-pool
-```
-
 ### Signal to hand off one slot, Broadcast to drain on shutdown
 
 The pool holds a slice of free connections. `Acquire` waits on the predicate

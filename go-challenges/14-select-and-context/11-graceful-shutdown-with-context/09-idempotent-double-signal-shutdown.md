@@ -27,13 +27,6 @@ Implement: `App` with `Run(ctx) error`, `Shutdown() error` guarded by `sync.Once
 Test: a double `cancel()` yields one teardown and no panic; two concurrent `Shutdown` calls run teardown once and both see the same result; a recover-guarded harness proves no "close of closed channel" panic.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/11-graceful-shutdown-with-context/09-idempotent-double-signal-shutdown/cmd/demo
-cd go-solutions/14-select-and-context/11-graceful-shutdown-with-context/09-idempotent-double-signal-shutdown
-```
-
 ## Why sync.Once is the right guard
 
 There are two things a shutdown does that are unsafe to repeat. `context.CancelFunc`

@@ -23,13 +23,6 @@ greetserver/                    independent module: example.com/newserver-e2e-ha
 - Test: start `httptest.NewServer(NewMux())`, register `srv.Close` with `t.Cleanup`, call `srv.Client().Get(srv.URL + path)`, read and close the body, assert the round-tripped greeting including a percent-encoded space.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/09-httptest/02-newserver-e2e-handler/cmd/demo
-cd go-solutions/12-testing-ecosystem/09-httptest/02-newserver-e2e-handler
-```
-
 ### Recorder routing vs real server routing
 
 With a recorder you call a handler directly, so you bypass the router entirely and

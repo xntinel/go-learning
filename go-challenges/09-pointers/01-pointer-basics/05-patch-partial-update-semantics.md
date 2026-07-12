@@ -27,13 +27,6 @@ userpatch/                 independent module: example.com/userpatch
 - Test: a patch with only `Email` set changes `Email` and leaves `Name`/`Age`; a patch setting `Age` to a pointer-to-`0` writes `0`; a `nil` `Age` leaves it; the function mutates the caller's struct.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/01-pointer-basics/05-patch-partial-update-semantics/cmd/demo
-cd go-solutions/09-pointers/01-pointer-basics/05-patch-partial-update-semantics
-```
-
 ### PATCH is "touch only what was provided"
 
 `User` is the resource: plain value fields. `UserPatch` is the request body: every

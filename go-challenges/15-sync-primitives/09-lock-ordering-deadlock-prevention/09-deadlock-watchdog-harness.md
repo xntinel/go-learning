@@ -32,13 +32,6 @@ deadtest/                  independent module: example.com/deadtest
 - Test: a fast function passes; a deterministically wedged cross-order lock pair is detected via a mock `TB` that records `Fatalf`, and the captured dump contains `sync.(*Mutex)` frames; the ordered transfer completes within budget under `-race`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/09-lock-ordering-deadlock-prevention/09-deadlock-watchdog-harness/cmd/demo
-cd go-solutions/15-sync-primitives/09-lock-ordering-deadlock-prevention/09-deadlock-watchdog-harness
-```
-
 ### Why tests need their own watchdog
 
 The runtime's `fatal error: all goroutines are asleep - deadlock!` requires

@@ -31,13 +31,6 @@ not panic; `http.NewResponseController(recorder).Flush()` succeeds, proving
 `Unwrap` works.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/10-error-handling-middleware/06-status-capturing-responsewriter/cmd/demo
-cd go-solutions/10-error-handling/10-error-handling-middleware/06-status-capturing-responsewriter
-```
-
 ### Why the wrapper is subtle
 
 An `http.ResponseWriter` tells you nothing about what was written after the fact —

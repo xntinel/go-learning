@@ -28,13 +28,6 @@ Implement: a `*Pool` holding `[]Backend` behind an `RWMutex` plus an `atomic.Int
 Test: N goroutines call `Next` in a loop while one goroutine reloads and toggles health — no panic, never an unknown backend; a distribution table test over a stable pool.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/02-sync-rwmutex/03-hot-reload-backend-pool/cmd/demo
-cd go-solutions/15-sync-primitives/02-sync-rwmutex/03-hot-reload-backend-pool
-```
-
 ### Why the read lock and the atomic counter cooperate
 
 `Next` runs on every request, so it must be cheap and must never block behind

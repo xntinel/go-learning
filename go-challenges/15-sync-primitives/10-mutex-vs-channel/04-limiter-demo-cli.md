@@ -27,13 +27,6 @@ limitercli/                     independent module: example.com/limitercli
 - Test: allowed+denied always equals n; exact burst with refill off; a divergence test proving the mutex limiter refills during a paced loop while the hour-interval channel limiter does not.
 - Verify: `go test -count=1 -race ./...`, `go vet ./...`, and `go run ./cmd/demo`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/10-mutex-vs-channel/04-limiter-demo-cli/harness go-solutions/15-sync-primitives/10-mutex-vs-channel/04-limiter-demo-cli/cmd/demo
-cd go-solutions/15-sync-primitives/10-mutex-vs-channel/04-limiter-demo-cli
-```
-
 ### Keep main() too thin to need testing
 
 The design rule for every CLI you ship: `main` is glue — flags in, function

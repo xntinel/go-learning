@@ -23,13 +23,6 @@ Implement: reuse the cache.
 Test: a `[]struct` table with `name`, seed key/value/ttl, a clock `advance`, a lookup key, and `wantVal`/`wantErr`; iterate as parallel subtests.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/25-building-a-test-suite/04-table-driven-get/cmd/demo
-cd go-solutions/12-testing-ecosystem/25-building-a-test-suite/04-table-driven-get
-```
-
 ### When a table beats subtests, and the nil-error trap
 
 The `Get` behavior is a set of homogeneous cases: seed a key, maybe advance the

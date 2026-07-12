@@ -32,13 +32,6 @@ Test: the same `Add`/`Flush` sequence through `var b EventBatch`,
 panic; `Add` on the zero value initializes the backing store exactly once.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/03-new-vs-composite-literal/02-zero-value-ready-batch/cmd/demo
-cd go-solutions/09-pointers/03-new-vs-composite-literal/02-zero-value-ready-batch
-```
-
 ### Why the zero value must be valid
 
 An `EventBatch` collects events during one request and flushes them at the end.

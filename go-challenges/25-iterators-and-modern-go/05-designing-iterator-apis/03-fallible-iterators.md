@@ -19,12 +19,6 @@ stream_test.go       reads lines, nil-FS and missing-file errors, Collect stops 
 - Test: `stream_test.go` reads lines from an `fstest.MapFS`, asserts a nil filesystem yields `ErrNilFS` and a missing file yields `fs.ErrNotExist` (both via `errors.Is`), and that `Collect` returns the partial slice and the error on failure.
 - Verify: `go test -run 'TestLines|TestCollect' -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/25-iterators-and-modern-go/05-designing-iterator-apis/03-fallible-iterators/cmd/demo && cd go-solutions/25-iterators-and-modern-go/05-designing-iterator-apis/03-fallible-iterators
-```
-
 ### Why `Seq2[V, error]`, and the three rules that make it safe
 
 `Lines` opens a file and yields its text one line at a time, but opening can fail and scanning can fail partway through. It cannot report that with a return value, because the value it returns is the iterator itself, produced before a single byte is read. Logging the error and quietly ending the sequence is worse: the caller's `for ... range` loop ends normally and treats a truncated file as a complete one — silent data loss. The convention is to make the error part of the sequence: `iter.Seq2[string, error]`, where the second component is the per-step error. The caller writes `for line, err := range Lines(fsys, path) { if err != nil { ...; break }; ... }`, which puts error handling exactly where the data is consumed.

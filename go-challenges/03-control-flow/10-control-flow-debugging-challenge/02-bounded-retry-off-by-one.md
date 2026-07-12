@@ -22,13 +22,6 @@ retry/                     module example.com/retry
 - Test: exact attempt counts for success-on-first, success-on-Nth, and all-fail; a `context.WithTimeout` cancellation test; an assertion that the returned error wraps the final downstream error.
 - Verify: `go test -count=1 -race ./...`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/02-bounded-retry-off-by-one/cmd/demo
-cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/02-bounded-retry-off-by-one
-```
-
 ### The artifact and the planted bug
 
 A bounded retry has one job that a test can pin exactly: call the downstream *at

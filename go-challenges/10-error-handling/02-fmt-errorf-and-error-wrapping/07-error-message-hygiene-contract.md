@@ -28,13 +28,6 @@ responder/                     independent module: example.com/responder
 - Test: `err.Error()` equals the exact expected breadcrumb (outermost first, cause last, single-colon separators); walking `errors.Unwrap` reaches `ErrNoRows` at the expected depth; a regression test asserts `failed to: failed to` never appears.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/02-fmt-errorf-and-error-wrapping/07-error-message-hygiene-contract/cmd/demo
-cd go-solutions/10-error-handling/02-fmt-errorf-and-error-wrapping/07-error-message-hygiene-contract
-```
-
 ### The breadcrumb is the contract
 
 Three layers each wrap the one below with `%w` and their own operation plus the

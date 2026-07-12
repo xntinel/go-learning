@@ -25,11 +25,6 @@ Implement: `Format(fields []string) string` taking `*strings.Builder` internally
 Test: reuse does not bleed prior content; concurrent formatting is race-free under `-race`.
 Verify: `go vet ./...` is clean and `go test -count=1 -race ./...` passes.
 
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/09-strings-builder-performance/10-builder-copylocks-and-reset-footguns/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/09-strings-builder-performance/10-builder-copylocks-and-reset-footguns
-```
-
 ### The four footguns, and why the compiler lets them through
 
 **Copying a Builder by value.** A `strings.Builder` stores a pointer to itself to

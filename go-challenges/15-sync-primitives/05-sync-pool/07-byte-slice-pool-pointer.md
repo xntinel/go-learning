@@ -29,13 +29,6 @@ Implement: `CopyWithScratch(dst io.Writer, src io.Reader) (int64, error)` that s
 Test: table-driven sizes (empty, sub-buffer, exact multiple, several refills), 200 concurrent distinct-payload copies under `-race`, a reuse-range assertion, and the pointer-vs-value benchmark pair that pins the boxing allocation.
 Verify: `go test -count=1 -race ./...` then `go test -bench=. -benchmem -run=^$ ./scratch`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/05-sync-pool/07-byte-slice-pool-pointer/scratch go-solutions/15-sync-primitives/05-sync-pool/07-byte-slice-pool-pointer/cmd/demo
-cd go-solutions/15-sync-primitives/05-sync-pool/07-byte-slice-pool-pointer
-```
-
 ### Why *[]byte and not []byte: the boxing allocation
 
 `sync.Pool.Put` takes `any`, and how Go converts your value into that `any` is

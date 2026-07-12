@@ -33,13 +33,6 @@ cachejitter/                     independent module: example.com/cachejitter
 - Test: stored expiry falls inside the jitter window and offsets decorrelate; two lookups of a missing id hit the repo once; after the negative TTL the repo is consulted again; transient errors are never cached.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/13-building-a-thread-safe-cache/06-ttl-jitter-negative-caching/cache go-solutions/15-sync-primitives/13-building-a-thread-safe-cache/06-ttl-jitter-negative-caching/store go-solutions/15-sync-primitives/13-building-a-thread-safe-cache/06-ttl-jitter-negative-caching/cmd/demo
-cd go-solutions/15-sync-primitives/13-building-a-thread-safe-cache/06-ttl-jitter-negative-caching
-```
-
 ### The cache core (self-contained copy, plus one debug accessor)
 
 The core is the exercise-1 cache with one addition: `ExpiresAt(key)`, an

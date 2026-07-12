@@ -22,12 +22,6 @@ producer_test.go     flush triggers, future resolution, timeout, concurrent send
 - Test: size flush fires before linger, linger flush fires on a slow stream, `Close` flushes the tail, a future times out, and 1000 concurrent sends all resolve.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/41-capstone-message-queue/04-producer-api-batching/01-batching-and-futures/cmd/demo && cd go-solutions/41-capstone-message-queue/04-producer-api-batching/01-batching-and-futures
-```
-
 ### How the accumulator and the sender stay decoupled
 
 The producer runs two roles concurrently and the entire design exists to keep them from blocking each other. The accumulator is the `Send` path: it takes a short mutex, finds or creates the in-progress batch for the record's topic-partition, appends the record, and decides whether that batch is now full. The sender is one background goroutine that reads finished batches off a buffered channel and dispatches each to the broker inside its own goroutine, with a counting semaphore (`inflight`) capping how many run at once. The mutex guards only the accumulator's map of in-progress batches; the sender never touches that map, so the lock is held for microseconds and the two roles almost never contend.

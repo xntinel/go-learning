@@ -24,13 +24,6 @@ http-problem-details/              module example.com/http-problem-details
 - Test: a recorder per case asserting the status code, the `application/problem+json` content-type, that the 500 body does not contain the internal error text while 4xx carry a stable title, and that an unmapped error defaults to 500.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/13-designing-an-error-hierarchy/04-http-problem-details-mapping/cmd/demo
-cd go-solutions/10-error-handling/13-designing-an-error-hierarchy/04-http-problem-details-mapping
-```
-
 ### Why errors.Is and not a type switch
 
 The temptation at the transport is a `switch e := err.(type)` over concrete error

@@ -28,13 +28,6 @@ Implement: a `Meta` value type, an unexported `key struct{}`, `WithMeta(ctx, Met
 Test: round-trip equality, `ok=false` + zero `Meta` on empty context, parent immutability across layered `WithMeta`, string-key lookup returns `nil`, `FormatLog` with and without meta, survival through a `WithCancel` child, and a runnable `Example`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/06-context-withvalue/01-type-safe-meta-carrier/cmd/demo
-cd go-solutions/14-select-and-context/06-context-withvalue/01-type-safe-meta-carrier
-```
-
 ### Why the key is `struct{}` and the accessor returns comma-ok
 
 `ctx.Value` compares keys with `==`, so the only safe key is one no other package

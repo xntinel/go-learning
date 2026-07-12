@@ -31,13 +31,6 @@ errhttp/                     independent module: example.com/errhttp
   internal error's does not.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/04-type-switch/08-domain-error-to-http-status/cmd/demo
-cd go-solutions/03-control-flow/04-type-switch/08-domain-error-to-http-status
-```
-
 ## Why not a bare type switch here
 
 The tempting shape is a type switch on the error:

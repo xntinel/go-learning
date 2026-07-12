@@ -31,13 +31,6 @@ logenc/                      independent module: example.com/logenc
   case listed first; `nil` renders a stable token, not a panic.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/04-type-switch/06-slog-attr-encoder/cmd/demo
-cd go-solutions/03-control-flow/04-type-switch/06-slog-attr-encoder
-```
-
 ## Concrete cases first, interface cases last, and why order is the design
 
 A logfmt encoder needs one canonical rendering per value shape so logs are

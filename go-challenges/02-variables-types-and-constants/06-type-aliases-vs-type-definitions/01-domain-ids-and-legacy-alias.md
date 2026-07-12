@@ -31,8 +31,6 @@ identity/                 independent module: example.com/identity
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/02-variables-types-and-constants/06-type-aliases-vs-type-definitions/01-domain-ids-and-legacy-alias/cmd/demo
-cd go-solutions/02-variables-types-and-constants/06-type-aliases-vs-type-definitions/01-domain-ids-and-legacy-alias
 go mod edit -go=1.24
 ```
 

@@ -27,13 +27,6 @@ Implement: a `Severity` enum (`SeverityUnknown`, `SeverityBug`, `SeverityApplica
 Test: trigger each real runtime panic (nil deref, index out of range, nil map write, bad type assertion) in a recovered closure and assert `SeverityBug`; assert `panic(errors.New(...))` is `SeverityApplication` and unwraps; assert `panic(nil)` recovers as `*runtime.PanicNilError` and is `SeverityBug`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/08-panic-and-recover/04-classify-runtime-panics/cmd/demo
-cd go-solutions/03-control-flow/08-panic-and-recover/04-classify-runtime-panics
-```
-
 ### The three severities and why they differ
 
 `runtime.Error` is an interface: it is `error` plus a marker method

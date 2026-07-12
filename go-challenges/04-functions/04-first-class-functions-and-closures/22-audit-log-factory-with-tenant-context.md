@@ -30,8 +30,6 @@ auditlog/                  independent module: example.com/audit-log-tenant-cont
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/04-first-class-functions-and-closures/22-audit-log-factory-with-tenant-context/cmd/demo
-cd go-solutions/04-functions/04-first-class-functions-and-closures/22-audit-log-factory-with-tenant-context
 go mod edit -go=1.24
 ```
 

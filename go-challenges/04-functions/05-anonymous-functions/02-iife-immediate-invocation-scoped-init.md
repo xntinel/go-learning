@@ -25,13 +25,6 @@ originset/                    module example.com/originset
 - Test: the set has exactly the expected keys; mutating the source slice leaves it unchanged; `OriginSet` returns an independent copy; an invalid or duplicate entry makes `MustNew` panic.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/05-anonymous-functions/02-iife-immediate-invocation-scoped-init/cmd/demo
-cd go-solutions/04-functions/05-anonymous-functions/02-iife-immediate-invocation-scoped-init
-```
-
 ### IIFE for value, helper for error, IIFE for panic
 
 Three ways to assemble the set sit side by side so you can see when each fits.

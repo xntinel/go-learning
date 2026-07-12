@@ -26,13 +26,6 @@ cancelbox/                 independent module: example.com/cancelbox
 - Test: a child cancels when its parent does; `Reason` flips on cancel; a double cancel keeps `ctx.Err()` at `context.Canceled`; no goroutine leaks after teardown.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/04-context-withcancel/03-idempotent-cancel-no-leak/cmd/demo
-cd go-solutions/14-select-and-context/04-context-withcancel/03-idempotent-cancel-no-leak
-```
-
 ### Why idempotent cancel and leak-freedom are the invariants that matter
 
 `context.WithCancel` makes two promises that production code leans on constantly,

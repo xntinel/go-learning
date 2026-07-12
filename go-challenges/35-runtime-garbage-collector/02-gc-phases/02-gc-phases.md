@@ -44,13 +44,6 @@ After mark termination, the pacer sets the next trigger: the heap size at which 
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/35-runtime-garbage-collector/02-gc-phases/02-gc-phases/cmd/demo
-cd go-solutions/35-runtime-garbage-collector/02-gc-phases/02-gc-phases
-```
-
 ### Exercise 1: Capture Pause Statistics
 
 Create `phases.go`:

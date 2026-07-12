@@ -23,12 +23,6 @@ booking_test.go      pin the step order, both rollback paths, the reverse-order
 - Test: `booking_test.go` records the exact order of side effects and asserts the happy path, payment-failure rollback, hotel-full rollback, save-failure rollback (charge refunded), reverse compensation order, invalid-request rejection, and the nil guard.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/24-design-patterns-in-go/06-service-layer-pattern/04-booking-saga/cmd/demo && cd go-solutions/24-design-patterns-in-go/06-service-layer-pattern/04-booking-saga
-```
-
 ### Why a saga, and how compensation differs from a rollback
 
 A database transaction gives you atomicity for free: write, write, write, then `COMMIT` or `ROLLBACK`, and the engine guarantees all-or-nothing. The moment a use case spans systems that do not enlist in one transaction — a flight inventory, a hotel inventory, and a payment processor reachable only over HTTP — that guarantee is gone. You cannot `ROLLBACK` a credit-card charge; you can only issue a refund. This is the saga pattern: model the use case as an ordered list of steps, give each step an explicit *compensating action* that semantically undoes it, and on any failure run the compensations for the steps that already succeeded, in reverse order.

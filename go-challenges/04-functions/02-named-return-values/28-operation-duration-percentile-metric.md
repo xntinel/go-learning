@@ -28,8 +28,6 @@ metric/                     independent module: example.com/metric
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/02-named-return-values/28-operation-duration-percentile-metric/cmd/demo
-cd go-solutions/04-functions/02-named-return-values/28-operation-duration-percentile-metric
 go mod edit -go=1.24
 ```
 

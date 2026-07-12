@@ -27,13 +27,6 @@ Implement: a `RequestBuilder` with pointer-receiver setters `Method`, `URL`, `He
 Test: the chain produces a `*http.Request` with the right method, URL, headers, and body; `Build` rejects a missing method or URL; each setter returns the same `*RequestBuilder` (identity), so chaining shares one struct.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/05-pointers-to-structs/07-request-builder-pointer-receiver/cmd/demo
-cd go-solutions/09-pointers/05-pointers-to-structs/07-request-builder-pointer-receiver
-```
-
 ### Why the receiver must be a pointer
 
 A fluent (chained) API returns the receiver from each method so the next call

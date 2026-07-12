@@ -25,13 +25,6 @@ multierr/                  independent module: example.com/multierr
 - Test: populate with wrapped sentinels — `errors.Is` finds each and `errors.As` extracts a typed member through the custom `Unwrap() []error`; a zero-member `MultiError` returns nil from `Err()`; direct `Errors`-slice access yields the members.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/07-multiple-error-returns/07-custom-multierror-unwrap-slice/cmd/demo
-cd go-solutions/10-error-handling/07-multiple-error-returns/07-custom-multierror-unwrap-slice
-```
-
 ### Why the `Unwrap() []error` method is the whole trick
 
 Since Go 1.20, `errors.Is` and `errors.As` walk a tree of errors, following any

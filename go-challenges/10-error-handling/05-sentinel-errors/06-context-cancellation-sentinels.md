@@ -26,13 +26,6 @@ worker/                       independent module: example.com/worker
 - Test: cancel the context (assert `context.Canceled`, `Timeouts` untouched); let a deadline elapse (assert `context.DeadlineExceeded`, `Timeouts`==1); a wrapped deadline error (assert `errors.Is` still classifies where `==` fails).
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/05-sentinel-errors/06-context-cancellation-sentinels/cmd/demo
-cd go-solutions/10-error-handling/05-sentinel-errors/06-context-cancellation-sentinels
-```
-
 ### Two sentinels, two operational meanings
 
 When a unit of work stops early, *why* it stopped decides how the system should

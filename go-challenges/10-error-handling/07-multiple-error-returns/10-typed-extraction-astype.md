@@ -27,13 +27,6 @@ apierr/                    independent module: example.com/apierr
 - Test: an aggregate with a `*FieldError` yields 400; with a `*RetryableError` yields 503; with neither yields 500; `errors.As` returns the first `*FieldError` when several are present, and `Flatten` recovers all of them. Use `httptest`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/07-multiple-error-returns/10-typed-extraction-astype/cmd/demo
-cd go-solutions/10-error-handling/07-multiple-error-returns/10-typed-extraction-astype
-```
-
 ### From an aggregate to a status code
 
 The domain layer returns a joined error — maybe a validation `Join` of `*FieldError`s,

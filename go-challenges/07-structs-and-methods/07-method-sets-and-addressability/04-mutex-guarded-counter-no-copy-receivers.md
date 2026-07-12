@@ -27,13 +27,6 @@ safecounter/                   independent module: example.com/safecounter
 - Test: N goroutines incrementing a shared `*SafeCounter`, asserting the exact total under `-race`; a documented illustrative block showing the value-receiver method that `go vet` flags.
 - Verify: `go vet ./...` (must be clean on the correct code), `go test -count=1 -race ./...`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/07-method-sets-and-addressability/04-mutex-guarded-counter-no-copy-receivers/cmd/demo
-cd go-solutions/07-structs-and-methods/07-method-sets-and-addressability/04-mutex-guarded-counter-no-copy-receivers
-```
-
 ### Why a mutex forces pointer receivers
 
 A `sync.Mutex` is a value that holds lock state. Copy the struct that embeds it

@@ -22,12 +22,6 @@ wire_test.go         error/SQLSTATE, CommandTag table, RowDescription/DataRow, P
 - Test: `wire_test.go` checks the SQLSTATE survives in an `ErrorResponse`, the command tags match Postgres, a NULL column encodes as length `-1`, and `DecodeBind` both consumes the trailing result-format codes and rejects a truncated payload.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/09-network-protocol/02-query-and-error-responses/cmd/demo && cd go-solutions/39-capstone-database-engine/09-network-protocol/02-query-and-error-responses
-```
-
 ### Encoding a result set
 
 Three messages carry a result. `RowDescription` (type `'T'`) names the columns: an `int16` count, then per column a null-terminated name, a table OID, a column attribute number, the type OID, the type size, a type modifier, and a format code. This lesson sends text format (format code `0`) for every column, which is the only format a client requires. `DataRow` (type `'D'`) carries one row: an `int16` value count, then per value an `int32` length followed by that many bytes. The length `-1` (`0xFFFFFFFF`) is the SQL NULL sentinel and is followed by zero bytes; this is the single most important detail in the message, because a zero-length value is the empty string, not NULL, and clients tell them apart. Representing a value as `*string` makes the distinction structural: a `nil` pointer is NULL, a pointer to `""` is the empty string. `CommandComplete` (type `'C'`) carries the tag — `"SELECT 3"`, `"INSERT 0 1"`, `"UPDATE 5"` — as a single null-terminated string. INSERT's tag has a `0` in the second field, a legacy slot for the inserted-row OID.

@@ -88,14 +88,6 @@ Steps 4 and 5 must happen in quick succession to minimize the window during whic
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/38-capstone-container-runtime/04-cgroups-v2-cpu-memory/04-cgroups-v2-cpu-memory/cgroup
-mkdir -p go-solutions/38-capstone-container-runtime/04-cgroups-v2-cpu-memory/04-cgroups-v2-cpu-memory/cmd/demo
-cd go-solutions/38-capstone-container-runtime/04-cgroups-v2-cpu-memory/04-cgroups-v2-cpu-memory
-```
-
 This is a library package verified with `go test`. The CLI in `cmd/demo` requires root on Linux; the tests run on any platform using temp directories to simulate the cgroup filesystem.
 
 ### Exercise 1: The cgroup Package

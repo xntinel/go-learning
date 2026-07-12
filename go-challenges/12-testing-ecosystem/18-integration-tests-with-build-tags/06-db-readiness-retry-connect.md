@@ -27,13 +27,6 @@ dbready/                   independent module: example.com/dbready
 - Test: a fake that fails N times then succeeds (assert bounded attempts, no infinite loop); a fake that never succeeds (assert `context.DeadlineExceeded`); the real DSN in the integration build.
 - Verify: the default build tests the backoff/deadline logic with fakes; the integration test drives `waitForDB` against a real `*sql.DB`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/18-integration-tests-with-build-tags/06-db-readiness-retry-connect/cmd/demo
-cd go-solutions/12-testing-ecosystem/18-integration-tests-with-build-tags/06-db-readiness-retry-connect
-```
-
 ### Why not a sleep, and why not an unbounded loop
 
 The two wrong fixes are worth naming because both are common. A fixed

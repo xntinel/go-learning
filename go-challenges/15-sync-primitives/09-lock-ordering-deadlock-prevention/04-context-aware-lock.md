@@ -32,13 +32,6 @@ ctxlock/                   independent module: example.com/ctxlock
 - Test: acquire-when-free, deadline expiry while held (elapsed bounded), release-then-reacquire, panic on unheld release, handler 200/503 paths via `httptest`, and a guarded-counter mutual-exclusion test under `-race`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/09-lock-ordering-deadlock-prevention/04-context-aware-lock/cmd/demo
-cd go-solutions/15-sync-primitives/09-lock-ordering-deadlock-prevention/04-context-aware-lock
-```
-
 ### Preemption: the Coffman condition sync.Mutex cannot break
 
 Ordering (exercise 1) prevents cycles among locks that follow the discipline.

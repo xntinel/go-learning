@@ -28,13 +28,6 @@ Implement: `DecodeFrames(r io.Reader) ([][]byte, error)` reading `uint32` big-en
 Test: identical decoded frames from a plain reader and from `iotest.DataErrReader`; a truncated final frame yields `io.ErrUnexpectedEOF`; a clean end yields no error.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/10-testing-readers-with-iotest/03-dataerr-eof-with-final-data/cmd/demo
-cd go-solutions/12-testing-ecosystem/10-testing-readers-with-iotest/03-dataerr-eof-with-final-data
-```
-
 ### The EOF-with-data trap, and why io.ReadFull defuses it
 
 Consider the naive read loop that reads the length header, then does

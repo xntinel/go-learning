@@ -20,12 +20,6 @@ repository_test.go       runRepositoryContract shared suite + accessor + email-r
 - Test: `runRepositoryContract` exercises the full contract; additional tests cover the accessors and that `Update` keeps the email index in sync.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/24-design-patterns-in-go/05-repository-pattern/01-user-repository/cmd/demo && cd go-solutions/24-design-patterns-in-go/05-repository-pattern/01-user-repository
-```
-
 ### Why an interface, two indexes, and domain sentinels
 
 The interface is the contract the domain sees, and it is deliberately narrow: six methods that read like operations on a collection. `GetByEmail` is present alongside `GetByID` because email is the natural lookup key for a user and the domain genuinely needs it; everything else a caller might want (querying by other fields) belongs to the specification layer in the next exercise, not to a forest of `GetByX` methods here.

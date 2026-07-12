@@ -34,8 +34,6 @@ state-machine-event-processor/  independent module: example.com/state-machine-ev
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/04-type-switch/21-state-machine-event-processor/cmd/demo
-cd go-solutions/03-control-flow/04-type-switch/21-state-machine-event-processor
 go mod edit -go=1.24
 ```
 

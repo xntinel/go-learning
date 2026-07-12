@@ -26,13 +26,6 @@ Implement: `Merge[T any](chans ...<-chan T) <-chan T` — one forwarding gorouti
 Test: merging three producers yields the union of their values (order-independent, compared as a count map); merging zero channels yields an immediately-closed channel; `-race` verifies the single-close discipline.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/06-ranging-over-channels/03-fan-in-merge/cmd/demo
-cd go-solutions/13-goroutines-and-channels/06-ranging-over-channels/03-fan-in-merge
-```
-
 ### The single-close discipline
 
 The naive fan-in — have each forwarding goroutine `close(out)` when its input ends

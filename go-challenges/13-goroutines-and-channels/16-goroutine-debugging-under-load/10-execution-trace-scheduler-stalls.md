@@ -23,13 +23,6 @@ tracing/                  independent module: example.com/tracing
 - Test: a captured trace is non-empty and begins with the `go 1.` magic header; starting a second trace while one is running returns `ErrTracing`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/10-execution-trace-scheduler-stalls/cmd/demo
-cd go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/10-execution-trace-scheduler-stalls
-```
-
 ### When a trace beats a profile, and the Start/Stop contract
 
 A profile is a statistical summary: "5% of samples were in this function." A trace is

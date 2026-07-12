@@ -90,13 +90,6 @@ The kernel pushes unsolicited messages to the socket whenever matching events oc
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/47-capstone-systems-and-kernel/03-netlink-socket/03-netlink-socket/cmd/demo
-cd go-solutions/47-capstone-systems-and-kernel/03-netlink-socket/03-netlink-socket
-```
-
 All files carry `//go:build linux`.
 
 ### Exercise 1: Core Connection — netlink.go

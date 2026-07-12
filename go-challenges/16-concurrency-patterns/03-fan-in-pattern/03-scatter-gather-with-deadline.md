@@ -19,12 +19,6 @@ scattergather_test.go all-complete, abandon-slow, per-source error, no-leak late
 - Test: all searches complete before a generous deadline; slow searches are abandoned and counted as timed out under a short deadline; a per-source error is collected separately; an abandoned slow goroutine can still finish its send after `Gather` returns (no leak).
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/16-concurrency-patterns/03-fan-in-pattern/03-scatter-gather-with-deadline/cmd/demo && cd go-solutions/16-concurrency-patterns/03-fan-in-pattern/03-scatter-gather-with-deadline
-```
-
 ### The gather loop, the deadline, and why the sink must be buffered
 
 `Gather` scatters first: it launches one goroutine per search, each calling `search(ctx)` and sending its outcome — a result or an error — onto a shared channel. Then it gathers in a loop that runs at most once per search, each iteration selecting between receiving the next outcome and `ctx.Done()`. As long as outcomes keep arriving before the deadline, the loop accumulates them. The moment `ctx.Done()` fires, the loop stops and returns what it has, computing the number of unfinished sources as the total minus what was gathered minus what errored. The caller gets three things: the results that made it, a count of how many timed out, and the per-source errors.

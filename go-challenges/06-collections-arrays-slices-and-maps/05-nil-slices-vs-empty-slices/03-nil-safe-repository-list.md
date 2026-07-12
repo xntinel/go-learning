@@ -28,13 +28,6 @@ repo→handler→JSON round trip yields `"users":[]`; populated results preserve
 order; a regression guard against returning nil.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/03-nil-safe-repository-list/repo go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/03-nil-safe-repository-list/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/03-nil-safe-repository-list
-```
-
 ### Normalize once, at the boundary
 
 The natural way to write a filter is to declare a result slice and append the

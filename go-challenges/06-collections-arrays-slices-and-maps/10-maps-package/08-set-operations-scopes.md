@@ -27,13 +27,6 @@ Implement: `Set = map[string]struct{}`; `Union`, `Intersection`, `Difference`; `
 Test: union/intersection/difference including empty and disjoint sets; operands are never mutated; `HasAllScopes` returns the sorted missing set; nil sets behave as empty.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/08-set-operations-scopes/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/08-set-operations-scopes
-```
-
 ## Why struct{} sets, and how the algebra composes
 
 When you only need to answer "is this element present," the idiomatic Go set is

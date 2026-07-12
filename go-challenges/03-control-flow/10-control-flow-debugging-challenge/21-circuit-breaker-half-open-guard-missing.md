@@ -32,11 +32,6 @@ breaker/                    independent module: example.com/circuit-breaker-half
 - Test: a table over every state transition (closed→open, open rejects before cooldown, open→half-open, half-open→closed, half-open→open), plus a concurrency test racing many goroutines' `Allow()` calls against a half-open breaker and asserting exactly one is admitted.
 - Verify: `go test -count=1 -race ./...`.
 
-```bash
-mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/21-circuit-breaker-half-open-guard-missing/cmd/demo
-cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/21-circuit-breaker-half-open-guard-missing
-```
-
 ### Why half-open needs its own guard, not just a state
 
 The tempting, incomplete version of `Allow` treats `HalfOpen` as "just

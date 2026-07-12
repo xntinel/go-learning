@@ -26,13 +26,6 @@ batch/                     independent module: example.com/batch
 - Test: every input yields exactly one result, results map back to the correct index, injected errors land on the right items while others succeed, and the workers all exit after the input channel drains.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/13-goroutine-pools/02-fan-out-fan-in-results/cmd/demo
-cd go-solutions/13-goroutines-and-channels/13-goroutine-pools/02-fan-out-fan-in-results
-```
-
 ### The index is the correlation key
 
 When you fan a slice out to workers, the outputs come back in whatever order the

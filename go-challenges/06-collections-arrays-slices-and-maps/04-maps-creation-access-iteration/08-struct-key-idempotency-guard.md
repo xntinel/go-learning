@@ -27,13 +27,6 @@ idemguard/                 independent module: example.com/idemguard
 - Test: first delivery processes and records, a duplicate returns the cached result without reprocessing (side-effect counter unchanged), a different tenant with the same request ID is distinct, struct keys compare with `==`, and concurrent duplicate delivery is race-free.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/08-struct-key-idempotency-guard/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/08-struct-key-idempotency-guard
-```
-
 ### Why a struct key, and the comparability rule
 
 The dedup question is "have I already processed this (tenant, requestID) pair?".

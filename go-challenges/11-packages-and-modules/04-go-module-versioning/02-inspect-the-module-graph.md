@@ -30,8 +30,6 @@ billing/                    independent module: example.com/billing
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/11-packages-and-modules/04-go-module-versioning/02-inspect-the-module-graph/buildaudit go-solutions/11-packages-and-modules/04-go-module-versioning/02-inspect-the-module-graph/cmd/demo
-cd go-solutions/11-packages-and-modules/04-go-module-versioning/02-inspect-the-module-graph
 go mod edit -go=1.26
 ```
 

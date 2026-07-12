@@ -92,13 +92,6 @@ OS error (e.g. `EINTR`) is treated as a timeout. Always branch on the error kind
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/33-tcp-udp-and-networking/04-connection-timeouts-and-deadlines/04-connection-timeouts-and-deadlines/cmd/demo
-cd go-solutions/33-tcp-udp-and-networking/04-connection-timeouts-and-deadlines/04-connection-timeouts-and-deadlines
-```
-
 This is a library with a `cmd/demo` program. Verify with `go test`, not `go run`.
 
 ### Exercise 1: Core Types and IsTimeout

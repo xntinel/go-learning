@@ -22,13 +22,6 @@ Implement: `Batch[T any](in <-chan T, maxSize int, interval time.Duration, flush
 Test: burst over `maxSize` gives full batches; slow trickle gives a time-flush of exactly the buffered items; close flushes the partial; 500 items across many flushes are neither dropped nor duplicated.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/03-timeout-with-select/06-batch-flush-on-timer/cmd/demo
-cd go-solutions/14-select-and-context/03-timeout-with-select/06-batch-flush-on-timer
-```
-
 ### Two triggers, one timer, one copy
 
 `Batch` runs a loop with a `select` over two cases: an item arrived on `in`, or the

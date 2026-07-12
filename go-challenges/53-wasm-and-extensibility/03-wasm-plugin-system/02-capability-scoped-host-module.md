@@ -32,8 +32,6 @@ hostapi/                    independent module: example.com/hostapi
 Set up the module. wazero requires a recent toolchain, so add the dependency:
 
 ```bash
-mkdir -p go-solutions/53-wasm-and-extensibility/03-wasm-plugin-system/02-capability-scoped-host-module/cmd/demo
-cd go-solutions/53-wasm-and-extensibility/03-wasm-plugin-system/02-capability-scoped-host-module
 go get github.com/tetratelabs/wazero@latest
 ```
 

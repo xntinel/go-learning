@@ -23,13 +23,6 @@ notifier_test.go                  contract tests: fan-out, error wrapping, senti
 - Test: round-trip fan-out, an empty-recipient table across all three channels, `errors.As` reaching `*twilio.Error`, `errors.Is` reaching the Slack and SendGrid sentinels, and the joined partial-failure path.
 - Verify: `go test -race ./...` and `go run ./cmd/demo`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/24-design-patterns-in-go/07-adapter-pattern/01-notifier-adapters/thirdparty/sendgrid go-solutions/24-design-patterns-in-go/07-adapter-pattern/01-notifier-adapters/thirdparty/twilio go-solutions/24-design-patterns-in-go/07-adapter-pattern/01-notifier-adapters/thirdparty/slack go-solutions/24-design-patterns-in-go/07-adapter-pattern/01-notifier-adapters/cmd/demo
-cd go-solutions/24-design-patterns-in-go/07-adapter-pattern/01-notifier-adapters
-```
-
 ### Three incompatible SDKs, on purpose
 
 Real vendors do not agree on anything, and the simulated SDKs reproduce three genuinely different failure models so the adapters have something real to reconcile.

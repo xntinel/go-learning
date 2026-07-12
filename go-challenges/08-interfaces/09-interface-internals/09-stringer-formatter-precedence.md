@@ -27,8 +27,6 @@ apikey/                     independent module: example.com/apikey
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/08-interfaces/09-interface-internals/09-stringer-formatter-precedence/cmd/demo
-cd go-solutions/08-interfaces/09-interface-internals/09-stringer-formatter-precedence
 go mod edit -go=1.26
 ```
 

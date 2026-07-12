@@ -29,13 +29,6 @@ listapi/                   independent module: example.com/listapi
   a second test pins the exact ordered JSON.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/10-iteration-order-guardrail/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/10-iteration-order-guardrail
-```
-
 ### The bug, and why hand-testing misses it
 
 Here is the handler almost everyone writes first. It ranges the store map directly into

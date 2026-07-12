@@ -58,8 +58,6 @@ QUIC connections are identified by a connection ID chosen by the endpoints, not 
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/33-tcp-udp-and-networking/24-quic-transport-protocol/24-quic-transport-protocol/cmd/demo
-cd go-solutions/33-tcp-udp-and-networking/24-quic-transport-protocol/24-quic-transport-protocol
 go get github.com/quic-go/quic-go@v0.60.0
 ```
 

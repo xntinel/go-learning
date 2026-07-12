@@ -19,12 +19,6 @@ btree_test.go        delete present key, delete missing key, key-too-long, bulk 
 - Test: `btree_test.go` deletes a present key, reports a missing key as not deleted, rejects an oversized key, and deletes half of two hundred keys then confirms the survivors are still found.
 - Verify: `go test -run 'TestDelete' -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/02-btree-index/04-delete/cmd/demo && cd go-solutions/39-capstone-database-engine/02-btree-index/04-delete
-```
-
 ### Why delete is the asymmetric, harder operation
 
 An insert only ever makes a node fuller, and its single failure mode — overflow — is repaired by a split that propagates strictly upward and monotonically. Delete has none of that comfort. Removing a key can drop a node *below* the minimum fill, and restoring the invariant is not a local operation: it must consult an adjacent sibling, choose between two different repairs (borrow or merge), and possibly cascade a merge all the way to the root, even shrinking the tree's height. That is a lot of machinery, and a great deal of production code defers it: SQLite, for one, does not aggressively rebalance on delete; it tolerates underfull pages and reuses their free space later.

@@ -25,13 +25,6 @@ Implement: `Consume(ctx context.Context, ch <-chan Item) ([]Item, bool)` that ra
 Test: a fast closed channel returns all items with `finished == true` before the deadline; a slow producer returns partial items with `finished == false` and `ctx.Err() == context.DeadlineExceeded`; a zero timeout returns immediately empty; `-race` clean with no leaked goroutine.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/06-ranging-over-channels/10-bounded-window-consumer/cmd/demo
-cd go-solutions/13-goroutines-and-channels/06-ranging-over-channels/10-bounded-window-consumer
-```
-
 ### Finished versus timed-out: the boolean matters
 
 The two ways this loop can end are semantically different, and the caller needs to

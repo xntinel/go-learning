@@ -74,14 +74,6 @@ When `doOnNode` returns an error, `doWithRetry` walks clockwise to the next repl
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/45-capstone-distributed-key-value-store/07-client-protocol/07-client-protocol/kvclient
-mkdir -p go-solutions/45-capstone-distributed-key-value-store/07-client-protocol/07-client-protocol/cmd/demo
-cd go-solutions/45-capstone-distributed-key-value-store/07-client-protocol/07-client-protocol
-```
-
 ### Exercise 1: Sentinel Errors
 
 Create `kvclient/errors.go`. Every exported error in the package is a sentinel so callers can use `errors.Is` rather than matching strings.

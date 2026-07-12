@@ -19,12 +19,6 @@ complete_test.go   prefix match, dedup on Add, no-match, empty prefix returns al
 - Test: `complete_test.go` checks prefix matching, duplicate-skipping `Add`, the no-match case, and that an empty prefix returns every stored word in insertion order.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/40-capstone-language-interpreter/07-repl-line-editing/03-tab-completion/cmd/demo && cd go-solutions/40-capstone-language-interpreter/07-repl-line-editing/03-tab-completion
-```
-
 ### Interface first, implementation second
 
 `Completer` is a one-method interface: `Complete(prefix string) []string`. Defining it first, before any concrete type, is the whole point — it states the contract the REPL programs against and leaves the source of candidates open. `BasicCompleter` is the default: a flat slice of words (the language keywords, the built-in function names, and any identifiers the session has defined so far) returned in insertion order. `NewBasicCompleter` seeds it from a slice, copying so the caller cannot mutate the completer's storage out from under it. `Add` appends a new word but skips it if already present, so registering an identifier on every `let` does not grow the list with duplicates.

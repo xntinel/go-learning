@@ -27,8 +27,6 @@ metricsfmt/                independent module: example.com/metricsfmt
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/06-string-formatting-with-fmt/07-human-readable-metrics/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/06-string-formatting-with-fmt/07-human-readable-metrics
 go mod edit -go=1.24
 ```
 

@@ -26,13 +26,6 @@ repo/                         independent module: example.com/repo
 - Test: a `t.Run` subtest table asserting `errors.Is(err, want)` for every failure path, a happy round-trip, and a negative test proving identity is precise.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/05-sentinel-errors/01-sentinel-repository/cmd/demo
-cd go-solutions/10-error-handling/05-sentinel-errors/01-sentinel-repository
-```
-
 ### Why wrapped sentinels, not bare strings
 
 Every failure this repository can report is an *expected* one that a caller will

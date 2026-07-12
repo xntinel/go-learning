@@ -20,12 +20,6 @@ replayable-source/
 - Test: records read but not committed are redelivered on the next `Open`; a stale commit never rewinds the frontier; a fully-committed log replays nothing.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/43-capstone-stream-processing-engine/01-source-connectors/06-replayable-source/cmd/demo && cd go-solutions/43-capstone-stream-processing-engine/01-source-connectors/06-replayable-source
-```
-
 ### An offset on every record
 
 This module's `Record` adds one field the others do not have: `Offset`, the record's position in the durable log. The offset is the entire basis of replay — it is the small piece of state that, together with the log, determines exactly what to deliver next after a restart. `Metrics.BacklogSize` reports how many records remain uncommitted, the lag a monitoring system watches.

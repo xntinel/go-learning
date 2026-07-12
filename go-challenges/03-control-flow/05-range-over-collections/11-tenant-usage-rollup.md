@@ -29,8 +29,6 @@ rollup/                    independent module: example.com/tenant-usage-rollup
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/05-range-over-collections/11-tenant-usage-rollup
-cd go-solutions/03-control-flow/05-range-over-collections/11-tenant-usage-rollup
 go mod edit -go=1.24
 ```
 

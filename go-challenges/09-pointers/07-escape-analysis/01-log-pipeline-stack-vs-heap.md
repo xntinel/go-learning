@@ -31,13 +31,6 @@ Test: field initialization, lazy `Fields` map init, `BuildStack` value semantics
 Verify: `go test -count=1 -race ./...`, then observe the escape decisions with
 `go build -gcflags=-m ./... 2>&1 | grep -E 'moved to heap|does not escape'`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/07-escape-analysis/01-log-pipeline-stack-vs-heap/cmd/demo
-cd go-solutions/09-pointers/07-escape-analysis/01-log-pipeline-stack-vs-heap
-```
-
 ### The two constructors, and why they differ
 
 `BuildStack` builds an `Entry` and returns it by value. Its lifetime is bounded by

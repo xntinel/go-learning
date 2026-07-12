@@ -29,9 +29,7 @@ userapi/                           module: example.com/userapi
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/11-packages-and-modules/01-package-declaration-and-imports/04-import-alias-versioned-apis/api/v1/user go-solutions/11-packages-and-modules/01-package-declaration-and-imports/04-import-alias-versioned-apis/api/v2/user \
   go-solutions/11-packages-and-modules/01-package-declaration-and-imports/04-import-alias-versioned-apis/gateway go-solutions/11-packages-and-modules/01-package-declaration-and-imports/04-import-alias-versioned-apis/cmd/demo
-cd go-solutions/11-packages-and-modules/01-package-declaration-and-imports/04-import-alias-versioned-apis
 go mod edit -go=1.26
 ```
 

@@ -32,8 +32,6 @@ migrations/                        module: example.com/migrations
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/11-packages-and-modules/01-package-declaration-and-imports/08-embed-migrations-fs/migrations/sql go-solutions/11-packages-and-modules/01-package-declaration-and-imports/08-embed-migrations-fs/cmd/demo
-cd go-solutions/11-packages-and-modules/01-package-declaration-and-imports/08-embed-migrations-fs
 go mod edit -go=1.26
 ```
 

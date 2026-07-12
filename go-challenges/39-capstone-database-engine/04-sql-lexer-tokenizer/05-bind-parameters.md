@@ -22,12 +22,6 @@ params_test.go       every form, the cast operator, and the sentinel-error cases
 - Test: `params_test.go` covers `?`, `$1`, `::`, `:name`, both dollar-quote forms, scanning at an offset, and the `ErrNotParameter`/`ErrEmptyNamedParam`/`ErrUnterminatedDollar` errors.
 - Verify: `go test -run 'TestScanParameter|ExampleScanParameter' -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/04-sql-lexer-tokenizer/05-bind-parameters/cmd/demo && cd go-solutions/39-capstone-database-engine/04-sql-lexer-tokenizer/05-bind-parameters
-```
-
 ### Why an additive const block and a separate scanner
 
 The base token constants in `token.go` are produced by one `iota` run, and any code that switched on them — the parser in the next lesson included — is sensitive to their exact values. So the new parameter tokens cannot be spliced into that block without renumbering everything after the splice point. The idiomatic Go answer is a fresh `const` block whose first line is `TokenPositional TokenType = iota + 1000`: a new block restarts `iota` at 0, and the `+1000` offset lifts the whole group clear of the base set, which has well under a hundred members. The base tokens keep their values, the parameter tokens get their own contiguous range, and the two never collide. This is the same additive discipline a real engine uses to extend a token enum across versions without breaking on-disk or cross-module assumptions.

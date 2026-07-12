@@ -29,13 +29,6 @@ set/                       independent module: example.com/set
   set returns false; commutativity where it applies; both string and int instantiations.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/04-generic-set-membership/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/04-generic-set-membership
-```
-
 ### Why struct{} and not bool
 
 A set only needs to record *presence*, so the value type is irrelevant — but it is not

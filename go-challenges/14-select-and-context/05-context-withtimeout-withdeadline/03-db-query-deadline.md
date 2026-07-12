@@ -28,13 +28,6 @@ user-repo/                           independent module: example.com/userrepo
 - Test: a slow fake that blocks on `ctx.Done()` yields `ErrQueryTimeout` (with `DeadlineExceeded` underneath); a fast fake returns the row; a missing id yields `ErrUserNotFound`; rows are always closed.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/05-context-withtimeout-withdeadline/03-db-query-deadline/cmd/demo
-cd go-solutions/14-select-and-context/05-context-withtimeout-withdeadline/03-db-query-deadline
-```
-
 ### Why an interface instead of *sql.DB
 
 The real method would call `db.QueryContext` on a `*sql.DB`, but a lesson that

@@ -23,11 +23,6 @@ chunk/                     module example.com/chunk
 - Test: 7 items with `size=3` must produce 3 batches, the last one holding exactly the 1 leftover item, and the total item count across all batches must equal `len(items)`.
 - Verify: `go test -count=1 ./...`.
 
-```bash
-mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/11-batch-chunking-off-by-one-drops-tail
-cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/11-batch-chunking-off-by-one-drops-tail
-```
-
 ### The artifact and the planted bug
 
 ```go

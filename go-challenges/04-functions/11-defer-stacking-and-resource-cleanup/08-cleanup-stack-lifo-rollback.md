@@ -25,13 +25,6 @@ rollback/                   independent module: example.com/rollback
 - Test: step 3 of 4 fails and steps 2 then 1 roll back in reverse while step 4 never runs; all succeed and nothing rolls back; a rollback that itself errors is surfaced via `errors.Join` while the remaining rollbacks still run; a panic mid-setup triggers full rollback then re-panic.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/08-cleanup-stack-lifo-rollback/rollback go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/08-cleanup-stack-lifo-rollback/cmd/demo
-cd go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/08-cleanup-stack-lifo-rollback
-```
-
 ### Why not just use defers
 
 A chain of `defer` statements is the right tool when the set of things to undo is

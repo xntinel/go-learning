@@ -27,8 +27,6 @@ statdelta/                  independent module: example.com/statdelta
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/26-observable-stat-snapshot-defer/statdelta go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/26-observable-stat-snapshot-defer/cmd/demo
-cd go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/26-observable-stat-snapshot-defer
 go mod edit -go=1.24
 ```
 

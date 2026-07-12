@@ -28,13 +28,6 @@ utf8guard/                independent module: example.com/utf8guard
 - Test: hand-built invalid sequences (lone continuation `0x80`, truncated lead `0xC3`) fail `utf8.ValidString`; strict validate returns an error wrapping `ErrInvalidUTF8` with the line; repair produces valid UTF-8 with U+FFFD; valid input passes through byte-identical.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/10-building-a-text-processing-pipeline/04-utf8-validation-and-repair/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/10-building-a-text-processing-pipeline/04-utf8-validation-and-repair
-```
-
 ### Reject versus repair, and why validity is a boundary invariant
 
 Downstream systems assume UTF-8. `encoding/json` will not faithfully re-encode

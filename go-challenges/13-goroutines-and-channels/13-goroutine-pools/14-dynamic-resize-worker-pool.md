@@ -32,8 +32,6 @@ elasticpool/                 independent module: example.com/elasticpool
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/13-goroutines-and-channels/13-goroutine-pools/14-dynamic-resize-worker-pool/cmd/demo
-cd go-solutions/13-goroutines-and-channels/13-goroutine-pools/14-dynamic-resize-worker-pool
 go get go.uber.org/goleak
 go mod tidy
 ```

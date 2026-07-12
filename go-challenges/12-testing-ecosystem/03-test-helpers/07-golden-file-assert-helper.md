@@ -29,13 +29,6 @@ goldenhelper/                independent module: example.com/goldenhelper
 - Test: a package-level `-update` flag; `assertGolden(t, name, got)` that compares against `testdata/<name>.golden` (or rewrites it under `-update`); a positive subtest that matches and a negative one that mutates the bytes and asserts a mismatch is detected.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/03-test-helpers/07-golden-file-assert-helper/cmd/demo go-solutions/12-testing-ecosystem/03-test-helpers/07-golden-file-assert-helper/testdata
-cd go-solutions/12-testing-ecosystem/03-test-helpers/07-golden-file-assert-helper
-```
-
 ### Why `-update` and `testdata/`
 
 A golden helper has two jobs that must not be conflated. On a normal `go test` run

@@ -18,13 +18,6 @@ If a test must touch the default logger, restore it with `t.Cleanup`. Prefer pac
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/21-structured-logging-with-slog/09-replacing-global-logger-patterns/09-replacing-global-logger-patterns
-cd go-solutions/21-structured-logging-with-slog/09-replacing-global-logger-patterns/09-replacing-global-logger-patterns
-```
-
 Edit `go.mod`:
 
 ```go

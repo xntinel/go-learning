@@ -30,8 +30,6 @@ jobqueue/                  independent module: example.com/job-queue-backpressur
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/04-first-class-functions-and-closures/17-async-job-queue-backpressure-gate/cmd/demo
-cd go-solutions/04-functions/04-first-class-functions-and-closures/17-async-job-queue-backpressure-gate
 go mod edit -go=1.24
 ```
 

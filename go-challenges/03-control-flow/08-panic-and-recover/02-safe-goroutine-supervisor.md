@@ -28,13 +28,6 @@ Implement: `SafeGo(ctx, name, fn) <-chan Result`, a `Pool` with `Go(ctx, name, f
 Test: a table asserting `panic(errors.New(...))` yields a `%w`-wrapped error (`errors.Is` passes), `panic("str")` yields a formatted error, a normal return yields its error/nil; a concurrency test where one of N workers panics and the other N-1 still complete and `Pool.Wait` returns all N results.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/08-panic-and-recover/02-safe-goroutine-supervisor/cmd/demo
-cd go-solutions/03-control-flow/08-panic-and-recover/02-safe-goroutine-supervisor
-```
-
 ### The recover must live inside the spawned goroutine
 
 The defining rule of this module is goroutine scope: the deferred `recover` has

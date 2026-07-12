@@ -25,11 +25,6 @@ page/                       module example.com/page
 - Test: build a 10-key map, request page 0 and page 1, and assert each equals the expected sorted slice with no key appearing on both pages.
 - Verify: `go test -count=1 ./...`.
 
-```bash
-mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/13-range-over-map-assumed-ordered-pagination
-cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/13-range-over-map-assumed-ordered-pagination
-```
-
 ### The artifact and the planted bug
 
 ```go

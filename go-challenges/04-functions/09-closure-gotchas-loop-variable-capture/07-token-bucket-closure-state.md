@@ -27,8 +27,6 @@ ratelimit/                   independent module: example.com/ratelimit
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/07-token-bucket-closure-state/cmd/demo
-cd go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/07-token-bucket-closure-state
 go mod edit -go=1.26
 ```
 

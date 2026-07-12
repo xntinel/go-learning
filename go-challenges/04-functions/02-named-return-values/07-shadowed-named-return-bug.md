@@ -24,13 +24,6 @@ lookupfix/                  independent module: example.com/lookupfix
 - Test: on not-found, the returned error carries the `LookupName "id"` prefix AND `errors.Is` matches the sentinel; the shadowed form (shown illustratively) would return a nil error and fail this test.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/02-named-return-values/07-shadowed-named-return-bug/cmd/demo
-cd go-solutions/04-functions/02-named-return-values/07-shadowed-named-return-bug
-```
-
 ### The bug: a `:=` in an inner block
 
 Here is the broken version. It compiles, `go vet` says nothing, and it silently

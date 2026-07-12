@@ -27,13 +27,6 @@ Implement: `CopyWithChecksum(dst io.Writer, src io.Reader) (int64, uint32, error
 Test: happy-path byte count and checksum equal precomputed values; a fault injected with `iotest.ErrReader` surfaces via `errors.Is` and the caller treats the transfer as failed.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/10-testing-readers-with-iotest/04-checksum-tee-reader-fault-injection/cmd/demo
-cd go-solutions/12-testing-ecosystem/10-testing-readers-with-iotest/04-checksum-tee-reader-fault-injection
-```
-
 ### How the tee tap works, and what a fault must not do
 
 `io.TeeReader(src, h)` returns a reader that, every time it is read, writes the

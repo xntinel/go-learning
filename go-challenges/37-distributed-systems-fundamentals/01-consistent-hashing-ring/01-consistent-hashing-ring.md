@@ -58,13 +58,6 @@ If the key hash equals a position exactly, `sort.Search` finds it directly. If i
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/37-distributed-systems-fundamentals/01-consistent-hashing-ring/01-consistent-hashing-ring/cmd/demo
-cd go-solutions/37-distributed-systems-fundamentals/01-consistent-hashing-ring/01-consistent-hashing-ring
-```
-
 This is a library, not a program: there is no `main` at the package level. Verification uses `go test`.
 
 ### Exercise 1: The Ring Type and Constructor

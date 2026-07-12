@@ -28,12 +28,6 @@ rule-based-optimizer/
 - Test: rewriting preserves the result set for a join query with a conjunctive WHERE clause; an unrecognized node returns `ErrUnknownLogicalNode`; and the `orders` scan in the rewritten plan is wrapped in a column-pruning `LogicalProjection` that drops `order_id`, proving the projection-pushdown rule fired and not merely that the rows are unchanged.
 - Verify: `go test -run 'TestOptimizer|TestProjectionPushdown' -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/06-query-planner/11-rule-based-optimizer/cmd/demo && cd go-solutions/39-capstone-database-engine/06-query-planner/11-rule-based-optimizer
-```
-
 ### Why rewrite the logical plan, and why these two rules
 
 A logical plan is relational algebra: scan, select (σ), project (π), join (⋈). A rewrite rule maps one logical plan to another that returns the identical result set for every possible input — that property is what "semantics-preserving" means, and it is the only license a rewrite has to exist. Two rules carry most of the value.

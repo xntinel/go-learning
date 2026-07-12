@@ -27,13 +27,6 @@ Implement: `StartPrefetch[V any](ctx, key string, load func(ctx, string) (V, err
 Test: happy path yields the loaded value; cancellation before `load` finishes yields `ctx.Err()` and no value; the goroutines terminate (baseline restored).
 Verify: `go test -race -count=10 ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/01-your-first-goroutine/10-context-scoped-background-task/cmd/demo
-cd go-solutions/13-goroutines-and-channels/01-your-first-goroutine/10-context-scoped-background-task
-```
-
 ### The ctx.Done() + select termination contract
 
 A background goroutine must have a defined exit. For a request-scoped task, the

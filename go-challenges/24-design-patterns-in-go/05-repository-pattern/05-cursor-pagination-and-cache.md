@@ -26,12 +26,6 @@ accounts_test.go         pagination walks every row once, page boundaries
 - Test: pagination visits every matching row exactly once and terminates, the boundary cases behave, a malformed cursor is rejected, the cache serves hits and is invalidated by writes, and concurrent reads are race-free.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/24-design-patterns-in-go/05-repository-pattern/05-cursor-pagination-and-cache/cmd/demo && cd go-solutions/24-design-patterns-in-go/05-repository-pattern/05-cursor-pagination-and-cache
-```
-
 ### Why cursor pagination and what the opaque token hides
 
 The naive way to page is offset/limit: "give me 20 rows starting at row 40". It is easy and it is wrong at scale for two reasons. It gets slower the deeper you go, because the store must still walk and discard the first forty rows to reach the forty-first. Worse, it is unstable under concurrent writes: if a row is inserted near the front between two requests, every later row shifts by one, so page two re-shows a row that was on page one or skips one entirely. Cursor pagination fixes both. Instead of "start at index N" it says "start after this key", where the key is a value from a stable total order. Here accounts are ordered by `ID`, and a page of size `n` is "the first `n` matching accounts whose `ID` is greater than the cursor's ID". Resuming is a `sort.Search` to the first ID past the cursor, not a walk-and-discard, and an insert elsewhere in the set cannot shift the boundary, so no row is shown twice or skipped.

@@ -29,13 +29,6 @@ and idempotence; a `testing.Short()`-gated slow case.
 Verify: `go test -count=1 ./...`; `go test -bench=. -benchmem -run='^$'` runs the
 benchmark; `go test -run=Fuzz` runs the seed corpus. `gofmt -l` empty.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/01-your-first-go-program/07-benchmarks-and-fuzzing/cmd/demo
-cd go-solutions/01-environment-and-tooling/01-your-first-go-program/07-benchmarks-and-fuzzing
-```
-
 ### The helper, built to never panic
 
 `Normalize` is a pure function: string in, `(string, error)` out. It trims

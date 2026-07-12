@@ -25,13 +25,6 @@ orderevents/                 independent module: example.com/orderevents
 - Test: a mutex-guarded spy capturing every published `Event`; assert one event with the right type and fields; a replay of the same command asserts exactly one `Publish`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/11-mock-interfaces-for-testing/08-consumer-defined-interface-spy/cmd/demo
-cd go-solutions/08-interfaces/11-mock-interfaces-for-testing/08-consumer-defined-interface-spy
-```
-
 ### The consumer defines the interface
 
 A real message broker's client has a wide surface: publish, subscribe, ack,

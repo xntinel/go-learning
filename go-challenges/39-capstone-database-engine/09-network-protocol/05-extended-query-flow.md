@@ -19,12 +19,6 @@ proto_test.go        message round-trips over net.Pipe, the apply flow, and shor
 - Test: `proto_test.go` round-trips each message over `net.Pipe`, runs a Parse-then-Bind-then-Execute flow against a `ConnState`, and rejects truncated payloads as `ErrShort`.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/09-network-protocol/05-extended-query-flow/cmd/demo && cd go-solutions/39-capstone-database-engine/09-network-protocol/05-extended-query-flow
-```
-
 ### Why parsing is split from execution
 
 The simple protocol inlines parameters into the SQL string, which forces clients to escape values themselves (the source of SQL injection) and reparses the statement on every call. The extended protocol separates the phases so a statement is parsed once and run many times with different parameters, and the parameters travel as length-counted binary values that never touch the SQL text. `Parse` carries a statement name, the query, and the OIDs of its `$1`, `$2`, ... parameters. `Bind` references a parsed statement by name and supplies concrete values, producing a named portal — an executable instance. `Describe` asks for the result shape (a `RowDescription`, or `NoData` for a statement that returns nothing). `Execute` runs a portal, optionally capping the row count. `Sync` ends the cycle and forces a `ReadyForQuery`, which is the recovery boundary: even if a prior step failed, the client knows the server is ready again after `Sync`.

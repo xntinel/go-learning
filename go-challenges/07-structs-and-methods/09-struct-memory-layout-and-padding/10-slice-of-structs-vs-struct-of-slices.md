@@ -27,13 +27,6 @@ aossoa/                    independent module: example.com/aossoa
 - Test: assert the SoA columns' combined per-element byte cost is no larger than the AoS per-element `Sizeof`, that both representations produce identical aggregations (table + fuzz), and add benchmarks documenting the scan.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/09-struct-memory-layout-and-padding/10-slice-of-structs-vs-struct-of-slices/cmd/demo
-cd go-solutions/07-structs-and-methods/09-struct-memory-layout-and-padding/10-slice-of-structs-vs-struct-of-slices
-```
-
 ### Why columnar helps a single-field scan
 
 The array-of-structs layout, `[]Event`, is the natural one: each element is a

@@ -26,13 +26,6 @@ Implement: `Add`, and `Flush` that clones the buffer, sends it, then truncates w
 Test: accumulate, flush capturing the batch, append new events, assert the earlier batch is unchanged; assert `cap` is preserved across `buf[:0]`; a negative sub-test shows direct hand-off overwrite.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/06-copy-and-full-slice-expression/07-metrics-batcher-flush-and-reuse/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/06-copy-and-full-slice-expression/07-metrics-batcher-flush-and-reuse
-```
-
 ### Why `buf[:0]` reuse forces a copy on flush
 
 `buf = buf[:0]` is the standard buffer-reuse move: it sets the length to zero while

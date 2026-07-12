@@ -25,13 +25,6 @@ auditfanout/                independent module: example.com/auditfanout
 - Test: `io.MultiWriter` lands identical bytes in both sinks and propagates/short-circuits on the first error (documenting the coupling); the best-effort `Fanout` does not fail the primary on an audit failure, captures the audit error, and returns the primary byte count.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/05-interface-composition-and-embedding/08-audit-fanout-multiwriter/cmd/demo
-cd go-solutions/08-interfaces/05-interface-composition-and-embedding/08-audit-fanout-multiwriter
-```
-
 ### What io.MultiWriter does, and where it hurts
 
 `io.MultiWriter(a, b)` returns an `io.Writer` whose `Write` calls `a.Write(p)`

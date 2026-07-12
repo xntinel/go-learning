@@ -27,8 +27,6 @@ reconcile/                    module example.com/reconcile
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/02-for-loops/15-sorted-id-reconciliation-merge
-cd go-solutions/03-control-flow/02-for-loops/15-sorted-id-reconciliation-merge
 go mod edit -go=1.24
 ```
 

@@ -27,13 +27,6 @@ Implement: `Refill(ticks <-chan time.Time, tokens chan<- int, stop <-chan struct
 Test: N fake ticks yield N tokens, the stop signal ends the loop, a full token buffer does not block the loop.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/04-channel-direction/09-rate-limiter-ticker-refill/cmd/demo
-cd go-solutions/13-goroutines-and-channels/04-channel-direction/09-rate-limiter-ticker-refill
-```
-
 ### Why every channel here is directional, and why the token send is non-blocking
 
 `Refill` takes three channels, each with the narrowest direction it needs.

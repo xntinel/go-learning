@@ -24,8 +24,6 @@ routetable/                 independent module: example.com/routetable
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/11-config-snapshot-restore-defer/routetable
-cd go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/11-config-snapshot-restore-defer
 go mod edit -go=1.24
 ```
 

@@ -29,8 +29,6 @@ utf8trunc/                   independent module: example.com/utf8trunc
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/02-variables-types-and-constants/05-type-conversions-and-type-assertions/06-utf8-safe-truncation/cmd/demo
-cd go-solutions/02-variables-types-and-constants/05-type-conversions-and-type-assertions/06-utf8-safe-truncation
 go mod edit -go=1.26
 ```
 

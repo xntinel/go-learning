@@ -19,12 +19,6 @@ eventstore_test.go   stable ordering, reusable iterators, break-safety, half-ope
 - Test: `eventstore_test.go` checks that out-of-order appends still iterate in time order, that `Values()` ranged twice agrees with itself (reusable), that `break` stops every iterator, and that `Range` is half-open `[from, to)`.
 - Verify: `go test -run TestStore -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/25-iterators-and-modern-go/05-designing-iterator-apis/04-domain-event-store/cmd/demo && cd go-solutions/25-iterators-and-modern-go/05-designing-iterator-apis/04-domain-event-store
-```
-
 ### Designing the iterator surface around the domain's natural coordinate
 
 The store's domain coordinate is time, so its iterators are shaped around `time.Time` the same way the list in Exercise 1 was shaped around the integer index. `All` returns `iter.Seq2[time.Time, float64]`: the first component is the timestamp, the second is the measurement, and a caller writes `for t, v := range store.All()`. This mirrors `slices.All` exactly, only with a domain key instead of a positional one — the convention transfers because the shape transfers. `Values` returns `iter.Seq[float64]` for the common case where a caller wants the measurements and not the clock, for instance to feed `slices.Max` or compute a mean. Returning a bare `Seq` here, rather than a `Seq2` whose key is ignored, keeps the call site honest: the method's type says it yields values, so a reader knows the timestamp was deliberately dropped, not forgotten.

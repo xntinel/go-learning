@@ -25,13 +25,6 @@ deprecation/                   independent module: example.com/deprecation
 - Test: a deprecated-but-not-sunset request returns 200 with a parseable `Sunset` and a `@<unix>` `Deprecation`; the deprecation instant is not after the sunset instant; advancing the clock past sunset yields 410 with `application/problem+json`; a non-deprecated lifecycle emits none of the headers.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/51-rpc-and-api-design/06-api-versioning-strategies/02-deprecation-sunset-lifecycle/cmd/demo
-cd go-solutions/51-rpc-and-api-design/06-api-versioning-strategies/02-deprecation-sunset-lifecycle
-```
-
 ### The two header formats are different on purpose
 
 The single most error-prone part of this exercise is that the two dates use two

@@ -27,13 +27,6 @@ ctxservice/                independent module: example.com/ctxservice
 - Test: a short `WithTimeout` returns `context.DeadlineExceeded` before a slow worker finishes; a `WithCancelCause` context returns the injected cause; the service still serves later calls (no leak); base context is `t.Context()`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/09-channel-of-channels/03-reply-with-context-cancellation/cmd/demo
-cd go-solutions/13-goroutines-and-channels/09-channel-of-channels/03-reply-with-context-cancellation
-```
-
 ### Two places context must be honored
 
 A `Call` has two blocking points, and a naive implementation only guards one.

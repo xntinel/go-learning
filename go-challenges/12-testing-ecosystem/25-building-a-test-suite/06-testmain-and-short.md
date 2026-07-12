@@ -23,13 +23,6 @@ Implement: reuse the cache.
 Test: a `TestMain` that warms a shared cache and tears it down around `m.Run`; a fast test that reads the warmed cache; a stress test that `t.Skip`s under `-short`.
 Verify: `go test -count=1 -race ./...` and `go test -short ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/25-building-a-test-suite/06-testmain-and-short/cmd/demo
-cd go-solutions/12-testing-ecosystem/25-building-a-test-suite/06-testmain-and-short
-```
-
 ### The TestMain contract, and why teardown cannot defer
 
 `TestMain(m *testing.M)`, when present, is called *instead of* running the tests

@@ -35,8 +35,6 @@ units/                         independent module: example.com/units
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/48-modern-go-language-and-stdlib/16-go-fix-inline-modernization/03-inline-constants-and-type-aliases/severity go-solutions/48-modern-go-language-and-stdlib/16-go-fix-inline-modernization/03-inline-constants-and-type-aliases/logging go-solutions/48-modern-go-language-and-stdlib/16-go-fix-inline-modernization/03-inline-constants-and-type-aliases/consumer go-solutions/48-modern-go-language-and-stdlib/16-go-fix-inline-modernization/03-inline-constants-and-type-aliases/cmd/demo
-cd go-solutions/48-modern-go-language-and-stdlib/16-go-fix-inline-modernization/03-inline-constants-and-type-aliases
 go mod edit -go=1.26
 ```
 

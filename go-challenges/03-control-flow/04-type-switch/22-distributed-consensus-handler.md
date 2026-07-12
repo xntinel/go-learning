@@ -36,8 +36,6 @@ distributed-consensus-handler/  independent module: example.com/distributed-cons
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/04-type-switch/22-distributed-consensus-handler/cmd/demo
-cd go-solutions/03-control-flow/04-type-switch/22-distributed-consensus-handler
 go mod edit -go=1.24
 ```
 

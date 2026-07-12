@@ -65,13 +65,6 @@ to change the period at runtime, call `t.Reset(newD)` from inside the loop.
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/16-concurrency-patterns/08-time-ticker-periodic-goroutines/08-time-ticker-periodic-goroutines/internal/periodic go-solutions/16-concurrency-patterns/08-time-ticker-periodic-goroutines/08-time-ticker-periodic-goroutines/cmd/periodicdemo
-cd go-solutions/16-concurrency-patterns/08-time-ticker-periodic-goroutines/08-time-ticker-periodic-goroutines
-```
-
 ### Exercise 1: The Periodic Runner
 
 A `Periodic` holds a ticker, a done channel, and a handler. `Start` spawns the

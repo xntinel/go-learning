@@ -28,13 +28,6 @@ downstream/                  independent module: example.com/downstream
 - Test (`httptest.Server` + a Close-recording `Transport`): a 2xx returns the decoded body; a 5xx returns `ErrStatus` but still closes the body; `Close` is called exactly once on both paths.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/07-defer-semantics-and-ordering/07-http-body-close-drain/cmd/demo
-cd go-solutions/03-control-flow/07-defer-semantics-and-ordering/07-http-body-close-drain
-```
-
 ### Why draining, not just closing, returns the connection
 
 The Go HTTP transport reuses a TCP connection for the next request only if the

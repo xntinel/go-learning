@@ -20,12 +20,6 @@ example_test.go      ExampleNameClosures with a verified // Output block
 - Test: build closures for three names and four indices, evaluate them after the loop, and assert the full ordered result rather than any single value.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/25-iterators-and-modern-go/02-loopvar-semantic-change/01-closures-over-loop-variables/cmd/demo && cd go-solutions/25-iterators-and-modern-go/02-loopvar-semantic-change/01-closures-over-loop-variables
-```
-
 ### Why the direct capture is now correct
 
 A closure created inside a loop captures the loop variable by reference. The whole question is how many distinct variables the loop creates. Under the pre-1.22 per-loop rule there was exactly one `name` for the entire range loop, so every closure captured the same reference; when they were finally called after the loop, they all read the last element. The fix programmers reached for was a shadowing redeclaration, `name := name`, as the first line of the body, which created a fresh block-scoped variable per iteration for the closure to capture.

@@ -56,13 +56,6 @@ wrapped errors.
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/16-concurrency-patterns/20-batch-processing-partial-failure/20-batch-processing-partial-failure/internal/batch go-solutions/16-concurrency-patterns/20-batch-processing-partial-failure/20-batch-processing-partial-failure/cmd/demo
-cd go-solutions/16-concurrency-patterns/20-batch-processing-partial-failure/20-batch-processing-partial-failure
-```
-
 ### Exercise 1: Core Types and Sentinel Errors
 
 Create `internal/batch/batch.go`:

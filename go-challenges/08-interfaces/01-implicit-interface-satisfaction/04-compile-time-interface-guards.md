@@ -29,13 +29,6 @@ repoguard/                    independent module: example.com/repoguard
 - Test: construct both behind the `Store` interface and exercise `Get`/`Put`/`Ping`; assert `ErrNotFound`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/01-implicit-interface-satisfaction/04-compile-time-interface-guards/cmd/demo
-cd go-solutions/08-interfaces/01-implicit-interface-satisfaction/04-compile-time-interface-guards
-```
-
 ### What a guard buys you, and the drift it catches
 
 `var _ Store = (*PostgresStore)(nil)` reads as: assign a nil `*PostgresStore` to a

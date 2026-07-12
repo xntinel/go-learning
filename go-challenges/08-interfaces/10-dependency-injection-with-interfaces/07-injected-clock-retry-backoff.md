@@ -27,13 +27,6 @@ retry/                      independent module: example.com/retry
 - Test: a `fakeSleeper` that records requested durations without sleeping; assert the backoff schedule (100ms, 200ms, 400ms), that success stops early, that exhausting attempts returns the last error, and that a cancelled context aborts mid-retry with zero real elapsed time.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/10-dependency-injection-with-interfaces/07-injected-clock-retry-backoff/cmd/demo
-cd go-solutions/08-interfaces/10-dependency-injection-with-interfaces/07-injected-clock-retry-backoff
-```
-
 ### Why the wait is a dependency
 
 A retry's waits are the one part that a test must not actually perform. The trick

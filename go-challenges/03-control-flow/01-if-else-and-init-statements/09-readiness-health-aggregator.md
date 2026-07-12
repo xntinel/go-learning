@@ -27,13 +27,6 @@ readiness/                  independent module: example.com/readiness
 - Test: all healthy returns 200 and reports every check ok; fail-fast stops after the first failure (a run counter proves later checks did not run); collect-all returns 503 listing both failures (membership via `errors.Is`); a check exceeding the context deadline is reported failed, not hung.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/01-if-else-and-init-statements/09-readiness-health-aggregator/cmd/demo
-cd go-solutions/03-control-flow/01-if-else-and-init-statements/09-readiness-health-aggregator
-```
-
 ## Two shapes, chosen by what the caller needs
 
 A check is `type Check struct { Name string; Run func(context.Context) error }`. The

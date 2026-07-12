@@ -30,8 +30,6 @@ pluginsys/                 independent module: example.com/pluginsys
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/08-interfaces/13-designing-a-plugin-system/01-plugin-contract-and-registry/cmd/demo
-cd go-solutions/08-interfaces/13-designing-a-plugin-system/01-plugin-contract-and-registry
 go mod edit -go=1.25
 ```
 

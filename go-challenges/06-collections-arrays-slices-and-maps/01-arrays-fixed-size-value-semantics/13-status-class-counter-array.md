@@ -35,8 +35,6 @@ statusclass/                 module example.com/statusclass
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/13-status-class-counter-array
-cd go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/13-status-class-counter-array
 go mod edit -go=1.24
 ```
 

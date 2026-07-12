@@ -29,8 +29,6 @@ grpcbind/                    independent module: example.com/grpcbind
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/23-grpc-listener-address-handler-binding-closure/cmd/demo
-cd go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/23-grpc-listener-address-handler-binding-closure
 go mod edit -go=1.24
 ```
 

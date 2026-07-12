@@ -35,8 +35,6 @@ resolver/                      module example.com/resolver
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/02-for-loops/32-dns-discovery-ttl-cache-refresh/cmd/demo
-cd go-solutions/03-control-flow/02-for-loops/32-dns-discovery-ttl-cache-refresh
 go mod edit -go=1.24
 ```
 

@@ -27,13 +27,6 @@ suffixdemo/                    module example.com/suffixdemo
 - Test: assert the mis-suffixed file is compiled on the host (the failure mode) and that the expected file set matches per target.
 - Verify: `go test -race ./...`, then `GOOS=linux GOARCH=386` versus `GOOS=linux GOARCH=amd64` `go list` to see the double-suffix and explicit files appear only for amd64.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/08-cross-compilation-and-build-tags/05-file-suffix-implicit-constraints/cmd/demo
-cd go-solutions/01-environment-and-tooling/08-cross-compilation-and-build-tags/05-file-suffix-implicit-constraints
-```
-
 ### Three legitimate styles and one trap
 
 Go recognizes a file's constraint from its name: the last underscore-separated

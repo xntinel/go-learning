@@ -31,8 +31,6 @@ userapi/                   independent module: example.com/userapi
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/11-packages-and-modules/02-exported-vs-unexported/02-json-field-visibility/cmd/demo
-cd go-solutions/11-packages-and-modules/02-exported-vs-unexported/02-json-field-visibility
 go mod edit -go=1.26
 ```
 

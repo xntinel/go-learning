@@ -27,13 +27,6 @@ Implement: `Repository` interface (`Save(User) error`, `FindByID(string) (User, 
 Test: the compile-time assertion; a save-then-find round trip through the interface; `FindByID` of a missing id returns `ErrNotFound` via `errors.Is`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/03-methods-value-vs-pointer-receivers/08-interface-method-set-repository/cmd/demo
-cd go-solutions/07-structs-and-methods/03-methods-value-vs-pointer-receivers/08-interface-method-set-repository
-```
-
 ### The method-set rule, made concrete
 
 `Save` mutates the repo's internal map, so it must have a pointer receiver — a

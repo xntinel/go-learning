@@ -45,11 +45,6 @@ All three are avoided by the implementation below.
 
 ### Setup
 
-```bash
-mkdir -p go-solutions/16-concurrency-patterns/27-building-a-concurrent-web-crawler/27-building-a-concurrent-web-crawler/internal/crawler go-solutions/16-concurrency-patterns/27-building-a-concurrent-web-crawler/27-building-a-concurrent-web-crawler/cmd/demo
-cd go-solutions/16-concurrency-patterns/27-building-a-concurrent-web-crawler/27-building-a-concurrent-web-crawler
-```
-
 ### Exercise 1: Core crawler package
 
 Create `internal/crawler/crawler.go` with the implementation below. Study the ordering of `wg.Add`, the mutex scope, and the shutdown sequence.

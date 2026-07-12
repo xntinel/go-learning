@@ -32,8 +32,6 @@ openaitools/                independent module: example.com/openaitools
 Set up the module and add the SDK (note the `/v3` major-version path):
 
 ```bash
-mkdir -p go-solutions/52-ai-llm-backends/03-tool-and-function-calling/03-openai-tool-loop-and-tool-choice/cmd/demo
-cd go-solutions/52-ai-llm-backends/03-tool-and-function-calling/03-openai-tool-loop-and-tool-choice
 go mod edit -go=1.26
 go get github.com/openai/openai-go/v3@latest
 ```

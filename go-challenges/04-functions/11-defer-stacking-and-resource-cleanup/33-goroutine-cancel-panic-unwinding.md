@@ -29,8 +29,6 @@ spawner/                     independent module: example.com/spawner
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/33-goroutine-cancel-panic-unwinding/spawner go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/33-goroutine-cancel-panic-unwinding/cmd/demo
-cd go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/33-goroutine-cancel-panic-unwinding
 go mod edit -go=1.24
 ```
 

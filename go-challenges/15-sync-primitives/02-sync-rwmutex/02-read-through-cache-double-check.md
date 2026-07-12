@@ -28,13 +28,6 @@ Implement: a `*Cache` with `GetOrLoad(key, Loader)` doing the `RLock`/`RUnlock` 
 Test: loader called exactly once over 100 gets; 50 concurrent misses collapse to one stored entry; an empty key returns `ErrEmptyKey`; a loader error is wrapped and does not poison the cache.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/02-sync-rwmutex/02-read-through-cache-double-check/cmd/demo
-cd go-solutions/15-sync-primitives/02-sync-rwmutex/02-read-through-cache-double-check
-```
-
 ### The double-check, step by step
 
 `GetOrLoad` runs in three phases. First, the fast path: take `RLock`, look up the

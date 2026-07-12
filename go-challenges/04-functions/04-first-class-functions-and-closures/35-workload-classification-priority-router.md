@@ -30,8 +30,6 @@ workload-router/             independent module: example.com/workload-router
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/04-first-class-functions-and-closures/35-workload-classification-priority-router/cmd/demo
-cd go-solutions/04-functions/04-first-class-functions-and-closures/35-workload-classification-priority-router
 go mod edit -go=1.24
 ```
 

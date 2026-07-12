@@ -20,12 +20,6 @@ replacer_test.go       evicts only evictable frames; LRU-K resists flooding; LRU
 - Test: `replacer_test.go` checks that each policy evicts only evictable frames, that LRU-K resists sequential flooding where LRU does not, and that LRU-1 degenerates to exact LRU.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/03-buffer-pool-manager/02-pluggable-replacer/cmd/demo && cd go-solutions/39-capstone-database-engine/03-buffer-pool-manager/02-pluggable-replacer
-```
-
 ### One interface, three policies, and why the abstraction holds
 
 The pool performs the same three operations on its frames no matter which policy is in charge: it records an access on every pin and cache hit, it marks a frame evictable when its last pin is released, and it asks for a victim on a miss. Those three operations are exactly the `Replacer` interface — `RecordAccess`, `SetEvictable`, and `Evict`, with `Size` reporting the current candidate count. Because the pool's correctness invariant (a pinned frame is never evictable) lives in when it calls `SetEvictable`, not in the policy, all three implementations are interchangeable: swapping CLOCK for LRU-K changes the heuristic and nothing about safety.

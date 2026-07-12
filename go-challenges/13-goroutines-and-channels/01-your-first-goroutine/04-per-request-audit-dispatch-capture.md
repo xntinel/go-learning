@@ -30,8 +30,6 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/13-goroutines-and-channels/01-your-first-goroutine/04-per-request-audit-dispatch-capture/cmd/demo
-cd go-solutions/13-goroutines-and-channels/01-your-first-goroutine/04-per-request-audit-dispatch-capture
 go mod edit -go=1.25
 ```
 

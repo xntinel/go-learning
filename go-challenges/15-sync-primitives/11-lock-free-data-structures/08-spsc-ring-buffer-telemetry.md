@@ -26,13 +26,6 @@ spscring/                        independent module: example.com/spscring
 - Test: sequential wrap-around crossing the capacity boundary repeatedly; a concurrent test where one producer pushes 100000 sequenced events and one consumer drains, asserting strict order and exact drop accounting; `errors.Is` on the capacity sentinel.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/11-lock-free-data-structures/08-spsc-ring-buffer-telemetry/cmd/demo
-cd go-solutions/15-sync-primitives/11-lock-free-data-structures/08-spsc-ring-buffer-telemetry
-```
-
 ### One writer per index means no CAS
 
 The ring holds `capacity` slots (a power of two). Two `uint64` cursors only ever

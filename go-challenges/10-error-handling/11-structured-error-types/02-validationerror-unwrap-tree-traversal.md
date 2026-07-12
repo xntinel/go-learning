@@ -30,8 +30,6 @@ errtree/                   independent module: example.com/errtree
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/10-error-handling/11-structured-error-types/02-validationerror-unwrap-tree-traversal/cmd/demo
-cd go-solutions/10-error-handling/11-structured-error-types/02-validationerror-unwrap-tree-traversal
 go mod edit -go=1.26
 ```
 

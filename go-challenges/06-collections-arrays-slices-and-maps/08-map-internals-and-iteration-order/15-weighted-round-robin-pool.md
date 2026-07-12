@@ -57,8 +57,6 @@ wrrpool/                  module example.com/wrrpool
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/15-weighted-round-robin-pool
-cd go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/15-weighted-round-robin-pool
 go mod edit -go=1.24
 ```
 

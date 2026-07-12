@@ -21,12 +21,6 @@ cmd/
 - Test: the counter advances across calls, `Update` mutates the declaring scope, `Update` on an unknown name errors, and `Set` in an inner scope does not mutate the outer binding.
 - Verify: `go test -race ./...` then `go run ./cmd/demo`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/40-capstone-language-interpreter/06-closures-first-class-functions/02-mutable-closures-the-counter-pattern/cmd/demo && cd go-solutions/40-capstone-language-interpreter/06-closures-first-class-functions/02-mutable-closures-the-counter-pattern
-```
-
 ### Why Update, not Set
 
 Picture the Monkey program the counter models:

@@ -25,13 +25,6 @@ toposort/                  independent module: example.com/toposort
 - Test: assert every emitted order is a valid linear extension (for each edge `u -> v`, `u` precedes `v`), verified programmatically; a cycle returns an error; single-node and empty-graph cases; determinism via sorted traversal.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/07-recursive-functions-and-stack-depth/06-topological-sort-migrations/cmd/demo
-cd go-solutions/04-functions/07-recursive-functions-and-stack-depth/06-topological-sort-migrations
-```
-
 ### The map convention and postorder-plus-reverse
 
 Fix the edge direction first, because everything depends on it. Here

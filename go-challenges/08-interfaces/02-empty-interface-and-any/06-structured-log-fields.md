@@ -30,8 +30,6 @@ logfields/                 independent module: example.com/logfields
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/08-interfaces/02-empty-interface-and-any/06-structured-log-fields/cmd/demo
-cd go-solutions/08-interfaces/02-empty-interface-and-any/06-structured-log-fields
 go mod edit -go=1.26
 ```
 

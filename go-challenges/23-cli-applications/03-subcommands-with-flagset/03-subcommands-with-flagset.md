@@ -25,8 +25,6 @@ Missing required arguments, bad enum values, and invalid numeric ranges should b
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/23-cli-applications/03-subcommands-with-flagset/03-subcommands-with-flagset
-cd go-solutions/23-cli-applications/03-subcommands-with-flagset/03-subcommands-with-flagset
 go mod edit -go=1.26
 ```
 

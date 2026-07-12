@@ -19,12 +19,6 @@ sem_test.go           peak weight <= capacity under -race; clamp; cancellation
 - Test: `sem_test.go` asserts the in-flight weight never exceeds the capacity, that an oversized weight is clamped rather than deadlocking, and that a cancelled parent stops the runner.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/16-concurrency-patterns/15-bounded-parallelism/02-weighted-semaphore/cmd/demo && cd go-solutions/16-concurrency-patterns/15-bounded-parallelism/02-weighted-semaphore
-```
-
 ### What the invariant actually is
 
 The unit that is bounded by a weighted semaphore is total weight, not task count, and getting that distinction right is the whole exercise. With a capacity of ten and tasks of weight three, the number of tasks in flight is whatever the scheduler happens to produce — it might be three, it might briefly be more once light tasks interleave — but the sum of their weights is, by construction, never more than ten. The earlier version of this lesson reported a task-count "peak" of six and then tried to explain it with arithmetic that contradicted itself, because task count under a weighted budget is genuinely non-deterministic and not the thing the semaphore controls. The honest, repeatable measurement is the peak in-flight weight, and this module measures and asserts exactly that.

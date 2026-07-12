@@ -25,13 +25,6 @@ ctxlog/                    independent module: example.com/ctxlog
 - Test: the id attribute appears in output; a logger built via `With(...)` still injects the id (proving the re-wrap); `Enabled` is delegated to the base.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/08-embedding-for-composition/03-slog-handler-embedding/cmd/demo
-cd go-solutions/07-structs-and-methods/08-embedding-for-composition/03-slog-handler-embedding
-```
-
 ### Overriding Handle, and why WithAttrs must be re-wrapped
 
 `slog.Handler` is a four-method interface: `Enabled`, `Handle`, `WithAttrs`, and

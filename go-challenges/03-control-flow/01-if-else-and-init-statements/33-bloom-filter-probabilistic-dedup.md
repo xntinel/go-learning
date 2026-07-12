@@ -33,8 +33,6 @@ bloomdedup/                   independent module: example.com/bloom-filter-proba
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/01-if-else-and-init-statements/33-bloom-filter-probabilistic-dedup/cmd/demo
-cd go-solutions/03-control-flow/01-if-else-and-init-statements/33-bloom-filter-probabilistic-dedup
 go mod edit -go=1.24
 ```
 

@@ -31,13 +31,6 @@ while the named and tagged variants nest under `meta`; round-trip `Unmarshal`
 reconstructs each; the collision resolves to the parent (shallower) field.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/04-anonymous-structs-and-embedding/08-embedded-json-flattening/cmd/demo
-cd go-solutions/07-structs-and-methods/04-anonymous-structs-and-embedding/08-embedded-json-flattening
-```
-
 ### The three shapes, and why they differ
 
 `encoding/json` treats an *embedded* struct specially: its exported fields are

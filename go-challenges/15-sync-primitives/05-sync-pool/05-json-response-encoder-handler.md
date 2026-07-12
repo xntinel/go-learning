@@ -27,13 +27,6 @@ Implement: a `Server` whose `ServeHTTP` looks up a user, encodes it into a poole
 Test: `httptest` asserts 200, `Content-Type`, `Content-Length` == body length, and a JSON round-trip; a concurrent test proves no buffer bleeds between requests under `-race`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/05-sync-pool/05-json-response-encoder-handler/api go-solutions/15-sync-primitives/05-sync-pool/05-json-response-encoder-handler/cmd/demo
-cd go-solutions/15-sync-primitives/05-sync-pool/05-json-response-encoder-handler
-```
-
 ### Why encode into a buffer first, not straight to the ResponseWriter
 
 The naive handler writes directly:

@@ -43,13 +43,6 @@ This lesson uses the collect-and-sort approach to keep the implementation readab
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/45-capstone-distributed-key-value-store/01-partitioned-storage/01-partitioned-storage/cmd/demo
-cd go-solutions/45-capstone-distributed-key-value-store/01-partitioned-storage/01-partitioned-storage
-```
-
 ### Exercise 1: The Hash Ring
 
 Create `ring.go`. The ring is a sorted slice of `token` values; `sort.Search` provides O(log n) owner lookup.

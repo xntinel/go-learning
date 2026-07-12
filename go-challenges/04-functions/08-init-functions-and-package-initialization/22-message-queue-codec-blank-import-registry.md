@@ -37,11 +37,6 @@ Verify: `go test -count=1 ./...`
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/08-init-functions-and-package-initialization/22-message-queue-codec-blank-import-registry/registry
-mkdir -p go-solutions/04-functions/08-init-functions-and-package-initialization/22-message-queue-codec-blank-import-registry/jsoncodec
-mkdir -p go-solutions/04-functions/08-init-functions-and-package-initialization/22-message-queue-codec-blank-import-registry/gobcodec
-mkdir -p go-solutions/04-functions/08-init-functions-and-package-initialization/22-message-queue-codec-blank-import-registry/cmd/demo
-cd go-solutions/04-functions/08-init-functions-and-package-initialization/22-message-queue-codec-blank-import-registry
 go mod edit -go=1.24
 ```
 

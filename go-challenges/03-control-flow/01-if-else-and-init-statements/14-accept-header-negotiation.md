@@ -26,8 +26,6 @@ negotiate/                  independent module: example.com/accept-header-negoti
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/01-if-else-and-init-statements/14-accept-header-negotiation
-cd go-solutions/03-control-flow/01-if-else-and-init-statements/14-accept-header-negotiation
 go mod edit -go=1.24
 ```
 

@@ -27,13 +27,6 @@ upstream-client/                     independent module: example.com/upstream
 - Test: slow handler yields `ErrUpstreamTimeout` (with `DeadlineExceeded` underneath) near the timeout, not the server delay; fast handler returns the body; a 500 is `ErrUpstreamStatus`, not a timeout; the body is always closed.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/05-context-withtimeout-withdeadline/02-outbound-http-timeout/cmd/demo
-cd go-solutions/14-select-and-context/05-context-withtimeout-withdeadline/02-outbound-http-timeout
-```
-
 ### Why the timeout must live on the request, not just the client
 
 A `http.Client.Timeout` field caps the whole call, but it is a blunt instrument: it

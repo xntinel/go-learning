@@ -28,8 +28,6 @@ multiopen/                  independent module: example.com/multiopen
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/02-named-return-values/31-multi-file-handle-partial-close-unwind/cmd/demo
-cd go-solutions/04-functions/02-named-return-values/31-multi-file-handle-partial-close-unwind
 go mod edit -go=1.24
 ```
 

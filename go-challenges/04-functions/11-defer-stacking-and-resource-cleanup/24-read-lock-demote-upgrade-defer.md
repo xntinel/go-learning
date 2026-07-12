@@ -29,8 +29,6 @@ rwupgrade/                   independent module: example.com/rwupgrade
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/24-read-lock-demote-upgrade-defer/rwupgrade go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/24-read-lock-demote-upgrade-defer/cmd/demo
-cd go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/24-read-lock-demote-upgrade-defer
 go mod edit -go=1.24
 ```
 

@@ -18,13 +18,6 @@ If a function only adds values, a numeric constraint is enough. If it also order
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/20-generics/06-union-type-constraints/06-union-type-constraints/cmd/demo
-cd go-solutions/20-generics/06-union-type-constraints/06-union-type-constraints
-```
-
 ### Exercise 1: Build Numeric Constraints
 
 Create `numbers.go`:

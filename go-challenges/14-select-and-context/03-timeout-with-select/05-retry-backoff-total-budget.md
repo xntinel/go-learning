@@ -22,13 +22,6 @@ Implement: `RetryWithBudget(done <-chan struct{}, budget, base time.Duration, op
 Test: succeeds on attempt 3 and stops; always-fails returns wrapped last error once the budget fires; backoff intervals grow; done cancels a pending sleep promptly.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/03-timeout-with-select/05-retry-backoff-total-budget/cmd/demo
-cd go-solutions/14-select-and-context/03-timeout-with-select/05-retry-backoff-total-budget
-```
-
 ### Two timers, two questions
 
 `RetryWithBudget` runs two timers at once, answering two questions. The

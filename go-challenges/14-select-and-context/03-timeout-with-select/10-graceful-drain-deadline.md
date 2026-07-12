@@ -21,13 +21,6 @@ Implement: `Pool` with `Go(task func())` and `Drain(within time.Duration) (int, 
 Test: all workers finish before the deadline returns nil and zero outstanding; hanging workers return `ErrTimeout` with the correct count; the drain does not return before either all-done or the deadline; two sequential drains do not double-close.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/03-timeout-with-select/10-graceful-drain-deadline/cmd/demo
-cd go-solutions/14-select-and-context/03-timeout-with-select/10-graceful-drain-deadline
-```
-
 ### A WaitGroup surfaced through a channel
 
 `Pool` tracks in-flight work two ways: a `sync.WaitGroup` that counts running tasks,

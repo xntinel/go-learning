@@ -30,8 +30,6 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/14-select-and-context/11-graceful-shutdown-with-context/05-errgroup-supervised-lifecycle/cmd/demo
-cd go-solutions/14-select-and-context/11-graceful-shutdown-with-context/05-errgroup-supervised-lifecycle
 go get golang.org/x/sync/errgroup
 ```
 

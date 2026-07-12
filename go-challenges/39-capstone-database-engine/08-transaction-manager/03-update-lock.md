@@ -19,12 +19,6 @@ upgrade_test.go       S/U/X matrix + upgrade-deadlock-avoidance under -race
 - Test: a table test pins the S/U/X compatibility matrix; the concurrency test reproduces the upgrade scenario and asserts the update lock serializes two would-be upgraders and forces the upgrade to wait for an unrelated shared reader.
 - Verify: `go test -count=1 -race ./...` and `go run ./cmd/demo`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/08-transaction-manager/03-update-lock/cmd/demo && cd go-solutions/39-capstone-database-engine/08-transaction-manager/03-update-lock
-```
-
 ### Why a third mode fixes the symmetric upgrade
 
 The update lock (U) sits between shared and exclusive. A transaction that intends to upgrade takes U instead of S. U is compatible with S — other pure readers proceed normally — but not with another U, so at most one would-be upgrader can exist at any moment. That single asymmetry is the entire fix: two transactions can never both sit holding a lock while waiting to upgrade, because the second one blocks at `AcquireUpdate` before it holds anything that the first one needs. When the U holder is ready it waits out the remaining shared holders and becomes X.

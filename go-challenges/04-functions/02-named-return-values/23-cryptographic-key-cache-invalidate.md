@@ -28,8 +28,6 @@ keyrotate/                    independent module: example.com/keyrotate
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/02-named-return-values/23-cryptographic-key-cache-invalidate/cmd/demo
-cd go-solutions/04-functions/02-named-return-values/23-cryptographic-key-cache-invalidate
 go mod edit -go=1.24
 ```
 

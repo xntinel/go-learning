@@ -29,13 +29,6 @@ Implement: `Middleware(next http.Handler, logger *slog.Logger) http.Handler` tha
 Test: a slog capture sink; assert an aborting handler produces no 500 body and no `Error`-level log, a normal panic produces a 500 and one `Error` log, and a wrapped abort (`fmt.Errorf("...: %w", http.ErrAbortHandler)`) is still detected via `errors.Is`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/08-panic-and-recover/03-abort-handler-sentinel/cmd/demo
-cd go-solutions/03-control-flow/08-panic-and-recover/03-abort-handler-sentinel
-```
-
 ### Why re-panic instead of return
 
 `http.ErrAbortHandler` is defined as `var ErrAbortHandler = errors.New("net/http: abort Handler")`. Panicking with it does two things: it aborts the

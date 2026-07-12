@@ -23,13 +23,6 @@ worker/                    module example.com/worker
 - Test: start `Run` in a goroutine tracked by a `WaitGroup`, cancel `ctx`, and assert `Wait()` returns before a deadline; assert the ticker flushes; run under `-race`.
 - Verify: `go test -count=1 -race ./...`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/06-worker-select-cancel-leak/cmd/demo
-cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/06-worker-select-cancel-leak
-```
-
 ### The artifact and the planted bug
 
 The worker drains jobs and periodically flushes on a ticker — the shape of a

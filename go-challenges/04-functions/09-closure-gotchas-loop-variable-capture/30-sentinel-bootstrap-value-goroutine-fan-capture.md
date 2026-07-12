@@ -29,8 +29,6 @@ bootstrap/                   independent module: example.com/bootstrap
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/30-sentinel-bootstrap-value-goroutine-fan-capture/cmd/demo
-cd go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/30-sentinel-bootstrap-value-goroutine-fan-capture
 go mod edit -go=1.24
 ```
 

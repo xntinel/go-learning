@@ -19,12 +19,6 @@ partition_test.go    round-trip with keys, recovery, tail truncation, long-poll
 - Test: keyed round-trip, recovery after reopen, tail truncation of a partial record, long-poll unblock on append, and context-deadline timeout.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/41-capstone-message-queue/08-full-message-queue/01-partition-log/cmd/demo && cd go-solutions/41-capstone-message-queue/08-full-message-queue/01-partition-log
-```
-
 ### Why a fixed header, ReadAt, and a condition variable
 
 A partition is a flat append-only file. Three design choices make it both correct and concurrent.

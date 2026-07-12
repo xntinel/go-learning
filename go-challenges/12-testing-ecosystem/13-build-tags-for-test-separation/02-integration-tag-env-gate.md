@@ -25,13 +25,6 @@ storegate/                 independent module: example.com/storegate
 - Test: `go test ./...` excludes the integration test; `INTEGRATION=1 go test -tags=integration -v ./...` runs it.
 - Verify: the tagged file compiles only under `-tags=integration`; the env var gates the run.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/13-build-tags-for-test-separation/02-integration-tag-env-gate/cmd/demo
-cd go-solutions/12-testing-ecosystem/13-build-tags-for-test-separation/02-integration-tag-env-gate
-```
-
 ### Two independent gates on one test
 
 Read the integration file top to bottom and you see both gating axes stacked:

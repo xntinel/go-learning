@@ -71,13 +71,6 @@ on a producer that may have exited. If you genuinely need a *bounded* final drai
 drain only what is already buffered with a non-blocking `select`/`default`, never
 an unbounded `range`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/10-signaling-with-closed-channels/07-drain-vs-cancel/cmd/demo
-cd go-solutions/13-goroutines-and-channels/10-signaling-with-closed-channels/07-drain-vs-cancel
-```
-
 Create `processor.go`:
 
 ```go

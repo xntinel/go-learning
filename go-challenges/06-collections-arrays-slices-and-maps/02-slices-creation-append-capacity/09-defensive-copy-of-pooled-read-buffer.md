@@ -31,8 +31,6 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/02-slices-creation-append-capacity/09-defensive-copy-of-pooled-read-buffer/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/02-slices-creation-append-capacity/09-defensive-copy-of-pooled-read-buffer
 go mod edit -go=1.26
 ```
 

@@ -26,13 +26,6 @@ Implement: `Cache` guarded by `sync.Mutex`; `Set(key, value, expiry)`, `Get`, `L
 Test: a fixed-clock sweep removes only expired entries and returns the right count; a sweep of an empty map is a no-op; concurrent `Get`/`Set`/`Sweep` under `-race`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/07-ttl-cache-sweep/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/07-ttl-cache-sweep
-```
-
 ## Why DeleteFunc-in-place beats rebuild-on-every-get
 
 A cache with lazy expiry — `Get` treats an entry as gone once it is past its

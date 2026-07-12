@@ -28,13 +28,6 @@ idemguard/                 independent module: example.com/idemguard
 - Test: many goroutines call `Process` with the same key; assert the side-effect runs exactly once and only one CAS wins, under `-race`; a separate test hammers the `Once` initializer and asserts a single, non-nil init.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/09-pointer-aliasing-and-data-races/09-idempotency-guard-cas/cmd/demo
-cd go-solutions/09-pointers/09-pointer-aliasing-and-data-races/09-idempotency-guard-cas
-```
-
 ### Check-then-act is the failure mode; CAS is the fix
 
 The bug is TOCTOU: time-of-check to time-of-use. `if !seen[key]` is the check;

@@ -29,13 +29,6 @@ Implement: a `*Registry` mapping name → `*atomic.Int64`; `Inc(name)` finds an 
 Test: many goroutines increment a shared set of names — no lost updates, size equals distinct names; a benchmark comparing the RLock+atomic path against a full-`Lock` variant.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/02-sync-rwmutex/04-metrics-counter-registry/cmd/demo
-cd go-solutions/15-sync-primitives/02-sync-rwmutex/04-metrics-counter-registry
-```
-
 ### Two locks for two jobs
 
 There are two distinct pieces of shared state here, and they need different

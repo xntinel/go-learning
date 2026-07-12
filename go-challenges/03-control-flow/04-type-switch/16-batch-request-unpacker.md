@@ -33,8 +33,6 @@ batch-request-unpacker/     independent module: example.com/batch-request-unpack
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/04-type-switch/16-batch-request-unpacker/cmd/demo
-cd go-solutions/03-control-flow/04-type-switch/16-batch-request-unpacker
 go mod edit -go=1.24
 ```
 

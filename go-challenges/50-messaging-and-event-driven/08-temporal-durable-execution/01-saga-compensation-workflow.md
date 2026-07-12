@@ -30,8 +30,6 @@ ordersaga/                     independent module: example.com/ordersaga
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/50-messaging-and-event-driven/08-temporal-durable-execution/01-saga-compensation-workflow/cmd/demo
-cd go-solutions/50-messaging-and-event-driven/08-temporal-durable-execution/01-saga-compensation-workflow
 go get go.temporal.io/sdk@latest
 ```
 

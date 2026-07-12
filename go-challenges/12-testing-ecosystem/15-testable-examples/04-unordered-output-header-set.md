@@ -23,13 +23,6 @@ Implement: `Dump(map[string]string)` that prints each entry as `key: value` on i
 Test: a table-driven `Test` that captures and sorts the lines, plus `ExampleDump` using `// Unordered output:`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/15-testable-examples/04-unordered-output-header-set/cmd/demo
-cd go-solutions/12-testing-ecosystem/15-testable-examples/04-unordered-output-header-set
-```
-
 ## Why a plain // Output: flakes, and what fixes it
 
 Go deliberately randomizes the iteration order of a map. That is a feature — it

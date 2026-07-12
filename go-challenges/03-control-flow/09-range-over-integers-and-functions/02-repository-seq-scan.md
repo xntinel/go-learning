@@ -23,13 +23,6 @@ Implement: `ScanUsers(rs Rows, errp *error) iter.Seq[User]` that defers `Close`,
 Test: full drain closes once and yields all; break after one row still closes; `rs.Err()` surfaces via the captured `*error`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/09-range-over-integers-and-functions/02-repository-seq-scan/cmd/demo
-cd go-solutions/03-control-flow/09-range-over-integers-and-functions/02-repository-seq-scan
-```
-
 ## The design
 
 `ScanUsers` models a `database/sql` scan: `rs.Next()` advances the cursor,

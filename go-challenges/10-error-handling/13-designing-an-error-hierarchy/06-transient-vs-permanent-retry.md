@@ -24,13 +24,6 @@ transient-retry/                   module example.com/transient-retry
 - Test: a function that fails transiently twice then succeeds runs exactly 3 times and returns nil; a permanent `ErrUserInvalid` runs exactly once; an error joined as both `ErrUser` and `ErrTransient` is retried yet still `errors.Is` `ErrUser`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/13-designing-an-error-hierarchy/06-transient-vs-permanent-retry/cmd/demo
-cd go-solutions/10-error-handling/13-designing-an-error-hierarchy/06-transient-vs-permanent-retry
-```
-
 ### Retryability is orthogonal to the domain category
 
 The mistake this exercise inoculates against is inferring "should I retry?" from the

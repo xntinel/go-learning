@@ -26,13 +26,6 @@ bufrwc/                     independent module: example.com/bufrwc
 - Test: buffered writes are not visible on the underlying store until `Flush`/`Close`; `Close` flushes then closes; `Close` returns a joined error if flush fails; a buffered read round-trips; a static assertion the wrapper satisfies `io.ReadWriteCloser`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/05-interface-composition-and-embedding/09-buffered-readwritecloser/cmd/demo
-cd go-solutions/08-interfaces/05-interface-composition-and-embedding/09-buffered-readwritecloser
-```
-
 ### Why Close order is a correctness property
 
 `bufio.Writer` accumulates writes in an in-memory buffer and only pushes them to

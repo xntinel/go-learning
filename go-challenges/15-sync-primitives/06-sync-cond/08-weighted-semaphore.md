@@ -25,13 +25,6 @@ wsem/                       independent module: example.com/wsem
 - Test: with budget 10 and 9 outstanding, parked `Acquire(8)` and `Acquire(2)` behave correctly when 3 permits free — the 2 is admitted, the 8 re-parks; outstanding weight never exceeds the budget under `-race`; over-budget requests fail via `errors.Is`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/06-sync-cond/08-weighted-semaphore/cmd/demo
-cd go-solutions/15-sync-primitives/06-sync-cond/08-weighted-semaphore
-```
-
 ### Why heterogeneous weights make Signal a lost-wakeup bug
 
 With a counting semaphore (every waiter needs 1), `Signal` per released permit

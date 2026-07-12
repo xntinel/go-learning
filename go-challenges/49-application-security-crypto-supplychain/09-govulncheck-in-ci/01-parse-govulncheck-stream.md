@@ -35,8 +35,6 @@ vulnstream/                  independent module: example.com/vulnstream
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/49-application-security-crypto-supplychain/09-govulncheck-in-ci/01-parse-govulncheck-stream/cmd/demo
-cd go-solutions/49-application-security-crypto-supplychain/09-govulncheck-in-ci/01-parse-govulncheck-stream
 go mod edit -go=1.26
 ```
 

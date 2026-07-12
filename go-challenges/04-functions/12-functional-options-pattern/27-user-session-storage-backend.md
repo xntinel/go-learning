@@ -31,8 +31,6 @@ session/                         independent module: example.com/user-session-st
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/12-functional-options-pattern/27-user-session-storage-backend/cmd/demo
-cd go-solutions/04-functions/12-functional-options-pattern/27-user-session-storage-backend
 go mod edit -go=1.24
 ```
 

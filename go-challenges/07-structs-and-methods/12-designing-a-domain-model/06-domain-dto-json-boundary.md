@@ -26,13 +26,6 @@ userjson/                   independent module: example.com/userjson
 - Test: a Marshal-then-Unmarshal round-trip preserves the value; an `UnmarshalJSON` of a payload with an empty required field returns the constructor's error; the domain struct carries no json tags; an unknown wire field is rejected per policy.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/12-designing-a-domain-model/06-domain-dto-json-boundary/cmd/demo
-cd go-solutions/07-structs-and-methods/12-designing-a-domain-model/06-domain-dto-json-boundary
-```
-
 ### Two shapes, mapped explicitly, re-validated on decode
 
 The domain `User` has unexported fields and no struct tags at all. That is

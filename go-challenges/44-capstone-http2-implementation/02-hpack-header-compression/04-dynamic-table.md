@@ -22,7 +22,6 @@ dyntable/
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/44-capstone-http2-implementation/02-hpack-header-compression/04-dynamic-table/cmd/demo && cd go-solutions/44-capstone-http2-implementation/02-hpack-header-compression/04-dynamic-table
 go mod edit -go=1.26
 ```
 
@@ -134,7 +133,6 @@ func (t *DynamicTable) SetMaxSize(n uint32) {
 }
 ```
 
-
 ### The runnable demo
 
 The demo creates a 256-byte table and adds eight `x-id` entries, each costing `4 + 8 + 32 = 44` bytes, so five fit (220 bytes) and every further insert evicts exactly one. It prints the running length, size, and eviction count, then identifies the newest and oldest surviving entries, then issues a size update to 0 to flush everything.
@@ -169,7 +167,6 @@ func main() {
 	fmt.Printf("after size-update to 0: len=%d size=%d\n", t.Len(), t.Size())
 }
 ```
-
 
 Run it:
 
@@ -288,7 +285,6 @@ func padNum(i int) string {
 	return "value-" + string([]byte{digits[i/10], digits[i%10]})
 }
 ```
-
 
 ## Review
 

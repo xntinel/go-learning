@@ -24,13 +24,6 @@ examples-doc/                  module example.com/examples-doc
 - Test: three example functions — one `// Output:`, one negative-path, one `// Unordered output:` over a map.
 - Verify: `go run ./cmd/demo` prints the areas; `go test ./...` executes the examples and compares stdout; `go doc` renders them.
 
-Create the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/04-go-tool-commands/03-testable-examples-as-docs/cmd/demo go-solutions/01-environment-and-tooling/04-go-tool-commands/03-testable-examples-as-docs/internal/circle
-cd go-solutions/01-environment-and-tooling/04-go-tool-commands/03-testable-examples-as-docs
-```
-
 ### How examples are checked and named
 
 `go test` collects every `func ExampleXxx()` and runs it. If the function ends in

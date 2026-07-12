@@ -32,8 +32,6 @@ telemetry/                     independent module: example.com/telemetry
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/48-modern-go-language-and-stdlib/16-go-fix-inline-modernization/04-running-the-modernizer-suite-in-ci/metrics go-solutions/48-modern-go-language-and-stdlib/16-go-fix-inline-modernization/04-running-the-modernizer-suite-in-ci/cmd/demo
-cd go-solutions/48-modern-go-language-and-stdlib/16-go-fix-inline-modernization/04-running-the-modernizer-suite-in-ci
 go mod edit -go=1.26
 ```
 

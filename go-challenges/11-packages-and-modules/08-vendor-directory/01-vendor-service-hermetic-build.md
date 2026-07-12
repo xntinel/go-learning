@@ -28,13 +28,6 @@ normalizer/                    independent module: example.com/normalizer
 - Test: the preserved "CLI uppercases argument" contract on `Run`, plus a hermetic test that vendors and `-mod=vendor`-builds a copy of the module in `t.TempDir()` and asserts its output equals the cache build's, byte for byte.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/11-packages-and-modules/08-vendor-directory/01-vendor-service-hermetic-build/cmd/demo
-cd go-solutions/11-packages-and-modules/08-vendor-directory/01-vendor-service-hermetic-build
-```
-
 ### Why the artifact is split into a package and a CLI
 
 A `main()` that reads `os.Args` and calls `os.Exit` cannot be unit-tested — you

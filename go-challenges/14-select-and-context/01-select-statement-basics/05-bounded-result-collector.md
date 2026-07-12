@@ -26,13 +26,6 @@ Implement: `Collect(n int, results <-chan Result, errs <-chan error) ([]Result, 
 Test: n results aggregate in any order; one interleaved error wins and aborts early; the loop stops after exactly n and never blocks for an (n+1)th.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/01-select-statement-basics/05-bounded-result-collector/cmd/demo
-cd go-solutions/14-select-and-context/01-select-statement-basics/05-bounded-result-collector
-```
-
 ## The counter is the terminator
 
 The naive urge is to write one `case` per backend, or to poll with a `default`.

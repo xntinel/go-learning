@@ -26,13 +26,6 @@ Implement: `Flusher[T]` with `Run(in <-chan T)` that appends to a batch, flushes
 Test: seven items with `maxSize=3` flush as `[3,3,1]` including the final partial; a slow feed with a short ticker triggers a time-based flush of a partial batch; an empty-closed input flushes nothing; batches are cloned so later appends do not mutate a delivered batch.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/06-ranging-over-channels/04-batch-flusher/cmd/demo
-cd go-solutions/13-goroutines-and-channels/06-ranging-over-channels/04-batch-flusher
-```
-
 ### The three flush triggers
 
 The loop is a `for-select`, not a `range`, because it waits on two things at once:

@@ -19,12 +19,6 @@ orchann_test.go      zero/one/nil inputs, first-fires, race close-once, recursiv
 - Test: the suite covers the zero/one/nil contracts, that the output closes when the first input fires, that closing many inputs at once never double-closes, that `OrRecursive` matches `Or`, and a 100-channel case.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/16-concurrency-patterns/09-or-channel-pattern/01-or-channel-core/cmd/demo && cd go-solutions/16-concurrency-patterns/09-or-channel-pattern/01-or-channel-core
-```
-
 ### Why two forms, and the exactly-once close
 
 Both functions return a `<-chan struct{}` that closes when any input closes, but they reach that guarantee differently, and the difference is the lesson.

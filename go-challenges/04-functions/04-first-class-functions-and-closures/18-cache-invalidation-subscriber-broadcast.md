@@ -29,8 +29,6 @@ broadcaster/               independent module: example.com/cache-invalidation-br
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/04-first-class-functions-and-closures/18-cache-invalidation-subscriber-broadcast/cmd/demo
-cd go-solutions/04-functions/04-first-class-functions-and-closures/18-cache-invalidation-subscriber-broadcast
 go mod edit -go=1.24
 ```
 

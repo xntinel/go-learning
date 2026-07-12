@@ -19,12 +19,6 @@ pubsub_test.go       delivery, topic filtering, drop accounting, and a concurren
 - Test: `pubsub_test.go` pins delivery to every subscriber, topic filtering, multi-topic delivery, the drop-on-full-buffer policy with a counter, idempotent `Close`, and a concurrent publish/unsubscribe loop that must not panic under `-race`.
 - Verify: `go test -run 'TestPublish|TestTopic|TestMulti|TestUnsubscribe|TestClose|TestSubscribe|TestSlow' -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/16-concurrency-patterns/16-pub-sub-with-channels/01-channel-broker/cmd/demo && cd go-solutions/16-concurrency-patterns/16-pub-sub-with-channels/01-channel-broker
-```
-
 ### Why send and close must be mutually exclusive
 
 The data structure is unremarkable: a `map[int]*Subscription` for lookup by id, a `map[string]map[int]struct{}` to find the subscribers of a topic without scanning, and a `sync.RWMutex` over both. Subscribe and unsubscribe take the write lock because they mutate the maps; `SubscriberCount` takes the read lock because it only reads. The interesting decision is what lock `Publish` holds, and for how long.

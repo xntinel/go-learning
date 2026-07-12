@@ -27,13 +27,6 @@ lru/                       independent module: example.com/lru
 - Test: least-recently-used leaves first, `Get` updates recency, capacity is never exceeded, update-in-place does not grow size, and the eviction callback fires with the evicted key/value.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/14-custom-map-based-data-structure/04-lru-cache/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/14-custom-map-based-data-structure/04-lru-cache
-```
-
 ### Two structures pointing at the same node
 
 An LRU needs two O(1) operations that pull in opposite directions: find a value by

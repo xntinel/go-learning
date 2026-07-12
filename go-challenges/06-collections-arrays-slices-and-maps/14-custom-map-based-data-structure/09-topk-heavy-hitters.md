@@ -27,13 +27,6 @@ topk/                      independent module: example.com/topk
 - Test: `TopK` matches a brute-force sorted frequency list; ties broken deterministically by key; K larger than the distinct-key count returns all.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/14-custom-map-based-data-structure/09-topk-heavy-hitters/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/14-custom-map-based-data-structure/09-topk-heavy-hitters
-```
-
 ### Why a bounded min-heap, and how ties stay deterministic
 
 Counting is the easy half: a `map[string]int` where each occurrence does

@@ -23,12 +23,6 @@ gracefulsrv/
 - Test: an in-flight handler completes and replies when the deadline is generous; a too-short deadline returns `ErrForced` and drops the connection; new connections are refused after `Shutdown`; the goroutine count returns to baseline.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/16-concurrency-patterns/21-graceful-goroutine-draining/02-graceful-connection-server/cmd/demo && cd go-solutions/16-concurrency-patterns/21-graceful-goroutine-draining/02-graceful-connection-server
-```
-
 ## The protocol and the shape of the drain
 
 To keep the focus on draining rather than parsing, the wire protocol is one line per connection: the client sends `"<milliseconds>\n"` naming how long its request should take, and the handler replies `"ok\n"` once that much simulated work has elapsed. This is the smallest protocol that still has a property real servers have and toy examples usually lack: the work is *interruptible*. The handler does not `time.Sleep`; it `select`s on `time.After(d)` against a force channel, so the server can actually abort it. A handler built on a bare `Sleep` would ignore every attempt to force it and leak past shutdown — the force would be cosmetic.

@@ -20,12 +20,6 @@ registry_test.go     known keys, unknown-key error, overwrite, extension, sort
 - Test: known keys resolve and compute, an unknown key errors without mutating the subtotal, re-registration overwrites, a runtime-added strategy works, and `Keys` is sorted.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/24-design-patterns-in-go/03-strategy-pattern-via-interfaces/03-strategy-registry/cmd/demo && cd go-solutions/24-design-patterns-in-go/03-strategy-pattern-via-interfaces/03-strategy-registry
-```
-
 ### Open extension, closed dispatch
 
 A naive runtime selector is a `switch key` that constructs a strategy per case, and it has the defect the strategy pattern exists to remove: every new algorithm edits the switch. A registry inverts that. The dispatch logic is one map lookup that never changes; extension happens by calling `Register("key", impl)`. The standard library uses exactly this shape — `sql.Register` for database drivers, `image.RegisterFormat` for decoders — so that a driver in a package the core has never imported can plug in by registering a key.

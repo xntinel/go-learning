@@ -21,13 +21,6 @@ sumtest/                   independent module: example.com/sumtest
 - Test: `TestSum` pins `Sum(2, 3) == 5`; `TestSumWithNegatives` pins `Sum(-1, 1) == 0`.
 - Verify: `gofmt -l .`, `go vet ./...`, `go test -count=1 -race ./...`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/01-your-first-test/01-sum-library-first-test/cmd/demo
-cd go-solutions/12-testing-ecosystem/01-your-first-test/01-sum-library-first-test
-```
-
 ### Why this trivial function earns a test
 
 `Sum` is deterministic and side-effect-free — the ideal shape for a first test.

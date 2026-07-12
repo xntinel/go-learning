@@ -27,13 +27,6 @@ ratelimit/                   independent module: example.com/ratelimit
 - Test: N requests fill the window then the (N+1)th is denied; advancing past the window resets; `Snapshot` is an independent copy; wraparound at second 59 to 0.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/09-fixed-window-rate-limiter/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/09-fixed-window-rate-limiter
-```
-
 ### Why the [60]int array is the whole state
 
 The limiter caps requests over a trailing 60-second window by keeping one counter

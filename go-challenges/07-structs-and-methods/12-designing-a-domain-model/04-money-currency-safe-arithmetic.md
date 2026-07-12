@@ -26,13 +26,6 @@ money/                      independent module: example.com/money
 - Test: `Add(USD, USD)` sums minor units; `Add(USD, EUR)` returns `ErrCurrencyMismatch`; `NewMoney` with an unknown currency is rejected; amounts stay `int64` (no float path exists).
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/12-designing-a-domain-model/04-money-currency-safe-arithmetic/cmd/demo
-cd go-solutions/07-structs-and-methods/12-designing-a-domain-model/04-money-currency-safe-arithmetic
-```
-
 ### Integer minor units and a currency tag
 
 `float64` cannot represent `0.10` exactly; it stores the nearest binary fraction,

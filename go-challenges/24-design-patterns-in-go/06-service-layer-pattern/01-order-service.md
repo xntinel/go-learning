@@ -20,12 +20,6 @@ service_test.go      pin the pipeline, the validators, and both rollback paths
 - Test: `service_test.go` covers the happy path, the total computation, empty-order and bad-quantity validation, payment-failure and stock-failure rollback, an unknown user, fire-and-forget notification, and the nil-dependency guard.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/24-design-patterns-in-go/06-service-layer-pattern/01-order-service/cmd/demo && cd go-solutions/24-design-patterns-in-go/06-service-layer-pattern/01-order-service
-```
-
 ### Why orchestration belongs here, and how compensation works
 
 `PlaceOrder` is a use case, and a use case is a sequence of steps that each delegate to a collaborator. The service stores nothing; it holds five interfaces — `OrderRepository`, `InventoryRepository`, `UserRepository`, `PaymentProcessor`, `Notifier` — and sequences calls against them. Read the method top to bottom and it states the business rule in the domain's own words: reject an empty or malformed request, resolve the user, reserve each item against available stock, total the line items, charge the card, allocate an id, save the order, and notify. Every line names a verb the business cares about; not one names a SQL statement or an HTTP endpoint. That is the property the service layer exists to preserve.

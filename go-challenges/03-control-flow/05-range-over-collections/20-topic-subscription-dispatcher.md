@@ -34,8 +34,6 @@ broker/                     independent module: example.com/topic-subscription-d
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/05-range-over-collections/20-topic-subscription-dispatcher/cmd/demo
-cd go-solutions/03-control-flow/05-range-over-collections/20-topic-subscription-dispatcher
 go mod edit -go=1.24
 ```
 

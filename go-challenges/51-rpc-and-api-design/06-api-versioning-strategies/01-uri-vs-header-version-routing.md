@@ -26,13 +26,6 @@ versionrouting/                independent module: example.com/versionrouting
 - Test: `/v1` and `/v2` hit distinct handlers; vendor `Accept` values route to the matching version; blank, wildcard, and malformed `Accept` fall back rather than 500; the negotiated route echoes the version and sends `Vary: Accept`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/51-rpc-and-api-design/06-api-versioning-strategies/01-uri-vs-header-version-routing/cmd/demo
-cd go-solutions/51-rpc-and-api-design/06-api-versioning-strategies/01-uri-vs-header-version-routing
-```
-
 ### Why both axes, and where the version lives
 
 URI-path versioning is trivial to route in Go 1.22+: a `ServeMux` pattern like

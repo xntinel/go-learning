@@ -27,13 +27,6 @@ exporter/                      independent module: example.com/exporter
 - Test: a fake closer whose `Close` fails after a good write surfaces the close error; a write failure keeps its error and still closes; both failing reports both via `errors.Join`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/01-variable-declaration-and-short-assignment/09-named-returns-deferred-cleanup/cmd/demo
-cd go-solutions/02-variables-types-and-constants/01-variable-declaration-and-short-assignment/09-named-returns-deferred-cleanup
-```
-
 ### Why named returns here, and only here
 
 A deferred closure runs after the `return` statement has set the result values but

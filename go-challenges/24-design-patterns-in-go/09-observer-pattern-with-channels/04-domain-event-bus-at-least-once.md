@@ -19,12 +19,6 @@ bus_test.go          retry/ack accounting + -race concurrent pub/sub + clean dra
 - Test: `bus_test.go` proves retry-until-ack, retry-budget exhaustion, that every committed event is drained on shutdown with no goroutine leak, and that concurrent publish/subscribe/shutdown is race-free.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/24-design-patterns-in-go/09-observer-pattern-with-channels/04-domain-event-bus-at-least-once/cmd/demo && cd go-solutions/24-design-patterns-in-go/09-observer-pattern-with-channels/04-domain-event-bus-at-least-once
-```
-
 ### Backpressure instead of loss, and where the goroutines live
 
 The design inverts the drop policy. Each subscriber gets a buffered channel of a fixed size — its bounded queue — and a dedicated worker goroutine that pulls events off the queue and runs the handler. `Publish` does a *blocking* send into each matching subscriber's queue. When a queue is full, the send blocks, and that blocking is the backpressure: a slow consumer slows down its publishers rather than silently losing their events. Because every subscriber has its own queue and its own worker, a slow consumer on one topic does not stall a fast consumer on another; backpressure is per-subscriber.

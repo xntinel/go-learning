@@ -29,8 +29,6 @@ respbuild/                 independent module: example.com/respbuild
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/12-testing-ecosystem/05-benchmarks/09-allocation-regression-strings-builder/cmd/demo
-cd go-solutions/12-testing-ecosystem/05-benchmarks/09-allocation-regression-strings-builder
 go mod edit -go=1.24
 ```
 

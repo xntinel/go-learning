@@ -27,13 +27,6 @@ Implement: `Page(index map[string]Item, after string, limit int) ([]Item, string
 Test: repeated `Page` calls traverse every item exactly once with no duplicates; empty index yields an empty page and empty cursor; a limit larger than the remainder returns the tail; a cursor past the end returns empty.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/09-grouped-index-pagination/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/09-grouped-index-pagination
-```
-
 ## Why a sorted key space plus a cursor
 
 The bug this exercise exists to prevent is subtle and common. A paginator that

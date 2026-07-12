@@ -30,8 +30,6 @@ mediagate/                 independent module: example.com/mediagate
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/13-goroutines-and-channels/13-goroutine-pools/04-weighted-semaphore-cost/cmd/demo
-cd go-solutions/13-goroutines-and-channels/13-goroutine-pools/04-weighted-semaphore-cost
 go get golang.org/x/sync/semaphore
 ```
 

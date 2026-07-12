@@ -28,13 +28,6 @@ validate/                     independent module: example.com/validate
 - Test: assert `validateBuggy` on valid input yields a non-nil `error` (the trap), `validateFixed` yields `err == nil`, and `errors.As` extracts `*ValidationError` on the error path.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/01-implicit-interface-satisfaction/05-typed-nil-error-trap/cmd/demo
-cd go-solutions/08-interfaces/01-implicit-interface-satisfaction/05-typed-nil-error-trap
-```
-
 ### Why the buggy version fails on valid input
 
 An interface value is two words: a type descriptor and a data pointer. `error` is

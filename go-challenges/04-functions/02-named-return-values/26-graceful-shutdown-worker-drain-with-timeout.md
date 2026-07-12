@@ -29,8 +29,6 @@ drain/                     independent module: example.com/drain
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/02-named-return-values/26-graceful-shutdown-worker-drain-with-timeout/cmd/demo
-cd go-solutions/04-functions/02-named-return-values/26-graceful-shutdown-worker-drain-with-timeout
 go mod edit -go=1.24
 ```
 

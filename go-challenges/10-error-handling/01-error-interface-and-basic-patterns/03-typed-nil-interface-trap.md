@@ -28,13 +28,6 @@ typednil/                    independent module: example.com/typednil
 - Test: assert `processOrderBuggy` returns a non-nil error for a *valid* request (the bug); assert `processOrder` returns `err == nil` for a valid request and that `errors.As(err, &target)` succeeds for an invalid one.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/01-error-interface-and-basic-patterns/03-typed-nil-interface-trap/cmd/demo
-cd go-solutions/10-error-handling/01-error-interface-and-basic-patterns/03-typed-nil-interface-trap
-```
-
 ### Why a nil pointer is not a nil interface
 
 An interface value is a pair of words: a type word and a value word. It is `nil`

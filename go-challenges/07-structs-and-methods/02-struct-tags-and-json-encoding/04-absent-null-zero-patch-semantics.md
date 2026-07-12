@@ -30,8 +30,6 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/07-structs-and-methods/02-struct-tags-and-json-encoding/04-absent-null-zero-patch-semantics/patch go-solutions/07-structs-and-methods/02-struct-tags-and-json-encoding/04-absent-null-zero-patch-semantics/cmd/demo
-cd go-solutions/07-structs-and-methods/02-struct-tags-and-json-encoding/04-absent-null-zero-patch-semantics
 go mod edit -go=1.24
 ```
 

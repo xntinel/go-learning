@@ -28,13 +28,6 @@ limiter/                      independent module: example.com/limiter
 - Test: a compile-time guard `var _ Limiter = (*RateLimiter)(nil)`; a test that drives many `Allow` calls through the interface value and asserts the shared counter advanced (proving pointer identity, not a copy); a `-race` concurrent test.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/01-implicit-interface-satisfaction/03-pointer-vs-value-receiver-method-sets/cmd/demo
-cd go-solutions/08-interfaces/01-implicit-interface-satisfaction/03-pointer-vs-value-receiver-method-sets
-```
-
 ### Why the value form does not satisfy the interface
 
 `RateLimiter` holds a `sync.Mutex` and a mutable counter. Its `Allow` method takes

@@ -22,12 +22,6 @@ decorator_test.go    retry success-after-transient, stop-on-permanent,
 - Test: retry succeeds after transient failures and stops on permanent ones, wraps the last error on exhaustion; timeout fires on a slow op and passes a fast result through; the composition retries each attempt under its own timeout.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/24-design-patterns-in-go/08-middleware-decorator-pattern/03-generic-function-decorators/cmd/demo && cd go-solutions/24-design-patterns-in-go/08-middleware-decorator-pattern/03-generic-function-decorators
-```
-
 ### One decorator for every return type
 
 The function-decorator version of the pattern keeps the signature instead of the interface. Define `type Op[T any] func(context.Context) (T, error)` — a cancellable operation returning a value of any type — and a decorator is any `func(Op[T]) Op[T]`: it takes an operation and returns one of the same shape with behavior added around the call. Because the input and output types match, decorators compose by nesting exactly as the interface and HTTP versions did, and because `T` is a type parameter, one `WithRetry` works for `Op[int]`, `Op[string]`, `Op[*User]`, and everything else, with no `interface{}` and no per-type duplication. Generics are what make the function decorator general; before Go 1.18 you either wrote one wrapper per type or paid for runtime type assertions.

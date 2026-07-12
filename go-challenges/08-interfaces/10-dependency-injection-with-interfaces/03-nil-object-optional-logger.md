@@ -26,13 +26,6 @@ service/                    independent module: example.com/service
 - Test: `TestServiceWithNilLoggerDoesNotPanic` (pass nil logger, call `Get`, assert no panic and a correct result); `TestNilRepoRejected` (pass nil repo, assert the constructor returns a non-nil error).
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/10-dependency-injection-with-interfaces/03-nil-object-optional-logger/cmd/demo
-cd go-solutions/08-interfaces/10-dependency-injection-with-interfaces/03-nil-object-optional-logger
-```
-
 ### Required versus optional, encoded in the constructor
 
 The design decision is which dependencies the service cannot function without.

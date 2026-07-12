@@ -25,12 +25,6 @@ signup_test.go       validation, idempotent retry, conflict mapping, transport
 - Test: `signup_test.go` covers normalization plus one-event emission, multi-field validation with a 400, an idempotent retry that creates no second user and emits no second event, a duplicate email mapped to `ErrEmailTaken`/409 without leaking the storage error, an unknown storage error mapped to `ErrInternal`/500, the missing-key guard, the full transport mapping table, and the nil-dependency guard.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/24-design-patterns-in-go/06-service-layer-pattern/05-idempotent-registration/cmd/demo && cd go-solutions/24-design-patterns-in-go/06-service-layer-pattern/05-idempotent-registration
-```
-
 ### Four responsibilities at the public edge
 
 A registration use case is where untrusted input meets durable state, so it has to police both directions and tolerate the messiness of a real network. Take the four jobs in turn.

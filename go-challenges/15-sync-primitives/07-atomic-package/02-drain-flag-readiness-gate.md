@@ -25,13 +25,6 @@ draingate/                 independent module: example.com/draingate
 - Test: 100 goroutines call `Request` concurrently and exactly one sees `true`; an `httptest` check of the readiness flip.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/07-atomic-package/02-drain-flag-readiness-gate/cmd/demo
-cd go-solutions/15-sync-primitives/07-atomic-package/02-drain-flag-readiness-gate
-```
-
 ### Why CompareAndSwap for a one-shot flag
 
 The plain version of a drain flag is `Store(true)` / `Load()`, and for the readiness

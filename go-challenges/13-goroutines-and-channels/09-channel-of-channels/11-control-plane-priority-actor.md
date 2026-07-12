@@ -22,13 +22,6 @@ priorityactor/               independent module: example.com/priorityactor
 - Test: control is serviced before data even when data is enqueued first; a control request jumps a deep data backlog; both entry points honour a cancelled `ctx` via `context.Cause` on send and on receive; `Shutdown` joins `Run` and post-shutdown calls return `ErrShuttingDown`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/09-channel-of-channels/11-control-plane-priority-actor/cmd/demo
-cd go-solutions/13-goroutines-and-channels/09-channel-of-channels/11-control-plane-priority-actor
-```
-
 ### Two inboxes, one loop, a preferential drain
 
 The actor owns two buffered request channels, `control` and `data`, and one goroutine reads both. Each request carries its own capacity-1 reply channel, so the serialized loop is the only writer of state and there is no mutex. The priority rule lives entirely in how the loop selects its next request:

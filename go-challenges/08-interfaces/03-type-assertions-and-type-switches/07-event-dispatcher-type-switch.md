@@ -25,13 +25,6 @@ Implement: a marker interface `Event` with an unexported method, three concrete 
 Test: dispatch each known event and assert its handler ran; dispatch an unknown `Event` and assert `errors.Is(err, ErrUnhandledEvent)`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/03-type-assertions-and-type-switches/07-event-dispatcher-type-switch/cmd/demo
-cd go-solutions/08-interfaces/03-type-assertions-and-type-switches/07-event-dispatcher-type-switch
-```
-
 ### The marker interface and the total switch
 
 `Event` is a marker interface: it declares one unexported method `isEvent()` that

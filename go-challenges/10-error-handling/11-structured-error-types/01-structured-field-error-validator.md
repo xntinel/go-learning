@@ -30,8 +30,6 @@ errstruct/                 independent module: example.com/errstruct
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/10-error-handling/11-structured-error-types/01-structured-field-error-validator/cmd/demo
-cd go-solutions/10-error-handling/11-structured-error-types/01-structured-field-error-validator
 go mod edit -go=1.26
 ```
 

@@ -25,8 +25,6 @@ keysetcursor/              independent module: example.com/keyset-cursor-codec
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/04-first-class-functions-and-closures/12-keyset-pagination-cursor-codec
-cd go-solutions/04-functions/04-first-class-functions-and-closures/12-keyset-pagination-cursor-codec
 go mod edit -go=1.24
 ```
 

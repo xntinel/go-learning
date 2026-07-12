@@ -23,13 +23,6 @@ before/                     independent module: example.com/before
 - Test: a table test that puts then gets a value through a `var s Service = m` variable and asserts the round-trip; a second test asserting the stub methods return `nil`, documenting that they carry no behavior.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/12-interface-pollution-anti-patterns/01-before-fat-service-interface/cmd/demo
-cd go-solutions/08-interfaces/12-interface-pollution-anti-patterns/01-before-fat-service-interface
-```
-
 ### Why this is the anti-pattern
 
 The `Service` interface enumerates eight methods. That single fact drives the

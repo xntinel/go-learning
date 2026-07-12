@@ -62,13 +62,6 @@ The scanner accepts options at construction time via the functional-options patt
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/33-tcp-udp-and-networking/22-building-a-port-scanner/22-building-a-port-scanner/cmd/demo
-cd go-solutions/33-tcp-udp-and-networking/22-building-a-port-scanner/22-building-a-port-scanner
-```
-
 This is a library with a thin demo; verification is via `go test`.
 
 ### Exercise 1: State, Result, and Sentinel Errors

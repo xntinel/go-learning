@@ -23,13 +23,6 @@ Implement: a `Broadcaster` over an input channel with `Subscribe(done <-chan str
 Test: two subscribers both receive every value; one subscriber closing its `done` detaches (its channel closes) while the other still receives all remaining values.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/07-done-channel-pattern/07-broadcast-tee-subscribers/cmd/demo
-cd go-solutions/13-goroutines-and-channels/07-done-channel-pattern/07-broadcast-tee-subscribers
-```
-
 ### Per-subscriber done is what enables clean detach
 
 Each subscriber owns its own `done` channel. The broadcaster's pump reads one value from the input

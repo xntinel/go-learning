@@ -30,13 +30,6 @@ Test: backoff is monotonic up to the cap and clamps there; the constant timeout
 sum stays within the total budget; attempts 0..8.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/08-untyped-constants-and-constant-expressions/02-retry-budget-durations/cmd/demo
-cd go-solutions/02-variables-types-and-constants/08-untyped-constants-and-constant-expressions/02-retry-budget-durations
-```
-
 ### Typed Duration constants are the contract
 
 `time.Second` is a *typed* constant of type `time.Duration`. When you write

@@ -28,8 +28,6 @@ webhookauth/                independent module: example.com/webhookauth
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/12-functional-options-pattern/13-mutually-exclusive-auth-options
-cd go-solutions/04-functions/12-functional-options-pattern/13-mutually-exclusive-auth-options
 go mod edit -go=1.24
 ```
 

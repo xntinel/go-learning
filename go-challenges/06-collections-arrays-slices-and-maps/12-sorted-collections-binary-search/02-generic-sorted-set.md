@@ -27,13 +27,6 @@ Implement: `Set[T cmp.Ordered]` with `New`, `Add(v) bool`, `Contains(v) bool`, `
 Test: sorted invariant via `slices.IsSorted`, dedup, membership, `Items` is a clone, and a shuffled-permutation property test.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/12-sorted-collections-binary-search/02-generic-sorted-set/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/12-sorted-collections-binary-search/02-generic-sorted-set
-```
-
 ### The (pos, found) result is the whole point
 
 `slices.BinarySearch(s, target)` returns `(pos, found)`. `pos` is the insertion

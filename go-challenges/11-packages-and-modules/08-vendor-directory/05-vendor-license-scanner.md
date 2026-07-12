@@ -27,13 +27,6 @@ licensescan/                 independent module: example.com/licensescan
 - Test: build the tree with `testing/fstest.MapFS` — modules carrying MIT, Apache-2.0, and GPL-3.0 license bodies, plus one module with no license file — and assert the violation set; allowlisted modules produce none.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/11-packages-and-modules/08-vendor-directory/05-vendor-license-scanner/cmd/demo
-cd go-solutions/11-packages-and-modules/08-vendor-directory/05-vendor-license-scanner
-```
-
 ### Why scan over `fs.FS`, not a real directory
 
 Vendored license files live on disk under `vendor/`, but a scanner written

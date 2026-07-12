@@ -30,13 +30,6 @@ assetserver/                 independent module: example.com/assetserver
   `If-Modified-Since` matches a `MapFile.ModTime` set in the fixture.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/11-testing-filesystems-with-fstest/04-asset-server-fileserverfs/cmd/demo
-cd go-solutions/12-testing-ecosystem/11-testing-filesystems-with-fstest/04-asset-server-fileserverfs
-```
-
 ### What net/http gives you for free once you speak fs.FS
 
 `http.FileServerFS(fsys)` returns a handler that serves the contents of `fsys`.

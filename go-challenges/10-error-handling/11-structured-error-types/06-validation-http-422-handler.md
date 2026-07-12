@@ -29,8 +29,6 @@ usershandler/              independent module: example.com/usershandler
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/10-error-handling/11-structured-error-types/06-validation-http-422-handler/cmd/demo
-cd go-solutions/10-error-handling/11-structured-error-types/06-validation-http-422-handler
 go mod edit -go=1.26
 ```
 

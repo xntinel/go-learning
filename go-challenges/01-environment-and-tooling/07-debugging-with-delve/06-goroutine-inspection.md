@@ -29,8 +29,6 @@ poolinspect/               independent module: example.com/poolinspect
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/01-environment-and-tooling/07-debugging-with-delve/06-goroutine-inspection/pool go-solutions/01-environment-and-tooling/07-debugging-with-delve/06-goroutine-inspection/cmd/demo
-cd go-solutions/01-environment-and-tooling/07-debugging-with-delve/06-goroutine-inspection
 go mod edit -go=1.24
 ```
 

@@ -22,13 +22,6 @@ humanbytes/                independent module: example.com/humanbytes
 - Test: exact formatted strings with `%q` messages across a byte, a fractional KiB, and a GiB.
 - Verify: `gofmt -l .`, `go vet ./...`, `go test -count=1 -race ./...`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/01-your-first-test/08-humanize-bytes/cmd/demo
-cd go-solutions/12-testing-ecosystem/01-your-first-test/08-humanize-bytes
-```
-
 ### Binary units and the precision choice
 
 Storage and memory are counted in binary multiples: 1 KiB is 1024 bytes, 1 MiB is

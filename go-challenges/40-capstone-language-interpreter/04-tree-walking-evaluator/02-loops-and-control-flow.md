@@ -22,12 +22,6 @@ cmd/
 - Test: a counting `while` sum, `break` exits early, `continue` skips the rest of the body, and a runtime error inside the body propagates out of the loop.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/40-capstone-language-interpreter/04-tree-walking-evaluator/02-loops-and-control-flow/cmd/demo && cd go-solutions/40-capstone-language-interpreter/04-tree-walking-evaluator/02-loops-and-control-flow
-```
-
 ### Why break and continue are signals, not jumps
 
 A tree-walking evaluator has no program counter to jump with, so loop control is expressed the same way as `return`: a sentinel value that propagates up the call stack until something consumes it. `break` and `continue` each become a package-level singleton object — `BREAK` and `CONTINUE` — and `Eval` of a `*BreakStatement` simply returns `BREAK`. The signal then has to climb out of however many `if` blocks surround it to reach the loop. That climb is `evalBlockStatement`'s job.

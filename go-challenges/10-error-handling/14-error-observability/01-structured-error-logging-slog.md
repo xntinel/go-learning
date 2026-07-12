@@ -29,8 +29,6 @@ errlog/                      independent module: example.com/errlog
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/10-error-handling/14-error-observability/01-structured-error-logging-slog/cmd/demo
-cd go-solutions/10-error-handling/14-error-observability/01-structured-error-logging-slog
 go mod edit -go=1.25
 ```
 

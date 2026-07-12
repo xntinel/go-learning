@@ -23,13 +23,6 @@ Implement: `Range(n) iter.Seq[int]`, generic `Map`, `Filter`, `Take`, `Collect`,
 Test: equality of `Range`/`Map`/`Filter`/`Take`/`Reduce`/compose, plus two counter tests proving early termination stops the source.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/09-range-over-integers-and-functions/01-streaming-pipeline-combinators/cmd/demo
-cd go-solutions/03-control-flow/09-range-over-integers-and-functions/01-streaming-pipeline-combinators
-```
-
 ## The design
 
 Each combinator is a function that returns an `iter.Seq[T]`. Because `iter.Seq[V]`

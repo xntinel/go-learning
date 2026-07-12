@@ -31,13 +31,6 @@ Test: boundary values per target (65535 ok / 65536 rejected; `math.MaxInt32` ok 
 returned unchanged and contrast against a naive `int32(n)` that truncates.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/07-numeric-precision-and-overflow/05-safe-narrowing-conversions/cmd/demo
-cd go-solutions/02-variables-types-and-constants/07-numeric-precision-and-overflow/05-safe-narrowing-conversions
-```
-
 ### Why an explicit conversion is not a safe conversion
 
 Go forces you to *write* a conversion when narrowing — the compiler will not let an

@@ -30,13 +30,6 @@ via `errors.Is` — asserting identity, never `Error()` text.
 Verify: `go test -count=1 ./...`, `go vet ./...` (which catches malformed
 `Errorf` verbs), `gofmt -l` empty.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/01-your-first-go-program/05-error-contract-is-as-join/cmd/demo
-cd go-solutions/01-environment-and-tooling/01-your-first-go-program/05-error-contract-is-as-join
-```
-
 ### Four tools, four jobs
 
 The `errors` package gives four distinct capabilities, and a good contract uses

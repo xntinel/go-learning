@@ -61,8 +61,6 @@ connstats/                module example.com/connstats
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/14-custom-map-based-data-structure/14-conn-stats-pointer-map
-cd go-solutions/06-collections-arrays-slices-and-maps/14-custom-map-based-data-structure/14-conn-stats-pointer-map
 go mod edit -go=1.24
 ```
 

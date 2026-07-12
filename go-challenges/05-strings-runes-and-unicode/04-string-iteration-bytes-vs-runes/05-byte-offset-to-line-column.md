@@ -23,13 +23,6 @@ Implement: `OffsetToPosition(src string, byteOffset int) (line, col int)`.
 Test: `(1,1)` at offset 0; correct line/col across a newline; rune column smaller than byte column after `café`; EOF offset; cross-check column vs range iteration from line start.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/04-string-iteration-bytes-vs-runes/05-byte-offset-to-line-column/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/04-string-iteration-bytes-vs-runes/05-byte-offset-to-line-column
-```
-
 ### Two counts, in the right units
 
 A position has two coordinates and they use different units. The line number is

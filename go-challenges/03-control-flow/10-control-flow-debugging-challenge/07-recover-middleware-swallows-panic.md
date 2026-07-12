@@ -22,13 +22,6 @@ recovery/                  module example.com/recovery
 - Test: a panicking handler yields `500` and a sanitized body (no panic detail); a normal handler passes through unchanged; a handler that commits a header before panicking is not overwritten (no superfluous `WriteHeader`).
 - Verify: `go test -count=1 -race ./...`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/07-recover-middleware-swallows-panic/cmd/demo
-cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/07-recover-middleware-swallows-panic
-```
-
 ### The artifact and the planted bug
 
 The middleware is a panic boundary: a handler that panics should be contained and

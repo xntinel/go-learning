@@ -26,13 +26,6 @@ jsondepth/                 independent module: example.com/jsondepth
 - Test: a flat object passing at `maxDepth=1`; a 10-level array failing at `maxDepth=5`; malformed JSON surfacing the decoder error; empty input accepted; a generated N-deep payload rejected at exactly `maxDepth+1`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/07-recursive-functions-and-stack-depth/03-untrusted-json-depth-guard/cmd/demo
-cd go-solutions/04-functions/07-recursive-functions-and-stack-depth/03-untrusted-json-depth-guard
-```
-
 ### Why you cannot measure first and reject later
 
 The instinct is to `json.Unmarshal` into an `any` and then walk the result to

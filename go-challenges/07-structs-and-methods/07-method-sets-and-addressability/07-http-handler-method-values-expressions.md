@@ -27,13 +27,6 @@ userapi/                       independent module: example.com/userapi
 - Test: register `h.HandleGet` (method value) on a `ServeMux` and drive it with `httptest`; call `(*UserHandler).HandleGet(h, w, r)` (method expression) and assert identical behavior; a `-race` test sharing one handler across concurrent requests.
 - Verify: `go vet ./...`, `go test -count=1 -race ./...`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/07-method-sets-and-addressability/07-http-handler-method-values-expressions/cmd/demo
-cd go-solutions/07-structs-and-methods/07-method-sets-and-addressability/07-http-handler-method-values-expressions
-```
-
 ### Method value vs method expression
 
 `HandleGet` is a method on `*UserHandler` with the signature

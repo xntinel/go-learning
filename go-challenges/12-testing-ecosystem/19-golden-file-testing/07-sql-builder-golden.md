@@ -32,8 +32,6 @@ Verify: `go test -count=1 -race ./...`
 Set up the module. It depends on go-cmp:
 
 ```bash
-mkdir -p go-solutions/12-testing-ecosystem/19-golden-file-testing/07-sql-builder-golden/cmd/demo go-solutions/12-testing-ecosystem/19-golden-file-testing/07-sql-builder-golden/testdata
-cd go-solutions/12-testing-ecosystem/19-golden-file-testing/07-sql-builder-golden
 go get github.com/google/go-cmp/cmp@v0.7.0
 ```
 

@@ -23,8 +23,6 @@ Test: `unitIndex` was built from the fully populated `units` slice despite the d
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/08-init-functions-and-package-initialization/10-derived-lookup-table-init-order
-cd go-solutions/04-functions/08-init-functions-and-package-initialization/10-derived-lookup-table-init-order
 go mod edit -go=1.24
 ```
 

@@ -54,8 +54,6 @@ rangescan/                module example.com/rangescan
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/09-slices-package/19-etcd-range-scan-appendseq
-cd go-solutions/06-collections-arrays-slices-and-maps/09-slices-package/19-etcd-range-scan-appendseq
 go mod edit -go=1.24
 ```
 

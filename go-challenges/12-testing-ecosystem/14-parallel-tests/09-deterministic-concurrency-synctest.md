@@ -32,8 +32,6 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/12-testing-ecosystem/14-parallel-tests/09-deterministic-concurrency-synctest/cmd/demo
-cd go-solutions/12-testing-ecosystem/14-parallel-tests/09-deterministic-concurrency-synctest
 go mod edit -go=1.25
 ```
 

@@ -26,13 +26,6 @@ Implement: `type HandlerFunc func(ctx, Event) error`, `Router` with `Register(ki
 Test: dispatch routes to the right handler; unknown kind hits the default or returns the sentinel via `errors.Is`; two handlers for one kind both run and their errors join; a nil registration is rejected; concurrent dispatch is race-free.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/06-function-types-and-callbacks/06-event-dispatch-table/cmd/demo
-cd go-solutions/04-functions/06-function-types-and-callbacks/06-event-dispatch-table
-```
-
 ### The table versus the switch, and the decisions it forces
 
 A giant `switch e.Kind { case "order.created": ...; case "user.signup": ... }` couples

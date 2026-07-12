@@ -26,13 +26,6 @@ Implement: `AppError`, `ValidateBuggy` (returns a typed-nil pointer), `ValidateC
 Test: the buggy path is wrongly non-nil, the correct path is nil, and the guard treats a nil-pointer interface as no error.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/03-type-assertions-and-type-switches/06-typed-nil-interface-guard/cmd/demo
-cd go-solutions/08-interfaces/03-type-assertions-and-type-switches/06-typed-nil-interface-guard
-```
-
 ### Why the interface is non-nil
 
 An interface value is two words: a type descriptor and a data pointer. It equals

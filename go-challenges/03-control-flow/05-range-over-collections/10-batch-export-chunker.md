@@ -30,8 +30,6 @@ batchexport/                independent module: example.com/batchexport
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/05-range-over-collections/10-batch-export-chunker/cmd/demo
-cd go-solutions/03-control-flow/05-range-over-collections/10-batch-export-chunker
 go mod edit -go=1.24
 ```
 

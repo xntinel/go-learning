@@ -23,13 +23,6 @@ connstate/                        module example.com/connstate
 - Test: the four lifecycle tests, `TestRejectsUnknownState` for an out-of-range source state, and an `Example`.
 - Verify: `go test -count=1 -race ./...` and `go build ./...`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/01-connection-state-machine-closed-twice/internal/conn go-solutions/03-control-flow/10-control-flow-debugging-challenge/01-connection-state-machine-closed-twice/cmd/connstate
-cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/01-connection-state-machine-closed-twice
-```
-
 ### The artifact and the planted bug
 
 The state machine enforces a strict lifecycle: `New → Connected → Authenticated →

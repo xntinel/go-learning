@@ -31,8 +31,6 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/08-interfaces/08-accept-interfaces-return-structs/03-narrow-consumer-interface/cmd/demo
-cd go-solutions/08-interfaces/08-accept-interfaces-return-structs/03-narrow-consumer-interface
 go mod edit -go=1.26
 ```
 

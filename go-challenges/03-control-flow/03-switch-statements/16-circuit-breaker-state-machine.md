@@ -28,8 +28,6 @@ circuitbreaker/            independent module: example.com/circuit-breaker-state
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/03-switch-statements/16-circuit-breaker-state-machine/cmd/demo
-cd go-solutions/03-control-flow/03-switch-statements/16-circuit-breaker-state-machine
 go mod edit -go=1.24
 ```
 

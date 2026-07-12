@@ -24,13 +24,6 @@ ranking/                      module example.com/ranking
 - Test: a known input yields the exact multi-key order; the comparator returns 0 for equal keys and is antisymmetric; `RankStable` preserves input order among equal-key items where `Rank`'s id tiebreak reorders them.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/05-anonymous-functions/10-sort-ranking-anonymous-comparator/cmd/demo
-cd go-solutions/04-functions/05-anonymous-functions/10-sort-ranking-anonymous-comparator
-```
-
 ### The three-way comparator contract
 
 `slices.SortFunc(x, cmp)` sorts `x` with a comparator that returns a negative int

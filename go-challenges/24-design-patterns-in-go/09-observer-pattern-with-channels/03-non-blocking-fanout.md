@@ -19,12 +19,6 @@ fanout_test.go       drop accounting + a -race concurrent send/subscribe sweep
 - Test: `fanout_test.go` proves a fast subscriber receives everything, a full subscriber's overflow is dropped and counted exactly, and concurrent send/subscribe is race-free.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/24-design-patterns-in-go/09-observer-pattern-with-channels/03-non-blocking-fanout/cmd/demo && cd go-solutions/24-design-patterns-in-go/09-observer-pattern-with-channels/03-non-blocking-fanout
-```
-
 ### Availability over delivery, made countable
 
 The fan-out's contract is "the producer never blocks." Each `Send` walks the subscriber list and, for each channel, runs:

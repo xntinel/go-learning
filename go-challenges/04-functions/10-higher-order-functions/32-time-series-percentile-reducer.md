@@ -28,8 +28,6 @@ percentiles/                 independent module: example.com/percentiles
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/10-higher-order-functions/32-time-series-percentile-reducer/cmd/demo
-cd go-solutions/04-functions/10-higher-order-functions/32-time-series-percentile-reducer
 go mod edit -go=1.24
 ```
 

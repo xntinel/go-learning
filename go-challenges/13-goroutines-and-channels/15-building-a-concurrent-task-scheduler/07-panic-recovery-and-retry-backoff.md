@@ -28,8 +28,6 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/13-goroutines-and-channels/15-building-a-concurrent-task-scheduler/07-panic-recovery-and-retry-backoff/cmd/demo
-cd go-solutions/13-goroutines-and-channels/15-building-a-concurrent-task-scheduler/07-panic-recovery-and-retry-backoff
 go mod edit -go=1.25
 ```
 

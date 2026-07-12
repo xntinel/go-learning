@@ -27,13 +27,6 @@ Implement: an `io.Reader` that consumes a fixed-length prefix once (via `io.Read
 Test: `io.ReadAll` output identical across `{plain, OneByteReader, HalfReader}`; a stream shorter than the prefix yields `io.ErrUnexpectedEOF`; `iotest.TestReader` on the stripped output.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/10-testing-readers-with-iotest/02-adversarial-chunking-onebyte-halfreader/cmd/demo
-cd go-solutions/12-testing-ecosystem/10-testing-readers-with-iotest/02-adversarial-chunking-onebyte-halfreader
-```
-
 ### Why io.ReadFull, and why lazily
 
 The naive stripper reads once, checks that it got `len(prefix)` bytes, and passes

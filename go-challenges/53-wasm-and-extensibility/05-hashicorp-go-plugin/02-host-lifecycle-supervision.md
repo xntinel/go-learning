@@ -40,8 +40,6 @@ Verify: `go test -race ./...` offline (reattach path) and `go test -tags manual 
 Set up the module (proto and shared are the same contract as Exercise 1, bundled here so this module stands alone):
 
 ```bash
-mkdir -p go-solutions/53-wasm-and-extensibility/05-hashicorp-go-plugin/02-host-lifecycle-supervision/{proto,shared,host,plugin,cmd/demo}
-cd go-solutions/53-wasm-and-extensibility/05-hashicorp-go-plugin/02-host-lifecycle-supervision
 go mod edit -go=1.26
 go get github.com/hashicorp/go-plugin@v1.6.3
 go get github.com/hashicorp/go-hclog@v1.6.3

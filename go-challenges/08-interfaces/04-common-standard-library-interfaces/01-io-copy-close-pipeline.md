@@ -27,13 +27,6 @@ pipe/                       independent module: example.com/pipe
 - Test: copy-all-bytes with a byte-count assertion, `Close` ignoring an error, `NopCloser` reading then closing without effect, interop with `io.NopCloser`, and the empty-input `(0, nil)` contract.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/04-common-standard-library-interfaces/01-io-copy-close-pipeline/cmd/demo
-cd go-solutions/08-interfaces/04-common-standard-library-interfaces/01-io-copy-close-pipeline
-```
-
 ### Why these four pieces
 
 A proxy handler reads `r.Body` (an `io.ReadCloser`) and forwards it to an upstream

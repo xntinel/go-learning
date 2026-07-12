@@ -27,13 +27,6 @@ Implement: an `Encoder` holding a `sync.Pool` whose `New` returns `*bytes.Buffer
 Test: repeated `Encode` calls produce correct isolated output; `encodeNoReset` leaks prior content (documents the hazard); many goroutines encoding under `-race` show no data race and no cross-contamination.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/05-pointers-to-structs/08-sync-pool-reusable-buffers/cmd/demo
-cd go-solutions/09-pointers/05-pointers-to-structs/08-sync-pool-reusable-buffers
-```
-
 ### The pooled-pointer lifecycle and why Reset and copy-out both matter
 
 `sync.Pool` stores `any` values and hands them back to amortize allocation. Its `New`

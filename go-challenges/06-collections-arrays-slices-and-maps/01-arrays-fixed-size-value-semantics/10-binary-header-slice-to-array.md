@@ -28,13 +28,6 @@ wireheader/                  independent module: example.com/wireheader
 - Test: a valid frame parses; a truncated buffer errors instead of panicking; the raw `[4]byte(short)` conversion panics (recover-based); a magic mismatch is rejected.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/10-binary-header-slice-to-array/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/10-binary-header-slice-to-array
-```
-
 ### Why the length guard is mandatory
 
 The frame layout is fixed: 4 bytes of magic, 2 bytes of version (big-endian), 4

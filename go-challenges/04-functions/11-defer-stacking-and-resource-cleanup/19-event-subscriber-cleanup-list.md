@@ -27,8 +27,6 @@ subhub/                      independent module: example.com/subhub
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/19-event-subscriber-cleanup-list/subhub go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/19-event-subscriber-cleanup-list/cmd/demo
-cd go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/19-event-subscriber-cleanup-list
 go mod edit -go=1.24
 ```
 

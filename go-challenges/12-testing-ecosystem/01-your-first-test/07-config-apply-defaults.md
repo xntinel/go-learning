@@ -22,13 +22,6 @@ configdefaults/            independent module: example.com/configdefaults
 - Test: a zero config yields the fully-populated result (`reflect.DeepEqual`, `%#v` on mismatch); an explicitly-set field is not overwritten.
 - Verify: `gofmt -l .`, `go vet ./...`, `go test -count=1 -race ./...`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/01-your-first-test/07-config-apply-defaults/cmd/demo
-cd go-solutions/12-testing-ecosystem/01-your-first-test/07-config-apply-defaults
-```
-
 ### Zero-value defaulting, and comparing structs
 
 Go's zero value does the heavy lifting here. A freshly-decoded `ServerConfig` has

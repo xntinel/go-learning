@@ -28,13 +28,6 @@ a forged log line cannot be injected, and an invariant that the output is always
 valid UTF-8 across a set of hostile inputs.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/01-string-basics/07-sanitize-valid-utf8/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/01-string-basics/07-sanitize-valid-utf8
-```
-
 ## Two failure modes, two steps
 
 The sanitizer defends against two distinct attacks that share a root cause —

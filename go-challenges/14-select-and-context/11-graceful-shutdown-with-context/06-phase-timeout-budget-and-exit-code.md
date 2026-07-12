@@ -27,13 +27,6 @@ Implement: `ShutdownAll(phases []Phase, total time.Duration) Result` giving each
 Test: an over-budget phase is force-closed and reports `context.DeadlineExceeded` via `context.Cause`; wall time stays within ~1.2x the budget; the exit code is non-zero when any phase was forced and zero otherwise.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/11-graceful-shutdown-with-context/06-phase-timeout-budget-and-exit-code/cmd/demo
-cd go-solutions/14-select-and-context/11-graceful-shutdown-with-context/06-phase-timeout-budget-and-exit-code
-```
-
 ## Why per-phase budgets and a named cause
 
 The invariant is that the *sum* of the per-phase budgets equals the total, so no

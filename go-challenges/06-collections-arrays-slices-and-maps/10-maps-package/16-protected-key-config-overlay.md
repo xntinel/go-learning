@@ -46,8 +46,6 @@ overlaymerge/                  module example.com/overlaymerge
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/16-protected-key-config-overlay
-cd go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/16-protected-key-config-overlay
 go mod edit -go=1.24
 ```
 

@@ -26,13 +26,6 @@ storageiface/                 independent module: example.com/storageiface
 - Test: round-trip, `ErrNotFound` via `errors.Is`, a pin that `*MemoryStore` satisfies `Store`, delete-missing-is-a-no-op, and a 100-goroutine concurrent-`Set` race test.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/01-implicit-interface-satisfaction/01-store-satisfies-consumer-interface/cmd/demo
-cd go-solutions/08-interfaces/01-implicit-interface-satisfaction/01-store-satisfies-consumer-interface
-```
-
 ### Why the interface has three narrow methods
 
 `Store` declares exactly the three operations a consumer of a key/value store

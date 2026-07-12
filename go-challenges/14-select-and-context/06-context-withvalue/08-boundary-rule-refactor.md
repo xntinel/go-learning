@@ -27,13 +27,6 @@ Implement: keep the anti-pattern `badCreateOrder` to document the smell, then a 
 Test: `badCreateOrder` panics when the context lacks `"productID"` (asserted via recover); the fixed `CreateOrder` returns a correct result with `context.Background()` (no panic) and still carries the trace from the context.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/06-context-withvalue/08-boundary-rule-refactor/cmd/demo
-cd go-solutions/14-select-and-context/06-context-withvalue/08-boundary-rule-refactor
-```
-
 ### The smell, the rule, and the fix
 
 `badCreateOrder` is what the anti-pattern looks like in production: it retrieves

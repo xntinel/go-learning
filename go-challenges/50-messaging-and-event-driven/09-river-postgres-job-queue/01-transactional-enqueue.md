@@ -30,8 +30,6 @@ txenqueue/                 independent module: example.com/txenqueue
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/50-messaging-and-event-driven/09-river-postgres-job-queue/01-transactional-enqueue/cmd/demo
-cd go-solutions/50-messaging-and-event-driven/09-river-postgres-job-queue/01-transactional-enqueue
 go mod edit -go=1.24
 go get github.com/riverqueue/river
 go get github.com/riverqueue/river/riverdriver/riverpgxv5

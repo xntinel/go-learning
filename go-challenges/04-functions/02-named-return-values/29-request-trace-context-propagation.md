@@ -29,8 +29,6 @@ trace/                      independent module: example.com/trace
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/02-named-return-values/29-request-trace-context-propagation/cmd/demo
-cd go-solutions/04-functions/02-named-return-values/29-request-trace-context-propagation
 go mod edit -go=1.24
 ```
 

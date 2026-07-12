@@ -31,13 +31,6 @@ lockwait-gauge/               independent module: example.com/lockwait-gauge
 - Test: the constructor table (valid name, unknown name, wrong-kind name); an integration test asserting the delta across a contention burst is strictly positive and the total is monotonic; no wall-time assertions anywhere.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/14-contention-profiling/07-lock-wait-slo-gauge/cmd/demo
-cd go-solutions/15-sync-primitives/14-contention-profiling/07-lock-wait-slo-gauge
-```
-
 ### Why a gauge, when we already have profiles
 
 The mutex profile answers "which stack" but costs overhead and produces an

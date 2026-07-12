@@ -25,13 +25,6 @@ Implement: `BaseBackoff`, `MaxBackoff`, `RequestTimeout` duration constants and 
 Test: `Backoff(0) == BaseBackoff`; backoff doubles until it saturates at `MaxBackoff` and never exceeds it, including a large attempt that would overflow if uncapped.
 Verify: `go test -count=1 ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/04-constants-and-iota/06-retry-backoff-duration-constants/cmd/demo
-cd go-solutions/02-variables-types-and-constants/04-constants-and-iota/06-retry-backoff-duration-constants
-```
-
 ## Why durations, and where the overflow hides
 
 `time.Duration` is an `int64` count of nanoseconds. That underpinning has two

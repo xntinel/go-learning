@@ -28,8 +28,6 @@ statusfmt/                  independent module: example.com/statusfmt
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/09-pointers/06-pointer-receivers-and-interfaces/08-stringer-addressability-in-collections/cmd/demo
-cd go-solutions/09-pointers/06-pointer-receivers-and-interfaces/08-stringer-addressability-in-collections
 go mod edit -go=1.25
 ```
 

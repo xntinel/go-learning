@@ -33,13 +33,6 @@ reloadcfg/                   independent module: example.com/reloadcfg
   causes exactly one re-parse and the new value; a `Stat` error is returned.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/11-testing-filesystems-with-fstest/09-modtime-hot-reload-cache/cmd/demo
-cd go-solutions/12-testing-ecosystem/11-testing-filesystems-with-fstest/09-modtime-hot-reload-cache
-```
-
 ### ModTime is the reload trigger; make it an explicit value
 
 The cache memoizes a parsed `Config` plus the `ModTime` it was parsed from. On

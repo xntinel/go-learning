@@ -28,13 +28,6 @@ metrics/                   independent module: example.com/metrics
   input order and assert identical output; `maps.Equal` on the intermediate map.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/02-metrics-label-aggregator/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/02-metrics-label-aggregator
-```
-
 ### Aggregate in a map, emit via sorted keys
 
 The `Label` is a struct of three comparable strings, so it is itself comparable and

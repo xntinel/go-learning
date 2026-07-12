@@ -25,13 +25,6 @@ health/                      independent module: example.com/health
 - Test: N checks produce N results; any failure makes the aggregate unhealthy; the output channel is closed exactly once; zero checks is handled.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/02-channel-basics/07-fan-in-merge-health-checks/cmd/demo
-cd go-solutions/13-goroutines-and-channels/02-channel-basics/07-fan-in-merge-health-checks
-```
-
 ### One shared output, one owner, one close
 
 Fan-in is the mirror image of fan-out: many producers, one channel. Every check

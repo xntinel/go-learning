@@ -35,8 +35,6 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/08-panic-and-recover/30-distributed-tracing-child-spans/cmd/demo
-cd go-solutions/03-control-flow/08-panic-and-recover/30-distributed-tracing-child-spans
 go mod edit -go=1.24
 ```
 

@@ -23,13 +23,6 @@ Implement: `BuildDSN(template string) (string, error)` using `os.Expand` with a 
 Test: set the `DB_*` vars and assert the expanded DSN; unset one and assert `BuildDSN` names it; contrast `os.ExpandEnv`'s silent empty substitution.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/17-testing-with-environment-variables/07-env-var-expansion-dsn/cmd/demo
-cd go-solutions/12-testing-ecosystem/17-testing-with-environment-variables/07-env-var-expansion-dsn
-```
-
 ## `os.Expand` with a mapping that fails loudly
 
 `os.Expand(s, mapping)` walks `s`, and for each `${name}` (or `$name`) reference

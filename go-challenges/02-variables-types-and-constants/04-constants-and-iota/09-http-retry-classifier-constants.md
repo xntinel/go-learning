@@ -25,13 +25,6 @@ Implement: a `StatusClass` enum, `Classify(code int) StatusClass`, and `Retryabl
 Test: `Classify` maps `2xx`/`3xx`/`4xx`/`5xx` to the right class across boundaries; `Retryable` is true only for the designated statuses; the classifier's constants match `net/http`.
 Verify: `go test -count=1 ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/04-constants-and-iota/09-http-retry-classifier-constants/cmd/demo
-cd go-solutions/02-variables-types-and-constants/04-constants-and-iota/09-http-retry-classifier-constants
-```
-
 ## Why an enum plus named constants
 
 Two modeling decisions carry this module.

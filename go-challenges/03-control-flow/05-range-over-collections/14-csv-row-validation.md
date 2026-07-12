@@ -28,8 +28,6 @@ csvvalidate/                independent module: example.com/csv-row-validate
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/05-range-over-collections/14-csv-row-validation
-cd go-solutions/03-control-flow/05-range-over-collections/14-csv-row-validation
 go mod edit -go=1.24
 ```
 

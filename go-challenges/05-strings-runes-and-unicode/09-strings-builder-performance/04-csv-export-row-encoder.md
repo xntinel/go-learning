@@ -26,11 +26,6 @@ Implement: `EncodeCSV(records [][]string) (string, error)` over `csv.Writer`, a 
 Test: golden round-trip through `csv.Reader` for fields with commas/quotes/newlines; assert `NaiveJoin` differs (corrupts); check `csv.Writer.Error` after `Flush`.
 Verify: `go test -count=1 -race ./...`
 
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/09-strings-builder-performance/04-csv-export-row-encoder/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/09-strings-builder-performance/04-csv-export-row-encoder
-```
-
 ### Why the manual join is wrong
 
 RFC 4180 says a CSV field that contains a comma, a double-quote, or a newline must be

@@ -27,13 +27,6 @@ Implement: `Format(User) (string, error)` producing indented JSON, rejecting an 
 Test: assert the happy-path JSON shape, assert `errors.Is(err, ErrEmpty)` on a missing ID, and an `Example` with `// Output:`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/01-implement-json-formatter/cmd/demo
-cd go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/01-implement-json-formatter
-```
-
 ### Why determinism starts here
 
 `json.MarshalIndent(v, "", "  ")` is the workhorse. It serializes a struct's

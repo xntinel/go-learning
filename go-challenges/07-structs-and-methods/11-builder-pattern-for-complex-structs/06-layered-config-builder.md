@@ -26,13 +26,6 @@ cfgbuild/                   independent module: example.com/cfgbuild
 - Test: defaults only; file overrides a subset; env overrides file; env set-but-empty resolved differently for the `cmp.Or` field versus the tri-state field; invalid port/duration returns an aggregated error; precedence is deterministic.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/11-builder-pattern-for-complex-structs/06-layered-config-builder/cmd/demo
-cd go-solutions/07-structs-and-methods/11-builder-pattern-for-complex-structs/06-layered-config-builder
-```
-
 ### Two correct ways to say "unset", and when each applies
 
 The whole difficulty is telling "this source did not set the field" from "this

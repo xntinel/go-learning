@@ -29,13 +29,6 @@ Implement: `Detached(parent)` (unbounded `WithoutCancel`, tracked) and `BoundedD
 Test: parent cancellation does not close a detached context but its own timeout does; the bounded detached context leaves 0 leaks and the unbounded one leaves 1; an audit write completes despite the request being cancelled.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/13-context-leak-detection/10-detached-context-audit/cmd/demo
-cd go-solutions/14-select-and-context/13-context-leak-detection/10-detached-context-audit
-```
-
 ### WithoutCancel detaches — and thereby unbounds
 
 `context.WithoutCancel(parent)` returns a context that keeps the parent's *values*

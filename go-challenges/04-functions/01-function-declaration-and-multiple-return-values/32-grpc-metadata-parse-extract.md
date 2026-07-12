@@ -33,8 +33,6 @@ grpcmeta/                  independent module: example.com/grpc-metadata-parse-e
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/01-function-declaration-and-multiple-return-values/32-grpc-metadata-parse-extract/cmd/demo
-cd go-solutions/04-functions/01-function-declaration-and-multiple-return-values/32-grpc-metadata-parse-extract
 go mod edit -go=1.24
 ```
 

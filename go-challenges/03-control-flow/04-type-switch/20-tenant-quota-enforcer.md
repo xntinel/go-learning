@@ -31,8 +31,6 @@ tenant-quota-enforcer/       independent module: example.com/tenant-quota-enforc
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/04-type-switch/20-tenant-quota-enforcer/cmd/demo
-cd go-solutions/03-control-flow/04-type-switch/20-tenant-quota-enforcer
 go mod edit -go=1.24
 ```
 

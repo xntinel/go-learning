@@ -30,8 +30,6 @@ batch/                        module example.com/batch
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/05-anonymous-functions/30-batch-timeout-callback/cmd/demo
-cd go-solutions/04-functions/05-anonymous-functions/30-batch-timeout-callback
 go mod edit -go=1.24
 ```
 

@@ -26,13 +26,6 @@ worker/                      module example.com/worker
 - Test: feed events on a closed channel and assert `processed == N` with `nil`; pre-cancel the context and assert a bounded drain (exactly `DrainMax` when more are buffered, all when fewer) returning `ctx.Err()`; drive an injected tick channel and assert the tick handler fires the expected number of times; a `-race` run with concurrent producers.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/02-for-loops/07-graceful-shutdown-drain/cmd/demo
-cd go-solutions/03-control-flow/02-for-loops/07-graceful-shutdown-drain
-```
-
 ### The two exits, and why the drain must be bounded
 
 The loop's body is a `select` over three cases: an event arrived (process it), a

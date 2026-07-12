@@ -27,13 +27,6 @@ Implement: `App` with `AddWorker`, `SetHTTP`, and `Run(ctx, httpTimeout, workerT
 Test: three workers all observe cancellation; HTTP drains before workers; a stuck worker makes `Run` return a joined error within ~300ms rather than hanging.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/11-graceful-shutdown-with-context/03-app-reverse-order-orchestrator/cmd/demo
-cd go-solutions/14-select-and-context/11-graceful-shutdown-with-context/03-app-reverse-order-orchestrator
-```
-
 ## Why the order and the aggregation matter
 
 `Run` encodes the reverse-dependency invariant as three phases. It starts the

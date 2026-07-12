@@ -27,13 +27,6 @@ dispatch/                      independent module: example.com/dispatch
 - Test: `httptest`-driven — valid id returns 200, malformed id returns 400, role init routes admin vs user; assert via the response recorder, not internal state.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/01-variable-declaration-and-short-assignment/08-if-switch-init-scope/cmd/demo
-cd go-solutions/02-variables-types-and-constants/01-variable-declaration-and-short-assignment/08-if-switch-init-scope
-```
-
 ### Why the init clause is the right scope
 
 A parsed id is meaningful only inside the branch that validated it. Declaring it in

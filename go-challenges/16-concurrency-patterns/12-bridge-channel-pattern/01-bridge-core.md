@@ -19,12 +19,6 @@ bridge_test.go       order, single empty stream, cancellation terminates, nil in
 - Test: `bridge_test.go` checks the flattened order is exact concatenation, that an empty stream of streams closes the output, that closing `done` terminates the bridge, that a nil inner channel is skipped, and that a high-volume run is race-clean.
 - Verify: `go test -run 'TestBridge' -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/16-concurrency-patterns/12-bridge-channel-pattern/01-bridge-core/cmd/demo && cd go-solutions/16-concurrency-patterns/12-bridge-channel-pattern/01-bridge-core
-```
-
 ### Why two selects and an inner range, and why a nil guard
 
 The bridge is a single goroutine that owns the output channel — it is the only sender on `out`, which is why it is also the only thing allowed to close it, and why `defer close(out)` is the first line inside the goroutine. Everything after that is a state machine with two blocking points, and each blocking point must be escapable through `done`.

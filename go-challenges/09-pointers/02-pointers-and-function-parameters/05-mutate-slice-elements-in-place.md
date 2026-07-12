@@ -26,13 +26,6 @@ normalize/                  independent module: example.com/normalize
 - Test: prove the value-range version leaves the slice unchanged, the index and pointer versions persist, and the pointer-slice loop mutates the underlying records.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/02-pointers-and-function-parameters/05-mutate-slice-elements-in-place/cmd/demo
-cd go-solutions/09-pointers/02-pointers-and-function-parameters/05-mutate-slice-elements-in-place
-```
-
 ### Why the value-range write is lost
 
 `for _, r := range recs` copies element `recs[i]` into a fresh `r` each iteration.

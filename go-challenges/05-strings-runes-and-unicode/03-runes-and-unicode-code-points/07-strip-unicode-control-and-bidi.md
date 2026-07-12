@@ -54,13 +54,6 @@ case-folding. Stripping a bidi override does not compose or decompose anything,
 and NFD-folding a name does not remove a zero-width space. A hardened pipeline
 runs all three deliberately.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/07-strip-unicode-control-and-bidi/internal/sanitize go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/07-strip-unicode-control-and-bidi/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/07-strip-unicode-control-and-bidi
-```
-
 Create `internal/sanitize/sanitize.go`:
 
 ```go

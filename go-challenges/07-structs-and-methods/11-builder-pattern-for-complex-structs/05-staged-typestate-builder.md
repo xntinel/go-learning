@@ -26,13 +26,6 @@ staged/                     independent module: example.com/staged
 - Test: a full staged chain compiles and `Build` succeeds with the expected `Request`; optional-field defaults apply; `Build` still enforces a runtime-only invariant (a non-positive timeout override is rejected).
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/11-builder-pattern-for-complex-structs/05-staged-typestate-builder/cmd/demo
-cd go-solutions/07-structs-and-methods/11-builder-pattern-for-complex-structs/05-staged-typestate-builder
-```
-
 ### How the type system enforces ordering
 
 Each construction stage is a distinct interface exposing only the methods legal at

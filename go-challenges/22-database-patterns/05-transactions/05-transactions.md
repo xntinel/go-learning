@@ -56,8 +56,6 @@ After a failed operation inside the transaction, call `Rollback` and return the 
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/22-database-patterns/05-transactions/05-transactions/cmd/demo
-cd go-solutions/22-database-patterns/05-transactions/05-transactions
 go mod edit -go=1.26
 ```
 

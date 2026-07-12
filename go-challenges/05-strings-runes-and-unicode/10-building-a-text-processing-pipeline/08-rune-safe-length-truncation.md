@@ -27,13 +27,6 @@ truncate/                 independent module: example.com/truncate
 - Test: ASCII under/over the limit; a string whose byte-slice at the limit would split a multi-byte rune, asserting the result is valid UTF-8 and within budget; exactly-at-limit yields the input unchanged with no ellipsis; an emoji-with-modifier input documenting rune-count vs grapheme behavior.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/10-building-a-text-processing-pipeline/08-rune-safe-length-truncation/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/10-building-a-text-processing-pipeline/08-rune-safe-length-truncation
-```
-
 ### Cutting on a rune boundary, not a byte offset
 
 `s[:n]` slices at byte offset `n`. If byte `n` lands in the middle of a multi-byte

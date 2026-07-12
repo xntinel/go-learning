@@ -23,13 +23,6 @@ Implement: `Merge(done <-chan struct{}, cs ...<-chan int) <-chan int` with one f
 Test: merging three inputs yields the union of their values; reading a few values from an infinite merge and closing `done` lets every forwarder exit (proven by `out` closing).
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/07-done-channel-pattern/04-merge-fan-in-cancel/cmd/demo
-cd go-solutions/13-goroutines-and-channels/07-done-channel-pattern/04-merge-fan-in-cancel
-```
-
 ### The forwarder and the guarded send
 
 `Merge` starts one goroutine per input channel. Each forwarder ranges over its input and

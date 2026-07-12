@@ -26,13 +26,6 @@ Implement: `MaxOffset` derived from `math.MaxInt64`, a `const _ uint16 = MaxPage
 Test: `SafeOffset` returns the product in range and an error (not a wrapped negative) on overflow; boundary at `math.MaxInt`; the constant equals its expected value.
 Verify: `go test -count=1 ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/04-constants-and-iota/07-untyped-const-boundaries-overflow/cmd/demo
-cd go-solutions/02-variables-types-and-constants/04-constants-and-iota/07-untyped-const-boundaries-overflow
-```
-
 ## Two boundaries: one the compiler checks, one you must
 
 There are two distinct overflow concerns here, and they call for two different

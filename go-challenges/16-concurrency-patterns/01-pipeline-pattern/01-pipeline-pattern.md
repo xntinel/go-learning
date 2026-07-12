@@ -68,13 +68,6 @@ hard to reason about. Prefer `done`.
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/16-concurrency-patterns/01-pipeline-pattern/01-pipeline-pattern/internal/pipeline go-solutions/16-concurrency-patterns/01-pipeline-pattern/01-pipeline-pattern/cmd/pipelinedemo
-cd go-solutions/16-concurrency-patterns/01-pipeline-pattern/01-pipeline-pattern
-```
-
 This is a library, not a program. Verification is `go test`.
 
 ### Exercise 1: Generate, Square, And The Close Contract

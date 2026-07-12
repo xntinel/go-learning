@@ -30,8 +30,6 @@ pqtls/                     independent module: example.com/pqtls
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/49-application-security-crypto-supplychain/01-post-quantum-hybrid-tls/02-negotiate-pq-tls/cmd/demo
-cd go-solutions/49-application-security-crypto-supplychain/01-post-quantum-hybrid-tls/02-negotiate-pq-tls
 go mod edit -go=1.26
 ```
 

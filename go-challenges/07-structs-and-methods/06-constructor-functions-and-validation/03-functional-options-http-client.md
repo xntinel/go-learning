@@ -27,13 +27,6 @@ svcclient/                   independent module: example.com/functional-options-
 - Test: zero options yields documented defaults; each option is observed through an accessor; an invalid baseURL and a negative timeout return their sentinel; combined bad options aggregate; and applying the same options in two orders yields equal config.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/06-constructor-functions-and-validation/03-functional-options-http-client/cmd/demo
-cd go-solutions/07-structs-and-methods/06-constructor-functions-and-validation/03-functional-options-http-client
-```
-
 ### How the pattern works, and where validation goes
 
 An `Option` is `func(*options)` — a function that mutates a private `options`

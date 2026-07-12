@@ -27,13 +27,6 @@ Implement: `run(args []string, out io.Writer) error` mapping `ErrEmptyName` to a
 Test: call `run` directly with argument slices, capturing output in a buffer and asserting errors with `errors.Is`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/05-go-install-and-third-party-packages/02-demo-cli-with-run-pattern/internal/hello go-solutions/01-environment-and-tooling/05-go-install-and-third-party-packages/02-demo-cli-with-run-pattern/cmd/demo
-cd go-solutions/01-environment-and-tooling/05-go-install-and-third-party-packages/02-demo-cli-with-run-pattern
-```
-
 ### The run pattern, and why output is a parameter
 
 `main` is the only place `os.Exit` may appear. Everything a test wants to check

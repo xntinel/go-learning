@@ -28,13 +28,6 @@ Test: assert execution order is outer-to-inner on the way in; a case where an
 inner middleware panics and only an outermost `Recoverer` yields a 500.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/10-error-handling-middleware/04-middleware-stack-composition/cmd/demo
-cd go-solutions/10-error-handling/10-error-handling-middleware/04-middleware-stack-composition
-```
-
 ### Why order is a correctness property, not a preference
 
 A middleware is a function from handler to handler: `func(http.Handler)

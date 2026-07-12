@@ -41,8 +41,6 @@ graceful-config-reload-dispatcher/   independent module: example.com/graceful-co
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/04-type-switch/30-graceful-config-reload-dispatcher/cmd/demo
-cd go-solutions/03-control-flow/04-type-switch/30-graceful-config-reload-dispatcher
 go mod edit -go=1.24
 ```
 

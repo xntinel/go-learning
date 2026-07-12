@@ -29,8 +29,6 @@ patch/                      independent module: example.com/patch
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/09-pointers/10-designing-pointer-safe-apis/04-patch-tri-state-pointer-fields/cmd/demo
-cd go-solutions/09-pointers/10-designing-pointer-safe-apis/04-patch-tri-state-pointer-fields
 go mod edit -go=1.25
 ```
 

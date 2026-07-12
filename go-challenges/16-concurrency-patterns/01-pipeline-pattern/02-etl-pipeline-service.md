@@ -19,12 +19,6 @@ cmd/
 - Test: a full successful run, the invalid- and dropped-record counts, cancellation via the context, a sink error that aborts the run, and a goroutine-leak check.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/16-concurrency-patterns/01-pipeline-pattern/02-etl-pipeline-service/cmd/demo && cd go-solutions/16-concurrency-patterns/01-pipeline-pattern/02-etl-pipeline-service
-```
-
 ### Three stages, bounded channels, one context
 
 The service is three goroutines connected by two channels, both `make(chan Record, BufferSize)`. The bound is the whole point: a buffered channel of fixed capacity lets a fast stage run a little ahead of a slow one to absorb jitter, but caps the in-flight work, so the parse stage cannot race ahead and buffer the entire input in memory when the sink is slow. That is backpressure with a hard ceiling.

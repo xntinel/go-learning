@@ -26,13 +26,6 @@ checkout/                    independent module: example.com/checkout
 - Test: a `stubGateway` whose `ChargeFunc` field is set per scenario, with an `atomic.Int64` call counter; assert paid-on-success, unpaid-on-decline, exactly-two-charges-on-retry, and one-charge-on-cancel.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/08-mocking-with-interfaces/03-function-field-stub-payment-gateway/cmd/demo
-cd go-solutions/12-testing-ecosystem/08-mocking-with-interfaces/03-function-field-stub-payment-gateway
-```
-
 ### Why a function field beats a bespoke stub per test
 
 The gateway is a real external dependency: a payment processor reached over the

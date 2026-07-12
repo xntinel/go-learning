@@ -32,13 +32,6 @@ Test: four scenarios (clean completion, user cancel, deadline via
 outcome, the counter label, and the `slog` reason attribute.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/12-multi-stage-pipeline-cancellation/10-cancellation-cause-observability/cmd/demo
-cd go-solutions/14-select-and-context/12-multi-stage-pipeline-cancellation/10-cancellation-cause-observability
-```
-
 ### Classifying with Cause, not Err
 
 `Classify` inspects the pipeline's context after it stops. The order of checks

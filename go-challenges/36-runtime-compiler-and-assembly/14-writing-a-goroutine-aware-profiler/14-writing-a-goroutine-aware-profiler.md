@@ -86,13 +86,6 @@ Buffer reuse is essential: allocating a new 1 MiB slice on every tick triggers g
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/36-runtime-compiler-and-assembly/14-writing-a-goroutine-aware-profiler/14-writing-a-goroutine-aware-profiler/cmd/demo
-cd go-solutions/36-runtime-compiler-and-assembly/14-writing-a-goroutine-aware-profiler/14-writing-a-goroutine-aware-profiler
-```
-
 This is a library plus a CLI demo. Verify it with `go test`.
 
 ### Exercise 1: Core Types

@@ -63,13 +63,6 @@ A bounded pool limits the number of concurrently running goroutines. The Go idio
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/46-capstone-concurrency-deep-dive/08-async-await-on-channels/08-async-await-on-channels/cmd/demo
-cd go-solutions/46-capstone-concurrency-deep-dive/08-async-await-on-channels/08-async-await-on-channels
-```
-
 This is a library, not a program. Verify it with `go test`.
 
 ### Exercise 1: Core Types and Async/Await

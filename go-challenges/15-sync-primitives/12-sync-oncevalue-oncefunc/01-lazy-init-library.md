@@ -23,13 +23,6 @@ lazyinit/                  independent module: example.com/lazyinit
 - Test: init runs exactly once across 100 sequential and 100 concurrent calls; both the value and the error of a `(string, error)` init are cached; sentinel errors survive wrapping and are asserted with `errors.Is`.
 - Verify: `go test -count=1 -race ./...` and `go run ./cmd/demo`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/12-sync-oncevalue-oncefunc/01-lazy-init-library/lazy go-solutions/15-sync-primitives/12-sync-oncevalue-oncefunc/01-lazy-init-library/cmd/demo
-cd go-solutions/15-sync-primitives/12-sync-oncevalue-oncefunc/01-lazy-init-library
-```
-
 ### Why a wrapper package at all
 
 `sync.OnceValue(fn)` is already a one-liner, so why wrap it? Two reasons that

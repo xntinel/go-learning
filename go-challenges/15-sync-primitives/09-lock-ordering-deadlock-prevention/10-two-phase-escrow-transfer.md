@@ -33,13 +33,6 @@ escrowbank/                independent module: example.com/escrowbank
 - Test: happy path; insufficient funds and frozen source with zero escrow leak; frozen destination asserting compensation restored `from` exactly once; a 50-goroutine transfer storm with a concurrent sampler asserting accounts+escrow is conserved at every instant, under `-race` and a watchdog.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/09-lock-ordering-deadlock-prevention/10-two-phase-escrow-transfer/cmd/demo
-cd go-solutions/15-sync-primitives/09-lock-ordering-deadlock-prevention/10-two-phase-escrow-transfer
-```
-
 ### Trading a lock for an invariant window
 
 The exercise-1 transfer holds both account locks so that "debit and credit

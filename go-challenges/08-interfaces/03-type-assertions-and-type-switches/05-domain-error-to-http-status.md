@@ -25,13 +25,6 @@ Implement: `ValidationError`, `NotFoundError`, `ConflictError`, and `StatusFor(e
 Test: a table of wrapped errors to expected status, a two-level-deep `ValidationError`, a control showing a raw assertion misses the wrapped value, and an unknown error mapping to 500.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/03-type-assertions-and-type-switches/05-domain-error-to-http-status/cmd/demo
-cd go-solutions/08-interfaces/03-type-assertions-and-type-switches/05-domain-error-to-http-status
-```
-
 ### Why errors.As, not a raw assertion
 
 The service layer does not hand you a bare `*ValidationError`. It returns

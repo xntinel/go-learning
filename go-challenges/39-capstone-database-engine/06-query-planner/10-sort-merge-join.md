@@ -23,12 +23,6 @@ mergejoin_test.go   inner/left semantics, error cases, duplicate-key cartesian
 - Test: inner and left semantics including duplicate keys, NULL keys never matching, unmatched-left NULL padding, key-out-of-range and unsupported-join errors, and the full cartesian product of a shared-key block.
 - Verify: `go test -run 'TestMergeJoin|TestNewMergeJoin' -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/06-query-planner/10-sort-merge-join/cmd/demo && cd go-solutions/39-capstone-database-engine/06-query-planner/10-sort-merge-join
-```
-
 ### How the merge walks two sorted runs
 
 Once both inputs are sorted ascending on the join key, the join is a two-cursor walk. The left cursor `i` drives the outer loop. For each left key `lk`, the right cursor `j` is advanced past every NULL key and every key strictly smaller than `lk`, so it lands on the first right row whose key is `>= lk`. The block of right rows whose key equals `lk` is then `[rStart, rEnd)`, and the block of left rows sharing `lk` is gathered the same way; their cartesian product is emitted, because two left rows and three right rows with the same key produce six joined rows. After emitting, the right cursor stays at `rEnd` so the next distinct left key resumes the scan where this one stopped — that monotone, never-rewinding advance of `j` is what makes the merge O(|R| + |S|) once the inputs are sorted, rather than the O(|R| · |S|) of a nested loop.

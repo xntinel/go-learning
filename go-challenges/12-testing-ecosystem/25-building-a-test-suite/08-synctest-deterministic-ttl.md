@@ -23,13 +23,6 @@ Implement: a cache reading `time.Now()` directly, lazy `Get` expiry, and `StartR
 Test: inside `synctest.Test`, `time.Sleep` past the TTL and assert eviction; use `synctest.Wait` to synchronize with the reaper.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/25-building-a-test-suite/08-synctest-deterministic-ttl/cmd/demo
-cd go-solutions/12-testing-ecosystem/25-building-a-test-suite/08-synctest-deterministic-ttl
-```
-
 ### Why there is no injected clock here
 
 Contrast this deliberately with module 1. There the cache carried a

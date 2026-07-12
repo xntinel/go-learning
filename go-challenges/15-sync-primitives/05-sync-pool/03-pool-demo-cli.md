@@ -28,13 +28,6 @@ Implement: `Report(w io.Writer, msgs []string)` that formats each message throug
 Test: capture `Report` output into a buffer and assert both the per-message lines and the stats line; the demo must build and run.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/05-sync-pool/03-pool-demo-cli/harness go-solutions/15-sync-primitives/05-sync-pool/03-pool-demo-cli/cmd/demo
-cd go-solutions/15-sync-primitives/05-sync-pool/03-pool-demo-cli
-```
-
 ### Why write the harness against an io.Writer
 
 The instinct is to make the harness `fmt.Println` straight to stdout. Writing to

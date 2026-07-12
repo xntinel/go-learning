@@ -31,11 +31,6 @@ workerpool/                 independent module: example.com/worker-pool-goroutin
 - Test: submit a large burst of jobs right up to cancellation and assert every one finished by the time `Dispatch` returned; a second test asserts an already-cancelled context returns promptly with no jobs in flight.
 - Verify: `go test -count=1 -race ./...`.
 
-```bash
-mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/22-worker-pool-goroutine-leak-on-shutdown-race/cmd/demo
-cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/22-worker-pool-goroutine-leak-on-shutdown-race
-```
-
 ### Why Add has to happen before go, not inside it
 
 The buggy shape puts the bookkeeping where the work happens, which reads

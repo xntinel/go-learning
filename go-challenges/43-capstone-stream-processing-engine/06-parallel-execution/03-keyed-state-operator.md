@@ -25,7 +25,6 @@ keyed_test.go          per-key order + exact count, key->worker affinity,
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/43-capstone-stream-processing-engine/06-parallel-execution/03-keyed-state-operator/cmd/demo && cd go-solutions/43-capstone-stream-processing-engine/06-parallel-execution/03-keyed-state-operator
 go mod edit -go=1.26
 ```
 

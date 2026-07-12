@@ -49,8 +49,6 @@ logseek/                 module example.com/logseek
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/12-sorted-collections-binary-search/17-paginated-log-exponential-seek
-cd go-solutions/06-collections-arrays-slices-and-maps/12-sorted-collections-binary-search/17-paginated-log-exponential-seek
 go mod edit -go=1.24
 ```
 

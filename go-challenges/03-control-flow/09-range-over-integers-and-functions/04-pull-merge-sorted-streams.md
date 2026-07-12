@@ -24,13 +24,6 @@ Implement: `MergeSorted(a, b iter.Seq[int], cmp func(int, int) int) iter.Seq[int
 Test: interleaving of equal and unequal lengths and an empty side; both `stop`s fire exactly once even on early consumer break.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/09-range-over-integers-and-functions/04-pull-merge-sorted-streams/cmd/demo
-cd go-solutions/03-control-flow/09-range-over-integers-and-functions/04-pull-merge-sorted-streams
-```
-
 ## The design
 
 `MergeSorted` returns an `iter.Seq[int]`, but inside its body it does not range —

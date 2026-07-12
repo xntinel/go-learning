@@ -28,13 +28,6 @@ Implement: a `Pool` wrapping `sync.Pool` whose `Get` returns a reset `*bytes.Buf
 Test: an oversized buffer is dropped and the next `Get` allocates fresh; under-cap buffers recycle (`allocated` far below op count, asserted as a range); dirty buffers come back clean; a concurrent mixed-size stress under `-race` where the drop count is exactly the number of oversized Puts.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/05-sync-pool/08-capacity-capped-pool/logbuf go-solutions/15-sync-primitives/05-sync-pool/08-capacity-capped-pool/cmd/demo
-cd go-solutions/15-sync-primitives/05-sync-pool/08-capacity-capped-pool
-```
-
 ### The ratchet: why an uncapped pool leaks by design
 
 `bytes.Buffer` never shrinks. Once a single log record — a stack trace with a

@@ -26,8 +26,6 @@ taxrate/                    independent module: example.com/taxrate
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/10-higher-order-functions/11-memoize-lookup-cache
-cd go-solutions/04-functions/10-higher-order-functions/11-memoize-lookup-cache
 go mod edit -go=1.24
 ```
 

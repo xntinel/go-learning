@@ -28,8 +28,6 @@ enrich/                    independent module: example.com/enrich
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/13-goroutines-and-channels/05-waitgroup/04-scatter-gather-indexed-slice/cmd/demo
-cd go-solutions/13-goroutines-and-channels/05-waitgroup/04-scatter-gather-indexed-slice
 go mod edit -go=1.25
 ```
 

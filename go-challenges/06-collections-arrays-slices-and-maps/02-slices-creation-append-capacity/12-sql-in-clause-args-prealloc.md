@@ -46,8 +46,6 @@ inclause/                 module example.com/inclause
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/02-slices-creation-append-capacity/12-sql-in-clause-args-prealloc
-cd go-solutions/06-collections-arrays-slices-and-maps/02-slices-creation-append-capacity/12-sql-in-clause-args-prealloc
 go mod edit -go=1.24
 ```
 

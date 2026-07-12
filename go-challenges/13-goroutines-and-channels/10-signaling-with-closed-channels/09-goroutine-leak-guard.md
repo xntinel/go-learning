@@ -57,13 +57,6 @@ The `NumGoroutine` guard catches a different class of bug: a goroutine that the
 `WaitGroup` does not track at all (someone forgot the `Add`), which `wg.Wait()`
 alone would silently miss.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/10-signaling-with-closed-channels/09-goroutine-leak-guard/cmd/demo
-cd go-solutions/13-goroutines-and-channels/10-signaling-with-closed-channels/09-goroutine-leak-guard
-```
-
 Create `manager.go`:
 
 ```go

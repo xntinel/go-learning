@@ -33,8 +33,6 @@ platform/                      module github.com/example/platform
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/01-environment-and-tooling/03-go-workspace-and-project-layout/07-build-constraints-and-platform-files/internal/sysinfo go-solutions/01-environment-and-tooling/03-go-workspace-and-project-layout/07-build-constraints-and-platform-files/cmd/demo
-cd go-solutions/01-environment-and-tooling/03-go-workspace-and-project-layout/07-build-constraints-and-platform-files
 go mod edit -go=1.24
 ```
 

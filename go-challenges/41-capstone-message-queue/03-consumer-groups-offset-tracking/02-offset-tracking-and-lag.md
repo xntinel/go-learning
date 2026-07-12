@@ -19,12 +19,6 @@ offset_test.go       commit/fetch isolation, race test, lag table, tracker lifec
 - Test: group isolation, concurrent access under `-race`, the lag formula including the -1 sentinel, the tracker lifecycle, and partitioner determinism.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/41-capstone-message-queue/03-consumer-groups-offset-tracking/02-offset-tracking-and-lag/cmd/demo && cd go-solutions/41-capstone-message-queue/03-consumer-groups-offset-tracking/02-offset-tracking-and-lag
-```
-
 ### Why -1 is the sentinel, and why lag is a subtraction
 
 A committed offset is a high-water mark: committing offset 41 asserts that every message at offsets 0 through 41 is processed. The store keys this by `group -> partition -> offset`, exactly the shape of Kafka's `__consumer_offsets` topic, so two groups reading the same partition keep independent progress and never see each other's commits. A `Fetch` on a key that was never committed returns -1, not 0, because 0 is a real offset - the very first message. Collapsing "processed message 0" and "processed nothing" into the same value would make the first message indistinguishable from an empty group, and the lag math would be off by one for every fresh consumer.

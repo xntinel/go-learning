@@ -21,13 +21,6 @@ Implement: `Debounce(triggers <-chan struct{}, quiet time.Duration, emit func())
 Test: a tight burst yields one emit; triggers spaced beyond the window yield one each; the emit lands ~quiet after the last trigger; a pending debounce flushes on close.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/03-timeout-with-select/08-debounce-events/cmd/demo
-cd go-solutions/14-select-and-context/03-timeout-with-select/08-debounce-events
-```
-
 ### Reset on every trigger, act on the survivor
 
 `Debounce` keeps one timer and an `armed` flag. Each trigger resets the timer to a

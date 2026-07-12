@@ -26,13 +26,6 @@ Implement: `Source(events []Event) <-chan Event` — owns a channel, produces in
 Test: full ordered delivery, the channel is closed after drain, an empty source closes immediately.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/04-channel-direction/02-event-source-generator/cmd/demo
-cd go-solutions/13-goroutines-and-channels/04-channel-direction/02-event-source-generator
-```
-
 ### Why the return type is the contract
 
 `Source` creates a bidirectional `chan Event`, keeps that reference for its own

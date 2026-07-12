@@ -26,13 +26,6 @@ configload/                  independent module: example.com/config-load-errors-
 - Test: valid input; each sentinel via `errors.Is` under empty host / non-numeric / out-of-range port / unknown mode; all three sentinels found in the joined error; whitespace trimmed; message mentions host, port, mode; all three modes accepted.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/06-constructor-functions-and-validation/01-config-load-errors-join/cmd/demo
-cd go-solutions/07-structs-and-methods/06-constructor-functions-and-validation/01-config-load-errors-join
-```
-
 ### Why aggregate instead of fail-fast
 
 The naive constructor validates the host, returns if it is empty, then validates

@@ -27,13 +27,6 @@ apiclient/                  independent module: example.com/apiclient
 - Test: an `httptest.Server`-backed `*http.Client` asserts request shaping and response parsing; a configured `Client.Timeout` is honored; a sentinel `Doer` proves the client uses the injected client and never falls back to `http.DefaultClient`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/10-dependency-injection-with-interfaces/10-avoid-global-state-injected-httpclient/cmd/demo
-cd go-solutions/08-interfaces/10-dependency-injection-with-interfaces/10-avoid-global-state-injected-httpclient
-```
-
 ### Why the default client is a hazard
 
 `http.DefaultClient` is a package-level `*http.Client` with a zero `Timeout`. That

@@ -29,8 +29,6 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/08-init-functions-and-package-initialization/24-rate-limit-token-bucket-lazy-per-key/cmd/demo
-cd go-solutions/04-functions/08-init-functions-and-package-initialization/24-rate-limit-token-bucket-lazy-per-key
 go mod edit -go=1.24
 ```
 

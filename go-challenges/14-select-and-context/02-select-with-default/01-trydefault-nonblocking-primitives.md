@@ -29,8 +29,6 @@ trydefault/                 independent module: example.com/trydefault
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/14-select-and-context/02-select-with-default/01-trydefault-nonblocking-primitives/cmd/demo
-cd go-solutions/14-select-and-context/02-select-with-default/01-trydefault-nonblocking-primitives
 go mod edit -go=1.26
 ```
 

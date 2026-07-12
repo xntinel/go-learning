@@ -26,13 +26,6 @@ Test: missing key returns `ErrNotFound` and a nil pointer with no panic; the uns
 deref panics (recovered); `IsActive` on a nil `*Record` returns false.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/08-pointers-in-slices-and-maps/06-nil-pointer-map-lookup-guard/cmd/demo
-cd go-solutions/09-pointers/08-pointers-in-slices-and-maps/06-nil-pointer-map-lookup-guard
-```
-
 ### Why the cold path panics, and how to define the zero case
 
 A map lookup always succeeds in the type system: `r := m[id]` yields a value of the

@@ -31,12 +31,6 @@ service_test.go          processes all jobs, counts success/failure, drains in-f
 - Test: `service_test.go` asserts every accepted job is processed, that the metrics count successes and failures correctly, that `Shutdown` drains in-flight work rather than dropping it, that `Submit` returns false after shutdown without bumping the counter, that concurrent submits are race-clean with no lost jobs, and that `Shutdown` is idempotent.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/16-concurrency-patterns/04-worker-pool-pattern/02-job-processing-service/cmd/demo && cd go-solutions/16-concurrency-patterns/04-worker-pool-pattern/02-job-processing-service
-```
-
 ### The shutdown race, and the RWMutex that closes it
 
 The dangerous moment in any job service is shutdown. Workers read from an input

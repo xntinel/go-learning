@@ -30,8 +30,6 @@ validator/                  independent module: example.com/validator
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/09-pointers/10-designing-pointer-safe-apis/08-receiver-method-set-addressability/cmd/demo
-cd go-solutions/09-pointers/10-designing-pointer-safe-apis/08-receiver-method-set-addressability
 go mod edit -go=1.25
 ```
 

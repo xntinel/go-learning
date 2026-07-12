@@ -29,8 +29,6 @@ quota/                        module example.com/quota
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/05-anonymous-functions/17-iife-quota-inline/cmd/demo
-cd go-solutions/04-functions/05-anonymous-functions/17-iife-quota-inline
 go mod edit -go=1.24
 ```
 

@@ -26,13 +26,6 @@ textfield/                 independent module: example.com/textfield
 - Test: `"Hello, 世界"` is 13 bytes but 9 runes; invalid bytes are rejected; truncating `"日本語ですよ"` to 3 runes yields `"日本語"` with no `RuneError` and a correct byte boundary; a control character is rejected; truncation output is itself valid UTF-8.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/03-basic-types/05-utf8-input-validation/cmd/demo
-cd go-solutions/02-variables-types-and-constants/03-basic-types/05-utf8-input-validation
-```
-
 ### Bytes for storage, runes for the limit
 
 Two different length questions live at this boundary and must not be confused. The

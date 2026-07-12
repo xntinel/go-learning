@@ -26,8 +26,6 @@ run that fails partway through a batch, asserting the exact sequence of
 Verify: `go test -count=1 ./...`
 
 ```bash
-mkdir -p go-solutions/04-functions/06-function-types-and-callbacks/14-batch-migrator-progress-callback
-cd go-solutions/04-functions/06-function-types-and-callbacks/14-batch-migrator-progress-callback
 go mod edit -go=1.24
 ```
 

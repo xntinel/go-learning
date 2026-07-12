@@ -27,13 +27,6 @@ txn/                           independent module: example.com/txn
 - Test: inject a tx whose `Commit` fails and assert `WithTx` returns it; inject a step failure and assert the step error propagates while `Rollback` is invoked.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/01-variable-declaration-and-short-assignment/03-shadowing-in-transaction-commit/cmd/demo
-cd go-solutions/02-variables-types-and-constants/01-variable-declaration-and-short-assignment/03-shadowing-in-transaction-commit
-```
-
 ### The bug, stated precisely
 
 Here is the classic shadowing mistake, the kind that ships to production and

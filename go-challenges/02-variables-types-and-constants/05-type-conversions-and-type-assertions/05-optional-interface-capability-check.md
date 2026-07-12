@@ -30,8 +30,6 @@ capcheck/                    independent module: example.com/capcheck
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/02-variables-types-and-constants/05-type-conversions-and-type-assertions/05-optional-interface-capability-check/cmd/demo
-cd go-solutions/02-variables-types-and-constants/05-type-conversions-and-type-assertions/05-optional-interface-capability-check
 go mod edit -go=1.26
 ```
 

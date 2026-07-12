@@ -26,13 +26,6 @@ readiness/                  independent module: example.com/readiness
 - Test: 200 and healthy JSON when all checks pass; 503 when one fails; the middleware wraps and delegates to `next` and sets its header; `Content-Type` is `application/json`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/04-common-standard-library-interfaces/10-http-handler-readiness/cmd/demo
-cd go-solutions/08-interfaces/04-common-standard-library-interfaces/10-http-handler-readiness
-```
-
 ### One interface, three roles
 
 `http.Handler` is `ServeHTTP(w http.ResponseWriter, r *http.Request)`. Everything

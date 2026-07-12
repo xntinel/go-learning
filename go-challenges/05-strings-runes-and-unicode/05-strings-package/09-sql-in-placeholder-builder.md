@@ -28,13 +28,6 @@ output contains only placeholders and separators; a benchmark contrasting
 `Builder` with `+`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/05-strings-package/09-sql-in-placeholder-builder/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/05-strings-package/09-sql-in-placeholder-builder
-```
-
 ### Skeleton in the query, values in the args
 
 The security invariant is absolute: user values are never formatted into SQL

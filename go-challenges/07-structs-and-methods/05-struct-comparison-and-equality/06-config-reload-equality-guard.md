@@ -26,13 +26,6 @@ configreload/               independent module: example.com/configreload
 - Test: identical config is a no-op (reload counter unchanged); a changed field reloads exactly once; an embedded-struct change is detected; a `-race` concurrent swap.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/05-struct-comparison-and-equality/06-config-reload-equality-guard/cmd/demo
-cd go-solutions/07-structs-and-methods/05-struct-comparison-and-equality/06-config-reload-equality-guard
-```
-
 ### Why keeping Config comparable is the design
 
 The entire optimization rests on `next == current` being legal and meaningful, and

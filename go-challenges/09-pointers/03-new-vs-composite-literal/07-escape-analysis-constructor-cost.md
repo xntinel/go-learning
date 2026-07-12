@@ -28,13 +28,6 @@ path allocates 1; a `b.ReportAllocs()` benchmark for each; an annotated
 `-gcflags=-m` comment block the learner can reproduce.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/03-new-vs-composite-literal/07-escape-analysis-constructor-cost/cmd/demo
-cd go-solutions/09-pointers/03-new-vs-composite-literal/07-escape-analysis-constructor-cost
-```
-
 ### Why the pointer escapes
 
 Go's escape analysis decides, at compile time, whether a value can live on the

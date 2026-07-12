@@ -29,8 +29,6 @@ authscheme/                 independent module: example.com/api-auth-scheme-clas
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/03-switch-statements/21-api-auth-scheme-classifier/cmd/demo
-cd go-solutions/03-control-flow/03-switch-statements/21-api-auth-scheme-classifier
 go mod edit -go=1.24
 ```
 

@@ -27,13 +27,6 @@ group/                     independent module: example.com/group
 - Test: all tasks succeed returns nil; one error cancels blocked siblings which observe `context.Cause == the failing error`; when two tasks error, only the first-recorded error is returned.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/04-context-withcancel/09-first-error-parallel-runner/cmd/demo
-cd go-solutions/14-select-and-context/04-context-withcancel/09-first-error-parallel-runner
-```
-
 ### The three primitives that are errgroup
 
 Strip `errgroup` down and this is what remains:

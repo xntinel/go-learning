@@ -30,13 +30,6 @@ demonstrably corrupts the template; a shallow copy still aliases the slice field
 `Clone` breaks the aliasing.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/03-new-vs-composite-literal/09-defaults-copy-vs-alias/cmd/demo
-cd go-solutions/09-pointers/03-new-vs-composite-literal/09-defaults-copy-vs-alias
-```
-
 ### Why the copy is isolated but shallow
 
 `defaultConfig` is a composite-literal template holding the sane defaults. To

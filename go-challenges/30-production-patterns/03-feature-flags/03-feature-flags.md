@@ -47,13 +47,6 @@ The test then asserts `errors.Is(err, ErrInvalidPercentage)` rather than matchin
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/30-production-patterns/03-feature-flags/03-feature-flags/cmd/demo
-cd go-solutions/30-production-patterns/03-feature-flags/03-feature-flags
-```
-
 This is a library, not a program: there is no single `main`. You verify it with `go test`.
 
 ### Exercise 1: The Flag Types And Store

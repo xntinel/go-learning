@@ -33,8 +33,6 @@ keyedpool/                   independent module: example.com/keyedpool
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/13-goroutines-and-channels/13-goroutine-pools/13-per-key-ordered-worker-pool/cmd/demo
-cd go-solutions/13-goroutines-and-channels/13-goroutine-pools/13-per-key-ordered-worker-pool
 go get go.uber.org/goleak
 ```
 

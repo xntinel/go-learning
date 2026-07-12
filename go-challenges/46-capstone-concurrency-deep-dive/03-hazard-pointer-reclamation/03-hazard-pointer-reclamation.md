@@ -96,13 +96,6 @@ The hazard pointer protocol establishes the correct happens-before ordering at t
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/46-capstone-concurrency-deep-dive/03-hazard-pointer-reclamation/03-hazard-pointer-reclamation/cmd/demo
-cd go-solutions/46-capstone-concurrency-deep-dive/03-hazard-pointer-reclamation/03-hazard-pointer-reclamation
-```
-
 ### Exercise 1: The Domain, Record, and Node Types
 
 Create `hazptr.go`:

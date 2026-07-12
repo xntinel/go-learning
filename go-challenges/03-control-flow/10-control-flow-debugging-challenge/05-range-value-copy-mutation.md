@@ -21,13 +21,6 @@ inventory/                 module example.com/inventory
 - Test: assert the *original* slice reflects the mutations; assert idempotence; a subtest over `[]*Item` showing the range value works there.
 - Verify: `go test -count=1 -race ./...`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/05-range-value-copy-mutation/cmd/demo
-cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/05-range-value-copy-mutation
-```
-
 ### The artifact and the planted bug
 
 The reconciler settles each item: subtract the reserved units from quantity, clear

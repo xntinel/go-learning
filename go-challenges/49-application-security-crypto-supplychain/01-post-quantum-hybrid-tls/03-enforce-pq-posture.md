@@ -30,8 +30,6 @@ pqpolicy/                  independent module: example.com/pqpolicy
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/49-application-security-crypto-supplychain/01-post-quantum-hybrid-tls/03-enforce-pq-posture/cmd/demo
-cd go-solutions/49-application-security-crypto-supplychain/01-post-quantum-hybrid-tls/03-enforce-pq-posture
 go mod edit -go=1.26
 ```
 

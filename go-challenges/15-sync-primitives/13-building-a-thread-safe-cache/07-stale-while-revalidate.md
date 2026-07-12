@@ -30,13 +30,6 @@ swrcache/                        independent module: example.com/swrcache
 - Test: deterministic window transitions via an injected clock; a gated slow loader proving the stale path returns without blocking; an atomic counter proving exactly one refresh; failure tests for both stale-if-error and the dead path's wrapped sentinel.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/13-building-a-thread-safe-cache/07-stale-while-revalidate/swr go-solutions/15-sync-primitives/13-building-a-thread-safe-cache/07-stale-while-revalidate/cmd/demo
-cd go-solutions/15-sync-primitives/13-building-a-thread-safe-cache/07-stale-while-revalidate
-```
-
 ### Three states, three behaviors
 
 Every entry has two horizons set when it is stored: `freshUntil = now+fresh`

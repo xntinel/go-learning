@@ -27,13 +27,6 @@ Implement: `RenderInvoice(Invoice) []byte` producing a deterministic fixed-width
 Test: a `goldenFile(t, name, got)` helper that writes under `-update` and otherwise reads and byte-compares, naming the golden path on mismatch; plus a `TempDir` round-trip of the write path.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/19-golden-file-testing/02-testdata-golden-file-update-flag/cmd/demo go-solutions/12-testing-ecosystem/19-golden-file-testing/02-testdata-golden-file-update-flag/testdata
-cd go-solutions/12-testing-ecosystem/19-golden-file-testing/02-testdata-golden-file-update-flag
-```
-
 ### The -update flag and the goldenFile helper
 
 The whole idiom rests on one package-level flag:

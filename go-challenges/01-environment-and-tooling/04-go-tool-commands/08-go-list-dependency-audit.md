@@ -27,13 +27,6 @@ list-audit/                    module example.com/list-audit
 - Test: `Forbidden` on a clean graph (no hits) and a dirty graph (one hit).
 - Verify: `go list ./...` lists the packages; `go list -deps ./cmd/demo` includes `internal/circle` and `fmt`; an import guard exits non-zero when a banned path is present.
 
-Create the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/04-go-tool-commands/08-go-list-dependency-audit/cmd/demo go-solutions/01-environment-and-tooling/04-go-tool-commands/08-go-list-dependency-audit/internal/circle go-solutions/01-environment-and-tooling/04-go-tool-commands/08-go-list-dependency-audit/internal/guard
-cd go-solutions/01-environment-and-tooling/04-go-tool-commands/08-go-list-dependency-audit
-```
-
 ### The graph as data
 
 `go list ./...` prints the import paths of every package in the module. Adding

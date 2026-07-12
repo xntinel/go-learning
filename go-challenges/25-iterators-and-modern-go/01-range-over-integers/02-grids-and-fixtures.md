@@ -19,12 +19,6 @@ fixtures_test.go     pin grid contents and dimensions, identity, user fixtures, 
 - Test: pin the exact contents and dimensions of a grid, the identity matrix, the deterministic user fixtures, and the empty (`n == 0`) case.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/25-iterators-and-modern-go/01-range-over-integers/02-grids-and-fixtures/cmd/demo && cd go-solutions/25-iterators-and-modern-go/01-range-over-integers/02-grids-and-fixtures
-```
-
 ### Why nested integer ranges read better than indexed loops
 
 A two-dimensional structure is the place the three-clause loop costs the most, because it doubles every off-by-one risk: an outer `for r := 0; r < rows; r++` and an inner `for c := 0; c < cols; c++` give you two comparison operators, two increments, and two start values to keep consistent. Nesting `for r := range rows` inside which sits `for c := range cols` removes all of it. The loop headers carry only the bounds; the body carries only the meaning. `Grid` fills cell `[r][c]` with the sequential index `r*cols + c`, so the value at each cell makes the row-major layout visible: row 0 holds `0, 1, 2`, row 1 holds `3, 4, 5`, and the arithmetic `r*cols + c` is the standard flattening of a 2-D coordinate into a 1-D offset.

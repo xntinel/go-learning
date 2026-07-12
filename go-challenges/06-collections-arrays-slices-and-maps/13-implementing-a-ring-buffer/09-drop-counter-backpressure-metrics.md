@@ -29,8 +29,6 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/13-implementing-a-ring-buffer/09-drop-counter-backpressure-metrics/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/13-implementing-a-ring-buffer/09-drop-counter-backpressure-metrics
 go mod edit -go=1.24
 ```
 

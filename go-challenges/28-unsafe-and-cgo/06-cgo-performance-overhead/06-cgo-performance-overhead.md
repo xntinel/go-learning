@@ -57,13 +57,6 @@ Do not use cgo when:
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/28-unsafe-and-cgo/06-cgo-performance-overhead/06-cgo-performance-overhead
-cd go-solutions/28-unsafe-and-cgo/06-cgo-performance-overhead/06-cgo-performance-overhead
-```
-
 This module requires a C compiler (`gcc` or `clang`). Check availability:
 
 ```bash

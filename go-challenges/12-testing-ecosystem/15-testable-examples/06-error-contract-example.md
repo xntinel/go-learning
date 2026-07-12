@@ -23,13 +23,6 @@ Implement: a package-level sentinel `ErrNotFound`, a `Record`, and a `Store` wit
 Test: a table-driven `Test` asserting error identity with `errors.Is`, plus `ExampleStore_Get_found` and `ExampleStore_Get_missing`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/15-testable-examples/06-error-contract-example/cmd/demo
-cd go-solutions/12-testing-ecosystem/15-testable-examples/06-error-contract-example
-```
-
 ## Examples are where error contracts get documented
 
 The sentinel-error pattern is the backbone of Go error handling: a package

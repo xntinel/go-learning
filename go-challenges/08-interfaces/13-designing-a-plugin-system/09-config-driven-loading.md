@@ -31,8 +31,6 @@ configload/               independent module: example.com/configload
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/08-interfaces/13-designing-a-plugin-system/09-config-driven-loading/cmd/demo
-cd go-solutions/08-interfaces/13-designing-a-plugin-system/09-config-driven-loading
 go mod edit -go=1.25
 ```
 

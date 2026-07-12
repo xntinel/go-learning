@@ -28,11 +28,6 @@ pollretry/                  independent module: example.com/polling-retry-unhand
 - Test: a probe that returns an unclassified error and assert `probe` is called exactly once, not `maxAttempts` times; two more tests pin the retryable and permanent paths.
 - Verify: `go test -count=1 ./...`.
 
-```bash
-mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/17-polling-retry-unhandled-error-case/cmd/demo
-cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/17-polling-retry-unhandled-error-case
-```
-
 ### Why a switch without a default silently retries the unknown
 
 `PollUntilReady`'s per-attempt classification is a tagless `switch` over

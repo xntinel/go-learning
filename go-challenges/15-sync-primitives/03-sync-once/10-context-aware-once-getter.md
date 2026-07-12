@@ -28,13 +28,6 @@ context-once-getter/          module: example.com/context-once-getter
 - Test: a waiter with a canceled context returns `context.Canceled` while init is provably still in flight (gated on a release channel, no sleeps); after release, a fresh `Get` returns the value and the runs counter is 1 across 100 mixed cancel/wait goroutines; a failing init propagates the same captured error to all completing waiters.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/03-sync-once/10-context-aware-once-getter/cmd/demo
-cd go-solutions/15-sync-primitives/03-sync-once/10-context-aware-once-getter
-```
-
 ### Cancellation detaches the waiter, never the work
 
 The design splits `Once`'s two jobs apart. `Do` currently does both *election*

@@ -59,13 +59,6 @@ Knowing the tri-color model helps you:
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/35-runtime-garbage-collector/01-tri-color-mark-and-sweep/01-tri-color-mark-and-sweep/cmd/demo
-cd go-solutions/35-runtime-garbage-collector/01-tri-color-mark-and-sweep/01-tri-color-mark-and-sweep
-```
-
 This is a library verified by `go test`, not a `main` program.
 
 ### Exercise 1: Object Graph and Color Types

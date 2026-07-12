@@ -30,8 +30,6 @@ fanin/                       independent module: example.com/fanin
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/33-fan-in-multi-channel-shared-result-write-index/cmd/demo
-cd go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/33-fan-in-multi-channel-shared-result-write-index
 go mod edit -go=1.24
 ```
 

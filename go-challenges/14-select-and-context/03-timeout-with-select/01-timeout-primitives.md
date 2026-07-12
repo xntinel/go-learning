@@ -22,13 +22,6 @@ Implement: `ReceiveWithTimeout[T](ch, d)`, `DrainWithTimeout[T](ch, d)`, `Deadli
 Test: buffered channel yields under budget; unbuffered times out after ~budget; closed channel times out; loop stops on close (nil) and on deadline (ErrTimeout); drain collects buffered values then times out.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/03-timeout-with-select/01-timeout-primitives/cmd/demo
-cd go-solutions/14-select-and-context/03-timeout-with-select/01-timeout-primitives
-```
-
 ### Why three primitives, one sentinel
 
 The three functions answer three distinct production questions. `ReceiveWithTimeout`

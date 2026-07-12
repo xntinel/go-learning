@@ -29,8 +29,6 @@ upgrade/                   independent module: example.com/upgrade
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/11-packages-and-modules/06-dependency-management/06-semver-upgrade-policy/cmd/demo
-cd go-solutions/11-packages-and-modules/06-dependency-management/06-semver-upgrade-policy
 go get golang.org/x/mod
 ```
 

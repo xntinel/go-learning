@@ -25,13 +25,6 @@ fakerepo/                    independent module: example.com/fakerepo
 - Test: an in-memory fake repo (map + `sync.RWMutex`, returns `ErrNotFound`); drive create-then-read and read-missing; assert the returned `User` and that a miss surfaces via `errors.Is(err, ErrNotFound)`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/11-mock-interfaces-for-testing/03-fake-in-memory-repository/cmd/demo
-cd go-solutions/08-interfaces/11-mock-interfaces-for-testing/03-fake-in-memory-repository
-```
-
 ### Why a fake, not a mock, for a repository
 
 A repository has *stateful* behavior: what you `Save` is what a later `FindByID`

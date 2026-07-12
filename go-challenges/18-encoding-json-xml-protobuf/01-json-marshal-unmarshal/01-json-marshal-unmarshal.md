@@ -32,14 +32,6 @@ You can `Marshal` and `Unmarshal` maps and slices directly. `map[string]int` bec
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/18-encoding-json-xml-protobuf/01-json-marshal-unmarshal/01-json-marshal-unmarshal/internal/book
-mkdir -p go-solutions/18-encoding-json-xml-protobuf/01-json-marshal-unmarshal/01-json-marshal-unmarshal/cmd/demo
-cd go-solutions/18-encoding-json-xml-protobuf/01-json-marshal-unmarshal/01-json-marshal-unmarshal
-```
-
 This is a library plus a tiny demo. You verify the library with `go test`; you run the demo with `go run ./cmd/demo`.
 
 ### Exercise 1: The `Book` Type And Constructor

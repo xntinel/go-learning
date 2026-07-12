@@ -34,11 +34,6 @@ tokenbucket/                 independent module: example.com/token-bucket-refill
 - Test: a stress test mixing concurrent takes and refills asserting the final count exactly matches the arithmetic sum of every individual change; a sequential exhaustion-then-refill case.
 - Verify: `go test -count=1 -race ./...`.
 
-```bash
-mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/27-token-bucket-refill-concurrent-race/cmd/demo
-cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/27-token-bucket-refill-concurrent-race
-```
-
 ### Why an unguarded refill can hand back capacity a request already spent
 
 The version that ships first often guards nothing, on the theory that

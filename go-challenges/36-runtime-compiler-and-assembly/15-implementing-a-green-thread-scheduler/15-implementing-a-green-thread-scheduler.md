@@ -38,13 +38,6 @@ A real low-level scheduler switches context by saving register state and jumping
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/36-runtime-compiler-and-assembly/15-implementing-a-green-thread-scheduler/15-implementing-a-green-thread-scheduler/cmd/demo
-cd go-solutions/36-runtime-compiler-and-assembly/15-implementing-a-green-thread-scheduler/15-implementing-a-green-thread-scheduler
-```
-
 This is a library; verify it with `go test`, not by running a main.
 
 ### Exercise 1: Task State and the Scheduler Core

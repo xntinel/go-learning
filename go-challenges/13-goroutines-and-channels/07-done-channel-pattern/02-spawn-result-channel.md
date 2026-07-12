@@ -25,13 +25,6 @@ Implement: `Spawn(done <-chan struct{}, work <-chan int) <-chan int` that folds 
 Test: draining a closed work channel yields the full sum; closing `done` yields the partial; ignoring the result entirely still lets the goroutine finish (the cap-1 buffer).
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/07-done-channel-pattern/02-spawn-result-channel/cmd/demo
-cd go-solutions/13-goroutines-and-channels/07-done-channel-pattern/02-spawn-result-channel
-```
-
 ### Why the out channel has capacity 1
 
 `Spawn` returns `<-chan int` and launches a goroutine that computes a single sum and

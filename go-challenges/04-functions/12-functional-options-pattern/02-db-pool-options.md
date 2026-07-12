@@ -29,13 +29,6 @@ dbpool/                          independent module: example.com/dbpool
 - Test: build a `*sql.DB` with `sql.OpenDB` over a no-op `driver.Connector` (no dialing), apply options, and assert `db.Stats().MaxOpenConnections`; assert the constructor rejects `maxIdle > maxOpen` and negative durations.
 - Verify: `go test -count=1 ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/12-functional-options-pattern/02-db-pool-options/cmd/demo
-cd go-solutions/04-functions/12-functional-options-pattern/02-db-pool-options
-```
-
 ### A mandatory dependency plus optional tuning
 
 Not every constructor argument should be an option. The `*sql.DB` here is

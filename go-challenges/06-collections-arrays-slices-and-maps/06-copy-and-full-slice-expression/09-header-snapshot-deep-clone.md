@@ -26,13 +26,6 @@ Implement: `Header.Clone` copying the map and `slices.Clone`-ing each value; a `
 Test: clone, append to a value slice and add a key in the clone, assert the original is byte-for-byte unchanged; a negative sub-test uses `maps.Clone` and shows a shared-value-slice mutation leaking into the original.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/06-copy-and-full-slice-expression/09-header-snapshot-deep-clone/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/06-copy-and-full-slice-expression/09-header-snapshot-deep-clone
-```
-
 ### Why `maps.Clone` is not enough
 
 `maps.Clone(m)` allocates a new map and copies every key and value by assignment.

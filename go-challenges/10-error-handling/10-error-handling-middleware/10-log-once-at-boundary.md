@@ -31,13 +31,6 @@ assert exactly one error line carrying the id that also appears in the response
 header; a nested-middleware path asserts no double logging.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/10-error-handling-middleware/10-log-once-at-boundary/cmd/demo
-cd go-solutions/10-error-handling/10-error-handling-middleware/10-log-once-at-boundary
-```
-
 ### Why once, and why at the boundary
 
 The most common logging antipattern in a service is logging an error where it

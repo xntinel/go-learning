@@ -30,8 +30,6 @@ resppool/                   independent module: example.com/resppool
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/02-byte-slices-vs-strings/03-buffer-pool-response-builder/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/02-byte-slices-vs-strings/03-buffer-pool-response-builder
 go mod edit -go=1.25
 ```
 

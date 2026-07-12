@@ -26,13 +26,6 @@ userlookup/                 independent module: example.com/userlookup
 - Test: a hand-written `fakeUserGetter` implementing `userGetter`, injected into `Service`; assert the service maps `store.ErrNotFound` to its own domain error via `errors.Is`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/12-interface-pollution-anti-patterns/04-consumer-defined-narrow-interface/store go-solutions/08-interfaces/12-interface-pollution-anti-patterns/04-consumer-defined-narrow-interface/cmd/demo
-cd go-solutions/08-interfaces/12-interface-pollution-anti-patterns/04-consumer-defined-narrow-interface
-```
-
 ### Why the interface lives in the consumer
 
 The store package has one job: hold users and return them. It exposes a concrete

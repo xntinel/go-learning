@@ -26,13 +26,6 @@ Implement: `Index(seq iter.Seq2[string, Record]) map[string]Record` via `maps.Co
 Test: duplicate keys resolve last-writer-wins; `Collect` of an empty seq is a non-nil empty map; `maps.All` -> `maps.Collect` round-trips to an equal map.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/06-streaming-map-collect/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/06-streaming-map-collect
-```
-
 ## Why iterators, and what collision means here
 
 A producer that yields key/value pairs one at a time is an `iter.Seq2[K, V]` — a

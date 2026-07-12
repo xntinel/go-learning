@@ -26,13 +26,6 @@ spycounter/                  independent module: example.com/spycounter
 - Test: a mutex-guarded `spyStorage` recording every `Save(value)`; assert the sequence is `[1,2]` for two `Inc` and `[1,6,7]` for `Inc`, `Add(5)`, `Inc`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/11-mock-interfaces-for-testing/01-hand-rolled-spy-counter/cmd/demo
-cd go-solutions/08-interfaces/11-mock-interfaces-for-testing/01-hand-rolled-spy-counter
-```
-
 ### Why a spy, and why state-based verification
 
 The `Counter` has one job you cannot observe from its return values alone: it

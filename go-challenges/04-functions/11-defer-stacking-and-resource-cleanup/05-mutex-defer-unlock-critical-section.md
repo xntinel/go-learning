@@ -26,13 +26,6 @@ metrics/                    independent module: example.com/metrics
 - Test: 64 goroutines `Inc` a shared key and the final `Snapshot` equals the total (under `-race`); a second test blocks the sink on a channel and proves another goroutine's `Inc` still makes progress, so `Flush` is not holding the lock during the slow write.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/05-mutex-defer-unlock-critical-section/metrics go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/05-mutex-defer-unlock-critical-section/cmd/demo
-cd go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/05-mutex-defer-unlock-critical-section
-```
-
 ### Two patterns, one lock
 
 `Inc` and `Snapshot` are short: acquire, touch the map, release. For them

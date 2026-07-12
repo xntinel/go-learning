@@ -29,13 +29,6 @@ limitercontract/                independent module: example.com/limitercontract
 - Test: initial-burst for both, refill-over-time for both, exact-N concurrency storms with `atomic.Int64`, idempotent `Close`, cap-at-max, and `ExampleMutexLimiter` with `// Output:`.
 - Verify: `go test -count=1 -race ./...` — the `-race` flag is the point of the module.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/10-mutex-vs-channel/05-concurrency-contract-tests/limiter go-solutions/15-sync-primitives/10-mutex-vs-channel/05-concurrency-contract-tests/cmd/demo
-cd go-solutions/15-sync-primitives/10-mutex-vs-channel/05-concurrency-contract-tests
-```
-
 ### Why exact-N is assertable, and why it matters
 
 The central trick: whenever a test wants to assert a count, it first makes

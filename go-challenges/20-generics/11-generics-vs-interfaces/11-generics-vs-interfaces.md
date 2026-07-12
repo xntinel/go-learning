@@ -18,13 +18,6 @@ Use interfaces at package boundaries for behavior and dependency injection. Use 
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/20-generics/11-generics-vs-interfaces/11-generics-vs-interfaces/cmd/demo
-cd go-solutions/20-generics/11-generics-vs-interfaces/11-generics-vs-interfaces
-```
-
 ### Exercise 1: Implement Both Cache Styles
 
 Create `cache.go`:

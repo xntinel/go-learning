@@ -27,13 +27,6 @@ Implement: `ReadBounded(body io.ReadCloser, limit int64) ([]byte, error)` using 
 Test: payloads of `limit-1`, `limit`, `limit+1` — under/at read to `io.EOF`, over returns `*http.MaxBytesError` via `errors.As`; `io.LimitReader` truncates silently; an `httptest` handler enforces the cap.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/10-testing-readers-with-iotest/06-bounded-body-reader-oom-guard/cmd/demo
-cd go-solutions/12-testing-ecosystem/10-testing-readers-with-iotest/06-bounded-body-reader-oom-guard
-```
-
 ### Two caps that look alike and behave oppositely
 
 `io.LimitReader(r, n)` and `http.MaxBytesReader(w, r, n)` both stop after `n`

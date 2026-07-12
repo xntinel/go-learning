@@ -59,13 +59,6 @@ A single request's timing is a data point; a fleet's timing needs aggregates. P9
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/33-tcp-udp-and-networking/12-http-client-instrumentation/12-http-client-instrumentation/cmd/demo
-cd go-solutions/33-tcp-udp-and-networking/12-http-client-instrumentation/12-http-client-instrumentation
-```
-
 This is a library, not a program. Verification is with `go test`.
 
 ### Exercise 1: RequestTiming and InstrumentedTransport

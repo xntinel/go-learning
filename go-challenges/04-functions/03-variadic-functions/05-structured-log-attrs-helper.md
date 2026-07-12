@@ -28,8 +28,6 @@ reqlog/                    independent module: example.com/reqlog
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/03-variadic-functions/05-structured-log-attrs-helper/cmd/demo
-cd go-solutions/04-functions/03-variadic-functions/05-structured-log-attrs-helper
 go mod edit -go=1.25
 ```
 

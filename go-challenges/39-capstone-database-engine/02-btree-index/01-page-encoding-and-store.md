@@ -20,12 +20,6 @@ btree_test.go        RecordID bit-packing + leaf and internal page round-trips
 - Test: `btree_test.go` packs and unpacks `RecordID` values, and round-trips both a leaf node and an internal node through encode then decode.
 - Verify: `go test -run 'TestRecordID|TestPage' -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/02-btree-index/01-page-encoding-and-store/cmd/demo && cd go-solutions/39-capstone-database-engine/02-btree-index/01-page-encoding-and-store
-```
-
 ### Why a fixed binary layout, and what a RecordID is
 
 The tree is a graph of pages addressed by integer page IDs, not Go pointers. A node holds child *page IDs*, not `*node` references, because the whole point is that a node can outlive the process: it is written to a page store, evicted from memory, and read back by ID. That single decision — address by ID, encode to bytes — is what makes the structure persistable, and it forces a concrete binary format rather than relying on Go's in-memory representation.

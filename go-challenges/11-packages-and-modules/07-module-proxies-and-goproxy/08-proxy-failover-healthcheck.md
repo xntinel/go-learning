@@ -26,8 +26,6 @@ proxyhealth/               independent module: example.com/proxyhealth
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/11-packages-and-modules/07-module-proxies-and-goproxy/08-proxy-failover-healthcheck/cmd/demo
-cd go-solutions/11-packages-and-modules/07-module-proxies-and-goproxy/08-proxy-failover-healthcheck
 go mod edit -go=1.26
 ```
 

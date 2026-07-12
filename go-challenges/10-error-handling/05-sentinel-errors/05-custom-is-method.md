@@ -26,13 +26,6 @@ apierr/                       independent module: example.com/apierr
 - Test: a table over 400/404/409/500/503 asserting client/server membership, a `%w`-wrapped match, and a non-match against an unrelated sentinel.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/05-sentinel-errors/05-custom-is-method/cmd/demo
-cd go-solutions/10-error-handling/05-sentinel-errors/05-custom-is-method
-```
-
 ### One category sentinel, many members
 
 Without a custom `Is`, a caller who wanted to know "is this any client error?"

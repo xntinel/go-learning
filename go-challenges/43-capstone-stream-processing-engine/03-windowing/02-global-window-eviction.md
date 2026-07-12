@@ -22,7 +22,6 @@ countwin_test.go       emission sequences, eviction bound, slide gating, key iso
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/43-capstone-stream-processing-engine/03-windowing/02-global-window-eviction/cmd/demo && cd go-solutions/43-capstone-stream-processing-engine/03-windowing/02-global-window-eviction
 go mod edit -go=1.26
 ```
 

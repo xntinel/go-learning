@@ -26,13 +26,6 @@ apiharness/                  independent module: example.com/apiharness
 - Test: `newTestServer(t)` mounts the handler on `httptest.NewServer`, registers `srv.Close` via `t.Cleanup`, and returns a client; `assertStatus` and `decodeJSON` helpers keep each subtest to a few lines.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/03-test-helpers/03-httptest-server-harness/cmd/demo
-cd go-solutions/12-testing-ecosystem/03-test-helpers/03-httptest-server-harness
-```
-
 ### The handler and why `httptest.NewServer`
 
 The API is an in-memory user store behind a `net/http.ServeMux` using the Go 1.22

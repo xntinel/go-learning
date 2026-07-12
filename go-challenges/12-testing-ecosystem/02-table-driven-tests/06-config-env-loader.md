@@ -30,8 +30,6 @@ envconfig/                independent module: example.com/envconfig
 Set up the module. It depends on go-cmp:
 
 ```bash
-mkdir -p go-solutions/12-testing-ecosystem/02-table-driven-tests/06-config-env-loader/cmd/demo
-cd go-solutions/12-testing-ecosystem/02-table-driven-tests/06-config-env-loader
 go get github.com/google/go-cmp/cmp@v0.7.0
 ```
 

@@ -24,8 +24,6 @@ dispatcher/                  independent module: example.com/dispatcher
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/10-higher-order-functions/08-command-dispatcher-registry/cmd/demo
-cd go-solutions/04-functions/10-higher-order-functions/08-command-dispatcher-registry
 go mod edit -go=1.25
 ```
 

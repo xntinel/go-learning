@@ -18,13 +18,6 @@ An enriched logger should be passed explicitly through constructors and request 
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/21-structured-logging-with-slog/05-slog-with-for-logger-enrichment/05-slog-with-logger-enrichment
-cd go-solutions/21-structured-logging-with-slog/05-slog-with-for-logger-enrichment/05-slog-with-logger-enrichment
-```
-
 Edit `go.mod`:
 
 ```go

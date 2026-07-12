@@ -29,8 +29,6 @@ connpool/                    independent module: example.com/connpool
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/12-testing-ecosystem/12-t-cleanup-patterns/05-parallel-defer-vs-cleanup/cmd/demo
-cd go-solutions/12-testing-ecosystem/12-t-cleanup-patterns/05-parallel-defer-vs-cleanup
 go mod edit -go=1.24
 ```
 

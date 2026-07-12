@@ -29,13 +29,6 @@ Test: `1023 -> "1023 B"`, `1024 -> "1.0 KiB"`, SI `1500 -> "1.5 KB"`; quota reje
 at `GiB+1` and accepts at exactly `GiB`; `KiB != KB`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/08-untyped-constants-and-constant-expressions/03-byte-unit-ladder-si-vs-binary/cmd/demo
-cd go-solutions/02-variables-types-and-constants/08-untyped-constants-and-constant-expressions/03-byte-unit-ladder-si-vs-binary
-```
-
 ### Two ladders, one package, never mixed
 
 The binary ladder steps by 1024 (`1 << 10`, `1 << 20`, ...); the SI ladder steps by

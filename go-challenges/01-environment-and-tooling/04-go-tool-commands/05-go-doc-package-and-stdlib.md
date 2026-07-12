@@ -25,13 +25,6 @@ doc-tour/                      module example.com/doc-tour
 - Test: a minimal `TestArea` so the module builds and gates.
 - Verify: `go doc ./internal/circle` renders the package header and comments; `go doc fmt.Println` works with no module.
 
-Create the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/04-go-tool-commands/05-go-doc-package-and-stdlib/cmd/demo go-solutions/01-environment-and-tooling/04-go-tool-commands/05-go-doc-package-and-stdlib/internal/circle
-cd go-solutions/01-environment-and-tooling/04-go-tool-commands/05-go-doc-package-and-stdlib
-```
-
 ### Docs live in comments, not a separate file
 
 The package comment — the comment immediately above `package circle` with no

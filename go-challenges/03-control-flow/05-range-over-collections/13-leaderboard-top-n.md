@@ -28,8 +28,6 @@ leaderboard/                independent module: example.com/leaderboard-topn
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/05-range-over-collections/13-leaderboard-top-n
-cd go-solutions/03-control-flow/05-range-over-collections/13-leaderboard-top-n
 go mod edit -go=1.24
 ```
 

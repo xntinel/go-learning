@@ -27,13 +27,6 @@ breaker/                   independent module: example.com/breaker
 - Test: opens after `threshold` consecutive failures; while open, calls return `ErrOpen` and `op` is not invoked; after the cooldown a single probe runs — success closes, failure re-opens; safe under `-race`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/04-first-class-functions-and-closures/07-circuit-breaker-closure/cmd/demo
-cd go-solutions/04-functions/04-first-class-functions-and-closures/07-circuit-breaker-closure
-```
-
 ### The state machine as captured variables
 
 The breaker has three states. **Closed** is normal: `op` runs, and consecutive

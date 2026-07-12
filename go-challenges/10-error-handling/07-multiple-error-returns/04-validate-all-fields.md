@@ -26,13 +26,6 @@ validate/                  independent module: example.com/validate
 - Test: three bad fields yield a `Join` naming all three; `errors.As` extracts the first `*FieldError`; a one-bad-field input surfaces exactly that field; valid input returns nil.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/07-multiple-error-returns/04-validate-all-fields/cmd/demo
-cd go-solutions/10-error-handling/07-multiple-error-returns/04-validate-all-fields
-```
-
 ### Why fail-complete, and why typed violations
 
 Field validation is the canonical independent-failures case: the email being

@@ -25,8 +25,6 @@ Validate only after all sources have been applied. Otherwise a later source can 
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/23-cli-applications/08-config-loading/08-config-loading
-cd go-solutions/23-cli-applications/08-config-loading/08-config-loading
 go mod edit -go=1.26
 ```
 

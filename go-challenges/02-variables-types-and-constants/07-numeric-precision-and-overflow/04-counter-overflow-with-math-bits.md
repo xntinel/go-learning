@@ -30,13 +30,6 @@ while `MulChecked(1<<20, 1<<20)` does not; a `Wide128` fold of a slice matches a
 `math/big` reference sum exactly.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/07-numeric-precision-and-overflow/04-counter-overflow-with-math-bits/cmd/demo
-cd go-solutions/02-variables-types-and-constants/07-numeric-precision-and-overflow/04-counter-overflow-with-math-bits
-```
-
 ### How math/bits turns overflow into a value you can test
 
 `math/bits` exposes the machine's carry-aware arithmetic. `bits.Add64(x, y, carry)`

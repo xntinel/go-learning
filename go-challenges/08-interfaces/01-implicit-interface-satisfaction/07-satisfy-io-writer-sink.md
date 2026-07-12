@@ -26,13 +26,6 @@ auditsink/                    independent module: example.com/auditsink
 - Test: assert redaction and line count, that the sink is assignable to `io.Writer`, and that `Write` returns `len(p)` for the original input.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/01-implicit-interface-satisfaction/07-satisfy-io-writer-sink/cmd/demo
-cd go-solutions/08-interfaces/01-implicit-interface-satisfaction/07-satisfy-io-writer-sink
-```
-
 ### The io.Writer contract and the redaction subtlety
 
 `io.Writer` requires: `Write` must return the number of bytes consumed from `p`

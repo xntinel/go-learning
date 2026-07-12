@@ -19,12 +19,6 @@ repo_test.go         multi-page traversal yields every item; a mid-stream fetch 
 - Test: `repo_test.go` collects every item across multiple pages through one range loop, and asserts that a fetch failing on a later page surfaces the wrapped error after the earlier pages' items.
 - Verify: `go test -run TestRepo -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/25-iterators-and-modern-go/05-designing-iterator-apis/05-paginated-repository/cmd/demo && cd go-solutions/25-iterators-and-modern-go/05-designing-iterator-apis/05-paginated-repository
-```
-
 ### One iterator that hides the cursor loop
 
 A paginated backend hands out data in chunks: each request returns a page of items plus a cursor for the next page, and an empty cursor means the end. Done naively, that loop leaks into every consumer — each call site has to initialize a cursor, call the fetcher, append the page, check for a next cursor, and repeat, and each one reinvents the same off-by-one and termination bugs. The fix is to express the whole traversal once, as an iterator, so the consumer's mental model collapses to "range over all items." `All` returns `iter.Seq2[Item, error]`: the cursor never appears in the signature, the page boundary never appears at the call site, and the consumer writes the same loop it would write over an in-memory slice — plus the one `if err != nil` that any fallible sequence requires.

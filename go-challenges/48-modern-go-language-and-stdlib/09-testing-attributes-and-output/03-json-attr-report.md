@@ -30,8 +30,6 @@ attrreport/                 independent module: example.com/attrreport
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/48-modern-go-language-and-stdlib/09-testing-attributes-and-output/03-json-attr-report/cmd/demo
-cd go-solutions/48-modern-go-language-and-stdlib/09-testing-attributes-and-output/03-json-attr-report
 go mod edit -go=1.25
 ```
 

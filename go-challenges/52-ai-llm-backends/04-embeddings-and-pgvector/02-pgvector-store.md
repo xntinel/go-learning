@@ -31,8 +31,6 @@ Set up the module. The default build is stdlib-only; pgx and pgvector are needed
 only for the `integration`-tagged files:
 
 ```bash
-mkdir -p go-solutions/52-ai-llm-backends/04-embeddings-and-pgvector/02-pgvector-store/cmd/demo
-cd go-solutions/52-ai-llm-backends/04-embeddings-and-pgvector/02-pgvector-store
 go get github.com/jackc/pgx/v5@latest github.com/pgvector/pgvector-go@latest
 ```
 

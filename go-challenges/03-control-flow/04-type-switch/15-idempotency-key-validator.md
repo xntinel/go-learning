@@ -35,8 +35,6 @@ idempotency-key-validator/   independent module: example.com/idempotency-key-val
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/04-type-switch/15-idempotency-key-validator/cmd/demo
-cd go-solutions/03-control-flow/04-type-switch/15-idempotency-key-validator
 go mod edit -go=1.24
 ```
 

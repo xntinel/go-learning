@@ -31,11 +31,6 @@ shardcache/                 independent module: example.com/sharded-cache-shadow
 - Test: set a pinned key whose hash lands on a different shard and assert `ShardKeys(0)` contains it directly — not merely that `Get` can still find it.
 - Verify: `go test -count=1 ./...`.
 
-```bash
-mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/20-sharded-cache-shadowed-shard-index/cmd/demo
-cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/20-sharded-cache-shadowed-shard-index
-```
-
 ### Why Get alone cannot catch this bug
 
 `Set` computes a hash-based `idx`, then is supposed to override it for

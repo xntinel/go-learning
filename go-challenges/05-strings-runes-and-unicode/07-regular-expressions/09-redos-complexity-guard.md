@@ -27,13 +27,6 @@ patternguard/               independent module: example.com/patternguard
 - Test: a pattern that is catastrophic on a backtracking engine (`(a+)+$`) still matches in linear time (timed to prove no blowup); an over-length pattern and an over-length input are rejected; invalid syntax returns a clear error; a benchmark shows match time scales with input length, not pattern nesting.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/07-regular-expressions/09-redos-complexity-guard/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/07-regular-expressions/09-redos-complexity-guard
-```
-
 ### What RE2 gives you, and what it does not
 
 The pattern `(a+)+$` matched against a long run of `a` ending in a non-`a` is the

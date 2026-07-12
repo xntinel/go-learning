@@ -25,13 +25,6 @@ kvstore/                   independent module: example.com/kvstore
 - Test: `TestPutAndGet` and `TestGetReturnsNotFound` (both `t.Parallel`), a `-race` concurrency test, and a testable `Example`.
 - Verify: `go test -count=1 -race ./...` runs both named tests with no `-tags` flag.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/13-build-tags-for-test-separation/01-inmemory-store-unit-tests/cmd/demo
-cd go-solutions/12-testing-ecosystem/13-build-tags-for-test-separation/01-inmemory-store-unit-tests
-```
-
 ### Why this tier is the untagged baseline
 
 The store is the in-memory stand-in a unit test reaches for instead of a real

@@ -27,13 +27,6 @@ userstore/                        module example.com/userstore
 - Test: white-box test of the store's insert/get/not-found/duplicate behavior via `errors.Is`; a public test that `NewInMemory` returns a working `UserRepo`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/11-packages-and-modules/03-internal-packages/04-internal-postgres-repository/internal/store go-solutions/11-packages-and-modules/03-internal-packages/04-internal-postgres-repository/cmd/demo
-cd go-solutions/11-packages-and-modules/03-internal-packages/04-internal-postgres-repository
-```
-
 ### Why the store goes under internal and the interface does not
 
 Split the module along the hexagonal seam. The public package `userstore` owns the

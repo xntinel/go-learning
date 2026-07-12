@@ -26,13 +26,6 @@ vulngate/                  independent module: example.com/vulngate
 - Test: a stream with an imported-but-unreachable OSV and a reachable finding with a call trace; assert the gate ignores the former and returns the latter with its OSV id and package.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/11-packages-and-modules/06-dependency-management/10-govulncheck-reachability-gate/cmd/demo
-cd go-solutions/11-packages-and-modules/06-dependency-management/10-govulncheck-reachability-gate
-```
-
 ### The govulncheck -json stream and reachability
 
 `govulncheck -json` emits a *stream* of JSON objects, one per line-ish message, each

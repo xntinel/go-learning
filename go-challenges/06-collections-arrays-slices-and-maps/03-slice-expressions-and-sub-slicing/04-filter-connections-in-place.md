@@ -32,8 +32,6 @@ connpool/                  independent module: example.com/connpool
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/04-filter-connections-in-place/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/04-filter-connections-in-place
 go mod edit -go=1.24
 ```
 

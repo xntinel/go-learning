@@ -21,13 +21,6 @@ slugify/                   independent module: example.com/slugify
 - Test: exact string outputs with `%q` in the failure message so trailing hyphens and empty strings are visible.
 - Verify: `gofmt -l .`, `go vet ./...`, `go test -count=1 -race ./...`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/01-your-first-test/04-slugify-url-path/cmd/demo
-cd go-solutions/12-testing-ecosystem/01-your-first-test/04-slugify-url-path
-```
-
 ### The transform, and why `%q` not `%s`
 
 A slug is lowercase, contains only letters, digits, and single hyphens as

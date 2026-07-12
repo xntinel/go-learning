@@ -30,8 +30,6 @@ atomicoutbox/                 independent module: example.com/atomicoutbox
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/50-messaging-and-event-driven/06-transactional-outbox-pattern/01-atomic-outbox-write/cmd/demo
-cd go-solutions/50-messaging-and-event-driven/06-transactional-outbox-pattern/01-atomic-outbox-write
 go get modernc.org/sqlite
 ```
 

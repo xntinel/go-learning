@@ -28,13 +28,6 @@ Implement: `mem` and `null` drivers implementing `registry.Driver`/`registry.Con
 Test: `mem.Conn` reads its spec to `io.EOF` and rejects an empty spec; `null.Conn` returns `io.EOF` on read and errors on double `Close`; compile-time `var _ registry.Driver` assertions pin conformance.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/08-init-functions-and-package-initialization/02-explicit-driver-implementations/internal/registry go-solutions/04-functions/08-init-functions-and-package-initialization/02-explicit-driver-implementations/drivers/mem go-solutions/04-functions/08-init-functions-and-package-initialization/02-explicit-driver-implementations/drivers/null go-solutions/04-functions/08-init-functions-and-package-initialization/02-explicit-driver-implementations/cmd/demo
-cd go-solutions/04-functions/08-init-functions-and-package-initialization/02-explicit-driver-implementations
-```
-
 ### Why the dependency arrow points one way
 
 The registry defines `Driver` and `Conn`. Each driver imports the registry to

@@ -60,8 +60,6 @@ spscring/                 module example.com/spscring
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/13-implementing-a-ring-buffer/17-lock-free-spsc-atomic-ring
-cd go-solutions/06-collections-arrays-slices-and-maps/13-implementing-a-ring-buffer/17-lock-free-spsc-atomic-ring
 go mod edit -go=1.24
 ```
 

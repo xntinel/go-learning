@@ -28,13 +28,6 @@ cfgfile/                   independent module: example.com/cfgfile
 - Test: real files in `t.TempDir()`, the reloader running under `t.Context()`; a rewrite lands as a version bump, a corrupt rewrite leaves the old snapshot serving and bumps the error counter, cancellation stops the goroutine.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/08-atomic-value-config-hot-reload/04-file-poll-hot-reloader/cmd/demo
-cd go-solutions/15-sync-primitives/08-atomic-value-config-hot-reload/04-file-poll-hot-reloader
-```
-
 ### Design: fail fast at boot, never fail at runtime
 
 The reloader has two error policies, and the asymmetry is the heart of the

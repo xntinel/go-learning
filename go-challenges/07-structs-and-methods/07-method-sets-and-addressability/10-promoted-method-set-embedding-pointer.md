@@ -27,13 +27,6 @@ promote/                       independent module: example.com/promote
 - Test: call the promoted `Handle` through the `Handler` interface and assert behavior; document the failing guard combinations as commented lines quoting the compiler error.
 - Verify: `go build ./...`, `go vet ./...`, `go test -count=1 -race ./...`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/07-method-sets-and-addressability/10-promoted-method-set-embedding-pointer/cmd/demo
-cd go-solutions/07-structs-and-methods/07-method-sets-and-addressability/10-promoted-method-set-embedding-pointer
-```
-
 ### How the embed kind decides the promoted method set
 
 `BaseController.Handle` is a pointer method: it records the request and returns a

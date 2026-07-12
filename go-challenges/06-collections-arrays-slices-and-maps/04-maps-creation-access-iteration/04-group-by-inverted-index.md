@@ -27,13 +27,6 @@ logindex/                  independent module: example.com/logindex
 - Test: grouping produces expected buckets, empty input yields an empty map, output keys are sorted and stable, a new field value creates a fresh bucket, the inverted index maps each tag to all doc IDs.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/04-group-by-inverted-index/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/04-group-by-inverted-index
-```
-
 ### Why append to a missing key needs no setup
 
 The core move is `m[k] = append(m[k], v)`. When `k` is absent, `m[k]` reads the

@@ -54,8 +54,6 @@ dedupe/                    module example.com/dedupe
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/13-idempotency-key-dedup-filter
-cd go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/13-idempotency-key-dedup-filter
 go mod edit -go=1.24
 ```
 

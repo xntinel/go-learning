@@ -29,13 +29,6 @@ Test: table-driven cases over real 2xx/4xx/5xx `httptest` responses plus a
 `Result.StatusCode` and `errors.Is(err, ErrEmptyURL)`.
 Verify: `go test -count=1 -race ./...` and `go vet ./...`, with `gofmt -l` empty.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/01-your-first-go-program/01-check-package-and-error-contract/cmd/demo
-cd go-solutions/01-environment-and-tooling/01-your-first-go-program/01-check-package-and-error-contract
-```
-
 ### Why the interface is one method wide
 
 The single design decision that makes this package testable is the `Client`

@@ -29,8 +29,6 @@ eventloop/                 independent module: example.com/eventloop
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/06-labels-break-continue-goto/02-event-loop-break-in-select/cmd/demo
-cd go-solutions/03-control-flow/06-labels-break-continue-goto/02-event-loop-break-in-select
 go mod edit -go=1.24
 ```
 

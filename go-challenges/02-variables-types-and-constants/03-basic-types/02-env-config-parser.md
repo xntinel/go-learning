@@ -25,13 +25,6 @@ config/                    independent module: example.com/config
 - Test: valid values populate the struct; `PORT="70000"` classifies as `ErrRange`; `PORT="abc"` classifies as `ErrSyntax`; a missing required key is reported by name.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/03-basic-types/02-env-config-parser/cmd/demo
-cd go-solutions/02-variables-types-and-constants/03-basic-types/02-env-config-parser
-```
-
 ### Why bitSize and error classification are the whole point
 
 The naive loader calls `strconv.Atoi` (which is `ParseInt(s, 10, 0)` — full `int`

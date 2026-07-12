@@ -30,8 +30,6 @@ m2mauth/                      independent module: example.com/m2mauth
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/49-application-security-crypto-supplychain/06-oauth2-oidc-flows/03-client-credentials-m2m/cmd/demo
-cd go-solutions/49-application-security-crypto-supplychain/06-oauth2-oidc-flows/03-client-credentials-m2m
 go get golang.org/x/oauth2@latest
 ```
 

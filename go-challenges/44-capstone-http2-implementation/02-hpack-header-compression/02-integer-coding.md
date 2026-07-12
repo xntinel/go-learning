@@ -22,7 +22,6 @@ hpackint/
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/44-capstone-http2-implementation/02-hpack-header-compression/02-integer-coding/cmd/demo && cd go-solutions/44-capstone-http2-implementation/02-hpack-header-compression/02-integer-coding
 go mod edit -go=1.26
 ```
 
@@ -110,7 +109,6 @@ func ReadInt(data []byte, prefixBits uint8) (val, consumed int, err error) {
 }
 ```
 
-
 ### The runnable demo
 
 The demo encodes the three RFC vectors and decodes them back, then feeds the decoder a deliberately malicious value — a prefix byte followed by a long run of `0xff` continuation bytes — and shows it is rejected as an overflow rather than looping or wrapping.
@@ -145,7 +143,6 @@ func main() {
 	fmt.Printf("malicious varint rejected: %v\n", errors.Is(err, hpackint.ErrOverflow))
 }
 ```
-
 
 Run it:
 
@@ -253,7 +250,6 @@ func equal(a, b []byte) bool {
 	return true
 }
 ```
-
 
 ## Review
 

@@ -25,8 +25,6 @@ billing/                     independent module: example.com/billing
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/12-per-tenant-billing-shared-accumulator
-cd go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/12-per-tenant-billing-shared-accumulator
 go mod edit -go=1.24
 ```
 

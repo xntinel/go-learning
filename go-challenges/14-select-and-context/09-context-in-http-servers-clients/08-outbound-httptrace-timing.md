@@ -28,13 +28,6 @@ Implement: `InstrumentedFetch(ctx, client, url)` attaching `httptrace.WithClient
 Test: an in-process upstream; assert `GotConn` and `GotFirstResponseByte` fired, durations are non-negative, the record carries the propagated request id, and the response body/status are unchanged.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/09-context-in-http-servers-clients/08-outbound-httptrace-timing/cmd/demo
-cd go-solutions/14-select-and-context/09-context-in-http-servers-clients/08-outbound-httptrace-timing
-```
-
 ## The design
 
 `httptrace.WithClientTrace(ctx, trace)` returns a child context carrying a

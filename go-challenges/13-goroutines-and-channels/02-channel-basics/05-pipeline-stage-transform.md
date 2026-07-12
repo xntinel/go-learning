@@ -25,13 +25,6 @@ pipeline/                    independent module: example.com/pipeline
 - Test: each stage transforms every element; closing the input closes the output; two stages compose; empty input terminates cleanly.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/02-channel-basics/05-pipeline-stage-transform/cmd/demo
-cd go-solutions/13-goroutines-and-channels/02-channel-basics/05-pipeline-stage-transform
-```
-
 ### Directional channels enforce the stage contract
 
 Each stage has the same skeleton: `make` a new output channel, start one goroutine

@@ -32,8 +32,6 @@ keyedsem/                    independent module: example.com/keyedsem
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/13-goroutines-and-channels/12-channel-patterns-semaphore-barrier/11-keyed-semaphore-per-tenant-isolation/cmd/demo
-cd go-solutions/13-goroutines-and-channels/12-channel-patterns-semaphore-barrier/11-keyed-semaphore-per-tenant-isolation
 go mod edit -go=1.26
 ```
 

@@ -20,12 +20,6 @@ strategy_test.go     each strategy, both combinators, the nil-strategy default
 - Test: each strategy's math, `CapDiscount` clamping, `Best` selection, and the nil-strategy fallback.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/24-design-patterns-in-go/03-strategy-pattern-via-interfaces/02-strategy-via-function-types/cmd/demo && cd go-solutions/24-design-patterns-in-go/03-strategy-pattern-via-interfaces/02-strategy-via-function-types
-```
-
 ### The function is the strategy
 
 The contract is a function type instead of an interface:

@@ -28,8 +28,6 @@ validate/                  independent module: example.com/validate
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/03-variadic-functions/08-validator-combinator-errorsjoin/cmd/demo
-cd go-solutions/04-functions/03-variadic-functions/08-validator-combinator-errorsjoin
 go mod edit -go=1.25
 ```
 

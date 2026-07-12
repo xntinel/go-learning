@@ -28,13 +28,6 @@ Implement: a large `AuditRecord` (several string fields, a `time.Time`, and a `[
 Test: correctness for both variants (valid record accepted, bad record rejected via `errors.Is`); `BenchmarkValidateByValue` vs `BenchmarkValidateByPointer` using `b.Loop()` and `b.ReportAllocs()`.
 Verify: `go test -count=1 -race ./...` and `go test -bench=. -benchtime=1x ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/03-methods-value-vs-pointer-receivers/10-large-struct-copy-benchmark/cmd/demo
-cd go-solutions/07-structs-and-methods/03-methods-value-vs-pointer-receivers/10-large-struct-copy-benchmark
-```
-
 ### Why a value receiver is not free
 
 A value receiver passes the receiver *by value*: the compiler copies the whole

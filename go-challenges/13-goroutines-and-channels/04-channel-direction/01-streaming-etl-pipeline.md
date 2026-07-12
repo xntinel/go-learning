@@ -27,13 +27,6 @@ Implement: `Produce`, `Consume`, `Transform`, `Pipeline`, wired with `chan<-` an
 Test: produce/consume round-trip, transform applies a function, pipeline chains all three, and the empty-input close contract.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/04-channel-direction/01-streaming-etl-pipeline/cmd/demo
-cd go-solutions/13-goroutines-and-channels/04-channel-direction/01-streaming-etl-pipeline
-```
-
 ### Why direction on every stage
 
 `Produce(out chan<- int, values []int)` takes a *send-only* channel: it spawns a

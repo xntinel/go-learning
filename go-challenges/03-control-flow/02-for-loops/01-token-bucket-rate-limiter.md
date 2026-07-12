@@ -27,13 +27,6 @@ ratelimit/                          module example.com/ratelimit
 - Test: a `fakeClock` whose `Advance` moves virtual time; assert burst-then-block, refill-at-rate, `Wait` returns on a token, `Wait` returns `context.Canceled`, `Reserve` exhaustion and `ErrInvalidN`, and concurrent `Allow` respects burst under `-race`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/02-for-loops/01-token-bucket-rate-limiter/internal/limiter go-solutions/03-control-flow/02-for-loops/01-token-bucket-rate-limiter/cmd/ratelimit-demo
-cd go-solutions/03-control-flow/02-for-loops/01-token-bucket-rate-limiter
-```
-
 ### Why the clock is injected once, and refill is the only time math
 
 A token bucket holds two pieces of state: a fractional count of `tokens` and the

@@ -22,13 +22,6 @@ idemclose/                 independent module: example.com/idemclose
 - Test: `Close` called from 2 goroutines plus a defer runs the real close exactly once and every caller observes the identical error value, table-driven over nil and non-nil close errors, under `-race`.
 - Verify: `go test -count=1 -race ./...` and `go run ./cmd/demo`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/12-sync-oncevalue-oncefunc/07-idempotent-close/cmd/demo
-cd go-solutions/15-sync-primitives/12-sync-oncevalue-oncefunc/07-idempotent-close
-```
-
 ### Why double-close is a real bug, not a nit
 
 `io.Closer`'s documentation is explicit: "The behavior of Close after the

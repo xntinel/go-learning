@@ -32,13 +32,6 @@ and assert exact cents and re-emitted string; show that a bare `0.1` preserved a
 malformed amount errors instead of silently zeroing.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/07-numeric-precision-and-overflow/03-money-json-codec-no-float/cmd/demo
-cd go-solutions/02-variables-types-and-constants/07-numeric-precision-and-overflow/03-money-json-codec-no-float
-```
-
 ### Why the default decode is dangerous, and how the custom codec fixes it
 
 `encoding/json` maps a JSON number onto `float64` whenever the destination is

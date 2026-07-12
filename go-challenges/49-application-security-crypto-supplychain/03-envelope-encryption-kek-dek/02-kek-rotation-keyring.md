@@ -31,8 +31,6 @@ keyring/                    independent module: example.com/keyring
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/49-application-security-crypto-supplychain/03-envelope-encryption-kek-dek/02-kek-rotation-keyring/cmd/demo
-cd go-solutions/49-application-security-crypto-supplychain/03-envelope-encryption-kek-dek/02-kek-rotation-keyring
 go mod edit -go=1.24
 ```
 

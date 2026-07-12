@@ -27,13 +27,6 @@ Implement: `Drain(in <-chan Record, batchSize int, flush func([]Record) error) e
 Test: two full flushes for `2*batchSize` records, one trailing partial flush on a non-multiple count, no flush on an empty stream.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/04-channel-direction/03-batching-sink-writer/cmd/demo
-cd go-solutions/13-goroutines-and-channels/04-channel-direction/03-batching-sink-writer
-```
-
 ### Why receive-only, and how close drives the final flush
 
 `Drain` takes `in <-chan Record`. That type is the contract: the sink drains, it

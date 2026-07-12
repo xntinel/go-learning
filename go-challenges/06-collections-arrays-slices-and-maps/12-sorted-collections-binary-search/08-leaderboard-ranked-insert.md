@@ -27,13 +27,6 @@ Implement: `Board` with `Upsert(Entry)`, `Rank(name) (int, bool)`, `Top(n) []Ent
 Test: out-of-order inserts land in the right order, ties break by name, upsert moves a player's rank, `Rank` returns 1-based positions and a sentinel for absent players, and the invariant holds after every op.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/12-sorted-collections-binary-search/08-leaderboard-ranked-insert/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/12-sorted-collections-binary-search/08-leaderboard-ranked-insert
-```
-
 ### A compound comparator with cmp.Or, and upsert as delete-then-insert
 
 The order is two keys: score descending, then name ascending. `cmp.Or` composes

@@ -26,13 +26,6 @@ requestid/                 independent module: example.com/requestid
 - Test: round-trip `0` and `math.MaxUint64`; fixed-width output preserves leading zeros; a 65-bit value is rejected with `ErrRange`; a non-hex or wrong-length input errors.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/03-basic-types/10-request-id-hex-encoding/cmd/demo
-cd go-solutions/02-variables-types-and-constants/03-basic-types/10-request-id-hex-encoding
-```
-
 ### Why uint64, and why fixed width
 
 A request-id counter should be `uint64`, not `int`. It is a non-negative identifier

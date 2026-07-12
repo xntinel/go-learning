@@ -30,8 +30,6 @@ breaker/                    independent module: example.com/breaker
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/06-labels-break-continue-goto/20-failure-rate-circuit-breaker/cmd/demo
-cd go-solutions/03-control-flow/06-labels-break-continue-goto/20-failure-rate-circuit-breaker
 go mod edit -go=1.24
 ```
 

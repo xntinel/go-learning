@@ -34,8 +34,6 @@ batchproc/                  independent module: example.com/batch-job-per-item-c
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/07-defer-semantics-and-ordering/18-batch-job-per-item-cleanup-helper/cmd/demo
-cd go-solutions/03-control-flow/07-defer-semantics-and-ordering/18-batch-job-per-item-cleanup-helper
 go mod edit -go=1.24
 ```
 

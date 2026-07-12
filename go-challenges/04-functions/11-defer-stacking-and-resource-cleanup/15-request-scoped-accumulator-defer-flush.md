@@ -27,8 +27,6 @@ reqaccum/                    independent module: example.com/reqaccum
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/15-request-scoped-accumulator-defer-flush/reqaccum go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/15-request-scoped-accumulator-defer-flush/cmd/demo
-cd go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/15-request-scoped-accumulator-defer-flush
 go mod edit -go=1.24
 ```
 

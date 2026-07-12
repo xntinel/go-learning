@@ -86,13 +86,6 @@ would misparse `"5s"` silently.
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/30-production-patterns/02-configuration-layered/02-configuration-layered/cmd/demo
-cd go-solutions/30-production-patterns/02-configuration-layered/02-configuration-layered
-```
-
 This is a library. Verification is `go test`, not `go run`.
 
 ### Exercise 1: The Config Struct and Defaults

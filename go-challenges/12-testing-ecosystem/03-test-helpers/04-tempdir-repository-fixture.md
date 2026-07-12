@@ -26,13 +26,6 @@ repofixture/                 independent module: example.com/repofixture
 - Test: `newTestRepo(t)` builds a repo in `t.TempDir()`; `seed(t, repo, recs...)` inserts records; parallel subtests each get a fresh dir and assert isolation.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/03-test-helpers/04-tempdir-repository-fixture/cmd/demo
-cd go-solutions/12-testing-ecosystem/03-test-helpers/04-tempdir-repository-fixture
-```
-
 ### The repository and why `t.TempDir` gives isolation
 
 `Repo` stores each record as a JSON file named `<id>.json` under its root

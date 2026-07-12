@@ -27,13 +27,6 @@ counter/                   independent module: example.com/counter
   `Snapshot` returns an independent copy; a parallel reader while writers run.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/07-concurrent-counter-map/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/07-concurrent-counter-map
-```
-
 ### The broken version, and why it is worse than a race warning
 
 The naive counter is a bare map with an `Inc` method:

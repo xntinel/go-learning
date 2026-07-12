@@ -26,13 +26,6 @@ Implement: `Canonicalize(v any) ([]byte, error)` that marshals (sorting map keys
 Test: canonicalize a fresh `map[string]any` many times and assert every run yields the same bytes; assert keys come out sorted.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/06-canonical-json-snapshot/cmd/demo
-cd go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/06-canonical-json-snapshot
-```
-
 ### Why a Marshal round-trip is the canonical form
 
 Go randomizes map iteration order on purpose, so any output that renders a map by

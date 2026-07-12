@@ -24,7 +24,6 @@ operators_test.go      predicate selection, one-to-many expansion, filter abort 
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/43-capstone-stream-processing-engine/02-operators-map-filter-flatmap/02-filter-and-flatmap/cmd/demo && cd go-solutions/43-capstone-stream-processing-engine/02-operators-map-filter-flatmap/02-filter-and-flatmap
 go mod edit -go=1.26
 ```
 

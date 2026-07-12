@@ -32,13 +32,6 @@ does not.
 Verify: `go test -count=1 -race ./...`, then observe the closure escape with
 `go build -gcflags=-m ./... 2>&1 | grep 'func literal escapes to heap'`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/07-escape-analysis/06-closure-capture-escape/cmd/demo
-cd go-solutions/09-pointers/07-escape-analysis/06-closure-capture-escape
-```
-
 ### Why a dispatched closure escapes, and why the loop variable is safe now
 
 When you write `go func() { ... captured ... }()` or send a `func()` down a channel

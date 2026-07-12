@@ -68,14 +68,6 @@ Converting a type expression to a string requires a recursive helper. The standa
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/29-code-generation-and-build-system/04-ast-parsing/04-ast-parsing/testdata
-mkdir -p go-solutions/29-code-generation-and-build-system/04-ast-parsing/04-ast-parsing/cmd/demo
-cd go-solutions/29-code-generation-and-build-system/04-ast-parsing/04-ast-parsing
-```
-
 ### Exercise 1: Create the test fixture
 
 Create `testdata/models.go`:

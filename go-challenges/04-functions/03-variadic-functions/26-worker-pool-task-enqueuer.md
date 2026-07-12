@@ -30,8 +30,6 @@ workerpool/                independent module: example.com/workerpool
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/03-variadic-functions/26-worker-pool-task-enqueuer/cmd/demo
-cd go-solutions/04-functions/03-variadic-functions/26-worker-pool-task-enqueuer
 go mod edit -go=1.24
 ```
 

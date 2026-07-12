@@ -96,13 +96,6 @@ Fragmentation ratio: `1 - float64(LargestFree) / float64(totalFreePayload)`. Zer
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/36-runtime-compiler-and-assembly/13-implementing-a-custom-memory-allocator/13-implementing-a-custom-memory-allocator/cmd/demo
-cd go-solutions/36-runtime-compiler-and-assembly/13-implementing-a-custom-memory-allocator/13-implementing-a-custom-memory-allocator
-```
-
 This is a library verified by `go test`, not by `go run`.
 
 ### Exercise 1: The Header, the Backing Store, Constructor, Alloc, Free, and Coalescing
@@ -393,7 +386,6 @@ The header is placed directly in the backing store; no heap allocation is needed
 ### Exercise 3: Tests
 
 Create `allocator_test.go`:
-
 
 ```go
 // allocator_test.go

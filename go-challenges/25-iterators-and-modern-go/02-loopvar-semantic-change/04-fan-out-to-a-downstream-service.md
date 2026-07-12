@@ -20,12 +20,6 @@ example_test.go      ExampleFanOut with a verified // Output block
 - Test: assert results stay aligned with the input order, that a recording service sees each id exactly once, that a failing service surfaces a wrapped error, and that an empty batch returns `ErrEmptyBatch` — all under `-race`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/25-iterators-and-modern-go/02-loopvar-semantic-change/04-fan-out-to-a-downstream-service/cmd/demo && cd go-solutions/25-iterators-and-modern-go/02-loopvar-semantic-change/04-fan-out-to-a-downstream-service
-```
-
 ### Why the result slot, not a shared accumulator, is the architecture
 
 The naive way to collect fan-out results is to append to a shared slice or write to a shared map from inside each goroutine. That is a data race on the slice header or the map, and it is unrelated to the loop variable — it would race even with a perfect per-iteration capture. The disciplined pattern is to pre-size a results slice to `len(ids)` and have each goroutine write only to `results[i]`, where `i` is *its* iteration index. Distinct indices into an existing backing array are distinct memory locations, so no two goroutines ever touch the same word; there is no shared mutable accumulator, hence no race and no mutex. The slice header itself is only read concurrently (never grown), which is safe. This is the canonical Go answer to "fan out and collect in order," and it depends on Go 1.22 to be correct: each goroutine must capture its own `i` and `id`, or every goroutine would index with the loop's final `i` and clobber the same last slot.

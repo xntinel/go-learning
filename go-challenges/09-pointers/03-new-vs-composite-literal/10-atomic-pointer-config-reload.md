@@ -30,13 +30,6 @@ expected old pointer matches; reloading builds a distinct pointer so old readers
 keep their snapshot.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/03-new-vs-composite-literal/10-atomic-pointer-config-reload/cmd/demo
-cd go-solutions/09-pointers/03-new-vs-composite-literal/10-atomic-pointer-config-reload
-```
-
 ### Why atomic.Pointer and immutable snapshots
 
 A service that reloads config on a SIGHUP or a file-watch needs two things: readers

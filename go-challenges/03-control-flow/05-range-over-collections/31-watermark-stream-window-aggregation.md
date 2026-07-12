@@ -40,8 +40,6 @@ streamwin/                  independent module: example.com/watermark-stream-win
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/05-range-over-collections/31-watermark-stream-window-aggregation/cmd/demo
-cd go-solutions/03-control-flow/05-range-over-collections/31-watermark-stream-window-aggregation
 go mod edit -go=1.24
 ```
 

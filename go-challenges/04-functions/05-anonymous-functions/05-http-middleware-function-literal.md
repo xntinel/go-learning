@@ -24,13 +24,6 @@ middleware/                   module example.com/middleware
 - Test: the injected id reaches the inner handler through the context and rides back on the response header; the chain composes in order; the timeout config captured by the literal is honored (fast handler passes, slow handler gets 503).
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/05-anonymous-functions/05-http-middleware-function-literal/cmd/demo
-cd go-solutions/04-functions/05-anonymous-functions/05-http-middleware-function-literal
-```
-
 ### A middleware is a closure returning a handler literal
 
 `RequestID` has the plain constructor shape `func(next http.Handler) http.Handler`.

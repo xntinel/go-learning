@@ -20,12 +20,6 @@ handshake_test.go    a full handshake round-trip, bad-version rejection, passwor
 - Test: `handshake_test.go` runs a full handshake over `net.Pipe`, rejects protocol version 3.1, completes a cleartext-password exchange, and rejects truncated payloads as `ErrShort`.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/09-network-protocol/07-startup-auth-handshake/cmd/demo && cd go-solutions/39-capstone-database-engine/09-network-protocol/07-startup-auth-handshake
-```
-
 ### The shape of the handshake
 
 The handshake is the one part of the protocol where the message order is fixed and the framing rules bend. The client opens with a `StartupMessage`: the four-byte length is the very first thing on the wire (no type byte), followed by an `int32` protocol version and null-terminated `key\0value\0` pairs ending in an empty key. `ReadStartup` reads the length directly and rejects any version other than 3.0 (`196608`) with `ErrBadVersion` — a server must never try to parse an unknown layout. Encoding the parameter keys in sorted order makes the wire bytes deterministic, which is what lets a test assert on them.

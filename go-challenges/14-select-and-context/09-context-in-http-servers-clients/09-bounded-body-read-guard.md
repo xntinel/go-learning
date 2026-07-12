@@ -27,13 +27,6 @@ Implement: `ReadBounded(w, r, limit)` wrapping `r.Body` in `http.MaxBytesReader`
 Test: oversize POST asserts `413` and `errors.As(err, *http.MaxBytesError)`; well-formed POST asserts `200`+decode; a cancelled slow upload asserts a context error, not a garbage decode.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/09-context-in-http-servers-clients/09-bounded-body-read-guard/cmd/demo
-cd go-solutions/14-select-and-context/09-context-in-http-servers-clients/09-bounded-body-read-guard
-```
-
 ## The design
 
 `http.MaxBytesReader(w, r.Body, limit)` returns a reader that fails with a

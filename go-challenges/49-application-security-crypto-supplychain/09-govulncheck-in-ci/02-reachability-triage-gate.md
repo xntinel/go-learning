@@ -32,8 +32,6 @@ vulngate/                    independent module: example.com/vulngate
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/49-application-security-crypto-supplychain/09-govulncheck-in-ci/02-reachability-triage-gate/cmd/demo
-cd go-solutions/49-application-security-crypto-supplychain/09-govulncheck-in-ci/02-reachability-triage-gate
 go mod edit -go=1.26
 ```
 

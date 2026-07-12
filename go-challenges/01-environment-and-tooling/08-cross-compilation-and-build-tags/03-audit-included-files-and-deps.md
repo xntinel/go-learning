@@ -27,13 +27,6 @@ auditfiles/                    module example.com/auditfiles
 - Test: assert the expected set is exactly `audit.go` plus the one selected `platform_*.go` for each GOOS.
 - Verify: `go test -race ./...`, then `go run ./cmd/demo` to see the live `go list` output agree with the expected sets.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/08-cross-compilation-and-build-tags/03-audit-included-files-and-deps/cmd/demo
-cd go-solutions/01-environment-and-tooling/08-cross-compilation-and-build-tags/03-audit-included-files-and-deps
-```
-
 ### go list as a GOOS-parameterized query
 
 `go list -f '{{.GoFiles}}' <pkg>` prints the Go source files the toolchain would

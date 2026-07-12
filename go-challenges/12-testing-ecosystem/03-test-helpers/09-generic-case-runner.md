@@ -26,13 +26,6 @@ caserunner/                  independent module: example.com/caserunner
 - Test: `runCases[C any](t, cases, name, run)` and `runCasesParallel[C any](...)` generic helpers wrapping `t.Run`; drive `Classify` through a typed case slice; a parallel variant under `-race`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/03-test-helpers/09-generic-case-runner/cmd/demo
-cd go-solutions/12-testing-ecosystem/03-test-helpers/09-generic-case-runner
-```
-
 ### What the runner buys and why it stays generic
 
 The runner is a single generic function:

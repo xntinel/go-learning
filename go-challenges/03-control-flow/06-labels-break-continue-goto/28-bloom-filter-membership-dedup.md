@@ -33,8 +33,6 @@ bloomdedup/                 independent module: example.com/bloomdedup
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/06-labels-break-continue-goto/28-bloom-filter-membership-dedup/cmd/demo
-cd go-solutions/03-control-flow/06-labels-break-continue-goto/28-bloom-filter-membership-dedup
 go mod edit -go=1.24
 ```
 

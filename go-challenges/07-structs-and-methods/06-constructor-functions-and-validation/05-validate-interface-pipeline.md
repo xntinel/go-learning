@@ -27,13 +27,6 @@ httpvalid/                   independent module: example.com/validate-interface-
 - Test: a well-formed DTO passes; required / length-bound / enum-membership each fail with their sentinel via `errors.Is`; `ValidateAll` aggregates; `errors.As` retrieves the field name from a `FieldError`; and malformed JSON is distinguished from valid-JSON-but-invalid-DTO.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/06-constructor-functions-and-validation/05-validate-interface-pipeline/cmd/demo
-cd go-solutions/07-structs-and-methods/06-constructor-functions-and-validation/05-validate-interface-pipeline
-```
-
 ### Keep transport out of the domain
 
 Decoding and validation are two different failures with two different HTTP

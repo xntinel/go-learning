@@ -31,8 +31,6 @@ wasmhost/                    independent module: example.com/wasmhost
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/53-wasm-and-extensibility/01-wazero-host-runtime/02-runtime-lifecycle/cmd/demo
-cd go-solutions/53-wasm-and-extensibility/01-wazero-host-runtime/02-runtime-lifecycle
 go mod edit -go=1.26
 go get github.com/tetratelabs/wazero@latest
 ```

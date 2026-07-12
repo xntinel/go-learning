@@ -23,13 +23,6 @@ watchdog/                 independent module: example.com/watchdog
 - Test: a bounded workload keeps the high-water near baseline and never alerts; a leaking workload trips the alert with a count above baseline; cancelling stops the loop with no leaked watchdog goroutine.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/08-goroutine-count-regression-watchdog/cmd/demo
-cd go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/08-goroutine-count-regression-watchdog
-```
-
 ### What the watchdog measures, and why a high-water mark
 
 The signature of a leak is the goroutine count trending upward while load is steady.

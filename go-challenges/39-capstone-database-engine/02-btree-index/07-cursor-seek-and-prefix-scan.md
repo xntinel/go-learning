@@ -20,12 +20,6 @@ cursor_test.go       seek + walk across leaves, seek past end, prefix-scan table
 - Test: `cursor_test.go` seeks into a 300-key tree and walks to the end across leaf boundaries, seeks past the last key, and prefix-scans a table of overlapping words.
 - Verify: `go test -run 'TestCursor|TestPrefixScan|ExampleTree' -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/02-btree-index/07-cursor-seek-and-prefix-scan/cmd/demo && cd go-solutions/39-capstone-database-engine/02-btree-index/07-cursor-seek-and-prefix-scan
-```
-
 ### The baseline
 
 The cursor needs a populated tree to walk, so this module carries the page layout, store, descent, and insert path, duplicated here so it stands alone. The new work is the `Cursor` in `cursor.go`. The cursor reaches into the tree's internals — `leafFor`, `readNode`, `lowerBound`, and the leaf `nextLeaf` chain — which is why it lives in the same package rather than on top of the public API.

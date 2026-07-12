@@ -63,13 +63,6 @@ The pacer smooths allocation rate and scan rate estimates across cycles using ex
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/35-runtime-garbage-collector/06-gc-pacer/06-gc-pacer/cmd/demo
-cd go-solutions/35-runtime-garbage-collector/06-gc-pacer/06-gc-pacer
-```
-
 ### Exercise 1: Pacer Simulation
 
 Create `pacer.go`:

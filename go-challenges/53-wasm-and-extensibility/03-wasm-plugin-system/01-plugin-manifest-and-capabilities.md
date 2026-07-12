@@ -30,13 +30,6 @@ capability/                 independent module: example.com/capability
 - Test: table-driven cases for unknown capability (`ErrUnknownCapability`), denied capability (`ErrCapabilityDenied` with the name surfaced), and a valid subset (exact sorted grant); an `Example` printing a granted set; a your-turn test asserting an empty request yields an empty non-nil grant.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/53-wasm-and-extensibility/03-wasm-plugin-system/01-plugin-manifest-and-capabilities/cmd/demo
-cd go-solutions/53-wasm-and-extensibility/03-wasm-plugin-system/01-plugin-manifest-and-capabilities
-```
-
 ### Why a closed set, and why the grant is an intersection
 
 A capability is a named power the host can hand out: write to a log, read the KV

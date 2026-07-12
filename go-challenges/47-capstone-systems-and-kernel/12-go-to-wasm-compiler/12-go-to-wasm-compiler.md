@@ -86,14 +86,6 @@ SLEB128 uses two's complement: encoding terminates when the remaining value equa
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/47-capstone-systems-and-kernel/12-go-to-wasm-compiler/12-go-to-wasm-compiler/compiler
-mkdir -p go-solutions/47-capstone-systems-and-kernel/12-go-to-wasm-compiler/12-go-to-wasm-compiler/cmd/demo
-cd go-solutions/47-capstone-systems-and-kernel/12-go-to-wasm-compiler/12-go-to-wasm-compiler
-```
-
 Add the wazero dependency for the integration test harness:
 
 ```bash

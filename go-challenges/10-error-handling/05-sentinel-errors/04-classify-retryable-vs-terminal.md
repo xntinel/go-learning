@@ -26,13 +26,6 @@ retry/                        independent module: example.com/retry
 - Test: N transient failures then success (assert attempt count), a terminal error (assert exactly one attempt), a mid-loop cancellation (assert prompt stop wrapping `context.Canceled`).
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/05-sentinel-errors/04-classify-retryable-vs-terminal/cmd/demo
-cd go-solutions/10-error-handling/05-sentinel-errors/04-classify-retryable-vs-terminal
-```
-
 ### Fail fast on terminal errors
 
 The whole value of the classifier is negative: it decides what *not* to retry. A

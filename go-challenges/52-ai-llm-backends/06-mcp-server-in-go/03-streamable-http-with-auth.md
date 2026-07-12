@@ -32,8 +32,6 @@ mcphttp/                    independent module: example.com/mcphttp
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/52-ai-llm-backends/06-mcp-server-in-go/03-streamable-http-with-auth/cmd/demo
-cd go-solutions/52-ai-llm-backends/06-mcp-server-in-go/03-streamable-http-with-auth
 go mod edit -go=1.26
 go get github.com/modelcontextprotocol/go-sdk@latest
 ```

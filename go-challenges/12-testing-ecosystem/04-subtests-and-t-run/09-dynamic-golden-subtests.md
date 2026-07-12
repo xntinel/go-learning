@@ -28,13 +28,6 @@ jsonreport/                 independent module: example.com/jsonreport
   `.golden` sibling; a package-level `-update` flag rewrites goldens.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/04-subtests-and-t-run/09-dynamic-golden-subtests/cmd/demo
-cd go-solutions/12-testing-ecosystem/04-subtests-and-t-run/09-dynamic-golden-subtests
-```
-
 ### The golden-file workflow and dynamic subtests
 
 The test does not hard-code a table of cases. It reads a directory, filters for

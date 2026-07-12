@@ -25,12 +25,6 @@ exists/
 - Test: bare `EXISTS`, `NOT EXISTS`, composition with `AND`, the existing IN/scalar subquery forms, round trip, and malformed-input errors.
 - Verify: `go test -race ./...` and `go run ./cmd/demo`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/05-sql-parser/03-exists-predicates/lexer go-solutions/39-capstone-database-engine/05-sql-parser/03-exists-predicates/cmd/demo && cd go-solutions/39-capstone-database-engine/05-sql-parser/03-exists-predicates
-```
-
 ### EXISTS is a prefix predicate, and that is the whole design
 
 `IN` is an infix special form: it has a left operand (`x IN (...)`), so it lives in the led loop. `EXISTS` is the opposite — it has no left operand, so it belongs in the nud position alongside literals and parenthesized groups. `ParsePredicate` therefore parses one prefix that may be `EXISTS` (or `NOT EXISTS`), then hands the result to the shared `parseInfix` loop. Because the infix loop is the same one the core parser exposes, an `EXISTS (...)` predicate composes with `AND`, `OR`, and comparisons exactly like any other operand: `EXISTS (SELECT 1 FROM t) AND x > 1` parses as `((EXISTS ...) AND (x > 1))` with no special-casing.

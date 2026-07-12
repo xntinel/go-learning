@@ -28,13 +28,6 @@ budget-guard/                        independent module: example.com/budgetguard
 - Test: a generous ctx runs enrichment (`Enriched=true`); a tight ctx skips it (`Enriched=false`, `Degraded=true`) and never calls the enrich func (spy); a no-deadline ctx always enriches; the skip path returns within budget.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/05-context-withtimeout-withdeadline/05-budget-guard-skip-work/cmd/demo
-cd go-solutions/14-select-and-context/05-context-withtimeout-withdeadline/05-budget-guard-skip-work
-```
-
 ### Measuring the budget before spending it
 
 Most timeout code is *reactive*: start the work, and if the deadline fires

@@ -19,12 +19,6 @@ groupcommit_test.go   parked-leader coalescing (N commits -> 2 flushes) + closed
 - Test: `groupcommit_test.go` parks the first flush so the remaining commits coalesce, asserts exactly two flushes serve twenty commits, and that `Commit` after `Close` returns `ErrCommitterClosed`.
 - Verify: `go test -run 'TestGroupCommitter|ExampleGroupCommitter' -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/01-write-ahead-log/06-leader-follower-group-commit/cmd/demo && cd go-solutions/39-capstone-database-engine/01-write-ahead-log/06-leader-follower-group-commit
-```
-
 ### Why a second design, and why in isolation
 
 The timer design in the WAL core is simple and bounds latency at one tick, but it has a structural flaw: when the queue is already full it still waits out the remainder of the tick before flushing, spending latency it did not need to. The leader/follower design removes the timer entirely. The first commit to arrive becomes the leader and triggers a flush; every commit that arrives while that flush is in progress cannot be served yet, so it accumulates, and when the flush returns the whole accumulated set is flushed together as the next batch. The window is therefore self-tuning and equal to exactly how long the previous flush took: a slow device produces large batches (more coalescing, higher throughput), a fast device produces small ones (less added latency), with no tunable to misconfigure.

@@ -27,13 +27,6 @@ Implement: `WithCancelCause(parent)` and `WithTimeoutCause(parent, timeout, caus
 Test: `context.Cause` returns the exact sentinel while `ctx.Err()` stays `Canceled`; `WithTimeoutCause` yields its cause on expiry but the plain cancel does not; `errors.Is` matches the sentinel through a wrapped pipeline error.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/13-context-leak-detection/07-cancelcause-diagnostics/cmd/demo
-cd go-solutions/14-select-and-context/13-context-leak-detection/07-cancelcause-diagnostics
-```
-
 ### Cause is the diagnosability upgrade over Err
 
 `context.WithCancelCause(parent)` returns a `CancelCauseFunc` — a

@@ -26,8 +26,6 @@ pipeline/                    independent module: example.com/pipeline
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/10-higher-order-functions/20-filter-and-map-with-transform-error
-cd go-solutions/04-functions/10-higher-order-functions/20-filter-and-map-with-transform-error
 go mod edit -go=1.24
 ```
 

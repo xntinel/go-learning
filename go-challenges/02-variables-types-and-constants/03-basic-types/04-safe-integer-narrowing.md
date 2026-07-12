@@ -26,13 +26,6 @@ narrow/                    independent module: example.com/narrow
 - Test: boundary values per width (`MaxInt32`, `MaxInt32+1`, `MinInt32-1`, negative into unsigned, `MaxUint16`+1); a test asserting `RawNarrowInt32(1<<31)` is negative.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/03-basic-types/04-safe-integer-narrowing/cmd/demo
-cd go-solutions/02-variables-types-and-constants/03-basic-types/04-safe-integer-narrowing
-```
-
 ### Why a plain conversion is a bug generator
 
 `int32(x)` does not check anything. If `x` is `2147483648` (one past `MaxInt32`),

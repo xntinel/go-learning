@@ -19,12 +19,6 @@ distribute_test.go   all-writes-land, in-flight bound, error aggregation, cancel
 - Test: every item is written, peak concurrent writes never exceed the worker count, write errors are aggregated, and a cancelled context stops the pipeline before draining a huge stream.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/16-concurrency-patterns/02-fan-out-pattern/03-distributing-writes-with-backpressure/cmd/demo && cd go-solutions/16-concurrency-patterns/02-fan-out-pattern/03-distributing-writes-with-backpressure
-```
-
 ### Why an unbuffered channel is the backpressure valve
 
 Backpressure is the property that a slow consumer slows the producer down instead of letting work pile up. The mechanism here is one design decision: the internal `jobs` channel is unbuffered. A send on an unbuffered channel does not complete until a receiver is ready, so `jobs <- item` blocks until some worker has finished its previous write and looped back to receive. While all `workers` goroutines are busy inside `Sink.Write`, the forwarding loop is parked on that send and stops pulling from `items`; the upstream producer, sending on `items`, then blocks on its own send. The blocking propagates all the way back to the source. The amount of data in memory at any instant is therefore bounded — at most one item per worker in flight plus the one parked in the forwarder — regardless of whether the producer can generate a million rows a second.

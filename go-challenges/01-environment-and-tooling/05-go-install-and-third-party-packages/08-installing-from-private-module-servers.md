@@ -25,13 +25,6 @@ Implement: `ParseGOPROXY(s string) ([]Hop, error)` honoring comma (fall through 
 Test: table cases covering comma/pipe separators, `direct`/`off` terminals, and malformed input.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/05-go-install-and-third-party-packages/08-installing-from-private-module-servers/cmd/demo
-cd go-solutions/01-environment-and-tooling/05-go-install-and-third-party-packages/08-installing-from-private-module-servers
-```
-
 ### The environment a private module needs
 
 Fetching `example.internal/lib@v1.0.0` from a corporate git server, not the

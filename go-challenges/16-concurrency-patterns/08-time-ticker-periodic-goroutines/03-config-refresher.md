@@ -22,12 +22,6 @@ refresher_test.go        initial load, tick refreshes, error keeps last good,
 - Test: deterministic tests drive the refresher with `FakeClock.Tick()` and synchronize on an `OnRefresh` callback, asserting cache population, error handling, and graceful cancellation without a single real sleep.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/16-concurrency-patterns/08-time-ticker-periodic-goroutines/03-config-refresher/cmd/demo && cd go-solutions/16-concurrency-patterns/08-time-ticker-periodic-goroutines/03-config-refresher
-```
-
 ### Why an injectable clock, and why jitter
 
 Two design decisions separate a toy refresher from a production one.

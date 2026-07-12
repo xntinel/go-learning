@@ -22,13 +22,6 @@ Implement: `LeakyCall(op, budget)` on an unbuffered result channel; `SafeCall(op
 Test: N leaky calls that time out leave goroutines elevated; N safe calls return the count to baseline; both under `-race`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/03-timeout-with-select/02-timeout-demo-and-goroutine-leak/cmd/demo
-cd go-solutions/14-select-and-context/03-timeout-with-select/02-timeout-demo-and-goroutine-leak
-```
-
 ### The only difference that matters
 
 `LeakyCall` and `SafeCall` are byte-for-byte identical except for one thing: the

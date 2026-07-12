@@ -27,13 +27,6 @@ cacheload/                       independent module: example.com/cacheload
 - Test: exact-Size assertion under 40-goroutine load; an expiring-entries variant that pins invariants, not exact counts.
 - Verify: `go test -count=1 -race ./...` and `go run ./cmd/demo`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/13-building-a-thread-safe-cache/03-concurrent-load-harness/cache go-solutions/15-sync-primitives/13-building-a-thread-safe-cache/03-concurrent-load-harness/cmd/demo
-cd go-solutions/15-sync-primitives/13-building-a-thread-safe-cache/03-concurrent-load-harness
-```
-
 ### The cache under test (self-contained copy)
 
 Create `cache/cache.go`:

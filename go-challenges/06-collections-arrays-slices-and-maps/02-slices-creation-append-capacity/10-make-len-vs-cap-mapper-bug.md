@@ -51,8 +51,6 @@ dtomapper/               module example.com/dtomapper
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/02-slices-creation-append-capacity/10-make-len-vs-cap-mapper-bug
-cd go-solutions/06-collections-arrays-slices-and-maps/02-slices-creation-append-capacity/10-make-len-vs-cap-mapper-bug
 go mod edit -go=1.24
 ```
 

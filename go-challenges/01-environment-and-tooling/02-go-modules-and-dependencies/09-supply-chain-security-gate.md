@@ -29,8 +29,6 @@ supplychain/                independent module: example.com/supplychain
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/01-environment-and-tooling/02-go-modules-and-dependencies/09-supply-chain-security-gate/cmd/demo
-cd go-solutions/01-environment-and-tooling/02-go-modules-and-dependencies/09-supply-chain-security-gate
 go get golang.org/x/text/cases
 ```
 

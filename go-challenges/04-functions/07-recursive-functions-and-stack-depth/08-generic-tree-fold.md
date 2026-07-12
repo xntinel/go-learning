@@ -25,13 +25,6 @@ treefold/                  independent module: example.com/treefold
 - Test: fold sum, count, and max over a fixed hierarchy with known totals; empty tree returns `init`; single node returns `combine(init, value)`; a counting combine proves each node is visited once.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/07-recursive-functions-and-stack-depth/08-generic-tree-fold/cmd/demo
-cd go-solutions/04-functions/07-recursive-functions-and-stack-depth/08-generic-tree-fold
-```
-
 ### Separating traversal from aggregation with generics
 
 An org chart, a category tree, a nested budget — they are all the same shape: a

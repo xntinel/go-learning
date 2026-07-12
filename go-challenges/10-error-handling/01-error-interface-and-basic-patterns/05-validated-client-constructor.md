@@ -27,13 +27,6 @@ clientctor/                  independent module: example.com/clientctor
 - Test: a table of invalid configs (empty, relative, non-http scheme, unparseable, zero/negative timeout) each asserting a nil `*Client` and a specific error; a valid config asserting a non-nil client and nil error; assert the constructor never returns a non-nil client together with a non-nil error.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/01-error-interface-and-basic-patterns/05-validated-client-constructor/cmd/demo
-cd go-solutions/10-error-handling/01-error-interface-and-basic-patterns/05-validated-client-constructor
-```
-
 ### Make invalid states unrepresentable at the boundary
 
 A client that holds a relative base URL is a latent bug: it will build fine, sit

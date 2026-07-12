@@ -23,13 +23,6 @@ Implement: `List`, `Read`, `Add`, `Remove` over a directory of seed files.
 Test: `TestMain` builds a seeded temp dir, runs `m.Run()`, removes the dir, and exits with the run's code; tests read the fixture; a mutating test uses `t.Cleanup` so its change does not leak to the next test.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/08-init-functions-and-package-initialization/08-testmain-bootstrap-vs-init/cmd/demo
-cd go-solutions/04-functions/08-init-functions-and-package-initialization/08-testmain-bootstrap-vs-init
-```
-
 ### Why TestMain and not a test init()
 
 A test-file `init()` runs before any test, exactly once, with no hook to run after

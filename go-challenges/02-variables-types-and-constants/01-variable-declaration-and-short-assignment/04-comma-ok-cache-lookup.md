@@ -27,13 +27,6 @@ flagstore/                     independent module: example.com/flagstore
 - Test: present-with-zero returns `ok=true`; missing returns `ok=false` and the zero value; an unset flag never reads as explicit `false`; a type-assertion comma-ok case.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/01-variable-declaration-and-short-assignment/04-comma-ok-cache-lookup/cmd/demo
-cd go-solutions/02-variables-types-and-constants/01-variable-declaration-and-short-assignment/04-comma-ok-cache-lookup
-```
-
 ### Why the single-result map form is a bug here
 
 A map indexed with one result returns the zero value for a missing key:

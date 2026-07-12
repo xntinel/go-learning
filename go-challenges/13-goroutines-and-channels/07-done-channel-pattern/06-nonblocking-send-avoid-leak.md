@@ -23,13 +23,6 @@ Implement: an `Emitter` wrapping a buffered channel and a `TrySend(v) Outcome` t
 Test: a ready buffer delivers; a full buffer drops without blocking; a closed `done` returns `Cancelled` even with no reader; the drop counter is race-free.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/07-done-channel-pattern/06-nonblocking-send-avoid-leak/cmd/demo
-cd go-solutions/13-goroutines-and-channels/07-done-channel-pattern/06-nonblocking-send-avoid-leak
-```
-
 ### The three-way select
 
 The whole exercise is one select with three cases:

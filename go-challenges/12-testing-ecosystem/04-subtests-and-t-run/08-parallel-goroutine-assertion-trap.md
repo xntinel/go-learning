@@ -29,13 +29,6 @@ workerpool/                 independent module: example.com/workerpool
   and calls `t.Fatalf` — never from a spawned goroutine.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/04-subtests-and-t-run/08-parallel-goroutine-assertion-trap/cmd/demo
-cd go-solutions/12-testing-ecosystem/04-subtests-and-t-run/08-parallel-goroutine-assertion-trap
-```
-
 ### Why t.Fatal in a goroutine is a silent bug
 
 `t.Fatal`, `t.FailNow`, `t.SkipNow`, and `t.Parallel` are documented as callable

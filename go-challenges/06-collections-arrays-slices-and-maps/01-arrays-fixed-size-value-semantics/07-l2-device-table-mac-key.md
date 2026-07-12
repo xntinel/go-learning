@@ -27,13 +27,6 @@ l2table/                     independent module: example.com/l2table
 - Test: parse a valid MAC and round-trip its formatting; reject malformed/short input; learn on a port then look it up; two equal parsed MACs are `==` and collide to one entry.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/07-l2-device-table-mac-key/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/07-l2-device-table-mac-key
-```
-
 ### Why the [6]byte MAC is the key directly
 
 An IEEE 802 MAC address is six octets. Modeling it as `MAC [6]byte` welds that size

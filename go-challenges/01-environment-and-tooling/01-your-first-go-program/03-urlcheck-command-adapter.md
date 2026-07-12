@@ -27,13 +27,6 @@ Test: `shouldFail(status)` as a table-driven truth table.
 Verify: `go test -count=1 ./...`, `go vet ./...`, then
 `go build ./cmd/urlcheck`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/01-your-first-go-program/03-urlcheck-command-adapter/cmd/urlcheck go-solutions/01-environment-and-tooling/01-your-first-go-program/03-urlcheck-command-adapter/internal/check
-cd go-solutions/01-environment-and-tooling/01-your-first-go-program/03-urlcheck-command-adapter
-```
-
 ### The exit-code policy is a pure function
 
 The whole point of the adapter pattern is that `main` should contain no `if` you

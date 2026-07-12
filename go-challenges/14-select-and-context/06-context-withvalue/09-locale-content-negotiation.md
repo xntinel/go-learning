@@ -28,13 +28,6 @@ Implement: `ParseAcceptLanguage(header, supported, def)`, `WithLocale`/`LocaleFr
 Test: `Accept-Language: fr-FR,fr;q=0.9` resolves to `fr` and renders the French string; an unsupported `de` falls back to the default; a missing header uses the default; the parser handles q-value ordering and whitespace; the renderer takes no locale argument.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/06-context-withvalue/09-locale-content-negotiation/cmd/demo
-cd go-solutions/14-select-and-context/06-context-withvalue/09-locale-content-negotiation
-```
-
 ### Why locale is request-scoped, and how negotiation works
 
 `Render` deep in a handler needs to know the locale, but forcing every function

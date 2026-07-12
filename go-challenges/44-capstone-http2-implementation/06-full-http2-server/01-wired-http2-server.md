@@ -42,7 +42,6 @@ server_test.go     end-to-end GET, body echo, concurrent streams, custom
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/44-capstone-http2-implementation/06-full-http2-server/01-wired-http2-server/cmd/demo && cd go-solutions/44-capstone-http2-implementation/06-full-http2-server/01-wired-http2-server
 go mod edit -go=1.26
 ```
 

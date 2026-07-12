@@ -26,13 +26,6 @@ Implement: `verifyAssets(fsys fs.FS, required []string) error` and `parseTemplat
 Test: the package loaded (so `init` did not panic) and exposes the expected names; the helpers return an error when handed a deliberately broken `fs.FS` (`fstest.MapFS`).
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/08-init-functions-and-package-initialization/07-fail-fast-invariant-checks-at-init/migrations go-solutions/04-functions/08-init-functions-and-package-initialization/07-fail-fast-invariant-checks-at-init/cmd/demo
-cd go-solutions/04-functions/08-init-functions-and-package-initialization/07-fail-fast-invariant-checks-at-init
-```
-
 ### Why fail-fast at init is legitimate here
 
 The rule elsewhere in this lesson is "keep work out of `init()`". This exercise is

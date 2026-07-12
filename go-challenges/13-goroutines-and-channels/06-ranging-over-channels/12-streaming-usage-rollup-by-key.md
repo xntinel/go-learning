@@ -29,13 +29,6 @@ rollup/                      independent module: example.com/rollup
 - Test: interleaved multi-tenant events sum correctly and come back sorted; empty-closed input returns nil; a single tenant collapses to one row; negative and zero units are summed faithfully; a thousand-event contract pins exact totals independent of interleaving.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/06-ranging-over-channels/12-streaming-usage-rollup-by-key/cmd/demo
-cd go-solutions/13-goroutines-and-channels/06-ranging-over-channels/12-streaming-usage-rollup-by-key
-```
-
 ### Reduce while ranging, flush once on close
 
 The shape here is the purest form of a ranging consumer: a fold. You range the

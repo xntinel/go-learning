@@ -27,8 +27,6 @@ signupvalidate/               module example.com/signupvalidate
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/05-anonymous-functions/11-validation-rule-pipeline
-cd go-solutions/04-functions/05-anonymous-functions/11-validation-rule-pipeline
 go mod edit -go=1.24
 ```
 

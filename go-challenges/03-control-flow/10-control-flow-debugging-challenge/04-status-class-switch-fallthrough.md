@@ -22,13 +22,6 @@ httpclass/                 module example.com/httpclass
 - Test: a boundary table across `199 200 299 399 400 418 429 499 500 502 503 504 599` and out-of-range codes, asserting the exact class.
 - Verify: `go test -count=1 -race ./...`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/04-status-class-switch-fallthrough/cmd/demo
-cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/04-status-class-switch-fallthrough
-```
-
 ### The artifact and the planted bug
 
 The classifier turns a status code into a bucket the retry layer understands: a

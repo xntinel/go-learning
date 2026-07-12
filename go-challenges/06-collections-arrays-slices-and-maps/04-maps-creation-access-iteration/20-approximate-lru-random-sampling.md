@@ -46,8 +46,6 @@ approxlru/               module example.com/approxlru
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/20-approximate-lru-random-sampling
-cd go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/20-approximate-lru-random-sampling
 go mod edit -go=1.24
 ```
 

@@ -32,11 +32,6 @@ saga/                        independent module: example.com/saga-rollback-loop-
 - Test: a table over no-failure, first-step-failure, middle-step-failure, and last-step-failure, each asserting the exact reverse-order rollback list; a further case where a resource's own release fails mid-rollback, asserting the labeled break stops further unwinding.
 - Verify: `go test -count=1 -race ./...`.
 
-```bash
-mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/24-saga-rollback-loop-scope-error/cmd/demo
-cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/24-saga-rollback-loop-scope-error
-```
-
 ### Why reusing the forward index breaks the backward loop's bounds
 
 At the moment step `i` fails, exactly `i` earlier steps have succeeded —

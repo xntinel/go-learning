@@ -27,13 +27,6 @@ Implement: `Run(ctx context.Context, out io.Writer, ln net.Listener) error` that
 Test: cancelling `ctx` makes `Run` return `nil` and the worker log its stop; an integration test sends SIGTERM to the process and asserts a `NotifyContext` context becomes `Done`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/11-graceful-shutdown-with-context/04-signal-notify-context-shutdown/service go-solutions/14-select-and-context/11-graceful-shutdown-with-context/04-signal-notify-context-shutdown/cmd/demo
-cd go-solutions/14-select-and-context/11-graceful-shutdown-with-context/04-signal-notify-context-shutdown
-```
-
 ## Why the shell/core split
 
 `signal.NotifyContext(parent, sig...)` returns `(ctx, stop)`: the first matching

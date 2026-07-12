@@ -20,12 +20,6 @@ bulk_test.go         invariant check on 1000 keys, input validation, empty input
 - Test: `bulk_test.go` bulk-loads a thousand sorted keys and asserts every invariant plus full searchability, rejects unsorted, duplicate, oversized, and out-of-range-fill inputs, and handles empty input.
 - Verify: `go test -run 'TestBulkLoad|ExampleBulkLoad' -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/02-btree-index/06-bulk-loading/cmd/demo && cd go-solutions/39-capstone-database-engine/02-btree-index/06-bulk-loading
-```
-
 ### The baseline
 
 Bulk loading does not use `Insert` at all — it writes pages directly — so this module's baseline is a slimmer tree: the page layout and store, `leafFor`/`Search`/`RangeScan` to read the result, `setParent` to wire children to the internal nodes the loader builds, and the `clone` helpers. That baseline is duplicated here so the module stands alone; the loader itself is the new work in `bulk.go`.

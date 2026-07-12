@@ -30,8 +30,6 @@ inclause/                  independent module: example.com/inclause
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/01-function-declaration-and-multiple-return-values/07-variadic-sql-in-clause-builder/cmd/demo
-cd go-solutions/04-functions/01-function-declaration-and-multiple-return-values/07-variadic-sql-in-clause-builder
 go mod edit -go=1.25
 ```
 

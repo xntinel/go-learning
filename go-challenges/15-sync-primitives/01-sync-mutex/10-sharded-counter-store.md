@@ -29,11 +29,6 @@ shardcount/                  independent module: example.com/shardcount
 - Test: 100 goroutines x 200 `Add` calls across 50 tenant keys assert exact per-key totals and the exact grand total under `-race`; shard selection is pinned deterministic; the benchmark pair runs under `go test -bench . -cpu 8`.
 - Verify: `go test -count=1 -race ./...` then `go test -bench . -benchmem -cpu 8 ./...`
 
-```bash
-mkdir -p go-solutions/15-sync-primitives/01-sync-mutex/10-sharded-counter-store/cmd/demo
-cd go-solutions/15-sync-primitives/01-sync-mutex/10-sharded-counter-store
-```
-
 ### What sharding buys, what it costs, and how to decide
 
 A single mutex in front of one map (exercise 2's shape) serializes *every*

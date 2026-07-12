@@ -28,12 +28,6 @@ seq_test.go          full-range collection, early-break prefix, negative-input e
   prefix, and asserts a negative argument returns `ErrNegative`.
 - Verify: `go test -run TestSeq -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/25-iterators-and-modern-go/03-range-over-func-push-iterators/01-seq-and-the-yield-protocol/cmd/demo && cd go-solutions/25-iterators-and-modern-go/03-range-over-func-push-iterators/01-seq-and-the-yield-protocol
-```
-
 ### What iter.Seq actually is, and what yield's bool means
 
 `iter.Seq[V]` is nothing more than a named generic function type:

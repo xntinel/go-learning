@@ -52,8 +52,6 @@ ratelimit/                module example.com/ratelimit
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/14-custom-map-based-data-structure/19-composite-key-token-bucket
-cd go-solutions/06-collections-arrays-slices-and-maps/14-custom-map-based-data-structure/19-composite-key-token-bucket
 go mod edit -go=1.24
 ```
 

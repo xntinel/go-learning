@@ -21,12 +21,6 @@ dispatcher_test.go     heap order, single-worker dispatch order, FIFO within a
 - Test: `dispatcher_test.go` asserts the heap extracts by priority then sequence, that a single worker draining a pre-filled queue sees strict priority order, that equal-priority items keep first-in-first-out order, that every item is processed under concurrent load with the race detector on, and that `Stop` returns and is idempotent.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/16-concurrency-patterns/28-fan-out-with-priority-queues/01-priority-dispatcher/cmd/demo && cd go-solutions/16-concurrency-patterns/28-fan-out-with-priority-queues/01-priority-dispatcher
-```
-
 ## How the pieces fit
 
 The dispatcher has three channels and one rule. Producers call `Submit`, which stamps the item with a monotonic sequence number and sends it on the buffered `incoming` channel. A single `loop` goroutine owns the heap: it reads from `incoming`, pushes into the heap, extracts the minimum, and sends it on the `work` channel. Each `worker` goroutine reads from `work` and forwards the item to the buffered `results` channel that the caller drains. The rule is that nothing but `loop` ever touches the heap, so the heap needs no lock.

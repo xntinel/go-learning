@@ -52,13 +52,6 @@ correct.
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/16-concurrency-patterns/02-fan-out-pattern/02-fan-out-pattern/internal/fanout go-solutions/16-concurrency-patterns/02-fan-out-pattern/02-fan-out-pattern/cmd/fanoutdemo
-cd go-solutions/16-concurrency-patterns/02-fan-out-pattern/02-fan-out-pattern
-```
-
 ### Exercise 1: The Worker Function
 
 A worker takes one inbound channel, runs a transformation, and writes to a

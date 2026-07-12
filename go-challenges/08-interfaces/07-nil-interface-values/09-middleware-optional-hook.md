@@ -23,13 +23,6 @@ auditmw/                   independent module: example.com/auditmw
 - Test: with a nil hook the middleware serves the request without panic; with a spy hook it records exactly one `OnRequest`/`OnResponse` per call and reports the response status.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/07-nil-interface-values/09-middleware-optional-hook/cmd/demo
-cd go-solutions/08-interfaces/07-nil-interface-values/09-middleware-optional-hook
-```
-
 ### Why normalize the hook, and why wrap the ResponseWriter
 
 `Audit` returns a handler that calls `hook.OnRequest` before the request and

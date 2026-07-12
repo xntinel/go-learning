@@ -26,13 +26,6 @@ sqlbuild/                   independent module: example.com/sqlbuild
 - Test: golden SQL for one predicate, three predicates in AND order, with ORDER BY and LIMIT; `Build` with no table returns `ErrNoTable`; the placeholder count equals `len(args)`; no user value string ever appears in the SQL text.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/11-builder-pattern-for-complex-structs/04-sql-select-query-builder/cmd/demo
-cd go-solutions/07-structs-and-methods/11-builder-pattern-for-complex-structs/04-sql-select-query-builder
-```
-
 ### The security invariant, structurally
 
 The builder holds two parallel accumulators: a `strings.Builder` for the SQL text

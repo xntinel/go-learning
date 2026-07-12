@@ -19,12 +19,6 @@ group_test.go          all-succeed, returns-an-error-from-the-set, cancels-on-er
 - Test: all-succeed leaves the derived context cancelled; a failing set returns one of its errors; the first error cancels siblings; a parent cancel propagates.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/16-concurrency-patterns/06-errgroup-basic-usage/02-group-internals/cmd/demo && cd go-solutions/16-concurrency-patterns/06-errgroup-basic-usage/02-group-internals
-```
-
 ### How the three primitives combine
 
 `Group` holds four fields and they map one-to-one onto the contracts from the concepts file. The `sync.WaitGroup` counts the in-flight goroutines so `Wait` knows when all have returned. The `sync.Once` guards the two things that must happen exactly once and together: recording the first error and cancelling the context. The `err` field is the captured first error, written only inside the `Once`. The `cancel` is the `context.CancelFunc` for the derived context, also called only inside the `Once` (and once more in `Wait`).

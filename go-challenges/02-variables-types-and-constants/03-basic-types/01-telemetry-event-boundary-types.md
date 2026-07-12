@@ -26,13 +26,6 @@ telemetry/                 independent module: example.com/telemetry
 - Test: valid round-trip, a table of rejected inputs, a map-driven `ServiceNameOK`, and the case where status 404 is valid but not retryable.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/03-basic-types/01-telemetry-event-boundary-types/cmd/demo
-cd go-solutions/02-variables-types-and-constants/03-basic-types/01-telemetry-event-boundary-types
-```
-
 ### Why each field gets the type it does
 
 The `Event` struct is the domain value; its field types are chosen so that a

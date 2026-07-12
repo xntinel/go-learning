@@ -28,13 +28,6 @@ cfgbench/                  independent module: example.com/cfgbench
 - Test: a shared consistency suite (writer stores `{v,v,v}`, readers assert the three fields always agree — a torn read breaks the invariant) run table-driven against both implementations under `-race`; then `BenchmarkSnapshot` and `BenchmarkMixed99Read1Write` with `b.RunParallel` and `b.ReportAllocs`.
 - Verify: `go test -count=1 -race ./...` then `go test -bench . -benchmem`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/08-atomic-value-config-hot-reload/10-rwmutex-vs-atomic-benchmark/cmd/demo
-cd go-solutions/15-sync-primitives/08-atomic-value-config-hot-reload/10-rwmutex-vs-atomic-benchmark
-```
-
 ### Measuring the claim instead of asserting it
 
 Both implementations expose value semantics — `Snapshot() Config` returns a

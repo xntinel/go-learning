@@ -21,12 +21,6 @@ multi-source/
 - Test: records from both children arrive; the merged channel closes once all children drain; `Close` before `Open` returns the sentinel.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/43-capstone-stream-processing-engine/01-source-connectors/04-multi-source/cmd/demo && cd go-solutions/43-capstone-stream-processing-engine/01-source-connectors/04-multi-source
-```
-
 ### A deterministic child to merge
 
 To exercise `MultiSource` without the timing nondeterminism of real sockets, this module bundles `SliceSource`: the minimal possible source, emitting a fixed slice of values and then closing its channel. It is the "channel source" reduced to essentials, and it still obeys the full lifecycle contract — internal context, `WaitGroup`, single closer goroutine — so it is a faithful stand-in for any real child.

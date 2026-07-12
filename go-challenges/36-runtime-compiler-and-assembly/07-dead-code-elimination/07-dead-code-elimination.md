@@ -117,13 +117,6 @@ The tool reports functions unreachable from any `main` or `init` entry point. Th
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/36-runtime-compiler-and-assembly/07-dead-code-elimination/07-dead-code-elimination/cmd/demo
-cd go-solutions/36-runtime-compiler-and-assembly/07-dead-code-elimination/07-dead-code-elimination
-```
-
 This is a library package verified by `go test`. There is no `main` in the library itself.
 
 ### Exercise 1: A Package that Demonstrates Both DCE Levels

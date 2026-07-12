@@ -20,12 +20,6 @@ operator_test.go      ColIndex resolution and Tuple.Clone independence
 - Test: `operator_test.go` pins qualified/unqualified/missing column resolution and that `Clone` produces an independent copy.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/06-query-planner/02-operator-interface/cmd/demo && cd go-solutions/39-capstone-database-engine/06-query-planner/02-operator-interface
-```
-
 ### The four-method contract
 
 Every operator implements `Init`, `Next`, `Close`, and `Schema`. `Init` (the classic "Open") acquires resources and rewinds: a scan resets its cursor, a sort drains and orders its input, a hash join builds its table. `Next` returns exactly one tuple, or a nil tuple to signal end-of-stream; the consumer calls it repeatedly until nil. `Close` releases resources no matter how many rows were consumed, so a query that stops early still frees its handles. `Schema` reports the ordered output columns, which lets the planner resolve a reference like `users.id` to a position at plan time, before any data moves.

@@ -26,13 +26,6 @@ paymenterr/                  independent module: example.com/paymenterr
 - Test: a convention-lint test asserting the message starts lowercase, has no trailing `.`/`!`/`?`/newline, and includes the amount; a compile-time `var _ error = (*PaymentError)(nil)` assertion; a determinism test that fixed inputs yield a stable string.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/01-error-interface-and-basic-patterns/07-domain-error-string-conventions/cmd/demo
-cd go-solutions/10-error-handling/01-error-interface-and-basic-patterns/07-domain-error-string-conventions
-```
-
 ### Why the message string is an interface concern, not a UI string
 
 The output of `Error()` lands in three places: server logs, structured-logging

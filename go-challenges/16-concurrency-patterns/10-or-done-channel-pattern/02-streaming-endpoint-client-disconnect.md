@@ -31,12 +31,6 @@ stream_test.go       disconnect-stops-stream + no-leak, eventSource-stops-on-can
   test asserts the server's goroutine count returns to its pre-request baseline.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/16-concurrency-patterns/10-or-done-channel-pattern/02-streaming-endpoint-client-disconnect/cmd/demo && cd go-solutions/16-concurrency-patterns/10-or-done-channel-pattern/02-streaming-endpoint-client-disconnect
-```
-
 ### Why the request context is the right done channel
 
 A streaming handler has no natural end: the upstream feed runs forever and the

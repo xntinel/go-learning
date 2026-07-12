@@ -26,13 +26,6 @@ userrepo/                  independent module: example.com/userrepo
 - Test: hit returns a non-nil pointer whose fields match; miss returns a nil pointer and `errors.Is(err, ErrNotFound)`; a caller that skips the guard would panic, proving the guard matters.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/01-pointer-basics/04-repository-lookup-nil-return/cmd/demo
-cd go-solutions/09-pointers/01-pointer-basics/04-repository-lookup-nil-return
-```
-
 ### nil-as-not-found and the discipline it demands
 
 `Repo` is an in-memory store backed by `map[string]Record`. `FindByID` does a

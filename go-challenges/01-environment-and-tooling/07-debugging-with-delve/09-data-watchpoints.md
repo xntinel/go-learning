@@ -30,8 +30,6 @@ watchdbg/                  independent module: example.com/watchdbg
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/01-environment-and-tooling/07-debugging-with-delve/09-data-watchpoints/state go-solutions/01-environment-and-tooling/07-debugging-with-delve/09-data-watchpoints/cmd/demo
-cd go-solutions/01-environment-and-tooling/07-debugging-with-delve/09-data-watchpoints
 go mod edit -go=1.24
 ```
 

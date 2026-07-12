@@ -27,8 +27,6 @@ jobrunner/                 independent module: example.com/jobrunner
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/13-goroutines-and-channels/05-waitgroup/01-parallel-job-runner/cmd/demo
-cd go-solutions/13-goroutines-and-channels/05-waitgroup/01-parallel-job-runner
 go mod edit -go=1.25
 ```
 

@@ -28,13 +28,6 @@ cms/                       independent module: example.com/cms
 - Test: `Estimate >= trueCount` always; `Estimate == 0` for an unseen key; every seen key estimates `>= 1`; a heavy key estimates `>= its true count` while rare keys stay under a small over-estimate bound.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/14-custom-map-based-data-structure/02-cms-probabilistic-tests/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/14-custom-map-based-data-structure/02-cms-probabilistic-tests
-```
-
 ### Why every assertion here is one-sided
 
 A Count-Min Sketch makes exactly one promise: `Estimate(x)` is never less than the

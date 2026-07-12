@@ -30,13 +30,6 @@ is non-nil; `Ptr(v)` returns a distinct heap pointer whose deref equals `v` for
 string/bool/int.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/03-new-vs-composite-literal/04-nullable-patch-dto/cmd/demo
-cd go-solutions/09-pointers/03-new-vs-composite-literal/04-nullable-patch-dto
-```
-
 ### Why the fields are pointers
 
 `PATCH /users/{id}` with body `{"name": ""}` means "set the name to the empty

@@ -26,13 +26,6 @@ fakeclock/                   independent module: example.com/fakeclock
 - Test: `newFixedClock(t, expect...)` returns a spy `Clock`, records each `Sleep`, and registers a `t.Cleanup` that fails if the recorded sleeps do not equal the expectations; drive `Retry` deterministically.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/03-test-helpers/10-fake-clock-dependency-helper/cmd/demo
-cd go-solutions/12-testing-ecosystem/03-test-helpers/10-fake-clock-dependency-helper
-```
-
 ### Why inject a Clock, and why verify in Cleanup
 
 `Retry` must not call `time.Sleep` directly, or its test would burn real seconds.

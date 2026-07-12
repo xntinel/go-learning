@@ -26,13 +26,6 @@ Implement: `Result[T any]` with `Value` and `Err`, and `Consume[T any](ch <-chan
 Test: a mixed stream returns the collected successes plus a joined error that `errors.Is`-matches each injected sentinel; an all-success stream returns a nil error; an all-failure stream returns a joined error and no values; nil errors are discarded so the combined error reflects only real failures.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/06-ranging-over-channels/08-result-consumer-error-join/cmd/demo
-cd go-solutions/13-goroutines-and-channels/06-ranging-over-channels/08-result-consumer-error-join
-```
-
 ### Why errors.Join is the right aggregator
 
 A fan-in-with-errors consumer faces a design choice: on the first error, do you

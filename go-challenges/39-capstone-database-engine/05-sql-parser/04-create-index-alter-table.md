@@ -25,12 +25,6 @@ sqlddl/
 - Test: `CREATE [UNIQUE] INDEX [IF NOT EXISTS]`, multi-column indexes, `ALTER TABLE ... ADD [COLUMN]` with the optional keyword, round trip, the unsupported-statement sentinel, and malformed-input errors.
 - Verify: `go test -race ./...` and `go run ./cmd/demo`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/05-sql-parser/04-create-index-alter-table/lexer go-solutions/39-capstone-database-engine/05-sql-parser/04-create-index-alter-table/cmd/demo && cd go-solutions/39-capstone-database-engine/05-sql-parser/04-create-index-alter-table
-```
-
 ### A separate entry point, and reuse where it counts
 
 `ParseDDL` is deliberately not wired into the core `ParseStatement`. Keeping it a separate function means the extension grammar — two statements that the core does not know about — never perturbs the main dispatch, and a caller opts into it explicitly. A statement `ParseDDL` does not recognize yields `ErrUnsupportedDDL` (so a caller can fall back to the core parser), while a malformed instance of a form it does handle yields `ErrSyntax`. Two sentinels, two different recovery strategies.

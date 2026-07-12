@@ -27,8 +27,6 @@ eventenrich/                 independent module: example.com/eventenrich
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/19-event-context-enrichment-shared-pointer-mutation
-cd go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/19-event-context-enrichment-shared-pointer-mutation
 go mod edit -go=1.24
 ```
 

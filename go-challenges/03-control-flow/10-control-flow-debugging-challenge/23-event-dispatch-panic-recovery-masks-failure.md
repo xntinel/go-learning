@@ -31,11 +31,6 @@ eventdispatch/               independent module: example.com/event-dispatch-pani
 - Test: a table over every known event type, an unknown type, a nil event, and a `PaymentReceived` whose `Ref` is not a string; a further test asserts a recovered panic does not corrupt the sink or break the next dispatch.
 - Verify: `go test -count=1 -race ./...`.
 
-```bash
-mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/23-event-dispatch-panic-recovery-masks-failure/cmd/demo
-cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/23-event-dispatch-panic-recovery-masks-failure
-```
-
 ### Why recover has to produce an error, not just stop the crash
 
 The buggy `Dispatch` recovers correctly — the process does not crash — but

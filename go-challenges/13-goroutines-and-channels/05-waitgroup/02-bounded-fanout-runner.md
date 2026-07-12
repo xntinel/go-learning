@@ -28,8 +28,6 @@ boundedrunner/             independent module: example.com/boundedrunner
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/13-goroutines-and-channels/05-waitgroup/02-bounded-fanout-runner/cmd/demo
-cd go-solutions/13-goroutines-and-channels/05-waitgroup/02-bounded-fanout-runner
 go mod edit -go=1.25
 ```
 

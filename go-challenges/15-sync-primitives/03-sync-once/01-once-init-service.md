@@ -26,13 +26,6 @@ once-init-service/            module: example.com/once-init-service
 - Test: first-caller-wins (a second `Connect` with a different address is a no-op), the empty-address path returns `ErrEmptyAddress` via `errors.Is`, and 100 concurrent `Connect` calls all observe the same address.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/03-sync-once/01-once-init-service/cmd/demo
-cd go-solutions/15-sync-primitives/03-sync-once/01-once-init-service
-```
-
 ### Why capture the error in a field
 
 `Once.Do` takes a `func()` and returns nothing, so a fallible init cannot hand an

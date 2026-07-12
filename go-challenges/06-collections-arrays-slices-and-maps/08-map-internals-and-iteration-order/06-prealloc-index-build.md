@@ -29,13 +29,6 @@ index/                     independent module: example.com/index
   `b.ReportAllocs`.
 - Verify: `go test -count=1 -race ./...` and `go test -bench=. -benchmem`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/06-prealloc-index-build/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/06-prealloc-index-build
-```
-
 ### Why the capacity hint pays
 
 A map grows by crossing load-factor thresholds: each time it fills past the threshold,

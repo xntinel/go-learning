@@ -20,12 +20,6 @@ catalog_test.go      create/lookup, duplicate rejection, drop clears metadata, i
 - Test: `catalog_test.go` creates and looks up a table, rejects a duplicate with `ErrTableExists`, proves a drop clears the table's columns and indexes, registers and lists an index, and hammers the read path from 50 goroutines under `-race`.
 - Verify: `go test -run 'TestCatalog|ExampleCatalog' -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/10-full-embedded-database/02-system-catalog/cmd/demo && cd go-solutions/39-capstone-database-engine/10-full-embedded-database/02-system-catalog
-```
-
 ### Why the catalog is a registry, and why ordinals are assigned not copied
 
 A catalog has three jobs, and each shapes the data structure. It must resolve a *name* to a table quickly (the planner does this on every query), resolve a *table identifier* to its ordered columns and to its indexes (binding and planning do this), and enforce uniqueness so two `CREATE TABLE`s with the same name cannot both succeed. Those access patterns are why this implementation keeps three maps: name to table metadata, table identifier to the ordered column slice, and table identifier to the index slice. The table's identifier, not its name, is the durable key that columns and indexes hang off, because a name can in principle be reused after a drop while identifiers are handed out monotonically and never recycled here.

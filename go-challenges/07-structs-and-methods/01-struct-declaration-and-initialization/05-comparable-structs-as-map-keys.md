@@ -29,8 +29,6 @@ cachekey/                   independent module: example.com/cachekey
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/07-structs-and-methods/01-struct-declaration-and-initialization/05-comparable-structs-as-map-keys/cmd/demo
-cd go-solutions/07-structs-and-methods/01-struct-declaration-and-initialization/05-comparable-structs-as-map-keys
 go mod edit -go=1.24
 ```
 

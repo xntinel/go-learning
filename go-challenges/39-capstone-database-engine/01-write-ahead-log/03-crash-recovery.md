@@ -21,12 +21,6 @@ recover_test.go      append+recover round-trip, partial-tail repair, corrupt-CRC
 - Test: `recover_test.go` asserts all appended records come back, that a sub-header garbage tail is truncated, and that a full-length record with a flipped CRC is dropped.
 - Verify: `go test -run 'TestAppendAndRecover|TestCrashRecovery' -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/01-write-ahead-log/03-crash-recovery/cmd/demo && cd go-solutions/39-capstone-database-engine/01-write-ahead-log/03-crash-recovery
-```
-
 ### The scanner and the driver are two different jobs
 
 Recovery splits cleanly into a byte-level job and a policy-level job, and keeping them in separate functions is what makes each one simple. The byte-level job is `readSegment`: scan one file record by record and report two things — the records it could decode, and the offset where it stopped. It stops on one of three conditions: a clean `io.EOF` exactly on a record boundary, an `io.ErrUnexpectedEOF` partway through a length prefix or body (a record cut off mid-write), or a frame that arrived complete but fails its CRC. Crucially, `readSegment` returns all three as `(records, stopOffset, nil)` — not as errors — because at the tail of a crashed log they are all expected, and it deliberately does not decide whether a given stop is acceptable.

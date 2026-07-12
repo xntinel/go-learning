@@ -25,13 +25,6 @@ Implement: `interface JobProcessor { Process(ctx, Job) error }`, `type Processor
 Test: a `ProcessorFunc` used where a `JobProcessor` is expected; a counting decorator composes; an error propagates unchanged; `var _ JobProcessor = ProcessorFunc(nil)` compiles.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/06-function-types-and-callbacks/04-func-type-implements-interface/cmd/demo
-cd go-solutions/04-functions/06-function-types-and-callbacks/04-func-type-implements-interface
-```
-
 ### The adapter, and why it removes struct boilerplate
 
 The domain has a port: anything that processes a job. As an interface it is

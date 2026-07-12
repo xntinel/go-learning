@@ -36,8 +36,6 @@ svc/                           independent module: example.com/svc
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/48-modern-go-language-and-stdlib/16-go-fix-inline-modernization/02-migrating-consumers-across-a-major-version/client go-solutions/48-modern-go-language-and-stdlib/16-go-fix-inline-modernization/02-migrating-consumers-across-a-major-version/legacyclient go-solutions/48-modern-go-language-and-stdlib/16-go-fix-inline-modernization/02-migrating-consumers-across-a-major-version/consumer go-solutions/48-modern-go-language-and-stdlib/16-go-fix-inline-modernization/02-migrating-consumers-across-a-major-version/cmd/demo
-cd go-solutions/48-modern-go-language-and-stdlib/16-go-fix-inline-modernization/02-migrating-consumers-across-a-major-version
 go mod edit -go=1.26
 ```
 

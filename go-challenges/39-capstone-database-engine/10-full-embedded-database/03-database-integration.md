@@ -22,12 +22,6 @@ dbengine_test.go     mock subsystems + open/close, create, duplicate, drop, afte
 - Test: `dbengine_test.go` supplies in-memory mocks for all three subsystems and asserts open/close flushes and closes the right things, that `Close` is idempotent with `ErrClosed`, that `CreateTable` logs a record and allocates exactly one page, that a duplicate is `ErrTableExists`, and that operations after `Close` return `ErrClosed`.
 - Verify: `go test -run 'TestDatabase|ExampleSlottedPage|ExampleCatalog' -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/10-full-embedded-database/03-database-integration/cmd/demo && cd go-solutions/39-capstone-database-engine/10-full-embedded-database/03-database-integration
-```
-
 ### Why narrow interfaces, and why the order of operations in CreateTable is the whole point
 
 The `Database` accepts its dependencies as three small interfaces rather than three concrete types, and that single decision is what makes the integration testable. The real log, buffer pool, and transaction manager from the earlier lessons carry filesystem and network state; if `Database` named them concretely, every test would need a disk. By naming only the contract each layer offers — append/flush/replay/close for the log, fetch/dirty/flush/allocate/close for the pool, begin/commit/rollback for transactions — the integration logic can be driven by in-memory mocks that satisfy the same interfaces, and the exact same `Database` code runs in production against the real subsystems. The interface is sized to what the integration actually needs, not transcribed from the concrete type; that is why `BufferPool` here is five methods and not fifty.

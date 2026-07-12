@@ -29,8 +29,6 @@ slug/                      independent module: example.com/slug-validator
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/03-switch-statements/08-slug-validator/cmd/demo
-cd go-solutions/03-control-flow/03-switch-statements/08-slug-validator
 go mod edit -go=1.24
 ```
 

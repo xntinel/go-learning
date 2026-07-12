@@ -22,13 +22,6 @@ nillog/                    independent module: example.com/nillog
 - Test: `NewService(nil)` must not panic on `DoWork`/`Fail`; `TestNilInterfaceValueIsNotTypedNil` pins `var l Logger == nil` but `var l Logger = (*Null)(nil) != nil`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/07-nil-interface-values/01-nil-safe-logger-null-object/cmd/demo
-cd go-solutions/08-interfaces/07-nil-interface-values/01-nil-safe-logger-null-object
-```
-
 ### Why the constructor is the only place that touches nil
 
 The `Logger` interface has two methods. `Null` satisfies it with empty bodies —

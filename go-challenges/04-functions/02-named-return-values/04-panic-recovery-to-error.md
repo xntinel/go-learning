@@ -24,13 +24,6 @@ safe/                       independent module: example.com/safe
 - Test: task returns nil -> nil; task returns error -> passed through unchanged; task panics with a string and with an error -> non-nil `*PanicError` (via `errors.As`) exposing the value; the surrounding goroutine survives.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/02-named-return-values/04-panic-recovery-to-error/cmd/demo
-cd go-solutions/04-functions/02-named-return-values/04-panic-recovery-to-error
-```
-
 ### Recover into the named result
 
 A panic value is only observable inside a deferred function via `recover()`, and

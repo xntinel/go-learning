@@ -29,8 +29,6 @@ Verify: `go test -count=1 ./...`
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/08-init-functions-and-package-initialization/16-config-environment-source-cascade-validation/cmd/demo
-cd go-solutions/04-functions/08-init-functions-and-package-initialization/16-config-environment-source-cascade-validation
 go mod edit -go=1.24
 ```
 

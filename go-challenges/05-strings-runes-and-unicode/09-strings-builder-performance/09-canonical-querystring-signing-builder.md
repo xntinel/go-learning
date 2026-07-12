@@ -26,11 +26,6 @@ Implement: `Canonical(params map[string]string) string`, `Sign(secret []byte, me
 Test: `Canonical` is byte-stable and equals `url.Values.Encode`; spaces/unicode/reserved chars encode identically; a round-trip signs and verifies, a tampered param does not.
 Verify: `go test -count=1 -race ./...`
 
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/09-strings-builder-performance/09-canonical-querystring-signing-builder/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/09-strings-builder-performance/09-canonical-querystring-signing-builder
-```
-
 ### Why canonicalization is a security property
 
 An HMAC proves that whoever computed the signature knew the secret and signed *these

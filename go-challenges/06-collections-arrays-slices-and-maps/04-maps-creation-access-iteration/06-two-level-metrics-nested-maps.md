@@ -27,13 +27,6 @@ metrics/                   independent module: example.com/metrics
 - Test: first `Inc` for a new tenant allocates (no panic), repeated `Inc` accumulates, tenants are isolated, `Snapshot` is sorted, a direct write without init reproduces the nil-map panic, and concurrent `Inc` is race-free.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/06-two-level-metrics-nested-maps/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/06-two-level-metrics-nested-maps
-```
-
 ### Why the inner map must be lazily allocated
 
 `map[string]map[string]int64` is a map whose values are themselves maps. Reading

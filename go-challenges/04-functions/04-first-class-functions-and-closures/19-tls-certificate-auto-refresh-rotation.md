@@ -31,8 +31,6 @@ tlscert/                   independent module: example.com/tls-cert-auto-refresh
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/04-first-class-functions-and-closures/19-tls-certificate-auto-refresh-rotation/cmd/demo
-cd go-solutions/04-functions/04-first-class-functions-and-closures/19-tls-certificate-auto-refresh-rotation
 go mod edit -go=1.24
 ```
 

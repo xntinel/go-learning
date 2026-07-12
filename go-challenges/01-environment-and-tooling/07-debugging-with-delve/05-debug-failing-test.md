@@ -29,8 +29,6 @@ gradedbg/                  independent module: example.com/gradedbg
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/01-environment-and-tooling/07-debugging-with-delve/05-debug-failing-test/grade go-solutions/01-environment-and-tooling/07-debugging-with-delve/05-debug-failing-test/cmd/demo
-cd go-solutions/01-environment-and-tooling/07-debugging-with-delve/05-debug-failing-test
 go mod edit -go=1.24
 ```
 

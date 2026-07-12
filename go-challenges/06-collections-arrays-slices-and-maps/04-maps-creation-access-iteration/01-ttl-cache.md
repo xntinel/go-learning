@@ -28,13 +28,6 @@ ttlcache/                  independent module: example.com/ttlcache
 - Test: set/get roundtrip, missing key, TTL expiry, delete removes, delete-missing is a no-op, `Keys` sorted and excluding expired, zero-TTL never expires, and 100 concurrent `Set`s under `-race`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/01-ttl-cache/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/01-ttl-cache
-```
-
 ### Why RWMutex, comma-ok, and a zero deadline
 
 Three map facts shape this type. First, a map is not safe for concurrent

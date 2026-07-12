@@ -32,8 +32,6 @@ chindex/                   independent module: example.com/chindex
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/14-custom-map-based-data-structure/10-maphash-comparable-index/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/14-custom-map-based-data-structure/10-maphash-comparable-index
 go mod edit -go=1.24   # hash/maphash.Comparable requires Go 1.24+
 ```
 

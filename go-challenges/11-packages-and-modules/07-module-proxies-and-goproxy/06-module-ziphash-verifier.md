@@ -26,8 +26,6 @@ ziphash/                   independent module: example.com/ziphash
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/11-packages-and-modules/07-module-proxies-and-goproxy/06-module-ziphash-verifier/cmd/demo
-cd go-solutions/11-packages-and-modules/07-module-proxies-and-goproxy/06-module-ziphash-verifier
 go mod edit -go=1.26
 go get golang.org/x/mod/sumdb/dirhash
 ```

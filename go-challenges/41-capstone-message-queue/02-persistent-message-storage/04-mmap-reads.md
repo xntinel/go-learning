@@ -20,12 +20,6 @@ segment_test.go      read-equivalence before and after seal, append-after-seal, 
 - Test: `segment_test.go` reads every offset before and after sealing and asserts identical results, rejects an append after seal, and seals an empty segment without error.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/41-capstone-message-queue/02-persistent-message-storage/04-mmap-reads/cmd/demo && cd go-solutions/41-capstone-message-queue/02-persistent-message-storage/04-mmap-reads
-```
-
 ### Why only a sealed segment can be mapped
 
 `syscall.Mmap(fd, 0, length, PROT_READ, MAP_SHARED)` asks the kernel to make `length` bytes of the file appear at an address in the process. The returned `[]byte` aliases the page cache: reading from it faults the relevant pages in on demand and never copies through a user buffer, which is what makes a mapped read cheaper than a `read` syscall and lets the kernel share one cached copy across every reader.

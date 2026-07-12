@@ -25,13 +25,6 @@ context-error-distinction/         module example.com/context-error-distinction
 - Test: a cancelled context maps to the client-gone outcome (not internal); an expired deadline maps to timeout; `WithCancelCause(myErr)` yields `context.Cause == myErr` while `ctx.Err() == context.Canceled`; a plain `ErrUserNotFound` still maps to the domain branch.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/13-designing-an-error-hierarchy/07-context-error-distinction/cmd/demo
-cd go-solutions/10-error-handling/13-designing-an-error-hierarchy/07-context-error-distinction
-```
-
 ### Order matters: context first, domain second
 
 `Classify` is a `switch` whose *order* is the whole design. `context.Canceled` and

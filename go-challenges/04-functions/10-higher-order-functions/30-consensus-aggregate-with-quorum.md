@@ -28,8 +28,6 @@ consensus/                   independent module: example.com/consensus
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/10-higher-order-functions/30-consensus-aggregate-with-quorum/cmd/demo
-cd go-solutions/04-functions/10-higher-order-functions/30-consensus-aggregate-with-quorum
 go mod edit -go=1.24
 ```
 

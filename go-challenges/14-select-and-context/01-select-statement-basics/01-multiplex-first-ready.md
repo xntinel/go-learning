@@ -27,13 +27,6 @@ Implement: `First(timeout time.Duration, chans ...<-chan int) (int, int, bool)` 
 Test: a buffered send makes one case ready; all-empty hits the timeout budget; two-ready returns fast; an `Example` pins the happy path.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/01-select-statement-basics/01-multiplex-first-ready/cmd/demo
-cd go-solutions/14-select-and-context/01-select-statement-basics/01-multiplex-first-ready
-```
-
 ## Why reflect.Select here
 
 A static `select` bakes its cases into the source. Here the caller passes a slice

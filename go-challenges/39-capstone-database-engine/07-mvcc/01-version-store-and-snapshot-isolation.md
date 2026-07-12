@@ -20,12 +20,6 @@ mvcc_test.go     snapshot isolation, read-your-own-writes, conflict, abort, dele
 - Test: `mvcc_test.go` proves snapshot isolation across a concurrent commit, read-your-own-writes, first-writer-wins conflict, abort rollback, delete visibility, GC retention, and a 50-goroutine race.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/07-mvcc/01-version-store-and-snapshot-isolation/cmd/demo && cd go-solutions/39-capstone-database-engine/07-mvcc/01-version-store-and-snapshot-isolation
-```
-
 ### The transaction manager and the visibility rule
 
 A transaction is born at `Begin`: it gets a fresh id from one atomic counter and captures `startedAt` from a second atomic counter, the commit sequence. The commit sequence is the logical clock on which the entire snapshot argument rests. Commit removes the transaction from the active set, increments the commit sequence, and records the resulting value in a commit log keyed by id. The ordering is deliberate — the value `startedAt` reads at Begin is the sequence number of the last commit that had already finished, so "committed in my past" means "recorded with a sequence at or below my `startedAt`."

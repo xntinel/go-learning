@@ -18,13 +18,6 @@ Embed patterns are relative to the source file containing the directive. They ca
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/19-io-and-filesystem/06-embed-directive/06-embed-directive/cmd/demo go-solutions/19-io-and-filesystem/06-embed-directive/06-embed-directive/assets/templates
-cd go-solutions/19-io-and-filesystem/06-embed-directive/06-embed-directive
-```
-
 Create `assets/config.txt`:
 
 ```text

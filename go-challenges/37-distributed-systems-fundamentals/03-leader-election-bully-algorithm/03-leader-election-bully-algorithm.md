@@ -48,13 +48,6 @@ Each `Node` keeps its leader ID and alive/election state under a `sync.Mutex`. G
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/37-distributed-systems-fundamentals/03-leader-election-bully-algorithm/03-leader-election-bully-algorithm/cmd/demo
-cd go-solutions/37-distributed-systems-fundamentals/03-leader-election-bully-algorithm/03-leader-election-bully-algorithm
-```
-
 This is a library (`package bully`). Verification is `go test`, not `go run`.
 
 ### Exercise 1: Node, Message Types, and Constructor

@@ -24,8 +24,6 @@ pipeline/                   independent module: example.com/pipeline
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/12-pipeline-stage-resources-reverse-close/pipeline
-cd go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/12-pipeline-stage-resources-reverse-close
 go mod edit -go=1.24
 ```
 

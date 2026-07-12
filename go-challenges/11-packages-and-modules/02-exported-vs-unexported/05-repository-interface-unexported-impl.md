@@ -30,8 +30,6 @@ userrepo/                  independent module: example.com/userrepo
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/11-packages-and-modules/02-exported-vs-unexported/05-repository-interface-unexported-impl/cmd/demo
-cd go-solutions/11-packages-and-modules/02-exported-vs-unexported/05-repository-interface-unexported-impl
 go mod edit -go=1.26
 ```
 

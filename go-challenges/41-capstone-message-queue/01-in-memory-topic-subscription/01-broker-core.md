@@ -18,12 +18,6 @@ mq_test.go           offset uniqueness under load, broadcast fan-out, ack/nack,
 - Test: concurrent publishers get unique monotonic offsets; broadcast delivers every message to every subscriber; `Ack` stops redelivery while `Nack` forces it; a full topic rejects; deleting a topic unblocks a blocked `Poll`; a competing-consumer group loses and duplicates nothing.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/41-capstone-message-queue/01-in-memory-topic-subscription/01-broker-core/cmd/demo && cd go-solutions/41-capstone-message-queue/01-in-memory-topic-subscription/01-broker-core
-```
-
 ### The log, the offset, and why the lock owns both
 
 A `Topic` is an ordered, append-only slice of `*Message` guarded by a single `sync.Mutex`. There is no second lock anywhere in this package: the subscription's cursor and its in-flight delivery records live under the *topic's* mutex too. Collapsing all per-topic and per-subscription state behind one lock is the single most important design decision in the file, because it makes lock ordering trivially correct — there is only one lock, so there is no order to get wrong and no AB-BA cycle to deadlock on.

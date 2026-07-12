@@ -25,13 +25,6 @@ Implement: `type Operation func(ctx context.Context) error`, `type Retryable fun
 Test: N-1 failures then success runs exactly N times; a permanent error returns after one call; a cancelled context mid-backoff returns `ctx.Err()` promptly; attempts never exceed `MaxAttempts`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/06-function-types-and-callbacks/05-retry-with-operation-callback/cmd/demo
-cd go-solutions/04-functions/06-function-types-and-callbacks/05-retry-with-operation-callback
-```
-
 ### Why two callbacks, and why the backoff must watch ctx.Done
 
 The engine is parameterized so it knows nothing about your operation. `Operation` is

@@ -27,13 +27,6 @@ labelset/                 independent module: example.com/labelset
 - Test: a table pinning specific `Parse` and `Format` results, plus `FuzzRoundTrip` that seeds `f.Add` from the table rows and asserts `Parse` never panics and `Parse(Format(m))` round-trips.
 - Verify: `go test -count=1 -race ./...`; explore with `go test -fuzz=FuzzRoundTrip`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/02-table-driven-tests/10-table-plus-fuzz/cmd/demo
-cd go-solutions/12-testing-ecosystem/02-table-driven-tests/10-table-plus-fuzz
-```
-
 ### Why the table and the fuzzer need each other
 
 The table is where the *named* contracts live: the empty string parses to an empty

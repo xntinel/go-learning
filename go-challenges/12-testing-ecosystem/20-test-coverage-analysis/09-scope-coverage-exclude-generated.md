@@ -31,13 +31,6 @@ billing/                   independent module: example.com/billing
 - Test: table tests on `invoice.Compute` only; the generated and wiring code carries no unit tests.
 - Verify: `go test -coverpkg=./invoice ./...` versus a naive `go test -cover ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/20-test-coverage-analysis/09-scope-coverage-exclude-generated/{invoice,pb} go-solutions/12-testing-ecosystem/20-test-coverage-analysis/09-scope-coverage-exclude-generated/cmd/app
-cd go-solutions/12-testing-ecosystem/20-test-coverage-analysis/09-scope-coverage-exclude-generated
-```
-
 ### Why the naive number is the wrong denominator
 
 Run `go test -cover ./...` over this module and three packages report:

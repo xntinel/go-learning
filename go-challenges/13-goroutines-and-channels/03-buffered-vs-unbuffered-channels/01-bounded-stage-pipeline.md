@@ -29,8 +29,6 @@ pipeline/                    module: example.com/pipeline
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/13-goroutines-and-channels/03-buffered-vs-unbuffered-channels/01-bounded-stage-pipeline/cmd/demo
-cd go-solutions/13-goroutines-and-channels/03-buffered-vs-unbuffered-channels/01-bounded-stage-pipeline
 go mod edit -go=1.26
 ```
 

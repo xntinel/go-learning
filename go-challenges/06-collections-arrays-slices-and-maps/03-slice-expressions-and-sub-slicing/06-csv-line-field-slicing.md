@@ -32,8 +32,6 @@ csvscan/                   independent module: example.com/csvscan
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/06-csv-line-field-slicing/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/06-csv-line-field-slicing
 go mod edit -go=1.24
 ```
 

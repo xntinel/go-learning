@@ -27,13 +27,6 @@ Implement: `NewServer` returning an `*http.Server` whose `BaseContext` returns a
 Test: fire a long-poll in a goroutine, cancel the root and call `Shutdown`, assert the handler observed cancellation (returns promptly with a shutdown-shaped response) and that the `ConnContext` value reached the handler; `Shutdown` returns nil.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/09-context-in-http-servers-clients/10-server-basecontext-shutdown-linkage/cmd/demo
-cd go-solutions/14-select-and-context/09-context-in-http-servers-clients/10-server-basecontext-shutdown-linkage
-```
-
 ## The design
 
 The full cancellation chain is: shutdown begins → the root context cancels → every

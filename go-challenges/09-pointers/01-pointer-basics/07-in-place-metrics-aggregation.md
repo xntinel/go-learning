@@ -26,13 +26,6 @@ metrics/                   independent module: example.com/metrics
 - Test: recording several latencies through one `*Stats` accumulates `Count`, `TotalLatencyNS`, and `MaxNS`; a value-passing variant loses updates; two endpoints stay isolated.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/01-pointer-basics/07-in-place-metrics-aggregation/cmd/demo
-cd go-solutions/09-pointers/01-pointer-basics/07-in-place-metrics-aggregation
-```
-
 ### Why the accumulator must be shared by pointer
 
 `Stats` holds `Count`, `TotalLatencyNS`, and `MaxNS`. `Record(s *Stats, latencyNS

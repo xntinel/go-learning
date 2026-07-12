@@ -31,13 +31,6 @@ configloader/                 independent module: example.com/configloader
   `fstest.TestFS` check that the fixture honors the `fs.FS` contract.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/11-testing-filesystems-with-fstest/01-config-loader-over-fsfs/cmd/demo
-cd go-solutions/12-testing-ecosystem/11-testing-filesystems-with-fstest/01-config-loader-over-fsfs
-```
-
 ### Why the signature is the whole design
 
 The single most important line in this exercise is the signature:

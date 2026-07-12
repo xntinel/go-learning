@@ -27,13 +27,6 @@ limiterport/                    independent module: example.com/limiterport
 - Test: a table of named constructors feeding the shared contract (burst, deny, concurrent exact-N) through `t.Run` subtests, plus an `Example` documenting the port's behavior.
 - Verify: `go test -count=1 -race ./...` and `go run ./cmd/demo`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/10-mutex-vs-channel/03-limiter-interface/limiter go-solutions/15-sync-primitives/10-mutex-vs-channel/03-limiter-interface/cmd/demo
-cd go-solutions/15-sync-primitives/10-mutex-vs-channel/03-limiter-interface
-```
-
 ### The port: one method, defined by the consumer
 
 Go interfaces belong to the code that *consumes* them, and the consumer here

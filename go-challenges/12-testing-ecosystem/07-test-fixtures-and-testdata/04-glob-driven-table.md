@@ -23,13 +23,6 @@ Implement: `Normalize` that replaces string and numeric literals with `?` and co
 Test: `filepath.Glob("testdata/*.input")`, derive each `.golden` sibling, run a subtest per pair named from `filepath.Base`, and fail loudly on zero matches or a missing golden.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/04-glob-driven-table/cmd/demo go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/04-glob-driven-table/testdata
-cd go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/04-glob-driven-table
-```
-
 ### Discovery turns adding a case into adding files
 
 Query fingerprinting — collapsing `WHERE id = 42` and `WHERE id = 99` to the same `WHERE id = ?` so a monitoring system can group them — is a real backend task with an open-ended set of cases. A table literal in Go grows one stanza per case and every new case is a code change and a code review. Glob-driven discovery inverts that: the test globs `testdata/*.input`, and each match becomes a subtest that reads the input, reads its `.golden` sibling, and compares. A teammate adds a case by dropping `refund.input` and `refund.golden` into `testdata/` — no Go edit, no merge conflict on a shared table.

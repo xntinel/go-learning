@@ -19,12 +19,6 @@ merge_test.go        interleave, uneven lengths, empties, early-break stops both
 - Test: interleave two sequences, merge uneven lengths, handle an empty input, and prove an early `break` stops draining both inputs.
 - Verify: `go test -run 'TestMerge|TestMergeEarly' -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/25-iterators-and-modern-go/07-iter-package-usage/04-merge-push-pull-push/cmd/demo && cd go-solutions/25-iterators-and-modern-go/07-iter-package-usage/04-merge-push-pull-push
-```
-
 ### The push-pull-push sandwich
 
 A merge cannot be written against push iterators directly. Each input wants to own its own loop and push values at you; merging requires holding one element from each side at the same time and emitting the smaller, which is random lookahead the push model forbids. The fix is to pull. `Merge` returns an `iter.Seq[int]` — a closure over `yield` — and inside that closure it calls `iter.Pull` on both inputs, turning each push `Seq` into a `next`/`stop` pair it can advance independently.

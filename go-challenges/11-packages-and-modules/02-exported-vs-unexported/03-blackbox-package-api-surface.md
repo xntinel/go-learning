@@ -30,8 +30,6 @@ cachelib/                  independent module: example.com/cachelib
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/11-packages-and-modules/02-exported-vs-unexported/03-blackbox-package-api-surface/cmd/demo
-cd go-solutions/11-packages-and-modules/02-exported-vs-unexported/03-blackbox-package-api-surface
 go mod edit -go=1.26
 ```
 

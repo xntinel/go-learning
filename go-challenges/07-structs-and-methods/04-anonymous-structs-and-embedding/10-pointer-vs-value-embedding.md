@@ -30,13 +30,6 @@ on a nil pointer-embed panics (asserted with `recover`); the constructor prevent
 the nil case so promoted calls are safe.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/04-anonymous-structs-and-embedding/10-pointer-vs-value-embedding/cmd/demo
-cd go-solutions/07-structs-and-methods/04-anonymous-structs-and-embedding/10-pointer-vs-value-embedding
-```
-
 ### Copy vs alias, and the nil trap
 
 `Logger` holds a call counter and its last line, mutated through a pointer-receiver

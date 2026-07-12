@@ -29,8 +29,6 @@ vecsearch/                        independent module: example.com/vecsearch
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/52-ai-llm-backends/04-embeddings-and-pgvector/03-similarity-search/cmd/demo
-cd go-solutions/52-ai-llm-backends/04-embeddings-and-pgvector/03-similarity-search
 go get github.com/jackc/pgx/v5@latest github.com/pgvector/pgvector-go@latest
 ```
 

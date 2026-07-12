@@ -32,8 +32,6 @@ statepush/                   independent module: example.com/statepush
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/13-goroutines-and-channels/03-buffered-vs-unbuffered-channels/11-state-push-conflation-cap-one-mailbox/cmd/demo
-cd go-solutions/13-goroutines-and-channels/03-buffered-vs-unbuffered-channels/11-state-push-conflation-cap-one-mailbox
 go mod edit -go=1.26
 go get go.uber.org/goleak
 ```

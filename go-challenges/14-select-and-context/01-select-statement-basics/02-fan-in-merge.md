@@ -26,13 +26,6 @@ Implement: `FanIn[T any](sources ...<-chan T) <-chan T` — one draining gorouti
 Test: pre-filled+closed sources merge to the union (order-independent); concurrent producers merge to the exact count and the output closes.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/01-select-statement-basics/02-fan-in-merge/cmd/demo
-cd go-solutions/14-select-and-context/01-select-statement-basics/02-fan-in-merge
-```
-
 ## The merge contract, and where it panics if you break it
 
 The shape is fixed and every part of it is load-bearing:

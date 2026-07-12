@@ -29,13 +29,6 @@ respool/                     independent module: example.com/respool
 - Test: `newResource` runs exactly `workers` times regardless of job count; every job runs with a non-nil resource; no resource is held by two jobs at once; global concurrency never exceeds `workers`; `Submit` returns false after `Close`; `Close` blocks until every queued job finishes.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/13-goroutine-pools/11-worker-local-resource-pool/cmd/demo
-cd go-solutions/13-goroutines-and-channels/13-goroutine-pools/11-worker-local-resource-pool
-```
-
 ### Amortization is the pool value beyond fan-out capping
 
 Most pool exercises justify the pool by one property: it caps concurrency so a burst

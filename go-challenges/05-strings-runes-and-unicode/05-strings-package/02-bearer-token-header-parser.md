@@ -26,13 +26,6 @@ rejected, empty and scheme-only rejected, a token with `=` and mixed case
 returned verbatim; sentinels via `errors.Is`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/05-strings-package/02-bearer-token-header-parser/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/05-strings-package/02-bearer-token-header-parser
-```
-
 ### Why Cut and EqualFold, and why the token is untouched
 
 The header is `scheme SP credentials`. `strings.Cut(header, " ")` splits on the

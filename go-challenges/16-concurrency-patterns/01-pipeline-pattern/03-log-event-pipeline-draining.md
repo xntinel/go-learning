@@ -19,12 +19,6 @@ cmd/
 - Test: that shutdown drains every accepted event, that submitting after shutdown is rejected, that shutdown is idempotent and timeout-bounded, that concurrent submitters are race-free, and that no goroutine leaks.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/16-concurrency-patterns/01-pipeline-pattern/03-log-event-pipeline-draining/cmd/demo && cd go-solutions/16-concurrency-patterns/01-pipeline-pattern/03-log-event-pipeline-draining
-```
-
 ### Drain, do not drop: the shutdown protocol
 
 The processor is a pool of worker goroutines, each running `for e := range p.in`. Ranging over a channel is what makes draining trivial: when the input channel is closed, the range delivers every element still buffered before the loop ends, so closing `in` and letting the workers run their loops to completion processes exactly the events already accepted and not one more. A `sync.WaitGroup` counts the workers, and `Shutdown` blocks on `wg.Wait()`, so the moment `Shutdown` returns is the moment the last worker has exited — that is the structural guarantee of no leak, stronger than any goroutine count.

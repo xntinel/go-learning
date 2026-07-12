@@ -19,12 +19,6 @@ omap_test.go         insertion order, update-keeps-order, All/Keys/Values agree,
 - Test: `omap_test.go` checks insertion order is preserved, that updating an existing key changes the value but not the order, that `All`, `Keys`, and `Values` agree, and that `break` stops iteration.
 - Verify: `go test -run TestOrderedMap -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/25-iterators-and-modern-go/05-designing-iterator-apis/02-ordered-map-iterators/cmd/demo && cd go-solutions/25-iterators-and-modern-go/05-designing-iterator-apis/02-ordered-map-iterators
-```
-
 ### Why `All` is `Seq2[K, V]` here and what insertion order buys
 
 The list's `All` paired each element with an `int` index because position is how you address a list. A map is addressed by key, so its `All` pairs each value with its key: `iter.Seq2[K, V]`, exactly as `maps.All(map[K]V) iter.Seq2[K, V]`. This is the lesson's central contrast. Both methods are named `All` and both return `Seq2`, but the first component means different things — index for the list, key for the map — and a caller reads the type to know which. Naming them both `All` is what lets the standard library's mental model carry over; giving the map a bespoke name like `Entries` or `Pairs` would force the caller to relearn a verb they already know. `Keys` returns `iter.Seq[K]` (`maps.Keys`) and `Values` returns `iter.Seq[V]` (`maps.Values`), the two single-axis projections.

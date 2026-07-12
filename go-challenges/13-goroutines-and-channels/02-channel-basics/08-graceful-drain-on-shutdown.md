@@ -25,13 +25,6 @@ metrics/                     independent module: example.com/metrics
 - Test: all M ingested samples appear in the flush; no sample is lost under concurrent ingest; the drainer terminates after close.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/02-channel-basics/08-graceful-drain-on-shutdown/cmd/demo
-cd go-solutions/13-goroutines-and-channels/02-channel-basics/08-graceful-drain-on-shutdown
-```
-
 ### Close, then drain to completion
 
 The batcher's `run` goroutine loops on the input channel and records each sample.

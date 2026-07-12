@@ -29,14 +29,6 @@ Implement: `LeakyHandler(d)` (drops cancel) and `FixedHandler(d)` (defers cancel
 Test: with `httptest.NewServer`, N concurrent requests leave exactly N leaks for the leaky handler and 0 for the fixed one after the grace period.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/13-context-leak-detection/06-httptest-handler-leak/internal/leakdetect
-mkdir -p go-solutions/14-select-and-context/13-context-leak-detection/06-httptest-handler-leak/cmd/demo
-cd go-solutions/14-select-and-context/13-context-leak-detection/06-httptest-handler-leak
-```
-
 ### Why the leaked context is parented on Background, not r.Context
 
 There is a subtlety here that separates a shallow lesson from a correct one. A

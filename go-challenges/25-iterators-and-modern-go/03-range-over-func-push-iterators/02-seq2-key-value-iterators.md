@@ -29,12 +29,6 @@ seq2_test.go         index/value pairs, deterministic sorted order, early-break
   early out of a `Seq2`.
 - Verify: `go test -run TestSeq2 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/25-iterators-and-modern-go/03-range-over-func-push-iterators/02-seq2-key-value-iterators/cmd/demo && cd go-solutions/25-iterators-and-modern-go/03-range-over-func-push-iterators/02-seq2-key-value-iterators
-```
-
 ### Why a pair shape, and how its yield protocol differs
 
 `iter.Seq2[K, V]` is `func(yield func(K, V) bool)`. It is the same machinery as

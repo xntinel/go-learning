@@ -24,12 +24,6 @@ registration_test.go all-fields-at-once validation, conflict mapping, internal
 - Test: `registration_test.go` covers normalization, collecting all field errors at once, single-field validation, mapping `ErrConflict` to `ErrEmailTaken` without leaking the storage error, mapping an unknown storage error to `ErrInternal`, the nil-repo guard, and the validation message.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/24-design-patterns-in-go/06-service-layer-pattern/03-validation-and-error-mapping/cmd/demo && cd go-solutions/24-design-patterns-in-go/06-service-layer-pattern/03-validation-and-error-mapping
-```
-
 ### Why validation and mapping are border control
 
 Input arrives untrusted. A registration might have a blank name, a malformed email, an absurd age — and a service that does the cheap thing, returning on the first bad field, forces the caller into a miserable loop: fix the email, resubmit, learn the name is empty, fix it, resubmit, learn the age is wrong. Good validation runs *every* check in one pass and accumulates the failures into a structured `ValidationError` that carries one `FieldError` per problem. The caller — a web handler rendering a form, say — gets the complete list in a single round-trip and shows every error at once. `ValidationError` is a *typed* error, not a sentinel, because the caller needs its contents: `errors.As(err, &ve)` recovers the `*ValidationError` and the handler iterates `ve.Fields`.

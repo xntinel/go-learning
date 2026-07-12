@@ -26,13 +26,6 @@ clientbuild/                independent module: example.com/clientbuild
 - Test: default build yields a finite non-zero timeout and a non-nil transport; `Timeout(0)` or negative errors; a custom `RoundTripper` is honored (stub captures the request); two builds produce independent `*http.Transport` instances; one `httptest` round-trip smoke test.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/11-builder-pattern-for-complex-structs/08-http-client-builder-with-defaults/cmd/demo
-cd go-solutions/07-structs-and-methods/11-builder-pattern-for-complex-structs/08-http-client-builder-with-defaults
-```
-
 ### Why the timeout is tri-state but the pool defaults use cmp.Or
 
 Two of the three "unset" strategies from earlier show up here, each where it fits.

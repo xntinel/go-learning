@@ -49,13 +49,6 @@ ellipsis is appended beyond the content budget, which is the common product
 convention; the load-bearing detail is that the count is runes, so `café`
 truncated to 2 runes is `ca…`, not a byte slice that might split `é`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/04-rune-safe-truncate-varchar/internal/truncate go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/04-rune-safe-truncate-varchar/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/04-rune-safe-truncate-varchar
-```
-
 Create `internal/truncate/truncate.go`:
 
 ```go

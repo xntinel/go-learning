@@ -29,13 +29,6 @@ Implement: `Render(User) []byte` producing indented JSON with a trailing newline
 Test: a table of named cases, each compared against `testdata/<name>.golden` in its own `t.Run` subtest; `-update` regenerates all.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/08-table-driven-golden/cmd/demo go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/08-table-driven-golden/testdata
-cd go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/08-table-driven-golden
-```
-
 ### One row, one golden, one subtest
 
 The table-driven pattern you already use for assertions carries over to snapshots

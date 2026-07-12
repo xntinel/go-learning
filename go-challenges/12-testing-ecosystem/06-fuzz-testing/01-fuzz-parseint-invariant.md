@@ -30,13 +30,6 @@ invariant; an `Example`.
 Verify: `go test -race ./...`, then a bounded `go test -fuzz=FuzzParseInt
 -fuzztime=2s`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/06-fuzz-testing/01-fuzz-parseint-invariant/cmd/demo
-cd go-solutions/12-testing-ecosystem/06-fuzz-testing/01-fuzz-parseint-invariant
-```
-
 ### The parser and the invariant it must satisfy
 
 `ParseInt` wraps `strconv.Atoi`: an empty string or anything `Atoi` rejects comes

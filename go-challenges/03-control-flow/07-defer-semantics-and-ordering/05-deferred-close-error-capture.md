@@ -28,13 +28,6 @@ atomicwrite/                 independent module: example.com/atomicwrite
 - Test (fake `io.WriteCloser`): a forced `Flush` error and a forced `Close` error each surface as the returned error; a real-file roundtrip reads the payload back byte-for-byte; the buggy variant loses the buffered data.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/07-defer-semantics-and-ordering/05-deferred-close-error-capture/cmd/demo
-cd go-solutions/03-control-flow/07-defer-semantics-and-ordering/05-deferred-close-error-capture
-```
-
 ### Why the buffer makes this a write path, not a read path
 
 `bufio.Writer` exists to batch small writes into fewer, larger syscalls. The

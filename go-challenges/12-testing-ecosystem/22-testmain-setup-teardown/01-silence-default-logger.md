@@ -26,13 +26,6 @@ Implement: `Info(msg, args...)` and `Warn(msg, args...)` delegating to `slog.Def
 Test: a `TestMain` that saves `slog.Default()`, installs a handler writing to a `bytes.Buffer`, runs, restores, and `os.Exit(m.Run())`; plus `TestInfoLogs`, `TestWarnLogs`, `TestLoggerIsSilent` (captures output and asserts it is empty), and `TestWarnPassesLeveledHandler` (asserts a WARN record passes a WARN-leveled handler).
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/22-testmain-setup-teardown/01-silence-default-logger/cmd/demo
-cd go-solutions/12-testing-ecosystem/22-testmain-setup-teardown/01-silence-default-logger
-```
-
 ### Why the wrappers delegate to slog.Default()
 
 The logger is not its own handler. `Info` and `Warn` call `slog.Default().Info`

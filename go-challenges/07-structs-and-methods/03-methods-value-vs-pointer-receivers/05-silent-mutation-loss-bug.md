@@ -27,13 +27,6 @@ Implement: `ServerConfig` backed by a `map[string]string`, with `New() *ServerCo
 Test: `Set("port", "8080")` then `Get("port") == "8080"` persists; a reflection test asserts the value method set is empty (every method is a pointer receiver, so the type is consistent).
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/03-methods-value-vs-pointer-receivers/05-silent-mutation-loss-bug/cmd/demo
-cd go-solutions/07-structs-and-methods/03-methods-value-vs-pointer-receivers/05-silent-mutation-loss-bug
-```
-
 ### The bug: a value receiver drops the write
 
 Here is the shape the bug usually takes. A `ServerConfig` holds a map, the map is

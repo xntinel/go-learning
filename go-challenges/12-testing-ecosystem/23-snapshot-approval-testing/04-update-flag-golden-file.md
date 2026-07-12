@@ -28,13 +28,6 @@ Implement: `Render(User) []byte` producing indented JSON with exactly one traili
 Test: a `goldenFile(t, name, got)` helper that writes under `-update` and otherwise reads and byte-compares, naming the golden path and the regenerate command on mismatch; plus a `TempDir` round-trip of the write path.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/04-update-flag-golden-file/cmd/demo go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/04-update-flag-golden-file/testdata
-cd go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/04-update-flag-golden-file
-```
-
 ### The -update flag, the helper, and the testdata rule
 
 The idiom rests on one package-level flag:

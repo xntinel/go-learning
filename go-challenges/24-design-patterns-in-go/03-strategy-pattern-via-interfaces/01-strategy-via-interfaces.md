@@ -20,12 +20,6 @@ strategy_test.go     per-strategy math, tier ordering, runtime swap, accessor
 - Test: each strategy's math, the tier selection order, the runtime swap invariant, and the accessor.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/24-design-patterns-in-go/03-strategy-pattern-via-interfaces/01-strategy-via-interfaces/cmd/demo && cd go-solutions/24-design-patterns-in-go/03-strategy-pattern-via-interfaces/01-strategy-via-interfaces
-```
-
 ### The interface is the family contract
 
 `PricingStrategy` has one real job — turn a subtotal into a `(discount, total)` pair — plus a `Name` for labeling. It returns both numbers, not just the discount, so no caller ever recomputes `subtotal - discount`; the strategy owns the whole result and callers consume it. Keeping the method count low matters: every method here is a method all four strategies must implement, and a two-method interface is still narrow enough that a value type satisfies it for free.

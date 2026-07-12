@@ -34,8 +34,6 @@ handler/                    independent module: example.com/panic-recovery-defer
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/07-defer-semantics-and-ordering/22-panic-recovery-deferred-cleanup/cmd/demo
-cd go-solutions/03-control-flow/07-defer-semantics-and-ordering/22-panic-recovery-deferred-cleanup
 go mod edit -go=1.24
 ```
 

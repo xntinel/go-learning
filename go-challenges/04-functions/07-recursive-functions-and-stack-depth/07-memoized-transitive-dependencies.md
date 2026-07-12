@@ -25,13 +25,6 @@ transitive/                independent module: example.com/transitive
 - Test: a diamond graph returns the shared node once; a counter proves each node is computed once; an unknown root errors; a cyclic graph terminates.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/07-recursive-functions-and-stack-depth/07-memoized-transitive-dependencies/cmd/demo
-cd go-solutions/04-functions/07-recursive-functions-and-stack-depth/07-memoized-transitive-dependencies
-```
-
 ### Why memoization is not optional here
 
 The transitive closure of a node is the set of all nodes reachable from it. The

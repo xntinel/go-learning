@@ -25,13 +25,6 @@ importer/                   independent module: example.com/importer
 - Test: a `Tracker` fake counts live-open resources and records the maximum ever seen; feed 1000 sources and assert `ImportAll` peaks at 1 concurrent open while `NaiveImportAll` peaks at N, and that every resource's `Close` ran exactly once.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/04-defer-loop-leak-batch-importer/importer go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/04-defer-loop-leak-batch-importer/cmd/demo
-cd go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/04-defer-loop-leak-batch-importer
-```
-
 ### Function scope is the whole story
 
 `defer` runs when the *function* returns, not when a block or a loop iteration

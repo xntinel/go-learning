@@ -23,13 +23,6 @@ Implement: `LoadFrom(getenv LookupFunc) (Config, error)` touching no process sta
 Test: a table-driven suite where every subtest calls `t.Parallel()` over a map-backed `getenv`; one serial `t.Setenv`-based test to justify the injection.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/17-testing-with-environment-variables/06-getenv-injection-parallel/cmd/demo
-cd go-solutions/12-testing-ecosystem/17-testing-with-environment-variables/06-getenv-injection-parallel
-```
-
 ## Invert the dependency on `os`
 
 The parser's job is to turn a lookup function into a `Config`. It does not need to

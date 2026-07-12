@@ -27,13 +27,6 @@ Implement: a fixed-capacity queue whose `Push` copies the input window with `sli
 Test: push/pop order, `ErrTooFull` at capacity, `ErrEmpty` on empty, an independent-copy test that mutates a popped window and proves storage is untouched, and an empty-but-not-nil round-trip.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/06-copy-and-full-slice-expression/01-window-queue-copy-on-push/internal/windowq go-solutions/06-collections-arrays-slices-and-maps/06-copy-and-full-slice-expression/01-window-queue-copy-on-push/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/06-copy-and-full-slice-expression/01-window-queue-copy-on-push
-```
-
 ### Why the queue must copy on push
 
 The producer in a real pipeline computes a sliding window into a buffer it owns

@@ -22,13 +22,6 @@ tmplregistry/              independent module: example.com/tmplregistry
 - Test: 100 goroutines requesting a mix of 5 names — each name parsed exactly once, identical `*template.Template` pointer per name, and a syntax-broken template returning the same cached error to every caller, under `-race`.
 - Verify: `go test -count=1 -race ./...` and `go run ./cmd/demo`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/12-sync-oncevalue-oncefunc/06-per-key-template-cache/cmd/demo
-cd go-solutions/15-sync-primitives/12-sync-oncevalue-oncefunc/06-per-key-template-cache
-```
-
 ### The idiom: LoadOrStore a closure, let the loser discard
 
 The naive per-key cache — `mu.Lock()`, check a map, parse on miss — holds one

@@ -26,13 +26,6 @@ rangeidx/                  independent module: example.com/rangeidx
 - Test: the correct index's pointers equal `&items[i]` and mutating through them changes the batch; the buggy index's pointers do not alias the batch, so mutations through them leave it unchanged.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/01-pointer-basics/08-range-copy-address-trap/cmd/demo
-cd go-solutions/09-pointers/01-pointer-basics/08-range-copy-address-trap
-```
-
 ### A range value is a copy; its address is not the element's address
 
 Imagine loading a batch of rows into a `[]Item` and building a `[]*Item` lookup so

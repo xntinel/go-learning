@@ -26,13 +26,6 @@ Implement: `Collect(sc, match)` storing `bytes.Clone(tok)`; a buggy `collectAlia
 Test: feed a multi-line reader through a small-buffer scanner, assert each retained line has its correct distinct content; a negative sub-test stores the raw token and asserts the classic "all entries equal the last token" corruption.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/06-copy-and-full-slice-expression/05-scanner-token-must-be-copied/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/06-copy-and-full-slice-expression/05-scanner-token-must-be-copied
-```
-
 ### Why the token is only valid until the next Scan
 
 `bufio.Scanner` reads into a fixed internal buffer and, on each `Scan`, returns a

@@ -25,13 +25,6 @@ bytesize/                   independent module: example.com/bytesize
 - Test: boundaries `0`, `512`, `1024`, `1536`, `1<<20`, `1<<30`, `1<<40`; negatives; the band-promotion case near 1024 KiB; idempotence of repeated `String()` calls.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/10-implementing-stringer/08-bytesize-human-formatter/cmd/demo
-cd go-solutions/07-structs-and-methods/10-implementing-stringer/08-bytesize-human-formatter
-```
-
 ### The rounding trap that motivates the design
 
 The naive version — divide by the unit, print one decimal — has a subtle bug at

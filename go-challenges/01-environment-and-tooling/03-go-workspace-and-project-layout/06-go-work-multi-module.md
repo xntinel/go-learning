@@ -29,8 +29,6 @@ work/                          module github.com/example/work
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/01-environment-and-tooling/03-go-workspace-and-project-layout/06-go-work-multi-module/cmd/demo
-cd go-solutions/01-environment-and-tooling/03-go-workspace-and-project-layout/06-go-work-multi-module
 go mod edit -go=1.24
 ```
 

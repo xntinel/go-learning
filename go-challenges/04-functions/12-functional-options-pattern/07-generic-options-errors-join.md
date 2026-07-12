@@ -26,13 +26,6 @@ optkit/                          independent module: example.com/optkit
 - Test: apply three options where two are invalid; in collect-all mode assert `errors.Is` finds both sentinels; in fail-fast mode assert only the first; reuse `Apply` on both config types to prove genericity.
 - Verify: `go test -count=1 ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/12-functional-options-pattern/07-generic-options-errors-join/cmd/demo
-cd go-solutions/04-functions/12-functional-options-pattern/07-generic-options-errors-join
-```
-
 ### One options engine, many types
 
 `type Option[T any] func(*T) error` is the whole idea: an option is a function

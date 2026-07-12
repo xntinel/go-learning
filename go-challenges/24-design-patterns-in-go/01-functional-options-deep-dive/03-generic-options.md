@@ -19,12 +19,6 @@ config_test.go         defaults, per-type validation, reuse across both types, o
 - Test: `config_test.go` proves both types reuse the same `New`, every per-type validator fires, the last option wins, and a failure short-circuits the remaining options.
 - Verify: `go test -race ./...` then `go run ./cmd/demo`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/24-design-patterns-in-go/01-functional-options-deep-dive/03-generic-options/cmd/demo && cd go-solutions/24-design-patterns-in-go/01-functional-options-deep-dive/03-generic-options
-```
-
 ### Why generics here, and the trade-off it makes
 
 In the previous exercises, `Option` and `New` were tied to one concrete type. Add a second config type and you copy the whole machinery: a new option type, a new loop, a new short-circuit. The generic form parameterizes both over `T`, so the option type and the constructor are written once. `New[T]` takes a `defaults` value of type `T` and applies each `Option[T]` to a pointer to it; `T` is inferred from the `defaults` argument, so callers write `config.New(config.HTTPDefaults(), ...)` with no explicit type argument. The body is the same defaults-then-options-in-order loop as before, including the short-circuit on the first error and the `fmt.Errorf("config: %w", err)` wrap that keeps each sentinel matchable.

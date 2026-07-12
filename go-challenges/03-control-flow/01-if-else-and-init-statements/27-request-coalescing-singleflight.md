@@ -31,8 +31,6 @@ coalesce/                   independent module: example.com/request-coalescing-s
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/01-if-else-and-init-statements/27-request-coalescing-singleflight/cmd/demo
-cd go-solutions/03-control-flow/01-if-else-and-init-statements/27-request-coalescing-singleflight
 go mod edit -go=1.24
 ```
 

@@ -27,8 +27,6 @@ envoverlay/                independent module: example.com/env-overlay
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/03-variadic-functions/12-env-overlay-builder
-cd go-solutions/04-functions/03-variadic-functions/12-env-overlay-builder
 go mod edit -go=1.24
 ```
 

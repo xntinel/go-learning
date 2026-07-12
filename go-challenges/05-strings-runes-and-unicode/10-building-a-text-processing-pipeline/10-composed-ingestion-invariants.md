@@ -31,8 +31,6 @@ ingestpipe/               independent module: example.com/ingestpipe
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/10-building-a-text-processing-pipeline/10-composed-ingestion-invariants/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/10-building-a-text-processing-pipeline/10-composed-ingestion-invariants
 go get golang.org/x/text/unicode/norm
 ```
 

@@ -24,12 +24,6 @@ sqlparser/
 - Test: every statement type, operator precedence, the four special predicates, round-trip stability, and that syntax errors satisfy `errors.Is(err, ErrSyntax)`.
 - Verify: `go test -race ./...` and `go run ./cmd/demo`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/05-sql-parser/01-core-sql-parser/lexer go-solutions/39-capstone-database-engine/05-sql-parser/01-core-sql-parser/cmd/demo && cd go-solutions/39-capstone-database-engine/05-sql-parser/01-core-sql-parser
-```
-
 ### The lexer boundary
 
 The parser consumes a flat token stream and never touches raw bytes. Each token carries a type, its literal text (keywords canonicalized to uppercase), and a 1-based line and column for error reporting. The lexer is a pure function from source to tokens: every grammatical decision — whether `LEFT` starts a join or names a column, whether `(` opens a subquery or a grouped expression — is pushed up to the parser, which is where the two-token lookahead lives. This exercise bundles a compact lexer sufficient for the grammar; a full-featured SQL lexer (nested comments, bind parameters, dollar-quoting) is a separate concern.

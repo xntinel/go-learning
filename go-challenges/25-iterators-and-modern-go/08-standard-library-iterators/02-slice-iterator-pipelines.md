@@ -26,12 +26,6 @@ pipeline_test.go     pipeline output, reverse, chunk cloning, multi-key sort
 - Test: `pipeline_test.go` checks the fused pipeline output, reversal, batch cloning, and a stable two-key sort.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/25-iterators-and-modern-go/08-standard-library-iterators/02-slice-iterator-pipelines/cmd/demo && cd go-solutions/25-iterators-and-modern-go/08-standard-library-iterators/02-slice-iterator-pipelines
-```
-
 ### Why a lazy pipeline allocates only once
 
 `slices.Values(nums)` does not copy `nums`; it returns an `iter.Seq[int]` that,

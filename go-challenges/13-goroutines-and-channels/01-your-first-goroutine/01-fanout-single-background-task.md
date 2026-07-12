@@ -25,13 +25,6 @@ Implement: `FanOut(work func())` that runs `work` in one goroutine and returns o
 Test: an `atomic.Int64` proves `work` ran exactly once; a `done` channel closed inside `work`, read with a non-blocking `select` after `FanOut` returns, proves the function waited.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/01-your-first-goroutine/01-fanout-single-background-task/cmd/demo
-cd go-solutions/13-goroutines-and-channels/01-your-first-goroutine/01-fanout-single-background-task
-```
-
 ### Why waiting is the whole point
 
 `FanOut` is deliberately trivial to write and easy to get subtly wrong. The

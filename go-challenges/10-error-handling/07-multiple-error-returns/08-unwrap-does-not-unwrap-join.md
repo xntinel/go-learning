@@ -27,13 +27,6 @@ flatten/                   independent module: example.com/flatten
 - Test: `errors.Unwrap(errors.Join(a, b))` is nil (the trap); `Flatten(Join(a, Join(b, c)))` is exactly `[a, b, c]` in order; `Flatten` on a single non-aggregate error is `[err]`; `Flatten(nil)` is empty.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/07-multiple-error-returns/08-unwrap-does-not-unwrap-join/cmd/demo
-cd go-solutions/10-error-handling/07-multiple-error-returns/08-unwrap-does-not-unwrap-join
-```
-
 ### Why errors.Unwrap comes up empty
 
 `errors.Unwrap(err)` invokes **only** a method of the form `Unwrap() error`. A

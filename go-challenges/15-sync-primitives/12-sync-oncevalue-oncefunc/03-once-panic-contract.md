@@ -22,13 +22,6 @@ oncepanic/                 independent module: example.com/oncepanic
 - Test: both calls to a panicking `OnceValue` panic with the identical value and the init runs exactly once; same for `OnceValues`; a contrast test shows `sync.Once.Do` treating the panicking init as done and returning silently on the second call.
 - Verify: `go test -count=1 -race ./...` and `go run ./cmd/demo`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/12-sync-oncevalue-oncefunc/03-once-panic-contract/cmd/demo
-cd go-solutions/15-sync-primitives/12-sync-oncevalue-oncefunc/03-once-panic-contract
-```
-
 ### Two primitives, two contracts
 
 Both `sync.Once.Do` and the Go 1.21 helpers agree on one thing: a panicking

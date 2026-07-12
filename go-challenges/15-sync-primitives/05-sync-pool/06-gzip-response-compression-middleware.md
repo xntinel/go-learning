@@ -28,13 +28,6 @@ Implement: `Gzip(next http.Handler) http.Handler` that, for clients advertising 
 Test: `httptest` asserts `Content-Encoding: gzip` and that `gzip.NewReader` decodes the body to the original payload; a concurrent `-race` test proves pooled writers are Reset per request with no stream corruption.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/05-sync-pool/06-gzip-response-compression-middleware/go-solutions/15-sync-primitives/05-sync-pool/06-gzip-response-compression-middleware go-solutions/15-sync-primitives/05-sync-pool/06-gzip-response-compression-middleware/cmd/demo
-cd go-solutions/15-sync-primitives/05-sync-pool/06-gzip-response-compression-middleware
-```
-
 ### Reset to rebind, Close to flush — the poolable lifecycle
 
 A `gzip.Writer` is bound to a destination `io.Writer` at construction. That is a

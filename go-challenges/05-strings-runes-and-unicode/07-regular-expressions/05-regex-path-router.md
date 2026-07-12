@@ -26,13 +26,6 @@ router/                     independent module: example.com/router
 - Test: two params extract by name; a non-matching path returns not-found; a trailing slash or extra segment does not match the anchored pattern; a literal segment with regex metacharacters is escaped so it matches literally; registration order is deterministic.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/07-regular-expressions/05-regex-path-router/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/07-regular-expressions/05-regex-path-router
-```
-
 ### Compiling a template safely: anchors and QuoteMeta
 
 Two correctness rules make this router safe. First, **anchor the pattern with

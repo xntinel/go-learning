@@ -28,8 +28,6 @@ titlecase/                  independent module: example.com/titlecase
 Set up the module and add the dependency:
 
 ```bash
-mkdir -p go-solutions/01-environment-and-tooling/02-go-modules-and-dependencies/04-add-and-verify-third-party-dependency/cmd/demo
-cd go-solutions/01-environment-and-tooling/02-go-modules-and-dependencies/04-add-and-verify-third-party-dependency
 go get golang.org/x/text/cases
 ```
 

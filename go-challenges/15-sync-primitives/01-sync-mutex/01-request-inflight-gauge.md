@@ -27,11 +27,6 @@ inflight/                    independent module: example.com/inflight
 - Test: N goroutines each doing `perG` Inc/Dec pairs assert final `Value()==0`; a concurrent httptest drive asserts the gauge is never negative inside the handler and returns to 0.
 - Verify: `go test -count=1 -race ./...`
 
-```bash
-mkdir -p go-solutions/15-sync-primitives/01-sync-mutex/01-request-inflight-gauge/cmd/demo
-cd go-solutions/15-sync-primitives/01-sync-mutex/01-request-inflight-gauge
-```
-
 ### Why a mutex and not just the raw int
 
 A concurrency gauge is read and written from every request goroutine at once. A

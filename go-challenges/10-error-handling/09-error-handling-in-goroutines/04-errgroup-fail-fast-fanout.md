@@ -31,8 +31,6 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/10-error-handling/09-error-handling-in-goroutines/04-errgroup-fail-fast-fanout/cmd/demo
-cd go-solutions/10-error-handling/09-error-handling-in-goroutines/04-errgroup-fail-fast-fanout
 go mod edit -go=1.26
 go get golang.org/x/sync/errgroup
 ```

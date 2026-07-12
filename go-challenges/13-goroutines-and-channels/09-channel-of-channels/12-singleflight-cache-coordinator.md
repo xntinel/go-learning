@@ -30,8 +30,6 @@ coalesce/                    independent module: example.com/coalesce
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/13-goroutines-and-channels/09-channel-of-channels/12-singleflight-cache-coordinator/cmd/demo
-cd go-solutions/13-goroutines-and-channels/09-channel-of-channels/12-singleflight-cache-coordinator
 go get go.uber.org/goleak
 go mod tidy
 ```

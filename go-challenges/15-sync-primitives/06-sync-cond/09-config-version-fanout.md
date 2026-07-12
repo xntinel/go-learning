@@ -25,13 +25,6 @@ confwatch/                  independent module: example.com/confwatch
 - Test: M parked watchers are ALL released by one `Publish` with a consistent snapshot+version pair; a watcher arriving with a stale `lastSeen` returns immediately; rapid double `Publish` never delivers a version `<= lastSeen`; `-race` stress with a publisher racing looping watchers.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/06-sync-cond/09-config-version-fanout/cmd/demo
-cd go-solutions/15-sync-primitives/06-sync-cond/09-config-version-fanout
-```
-
 ### The version IS the protocol
 
 The naive watch API — "block until the config changes" — is unimplementable

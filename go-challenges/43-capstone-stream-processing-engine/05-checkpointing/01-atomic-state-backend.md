@@ -23,7 +23,6 @@ store_test.go          round-trip, missing state, incomplete-ignored, prune, rac
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/43-capstone-stream-processing-engine/05-checkpointing/01-atomic-state-backend/cmd/demo && cd go-solutions/43-capstone-stream-processing-engine/05-checkpointing/01-atomic-state-backend
 go mod edit -go=1.26
 ```
 

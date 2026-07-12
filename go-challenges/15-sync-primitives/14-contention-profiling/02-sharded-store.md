@@ -27,13 +27,6 @@ sharded-store/                independent module: example.com/sharded-store
 - Test: `TestShardedHasMultipleShards` inserting 100 distinct keys and asserting more than one shard is populated; a `-race` test asserting `Sharded` produces the same total count as `Single` for the same workload.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/14-contention-profiling/02-sharded-store/cmd/demo
-cd go-solutions/15-sync-primitives/14-contention-profiling/02-sharded-store
-```
-
 ### How sharding removes contention, and what it costs
 
 `Sharded` holds a slice of `*shard`, each an independent `sync.Mutex` and

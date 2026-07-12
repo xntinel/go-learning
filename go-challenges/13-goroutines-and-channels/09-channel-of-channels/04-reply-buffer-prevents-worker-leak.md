@@ -26,13 +26,6 @@ replybuffer/               independent module: example.com/replybuffer
 - Test: with buffer 1, a call that abandons on timeout frees the worker and a later call succeeds; with buffer 0, an abandoned call wedges the worker so a later call times out (the leak, bounded by a deadline so the test fails loudly); a `runtime.NumGoroutine` check shows no accumulation after shutdown.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/09-channel-of-channels/04-reply-buffer-prevents-worker-leak/cmd/demo
-cd go-solutions/13-goroutines-and-channels/09-channel-of-channels/04-reply-buffer-prevents-worker-leak
-```
-
 ### The leak, made concrete
 
 A worker finishes a request and sends the response on the caller's reply channel.

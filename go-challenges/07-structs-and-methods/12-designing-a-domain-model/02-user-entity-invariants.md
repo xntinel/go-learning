@@ -27,13 +27,6 @@ user/                       independent module: example.com/user
 - Test: `NewUser` rejects each empty field with its sentinel; `Rename("")` is rejected and leaves the original unchanged; deposit-then-withdraw drives the balance end-to-end; a withdraw past the balance returns `ErrOverdraw` without mutating the receiver.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/12-designing-a-domain-model/02-user-entity-invariants/cmd/demo
-cd go-solutions/07-structs-and-methods/12-designing-a-domain-model/02-user-entity-invariants
-```
-
 ### Identity, not fields, defines an entity
 
 A value object is defined by its fields; an entity is defined by its identity. A

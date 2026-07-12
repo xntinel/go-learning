@@ -27,13 +27,6 @@ safefanout/                  independent module: example.com/safefanout
 - Test: a mutex-guarded `collector` whose `errorf` is safe from any goroutine; `drain(t)` on the test goroutine converts accumulated failures into one `t.Error`/`t.FailNow`; N workers validate results through the collector.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/03-test-helpers/06-goroutine-safe-fatal-helper/cmd/demo
-cd go-solutions/12-testing-ecosystem/03-test-helpers/06-goroutine-safe-fatal-helper
-```
-
 ### Why not `t.Fatal` in a worker
 
 `t.Fatal` calls `runtime.Goexit`, which unwinds *the goroutine that called it*.

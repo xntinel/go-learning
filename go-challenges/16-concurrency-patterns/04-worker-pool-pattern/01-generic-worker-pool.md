@@ -27,12 +27,6 @@ workerpool_test.go       squares + strings, bounded-concurrency probe, no-dup/no
 - Test: `workerpool_test.go` checks the pool transforms every job, bounds in-flight work to the worker count, never duplicates or drops a job under a 1000-job race sweep, normalises a sub-1 worker count to 1, and drains a pre-closed empty input to a clean output close.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/16-concurrency-patterns/04-worker-pool-pattern/01-generic-worker-pool/cmd/demo && cd go-solutions/16-concurrency-patterns/04-worker-pool-pattern/01-generic-worker-pool
-```
-
 ### Why a closer goroutine, and why generics
 
 The whole design turns on one question: how does the caller know the results are

@@ -27,13 +27,6 @@ apierr/                        independent module: example.com/apierr
 - Test: `errors.As` extracts `*StatusError` with the right `Code`/`Op` while `errors.Is` still finds the wrapped sentinel; a plain `fmt.Errorf` wrap yields `errors.As(*StatusError) == false`; `HTTPStatus` returns the code for a `StatusError` (even when further wrapped) and 500 for an unmapped error.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/02-fmt-errorf-and-error-wrapping/08-status-error-struct-vs-wraperror/cmd/demo
-cd go-solutions/10-error-handling/02-fmt-errorf-and-error-wrapping/08-status-error-struct-vs-wraperror
-```
-
 ### Struct versus opaque wrapError
 
 `*StatusError` implements both halves of the error contract. `Error()` renders a

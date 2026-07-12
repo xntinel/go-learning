@@ -27,13 +27,6 @@ value, an `export`-prefixed line, a malformed line with no `=` (error), and
 duplicate keys (last wins).
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/05-strings-package/05-dotenv-config-loader/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/05-strings-package/05-dotenv-config-loader
-```
-
 ### Reading line by line, splitting on the first =
 
 `bufio.Scanner` over the `io.Reader` gives one line at a time (accepting a

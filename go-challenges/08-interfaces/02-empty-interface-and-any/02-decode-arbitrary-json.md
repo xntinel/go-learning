@@ -30,8 +30,6 @@ jsonwalk/                  independent module: example.com/jsonwalk
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/08-interfaces/02-empty-interface-and-any/02-decode-arbitrary-json/cmd/demo
-cd go-solutions/08-interfaces/02-empty-interface-and-any/02-decode-arbitrary-json
 go mod edit -go=1.26
 ```
 

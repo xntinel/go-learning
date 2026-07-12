@@ -29,8 +29,6 @@ distlock/                      independent module: example.com/distlock
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/20-distributed-lock-unlock-timeout/distlock go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/20-distributed-lock-unlock-timeout/cmd/demo
-cd go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/20-distributed-lock-unlock-timeout
 go mod edit -go=1.24
 ```
 

@@ -30,8 +30,6 @@ logscan/                    independent module: example.com/logscan
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/05-range-over-collections/09-log-line-rune-scan/cmd/demo
-cd go-solutions/03-control-flow/05-range-over-collections/09-log-line-rune-scan
 go mod edit -go=1.24
 ```
 

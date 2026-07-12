@@ -27,13 +27,6 @@ eventbatch/                independent module: example.com/eventbatch
 - Test: after `Flush` the returned slice holds the events and the source batch is empty (`Len() == 0`); flushing an empty batch returns empty without panicking; the caller's batch (passed by `&`) is the one reset.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/01-pointer-basics/10-reset-on-flush-swap/cmd/demo
-cd go-solutions/09-pointers/01-pointer-basics/10-reset-on-flush-swap
-```
-
 ### Reset in place with *dst = Batch{}
 
 `Batch` accumulates `Event`s in a slice. A flush loop needs two things at once:

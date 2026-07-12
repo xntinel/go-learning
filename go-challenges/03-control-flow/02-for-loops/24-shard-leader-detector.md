@@ -33,8 +33,6 @@ leaderelect/                   module example.com/leaderelect
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/02-for-loops/24-shard-leader-detector/cmd/demo
-cd go-solutions/03-control-flow/02-for-loops/24-shard-leader-detector
 go mod edit -go=1.24
 ```
 

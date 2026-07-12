@@ -29,13 +29,6 @@ Implement: `Render(User) []byte` and `compare(dir, name, got)` returning one of 
 Test: drive all three branches against a `t.TempDir`; verify the committed `.approved` matches; verify a matching run deletes a stale `.received`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/10-received-approved-workflow/cmd/demo go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/10-received-approved-workflow/testdata
-cd go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/10-received-approved-workflow
-```
-
 ### The received/approved state machine
 
 There are exactly two committed states for a case and one transient one. The

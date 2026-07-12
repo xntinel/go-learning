@@ -32,8 +32,6 @@ chring/                     independent module: example.com/chring
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/06-labels-break-continue-goto/26-consistent-hash-shard-routing/cmd/demo
-cd go-solutions/03-control-flow/06-labels-break-continue-goto/26-consistent-hash-shard-routing
 go mod edit -go=1.24
 ```
 

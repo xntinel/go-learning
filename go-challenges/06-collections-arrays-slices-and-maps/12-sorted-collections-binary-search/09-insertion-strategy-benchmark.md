@@ -27,13 +27,6 @@ Implement: a `Builder` interface (`Add(int)`, `Result() []int`) with three imple
 Test: a differential correctness test running one shuffled input with duplicates through all three and asserting identical sorted, de-duplicated output; benchmarks with `b.ReportAllocs`/`b.ResetTimer` and no wall-clock assertions.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/12-sorted-collections-binary-search/09-insertion-strategy-benchmark/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/12-sorted-collections-binary-search/09-insertion-strategy-benchmark
-```
-
 ### Three strategies, one contract
 
 All three build the same thing — a sorted set of ints — but pay for it

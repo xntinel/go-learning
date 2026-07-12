@@ -28,8 +28,6 @@ pool/                       independent module: example.com/connection-pool-evic
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/01-if-else-and-init-statements/16-connection-pool-eviction-lru-age
-cd go-solutions/03-control-flow/01-if-else-and-init-statements/16-connection-pool-eviction-lru-age
 go mod edit -go=1.24
 ```
 

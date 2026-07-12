@@ -24,7 +24,6 @@ example_test.go      Example with // Output
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/48-modern-go-language-and-stdlib/03-unique-value-interning/01-interned-metrics/cmd/demo && cd go-solutions/48-modern-go-language-and-stdlib/03-unique-value-interning/01-interned-metrics
 go mod edit -go=1.26
 ```
 

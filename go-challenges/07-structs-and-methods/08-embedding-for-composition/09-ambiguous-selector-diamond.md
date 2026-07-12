@@ -25,13 +25,6 @@ mixins/                    independent module: example.com/mixins
 - Test: `Record.String()` returns the chosen source; qualified access (`r.TimestampMixin.ID`, `r.AuditMixin.ID`) reaches each; `Record` satisfies `fmt.Stringer`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/08-embedding-for-composition/09-ambiguous-selector-diamond/cmd/demo
-cd go-solutions/07-structs-and-methods/08-embedding-for-composition/09-ambiguous-selector-diamond
-```
-
 ### Equal-depth collisions do not promote
 
 Promotion is decided by depth, and there is a tie-breaker only when depths differ:

@@ -30,8 +30,6 @@ fanout/                     independent module: example.com/fanout
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/13-goroutines-and-channels/12-channel-patterns-semaphore-barrier/04-bounded-http-fanout-limiter/cmd/demo
-cd go-solutions/13-goroutines-and-channels/12-channel-patterns-semaphore-barrier/04-bounded-http-fanout-limiter
 go mod edit -go=1.26
 ```
 

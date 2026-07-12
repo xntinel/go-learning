@@ -34,8 +34,6 @@ llmcache/                    independent module: example.com/llmcache
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/52-ai-llm-backends/08-llm-resilience-and-caching/03-response-caching-and-singleflight/cmd/demo
-cd go-solutions/52-ai-llm-backends/08-llm-resilience-and-caching/03-response-caching-and-singleflight
 go mod edit -go=1.26
 go get golang.org/x/sync/singleflight
 go get github.com/hashicorp/golang-lru/v2/expirable

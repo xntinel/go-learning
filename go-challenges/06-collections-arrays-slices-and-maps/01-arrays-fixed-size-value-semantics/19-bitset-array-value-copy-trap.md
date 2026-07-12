@@ -40,8 +40,6 @@ bitset/                        module example.com/bitset
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/19-bitset-array-value-copy-trap
-cd go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/19-bitset-array-value-copy-trap
 go mod edit -go=1.24
 ```
 

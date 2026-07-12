@@ -33,8 +33,6 @@ trace/                       independent module: example.com/distributed-trace-s
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/01-if-else-and-init-statements/28-distributed-trace-span-propagation/cmd/demo
-cd go-solutions/03-control-flow/01-if-else-and-init-statements/28-distributed-trace-span-propagation
 go mod edit -go=1.24
 ```
 

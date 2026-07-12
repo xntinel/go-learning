@@ -19,12 +19,6 @@ join_test.go         inner-match set, disjoint keys, empty input, early break
 - Test: `join_test.go` checks the matched-key set, disjoint inputs (empty result), an empty side, and that the producer can be stopped after one match.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/25-iterators-and-modern-go/04-range-over-func-pull-iterators/03-merge-join-with-pull2/cmd/demo && cd go-solutions/25-iterators-and-modern-go/04-range-over-func-pull-iterators/03-merge-join-with-pull2
-```
-
 ### Why `iter.Pull2`, and the three-way key comparison
 
 A merge-join consumes two inputs sorted by key and advances whichever cursor has the smaller key, emitting a row only when the two keys are equal. That is a lockstep walk, so it needs pull cursors — and because the inputs are key/value sequences (`iter.Seq2[string, int]`), the right conversion is `iter.Pull2`, whose signature is `func Pull2[K, V](seq Seq2[K, V]) (next func() (K, V, bool), stop func())`. Each `next` hands back a key, a value, and the `ok` flag in one call, so the join holds the current `(key, value)` of each side directly.

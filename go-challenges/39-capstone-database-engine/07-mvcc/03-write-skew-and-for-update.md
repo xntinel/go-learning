@@ -23,12 +23,6 @@ writeskew_test.go  write-skew anomaly, ForUpdate guard (table-driven), ForUpdate
 - Test: `writeskew_test.go` proves the unguarded anomaly (both commit, invariant violated), that locking the read-set with `ForUpdate` forces the second transaction to abort regardless of lock order, and that `ForUpdate` on a missing key returns `ErrNotFound`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/07-mvcc/03-write-skew-and-for-update/cmd/demo && cd go-solutions/39-capstone-database-engine/07-mvcc/03-write-skew-and-for-update
-```
-
 ### Why write skew slips past first-writer-wins
 
 First-writer-wins detects a conflict only when two transactions write the *same* row: the second writer finds `Xmax` already stamped by an active transaction and aborts. Write skew is the case the policy is structurally blind to. Take the doctors-on-call invariant: rows `x` and `y` are 0/1 flags and the rule is `x + y >= 1` (at least one doctor on call). Two transactions begin against the same snapshot where both flags are 1. Each reads both rows, sees the sum is 2, and concludes it is safe to take its own doctor off call. The first writes `x = 0`; the second writes `y = 0`. The writes touch *disjoint* rows, so there is no write-write conflict — neither transaction stamps a row the other is also writing — and both commit. The committed state has `x = 0` and `y = 0`, a sum of 0, and the invariant is violated even though each transaction in isolation preserved it. No serial order of the two could have produced that state, which is the definition of a non-serializable execution.

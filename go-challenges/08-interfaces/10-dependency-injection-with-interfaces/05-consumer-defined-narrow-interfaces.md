@@ -27,13 +27,6 @@ narrowiface/                independent module: example.com/narrowiface
 - Test: a `fakeGetter` implementing only `UserByID` drives the service; `var _ userGetter = (*sqlStore)(nil)` proves the real store still satisfies the narrowed interface.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/10-dependency-injection-with-interfaces/05-consumer-defined-narrow-interfaces/cmd/demo
-cd go-solutions/08-interfaces/10-dependency-injection-with-interfaces/05-consumer-defined-narrow-interfaces
-```
-
 ### Who owns the interface
 
 In many languages the interface is declared next to the implementation: the

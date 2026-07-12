@@ -26,13 +26,6 @@ ttlcache/                        independent module: example.com/ttlcache
 - Test: advance a fake clock past the TTL and assert `Get` misses with an `Expired` eviction; fill to capacity and assert the oldest is evicted with a `Capacity` reason; run a `-race` concurrency check.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/12-functional-options-pattern/06-clock-injection-cache-options/cmd/demo
-cd go-solutions/04-functions/12-functional-options-pattern/06-clock-injection-cache-options
-```
-
 ### Injecting a clock and a hook, both generic
 
 Two collaborators are injected here. `WithClock(func() time.Time)` replaces the

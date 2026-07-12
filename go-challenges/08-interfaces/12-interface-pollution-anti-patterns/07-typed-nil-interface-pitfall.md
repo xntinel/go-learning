@@ -24,13 +24,6 @@ typednil/                   independent module: example.com/typednil
 - Test: reproduce the bug — assign the broken result to an `error` and assert (correctly) that `err != nil` even on success; assert the fixed version returns `err == nil`; use `errors.As` to show the `(type, value)` tuple on the failure path.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/12-interface-pollution-anti-patterns/07-typed-nil-interface-pitfall/cmd/demo
-cd go-solutions/08-interfaces/12-interface-pollution-anti-patterns/07-typed-nil-interface-pitfall
-```
-
 ### Why the guard fires when nothing failed
 
 A Go interface value is a pair: a dynamic type and a dynamic value. `err == nil`

@@ -25,13 +25,6 @@ kvroles/                    independent module: example.com/kvroles
 - Test: inject a fake implementing ONLY its role (the read fake has no `Put`); a `var _ Reader = (*Store)(nil)` compile-time assertion; a table covering 200, 404, and 500.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/12-interface-pollution-anti-patterns/05-interface-segregation-role-split/cmd/demo
-cd go-solutions/08-interfaces/12-interface-pollution-anti-patterns/05-interface-segregation-role-split
-```
-
 ### Why segregate, and how embedding composes roles
 
 A single fat `DataStore` interface with ten methods forces every consumer to

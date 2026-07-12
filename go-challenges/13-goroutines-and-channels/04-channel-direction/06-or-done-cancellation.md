@@ -26,13 +26,6 @@ Implement: `OrDone(ctx context.Context, in <-chan T) <-chan T` that forwards val
 Test: pass-through with no cancellation, stop-on-cancel closes the output and the goroutine exits, stop-on-upstream-close.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/04-channel-direction/06-or-done-cancellation/cmd/demo
-cd go-solutions/13-goroutines-and-channels/04-channel-direction/06-or-done-cancellation
-```
-
 ### Why the doubled select
 
 `OrDone` runs a goroutine that owns `out` and closes it on exit. The body

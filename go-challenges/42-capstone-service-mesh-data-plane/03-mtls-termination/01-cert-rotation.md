@@ -22,7 +22,6 @@ rotation_test.go     initial read, atomic swap visibility, both callbacks, empty
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/42-capstone-service-mesh-data-plane/03-mtls-termination/01-cert-rotation/cmd/demo && cd go-solutions/42-capstone-service-mesh-data-plane/03-mtls-termination/01-cert-rotation
 go mod edit -go=1.26
 ```
 

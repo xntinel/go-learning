@@ -25,13 +25,6 @@ semver/                     independent module: example.com/semver
 - Test: `1.2.3`, `1.0.0-alpha.1`, `1.0.0+build.5`, `1.0.0-rc.1+meta` parse with correct named fields; `1.2`, `1.2.3.4`, `01.2.3`, and an embedded match are rejected; the leading `v` is handled explicitly.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/07-regular-expressions/06-semver-tag-validator/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/07-regular-expressions/06-semver-tag-validator
-```
-
 ### The official regex, anchors, and the leading v
 
 The SemVer 2.0.0 specification publishes a canonical regex (semver.org, the

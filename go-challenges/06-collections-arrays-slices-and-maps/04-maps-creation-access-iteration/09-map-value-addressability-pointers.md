@@ -27,13 +27,6 @@ connstats/                 independent module: example.com/connstats
 - Test: read-modify-write increments across calls, the pointer path mutates in place and is visible on the next `Get`, comma-ok returns a nil pointer for a missing key, and concurrent increments are race-free.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/09-map-value-addressability-pointers/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/09-map-value-addressability-pointers
-```
-
 ### Why m[k].Field = x does not compile
 
 A map element is not addressable. The runtime may relocate entries when the hash

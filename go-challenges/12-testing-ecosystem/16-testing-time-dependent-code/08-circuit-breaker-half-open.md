@@ -25,13 +25,6 @@ Implement: a three-state `Breaker` (closed, open, half-open) that trips to open 
 Test: inject `FakeClock` — trip to open; assert reject at `cooldown-1ns`; assert exactly one probe admitted at the cooldown instant; a success closes, a failure re-opens and resets the clock; `-race`, `t.Parallel`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/16-testing-time-dependent-code/08-circuit-breaker-half-open/cmd/demo
-cd go-solutions/12-testing-ecosystem/16-testing-time-dependent-code/08-circuit-breaker-half-open
-```
-
 ### The state machine and its two time-sensitive contracts
 
 The breaker has three states. *Closed* is normal: calls are allowed, and failures

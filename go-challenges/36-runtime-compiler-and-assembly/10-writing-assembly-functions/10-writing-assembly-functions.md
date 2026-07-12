@@ -92,13 +92,6 @@ For everything else — including the `SumInt64s` example in this lesson — the
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/36-runtime-compiler-and-assembly/10-writing-assembly-functions/10-writing-assembly-functions/cmd/demo
-cd go-solutions/36-runtime-compiler-and-assembly/10-writing-assembly-functions/10-writing-assembly-functions
-```
-
 ### Exercise 1: Pure-Go Implementations (the correctness oracle)
 
 Create `sum_pure.go`. These compile everywhere and are the correctness oracle that the tests compare against:
@@ -217,7 +210,6 @@ done_sum:
 	MOVQ AX, ret+24(FP)    // store return value
 	RET
 
-
 // func CountByte(s []byte, c byte) int
 //
 // Argument layout at FP (ABI0 bridge):
@@ -255,7 +247,6 @@ next_count:
 done_count:
 	MOVQ  AX, ret+32(FP)
 	RET
-
 
 // func MemEqual(a, b []byte) bool
 //

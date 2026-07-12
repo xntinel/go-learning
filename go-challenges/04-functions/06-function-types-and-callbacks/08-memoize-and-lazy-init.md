@@ -26,13 +26,6 @@ Implement: `Memoize[K comparable, V any](fn func(K) (V, error)) func(K) (V, erro
 Test: a counting fn is called once per distinct key and zero times on hits; an error result is not cached; concurrent access is race-free; the `OnceValues` initializer runs exactly once across many goroutines; a panicking initializer re-panics every call.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/06-function-types-and-callbacks/08-memoize-and-lazy-init/cmd/demo
-cd go-solutions/04-functions/06-function-types-and-callbacks/08-memoize-and-lazy-init
-```
-
 ### Memoize caches successes only; OnceValues initializes exactly once
 
 `Memoize` wraps a `func(K) (V, error)` and returns a caching version. The subtlety that

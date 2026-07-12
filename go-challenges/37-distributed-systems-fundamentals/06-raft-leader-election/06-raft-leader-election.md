@@ -63,13 +63,6 @@ In a cluster of N nodes, a majority is `(N/2) + 1`. For N=5, majority is 3. A ca
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/37-distributed-systems-fundamentals/06-raft-leader-election/06-raft-leader-election/cmd/demo
-cd go-solutions/37-distributed-systems-fundamentals/06-raft-leader-election/06-raft-leader-election
-```
-
 This is a library package verified with `go test`. The `cmd/demo` directory holds a runnable demonstration.
 
 ### Exercise 1: Message Types and the Node Struct

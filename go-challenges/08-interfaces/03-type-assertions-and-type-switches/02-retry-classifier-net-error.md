@@ -27,13 +27,6 @@ Implement: `ShouldRetry(err error) bool` and a `*PermanentError` domain type.
 Test: wrapped errors around a fake `net.Error` (timeout true/false), a context-deadline error, and a `*PermanentError`; assert each classification and that a deeply wrapped timeout is still detected.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/03-type-assertions-and-type-switches/02-retry-classifier-net-error/cmd/demo
-cd go-solutions/08-interfaces/03-type-assertions-and-type-switches/02-retry-classifier-net-error
-```
-
 ### The classification order
 
 Order matters because errors overlap. An explicit `*PermanentError` is the
@@ -151,7 +144,6 @@ permanent        retry=false
 eof              retry=false
 nil              retry=false
 ```
-
 
 ### Tests
 

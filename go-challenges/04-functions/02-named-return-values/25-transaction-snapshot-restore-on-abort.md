@@ -28,8 +28,6 @@ snaptx/                    independent module: example.com/snaptx
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/02-named-return-values/25-transaction-snapshot-restore-on-abort/cmd/demo
-cd go-solutions/04-functions/02-named-return-values/25-transaction-snapshot-restore-on-abort
 go mod edit -go=1.24
 ```
 

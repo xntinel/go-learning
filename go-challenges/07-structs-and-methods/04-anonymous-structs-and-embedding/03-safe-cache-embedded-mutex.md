@@ -29,13 +29,6 @@ a `-race` test with many concurrent readers and writers; a reflection test provi
 the exported `Cache` type does *not* expose a promoted `Lock` method.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/04-anonymous-structs-and-embedding/03-safe-cache-embedded-mutex/cmd/demo
-cd go-solutions/07-structs-and-methods/04-anonymous-structs-and-embedding/03-safe-cache-embedded-mutex
-```
-
 ### Why the mutex is a named field, not embedded
 
 It is tempting to embed the lock:

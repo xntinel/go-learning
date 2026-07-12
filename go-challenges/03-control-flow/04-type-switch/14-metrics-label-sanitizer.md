@@ -28,8 +28,6 @@ labelsafe/                   independent module: example.com/labelsafe
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/04-type-switch/14-metrics-label-sanitizer
-cd go-solutions/03-control-flow/04-type-switch/14-metrics-label-sanitizer
 go mod edit -go=1.24
 ```
 

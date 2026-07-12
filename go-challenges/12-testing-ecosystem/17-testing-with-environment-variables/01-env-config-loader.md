@@ -23,13 +23,6 @@ Implement: `Load() (Config, error)` reading `APP_HOST` and `APP_PORT`, wrapping 
 Test: a table of `(env, want Config, wantErr)` driven by `t.Setenv` per case; assert with `errors.Is` and field equality.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/17-testing-with-environment-variables/01-env-config-loader/cmd/demo
-cd go-solutions/12-testing-ecosystem/17-testing-with-environment-variables/01-env-config-loader
-```
-
 ## The design
 
 `Load` reads two variables. `APP_HOST` is required, so an empty value maps to

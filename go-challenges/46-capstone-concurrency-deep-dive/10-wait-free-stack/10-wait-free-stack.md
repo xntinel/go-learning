@@ -68,13 +68,6 @@ True wait-freedom requires that slow operations be completed by fast threads on 
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/46-capstone-concurrency-deep-dive/10-wait-free-stack/10-wait-free-stack/cmd/demo
-cd go-solutions/46-capstone-concurrency-deep-dive/10-wait-free-stack/10-wait-free-stack
-```
-
 This is a library, not a program. Verification uses `go test`.
 
 ### Exercise 1: The Stack Type and Treiber Core

@@ -55,13 +55,6 @@ TCP keep-alive is handled by the kernel, but many corporate firewalls and cloud 
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/33-tcp-udp-and-networking/05-tcp-keep-alive/05-tcp-keep-alive/cmd/demo
-cd go-solutions/33-tcp-udp-and-networking/05-tcp-keep-alive/05-tcp-keep-alive
-```
-
 This is a library package, not a program: verification is done with `go test`.
 
 ### Exercise 1: Config, Server, and the Listener

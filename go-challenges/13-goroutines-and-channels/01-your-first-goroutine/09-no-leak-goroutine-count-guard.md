@@ -30,8 +30,6 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/13-goroutines-and-channels/01-your-first-goroutine/09-no-leak-goroutine-count-guard/cmd/demo
-cd go-solutions/13-goroutines-and-channels/01-your-first-goroutine/09-no-leak-goroutine-count-guard
 go mod edit -go=1.25
 ```
 

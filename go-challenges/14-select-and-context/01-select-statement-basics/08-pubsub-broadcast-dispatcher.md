@@ -27,13 +27,6 @@ Implement: a `Dispatcher` with `Subscribe`, `Unsubscribe`, and `Broadcast(evt) i
 Test: every subscriber receives the event once; a blocked subscriber does not stop the others; an unsubscribed one receives nothing.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/01-select-statement-basics/08-pubsub-broadcast-dispatcher/cmd/demo
-cd go-solutions/14-select-and-context/01-select-statement-basics/08-pubsub-broadcast-dispatcher
-```
-
 ## Sending to a dynamic set without head-of-line blocking
 
 The number of subscribers is a runtime value, so `Broadcast` cannot use a static

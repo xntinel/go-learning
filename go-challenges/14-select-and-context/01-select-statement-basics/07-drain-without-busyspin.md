@@ -27,13 +27,6 @@ Implement: `Stage(in, transform)` draining with `for range`, and `Merge2(a, b, t
 Test: every upstream value is transformed and forwarded, output closes after input closes, and the loop terminates within a time budget instead of spinning.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/01-select-statement-basics/07-drain-without-busyspin/cmd/demo
-cd go-solutions/14-select-and-context/01-select-statement-basics/07-drain-without-busyspin
-```
-
 ## The bug, then the fix
 
 Here is the tempting, wrong way to write the stage. It is illustrative only — do

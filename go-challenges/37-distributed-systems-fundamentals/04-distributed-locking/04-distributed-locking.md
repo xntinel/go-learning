@@ -110,13 +110,6 @@ extend a lock that has already expired and been re-granted to someone else.
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/37-distributed-systems-fundamentals/04-distributed-locking/04-distributed-locking/cmd/demo
-cd go-solutions/37-distributed-systems-fundamentals/04-distributed-locking/04-distributed-locking
-```
-
 This is a library: there is no `main` in the package itself. Verify it with
 `go test`.
 

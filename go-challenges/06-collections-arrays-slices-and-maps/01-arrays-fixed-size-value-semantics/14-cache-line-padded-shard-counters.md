@@ -37,8 +37,6 @@ shardcounters/                module example.com/shardcounters
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/14-cache-line-padded-shard-counters
-cd go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/14-cache-line-padded-shard-counters
 go mod edit -go=1.24
 ```
 

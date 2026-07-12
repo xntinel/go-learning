@@ -19,12 +19,6 @@ stream_test.go       a large streamed result with backpressure, decode table, re
 - Test: `stream_test.go` streams 5000 rows through an unbuffered pipe and reads them all back, decodes assorted rows including NULLs, and asserts a closed reader makes `WriteRow` fail rather than hang.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/09-network-protocol/06-streaming-result-set/cmd/demo && cd go-solutions/39-capstone-database-engine/09-network-protocol/06-streaming-result-set
-```
-
 ### Why chunked framing and what backpressure buys
 
 Streaming means the server emits each `DataRow` as it produces it and never materializes the full result. The `Writer` wraps the connection in a `bufio.Writer` and flushes every `chunk` rows: small chunks bound memory tightly and yield to the reader often; large chunks amortize the flush over more rows. Either way the invariant holds — at most one chunk's worth of rows sits in the buffer at a time, never the whole set. `Finish` writes `CommandComplete` and flushes whatever partial chunk remains, so the last few rows are never stranded in the buffer.

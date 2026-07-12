@@ -19,12 +19,6 @@ reaper_test.go         time-then-size composition, the never-empty floor, concur
 - Test: time-then-size composition, the floor that survives when both policies would empty the log, and a concurrent run where the reaper trims while producers append, under `-race`.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/41-capstone-message-queue/06-message-retention-compaction/04-background-reaper/cmd/demo && cd go-solutions/41-capstone-message-queue/06-message-retention-compaction/04-background-reaper
-```
-
 ### Composing two policies in one pass
 
 `ReapOnce` is the heart of the reaper, and the order of operations is deliberate. It snapshots the segments, applies time retention first, then size retention to whatever time retention left, then installs the result. Time-first is the right order because dropping aged-out segments shrinks the byte total, so the size policy may have nothing left to do — and when it does act, it acts on already-current data rather than wasting its budget on segments that are about to expire anyway.

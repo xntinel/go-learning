@@ -19,12 +19,6 @@ producers_test.go    full-range collection, early-break honored, validation erro
 - Test: collect a full range, break out of a range early and assert the iterator stopped, and assert `PrimesUnder(-1)` returns `ErrNegativeLimit`.
 - Verify: `go test -run 'TestPrimes|TestIndexed|TestEarly|TestValidation' -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/25-iterators-and-modern-go/07-iter-package-usage/01-seq-and-seq2-producers/cmd/demo && cd go-solutions/25-iterators-and-modern-go/07-iter-package-usage/01-seq-and-seq2-producers
-```
-
 ### The yield protocol and why the boolean is not optional
 
 An `iter.Seq[V]` is the named type `func(yield func(V) bool)`. A producer does not return values one at a time; it receives a `yield` callback and calls it once per element. When you write `for n := range PrimesUnder(30)`, the compiler turns the loop body into that `yield` function and hands it to the iterator, which then pushes primes into it. The inversion is the whole point: the iterator owns the loop, the consumer owns the body.

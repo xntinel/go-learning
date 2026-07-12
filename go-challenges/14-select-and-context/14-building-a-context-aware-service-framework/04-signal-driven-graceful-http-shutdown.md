@@ -23,13 +23,6 @@ Implement: `HTTPService` whose `Start` runs `server.Serve(listener)` in a gorout
 Test: bind a listener on `127.0.0.1:0`, start the app, fire an in-flight request, cancel the root context, assert the request drained (`200`) and `Serve` returned `http.ErrServerClosed`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/14-building-a-context-aware-service-framework/04-signal-driven-graceful-http-shutdown/cmd/demo
-cd go-solutions/14-select-and-context/14-building-a-context-aware-service-framework/04-signal-driven-graceful-http-shutdown
-```
-
 ### The HTTP service shape
 
 An `http.Server` maps onto the `Service` contract almost perfectly, but the two

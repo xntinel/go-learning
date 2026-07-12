@@ -27,13 +27,6 @@ Test: `read write`, `read,write;admin`, extra whitespace, empty and
 all-delimiter input, and duplicates deduped with order preserved.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/01-string-basics/08-scope-tokenizer/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/01-string-basics/08-scope-tokenizer
-```
-
 ## Why FieldsFunc, not Fields or Split
 
 `strings.Fields` splits only on Unicode whitespace, so it handles `"read write"`

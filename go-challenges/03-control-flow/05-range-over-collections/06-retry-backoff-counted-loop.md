@@ -29,8 +29,6 @@ retry/                      independent module: example.com/retry
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/05-range-over-collections/06-retry-backoff-counted-loop/cmd/demo
-cd go-solutions/03-control-flow/05-range-over-collections/06-retry-backoff-counted-loop
 go mod edit -go=1.24
 ```
 

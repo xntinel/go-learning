@@ -37,8 +37,6 @@ flags/                       independent module: example.com/feature-flag-rollou
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/07-defer-semantics-and-ordering/30-feature-flag-rollout-rule-evaluation/cmd/demo
-cd go-solutions/03-control-flow/07-defer-semantics-and-ordering/30-feature-flag-rollout-rule-evaluation
 go mod edit -go=1.24
 ```
 

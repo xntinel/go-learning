@@ -22,13 +22,6 @@ Implement: `Consume(in <-chan string, idle time.Duration, onIdle func()) int` re
 Test: messages under the window keep it running; silence fires `onIdle` once within a band; close returns cleanly without firing; `Reset` allocates zero.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/03-timeout-with-select/03-reset-timer-idle-consumer/cmd/demo
-cd go-solutions/14-select-and-context/03-timeout-with-select/03-reset-timer-idle-consumer
-```
-
 ### One timer, reset per message
 
 The consumer loops on a `select` with two cases: a message arrived, or the idle

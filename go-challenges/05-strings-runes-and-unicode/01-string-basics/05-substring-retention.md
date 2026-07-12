@@ -29,13 +29,6 @@ Test: present/absent/malformed id, plus a retention test comparing
 `unsafe.StringData` pointers to prove the clone severed the reference.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/01-string-basics/05-substring-retention/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/01-string-basics/05-substring-retention
-```
-
 ## Why the slice leaks, and how Clone fixes it
 
 `payload[start:end]` returns a string header pointing *into* `payload`'s backing

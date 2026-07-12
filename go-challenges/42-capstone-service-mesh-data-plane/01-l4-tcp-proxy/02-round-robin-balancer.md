@@ -23,7 +23,6 @@ balancer_test.go      empty rejection, exact order, even distribution, race-safe
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/42-capstone-service-mesh-data-plane/01-l4-tcp-proxy/02-round-robin-balancer/cmd/demo && cd go-solutions/42-capstone-service-mesh-data-plane/01-l4-tcp-proxy/02-round-robin-balancer
 go mod edit -go=1.26
 ```
 

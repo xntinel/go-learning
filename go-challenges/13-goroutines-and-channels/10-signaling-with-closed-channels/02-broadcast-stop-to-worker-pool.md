@@ -75,13 +75,6 @@ lock across the send, `Shutdown` takes the write lock before closing, so no send
 is ever in flight at the instant `jobs` closes. Concurrent submits still run in
 parallel under the shared read lock; only the close is exclusive.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/10-signaling-with-closed-channels/02-broadcast-stop-to-worker-pool/cmd/demo
-cd go-solutions/13-goroutines-and-channels/10-signaling-with-closed-channels/02-broadcast-stop-to-worker-pool
-```
-
 Create `pool.go`:
 
 ```go

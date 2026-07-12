@@ -28,13 +28,6 @@ staged-cause/                        independent module: example.com/stagedcause
 - Test: force each stage to exceed its sub-timeout and assert `ctx.Err() == context.DeadlineExceeded` while `context.Cause` `errors.Is` the correct stage sentinel; a `WithCancelCause` path surfaces its own cause; `Cause` on a live context is nil; the fast path returns the result.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/05-context-withtimeout-withdeadline/06-labeled-timeout-cause/cmd/demo
-cd go-solutions/14-select-and-context/05-context-withtimeout-withdeadline/06-labeled-timeout-cause
-```
-
 ### The cause API, and why Err stays DeadlineExceeded
 
 Go 1.21 added `context.WithTimeoutCause(parent, d, cause)` and

@@ -35,8 +35,6 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/14-select-and-context/07-context-propagation/03-wrapped-error-chain/cmd/demo
-cd go-solutions/14-select-and-context/07-context-propagation/03-wrapped-error-chain
 go mod edit -go=1.24
 ```
 

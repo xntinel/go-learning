@@ -33,8 +33,6 @@ keyrotator/                      independent module: example.com/keyrotator
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/12-functional-options-pattern/20-encryption-key-version-manager/cmd/demo
-cd go-solutions/04-functions/12-functional-options-pattern/20-encryption-key-version-manager
 go mod edit -go=1.24
 ```
 

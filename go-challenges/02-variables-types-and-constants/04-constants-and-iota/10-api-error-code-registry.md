@@ -25,13 +25,6 @@ Implement: `ErrorCode` with a `maxCode` sentinel, a registry mapping each code t
 Test: every code has a registry entry (completeness), `String`/`HTTPStatus` return the registered values, and `MarshalJSON` emits the quoted stable string, never the ordinal.
 Verify: `go test -count=1 ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/04-constants-and-iota/10-api-error-code-registry/cmd/demo
-cd go-solutions/02-variables-types-and-constants/04-constants-and-iota/10-api-error-code-registry
-```
-
 ## Why a registry, not a switch
 
 Everything in this lesson has been building to one rule: the ordinal is an

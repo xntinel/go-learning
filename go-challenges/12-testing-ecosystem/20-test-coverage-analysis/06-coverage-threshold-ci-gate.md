@@ -25,13 +25,6 @@ covgate/                   independent module: example.com/covgate
 - Test: table tests asserting parsing across whitespace and trailing-`%` variants, a missing-total error, and the floor check at, above, and below.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/20-test-coverage-analysis/06-coverage-threshold-ci-gate/cmd/demo
-cd go-solutions/12-testing-ecosystem/20-test-coverage-analysis/06-coverage-threshold-ci-gate
-```
-
 ### Parse the total line robustly, not by index
 
 `go tool cover -func=cover.out` prints one line per function and a final line:

@@ -22,12 +22,6 @@ retry_test.go        success after transient, exhaustion, permanent skip, bounds
 - Test: a transient failure recovers and counts retries, an exhausted budget returns the last error, a permanent error is not retried, and `Backoff` stays inside its jitter window.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/41-capstone-message-queue/04-producer-api-batching/02-retry-backoff-jitter/cmd/demo && cd go-solutions/41-capstone-message-queue/04-producer-api-batching/02-retry-backoff-jitter
-```
-
 ### Why exponential, and why jitter is not optional
 
 The retry loop runs at most `Retries + 1` attempts. Attempt zero is the original send. Before each later attempt it sleeps a backoff that doubles every time: `base`, `2*base`, `4*base`, and so on. Doubling is what keeps a struggling broker from being pounded; a fixed short interval would retry a down broker thousands of times a second and prevent it from recovering.

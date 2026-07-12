@@ -29,8 +29,6 @@ instrument/                  independent module: example.com/instrument
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/10-higher-order-functions/31-result-wrapper-timing-and-metadata/cmd/demo
-cd go-solutions/04-functions/10-higher-order-functions/31-result-wrapper-timing-and-metadata
 go mod edit -go=1.24
 ```
 

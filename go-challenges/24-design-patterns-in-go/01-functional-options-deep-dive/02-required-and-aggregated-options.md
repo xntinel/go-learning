@@ -19,12 +19,6 @@ client_test.go         required enforcement, cross-field rule, aggregation, per-
 - Test: `client_test.go` proves a missing DSN is rejected, the `idle <= open` invariant holds, a single bad call surfaces all three of its problems through `errors.Is`, and each per-option validator fires.
 - Verify: `go test -race ./...` then `go run ./cmd/demo`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/24-design-patterns-in-go/01-functional-options-deep-dive/02-required-and-aggregated-options/cmd/demo && cd go-solutions/24-design-patterns-in-go/01-functional-options-deep-dive/02-required-and-aggregated-options
-```
-
 ### Why aggregate, and where required and cross-field checks belong
 
 Exercise 1's constructor stops at the first failing option. That is the right default for a boot path, but it is the wrong experience for a configuration assembled from a file or a flag set, where the user wants to see *every* mistake in one pass rather than fix-one-rerun-repeat. This constructor takes the other strategy: it runs every option, appends each returned error to a slice, then returns `errors.Join(errs...)` — a single error whose `Error()` prints each cause on its own line and through which `errors.Is` still finds every joined sentinel.

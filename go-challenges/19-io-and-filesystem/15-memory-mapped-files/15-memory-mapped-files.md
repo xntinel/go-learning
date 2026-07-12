@@ -18,13 +18,6 @@ Real mapped regions must be unmapped. This model includes `Close` so tests can p
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/19-io-and-filesystem/15-memory-mapped-files/15-memory-mapped-files/cmd/demo
-cd go-solutions/19-io-and-filesystem/15-memory-mapped-files/15-memory-mapped-files
-```
-
 ### Exercise 1: Implement A Mapping Model
 
 Create `mapping.go`:

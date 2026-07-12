@@ -23,13 +23,6 @@ Implement: `Config` with `LogValue() slog.Value` returning a `slog.GroupValue` w
 Test: log the `Config` through a `slog.TextHandler` into a `bytes.Buffer`; assert it contains host/port and `REDACTED` but not the real secret substrings.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/17-testing-with-environment-variables/10-secret-redaction-logvaluer/cmd/demo
-cd go-solutions/12-testing-ecosystem/17-testing-with-environment-variables/10-secret-redaction-logvaluer
-```
-
 ## `slog.LogValuer` redacts at the source
 
 `slog` defines the interface `LogValuer` with one method, `LogValue() slog.Value`.

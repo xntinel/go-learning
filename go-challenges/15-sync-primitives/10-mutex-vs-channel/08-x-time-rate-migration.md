@@ -34,8 +34,6 @@ xratemigrate/                   independent module: example.com/xratemigrate
 Set up the module (this one has a real dependency):
 
 ```bash
-mkdir -p go-solutions/15-sync-primitives/10-mutex-vs-channel/08-x-time-rate-migration/limiter go-solutions/15-sync-primitives/10-mutex-vs-channel/08-x-time-rate-migration/cmd/demo
-cd go-solutions/15-sync-primitives/10-mutex-vs-channel/08-x-time-rate-migration
 go get golang.org/x/time/rate
 ```
 

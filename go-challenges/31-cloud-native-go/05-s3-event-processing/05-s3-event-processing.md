@@ -112,8 +112,6 @@ The handler under test is a plain function; no Lambda runtime is involved. This 
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/31-cloud-native-go/05-s3-event-processing/05-s3-event-processing/cmd/demo
-cd go-solutions/31-cloud-native-go/05-s3-event-processing/05-s3-event-processing
 go get github.com/aws/aws-lambda-go@v1.47.0
 ```
 

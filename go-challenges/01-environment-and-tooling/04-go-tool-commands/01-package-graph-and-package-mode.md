@@ -26,13 +26,6 @@ package-graph/                 module example.com/package-graph
 - Test: `circle_test.go` covers the math and the sentinel error.
 - Verify: `go build ./...` and `go test -count=1 -race ./...`, then compare `go run ./cmd/demo` with `go run cmd/demo/main.go`.
 
-Create the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/04-go-tool-commands/01-package-graph-and-package-mode/cmd/demo go-solutions/01-environment-and-tooling/04-go-tool-commands/01-package-graph-and-package-mode/internal/circle
-cd go-solutions/01-environment-and-tooling/04-go-tool-commands/01-package-graph-and-package-mode
-```
-
 ### Why the pattern, not the file, is the unit
 
 The `demo` command lives in `cmd/demo` and is spread across two files:

@@ -31,8 +31,6 @@ Verify: `go test -count=1 -race ./...`
 Set up the module. It depends on go-cmp:
 
 ```bash
-mkdir -p go-solutions/12-testing-ecosystem/19-golden-file-testing/05-normalize-nondeterministic-fields/cmd/demo go-solutions/12-testing-ecosystem/19-golden-file-testing/05-normalize-nondeterministic-fields/testdata
-cd go-solutions/12-testing-ecosystem/19-golden-file-testing/05-normalize-nondeterministic-fields
 go get github.com/google/go-cmp/cmp@v0.7.0
 ```
 

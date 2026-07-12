@@ -23,13 +23,6 @@ gdebug/                          independent module: example.com/gdebug
 - Test: assert the dump contains `goroutine `, `service.worker`, and (for blocked workers) `chan receive`; assert `Wait` returns after cancel.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/01-dump-goroutine-stacks-under-load/internal/service go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/01-dump-goroutine-stacks-under-load/cmd/demo
-cd go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/01-dump-goroutine-stacks-under-load
-```
-
 ### Why the dump is the artifact
 
 A goroutine dump is the concurrency equivalent of a core dump: one call freezes the

@@ -27,13 +27,6 @@ errcode/                    independent module: example.com/errcode
 - Test: every declared code maps to a non-empty unique name; an out-of-range value renders `ErrorCode(N)`; a drift guard that fails when a constant is missing from the generated table.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/10-implementing-stringer/09-go-generate-stringer/cmd/demo
-cd go-solutions/07-structs-and-methods/10-implementing-stringer/09-go-generate-stringer
-```
-
 ### What stringer generates and why it is fast
 
 The tool `golang.org/x/tools/cmd/stringer` reads the constants of a type and emits

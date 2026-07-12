@@ -19,12 +19,6 @@ process_test.go       peak <= N under -race; every error aggregated; order prese
 - Test: `process_test.go` asserts the in-flight peak never exceeds N, that the aggregated error matches every individual failure via `errors.Is`, and that per-object outcomes stay in input order.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/16-concurrency-patterns/15-bounded-parallelism/04-bounded-object-processing/cmd/demo && cd go-solutions/16-concurrency-patterns/15-bounded-parallelism/04-bounded-object-processing
-```
-
 ### Aggregate-all instead of fail-fast
 
 The counting and weighted runners earlier returned the first error and dropped the rest, which is correct for a pipeline where any failure poisons the whole batch. A reconciliation job is the opposite: if seventeen of a thousand objects are malformed, the operator wants all seventeen names, not whichever one the scheduler surfaced first. So this runner never short-circuits. It runs every object to completion, records each object's individual outcome — its name, the bytes it processed, and its own error — and after the wait it folds every non-nil error into one value with `errors.Join`. The joined error's `Error()` lists every failure on its own line, and crucially `errors.Is` against it matches every joined member, so a caller can ask "did any object fail with `os.ErrNotExist`?" and get a truthful answer even when a dozen different errors are bundled together. Before `errors.Join` existed this required a hand-rolled multierror type; now it is one standard-library call.

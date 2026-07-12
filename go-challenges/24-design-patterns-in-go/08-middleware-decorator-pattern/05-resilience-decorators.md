@@ -24,12 +24,6 @@ resilience_test.go   backoff schedule, breaker opens after N (race), half-open
 - Test: the backoff produces the expected delay schedule; the breaker opens after N consecutive failures and rejects further calls with `ErrCircuitOpen` without invoking the operation; after the clock advances past the cooldown it admits exactly one probe (half-open) and closes on success or reopens on failure; the breaker is race-free under concurrent callers; and a retry around an open breaker stops instead of storming.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/24-design-patterns-in-go/08-middleware-decorator-pattern/05-resilience-decorators/cmd/demo && cd go-solutions/24-design-patterns-in-go/08-middleware-decorator-pattern/05-resilience-decorators
-```
-
 ### One signature, three decorators
 
 The generic operation is `type Op[T any] func(context.Context) (T, error)` — a cancellable call returning a value of any type. A decorator is any `func(Op[T]) Op[T]`: it takes an operation and returns one of the same shape with behavior added around the call. Because input and output types match, the decorators nest exactly like HTTP middleware, and because `T` is a type parameter, one implementation works for `Op[int]`, `Op[*Response]`, and everything else with no `interface{}`. Each error path must return `var zero T`, the type parameter's zero value, because no literal is valid for all `T`.

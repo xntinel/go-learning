@@ -24,13 +24,6 @@ workerpool/                  independent module: example.com/workerpool
 - Test: all jobs processed, empty input, more workers than jobs, one worker, and a 100-job run asserting 100 unique doubled values.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/02-channel-basics/01-worker-pool-fan-out-fan-in/internal/pool go-solutions/13-goroutines-and-channels/02-channel-basics/01-worker-pool-fan-out-fan-in/cmd/demo
-cd go-solutions/13-goroutines-and-channels/02-channel-basics/01-worker-pool-fan-out-fan-in
-```
-
 ### How the three channels and the WaitGroup fit together
 
 `Run` wires four moving parts. The `jobsCh` channel carries work *into* the

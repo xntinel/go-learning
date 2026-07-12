@@ -65,13 +65,6 @@ Concrete error types can be checked with `errors.As`. Sentinel errors (`errors.N
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/30-production-patterns/06-structured-error-responses/06-structured-error-responses/cmd/demo
-cd go-solutions/30-production-patterns/06-structured-error-responses/06-structured-error-responses
-```
-
 This is a library, not a program: there is no `main` at the root. Verify it with `go test`.
 
 ### Exercise 1: The AppError Interface and Concrete Types

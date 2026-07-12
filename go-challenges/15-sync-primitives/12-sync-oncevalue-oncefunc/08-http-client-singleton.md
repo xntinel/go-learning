@@ -22,13 +22,6 @@ outbound/                  independent module: example.com/outbound
 - Test: constructor counter behind an injectable build func — 50 concurrent `Client()` calls, one construction, pointer identity; an `httptest.Server` counting distinct client source ports proves connections are reused; requests carry `t.Context()`.
 - Verify: `go test -count=1 -race ./...` and `go run ./cmd/demo`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/12-sync-oncevalue-oncefunc/08-http-client-singleton/cmd/demo
-cd go-solutions/15-sync-primitives/12-sync-oncevalue-oncefunc/08-http-client-singleton
-```
-
 ### The incident, mechanically
 
 `http.Client` and its `Transport` maintain a pool of idle keep-alive

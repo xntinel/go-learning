@@ -31,8 +31,6 @@ headers/                   independent module: example.com/headers
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/03-variadic-functions/33-header-dedup-merge-preserve-order/cmd/demo
-cd go-solutions/04-functions/03-variadic-functions/33-header-dedup-merge-preserve-order
 go mod edit -go=1.24
 ```
 

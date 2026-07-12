@@ -25,13 +25,6 @@ memconn/                    independent module: example.com/memconn
 - Test: implicit-satisfaction assignment, round-trip read/write, read-after-close and double-close both `ErrClosed`, three individual `io` static assertions, and a `-race` concurrent Read/Write test.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/05-interface-composition-and-embedding/01-memconn-readwritecloser/cmd/demo
-cd go-solutions/08-interfaces/05-interface-composition-and-embedding/01-memconn-readwritecloser
-```
-
 ### Why a composed interface, and why MemConn does not embed one
 
 `ReadWriteCloser` embeds three single-method interfaces. That is composition at the

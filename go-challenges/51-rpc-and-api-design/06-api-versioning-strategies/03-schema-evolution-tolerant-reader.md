@@ -26,13 +26,6 @@ schemaevolution/               independent module: example.com/schemaevolution
 - Test: a v1 payload decodes into v2 with the alias and defaults; a v2 payload decodes into v1 tolerantly (unknown keys ignored); the same v2 payload is rejected by the strict decoder; the migration maps the renamed field; `omitempty` keeps an unset field out of the golden output; an unknown schema returns a wrapped sentinel.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/51-rpc-and-api-design/06-api-versioning-strategies/03-schema-evolution-tolerant-reader/cmd/demo
-cd go-solutions/51-rpc-and-api-design/06-api-versioning-strategies/03-schema-evolution-tolerant-reader
-```
-
 ### Additive change is free; renames need an alias
 
 `OrderV2` differs from `OrderV1` in three ways, each illustrating a rule from the

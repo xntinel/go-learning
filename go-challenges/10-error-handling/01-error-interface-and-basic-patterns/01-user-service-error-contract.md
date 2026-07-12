@@ -26,13 +26,6 @@ userservice/                 independent module: example.com/userservice
 - Test: assert `errors.Is` reaches each sentinel through `*ServiceError.Unwrap`, the success path returns a nil error and the populated value, `Error()` includes the `Op`, and the error path returns `User{}`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/01-error-interface-and-basic-patterns/01-user-service-error-contract/cmd/demo
-cd go-solutions/10-error-handling/01-error-interface-and-basic-patterns/01-user-service-error-contract
-```
-
 ### Why a wrapping ServiceError instead of a bare sentinel
 
 Returning a bare sentinel (`return User{}, ErrNotFound`) tells the caller *what*

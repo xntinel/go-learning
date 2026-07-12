@@ -19,12 +19,6 @@ metrics_test.go      counter/gauge/histogram contracts, cardinality limit, HTTP 
 - Test: atomic increment under 1000 goroutines, histogram `le` boundary placement, cardinality-limit sentinel error, and the `/metrics` HTTP endpoint.
 - Verify: `go test -race -count=1 ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/42-capstone-service-mesh-data-plane/08-observability/01-metrics-pipeline/cmd/demo && cd go-solutions/42-capstone-service-mesh-data-plane/08-observability/01-metrics-pipeline
-```
-
 ### Why atomics, and why a float stored as Uint64
 
 The observation path runs on every proxied request, so its cost is multiplied by the proxy's entire throughput. A `sync.Mutex` around a counter would serialize every increment: with a thousand goroutines contending, the metric becomes the bottleneck and the proxy's throughput collapses to one goroutine's worth. The lock-free alternative stores the value as the IEEE 754 bit pattern of a `float64` inside an `atomic.Uint64`. Reads (`Load`) and the natively-atomic `Add` on integers never block; the only place a loop appears is the float addition, because the hardware has no atomic float add. There the code does a compare-and-swap loop: read the current bits, compute `Float64bits(Float64frombits(old) + v)`, and try to swap them in; if another goroutine changed the value in between, the swap fails and the loop re-reads and retries. Under normal load the swap succeeds on the first attempt, so the loop is effectively a single instruction; contention only adds iterations, and it never parks the goroutine. A gauge is the same machinery with subtraction allowed (`Add(-1)`), because the CAS loop re-reads the live value each iteration.

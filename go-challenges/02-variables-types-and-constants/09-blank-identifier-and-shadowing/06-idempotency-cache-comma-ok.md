@@ -26,13 +26,6 @@ idempotency/                    module: example.com/idempotency
 - Test: a stored zero-valued `Response` reports present (`ok==true`) while a missing key reports absent; `Once` replays an empty response without recomputing; `Drain` exits only on channel close; a `-race` concurrency test.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/09-blank-identifier-and-shadowing/06-idempotency-cache-comma-ok/cmd/demo
-cd go-solutions/02-variables-types-and-constants/09-blank-identifier-and-shadowing/06-idempotency-cache-comma-ok
-```
-
 ### Why the ok is the whole signal
 
 An idempotency guard answers one question: "have I already processed this request

@@ -29,8 +29,6 @@ rules/                     independent module: example.com/rules
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/10-error-handling/11-structured-error-types/04-validation-rule-registry/cmd/demo
-cd go-solutions/10-error-handling/11-structured-error-types/04-validation-rule-registry
 go mod edit -go=1.26
 ```
 

@@ -31,8 +31,6 @@ dnschain/                   independent module: example.com/dnschain
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/03-variadic-functions/22-dns-resolver-fallback-chain/cmd/demo
-cd go-solutions/04-functions/03-variadic-functions/22-dns-resolver-fallback-chain
 go mod edit -go=1.24
 ```
 

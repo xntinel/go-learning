@@ -25,13 +25,6 @@ tlsclient/                      independent module: example.com/tls-server-clien
 - Test: `srv.Client().Get(srv.URL)` succeeds; `http.DefaultClient` fails with a certificate-verification error (assert it, do not skip verification); a pinned client built from `srv.Certificate()` succeeds; an `EnableHTTP2` server negotiates HTTP/2.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/09-httptest/06-tls-server-client/cmd/demo
-cd go-solutions/12-testing-ecosystem/09-httptest/06-tls-server-client
-```
-
 ### Self-signed by design: trust is the thing under test
 
 `httptest.NewTLSServer` starts an HTTPS server whose certificate is freshly

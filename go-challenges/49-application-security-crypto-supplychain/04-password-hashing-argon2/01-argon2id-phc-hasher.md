@@ -31,8 +31,6 @@ Set up the module. `golang.org/x/crypto/argon2` requires a recent toolchain, so
 pin the language version:
 
 ```bash
-mkdir -p go-solutions/49-application-security-crypto-supplychain/04-password-hashing-argon2/01-argon2id-phc-hasher/cmd/demo
-cd go-solutions/49-application-security-crypto-supplychain/04-password-hashing-argon2/01-argon2id-phc-hasher
 go mod edit -go=1.26
 go get golang.org/x/crypto/argon2
 ```

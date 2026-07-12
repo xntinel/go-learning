@@ -29,8 +29,6 @@ Verify: `go test -count=1 -race ./...`
 Set up the module and add the dependency:
 
 ```bash
-mkdir -p go-solutions/01-environment-and-tooling/05-go-install-and-third-party-packages/05-indirect-dependency-marker/cmd/demo
-cd go-solutions/01-environment-and-tooling/05-go-install-and-third-party-packages/05-indirect-dependency-marker
 go get rsc.io/quote/v3@latest
 go mod tidy
 ```

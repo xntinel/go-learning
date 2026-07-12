@@ -24,13 +24,6 @@ Implement: `ValidateDisplayName(name string) error` over rune-count limits, wrap
 Test: 50-rune CJK passes the 50-char limit (byte check would fail); empty/whitespace rejected; control char rejected; invalid UTF-8 rejected; combining-mark over-count documented.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/04-string-iteration-bytes-vs-runes/08-rune-count-limit-validator/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/04-string-iteration-bytes-vs-runes/08-rune-count-limit-validator
-```
-
 ### The validation pipeline, and where runes stop being enough
 
 The checks run in an order that fails cheap and safe first. Validity comes first:

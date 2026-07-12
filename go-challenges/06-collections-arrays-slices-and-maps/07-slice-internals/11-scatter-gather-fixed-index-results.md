@@ -76,8 +76,6 @@ should mean for a particular gateway.
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/11-scatter-gather-fixed-index-results
-cd go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/11-scatter-gather-fixed-index-results
 go mod edit -go=1.24
 ```
 

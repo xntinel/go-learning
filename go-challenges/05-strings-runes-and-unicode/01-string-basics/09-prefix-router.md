@@ -26,13 +26,6 @@ Test: a full path, a missing prefix (`ok=false`, no panic), a trailing slash, th
 root path, and a resource-only path with no rest.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/01-string-basics/09-prefix-router/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/01-string-basics/09-prefix-router
-```
-
 ## Why CutPrefix and Cut instead of index math
 
 The manual version is a panic waiting to happen:

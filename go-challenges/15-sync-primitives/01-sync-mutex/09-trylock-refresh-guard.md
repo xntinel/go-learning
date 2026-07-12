@@ -31,11 +31,6 @@ refreshguard/                independent module: example.com/refreshguard
 - Test: 200 concurrent `Get` calls past the deadline run the loader exactly once (atomic counter) and every caller returns stale or fresh, never a zero value; a blocking loader proves losers return immediately; a failing loader keeps serving stale and releases admission for a retry.
 - Verify: `go test -count=1 -race ./...`
 
-```bash
-mkdir -p go-solutions/15-sync-primitives/01-sync-mutex/09-trylock-refresh-guard/cmd/demo
-cd go-solutions/15-sync-primitives/01-sync-mutex/09-trylock-refresh-guard
-```
-
 ### Why this is the rare legitimate TryLock
 
 Contrast with exercise 6, the idempotency store: there, duplicate callers

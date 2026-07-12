@@ -19,12 +19,6 @@ bounded_test.go          stops after max, external Stop ends it early, count is 
 - Test: `bounded_test.go` asserts the handler fires exactly `max` times with a `1..max` sequence, that an external `Stop` ends it before the cap, and that `Count` is exact.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/16-concurrency-patterns/08-time-ticker-periodic-goroutines/02-bounded-periodic/cmd/demo && cd go-solutions/16-concurrency-patterns/08-time-ticker-periodic-goroutines/02-bounded-periodic
-```
-
 ### Two exits from one loop
 
 The bounded runner has two ways to end, and the design has to make both clean. The first is reaching the cap: the receive loop increments an `atomic.Int64` counter on each tick, passes the new count to the handler, and if the count has reached `max` it stops its own ticker and returns. The second is an external `Stop` arriving before the cap, which closes the owned `done` channel and the `done` arm of the `select` returns. Either way the goroutine runs its deferred `wg.Done`, so `Done` and `Stop` both observe completion through the same wait group regardless of which exit fired.

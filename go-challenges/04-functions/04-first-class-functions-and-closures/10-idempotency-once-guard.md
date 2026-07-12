@@ -26,13 +26,6 @@ onceguard/                 independent module: example.com/onceguard
 - Test: many goroutines calling `Get` under `-race` see the builder run once and all receive the same pointer; a builder that errors returns the error to all callers and is not retried.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/04-first-class-functions-and-closures/10-idempotency-once-guard/cmd/demo
-cd go-solutions/04-functions/04-first-class-functions-and-closures/10-idempotency-once-guard
-```
-
 ### sync.Once versus the memoize map
 
 `sync.Once` guarantees the function passed to `Do` runs exactly once, no matter

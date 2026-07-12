@@ -30,8 +30,6 @@ money/                      independent module: example.com/money
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/07-structs-and-methods/05-struct-comparison-and-equality/08-money-equal-method-gocmp/cmd/demo
-cd go-solutions/07-structs-and-methods/05-struct-comparison-and-equality/08-money-equal-method-gocmp
 go get github.com/google/go-cmp/cmp
 ```
 

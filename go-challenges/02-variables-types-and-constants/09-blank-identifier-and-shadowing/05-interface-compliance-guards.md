@@ -26,13 +26,6 @@ handlers/                       module: example.com/handlers
 - Test: httptest exercises of each handler, plus a flush-capability check proving the flush path runs only when the writer supports it and never panics when it does not.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/09-blank-identifier-and-shadowing/05-interface-compliance-guards/cmd/demo
-cd go-solutions/02-variables-types-and-constants/09-blank-identifier-and-shadowing/05-interface-compliance-guards
-```
-
 ### Why the nil-pointer guard, and where comma-ok takes over
 
 `var _ http.Handler = (*JSONHandler)(nil)` asks the compiler to prove that

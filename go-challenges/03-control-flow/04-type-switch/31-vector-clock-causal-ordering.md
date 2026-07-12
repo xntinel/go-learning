@@ -46,8 +46,6 @@ vector-clock-causal-ordering/   independent module: example.com/vector-clock-cau
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/04-type-switch/31-vector-clock-causal-ordering/cmd/demo
-cd go-solutions/03-control-flow/04-type-switch/31-vector-clock-causal-ordering
 go mod edit -go=1.24
 ```
 

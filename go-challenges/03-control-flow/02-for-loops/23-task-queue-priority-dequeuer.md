@@ -33,8 +33,6 @@ taskqueue/                     module example.com/taskqueue
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/02-for-loops/23-task-queue-priority-dequeuer/cmd/demo
-cd go-solutions/03-control-flow/02-for-loops/23-task-queue-priority-dequeuer
 go mod edit -go=1.24
 ```
 

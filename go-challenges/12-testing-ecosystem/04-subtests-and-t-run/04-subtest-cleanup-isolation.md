@@ -28,13 +28,6 @@ fileapi/                    independent module: example.com/fileapi
   each subtest gets a distinct temp dir; assert `DATA_DIR` is restored afterward.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/04-subtests-and-t-run/04-subtest-cleanup-isolation/cmd/demo
-cd go-solutions/12-testing-ecosystem/04-subtests-and-t-run/04-subtest-cleanup-isolation
-```
-
 ### Why these fixtures, and why not parallel
 
 `t.TempDir()` returns a fresh directory unique to the calling test or subtest,

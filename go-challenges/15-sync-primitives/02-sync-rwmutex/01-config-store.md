@@ -28,13 +28,6 @@ Implement: a `*Config` wrapping `map[string]string` with `Get`, `Set`, `Len`, an
 Test: 64 readers racing one writer under `-race` with `Len` staying stable; a snapshot that a later `Set` does not mutate; an `Example` with pinned output.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/02-sync-rwmutex/01-config-store/cmd/demo
-cd go-solutions/15-sync-primitives/02-sync-rwmutex/01-config-store
-```
-
 ### Why RWMutex is the right guard here
 
 The access pattern is lopsided: `Get` and `Len` fire on the hot path (every

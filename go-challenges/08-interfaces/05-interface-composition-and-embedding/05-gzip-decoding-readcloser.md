@@ -25,13 +25,6 @@ gzipbody/                   independent module: example.com/gzipbody
 - Test: round-trip known bytes; a single `Close` closes the source spy exactly once; `Close` surfaces the source's error via `errors.Join`; a corrupt header makes `New` return an error.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/05-interface-composition-and-embedding/05-gzip-decoding-readcloser/cmd/demo
-cd go-solutions/08-interfaces/05-interface-composition-and-embedding/05-gzip-decoding-readcloser
-```
-
 ### Why gzip.Reader.Close is not enough
 
 `gzip.NewReader(src)` reads the gzip header from `src` and returns a `*gzip.Reader`

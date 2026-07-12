@@ -27,13 +27,6 @@ wireheader/                independent module: example.com/wireheader
 - Test: assert `binary.Size(Header{}) != unsafe.Sizeof(Header{})`, that encode-then-decode reproduces the header, and pin the exact big-endian bytes with a golden test.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/09-struct-memory-layout-and-padding/08-wire-header-padding-trap/cmd/demo
-cd go-solutions/07-structs-and-methods/09-struct-memory-layout-and-padding/08-wire-header-padding-trap
-```
-
 ### The padding gap between memory and the wire
 
 The header has five fields: `Magic uint32`, `Version uint8`, `Flags uint8`,

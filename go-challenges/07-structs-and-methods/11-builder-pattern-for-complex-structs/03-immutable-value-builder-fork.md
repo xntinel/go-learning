@@ -27,13 +27,6 @@ specfork/                   independent module: example.com/specfork
 - Test: fork a base into two specs, build both, mutate one result's headers, and prove the other result and the base are unaffected; prove a header added to one fork is invisible to a sibling fork.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/11-builder-pattern-for-complex-structs/03-immutable-value-builder-fork/cmd/demo
-cd go-solutions/07-structs-and-methods/11-builder-pattern-for-complex-structs/03-immutable-value-builder-fork
-```
-
 ### Why a value receiver, and where the deep copy goes
 
 A pointer-receiver builder mutates one shared instance: `base.Path("/x")` and

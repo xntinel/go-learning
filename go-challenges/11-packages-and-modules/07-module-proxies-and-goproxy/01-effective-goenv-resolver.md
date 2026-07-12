@@ -26,8 +26,6 @@ goenv/                     independent module: example.com/goenv
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/11-packages-and-modules/07-module-proxies-and-goproxy/01-effective-goenv-resolver/cmd/demo
-cd go-solutions/11-packages-and-modules/07-module-proxies-and-goproxy/01-effective-goenv-resolver
 go mod edit -go=1.26
 ```
 

@@ -19,12 +19,6 @@ shutdown_test.go     each source wins, race close-once, zero sources never fire,
 - Test: each source can win and is named correctly, many sources firing at once close the done channel exactly once, zero sources never fire, and `cause` reports the empty string until a source fires.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/16-concurrency-patterns/09-or-channel-pattern/02-combine-cancellation-sources/cmd/demo && cd go-solutions/16-concurrency-patterns/09-or-channel-pattern/02-combine-cancellation-sources
-```
-
 ### Why a cause-tracking combiner, not a bare or-channel
 
 A bare or-channel tells a handler that it should stop, but not why. In a server that distinction is the difference between a `503 Service Unavailable` (shutting down), a `504 Gateway Timeout` (deadline elapsed), and a `502 Bad Gateway` (upstream failed). So this combiner is an or-channel with one addition: it remembers the name of the first source that fired and exposes it through a `cause` accessor.

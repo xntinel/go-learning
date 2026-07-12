@@ -40,8 +40,6 @@ discovery/                  independent module: example.com/dns-service-discover
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/05-range-over-collections/34-dns-service-discovery-ttl-cache/cmd/demo
-cd go-solutions/03-control-flow/05-range-over-collections/34-dns-service-discovery-ttl-cache
 go mod edit -go=1.24
 ```
 

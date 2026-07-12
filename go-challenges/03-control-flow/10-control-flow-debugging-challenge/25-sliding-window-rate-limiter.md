@@ -32,11 +32,6 @@ ratelimit/                  independent module: example.com/sliding-window-rate-
 - Test: a same-window limit check, a boundary-straddling burst that must not double-admit, and a decay case once enough of the previous window has aged out.
 - Verify: `go test -count=1 ./...`.
 
-```bash
-mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/25-sliding-window-rate-limiter/cmd/demo
-cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/25-sliding-window-rate-limiter
-```
-
 ### Why a clean window reset admits double the limit
 
 The tempting implementation is a fixed window: count requests, and

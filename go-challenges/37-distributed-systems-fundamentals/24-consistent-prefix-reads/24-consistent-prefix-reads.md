@@ -45,13 +45,6 @@ Consistent prefix is weaker than full causal consistency across sessions. Consis
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/37-distributed-systems-fundamentals/24-consistent-prefix-reads/24-consistent-prefix-reads/cmd/demo
-cd go-solutions/37-distributed-systems-fundamentals/24-consistent-prefix-reads/24-consistent-prefix-reads
-```
-
 This is a library with a demo and tests. There is no ad-hoc main — verification is `go test`.
 
 ### Exercise 1: Version Vector and the Replica

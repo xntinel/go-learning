@@ -30,13 +30,6 @@ Test: `SafeAddInt64(MaxInt64, 1)` overflows; `ParseBoundedInt64` rejects a value
 above `MaxInt64`; `math` constants usable in both `int` and `int64` contexts.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/08-untyped-constants-and-constant-expressions/05-overflow-guardrails-math-consts/cmd/demo
-cd go-solutions/02-variables-types-and-constants/08-untyped-constants-and-constant-expressions/05-overflow-guardrails-math-consts
-```
-
 ### Why math constants are untyped
 
 `math.MaxInt64`, `math.MinInt64`, `math.MaxInt`, and `math.MaxUint64` are untyped

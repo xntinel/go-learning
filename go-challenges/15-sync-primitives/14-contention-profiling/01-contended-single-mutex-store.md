@@ -26,13 +26,6 @@ single-store/                 independent module: example.com/single-store
 - Test: an `ExampleSingle` asserting the increment/get arithmetic; a `-race` test where many goroutines increment one key and the final count equals `goroutines*ops`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/14-contention-profiling/01-contended-single-mutex-store/cmd/demo
-cd go-solutions/15-sync-primitives/14-contention-profiling/01-contended-single-mutex-store
-```
-
 ### Why one lock across a real critical section
 
 The store is a single `sync.Mutex` guarding a `map[string]int`. Both `Increment`

@@ -26,13 +26,6 @@ Implement: a `Store` with `Get() []string` returning `slices.Clone` of the activ
 Test: a returned snapshot mutated by the caller does not affect a later `Get`; `Get` on an empty store returns a zero-length slice; concurrent readers against a reloader are race-free with no torn state.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/08-config-snapshot-clone/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/08-config-snapshot-clone
-```
-
 ### Why the read path must clone
 
 The store holds `flags []string`, the currently active feature flags. The unsafe

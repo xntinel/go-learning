@@ -33,8 +33,6 @@ admit/                       independent module: example.com/admit
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/13-goroutines-and-channels/10-signaling-with-closed-channels/10-admission-drain-gate-load-shedding/cmd/demo
-cd go-solutions/13-goroutines-and-channels/10-signaling-with-closed-channels/10-admission-drain-gate-load-shedding
 go get go.uber.org/goleak
 go mod tidy
 ```

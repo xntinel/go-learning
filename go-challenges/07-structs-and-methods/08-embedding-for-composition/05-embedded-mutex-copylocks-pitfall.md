@@ -25,13 +25,6 @@ counter/                   independent module: example.com/counter
 - Test: many goroutines increment concurrently under `-race`; the final value is exact; and `go vet` (run by the gate) reports no copylocks issue.
 - Verify: `go test -count=1 -race ./...` and `go vet ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/08-embedding-for-composition/05-embedded-mutex-copylocks-pitfall/cmd/demo
-cd go-solutions/07-structs-and-methods/08-embedding-for-composition/05-embedded-mutex-copylocks-pitfall
-```
-
 ### Why a value-embedded mutex makes the struct non-copyable
 
 A `sync.Mutex` is a small struct holding lock state. The rule from its

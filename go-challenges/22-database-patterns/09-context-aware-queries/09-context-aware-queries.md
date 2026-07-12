@@ -21,8 +21,6 @@ The demo runs through exported API, but `go test` is the gate. Table-driven test
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/22-database-patterns/09-context-aware-queries/09-context-aware-queries
-cd go-solutions/22-database-patterns/09-context-aware-queries/09-context-aware-queries
 go mod edit -go=1.26
 ```
 

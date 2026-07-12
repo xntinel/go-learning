@@ -26,13 +26,6 @@ supervisor/                independent module: example.com/supervisor
 - Test: a worker that panics k times then succeeds is restarted and eventually reports success; an always-panicking worker stops after the budget with a wrapped error identifying the panic; a context cancel stops the supervisor between restarts without leaking the worker; `backoffFor` grows then caps.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/11-goroutine-lifecycle-management/06-supervisor-restart-backoff/cmd/demo
-cd go-solutions/13-goroutines-and-channels/11-goroutine-lifecycle-management/06-supervisor-restart-backoff
-```
-
 ### Recovering a panic without losing the goroutine
 
 A panic unwinds only its own goroutine, and if it reaches the top unrecovered it

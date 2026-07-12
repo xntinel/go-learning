@@ -24,13 +24,6 @@ drain/                      independent module: example.com/drain
 - Test: `Drain` stays parked until the LAST of three `End` calls; `Begin` after drain-start fails with `errors.Is(err, ErrDraining)`; a `ctx` deadline returns `context.DeadlineExceeded` without corrupting the count; `-race` churn.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/06-sync-cond/05-drain-barrier/cmd/demo
-cd go-solutions/15-sync-primitives/06-sync-cond/05-drain-barrier
-```
-
 ### One mutex, two roles: admission gate and zero-crossing barrier
 
 The tracker's state is two fields under one mutex: an `inflight` count and a

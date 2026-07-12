@@ -28,13 +28,6 @@ Implement: a `Profile` struct, a `ProfilePatch` with `*string`/`*bool`/`*int` fi
 Test: body `{}` changes nothing; body `{"display_name":""}` clears the name; body `{"display_name":"Alice"}` sets it; a nil pointer means "no change", a non-nil-empty pointer means "set to zero"; `Apply` mutates the destination in place.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/05-pointers-to-structs/02-patch-optional-pointer-fields/cmd/demo
-cd go-solutions/09-pointers/05-pointers-to-structs/02-patch-optional-pointer-fields
-```
-
 ### The three-state problem, and why a pointer solves it
 
 Consider updating a stored `Profile{DisplayName, Bio string; Public bool; Age int}`.

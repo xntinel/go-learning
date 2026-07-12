@@ -30,8 +30,6 @@ statsd/                     independent module: example.com/statsd
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/02-byte-slices-vs-strings/08-append-encoder-hot-path/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/02-byte-slices-vs-strings/08-append-encoder-hot-path
 go mod edit -go=1.25
 ```
 

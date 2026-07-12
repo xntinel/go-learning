@@ -28,13 +28,6 @@ Implement: a `Router` storing a `func() string` handler; `LiveService` with a po
 Test: registering `FrozenService.Greeting` freezes the receiver (a later mutation is invisible); registering `*LiveService.Greeting` captures the pointer (a later mutation is visible).
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/03-methods-value-vs-pointer-receivers/07-method-value-capture-bug/cmd/demo
-cd go-solutions/07-structs-and-methods/03-methods-value-vs-pointer-receivers/07-method-value-capture-bug
-```
-
 ### What a method value captures
 
 A *method value* is what you get when you write `svc.Greeting` without calling it:

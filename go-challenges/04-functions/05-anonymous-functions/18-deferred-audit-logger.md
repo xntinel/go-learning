@@ -28,8 +28,6 @@ audit/                        module example.com/audit
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/05-anonymous-functions/18-deferred-audit-logger/cmd/demo
-cd go-solutions/04-functions/05-anonymous-functions/18-deferred-audit-logger
 go mod edit -go=1.24
 ```
 

@@ -38,8 +38,6 @@ Verify: `go run github.com/99designs/gqlgen generate` then `go test -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/51-rpc-and-api-design/04-gqlgen-graphql-server/01-schema-first-resolvers/graph
-cd go-solutions/51-rpc-and-api-design/04-gqlgen-graphql-server/01-schema-first-resolvers
 go mod edit -go=1.26
 go get github.com/99designs/gqlgen@latest
 ```

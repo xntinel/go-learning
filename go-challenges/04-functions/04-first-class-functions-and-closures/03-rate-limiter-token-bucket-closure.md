@@ -26,13 +26,6 @@ ratelimiter/               independent module: example.com/ratelimiter
 - Test: first `burst` calls return true then false; advancing the fake clock refills up to `burst`; many goroutines under `-race` grant no more than capacity when the clock is frozen.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/04-first-class-functions-and-closures/03-rate-limiter-token-bucket-closure/cmd/demo
-cd go-solutions/04-functions/04-first-class-functions-and-closures/03-rate-limiter-token-bucket-closure
-```
-
 ### Why the clock is a parameter
 
 The token bucket holds `tokens` (a float, so partial refills accumulate) and

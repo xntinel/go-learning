@@ -28,13 +28,6 @@ Test: `Mask` wraps a power-of-two ring buffer; the limits are ordered;
 `len(levelNames) == levelCount`; `go build ./...` succeeds; `go vet` is clean.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/08-untyped-constants-and-constant-expressions/09-compile-time-invariants/cmd/demo
-cd go-solutions/02-variables-types-and-constants/08-untyped-constants-and-constant-expressions/09-compile-time-invariants
-```
-
 ### The const _ = uint(expr) assertion idiom
 
 Converting a *negative* untyped constant to `uint` is a compile error. That single

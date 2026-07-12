@@ -31,8 +31,6 @@ capabilities/              independent module: example.com/capabilities
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/08-interfaces/13-designing-a-plugin-system/02-optional-capability-interfaces/cmd/demo
-cd go-solutions/08-interfaces/13-designing-a-plugin-system/02-optional-capability-interfaces
 go mod edit -go=1.25
 ```
 

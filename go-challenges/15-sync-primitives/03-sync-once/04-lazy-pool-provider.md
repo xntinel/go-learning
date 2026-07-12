@@ -25,13 +25,6 @@ lazy-pool-provider/           module: example.com/lazy-pool-provider
 - Test: two concurrent `GetPool` calls return the same pointer; a build counter asserts exactly one construction under 100-goroutine load; config set before first use is honored and a later `Configure` is ignored (singleton semantics).
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/03-sync-once/04-lazy-pool-provider/cmd/demo
-cd go-solutions/15-sync-primitives/03-sync-once/04-lazy-pool-provider
-```
-
 ### Why the shared read after Do is legal
 
 `GetPool` reads a package-level `pool` variable that a different goroutine's `Do`

@@ -32,8 +32,6 @@ metricsagg/                      independent module: example.com/metricsagg
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/12-functional-options-pattern/24-metrics-event-aggregator/cmd/demo
-cd go-solutions/04-functions/12-functional-options-pattern/24-metrics-event-aggregator
 go mod edit -go=1.24
 ```
 

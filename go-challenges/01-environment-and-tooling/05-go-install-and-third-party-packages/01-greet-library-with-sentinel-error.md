@@ -26,13 +26,6 @@ Implement: `Greet(name string) (string, error)` that trims whitespace and return
 Test: table cases (plain, trims, empty, whitespace) asserting the sentinel via `errors.Is`, plus `ExampleGreet`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/05-go-install-and-third-party-packages/01-greet-library-with-sentinel-error/internal/hello go-solutions/01-environment-and-tooling/05-go-install-and-third-party-packages/01-greet-library-with-sentinel-error/cmd/demo
-cd go-solutions/01-environment-and-tooling/05-go-install-and-third-party-packages/01-greet-library-with-sentinel-error
-```
-
 ### Why a sentinel error, not a string
 
 The empty-name case is a *predictable* outcome that a caller may want to handle

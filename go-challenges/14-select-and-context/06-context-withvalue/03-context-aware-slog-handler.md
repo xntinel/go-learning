@@ -28,13 +28,6 @@ Implement: a `ContextHandler` that in `Handle(ctx, record)` reads `Meta` from `c
 Test: `trace_id`/`user_id` appear when the context carries `Meta` and are absent when it does not; a `WithAttrs` attribute survives the wrapping; the handler mutates a copy per `Handle`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/06-context-withvalue/03-context-aware-slog-handler/cmd/demo
-cd go-solutions/14-select-and-context/06-context-withvalue/03-context-aware-slog-handler
-```
-
 ### Why wrap the handler, clone the record, and re-wrap on WithAttrs
 
 A `slog.Handler` is the extension point of `log/slog`. By embedding a delegate

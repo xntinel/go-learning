@@ -26,13 +26,6 @@ Implement: `Parse(buf, fields)` returning each field as `buf[off:end:end]`; a bu
 Test: hand field A via three-index, append to it, assert field B in the buffer is untouched and `cap(handed) == len(handed)`; a negative test shows the two-index version corrupts B.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/06-copy-and-full-slice-expression/03-three-index-buffer-handoff/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/06-copy-and-full-slice-expression/03-three-index-buffer-handoff
-```
-
 ### Why three-index, exactly
 
 Reading a record once into a single buffer and slicing out each field is the right

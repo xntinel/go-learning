@@ -27,13 +27,6 @@ Implement: `DoWithRetry(ctx, client, req, policy)` retrying idempotent GETs on 5
 Test: server fails N times then succeeds — generous budget yields eventual `200`; tight budget returns before exhausting retries, `errors.Is(err, context.DeadlineExceeded)`, elapsed within budget.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/09-context-in-http-servers-clients/07-deadline-budget-retry-client/cmd/demo
-cd go-solutions/14-select-and-context/09-context-in-http-servers-clients/07-deadline-budget-retry-client
-```
-
 ## The design
 
 The core discipline is that the deadline lives on `ctx` and is never touched. Each

@@ -29,8 +29,6 @@ cachechain/                independent module: example.com/multi-layer-cache-fal
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/04-first-class-functions-and-closures/20-multi-layer-cache-fallback-chain/cmd/demo
-cd go-solutions/04-functions/04-first-class-functions-and-closures/20-multi-layer-cache-fallback-chain
 go mod edit -go=1.24
 ```
 

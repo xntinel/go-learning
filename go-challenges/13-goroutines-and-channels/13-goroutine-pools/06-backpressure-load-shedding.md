@@ -28,13 +28,6 @@ shedpool/                  independent module: example.com/shedpool
 - Test: a saturated queue rejects further `TrySubmit` immediately, accepts again once workers drain it, rejects with `ErrClosed` after `Close`, and `Pending` never exceeds `Capacity`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/13-goroutine-pools/06-backpressure-load-shedding/cmd/demo
-cd go-solutions/13-goroutines-and-channels/13-goroutine-pools/06-backpressure-load-shedding
-```
-
 ### Non-blocking send is the load-shedding primitive
 
 The whole mechanism is a `select` with a `default` case:

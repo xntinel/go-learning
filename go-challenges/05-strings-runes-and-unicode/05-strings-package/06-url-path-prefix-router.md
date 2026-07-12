@@ -26,13 +26,6 @@ Test: exact prefix, longest of two overlapping prefixes, the `/api/v1` vs
 `/api/v10` boundary, trailing slash, no match, empty path.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/05-strings-package/06-url-path-prefix-router/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/05-strings-package/06-url-path-prefix-router
-```
-
 ### The boundary bug that HasPrefix alone creates
 
 `strings.HasPrefix("/api/v10/x", "/api/v1")` is `true` — `/api/v1` really is a

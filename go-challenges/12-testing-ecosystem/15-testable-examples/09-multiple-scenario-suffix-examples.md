@@ -23,13 +23,6 @@ Implement: `Parse` wrapping `time.ParseDuration`, returning `ErrEmpty` (wrapped)
 Test: a table-driven `Test` asserting values and error identities, plus `ExampleParse`, `ExampleParse_valid`, `ExampleParse_invalid`, `ExampleParse_empty`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/15-testable-examples/09-multiple-scenario-suffix-examples/cmd/demo
-cd go-solutions/12-testing-ecosystem/15-testable-examples/09-multiple-scenario-suffix-examples
-```
-
 ## One symbol, several scenarios
 
 `ExampleParse` (no further suffix) documents the function `Parse` and renders as

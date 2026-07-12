@@ -26,8 +26,6 @@ audit/                      independent module: example.com/audit-event-pointer-
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/07-defer-semantics-and-ordering/14-audit-event-pointer-capture
-cd go-solutions/03-control-flow/07-defer-semantics-and-ordering/14-audit-event-pointer-capture
 go mod edit -go=1.24
 ```
 

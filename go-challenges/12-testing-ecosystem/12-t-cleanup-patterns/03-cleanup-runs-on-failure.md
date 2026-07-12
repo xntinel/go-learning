@@ -29,8 +29,6 @@ txfixture/                   independent module: example.com/txfixture
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/12-testing-ecosystem/12-t-cleanup-patterns/03-cleanup-runs-on-failure/cmd/demo
-cd go-solutions/12-testing-ecosystem/12-t-cleanup-patterns/03-cleanup-runs-on-failure
 go mod edit -go=1.24
 ```
 

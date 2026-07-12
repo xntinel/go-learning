@@ -27,13 +27,6 @@ Implement: `Counter` with `New() *Counter`, `Inc()`, `Add(n int64) error`, `Get(
 Test: `New` starts at zero, `Inc` and `Add` accumulate, `Add(0)`/`Add(-1)` return `ErrInvalidStep` via `errors.Is`, `Reset` zeroes, and a value copy is independent of the original.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/03-methods-value-vs-pointer-receivers/01-mutable-metrics-counter/cmd/demo
-cd go-solutions/07-structs-and-methods/03-methods-value-vs-pointer-receivers/01-mutable-metrics-counter
-```
-
 ### Why every method is a pointer receiver
 
 The counter exists to be mutated: middleware calls `Inc()` on each request and

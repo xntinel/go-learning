@@ -31,13 +31,6 @@ cap n; `TransformPrealloc` does exactly one backing-array allocation while the
 nil-start version does more; benchmarks for both.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/08-preallocate-capacity-hot-path/transform go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/08-preallocate-capacity-hot-path/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/08-preallocate-capacity-hot-path
-```
-
 ### Correct is not the same as cheap
 
 `TransformNil` is the version most code ships first: declare `var out []DTO` and

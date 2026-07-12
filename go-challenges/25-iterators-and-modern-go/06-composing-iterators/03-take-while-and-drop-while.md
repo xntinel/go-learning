@@ -19,12 +19,6 @@ whileseq_test.go     TakeWhile/DropWhile output, exact-pull short-circuit, early
 - Test: `TakeWhile` stops at the first failing value; over an effectively infinite source it pulls exactly one past the last yielded value and no further; `DropWhile` skips only the *leading* run.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/25-iterators-and-modern-go/06-composing-iterators/03-take-while-and-drop-while/cmd/demo && cd go-solutions/25-iterators-and-modern-go/06-composing-iterators/03-take-while-and-drop-while
-```
-
 ### Short-circuiting on a condition
 
 `TakeWhile` reads like one sentence of Go: for each upstream value, if the predicate fails, return; otherwise yield it, and if the consumer stops, return. The first `return` is the short-circuit — the moment a value fails the predicate, the combinator is done and stops pulling from upstream. That is the whole feature, and it is what makes `TakeWhile` safe to point at an infinite generator: it will consume the leading run plus exactly one more value (the one that fails the test, which it must pull to discover the run is over) and then leave upstream alone forever.

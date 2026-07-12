@@ -31,8 +31,6 @@ sbom/                       independent module: example.com/sbom
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/49-application-security-crypto-supplychain/10-supply-chain-slsa-sbom/02-cyclonedx-sbom-from-modules/cmd/demo
-cd go-solutions/49-application-security-crypto-supplychain/10-supply-chain-slsa-sbom/02-cyclonedx-sbom-from-modules
 go mod edit -go=1.26
 go get github.com/CycloneDX/cyclonedx-go
 ```

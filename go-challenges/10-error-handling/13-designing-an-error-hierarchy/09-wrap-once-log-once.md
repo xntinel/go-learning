@@ -24,13 +24,6 @@ wrap-once-log-once/                module example.com/wrap-once-log-once
 - Test: the top-level error still `errors.Is` the leaf after two `%w` wraps; the `%v` chain no longer matches; a captured `slog` handler emits exactly one record for one failed request.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/13-designing-an-error-hierarchy/09-wrap-once-log-once/cmd/demo
-cd go-solutions/10-error-handling/13-designing-an-error-hierarchy/09-wrap-once-log-once
-```
-
 ### Two rules: wrap on the way up, log at the top
 
 `%w` and `%v` look interchangeable and are not. `fmt.Errorf("service.Load: %w",

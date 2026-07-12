@@ -30,8 +30,6 @@ panicmw/                     independent module: example.com/panicmw
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/10-error-handling/14-error-observability/06-panic-recovery-observability/cmd/demo
-cd go-solutions/10-error-handling/14-error-observability/06-panic-recovery-observability
 go mod edit -go=1.25
 ```
 

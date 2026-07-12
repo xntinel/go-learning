@@ -29,13 +29,6 @@ Test: a table test for the known edge cases; `FuzzParseIPv4` asserting agreement
 with `net/netip` on both value and reject decision.
 Verify: `go test -race ./...`, then `go test -fuzz=FuzzParseIPv4 -fuzztime=2s`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/06-fuzz-testing/03-differential-ipv4-parser/cmd/demo
-cd go-solutions/12-testing-ecosystem/06-fuzz-testing/03-differential-ipv4-parser
-```
-
 ### Why differential fuzzing, and what "agree" means precisely
 
 The property is not "the parser is correct in the abstract" — it is "the parser

@@ -27,13 +27,6 @@ txrepo/                    independent module: example.com/txrepo
 - Test: default-build tests of the insert logic and of `t.Cleanup` LIFO order; two ordered integration tests that each see a clean slate because the prior test rolled back.
 - Verify: the default build tests the SQL logic with a fake; the integration build proves rollback isolation with `BeginTx` + `t.Cleanup`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/18-integration-tests-with-build-tags/05-transaction-per-test-isolation/cmd/demo
-cd go-solutions/12-testing-ecosystem/18-integration-tests-with-build-tags/05-transaction-per-test-isolation
-```
-
 ### The three isolation strategies, and why rollback is the default
 
 Every integration suite must decide how a test undoes its writes. There are three

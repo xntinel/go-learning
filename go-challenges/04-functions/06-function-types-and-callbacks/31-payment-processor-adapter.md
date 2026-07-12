@@ -30,8 +30,6 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/06-function-types-and-callbacks/31-payment-processor-adapter/cmd/demo
-cd go-solutions/04-functions/06-function-types-and-callbacks/31-payment-processor-adapter
 go mod edit -go=1.24
 ```
 

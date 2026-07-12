@@ -23,7 +23,6 @@ operators_test.go      transform table, skip/retry/abort paths, metrics, ctx shu
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/43-capstone-stream-processing-engine/02-operators-map-filter-flatmap/01-operator-core-and-map/cmd/demo && cd go-solutions/43-capstone-stream-processing-engine/02-operators-map-filter-flatmap/01-operator-core-and-map
 go mod edit -go=1.26
 ```
 

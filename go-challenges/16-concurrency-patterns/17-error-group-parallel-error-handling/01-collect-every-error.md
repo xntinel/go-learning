@@ -19,12 +19,6 @@ collector_test.go    nil is ignored, label wrapping, errors.Is reaches every cau
 - Test: `collector_test.go` proves `Add(nil)` is ignored, the label is wrapped with `%w`, the joined error matches every collected cause, concurrent `Add` is race-free, and `RunAll` collects all failures.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/16-concurrency-patterns/17-error-group-parallel-error-handling/01-collect-every-error/cmd/demo && cd go-solutions/16-concurrency-patterns/17-error-group-parallel-error-handling/01-collect-every-error
-```
-
 ### Why `errgroup.Wait` is the wrong tool here, and what replaces it
 
 `errgroup.Group.Wait` returns the first non-nil error any task produced, and when the group was built with `errgroup.WithContext` that first error also cancels the shared context, so the remaining tasks are torn down. That is exactly right when any failure invalidates the whole operation: a multi-step deploy, a migration, a fan-out where one bad shard means the answer is wrong anyway. It is exactly wrong when the caller's job is to produce a complete report. A form validator that stops at the first bad field forces the user through one round-trip per error; a startup health check that returns the first dead dependency hides the other four that are also down.

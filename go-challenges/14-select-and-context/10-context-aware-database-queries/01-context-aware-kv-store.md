@@ -55,8 +55,6 @@ would have to match on.
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/14-select-and-context/10-context-aware-database-queries/01-context-aware-kv-store/cmd/demo
-cd go-solutions/14-select-and-context/10-context-aware-database-queries/01-context-aware-kv-store
 go mod edit -go=1.25
 ```
 

@@ -32,8 +32,6 @@ Set up the module. The mock file is normally produced by `mockgen`; it is includ
 here so the module is self-contained:
 
 ```bash
-mkdir -p go-solutions/08-interfaces/11-mock-interfaces-for-testing/06-gomock-generated-payment-gateway/cmd/demo
-cd go-solutions/08-interfaces/11-mock-interfaces-for-testing/06-gomock-generated-payment-gateway
 go get go.uber.org/mock/gomock@v0.6.0
 # regenerate mock_payment.go from the interface:
 go run go.uber.org/mock/mockgen@v0.6.0 -source=payment.go -destination=mock_payment.go -package=payment

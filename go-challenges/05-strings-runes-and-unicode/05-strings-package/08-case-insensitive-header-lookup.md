@@ -27,13 +27,6 @@ Test: `GET`/`get`/`Get` allowed, `DELETE` rejected, ASCII fold; plus pins that
 `EqualFold` folds the Kelvin sign and does not treat `ß` as `ss`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/05-strings-package/08-case-insensitive-header-lookup/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/05-strings-package/08-case-insensitive-header-lookup
-```
-
 ### EqualFold for protocol tokens, and why not for identity
 
 `strings.EqualFold(a, b)` walks both strings rune by rune and compares under

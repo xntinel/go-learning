@@ -19,12 +19,6 @@ pool_test.go         exactly-once under -race, order preservation, zero-workers,
 - Test: run thousands of jobs through a small pool under `-race`, assert each job is processed exactly once and results are aligned with input order; reject a non-positive worker count; return an empty result for empty input.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/25-iterators-and-modern-go/01-range-over-integers/04-worker-pool-dispatcher/cmd/demo && cd go-solutions/25-iterators-and-modern-go/01-range-over-integers/04-worker-pool-dispatcher
-```
-
 ### Why the pool is bounded, and how the parts fit together
 
 A "bounded" pool is the whole point. Spawning one goroutine per job is easy but unbounded: ten million jobs become ten million goroutines, and the program competes with itself for CPU, memory, and any downstream resource (sockets, file handles, a database connection limit). A worker pool fixes the concurrency at a chosen width: `Dispatch` launches exactly `workers` goroutines regardless of how many jobs arrive. This is precisely the place `for range workers` reads as its own intent — the loop's only job is to start that many workers, and the iteration number is never used, so the index is dropped.

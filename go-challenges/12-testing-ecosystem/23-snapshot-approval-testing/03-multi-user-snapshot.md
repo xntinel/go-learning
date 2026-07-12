@@ -26,13 +26,6 @@ Implement: `Format(User) (string, error)` and `FormatAll([]User) (string, error)
 Test: pin the concatenated output of two users as a snapshot; a second test proves reordering the inputs changes the output.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/03-multi-user-snapshot/cmd/demo
-cd go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/03-multi-user-snapshot
-```
-
 ### Composition and ordering are part of the contract
 
 A single-record snapshot pins one object's shape. A collection snapshot pins

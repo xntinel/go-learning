@@ -29,13 +29,6 @@ Implement: `WithTenant`/`TenantFromContext`, `ErrNoTenant`, a `Resolve` middlewa
 Test: a context with tenant `acme` returns only acme rows; a context missing the tenant returns `ErrNoTenant` (via `errors.Is`) and no rows; the middleware maps a header to the tenant.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/06-context-withvalue/06-tenant-scoped-repository/cmd/demo
-cd go-solutions/14-select-and-context/06-context-withvalue/06-tenant-scoped-repository
-```
-
 ### Why tenant-in-context is defensible — but still a guard
 
 Apply the boundary rule honestly. The tenant *does* affect correctness — a query run

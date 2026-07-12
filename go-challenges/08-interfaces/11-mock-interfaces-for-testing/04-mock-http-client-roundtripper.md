@@ -26,13 +26,6 @@ apiclient/                   independent module: example.com/apiclient
 - Test: a `roundTripperFunc` adapter returning canned responses (200/404/500/malformed) table-driven; a spy `RoundTripper` capturing the request to assert path, method, and headers; an `httptest.NewServer` integration variant.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/11-mock-interfaces-for-testing/04-mock-http-client-roundtripper/cmd/demo
-cd go-solutions/08-interfaces/11-mock-interfaces-for-testing/04-mock-http-client-roundtripper
-```
-
 ### The seam: http.RoundTripper
 
 `http.Client` delegates every request to its `Transport`, an `http.RoundTripper`

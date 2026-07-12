@@ -27,13 +27,6 @@ retryclass/                 independent module: example.com/retryclass
 - Test: classify each error class; driver succeeds after N-1 retryable failures (assert attempt count), returns immediately on a terminal error, and stops when the context is canceled.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/01-if-else-and-init-statements/05-retry-classifier/cmd/demo
-cd go-solutions/03-control-flow/01-if-else-and-init-statements/05-retry-classifier
-```
-
 ## Classify by type and sentinel, never by string or Temporary()
 
 `classify` returns one of three decisions: `Retry`, `Terminal`, or (for a `nil`

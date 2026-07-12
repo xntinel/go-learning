@@ -29,13 +29,6 @@ tbassert/                    independent module: example.com/tbassert
 - Test: pass a fake recorder implementing `TB` and assert each helper fires (or does not) correctly; then use the real helpers inside a `BenchmarkXxx` to prove `*testing.B` satisfies the same interface.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/03-test-helpers/02-testing-tb-assert-package/assert go-solutions/12-testing-ecosystem/03-test-helpers/02-testing-tb-assert-package/cmd/demo
-cd go-solutions/12-testing-ecosystem/03-test-helpers/02-testing-tb-assert-package
-```
-
 ### Why a minimal `TB` interface, not `testing.TB`
 
 You cannot write a fake that implements `testing.TB`: the interface has an

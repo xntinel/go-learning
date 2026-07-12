@@ -23,13 +23,6 @@ cleanupstack/              independent module: example.com/cleanupstack
 - Test: a mix of real closers, a nil interface, and a typed-nil `*fakeCloser` — `Close` runs LIFO, skips the nils, closes every real one exactly once, and returns the joined errors matchable via `errors.Is`; a concurrent-push subtest under `-race`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/07-nil-interface-values/06-closer-cleanup-nil-skip/cmd/demo
-cd go-solutions/08-interfaces/07-nil-interface-values/06-closer-cleanup-nil-skip
-```
-
 ### Why the nil guard and errors.Join matter here
 
 Startup wires resources in dependency order and pushes each onto the stack. Some

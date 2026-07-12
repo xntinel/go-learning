@@ -24,13 +24,6 @@ recovermw/                  independent module: example.com/recovermw
 - Test: a handler that panics with a string yields 500, the log contains the value, and the next request still serves; a handler that panics with `http.ErrAbortHandler` makes the middleware re-panic (asserted via `recover` in the test) and does not write 500; a normal handler passes through with its own status.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/07-panic-recover-http-middleware/recovermw go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/07-panic-recover-http-middleware/cmd/demo
-cd go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/07-panic-recover-http-middleware
-```
-
 ### The recover boundary on a real request path
 
 The middleware wraps the next handler in a `defer func() { if r := recover(); r != nil { ... } }()`.

@@ -27,13 +27,6 @@ shedding/                  independent module: example.com/shedding
 - Test: with no consumer running, fill the inbox and assert exactly `cap` calls are admitted and the rest return `ErrBusy`; assert `Pending`/`Capacity` match; start the worker, assert the admitted calls drain and succeed; a normal `TryCall` with space succeeds.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/09-channel-of-channels/06-bounded-inbox-backpressure/cmd/demo
-cd go-solutions/13-goroutines-and-channels/09-channel-of-channels/06-bounded-inbox-backpressure
-```
-
 ### Admission control with a non-blocking send
 
 The inbox is a buffered channel, `make(chan request, capacity)`. Admission is a

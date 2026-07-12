@@ -24,13 +24,6 @@ aggregate-validation/              module example.com/aggregate-validation
 - Test: an input with multiple bad fields yields `errors.Is` `ErrUserInvalid` and exactly the expected field names; a valid input returns nil (guarding the all-nil `errors.Join` case).
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/13-designing-an-error-hierarchy/05-aggregate-validation-errors/cmd/demo
-cd go-solutions/10-error-handling/13-designing-an-error-hierarchy/05-aggregate-validation-errors
-```
-
 ### Why errors.Join is the right tool here
 
 The other exercises return a single error per call. Validation is different: one

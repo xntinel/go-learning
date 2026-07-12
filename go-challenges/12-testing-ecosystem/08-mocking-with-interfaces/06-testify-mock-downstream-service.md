@@ -29,8 +29,6 @@ reservation/                 independent module: example.com/reservation
 Set up the module and pull testify:
 
 ```bash
-mkdir -p go-solutions/12-testing-ecosystem/08-mocking-with-interfaces/06-testify-mock-downstream-service/cmd/demo
-cd go-solutions/12-testing-ecosystem/08-mocking-with-interfaces/06-testify-mock-downstream-service
 go get github.com/stretchr/testify@latest
 ```
 

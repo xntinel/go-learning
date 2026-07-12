@@ -30,13 +30,6 @@ yields 400; malformed JSON yields 400; an unknown key yields 400; the anonymous
 types never appear on the package's exported surface.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/04-anonymous-structs-and-embedding/09-anonymous-struct-webhook-handler/cmd/demo
-cd go-solutions/07-structs-and-methods/04-anonymous-structs-and-embedding/09-anonymous-struct-webhook-handler
-```
-
 ### Why anonymous structs are exactly right here
 
 The payload shape — an event name and a nested data object with an order id and

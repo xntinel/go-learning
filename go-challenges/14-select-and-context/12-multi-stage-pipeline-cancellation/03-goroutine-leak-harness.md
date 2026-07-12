@@ -32,13 +32,6 @@ Test: `TestNoGoroutineLeakAfterCancel` and the `TestFanOutStopsOnCancel` canary
 (100-element source, cancel after 5 reads, drain, assert baseline).
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/12-multi-stage-pipeline-cancellation/03-goroutine-leak-harness/cmd/demo
-cd go-solutions/14-select-and-context/12-multi-stage-pipeline-cancellation/03-goroutine-leak-harness
-```
-
 ### Why poll-until-settle beats a fixed sleep
 
 `runtime.NumGoroutine()` counts goroutines that exist *right now*. After you cancel

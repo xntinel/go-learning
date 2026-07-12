@@ -32,8 +32,6 @@ leaselock/                   independent module: example.com/leaselock
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/13-goroutines-and-channels/08-goroutine-leak-detection/11-lease-renewal-keepalive-leak/cmd/demo
-cd go-solutions/13-goroutines-and-channels/08-goroutine-leak-detection/11-lease-renewal-keepalive-leak
 go get go.uber.org/goleak
 ```
 

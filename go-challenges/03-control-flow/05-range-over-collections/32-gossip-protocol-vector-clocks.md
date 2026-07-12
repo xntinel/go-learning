@@ -42,8 +42,6 @@ gossip/                     independent module: example.com/gossip-protocol-vect
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/05-range-over-collections/32-gossip-protocol-vector-clocks/cmd/demo
-cd go-solutions/03-control-flow/05-range-over-collections/32-gossip-protocol-vector-clocks
 go mod edit -go=1.24
 ```
 

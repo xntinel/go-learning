@@ -29,13 +29,6 @@ cachesweeper/                    independent module: example.com/cachesweeper
 - Test: manual sweep shrinks `Size`; cancel/close then receive on done with a timeout to prove the goroutine exited; concurrent `Cleanup` calls under `-race`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/13-building-a-thread-safe-cache/02-background-sweeper-lifecycle/cache go-solutions/15-sync-primitives/13-building-a-thread-safe-cache/02-background-sweeper-lifecycle/cmd/demo
-cd go-solutions/15-sync-primitives/13-building-a-thread-safe-cache/02-background-sweeper-lifecycle
-```
-
 ### The core cache (self-contained copy)
 
 This module is independent, so it carries its own copy of the sharded core

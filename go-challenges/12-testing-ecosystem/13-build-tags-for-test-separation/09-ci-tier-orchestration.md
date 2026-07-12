@@ -33,8 +33,6 @@ citiers/                   independent module: example.com/citiers
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/12-testing-ecosystem/13-build-tags-for-test-separation/09-ci-tier-orchestration/cmd/demo
-cd go-solutions/12-testing-ecosystem/13-build-tags-for-test-separation/09-ci-tier-orchestration
 go mod edit -go=1.26
 ```
 

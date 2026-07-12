@@ -69,13 +69,6 @@ The GC tracks pointers only when they are stored in pointer-typed variables. The
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/28-unsafe-and-cgo/07-unsafe-slice-and-string/07-unsafe-slice-and-string/cmd/demo
-cd go-solutions/28-unsafe-and-cgo/07-unsafe-slice-and-string/07-unsafe-slice-and-string
-```
-
 This is a library package, not a program. You verify it with `go test`.
 
 ### Exercise 1: The Conversion Primitives

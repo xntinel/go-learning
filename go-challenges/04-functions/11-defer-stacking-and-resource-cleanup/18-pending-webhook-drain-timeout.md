@@ -28,8 +28,6 @@ webhookqueue/                 independent module: example.com/webhookqueue
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/18-pending-webhook-drain-timeout/webhookqueue go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/18-pending-webhook-drain-timeout/cmd/demo
-cd go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/18-pending-webhook-drain-timeout
 go mod edit -go=1.24
 ```
 

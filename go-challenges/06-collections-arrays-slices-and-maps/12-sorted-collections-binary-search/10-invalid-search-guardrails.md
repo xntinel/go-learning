@@ -27,13 +27,6 @@ Implement: `SortedFloats` with `New([]float64) (*SortedFloats, error)` validatin
 Test: `New` rejects unsorted input and NaN; a raw `slices.BinarySearch` on an unsorted slice reports a present element as not-found; a comparator inconsistent with the sort order misses a present element.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/12-sorted-collections-binary-search/10-invalid-search-guardrails/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/12-sorted-collections-binary-search/10-invalid-search-guardrails
-```
-
 ### Validate at the boundary, because the search never will
 
 The whole point of this module is that `slices.BinarySearch` and

@@ -29,13 +29,6 @@ Implement: `MutexConfig` with `Get`/`Update` under `RWMutex`; `COWConfig` with l
 Test: readers always see a fully-consistent snapshot (never half-updated); a loaded snapshot is unaffected by a later `Update`; a benchmark comparing read throughput.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/02-sync-rwmutex/05-copy-on-write-snapshot-vs-rwmutex/cmd/demo
-cd go-solutions/15-sync-primitives/02-sync-rwmutex/05-copy-on-write-snapshot-vs-rwmutex
-```
-
 ### Why copy-on-write beats the read lock for read-mostly snapshots
 
 An `RWMutex` lets readers proceed concurrently, but they still pay the reader-count

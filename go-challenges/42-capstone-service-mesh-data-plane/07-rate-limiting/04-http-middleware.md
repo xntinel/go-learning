@@ -25,8 +25,6 @@ middleware_test.go    200 on allow, 429 on deny, header presence, synctest
 Set up the module. The bundled token bucket pulls in `golang.org/x/time/rate`:
 
 ```bash
-mkdir -p go-solutions/42-capstone-service-mesh-data-plane/07-rate-limiting/04-http-middleware/cmd/demo
-cd go-solutions/42-capstone-service-mesh-data-plane/07-rate-limiting/04-http-middleware
 go mod edit -go=1.26
 go get golang.org/x/time@latest
 ```

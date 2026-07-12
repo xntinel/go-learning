@@ -23,7 +23,6 @@ handler_test.go        discard, accept (accumulating + retracting), beyond-laten
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/43-capstone-stream-processing-engine/04-watermarks-late-data/02-late-data-handler/cmd/demo && cd go-solutions/43-capstone-stream-processing-engine/04-watermarks-late-data/02-late-data-handler
 go mod edit -go=1.26
 ```
 

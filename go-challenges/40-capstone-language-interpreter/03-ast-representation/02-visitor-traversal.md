@@ -21,12 +21,6 @@ visitor_test.go      pre-order count, subtree pruning, Collect, visit order
 - Test: `visitor_test.go` counts every node in pre-order, proves a `false` return prunes a subtree, collects identifiers by type, and asserts the exact pre-order visit sequence.
 - Verify: `go test -run 'TestInspect|TestCollect|TestWalk|ExampleCollect' -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/40-capstone-language-interpreter/03-ast-representation/02-visitor-traversal/cmd/demo && cd go-solutions/40-capstone-language-interpreter/03-ast-representation/02-visitor-traversal
-```
-
 ### Why a single-method visitor, pre-order, with a nil return
 
 The classic object-oriented visitor relies on method overloading — one `visit` per concrete node type — and virtual dispatch. Go has neither, so it uses a different and simpler shape, the one `go/ast` adopted: a `Visitor` is any type with one method, `Visit(node Node) Visitor`. The free function `Walk(v, node)` calls `v.Visit(node)` *before* descending, then type-switches on the node's concrete type to recurse into each child in source order. The return value of `Visit` is the control knob. Returning `nil` prunes the subtree — `Walk` does not descend into the node's children. Returning a non-nil visitor (almost always the receiver itself) continues the traversal with that visitor, which is how a traversal can hand a child subtree a different, stateful visitor without resorting to closures. This pre-order, prune-on-nil contract is exactly `go/ast.Walk`'s.

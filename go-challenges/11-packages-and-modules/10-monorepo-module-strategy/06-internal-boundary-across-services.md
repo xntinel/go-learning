@@ -27,13 +27,6 @@ mono/                         module: example.com/mono/api
 - Test: exercise `Service` through its public API (which reaches the internal store) and the store directly; a documented negative build proves an outside importer is rejected.
 - Verify: `go build ./...` and `go test -race -count=1 ./...` succeed; the worker's cross-boundary import (shown below) fails to compile.
 
-Set up the `api` module:
-
-```bash
-mkdir -p go-solutions/11-packages-and-modules/10-monorepo-module-strategy/06-internal-boundary-across-services/internal/store go-solutions/11-packages-and-modules/10-monorepo-module-strategy/06-internal-boundary-across-services/cmd/demo
-cd go-solutions/11-packages-and-modules/10-monorepo-module-strategy/06-internal-boundary-across-services
-```
-
 ### The rule, precisely
 
 A package whose import path contains an `internal/` element is importable only by

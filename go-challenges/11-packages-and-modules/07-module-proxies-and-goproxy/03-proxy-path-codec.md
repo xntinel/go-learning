@@ -26,8 +26,6 @@ proxycodec/                independent module: example.com/proxycodec
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/11-packages-and-modules/07-module-proxies-and-goproxy/03-proxy-path-codec/cmd/demo
-cd go-solutions/11-packages-and-modules/07-module-proxies-and-goproxy/03-proxy-path-codec
 go mod edit -go=1.26
 ```
 

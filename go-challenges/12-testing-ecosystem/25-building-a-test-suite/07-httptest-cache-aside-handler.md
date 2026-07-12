@@ -24,13 +24,6 @@ Implement: `NewServer(c, loader)` returning an `http.Handler`; `GET /items/{key}
 Test: `httptest.NewRecorder` + `httptest.NewRequest`; a counting loader proving miss-then-hit; status assertions for 404 and 410.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/25-building-a-test-suite/07-httptest-cache-aside-handler/cmd/demo
-cd go-solutions/12-testing-ecosystem/25-building-a-test-suite/07-httptest-cache-aside-handler
-```
-
 ### The cache-aside contract and its four status codes
 
 The handler routes `GET /items/{key}` and maps the cache's two sentinels plus the

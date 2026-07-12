@@ -30,8 +30,6 @@ tripwire/                  independent module: example.com/tripwire
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/48-modern-go-language-and-stdlib/13-flight-recorder-runtime-trace/02-event-triggered-capture/cmd/demo
-cd go-solutions/48-modern-go-language-and-stdlib/13-flight-recorder-runtime-trace/02-event-triggered-capture
 go mod edit -go=1.25
 ```
 

@@ -35,8 +35,6 @@ batchloader/                 independent module: example.com/batchloader
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/51-rpc-and-api-design/05-graphql-dataloaders-n-plus-1/01-batch-loader-from-scratch/cmd/demo
-cd go-solutions/51-rpc-and-api-design/05-graphql-dataloaders-n-plus-1/01-batch-loader-from-scratch
 go mod edit -go=1.26
 ```
 

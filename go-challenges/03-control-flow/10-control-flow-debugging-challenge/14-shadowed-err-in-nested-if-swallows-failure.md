@@ -25,11 +25,6 @@ inventory/                  module example.com/inventory
 - Test: force `Store.SaveErr`, call `UpdateInventory`, and assert the returned error wraps it via `errors.Is`; a second test asserts the quantity is actually updated on success.
 - Verify: `go test -count=1 ./...`.
 
-```bash
-mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/14-shadowed-err-in-nested-if-swallows-failure
-cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/14-shadowed-err-in-nested-if-swallows-failure
-```
-
 ### The artifact and the planted bug
 
 ```go

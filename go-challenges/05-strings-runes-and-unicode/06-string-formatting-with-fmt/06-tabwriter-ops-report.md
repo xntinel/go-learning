@@ -27,8 +27,6 @@ statustable/               independent module: example.com/statustable
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/06-string-formatting-with-fmt/06-tabwriter-ops-report/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/06-string-formatting-with-fmt/06-tabwriter-ops-report
 go mod edit -go=1.24
 ```
 

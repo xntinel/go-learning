@@ -25,13 +25,6 @@ versioned/                     module example.com/versioned
 - Test: `formatVersion` renders the expected line for known inputs.
 - Verify: a `-ldflags -X` build reports the injected version; `go version -m` reads the module metadata back out; a `-trimpath` build embeds no absolute source path.
 
-Create the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/04-go-tool-commands/09-version-injection-and-reproducible-builds/cmd/demo go-solutions/01-environment-and-tooling/04-go-tool-commands/09-version-injection-and-reproducible-builds/internal/circle
-cd go-solutions/01-environment-and-tooling/04-go-tool-commands/09-version-injection-and-reproducible-builds
-```
-
 ### Link-time configuration
 
 Three levers configure a release binary at link time, without a code change.

@@ -27,13 +27,6 @@ chainmw/                   independent module: example.com/chainmw
 - Test: a chain of tracing middlewares records exact onion order `A-before, B-before, handler, B-after, A-after`; `Chain()` with no args is the identity; a failing auth layer stops the chain so downstream markers never appear.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/04-first-class-functions-and-closures/02-middleware-chain-compose/cmd/demo
-cd go-solutions/04-functions/04-first-class-functions-and-closures/02-middleware-chain-compose
-```
-
 ### Folding functions into one function
 
 `Chain` returns a `Middleware`, so its result plugs in anywhere a single

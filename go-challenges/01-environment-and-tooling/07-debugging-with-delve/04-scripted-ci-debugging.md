@@ -31,8 +31,6 @@ metricsdbg/                independent module: example.com/metricsdbg
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/01-environment-and-tooling/07-debugging-with-delve/04-scripted-ci-debugging/metrics go-solutions/01-environment-and-tooling/07-debugging-with-delve/04-scripted-ci-debugging/cmd/demo
-cd go-solutions/01-environment-and-tooling/07-debugging-with-delve/04-scripted-ci-debugging
 go mod edit -go=1.24
 ```
 

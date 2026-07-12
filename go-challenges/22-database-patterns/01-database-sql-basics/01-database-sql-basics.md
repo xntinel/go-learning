@@ -35,8 +35,6 @@ Sentinel errors defined with `errors.New` are stable identifiers. Wrapping them 
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/22-database-patterns/01-database-sql-basics/01-database-sql-basics/cmd/demo
-cd go-solutions/22-database-patterns/01-database-sql-basics/01-database-sql-basics
 go mod edit -go=1.26
 ```
 

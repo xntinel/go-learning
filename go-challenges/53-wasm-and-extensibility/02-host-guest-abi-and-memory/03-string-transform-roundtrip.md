@@ -28,13 +28,6 @@ transform/                 independent module: example.com/transform
 - Test: end-to-end over ASCII inputs including the empty string; a reuse test proving the module survives repeated calls; an out-of-bounds `ReadPacked`; and a large-input test that forces the guest allocator to grow memory mid-call.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/53-wasm-and-extensibility/02-host-guest-abi-and-memory/03-string-transform-roundtrip/cmd/demo
-cd go-solutions/53-wasm-and-extensibility/02-host-guest-abi-and-memory/03-string-transform-roundtrip
-```
-
 ### What the guest does, and the contract it exposes
 
 The embedded `guestWASM` is a small hand-built module that exports four things.

@@ -51,8 +51,6 @@ anycache/                module example.com/anycache
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/16-typed-nil-any-kv-store
-cd go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/16-typed-nil-any-kv-store
 go mod edit -go=1.24
 ```
 

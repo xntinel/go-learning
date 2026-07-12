@@ -28,13 +28,6 @@ Test: a table test for truncated-length and short-payload frames;
 Verify: `go test -race ./...`, then `go test -fuzz=FuzzFrameRoundTrip
 -fuzztime=2s`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/06-fuzz-testing/02-roundtrip-uvarint-codec/cmd/demo
-cd go-solutions/12-testing-ecosystem/06-fuzz-testing/02-roundtrip-uvarint-codec
-```
-
 ### The framing format and the round-trip property
 
 A frame is a `binary.Uvarint`-encoded length followed by exactly that many bytes

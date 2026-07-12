@@ -31,8 +31,6 @@ hostport/                  independent module: example.com/hostport-config-parse
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/01-function-declaration-and-multiple-return-values/11-hostport-config-parser/cmd/demo
-cd go-solutions/04-functions/01-function-declaration-and-multiple-return-values/11-hostport-config-parser
 go mod edit -go=1.24
 ```
 

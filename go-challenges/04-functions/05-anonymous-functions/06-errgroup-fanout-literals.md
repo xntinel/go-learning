@@ -27,8 +27,6 @@ aggregator/                   module example.com/aggregator
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/05-anonymous-functions/06-errgroup-fanout-literals/cmd/demo
-cd go-solutions/04-functions/05-anonymous-functions/06-errgroup-fanout-literals
 go get golang.org/x/sync/errgroup
 ```
 

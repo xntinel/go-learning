@@ -28,13 +28,6 @@ errwrap/                       independent module: example.com/errwrap
 - Test: `errors.Is` finds `ErrEmptyInput`/`ErrInvalid` through the chain; `errors.As` extracts `*ParseError`; the message includes stage context; `ReadAll` wraps an `io` error; `errors.Unwrap` walks `run pipeline -> stage one -> ErrEmptyInput`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/02-fmt-errorf-and-error-wrapping/01-errwrap-pipeline/pipeline go-solutions/10-error-handling/02-fmt-errorf-and-error-wrapping/01-errwrap-pipeline/cmd/demo
-cd go-solutions/10-error-handling/02-fmt-errorf-and-error-wrapping/01-errwrap-pipeline
-```
-
 ### How the chain is constructed
 
 Each stage returns either `nil` or an error that carries its own context. `StageOne`

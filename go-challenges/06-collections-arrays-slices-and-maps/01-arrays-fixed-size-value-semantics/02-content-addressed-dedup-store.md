@@ -28,13 +28,6 @@ blobstore/                   independent module: example.com/blobstore
 - Test: putting the same blob twice dedups; two blobs give two keys; round-trip through the map; a zero key misses; keys are stable across calls.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/02-content-addressed-dedup-store/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/02-content-addressed-dedup-store
-```
-
 ### Why the [32]byte key needs no hex string
 
 `sha256.Sum256(blob)` returns a `[32]byte` *value*, not a slice. A fixed-size

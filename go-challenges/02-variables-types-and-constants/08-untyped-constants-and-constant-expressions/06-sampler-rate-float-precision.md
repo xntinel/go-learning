@@ -29,13 +29,6 @@ Test: the documented `1/10 == 0` vs `1.0/10 == 0.1` pitfall; `Decide` over N
 deterministic inputs lands within tolerance of the rate; the rate fits `float32`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/08-untyped-constants-and-constant-expressions/06-sampler-rate-float-precision/cmd/demo
-cd go-solutions/02-variables-types-and-constants/08-untyped-constants-and-constant-expressions/06-sampler-rate-float-precision
-```
-
 ### The kind of the operands decides the division
 
 `const defaultRate = 1.0 / 10` is `0.1`: the `1.0` is a floating-kind constant, so

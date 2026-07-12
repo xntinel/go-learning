@@ -28,8 +28,6 @@ apifields/                  independent module: example.com/apifields
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/04-type-switch/12-api-response-field-normalizer
-cd go-solutions/03-control-flow/04-type-switch/12-api-response-field-normalizer
 go mod edit -go=1.24
 ```
 

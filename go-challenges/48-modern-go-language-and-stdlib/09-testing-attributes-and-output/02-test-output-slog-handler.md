@@ -31,8 +31,6 @@ testlog/                    independent module: example.com/testlog
 Set up the module. `testing.T.Output` requires Go 1.25+, so pin the language version:
 
 ```bash
-mkdir -p go-solutions/48-modern-go-language-and-stdlib/09-testing-attributes-and-output/02-test-output-slog-handler/cmd/demo
-cd go-solutions/48-modern-go-language-and-stdlib/09-testing-attributes-and-output/02-test-output-slog-handler
 go mod edit -go=1.25
 ```
 

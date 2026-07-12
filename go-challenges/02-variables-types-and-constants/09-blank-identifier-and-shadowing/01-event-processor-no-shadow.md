@@ -25,13 +25,6 @@ eventprocessor/                 module: example.com/eventprocessor
 - Test: happy-path batch, save-error propagation via a `failingStore` (`errors.Is`), bad-payload rejection leaving the store empty, and an already-canceled context surfacing `ctx.Err()` from `Save`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/09-blank-identifier-and-shadowing/01-event-processor-no-shadow/cmd/demo
-cd go-solutions/02-variables-types-and-constants/09-blank-identifier-and-shadowing/01-event-processor-no-shadow
-```
-
 ### Why `=` on the save error is the whole point
 
 `Process` produces its `err` twice: once from `Decode`, once from `Store.Save`.

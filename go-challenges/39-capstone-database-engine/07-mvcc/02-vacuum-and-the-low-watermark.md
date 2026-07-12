@@ -21,12 +21,6 @@ vacuum_test.go   reclaim-below-watermark, pinned-by-long-txn, concurrent vacuum 
 - Test: `vacuum_test.go` proves a dead version below the watermark reclaims while a version pinned by a live snapshot is retained, that a long-running transaction blocks all reclamation until it commits, and that concurrent vacuumers, writers, and readers never tear a chain under `-race`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/07-mvcc/02-vacuum-and-the-low-watermark/cmd/demo && cd go-solutions/39-capstone-database-engine/07-mvcc/02-vacuum-and-the-low-watermark
-```
-
 ### Why a version is reclaimable only below the watermark
 
 A version is dead when no current or future transaction can ever see it. The current half is easy — no active transaction's snapshot includes the deletion. The future half is the subtle one: every transaction that begins from now on captures `startedAt >= lowWatermark`, where the low watermark is the minimum `startedAt` over all active transactions (`OldestActiveSnapshot`). If a superseded version's `Xmax` committed at a sequence at or below that watermark, then every present and future transaction will evaluate `commitLog[Xmax] <= startedAt` as true and skip the version. Only then is it safe to unlink.

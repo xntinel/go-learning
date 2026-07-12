@@ -24,13 +24,6 @@ releasematrix/                 module example.com/releasematrix
 - Test: assert naming, that `Env()` sets `CGO_ENABLED=0` and `GOAMD64` only for amd64, that `Sum` is deterministic, and that `SumsFile` is sorted.
 - Verify: `go test -race ./...`; `go run build.go` produces `dist/` artifacts with a verifiable `SHA256SUMS`; rebuilding yields identical checksums.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/08-cross-compilation-and-build-tags/10-reproducible-release-matrix/cmd/demo
-cd go-solutions/01-environment-and-tooling/08-cross-compilation-and-build-tags/10-reproducible-release-matrix
-```
-
 ### Separating the logic from the orchestrator
 
 A release script has two parts, and it pays to keep them apart. The *policy* — the

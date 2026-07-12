@@ -26,13 +26,6 @@ Implement: `State uint8` with `StateUnknown = iota`, `Permission uint16` with `1
 Test: zero value is `StateUnknown`, `ParseState` with whitespace/case, `Terminal`, bitmask membership, `ClampPageSize`, and `ParseState("paused")` returning an error.
 Verify: `go test -count=1 ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/04-constants-and-iota/01-workflow-states-and-permissions/cmd/demo
-cd go-solutions/02-variables-types-and-constants/04-constants-and-iota/01-workflow-states-and-permissions
-```
-
 ## Why two kinds of constant in one package
 
 The package holds two constant families that look identical at the byte level —

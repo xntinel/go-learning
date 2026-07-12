@@ -22,12 +22,6 @@ middleware_test.go   chain ordering, identity chain, request-ID propagation,
 - Test: a three-layer chain runs `A-in, B-in, C-in, handler, C-out, B-out, A-out`; the request ID reaches the context and the response header; logging reports `METHOD PATH STATUS`; a panicking handler becomes a 500; recovery placed outside logging still produces the 500 and suppresses the log line.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/24-design-patterns-in-go/08-middleware-decorator-pattern/02-http-middleware-chain/cmd/demo && cd go-solutions/24-design-patterns-in-go/08-middleware-decorator-pattern/02-http-middleware-chain
-```
-
 ### Why `func(http.Handler) http.Handler` is the whole pattern
 
 A `http.Handler` is anything with `ServeHTTP(http.ResponseWriter, *http.Request)`. A middleware is a function that takes one handler and returns another: `type Middleware func(http.Handler) http.Handler`. The returned handler closes over the original (`next`), does something before calling `next.ServeHTTP`, and something after. Because the returned value is itself a `http.Handler`, a middleware can wrap a handler that is itself the output of another middleware, and the whole stack is still one `http.Handler` you can hand to any router. That is the decorator pattern with the interface fixed to `http.Handler` and the "constructor" expressed as a function instead of a struct.

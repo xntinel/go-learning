@@ -28,13 +28,6 @@ Implement: `Render(u User) []byte` — deterministic pretty-JSON serialization.
 Test: declare `var update = flag.Bool("update", ...)`, `flag.Parse()` in `TestMain`; `assertGolden(t, name, got)` writes when `*update`, else reads and compares with `bytes.Equal`.
 Verify: `go test -count=1 -race ./...` (compares); `go test -update` (rewrites golden)
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/22-testmain-setup-teardown/06-golden-update-flag-wiring/cmd/demo go-solutions/12-testing-ecosystem/22-testmain-setup-teardown/06-golden-update-flag-wiring/testdata
-cd go-solutions/12-testing-ecosystem/22-testmain-setup-teardown/06-golden-update-flag-wiring
-```
-
 ### Why a flag, and why it must never run in CI
 
 A golden test is only useful if regenerating the golden is one command, not a

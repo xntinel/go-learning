@@ -29,13 +29,6 @@ userrepo/                  independent module: example.com/userrepo
 - Test: (a) mutate a returned `User` and its slice field, assert a later `Get` is unaffected; (b) concurrent `Get`/`Put` under `-race`; (c) prove a shallow copy would still alias the slice.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/09-pointer-aliasing-and-data-races/05-defensive-copy-repository/cmd/demo
-cd go-solutions/09-pointers/09-pointer-aliasing-and-data-races/05-defensive-copy-repository
-```
-
 ### Aliasing through a map value, and why a shallow copy is not enough
 
 The store is `map[string]*User`. `GetAliased` returns the stored `*User` directly.

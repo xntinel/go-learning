@@ -22,13 +22,6 @@ vendorcheck/                  module: example.com/mono/vendorcheck
 - Test: parse a `modules.txt` with several modules and annotation lines, asserting the exact set of module paths and that a required module is present.
 - Verify: `go build ./...` and `go test -race -count=1 ./...` (pure stdlib, offline).
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/11-packages-and-modules/10-monorepo-module-strategy/10-vendor-the-workspace-for-ci/cmd/demo
-cd go-solutions/11-packages-and-modules/10-monorepo-module-strategy/10-vendor-the-workspace-for-ci
-```
-
 ### Two ways to vendor, and when each fits
 
 `go mod vendor` copies one module's dependencies into that module's `vendor/`

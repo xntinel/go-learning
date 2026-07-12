@@ -22,7 +22,6 @@ traffic_test.go        retry, no-retry, circuit reject/trip, budget block, ctx c
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/42-capstone-service-mesh-data-plane/06-traffic-management/05-resilience-transport/cmd/demo && cd go-solutions/42-capstone-service-mesh-data-plane/06-traffic-management/05-resilience-transport
 go mod edit -go=1.26
 ```
 

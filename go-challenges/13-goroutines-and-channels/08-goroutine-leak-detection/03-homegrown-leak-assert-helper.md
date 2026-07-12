@@ -26,13 +26,6 @@ leakassert/                  independent module: example.com/leakassert
 - Test: table-driven — passes for a clean function, fails for a leaking one, the failure message contains the leaking frame, and `Helper()` is called.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/08-goroutine-leak-detection/03-homegrown-leak-assert-helper/cmd/demo
-cd go-solutions/13-goroutines-and-channels/08-goroutine-leak-detection/03-homegrown-leak-assert-helper
-```
-
 ### Why an interface instead of *testing.T
 
 The helper takes a small `TB` interface — `Helper()` plus `Errorf` — rather than

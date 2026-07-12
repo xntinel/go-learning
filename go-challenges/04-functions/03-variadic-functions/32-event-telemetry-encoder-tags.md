@@ -31,8 +31,6 @@ telemetry/                 independent module: example.com/telemetry
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/03-variadic-functions/32-event-telemetry-encoder-tags/cmd/demo
-cd go-solutions/04-functions/03-variadic-functions/32-event-telemetry-encoder-tags
 go mod edit -go=1.24
 ```
 

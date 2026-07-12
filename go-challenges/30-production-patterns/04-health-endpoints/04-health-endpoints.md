@@ -63,13 +63,6 @@ Return 200 for healthy. Return 503 for unhealthy or not yet ready. Kubernetes in
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/30-production-patterns/04-health-endpoints/04-health-endpoints/cmd/demo
-cd go-solutions/30-production-patterns/04-health-endpoints/04-health-endpoints
-```
-
 This is a library, not a program: there is no top-level `main`. You verify it with `go test`.
 
 ### Exercise 1: Types, Interface, and Service Constructor

@@ -24,13 +24,6 @@ typed-domain-error/                module example.com/typed-domain-error
 - Test: `errors.Is(NotFound("u1"), ErrUser)` is true via the custom `Is`; `errors.As` extracts `*UserError` and reads `UserID`; both survive a `fmt.Errorf("handler: %w", e)` wrap; `Is` returns false for an unrelated sentinel.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/13-designing-an-error-hierarchy/02-typed-domain-error-with-is/cmd/demo
-cd go-solutions/10-error-handling/13-designing-an-error-hierarchy/02-typed-domain-error-with-is
-```
-
 ### How a typed error opts into a category
 
 The mechanism is the `Is` method. `errors.Is` walks the chain and, at every node,

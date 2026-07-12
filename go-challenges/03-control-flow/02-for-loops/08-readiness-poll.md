@@ -26,13 +26,6 @@ readiness/                   module example.com/readiness
 - Test: a fake check that becomes healthy on the `k`-th call (assert `nil` after exactly `k` polls), a check that never becomes healthy (assert `ErrNotReady`), and a check plus a pre-cancelled context (assert `ctx.Err()`), all with an injected ticker so nothing sleeps.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/02-for-loops/08-readiness-poll/cmd/demo
-cd go-solutions/03-control-flow/02-for-loops/08-readiness-poll
-```
-
 ### A condition loop needs a provable stop and a cancel
 
 A naive readiness wait is `for check() != nil { time.Sleep(interval) }`. It has two

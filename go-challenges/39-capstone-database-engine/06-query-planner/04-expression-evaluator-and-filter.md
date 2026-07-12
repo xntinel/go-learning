@@ -23,12 +23,6 @@ filter_test.go  NULL handling, IS NULL/IS NOT NULL, projection, LIKE
 - Test: `age > 20` excludes the NULL-age row, `IS NULL`/`IS NOT NULL` partition the rows, projection narrows the tuple, an unknown projected column reports `ErrColumnNotFound`, and `LIKE` matches `%`/`_`.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/06-query-planner/04-expression-evaluator-and-filter/cmd/demo && cd go-solutions/39-capstone-database-engine/06-query-planner/04-expression-evaluator-and-filter
-```
-
 ### Values, schema, and storage
 
 The value type, operator interface, and catalog are the same substrate as the previous module; the scan here keeps an optional pushed-down predicate so a filter can later be fused into the scan, though this exercise drives it with `nil` and filters above.

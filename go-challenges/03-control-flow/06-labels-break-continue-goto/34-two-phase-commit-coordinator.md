@@ -35,8 +35,6 @@ twopc/                      independent module: example.com/twopc
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/06-labels-break-continue-goto/34-two-phase-commit-coordinator/cmd/demo
-cd go-solutions/03-control-flow/06-labels-break-continue-goto/34-two-phase-commit-coordinator
 go mod edit -go=1.24
 ```
 

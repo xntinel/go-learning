@@ -26,13 +26,6 @@ Test: a correctness test that runs the fan-out over many iterations and asserts
 the tallies always sum to `len(urls)`, passing under `go test -race -count=1`.
 Verify: `go test -count=1 -race ./...` must pass; `gofmt -l` empty.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/01-your-first-go-program/06-race-detector-and-test-cache/cmd/demo
-cd go-solutions/01-environment-and-tooling/01-your-first-go-program/06-race-detector-and-test-cache
-```
-
 ### The bug the race detector exists to find
 
 The obvious way to tally results from N goroutines is to write into a shared

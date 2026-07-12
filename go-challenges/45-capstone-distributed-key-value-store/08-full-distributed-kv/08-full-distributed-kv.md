@@ -79,15 +79,6 @@ A `/health` endpoint returns 200 when the node is `StateActive` and 503 otherwis
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/45-capstone-distributed-key-value-store/08-full-distributed-kv/08-full-distributed-kv/cmd/demo
-mkdir -p go-solutions/45-capstone-distributed-key-value-store/08-full-distributed-kv/08-full-distributed-kv/cmd/dkv
-mkdir -p go-solutions/45-capstone-distributed-key-value-store/08-full-distributed-kv/08-full-distributed-kv/cmd/dkv-admin
-cd go-solutions/45-capstone-distributed-key-value-store/08-full-distributed-kv/08-full-distributed-kv
-```
-
 This is a library package plus executables. Verify with `go test`, not `go run`.
 
 ### Exercise 1: Core Types, Interfaces, and the Node

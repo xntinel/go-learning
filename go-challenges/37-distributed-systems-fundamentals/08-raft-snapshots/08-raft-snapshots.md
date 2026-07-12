@@ -59,13 +59,6 @@ A simple policy: trigger a snapshot when `len(log) > maxLogSize`. Production sys
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/37-distributed-systems-fundamentals/08-raft-snapshots/08-raft-snapshots/cmd/demo
-cd go-solutions/37-distributed-systems-fundamentals/08-raft-snapshots/08-raft-snapshots
-```
-
 ### Exercise 1: Core Types and Log With Offset
 
 Create `raft.go`:

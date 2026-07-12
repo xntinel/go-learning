@@ -28,8 +28,6 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/14-select-and-context/14-building-a-context-aware-service-framework/10-inflight-drain-tracking/cmd/demo
-cd go-solutions/14-select-and-context/14-building-a-context-aware-service-framework/10-inflight-drain-tracking
 go mod edit -go=1.25
 ```
 

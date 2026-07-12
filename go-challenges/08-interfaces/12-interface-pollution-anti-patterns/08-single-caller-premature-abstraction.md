@@ -25,13 +25,6 @@ configload/                 independent module: example.com/configload
 - Test: load a valid config file and a missing file (error via `errors.Is(err, os.ErrNotExist)`); a new test that exercises `WithReloadTimeout`, demonstrating the concrete type extends without touching any interface.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/12-interface-pollution-anti-patterns/08-single-caller-premature-abstraction/cmd/demo
-cd go-solutions/08-interfaces/12-interface-pollution-anti-patterns/08-single-caller-premature-abstraction
-```
-
 ### Why the interface had to go, and what deleting it buys
 
 Picture the "before": a `Loader` interface with one method, `Load(path) (Config, error)`,

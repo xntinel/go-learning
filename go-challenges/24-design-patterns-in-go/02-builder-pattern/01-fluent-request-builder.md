@@ -19,12 +19,6 @@ request_test.go      happy paths, each validator, error aggregation, reuse, cont
 - Test: `request_test.go` pins the happy paths, every validator via its sentinel, the `errors.Join` aggregation, that a reused builder does not leak build-time errors, and that the product carries a context with no deadline.
 - Verify: `go test -race -count=1 ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/24-design-patterns-in-go/02-builder-pattern/01-fluent-request-builder/cmd/demo && cd go-solutions/24-design-patterns-in-go/02-builder-pattern/01-fluent-request-builder
-```
-
 ### Why setters record and Build decides
 
 The builder owns the in-progress state and nothing else. Each setter mutates one field and returns the same pointer so calls chain, and a setter that is handed something obviously wrong — an unknown HTTP method, an empty header key, a non-positive timeout — does not panic or return early; it appends a sentinel-wrapped error to an internal slice and keeps going. Deferring judgment is the point. A chain that stopped at the first mistake would force the caller into a fix-recompile-discover-the-next loop, whereas a builder that collects everything can hand back the full picture in one `Build`.

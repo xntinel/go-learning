@@ -28,13 +28,6 @@ blockchecksum/               independent module: example.com/blockchecksum
 - Test: determinism, short/padded input, exact one block, multiple blocks, distinct inputs, `len(Digest) == DigestSize`, and `Sum(nil) == Sum([]byte{})`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/01-block-checksum-fixed-arrays/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/01-block-checksum-fixed-arrays
-```
-
 ### Why the array sizes are the spec
 
 `Block` is `[16]byte` and `Digest` is `[32]byte`. These are named array types, so

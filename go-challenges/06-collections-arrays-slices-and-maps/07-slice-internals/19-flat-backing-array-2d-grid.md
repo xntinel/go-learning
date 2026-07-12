@@ -52,8 +52,6 @@ grid/                    module example.com/grid
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/19-flat-backing-array-2d-grid
-cd go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/19-flat-backing-array-2d-grid
 go mod edit -go=1.24
 ```
 

@@ -26,13 +26,6 @@ Implement: `Summary(bi *debug.BuildInfo) string` and `Setting(bi, key) string`.
 Test: `Summary` over a constructed `BuildInfo` (deterministic) plus a real `debug.ReadBuildInfo` read that skips when info is absent.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/05-go-install-and-third-party-packages/06-read-binary-build-metadata/cmd/demo
-cd go-solutions/01-environment-and-tooling/05-go-install-and-third-party-packages/06-read-binary-build-metadata
-```
-
 ### Why format `BuildInfo` from a value, not the live binary
 
 `debug.BuildInfo` is a plain struct: `Path` (the main package import path), `Main`

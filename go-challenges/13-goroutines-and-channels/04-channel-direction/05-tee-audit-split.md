@@ -26,13 +26,6 @@ Implement: generic `Tee(in <-chan T) (<-chan T, <-chan T)` forwarding each value
 Test: both outputs receive the same ordered sequence, both close, and a deliberately slow second consumer still receives every value.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/04-channel-direction/05-tee-audit-split/cmd/demo
-cd go-solutions/13-goroutines-and-channels/04-channel-direction/05-tee-audit-split
-```
-
 ### Why the nil-channel select trick
 
 `Tee` reads each value from `in` and must deliver it to *both* `out1` and `out2`

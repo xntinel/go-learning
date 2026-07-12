@@ -22,7 +22,6 @@ circuit_test.go        threshold trip, open rejection, success reset, half-open 
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/42-capstone-service-mesh-data-plane/06-traffic-management/01-circuit-breaker/cmd/demo && cd go-solutions/42-capstone-service-mesh-data-plane/06-traffic-management/01-circuit-breaker
 go mod edit -go=1.26
 ```
 

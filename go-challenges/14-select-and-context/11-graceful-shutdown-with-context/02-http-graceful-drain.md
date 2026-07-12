@@ -26,13 +26,6 @@ Implement: `NewHTTPService(name, *http.Server)` with `Start() error` (swallows `
 Test: a request slower than the drain budget still completes with 200; a handler that ignores its context makes `Shutdown` return `context.DeadlineExceeded`; a clean stop is not an error.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/11-graceful-shutdown-with-context/02-http-graceful-drain/cmd/demo
-cd go-solutions/14-select-and-context/11-graceful-shutdown-with-context/02-http-graceful-drain
-```
-
 ## Why the shutdown context must be fresh
 
 `ListenAndServe` blocks until the server stops, then returns an error. When

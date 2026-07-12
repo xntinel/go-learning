@@ -29,13 +29,6 @@ Test: `TestLoadFromEnv` serial with `t.Setenv`; `TestLoad_Injected` parallel wit
 a table driving the injected `Source`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/14-parallel-tests/04-config-loader-setenv-vs-parallel/cmd/demo
-cd go-solutions/12-testing-ecosystem/14-parallel-tests/04-config-loader-setenv-vs-parallel
-```
-
 ### Why t.Setenv and t.Parallel are mutually exclusive
 
 Environment variables are a single, process-wide table. Two goroutines that set

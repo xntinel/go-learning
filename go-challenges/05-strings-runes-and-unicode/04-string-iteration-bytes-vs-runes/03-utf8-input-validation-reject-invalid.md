@@ -23,13 +23,6 @@ Implement: `ValidateText(field string, raw []byte) error` wrapping `ErrInvalidUT
 Test: accept ASCII/Latin/CJK/emoji; reject `0xff`, overlong NUL, truncated sequence, lone continuation; assert `errors.Is` and offset.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/04-string-iteration-bytes-vs-runes/03-utf8-input-validation-reject-invalid/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/04-string-iteration-bytes-vs-runes/03-utf8-input-validation-reject-invalid
-```
-
 ### Fast path, then locate the first bad byte
 
 The common case at ingest is valid input, so the function opens with the O(n)

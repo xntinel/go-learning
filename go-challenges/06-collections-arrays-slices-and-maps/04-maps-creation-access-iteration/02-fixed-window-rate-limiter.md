@@ -27,13 +27,6 @@ ratelimit/                 independent module: example.com/ratelimit
 - Test: N requests pass and N+1 is rejected, a new window resets the count, distinct clients are independent, `Prune` drops stale windows — all with an injected clock — plus concurrent `Allow` under `-race`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/02-fixed-window-rate-limiter/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/02-fixed-window-rate-limiter
-```
-
 ### Why the zero value is the starting counter, and why the clock is injected
 
 The limiter keeps `map[string]counter`, where a `counter` records the window it

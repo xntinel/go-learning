@@ -27,8 +27,6 @@ ratelimit/                   independent module: example.com/ratelimit
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/28-rate-limiter-quota-release/ratelimit go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/28-rate-limiter-quota-release/cmd/demo
-cd go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/28-rate-limiter-quota-release
 go mod edit -go=1.24
 ```
 

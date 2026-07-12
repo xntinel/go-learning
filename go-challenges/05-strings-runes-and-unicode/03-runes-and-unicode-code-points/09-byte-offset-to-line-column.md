@@ -49,13 +49,6 @@ past the end of the source (or negative) is clamped into `[0, len(src)]` so a
 malformed report from an upstream scanner yields a valid position instead of a
 panic.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/09-byte-offset-to-line-column/internal/pos go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/09-byte-offset-to-line-column/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/09-byte-offset-to-line-column
-```
-
 Create `internal/pos/pos.go`:
 
 ```go

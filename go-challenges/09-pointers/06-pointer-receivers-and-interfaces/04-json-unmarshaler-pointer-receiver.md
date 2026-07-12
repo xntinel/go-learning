@@ -28,8 +28,6 @@ cfgdur/                     independent module: example.com/cfgdur
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/09-pointers/06-pointer-receivers-and-interfaces/04-json-unmarshaler-pointer-receiver/cmd/demo
-cd go-solutions/09-pointers/06-pointer-receivers-and-interfaces/04-json-unmarshaler-pointer-receiver
 go mod edit -go=1.25
 ```
 

@@ -25,13 +25,6 @@ Implement: generic `Merge(cs ...<-chan T) <-chan T` using one drain goroutine pe
 Test: the merged output is the multiset union of all inputs (order nondeterministic), the output closes after all inputs close, zero inputs closes immediately.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/04-channel-direction/04-fan-in-merge/cmd/demo
-cd go-solutions/13-goroutines-and-channels/04-channel-direction/04-fan-in-merge
-```
-
 ### Why the close needs a lone closer goroutine
 
 Each input is a `<-chan T`; the output is a `chan T` internally, returned as

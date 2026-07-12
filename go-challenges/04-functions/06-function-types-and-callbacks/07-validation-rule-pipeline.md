@@ -25,13 +25,6 @@ Implement: `type Rule[T any] func(T) error`, `All(rules ...Rule[T]) Rule[T]` joi
 Test: a valid DTO passes both with nil; an invalid DTO with three violations makes `All` unwrap to all three via `errors.Is`; `First` returns only the first; `All` is order-independent, `First` is order-dependent; an empty rule set is a nil-returning no-op.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/06-function-types-and-callbacks/07-validation-rule-pipeline/cmd/demo
-cd go-solutions/04-functions/06-function-types-and-callbacks/07-validation-rule-pipeline
-```
-
 ### Two combinators, two operational choices
 
 A `Rule[T]` is a function that returns nil if `T` is valid or an error describing the

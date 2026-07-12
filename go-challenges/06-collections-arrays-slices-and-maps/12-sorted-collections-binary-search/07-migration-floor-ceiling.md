@@ -29,13 +29,6 @@ Implement: `Resolver` with `New([]int) *Resolver`, `Floor(target) (int, bool)`, 
 Test: floor/ceiling of an exact match, of a value between versions, below the minimum, above the maximum, and a sweep asserting the `BinarySearch` and `sort.Find` implementations agree.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/12-sorted-collections-binary-search/07-migration-floor-ceiling/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/12-sorted-collections-binary-search/07-migration-floor-ceiling
-```
-
 ### One search index answers both floor and ceiling
 
 `slices.BinarySearch(versions, target)` returns `(pos, found)`. `pos` is the

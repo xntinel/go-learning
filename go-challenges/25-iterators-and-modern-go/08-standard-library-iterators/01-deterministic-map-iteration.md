@@ -26,12 +26,6 @@ mapiter_test.go      determinism, filtering, totals, invalid-input rejection
 - Test: `mapiter_test.go` asserts sorted output is stable across runs, filtering and totals are correct, and an out-of-range minimum is rejected.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/25-iterators-and-modern-go/08-standard-library-iterators/01-deterministic-map-iteration/cmd/demo && cd go-solutions/25-iterators-and-modern-go/08-standard-library-iterators/01-deterministic-map-iteration
-```
-
 ### Why sorting is the consumer that makes a map readable
 
 The shape of every function here is the same: a map producer (`maps.Keys` or

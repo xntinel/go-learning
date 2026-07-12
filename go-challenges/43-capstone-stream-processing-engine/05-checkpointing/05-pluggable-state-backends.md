@@ -24,7 +24,6 @@ backend_test.go        one conformance suite over both backends, byte isolation
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/43-capstone-stream-processing-engine/05-checkpointing/05-pluggable-state-backends/cmd/demo && cd go-solutions/43-capstone-stream-processing-engine/05-checkpointing/05-pluggable-state-backends
 go mod edit -go=1.26
 ```
 

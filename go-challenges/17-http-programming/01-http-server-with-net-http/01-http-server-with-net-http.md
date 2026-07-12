@@ -52,14 +52,6 @@ register on the default mux.
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/17-http-programming/01-http-server-with-net-http/01-http-server-with-net-http/internal/server
-mkdir -p go-solutions/17-http-programming/01-http-server-with-net-http/01-http-server-with-net-http/cmd/demo
-cd go-solutions/17-http-programming/01-http-server-with-net-http/01-http-server-with-net-http
-```
-
 ### Exercise 1: The Server Type And Its Handlers
 
 Create `internal/server/server.go`:

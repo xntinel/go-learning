@@ -81,13 +81,6 @@ Failing any check must return an error, not a panic or a zero-value struct with 
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/28-unsafe-and-cgo/09-zero-copy-deserialization/09-zero-copy-deserialization/cmd/demo
-cd go-solutions/28-unsafe-and-cgo/09-zero-copy-deserialization/09-zero-copy-deserialization
-```
-
 ### Exercise 1: Wire Format, Errors, and the Fixed Struct
 
 Create `zerocopy.go`:

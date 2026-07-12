@@ -29,8 +29,6 @@ lookup/                    independent module: example.com/lookup
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/01-function-declaration-and-multiple-return-values/02-value-ok-lookup-and-embedding/cmd/demo
-cd go-solutions/04-functions/01-function-declaration-and-multiple-return-values/02-value-ok-lookup-and-embedding
 go mod edit -go=1.25
 ```
 

@@ -23,13 +23,6 @@ releasetargets/                module example.com/releasetargets
 - Test: assert artifact names and the expected format string per target.
 - Verify: `go test -race ./...`, then the cross-build loop below plus `file` on the outputs.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/08-cross-compilation-and-build-tags/02-cross-compile-release-targets/cmd/demo
-cd go-solutions/01-environment-and-tooling/08-cross-compilation-and-build-tags/02-cross-compile-release-targets
-```
-
 ### The matrix as data, and the actual cross-build
 
 The release matrix is not prose in a runbook; it is data the build iterates. The

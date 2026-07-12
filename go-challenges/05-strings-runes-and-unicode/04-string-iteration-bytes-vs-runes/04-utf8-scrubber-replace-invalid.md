@@ -23,13 +23,6 @@ Implement: `Scrub(s string) string` and `ScrubWith(s, replacement string) string
 Test: valid input returned identical; `"a\xffb"` becomes `"a�b"`; runs collapse to one replacement; output always valid; cross-check vs a hand-written decode loop.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/04-string-iteration-bytes-vs-runes/04-utf8-scrubber-replace-invalid/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/04-string-iteration-bytes-vs-runes/04-utf8-scrubber-replace-invalid
-```
-
 ### Repair, and the fast path that matters
 
 The workhorse is `strings.ToValidUTF8(s, replacement)`: it returns a copy of `s`

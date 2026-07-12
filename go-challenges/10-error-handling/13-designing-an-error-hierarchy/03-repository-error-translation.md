@@ -25,13 +25,6 @@ repo-error-translation/            module example.com/repo-error-translation
 - Test: inject `sql.ErrNoRows` and assert the result `errors.Is` `ErrUserNotFound`; inject a simulated unique violation and assert `ErrUserExists`; inject a generic error and assert `errors.Is` `ErrDomain` while the raw driver error does not leak as a domain category.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/13-designing-an-error-hierarchy/03-repository-error-translation/cmd/demo
-cd go-solutions/10-error-handling/13-designing-an-error-hierarchy/03-repository-error-translation
-```
-
 ### Translation is the boundary's whole job
 
 The dependency rule says arrows point inward: the domain core depends on nothing,

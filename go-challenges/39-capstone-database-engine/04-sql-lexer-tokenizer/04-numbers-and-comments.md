@@ -21,12 +21,6 @@ lexer_test.go        numeric grammar, trailing dot, nested/line comments, errors
 - Test: `lexer_test.go` covers the numeric grammar, the `42.col` split, the malformed-exponent error, line and nested block comments, the kept-comment path, and the unterminated-comment and unknown-character errors.
 - Verify: `go test -run 'TestTokenize|TestTrailing|TestMalformed|Comment|TestUnknown|Example' -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/04-sql-lexer-tokenizer/04-numbers-and-comments/cmd/demo && cd go-solutions/39-capstone-database-engine/04-sql-lexer-tokenizer/04-numbers-and-comments
-```
-
 ### Why a depth counter and a conditional dot
 
 The block-comment reader is the one place in the lexer where a counter is unavoidable. SQL line comments never nest, so the standard dialect's `/* */` could be matched by scanning to the first `*/` — but PostgreSQL nests block comments on purpose, so a programmer can comment out a region that already contains one. Nesting makes the construct non-regular: no fixed-state machine matches balanced `/* */` pairs, so the naive "scan to the first `*/`" stops too early on `/* a /* b */ c */` and leaves `c */` dangling as stray tokens. The fix is a single integer of state: increment `depth` on every `/*`, decrement on every `*/`, and end the comment only when `depth` returns to zero. If the input ends while `depth` is still positive, the reader returns a positioned `TokenError` for the unterminated comment rather than running off the buffer.

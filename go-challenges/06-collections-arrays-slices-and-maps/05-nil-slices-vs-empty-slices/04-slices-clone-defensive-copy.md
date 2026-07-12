@@ -28,13 +28,6 @@ storage; a missing key returns nil; a `-race` test with concurrent `Get` plus
 local mutation.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/04-slices-clone-defensive-copy/cache go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/04-slices-clone-defensive-copy/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/04-slices-clone-defensive-copy
-```
-
 ### Why returning the internal slice is a bug
 
 A slice value is a header pointing at a backing array. When a getter returns the

@@ -25,13 +25,6 @@ retryclient/                    independent module: example.com/roundtripper-stu
 - Test: drive the loop with a slice of scripted responses/errors; assert the retry count, that cancellation short-circuits (`errors.Is(context.DeadlineExceeded)`), and that the final failure wraps `ErrExhausted`; add one real-`httptest.Server` variant.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/09-httptest/05-roundtripper-stub/cmd/demo
-cd go-solutions/12-testing-ecosystem/09-httptest/05-roundtripper-stub
-```
-
 ### The transport seam and when to use it
 
 `http.Client` never touches a socket directly; it delegates to its `Transport`,

@@ -28,13 +28,6 @@ keymaterial/                 independent module: example.com/keymaterial
 - Test: mutating an array snapshot leaves the source unchanged; mutating a slice snapshot corrupts the source; two array-based snapshots compare equal with `==`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/03-keymaterial-defensive-copy/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/03-keymaterial-defensive-copy
-```
-
 ### Why the array field is a real defensive copy
 
 When you copy a struct in Go — by assignment, by passing it as a value parameter,

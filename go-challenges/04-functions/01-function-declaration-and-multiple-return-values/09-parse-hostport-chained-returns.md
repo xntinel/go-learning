@@ -29,8 +29,6 @@ endpoint/                  independent module: example.com/endpoint
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/01-function-declaration-and-multiple-return-values/09-parse-hostport-chained-returns/cmd/demo
-cd go-solutions/04-functions/01-function-declaration-and-multiple-return-values/09-parse-hostport-chained-returns
 go mod edit -go=1.25
 ```
 

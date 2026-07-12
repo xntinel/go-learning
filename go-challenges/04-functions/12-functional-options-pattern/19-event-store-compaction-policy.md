@@ -31,8 +31,6 @@ eventstore/                      independent module: example.com/eventstore
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/12-functional-options-pattern/19-event-store-compaction-policy/cmd/demo
-cd go-solutions/04-functions/12-functional-options-pattern/19-event-store-compaction-policy
 go mod edit -go=1.24
 ```
 

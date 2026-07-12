@@ -27,13 +27,6 @@ pipeline/                 independent module: example.com/pipeline
 - Test: prove transforms run in declared order (append-then-wrap yields `[xa]`, not `x[a]`); the empty pipeline is the identity; `Clean` is pure (same input twice yields the same output and does not mutate the input).
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/10-building-a-text-processing-pipeline/01-ordered-transform-pipeline/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/10-building-a-text-processing-pipeline/01-ordered-transform-pipeline
-```
-
 ### Why the Transform type is deliberately boring
 
 `type Transform func(string) string` carries no error and no state. That is the

@@ -32,13 +32,6 @@ retryclass/                  independent module: example.com/retryclass
   decision; a plain sentinel maps to permanent; `nil` maps to a no-error decision.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/04-type-switch/04-error-retry-classifier/cmd/demo
-cd go-solutions/03-control-flow/04-type-switch/04-error-retry-classifier
-```
-
 ## Why the bare type switch is the bug, and the correct ordering
 
 A network call deep in a stack returns a `*net.OpError`. Every layer above wraps

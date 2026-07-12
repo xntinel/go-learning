@@ -27,13 +27,6 @@ configloader/                independent module: example.com/configloader
 - Test: assert a missing/invalid field returns `Config{}` (equality) and a non-nil error naming the key; assert the happy path returns the fully-populated struct and nil; one row per field's failure so no guard is skipped.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/01-error-interface-and-basic-patterns/02-config-loader-zero-value/cmd/demo
-cd go-solutions/10-error-handling/01-error-interface-and-basic-patterns/02-config-loader-zero-value
-```
-
 ### Why the zero value must be total, and why getenv is injected
 
 The failure mode this guards against is a *partial* config leaking to the caller.

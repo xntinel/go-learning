@@ -19,12 +19,6 @@ rebalance_test.go    first-join, second-join split, leave hand-off, single-owner
 - Test: the first join assigns everything and revokes nothing, the second join moves exactly half off the first consumer, a leave hands partitions to the survivor, and every partition is always owned by exactly one consumer.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/41-capstone-message-queue/03-consumer-groups-offset-tracking/04-rebalance-on-membership-change/cmd/demo && cd go-solutions/41-capstone-message-queue/03-consumer-groups-offset-tracking/04-rebalance-on-membership-change
-```
-
 ### Why a consumer needs the delta, not the full assignment
 
 When membership changes, the coordinator could just hand every consumer its new partition list and let each figure out what changed. That is what an eager rebalance does, and it is wasteful: a consumer that keeps partition 3 across the rebalance has no way to know it kept it, so it conservatively stops, commits, and restarts every partition - including the ones that never moved. The fix is to compute the change explicitly. A `Delta` carries, per consumer, a `Revoked` set (partitions to stop owning) and an `Assigned` set (partitions to begin owning). A consumer that appears in neither does nothing; a consumer that only keeps its partitions sees an empty delta and never pauses.

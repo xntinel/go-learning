@@ -53,13 +53,6 @@ sign `€` (`\xe2\x82\xac`) — a *truncated* sequence. `\xc0\xaf` is an *overlo
 encoding of `/`, forbidden because UTF-8 requires the shortest form. All three
 must be rejected; a valid multi-byte string like `café` must pass.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/03-utf8-sanitize-ingest-boundary/internal/ingest go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/03-utf8-sanitize-ingest-boundary/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/03-utf8-sanitize-ingest-boundary
-```
-
 Create `internal/ingest/ingest.go`:
 
 ```go

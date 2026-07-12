@@ -30,8 +30,6 @@ retrypolicy/                   independent module: example.com/retrypolicy
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/50-messaging-and-event-driven/08-temporal-durable-execution/03-retryable-vs-terminal-failures/cmd/demo
-cd go-solutions/50-messaging-and-event-driven/08-temporal-durable-execution/03-retryable-vs-terminal-failures
 go get go.temporal.io/sdk@latest
 ```
 

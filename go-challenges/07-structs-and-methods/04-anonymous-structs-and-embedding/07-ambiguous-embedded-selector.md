@@ -30,13 +30,6 @@ both embedded fields remain reachable by explicit qualification; when neither
 source sets a timeout, the fallback is the file's zero value.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/04-anonymous-structs-and-embedding/07-ambiguous-embedded-selector/cmd/demo
-cd go-solutions/07-structs-and-methods/04-anonymous-structs-and-embedding/07-ambiguous-embedded-selector
-```
-
 ### Why the bare selector will not compile, and how to fix it
 
 `FileConfig` and `EnvConfig` each declare a `Timeout` field and a `Source()`

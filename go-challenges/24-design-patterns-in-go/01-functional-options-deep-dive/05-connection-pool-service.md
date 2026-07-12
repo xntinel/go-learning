@@ -22,12 +22,6 @@ service_test.go        defaults, required DSN, aggregated errors, cross-field ru
 - Test: `service_test.go` proves defaults, that a missing DSN and a nil pool are rejected, that one bad call aggregates every problem, the `idle <= open` cross-field rule, last-option-wins precedence, the three `Ready` outcomes (healthy, ping failure, pool exhausted), and that `Watch` reports health and stops on cancel under `-race`.
 - Verify: `go test -race ./...` then `go run ./cmd/demo`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/24-design-patterns-in-go/01-functional-options-deep-dive/05-connection-pool-service/cmd/demo && cd go-solutions/24-design-patterns-in-go/01-functional-options-deep-dive/05-connection-pool-service
-```
-
 ### Depend on a port, not on `*sql.DB`
 
 The design decision that makes this service testable is that `Service` depends on a `Pool` interface — `Ping`, `Stats`, `Close` — not on a concrete `*sql.DB`. The real production path, `NewSQLService`, wraps a `*sql.DB` in the `sqlPool` adapter; tests and the demo pass an in-memory fake that implements the same three methods. The readiness logic cannot tell them apart, so the behaviour that matters in production — does the probe ping, does it reject an exhausted pool — is exercised at full fidelity without a live database or a driver dependency. `PoolStats` is deliberately shaped like `database/sql.DBStats` so the adapter is a one-line field copy.

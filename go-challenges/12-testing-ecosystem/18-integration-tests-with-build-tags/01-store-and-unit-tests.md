@@ -25,13 +25,6 @@ intgtest/                  independent module: example.com/intgtest
 - Test: assert a Put-then-Get round-trip, assert a missing key returns `ErrNotFound` via `errors.Is`, and add an `ExampleStore`.
 - Verify: `gofmt -l .`, `go vet ./...`, `go test -count=1 -race ./...` — all pass with zero tags and zero env.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/18-integration-tests-with-build-tags/01-store-and-unit-tests/cmd/demo
-cd go-solutions/12-testing-ecosystem/18-integration-tests-with-build-tags/01-store-and-unit-tests
-```
-
 ### Why the hermetic tier comes first
 
 The integration tier exists to test the code path that a fake cannot: a real

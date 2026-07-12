@@ -31,8 +31,6 @@ backoff/                     independent module: example.com/backoff
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/29-retry-exponential-backoff-timer-callback-index/cmd/demo
-cd go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/29-retry-exponential-backoff-timer-callback-index
 go mod edit -go=1.24
 ```
 

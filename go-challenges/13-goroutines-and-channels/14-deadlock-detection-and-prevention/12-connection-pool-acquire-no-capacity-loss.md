@@ -25,8 +25,6 @@ connpool/                    independent module: example.com/connpool
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/13-goroutines-and-channels/14-deadlock-detection-and-prevention/12-connection-pool-acquire-no-capacity-loss/cmd/demo
-cd go-solutions/13-goroutines-and-channels/14-deadlock-detection-and-prevention/12-connection-pool-acquire-no-capacity-loss
 go mod edit -go=1.26
 go get go.uber.org/goleak
 ```

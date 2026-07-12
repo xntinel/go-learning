@@ -26,13 +26,6 @@ optclient/                  independent module: example.com/optclient
 - Test: no options yields defaults; each `With*` sets its field; a later `WithTimeout` wins over an earlier one; an invalid `baseURL` errors via `url.Parse`; one reusable `[]Option` builds two independent clients.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/11-builder-pattern-for-complex-structs/02-functional-options-vs-builder/cmd/demo
-cd go-solutions/07-structs-and-methods/11-builder-pattern-for-complex-structs/02-functional-options-vs-builder
-```
-
 ### Why options instead of a builder here
 
 A constructor has exactly one shape that options fit perfectly: a required

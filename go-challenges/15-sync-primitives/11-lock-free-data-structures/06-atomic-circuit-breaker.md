@@ -27,13 +27,6 @@ circuitbreaker/                  independent module: example.com/circuitbreaker
 - Test: injected clock drives deterministic transitions; the hard test counts CAS winners among 100 racing goroutines and demands exactly one probe; concurrent `ReportFailure` trips exactly once.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/11-lock-free-data-structures/06-atomic-circuit-breaker/cmd/demo
-cd go-solutions/15-sync-primitives/11-lock-free-data-structures/06-atomic-circuit-breaker
-```
-
 ### CAS as an exactly-once transition
 
 The breaker's states fit in an `int32`: Closed (requests flow, failures are

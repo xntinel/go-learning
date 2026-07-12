@@ -26,13 +26,6 @@ retryclock/                  independent module: example.com/retryclock
 - Test: a fake clock whose `After` records the duration and advances `Now` instantly; assert attempts, the recorded backoff sequence, total simulated elapsed, budget abort via `ErrBudgetExceeded`, and mid-backoff cancellation.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/11-mock-interfaces-for-testing/05-mock-clock-for-retry-backoff/cmd/demo
-cd go-solutions/08-interfaces/11-mock-interfaces-for-testing/05-mock-clock-for-retry-backoff
-```
-
 ### The Clock seam
 
 Code that calls `time.Now()` and `time.Sleep()` has smuggled in a dependency on

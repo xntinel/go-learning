@@ -31,13 +31,6 @@ observed wait; zero events under service within SLO; the event fires on the
 transition, not on every call.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/08-select-priority-and-starvation/09-starvation-slo-detector/cmd/demo
-cd go-solutions/14-select-and-context/08-select-priority-and-starvation/09-starvation-slo-detector
-```
-
 ### Making an invisible fairness bug observable
 
 The detector layers on top of any priority consumer (the scheduler from Exercise

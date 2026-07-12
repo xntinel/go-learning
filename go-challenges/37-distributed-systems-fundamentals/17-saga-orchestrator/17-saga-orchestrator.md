@@ -71,13 +71,6 @@ testable without a database.
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/37-distributed-systems-fundamentals/17-saga-orchestrator/17-saga-orchestrator/cmd/demo
-cd go-solutions/37-distributed-systems-fundamentals/17-saga-orchestrator/17-saga-orchestrator
-```
-
 This is a library. Verification is done with `go test`, not by running a
 program.
 

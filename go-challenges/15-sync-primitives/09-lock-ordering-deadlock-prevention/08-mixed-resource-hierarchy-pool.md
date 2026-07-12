@@ -33,13 +33,6 @@ batchpool/                 independent module: example.com/batchpool
 - Test: a deterministic reproduction of the cross-type wedge using the broken ordering; a 20-worker, 500-iteration stress mix of both fixed paths under `-race` with a watchdog; exact update-count accounting.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/09-lock-ordering-deadlock-prevention/08-mixed-resource-hierarchy-pool/cmd/demo
-cd go-solutions/15-sync-primitives/09-lock-ordering-deadlock-prevention/08-mixed-resource-hierarchy-pool
-```
-
 ### A deadlock with only one mutex in it
 
 The system: workers update records through a bounded pool of K database

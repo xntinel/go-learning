@@ -32,13 +32,6 @@ of a loaded snapshot while a writer stores new ones, asserting each reader sees
 one consistent generation, under `-race`.
 Verify: `go test -count=20 -race ./...`; then `go run -race ./cmd/racy`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/21-race-detector/05-copy-on-write-config-snapshot/cmd/demo go-solutions/12-testing-ecosystem/21-race-detector/05-copy-on-write-config-snapshot/cmd/racy
-cd go-solutions/12-testing-ecosystem/21-race-detector/05-copy-on-write-config-snapshot
-```
-
 ### Why copy-on-write, and why the memory model makes it correct
 
 Locking config on every request works but adds a lock acquisition to the hottest

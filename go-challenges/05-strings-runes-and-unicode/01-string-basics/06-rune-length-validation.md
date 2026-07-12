@@ -28,13 +28,6 @@ Test: ASCII within/over limit, a multibyte name that passes on rune-count but
 would fail on `len`, a 4-byte code point, invalid UTF-8, and a control char.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/01-string-basics/06-rune-length-validation/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/01-string-basics/06-rune-length-validation
-```
-
 ## Why rune count, UTF-8 validity, and control chars are three separate checks
 
 The length rule is in *characters*, so it must be measured in runes.

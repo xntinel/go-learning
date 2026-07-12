@@ -25,13 +25,6 @@ reqbuilder/                 independent module: example.com/reqbuilder
 - Test: full-chain happy path, rejects missing method, rejects missing URL, `Build` joins both errors, headers are an independent copy across two `Build()` calls, and all set headers survive.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/11-builder-pattern-for-complex-structs/01-request-builder-with-validation/cmd/demo
-cd go-solutions/07-structs-and-methods/11-builder-pattern-for-complex-structs/01-request-builder-with-validation
-```
-
 ### Why the terminal is the only validation point
 
 Each setter records one field and returns the receiver, so the caller can write

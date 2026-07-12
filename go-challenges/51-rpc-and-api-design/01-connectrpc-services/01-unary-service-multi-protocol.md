@@ -37,8 +37,6 @@ The schema is the source of truth; you never hand-write the wire types or the
 handler interface. Define the service, then let `buf` generate the Go.
 
 ```bash
-mkdir -p go-solutions/51-rpc-and-api-design/01-connectrpc-services/01-unary-service-multi-protocol/proto/user/v1 go-solutions/51-rpc-and-api-design/01-connectrpc-services/01-unary-service-multi-protocol/cmd/demo
-cd go-solutions/51-rpc-and-api-design/01-connectrpc-services/01-unary-service-multi-protocol
 go mod edit -go=1.26
 go get connectrpc.com/connect@latest
 go get google.golang.org/protobuf@latest

@@ -32,13 +32,6 @@ tenantfs/                    independent module: example.com/tenantfs
   a `../b/secret` input is rejected with `fs.ErrInvalid`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/11-testing-filesystems-with-fstest/05-fs-sub-tenant-scoping/cmd/demo
-cd go-solutions/12-testing-ecosystem/11-testing-filesystems-with-fstest/05-fs-sub-tenant-scoping
-```
-
 ### Two layers of defense, both from the fs.FS contract
 
 The isolation rests on two independent mechanisms, and it is worth seeing that

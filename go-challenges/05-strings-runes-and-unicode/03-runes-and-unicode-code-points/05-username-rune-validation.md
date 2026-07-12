@@ -47,13 +47,6 @@ Each failure returns a distinct package-level sentinel wrapped with `%w`, so the
 handler can map `ErrTooShort` and `ErrTooLong` to a helpful `422` message and
 `ErrControlChar`/`ErrInvalidUTF8` to a blunt `400`, all via `errors.Is`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/05-username-rune-validation/internal/account go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/05-username-rune-validation/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/05-username-rune-validation
-```
-
 Create `internal/account/account.go`:
 
 ```go

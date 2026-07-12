@@ -140,13 +140,6 @@ the 70% threshold that would trigger a second grow.
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/46-capstone-concurrency-deep-dive/13-lock-free-hash-map/13-lock-free-hash-map/cmd/demo
-cd go-solutions/46-capstone-concurrency-deep-dive/13-lock-free-hash-map/13-lock-free-hash-map
-```
-
 This is a library. Verification is `go test -count=1 -race ./...`.
 
 ### Exercise 1: Slot State Machine and Immutable Entry

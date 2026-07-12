@@ -28,13 +28,6 @@ releasegate/               independent module: example.com/publicstr
 - Test: no change gives a patch, an addition gives a minor, an incompatible change at v1+ requires a new major path, and v0 allows a break as a minor bump.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/11-packages-and-modules/09-designing-a-public-go-module/08-gate-releases-with-an-api-compat-check/cmd/demo
-cd go-solutions/11-packages-and-modules/09-designing-a-public-go-module/08-gate-releases-with-an-api-compat-check
-```
-
 ### The three tiers, as a decision function
 
 `gorelease` embodies the same three-tier rule this whole lesson turns on, and it

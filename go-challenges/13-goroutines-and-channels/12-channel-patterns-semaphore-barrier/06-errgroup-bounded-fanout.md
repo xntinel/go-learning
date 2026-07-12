@@ -30,8 +30,6 @@ enrich/                     independent module: example.com/enrich
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/13-goroutines-and-channels/12-channel-patterns-semaphore-barrier/06-errgroup-bounded-fanout/cmd/demo
-cd go-solutions/13-goroutines-and-channels/12-channel-patterns-semaphore-barrier/06-errgroup-bounded-fanout
 go mod edit -go=1.26
 go get golang.org/x/sync/errgroup
 ```

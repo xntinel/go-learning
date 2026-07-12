@@ -26,13 +26,6 @@ depsvc/                    independent module: example.com/depsvc
 - Test: call `Run` with argument slices and `bytes.Buffer` writers; assert stdout, the uppercase path, and the exit-code-2 usage path.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/11-packages-and-modules/06-dependency-management/01-dep-hygiene-cli/cmd/demo
-cd go-solutions/11-packages-and-modules/06-dependency-management/01-dep-hygiene-cli
-```
-
 ### Why extract Run instead of writing main
 
 The original version put everything in `main`, read `os.Args` through the package

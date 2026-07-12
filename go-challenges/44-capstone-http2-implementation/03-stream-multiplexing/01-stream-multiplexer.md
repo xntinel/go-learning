@@ -24,7 +24,6 @@ mux/
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/44-capstone-http2-implementation/03-stream-multiplexing/01-stream-multiplexer/cmd/demo && cd go-solutions/44-capstone-http2-implementation/03-stream-multiplexing/01-stream-multiplexer
 go mod edit -go=1.26
 ```
 

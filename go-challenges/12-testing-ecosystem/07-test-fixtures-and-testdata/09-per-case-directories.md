@@ -24,13 +24,6 @@ Implement: `Enrich` that looks a user up in the config and fills tier/region, de
 Test: `os.ReadDir("testdata/cases")`, skip non-directory entries, and for each directory run a subtest that loads `input.json` (+ optional `config.json`) and compares the enriched result to `want.json`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/09-per-case-directories/cmd/demo go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/09-per-case-directories/testdata/cases
-cd go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/09-per-case-directories
-```
-
 ### When a case needs more than two files
 
 A glob over `*.input`/`*.golden` is perfect while a case is exactly one input and one expected output. Real pipeline cases are rarely that tidy: enriching an event may depend on a lookup config, a feature flag, or a fixture representing upstream state, and the expected output is a separate file again. Cramming those into a naming convention (`basic.input`, `basic.config`, `basic.golden`) works until it doesn't — the relationship between the files is implicit in a shared prefix, and a fourth file makes the scheme creak. A directory per case makes the grouping explicit: everything `basic` needs lives in `testdata/cases/basic/`, and the files inside have plain, uniform names (`input.json`, `want.json`, `config.json`) that read the same in every case.

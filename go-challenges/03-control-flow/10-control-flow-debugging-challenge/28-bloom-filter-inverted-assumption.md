@@ -34,11 +34,6 @@ dedup/                       independent module: example.com/bloom-filter-invert
 - Test: a same-key-seen-twice sanity case; an edge case that deliberately undersizes the filter to brute-force a genuine hash collision and asserts the colliding, never-added key is still correctly treated as new.
 - Verify: `go test -count=1 ./...`.
 
-```bash
-mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/28-bloom-filter-inverted-assumption/cmd/demo
-cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/28-bloom-filter-inverted-assumption
-```
-
 ### Why a filter hit is a question, not an answer
 
 The version that ships first treats `MightContain` as if its name

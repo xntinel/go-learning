@@ -29,8 +29,6 @@ enumgen/                      independent module: example.com/enumgen
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/48-modern-go-language-and-stdlib/07-go-tool-directives/02-pinned-code-generator/cmd/demo
-cd go-solutions/48-modern-go-language-and-stdlib/07-go-tool-directives/02-pinned-code-generator
 go mod edit -go=1.25
 ```
 

@@ -26,13 +26,6 @@ Implement: `Diff(desired, actual) (toAdd, toUpdate, toDelete []string)`, `InSync
 Test: add-only, delete-only, update-only, no-change; `maps.Equal` short-circuits identical maps; `EqualFunc` ignores the volatile `LastSeen` field; output slices are sorted.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/04-state-reconcile-diff/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/04-state-reconcile-diff
-```
-
 ## Why the diff is three sorted slices, and why equality has two flavors
 
 `Diff` walks both maps once. A key present in `desired` but not `actual` goes to

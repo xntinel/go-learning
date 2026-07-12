@@ -25,14 +25,6 @@ Implement: `Normalize` = `strings.ToLower` then a `strings.Builder` pass that dr
 Test: `TestNormalizeLowercasesASCII`, table `TestNormalizeStripsCombiningMarks`, `TestNormalizeLeavesNFCAlone`, `TestNormalizeIsIdempotent`, property `TestIndexKeyMatchesAcrossCaseForNFDInput`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/08-unicode-normalization-and-collation/01-stdlib-only-normalizer/internal/search
-mkdir -p go-solutions/05-strings-runes-and-unicode/08-unicode-normalization-and-collation/01-stdlib-only-normalizer/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/08-unicode-normalization-and-collation/01-stdlib-only-normalizer
-```
-
 ### What this baseline gets right, and what it cannot
 
 The task is an index key for case- and accent-insensitive search: two strings that

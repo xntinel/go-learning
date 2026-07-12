@@ -19,12 +19,6 @@ merge_test.go        total-order union, duplicates, empty/no sources, all stops 
 - Test: `merge_test.go` checks the merged output is the fully sorted union (duplicates kept), the empty and no-source cases, and that every source's producer is stopped on both full drain and early break.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/25-iterators-and-modern-go/04-range-over-func-pull-iterators/05-k-way-merge-with-heap/cmd/demo && cd go-solutions/25-iterators-and-modern-go/04-range-over-func-pull-iterators/05-k-way-merge-with-heap
-```
-
 ### Why this needs k live cursors, and why a heap
 
 A two-way merge advances whichever of two cursors has the smaller front. The k-way generalization is the same idea, but the question "which of the k fronts is smallest" is no longer a single comparison — done naively it is an O(k) scan on every emitted element, giving O(n·k) overall. A min-heap keyed on the cursor fronts answers it in O(log k): the smallest front is always at the root, and after you advance that cursor you push its new front back down the heap. Total cost is O(n·log k), which is the standard external-merge bound.

@@ -20,12 +20,6 @@ ratelimit_test.go    deterministic bound (fake clock) + live bound under -race +
 - Test: a fake-clock test that token grants never exceed `burst + rate*elapsed`; a live test that the running consumer respects the same bound under `-race`; a pause/resume test that a paused consumer delivers nothing and a resumed one delivers every record in order.
 - Verify: `go test -race ./... && go run ./cmd/demo`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/41-capstone-message-queue/05-consumer-api-backpressure/03-token-bucket-rate-limited-delivery/cmd/demo && cd go-solutions/41-capstone-message-queue/05-consumer-api-backpressure/03-token-bucket-rate-limited-delivery
-```
-
 ### The token bucket: lazy refill and an injectable clock
 
 The bucket holds up to `burst` tokens and regenerates `rate` per second. The design choice that matters is *lazy* regeneration: rather than a background goroutine adding tokens on a ticker, each call computes how many tokens accrued since the last call -- `tokens = min(burst, tokens + elapsed*rate)` -- and then tries to spend one. This has three payoffs. There is no goroutine to leak when the bucket outlives its owner; regeneration is perfectly smooth rather than arriving in tick-sized lumps; and the clock is a single `now func() time.Time` field that real code wires to `time.Now` and tests wire to a manually advanced fake clock.

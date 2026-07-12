@@ -26,13 +26,6 @@ worker/                    independent module: example.com/worker
 - Test: cancel returns `context.Canceled`; close returns `ErrClosed`; ticks are delivered before a later cancel propagates.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/04-context-withcancel/01-worker-cancel-loop/cmd/demo
-cd go-solutions/14-select-and-context/04-context-withcancel/01-worker-cancel-loop
-```
-
 ### Why the loop has exactly two exits
 
 A long-running consumer must distinguish two fundamentally different shutdowns.

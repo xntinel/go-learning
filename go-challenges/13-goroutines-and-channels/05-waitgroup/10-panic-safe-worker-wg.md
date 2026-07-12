@@ -29,8 +29,6 @@ panicworker/               independent module: example.com/panicworker
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/13-goroutines-and-channels/05-waitgroup/10-panic-safe-worker-wg/cmd/demo
-cd go-solutions/13-goroutines-and-channels/05-waitgroup/10-panic-safe-worker-wg
 go mod edit -go=1.25
 ```
 

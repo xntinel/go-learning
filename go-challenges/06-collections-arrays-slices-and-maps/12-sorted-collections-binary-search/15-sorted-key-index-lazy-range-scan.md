@@ -49,8 +49,6 @@ ssindex/                 module example.com/ssindex
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/12-sorted-collections-binary-search/15-sorted-key-index-lazy-range-scan
-cd go-solutions/06-collections-arrays-slices-and-maps/12-sorted-collections-binary-search/15-sorted-key-index-lazy-range-scan
 go mod edit -go=1.24
 ```
 

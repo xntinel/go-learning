@@ -26,13 +26,6 @@ fees/                      independent module: example.com/fees
 - Test: an assertion-free `TestExecutesEverything` that reaches 100% and proves nothing, and a `TestFeeCents` table that reaches the same 100% and asserts exact values including a tie.
 - Verify: `go test -count=1 -race -cover ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/20-test-coverage-analysis/08-assertion-free-coverage-trap/cmd/demo
-cd go-solutions/12-testing-ecosystem/20-test-coverage-analysis/08-assertion-free-coverage-trap
-```
-
 ### Where the trap lives: the rounding tie
 
 `FeeCents` applies a per-mille rate to an amount in cents: `amount * rate / 1000`.

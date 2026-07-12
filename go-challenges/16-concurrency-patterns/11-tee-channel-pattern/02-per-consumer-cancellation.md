@@ -17,12 +17,6 @@ tee_test.go          cancelled output never stalls the other; both-live delivery
 - Test: closing `done1` lets the second consumer receive every value, two live consumers both receive everything, a buffered run drains without deadlock, and a 1000-value run is clean under `-race`.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/16-concurrency-patterns/11-tee-channel-pattern/02-per-consumer-cancellation/cmd/demo && cd go-solutions/16-concurrency-patterns/11-tee-channel-pattern/02-per-consumer-cancellation
-```
-
 ### What a done channel per output actually isolates
 
 The basic tee from exercise 1 has no escape hatch: if a consumer stops reading, the wrapper blocks forever on its next send to that output. The fix is to let each output carry its own cancellation signal and to make every send abandonable:

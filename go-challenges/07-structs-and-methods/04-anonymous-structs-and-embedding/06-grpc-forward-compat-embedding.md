@@ -30,13 +30,6 @@ method; the implemented method runs real logic; unimplemented methods return
 embeds the default satisfies the interface too.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/04-anonymous-structs-and-embedding/06-grpc-forward-compat-embedding/cmd/demo
-cd go-solutions/07-structs-and-methods/04-anonymous-structs-and-embedding/06-grpc-forward-compat-embedding
-```
-
 ### Why embedding a default gives forward compatibility
 
 `PaymentService` has three methods. `UnimplementedPaymentService` implements all

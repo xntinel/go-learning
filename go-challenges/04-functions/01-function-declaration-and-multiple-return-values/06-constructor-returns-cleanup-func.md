@@ -29,8 +29,6 @@ spooler/                   independent module: example.com/spooler
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/01-function-declaration-and-multiple-return-values/06-constructor-returns-cleanup-func/cmd/demo
-cd go-solutions/04-functions/01-function-declaration-and-multiple-return-values/06-constructor-returns-cleanup-func
 go mod edit -go=1.25
 ```
 

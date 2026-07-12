@@ -26,13 +26,6 @@ mono/                         single module: example.com/mono
 - Test: inject a failing job and assert the error wraps the shared sentinel via `errors.Is`; a successful job returns `nil`; a cancelled context returns a `context.Canceled`-wrapping error.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module (self-contained, with its own copy of the shared package):
-
-```bash
-mkdir -p go-solutions/11-packages-and-modules/10-monorepo-module-strategy/03-service-b-worker/platform/httpx go-solutions/11-packages-and-modules/10-monorepo-module-strategy/03-service-b-worker/cmd/worker
-cd go-solutions/11-packages-and-modules/10-monorepo-module-strategy/03-service-b-worker
-```
-
 ### One library, two very different consumers
 
 The API renders errors to HTTP; the worker never touches HTTP at all. Yet both

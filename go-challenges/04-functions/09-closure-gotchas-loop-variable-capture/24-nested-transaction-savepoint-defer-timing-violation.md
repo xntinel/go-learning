@@ -31,8 +31,6 @@ nestedtx/                    independent module: example.com/nestedtx
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/24-nested-transaction-savepoint-defer-timing-violation/cmd/demo
-cd go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/24-nested-transaction-savepoint-defer-timing-violation
 go mod edit -go=1.24
 ```
 

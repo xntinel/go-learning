@@ -29,8 +29,6 @@ repofixture/                 independent module: example.com/repofixture
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/12-testing-ecosystem/12-t-cleanup-patterns/01-repo-fixture-cleanup/cmd/demo
-cd go-solutions/12-testing-ecosystem/12-t-cleanup-patterns/01-repo-fixture-cleanup
 go mod edit -go=1.24
 ```
 

@@ -89,13 +89,6 @@ Profile-guided optimization (Go 1.21+) can inline functions that exceed the stat
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/36-runtime-compiler-and-assembly/03-inlining-heuristics/03-inlining-heuristics/cmd/demo
-cd go-solutions/36-runtime-compiler-and-assembly/03-inlining-heuristics/03-inlining-heuristics
-```
-
 This is a library (`package inlheur`), not a program. You verify it with `go test`.
 
 ### Exercise 1: Functions Across the Budget Boundary

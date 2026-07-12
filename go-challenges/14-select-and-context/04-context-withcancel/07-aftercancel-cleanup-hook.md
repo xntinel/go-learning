@@ -27,13 +27,6 @@ lease/                     independent module: example.com/lease
 - Test: a cancel runs the release and calls `onAbort` with `context.Cause`; normal completion's `Done()` returns `true`, the abort hook never fires, and release happens exactly once; a `Done()` after the cancel already fired returns `false`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/04-context-withcancel/07-aftercancel-cleanup-hook/cmd/demo
-cd go-solutions/14-select-and-context/04-context-withcancel/07-aftercancel-cleanup-hook
-```
-
 ### Why AfterFunc replaces the babysitter goroutine
 
 The hand-rolled version of "release this on cancel" is a goroutine whose entire

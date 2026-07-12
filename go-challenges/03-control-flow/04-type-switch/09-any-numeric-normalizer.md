@@ -31,13 +31,6 @@ numnorm/                     independent module: example.com/numnorm
   integer width; a round-trip stability check.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/04-type-switch/09-any-numeric-normalizer/cmd/demo
-cd go-solutions/03-control-flow/04-type-switch/09-any-numeric-normalizer
-```
-
 ## The two guards: precision and overflow
 
 Numeric normalization has exactly two ways to go silently wrong, and both are

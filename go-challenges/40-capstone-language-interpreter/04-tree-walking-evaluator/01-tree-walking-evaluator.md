@@ -22,12 +22,6 @@ cmd/
 - Test: arithmetic and operator precedence, division by zero, string concatenation, truthiness, comparisons, `let`/identifier, undefined variable, `if`/`else`, early `return`, closure capture, recursion, type mismatch, error propagation, arity mismatch, mixed int/float promotion.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/40-capstone-language-interpreter/04-tree-walking-evaluator/01-tree-walking-evaluator/cmd/demo && cd go-solutions/40-capstone-language-interpreter/04-tree-walking-evaluator/01-tree-walking-evaluator
-```
-
 ### How Eval dispatches and why errors are values
 
 `Eval` is one function with a type switch over the node. Each case either produces a value directly (an `*IntegerLiteral` becomes an `*Integer`) or recurses into children and combines their results (an `*InfixExpression` evaluates both sides, then applies the operator). The type switch is the entire dispatch table; there is no virtual method on the AST and no visitor object. This keeps the evaluator readable as a single flat enumeration of the language.

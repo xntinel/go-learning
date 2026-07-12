@@ -36,8 +36,6 @@ cache/                        independent module: example.com/cache-double-check
 - Verify: `go test -count=1 -race ./...`.
 
 ```bash
-mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/33-cache-double-check-locking-race/cmd/demo
-cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/33-cache-double-check-locking-race
 go mod edit -go=1.22
 ```
 

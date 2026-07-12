@@ -29,13 +29,6 @@ Test: `AllocsPerRun(1000, ...)` asserting `BuildStack == 0` and `BuildHeap >= 1`
 a reusable `assertMaxAllocs` helper, and a `b.Loop`/`ReportAllocs` benchmark.
 Verify: `go test -count=1 -race ./...`, then `go test -bench=. -benchmem ./...`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/07-escape-analysis/02-observe-escapes-in-tests/cmd/demo
-cd go-solutions/09-pointers/07-escape-analysis/02-observe-escapes-in-tests
-```
-
 ### Why a sink, and why noinline
 
 `testing.AllocsPerRun(runs, f)` runs `f` a few times to warm up, then `runs`

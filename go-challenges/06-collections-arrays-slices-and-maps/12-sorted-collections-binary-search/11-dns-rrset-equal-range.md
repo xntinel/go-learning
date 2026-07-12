@@ -50,8 +50,6 @@ dnszone/                 module example.com/dnszone
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/12-sorted-collections-binary-search/11-dns-rrset-equal-range
-cd go-solutions/06-collections-arrays-slices-and-maps/12-sorted-collections-binary-search/11-dns-rrset-equal-range
 go mod edit -go=1.24
 ```
 

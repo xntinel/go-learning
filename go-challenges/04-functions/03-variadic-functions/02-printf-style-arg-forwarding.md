@@ -29,8 +29,6 @@ keyfmt/                    independent module: example.com/keyfmt
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/03-variadic-functions/02-printf-style-arg-forwarding/cmd/demo
-cd go-solutions/04-functions/03-variadic-functions/02-printf-style-arg-forwarding
 go mod edit -go=1.25
 ```
 

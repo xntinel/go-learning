@@ -31,13 +31,6 @@ the leaking-pointer path forces one at the call site.
 Verify: `go test -count=1 -race ./...`, then observe the leak with
 `go build -gcflags='-m=2' ./... 2>&1 | grep -E 'leaking param|moved to heap'`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/07-escape-analysis/07-large-struct-value-vs-pointer/cmd/demo
-cd go-solutions/09-pointers/07-escape-analysis/07-large-struct-value-vs-pointer
-```
-
 ### The crossover, and the leak that decides it
 
 A `Config` here is large — several scalars plus fixed-size arrays of strings and

@@ -126,8 +126,6 @@ exp, err := otlptracegrpc.New(ctx,
 Set up the module (requires network access to `go get` OTel modules):
 
 ```bash
-mkdir -p go-solutions/31-cloud-native-go/11-opentelemetry-collector-integration/11-opentelemetry-collector-integration/cmd/demo
-cd go-solutions/31-cloud-native-go/11-opentelemetry-collector-integration/11-opentelemetry-collector-integration
 go get go.opentelemetry.io/otel@latest
 go get go.opentelemetry.io/otel/sdk@latest
 go get go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc@latest

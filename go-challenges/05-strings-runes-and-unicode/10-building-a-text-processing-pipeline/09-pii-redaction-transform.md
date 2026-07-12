@@ -27,13 +27,6 @@ redact/                   independent module: example.com/redact
 - Test: text with an email and an `Authorization: Bearer <token>` fragment is redacted while surrounding words are untouched; no-match input is unchanged; adjacent/multiple matches; `Redact(Redact(s)) == Redact(s)`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/10-building-a-text-processing-pipeline/09-pii-redaction-transform/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/10-building-a-text-processing-pipeline/09-pii-redaction-transform
-```
-
 ### Regex for token grammars, not for markup
 
 The lesson warns against using a regex as an HTML parser, and that warning stands:

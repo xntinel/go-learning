@@ -33,8 +33,6 @@ rollflags/                  independent module: example.com/rollflags
 Set up the module. `//go:wasmexport` requires Go 1.24+ (TinyGo 0.34+):
 
 ```bash
-mkdir -p go-solutions/53-wasm-and-extensibility/04-tinygo-wasi-guest-modules/02-wasi-reactor-wasmexport/guest go-solutions/53-wasm-and-extensibility/04-tinygo-wasi-guest-modules/02-wasi-reactor-wasmexport/cmd/demo
-cd go-solutions/53-wasm-and-extensibility/04-tinygo-wasi-guest-modules/02-wasi-reactor-wasmexport
 go mod edit -go=1.24
 go get github.com/tetratelabs/wazero@latest
 ```

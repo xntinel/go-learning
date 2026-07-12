@@ -25,13 +25,6 @@ seqgen/                    independent module: example.com/seqgen
 - Test: N goroutines each pull M IDs; assert exactly N*M distinct IDs with no duplicates and no gaps up to the max.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/07-atomic-package/04-monotonic-sequence-generator/cmd/demo
-cd go-solutions/15-sync-primitives/07-atomic-package/04-monotonic-sequence-generator
-```
-
 ### Why Add(1), and the double-generate bug it avoids
 
 The entire generator is one line: `return g.n.Add(1)`. `atomic.Uint64.Add` performs

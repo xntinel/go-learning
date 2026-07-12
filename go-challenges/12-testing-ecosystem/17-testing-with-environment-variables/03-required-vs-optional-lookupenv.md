@@ -23,13 +23,6 @@ Implement: `Load() (Settings, error)` where `DATABASE_URL` unset -> `ErrSecretUn
 Test: a three-way table (unset via a restore-safe helper, set-empty via `t.Setenv`, set-value); prove `os.Getenv` erases the first two.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/17-testing-with-environment-variables/03-required-vs-optional-lookupenv/cmd/demo
-cd go-solutions/12-testing-ecosystem/17-testing-with-environment-variables/03-required-vs-optional-lookupenv
-```
-
 ## Unset and empty are different failures
 
 Consider two deployments. In the first, someone forgot to wire `DATABASE_URL`

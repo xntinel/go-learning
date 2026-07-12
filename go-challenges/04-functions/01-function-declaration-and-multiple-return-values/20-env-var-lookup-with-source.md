@@ -34,8 +34,6 @@ envlookup/                   independent module: example.com/env-var-lookup-with
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/01-function-declaration-and-multiple-return-values/20-env-var-lookup-with-source/cmd/demo
-cd go-solutions/04-functions/01-function-declaration-and-multiple-return-values/20-env-var-lookup-with-source
 go mod edit -go=1.24
 ```
 

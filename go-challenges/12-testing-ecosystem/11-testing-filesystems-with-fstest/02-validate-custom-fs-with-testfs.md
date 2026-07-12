@@ -30,13 +30,6 @@ prefixfs/                    independent module: example.com/prefixfs
   `errors.Is(err, fs.ErrInvalid)`; a parity test against `fs.Sub`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/11-testing-filesystems-with-fstest/02-validate-custom-fs-with-testfs/cmd/demo
-cd go-solutions/12-testing-ecosystem/11-testing-filesystems-with-fstest/02-validate-custom-fs-with-testfs
-```
-
 ### The contract is the hard part, not the Open
 
 A `prefixFS` mounts an inner filesystem's subtree at the virtual root: reading

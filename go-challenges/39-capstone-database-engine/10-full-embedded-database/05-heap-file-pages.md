@@ -20,12 +20,6 @@ heapfile_test.go     scan count == inserts-deletes, TID stable across compaction
 - Test: `heapfile_test.go` proves a scan yields exactly inserts minus deletes, a `TID` survives compaction, the file grows a second page under load, an out-of-range `TID` is `ErrTupleNotFound`, and the two-pointer page invariant holds after every operation.
 - Verify: `go test -run 'TestHeapFile|ExampleHeapFile' -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/10-full-embedded-database/05-heap-file-pages/cmd/demo && cd go-solutions/39-capstone-database-engine/10-full-embedded-database/05-heap-file-pages
-```
-
 ### Why a TID, and why the heap grows at the tail
 
 The heap file's job is to make many fixed-size pages look like one growable table while keeping each row's address stable forever. The address it hands out is the `TID` — a page index plus a slot index inside that page — and the entire design serves keeping that pair valid for the life of the tuple. Insert walks the existing pages looking for the first one with room for the tuple plus its four-byte slot entry; if it finds one, the row lands there and its `TID` names that page and the slot the page assigned. If no page fits, the heap appends a fresh tail page and places the row there, and `PageCount` grows by one. This first-fit-then-append policy is the simplest allocation that never fragments a tuple across pages, which matters because a tuple must live entirely within one page for the slotted layout to address it with a single offset.

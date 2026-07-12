@@ -32,13 +32,6 @@ Unit tests for regression policy should be deterministic and fast. They should n
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/26-memory-model-and-optimization/13-performance-regression-testing/13-performance-regression-testing/cmd/demo
-cd go-solutions/26-memory-model-and-optimization/13-performance-regression-testing/13-performance-regression-testing
-```
-
 This package does not invoke Git or `benchstat`; it implements the comparison core that a CI wrapper can call after benchmark data has been collected.
 
 ### Exercise 1: Implement The Regression Classifier

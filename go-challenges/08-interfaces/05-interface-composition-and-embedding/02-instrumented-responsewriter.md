@@ -25,13 +25,6 @@ accesslog/                  independent module: example.com/accesslog
 - Test: `Status()` defaults to 200 when the handler only writes, reflects an explicit `WriteHeader(404)`, ignores a second `WriteHeader`, and `BytesWritten()` equals the response length; a static assertion that the wrapper still satisfies `http.ResponseWriter`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/05-interface-composition-and-embedding/02-instrumented-responsewriter/cmd/demo
-cd go-solutions/08-interfaces/05-interface-composition-and-embedding/02-instrumented-responsewriter
-```
-
 ### Why embed, and the two behaviors that must match the stdlib
 
 Embedding `http.ResponseWriter` gives the wrapper all three of its methods for

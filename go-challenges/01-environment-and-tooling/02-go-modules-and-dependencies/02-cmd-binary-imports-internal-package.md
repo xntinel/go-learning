@@ -27,13 +27,6 @@ greetcli/                   independent module: example.com/greetcli
 - Test: call `run` with no-arg, name, and whitespace argv slices and assert the returned error with `errors.Is`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/02-go-modules-and-dependencies/02-cmd-binary-imports-internal-package/internal/greeter go-solutions/01-environment-and-tooling/02-go-modules-and-dependencies/02-cmd-binary-imports-internal-package/cmd/demo
-cd go-solutions/01-environment-and-tooling/02-go-modules-and-dependencies/02-cmd-binary-imports-internal-package
-```
-
 ### Why internal/ and why a run seam
 
 The `internal/` directory is a compiler-enforced visibility boundary: a package at

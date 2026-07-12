@@ -27,13 +27,6 @@ statusrank/                independent module: example.com/statusrank
 - Test: counting a fixed stream yields expected frequencies, `TopN` returns the N highest, ties are broken deterministically (run twice, identical), N larger than the distinct count returns all, and empty input returns empty.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/10-frequency-top-n-aggregation/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/10-frequency-top-n-aggregation
-```
-
 ### Why the map accumulates and the slice ranks
 
 The map is the natural accumulator: `freq[code]++` is O(1), and the zero-value

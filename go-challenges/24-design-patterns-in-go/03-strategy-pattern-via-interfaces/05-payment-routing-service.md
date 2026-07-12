@@ -21,12 +21,6 @@ routing_test.go      primary selection, fallback on unhealthy, unserved region,
 - Test: cheapest-healthy primary selection, fallback when the preferred processor is unhealthy, an error for an unserved region, an error when every in-region processor is down, and the per-processor fee math.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/24-design-patterns-in-go/03-strategy-pattern-via-interfaces/05-payment-routing-service/cmd/demo && cd go-solutions/24-design-patterns-in-go/03-strategy-pattern-via-interfaces/05-payment-routing-service
-```
-
 ### Each processor is a strategy
 
 The unit of variation is a payment processor, and the system depends only on what every processor can answer:

@@ -36,11 +36,6 @@ lease/                       independent module: example.com/lease-renewal-expir
 - Test: a table of clock positions relative to the renewal threshold (well before, one tick before, exactly at, past it, past raw expiry); a further case asserting the renewal window recurs relative to the *new* expiry after `Renew`.
 - Verify: `go test -count=1 ./...`.
 
-```bash
-mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/30-lease-renewal-expiry-off-by-one/cmd/demo
-cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/30-lease-renewal-expiry-off-by-one
-```
-
 ### Why "already past the deadline" is the wrong question to ask
 
 The version that ships first reads as the obviously correct

@@ -22,13 +22,6 @@ Implement: `stopAll` iterating in reverse, each `Stop` wrapped in a fresh `conte
 Test: register db/cache/api, record `Stop` order under a mutex, assert `[api, cache, db]`; a separate no-hang test where a `Stop` blocks on `<-ctx.Done()` and must return once the budget fires.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/14-building-a-context-aware-service-framework/03-reverse-order-stop-with-budget/cmd/demo
-cd go-solutions/14-select-and-context/14-building-a-context-aware-service-framework/03-reverse-order-stop-with-budget
-```
-
 ### Why reverse order, and why a fresh budget
 
 Registration order encodes dependency order: `db` before `cache` before `api`,

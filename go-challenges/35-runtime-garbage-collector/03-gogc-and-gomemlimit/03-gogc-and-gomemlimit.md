@@ -50,13 +50,6 @@ The key metrics are: GC cycles per unit of work (CPU cost), peak heap size (memo
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/35-runtime-garbage-collector/03-gogc-and-gomemlimit/03-gogc-and-gomemlimit/cmd/demo
-cd go-solutions/35-runtime-garbage-collector/03-gogc-and-gomemlimit/03-gogc-and-gomemlimit
-```
-
 ### Exercise 1: Workload and Measurement Types
 
 Create `tuning.go`:

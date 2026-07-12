@@ -26,13 +26,6 @@ Implement: `Consumer` with `DrainAll(in <-chan Job) []Job` (ranges to completion
 Test: buffered-and-closed channel drains in order; empty-closed returns empty; `DrainLimit` returns exactly N and leaves the rest receivable; a 100-value collect-all contract test.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/06-ranging-over-channels/01-drain-queue-consumer/cmd/demo
-cd go-solutions/13-goroutines-and-channels/06-ranging-over-channels/01-drain-queue-consumer
-```
-
 ### Why the parameter is a receive-only channel
 
 `DrainAll` takes `in <-chan Job`, not `chan Job`. That receive-only type is the

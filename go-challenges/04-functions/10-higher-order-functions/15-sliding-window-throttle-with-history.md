@@ -27,8 +27,6 @@ throttle/                    independent module: example.com/throttle
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/10-higher-order-functions/15-sliding-window-throttle-with-history/cmd/demo
-cd go-solutions/04-functions/10-higher-order-functions/15-sliding-window-throttle-with-history
 go mod edit -go=1.24
 ```
 

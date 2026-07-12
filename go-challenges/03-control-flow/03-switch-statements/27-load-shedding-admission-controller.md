@@ -29,8 +29,6 @@ loadshed/                  independent module: example.com/load-shedding-admissi
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/03-switch-statements/27-load-shedding-admission-controller/cmd/demo
-cd go-solutions/03-control-flow/03-switch-statements/27-load-shedding-admission-controller
 go mod edit -go=1.24
 ```
 

@@ -19,12 +19,6 @@ join_test.go         dedupe across sources, no-sources, and clean stop of every 
 - Test: dedupe duplicate keys spanning sources, handle zero sources, and prove an early `break` stops every input rather than draining them.
 - Verify: `go test -run 'TestJoin' -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/25-iterators-and-modern-go/07-iter-package-usage/06-stream-join-service/cmd/demo && cd go-solutions/25-iterators-and-modern-go/07-iter-package-usage/06-stream-join-service
-```
-
 ### Why a stream-join must pull, fan-in, and re-push
 
 The inputs are push iterators: each `Record` shard owns its own loop and shoves values at whoever ranges over it. A stream-join cannot work against that grain. To order keys across N shards it has to compare the current head of every shard simultaneously and emit the smallest, then advance only the shard it emitted from — exactly the random, head-at-a-time lookahead the push model forbids. So the first move is to pull: inside the returned `Seq`, call `iter.Pull` on each source, turning every push shard into an independent `next`/`stop` pair, and `defer` every `stop` immediately so that no matter how the join ends — natural exhaustion, an early consumer `break`, a panic — every source goroutine is torn down.

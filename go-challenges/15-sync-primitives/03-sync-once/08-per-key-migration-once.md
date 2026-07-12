@@ -29,13 +29,6 @@ per-key-migration-once/       module: example.com/per-key-migration-once
 - Test: per-tenant atomic run counters all equal 1 under N goroutines x K tenants; two slow tenants provably overlap (channel handshake, no sleeps); a failing tenant returns the identical cached error on every later call while a healthy tenant still succeeds.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/03-sync-once/08-per-key-migration-once/cmd/demo
-cd go-solutions/15-sync-primitives/03-sync-once/08-per-key-migration-once
-```
-
 ### Three contracts, one keyword: granularity is the design decision
 
 "Run the migration once" hides a question: once per *what*? There are three

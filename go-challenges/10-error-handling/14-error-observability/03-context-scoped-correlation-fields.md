@@ -31,8 +31,6 @@ ctxlog/                      independent module: example.com/ctxlog
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/10-error-handling/14-error-observability/03-context-scoped-correlation-fields/cmd/demo
-cd go-solutions/10-error-handling/14-error-observability/03-context-scoped-correlation-fields
 go mod edit -go=1.25
 ```
 

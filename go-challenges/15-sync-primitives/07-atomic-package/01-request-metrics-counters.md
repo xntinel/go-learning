@@ -25,13 +25,6 @@ reqmetrics/                independent module: example.com/reqmetrics
 - Test: 100 goroutines x 500 `RecordRequest` calls asserting every total is exact; an `httptest` round-trip through the middleware; an `Example` pinning `String`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/07-atomic-package/01-request-metrics-counters/cmd/demo
-cd go-solutions/15-sync-primitives/07-atomic-package/01-request-metrics-counters
-```
-
 ### Why atomics, not a mutex, here
 
 Each counter is a single `int64` and each update is an independent `Add`. There is

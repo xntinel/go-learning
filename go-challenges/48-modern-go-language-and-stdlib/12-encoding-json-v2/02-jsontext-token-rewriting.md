@@ -31,8 +31,6 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/48-modern-go-language-and-stdlib/12-encoding-json-v2/02-jsontext-token-rewriting/cmd/demo
-cd go-solutions/48-modern-go-language-and-stdlib/12-encoding-json-v2/02-jsontext-token-rewriting
 go mod edit -go=1.26
 export GOEXPERIMENT=jsonv2
 ```

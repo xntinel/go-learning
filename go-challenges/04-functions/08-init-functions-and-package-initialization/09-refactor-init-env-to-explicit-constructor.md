@@ -23,13 +23,6 @@ Implement: `Load(...Option) (*Config, error)` reading through an injected `geten
 Test: a fake `getenv` yields a populated `Config` with no reliance on the process env; missing required keys return a joined error each matchable with `errors.Is`; two `Load` calls with different env produce independent `Config`s.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/08-init-functions-and-package-initialization/09-refactor-init-env-to-explicit-constructor/cmd/demo
-cd go-solutions/04-functions/08-init-functions-and-package-initialization/09-refactor-init-env-to-explicit-constructor
-```
-
 ### The anti-pattern and the fix
 
 The starting point (shown here only as an illustrative, non-compiled block) is the

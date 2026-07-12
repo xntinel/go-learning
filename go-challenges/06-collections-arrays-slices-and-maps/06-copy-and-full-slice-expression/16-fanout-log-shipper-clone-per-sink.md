@@ -49,8 +49,6 @@ fanout/                   module example.com/fanout
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/06-copy-and-full-slice-expression/16-fanout-log-shipper-clone-per-sink
-cd go-solutions/06-collections-arrays-slices-and-maps/06-copy-and-full-slice-expression/16-fanout-log-shipper-clone-per-sink
 go mod edit -go=1.24
 ```
 

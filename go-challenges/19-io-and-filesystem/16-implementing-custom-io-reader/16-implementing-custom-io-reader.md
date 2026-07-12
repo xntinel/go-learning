@@ -18,13 +18,6 @@ A transforming reader should call the underlying reader, transform only the byte
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/19-io-and-filesystem/16-implementing-custom-io-reader/16-implementing-custom-io-reader/cmd/demo
-cd go-solutions/19-io-and-filesystem/16-implementing-custom-io-reader/16-implementing-custom-io-reader
-```
-
 ### Exercise 1: Implement The Reader
 
 Create `reader.go`:

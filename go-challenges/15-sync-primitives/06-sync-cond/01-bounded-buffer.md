@@ -25,13 +25,6 @@ bbuf/                       independent module: example.com/bbuf
 - Test: FIFO order, concurrent N-producer/M-consumer flow-through, never-exceeds-cap under saturation, plus `synctest` tests that assert `Get` blocks when empty and `Put` blocks when full.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/06-sync-cond/01-bounded-buffer/cmd/demo
-cd go-solutions/15-sync-primitives/06-sync-cond/01-bounded-buffer
-```
-
 ### Why two Conds over one mutex
 
 The buffer has two distinct predicates. A producer waits for "not full"

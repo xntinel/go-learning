@@ -31,8 +31,6 @@ dnscache/                     module example.com/dnscache
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/05-anonymous-functions/34-dns-cache-afterfunc/cmd/demo
-cd go-solutions/04-functions/05-anonymous-functions/34-dns-cache-afterfunc
 go mod edit -go=1.24
 ```
 

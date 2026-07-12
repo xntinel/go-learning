@@ -23,13 +23,6 @@ Implement: `NewID()` returning a 32-character hex string from 16 random bytes.
 Test: a table-driven/property `Test` on length, hex-validity, and uniqueness, plus `ExampleNewID` deliberately without an `// Output:` comment.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/15-testable-examples/08-no-output-comment-compiled-not-run/cmd/demo
-cd go-solutions/12-testing-ecosystem/15-testable-examples/08-no-output-comment-compiled-not-run
-```
-
 ## Compiled, not executed — and why that is exactly right
 
 An example that carries no output comment is still compiled by the test build, so

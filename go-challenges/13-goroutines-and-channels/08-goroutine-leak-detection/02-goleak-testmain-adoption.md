@@ -30,8 +30,6 @@ goleakflush/                 independent module: example.com/goleakflush
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/13-goroutines-and-channels/08-goroutine-leak-detection/02-goleak-testmain-adoption/cmd/demo
-cd go-solutions/13-goroutines-and-channels/08-goroutine-leak-detection/02-goleak-testmain-adoption
 go get go.uber.org/goleak@v1.3.0
 ```
 

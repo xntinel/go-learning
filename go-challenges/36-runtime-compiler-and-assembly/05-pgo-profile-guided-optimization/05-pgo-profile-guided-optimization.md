@@ -81,13 +81,6 @@ benchstat nopgo.txt withpgo.txt
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/36-runtime-compiler-and-assembly/05-pgo-profile-guided-optimization/05-pgo-profile-guided-optimization/cmd/demo
-cd go-solutions/36-runtime-compiler-and-assembly/05-pgo-profile-guided-optimization/05-pgo-profile-guided-optimization
-```
-
 This is a library verified by `go test`. The `cmd/demo` binary is a runnable demonstration.
 
 ### Exercise 1: Build a realistic workload package

@@ -29,8 +29,6 @@ genericstore/              independent module: example.com/genericstore
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/08-interfaces/02-empty-interface-and-any/08-generics-over-any-store/cmd/demo
-cd go-solutions/08-interfaces/02-empty-interface-and-any/08-generics-over-any-store
 go mod edit -go=1.26
 ```
 

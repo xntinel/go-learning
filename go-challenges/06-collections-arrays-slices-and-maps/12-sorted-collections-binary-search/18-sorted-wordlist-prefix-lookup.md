@@ -51,8 +51,6 @@ look/                     module example.com/look
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/12-sorted-collections-binary-search/18-sorted-wordlist-prefix-lookup
-cd go-solutions/06-collections-arrays-slices-and-maps/12-sorted-collections-binary-search/18-sorted-wordlist-prefix-lookup
 go mod edit -go=1.24
 ```
 

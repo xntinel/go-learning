@@ -31,13 +31,6 @@ Test: boundary behavior at limit−1, limit, limit+1, and negative size; proof t
 constants land in the right target types; the archive 100 MiB boundary.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/08-untyped-constants-and-constant-expressions/01-upload-limit-policy/cmd/demo
-cd go-solutions/02-variables-types-and-constants/08-untyped-constants-and-constant-expressions/01-upload-limit-policy
-```
-
 ### Why the constants stay untyped
 
 The byte limits are built from a binary ladder: `bytesPerKiB = 1 << 10`,

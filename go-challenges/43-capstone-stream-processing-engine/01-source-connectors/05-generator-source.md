@@ -20,12 +20,6 @@ generator-source/
 - Test: a bounded generator emits exactly N and closes its channel without a `Close` call; an unbounded one keeps emitting until `Close`.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/43-capstone-stream-processing-engine/01-source-connectors/05-generator-source/cmd/demo && cd go-solutions/43-capstone-stream-processing-engine/01-source-connectors/05-generator-source
-```
-
 ### The shared vocabulary
 
 `source.go` bundles the same `Record`, `Metrics`, and `Source` types. A generator needs no error channel for I/O failures, but it still returns one to satisfy the interface, kept small and always drained-or-buffered.

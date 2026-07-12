@@ -25,13 +25,6 @@ publisher/                    module example.com/publisher (go 1.22+ semantics)
 - Test: every event is published exactly once regardless of order (count and set-equality); both variants pass under `-race`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/05-anonymous-functions/09-shared-capture-race-fanout/cmd/demo
-cd go-solutions/04-functions/05-anonymous-functions/09-shared-capture-race-fanout
-```
-
 ### What Go 1.22 fixed, and what it did not
 
 Here is the anti-pattern, kept illustrative (not compiled) because it is a data

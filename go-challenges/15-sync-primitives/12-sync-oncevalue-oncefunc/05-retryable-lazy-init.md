@@ -22,13 +22,6 @@ retrylazy/                 independent module: example.com/retrylazy
 - Test: init fails N times then succeeds — each failing `Get` returns that attempt's fresh error, attempt N+1 succeeds, no init runs after success; 50 concurrent `Get` calls execute init exactly once, under `-race`.
 - Verify: `go test -count=1 -race ./...` and `go run ./cmd/demo`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/12-sync-oncevalue-oncefunc/05-retryable-lazy-init/cmd/demo
-cd go-solutions/15-sync-primitives/12-sync-oncevalue-oncefunc/05-retryable-lazy-init
-```
-
 ### Why Once cannot express this
 
 `sync.Once` and its helpers have exactly one bit of state: not-done or done.

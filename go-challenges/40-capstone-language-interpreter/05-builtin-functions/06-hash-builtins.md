@@ -21,12 +21,6 @@ hash_test.go  immutability, override-on-merge, unhashable-key error
 - Test: that `set` and `delete` return new hashes without mutating the original, that `merge` lets the second hash override the first, and that an unhashable key errors.
 - Verify: `go test -race ./...` and `go run ./cmd/demo`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/40-capstone-language-interpreter/05-builtin-functions/06-hash-builtins/cmd/demo && cd go-solutions/40-capstone-language-interpreter/05-builtin-functions/06-hash-builtins
-```
-
 ### Canonical keys and immutable rebuilds
 
 A hash cannot key directly on an `Object` pointer — two distinct `*String{Value: "name"}` allocations would be different keys despite being equal values. `HashKeyOf` solves this by reducing a hashable object to a `HashKey` struct of `{Type, Value}` where `Value` is a canonical string form; two equal strings produce the same `HashKey`, so the Go map behaves as a value-keyed map. Only Integer, String, and Boolean are reducible this way, and `HashKeyOf` returns `false` for anything else — that boolean is what `set`, `delete`, and `hasKey` check before touching the map.

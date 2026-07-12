@@ -25,13 +25,6 @@ admission/                 independent module: example.com/admission
 - Test: far more goroutines than the limit each acquire/hold/release; a peak tracker asserts the observed concurrency never exceeds the limit and in-flight returns to zero.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/07-atomic-package/06-admission-inflight-limiter/cmd/demo
-cd go-solutions/15-sync-primitives/07-atomic-package/06-admission-inflight-limiter
-```
-
 ### Why a naive Add makes a bad limiter
 
 The obvious limiter is `if l.inflight.Add(1) > l.max { l.inflight.Add(-1); return false }`.

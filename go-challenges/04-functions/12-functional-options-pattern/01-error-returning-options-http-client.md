@@ -29,13 +29,6 @@ apiclient/                       independent module: example.com/apiclient
 - Test: an `httptest.NewServer` round trip asserting the User-Agent and a retryable 502; a table of invalid configurations asserted with `errors.Is`; a proof the caller's client is not mutated; a proof `WithRetryStatus` sets exactly the given codes.
 - Verify: `go test -count=1 ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/12-functional-options-pattern/01-error-returning-options-http-client/internal/httpx go-solutions/04-functions/12-functional-options-pattern/01-error-returning-options-http-client/cmd/demo
-cd go-solutions/04-functions/12-functional-options-pattern/01-error-returning-options-http-client
-```
-
 ### Why error-returning options here
 
 The client has four options and every one of them can be given invalid input:

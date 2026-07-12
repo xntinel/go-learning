@@ -34,8 +34,6 @@ twopc/                         module example.com/twopc
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/02-for-loops/22-two-phase-commit-coordinator/cmd/demo
-cd go-solutions/03-control-flow/02-for-loops/22-two-phase-commit-coordinator
 go mod edit -go=1.24
 ```
 

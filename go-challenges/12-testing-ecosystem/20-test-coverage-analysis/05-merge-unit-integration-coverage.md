@@ -29,13 +29,6 @@ checkout/                  independent module: example.com/checkout
 - Test: unit table tests over the discount tiers and the empty-cart branch; the server is driven separately as the integration tier.
 - Verify: `go test -count=1 -race ./...`, then the merge workflow below.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/20-test-coverage-analysis/05-merge-unit-integration-coverage/cmd/server go-solutions/12-testing-ecosystem/20-test-coverage-analysis/05-merge-unit-integration-coverage/cmd/demo
-cd go-solutions/12-testing-ecosystem/20-test-coverage-analysis/05-merge-unit-integration-coverage
-```
-
 ### Why two tiers need merging
 
 `Total` carries the interesting branches: a per-tier discount and a tax

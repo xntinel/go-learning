@@ -28,13 +28,6 @@ Implement: a `User` struct, `New(id, email) (*User, error)` with validation, mut
 Test: `New` rejects empty fields and initializes `Profile`/`CreatedAt`; `Add`+`Get` return the SAME pointer; duplicate `Add` is `ErrAlreadyExists`; missing `Get` is `ErrNotFound`; a pointer mutation is visible to all holders; `FindByEmail` finds `u1`; concurrent `Add` is race-clean.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/05-pointers-to-structs/01-user-service-shared-mutable-state/cmd/demo
-cd go-solutions/09-pointers/05-pointers-to-structs/01-user-service-shared-mutable-state
-```
-
 ### Why the store holds pointers, and why identity is a contract
 
 The `Service` keeps `map[string]*User`, not `map[string]User`. If it stored values,

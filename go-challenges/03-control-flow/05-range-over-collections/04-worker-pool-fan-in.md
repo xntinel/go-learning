@@ -31,8 +31,6 @@ workerpool/                 independent module: example.com/workerpool
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/05-range-over-collections/04-worker-pool-fan-in/cmd/demo
-cd go-solutions/03-control-flow/05-range-over-collections/04-worker-pool-fan-in
 go mod edit -go=1.24
 ```
 

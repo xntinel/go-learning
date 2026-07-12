@@ -29,8 +29,6 @@ protoversion/                independent module: example.com/protocol-version-ro
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/03-switch-statements/25-protocol-version-router-with-cascading-fallback/cmd/demo
-cd go-solutions/03-control-flow/03-switch-statements/25-protocol-version-router-with-cascading-fallback
 go mod edit -go=1.24
 ```
 

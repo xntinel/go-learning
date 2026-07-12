@@ -26,13 +26,6 @@ registry/                  independent module: example.com/registry
 - Test: value-copy does not mutate the original; pointer-share does; `addr` returns a pointer to a copy (`p != &original`); writing through `*p` changes the original; nil paths return `ErrNilService`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/01-pointer-basics/01-service-registry-pointer-mechanics/cmd/demo
-cd go-solutions/09-pointers/01-pointer-basics/01-service-registry-pointer-mechanics
-```
-
 ### The five helpers and what each proves
 
 `newPtr(name)` returns a `*Service` — the direct construction of a pointer with

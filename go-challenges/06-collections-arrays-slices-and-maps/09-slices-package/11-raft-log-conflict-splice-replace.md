@@ -53,8 +53,6 @@ raftlog/                  module example.com/raftlog
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/09-slices-package/11-raft-log-conflict-splice-replace
-cd go-solutions/06-collections-arrays-slices-and-maps/09-slices-package/11-raft-log-conflict-splice-replace
 go mod edit -go=1.24
 ```
 

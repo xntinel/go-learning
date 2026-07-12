@@ -30,13 +30,6 @@ panics with `http.ErrAbortHandler` -> the middleware re-panics (asserted by a
 recovering test wrapper).
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/10-error-handling-middleware/03-panic-recoverer/cmd/demo
-cd go-solutions/10-error-handling/10-error-handling-middleware/03-panic-recoverer
-```
-
 ### Why recover, and why the carve-out
 
 `http.Server` does have a last-ditch per-connection recover, but it logs the panic

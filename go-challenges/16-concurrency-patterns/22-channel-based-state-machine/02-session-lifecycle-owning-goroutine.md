@@ -19,12 +19,6 @@ session_test.go      rejection, happy path, concurrent pings under -race, termin
 - Test: a too-early ping is rejected, the happy path reaches Connected then Closed, hundreds of concurrent `Do`/`State` calls are race-free with an exact ping count, Close is terminal, and a cancelled context stops the owner.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/16-concurrency-patterns/22-channel-based-state-machine/02-session-lifecycle-owning-goroutine/cmd/demo && cd go-solutions/16-concurrency-patterns/22-channel-based-state-machine/02-session-lifecycle-owning-goroutine
-```
-
 ### Why the state must not live in the struct
 
 The tempting design puts `state State` and a `sync.Mutex` on the `Session` struct. It works until a supervisor calls `State()` while the dialer calls a transition: now two goroutines touch the same field and you are one missed lock away from a data race. Even with the lock correct, a status read contends on the same mutex as every transition. The owning-goroutine design sidesteps both problems by making the state physically unreachable from any goroutine but one.

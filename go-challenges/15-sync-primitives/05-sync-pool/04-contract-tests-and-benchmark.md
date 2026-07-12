@@ -27,13 +27,6 @@ Implement: reuse the typed `Pool`; add the full test suite and a benchmark pair.
 Test: reset-on-reuse; a many-goroutine Get/Put stress asserting `allocated < total ops` (reuse occurred); `BenchmarkPool` (pooled) vs `BenchmarkNoPool` (fresh allocation).
 Verify: `go test -count=1 -race ./...`, then `go test -bench=. -benchmem -run=^$ ./buffers`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/05-sync-pool/04-contract-tests-and-benchmark/buffers go-solutions/15-sync-primitives/05-sync-pool/04-contract-tests-and-benchmark/cmd/demo
-cd go-solutions/15-sync-primitives/05-sync-pool/04-contract-tests-and-benchmark
-```
-
 ### What the benchmark actually proves, and what it cannot
 
 Two things make the benchmark the module's hard gate. `BenchmarkPool` runs

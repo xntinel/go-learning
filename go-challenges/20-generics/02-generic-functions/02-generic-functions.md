@@ -53,13 +53,6 @@ performance comparable to hand-rolled type-specific code.
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/20-generics/02-generic-functions/02-generic-functions/cmd/demo
-cd go-solutions/20-generics/02-generic-functions/02-generic-functions
-```
-
 ### Exercise 1: The Min, Max, Contains, And Index Functions
 
 Create `collection.go`:

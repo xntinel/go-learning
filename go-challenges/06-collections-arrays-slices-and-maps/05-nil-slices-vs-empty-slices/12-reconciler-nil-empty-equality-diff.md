@@ -55,8 +55,6 @@ reconcile/                module example.com/reconcile
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/12-reconciler-nil-empty-equality-diff
-cd go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/12-reconciler-nil-empty-equality-diff
 go mod edit -go=1.24
 ```
 

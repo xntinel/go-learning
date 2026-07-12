@@ -31,13 +31,6 @@ Test: sum invariant over unordered output, N workers actually run, output closes
 exactly once (no panic under `-race`), and a cancel mid-stream drains cleanly.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/12-multi-stage-pipeline-cancellation/02-fan-out-worker-pool-waitgroup-close/cmd/demo
-cd go-solutions/14-select-and-context/12-multi-stage-pipeline-cancellation/02-fan-out-worker-pool-waitgroup-close
-```
-
 ### The close ownership problem, and the WaitGroup gate
 
 If each of N workers did `defer close(out)`, the first worker to finish would close

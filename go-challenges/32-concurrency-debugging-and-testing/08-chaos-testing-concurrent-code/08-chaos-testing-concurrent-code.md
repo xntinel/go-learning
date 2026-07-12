@@ -79,13 +79,6 @@ Each stage calls `setErr` when it encounters an error and also selects on `ctx.D
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/32-concurrency-debugging-and-testing/08-chaos-testing-concurrent-code/08-chaos-testing-concurrent-code/cmd/demo
-cd go-solutions/32-concurrency-debugging-and-testing/08-chaos-testing-concurrent-code/08-chaos-testing-concurrent-code
-```
-
 ### Exercise 1: Fault Injector
 
 Create `chaos.go`:

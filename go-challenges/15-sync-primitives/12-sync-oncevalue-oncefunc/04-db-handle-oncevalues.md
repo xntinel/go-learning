@@ -22,13 +22,6 @@ dbhandle/                  independent module: example.com/dbhandle
 - Test: success path opens exactly once across 100 concurrent callers and all see the same handle; a fail-once-then-succeed opener proves the error stays cached forever, asserted via `errors.Is` against a sentinel.
 - Verify: `go test -count=1 -race ./...` and `go run ./cmd/demo`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/12-sync-oncevalue-oncefunc/04-db-handle-oncevalues/cmd/demo
-cd go-solutions/15-sync-primitives/12-sync-oncevalue-oncefunc/04-db-handle-oncevalues
-```
-
 ### The right shape for a shared handle
 
 `*sql.DB` is already a concurrency-safe pool designed to be created once and

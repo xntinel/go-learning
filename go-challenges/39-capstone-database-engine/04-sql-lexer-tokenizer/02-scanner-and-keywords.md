@@ -21,12 +21,6 @@ lexer_test.go        keyword case-folding, identifiers, operators, punctuation, 
 - Test: `lexer_test.go` covers case-insensitive keyword recognition, identifier scanning, the one- and two-character operators, punctuation, and 1-based line/column tracking across newlines.
 - Verify: `go test -run 'TestTokenize|TestLine' -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/04-sql-lexer-tokenizer/02-scanner-and-keywords/cmd/demo && cd go-solutions/39-capstone-database-engine/04-sql-lexer-tokenizer/02-scanner-and-keywords
-```
-
 ### Why a two-offset cursor and a keyword map, not a per-character branch
 
 The scanner reads the source exactly once, left to right, holding two byte offsets: `pos`, the index of the current byte `ch`, and `readPos`, the index of the next byte to read. `readChar` slides the window forward by one; `peekChar` returns the next byte without moving. That single byte of lookahead is all the scanner ever needs, because every token is decided by the current byte plus at most one peek: `-` versus `--`, `/` versus `/*`, `<` versus `<=`, a fractional dot versus a punctuation dot. Keeping lookahead at exactly one byte is what makes `NextToken` a tight, allocation-free inner loop.

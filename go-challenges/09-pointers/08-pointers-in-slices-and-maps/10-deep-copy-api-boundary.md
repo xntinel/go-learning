@@ -28,13 +28,6 @@ mutating every level of the deep snapshot leaves the store untouched;
 `ExportSnapshot` runs `-race` clean under concurrent writers.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/08-pointers-in-slices-and-maps/10-deep-copy-api-boundary/cmd/demo
-cd go-solutions/09-pointers/08-pointers-in-slices-and-maps/10-deep-copy-api-boundary
-```
-
 ### Why a value copy is still not independent
 
 A struct value copy copies each field. For a value-typed field (`string`, `int`,

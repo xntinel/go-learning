@@ -23,13 +23,6 @@ Implement: exported `Add`, `Sub`, `Mul` over `int`.
 Test: a table-driven `Test`, plus `ExampleAdd`, `ExampleSub`, `ExampleMul`, the multi-line `ExampleAdd_multiple`, and the negative-contract `ExampleMul_negative`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/15-testable-examples/01-math-library-examples/cmd/demo
-cd go-solutions/12-testing-ecosystem/15-testable-examples/01-math-library-examples
-```
-
 ## The base rules, made concrete
 
 An example function takes no arguments and returns nothing; the toolchain finds

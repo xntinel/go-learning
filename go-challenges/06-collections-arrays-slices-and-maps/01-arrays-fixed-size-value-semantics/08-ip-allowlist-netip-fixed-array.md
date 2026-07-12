@@ -27,13 +27,6 @@ ipallow/                     independent module: example.com/ipallow
 - Test: IPv4 and IPv6 membership; an `AddrFrom4` address and its `As16()` key are stable; the zero `netip.Addr` is never allowed; calling `As4` on an IPv6 address panics (documented, recover-based).
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/08-ip-allowlist-netip-fixed-array/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/08-ip-allowlist-netip-fixed-array
-```
-
 ### Why normalize to [16]byte via As16
 
 `netip.Addr` is itself comparable — you *can* use `map[netip.Addr]struct{}`

@@ -28,13 +28,6 @@ validate/                      independent module: example.com/validate
 - Test: an all-invalid request has all three sentinels reachable via `errors.Is`; the joined message lists all three field messages separated by newlines; a valid request returns `nil`; a one-field-invalid request matches only that sentinel; `errors.Unwrap(joined)` is `nil`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/02-fmt-errorf-and-error-wrapping/05-validation-join-accumulate/cmd/demo
-cd go-solutions/10-error-handling/02-fmt-errorf-and-error-wrapping/05-validation-join-accumulate
-```
-
 ### Accumulate, do not short-circuit
 
 The validator never returns early. It appends to a `[]error` — one entry per

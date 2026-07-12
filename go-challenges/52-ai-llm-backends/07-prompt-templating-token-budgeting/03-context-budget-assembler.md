@@ -35,8 +35,6 @@ budget/                     independent module: example.com/budget
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/52-ai-llm-backends/07-prompt-templating-token-budgeting/03-context-budget-assembler/cmd/demo
-cd go-solutions/52-ai-llm-backends/07-prompt-templating-token-budgeting/03-context-budget-assembler
 go mod edit -go=1.26
 go get github.com/tiktoken-go/tokenizer@latest
 ```

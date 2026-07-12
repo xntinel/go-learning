@@ -25,13 +25,6 @@ Implement: a `Registry` keyed by driver name with `New`, `Register`, `Open`, `Na
 Test: register-then-`Open` routes to the right driver; `Open` of an unknown name is `ErrDriverNotFound` via `errors.Is`; `Names` is sorted; each `New()` is an independent world.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/08-init-functions-and-package-initialization/01-driver-registry-contract/cmd/demo
-cd go-solutions/04-functions/08-init-functions-and-package-initialization/01-driver-registry-contract
-```
-
 ### Why there is no init and no default list
 
 A registry is tempting to seed. You could imagine the package shipping a global

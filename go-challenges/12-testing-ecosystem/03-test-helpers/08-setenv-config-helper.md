@@ -27,13 +27,6 @@ envconfig/                   independent module: example.com/envconfig
 - Test: `loadConfig(t, env)` applies `t.Setenv` for each key then calls `Load`; subtests assert parsed values and error cases; none use `t.Parallel` (documented as the serial contract).
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/03-test-helpers/08-setenv-config-helper/cmd/demo
-cd go-solutions/12-testing-ecosystem/03-test-helpers/08-setenv-config-helper
-```
-
 ### Why the helper is inherently serial
 
 `t.Setenv(k, v)` calls `os.Setenv` and registers a `Cleanup` to restore the prior

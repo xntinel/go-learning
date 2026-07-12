@@ -31,8 +31,6 @@ Set up the module. The default build is stdlib-only; the OpenAI SDK is needed
 only for the `online`-tagged files:
 
 ```bash
-mkdir -p go-solutions/52-ai-llm-backends/04-embeddings-and-pgvector/01-embedding-client/cmd/demo
-cd go-solutions/52-ai-llm-backends/04-embeddings-and-pgvector/01-embedding-client
 go get github.com/openai/openai-go/v3@latest   # only needed for -tags online
 ```
 

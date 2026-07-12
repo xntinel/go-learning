@@ -28,13 +28,6 @@ shardedttl/                      independent module: example.com/shardedttl
 - Test: table of contract tests under `t.Parallel()`, including `TestSetOverwritesTTL` and `TestShardingDistributesKeys`, plus a testable Example.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/13-building-a-thread-safe-cache/01-sharded-ttl-cache-core/cache go-solutions/15-sync-primitives/13-building-a-thread-safe-cache/01-sharded-ttl-cache-core/cmd/demo
-cd go-solutions/15-sync-primitives/13-building-a-thread-safe-cache/01-sharded-ttl-cache-core
-```
-
 ### The design: shards, not one lock
 
 A single mutex over one map serializes every operation; under 40 concurrent

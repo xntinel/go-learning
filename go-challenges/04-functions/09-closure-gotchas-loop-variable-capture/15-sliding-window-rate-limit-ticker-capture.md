@@ -29,8 +29,6 @@ windowlimiter/               independent module: example.com/windowlimiter
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/15-sliding-window-rate-limit-ticker-capture/cmd/demo
-cd go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/15-sliding-window-rate-limit-ticker-capture
 go mod edit -go=1.24
 ```
 

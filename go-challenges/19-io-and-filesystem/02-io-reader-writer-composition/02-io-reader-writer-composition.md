@@ -41,13 +41,6 @@ Every wrapper in this lesson holds an inner `io.Reader` or `io.Writer` and adds 
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/19-io-and-filesystem/02-io-reader-writer-composition/02-io-reader-writer-composition/transform/cmd/demo
-cd go-solutions/19-io-and-filesystem/02-io-reader-writer-composition/02-io-reader-writer-composition
-```
-
 ### Exercise 1: A Counting Writer
 
 Create `transform/counting.go`:

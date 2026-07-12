@@ -22,12 +22,6 @@ iter_test.go         iterator agrees with Tokenize, early break, filtering
 - Test: `iter_test.go` proves `Tokens` matches `Tokenize` over a corpus, that a `break` stops iteration early, and that `TokensFiltered` drops the filtered tokens while keeping the terminator.
 - Verify: `go test -run 'TestTokens|ExampleTokens' -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/04-sql-lexer-tokenizer/06-token-iterator/cmd/demo && cd go-solutions/39-capstone-database-engine/04-sql-lexer-tokenizer/06-token-iterator
-```
-
 ### Why an iterator, and why it must agree with the slice
 
 The slice API is fine for a whole statement but wrong for two cases: a multi-megabyte script, where materializing every token at once wastes memory, and a consumer that only needs a prefix — a `LIMIT`-clause sniffer, say — which still pays to tokenize the entire input. A range-over-func iterator fixes both. `Tokens` returns a `func(yield func(Token) bool)`: the runtime calls the function, which drives the same `Lexer` one `NextToken` at a time and hands each token to `yield`. If `yield` returns false — which is what `break` in the consumer's `for range` loop causes — the iterator returns immediately, so a consumer that stops after two tokens lexes only as far as it needs. There is no slice, no preallocation, and laziness is automatic.

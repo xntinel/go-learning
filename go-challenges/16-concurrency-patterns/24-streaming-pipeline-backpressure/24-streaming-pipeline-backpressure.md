@@ -17,13 +17,6 @@ pipeline/
   cmd/demo/main.go
 ```
 
-Module path: `example.com/pipeline`. Set up with:
-
-```bash
-mkdir -p go-solutions/16-concurrency-patterns/24-streaming-pipeline-backpressure/24-streaming-pipeline-backpressure/internal/pipeline go-solutions/16-concurrency-patterns/24-streaming-pipeline-backpressure/24-streaming-pipeline-backpressure/cmd/demo
-cd go-solutions/16-concurrency-patterns/24-streaming-pipeline-backpressure/24-streaming-pipeline-backpressure
-```
-
 ## Concepts
 
 ### Bounded Channels as the Backpressure Mechanism

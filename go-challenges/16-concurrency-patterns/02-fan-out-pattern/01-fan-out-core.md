@@ -19,12 +19,6 @@ fanout_test.go       set correctness, exactly-once delivery under -race, single-
 - Test: every input appears on the output exactly once, one worker preserves order, zero workers still closes the output channel, all under `-race`.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/16-concurrency-patterns/02-fan-out-pattern/01-fan-out-core/cmd/demo && cd go-solutions/16-concurrency-patterns/02-fan-out-pattern/01-fan-out-core
-```
-
 ### Why one inbound channel and one closer goroutine
 
 The whole pattern rests on a property of Go channels: when many goroutines receive from the same channel, the runtime hands each value to exactly one of them. That is what makes fan-out safe without any locking. The producer sends each job once; the runtime partitions those jobs across whichever workers happen to be ready. Work is divided by arrival, not by content, and no two workers ever see the same value.

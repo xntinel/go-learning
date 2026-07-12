@@ -26,13 +26,6 @@ shutdown/                   independent module: example.com/shutdown
 - Test: cancelling the context runs `srv.Shutdown` before `db.Close` before `flusher.Flush`; a server shutdown that exceeds the bounded context surfaces `context.DeadlineExceeded` while the remaining closers still run; the `AfterFunc` cleanup fires exactly once on cancel.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/09-graceful-shutdown-layered-defer/shutdown go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/09-graceful-shutdown-layered-defer/cmd/demo
-cd go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/09-graceful-shutdown-layered-defer
-```
-
 ### LIFO defer order is the teardown order
 
 If you think of the process as acquiring resources in a fixed order — database

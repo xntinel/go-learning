@@ -26,13 +26,6 @@ idem/                         independent module: example.com/idem
 - Test: a replay where `errors.Is(err, ErrDuplicate)` is true AND `errors.As`/`errors.AsType` yields the existing id; a validation error where `errors.As` returns false; a first create succeeding.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/05-sentinel-errors/09-idempotency-guard-typed-vs-sentinel/cmd/demo
-cd go-solutions/10-error-handling/05-sentinel-errors/09-idempotency-guard-typed-vs-sentinel
-```
-
 ### The decision rule: identity vs data
 
 An idempotency key lets a client safely retry a create: the second request with

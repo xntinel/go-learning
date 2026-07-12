@@ -26,13 +26,6 @@ Implement: a middleware that reads or mints `X-Request-ID`, stores it in context
 Test: an absent header yields a non-empty generated ID visible to the handler and echoed in the response; a supplied ID is preserved end to end; two header-less requests get distinct IDs.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/06-context-withvalue/02-request-id-middleware/cmd/demo
-cd go-solutions/14-select-and-context/06-context-withvalue/02-request-id-middleware
-```
-
 ### Why a middleware, an unexported key, and an injectable generator
 
 A request ID is the textbook request-scoped value: every log line, every

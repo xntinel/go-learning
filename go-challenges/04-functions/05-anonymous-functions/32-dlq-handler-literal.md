@@ -31,8 +31,6 @@ dlq/                           module example.com/dlq
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/05-anonymous-functions/32-dlq-handler-literal/cmd/demo
-cd go-solutions/04-functions/05-anonymous-functions/32-dlq-handler-literal
 go mod edit -go=1.24
 ```
 

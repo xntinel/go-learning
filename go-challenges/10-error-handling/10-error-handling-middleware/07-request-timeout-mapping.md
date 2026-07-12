@@ -30,13 +30,6 @@ Test: a handler sleeping past a short timeout -> 504 and the mapped error is
 body. Run with `-race` and `t.Context()`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/10-error-handling-middleware/07-request-timeout-mapping/cmd/demo
-cd go-solutions/10-error-handling/10-error-handling-middleware/07-request-timeout-mapping
-```
-
 ### Two ways to time out, and why they differ
 
 There are two mechanisms in the stdlib for bounding a request, and they are not

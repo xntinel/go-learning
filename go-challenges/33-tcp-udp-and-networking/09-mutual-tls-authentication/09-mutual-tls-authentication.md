@@ -92,13 +92,6 @@ if len(state.PeerCertificates) > 0 {
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/33-tcp-udp-and-networking/09-mutual-tls-authentication/09-mutual-tls-authentication/cmd/demo
-cd go-solutions/33-tcp-udp-and-networking/09-mutual-tls-authentication/09-mutual-tls-authentication
-```
-
 This is a library verified by `go test`, not by running a program.
 
 ### Exercise 1: PKI Helpers and TLS Config Builders

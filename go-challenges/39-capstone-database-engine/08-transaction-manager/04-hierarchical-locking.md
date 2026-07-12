@@ -19,12 +19,6 @@ hierarchical_test.go  25-cell intention matrix + intention-protocol + row confli
 - Test: the matrix test drives all twenty-five `(held, req)` pairs against the published table; behavioral tests check the intention-protocol guard, a real row conflict between two IX writers, and that SIX blocks writers while still admitting readers.
 - Verify: `go test -count=1 -race ./...` and `go run ./cmd/demo`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/08-transaction-manager/04-hierarchical-locking/cmd/demo && cd go-solutions/39-capstone-database-engine/08-transaction-manager/04-hierarchical-locking
-```
-
 ### The five-mode matrix and the parent rule
 
 Two ideas combine here. The first is the five-mode compatibility matrix from the concepts file: IS conflicts only with X; IX conflicts with everything except IS and IX; S blocks any intent to write (IX, SIX, X); SIX is compatible only with IS; X is compatible with nothing. `Compatible(held, req)` encodes exactly that, and it is symmetric. The second is the parent rule that ties the two levels together: a transaction may take a row lock only if it already holds a compatible intention lock on the parent table — reading a row (IS or S on the row) needs IS or stronger on the table, writing a row (IX, SIX, or X on the row) needs IX or stronger. `intentParentOK` enforces that, and `LockRow` checks it *before* it consults the row's holders, so a request that violates the granularity protocol fails fast with `ErrMissingIntention` rather than blocking forever.

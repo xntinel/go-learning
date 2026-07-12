@@ -28,13 +28,6 @@ observable/                independent module: example.com/observable
 - Test: after known traffic, `Stats().Processed` equals the number of calls and `AvgLatency > 0`; under a concurrent burst, every snapshot is internally consistent (`Processed` monotonic, within bounds) and the final snapshot is exact; all under `-race`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/09-channel-of-channels/09-actor-self-observability/cmd/demo
-cd go-solutions/13-goroutines-and-channels/09-channel-of-channels/09-actor-self-observability
-```
-
 ### Metrics as a request on the same loop
 
 The counters — `processed` and cumulative `totalLatency` — are ordinary local

@@ -32,8 +32,6 @@ cardlimit/                 independent module: example.com/cardinality-limiter
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/04-first-class-functions-and-closures/25-cardinality-limiter-unique-labels/cmd/demo
-cd go-solutions/04-functions/04-first-class-functions-and-closures/25-cardinality-limiter-unique-labels
 go mod edit -go=1.24
 ```
 

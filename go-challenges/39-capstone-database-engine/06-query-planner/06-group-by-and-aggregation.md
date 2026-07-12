@@ -26,12 +26,6 @@ group-by-aggregation/
 - Test: `COUNT(*)` and `AVG` across three groups, a `HAVING COUNT(*) > 1` that keeps a single group, and `MIN`/`MAX` over a group's values.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/06-query-planner/06-group-by-and-aggregation/cmd/demo && cd go-solutions/39-capstone-database-engine/06-query-planner/06-group-by-and-aggregation
-```
-
 ### How grouping works
 
 `GroupByOperator.Init` reads every input row, derives a group key by concatenating the string forms of the grouping columns, and looks the key up in a map of per-group accumulators. The first time a key appears, the operator allocates fresh aggregate state and records the key in an `order` slice; that slice is what makes the output deterministic — groups are emitted in first-seen order rather than in Go's randomized map-iteration order. Each row then updates every aggregate's running state: `COUNT(*)` increments unconditionally, `COUNT(col)`/`SUM`/`AVG` skip NULL inputs (SQL aggregates ignore NULLs), and `MIN`/`MAX` track the extreme non-NULL value seen.

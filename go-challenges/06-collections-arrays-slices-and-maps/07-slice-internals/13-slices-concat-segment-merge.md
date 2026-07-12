@@ -55,8 +55,6 @@ segmerge/                      module example.com/segmerge
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/13-slices-concat-segment-merge
-cd go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/13-slices-concat-segment-merge
 go mod edit -go=1.24
 ```
 

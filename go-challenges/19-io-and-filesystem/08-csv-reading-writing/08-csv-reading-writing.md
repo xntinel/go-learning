@@ -18,13 +18,6 @@ A parser that expects specific columns should validate the header before reading
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/19-io-and-filesystem/08-csv-reading-writing/08-csv-reading-writing/cmd/demo
-cd go-solutions/19-io-and-filesystem/08-csv-reading-writing/08-csv-reading-writing
-```
-
 ### Exercise 1: Parse Employees
 
 Create `csv.go`:

@@ -35,8 +35,6 @@ anyfield/                    independent module: example.com/protobuf-field-extr
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/01-function-declaration-and-multiple-return-values/21-protobuf-field-extract-typed/cmd/demo
-cd go-solutions/04-functions/01-function-declaration-and-multiple-return-values/21-protobuf-field-extract-typed
 go mod edit -go=1.24
 ```
 

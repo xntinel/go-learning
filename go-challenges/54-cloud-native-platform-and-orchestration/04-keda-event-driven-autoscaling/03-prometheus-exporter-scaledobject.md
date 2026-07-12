@@ -35,8 +35,6 @@ backlog-exporter/                independent module: example.com/backlog-exporte
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/54-cloud-native-platform-and-orchestration/04-keda-event-driven-autoscaling/03-prometheus-exporter-scaledobject/cmd/demo go-solutions/54-cloud-native-platform-and-orchestration/04-keda-event-driven-autoscaling/03-prometheus-exporter-scaledobject/cmd/server
-cd go-solutions/54-cloud-native-platform-and-orchestration/04-keda-event-driven-autoscaling/03-prometheus-exporter-scaledobject
 go mod edit -go=1.24
 go get github.com/prometheus/client_golang@v1.20.5 gopkg.in/yaml.v3@v3.0.1
 ```

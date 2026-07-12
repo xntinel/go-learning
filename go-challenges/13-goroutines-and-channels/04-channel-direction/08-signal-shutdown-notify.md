@@ -27,13 +27,6 @@ Implement: `Install()` wiring a buffered channel through `signal.Notify` (send-o
 Test: the waiter returns the fed signal and runs cleanup exactly once — using an injected fake `<-chan os.Signal`, never a real OS signal.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/04-channel-direction/08-signal-shutdown-notify/cmd/demo
-cd go-solutions/13-goroutines-and-channels/04-channel-direction/08-signal-shutdown-notify
-```
-
 ### Why direction and buffering are separate concerns here
 
 `Install` creates a bidirectional `chan os.Signal` with a buffer of one. It passes

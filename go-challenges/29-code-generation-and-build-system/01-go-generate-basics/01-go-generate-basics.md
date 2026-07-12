@@ -66,13 +66,6 @@ Generated files are committed to version control. Consumers of a package run `go
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/29-code-generation-and-build-system/01-go-generate-basics/01-go-generate-basics/gen
-cd go-solutions/29-code-generation-and-build-system/01-go-generate-basics/01-go-generate-basics
-```
-
 ### Exercise 1: Write The Generator
 
 The generator reads `GOPACKAGE` and writes `buildinfo_gen.go` with two constants.

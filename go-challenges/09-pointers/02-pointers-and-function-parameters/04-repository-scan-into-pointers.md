@@ -25,13 +25,6 @@ repo/                       independent module: example.com/repo
 - Test: a fake Scanner copies provided values into the passed addresses; a NULL column maps to a nil pointer; a version that scans into a value copy fails to observe the write.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/02-pointers-and-function-parameters/04-repository-scan-into-pointers/cmd/demo
-cd go-solutions/09-pointers/02-pointers-and-function-parameters/04-repository-scan-into-pointers
-```
-
 ### Why Scan cannot take values
 
 `Scan` receives `dest ...any`, decodes column 0 into `dest[0]`, column 1 into

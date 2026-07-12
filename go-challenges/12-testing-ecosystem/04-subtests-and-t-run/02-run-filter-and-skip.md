@@ -28,13 +28,6 @@ regvalidate/                independent module: example.com/regvalidate
   addressable by name.
 - Verify: `go test -count=1 -race ./...`, then the `-run`/`-skip` invocations below.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/04-subtests-and-t-run/02-run-filter-and-skip/cmd/demo
-cd go-solutions/12-testing-ecosystem/04-subtests-and-t-run/02-run-filter-and-skip
-```
-
 ### How -run and -skip carve the tree
 
 `-run` takes a regexp that the test runner splits on `/`, applying one pattern per

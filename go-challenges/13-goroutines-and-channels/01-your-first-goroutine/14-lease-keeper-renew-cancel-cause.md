@@ -34,8 +34,6 @@ lease/                       independent module: example.com/lease
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/13-goroutines-and-channels/01-your-first-goroutine/14-lease-keeper-renew-cancel-cause/cmd/demo
-cd go-solutions/13-goroutines-and-channels/01-your-first-goroutine/14-lease-keeper-renew-cancel-cause
 go get go.uber.org/goleak
 go mod tidy
 ```

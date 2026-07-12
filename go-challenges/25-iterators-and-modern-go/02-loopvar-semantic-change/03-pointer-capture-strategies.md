@@ -20,12 +20,6 @@ example_test.go      ExampleElementPointers with a verified // Output block
 - Test: assert both strategies read back the original names, that writing through an element pointer mutates the slice, and that writing through an iteration pointer does not.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/25-iterators-and-modern-go/02-loopvar-semantic-change/03-pointer-capture-strategies/cmd/demo && cd go-solutions/25-iterators-and-modern-go/02-loopvar-semantic-change/03-pointer-capture-strategies
-```
-
 ### The difference per-iteration scope did not erase
 
 The old per-loop bug for pointers was aliasing: every `&item` in `for _, item := range items` was the address of the single shared `item`, so a slice of those pointers held the same address repeated, and after the loop they all pointed at storage holding the last element. The pointers were equal and useless. Per-iteration scope fixes this completely. Each iteration's `item` is a distinct variable with its own address, so `IterationPointers` now returns distinct, individually valid pointers, and reading `Names` back gives the original sequence rather than the last element repeated.

@@ -27,13 +27,6 @@ appconfig/                       independent module: example.com/appconfig
 - Test: `t.Setenv` PORT/LOG_LEVEL; with no options assert env won over defaults; with `WithPort` assert the option beat the env; assert malformed env is a wrapped error and an out-of-range `WithPort` is rejected.
 - Verify: `go test -count=1 ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/12-functional-options-pattern/08-config-precedence-options/cmd/demo
-cd go-solutions/04-functions/12-functional-options-pattern/08-config-precedence-options
-```
-
 ### Ordering is the whole design
 
 The precedence is enforced by the *order of operations* inside `NewConfig`, not by

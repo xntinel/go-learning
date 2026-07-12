@@ -39,8 +39,6 @@ Set up the module. This module depends on `go.uber.org/goleak`, so run
 `go mod tidy` after writing the test:
 
 ```bash
-mkdir -p go-solutions/13-goroutines-and-channels/11-goroutine-lifecycle-management/12-run-group-coordinated-component-shutdown/cmd/demo
-cd go-solutions/13-goroutines-and-channels/11-goroutine-lifecycle-management/12-run-group-coordinated-component-shutdown
 go mod edit -go=1.26
 go mod tidy
 ```

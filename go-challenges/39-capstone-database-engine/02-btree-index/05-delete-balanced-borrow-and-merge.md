@@ -21,12 +21,6 @@ delete_test.go       full-tree invariant check across random deletes, parity del
 - Test: `delete_test.go` deletes every key in random order while periodically asserting all B+Tree invariants, and deletes by parity while confirming survivors remain findable.
 - Verify: `go test -run 'TestDeleteBalanced|ExampleTree' -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/02-btree-index/05-delete-balanced-borrow-and-merge/cmd/demo && cd go-solutions/39-capstone-database-engine/02-btree-index/05-delete-balanced-borrow-and-merge
-```
-
 ### The baseline
 
 This module needs a tree it can build, search, and scan, plus one extra helper, `cloneKey`, that the rebalance code uses when it copies a key into a separator slot. That baseline is the insert/search/range-scan tree from the earlier exercises, duplicated here so the module stands alone. The new work — everything that restores the invariant — lives in its own `delete.go`.

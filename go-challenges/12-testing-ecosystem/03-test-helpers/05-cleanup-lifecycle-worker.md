@@ -26,13 +26,6 @@ workerfixture/               independent module: example.com/workerfixture
 - Test: `startWorker(t)` launches the loop with `t.Context()`, registers a `t.Cleanup` that joins the goroutine within a deadline (failing if it hangs); a second test pins the LIFO ordering of cleanups.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/03-test-helpers/05-cleanup-lifecycle-worker/cmd/demo
-cd go-solutions/12-testing-ecosystem/03-test-helpers/05-cleanup-lifecycle-worker
-```
-
 ### Why `t.Context()` is the correct shutdown signal
 
 Since Go 1.24, `t.Context()` returns a context that "is canceled just before

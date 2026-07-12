@@ -25,13 +25,6 @@ peerprobe/                    module example.com/peerprobe
 - Test: assert phase 1 builds (no peer isolation), and phase 2's illegal import is rejected while the owner subtree still builds.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/11-packages-and-modules/03-internal-packages/09-internal-does-not-isolate-peers/cmd/demo
-cd go-solutions/11-packages-and-modules/03-internal-packages/09-internal-does-not-isolate-peers
-```
-
 ### Why one shared internal does not isolate peers
 
 `internal` draws exactly one boundary: outsiders versus the subtree rooted at the

@@ -29,13 +29,6 @@ Test: `Grant` then `Has` is true; `Revoke` clears only the target bit; `String`
 lists set flags in a stable order; `PermAll` equals the OR of all flags.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/08-untyped-constants-and-constant-expressions/04-permission-bitmask-iota/cmd/demo
-cd go-solutions/02-variables-types-and-constants/08-untyped-constants-and-constant-expressions/04-permission-bitmask-iota
-```
-
 ### iota shift constants, typed by a defined type
 
 `PermRead Perm = 1 << iota` sets the first flag to `1 << 0 = 1` with type `Perm`.

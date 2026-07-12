@@ -29,8 +29,6 @@ fanin/                     independent module: example.com/fanin
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/13-goroutines-and-channels/05-waitgroup/08-fan-out-fan-in-channel-close/cmd/demo
-cd go-solutions/13-goroutines-and-channels/05-waitgroup/08-fan-out-fan-in-channel-close
 go mod edit -go=1.25
 ```
 

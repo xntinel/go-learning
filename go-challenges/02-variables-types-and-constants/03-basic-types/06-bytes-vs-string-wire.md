@@ -26,13 +26,6 @@ wire/                      independent module: example.com/wire
 - Test: `Content-Length` equals `len(body)` in bytes even for a multi-byte body (differs from rune count); the `ETag` is deterministic and changes on a one-byte edit, with a golden value; `testing.AllocsPerRun` shows `string([]byte)` copies while `len` does not.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/03-basic-types/06-bytes-vs-string-wire/cmd/demo
-cd go-solutions/02-variables-types-and-constants/03-basic-types/06-bytes-vs-string-wire
-```
-
 ### Why bytes, and why the copy matters
 
 `Content-Length` is the number of *bytes* on the wire, full stop — it has nothing to

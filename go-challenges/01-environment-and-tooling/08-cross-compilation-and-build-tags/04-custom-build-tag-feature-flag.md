@@ -24,13 +24,6 @@ featureflag/                   module example.com/featureflag
 - Test: assert the default build reports `Enabled()==false` and `Diagnose` writes nothing.
 - Verify: `go test -race ./...`; then `go run ./cmd/demo` versus `go run -tags debug ./cmd/demo`; then `go list -tags debug -f '{{.GoFiles}}'` to see `debug.go` appear only with the tag.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/08-cross-compilation-and-build-tags/04-custom-build-tag-feature-flag/cmd/demo
-cd go-solutions/01-environment-and-tooling/08-cross-compilation-and-build-tags/04-custom-build-tag-feature-flag
-```
-
 ### Compiled out, not skipped
 
 The reason to reach for a build tag rather than a runtime `if debug { ... }` is

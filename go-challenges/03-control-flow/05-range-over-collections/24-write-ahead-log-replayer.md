@@ -34,8 +34,6 @@ wal/                        independent module: example.com/write-ahead-log-repl
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/05-range-over-collections/24-write-ahead-log-replayer/cmd/demo
-cd go-solutions/03-control-flow/05-range-over-collections/24-write-ahead-log-replayer
 go mod edit -go=1.24
 ```
 

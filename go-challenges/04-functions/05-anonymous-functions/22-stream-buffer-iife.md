@@ -28,8 +28,6 @@ streambuf/                    module example.com/streambuf
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/05-anonymous-functions/22-stream-buffer-iife/cmd/demo
-cd go-solutions/04-functions/05-anonymous-functions/22-stream-buffer-iife
 go mod edit -go=1.24
 ```
 

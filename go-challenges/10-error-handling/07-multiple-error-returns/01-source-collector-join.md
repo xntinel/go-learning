@@ -26,13 +26,6 @@ collector/                 independent module: example.com/collector
 - Test: all-success returns nil; all-fail is `errors.Is` each sentinel; partial failure is `errors.Is` only the failing sentinel and not the healthy ones.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/07-multiple-error-returns/01-source-collector-join/cmd/demo
-cd go-solutions/10-error-handling/07-multiple-error-returns/01-source-collector-join
-```
-
 ### Why aggregate instead of returning the first error
 
 The obvious loop returns on the first failing source. That is fail-fast, and for a

@@ -26,13 +26,6 @@ Implement: `WithRequestID(next http.Handler) http.Handler` and `RequestIDFrom(ct
 Test: absent header yields a 16-hex-char id in body and response header; an incoming `abc-123` is echoed in both; `RequestIDFrom(context.Background())` returns `""`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/09-context-in-http-servers-clients/02-request-id-propagation-middleware/cmd/demo
-cd go-solutions/14-select-and-context/09-context-in-http-servers-clients/02-request-id-propagation-middleware
-```
-
 ## The design
 
 Three decisions carry this exercise.

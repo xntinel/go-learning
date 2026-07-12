@@ -28,13 +28,6 @@ Test: a table test asserting typed errors; `FuzzDecodeBody` proving no panic and
 `bytesRead <= max`.
 Verify: `go test -race ./...`, then `go test -fuzz=FuzzDecodeBody -fuzztime=2s`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/06-fuzz-testing/05-json-body-decoder-limits/cmd/demo
-cd go-solutions/12-testing-ecosystem/06-fuzz-testing/05-json-body-decoder-limits
-```
-
 ### Limiting the reader and rejecting unknown fields
 
 `DecodeBody` wraps the incoming reader in `io.LimitReader(r, max)` so the decoder

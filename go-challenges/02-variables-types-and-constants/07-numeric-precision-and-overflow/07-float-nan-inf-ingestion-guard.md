@@ -30,13 +30,6 @@ Test: a slice containing a `NaN` produces a skip/error and the aggregate stays f
 not; `x == x` is `false` for the `NaN` sentinel.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/07-numeric-precision-and-overflow/07-float-nan-inf-ingestion-guard/cmd/demo
-cd go-solutions/02-variables-types-and-constants/07-numeric-precision-and-overflow/07-float-nan-inf-ingestion-guard
-```
-
 ### Why one NaN ruins everything downstream
 
 `NaN` is the "not a number" result of an undefined float operation (`0.0/0.0`, a

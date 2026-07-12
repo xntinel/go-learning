@@ -30,8 +30,6 @@ chunker/                     independent module: example.com/chunker
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/52-ai-llm-backends/05-rag-pipeline/01-chunker/cmd/demo
-cd go-solutions/52-ai-llm-backends/05-rag-pipeline/01-chunker
 go mod edit -go=1.26
 ```
 

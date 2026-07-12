@@ -26,13 +26,6 @@ apihandler/                    independent module: example.com/apihandler
 - Test: prove the buggy function yields `err != nil`, the fixed one yields `err == nil`, and the handler's success path returns 200 (not a phantom 500).
 - Verify: `go vet ./...`, `go test -count=1 -race ./...`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/07-method-sets-and-addressability/05-typed-nil-error-interface-trap/cmd/demo
-cd go-solutions/07-structs-and-methods/07-method-sets-and-addressability/05-typed-nil-error-interface-trap
-```
-
 ### Why a typed-nil pointer is a non-nil error
 
 `error` is an interface. A value of an interface type stores two words: the

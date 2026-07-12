@@ -54,13 +54,6 @@ human-locale UI text, which needs `golang.org/x/text/collate`. The contrast help
 prove it disagrees with `EqualFold` on `U+212A` — the concrete evidence that
 byte-lowering is not Unicode-correct.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/08-case-fold-header-compare/internal/match go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/08-case-fold-header-compare/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/08-case-fold-header-compare
-```
-
 Create `internal/match/match.go`:
 
 ```go

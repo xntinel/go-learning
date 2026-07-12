@@ -52,14 +52,6 @@ Custom marshaler types compose naturally inside structs with no extra wiring. A 
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/18-encoding-json-xml-protobuf/03-custom-json-marshaler/03-custom-json-marshaler/internal/schedule
-mkdir -p go-solutions/18-encoding-json-xml-protobuf/03-custom-json-marshaler/03-custom-json-marshaler/cmd/demo
-cd go-solutions/18-encoding-json-xml-protobuf/03-custom-json-marshaler/03-custom-json-marshaler
-```
-
 This is a library plus a small demo. Verification is `go test -race`.
 
 ### Exercise 1: Priority As A String Enum

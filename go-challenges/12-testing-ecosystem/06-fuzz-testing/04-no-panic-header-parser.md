@@ -30,13 +30,6 @@ the canonical-key / trimmed-value invariant.
 Verify: `go test -race ./...`, then `go test -fuzz=FuzzParseHeaderLine
 -fuzztime=2s`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/06-fuzz-testing/04-no-panic-header-parser/cmd/demo
-cd go-solutions/12-testing-ecosystem/06-fuzz-testing/04-no-panic-header-parser
-```
-
 ### Splitting, validating, and canonicalizing
 
 A header line is `field-name : field-value`. `strings.Cut(line, ":")` splits on

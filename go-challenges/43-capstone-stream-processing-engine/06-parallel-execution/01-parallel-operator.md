@@ -26,7 +26,6 @@ parallel_test.go       partitioner stability/distribution, validation, end-to-en
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/43-capstone-stream-processing-engine/06-parallel-execution/01-parallel-operator/cmd/demo && cd go-solutions/43-capstone-stream-processing-engine/06-parallel-execution/01-parallel-operator
 go mod edit -go=1.26
 ```
 

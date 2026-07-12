@@ -28,13 +28,6 @@ Implement: `WithTraceID`/`TraceIDFromContext`, a `Transport` `RoundTripper` that
 Test: an `httptest.NewServer` recovers the client-side trace; a request with no trace in context sends no header and the server sees an empty trace.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/06-context-withvalue/05-trace-propagation-across-boundary/cmd/demo
-cd go-solutions/14-select-and-context/06-context-withvalue/05-trace-propagation-across-boundary
-```
-
 ### Why a value cannot cross the wire on its own
 
 A `context.Context` is an in-memory chain of Go values. It has no serialized form

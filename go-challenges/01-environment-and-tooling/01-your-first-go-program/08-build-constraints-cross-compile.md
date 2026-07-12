@@ -32,13 +32,6 @@ Verify: `go test -count=1 ./...` on the host; a shell harness cross-compiles for
 `linux/amd64` and `linux/arm64` and inspects the selected file set with
 `go list`. `gofmt -l` empty.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/01-your-first-go-program/08-build-constraints-cross-compile/cmd/demo
-cd go-solutions/01-environment-and-tooling/01-your-first-go-program/08-build-constraints-cross-compile
-```
-
 ### One file per platform, selected at compile time
 
 A `//go:build` constraint at the top of a file (followed by a blank line, then the

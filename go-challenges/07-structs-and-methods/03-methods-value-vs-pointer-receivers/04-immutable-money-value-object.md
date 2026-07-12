@@ -28,13 +28,6 @@ Implement: `Money{amount int64, currency string}` with value-receiver methods `A
 Test: same-currency add, currency-mismatch error via `errors.Is`, the receiver is NOT mutated by `Add`, value equality, and `Money` usable as a map key.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/03-methods-value-vs-pointer-receivers/04-immutable-money-value-object/cmd/demo
-cd go-solutions/07-structs-and-methods/03-methods-value-vs-pointer-receivers/04-immutable-money-value-object
-```
-
 ### Why value receivers are correct here
 
 `Money` is a *value*: an amount of `1050` minor units in `USD` is 10.50 dollars,

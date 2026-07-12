@@ -31,13 +31,6 @@ total count, the output closes exactly once, and a cancel mid-read drains all
 source forwarders with no leak.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/12-multi-stage-pipeline-cancellation/04-fan-in-merge-sources/cmd/demo
-cd go-solutions/14-select-and-context/12-multi-stage-pipeline-cancellation/04-fan-in-merge-sources
-```
-
 ### One forwarder per input, one closer over the WaitGroup
 
 `Merge` takes a variadic slice of input channels. For each input it launches one

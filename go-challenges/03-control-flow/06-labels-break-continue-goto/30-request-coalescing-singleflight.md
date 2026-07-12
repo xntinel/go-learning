@@ -33,8 +33,6 @@ coalesce/                   independent module: example.com/coalesce
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/06-labels-break-continue-goto/30-request-coalescing-singleflight/cmd/demo
-cd go-solutions/03-control-flow/06-labels-break-continue-goto/30-request-coalescing-singleflight
 go mod edit -go=1.24
 ```
 

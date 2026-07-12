@@ -25,13 +25,6 @@ slo/                       independent module: example.com/slo
 - Test: a `NaN` sample does not poison the mean; a ratio exactly at threshold compares equal within epsilon; `0.1+0.2 != 0.3` under `==` but passes under epsilon; `Inf` handled; no-data errors.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/03-basic-types/07-float-metrics-slo/cmd/demo
-cd go-solutions/02-variables-types-and-constants/03-basic-types/07-float-metrics-slo
-```
-
 ### Why NaN and == are both traps
 
 `NaN` is contagious: `NaN + x` is `NaN`, so one bad sample (a division by zero

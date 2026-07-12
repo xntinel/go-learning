@@ -26,11 +26,6 @@ Implement: `Naive` and `Builder` (identical output), then `BenchmarkNaive` and `
 Test: a correctness test guards the benched functions; the benchmarks measure them.
 Verify: `go test -bench=. -benchmem -run=^$ ./...`
 
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/09-strings-builder-performance/02-benchmark-assemblers-with-benchmem/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/09-strings-builder-performance/02-benchmark-assemblers-with-benchmem
-```
-
 ### Why b.Loop, and what it changes
 
 The classic benchmark loop was `for i := 0; i < b.N; i++ { ... }`, and it had two

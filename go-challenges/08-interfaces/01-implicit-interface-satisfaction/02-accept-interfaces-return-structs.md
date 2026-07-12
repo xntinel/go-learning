@@ -28,13 +28,6 @@ usersvc/                      independent module: example.com/usersvc
 - Test: a fake `UserReader` returning a canned user or `ErrUserNotFound`, driven through `httptest.NewRecorder`; assert 200 with a JSON body and 404.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/01-implicit-interface-satisfaction/02-accept-interfaces-return-structs/cmd/demo
-cd go-solutions/08-interfaces/01-implicit-interface-satisfaction/02-accept-interfaces-return-structs
-```
-
 ### The seam: consumer declares the interface, producer returns a struct
 
 The handler needs exactly one operation on its data dependency: fetch a user by

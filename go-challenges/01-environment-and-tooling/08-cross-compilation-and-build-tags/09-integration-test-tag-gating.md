@@ -24,13 +24,6 @@ filestore/                     module example.com/filestore
 - Test: fast unit tests always; a filesystem round-trip only under `-tags integration`.
 - Verify: `go test -race ./...` runs unit only; `go test -tags integration ./...` adds the round-trip; `go list -tags integration -f '{{.TestGoFiles}}'` shows the split.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/08-cross-compilation-and-build-tags/09-integration-test-tag-gating/cmd/demo
-cd go-solutions/01-environment-and-tooling/08-cross-compilation-and-build-tags/09-integration-test-tag-gating
-```
-
 ### Compiled out versus compiled-and-skipped
 
 There are two ways to keep a slow test out of the fast path, and they are not

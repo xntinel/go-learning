@@ -33,8 +33,6 @@ Verify: `go test -count=1 ./...`
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/08-panic-and-recover/29-broadcast-observer-registry/cmd/demo
-cd go-solutions/03-control-flow/08-panic-and-recover/29-broadcast-observer-registry
 go mod edit -go=1.24
 ```
 

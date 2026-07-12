@@ -25,11 +25,6 @@ Implement: `BuildBulkInsert(table string, columns []string, rows [][]any) (strin
 Test: exact placeholder string for 1x1, 2x3, and 0-row inputs; `len(args) == rows*cols`; error on empty rowset and ragged rows.
 Verify: `go test -count=1 -race ./...`
 
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/09-strings-builder-performance/03-sql-bulk-insert-placeholder-builder/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/09-strings-builder-performance/03-sql-bulk-insert-placeholder-builder
-```
-
 ### The one rule: text is built, values are parameterized
 
 SQL injection happens when a value ends up inside the query text. The entire point of

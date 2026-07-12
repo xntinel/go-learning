@@ -25,13 +25,6 @@ Implement: `Less[T]`/`Equal[T]` function types, `Sort` over `slices.SortFunc`, `
 Test: sortedness via `slices.IsSorted`, pinned stability, `IndexOf` miss, binary search found/not-found, a descending sort by a negated comparator, and a `float64`-with-`NaN` total-order test.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/06-function-types-and-callbacks/01-comparator-sort-pipeline/cmd/demo
-cd go-solutions/04-functions/06-function-types-and-callbacks/01-comparator-sort-pipeline
-```
-
 ### Why value-based callbacks, and where each function fits
 
 The package exposes two callback shapes. `Less[T] func(a, b T) int` is the

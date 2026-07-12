@@ -26,8 +26,6 @@ recovermw/                   independent module: example.com/recovermw
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/08-interfaces/14-interface-based-middleware-chain/04-panic-recovery-middleware/cmd/demo
-cd go-solutions/08-interfaces/14-interface-based-middleware-chain/04-panic-recovery-middleware
 go mod edit -go=1.26
 ```
 

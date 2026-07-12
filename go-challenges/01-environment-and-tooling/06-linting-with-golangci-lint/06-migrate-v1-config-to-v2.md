@@ -27,13 +27,6 @@ cfgmigrate/                   independent module: example.com/cfgmigrate
 - Test: a `t.Setenv`-driven table covering default, valid, non-numeric, and out-of-range.
 - Verify: `go test -count=1 -race ./...`; then `golangci-lint migrate`, `config verify`, and a before/after linter diff.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/06-linting-with-golangci-lint/06-migrate-v1-config-to-v2/cmd/demo
-cd go-solutions/01-environment-and-tooling/06-linting-with-golangci-lint/06-migrate-v1-config-to-v2
-```
-
 ### The starting point: a representative v1 config
 
 A typical v1 `.golangci.yml` from a real service looks like this — `disable-all`

@@ -24,13 +24,6 @@ statustext/                 independent module: example.com/statustext
 - Test: for every valid `Status`, `UnmarshalText(MarshalText(s)) == s`; `ParseStatus` rejects unknown strings, asserted with `errors.Is`; `json.Unmarshal` into a `Status` field accepts `"running"` and rejects `3` and `"bogus"`; a case/whitespace variant table.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/10-implementing-stringer/03-enum-text-round-trip/cmd/demo
-cd go-solutions/07-structs-and-methods/10-implementing-stringer/03-enum-text-round-trip
-```
-
 ### One table, three consumers
 
 The design principle is a single source of truth. `statusNames` maps each `Status`

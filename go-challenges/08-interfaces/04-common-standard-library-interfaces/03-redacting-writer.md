@@ -26,13 +26,6 @@ redact/                     independent module: example.com/redact
 - Test: secrets masked in output; `Write` returns `len(p)` not the post-redaction length; clean input passes through unchanged; composition with `io.MultiWriter` fans out to two sinks; an error from the underlying writer is propagated.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/04-common-standard-library-interfaces/03-redacting-writer/cmd/demo
-cd go-solutions/08-interfaces/04-common-standard-library-interfaces/03-redacting-writer
-```
-
 ### The len(p) contract is the whole lesson
 
 `io.Copy`, `fmt.Fprintf`, and `log.Logger` all interpret `Write` through the

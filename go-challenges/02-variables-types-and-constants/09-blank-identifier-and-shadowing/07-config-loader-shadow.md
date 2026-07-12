@@ -27,13 +27,6 @@ appconfig/                      module: example.com/appconfig
 - Test: valid env yields a fully populated `Config`; a malformed int returns a wrapped `ErrInvalidInt` and the zero `Config`; multiple bad fields aggregate so `errors.Is` matches each.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/09-blank-identifier-and-shadowing/07-config-loader-shadow/cmd/demo
-cd go-solutions/02-variables-types-and-constants/09-blank-identifier-and-shadowing/07-config-loader-shadow
-```
-
 ### The shadow that leaks a half-built config
 
 The tempting but wrong shape reuses `:=` inside a nested block:

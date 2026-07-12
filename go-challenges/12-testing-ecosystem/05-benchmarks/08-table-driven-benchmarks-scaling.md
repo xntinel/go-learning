@@ -27,8 +27,6 @@ lookup/                    independent module: example.com/lookup
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/12-testing-ecosystem/05-benchmarks/08-table-driven-benchmarks-scaling/cmd/demo
-cd go-solutions/12-testing-ecosystem/05-benchmarks/08-table-driven-benchmarks-scaling
 go mod edit -go=1.24
 ```
 

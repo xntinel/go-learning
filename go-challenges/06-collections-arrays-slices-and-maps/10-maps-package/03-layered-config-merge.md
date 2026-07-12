@@ -26,13 +26,6 @@ Implement: `MergeConfig(layers ...map[string]string) map[string]string`.
 Test: later layers win; no input layer is mutated; nil and empty layers are no-ops; zero layers yields a non-nil empty map.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/03-layered-config-merge/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/03-layered-config-merge
-```
-
 ## Why clone-then-copy, and never copy-into-input
 
 `maps.Copy(dst, src)` writes every entry of `src` into `dst` in place, and on a

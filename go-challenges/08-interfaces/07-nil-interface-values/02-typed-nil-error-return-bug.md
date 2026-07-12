@@ -23,13 +23,6 @@ repotypednil/              independent module: example.com/repotypednil
 - Test: `FindBuggy` returns `err != nil` on success (documents the trap); `Find`/`FindVar` return `err == nil` on success; the miss path yields a `*NotFoundError` via `errors.As` and matches a sentinel via `errors.Is`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/07-nil-interface-values/02-typed-nil-error-return-bug/cmd/demo
-cd go-solutions/08-interfaces/07-nil-interface-values/02-typed-nil-error-return-bug
-```
-
 ### Why the bug is invisible until it isn't
 
 `FindBuggy` declares `var notFound *NotFoundError` — a nil *concrete pointer*.

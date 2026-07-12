@@ -31,8 +31,6 @@ analyzer/                        independent module: example.com/full-text-searc
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/12-functional-options-pattern/30-full-text-search-analyzer/cmd/demo
-cd go-solutions/04-functions/12-functional-options-pattern/30-full-text-search-analyzer
 go mod edit -go=1.24
 ```
 

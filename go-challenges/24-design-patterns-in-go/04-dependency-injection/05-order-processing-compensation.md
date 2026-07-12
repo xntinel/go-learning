@@ -33,12 +33,6 @@ processor_test.go    recording fakes; happy path, payment-failure releases the
 - Test: assert the happy path returns a full receipt, a payment failure releases the reservation and never refunds, and a notify failure refunds the charge then releases the reservation.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/24-design-patterns-in-go/04-dependency-injection/05-order-processing-compensation/cmd/demo && cd go-solutions/24-design-patterns-in-go/04-dependency-injection/05-order-processing-compensation
-```
-
 ### Why compensation, and why reverse order
 
 The dependencies here are not interchangeable side effects; they have *consequences

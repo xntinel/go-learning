@@ -27,13 +27,6 @@ niloader/                  independent module: example.com/niloader
 - Test: reading a nil map returns zero+false, ranging runs zero iterations, `len(nil)==0`, writing to a raw nil map panics, `Set` initializes and accepts writes, and `json.Unmarshal` populates a previously-nil field.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/07-nil-map-failure-modes/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/07-nil-map-failure-modes
-```
-
 ### What is and isn't safe on a nil map
 
 The zero value of a map type is `nil`, and a struct field of map type that no

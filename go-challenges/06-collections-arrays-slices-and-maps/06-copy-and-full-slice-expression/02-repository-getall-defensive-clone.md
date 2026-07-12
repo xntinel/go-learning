@@ -28,13 +28,6 @@ Implement: a `Store` of `Record` guarded by `sync.RWMutex`; `Set` upserts keepin
 Test: mutate/sort/append the `GetAll` result, then read again and assert unchanged order; a negative sub-test using the raw internal slice shows corruption; concurrent readers under `-race`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/06-copy-and-full-slice-expression/02-repository-getall-defensive-clone/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/06-copy-and-full-slice-expression/02-repository-getall-defensive-clone
-```
-
 ### Why GetAll must clone
 
 The store keeps `records` sorted by key so lookups and listings are stable. When

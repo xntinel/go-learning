@@ -22,12 +22,6 @@ bufferpool_test.go       cache hit, eviction, pinned-not-evicted, pool exhausted
 - Test: `bufferpool_test.go` exercises cache hits, eviction under pressure, the pinned-frame invariant, the pool-exhausted error, dirty write-back, WAL-before-page ordering, and a concurrent fetch/unpin stress loop.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/03-buffer-pool-manager/01-buffer-pool-core/cmd/demo && cd go-solutions/39-capstone-database-engine/03-buffer-pool-manager/01-buffer-pool-core
-```
-
 ### The shape of the pool: frames, the page table, and the guard
 
 A `BufferPool` is a fixed slice of `frame` structs plus the metadata that tracks them. The page table (`map[PageID]FrameID`) answers "is this page resident, and where?" in O(1). The free list is a stack of frame indices that hold no page yet, so a miss prefers a never-used frame over evicting a live one. The clock hand is the rotating cursor the eviction sweep advances. Every one of these fields is protected by a single pool-level `sync.Mutex`, because they are all small and mutated together on the hot path.

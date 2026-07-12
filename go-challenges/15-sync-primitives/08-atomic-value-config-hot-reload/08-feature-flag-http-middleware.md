@@ -28,13 +28,6 @@ flagmw/                    independent module: example.com/flagmw
 - Test: httptest-driven 404/200 switching when a flag flips via `Update` between requests; a determinism test (same user, same decision, 1000 calls); a distribution test (10000 distinct IDs at 30 percent land inside a fixed tolerance band — deterministic, so never flaky); a snapshot-consistency test proving a mid-request `Update` cannot change the request's view.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/08-atomic-value-config-hot-reload/08-feature-flag-http-middleware/cmd/demo
-cd go-solutions/15-sync-primitives/08-atomic-value-config-hot-reload/08-feature-flag-http-middleware
-```
-
 ### Deterministic bucketing: why a hash and not a coin flip
 
 A percentage rollout must answer one question the same way everywhere: *is

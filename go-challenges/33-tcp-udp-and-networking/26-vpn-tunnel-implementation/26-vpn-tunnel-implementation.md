@@ -76,13 +76,6 @@ The check runs in O(1) with a single mutex lock.
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/33-tcp-udp-and-networking/26-vpn-tunnel-implementation/26-vpn-tunnel-implementation/cmd/demo
-cd go-solutions/33-tcp-udp-and-networking/26-vpn-tunnel-implementation/26-vpn-tunnel-implementation
-```
-
 ### Exercise 1: The Wire Header
 
 Create `header.go`. The `Header` type represents the 16-byte plaintext prefix of every wire packet, encoded as big-endian integers.

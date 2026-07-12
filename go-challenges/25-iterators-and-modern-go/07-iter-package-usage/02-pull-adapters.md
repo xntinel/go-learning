@@ -19,12 +19,6 @@ pull_test.go         take N, take fewer than available, take zero, validation er
 - Test: take exactly N from a long iterator, take more than the iterator holds, take zero, and reject a negative count with `ErrNegativeLimit`.
 - Verify: `go test -run 'TestPullFirst|TestPullPairs|TestValidation' -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/25-iterators-and-modern-go/07-iter-package-usage/02-pull-adapters/cmd/demo && cd go-solutions/25-iterators-and-modern-go/07-iter-package-usage/02-pull-adapters
-```
-
 ### Why Pull exists, and why stop is mandatory
 
 A push `Seq` is perfect for `range`, but it owns its loop, which makes "give me just the first five" awkward and "advance two iterators in lockstep" impossible. `iter.Pull` inverts the inversion. Given a `Seq[V]`, it returns `next func() (V, bool)` and `stop func()`. Each call to `next()` produces one value and the `ok` flag, returning `(zero, false)` once the source is exhausted. `Pull2` is identical for `Seq2`, with `next` returning `(K, V, bool)`.

@@ -19,12 +19,6 @@ preventive_test.go    direction table test + crossed-deadlock progress under -ra
 - Test: a pure table test pins the conflict direction of each scheme, and the crossed-deadlock test asserts the older transaction always survives and the younger is always the one aborted, under `-race`.
 - Verify: `go test -count=1 -race ./...` and `go run ./cmd/demo`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/08-transaction-manager/02-deadlock-prevention/cmd/demo && cd go-solutions/39-capstone-database-engine/08-transaction-manager/02-deadlock-prevention
-```
-
 ### Why direction is the whole game
 
 The two schemes differ only in who yields when a requester meets a holder it conflicts with. Under wait-die an older requester waits and a younger requester dies (aborts and restarts). Under wound-wait an older requester wounds — preempts and aborts — the holder and takes the lock, while a younger requester waits. Each rule forces every wait edge to point the same way around the timestamp order: wait-die produces only old-waits-for-young edges, wound-wait only young-waits-for-old edges. Either way the graph is a strict order, and a strict order has no cycle.

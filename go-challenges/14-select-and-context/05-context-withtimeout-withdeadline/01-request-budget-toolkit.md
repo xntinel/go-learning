@@ -30,14 +30,6 @@ context-deadline/                    independent module: example.com/deadlines
 - Test: deadline fires at the requested time and reports `DeadlineExceeded`; absolute deadline within slack; nested shortest-wins; `WaitUntilDone` both directions; `ProcessItems` stops early and completes when fast; inherited-parent-deadline; `ExampleWithTimeout`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/05-context-withtimeout-withdeadline/01-request-budget-toolkit/internal/deadlines
-mkdir -p go-solutions/14-select-and-context/05-context-withtimeout-withdeadline/01-request-budget-toolkit/cmd/demo
-cd go-solutions/14-select-and-context/05-context-withtimeout-withdeadline/01-request-budget-toolkit
-```
-
 ### The three patterns and why they belong together
 
 The wrappers `WithTimeout` and `WithDeadline` are deliberately thin — they forward

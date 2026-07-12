@@ -27,13 +27,6 @@ shardedmap/                independent module: example.com/shardedmap
 - Test: many goroutines running `Update` on overlapping keys with the summed total equal to expected (no lost updates), and keys spreading across all shards.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/14-custom-map-based-data-structure/06-sharded-map/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/14-custom-map-based-data-structure/06-sharded-map
-```
-
 ### Stripe locking, and why the hash must be a real hash
 
 The structure is an array of shards; each shard is a `map[string]V` plus its own

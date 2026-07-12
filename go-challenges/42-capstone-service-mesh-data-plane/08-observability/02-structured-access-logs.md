@@ -19,12 +19,6 @@ accesslog_test.go    field/type assertions, ndjson line count, duration math, co
 - Test: parse the emitted JSON back, assert fields and types, count ndjson lines, and confirm 200 concurrent goroutines never interleave a line (under `-race`).
 - Verify: `go test -race -count=1 ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/42-capstone-service-mesh-data-plane/08-observability/02-structured-access-logs/cmd/demo && cd go-solutions/42-capstone-service-mesh-data-plane/08-observability/02-structured-access-logs
-```
-
 ### Why JSON Lines, a fixed struct, and one mutex
 
 Three design choices make this logger useful rather than just convenient. The first is the format: one JSON object per line, the format called JSON Lines or newline-delimited JSON (ndjson). A log aggregator ingests it by splitting on `\n` and parsing each line independently — no streaming JSON parser, no array brackets to balance across a file that is still being appended to — and the same property lets `grep` and `jq` work a line at a time. The second is the schema: a fixed Go struct with explicit `json` tags rather than a `map[string]any`. `encoding/json` marshals struct fields in declaration order, so the field order on the wire is stable and the types are fixed at compile time; a map would give you neither, and a downstream schema that drifts field order or flips a number to a string breaks every consumer. The third is concurrency: the proxy calls the logger from one goroutine per in-flight request, and if two `Encode` calls were allowed to interleave their bytes on the same underlying writer, the result would be one corrupt line that no JSON parser accepts. A single mutex held across the encode-and-write makes each line atomic. That lock looks like a bottleneck but is not: it is held for the microseconds of a buffer write, which is negligible beside the network and upstream-call work the proxy is already doing per request.

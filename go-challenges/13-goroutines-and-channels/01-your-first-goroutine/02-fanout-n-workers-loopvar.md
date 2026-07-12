@@ -25,13 +25,6 @@ Implement: `FanOutN(n int, work func(i int))` that launches `n` goroutines each 
 Test: an `atomic.Int64` equal to `n` proves every worker ran; a `[]atomic.Bool` indexed by `i` proves each index `0..n-1` appears exactly once (no duplicate, no missing).
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/01-your-first-goroutine/02-fanout-n-workers-loopvar/cmd/demo
-cd go-solutions/13-goroutines-and-channels/01-your-first-goroutine/02-fanout-n-workers-loopvar
-```
-
 ### The per-index capture contract
 
 `FanOutN` must guarantee two things: every one of the `n` workers runs, and each

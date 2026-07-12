@@ -26,13 +26,6 @@ lazy-counter-start/           module: example.com/lazy-counter-start
 - Test: 200 goroutines all call `Start()`; assert `Started()` is true and `Runs()` is exactly 1; N goroutines each `Inc()` M times and assert `Value() == N*M`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/03-sync-once/02-lazy-counter-start/cmd/demo
-cd go-solutions/15-sync-primitives/03-sync-once/02-lazy-counter-start
-```
-
 ### Two kinds of state, two kinds of guard
 
 This artifact deliberately separates two concerns that beginners often conflate.

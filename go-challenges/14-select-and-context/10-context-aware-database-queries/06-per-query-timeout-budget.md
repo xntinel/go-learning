@@ -62,8 +62,6 @@ for this class of leak.
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/14-select-and-context/10-context-aware-database-queries/06-per-query-timeout-budget/cmd/demo
-cd go-solutions/14-select-and-context/10-context-aware-database-queries/06-per-query-timeout-budget
 go mod edit -go=1.25
 ```
 

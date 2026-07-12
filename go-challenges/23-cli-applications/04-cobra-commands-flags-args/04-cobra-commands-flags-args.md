@@ -25,8 +25,6 @@ Good CLIs separate data from diagnostics. Successful command output goes to stdo
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/23-cli-applications/04-cobra-commands-flags-args/04-cobra-commands-flags-args
-cd go-solutions/23-cli-applications/04-cobra-commands-flags-args/04-cobra-commands-flags-args
 go mod edit -go=1.26
 ```
 

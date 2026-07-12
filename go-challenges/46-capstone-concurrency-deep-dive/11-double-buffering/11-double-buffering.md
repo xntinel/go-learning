@@ -67,13 +67,6 @@ Because the writer calls `Write` sequentially (one swap per call) and must drain
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/46-capstone-concurrency-deep-dive/11-double-buffering/11-double-buffering/cmd/demo
-cd go-solutions/46-capstone-concurrency-deep-dive/11-double-buffering/11-double-buffering
-```
-
 ### Exercise 1: Core Types and Constructor
 
 Create `doublebuf.go`:

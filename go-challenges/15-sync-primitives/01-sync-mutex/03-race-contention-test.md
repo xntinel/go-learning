@@ -29,11 +29,6 @@ racetest/                    independent module: example.com/racetest
 - Test: the correct counter passes `go test -race` with an exact total of 1000; the tagged variant reports `WARNING: DATA RACE` under `go test -tags racebug -race`.
 - Verify: `go test -count=1 -race ./...` (default, clean), then `go test -tags racebug -race ./...` (fires the detector).
 
-```bash
-mkdir -p go-solutions/15-sync-primitives/01-sync-mutex/03-race-contention-test/cmd/demo
-cd go-solutions/15-sync-primitives/01-sync-mutex/03-race-contention-test
-```
-
 ### Why the bug lives behind a build tag
 
 The whole point of this module is to *see* the race detector work, which means

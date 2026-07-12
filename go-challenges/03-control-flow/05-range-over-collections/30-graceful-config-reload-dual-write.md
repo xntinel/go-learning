@@ -39,8 +39,6 @@ reload/                     independent module: example.com/graceful-config-relo
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/05-range-over-collections/30-graceful-config-reload-dual-write/cmd/demo
-cd go-solutions/03-control-flow/05-range-over-collections/30-graceful-config-reload-dual-write
 go mod edit -go=1.24
 ```
 

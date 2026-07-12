@@ -26,13 +26,6 @@ layoutaudit/               independent module: example.com/layoutaudit
 - Test: assert Bad reports strictly more padding than Good, that Bad's suggested-optimal size equals `Sizeof(Good)`, that a naturally-packed struct reports zero wasted padding, and that a non-struct returns `ErrNotStruct` via `errors.Is`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/09-struct-memory-layout-and-padding/03-reflect-layout-auditor/cmd/demo
-cd go-solutions/07-structs-and-methods/09-struct-memory-layout-and-padding/03-reflect-layout-auditor
-```
-
 ### How the auditor computes wasted padding
 
 `reflect` is the runtime mirror of `unsafe`. `reflect.TypeFor[T]()` yields the

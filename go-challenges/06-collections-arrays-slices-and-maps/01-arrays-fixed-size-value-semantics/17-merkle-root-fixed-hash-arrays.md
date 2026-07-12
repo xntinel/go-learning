@@ -41,8 +41,6 @@ merkle/                        module example.com/merkle
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/17-merkle-root-fixed-hash-arrays
-cd go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/17-merkle-root-fixed-hash-arrays
 go mod edit -go=1.24
 ```
 

@@ -33,8 +33,6 @@ Verify: `go test -count=1 ./...`
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/09-range-over-integers-and-functions/35-watermark-based-event-time-windowing/cmd/demo
-cd go-solutions/03-control-flow/09-range-over-integers-and-functions/35-watermark-based-event-time-windowing
 go mod edit -go=1.24
 ```
 

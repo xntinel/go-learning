@@ -28,8 +28,6 @@ wire/                       independent module: example.com/wire
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/08-interfaces/09-interface-internals/10-typeswitch-ordering-benchmark/cmd/demo
-cd go-solutions/08-interfaces/09-interface-internals/10-typeswitch-ordering-benchmark
 go mod edit -go=1.26
 ```
 

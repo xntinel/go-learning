@@ -26,13 +26,6 @@ validator/                 independent module: example.com/validator
 - Test: valid input yields nil; each individually-invalid field yields an error matched by `errors.Is`; multiple invalid fields yield a joined error where every sentinel is matchable; `Combine()` with no validators passes everything.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/04-first-class-functions-and-closures/08-validator-pipeline/cmd/demo
-cd go-solutions/04-functions/04-first-class-functions-and-closures/08-validator-pipeline
-```
-
 ### Predicates as values, aggregation as composition
 
 A `Validator[T]` is just a function from a value to an error (or nil). Because it

@@ -63,13 +63,6 @@ Before the window has enough samples, the detector seeds the ring buffer with a 
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/37-distributed-systems-fundamentals/22-failure-detector-phi-accrual/22-failure-detector-phi-accrual/cmd/demo
-cd go-solutions/37-distributed-systems-fundamentals/22-failure-detector-phi-accrual/22-failure-detector-phi-accrual
-```
-
 This is a library, not a program: the package is `phidetector`, not `main`. You verify it with `go test`.
 
 ### Exercise 1: Heartbeat History and Statistics

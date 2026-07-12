@@ -29,13 +29,6 @@ cfglegacy/                 independent module: example.com/cfglegacy
 - Test: defer/recover tests asserting the exact panics (`Store(nil)`, inconsistently typed second `Store`), the nil-`any`-before-first-`Store` behavior, and `errors.Is` assertions on both migration sentinels.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/08-atomic-value-config-hot-reload/03-atomic-value-legacy-adapter/cmd/demo
-cd go-solutions/15-sync-primitives/08-atomic-value-config-hot-reload/03-atomic-value-legacy-adapter
-```
-
 ### What atomic.Value actually promises, and where it bites
 
 `atomic.Value` predates generics, so its API is `Store(val any)` and

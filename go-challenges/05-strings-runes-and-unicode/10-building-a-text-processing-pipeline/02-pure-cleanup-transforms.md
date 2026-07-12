@@ -27,13 +27,6 @@ transforms/               independent module: example.com/transforms
 - Test: per-transform tables with adversarial inputs — named, decimal, and hex HTML entities; embedded `NUL` and other control bytes; tabs and newlines preserved by `RemoveControls`; runs of mixed Unicode whitespace collapsed.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/10-building-a-text-processing-pipeline/02-pure-cleanup-transforms/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/10-building-a-text-processing-pipeline/02-pure-cleanup-transforms
-```
-
 ### What each transform does, and why order matters
 
 `DecodeEntities` wraps `html.UnescapeString`, which decodes HTML entities in text

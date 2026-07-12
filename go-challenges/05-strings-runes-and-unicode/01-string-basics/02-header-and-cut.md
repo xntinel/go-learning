@@ -27,13 +27,6 @@ Test: RFC 9110/7234 header strings, valueless and quoted directives, malformed
 and empty inputs.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/01-string-basics/02-header-and-cut/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/01-string-basics/02-header-and-cut
-```
-
 ## Why Cut and CutPrefix over SplitN and manual slicing
 
 `ParseBearer` must strip the scheme off `"Bearer <token>"`. The wrong way is

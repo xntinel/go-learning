@@ -23,13 +23,6 @@ mutexprof/                independent module: example.com/mutexprof
 - Test: under fraction=1 the locked hammer yields `MutexCount() > 0` and a profile naming `LockedCounter`; the atomic hammer's profile does not name `AtomicCounter`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/06-mutex-profile-lock-contention/cmd/demo
-cd go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/06-mutex-profile-lock-contention
-```
-
 ### What the mutex profile records
 
 The mutex profile samples lock *contention*: when a goroutine has to wait because

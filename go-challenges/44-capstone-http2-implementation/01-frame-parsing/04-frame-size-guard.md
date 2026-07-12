@@ -22,7 +22,6 @@ h2framesize/
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/44-capstone-http2-implementation/01-frame-parsing/04-frame-size-guard/cmd/demo && cd go-solutions/44-capstone-http2-implementation/01-frame-parsing/04-frame-size-guard
 go mod edit -go=1.26
 ```
 

@@ -30,13 +30,6 @@ waitlimiter/                    independent module: example.com/waitlimiter
 - Test: `t.Context()`-derived timeouts prove prompt `context.DeadlineExceeded` on a drained limiter, success once refill lands, immediate return on a pre-canceled context, and clean release of ten goroutines blocked mid-`Wait`, with the cancel cause recovered via `context.Cause` and `errors.Is`.
 - Verify: `go test -count=1 -race ./...` and `go run ./cmd/demo`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/10-mutex-vs-channel/07-context-aware-wait/limiter go-solutions/15-sync-primitives/10-mutex-vs-channel/07-context-aware-wait/cmd/demo
-cd go-solutions/15-sync-primitives/10-mutex-vs-channel/07-context-aware-wait
-```
-
 ### Channels block natively; mutexes must be taught to
 
 For the channel limiter, `Wait` barely needs writing: the token store *is* a

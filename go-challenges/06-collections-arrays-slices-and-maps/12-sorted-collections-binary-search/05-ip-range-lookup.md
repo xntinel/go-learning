@@ -27,13 +27,6 @@ Implement: `Table` over sorted non-overlapping `[start,end]` `uint32` ranges wit
 Test: address below all ranges, above all ranges, inside a range, in a gap, at exact start and exact end, and a constructor that rejects overlapping input.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/12-sorted-collections-binary-search/05-ip-range-lookup/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/12-sorted-collections-binary-search/05-ip-range-lookup
-```
-
 ### Floor search, then the containment check that catches the gaps
 
 An IPv4 address is a 32-bit number, so a range is a pair of `uint32` bounds and

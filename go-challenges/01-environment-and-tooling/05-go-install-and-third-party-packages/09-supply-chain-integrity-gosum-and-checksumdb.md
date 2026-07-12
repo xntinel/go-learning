@@ -26,13 +26,6 @@ Implement: `HashDir(dir, prefix string) (string, error)` wrapping `dirhash.HashD
 Test: hashing the same tree twice matches; changing one file changes the hash; the result is an `h1:` string.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/05-go-install-and-third-party-packages/09-supply-chain-integrity-gosum-and-checksumdb/cmd/demo
-cd go-solutions/01-environment-and-tooling/05-go-install-and-third-party-packages/09-supply-chain-integrity-gosum-and-checksumdb
-```
-
 ### The trust boundary, in one function
 
 When the `go` command downloads a module version, it computes an `h1:` hash over

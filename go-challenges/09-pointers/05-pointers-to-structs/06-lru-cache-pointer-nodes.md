@@ -27,13 +27,6 @@ Implement: a `node` with `key`, `val`, `prev`, `next *node`; an `LRUCache` with 
 Test: capacity eviction removes the least-recently-used; `Get` promotes; `Put` on an existing key updates without growing; evicted node's links are nulled; `len(map) == size` invariant; churn under `-race`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/05-pointers-to-structs/06-lru-cache-pointer-nodes/cmd/demo
-cd go-solutions/09-pointers/05-pointers-to-structs/06-lru-cache-pointer-nodes
-```
-
 ### Sentinels, wiring, and why you must null the links on eviction
 
 The list is doubly linked so that any node can be unlinked in O(1) given only a

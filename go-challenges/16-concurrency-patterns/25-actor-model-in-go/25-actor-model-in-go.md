@@ -16,13 +16,6 @@ actor/
   cmd/demo/main.go
 ```
 
-Module path: `example.com/actor`. Set up with:
-
-```bash
-mkdir -p go-solutions/16-concurrency-patterns/25-actor-model-in-go/25-actor-model-in-go/internal/actor go-solutions/16-concurrency-patterns/25-actor-model-in-go/25-actor-model-in-go/cmd/demo
-cd go-solutions/16-concurrency-patterns/25-actor-model-in-go/25-actor-model-in-go
-```
-
 ## Concepts
 
 ### Actors Eliminate Shared-State Bugs by Design

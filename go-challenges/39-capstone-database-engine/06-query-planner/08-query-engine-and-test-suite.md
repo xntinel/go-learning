@@ -26,12 +26,6 @@ planner_test.go   the full engine test suite
 - Test: sequential scan, NULL-aware filter and IS NULL/IS NOT NULL, sort and limit, hash and nested-loop joins (including NULL keys and LEFT padding), group-by with COUNT/AVG and HAVING, projection errors, index-scan selection, predicate pushdown, and LIKE.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/06-query-planner/08-query-engine-and-test-suite/cmd/demo && cd go-solutions/39-capstone-database-engine/06-query-planner/08-query-engine-and-test-suite
-```
-
 ### Values, schema, and the operator protocol
 
 The same foundation as the rest of the lesson: a nullable typed value with a total order that places NULL first, schemas and tuples resolved by name at plan time and by index at run time, and the four-method volcano interface.

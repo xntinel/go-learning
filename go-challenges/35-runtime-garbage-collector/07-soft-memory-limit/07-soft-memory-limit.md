@@ -57,13 +57,6 @@ If `/gc/limiter/last-enabled:gc-cycle` is non-zero, the CPU limiter has fired du
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/35-runtime-garbage-collector/07-soft-memory-limit/07-soft-memory-limit/cmd/demo
-cd go-solutions/35-runtime-garbage-collector/07-soft-memory-limit/07-soft-memory-limit
-```
-
 ### Exercise 1: Pressure Measurement Types
 
 Create `pressure.go`:

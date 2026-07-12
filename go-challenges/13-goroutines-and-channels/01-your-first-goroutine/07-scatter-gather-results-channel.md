@@ -26,13 +26,6 @@ Implement: `QueryReplicas(ids []int, call func(int) Result) []Result` that launc
 Test: assert `len(results) == len(ids)` and the set of returned values matches expected regardless of completion order; run with `-count=10` for order independence.
 Verify: `go test -race -count=10 ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/01-your-first-goroutine/07-scatter-gather-results-channel/cmd/demo
-cd go-solutions/13-goroutines-and-channels/01-your-first-goroutine/07-scatter-gather-results-channel
-```
-
 ### Why the buffer must be sized to the senders
 
 Each goroutine produces one `Result` and must get it out somehow. A channel is the

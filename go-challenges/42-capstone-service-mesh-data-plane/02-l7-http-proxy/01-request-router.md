@@ -22,7 +22,6 @@ router_test.go       host match, port stripping, path prefix, first-rule-wins, E
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/42-capstone-service-mesh-data-plane/02-l7-http-proxy/01-request-router/cmd/demo && cd go-solutions/42-capstone-service-mesh-data-plane/02-l7-http-proxy/01-request-router
 go mod edit -go=1.26
 ```
 

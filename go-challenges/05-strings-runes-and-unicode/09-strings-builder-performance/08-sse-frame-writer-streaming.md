@@ -26,11 +26,6 @@ Implement: `WriteEvent(w io.Writer, ev Event) error` streaming the frame and cal
 Test: exact wire framing through `httptest.ResponseRecorder`; a multi-line payload becomes multiple `data:` lines; a fake `Flusher` confirms one flush per frame.
 Verify: `go test -count=1 -race ./...`
 
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/09-strings-builder-performance/08-sse-frame-writer-streaming/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/09-strings-builder-performance/08-sse-frame-writer-streaming
-```
-
 ### Framing and flushing
 
 The SSE wire format is simple but exact. Each frame is a sequence of `field: value`

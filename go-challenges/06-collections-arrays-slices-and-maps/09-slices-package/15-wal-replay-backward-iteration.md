@@ -52,8 +52,6 @@ wal-replay/                    module example.com/wal-replay
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/09-slices-package/15-wal-replay-backward-iteration
-cd go-solutions/06-collections-arrays-slices-and-maps/09-slices-package/15-wal-replay-backward-iteration
 go mod edit -go=1.24
 ```
 

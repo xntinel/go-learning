@@ -19,12 +19,6 @@ firstof_test.go      first-healthy beats fast-failure, all-fail aggregates, lose
 - Test: a healthy-but-slower replica beats a fast failure, all-fail returns an aggregated error, the losing replicas observe cancellation, and an empty replica list errors.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/16-concurrency-patterns/09-or-channel-pattern/03-first-of-n-responder/cmd/demo && cd go-solutions/16-concurrency-patterns/09-or-channel-pattern/03-first-of-n-responder
-```
-
 ### Why "first healthy" and why cancellation is load-bearing
 
 This is the technique Dean and Barroso describe in "The Tail at Scale": fire a request at redundant replicas so a single slow or sick one cannot dominate the response time. Expressed as an or-channel it is "the first event wins and cancels the others", but two details make it senior rather than a toy `select`.

@@ -31,13 +31,6 @@ codecreg/                       module: example.com/codecreg
 - Test: a test-only codec self-registering in `init()`; `Lookup` finds registered codecs and errors on unknown names (`errors.Is`); `List` is sorted; `Register`/`Lookup` are race-safe; a blank import activates the gzip codec.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/09-blank-identifier-and-shadowing/04-codec-registry-blank-import/gzipcodec go-solutions/02-variables-types-and-constants/09-blank-identifier-and-shadowing/04-codec-registry-blank-import/cmd/demo
-cd go-solutions/02-variables-types-and-constants/09-blank-identifier-and-shadowing/04-codec-registry-blank-import
-```
-
 ### Why the blank import lives at the composition root
 
 The registry is a package-level map guarded by an `RWMutex`. A codec makes itself

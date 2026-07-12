@@ -28,13 +28,6 @@ Implement: `GoSafe(wg *sync.WaitGroup, report func(error), fn func())` that spaw
 Test: a spawned goroutine that panics is caught and reported with a non-empty stack, `errors.Is` reaches the original error, and the `WaitGroup` returns; the happy path reports nothing.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/08-panic-and-recover/07-cross-goroutine-recover-trap/cmd/demo
-cd go-solutions/03-control-flow/08-panic-and-recover/07-cross-goroutine-recover-trap
-```
-
 ### The scope rule, made unambiguous
 
 Recover only catches panics unwinding through *its own* goroutine. Here is the

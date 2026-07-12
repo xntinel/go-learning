@@ -29,13 +29,6 @@ Implement: `HandleConn(conn io.Reader) ([]Record, error)` that borrows a pooled 
 Test: table-driven parsing including a final line without a trailing newline; a sequential bleed test proving a reader abandoned mid-stream leaks nothing into the next connection; concurrent distinct-payload connections under `-race`; a pooled-vs-fresh-reader benchmark.
 Verify: `go test -count=1 -race ./...` then `go test -bench=. -benchmem -run=^$ ./ingest`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/05-sync-pool/09-pooled-bufio-reader-line-protocol/ingest go-solutions/15-sync-primitives/05-sync-pool/09-pooled-bufio-reader-line-protocol/cmd/demo
-cd go-solutions/15-sync-primitives/05-sync-pool/09-pooled-bufio-reader-line-protocol
-```
-
 ### Reset(conn) is a data-integrity boundary, not bookkeeping
 
 A `bufio.Reader` reads ahead: `ReadString('\n')` may pull 4 KiB from the

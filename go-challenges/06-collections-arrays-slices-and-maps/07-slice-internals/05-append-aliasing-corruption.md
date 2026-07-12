@@ -26,13 +26,6 @@ Implement: `ViewUnsafe(buf []int, lo, hi int) []int` (a plain reslice) and `View
 Test: appending to `ViewUnsafe` corrupts the neighbor; appending to `ViewSafe` allocates a new array (`SliceData` differs) and leaves the parent untouched; concurrent readers of the shared array stay race-free on the safe path.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/05-append-aliasing-corruption/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/05-append-aliasing-corruption
-```
-
 ### The bug: append into shared spare capacity
 
 `ViewUnsafe(buf, lo, hi)` returns `buf[lo:hi]`. That sub-slice has length

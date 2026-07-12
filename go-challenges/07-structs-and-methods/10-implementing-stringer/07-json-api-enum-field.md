@@ -24,13 +24,6 @@ statusapi/                  independent module: example.com/statusapi
 - Test: `json.Marshal(status)` yields the quoted name and equals `strconv.Quote(status.String())`; `json.Unmarshal` rejects `3`, `""`, `"bogus"`; an `httptest` round-trip returns 200 for `"running"` and 400 for an invalid value.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/10-implementing-stringer/07-json-api-enum-field/cmd/demo
-cd go-solutions/07-structs-and-methods/10-implementing-stringer/07-json-api-enum-field
-```
-
 ### Why MarshalJSON here, not just MarshalText
 
 Exercise 3 used `TextMarshaler`, which `encoding/json` also honors. Implementing

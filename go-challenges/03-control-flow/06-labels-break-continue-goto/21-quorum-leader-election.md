@@ -31,8 +31,6 @@ election/                   independent module: example.com/election
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/06-labels-break-continue-goto/21-quorum-leader-election/cmd/demo
-cd go-solutions/03-control-flow/06-labels-break-continue-goto/21-quorum-leader-election
 go mod edit -go=1.24
 ```
 

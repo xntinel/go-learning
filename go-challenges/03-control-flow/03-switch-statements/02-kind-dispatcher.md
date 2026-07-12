@@ -29,8 +29,6 @@ dispatch/                  independent module: example.com/kind-dispatcher
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/03-switch-statements/02-kind-dispatcher/cmd/demo
-cd go-solutions/03-control-flow/03-switch-statements/02-kind-dispatcher
 go mod edit -go=1.24
 ```
 

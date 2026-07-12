@@ -28,8 +28,6 @@ queuedepth/                  module: example.com/queuedepth
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/13-goroutines-and-channels/03-buffered-vs-unbuffered-channels/03-queue-depth-saturation-metric/cmd/demo
-cd go-solutions/13-goroutines-and-channels/03-buffered-vs-unbuffered-channels/03-queue-depth-saturation-metric
 go mod edit -go=1.26
 ```
 

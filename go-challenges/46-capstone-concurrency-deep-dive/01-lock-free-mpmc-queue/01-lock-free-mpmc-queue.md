@@ -80,13 +80,6 @@ The queue is *linearizable*: each Enqueue and Dequeue appears to take effect ato
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/46-capstone-concurrency-deep-dive/01-lock-free-mpmc-queue/01-lock-free-mpmc-queue/cmd/demo
-cd go-solutions/46-capstone-concurrency-deep-dive/01-lock-free-mpmc-queue/01-lock-free-mpmc-queue
-```
-
 This is a library. You verify it with `go test`, not by running a `main`.
 
 ### Exercise 1: The Queue Type And Its Constructor

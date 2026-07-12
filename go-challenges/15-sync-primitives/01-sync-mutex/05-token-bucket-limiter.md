@@ -26,11 +26,6 @@ tokenbucket/                 independent module: example.com/tokenbucket
 - Test: an injected clock; a burst of `Allow()` up to capacity returns true then false; advancing the clock refills exactly `rate*elapsed`; concurrent `Allow()` never exceeds the budget under `-race`.
 - Verify: `go test -count=1 -race ./...`
 
-```bash
-mkdir -p go-solutions/15-sync-primitives/01-sync-mutex/05-token-bucket-limiter/cmd/demo
-cd go-solutions/15-sync-primitives/01-sync-mutex/05-token-bucket-limiter
-```
-
 ### Lazy refill under the lock, and why the whole thing is the critical section
 
 There is no background goroutine dripping tokens into the bucket. Instead `Allow`

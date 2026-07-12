@@ -28,8 +28,6 @@ Test: a burst of failing ops retries no more than the budget allows (not `MaxAtt
 Verify: `go test -count=1 -race ./...`
 
 ```bash
-mkdir -p go-solutions/10-error-handling/12-retry-patterns-with-backoff/08-retry-budget-token-bucket/cmd/demo
-cd go-solutions/10-error-handling/12-retry-patterns-with-backoff/08-retry-budget-token-bucket
 go mod edit -go=1.26
 ```
 

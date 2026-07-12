@@ -31,12 +31,6 @@ container_test.go    singletons are shared, construction is lazy, and concurrent
 - Test: the same pointer comes back every time, nothing is built until requested, and concurrent resolution builds each node exactly once.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/24-design-patterns-in-go/04-dependency-injection/03-provider-container/cmd/demo && cd go-solutions/24-design-patterns-in-go/04-dependency-injection/03-provider-container
-```
-
 ### Why memoized providers, and why `sync.Once`
 
 Manual wiring in `main` is the right default, but it has one awkward case: a shared

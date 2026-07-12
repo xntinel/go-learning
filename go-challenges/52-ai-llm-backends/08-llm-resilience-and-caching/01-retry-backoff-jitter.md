@@ -32,8 +32,6 @@ retry/                       independent module: example.com/retry
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/52-ai-llm-backends/08-llm-resilience-and-caching/01-retry-backoff-jitter/cmd/demo
-cd go-solutions/52-ai-llm-backends/08-llm-resilience-and-caching/01-retry-backoff-jitter
 go mod edit -go=1.26
 # only needed to run the online smoke test:
 go get github.com/anthropics/anthropic-sdk-go

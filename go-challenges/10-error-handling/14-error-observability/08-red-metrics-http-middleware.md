@@ -30,8 +30,6 @@ redmetrics/                  independent module: example.com/redmetrics
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/10-error-handling/14-error-observability/08-red-metrics-http-middleware/cmd/demo
-cd go-solutions/10-error-handling/14-error-observability/08-red-metrics-http-middleware
 go mod edit -go=1.25
 ```
 

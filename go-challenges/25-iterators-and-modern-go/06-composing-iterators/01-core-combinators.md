@@ -20,12 +20,6 @@ example_test.go      a runnable ExampleFilter with verified output
 - Test: a `Filter -> Map -> Take` pipeline yields the right values, `Take` pulls *exactly* `n` from upstream, `Take(seq, 0)` yields nothing, and the validating constructors return their sentinel errors.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/25-iterators-and-modern-go/06-composing-iterators/01-core-combinators/cmd/demo && cd go-solutions/25-iterators-and-modern-go/06-composing-iterators/01-core-combinators
-```
-
 ### Sources, intermediates, and terminals
 
 The library has three kinds of function and it is worth naming them before reading the code. A *source* manufactures a sequence from non-sequence input: `Range(start, end)` produces the integers in a half-closed span, `FromSlice(values)` replays a slice. Both return an `iter.Seq[V]` (and `Range` also returns an `error`, because an inverted range is a caller mistake worth rejecting up front rather than silently yielding nothing). An *intermediate* combinator takes a sequence and returns a transformed sequence: `Filter` drops values, `Map` rewrites them, `Take` and `Skip` slice the stream by position, `Chain` concatenates several streams. A *terminal* drives the pipeline and returns a plain value: `Reduce` folds the sequence into a single accumulator.

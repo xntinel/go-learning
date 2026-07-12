@@ -22,13 +22,6 @@ featureflag/               independent module: example.com/featureflag
 - Test: from `package featureflag_test`, an enabled flag returns true and an unknown flag returns false.
 - Verify: `gofmt -l .`, `go vet ./...`, `go test -count=1 -race ./...`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/01-your-first-test/09-blackbox-featureflag-eval/cmd/demo
-cd go-solutions/12-testing-ecosystem/01-your-first-test/09-blackbox-featureflag-eval
-```
-
 ### White-box versus black-box, as an API-design pressure
 
 A `_test.go` file can declare one of two packages. `package featureflag`

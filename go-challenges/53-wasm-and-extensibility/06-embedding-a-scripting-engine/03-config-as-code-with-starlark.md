@@ -34,8 +34,6 @@ Verify: `go test -race ./...` with the dependency present (bar-mode: the offline
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/53-wasm-and-extensibility/06-embedding-a-scripting-engine/03-config-as-code-with-starlark/cmd/demo
-cd go-solutions/53-wasm-and-extensibility/06-embedding-a-scripting-engine/03-config-as-code-with-starlark
 go mod edit -go=1.26
 go get go.starlark.net@latest
 ```

@@ -24,13 +24,6 @@ Implement: `ListObjects(c Client, prefix string) iter.Seq[Object]` that pages vi
 Test: full enumeration flattens all pages and fetches exactly N; a mid-page break fetches exactly one page; an empty result fetches once and yields nothing.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/09-range-over-integers-and-functions/03-paginated-list-iterator/cmd/demo
-cd go-solutions/03-control-flow/09-range-over-integers-and-functions/03-paginated-list-iterator
-```
-
 ## The design
 
 `ListObjects` runs an unbounded loop over pages. It starts with an empty token,

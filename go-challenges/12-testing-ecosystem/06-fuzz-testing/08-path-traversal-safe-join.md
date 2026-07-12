@@ -29,13 +29,6 @@ accepted result stays under the base.
 Verify: `go test -race ./...`, then `go test -fuzz=FuzzSafeJoinContained
 -fuzztime=2s`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/06-fuzz-testing/08-path-traversal-safe-join/cmd/demo
-cd go-solutions/12-testing-ecosystem/06-fuzz-testing/08-path-traversal-safe-join
-```
-
 ### Why filepath.IsLocal is the whole safety argument
 
 The temptation is to write the containment check by hand: clean the path, join it,

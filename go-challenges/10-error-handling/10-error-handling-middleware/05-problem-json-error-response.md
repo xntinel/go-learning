@@ -30,13 +30,6 @@ mapped sentinel; a 500 carries a generic detail (no internal string leaks) and a
 appears in the body.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/10-error-handling-middleware/05-problem-json-error-response/cmd/demo
-cd go-solutions/10-error-handling/10-error-handling-middleware/05-problem-json-error-response
-```
-
 ### Why RFC 9457 and why redaction
 
 RFC 9457 (Problem Details for HTTP APIs, which obsoletes RFC 7807) defines a

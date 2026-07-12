@@ -30,8 +30,6 @@ broker/                      independent module: example.com/broker
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/13-goroutines-and-channels/08-goroutine-leak-detection/06-broker-subscriber-unsubscribe/cmd/demo
-cd go-solutions/13-goroutines-and-channels/08-goroutine-leak-detection/06-broker-subscriber-unsubscribe
 go get go.uber.org/goleak@v1.3.0
 ```
 

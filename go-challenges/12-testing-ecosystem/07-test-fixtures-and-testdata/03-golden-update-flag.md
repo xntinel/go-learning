@@ -22,13 +22,6 @@ Implement: `Render` producing a deterministic multi-line report (regions sorted,
 Test: `assertGolden(t, name, got)` that writes the golden when `*update` is set and otherwise `bytes.Equal`-compares, with a failure message telling the reader to rerun with `-update`.
 Verify: `go test -count=1 -race ./...`, and `go test -run TestRenderSummaryGolden -update` to regenerate.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/03-golden-update-flag/cmd/demo go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/03-golden-update-flag/testdata
-cd go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/03-golden-update-flag
-```
-
 ### The read/write asymmetry and why the diff must be reviewed
 
 A golden test is a comparison. The `-update` flag turns that same test into a generator: when `*update` is true it writes what the code produced to the golden file and returns without asserting anything; when it is false it reads the committed golden and compares. That asymmetry is the whole trick, and it carries a discipline that is easy to skip and dangerous to skip. A regenerated golden is a snapshot of whatever the code produced at that moment — including a bug. `go test -update` followed by `git add` without reading the diff is rubber-stamping the current output as correct. The golden diff must be reviewed exactly like a code diff; a golden you cannot explain is a bug you just blessed. The flag exists to save you from retyping fifty lines, not from thinking about them.

@@ -26,13 +26,6 @@ pkginternal/                        module example.com/pkginternal
 - Test: drive `ServeHTTP` with `httptest.NewRecorder`/`NewRequest`, assert body and `Content-Type`; call `render.Write` directly (legal from the same package) to assert an empty title is rejected.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/11-packages-and-modules/03-internal-packages/01-handler-internal-render/pkg/handler/internal/render go-solutions/11-packages-and-modules/03-internal-packages/01-handler-internal-render/cmd/demo
-cd go-solutions/11-packages-and-modules/03-internal-packages/01-handler-internal-render
-```
-
 ### Why the render helper belongs under internal
 
 The handler's job is to accept a request and produce a response; the HTML shaping

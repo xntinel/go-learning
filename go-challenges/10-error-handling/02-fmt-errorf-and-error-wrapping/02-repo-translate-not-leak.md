@@ -28,13 +28,6 @@ userrepo/                      independent module: example.com/userrepo
 - Test: no-rows returns `ErrUserNotFound` and `errors.Is(err, sql.ErrNoRows)` is false (translated, not leaked); a connection error is `errors.Is(err, ErrTransient)` with the id and `find user` in the message; success returns the user and `nil`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/02-fmt-errorf-and-error-wrapping/02-repo-translate-not-leak/cmd/demo
-cd go-solutions/10-error-handling/02-fmt-errorf-and-error-wrapping/02-repo-translate-not-leak
-```
-
 ### Translate, do not leak
 
 The repository takes its query as an injected `QueryFunc` — a `func(id int)

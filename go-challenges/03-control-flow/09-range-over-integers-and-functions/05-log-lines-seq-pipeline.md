@@ -23,13 +23,6 @@ Implement: `Parse(lines iter.Seq[string]) iter.Seq[LogEntry]`, `Errors(blob stri
 Test: filtered entries equal the expected slice; the trailing unterminated line is still yielded; `Take(2)` stops parsing early; a malformed line is skipped without panic.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/09-range-over-integers-and-functions/05-log-lines-seq-pipeline/cmd/demo
-cd go-solutions/03-control-flow/09-range-over-integers-and-functions/05-log-lines-seq-pipeline
-```
-
 ## The design
 
 The pipeline has two layers. `Parse(lines iter.Seq[string])` is the reusable core:

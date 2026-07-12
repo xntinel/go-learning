@@ -21,12 +21,6 @@ ratelimit_test.go    per-algorithm behavior, config selection, unknown-strategy
 - Test: token-bucket burst-then-refill, fixed-window reset, sliding-window roll-off, config selection, an unknown strategy erroring, and a concurrent `Allow()` run under `-race`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/24-design-patterns-in-go/03-strategy-pattern-via-interfaces/04-rate-limiter-strategies/cmd/demo && cd go-solutions/24-design-patterns-in-go/03-strategy-pattern-via-interfaces/04-rate-limiter-strategies
-```
-
 ### One interface, three time models
 
 Every limiting algorithm reduces to the same contract: a request arrives, the limiter says yes or no, and a yes consumes whatever capacity that request costs. That contract is the `Limiter` interface — two methods, `Allow` and `Name` — and it is the only thing a caller (an HTTP middleware, a queue consumer) ever depends on:

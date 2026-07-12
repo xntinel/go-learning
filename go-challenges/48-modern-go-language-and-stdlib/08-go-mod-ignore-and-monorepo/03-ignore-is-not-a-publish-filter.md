@@ -31,8 +31,6 @@ ignorezip/                      independent module: example.com/ignorezip
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/48-modern-go-language-and-stdlib/08-go-mod-ignore-and-monorepo/03-ignore-is-not-a-publish-filter/cmd/demo
-cd go-solutions/48-modern-go-language-and-stdlib/08-go-mod-ignore-and-monorepo/03-ignore-is-not-a-publish-filter
 go mod edit -go=1.25
 go get golang.org/x/mod@v0.37.0
 ```

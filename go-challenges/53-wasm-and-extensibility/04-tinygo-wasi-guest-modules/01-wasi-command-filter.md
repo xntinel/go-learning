@@ -34,8 +34,6 @@ Set up the module. `//go:wasmexport` is not used here, but the WASI target and
 `wazero` still require a recent toolchain:
 
 ```bash
-mkdir -p go-solutions/53-wasm-and-extensibility/04-tinygo-wasi-guest-modules/01-wasi-command-filter/guest go-solutions/53-wasm-and-extensibility/04-tinygo-wasi-guest-modules/01-wasi-command-filter/cmd/demo
-cd go-solutions/53-wasm-and-extensibility/04-tinygo-wasi-guest-modules/01-wasi-command-filter
 go mod edit -go=1.24
 go get github.com/tetratelabs/wazero@latest
 ```

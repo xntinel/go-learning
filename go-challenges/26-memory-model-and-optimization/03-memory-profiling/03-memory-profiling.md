@@ -36,13 +36,6 @@ Profiling tools accept specific sample indexes. A wrapper that accepts a string 
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/26-memory-model-and-optimization/03-memory-profiling/03-memory-profiling/cmd/demo
-cd go-solutions/26-memory-model-and-optimization/03-memory-profiling/03-memory-profiling
-```
-
 ### Exercise 1: Build The Transformer
 
 Create `transform.go`:

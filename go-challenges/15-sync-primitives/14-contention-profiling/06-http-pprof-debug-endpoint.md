@@ -30,13 +30,6 @@ pprof-admin/                  independent module: example.com/pprof-admin
 - Test: public mux returns 404 for `/debug/pprof/`; admin mux returns 401 without the token and 200 with a non-empty profile body with it; `http.DefaultServeMux` is shown to be polluted by the import; the `Debug` round-trip restores the previous fraction.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/14-contention-profiling/06-http-pprof-debug-endpoint/cmd/demo
-cd go-solutions/15-sync-primitives/14-contention-profiling/06-http-pprof-debug-endpoint
-```
-
 ### Why the blank import is a trap
 
 `import _ "net/http/pprof"` looks harmless — it exports nothing you call. But

@@ -25,13 +25,6 @@ api/                          independent module: example.com/api
 - Test: an `httptest` table asserting `rr.Code` per sentinel, plus a test that the 500 body never echoes the internal error text.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/05-sentinel-errors/02-map-sentinels-to-http-status/cmd/demo
-cd go-solutions/10-error-handling/05-sentinel-errors/02-map-sentinels-to-http-status
-```
-
 ### One seam, decided once
 
 The reason to have a single `classify` function is that the sentinel-to-status

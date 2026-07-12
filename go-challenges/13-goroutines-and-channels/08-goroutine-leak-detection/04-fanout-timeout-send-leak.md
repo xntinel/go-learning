@@ -26,13 +26,6 @@ fanout/                      independent module: example.com/fanout
 - Test: reproduce the leak (naive version leaves a worker parked on a send after the caller returned); prove the fix returns the winner and leaves no worker behind, even on context timeout.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/08-goroutine-leak-detection/04-fanout-timeout-send-leak/cmd/demo
-cd go-solutions/13-goroutines-and-channels/08-goroutine-leak-detection/04-fanout-timeout-send-leak
-```
-
 ### Why the naive version leaks
 
 The naive fan-out spawns one goroutine per replica, each doing `ch <- v` on an

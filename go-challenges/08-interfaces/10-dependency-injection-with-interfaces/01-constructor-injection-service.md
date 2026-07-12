@@ -27,13 +27,6 @@ service/                    independent module: example.com/service
 - Test: a compile-time assertion that the constructor takes interfaces, plus a smoke test wiring `RealClock()` and a trivial in-memory repo through `NewService` and calling `Get` for the happy path.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/10-dependency-injection-with-interfaces/01-constructor-injection-service/cmd/demo
-cd go-solutions/08-interfaces/10-dependency-injection-with-interfaces/01-constructor-injection-service
-```
-
 ### Why the constructor constructs nothing
 
 The single most important line in this file is the one that is not there:

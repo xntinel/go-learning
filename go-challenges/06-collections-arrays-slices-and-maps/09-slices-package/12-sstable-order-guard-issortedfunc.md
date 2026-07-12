@@ -49,8 +49,6 @@ sstable-verify/                module example.com/sstable-verify
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/09-slices-package/12-sstable-order-guard-issortedfunc
-cd go-solutions/06-collections-arrays-slices-and-maps/09-slices-package/12-sstable-order-guard-issortedfunc
 go mod edit -go=1.24
 ```
 

@@ -19,12 +19,6 @@ deployment_test.go   full render, defaults, required-field enforcement, immutabi
 - Test: `deployment_test.go` pins the full rendered manifest, the namespace/replica defaults, required-field enforcement via sentinels, error aggregation, that a built `Deployment` is immutable against later setter calls, and that a failed `Build` does not poison the builder.
 - Verify: `go test -race -count=1 ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/24-design-patterns-in-go/02-builder-pattern/05-deployment-spec-builder/cmd/demo && cd go-solutions/24-design-patterns-in-go/02-builder-pattern/05-deployment-spec-builder
-```
-
 ### Why required fields are enforced at Build, not in setters
 
 A Deployment has fields with no sensible default — a name and a container image — and fields that do have one, like the namespace (`default`) and the replica count (`1`). The builder reflects that division. `New` seeds the defaultable fields, so a caller who never touches them still gets a valid namespace and one replica. The two fields that cannot be defaulted are *not* required by the setters — there is no `New(name, image)` constructor forcing them up front. Instead they are checked once, at `Build`, which appends `ErrNoName` or `ErrNoImage` if either is still empty. Enforcing at `Build` rather than at the setter is what lets the fluent chain stay order-free: a caller may set image before name, or interleave labels and ports however reads best, and the single completeness check at the end catches whatever is missing. The setters that *can* fail on their own argument — a negative replica count, a port outside 1..65535, an empty label — record a sentinel and keep going, so `Build` reports every problem together via `errors.Join`, exactly like the other builders in this lesson.

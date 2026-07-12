@@ -26,13 +26,6 @@ repo/                       independent module: example.com/repo
 - Test: static assertions for all three interfaces; `Names` works via `ReaderRepo` and `Seed` via `WriterRepo`; `Get` on a missing key is `ErrNotFound` (`errors.Is`); concurrent reads under `-race`; `List` returns a copy callers cannot mutate to corrupt internal state.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/05-interface-composition-and-embedding/06-segregated-repository-composition/cmd/demo
-cd go-solutions/08-interfaces/05-interface-composition-and-embedding/06-segregated-repository-composition
-```
-
 ### Why segregate, then compose
 
 A single fat `Store` interface with Get/List/Save/Delete forces every consumer to

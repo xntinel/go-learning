@@ -27,13 +27,6 @@ health/                     independent module: example.com/health
 - Test: fakes returning nil / an error / a slow (context-timeout) result; assert overall 200 when all pass, 503 when any fails, correct per-dependency JSON, and that one slow dependency does not hang the check beyond its timeout.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/10-dependency-injection-with-interfaces/09-health-check-aggregator/cmd/demo
-cd go-solutions/08-interfaces/10-dependency-injection-with-interfaces/09-health-check-aggregator
-```
-
 ### Injection makes each dependency independently fakeable
 
 A `Checker` is a one-method interface: `Check(ctx) error`, returning nil for

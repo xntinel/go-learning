@@ -25,13 +25,6 @@ models/                    independent module: example.com/models
 - Test: marshalled `User` has `id`/`created_at` at the top level (flattened); the redeclared field wins (shadowing); the named-field type nests; a round-trip `Unmarshal` repopulates embedded fields.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/08-embedding-for-composition/06-base-model-embedding-json/cmd/demo
-cd go-solutions/07-structs-and-methods/08-embedding-for-composition/06-base-model-embedding-json
-```
-
 ### Flattening, shadowing, and forced nesting
 
 `encoding/json` treats an embedded struct's exported fields as if they were

@@ -27,13 +27,6 @@ reqcost/                   independent module: example.com/reqcost
 - Test: both variants return identical results; `processPtr` does not mutate the caller; `BenchmarkValue`/`BenchmarkPointer` with `for b.Loop()` and `b.ReportAllocs()`; assert `unsafe.Sizeof(Request{})` exceeds a threshold.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/01-pointer-basics/06-large-request-copy-cost/cmd/demo
-cd go-solutions/09-pointers/01-pointer-basics/06-large-request-copy-cost
-```
-
 ### The copy is real and its size is knowable
 
 `Request` is a deliberately fat DTO: scalar fields, an embedded `Metadata` struct,

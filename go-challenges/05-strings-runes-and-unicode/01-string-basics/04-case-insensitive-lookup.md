@@ -27,13 +27,6 @@ Test: mixed-case method and header inputs, plus an `AllocsPerRun` assertion that
 the `EqualFold` path is zero-allocation while a `ToLower` reference allocates.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/01-string-basics/04-case-insensitive-lookup/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/01-string-basics/04-case-insensitive-lookup
-```
-
 ## Why EqualFold, not ToLower, on the request path
 
 `strings.ToLower(a) == strings.ToLower(b)` looks harmless, but each `ToLower`

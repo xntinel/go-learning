@@ -30,8 +30,6 @@ cacheaside/                   independent module: example.com/cacheaside
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/54-cloud-native-platform-and-orchestration/08-redis-distributed-cache/01-cache-aside-with-ttl/cmd/demo
-cd go-solutions/54-cloud-native-platform-and-orchestration/08-redis-distributed-cache/01-cache-aside-with-ttl
 go get github.com/redis/go-redis/v9@latest
 go get github.com/alicebob/miniredis/v2@latest
 ```

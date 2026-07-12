@@ -26,13 +26,6 @@ domainerr/                  independent module: example.com/domainerr
 - Test: `errors.Is` finds a wrapped sentinel through multiple layers; `errors.As` extracts the typed `ValidationError` and its field; `errors.Join` groups two failures and `Is` matches either; `StatusFor` maps `ErrNotFound` to 404 and a `ValidationError` to 400.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/04-common-standard-library-interfaces/05-error-interface-classification/cmd/demo
-cd go-solutions/08-interfaces/04-common-standard-library-interfaces/05-error-interface-classification
-```
-
 ### Sentinels, typed errors, and the Unwrap chain
 
 There are two shapes of domain error and they answer different questions. A

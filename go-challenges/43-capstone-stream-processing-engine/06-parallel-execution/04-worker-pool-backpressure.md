@@ -24,7 +24,6 @@ pool_test.go           even distribution, per-worker FIFO, bounded concurrency
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/43-capstone-stream-processing-engine/06-parallel-execution/04-worker-pool-backpressure/cmd/demo && cd go-solutions/43-capstone-stream-processing-engine/06-parallel-execution/04-worker-pool-backpressure
 go mod edit -go=1.26
 ```
 

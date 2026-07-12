@@ -29,8 +29,6 @@ readiness/                 independent module: example.com/readiness
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/13-goroutines-and-channels/05-waitgroup/03-healthcheck-aggregator-wg-go/cmd/demo
-cd go-solutions/13-goroutines-and-channels/05-waitgroup/03-healthcheck-aggregator-wg-go
 go mod edit -go=1.25
 ```
 

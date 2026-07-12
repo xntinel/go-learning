@@ -58,13 +58,6 @@ a single `for v := range Bridge(done, outer)` loop.
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/16-concurrency-patterns/12-bridge-channel-pattern/12-bridge-channel-pattern/internal/bridge go-solutions/16-concurrency-patterns/12-bridge-channel-pattern/12-bridge-channel-pattern/cmd/bridgedemo
-cd go-solutions/16-concurrency-patterns/12-bridge-channel-pattern/12-bridge-channel-pattern
-```
-
 ### Exercise 1: The Bridge
 
 Create `internal/bridge/bridge.go`:

@@ -24,13 +24,6 @@ Implement: `MergeLayers(layers ...map[string]string) map[string]string` using `m
 Test: later layers override earlier, disjoint keys union; the dump is byte-identical across many runs; nil layers are handled; `maps.Collect(DumpSorted(cfg))` round-trips.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/09-range-over-integers-and-functions/07-layered-config-maps-seq/cmd/demo
-cd go-solutions/03-control-flow/09-range-over-integers-and-functions/07-layered-config-maps-seq
-```
-
 ## The design
 
 `MergeLayers` takes layers in increasing precedence order — `MergeLayers(defaults,

@@ -26,13 +26,6 @@ greetdoc/                   independent module: example.com/greetdoc
 - Test: `ExampleGreeting` and `ExampleGreeting_error` in an external `greeter_test` package, each with an `// Output:` comment; one internal unit test.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/02-go-modules-and-dependencies/03-testable-examples-as-documentation/cmd/demo
-cd go-solutions/01-environment-and-tooling/02-go-modules-and-dependencies/03-testable-examples-as-documentation
-```
-
 ### How an Example becomes a test
 
 A function named `ExampleGreeting` (the `Example` + exported-identifier naming is

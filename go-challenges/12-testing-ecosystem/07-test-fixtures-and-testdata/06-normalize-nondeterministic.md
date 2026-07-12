@@ -21,13 +21,6 @@ Implement: `AuditEvent` with volatile fields (id, timestamp, duration), `Seriali
 Test: serialize a fresh event, `Normalize`, and `bytes.Equal`-compare to `testdata/audit.golden`; a negative test proves a changed actor/action still fails; a stability test proves two runs normalize identically.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/06-normalize-nondeterministic/cmd/demo go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/06-normalize-nondeterministic/testdata
-cd go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/06-normalize-nondeterministic
-```
-
 ### The golden-file tax: determinism
 
 A golden test asserts byte equality against a committed reference. That only works if the output is deterministic. Serialized audit events, request logs, and event envelopes almost never are: they carry an `id` (a fresh UUID per event), a `timestamp` (wall clock), and a `duration_ms` (however long the operation happened to take). Compare that raw output to a golden and it fails every run on fields that were correct — the test is red for noise, and a suite that is red for noise trains the team to ignore red, which is strictly worse than having no test.

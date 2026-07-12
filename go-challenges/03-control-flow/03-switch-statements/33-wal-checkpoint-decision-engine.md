@@ -34,8 +34,6 @@ walcheckpoint/               independent module: example.com/wal-checkpoint-deci
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/03-switch-statements/33-wal-checkpoint-decision-engine/cmd/demo
-cd go-solutions/03-control-flow/03-switch-statements/33-wal-checkpoint-decision-engine
 go mod edit -go=1.24
 ```
 

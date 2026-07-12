@@ -26,13 +26,6 @@ leakservice/                 independent module: example.com/leakservice
 - Test: `TestRunStartsGoroutine`, `TestShutdownStopsGoroutine`, `TestNoLeak` (GC + poll back to baseline), `TestRejectsDoubleRun`, `TestShutdownWithTimeout`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/08-goroutine-leak-detection/01-leak-detection-service/cmd/demo
-cd go-solutions/13-goroutines-and-channels/08-goroutine-leak-detection/01-leak-detection-service
-```
-
 ### The exit contract, made explicit
 
 The background goroutine has exactly three ways to return, and all three are in one

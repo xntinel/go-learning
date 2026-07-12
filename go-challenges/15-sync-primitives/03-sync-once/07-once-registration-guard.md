@@ -28,13 +28,6 @@ once-registration-guard/      module: example.com/once-registration-guard
 - Test: 100 concurrent `NewHandler` calls cause no panic and exactly one registration; requests served through handlers from different constructions all increment the one shared collector; a control test proves the unguarded path panics on the second registration.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/03-sync-once/07-once-registration-guard/cmd/demo
-cd go-solutions/15-sync-primitives/03-sync-once/07-once-registration-guard
-```
-
 ### Why registries panic, and why constructors re-run
 
 Real metric registries treat a duplicate registration as a programmer error, not

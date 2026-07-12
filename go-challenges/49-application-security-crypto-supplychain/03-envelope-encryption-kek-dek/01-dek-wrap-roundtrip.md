@@ -31,8 +31,6 @@ Set up the module. `cipher.NewGCMWithRandomNonce` was added in Go 1.24, so pin t
 language version:
 
 ```bash
-mkdir -p go-solutions/49-application-security-crypto-supplychain/03-envelope-encryption-kek-dek/01-dek-wrap-roundtrip/cmd/demo
-cd go-solutions/49-application-security-crypto-supplychain/03-envelope-encryption-kek-dek/01-dek-wrap-roundtrip
 go mod edit -go=1.24
 ```
 

@@ -27,13 +27,6 @@ retrier/                         independent module: example.com/retrier
 - Test: inject a recording sleep and assert the delays match the expected capped-exponential sequence; seed the RNG and assert jitter is reproducible and never exceeds `maxDelay`; cancel the context mid-retry and assert a prompt joined error.
 - Verify: `go test -count=1 ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/12-functional-options-pattern/05-retrier-backoff-options/cmd/demo
-cd go-solutions/04-functions/12-functional-options-pattern/05-retrier-backoff-options
-```
-
 ### Injecting time and randomness
 
 In production the retrier sleeps real durations and jitters with a randomly seeded

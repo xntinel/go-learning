@@ -27,13 +27,6 @@ Implement: a `Pool` with `Write`/`Close` that flags any write after close, and a
 Test: normal jobs all drain and the pool closes after the last write with no write-after-close; a wedged job does not block pool close past the budget and is reported.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/11-graceful-shutdown-with-context/10-drain-queue-then-close-pool/cmd/demo
-cd go-solutions/14-select-and-context/11-graceful-shutdown-with-context/10-drain-queue-then-close-pool
-```
-
 ## Why the pool closes last, and how the drain stays bounded
 
 The dependency graph puts the pool at the bottom: consumers depend on it, so it

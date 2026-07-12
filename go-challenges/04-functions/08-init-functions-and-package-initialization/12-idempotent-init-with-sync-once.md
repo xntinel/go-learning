@@ -24,8 +24,6 @@ Test: the registry is unseeded until the first call; many concurrent callers inv
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/08-init-functions-and-package-initialization/12-idempotent-init-with-sync-once
-cd go-solutions/04-functions/08-init-functions-and-package-initialization/12-idempotent-init-with-sync-once
 go mod edit -go=1.24
 ```
 

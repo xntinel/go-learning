@@ -22,7 +22,6 @@ hpcomp/
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/44-capstone-http2-implementation/02-hpack-header-compression/01-hpack-context/cmd/demo && cd go-solutions/44-capstone-http2-implementation/02-hpack-header-compression/01-hpack-context
 go mod edit -go=1.26
 go get golang.org/x/net/http2/hpack
 ```
@@ -152,7 +151,6 @@ func IsSensitive(name string) bool {
 }
 ```
 
-
 ### The runnable demo
 
 The demo replays three sequential request blocks on one connection. The first pays full price for `:authority`, `:path`, and the bearer token; the second and third reference the now-populated dynamic table and compress far better — the second-request gain HPACK is famous for. The `authorization` value is forced never-indexed, so it is re-sent in full each time and tagged `[never-indexed]` on the way out. The final lines show a table-size reduction taking effect on the encoder.
@@ -233,7 +231,6 @@ func main() {
 	fmt.Printf("  encoder table size: %d\n", ctx.MaxDynamicTableSize())
 }
 ```
-
 
 Run it:
 
@@ -516,7 +513,6 @@ func ExampleNewHPACKContext() {
 	// :path: /
 }
 ```
-
 
 ## Review
 

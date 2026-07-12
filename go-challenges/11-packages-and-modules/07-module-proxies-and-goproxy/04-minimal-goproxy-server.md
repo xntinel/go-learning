@@ -26,8 +26,6 @@ miniproxy/                 independent module: example.com/miniproxy
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/11-packages-and-modules/07-module-proxies-and-goproxy/04-minimal-goproxy-server/cmd/demo
-cd go-solutions/11-packages-and-modules/07-module-proxies-and-goproxy/04-minimal-goproxy-server
 go mod edit -go=1.26
 go get golang.org/x/mod/semver
 ```

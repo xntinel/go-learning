@@ -26,13 +26,6 @@ configtmpl/                 independent module: example.com/configtmpl
 - Test: a present variable is substituted; the `:-default` form falls back; missing required variables accumulate into one error listing the names; adjacent `${A}${B}` both expand; a literal `$$` is left alone.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/07-regular-expressions/07-config-placeholder-expander/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/07-regular-expressions/07-config-placeholder-expander
-```
-
 ### Why the closure of ReplaceAllStringFunc is the right shape
 
 Expansion is a rewrite where each replacement depends on the match *and* on

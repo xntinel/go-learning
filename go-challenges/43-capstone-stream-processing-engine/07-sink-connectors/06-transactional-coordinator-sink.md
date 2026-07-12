@@ -23,7 +23,6 @@ coordinator_test.go    idempotent commit, cover-earlier, crash recovery, abort
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/43-capstone-stream-processing-engine/07-sink-connectors/06-transactional-coordinator-sink/cmd/demo && cd go-solutions/43-capstone-stream-processing-engine/07-sink-connectors/06-transactional-coordinator-sink
 go mod edit -go=1.26
 ```
 

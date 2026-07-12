@@ -26,13 +26,6 @@ Implement: a package-global codec registry whose `Register` panics on a duplicat
 Test: blank-importing both plugins makes both discoverable via `codec.Names()`; a duplicate `Register` panics.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/08-init-functions-and-package-initialization/04-blank-import-side-effect-registration/codec go-solutions/04-functions/08-init-functions-and-package-initialization/04-blank-import-side-effect-registration/plugins/json go-solutions/04-functions/08-init-functions-and-package-initialization/04-blank-import-side-effect-registration/plugins/gob go-solutions/04-functions/08-init-functions-and-package-initialization/04-blank-import-side-effect-registration/cmd/demo
-cd go-solutions/04-functions/08-init-functions-and-package-initialization/04-blank-import-side-effect-registration
-```
-
 ### Why the blank import is the whole mechanism
 
 Blank-import registration deliberately trades one property for another. In

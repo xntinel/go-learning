@@ -65,13 +65,6 @@ The `Scheduler` holds a list of registered coroutines and drives them in round-r
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/46-capstone-concurrency-deep-dive/09-coroutine-library/09-coroutine-library/cmd/demo
-cd go-solutions/46-capstone-concurrency-deep-dive/09-coroutine-library/09-coroutine-library
-```
-
 ### Exercise 1: Core Types and State Machine
 
 Create `coroutine.go`. The `yieldMsg` struct carries the three possible outcomes of a yield (value, done, panic) in a single channel send, keeping `yieldCh` a single typed channel:

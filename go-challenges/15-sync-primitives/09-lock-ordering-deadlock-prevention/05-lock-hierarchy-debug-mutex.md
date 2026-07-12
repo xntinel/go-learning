@@ -32,13 +32,6 @@ lockrank/                  independent module: example.com/lockrank
 - Test: a recover-based helper asserting the panic names both locks; correct-order acquisition passing; the correctly-ordered path run concurrently under `-race`; unchecked traces skipping the assertion while preserving exclusion.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/09-lock-ordering-deadlock-prevention/05-lock-hierarchy-debug-mutex/cmd/demo
-cd go-solutions/15-sync-primitives/09-lock-ordering-deadlock-prevention/05-lock-hierarchy-debug-mutex
-```
-
 ### Turning a latent ordering bug into an immediate panic
 
 An ordering violation only deadlocks when the timing cooperates: the wrong-

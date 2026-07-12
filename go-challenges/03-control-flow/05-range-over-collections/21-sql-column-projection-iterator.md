@@ -33,8 +33,6 @@ projection/                 independent module: example.com/sql-column-projectio
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/05-range-over-collections/21-sql-column-projection-iterator/cmd/demo
-cd go-solutions/03-control-flow/05-range-over-collections/21-sql-column-projection-iterator
 go mod edit -go=1.24
 ```
 

@@ -28,13 +28,6 @@ dispatcher/                independent module: example.com/dispatcher
 - Test: submit N jobs across W workers, assert every job is processed exactly once; assert work spreads across all workers; assert `Stop` returns without deadlock; all under `-race`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/09-channel-of-channels/02-chan-chan-worker-dispatcher/cmd/demo
-cd go-solutions/13-goroutines-and-channels/09-channel-of-channels/02-chan-chan-worker-dispatcher
-```
-
 ### The taxi-rank model
 
 Picture a taxi rank. Each taxi (worker) has a spot in the queue. When a taxi is

@@ -25,13 +25,6 @@ embserver/                 independent module: example.com/embserver
 - Test: promoted `Addr`/`Handler` reachable through the outer type, injected-logger identity, default-logger-when-nil, a live request returning 202, `Shutdown` tolerating `ErrServerClosed`, and a buffer-backed log-contract test.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/08-embedding-for-composition/01-embedded-http-server/cmd/demo
-cd go-solutions/07-structs-and-methods/08-embedding-for-composition/01-embedded-http-server
-```
-
 ### Why embed the pointer, and why the logger is named
 
 `Server` embeds `*http.Server` — the pointer, not the value. `http.Server` holds

@@ -29,8 +29,6 @@ gosumcheck/                independent module: example.com/gosumcheck
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/11-packages-and-modules/06-dependency-management/07-gosum-integrity-verifier/cmd/demo
-cd go-solutions/11-packages-and-modules/06-dependency-management/07-gosum-integrity-verifier
 go get golang.org/x/mod
 ```
 

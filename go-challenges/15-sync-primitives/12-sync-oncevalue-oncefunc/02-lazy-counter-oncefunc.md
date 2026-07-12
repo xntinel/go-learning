@@ -24,13 +24,6 @@ lazycounter/               independent module: example.com/lazycounter
 - Test: not loaded before first `Value`, loaded after, init runs exactly once across 100 concurrent `Value` calls under `-race`.
 - Verify: `go test -count=1 -race ./...` and `go run ./cmd/demo`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/12-sync-oncevalue-oncefunc/02-lazy-counter-oncefunc/counter go-solutions/15-sync-primitives/12-sync-oncevalue-oncefunc/02-lazy-counter-oncefunc/cmd/demo
-cd go-solutions/15-sync-primitives/12-sync-oncevalue-oncefunc/02-lazy-counter-oncefunc
-```
-
 ### The pattern: OnceFunc over a method, stored in a field
 
 Exercise 1 wrapped free functions. Real services more often need the pattern

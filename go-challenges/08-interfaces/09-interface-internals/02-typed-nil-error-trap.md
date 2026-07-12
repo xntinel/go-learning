@@ -28,8 +28,6 @@ repo/                       independent module: example.com/repo
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/08-interfaces/09-interface-internals/02-typed-nil-error-trap/cmd/demo
-cd go-solutions/08-interfaces/09-interface-internals/02-typed-nil-error-trap
 go mod edit -go=1.26
 ```
 

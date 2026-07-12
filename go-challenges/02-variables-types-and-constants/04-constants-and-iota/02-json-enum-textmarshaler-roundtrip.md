@@ -25,13 +25,6 @@ Implement: `State` with `MarshalText() ([]byte, error)` and `UnmarshalText([]byt
 Test: each valid state round-trips (struct → JSON → struct); an unknown status is an error and does not default to a valid state; an absent field decodes to `StateUnknown`.
 Verify: `go test -count=1 ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/04-constants-and-iota/02-json-enum-textmarshaler-roundtrip/cmd/demo
-cd go-solutions/02-variables-types-and-constants/04-constants-and-iota/02-json-enum-textmarshaler-roundtrip
-```
-
 ## Why default int marshaling is a latent bug
 
 If you do nothing, `encoding/json` marshals a `State uint8` as its numeric

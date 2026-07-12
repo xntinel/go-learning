@@ -19,12 +19,6 @@ history_test.go    dedup, max-size eviction, navigation, search, round-trip pers
 - Test: `history_test.go` checks dedup, eviction at the size bound, Up/Down navigation and its clamps, substring search, and a Save-then-Load round trip through `t.TempDir()`.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/40-capstone-language-interpreter/07-repl-line-editing/02-history-persistence/cmd/demo && cd go-solutions/40-capstone-language-interpreter/07-repl-line-editing/02-history-persistence
-```
-
 ### The navigation cursor
 
 `History` holds the entries slice, a `maxSize` bound, and a single integer `pos` that is the navigation cursor. The invariant that makes navigation feel right is that `pos == len(entries)` means "nothing selected, sitting just past the newest entry." `Prev` (Up) decrements `pos` and returns that entry; `Next` (Down) increments it, and when it walks back past the last entry it returns `("", false)` so the REPL can blank the line. Both clamp at their ends.

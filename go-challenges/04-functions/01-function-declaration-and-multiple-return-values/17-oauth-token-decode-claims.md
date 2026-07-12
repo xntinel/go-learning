@@ -35,8 +35,6 @@ tokenclaims/                independent module: example.com/oauth-token-decode-c
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/01-function-declaration-and-multiple-return-values/17-oauth-token-decode-claims/cmd/demo
-cd go-solutions/04-functions/01-function-declaration-and-multiple-return-values/17-oauth-token-decode-claims
 go mod edit -go=1.24
 ```
 

@@ -22,13 +22,6 @@ Implement: `FrozenTimeout` (a package var read at init), `Timeout()` (lazy per-c
 Test: a test showing `t.Setenv` does NOT change `FrozenTimeout`; one showing `Timeout()` honors it; one showing the `OnceValue` reader caches its first call.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/17-testing-with-environment-variables/09-init-time-capture-pitfall/cmd/demo
-cd go-solutions/12-testing-ecosystem/17-testing-with-environment-variables/09-init-time-capture-pitfall
-```
-
 ## Why the env test does nothing
 
 Package-level variable initializers and `init()` functions run once, when the

@@ -28,12 +28,6 @@ report_test.go       byte-stable rendering across runs, golden output, totals
 - Test: `report_test.go` asserts the rendered bytes are stable across a thousand runs, match a fixed golden string, and that `Totals` sums correctly while empty input renders empty.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/25-iterators-and-modern-go/08-standard-library-iterators/04-deterministic-report-export/cmd/demo && cd go-solutions/25-iterators-and-modern-go/08-standard-library-iterators/04-deterministic-report-export
-```
-
 ### Why determinism is the whole point of an export job
 
 An aggregate is almost always stored in a map: a counter keyed by service name,

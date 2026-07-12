@@ -21,12 +21,6 @@ load_test.go      assert counts are exact and deterministic; BenchmarkProduce
 - Test: the counts are exactly `partitions * perPartition` produced and consumed, and `partitions * perPartition * valueSize` bytes, regardless of concurrency.
 - Verify: `go test -race ./...` and (optionally) `go test -bench=. -benchtime=2s`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/41-capstone-message-queue/08-full-message-queue/05-throughput-benchmark/cmd/demo && cd go-solutions/41-capstone-message-queue/08-full-message-queue/05-throughput-benchmark
-```
-
 ### Why counts, not timings
 
 The benchmark's job is to be a regression guard and a demonstration, not a marketing number. A regression guard must be deterministic: it has to produce the same answer on a fast laptop, a loaded CI runner, and a reviewer's machine, or it is useless as a check. Wall-clock throughput satisfies none of that — it depends on the disk, the scheduler, whether the race detector is on, and what else is running. The *count* of records moved does satisfy it: if the load plan says produce `partitions * perPartition` records and consume them back, then a correct broker reports exactly those counts every time, and a count that comes back wrong means a real bug (a dropped append, a partition that lost records, an off-by-one in the consumer loop).

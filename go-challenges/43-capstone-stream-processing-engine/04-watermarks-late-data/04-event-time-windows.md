@@ -23,7 +23,6 @@ example_test.go        runnable doc example for WindowFor
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/43-capstone-stream-processing-engine/04-watermarks-late-data/04-event-time-windows/cmd/demo && cd go-solutions/43-capstone-stream-processing-engine/04-watermarks-late-data/04-event-time-windows
 go mod edit -go=1.26
 ```
 

@@ -29,13 +29,6 @@ test asserting the `any` renderer allocates strictly more than the typed one.
 Verify: `go test -count=1 -race ./...`, then observe boxing with
 `go build -gcflags=-m ./... 2>&1 | grep -E 'escapes to heap|does not escape'`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/07-escape-analysis/03-interface-boxing-in-hot-logger/cmd/demo
-cd go-solutions/09-pointers/07-escape-analysis/03-interface-boxing-in-hot-logger
-```
-
 ### Where the allocation comes from
 
 `RenderAny(fields ...any)` looks harmless, but two escapes hide in the signature.

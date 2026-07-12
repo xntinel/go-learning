@@ -22,13 +22,6 @@ Implement: `ParseOrderCreated` decoding strict JSON (`DisallowUnknownFields`) in
 Test: load each fixture with `os.ReadFile(filepath.Join("testdata", name))`, assert the valid one parses and the malformed one returns `ErrInvalidPayload`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/02-load-fixture-from-testdata/cmd/demo go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/02-load-fixture-from-testdata/testdata
-cd go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/02-load-fixture-from-testdata
-```
-
 ### Why testdata/ and why the path is stable
 
 `testdata/` is a reserved convention in the go command. `go build`, `go vet`, and package listing all ignore any directory named `testdata`, so it is the one place you can park realistic inputs, golden outputs, and seed data without the toolchain trying to compile or lint them. Put your reference payloads there and they stay out of the build entirely while remaining right next to the package that uses them.

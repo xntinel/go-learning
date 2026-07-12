@@ -26,13 +26,6 @@ hitcount/                  independent module: example.com/hitcount
 - Test: spin 1000 goroutines calling `Inc`, `WaitGroup.Wait`, assert `Get()==1000` under `-race`; a table test for `Store`/`Load` round-trip.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/09-pointer-aliasing-and-data-races/01-racy-counter-vs-atomic/cmd/demo
-cd go-solutions/09-pointers/09-pointer-aliasing-and-data-races/01-racy-counter-vs-atomic
-```
-
 ### Why `c.value++` is a race and `atomic.Int64.Add` is not
 
 `c.value++` on a plain `int64` compiles to three steps: load the current value

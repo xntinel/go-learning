@@ -31,13 +31,6 @@ nil `*Conn` returns `ErrClosed` without panicking; `New()` equals `&Conn{}`
 field-by-field.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/03-new-vs-composite-literal/01-conn-constructors-new-vs-literal/cmd/demo
-cd go-solutions/09-pointers/03-new-vs-composite-literal/01-conn-constructors-new-vs-literal
-```
-
 ### Why two constructors
 
 The two constructors exist to make the equivalence concrete. `New` calls

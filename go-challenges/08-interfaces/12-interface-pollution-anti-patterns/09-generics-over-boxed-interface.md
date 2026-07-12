@@ -24,13 +24,6 @@ tscache/                    independent module: example.com/tscache
 - Test: instantiate `Cache[User]` and `Cache[int]`, assert `Get` returns the concrete value with the `(value, ok)` idiom and no assertion; TTL expiry with a fake clock; a test that the `any`-based version panics on a wrong assertion.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/12-interface-pollution-anti-patterns/09-generics-over-boxed-interface/cmd/demo
-cd go-solutions/08-interfaces/12-interface-pollution-anti-patterns/09-generics-over-boxed-interface
-```
-
 ### Why a type parameter, not an interface
 
 Before Go had generics, a reusable container held `any` (formerly `interface{}`)

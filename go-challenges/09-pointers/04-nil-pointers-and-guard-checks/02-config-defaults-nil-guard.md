@@ -27,8 +27,6 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/09-pointers/04-nil-pointers-and-guard-checks/02-config-defaults-nil-guard/cmd/demo
-cd go-solutions/09-pointers/04-nil-pointers-and-guard-checks/02-config-defaults-nil-guard
 go mod edit -go=1.24
 ```
 

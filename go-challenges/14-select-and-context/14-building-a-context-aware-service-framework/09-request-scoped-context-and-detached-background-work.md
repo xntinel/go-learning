@@ -23,13 +23,6 @@ Implement: `WithRequestID`/`RequestID` over an unexported `ctxKey`; `RequestIDMi
 Test: the typed key round-trips and a same-underlying-type key from "another package" cannot collide; a `WithoutCancel` child stays live after the parent is cancelled; `AfterFunc`'s callback fires exactly once on cancellation, and `stop` prevents it if called first.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/14-building-a-context-aware-service-framework/09-request-scoped-context-and-detached-background-work/cmd/demo
-cd go-solutions/14-select-and-context/14-building-a-context-aware-service-framework/09-request-scoped-context-and-detached-background-work
-```
-
 ### Typed keys and detached work
 
 The context value key is an *unexported named type*, `type ctxKey int`, with a

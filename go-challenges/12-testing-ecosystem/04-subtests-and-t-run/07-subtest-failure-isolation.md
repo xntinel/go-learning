@@ -29,13 +29,6 @@ batchvalidate/              independent module: example.com/batchvalidate
   precondition and `t.Errorf` per element so a run reports every mismatch.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/04-subtests-and-t-run/07-subtest-failure-isolation/cmd/demo
-cd go-solutions/12-testing-ecosystem/04-subtests-and-t-run/07-subtest-failure-isolation
-```
-
 ### The two verbs and the isolation boundary
 
 `t.Error`/`t.Errorf` mark the test failed and return normally, so control flows on

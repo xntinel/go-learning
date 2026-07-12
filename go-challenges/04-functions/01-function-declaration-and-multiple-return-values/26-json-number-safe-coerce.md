@@ -33,8 +33,6 @@ jsonnum/                    independent module: example.com/json-number-safe-coe
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/01-function-declaration-and-multiple-return-values/26-json-number-safe-coerce/cmd/demo
-cd go-solutions/04-functions/01-function-declaration-and-multiple-return-values/26-json-number-safe-coerce
 go mod edit -go=1.24
 ```
 

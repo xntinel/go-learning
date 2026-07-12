@@ -28,8 +28,6 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/11-slice-memory-leaks/05-scanner-line-copy-on-retain/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/11-slice-memory-leaks/05-scanner-line-copy-on-retain
 go mod edit -go=1.24
 ```
 

@@ -27,13 +27,6 @@ Implement: `Store` (`Get`/`Set` over a small map) three ways — `mutexStore` (`
 Test: one conformance test run against all three implementations via a constructor table (concurrent readers and writers under `-race`, exact final state); a COW-specific snapshot-immutability test; benchmarks named `Benchmark<Impl>/<ratio>` at 100:0, 99:1, 90:10 and 50:50 read:write.
 Verify: `go test -count=1 -race ./...` then `go test -bench . -benchmem -cpu 8`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/02-sync-rwmutex/09-rwmutex-vs-mutex-benchmark-harness/cmd/demo
-cd go-solutions/15-sync-primitives/02-sync-rwmutex/09-rwmutex-vs-mutex-benchmark-harness
-```
-
 ### One interface so the benchmark is a fair fight
 
 The three stores implement an identical `Get`/`Set` contract over the same map

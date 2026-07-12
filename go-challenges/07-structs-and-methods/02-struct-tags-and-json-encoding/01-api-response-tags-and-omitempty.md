@@ -30,8 +30,6 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/07-structs-and-methods/02-struct-tags-and-json-encoding/01-api-response-tags-and-omitempty/api go-solutions/07-structs-and-methods/02-struct-tags-and-json-encoding/01-api-response-tags-and-omitempty/cmd/demo
-cd go-solutions/07-structs-and-methods/02-struct-tags-and-json-encoding/01-api-response-tags-and-omitempty
 go mod edit -go=1.24
 ```
 

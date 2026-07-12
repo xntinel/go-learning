@@ -28,8 +28,6 @@ schemaver/                  independent module: example.com/message-schema-versi
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/01-if-else-and-init-statements/18-message-schema-version-negotiation
-cd go-solutions/03-control-flow/01-if-else-and-init-statements/18-message-schema-version-negotiation
 go mod edit -go=1.24
 ```
 

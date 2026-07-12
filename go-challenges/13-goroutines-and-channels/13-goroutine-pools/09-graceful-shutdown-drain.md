@@ -26,13 +26,6 @@ drainpool/                 independent module: example.com/drainpool
 - Test: an ample-deadline `Shutdown` returns `nil` after all jobs finish; a job longer than the grace period makes `Shutdown` return `DeadlineExceeded` while still refusing `Submit`; a second `Shutdown` does not panic.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/13-goroutine-pools/09-graceful-shutdown-drain/cmd/demo
-cd go-solutions/13-goroutines-and-channels/13-goroutine-pools/09-graceful-shutdown-drain
-```
-
 ### Race the drain against the deadline
 
 `Shutdown` has to do two things that can each take arbitrarily long: wait for the

@@ -31,8 +31,6 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/08-init-functions-and-package-initialization/27-request-correlation-id-entropy-generator/cmd/demo
-cd go-solutions/04-functions/08-init-functions-and-package-initialization/27-request-correlation-id-entropy-generator
 go mod edit -go=1.24
 ```
 

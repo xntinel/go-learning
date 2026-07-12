@@ -28,13 +28,6 @@ publicstr/                 independent module: example.com/publicstr
 - Test: a `go/doc`-based lint that asserts every exported func, type, and single-name var has a non-empty `Doc` beginning with its name.
 - Verify: `go test -count=1 -race ./...` then `go doc ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/11-packages-and-modules/09-designing-a-public-go-module/02-package-doc-and-godoc-contract/cmd/demo
-cd go-solutions/11-packages-and-modules/09-designing-a-public-go-module/02-package-doc-and-godoc-contract
-```
-
 ### The two conventions that make docs a contract
 
 `go doc` and pkg.go.dev associate a comment with a symbol only when the comment

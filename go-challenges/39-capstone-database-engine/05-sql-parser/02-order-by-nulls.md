@@ -25,12 +25,6 @@ orderby/
 - Test: single and multiple keys, default and explicit direction, precedence inside a key, NULLS placement, round trip, and that empty/malformed input wraps the right sentinel.
 - Verify: `go test -race ./...` and `go run ./cmd/demo`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/05-sql-parser/02-order-by-nulls/lexer go-solutions/39-capstone-database-engine/05-sql-parser/02-order-by-nulls/cmd/demo && cd go-solutions/39-capstone-database-engine/05-sql-parser/02-order-by-nulls
-```
-
 ### Why a separate clause parser, and why it reuses the Pratt engine
 
 An ORDER BY key is a full expression, not just a column name: `ORDER BY a + b * c DESC` must sort by `(a + (b * c))`, with multiplication binding tighter than addition. Rather than re-implement precedence, `ParseOrderBy` constructs the package `Parser` over the clause text and calls `parseExpression(0)` for each key, so the sort expression goes through the exact same binding-power machinery the WHERE clause uses. The clause parser then layers the ORDER-BY-specific grammar on top: an optional `ASC`/`DESC`, then an optional `NULLS FIRST` / `NULLS LAST`.

@@ -75,13 +75,6 @@ closes, which lets a caller who finished early stop leaking the watcher goroutin
 If `stop` returns `false`, `f` has already been scheduled or run and the close
 will happen — that is the honest report that you were too late to cancel it.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/10-signaling-with-closed-channels/05-context-to-done-bridge/cmd/demo
-cd go-solutions/13-goroutines-and-channels/10-signaling-with-closed-channels/05-context-to-done-bridge
-```
-
 Create `processor.go`:
 
 ```go

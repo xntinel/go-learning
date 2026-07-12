@@ -31,13 +31,6 @@ decorator panics (the documented footgun); `var _ Store = (*Decorator)(nil)`
 holds at compile time.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/04-anonymous-structs-and-embedding/05-store-decorator-interface-embed/cmd/demo
-cd go-solutions/07-structs-and-methods/04-anonymous-structs-and-embedding/05-store-decorator-interface-embed
-```
-
 ### Why embedding the interface is the whole trick
 
 `Decorator` embeds a `Store` *interface value*. That single embedded field makes

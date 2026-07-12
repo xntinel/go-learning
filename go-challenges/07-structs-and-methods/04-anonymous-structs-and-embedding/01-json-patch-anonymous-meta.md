@@ -32,13 +32,6 @@ Test: empty patch has `OpCount` 0; `Add` appends and rejects empty op/path;
 wire.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/04-anonymous-structs-and-embedding/01-json-patch-anonymous-meta/cmd/demo
-cd go-solutions/07-structs-and-methods/04-anonymous-structs-and-embedding/01-json-patch-anonymous-meta
-```
-
 ### Why the metadata is an anonymous struct
 
 The `Meta` block — an ID and a creation timestamp — exists only as part of a

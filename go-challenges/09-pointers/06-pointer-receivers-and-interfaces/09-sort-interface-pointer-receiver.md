@@ -28,8 +28,6 @@ tasksort/                   independent module: example.com/tasksort
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/09-pointers/06-pointer-receivers-and-interfaces/09-sort-interface-pointer-receiver/cmd/demo
-cd go-solutions/09-pointers/06-pointer-receivers-and-interfaces/09-sort-interface-pointer-receiver
 go mod edit -go=1.25
 ```
 

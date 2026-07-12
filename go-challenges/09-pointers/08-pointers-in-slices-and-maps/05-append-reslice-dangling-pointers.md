@@ -26,13 +26,6 @@ Test: captured interior pointer does NOT observe a post-reallocation write;
 reserved-capacity pointers stay valid; the `[]*Sample` design survives growth.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/08-pointers-in-slices-and-maps/05-append-reslice-dangling-pointers/cmd/demo
-cd go-solutions/09-pointers/08-pointers-in-slices-and-maps/05-append-reslice-dangling-pointers
-```
-
 ### Why the interior pointer goes stale
 
 A slice is a header `{ptr, len, cap}` over a backing array. `&buf[i]` is a pointer

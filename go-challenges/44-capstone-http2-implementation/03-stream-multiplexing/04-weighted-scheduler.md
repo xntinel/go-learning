@@ -22,7 +22,6 @@ scheduler/
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/44-capstone-http2-implementation/03-stream-multiplexing/04-weighted-scheduler/cmd/demo && cd go-solutions/44-capstone-http2-implementation/03-stream-multiplexing/04-weighted-scheduler
 go mod edit -go=1.26
 ```
 

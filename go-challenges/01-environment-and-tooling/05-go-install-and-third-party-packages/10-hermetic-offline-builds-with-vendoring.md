@@ -25,13 +25,6 @@ Implement: `ParseModulesTxt(r io.Reader) ([]Module, error)` reading module lines
 Test: a sample manifest parses into the expected modules with correct `Explicit` flags and package lists.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/05-go-install-and-third-party-packages/10-hermetic-offline-builds-with-vendoring/cmd/demo
-cd go-solutions/01-environment-and-tooling/05-go-install-and-third-party-packages/10-hermetic-offline-builds-with-vendoring
-```
-
 ### The hermetic workflow
 
 Two roads lead to a build that does not depend on the network answering the same

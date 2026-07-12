@@ -22,12 +22,6 @@ cmd/
 - Test: array construction, in-range indexing, out-of-range yields `null`, indexing a non-array errors, indexing with a non-integer errors, and a string-element array.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/40-capstone-language-interpreter/04-tree-walking-evaluator/03-arrays-and-indexing/cmd/demo && cd go-solutions/40-capstone-language-interpreter/04-tree-walking-evaluator/03-arrays-and-indexing
-```
-
 ### Evaluating an array literal
 
 An `*ArrayLiteral` holds a slice of element expressions. `Eval` walks them left to right through `evalExpressions`, the same helper a call expression uses for its arguments, and the same error discipline applies: the instant an element evaluates to an error, evaluation stops and that error becomes the result of the whole literal. There is no partial array — either every element evaluated cleanly and you get an `*Array`, or you get the first error. This keeps `[1, 2, 1/0]` from producing a half-built array with a garbage third slot.

@@ -29,8 +29,6 @@ Verify: `go test -count=1 -race ./...`
 Set up the module. `errors.AsType` requires Go 1.26:
 
 ```bash
-mkdir -p go-solutions/48-modern-go-language-and-stdlib/14-errors-astype-generic-matching/03-astype-vs-as-tradeoffs/cmd/demo
-cd go-solutions/48-modern-go-language-and-stdlib/14-errors-astype-generic-matching/03-astype-vs-as-tradeoffs
 go mod edit -go=1.26
 ```
 

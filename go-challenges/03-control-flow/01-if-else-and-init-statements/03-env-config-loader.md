@@ -24,13 +24,6 @@ go-solutions/03-control-flow/01-if-else-and-init-statements/03-env-config-loader
 - Test: a fake lookup backed by a map; full valid set; each missing-required key; each malformed value; defaults applied when optional keys absent. Assert `errors.Is` against exported sentinels.
 - Verify: `go test -count=1 -race ./...`
 
-Create the folder:
-
-```bash
-mkdir -p go-solutions/03-control-flow/01-if-else-and-init-statements/03-env-config-loader/cmd
-cd go-solutions/03-control-flow/01-if-else-and-init-statements/03-env-config-loader
-```
-
 ## Absent versus present-but-invalid, one field at a time
 
 The signature is the whole design: `LoadConfig` takes a `lookup func(string) (string, bool)`

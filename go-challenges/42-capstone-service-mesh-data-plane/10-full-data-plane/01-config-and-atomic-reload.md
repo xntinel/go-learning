@@ -26,7 +26,6 @@ config_test.go    validation collects all errors; round-robin; skip unhealthy;
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/42-capstone-service-mesh-data-plane/10-full-data-plane/01-config-and-atomic-reload/cmd/demo && cd go-solutions/42-capstone-service-mesh-data-plane/10-full-data-plane/01-config-and-atomic-reload
 go mod edit -go=1.26
 ```
 

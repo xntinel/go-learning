@@ -26,7 +26,6 @@ example_test.go   runnable Example with // Output:
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/48-modern-go-language-and-stdlib/01-os-root-directory-sandboxing/01-confined-filesystem/cmd/demo && cd go-solutions/48-modern-go-language-and-stdlib/01-os-root-directory-sandboxing/01-confined-filesystem
 go mod edit -go=1.26
 ```
 

@@ -30,8 +30,6 @@ deadline/                     module example.com/deadline
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/05-anonymous-functions/23-deadline-afterfunc-enforcement/cmd/demo
-cd go-solutions/04-functions/05-anonymous-functions/23-deadline-afterfunc-enforcement
 go mod edit -go=1.24
 ```
 

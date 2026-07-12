@@ -30,8 +30,6 @@ txchain/                    independent module: example.com/txchain
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/25-nested-transaction-chain-rollback/txchain go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/25-nested-transaction-chain-rollback/cmd/demo
-cd go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/25-nested-transaction-chain-rollback
 go mod edit -go=1.24
 ```
 

@@ -25,13 +25,6 @@ durable/                     independent module: example.com/durable
 - Test: the store contains the item the instant `Enqueue` returns; `Enqueue` does not return while the persister is artificially blocked.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/02-channel-basics/04-synchronous-handoff-backpressure/cmd/demo
-cd go-solutions/13-goroutines-and-channels/02-channel-basics/04-synchronous-handoff-backpressure
-```
-
 ### Why unbuffered, and why an explicit ack
 
 An unbuffered send `q.in <- e` blocks until the persister receives it — that is the

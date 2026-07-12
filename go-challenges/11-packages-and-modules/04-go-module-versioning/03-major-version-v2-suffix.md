@@ -32,8 +32,6 @@ pricing/                    independent module: example.com/billing/pricing
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/11-packages-and-modules/04-go-module-versioning/03-major-version-v2-suffix/v2 go-solutions/11-packages-and-modules/04-go-module-versioning/03-major-version-v2-suffix/cmd/demo
-cd go-solutions/11-packages-and-modules/04-go-module-versioning/03-major-version-v2-suffix
 go mod edit -go=1.26
 ```
 

@@ -23,12 +23,6 @@ example_test.go      a go-doc Example that proves logging is transparent
 - Test: delegation is transparent, metrics count every call, the cache serves the second read and never caches errors, retry covers only transient failures and wraps on exhaustion, and the four-layer stack composes correctly.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/24-design-patterns-in-go/08-middleware-decorator-pattern/01-instrumented-repository/cmd/demo && cd go-solutions/24-design-patterns-in-go/08-middleware-decorator-pattern/01-instrumented-repository
-```
-
 ### The interface is the contract every layer shares
 
 The pattern starts and ends with one decision: every decorator stores the interface it decorates, not a concrete type. `MemoryRepository` is the real work — an in-memory map guarded by a mutex — but no decorator mentions it. Each decorator holds a `UserRepository` field, implements `UserRepository` itself, and adds its concern around the delegating call. That is what lets `LoggingRepository` wrap a `CachingRepository` wrap a `RetryRepository` wrap the real store: each layer is the same type as the one below it, so the wrapping never bottoms out until it reaches the implementation you choose to put at the bottom.

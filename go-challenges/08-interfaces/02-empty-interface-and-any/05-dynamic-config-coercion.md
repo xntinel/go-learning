@@ -29,8 +29,6 @@ dynconfig/                 independent module: example.com/dynconfig
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/08-interfaces/02-empty-interface-and-any/05-dynamic-config-coercion/cmd/demo
-cd go-solutions/08-interfaces/02-empty-interface-and-any/05-dynamic-config-coercion
 go mod edit -go=1.26
 ```
 

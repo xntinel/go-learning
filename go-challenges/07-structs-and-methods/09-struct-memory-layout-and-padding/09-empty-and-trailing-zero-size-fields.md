@@ -26,13 +26,6 @@ zerosize/                  independent module: example.com/zerosize
 - Test: assert `unsafe.Sizeof(struct{}{}) == 0`, that a struct ending in a zero-size field is strictly larger than the same struct with that field moved earlier, and a table test of the set operations.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/09-struct-memory-layout-and-padding/09-empty-and-trailing-zero-size-fields/cmd/demo
-cd go-solutions/07-structs-and-methods/09-struct-memory-layout-and-padding/09-empty-and-trailing-zero-size-fields
-```
-
 ### Zero-size types and why the last field is special
 
 `struct{}` and `[0]byte` have size zero: they carry no data and cost no storage.

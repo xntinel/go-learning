@@ -28,13 +28,6 @@ outbox/                      independent module: example.com/outbox
 - Test: acked holds exactly the successful ids in input order; `err` is an `errors.Join` findable per failure via `errors.Is`; in-flight publishes never exceed `workers`; cancellation leaves pending rows unpublished and unacked and reports `context.Canceled`; empty batch returns `nil, nil`; a clean sweep returns all ids and a nil error.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/13-goroutine-pools/12-outbox-relay-partial-ack/cmd/demo
-cd go-solutions/13-goroutines-and-channels/13-goroutine-pools/12-outbox-relay-partial-ack
-```
-
 ### Run-to-completion, not first-error-abort
 
 The transactional outbox pattern decouples "commit the state change" from "publish

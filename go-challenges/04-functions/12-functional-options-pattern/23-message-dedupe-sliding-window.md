@@ -31,8 +31,6 @@ dedupe/                          independent module: example.com/dedupe
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/12-functional-options-pattern/23-message-dedupe-sliding-window/cmd/demo
-cd go-solutions/04-functions/12-functional-options-pattern/23-message-dedupe-sliding-window
 go mod edit -go=1.24
 ```
 

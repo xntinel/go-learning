@@ -30,8 +30,6 @@ poller/                      independent module: example.com/poller
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/13-goroutines-and-channels/08-goroutine-leak-detection/07-ticker-timer-leak-poller/cmd/demo
-cd go-solutions/13-goroutines-and-channels/08-goroutine-leak-detection/07-ticker-timer-leak-poller
 go get go.uber.org/goleak@v1.3.0
 ```
 

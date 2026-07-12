@@ -27,8 +27,6 @@ Verify: `go test -count=1 -race ./... && go vet ./...`
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/10-error-handling/03-errors-is-and-errors-as/06-custom-as-method-adapter/cmd/demo
-cd go-solutions/10-error-handling/03-errors-is-and-errors-as/06-custom-as-method-adapter
 go mod edit -go=1.25
 ```
 

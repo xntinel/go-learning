@@ -26,13 +26,6 @@ Implement: `Middleware(next http.Handler) http.Handler`, `*PanicError` with `Err
 Test: `httptest.NewServer(Middleware(handler))` asserting 500 on a panic, 202 pass-through, `PanicError` unwrap via `errors.Is`, a `panic("string")` still yielding 500, and a handler that writes 200 then panics not producing a duplicate `WriteHeader`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/08-panic-and-recover/01-recovery-middleware/cmd/demo
-cd go-solutions/03-control-flow/08-panic-and-recover/01-recovery-middleware
-```
-
 ### Why the boundary is here and what it must not do
 
 The middleware wraps `next.ServeHTTP` in a deferred `recover`. When the handler

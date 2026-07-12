@@ -29,8 +29,6 @@ errmetrics/                  independent module: example.com/errmetrics
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/10-error-handling/14-error-observability/02-error-metrics-by-category/cmd/demo
-cd go-solutions/10-error-handling/14-error-observability/02-error-metrics-by-category
 go mod edit -go=1.25
 ```
 

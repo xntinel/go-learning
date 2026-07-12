@@ -29,8 +29,6 @@ pool/                      independent module: example.com/pool
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/13-goroutines-and-channels/14-deadlock-detection-and-prevention/07-worker-pool-graceful-shutdown/cmd/demo
-cd go-solutions/13-goroutines-and-channels/14-deadlock-detection-and-prevention/07-worker-pool-graceful-shutdown
 go mod edit -go=1.25
 ```
 

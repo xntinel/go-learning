@@ -30,8 +30,6 @@ pipeline/                    independent module: example.com/pipeline
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/50-messaging-and-event-driven/05-watermill-event-pipelines/01-router-middleware-pipeline/cmd/demo
-cd go-solutions/50-messaging-and-event-driven/05-watermill-event-pipelines/01-router-middleware-pipeline
 go mod edit -go=1.26
 go get github.com/ThreeDotsLabs/watermill@v1.5.2
 ```

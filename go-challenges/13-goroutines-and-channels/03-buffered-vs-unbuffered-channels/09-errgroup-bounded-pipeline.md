@@ -30,8 +30,6 @@ errpipeline/                 module: example.com/errpipeline
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/13-goroutines-and-channels/03-buffered-vs-unbuffered-channels/09-errgroup-bounded-pipeline/cmd/demo
-cd go-solutions/13-goroutines-and-channels/03-buffered-vs-unbuffered-channels/09-errgroup-bounded-pipeline
 go mod edit -go=1.26
 go get golang.org/x/sync/errgroup
 ```

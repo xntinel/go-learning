@@ -31,8 +31,6 @@ logscan/                   independent module: example.com/logscan
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/06-labels-break-continue-goto/08-logscan-multiline-records/cmd/demo
-cd go-solutions/03-control-flow/06-labels-break-continue-goto/08-logscan-multiline-records
 go mod edit -go=1.24
 ```
 

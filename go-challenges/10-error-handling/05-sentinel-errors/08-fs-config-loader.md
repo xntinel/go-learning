@@ -25,13 +25,6 @@ config/                       independent module: example.com/config
 - Test: a nonexistent path returns defaults with no error; a `0000`-perm file surfaces an error not swallowed as not-exist (skip if root); `os.ReadFile` of a missing file yields a `*fs.PathError` that `errors.Is` still resolves to `fs.ErrNotExist`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/05-sentinel-errors/08-fs-config-loader/cmd/demo
-cd go-solutions/10-error-handling/05-sentinel-errors/08-fs-config-loader
-```
-
 ### Missing is fine; unreadable is not
 
 The loader has to draw a precise line. "File does not exist" is a legitimate

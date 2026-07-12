@@ -30,11 +30,6 @@ logpipe/                    independent module: example.com/log-pipeline-drain-s
 - Test: fail the write for the *last* message in the batch and assert `Sync` was still called and the earlier messages were recorded as written; two more tests cover the full-success and sync-failure paths.
 - Verify: `go test -count=1 ./...`.
 
-```bash
-mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/19-log-pipeline-drain-skipped-by-continue/cmd/demo
-cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/19-log-pipeline-drain-skipped-by-continue
-```
-
 ### Why tying Sync to loop position is the trap
 
 The buggy shape keeps the sync call inside the `range`, guarded by an index

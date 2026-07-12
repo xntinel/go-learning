@@ -22,13 +22,6 @@ Implement: `Redact(s string, keepLast int, mask rune) string`, `MaskEmail(s stri
 Test: card keeps last 4; CJK masks the right count and stays valid UTF-8; `keepLast >= runeCount` returns input; `keepLast == 0` fully masks; `MaskEmail` preserves first char and domain.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/04-string-iteration-bytes-vs-runes/07-rune-aware-pii-redaction/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/04-string-iteration-bytes-vs-runes/07-rune-aware-pii-redaction
-```
-
 ### Count in runes, or leak
 
 The redaction rule is "reveal the last `keepLast` characters, mask everything before".

@@ -29,8 +29,6 @@ remotedbg/                 independent module: example.com/remotedbg
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/01-environment-and-tooling/07-debugging-with-delve/08-remote-headless-connect/seq go-solutions/01-environment-and-tooling/07-debugging-with-delve/08-remote-headless-connect/cmd/demo
-cd go-solutions/01-environment-and-tooling/07-debugging-with-delve/08-remote-headless-connect
 go mod edit -go=1.24
 ```
 

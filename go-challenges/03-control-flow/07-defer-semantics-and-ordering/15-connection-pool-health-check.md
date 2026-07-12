@@ -32,8 +32,6 @@ connpool/                   independent module: example.com/connection-pool-heal
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/07-defer-semantics-and-ordering/15-connection-pool-health-check/cmd/demo
-cd go-solutions/03-control-flow/07-defer-semantics-and-ordering/15-connection-pool-health-check
 go mod edit -go=1.24
 ```
 

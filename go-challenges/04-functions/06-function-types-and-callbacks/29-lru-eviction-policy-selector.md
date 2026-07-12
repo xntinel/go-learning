@@ -29,8 +29,6 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/06-function-types-and-callbacks/29-lru-eviction-policy-selector/cmd/demo
-cd go-solutions/04-functions/06-function-types-and-callbacks/29-lru-eviction-policy-selector
 go mod edit -go=1.24
 ```
 

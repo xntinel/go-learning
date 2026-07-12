@@ -26,8 +26,6 @@ savepoint/                 independent module: example.com/nested-savepoint-rele
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/07-defer-semantics-and-ordering/12-nested-savepoint-release-order
-cd go-solutions/03-control-flow/07-defer-semantics-and-ordering/12-nested-savepoint-release-order
 go mod edit -go=1.24
 ```
 

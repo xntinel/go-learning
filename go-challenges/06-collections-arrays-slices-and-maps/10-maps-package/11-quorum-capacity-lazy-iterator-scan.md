@@ -49,8 +49,6 @@ clusterscan/              module example.com/clusterscan
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/11-quorum-capacity-lazy-iterator-scan
-cd go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/11-quorum-capacity-lazy-iterator-scan
 go mod edit -go=1.24
 ```
 

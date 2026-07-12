@@ -27,13 +27,6 @@ type lowercased, a parameter missing its value (error), duplicate params, and
 surrounding spaces.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/05-strings-package/03-content-type-header-parser/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/05-strings-package/03-content-type-header-parser
-```
-
 ### The parse, step by step
 
 `strings.Cut(v, ";")` splits the media type from the parameter list on the first

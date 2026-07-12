@@ -20,8 +20,6 @@ audit/                       independent module: example.com/audit
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/06-labels-break-continue-goto/14-permission-audit-triple-nested-label
-cd go-solutions/03-control-flow/06-labels-break-continue-goto/14-permission-audit-triple-nested-label
 go mod edit -go=1.24
 ```
 

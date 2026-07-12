@@ -30,13 +30,6 @@ Do not reorder fields blindly. Public struct fields are part of the API, and rel
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/26-memory-model-and-optimization/06-struct-field-ordering-cache-lines/06-struct-field-ordering-cache-lines/cmd/demo
-cd go-solutions/26-memory-model-and-optimization/06-struct-field-ordering-cache-lines/06-struct-field-ordering-cache-lines
-```
-
 This is a library package. It exposes reports and leaves unsafe details behind small exported functions.
 
 ### Exercise 1: Implement Layout Reports

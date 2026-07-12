@@ -26,13 +26,6 @@ hermetictests/                independent module: example.com/hermetictests
 - Test: a `t.Parallel()` table test using a per-case `t.TempDir()`; assert exact bytes on success and `ErrEmptyName` via `errors.Is` on failure; an `Example` with `// Output:`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/06-linting-with-golangci-lint/02-hermetic-table-tests-for-io/cmd/demo
-cd go-solutions/01-environment-and-tooling/06-linting-with-golangci-lint/02-hermetic-table-tests-for-io
-```
-
 ### Why t.TempDir, and why per-case
 
 `t.TempDir()` returns a fresh directory unique to the calling test (or subtest) and

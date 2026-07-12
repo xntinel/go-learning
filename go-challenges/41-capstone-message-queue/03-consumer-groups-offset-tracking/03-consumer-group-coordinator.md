@@ -20,12 +20,6 @@ consumergroup_test.go  join/leave/rebalance, heartbeat expiry via fake clock, la
 - Test: single and multi-consumer assignment, leave-triggered reassignment, unknown-consumer errors, heartbeat expiry with a fake clock, lag math, and listener callbacks.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/41-capstone-message-queue/03-consumer-groups-offset-tracking/03-consumer-group-coordinator/cmd/demo && cd go-solutions/41-capstone-message-queue/03-consumer-groups-offset-tracking/03-consumer-group-coordinator
-```
-
 ### The coordinator's locking discipline and the rebalance state machine
 
 The coordinator is a single struct guarded by one mutex, `g.mu`, with each `GroupMember` holding its own small mutex for its partition list. The discipline is strict and stated in the doc comment: `g.mu` is always acquired before a member's mutex, never the other way around, so the two locks have a fixed order and cannot deadlock against each other. Every membership change - join, leave, expiry - runs `rebalanceLocked` while `g.mu` is held, which is what makes a rebalance atomic with respect to other coordinator operations.

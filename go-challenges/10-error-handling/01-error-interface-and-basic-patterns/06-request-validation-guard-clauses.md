@@ -26,13 +26,6 @@ reqvalidate/                 independent module: example.com/reqvalidate
 - Test: one passing case returning nil; one failing case per field whose message names the field; a short-circuit test proving the first failure wins when two fields are invalid.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/01-error-interface-and-basic-patterns/06-request-validation-guard-clauses/cmd/demo
-cd go-solutions/10-error-handling/01-error-interface-and-basic-patterns/06-request-validation-guard-clauses
-```
-
 ### Why flat guards beat a nested pyramid
 
 Guard clauses invert the nesting. Instead of "if this is ok, and if that is ok,

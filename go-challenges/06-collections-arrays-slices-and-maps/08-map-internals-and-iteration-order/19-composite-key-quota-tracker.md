@@ -52,8 +52,6 @@ quotatracker/              module example.com/quotatracker
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/19-composite-key-quota-tracker
-cd go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/19-composite-key-quota-tracker
 go mod edit -go=1.24
 ```
 

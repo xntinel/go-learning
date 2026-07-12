@@ -26,8 +26,6 @@ tagsmerge/                 independent module: example.com/tags-merge
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/03-variadic-functions/13-metric-tags-merger
-cd go-solutions/04-functions/03-variadic-functions/13-metric-tags-merger
 go mod edit -go=1.24
 ```
 

@@ -19,12 +19,6 @@ lockstep_test.go     zip stops at shorter, merge drains both sides, stability
 - Test: `lockstep_test.go` checks zip stops at the shorter side, merge produces one sorted stream and drains the leftover side, and merge is stable on ties.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/25-iterators-and-modern-go/04-range-over-func-pull-iterators/02-lockstep-zip-and-merge/cmd/demo && cd go-solutions/25-iterators-and-modern-go/04-range-over-func-pull-iterators/02-lockstep-zip-and-merge
-```
-
 ### Why this needs two pull cursors, and the two stop calls
 
 The reason push cannot express zip or merge is structural: a push iterator is a loop that knows how to walk *one* sequence to its end. To pair A with B you must hold a position in each and advance them independently — pull A, pull B, emit the pair, repeat. With `iter.Pull` each input becomes its own `(next, stop)` pair, so the coordinating loop reads `nextA()` and `nextB()` and is in full control of the stepping.

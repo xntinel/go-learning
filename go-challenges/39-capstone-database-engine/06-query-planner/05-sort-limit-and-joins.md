@@ -26,12 +26,6 @@ sort-limit-join/
 - Test: ascending and descending sort, limit with offset, an inner hash join, a nested-loop LEFT join with NULL padding, a hash join whose NULL keys yield zero matches, and a hash LEFT join whose unmatched build rows come out NULL-padded.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/06-query-planner/05-sort-limit-and-joins/cmd/demo && cd go-solutions/39-capstone-database-engine/06-query-planner/05-sort-limit-and-joins
-```
-
 ### The reused scaffolding
 
 The first five files are the same value, operator, catalog, filter, and scan code the earlier exercises built; they are reproduced here so this module stands alone. Read them once to refresh the shapes the join code leans on — `Tuple`, the `Operator` interface, `TableDef`, `FilterExpr.Eval`, and `SeqScanOperator` — then focus on `join.go`.

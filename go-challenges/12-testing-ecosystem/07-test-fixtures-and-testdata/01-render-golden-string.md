@@ -19,13 +19,6 @@ Implement: a `Render` function converting a markdown subset (`# Heading`, `*em*`
 Test: compare rendered output against inline golden constants, assert the empty-input path with `errors.Is`, and pin multi-heading behavior.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/01-render-golden-string/cmd/demo
-cd go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/01-render-golden-string
-```
-
 ### Why start with an inline golden
 
 A fixture is any externalized test input or expected output; a golden value is specifically the expected output a function is asserted against. The cheapest form of a golden is a `const` string sitting beside the test. It costs nothing to read, it lives in the same file as the assertion, and a reviewer sees the exact contract in one place. This is the right form when the expected output is a line or two.

@@ -33,13 +33,6 @@ error fails without retry, a cancel during backoff returns within a small window
 exhaustion returns the last error, and jitter stays within `[base, base*factor)`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/12-multi-stage-pipeline-cancellation/08-retry-with-backoff-stage/cmd/demo
-cd go-solutions/14-select-and-context/12-multi-stage-pipeline-cancellation/08-retry-with-backoff-stage
-```
-
 ### Classify first, then wait cancellably
 
 The retry loop is small but every line is a decision:

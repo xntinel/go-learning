@@ -26,13 +26,6 @@ Implement: `StampLocal(t time.Time) string` — format an instant in `time.Local
 Test: a `TestMain`/`run()` that saves `TZ` and `time.Local`, sets both to UTC, restores them in a defer; tests assert deterministic formatted strings.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/22-testmain-setup-teardown/07-env-timezone-global-restore/cmd/demo
-cd go-solutions/12-testing-ecosystem/22-testmain-setup-teardown/07-env-timezone-global-restore
-```
-
 ### Why this belongs in TestMain, not in a test
 
 Timezone is *process* state: `time.Local` is a package-level variable, and `TZ` is

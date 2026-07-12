@@ -28,14 +28,6 @@ Implement: `Detector` with `New(grace)`, `WithCancel/WithTimeout/WithDeadline`, 
 Test: a report from a leaked context names the user's file (not `leakdetect.go`), a cancelled context is cleared, `TotalCreated` counts across all three constructors, and an `Example`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/13-context-leak-detection/01-detector-core/internal/leakdetect
-mkdir -p go-solutions/14-select-and-context/13-context-leak-detection/01-detector-core/cmd/demo
-cd go-solutions/14-select-and-context/13-context-leak-detection/01-detector-core
-```
-
 ### The skip depth is the whole game
 
 The wrappers exist to add exactly one piece of information the standard

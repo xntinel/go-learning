@@ -21,12 +21,6 @@ checkpoint_test.go       checkpoint flushes all dirty pages obeying WAL order;
 - Test: `checkpoint_test.go` dirties several pages with increasing LSNs against an unflushed WAL, checkpoints, and asserts no frame stays dirty and every recorded page write saw a flushed frontier at least its LSN; a second checkpoint returns LSN 0 and writes nothing.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/03-buffer-pool-manager/04-checkpoint-wal-ordering/cmd/demo && cd go-solutions/39-capstone-database-engine/03-buffer-pool-manager/04-checkpoint-wal-ordering
-```
-
 ### Checkpoint reuses the one write-back choke point
 
 The whole correctness argument for `Checkpoint` rests on a design decision made earlier: every page that leaves the pool for disk goes through `writeBack`, and `writeBack` is the single place the WAL-before-page check lives. So `Checkpoint` does not re-implement durability ordering — it walks the frames, and for each dirty one it calls `writeBack`, which forces the log to that page's LSN before issuing the write if the log is behind. Because the check is centralized, it is impossible for a checkpoint to write a page ahead of its log record; the ordering is structural, not something the checkpoint code has to remember.

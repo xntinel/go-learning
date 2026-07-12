@@ -26,13 +26,6 @@ logfactory/                      independent module: example.com/logfactory
 - Test: unmarshal one JSON line and assert `level`/`msg`/default-attr keys; prove `WithLevel(slog.LevelWarn)` drops an Info record; prove `levelVar.Set(slog.LevelDebug)` re-enables Debug at runtime.
 - Verify: `go test -count=1 ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/12-functional-options-pattern/03-slog-logger-options/cmd/demo
-cd go-solutions/04-functions/12-functional-options-pattern/03-slog-logger-options
-```
-
 ### Options that configure a third-party struct
 
 `slog` already exposes its configuration as a struct — `slog.HandlerOptions` with

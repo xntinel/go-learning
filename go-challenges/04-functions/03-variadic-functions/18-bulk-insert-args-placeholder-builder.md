@@ -30,8 +30,6 @@ sqlbulk/                   independent module: example.com/sqlbulk
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/03-variadic-functions/18-bulk-insert-args-placeholder-builder/cmd/demo
-cd go-solutions/04-functions/03-variadic-functions/18-bulk-insert-args-placeholder-builder
 go mod edit -go=1.24
 ```
 

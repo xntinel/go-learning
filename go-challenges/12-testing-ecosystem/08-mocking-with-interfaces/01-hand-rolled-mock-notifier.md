@@ -26,13 +26,6 @@ notifier/                    independent module: example.com/notifier
 - Test: a mutex-guarded spy asserting one recorded call with the right `{to, body}`; zero calls when validation fails; the sender's error propagated via `errors.Is`; two `Notify` calls recorded in order.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/08-mocking-with-interfaces/01-hand-rolled-mock-notifier/cmd/demo
-cd go-solutions/12-testing-ecosystem/08-mocking-with-interfaces/01-hand-rolled-mock-notifier
-```
-
 ### Why the port is one method
 
 `Notifier` needs exactly one capability from the outside world: the ability to

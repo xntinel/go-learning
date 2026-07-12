@@ -32,13 +32,6 @@ publicstr/                       independent module: example.com/publicstr
 - Test: unit tests inside `internal/normalize`; a `go/doc` guard asserting `publicstr`'s exported set equals `{Slugify, Truncate, Reverse, ErrEmpty}` exactly.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/11-packages-and-modules/09-designing-a-public-go-module/06-shrink-the-surface-with-internal-packages/internal/normalize go-solutions/11-packages-and-modules/09-designing-a-public-go-module/06-shrink-the-surface-with-internal-packages/cmd/demo
-cd go-solutions/11-packages-and-modules/09-designing-a-public-go-module/06-shrink-the-surface-with-internal-packages
-```
-
 ### The internal/ rule, and why the smallest surface is the safest
 
 The Go compiler enforces a special rule for any import path containing an

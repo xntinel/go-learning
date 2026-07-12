@@ -27,13 +27,6 @@ sweep/                     independent module: example.com/sweep
   that expires everything leaves `Len` 0; the two sweeps agree.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/09-safe-prune-during-range/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/09-safe-prune-during-range
-```
-
 ### The spec's rule, stated exactly
 
 From the Go spec on `for range` over a map: the iteration order is unspecified, and

@@ -29,8 +29,6 @@ window/                    independent module: example.com/maintenance-window-ga
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/03-switch-statements/09-maintenance-window-gate/cmd/demo
-cd go-solutions/03-control-flow/03-switch-statements/09-maintenance-window-gate
 go mod edit -go=1.24
 ```
 

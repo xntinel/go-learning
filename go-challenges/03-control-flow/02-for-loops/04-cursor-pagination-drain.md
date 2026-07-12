@@ -25,13 +25,6 @@ pagination/                  module example.com/pagination
 - Test: a scripted fetcher returns pages then an empty cursor (assert full ordered drain and termination); a fetcher that never clears the cursor (assert `ErrTooManyPages`); a fetcher that fails; a context cancelled between pages (assert `ctx.Err()` with the partial results collected so far).
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/02-for-loops/04-cursor-pagination-drain/cmd/demo
-cd go-solutions/03-control-flow/02-for-loops/04-cursor-pagination-drain
-```
-
 ### Why an infinite loop needs three exits, not one
 
 A cursor drain has a natural terminal condition: the upstream returns an empty next

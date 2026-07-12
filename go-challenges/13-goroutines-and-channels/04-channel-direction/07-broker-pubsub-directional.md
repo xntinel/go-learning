@@ -28,13 +28,6 @@ Implement: a `Broker` with a mutex-guarded subscriber registry, `Subscribe() (<-
 Test: a subscriber receives a published event, multiple subscribers each get it, unsubscribe stops delivery, and the returned channel is receive-only.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/04-channel-direction/07-broker-pubsub-directional/cmd/demo
-cd go-solutions/13-goroutines-and-channels/04-channel-direction/07-broker-pubsub-directional
-```
-
 ### Why the field is bidirectional and the method return is directional
 
 The broker keeps a `map[int]chan Event` — plain bidirectional channels. It needs

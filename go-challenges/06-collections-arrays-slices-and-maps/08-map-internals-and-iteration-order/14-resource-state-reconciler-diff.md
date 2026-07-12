@@ -55,8 +55,6 @@ reconciler/               module example.com/reconciler
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/14-resource-state-reconciler-diff
-cd go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/14-resource-state-reconciler-diff
 go mod edit -go=1.24
 ```
 

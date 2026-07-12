@@ -30,8 +30,6 @@ hashring/                  independent module: example.com/hashring
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/03-variadic-functions/16-hash-ring-endpoint-aggregator/cmd/demo
-cd go-solutions/04-functions/03-variadic-functions/16-hash-ring-endpoint-aggregator
 go mod edit -go=1.24
 ```
 

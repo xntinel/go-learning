@@ -28,8 +28,6 @@ watchdog/                  independent module: example.com/watchdog
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/13-goroutines-and-channels/14-deadlock-detection-and-prevention/10-deadlock-watchdog-test-harness/cmd/demo
-cd go-solutions/13-goroutines-and-channels/14-deadlock-detection-and-prevention/10-deadlock-watchdog-test-harness
 go mod edit -go=1.25
 ```
 

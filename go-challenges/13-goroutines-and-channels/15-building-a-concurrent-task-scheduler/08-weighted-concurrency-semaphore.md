@@ -29,8 +29,6 @@ Verify: `go test -count=1 -race ./...`
 Set up the module (this one has an external dependency):
 
 ```bash
-mkdir -p go-solutions/13-goroutines-and-channels/15-building-a-concurrent-task-scheduler/08-weighted-concurrency-semaphore/cmd/demo
-cd go-solutions/13-goroutines-and-channels/15-building-a-concurrent-task-scheduler/08-weighted-concurrency-semaphore
 go mod edit -go=1.25
 go get golang.org/x/sync/semaphore
 ```

@@ -29,8 +29,6 @@ queryparse/                independent module: example.com/queryparse
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/01-function-declaration-and-multiple-return-values/03-http-handler-multi-return-unpack/cmd/demo
-cd go-solutions/04-functions/01-function-declaration-and-multiple-return-values/03-http-handler-multi-return-unpack
 go mod edit -go=1.25
 ```
 

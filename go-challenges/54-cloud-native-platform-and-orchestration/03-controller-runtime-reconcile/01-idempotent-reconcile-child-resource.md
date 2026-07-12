@@ -33,8 +33,6 @@ cache-reconciler/                 independent module: example.com/cache-reconcil
 Set up the module and pull the dependencies:
 
 ```bash
-mkdir -p go-solutions/54-cloud-native-platform-and-orchestration/03-controller-runtime-reconcile/01-idempotent-reconcile-child-resource/cmd/demo
-cd go-solutions/54-cloud-native-platform-and-orchestration/03-controller-runtime-reconcile/01-idempotent-reconcile-child-resource
 go mod edit -go=1.24
 go get sigs.k8s.io/controller-runtime@v0.20.4
 go get k8s.io/api@v0.32.0 k8s.io/apimachinery@v0.32.0 k8s.io/client-go@v0.32.0

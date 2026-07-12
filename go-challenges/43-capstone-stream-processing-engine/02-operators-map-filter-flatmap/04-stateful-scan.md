@@ -22,7 +22,6 @@ scan_test.go           running-aggregate sequence, final-only reduce, per-key is
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/43-capstone-stream-processing-engine/02-operators-map-filter-flatmap/04-stateful-scan/cmd/demo && cd go-solutions/43-capstone-stream-processing-engine/02-operators-map-filter-flatmap/04-stateful-scan
 go mod edit -go=1.26
 ```
 

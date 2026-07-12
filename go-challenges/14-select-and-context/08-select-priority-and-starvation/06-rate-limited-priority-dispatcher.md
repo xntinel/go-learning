@@ -30,13 +30,6 @@ before `lo` when both are ready; no emission between ticks even with items queue
 cancelling exits cleanly.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/08-select-priority-and-starvation/06-rate-limited-priority-dispatcher/cmd/demo
-cd go-solutions/14-select-and-context/08-select-priority-and-starvation/06-rate-limited-priority-dispatcher
-```
-
 ### Priority reorders within the cap, it does not escape it
 
 The wrong mental model is "high priority means send it immediately." If a

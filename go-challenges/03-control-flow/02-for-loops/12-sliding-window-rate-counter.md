@@ -28,8 +28,6 @@ slidingwindow/               module example.com/slidingwindow
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/02-for-loops/12-sliding-window-rate-counter
-cd go-solutions/03-control-flow/02-for-loops/12-sliding-window-rate-counter
 go mod edit -go=1.24
 ```
 

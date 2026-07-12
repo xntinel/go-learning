@@ -37,8 +37,6 @@ etl/                         independent module: example.com/streaming-etl-pipel
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/07-defer-semantics-and-ordering/27-streaming-etl-pipeline-stage-cleanup/cmd/demo
-cd go-solutions/03-control-flow/07-defer-semantics-and-ordering/27-streaming-etl-pipeline-stage-cleanup
 go mod edit -go=1.24
 ```
 

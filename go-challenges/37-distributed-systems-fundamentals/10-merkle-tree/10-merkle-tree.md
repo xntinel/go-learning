@@ -38,13 +38,6 @@ Two database replicas exchange root hashes over a lightweight RPC. A hash match 
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/37-distributed-systems-fundamentals/10-merkle-tree/10-merkle-tree/cmd/merkle
-cd go-solutions/37-distributed-systems-fundamentals/10-merkle-tree/10-merkle-tree
-```
-
 ### Exercise 1: MerkleTree Construction and RootHash
 
 Create `merkle.go`:

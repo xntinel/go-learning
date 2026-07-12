@@ -35,13 +35,6 @@ compiles only under `!race`.
 Verify: `go test -count=1 -race ./...` (green); `go test -bench . -run '^$'`
 (runs the benchmark, no `-race`).
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/21-race-detector/09-race-build-tag-and-gorace-ci/cmd/demo
-cd go-solutions/12-testing-ecosystem/21-race-detector/09-race-build-tag-and-gorace-ci
-```
-
 ### The race build tag
 
 When you build with `-race`, the toolchain automatically defines the `race` build

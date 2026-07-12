@@ -25,13 +25,6 @@ shutdown/                  independent module: example.com/shutdown
 - Test: fakes where some `Close` return errors and some nil — assert every closer was invoked even when an earlier one errors, assert `errors.Is` each failing closer's sentinel, and assert all-clean returns nil.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/07-multiple-error-returns/05-close-all-resources/cmd/demo
-cd go-solutions/10-error-handling/07-multiple-error-returns/05-close-all-resources
-```
-
 ### Why reverse order, and why continue past failures
 
 Resources are acquired in a dependency order: open the DB pool, then the cache that

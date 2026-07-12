@@ -51,8 +51,6 @@ quota/                     module example.com/quota
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/13-tenant-rate-limiter-pointwise-lock
-cd go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/13-tenant-rate-limiter-pointwise-lock
 go mod edit -go=1.24
 ```
 

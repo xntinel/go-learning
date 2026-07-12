@@ -31,13 +31,6 @@ wrong (e.g. 50% of 105 cents is 52 by half-to-even, not 53); a `7.25%` case matc
 hand-computed value; and a divergence assertion on a documented input.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/07-numeric-precision-and-overflow/06-exact-tax-and-percentage-big-rat/cmd/demo
-cd go-solutions/02-variables-types-and-constants/07-numeric-precision-and-overflow/06-exact-tax-and-percentage-big-rat
-```
-
 ### Exact until you choose to round
 
 The reason `float64` misroundes tax is that both the rate and the product are stored

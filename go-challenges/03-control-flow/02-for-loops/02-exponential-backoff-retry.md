@@ -26,13 +26,6 @@ backoff/                     module example.com/backoff
 - Test: inject a fake sleep and a seeded `rand.NewChaCha8` source so backoff is reproducible; assert success on attempt k (op called exactly k times), exhaustion, immediate return on a permanent error, and `ctx.Err()` on cancel mid-backoff; `-race` on a concurrent retry.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/02-for-loops/02-exponential-backoff-retry/cmd/demo
-cd go-solutions/03-control-flow/02-for-loops/02-exponential-backoff-retry
-```
-
 ### Why the counted loop is a budget, and why jitter matters
 
 `for attempt := range maxAttempts` makes the budget the first thing a reader sees:

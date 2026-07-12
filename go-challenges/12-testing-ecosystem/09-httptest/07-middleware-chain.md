@@ -23,13 +23,6 @@ middlewarechain/                independent module: example.com/middleware-chain
 - Test: per-middleware unit tests with a spy next-handler recording whether it ran and what context it saw; a recovery test whose handler panics; a full-chain test asserting `X-Request-ID` is present with and without a valid token.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/09-httptest/07-middleware-chain/cmd/demo
-cd go-solutions/12-testing-ecosystem/09-httptest/07-middleware-chain
-```
-
 ### The responsibility boundary is what you test
 
 A middleware's job is to decide whether — and in what modified context — the next

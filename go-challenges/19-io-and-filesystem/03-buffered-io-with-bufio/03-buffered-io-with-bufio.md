@@ -45,13 +45,6 @@ A `bufio.Writer` that is not `Flush`ed will lose buffered bytes. `bufio.Writer.W
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/19-io-and-filesystem/03-buffered-io-with-bufio/03-buffered-io-with-bufio/wordcount/cmd/demo
-cd go-solutions/19-io-and-filesystem/03-buffered-io-with-bufio/03-buffered-io-with-bufio
-```
-
 ### Exercise 1: The Counter
 
 Create `wordcount/counter.go`:

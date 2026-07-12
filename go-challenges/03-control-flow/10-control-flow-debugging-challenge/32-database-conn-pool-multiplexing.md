@@ -36,11 +36,6 @@ connpool/                     independent module: example.com/database-conn-pool
 - Test: many logical connections hammering few physical ones with distinguishable payloads, asserting zero cross-contaminated responses; a targeted case isolating exactly two logical connections that share one physical connection.
 - Verify: `go test -count=1 -race ./...`.
 
-```bash
-mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/32-database-conn-pool-multiplexing/cmd/demo
-cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/32-database-conn-pool-multiplexing
-```
-
 ### Why the socket needs a guard, not just the pool's bookkeeping
 
 The version that ships first often guards the *pool's* bookkeeping —

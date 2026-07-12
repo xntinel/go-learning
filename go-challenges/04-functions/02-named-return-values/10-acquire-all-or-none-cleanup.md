@@ -24,13 +24,6 @@ pipeline/                   independent module: example.com/pipeline
 - Test: full success -> no cleanup, pipeline usable; failure at step 2 -> resource 1 released, resources 2+ never acquired, err wraps the failing step; each acquired resource closed exactly once.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/02-named-return-values/10-acquire-all-or-none-cleanup/cmd/demo
-cd go-solutions/04-functions/02-named-return-values/10-acquire-all-or-none-cleanup
-```
-
 ### Release exactly what you grabbed
 
 `Open` accumulates acquired resources onto the pipeline as it goes, and registers a

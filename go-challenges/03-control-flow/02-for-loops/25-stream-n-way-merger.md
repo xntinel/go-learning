@@ -34,8 +34,6 @@ merge/                         module example.com/merge
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/02-for-loops/25-stream-n-way-merger/cmd/demo
-cd go-solutions/03-control-flow/02-for-loops/25-stream-n-way-merger
 go mod edit -go=1.24
 ```
 

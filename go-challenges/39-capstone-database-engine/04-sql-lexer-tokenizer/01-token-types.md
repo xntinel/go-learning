@@ -19,12 +19,6 @@ token_test.go        IsKeyword brackets the keyword block; String format; type i
 - Test: `token_test.go` asserts `IsKeyword` is true for keywords and false for literals/operators/sentinels, and that `String` renders the documented `Token(type, lit, line:col)` form.
 - Verify: `go test -run 'TestToken' -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/04-sql-lexer-tokenizer/01-token-types/cmd/demo && cd go-solutions/39-capstone-database-engine/04-sql-lexer-tokenizer/01-token-types
-```
-
 ### Why a sentinel-bracketed enum, and why position lives in the token
 
 A token type is just an integer, but the *layout* of those integers is a design decision. SQL has roughly fifty keywords, and the parser asks "is this token a keyword?" constantly — for example to reject `SELECT FROM FROM` or to decide whether a bareword can be a column name. The naive answer is a second `map[TokenType]bool`, but there is a cheaper one: lay the keyword constants out as one contiguous run in the `iota` block and bracket them with two unexported sentinels, `keywordStart` and `keywordEnd`. Then `IsKeyword` is a single range check, `t > keywordStart && t < keywordEnd`, with no allocation and no lookup. The sentinels are unexported because they are not real tokens; they exist only to mark the boundaries of the run, and nothing outside the package should compare against them.

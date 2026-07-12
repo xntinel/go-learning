@@ -36,13 +36,6 @@ Both checks run while holding the pool lock, so they must be fast. A health chec
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/33-tcp-udp-and-networking/07-connection-pooling-implementation/07-connection-pooling-implementation/cmd/demo
-cd go-solutions/33-tcp-udp-and-networking/07-connection-pooling-implementation/07-connection-pooling-implementation
-```
-
 This is a library, not a program. Verification is via `go test`.
 
 ### Exercise 1: The Pool Type and Constructor

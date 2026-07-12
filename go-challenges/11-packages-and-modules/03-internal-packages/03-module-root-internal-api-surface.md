@@ -26,13 +26,6 @@ widget/                         module example.com/widget
 - Test: a white-box test drives `impl.Sanitizer` directly; a public-surface test drives `widget.Client` and matches the re-exported sentinels with `errors.Is`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/11-packages-and-modules/03-internal-packages/03-module-root-internal-api-surface/internal/impl go-solutions/11-packages-and-modules/03-internal-packages/03-module-root-internal-api-surface/cmd/demo
-cd go-solutions/11-packages-and-modules/03-internal-packages/03-module-root-internal-api-surface
-```
-
 ### Why the implementation goes under a module-root internal
 
 The parent of a module-root `internal/` directory is the module root itself, so the

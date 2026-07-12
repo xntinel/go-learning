@@ -32,13 +32,6 @@ Manual JSON construction is justified here because the schema is tiny, fixed, an
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/26-memory-model-and-optimization/14-optimizing-a-real-world-hot-path/14-optimizing-a-real-world-hot-path/cmd/demo
-cd go-solutions/26-memory-model-and-optimization/14-optimizing-a-real-world-hot-path/14-optimizing-a-real-world-hot-path
-```
-
 This is a library. The command under `cmd/demo` is only a consumer of the exported API.
 
 ### Exercise 1: Implement The Hot Path

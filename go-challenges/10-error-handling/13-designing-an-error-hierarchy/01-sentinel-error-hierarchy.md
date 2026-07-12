@@ -24,14 +24,6 @@ sentinel-error-hierarchy/          module example.com/sentinel-error-hierarchy
 - Test: table-driven assertions that a not-found error `errors.Is` the leaf, the mid base, and the root; that `IsUser` rejects an unrelated error; and that the rendered message carries the category words.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/13-designing-an-error-hierarchy/01-sentinel-error-hierarchy/internal/domain
-mkdir -p go-solutions/10-error-handling/13-designing-an-error-hierarchy/01-sentinel-error-hierarchy/cmd/demo
-cd go-solutions/10-error-handling/13-designing-an-error-hierarchy/01-sentinel-error-hierarchy
-```
-
 ### Why sentinels, and how the tree matches
 
 The domain has exactly three failure categories — a user is missing, a user

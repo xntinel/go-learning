@@ -53,13 +53,6 @@ stream is clean it returns `-1, nil` at `io.EOF`. This is the position a scanner
 reports when it must point the operator at the exact byte where a log line went
 bad.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/06-streaming-rune-decoder/internal/logscan go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/06-streaming-rune-decoder/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/06-streaming-rune-decoder
-```
-
 Create `internal/logscan/logscan.go`:
 
 ```go

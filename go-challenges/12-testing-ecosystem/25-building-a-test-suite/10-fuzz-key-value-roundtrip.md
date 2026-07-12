@@ -23,13 +23,6 @@ Implement: `Set` copies the value before storing; `Get` returns a copy; plus `Le
 Test: `FuzzRoundTrip` seeding edge cases with `f.Add`, then asserting round-trip equality and store/Delete consistency over `(string, []byte)`.
 Verify: `go test -count=1 -race ./...` and `go test -fuzz=FuzzRoundTrip -fuzztime=30s`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/25-building-a-test-suite/10-fuzz-key-value-roundtrip/cmd/demo
-cd go-solutions/12-testing-ecosystem/25-building-a-test-suite/10-fuzz-key-value-roundtrip
-```
-
 ### Asserting an invariant, and the copy bug fuzzing catches
 
 The mental shift fuzzing demands is that the target checks a *property* that must

@@ -28,13 +28,6 @@ Implement: `Render(Event) []byte` (JSON with a trailing newline) and `Normalize(
 Test: feed two payloads with *different* timestamps, UUIDs, and latencies; assert both normalize to the same golden, proving no flake.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/05-redact-volatile-fields/cmd/demo go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/05-redact-volatile-fields/testdata
-cd go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/05-redact-volatile-fields
-```
-
 ### Two ways to redact, and why regex here
 
 There are two normalization strategies. *Redaction by field* unmarshals the output

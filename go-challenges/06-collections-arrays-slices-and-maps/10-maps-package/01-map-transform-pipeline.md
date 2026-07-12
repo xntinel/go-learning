@@ -26,13 +26,6 @@ Implement: `FilterPositive`, `UppercaseKeys`, `Invert`, `SortedKeys`.
 Test: each transform's output, the independent-copy property, the nil/empty contract, the duplicate-value collapse of `Invert`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/01-map-transform-pipeline/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/01-map-transform-pipeline
-```
-
 ## Why the pipeline is shaped this way
 
 `FilterPositive` is the load-bearing function. It clones the input with

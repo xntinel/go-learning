@@ -28,8 +28,6 @@ secret/                     independent module: example.com/secret
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/08-interfaces/09-interface-internals/08-json-marshaler-receiver-itab/cmd/demo
-cd go-solutions/08-interfaces/09-interface-internals/08-json-marshaler-receiver-itab
 go mod edit -go=1.26
 ```
 

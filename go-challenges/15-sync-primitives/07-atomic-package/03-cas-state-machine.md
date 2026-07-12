@@ -25,13 +25,6 @@ casstate/                  independent module: example.com/casstate
 - Test: a single-goroutine cycle asserting the exact sequence; 100 concurrent `Advance` calls asserting the final state is always valid.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/07-atomic-package/03-cas-state-machine/cmd/demo
-cd go-solutions/15-sync-primitives/07-atomic-package/03-cas-state-machine
-```
-
 ### Why a CAS loop and not Add
 
 A state transition is not an addition. "Next" is a function of the current state

@@ -22,7 +22,6 @@ ping_test.go           round-trip, unknown ack, expiry, concurrency cap, late-ac
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/44-capstone-http2-implementation/05-connection-error-handling/04-ping-keepalive/cmd/demo && cd go-solutions/44-capstone-http2-implementation/05-connection-error-handling/04-ping-keepalive
 go mod edit -go=1.26
 ```
 

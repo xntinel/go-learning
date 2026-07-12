@@ -30,8 +30,6 @@ resource/                  independent module: example.com/method-router-405
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/03-switch-statements/05-method-router-405/cmd/demo
-cd go-solutions/03-control-flow/03-switch-statements/05-method-router-405
 go mod edit -go=1.24
 ```
 

@@ -24,13 +24,6 @@ Implement: `Batch[T](seq iter.Seq[T], size int) iter.Seq[[]T]` that copies each 
 Test: stream of 10 with size 3 gives `[3,3,3,1]`; exact multiple gives no trailing empty; empty stream gives nothing; retained batches do not alias; early break stops upstream.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/09-range-over-integers-and-functions/06-batching-iterator-bulk-writer/cmd/demo
-cd go-solutions/03-control-flow/09-range-over-integers-and-functions/06-batching-iterator-bulk-writer
-```
-
 ## The design
 
 `Batch` carries a buffer across yields — closure state that must be reset after

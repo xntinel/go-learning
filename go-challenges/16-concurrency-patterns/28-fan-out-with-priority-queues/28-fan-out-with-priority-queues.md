@@ -43,11 +43,6 @@ A dispatcher owns goroutines. Cancelling the context stops the loop and all work
 
 ### Setup
 
-```bash
-mkdir -p go-solutions/16-concurrency-patterns/28-fan-out-with-priority-queues/28-fan-out-with-priority-queues/internal/pqueue go-solutions/16-concurrency-patterns/28-fan-out-with-priority-queues/28-fan-out-with-priority-queues/cmd/demo
-cd go-solutions/16-concurrency-patterns/28-fan-out-with-priority-queues/28-fan-out-with-priority-queues
-```
-
 ### Exercise 1: Priority queue and dispatcher
 
 Build the `internal/pqueue` package. The heap implementation and the dispatcher live here.

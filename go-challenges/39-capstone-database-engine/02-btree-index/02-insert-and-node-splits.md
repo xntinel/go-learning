@@ -20,12 +20,6 @@ btree_test.go        leaf-chain order after splits, root split, duplicate, key-t
 - Test: `btree_test.go` inserts past the leaf capacity and walks the leaf sibling chain to confirm sorted order and exact count, checks that the root becomes internal after a split, and that duplicate and oversized keys are rejected.
 - Verify: `go test -run 'TestInsert' -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/02-btree-index/02-insert-and-node-splits/cmd/demo && cd go-solutions/39-capstone-database-engine/02-btree-index/02-insert-and-node-splits
-```
-
 ### The baseline: pages, store, and descent
 
 Insert needs the page layout, the in-memory store, and a way to find the leaf a key belongs in. That baseline is the page-encoding work from the previous exercise, duplicated here so this module stands alone. The one new piece of descent logic is `leafFor`: starting at the root, it reads each node, and at an internal node runs a binary search for the smallest index `i` where `keys[i] > key`, then follows `children[i]`. That index is exactly the child whose subtree must contain the key under the routing invariant `keys[i-1] <= key < keys[i]`. It stops when it reaches a leaf and returns that leaf's page ID.

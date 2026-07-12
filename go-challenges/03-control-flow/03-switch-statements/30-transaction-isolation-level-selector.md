@@ -30,8 +30,6 @@ txiso/                      independent module: example.com/transaction-isolatio
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/03-switch-statements/30-transaction-isolation-level-selector/cmd/demo
-cd go-solutions/03-control-flow/03-switch-statements/30-transaction-isolation-level-selector
 go mod edit -go=1.24
 ```
 

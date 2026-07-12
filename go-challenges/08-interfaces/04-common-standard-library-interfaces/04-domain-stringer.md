@@ -26,13 +26,6 @@ domainstr/                  independent module: example.com/domainstr
 - Test: each enum value maps to its expected string and an unknown value maps to the fallback; `APIKey.String()` masks the secret and `fmt.Sprintf("%v", key)` uses it; a guard proving `String()` does not recurse.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/04-common-standard-library-interfaces/04-domain-stringer/cmd/demo
-cd go-solutions/08-interfaces/04-common-standard-library-interfaces/04-domain-stringer
-```
-
 ### How fmt dispatches, and the recursion trap
 
 When `fmt` formats a value with `%v` or `%s`, it checks whether the value

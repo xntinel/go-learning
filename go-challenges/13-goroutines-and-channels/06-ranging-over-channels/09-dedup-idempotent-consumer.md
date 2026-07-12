@@ -26,13 +26,6 @@ Implement: `Event` with an idempotency `Key`, and a `Consumer` whose `Consume(ct
 Test: a stream with duplicate keys yields only the first occurrence per key in first-seen order; an all-unique stream passes through unchanged; an empty-closed stream yields none; a large heavily-duplicated stream yields the right unique count and a seen-set sized to the unique keys.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/06-ranging-over-channels/09-dedup-idempotent-consumer/cmd/demo
-cd go-solutions/13-goroutines-and-channels/06-ranging-over-channels/09-dedup-idempotent-consumer
-```
-
 ### The seen-set and first-seen ordering
 
 The dedup guard is a `map[string]struct{}` — a set of keys already processed.

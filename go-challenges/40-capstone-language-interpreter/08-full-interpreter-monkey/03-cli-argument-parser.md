@@ -20,13 +20,6 @@ cmd/
 - Test: `parse_test.go` covers each subcommand, the `--profile` flag, the file-required cases, and the three exit-code classes.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/40-capstone-language-interpreter/08-full-interpreter-monkey/03-cli-argument-parser/cli go-solutions/40-capstone-language-interpreter/08-full-interpreter-monkey/03-cli-argument-parser/cmd/demo
-cd go-solutions/40-capstone-language-interpreter/08-full-interpreter-monkey/03-cli-argument-parser
-```
-
 ### Parsing as a pure function, and why exit codes are the point
 
 `Parse` takes the arguments after the binary name and returns either a `Config` or one of three sentinel errors, each wrapped so a caller can match it with `errors.Is`. Keeping it a pure function over a `[]string` — no reading of `os.Args` inside, no file system, no interpreter — is what makes it trivially testable: every case is one slice in and one config-or-error out. The binary's `main` reads `os.Args[1:]` and hands the slice to `Parse`; the test hands it literals.

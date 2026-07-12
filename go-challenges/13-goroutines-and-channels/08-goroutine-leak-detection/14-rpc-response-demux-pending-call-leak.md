@@ -34,8 +34,6 @@ rpcmux/                      independent module: example.com/rpcmux
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/13-goroutines-and-channels/08-goroutine-leak-detection/14-rpc-response-demux-pending-call-leak/cmd/demo
-cd go-solutions/13-goroutines-and-channels/08-goroutine-leak-detection/14-rpc-response-demux-pending-call-leak
 go get go.uber.org/goleak
 go mod tidy
 ```

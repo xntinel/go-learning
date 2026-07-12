@@ -25,8 +25,6 @@ linescanner/                  independent module: example.com/linescanner
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/02-named-return-values/15-resumable-scanner-position-cursor
-cd go-solutions/04-functions/02-named-return-values/15-resumable-scanner-position-cursor
 go mod edit -go=1.24
 ```
 

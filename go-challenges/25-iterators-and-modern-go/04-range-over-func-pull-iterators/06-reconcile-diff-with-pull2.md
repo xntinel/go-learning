@@ -19,12 +19,6 @@ reconcile_test.go    add-only, remove-only, change-only, mixed, both stops fire
 - Test: `reconcile_test.go` covers each diff case in isolation (add, remove, change), the mixed case with unchanged keys skipped, and that both producers are stopped on an early break.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/25-iterators-and-modern-go/04-range-over-func-pull-iterators/06-reconcile-diff-with-pull2/cmd/demo && cd go-solutions/25-iterators-and-modern-go/04-range-over-func-pull-iterators/06-reconcile-diff-with-pull2
-```
-
 ### Why reconciliation is a lockstep walk, and the three cases
 
 Computing the difference between two keyed sets is the relational `full outer join` followed by a classification of each row. Done on sorted inputs it costs O(n + m) with no hashing and no buffering of either side — exactly the property that matters when local and remote are large and already arrive in key order (a database index scan, a sorted object listing, a Merkle-ordered range). The walk advances the cursor with the smaller key and classifies as it goes, which is why it needs two pull cursors that can be stepped independently: `iter.Pull2` gives each side a `next` returning `(key, value, ok)`, so the loop always holds the live front `(key, value)` of both local and remote.

@@ -31,13 +31,6 @@ cancellation returns `context.Canceled`; a regression test documents that strict
 priority (the old no-op) starves `lo`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/08-select-priority-and-starvation/02-fair-priority-drain/cmd/demo
-cd go-solutions/14-select-and-context/08-select-priority-and-starvation/02-fair-priority-drain
-```
-
 ### The bug this fixes: a knob that does nothing
 
 The tempting-but-broken version exposes `fairness int` and then ignores it — the

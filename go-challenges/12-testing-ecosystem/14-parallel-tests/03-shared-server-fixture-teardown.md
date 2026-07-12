@@ -29,13 +29,6 @@ close it, run read-only subtests in parallel inside a `t.Run("group", ...)`, and
 prove Close runs exactly once, after all children.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/14-parallel-tests/03-shared-server-fixture-teardown/cmd/demo
-cd go-solutions/12-testing-ecosystem/14-parallel-tests/03-shared-server-fixture-teardown
-```
-
 ### Why the server is a shared read-only fixture
 
 An `httptest.Server` binds a real ephemeral port and serves real HTTP over

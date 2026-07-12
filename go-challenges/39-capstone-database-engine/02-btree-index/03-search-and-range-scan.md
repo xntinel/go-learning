@@ -20,12 +20,6 @@ btree_test.go        point lookup, missing key, bounded + unbounded scans, 1000-
 - Test: `btree_test.go` looks up present and absent keys, scans a bounded interval and an open-ended one, and inserts a thousand keys in random order to confirm a full scan returns them sorted with no gaps.
 - Verify: `go test -run 'TestInsertAndSearch|TestSearch|TestRange|TestInsertSorted|ExampleTree' -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/02-btree-index/03-search-and-range-scan/cmd/demo && cd go-solutions/39-capstone-database-engine/02-btree-index/03-search-and-range-scan
-```
-
 ### The baseline: a tree you can already fill
 
 Search and range scan need a populated tree, so this module carries the full page layout, store, descent, and insert path from the previous exercise. That baseline is duplicated here so the module stands alone; the new work is everything after `leafFor` plus the two read methods. If the insert and split logic is unfamiliar, the previous exercise is where it is explained in depth; here it is the foundation the read paths build on.

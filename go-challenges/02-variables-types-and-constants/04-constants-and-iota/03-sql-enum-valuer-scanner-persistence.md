@@ -25,13 +25,6 @@ Implement: `Value() (driver.Value, error)` returning the string code and `Scan(s
 Test: `Value` returns the right code (and errors on `StateUnknown`); `Scan` accepts both `string` and `[]byte`, errors on unknown text and on an unsupported source type; `Value` → `Scan` round-trips.
 Verify: `go test -count=1 ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/04-constants-and-iota/03-sql-enum-valuer-scanner-persistence/cmd/demo
-cd go-solutions/02-variables-types-and-constants/04-constants-and-iota/03-sql-enum-valuer-scanner-persistence
-```
-
 ## Why the driver interfaces are the seam
 
 `database/sql` bridges Go values and SQL columns through two small interfaces.

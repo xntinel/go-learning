@@ -26,13 +26,6 @@ Implement: `Decode(data) (any, error)`, `LeafPaths(v) []string`, `Redact(v, secr
 Test: nested payload of objects/arrays/strings/ints/floats/bools/null; assert every leaf is visited, an integer arrives as `float64`, a top-level scalar does not panic, and secret keys are masked.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/03-type-assertions-and-type-switches/04-dynamic-json-walker/cmd/demo
-cd go-solutions/08-interfaces/03-type-assertions-and-type-switches/04-dynamic-json-walker
-```
-
 ### The six shapes, and the float64 trap
 
 `json.Unmarshal(data, &v)` where `v` is `any` produces exactly these dynamic types:

@@ -27,13 +27,6 @@ publicstr/                 independent module: example.com/publicstr
 - Test: Slugify happy path, hyphen collapse, digit preservation, empty rejection via `errors.Is`; Truncate short and long; Reverse byte order; an `Example` with `// Output:`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/11-packages-and-modules/09-designing-a-public-go-module/01-slug-library-core-and-sentinel-error/cmd/demo
-cd go-solutions/11-packages-and-modules/09-designing-a-public-go-module/01-slug-library-core-and-sentinel-error
-```
-
 ### Why the sentinel is part of the contract, not an implementation detail
 
 `Slugify` and `Truncate` reject empty input by returning `ErrEmpty`, an

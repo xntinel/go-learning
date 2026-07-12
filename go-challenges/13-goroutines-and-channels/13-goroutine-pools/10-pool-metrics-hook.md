@@ -26,13 +26,6 @@ metricpool/                independent module: example.com/metricpool
 - Test: recorded execution duration matches a known sleep within tolerance and the processed count is exact; the active-workers gauge peaks at `Size` and returns to 0 after drain; queue depth reflects pending work under a slow consumer.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/13-goroutine-pools/10-pool-metrics-hook/cmd/demo
-cd go-solutions/13-goroutines-and-channels/13-goroutine-pools/10-pool-metrics-hook
-```
-
 ### Measure the queueing, not just the work
 
 The insight that makes pool metrics useful is that a job's total latency splits

@@ -54,13 +54,6 @@ that the guarded body ran a single time. Run under `-race` and the naive
 unguarded version would both panic and report a data race; the guarded one is
 clean.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/10-signaling-with-closed-channels/04-idempotent-closer/cmd/demo
-cd go-solutions/13-goroutines-and-channels/10-signaling-with-closed-channels/04-idempotent-closer
-```
-
 Create `resource.go`:
 
 ```go

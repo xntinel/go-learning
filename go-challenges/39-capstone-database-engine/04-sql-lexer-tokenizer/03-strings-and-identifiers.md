@@ -21,12 +21,6 @@ lexer_test.go        string escapes, quoted-identifier escapes, unterminated err
 - Test: `lexer_test.go` covers single-quote escapes, empty strings, double-quote identifier escapes, and the unterminated-string and unterminated-quoted-identifier error tokens.
 - Verify: `go test -run 'TestTokenize|TestUnterminated|TestRoundTrip' -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/04-sql-lexer-tokenizer/03-strings-and-identifiers/cmd/demo && cd go-solutions/39-capstone-database-engine/04-sql-lexer-tokenizer/03-strings-and-identifiers
-```
-
 ### Why a doubling escape, and why a builder instead of a slice
 
 SQL strings cannot use C-style backslash escapes in the standard dialect; the only way to put a quote inside a single-quoted string is to write it twice. That choice has a pleasant property — the source never needs a separate escape character — but it forces the reader to decode rather than slice. When `readString` sees a `'`, it peeks one byte ahead: if the next byte is also `'`, the pair is an escaped quote, so it appends a single `'` to a `strings.Builder` and consumes both bytes; otherwise the `'` is the terminator and the string ends. Because the decoded value differs from the raw source bytes (two quotes become one), the literal cannot be a sub-slice of the input — it has to be built up in a buffer. That is why both readers accumulate into a `strings.Builder` and store `buf.String()` in the token, not an `input[start:end]` slice.

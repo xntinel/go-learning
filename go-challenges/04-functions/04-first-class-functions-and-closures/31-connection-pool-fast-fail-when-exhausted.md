@@ -31,8 +31,6 @@ connection-pool/             independent module: example.com/connection-pool
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/04-first-class-functions-and-closures/31-connection-pool-fast-fail-when-exhausted/cmd/demo
-cd go-solutions/04-functions/04-first-class-functions-and-closures/31-connection-pool-fast-fail-when-exhausted
 go mod edit -go=1.24
 ```
 

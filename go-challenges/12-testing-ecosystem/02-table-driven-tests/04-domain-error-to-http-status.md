@@ -26,13 +26,6 @@ errstatus/                independent module: example.com/errstatus
 - Test: a table of `{name, err, wantStatus}` including errors wrapped through multiple `fmt.Errorf("%w")` layers, and a default row asserting an unknown error maps to 500.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/02-table-driven-tests/04-domain-error-to-http-status/cmd/demo
-cd go-solutions/12-testing-ecosystem/02-table-driven-tests/04-domain-error-to-http-status
-```
-
 ### Why one table is the whole policy
 
 The reason to centralize error-to-status mapping in one function is that the

@@ -19,12 +19,6 @@ enrich_test.go       order preservation, worker bound via a concurrency gauge, e
 - Test: results come back in input order, peak concurrency never exceeds `workers`, a failing record is aggregated (not fatal) while good records still enrich, and a cancelled context surfaces `context.Canceled`.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/16-concurrency-patterns/02-fan-out-pattern/02-parallel-record-enrichment/cmd/demo && cd go-solutions/16-concurrency-patterns/02-fan-out-pattern/02-parallel-record-enrichment
-```
-
 ### Why an injected interface, ordered results, and joined errors
 
 Three real-world requirements drive this design, and each one shapes the code.

@@ -20,13 +20,6 @@ cmd/
 - Test: `pool_test.go` asserts pooled values return the same pointer, unpooled values return distinct pointers, every value round-trips, and the pool boundaries intern correctly.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/40-capstone-language-interpreter/08-full-interpreter-monkey/01-object-interning-pool/object go-solutions/40-capstone-language-interpreter/08-full-interpreter-monkey/01-object-interning-pool/cmd/demo
-cd go-solutions/40-capstone-language-interpreter/08-full-interpreter-monkey/01-object-interning-pool
-```
-
 ### Why interning, and why a fixed array
 
 The cost the pool attacks is allocation volume, not allocation size. An `Integer` is a single `int64`, so each one is cheap to create — but `1 + 2` makes three of them, and a pass over a 100,000-element array makes hundreds of thousands. Each is a separate object the garbage collector must trace and reclaim, and that tracing is the bottleneck, not the bytes. Interning replaces the allocation entirely for the values that occur most: the constructor returns a pointer into a pre-built table instead of calling the allocator.

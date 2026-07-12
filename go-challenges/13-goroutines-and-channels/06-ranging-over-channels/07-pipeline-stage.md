@@ -26,13 +26,6 @@ Implement: `Stage[T, U any](in <-chan T, fn func(T) (U, bool)) <-chan U` — a g
 Test: chaining a map stage then a filter stage produces the transformed-and-filtered result; an empty input closes the output immediately; running the pipeline repeatedly leaves no goroutine leak (a `runtime.NumGoroutine` settle check).
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/06-ranging-over-channels/07-pipeline-stage/cmd/demo
-cd go-solutions/13-goroutines-and-channels/06-ranging-over-channels/07-pipeline-stage
-```
-
 ### The close-downstream-when-upstream-closes contract
 
 A stage does exactly three things: range its input, apply a per-value function

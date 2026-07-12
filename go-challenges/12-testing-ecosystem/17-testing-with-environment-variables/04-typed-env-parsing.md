@@ -22,13 +22,6 @@ Implement: `Load()` parsing `HTTP_TIMEOUT` (duration), `MAX_CONNS` (bounded int)
 Test: per-field valid/invalid tables via `t.Setenv`; assert exact `time.Duration`, the truthy/falsy `ParseBool` set, range rejection, and that messages name the key.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/17-testing-with-environment-variables/04-typed-env-parsing/cmd/demo
-cd go-solutions/12-testing-ecosystem/17-testing-with-environment-variables/04-typed-env-parsing
-```
-
 ## Typed parsing, and why the error message is half the job
 
 Each field uses the right stdlib parser: `time.ParseDuration` for `HTTP_TIMEOUT`,

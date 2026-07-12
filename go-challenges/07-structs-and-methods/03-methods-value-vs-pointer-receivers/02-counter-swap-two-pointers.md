@@ -28,13 +28,6 @@ Implement: `Counter` with pointer receivers, plus `Swap(other *Counter)` that ex
 Test: `Swap` exchanges the two values; `Swap(nil)` leaves the receiver unchanged and does not panic; `Swap` performs zero heap allocations.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/03-methods-value-vs-pointer-receivers/02-counter-swap-two-pointers/cmd/demo
-cd go-solutions/07-structs-and-methods/03-methods-value-vs-pointer-receivers/02-counter-swap-two-pointers
-```
-
 ### One method, two mutations
 
 `Swap` has a pointer receiver (`c *Counter`) and a pointer parameter

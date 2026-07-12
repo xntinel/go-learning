@@ -29,8 +29,6 @@ Verify: `go test -race ./...` for the unit path; `go test -tags docker -race ./.
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/54-cloud-native-platform-and-orchestration/01-docker-engine-sdk/01-ephemeral-job-runner/cmd/demo
-cd go-solutions/54-cloud-native-platform-and-orchestration/01-docker-engine-sdk/01-ephemeral-job-runner
 go get github.com/docker/docker@latest
 ```
 

@@ -85,13 +85,6 @@ the caller ever explicitly passing the ID to the log call.
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/30-production-patterns/05-request-id-propagation/05-request-id-propagation/cmd/demo
-cd go-solutions/30-production-patterns/05-request-id-propagation/05-request-id-propagation
-```
-
 This is a library package. You verify it with `go test`.
 
 ### Exercise 1: Core Package — Context Key, ID Generator, Middleware, and Transport

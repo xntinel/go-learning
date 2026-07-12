@@ -23,12 +23,6 @@ cmd/
 - Test: `interp_test.go` checks arithmetic results and precedence, division by zero, parse errors, the S-expression rendering, and subcommand dispatch.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/40-capstone-language-interpreter/08-full-interpreter-monkey/04-interpreter-pipeline-dispatch/cmd/demo && cd go-solutions/40-capstone-language-interpreter/08-full-interpreter-monkey/04-interpreter-pipeline-dispatch
-```
-
 ### The pipeline as composed stages
 
 The interpreter is four stages, each with a contract so narrow it can be read in isolation: the lexer turns text into tokens, the parser turns tokens into a tree, the evaluator turns a tree into a value, and the dispatch layer chooses how far down that chain a given subcommand runs. `Lex` produces a flat slice of tokens terminated by an `EOF` marker so the parser always has a sentinel to stop on rather than a length check at every step. The parser never sees a byte of source and the evaluator never sees a token; each stage consumes only the previous stage's output. That is what lets the binary expose `tokens` (stop after stage one), `ast` (stop after stage two), and `run` (run all the way through) as three views of one pipeline rather than three separate programs.

@@ -26,13 +26,6 @@ changecache/                independent module: example.com/changecache
 - Test: comparable values take the `==` path; a `[]byte` value must not panic and detects change correctly; a `recover`-based test proves the naive `==` version panics.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/05-struct-comparison-and-equality/04-interface-field-comparison-panic/cmd/demo
-cd go-solutions/07-structs-and-methods/05-struct-comparison-and-equality/04-interface-field-comparison-panic
-```
-
 ### Why `oldVal == newVal` is a landmine on `any`
 
 The cache stores `any`, so `oldVal` and `newVal` are interface values. Comparing two

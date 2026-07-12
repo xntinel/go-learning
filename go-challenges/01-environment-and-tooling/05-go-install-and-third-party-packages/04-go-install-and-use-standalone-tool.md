@@ -26,13 +26,6 @@ Implement: `Fix(filename string, src []byte) (out []byte, changed bool, err erro
 Test: table cases (missing import gets added; already-clean source is unchanged) plus an `Example`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/05-go-install-and-third-party-packages/04-go-install-and-use-standalone-tool/cmd/demo
-cd go-solutions/01-environment-and-tooling/05-go-install-and-third-party-packages/04-go-install-and-use-standalone-tool
-```
-
 ### Installing the tool, and where it goes
 
 Install `goimports` as a runnable command:

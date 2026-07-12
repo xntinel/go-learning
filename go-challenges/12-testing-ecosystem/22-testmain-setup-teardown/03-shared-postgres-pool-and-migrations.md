@@ -27,13 +27,6 @@ Implement: `Migrate(ctx, db)`, `UserStore` with `Insert(ctx, email) (int64, erro
 Test: a `TestMain`/`run()` that reads `TEST_DATABASE_DSN`, and when present opens+pings+migrates one pool, defers `Close` and a table drop; integration tests use the shared pool and skip when it is absent or `-short`.
 Verify: `go test -count=1 -race ./...` (runs unit tests; integration tests skip without a DSN)
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/22-testmain-setup-teardown/03-shared-postgres-pool-and-migrations/cmd/demo
-cd go-solutions/12-testing-ecosystem/22-testmain-setup-teardown/03-shared-postgres-pool-and-migrations
-```
-
 ### Why the pool lives in TestMain
 
 `sql.Open` returns a `*sql.DB` that is a *pool*, not a single connection, and it

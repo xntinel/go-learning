@@ -21,12 +21,6 @@ compression_test.go  gzip and none round-trips, the compression win, edge cases
 - Test: gzip and none both round-trip, a repetitive batch compresses below half its raw size, an empty batch round-trips, and an unknown codec errors.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/41-capstone-message-queue/04-producer-api-batching/03-batch-compression/cmd/demo && cd go-solutions/41-capstone-message-queue/04-producer-api-batching/03-batch-compression
-```
-
 ### A reversible frame, then a codec on top
 
 Compression only earns its place if the broker can read the batch back, so the serialization has to be reversible before any codec is applied. Each record is framed length-prefixed: a 4-byte little-endian key length, the key bytes, a 4-byte little-endian value length, the value bytes. Concatenating those frames gives a self-delimiting raw payload that `DecodePayload` walks by reading a length, slicing that many bytes, and advancing, with no separators to escape and no ambiguity about where one record ends.

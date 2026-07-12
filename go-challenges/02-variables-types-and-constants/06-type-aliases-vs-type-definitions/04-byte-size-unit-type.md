@@ -30,8 +30,6 @@ bytesize/                 independent module: example.com/bytesize
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/02-variables-types-and-constants/06-type-aliases-vs-type-definitions/04-byte-size-unit-type/cmd/demo
-cd go-solutions/02-variables-types-and-constants/06-type-aliases-vs-type-definitions/04-byte-size-unit-type
 go mod edit -go=1.24
 ```
 

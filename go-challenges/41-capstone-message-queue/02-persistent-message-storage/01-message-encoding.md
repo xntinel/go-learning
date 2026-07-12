@@ -19,12 +19,6 @@ store_test.go        round-trip table, exhaustive bit-flip detection, short-buff
 - Test: `store_test.go` round-trips several messages, flips every body byte and asserts each flip is caught, and rejects buffers shorter than a header.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/41-capstone-message-queue/02-persistent-message-storage/01-message-encoding/cmd/demo && cd go-solutions/41-capstone-message-queue/02-persistent-message-storage/01-message-encoding
-```
-
 ### Why this exact layout
 
 A message has a fixed part — its offset and timestamp — and three variable parts — the key, the value, and a list of headers. To write all of that into a flat byte stream so a reader can pull it back out with no external schema, every variable field is preceded by its length. The reader thus always knows how many bytes to consume next; it never has to guess or scan for a terminator. This is length-prefixed framing, and the layout is:

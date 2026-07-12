@@ -24,13 +24,6 @@ Implement: `Attempts(ctx, maxAttempts, base) iter.Seq2[int, time.Duration]` with
 Test: success on attempt 3 breaks after 3 yields; exhaustion yields exactly N with doubling delays; a pre-cancelled context yields zero; a mid-way cancel stops promptly.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/09-range-over-integers-and-functions/08-retry-backoff-seq/cmd/demo
-cd go-solutions/03-control-flow/09-range-over-integers-and-functions/08-retry-backoff-seq
-```
-
 ## The design
 
 `Attempts` yields `(n+1, base<<n)` for `n` in `0..maxAttempts-1`: attempt numbers

@@ -25,13 +25,6 @@ latch/                      independent module: example.com/latch
 - Test: `M` waiters all block until exactly `N` `Done()` calls; `Wait()` on a zeroed latch returns immediately; extra `Done()` past zero neither panics nor goes negative.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/06-sync-cond/02-countdown-latch/cmd/demo
-cd go-solutions/15-sync-primitives/06-sync-cond/02-countdown-latch
-```
-
 ### Why Broadcast, and why the overshoot guard matters
 
 The predicate every waiter shares is "count == 0". When the last `Done()` drives

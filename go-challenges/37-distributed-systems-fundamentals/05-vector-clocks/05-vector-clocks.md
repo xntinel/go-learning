@@ -50,13 +50,6 @@ Vector clock size grows with the number of distinct node IDs ever seen. Systems 
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/37-distributed-systems-fundamentals/05-vector-clocks/05-vector-clocks/cmd/demo
-cd go-solutions/37-distributed-systems-fundamentals/05-vector-clocks/05-vector-clocks
-```
-
 This is a library, not a program. Verify with `go test`.
 
 ### Exercise 1: The Vector Clock Type

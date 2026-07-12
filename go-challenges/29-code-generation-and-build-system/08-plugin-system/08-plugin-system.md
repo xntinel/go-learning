@@ -41,7 +41,6 @@ The pointer indirection is the source of the most common bug in plugin code. `pl
 The `pipeline` package contains the `Transformer` interface and the `Run` / `RunWithTrace` functions. This is the only code that runs in the automated gate; it requires no `.so` files.
 
 ```bash
-mkdir -p go-solutions/29-code-generation-and-build-system/08-plugin-system/08-plugin-system && cd go-solutions/29-code-generation-and-build-system/08-plugin-system/08-plugin-system
 mkdir -p pipeline cmd/pluginhost plugins/uppercase plugins/reverse
 ```
 

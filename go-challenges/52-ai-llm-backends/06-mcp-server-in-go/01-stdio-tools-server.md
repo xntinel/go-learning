@@ -31,8 +31,6 @@ recordsmcp/                 independent module: example.com/recordsmcp
 Set up the module. The SDK is an external dependency, so add it after `init`:
 
 ```bash
-mkdir -p go-solutions/52-ai-llm-backends/06-mcp-server-in-go/01-stdio-tools-server/cmd/demo
-cd go-solutions/52-ai-llm-backends/06-mcp-server-in-go/01-stdio-tools-server
 go mod edit -go=1.26
 go get github.com/modelcontextprotocol/go-sdk@latest
 ```

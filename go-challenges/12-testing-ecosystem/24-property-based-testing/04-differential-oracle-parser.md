@@ -33,8 +33,6 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/12-testing-ecosystem/24-property-based-testing/04-differential-oracle-parser/cmd/demo
-cd go-solutions/12-testing-ecosystem/24-property-based-testing/04-differential-oracle-parser
 go mod edit -go=1.26
 go get pgregory.net/rapid@latest
 ```

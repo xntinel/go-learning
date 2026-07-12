@@ -29,8 +29,6 @@ grepmatcher/                       module: example.com/grepmatcher
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/11-packages-and-modules/01-package-declaration-and-imports/01-grep-matcher-library/internal/grep go-solutions/11-packages-and-modules/01-package-declaration-and-imports/01-grep-matcher-library/cmd/demo
-cd go-solutions/11-packages-and-modules/01-package-declaration-and-imports/01-grep-matcher-library
 go mod edit -go=1.26
 ```
 

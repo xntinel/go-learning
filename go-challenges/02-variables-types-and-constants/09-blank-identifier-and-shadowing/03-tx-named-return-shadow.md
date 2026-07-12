@@ -26,13 +26,6 @@ bank/                           module: example.com/bank
 - Test: a `fakeTx` recording Commit/Rollback; assert commit-on-success, rollback-and-wrapped-error-on-step-failure (`errors.Is`), and rollback-on-panic.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/09-blank-identifier-and-shadowing/03-tx-named-return-shadow/cmd/demo
-cd go-solutions/02-variables-types-and-constants/09-blank-identifier-and-shadowing/03-tx-named-return-shadow
-```
-
 ### Why the named return must be assigned with `=`
 
 The deferred guard is the only place that decides commit versus rollback, and it

@@ -27,13 +27,6 @@ Implement: an `io.Reader` wrapper that retries a read up to `maxRetry` times whe
 Test: `io.ReadAll` recovers the full payload despite an injected `ErrTimeout`; a distinct sentinel is surfaced with no extra reads (counted by a spy); an always-timeout source hits the cap and returns the timeout deterministically.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/10-testing-readers-with-iotest/05-timeout-reader-retry-loop/cmd/demo
-cd go-solutions/12-testing-ecosystem/10-testing-readers-with-iotest/05-timeout-reader-retry-loop
-```
-
 ### Retry only what is retryable, and only bounded
 
 The wrapper's whole value is discrimination. `iotest.TimeoutReader` returns

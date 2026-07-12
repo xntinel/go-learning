@@ -29,13 +29,6 @@ bootstrap/                   independent module: example.com/bootstrap
 - Test (fake subsystems): all-start then cancel stops everything in reverse order; a failure starting subsystem 2 unwinds subsystem 1 only and never starts 3; multiple `Stop` errors all surface via `errors.Join`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/07-defer-semantics-and-ordering/09-graceful-shutdown-defer-stack/cmd/demo
-cd go-solutions/03-control-flow/07-defer-semantics-and-ordering/09-graceful-shutdown-defer-stack
-```
-
 ### Why register the shutdown right after each start
 
 The dependency order of subsystems is their startup order: the HTTP server depends

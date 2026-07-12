@@ -28,13 +28,6 @@ Implement: `Ring` with `New`, `Add(node)`, `Remove(node)`, `Get(key) (string, bo
 Test: a fixed key maps to a known node, wraparound past the max point, every node gets a nonzero share, and removing a node only redistributes its own keys.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/12-sorted-collections-binary-search/04-consistent-hash-ring/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/12-sorted-collections-binary-search/04-consistent-hash-ring
-```
-
 ### Virtual nodes, the circle, and the wraparound
 
 Each physical node is placed at many points on the ring — *virtual nodes* — so

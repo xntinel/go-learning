@@ -29,13 +29,6 @@ Implement: `RenderEmail(kind string, data map[string]any) (string, error)` over 
 Test: a table of named cases, each mapped by a filesystem-safe name to its own golden, run under `t.Run`; `-update` regenerates all cases; a failing case names its file.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/19-golden-file-testing/08-table-driven-per-case-goldens/cmd/demo go-solutions/12-testing-ecosystem/19-golden-file-testing/08-table-driven-per-case-goldens/testdata
-cd go-solutions/12-testing-ecosystem/19-golden-file-testing/08-table-driven-per-case-goldens
-```
-
 ### One golden per subtest, and the name mapping
 
 The temptation with many fixtures is a single golden holding all of them

@@ -37,8 +37,6 @@ statereach/                   independent module: example.com/statereach
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/07-recursive-functions-and-stack-depth/26-state-machine-reachability-analysis/cmd/demo
-cd go-solutions/04-functions/07-recursive-functions-and-stack-depth/26-state-machine-reachability-analysis
 go mod edit -go=1.24
 ```
 

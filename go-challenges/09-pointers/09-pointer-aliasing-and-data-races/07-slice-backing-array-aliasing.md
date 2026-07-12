@@ -29,13 +29,6 @@ slicebuf/                  independent module: example.com/slicebuf
 - Test: a deterministic single-goroutine test showing `append` mutates an earlier sub-slice; a concurrent test where each goroutine processes its own cloned batch, `-race` clean.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/09-pointer-aliasing-and-data-races/07-slice-backing-array-aliasing/cmd/demo
-cd go-solutions/09-pointers/09-pointer-aliasing-and-data-races/07-slice-backing-array-aliasing
-```
-
 ### Why sub-slices are a data-dependent race
 
 A slice is a three-word header: a pointer to a backing array, a length, and a

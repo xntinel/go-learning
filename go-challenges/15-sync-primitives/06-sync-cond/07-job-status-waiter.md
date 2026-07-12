@@ -23,13 +23,6 @@ jobwait/                    independent module: example.com/jobwait
 - Test: a waiter parks until the matching `SetStatus` and ignores non-matching ones; a `ctx` timeout returns `context.DeadlineExceeded` on `synctest`'s fake clock with zero real sleeping; waiters on different jobs stay honest across cross-job Broadcasts; the watcher goroutine never leaks on the happy path.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/06-sync-cond/07-job-status-waiter/cmd/demo
-cd go-solutions/15-sync-primitives/06-sync-cond/07-job-status-waiter
-```
-
 ### Heterogeneous predicates force Broadcast
 
 Every waiter here waits on its OWN predicate — `jobs["import-7"] == "done"`,

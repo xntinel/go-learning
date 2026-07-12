@@ -31,13 +31,6 @@ Test: `TestGetPoolInitializesExactlyOnce` launches 200 concurrent `GetPool`
 calls, asserts one shared pointer and `InitCount()==1`, under `-race`.
 Verify: `go test -count=1 -race ./...`; then `go run -race ./cmd/racy`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/21-race-detector/04-sync-once-lazy-pool-init/cmd/demo go-solutions/12-testing-ecosystem/21-race-detector/04-sync-once-lazy-pool-init/cmd/racy
-cd go-solutions/12-testing-ecosystem/21-race-detector/04-sync-once-lazy-pool-init
-```
-
 ### Why check-then-act races, and why sync.Once fixes it
 
 The naive lazy init is three steps: read `p`, test it against `nil`, and if nil,

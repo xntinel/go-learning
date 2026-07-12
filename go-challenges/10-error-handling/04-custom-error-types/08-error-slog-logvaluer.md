@@ -29,8 +29,6 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/10-error-handling/04-custom-error-types/08-error-slog-logvaluer/cmd/demo
-cd go-solutions/10-error-handling/04-custom-error-types/08-error-slog-logvaluer
 go mod edit -go=1.24
 ```
 

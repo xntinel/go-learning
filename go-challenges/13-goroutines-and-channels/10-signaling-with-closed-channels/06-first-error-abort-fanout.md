@@ -68,13 +68,6 @@ mechanism so the closed-channel broadcast underneath is visible; in production,
 prefer `errgroup` (or `WithCancelCause`) so cancellation, error capture, and
 propagation come for free.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/10-signaling-with-closed-channels/06-first-error-abort-fanout/cmd/demo
-cd go-solutions/13-goroutines-and-channels/10-signaling-with-closed-channels/06-first-error-abort-fanout
-```
-
 Create `group.go`:
 
 ```go

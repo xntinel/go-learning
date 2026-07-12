@@ -29,13 +29,6 @@ concat/                      independent module: example.com/concat
 - Test: the output is the exact in-order concatenation (not an interleaving), it closes exactly once after the last input drains, zero inputs yields an immediately-closed output, interleaved empty inputs are skipped, and a later segment is not read until the earlier one is exhausted.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/04-channel-direction/11-sequential-segment-replay-concat/cmd/demo
-cd go-solutions/13-goroutines-and-channels/04-channel-direction/11-sequential-segment-replay-concat
-```
-
 ### Why one drain goroutine, not one per input
 
 Fan-in (the previous chapter's `Merge`) launches one goroutine per input so all

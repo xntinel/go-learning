@@ -29,8 +29,6 @@ limiter/                     module: example.com/limiter
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/13-goroutines-and-channels/03-buffered-vs-unbuffered-channels/05-concurrency-limiter-token-buffer/cmd/demo
-cd go-solutions/13-goroutines-and-channels/03-buffered-vs-unbuffered-channels/05-concurrency-limiter-token-buffer
 go mod edit -go=1.26
 ```
 

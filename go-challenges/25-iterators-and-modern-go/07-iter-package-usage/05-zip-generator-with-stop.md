@@ -19,12 +19,6 @@ zip_test.go          equal lengths, uneven lengths stop the longer input, early 
 - Test: pair equal-length inputs, prove the longer input is stopped (not drained) when lengths differ, and prove an early `break` stops both.
 - Verify: `go test -run 'TestZip|TestZipUneven|TestZipEarly' -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/25-iterators-and-modern-go/07-iter-package-usage/05-zip-generator-with-stop/cmd/demo && cd go-solutions/25-iterators-and-modern-go/07-iter-package-usage/05-zip-generator-with-stop
-```
-
 ### Why stop is the whole point of Zip
 
 `Zip` turns two single-value push iterators into one `iter.Seq2[A, B]` that yields aligned pairs: the first of `a` with the first of `b`, the second with the second, and so on, stopping as soon as either input is exhausted. Like `Merge`, it must advance two iterators independently, so it pulls both. Unlike `Merge`, the inputs are not symmetric in length-handling: when `Zip` stops because one side ran out, the *other* side is almost always still mid-stream, parked at a `yield` it expects to be resumed. That parked goroutine is exactly what `stop` exists to tear down.

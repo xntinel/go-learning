@@ -27,8 +27,6 @@ batchwindow/                independent module: example.com/batch-window-flush-d
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/01-if-else-and-init-statements/17-batch-window-flush-decision
-cd go-solutions/03-control-flow/01-if-else-and-init-statements/17-batch-window-flush-decision
 go mod edit -go=1.24
 ```
 

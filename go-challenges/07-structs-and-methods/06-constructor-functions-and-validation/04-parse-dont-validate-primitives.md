@@ -27,13 +27,6 @@ primitives/                  independent module: example.com/parse-dont-validate
 - Test: valid inputs construct and their accessor returns the canonical value; malformed email (no `@`, display-name form), non-numeric or out-of-range port, and empty string each return the sentinel; and the zero value of each type is inert without the constructor.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/06-constructor-functions-and-validation/04-parse-dont-validate-primitives/cmd/demo
-cd go-solutions/07-structs-and-methods/06-constructor-functions-and-validation/04-parse-dont-validate-primitives
-```
-
 ### Parsing that returns a type discharges the obligation
 
 The difference between validating and parsing is where the proof of validity

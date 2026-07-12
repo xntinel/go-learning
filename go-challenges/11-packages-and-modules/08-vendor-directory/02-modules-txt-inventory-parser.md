@@ -25,13 +25,6 @@ modtxt/                      independent module: example.com/modtxt
 - Test: fixtures covering explicit-only, mixed explicit/indirect, both `## go 1.21` and `## explicit; go 1.21` forms, a replace-annotated entry, and a malformed body that returns a wrapped `ErrMalformed`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/11-packages-and-modules/08-vendor-directory/02-modules-txt-inventory-parser/cmd/demo
-cd go-solutions/11-packages-and-modules/08-vendor-directory/02-modules-txt-inventory-parser
-```
-
 ### The grammar of modules.txt
 
 The file is line-oriented and has exactly three line shapes. A module header

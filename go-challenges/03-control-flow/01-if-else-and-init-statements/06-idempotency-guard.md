@@ -26,13 +26,6 @@ idempotency/                independent module: example.com/idempotency
 - Test: missing key returns 400 and the handler is NOT invoked; first keyed call executes once and stores; identical repeat replays without re-invoking; different keys execute independently; concurrent duplicate keys execute the side effect at most once under `-race`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/01-if-else-and-init-statements/06-idempotency-guard/cmd/demo
-cd go-solutions/03-control-flow/01-if-else-and-init-statements/06-idempotency-guard
-```
-
 ## Guard, look up, capture, replay — all under one lock
 
 `Guard` wraps a handler and enforces exactly-once on unsafe methods (POST, PUT,

@@ -24,13 +24,6 @@ pollute/                    independent module: example.com/pollute
 - Test: `TestBeforeGetReturnsValue` (through the `Service` interface), `TestAfterGetReturnsValue` (through the concrete `Store`), and `TestBeforeAndAfterProduceSameOutput` comparing `Get` outputs on identical input.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/12-interface-pollution-anti-patterns/03-behavior-preserving-refactor-test/cmd/demo
-cd go-solutions/08-interfaces/12-interface-pollution-anti-patterns/03-behavior-preserving-refactor-test
-```
-
 ### Why a differential test is the right proof
 
 A refactor that removes an interface is a claim: "these two shapes have the same

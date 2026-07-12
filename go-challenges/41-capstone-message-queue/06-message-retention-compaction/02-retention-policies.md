@@ -19,12 +19,6 @@ policy_test.go         time boundary cases, oldest-first eviction, the never-emp
 - Test: the time boundary (a segment exactly at the edge is kept), oldest-first eviction under a size cap, and the floor that keeps one oversized segment alive.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/41-capstone-message-queue/06-message-retention-compaction/02-retention-policies/cmd/demo && cd go-solutions/41-capstone-message-queue/06-message-retention-compaction/02-retention-policies
-```
-
 ### Time retention: ask the youngest message
 
 `TimeRetention.ShouldDelete` reports whether a whole segment has fallen out of the retention window. The key decision is *which* timestamp to test. The segment is ordered by offset, so its last message is the youngest; if even that youngest message is older than `MaxAge`, then every message in the segment is, and the segment is wholly expired and safe to delete. Testing `LastTimestamp()` is therefore both correct and the most conservative choice — a segment is deleted only when nothing in it is still in-window. Testing `FirstTimestamp()` instead would delete a segment while some of its messages were still inside the window, dropping live data.

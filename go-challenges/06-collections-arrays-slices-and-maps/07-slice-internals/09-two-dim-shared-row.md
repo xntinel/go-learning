@@ -26,13 +26,6 @@ Implement: `ExportBuggy(records [][]string) [][]string` reusing one scratch buff
 Test: the buggy export makes every row equal to the last record; the safe export produces distinct rows with independent backing arrays; mutating the scratch buffer after a safe export does not change emitted rows.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/09-two-dim-shared-row/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/09-two-dim-shared-row
-```
-
 ### Why every row ends up identical
 
 To avoid per-row allocations, the exporter reuses one `scratch` buffer: for each

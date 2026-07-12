@@ -18,13 +18,6 @@ For floats, use `math.Float64bits` and `math.Float64frombits`. Unsafe punning is
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/28-unsafe-and-cgo/03-type-punning/03-type-punning
-cd go-solutions/28-unsafe-and-cgo/03-type-punning/03-type-punning
-```
-
 ### Exercise 1: Parse A Header
 
 Create `header.go`:

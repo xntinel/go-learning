@@ -27,12 +27,6 @@ greeterfork/                independent module: example.com/greeter (a local for
 - Verify: build/test the fork; then drive the app-side `replace`/`dropreplace` workflow with `go mod edit` and `go list -m`.
 
 Set up the fork module (its path is the *upstream* module path — a fork keeps the
-original import path so consumers do not have to rewrite imports):
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/02-go-modules-and-dependencies/06-replace-directive-for-local-and-fork-development/cmd/demo
-cd go-solutions/01-environment-and-tooling/02-go-modules-and-dependencies/06-replace-directive-for-local-and-fork-development
-```
 
 ### Why replace, and its two hard rules
 
@@ -167,8 +161,6 @@ Now create the consuming app in a sibling directory and wire the `replace` with
 `go mod edit` (which edits `go.mod` mechanically, no manual editing):
 
 ```bash
-mkdir -p go-solutions/01-environment-and-tooling/02-go-modules-and-dependencies/06-replace-directive-for-local-and-fork-development/cmd/demo
-cd go-solutions/01-environment-and-tooling/02-go-modules-and-dependencies/06-replace-directive-for-local-and-fork-development
 go mod edit -require example.com/greeter@v0.0.0
 go mod edit -replace example.com/greeter@v0.0.0=../greeterfork
 ```

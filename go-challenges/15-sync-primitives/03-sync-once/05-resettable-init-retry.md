@@ -26,13 +26,6 @@ resettable-init-retry/        module: example.com/resettable-init-retry
 - Test: a dial that fails twice then succeeds returns the resource and runs `dial` exactly 3 times; a permanently-failing dial stops at the cap and returns the last error; concurrent `Get` during the failing window never double-runs a successful attempt.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/03-sync-once/05-resettable-init-retry/cmd/demo
-cd go-solutions/15-sync-primitives/03-sync-once/05-resettable-init-retry
-```
-
 ### Retry requires a new Once instance, guarded
 
 A `Once` cannot be un-done; retry-after-failure therefore means throwing the

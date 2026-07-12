@@ -19,12 +19,6 @@ logtop_test.go       top-3 aggregate + early-stop pull count, filter/parse corre
 - Test: a `lines -> Filter -> Map -> Take(3)` pipeline returns the correct top-3 `Entry` values and their score sum; the line scan pulls *exactly* enough lines to find three records and stops, never reaching a hundred thousand lower rows or a poison row below them.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/25-iterators-and-modern-go/06-composing-iterators/05-log-top-n-pipeline/cmd/demo && cd go-solutions/25-iterators-and-modern-go/06-composing-iterators/05-log-top-n-pipeline
-```
-
 ### Lines in, records out, stop at N
 
 The pipeline is four composed stages over a line source. `strings.Lines(buf)` is the source: it yields each line of the buffer lazily, one at a time, without splitting the whole string up front. `Filter(lines, IsData)` drops blank lines and `#` comments. `Map(data, ParseEntry)` turns each surviving `"name,score"` line into an `Entry{Name, Score}`. `Take(entries, 3)` keeps the first three. Because every stage is pull-driven and `Take` returns the instant it has three records, the stop propagates back through `Map`, `Filter`, and the line source: `strings.Lines` is asked for exactly as many lines as it takes to produce three records, and then never again.

@@ -26,13 +26,6 @@ errclassify/                 independent module: example.com/errclassify
 - Test: a stub `Store` returning a per-case injected error; a table asserting the mapped status, the classification via `errors.Is`/`errors.As`, and that the original cause remains unwrappable.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/11-mock-interfaces-for-testing/09-table-driven-stubbed-error-classification/cmd/demo
-cd go-solutions/08-interfaces/11-mock-interfaces-for-testing/09-table-driven-stubbed-error-classification
-```
-
 ### Classification is the contract, and a stub steers it
 
 `Handler.Fetch` calls the `Store`, and when the store fails it must translate the

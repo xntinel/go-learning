@@ -28,13 +28,6 @@ Test: a serial contract, a 1000-goroutine fan-out asserting `Get()==1000`, a
 parallel subtest fan-out, and a 10,000-increment serial pin.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/14-parallel-tests/01-parallel-safe-counter/cmd/demo
-cd go-solutions/12-testing-ecosystem/14-parallel-tests/01-parallel-safe-counter
-```
-
 ### Why atomic and not a mutex
 
 A counter has exactly one operation that mutates state — add one — and one that

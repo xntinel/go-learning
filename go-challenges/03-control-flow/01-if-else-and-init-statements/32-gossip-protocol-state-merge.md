@@ -32,8 +32,6 @@ gossip/                       independent module: example.com/gossip-protocol-st
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/01-if-else-and-init-statements/32-gossip-protocol-state-merge/cmd/demo
-cd go-solutions/03-control-flow/01-if-else-and-init-statements/32-gossip-protocol-state-merge
 go mod edit -go=1.24
 ```
 

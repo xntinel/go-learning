@@ -28,13 +28,6 @@ Test: a schedule table test; `FuzzBackoffBounds` asserting `0 <= d <= max` acros
 `(int, int64, int64)` inputs.
 Verify: `go test -race ./...`, then `go test -fuzz=FuzzBackoffBounds -fuzztime=2s`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/06-fuzz-testing/10-backoff-bounds/cmd/demo
-cd go-solutions/12-testing-ecosystem/06-fuzz-testing/10-backoff-bounds
-```
-
 ### Detecting shift overflow before it happens
 
 Capped exponential backoff is "double the delay each attempt, but never exceed a

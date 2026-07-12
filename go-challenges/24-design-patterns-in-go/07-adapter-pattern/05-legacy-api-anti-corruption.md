@@ -20,13 +20,6 @@ billing_test.go                   asserts unit/currency translation and decline/
 - Test: that the same domain request approves on both versions, that a decline surfaces as `ErrDeclined` and a recoverable `*DeclineError`, that a processor failure is `ErrUpstream`, that a transport failure keeps the vendor sentinel reachable, and that the unit/currency translation is exact.
 - Verify: `go test -race ./...` and `go run ./cmd/demo`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/24-design-patterns-in-go/07-adapter-pattern/05-legacy-api-anti-corruption/legacy go-solutions/24-design-patterns-in-go/07-adapter-pattern/05-legacy-api-anti-corruption/cmd/demo
-cd go-solutions/24-design-patterns-in-go/07-adapter-pattern/05-legacy-api-anti-corruption
-```
-
 ### The vendor we do not control
 
 This is the corruption the layer exists to contain, so build it first and read how hostile it is. Both client versions return a Go `error` only for a genuine transport failure (`ErrTransport`); every business outcome -- approval, decline, processor error, bad currency -- is encoded *in-band* in a field of an otherwise-successful response. That is the status-code-as-error model, and it is exactly what a domain must never be forced to speak. v1 uses abbreviated field names, amounts in dollars as a `float64`, a lowercased currency, and a numeric `RC` result code. v2 "modernizes" to different names again, amounts in minor units as `int64`, an uppercased ISO code, and an `Outcome` string with a separate decline code. Neither is our domain.

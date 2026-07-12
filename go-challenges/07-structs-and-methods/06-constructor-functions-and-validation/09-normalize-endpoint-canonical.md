@@ -27,13 +27,6 @@ endpoint/                    independent module: example.com/normalize-endpoint-
 - Test: distinct spellings of one endpoint construct to an equal canonical string; invalid URLs and unsupported schemes return sentinels; the canonical form is idempotent; and two equal endpoints work as identical map keys.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/06-constructor-functions-and-validation/09-normalize-endpoint-canonical/cmd/demo
-cd go-solutions/07-structs-and-methods/06-constructor-functions-and-validation/09-normalize-endpoint-canonical
-```
-
 ### Normalization is a constructor's job
 
 The equality a cache or pool relies on is not a property of the raw input — it is

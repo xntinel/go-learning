@@ -21,12 +21,6 @@ reader_test.go       tail a live WAL across writes; resume from a chosen LSN acr
 - Test: `reader_test.go` tails an active WAL across pre- and post-creation writes and asserts every record arrives, and resumes from a chosen LSN across a segment boundary.
 - Verify: `go test -run 'TestReaderTailsActiveWAL|TestReaderStartsFromLSN' -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/01-write-ahead-log/04-tailing-reader/cmd/demo && cd go-solutions/39-capstone-database-engine/01-write-ahead-log/04-tailing-reader
-```
-
 ### Why tailing is its own problem
 
 Reading a sealed log is a finite scan: open each segment, decode until EOF, stop. Tailing a live log inverts two of those assumptions. EOF is no longer terminal — it means "no more data *yet*", and the right response is to wait, not to quit. And the file you are reading is not the file you will be reading a moment later, because the writer rotates to a new segment when the current one fills. A tailing reader therefore needs a small state machine: decode the next record; on EOF decide whether the writer has rotated (a successor segment exists), or simply has not written more (poll and retry), or has shut down (return EOF for real). Getting that three-way decision right is the whole exercise.

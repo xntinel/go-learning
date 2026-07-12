@@ -31,8 +31,6 @@ dedupstream/                   module example.com/dedupstream
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/09-slices-package/02-dedup-sorted-stream-compact-tail/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/09-slices-package/02-dedup-sorted-stream-compact-tail
 go mod edit -go=1.24
 ```
 

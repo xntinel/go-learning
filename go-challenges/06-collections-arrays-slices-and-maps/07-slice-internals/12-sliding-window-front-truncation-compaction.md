@@ -59,8 +59,6 @@ windowprune/                   module example.com/windowprune
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/12-sliding-window-front-truncation-compaction
-cd go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/12-sliding-window-front-truncation-compaction
 go mod edit -go=1.24
 ```
 

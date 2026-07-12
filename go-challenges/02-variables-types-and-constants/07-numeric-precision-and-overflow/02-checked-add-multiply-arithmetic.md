@@ -32,13 +32,6 @@ returning `ErrOverflow`; `Add(MinInt64,-1)` returning `ErrOverflow` for the lowe
 bound.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/07-numeric-precision-and-overflow/02-checked-add-multiply-arithmetic/cmd/demo
-cd go-solutions/02-variables-types-and-constants/07-numeric-precision-and-overflow/02-checked-add-multiply-arithmetic
-```
-
 ### The two guards, and why they are written this way
 
 `Add` must reject a sum that would leave the `int64` range in *either* direction,

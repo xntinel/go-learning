@@ -24,13 +24,6 @@ Implement: `Retry` doing capped exponential backoff, sleeping through an injecte
 Test: inject a recording sleeper — assert the recorded delay schedule equals the expected capped-exponential sequence, that `Retry` returns after k failures, returns the last error when attempts exhaust, and returns `context.Canceled` when the injected sleeper is cancelled.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/16-testing-time-dependent-code/02-backoff-retry-injected-sleep/cmd/demo
-cd go-solutions/12-testing-ecosystem/16-testing-time-dependent-code/02-backoff-retry-injected-sleep
-```
-
 ### The injected Sleeper is the whole seam
 
 The one time-dependent operation in a retry loop is the wait between attempts.

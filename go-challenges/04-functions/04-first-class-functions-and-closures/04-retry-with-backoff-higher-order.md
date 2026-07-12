@@ -25,13 +25,6 @@ retry/                     independent module: example.com/retry
 - Test: an op that fails K times then succeeds is called exactly K+1 times with a no-op sleeper; a `Permanent`-wrapped error returns immediately after one call; a cancelled context returns a wrapped `ctx.Err()` without further attempts.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/04-first-class-functions-and-closures/04-retry-with-backoff-higher-order/cmd/demo
-cd go-solutions/04-functions/04-first-class-functions-and-closures/04-retry-with-backoff-higher-order
-```
-
 ### The operation is a parameter, and so is time
 
 `Retry` is higher-order twice over: `op` is the function it retries, and `Sleep`

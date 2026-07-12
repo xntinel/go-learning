@@ -28,13 +28,6 @@ compactrecord/             independent module: example.com/compactrecord
 - Test: assert `Sizeof(CompactBucket) < Sizeof(NaiveBucket)`, that the bitset round-trips each flag, and that the conversion is lossless (a fuzz/table round-trip).
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/09-struct-memory-layout-and-padding/07-compact-hot-path-record/cmd/demo
-cd go-solutions/07-structs-and-methods/09-struct-memory-layout-and-padding/07-compact-hot-path-record
-```
-
 ### What makes the naive record fat, and how the compact one slims it
 
 `NaiveBucket` is written the obvious way: a `string` key, two `time.Time`

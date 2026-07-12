@@ -29,8 +29,6 @@ accessors/                 independent module: example.com/accessors
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/01-function-declaration-and-multiple-return-values/01-typed-accessors-value-error/cmd/demo
-cd go-solutions/04-functions/01-function-declaration-and-multiple-return-values/01-typed-accessors-value-error
 go mod edit -go=1.25
 ```
 

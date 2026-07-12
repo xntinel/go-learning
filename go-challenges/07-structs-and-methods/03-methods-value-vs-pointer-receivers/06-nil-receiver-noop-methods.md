@@ -28,13 +28,6 @@ Implement: `FlagSet` over a `map[string]bool`, `New(flags map[string]bool) *Flag
 Test: a `nil *FlagSet` reports every flag disabled without panicking, an enabled flag reports true, an unknown flag reports false; a recover-based test pins that the nil path does not panic.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/03-methods-value-vs-pointer-receivers/06-nil-receiver-noop-methods/cmd/demo
-cd go-solutions/07-structs-and-methods/03-methods-value-vs-pointer-receivers/06-nil-receiver-noop-methods
-```
-
 ### Making nil a usable zero value
 
 In a real service, feature flags are often optional: a code path asks "is flag X

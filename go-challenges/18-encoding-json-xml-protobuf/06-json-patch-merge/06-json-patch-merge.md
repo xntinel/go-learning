@@ -21,8 +21,6 @@ JSON Patch is an array of operations such as `add`, `remove`, and `replace`. Thi
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/18-encoding-json-xml-protobuf/06-json-patch-merge/06-json-patch-merge/cmd/demo
-cd go-solutions/18-encoding-json-xml-protobuf/06-json-patch-merge/06-json-patch-merge
 go mod edit -go=1.26
 ```
 

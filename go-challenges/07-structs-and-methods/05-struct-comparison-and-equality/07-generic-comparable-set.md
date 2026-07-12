@@ -26,13 +26,6 @@ idset/                      independent module: example.com/idset
 - Test: duplicates keep `Len` stable; `Equal` is order-insensitive; `Sorted` gives a golden order; instantiate with a comparable struct key.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/05-struct-comparison-and-equality/07-generic-comparable-set/cmd/demo
-cd go-solutions/07-structs-and-methods/05-struct-comparison-and-equality/07-generic-comparable-set
-```
-
 ### Why `comparable` is the constraint that makes this work
 
 `Set` stores its members as keys of a `map[T]struct{}`. A map key must be

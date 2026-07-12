@@ -26,13 +26,6 @@ email/                      independent module: example.com/email
 - Test: two addresses differing only in case/whitespace normalize equal and collide as one map key; a raw unnormalized string does not; the `Set` dedups; equal values compare `==`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/12-designing-a-domain-model/03-value-object-equality-and-map-keys/cmd/demo
-cd go-solutions/07-structs-and-methods/12-designing-a-domain-model/03-value-object-equality-and-map-keys
-```
-
 ### Why a value object must be comparable, and why normalization makes it mean something
 
 A value object should be usable as a map key. In Go a struct is a valid map key

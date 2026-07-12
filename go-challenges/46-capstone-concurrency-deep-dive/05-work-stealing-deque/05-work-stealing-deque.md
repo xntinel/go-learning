@@ -73,13 +73,6 @@ Do not reach for a work-stealing deque for a simple producer-consumer pipeline â
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/46-capstone-concurrency-deep-dive/05-work-stealing-deque/05-work-stealing-deque/cmd/demo
-cd go-solutions/46-capstone-concurrency-deep-dive/05-work-stealing-deque/05-work-stealing-deque
-```
-
 This is a library; verify it with `go test`.
 
 ### Exercise 1: The Circular Buffer and Deque Type

@@ -26,13 +26,6 @@ Implement: `ReadFrame` (read length, `make`, `io.ReadFull`), `ReadAll`, `WriteFr
 Test: concatenated frames round-trip with correct bytes and lengths; a truncated body yields `io.ErrUnexpectedEOF`; a clean boundary yields `io.EOF`; each returned frame is independent of the source stream.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/06-copy-and-full-slice-expression/08-length-prefixed-frame-reader/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/06-copy-and-full-slice-expression/08-length-prefixed-frame-reader
-```
-
 ### Why `make` + `io.ReadFull`, not `append` growth
 
 When the length is known before you read the body — here from a 4-byte prefix —

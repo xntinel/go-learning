@@ -27,13 +27,6 @@ allowset/                  independent module: example.com/allowset
 - Test: `Add` is idempotent, `Contains` reports membership, `Union`/`Intersect` are correct, `Sorted` is deterministic across insertion orders, and the value type is zero-width.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/03-set-membership-allowlist/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/03-set-membership-allowlist
-```
-
 ### Why struct{} and not bool
 
 The set stores presence, nothing else, so the value carries no information — it

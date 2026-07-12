@@ -26,13 +26,6 @@ draining/                  independent module: example.com/draining
 - Test: enqueue several requests, `Drain`, assert all accepted requests return valid responses while post-`Drain` calls return `ErrShuttingDown`; a hard `Stop` frees an in-flight caller with `ErrShuttingDown`; `Run` exits (done closed); counts show no request lost.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/09-channel-of-channels/05-graceful-drain-shutdown/cmd/demo
-cd go-solutions/13-goroutines-and-channels/09-channel-of-channels/05-graceful-drain-shutdown
-```
-
 ### Two shutdowns, one loop
 
 A hard stop is easy: close a `stop` channel, `Run` returns immediately, and any

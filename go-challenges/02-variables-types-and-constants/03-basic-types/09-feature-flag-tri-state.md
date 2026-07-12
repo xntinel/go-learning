@@ -25,13 +25,6 @@ flags/                     independent module: example.com/flags
 - Test: the strict parser accepts documented tokens and rejects `"yes"`/`""`/`"t"`; a `*bool` distinguishes unset from false where a `bool` cannot; the resolver keeps `tenant=true` when the override is unset but flips to false when the override is explicitly false.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/03-basic-types/09-feature-flag-tri-state/cmd/demo
-cd go-solutions/02-variables-types-and-constants/03-basic-types/09-feature-flag-tri-state
-```
-
 ### Why a plain bool cannot carry "unset"
 
 The zero value of `bool` is `false`. That is fine when the only two states are true and

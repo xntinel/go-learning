@@ -24,8 +24,6 @@ ordersort/                   independent module: example.com/ordersort
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/10-higher-order-functions/03-composable-comparators/cmd/demo
-cd go-solutions/04-functions/10-higher-order-functions/03-composable-comparators
 go mod edit -go=1.25
 ```
 

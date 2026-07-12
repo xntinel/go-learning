@@ -27,13 +27,6 @@ shutdown/                     independent module: example.com/shutdown
 - Test: one fake that implements `io.Closer` and one that does not; assert the closer's `Close` ran, the non-closer was skipped without panic, and a close error surfaces via `errors.Is`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/01-implicit-interface-satisfaction/09-optional-interface-capability-detection/cmd/demo
-cd go-solutions/08-interfaces/01-implicit-interface-satisfaction/09-optional-interface-capability-detection
-```
-
 ### Optional interfaces keep the primary interface narrow
 
 `Store` is the narrow interface the service uses at runtime — one method, `Get`.

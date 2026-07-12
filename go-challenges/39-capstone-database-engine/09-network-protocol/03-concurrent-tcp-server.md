@@ -24,12 +24,6 @@ server_test.go       a real TCP round-trip, per-connection state isolation, grac
 - Test: `server_test.go` drives a client over a real TCP socket through the handshake and a query, asserts two concurrent connections do not share state, and that `Serve` returns when its context is cancelled.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/09-network-protocol/03-concurrent-tcp-server/cmd/demo && cd go-solutions/39-capstone-database-engine/09-network-protocol/03-concurrent-tcp-server
-```
-
 ### How the server stays correct under concurrency
 
 `Serve` runs an accept loop in its own goroutine: each accepted connection gets a fresh goroutine and a fresh `ConnState`, registered with a `sync.WaitGroup`. Per-connection protocol state is never shared — a single shared `ConnState` would let one client see another's prepared statements and portals, a logical corruption a mutex cannot fix. The only shared mutable state is the active-connection count, and that is the one thing the `sync.Mutex` guards; it is bookkeeping, not protocol state.

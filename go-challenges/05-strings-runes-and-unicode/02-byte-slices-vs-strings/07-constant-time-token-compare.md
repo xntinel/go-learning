@@ -30,8 +30,6 @@ tokenauth/                  independent module: example.com/tokenauth
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/02-byte-slices-vs-strings/07-constant-time-token-compare/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/02-byte-slices-vs-strings/07-constant-time-token-compare
 go mod edit -go=1.25
 ```
 

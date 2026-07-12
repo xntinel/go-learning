@@ -22,7 +22,6 @@ validate_test.go       all-pass returns nil, all failures are collected, errors.
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/16-concurrency-patterns/06-errgroup-basic-usage/04-parallel-validation/cmd/demo && cd go-solutions/16-concurrency-patterns/06-errgroup-basic-usage/04-parallel-validation
 go get golang.org/x/sync/errgroup
 ```
 

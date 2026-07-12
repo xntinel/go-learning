@@ -29,13 +29,6 @@ hotconfig/                 independent module: example.com/hotconfig
 - Test: concurrent readers loop `Load` while a writer loops `Reload`; assert every observed snapshot is internally consistent (one generation) and never nil, under `-race`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/09-pointer-aliasing-and-data-races/04-atomic-pointer-config-hotreload/cmd/demo
-cd go-solutions/09-pointers/09-pointer-aliasing-and-data-races/04-atomic-pointer-config-hotreload
-```
-
 ### Copy-on-write, and the rule that makes it safe
 
 The pattern is copy-on-write. Readers call `Load()` and get a `*Config` — one

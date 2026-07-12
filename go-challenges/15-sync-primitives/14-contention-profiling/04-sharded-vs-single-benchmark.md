@@ -29,13 +29,6 @@ store-bench/                  independent module: example.com/store-bench
 - Test: a `-race` correctness test that drives the harness workload and asserts the totals; the benchmark is the vehicle for capturing the profile inspected with `go tool pprof`.
 - Verify: `go test -count=1 -race ./...` and `go test -bench=. -benchmem -run=^$ ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/14-contention-profiling/04-sharded-vs-single-benchmark/cmd/demo
-cd go-solutions/15-sync-primitives/14-contention-profiling/04-sharded-vs-single-benchmark
-```
-
 ### What the harness measures, and how to capture the profile
 
 `benchmarkStore` builds 100 keys once, resets the timer so setup is excluded, then

@@ -27,13 +27,6 @@ drift/                     independent module: example.com/drift
   drift (`maps.Equal`); ordering stable across runs; nil/empty inputs; golden report.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/05-config-drift-diff/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/05-config-drift-diff
-```
-
 ### Computing the diff over two key spaces
 
 Drift is a set operation on two key spaces plus a value comparison on the overlap. A

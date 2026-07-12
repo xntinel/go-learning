@@ -27,13 +27,6 @@ weather/                     independent module: example.com/weather
 - Test: a fake `http.RoundTripper` returning canned responses (body via `io.NopCloser`); a table over 200-good / 200-malformed / 404 / 5xx / transport-error; assert the outgoing request URL and method via a captured `*http.Request`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/08-mocking-with-interfaces/07-mock-roundtripper-external-api-client/cmd/demo
-cd go-solutions/12-testing-ecosystem/08-mocking-with-interfaces/07-mock-roundtripper-external-api-client
-```
-
 ### The client and its error mapping
 
 `Client` wraps an `*http.Client` and a base URL, both injected. `Current` builds a

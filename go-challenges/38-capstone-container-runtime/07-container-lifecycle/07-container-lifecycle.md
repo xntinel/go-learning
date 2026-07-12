@@ -63,13 +63,6 @@ Container stdout and stderr are redirected to a log file by setting `exec.Cmd.St
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/38-capstone-container-runtime/07-container-lifecycle/07-container-lifecycle/cmd/demo
-cd go-solutions/38-capstone-container-runtime/07-container-lifecycle/07-container-lifecycle
-```
-
 ### Exercise 1: State Machine and Persistence (lifecycle.go)
 
 Create `lifecycle.go`. This file is fully portable — it uses only `encoding/json`, `crypto/rand`, and `os` from the standard library.

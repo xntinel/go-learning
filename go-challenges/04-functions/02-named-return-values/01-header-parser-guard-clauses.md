@@ -27,13 +27,6 @@ headparse/                        independent module: example.com/headparse
 - Test: valid header, token-with-interior-spaces, tab separator, a rejection table asserted with `errors.Is`, plus `ParseMany` aggregation and stop-on-first-error.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/02-named-return-values/01-header-parser-guard-clauses/internal/hparse go-solutions/04-functions/02-named-return-values/01-header-parser-guard-clauses/cmd/demo
-cd go-solutions/04-functions/02-named-return-values/01-header-parser-guard-clauses
-```
-
 ### Why named returns here, and why not in ParseMany
 
 `Parse` has three exit shapes: empty input, malformed input, and success. Naming

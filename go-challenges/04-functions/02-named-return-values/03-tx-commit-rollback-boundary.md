@@ -24,13 +24,6 @@ txn/                        independent module: example.com/txn
 - Test: a fake `Tx` recording Commit/Rollback calls; assert exactly-one-of semantics across success, business error, commit failure, and panic.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/02-named-return-values/03-tx-commit-rollback-boundary/cmd/demo
-cd go-solutions/04-functions/02-named-return-values/03-tx-commit-rollback-boundary
-```
-
 ### The single-exit settlement
 
 The interfaces mirror `database/sql`: a `Tx` has `Commit() error` and

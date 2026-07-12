@@ -28,13 +28,6 @@ Implement: `FanIn` (bundled here so the module stands alone) and `Run(w io.Write
 Test: run `Run` into a buffer and assert every expected token appears exactly once regardless of order.
 Verify: `go test -count=1 -race ./...` and `go run ./cmd/demo`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/01-select-statement-basics/03-fan-in-demo-cli/cmd/demo
-cd go-solutions/14-select-and-context/01-select-statement-basics/03-fan-in-demo-cli
-```
-
 ## Why the work lives in Run(w io.Writer), not in main
 
 The naive way to write a demo is to put everything in `main()` and eyeball the

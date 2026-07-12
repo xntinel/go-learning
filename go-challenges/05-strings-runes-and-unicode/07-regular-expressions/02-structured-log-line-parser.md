@@ -26,13 +26,6 @@ logparse/                   independent module: example.com/logparse
 - Test: a well-formed line maps every field; a line with no trace id yields an empty `TraceID`; a malformed line returns `ErrMalformed` (no panic); `SubexpIndex` guards against a renamed group; a non-matching line never indexes past `len(match)`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/07-regular-expressions/02-structured-log-line-parser/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/07-regular-expressions/02-structured-log-line-parser
-```
-
 ### Why named groups and SubexpIndex, not m[1]
 
 The pattern has four fields and one of them is optional, so positional indexing

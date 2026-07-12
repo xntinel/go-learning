@@ -28,13 +28,6 @@ layout/                    independent module: example.com/layout
 - Test: assert `offset % align == 0` for every field, that offsets strictly increase in declaration order, and that `Alignof(struct) == max(field aligns)`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/09-struct-memory-layout-and-padding/02-layout-inspection-suite/cmd/demo
-cd go-solutions/07-structs-and-methods/09-struct-memory-layout-and-padding/02-layout-inspection-suite
-```
-
 ### The real invariant, and the bug it replaces
 
 The tempting-but-wrong test is `if unsafe.Offsetof(s.f) < 0 { t.Fatal(...) }`.

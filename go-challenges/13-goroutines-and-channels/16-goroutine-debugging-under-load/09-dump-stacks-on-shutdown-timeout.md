@@ -22,13 +22,6 @@ shutdown/                 independent module: example.com/shutdown
 - Test: the fast path returns nil and writes zero bytes; a stuck worker makes `Shutdown` return `ErrShutdownTimeout` (asserted with `errors.Is`) and the dump names the stuck worker.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/09-dump-stacks-on-shutdown-timeout/cmd/demo
-cd go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/09-dump-stacks-on-shutdown-timeout
-```
-
 ### Bounded wait, then dump
 
 Graceful shutdown has a fixed shape: stop accepting new work, cancel the context so

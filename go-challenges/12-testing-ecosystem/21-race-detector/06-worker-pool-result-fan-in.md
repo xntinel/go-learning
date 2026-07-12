@@ -31,13 +31,6 @@ Test: `TestPoolAggregatesAllResults` runs M inputs through W workers and asserts
 exactly M correct results with no loss or duplication, under `-race`.
 Verify: `go test -count=1 -race ./...`; then `go run -race ./cmd/racy`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/21-race-detector/06-worker-pool-result-fan-in/cmd/demo go-solutions/12-testing-ecosystem/21-race-detector/06-worker-pool-result-fan-in/cmd/racy
-cd go-solutions/12-testing-ecosystem/21-race-detector/06-worker-pool-result-fan-in
-```
-
 ### The race is in the aggregation, not the work
 
 The individual work each worker does -- enriching one input -- is independent and

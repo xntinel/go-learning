@@ -32,8 +32,6 @@ quorum/                      independent module: example.com/quorum
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/13-goroutines-and-channels/12-channel-patterns-semaphore-barrier/13-quorum-barrier-multi-region-ack/cmd/demo
-cd go-solutions/13-goroutines-and-channels/12-channel-patterns-semaphore-barrier/13-quorum-barrier-multi-region-ack
 go mod edit -go=1.26
 go get go.uber.org/goleak
 go mod tidy

@@ -25,13 +25,6 @@ handlererr/                 independent module: example.com/handlererr
 - Test: `httptest` recorder/request; nil->200, a NotFound sentinel->404, a `*ValidationError` (via `errors.As`)->400, an arbitrary error->500; assert body and exactly one log line via an injected logger.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/02-named-return-values/08-error-returning-handler-adapter/cmd/demo
-cd go-solutions/04-functions/02-named-return-values/08-error-returning-handler-adapter
-```
-
 ### One boundary, one map, one log line
 
 An `http.HandlerFunc` returns nothing, so the adapter captures the business

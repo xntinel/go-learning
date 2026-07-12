@@ -28,13 +28,6 @@ lease-runner/                        independent module: example.com/leaserunner
 - Test: slow work triggers the callback (lease released, metric incremented); fast work's `stop()` returns true and the callback never runs (recorder untouched by timeout); the overlap race releases exactly once.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/05-context-withtimeout-withdeadline/07-deadline-afterfunc-cleanup/cmd/demo
-cd go-solutions/14-select-and-context/05-context-withtimeout-withdeadline/07-deadline-afterfunc-cleanup
-```
-
 ### The AfterFunc contract and the race it creates
 
 `context.AfterFunc(ctx, f)` (Go 1.21) arranges to call `f` in its own goroutine once

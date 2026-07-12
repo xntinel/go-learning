@@ -30,13 +30,6 @@ Test: `RefillInterval == time.Second / RequestsPerSecond` as a constant; `Valida
 rejects `rps = 0` and `burst = 0`; capacity and refill land in `int` fields.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/08-untyped-constants-and-constant-expressions/07-rate-limiter-capacity-config/cmd/demo
-cd go-solutions/02-variables-types-and-constants/08-untyped-constants-and-constant-expressions/07-rate-limiter-capacity-config
-```
-
 ### The refill interval is a derived constant, not a guess
 
 If the bucket admits `RequestsPerSecond` tokens per second, one token arrives every

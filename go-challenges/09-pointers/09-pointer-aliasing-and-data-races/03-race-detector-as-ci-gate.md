@@ -28,13 +28,6 @@ racegate/                  independent module: example.com/racegate
 - Test: a committed concurrent test that passes only under correct synchronization when run with `-race`; a test asserting the CI contract lists `-race` and `-count=1`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/09-pointer-aliasing-and-data-races/03-race-detector-as-ci-gate/cmd/demo
-cd go-solutions/09-pointers/09-pointer-aliasing-and-data-races/03-race-detector-as-ci-gate
-```
-
 ### How to read a race report
 
 When `go test -race` catches a race it prints a structured report. Learn to read

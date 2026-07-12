@@ -28,8 +28,6 @@ dualwrite/                   independent module: example.com/dualwrite
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/30-write-both-sinks-rollback-all/dualwrite go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/30-write-both-sinks-rollback-all/cmd/demo
-cd go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/30-write-both-sinks-rollback-all
 go mod edit -go=1.24
 ```
 

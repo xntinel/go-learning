@@ -31,13 +31,6 @@ eventdecode/                 independent module: example.com/eventdecode
   not panic.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/04-type-switch/01-polymorphic-json-event-decoder/cmd/demo
-cd go-solutions/03-control-flow/04-type-switch/01-polymorphic-json-event-decoder
-```
-
 ## Why UseNumber, and why json.Number is its own case
 
 `encoding/json` decodes an unknown JSON value into one of six Go types: `string`,

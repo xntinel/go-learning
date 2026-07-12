@@ -27,13 +27,6 @@ Implement: `Prune(sessions, now)` via `slices.DeleteFunc`; a `pruneManualLeaky` 
 Test: prune a mix of expired/live, assert survivors and order and shrunk length; inspect the backing tail to confirm freed slots are `nil`; a negative sub-test shows the manual shift leaves dangling pointers.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/06-copy-and-full-slice-expression/06-in-place-filter-with-delete-and-zeroing/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/06-copy-and-full-slice-expression/06-in-place-filter-with-delete-and-zeroing
-```
-
 ### Why the freed tail must be zeroed
 
 Removing elements from a slice in place is a compaction: shift the survivors down

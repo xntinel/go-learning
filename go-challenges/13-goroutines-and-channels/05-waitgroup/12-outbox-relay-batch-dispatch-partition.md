@@ -33,8 +33,6 @@ outbox/                      independent module: example.com/outbox
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/13-goroutines-and-channels/05-waitgroup/12-outbox-relay-batch-dispatch-partition/cmd/demo
-cd go-solutions/13-goroutines-and-channels/05-waitgroup/12-outbox-relay-batch-dispatch-partition
 go mod edit -go=1.26
 ```
 

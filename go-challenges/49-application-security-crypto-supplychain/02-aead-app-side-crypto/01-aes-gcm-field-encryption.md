@@ -29,8 +29,6 @@ fieldcrypt/                 independent module: example.com/fieldcrypt
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/49-application-security-crypto-supplychain/02-aead-app-side-crypto/01-aes-gcm-field-encryption/cmd/demo
-cd go-solutions/49-application-security-crypto-supplychain/02-aead-app-side-crypto/01-aes-gcm-field-encryption
 go mod edit -go=1.24
 ```
 

@@ -34,8 +34,6 @@ consistenthash/              independent module: example.com/consistent-hashing-
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/01-if-else-and-init-statements/31-consistent-hashing-partition-routing/cmd/demo
-cd go-solutions/03-control-flow/01-if-else-and-init-statements/31-consistent-hashing-partition-routing
 go mod edit -go=1.24
 ```
 

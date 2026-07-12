@@ -27,8 +27,6 @@ migrate/                    independent module: example.com/migrate
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/27-schema-migration-down-stack/migrate go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/27-schema-migration-down-stack/cmd/demo
-cd go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/27-schema-migration-down-stack
 go mod edit -go=1.24
 ```
 

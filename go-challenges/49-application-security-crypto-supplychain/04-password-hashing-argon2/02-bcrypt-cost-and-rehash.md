@@ -30,8 +30,6 @@ bcryptauth/                independent module: example.com/bcryptauth
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/49-application-security-crypto-supplychain/04-password-hashing-argon2/02-bcrypt-cost-and-rehash/cmd/demo
-cd go-solutions/49-application-security-crypto-supplychain/04-password-hashing-argon2/02-bcrypt-cost-and-rehash
 go mod edit -go=1.26
 go get golang.org/x/crypto/bcrypt
 ```

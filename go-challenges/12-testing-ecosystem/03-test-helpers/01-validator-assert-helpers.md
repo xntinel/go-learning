@@ -26,13 +26,6 @@ validate/                    independent module: example.com/validate
 - Test: `assertValid`/`assertInvalid` helpers calling `t.Helper()` and matching with `errors.Is`, driven by table-driven subtests, plus `TestValidateExactlyThree` pinning the inclusive boundary.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/03-test-helpers/01-validator-assert-helpers/cmd/demo
-cd go-solutions/12-testing-ecosystem/03-test-helpers/01-validator-assert-helpers
-```
-
 ### Why a sentinel wrapped with `%w`
 
 `Validate` does not return `ErrInvalid` directly; it returns

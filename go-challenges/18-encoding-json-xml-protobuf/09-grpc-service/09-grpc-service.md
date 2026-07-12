@@ -21,8 +21,6 @@ Real gRPC uses `codes.NotFound` and `status.Error`. Offline, sentinel errors suc
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/18-encoding-json-xml-protobuf/09-grpc-service/09-grpc-service/cmd/demo
-cd go-solutions/18-encoding-json-xml-protobuf/09-grpc-service/09-grpc-service
 go mod edit -go=1.26
 ```
 

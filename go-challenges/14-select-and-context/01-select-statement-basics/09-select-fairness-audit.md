@@ -27,13 +27,6 @@ Implement: `Audit(iterations int) Distribution` over two always-ready cases, plu
 Test: over ≥100k iterations each case is chosen within a tolerance band of 50%, and neither case is starved.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/01-select-statement-basics/09-select-fairness-audit/cmd/demo
-cd go-solutions/14-select-and-context/01-select-statement-basics/09-select-fairness-audit
-```
-
 ## Measuring the guarantee instead of trusting it
 
 `Audit` sets up two buffered channels and, on every iteration, makes both receive

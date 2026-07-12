@@ -26,13 +26,6 @@ userstore/                     independent module: example.com/userstore
 - Test: construct the store, hold it behind `Store`, round-trip a record; a documented commented-out line quoting the exact compiler error for the value form.
 - Verify: `go build ./...`, `go vet ./...`, `go test -count=1 -race ./...`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/07-method-sets-and-addressability/02-repository-interface-pointer-method-set/cmd/demo
-cd go-solutions/07-structs-and-methods/07-method-sets-and-addressability/02-repository-interface-pointer-method-set
-```
-
 ### Why *MemStore satisfies Store but MemStore does not
 
 `MemStore` guards an in-memory map with a mutex and mutates it in `Save`, so both

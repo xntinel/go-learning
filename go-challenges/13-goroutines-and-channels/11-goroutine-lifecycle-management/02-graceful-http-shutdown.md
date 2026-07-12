@@ -26,13 +26,6 @@ gracefulhttp/              independent module: example.com/gracefulhttp
 - Test: an in-flight request drains before shutdown returns; a handler slower than `grace` makes `Run` return `ErrShutdownTimeout` wrapping `context.DeadlineExceeded`; `Serve` returning `http.ErrServerClosed` is treated as the normal path.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/11-goroutine-lifecycle-management/02-graceful-http-shutdown/cmd/demo
-cd go-solutions/13-goroutines-and-channels/11-goroutine-lifecycle-management/02-graceful-http-shutdown
-```
-
 ### The teardown handshake, step by step
 
 `http.Server` gives you two halves of the lifecycle. `srv.Serve(ln)` (or the

@@ -26,13 +26,6 @@ cpool/                     independent module: example.com/cpool
 - Test: `Shutdown` makes blocking jobs return promptly and workers exit; `Close` lets already-started short jobs finish; buffered jobs are skipped after `Shutdown`; `Submit` rejects after either.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/13-goroutine-pools/05-context-cancelable-pool/cmd/demo
-cd go-solutions/13-goroutines-and-channels/13-goroutine-pools/05-context-cancelable-pool
-```
-
 ### Drain and cancel are two contracts
 
 Cancelling the worker *loop* is not enough — that only stops new jobs from

@@ -25,13 +25,6 @@ depthprobe/                   module example.com/depthprobe
 - Test: assert the module-root internal is importable from a root-level package, the deep internal is importable from within `service/`, and the deep internal is rejected from a package outside `service/`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/11-packages-and-modules/03-internal-packages/06-scoping-internal-by-depth/cmd/demo
-cd go-solutions/11-packages-and-modules/03-internal-packages/06-scoping-internal-by-depth
-```
-
 ### The rule stated as a tree
 
 The allow-list of an `internal` directory is the subtree rooted at its immediate

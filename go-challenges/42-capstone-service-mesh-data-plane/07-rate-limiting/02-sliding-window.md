@@ -22,8 +22,6 @@ slidingwindow_test.go allow-up-to-max, synctest rollover, remaining, -race
 Set up the module. This backend is pure stdlib, so no `go get` is needed:
 
 ```bash
-mkdir -p go-solutions/42-capstone-service-mesh-data-plane/07-rate-limiting/02-sliding-window/cmd/demo
-cd go-solutions/42-capstone-service-mesh-data-plane/07-rate-limiting/02-sliding-window
 go mod edit -go=1.26
 ```
 

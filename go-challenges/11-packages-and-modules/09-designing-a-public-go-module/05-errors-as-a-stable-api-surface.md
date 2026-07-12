@@ -27,13 +27,6 @@ publicstr/                 independent module: example.com/publicstr
 - Test: `errors.Is(err, ErrEmpty)` for empty input; `errors.As(err, &target)` exposes `Got`/`Limit`; a wrapped error still unwraps to both the sentinel and the typed error; `errors.Join` collects multiple.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/11-packages-and-modules/09-designing-a-public-go-module/05-errors-as-a-stable-api-surface/cmd/demo
-cd go-solutions/11-packages-and-modules/09-designing-a-public-go-module/05-errors-as-a-stable-api-surface
-```
-
 ### Sentinel identity versus typed fields versus wrapping
 
 Three distinct promises live in an error surface, and a senior engineer picks the

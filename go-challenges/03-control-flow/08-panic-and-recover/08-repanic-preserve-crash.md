@@ -27,13 +27,6 @@ Implement: `Guard(onPanic func(Report), fn func()) error` that captures `debug.S
 Test: a recoverable app panic is converted with no re-panic (an outer recover must not fire); a `runtime.Error` re-panics the same value and `onPanic` was called exactly once with a captured stack.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/08-panic-and-recover/08-repanic-preserve-crash/cmd/demo
-cd go-solutions/03-control-flow/08-panic-and-recover/08-repanic-preserve-crash
-```
-
 ### Recover to classify, then decide
 
 `Guard` recovers in a deferred function and immediately calls `debug.Stack()` —

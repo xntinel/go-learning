@@ -38,11 +38,6 @@ ring/                         independent module: example.com/consistent-hash-ri
 - Test: a 200-key migration cross-checked against an independently built reference ring; a boundary case asserting keys never owned by the leaving node are untouched; a wrap-around edge case for a single-node ring.
 - Verify: `go test -count=1 ./...`.
 
-```bash
-mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/31-consistent-hash-ring-rebalance/cmd/demo
-cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/31-consistent-hash-ring-rebalance
-```
-
 ### Why a shared cursor breaks the moment map order isn't ascending
 
 The version that looks like a clever optimization walks the ring

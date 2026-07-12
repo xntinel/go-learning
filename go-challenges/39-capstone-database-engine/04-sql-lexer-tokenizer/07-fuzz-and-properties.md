@@ -21,12 +21,6 @@ fuzz_test.go         never-panics fuzz + random property, two round-trip propert
 - Test: `go test -race ./...` runs the seed corpus and the property tests; `go test -fuzz=FuzzLexerNeverPanics` runs real fuzzing.
 - Verify: `go test -run 'TestLexer|TestRoundTrip|Example' -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/04-sql-lexer-tokenizer/07-fuzz-and-properties/cmd/demo && cd go-solutions/39-capstone-database-engine/04-sql-lexer-tokenizer/07-fuzz-and-properties
-```
-
 ### Why fuzzing and properties, not just examples
 
 Table-driven tests check the inputs the author thought of; the lexer's contract is about the inputs nobody thought of. "Never panics on any input" and "always terminates" are universal claims, and the honest way to test a universal claim is to throw unplanned input at it. Go's native fuzzing does exactly that: `FuzzLexerNeverPanics` seeds a corpus of nasty cases — an unterminated string, an unbalanced nested comment, raw punctuation, a truncated exponent — and `go test -fuzz` then mutates them to explore the input space, failing the moment `Tokenize` panics or returns a stream whose last token is neither `TokenEOF` nor `TokenError`. Under a plain `go test` the same target runs just the seed corpus, so the contract is checked on every CI run even without a fuzzing budget.

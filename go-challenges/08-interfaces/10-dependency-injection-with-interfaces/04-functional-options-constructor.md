@@ -27,13 +27,6 @@ diopts/                     independent module: example.com/diopts
 - Test: construct with zero options (defaults present), with `WithClock` alone (only the clock changed), with several options combined, and two `WithTimeout` in sequence (last writer wins).
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/10-dependency-injection-with-interfaces/04-functional-options-constructor/cmd/demo
-cd go-solutions/08-interfaces/10-dependency-injection-with-interfaces/04-functional-options-constructor
-```
-
 ### Why options, and how the pattern works
 
 The required dependency — the repository — stays positional: a service with no

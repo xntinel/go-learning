@@ -27,13 +27,6 @@ atomicmetrics/             independent module: example.com/atomicmetrics
 - Test: assert every 64-bit atomic field's offset is a multiple of 8, that `unsafe.Alignof(atomic.Int64{}) == 8`, and exercise the counters concurrently under `-race`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/09-struct-memory-layout-and-padding/06-atomic-alignment-32bit/cmd/demo
-cd go-solutions/07-structs-and-methods/09-struct-memory-layout-and-padding/06-atomic-alignment-32bit
-```
-
 ### The failure mode, and the fix
 
 A 64-bit atomic operation requires its operand to be 8-byte aligned. On a 64-bit

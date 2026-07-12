@@ -26,13 +26,6 @@ backoff/                   independent module: example.com/backoff
 - Test: valid strings parse; `"0s"` where positive required is rejected; empty maps to the default; the backoff sequence is capped at max and never goes negative even for a huge attempt count.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/03-basic-types/08-duration-timeout-config/cmd/demo
-cd go-solutions/02-variables-types-and-constants/03-basic-types/08-duration-timeout-config
-```
-
 ### Why zero is dangerous and how backoff overflows
 
 `time.Duration` is an `int64` count of nanoseconds, so `time.ParseDuration` handles the

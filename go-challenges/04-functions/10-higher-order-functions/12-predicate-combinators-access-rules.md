@@ -25,8 +25,6 @@ accessrules/                independent module: example.com/accessrules
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/10-higher-order-functions/12-predicate-combinators-access-rules
-cd go-solutions/04-functions/10-higher-order-functions/12-predicate-combinators-access-rules
 go mod edit -go=1.24
 ```
 

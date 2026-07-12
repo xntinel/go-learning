@@ -34,14 +34,6 @@ a committed corpus file replayed under plain `go test`.
 Verify: `go test -race ./...` (replays the corpus), then
 `go test -fuzz=FuzzNormalize -fuzztime=2s`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/06-fuzz-testing/06-regression-corpus-from-crash/cmd/demo
-mkdir -p go-solutions/12-testing-ecosystem/06-fuzz-testing/06-regression-corpus-from-crash/testdata/fuzz/FuzzNormalize
-cd go-solutions/12-testing-ecosystem/06-fuzz-testing/06-regression-corpus-from-crash
-```
-
 ### The bug, the crash, and the loop
 
 `Normalize` collapses runs of consecutive `/` into a single `/`, the way a router

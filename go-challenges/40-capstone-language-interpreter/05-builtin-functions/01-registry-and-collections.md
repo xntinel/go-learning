@@ -21,12 +21,6 @@ collections_test.go   arity, type, immutability, and edge-case coverage
 - Test: arity failures, wrong-type failures, the immutability of `push`/`pop`/`rest`, and the empty-array edge cases for `first`/`last`/`rest`.
 - Verify: `go test -race ./...` and `go run ./cmd/demo`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/40-capstone-language-interpreter/05-builtin-functions/01-registry-and-collections/cmd/demo && cd go-solutions/40-capstone-language-interpreter/05-builtin-functions/01-registry-and-collections
-```
-
 ### The object system
 
 The built-ins do not know anything about the evaluator; they operate on a small interface, `Object`, and a handful of concrete types. In a real interpreter this lives in a shared `object` package that both the evaluator and the built-ins import. For a standalone module it is reproduced here. `Inspect` is the printable form; `Type` returns a named constant used in error messages and in the `type` built-in. Singletons for `null`, `true`, and `false` avoid allocating a fresh object on every call that returns one of them.

@@ -27,13 +27,6 @@ ingest/                     module example.com/ingest
 - Test: a `strings.Reader` mixing valid rows, blank lines, comment lines, and malformed rows (assert the exact records in order and exact `Skipped`/`Rejected` counts); an all-valid and an all-invalid edge case; and a `>64KB` line that trips `bufio.ErrTooLong` surfaced through `Err`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/02-for-loops/10-stream-filter-continue/cmd/demo
-cd go-solutions/03-control-flow/02-for-loops/10-stream-filter-continue
-```
-
 ### continue is a flattening tool, not a jump
 
 The tempting way to write an ingestion body is a nested `if`: "if the line is not

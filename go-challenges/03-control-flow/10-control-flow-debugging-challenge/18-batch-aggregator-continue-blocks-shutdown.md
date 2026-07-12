@@ -29,11 +29,6 @@ batchagg/                   independent module: example.com/batch-aggregator-con
 - Test: cancel the context after sending a partial batch and assert `Stopped()` closes within a short bound with the remainder flushed exactly once; a second test asserts a full batch flushes without any shutdown signal.
 - Verify: `go test -count=1 -race ./...`.
 
-```bash
-mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/18-batch-aggregator-continue-blocks-shutdown/cmd/demo
-cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/18-batch-aggregator-continue-blocks-shutdown
-```
-
 ### Why continue is not a smaller version of return here
 
 `Run`'s `ctx.Done()` case has to do two things in order: flush whatever is

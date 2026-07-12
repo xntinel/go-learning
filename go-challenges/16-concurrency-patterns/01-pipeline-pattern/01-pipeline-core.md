@@ -19,12 +19,6 @@ cmd/
 - Test: the close contract, end-to-end composition, leak-free cancellation, and a race-free fan-in under load.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/16-concurrency-patterns/01-pipeline-pattern/01-pipeline-core/cmd/demo && cd go-solutions/16-concurrency-patterns/01-pipeline-pattern/01-pipeline-core
-```
-
 ### Every stage has the same skeleton
 
 Read any one stage and you have read them all. A stage makes its outbound channel, launches a goroutine with `defer close(out)` as its first line, loops over the inbound channel with `for n := range in`, and sends each transformed value inside a `select` that also watches `done`. The `defer close(out)` is the close contract: it runs once, on every return path, so the downstream `range` always terminates whether the stage finished naturally or was cancelled. The `select` is the cancellation contract: the moment `done` is closed, the send that was about to block instead takes the `<-done` branch and returns, the deferred close fires, and the channel closes cleanly with no leaked goroutine. `Generate` is the same skeleton with a `range nums` source loop instead of a `range in` channel loop, because a source has no inbound channel.

@@ -28,13 +28,6 @@ peakgauge/                       independent module: example.com/peakgauge
 - Test: a concurrent Inc/Dec storm (peak bounded, current returns to zero); a two-phase barrier test where the peak is exact; the targeted interleaving that drives `Reset` between a stale updater's `Load` and its CAS.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/11-lock-free-data-structures/09-versioned-peak-gauge/cmd/demo
-cd go-solutions/15-sync-primitives/11-lock-free-data-structures/09-versioned-peak-gauge
-```
-
 ### The CAS-maximum loop
 
 A high-water mark is the simplest CAS loop after a counter: load the peak, and

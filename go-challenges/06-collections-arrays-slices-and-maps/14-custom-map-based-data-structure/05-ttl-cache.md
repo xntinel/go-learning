@@ -27,13 +27,6 @@ ttlcache/                  independent module: example.com/ttlcache
 - Test: with an injected clock, hit before deadline and miss after; `Sweep` reclaims keys; the janitor reclaims keys and its goroutine stops when the context is cancelled (verified via a done channel).
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/14-custom-map-based-data-structure/05-ttl-cache/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/14-custom-map-based-data-structure/05-ttl-cache
-```
-
 ### Lazy plus active, and why the clock is injected
 
 Expiry has two modes and a real cache uses both. **Lazy** eviction is enforced on

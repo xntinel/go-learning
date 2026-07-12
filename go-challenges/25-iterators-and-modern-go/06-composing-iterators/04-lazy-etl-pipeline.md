@@ -19,12 +19,6 @@ etl_test.go          pipeline output + batching, exact-pull laziness, Parse drop
 - Test: a `Parse -> Filter -> Map -> Batch -> Take` pipeline yields the right batches; over a billion-element source it pulls *exactly* the records needed to fill the taken batches; `Batch` flushes a short final batch; `Parse` drops unparseable records.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/25-iterators-and-modern-go/06-composing-iterators/04-lazy-etl-pipeline/cmd/demo && cd go-solutions/25-iterators-and-modern-go/06-composing-iterators/04-lazy-etl-pipeline
-```
-
 ### The pipeline is a chain of pull-driven stages
 
 The five stages form a straight line: raw records enter `Parse`, which turns each into a typed value (and silently drops the ones that fail to parse); `Filter` keeps the values that match a predicate; `Map` rewrites them; `Batch` regroups the stream into fixed-size slices; and `Take` keeps the first few batches. Each stage is an `iter.Seq` that wraps the stage before it, so the composition `Take(Batch(Map(Filter(Parse(source, ...), ...), ...), size), n)` is one lazy object that has done no work yet. Work happens only when something ranges over the outermost stage, and every value is pulled on demand: `Take` asks `Batch` for a batch, `Batch` asks `Map` for values until it has `size` of them, `Map` asks `Filter`, `Filter` asks `Parse`, `Parse` asks the source. One pull at the top draws exactly the records it needs up through the chain.

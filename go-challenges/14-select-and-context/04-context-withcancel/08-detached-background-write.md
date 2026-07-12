@@ -28,13 +28,6 @@ audit/                     independent module: example.com/audit
 - Test: the write completes even after the parent is cancelled and sees the trace id; a slow write hits the detached timeout and returns `context.DeadlineExceeded`, not the parent's cancellation; a value on the parent is readable on the detached context.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/04-context-withcancel/08-detached-background-write/cmd/demo
-cd go-solutions/14-select-and-context/04-context-withcancel/08-detached-background-write
-```
-
 ### Why WithoutCancel, then WithTimeout
 
 Fire-and-forget side effects have two conflicting requirements. They must keep the

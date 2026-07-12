@@ -20,12 +20,6 @@ ast_test.go          String() assertions across literals, infix, let, program
 - Test: `ast_test.go` asserts the canonical string form of integer and boolean literals, an infix expression, a let statement, a whole program, and a return statement.
 - Verify: `go test -run 'TestIntegerLiteral|TestBooleanLiteral|TestInfix|TestLet|TestProgram|TestReturn' -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/40-capstone-language-interpreter/03-ast-representation/01-core-ast-nodes/cmd/demo && cd go-solutions/40-capstone-language-interpreter/03-ast-representation/01-core-ast-nodes
-```
-
 ### Why marker interfaces, positions, and a canonical string form
 
 The three interfaces are the spine of the package. `Node` is the base every node satisfies, and it holds the operations meaningful for any node: `TokenLiteral()` returns the literal text of the token that started the node, `String()` returns the canonical rendering, and `Pos()` returns the source span. `Statement` and `Expression` each embed `Node` and add one unexported marker method — `statementNode()` and `expressionNode()` respectively. Those methods have empty bodies and exist only to partition the node types into two roles, and because they are unexported, only this package can implement them. That is what makes the hierarchy *closed*: no outside caller can invent a type that passes a `Statement` check, and a function that accepts a `Statement` can never be handed an expression. `go/ast` ties `ast.Node`, `ast.Stmt`, and `ast.Expr` together with the exact same technique.

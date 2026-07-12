@@ -29,8 +29,6 @@ config/                     independent module: example.com/config
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/09-pointers/10-designing-pointer-safe-apis/07-atomic-pointer-config-hot-reload/cmd/demo
-cd go-solutions/09-pointers/10-designing-pointer-safe-apis/07-atomic-pointer-config-hot-reload
 go mod edit -go=1.25
 ```
 

@@ -28,13 +28,6 @@ front; `Remove` preserves the heap invariant; each task's `index` equals its sli
 position.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/08-pointers-in-slices-and-maps/09-retry-scheduler-heap-of-pointers/cmd/demo
-cd go-solutions/09-pointers/08-pointers-in-slices-and-maps/09-retry-scheduler-heap-of-pointers
-```
-
 ### Why pointers and an index field
 
 `container/heap` does not own storage; you implement `heap.Interface` (which embeds

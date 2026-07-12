@@ -61,13 +61,6 @@ For hover and go-to-definition, the server finds the `*ast.Ident` at the cursor 
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/47-capstone-systems-and-kernel/10-go-language-server-lsp/10-go-language-server-lsp/cmd/golsp
-cd go-solutions/47-capstone-systems-and-kernel/10-go-language-server-lsp/10-go-language-server-lsp
-```
-
 The package name is `lsp`. All non-main files use `package lsp`. Tests in the same package can access unexported fields.
 
 ### Exercise 1: JSON-RPC Transport and Protocol Types

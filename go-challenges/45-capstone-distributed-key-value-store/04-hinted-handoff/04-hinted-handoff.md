@@ -63,13 +63,6 @@ The cascade failure boundary: if H itself fails before delivering hints to R, th
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/45-capstone-distributed-key-value-store/04-hinted-handoff/04-hinted-handoff/cmd/demo
-cd go-solutions/45-capstone-distributed-key-value-store/04-hinted-handoff/04-hinted-handoff
-```
-
 This is a library, not a program. Verify it with `go test`.
 
 ### Exercise 1: The Hint Type and Wire Encoding

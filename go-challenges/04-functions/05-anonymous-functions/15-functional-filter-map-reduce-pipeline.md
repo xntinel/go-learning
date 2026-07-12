@@ -28,8 +28,6 @@ pipeline/                     module example.com/pipeline
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/05-anonymous-functions/15-functional-filter-map-reduce-pipeline
-cd go-solutions/04-functions/05-anonymous-functions/15-functional-filter-map-reduce-pipeline
 go mod edit -go=1.24
 ```
 

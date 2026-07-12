@@ -29,13 +29,6 @@ httpserver/                      independent module: example.com/httpserver
 - Test: assert configured timeout fields; assert a zero `ReadHeaderTimeout` is rejected; start `Serve` on an ephemeral listener, issue one request, cancel the context, and assert graceful shutdown returns nil.
 - Verify: `go test -count=1 ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/12-functional-options-pattern/04-http-server-timeouts-options/cmd/demo
-cd go-solutions/04-functions/12-functional-options-pattern/04-http-server-timeouts-options
-```
-
 ### Options that enforce safe defaults for a dangerous zero value
 
 The lesson of this module is that options are not only for optionality — they are

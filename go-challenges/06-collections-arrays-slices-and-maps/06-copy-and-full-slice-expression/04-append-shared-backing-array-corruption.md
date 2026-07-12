@@ -25,13 +25,6 @@ Implement: `Derive(base, reqLabel)` that clones `base` then appends; a buggy `de
 Test: derive two request label sets from one base, append different labels, assert neither sees the other and `base` is unchanged; a negative sub-test reproduces the corruption.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/06-copy-and-full-slice-expression/04-append-shared-backing-array-corruption/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/06-copy-and-full-slice-expression/04-append-shared-backing-array-corruption
-```
-
 ### Why the base slice's spare capacity is the trap
 
 A service builds a base set of labels once at startup — `env=prod`, `region=us` —

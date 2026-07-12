@@ -27,13 +27,6 @@ Implement: `Registry` guarded by `sync.RWMutex`; `Set`, `Delete`, `Get`, and `Sn
 Test: concurrent `Set`/`Snapshot` under `-race`; a snapshot stays stable across later writes; a pointer-value case shows shared mutation and the deep-copy fix.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/05-immutable-snapshot-registry/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/05-immutable-snapshot-registry
-```
-
 ## Why you hand out a clone, not the live map
 
 The registry holds a `map[string]bool` guarded by a `sync.RWMutex`. `Set` and

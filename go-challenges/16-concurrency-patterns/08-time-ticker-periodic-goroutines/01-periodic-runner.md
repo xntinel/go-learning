@@ -20,12 +20,6 @@ periodic_test.go         fires repeatedly, stops cleanly, Reset shortens the per
 - Test: `periodic_test.go` asserts the handler fires repeatedly, stops firing after `Stop`, speeds up after `Reset`, survives a double `Stop`, and that `Stop` returns promptly.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/16-concurrency-patterns/08-time-ticker-periodic-goroutines/01-periodic-runner/cmd/demo && cd go-solutions/16-concurrency-patterns/08-time-ticker-periodic-goroutines/01-periodic-runner
-```
-
 ### How the receive loop and Stop fit together
 
 The runner owns three pieces of state: a `*time.Ticker` for the cadence, a `done chan struct{}` it closes to signal shutdown, and a `sync.WaitGroup` that tracks the worker goroutine. `Start` adds one to the wait group and launches a goroutine whose body is the two-arm `select` loop. The first arm, `case t := <-p.ticker.C`, runs the handler on every tick. The second arm, `case <-p.done`, returns, which runs the deferred `wg.Done`. Notice the receive uses no `, ok` form: `Stop` never closes `ticker.C`, so an `ok` check there would be dead code, and the only legitimate way out of the loop is the `done` arm.

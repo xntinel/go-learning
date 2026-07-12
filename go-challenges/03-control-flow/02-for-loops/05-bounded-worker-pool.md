@@ -26,13 +26,6 @@ workerpool/                  module example.com/workerpool
 - Test: M jobs across N workers, every job processed exactly once (atomic counter) and `len(results) == M`; all workers return after close (no leak); a `-race` run; a `ctx`-cancel variant where workers stop and `Run` returns without deadlock.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/02-for-loops/05-bounded-worker-pool/cmd/demo
-cd go-solutions/03-control-flow/02-for-loops/05-bounded-worker-pool
-```
-
 ### The close-then-drain shutdown, and who closes what
 
 The pool has three moving parts and four `for` loops. A counted `for range

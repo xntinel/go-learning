@@ -27,13 +27,6 @@ not panic; a raw nil-map write panics; `json.Marshal` of a nil map is `null` and
 of an empty map is `{}`; `Snapshot` is a non-nil defensive copy.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/07-nil-map-read-vs-write-panic/metrics go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/07-nil-map-read-vs-write-panic/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/07-nil-map-read-vs-write-panic
-```
-
 ### The asymmetry: reads are safe, the first write panics
 
 A nil map is not symmetric with a nil slice. Every read of a nil map is defined

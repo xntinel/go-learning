@@ -27,13 +27,6 @@ appconfig/                     independent module: example.com/appconfig
 - Test: defaults applied, overrides win, missing `DATABASE_URL` returns `ErrMissingDatabaseURL` via `errors.Is`, invalid `REQUEST_TIMEOUT`/`DEBUG` return wrapped errors without asserting exact strings.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/01-variable-declaration-and-short-assignment/01-config-loader-declaration-choices/cmd/demo
-cd go-solutions/02-variables-types-and-constants/01-variable-declaration-and-short-assignment/01-config-loader-declaration-choices
-```
-
 ### Why the zero value is a starting policy, not the final one
 
 `Load` begins with `var cfg Config`. Every field is its zero value: `ListenAddr`

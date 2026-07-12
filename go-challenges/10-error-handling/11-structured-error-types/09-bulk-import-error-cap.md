@@ -29,8 +29,6 @@ bulkimport/                independent module: example.com/bulkimport
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/10-error-handling/11-structured-error-types/09-bulk-import-error-cap/cmd/demo
-cd go-solutions/10-error-handling/11-structured-error-types/09-bulk-import-error-cap
 go mod edit -go=1.26
 ```
 

@@ -24,13 +24,6 @@ Implement: reuse the module-1 cache and module-2 helpers.
 Test: `TestSet` (success, overwrites), `TestGet` (success, not_found, expired, empty_value), `TestDelete` (success, missing), `TestLen` (empty, after_set), all with `t.Parallel()`.
 Verify: `go test -count=1 -race ./...` and `go test -run 'TestGet/expired' ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/25-building-a-test-suite/03-feature-organized-suite
-cd go-solutions/12-testing-ecosystem/25-building-a-test-suite/03-feature-organized-suite
-```
-
 ### The sharing decision that -race grades
 
 A parent test seeds one `*Cache` and its subtests run in parallel against it. That

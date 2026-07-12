@@ -130,8 +130,6 @@ similarly synthetic. Functions in files whose first comment is
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/47-capstone-systems-and-kernel/11-dead-code-elimination-tool/11-dead-code-elimination-tool/dce go-solutions/47-capstone-systems-and-kernel/11-dead-code-elimination-tool/11-dead-code-elimination-tool/cmd/dce
-cd go-solutions/47-capstone-systems-and-kernel/11-dead-code-elimination-tool/11-dead-code-elimination-tool
 go get golang.org/x/tools@latest
 ```
 

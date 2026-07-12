@@ -28,8 +28,6 @@ broadcast/                   independent module: example.com/broadcast
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/10-higher-order-functions/19-broadcast-tee-multiple-subscribers/cmd/demo
-cd go-solutions/04-functions/10-higher-order-functions/19-broadcast-tee-multiple-subscribers
 go mod edit -go=1.24
 ```
 

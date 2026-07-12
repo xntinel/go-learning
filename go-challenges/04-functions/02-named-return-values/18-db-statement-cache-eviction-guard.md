@@ -29,8 +29,6 @@ stmtcache/                    independent module: example.com/stmtcache
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/02-named-return-values/18-db-statement-cache-eviction-guard/cmd/demo
-cd go-solutions/04-functions/02-named-return-values/18-db-statement-cache-eviction-guard
 go mod edit -go=1.24
 ```
 

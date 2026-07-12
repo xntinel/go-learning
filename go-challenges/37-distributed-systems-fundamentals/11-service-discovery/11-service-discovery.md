@@ -43,14 +43,6 @@ A real service registry (Consul, etcd) runs as a separate process or cluster. Th
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/37-distributed-systems-fundamentals/11-service-discovery/11-service-discovery/registry
-mkdir -p go-solutions/37-distributed-systems-fundamentals/11-service-discovery/11-service-discovery/cmd/demo
-cd go-solutions/37-distributed-systems-fundamentals/11-service-discovery/11-service-discovery
-```
-
 This is a library with a demo command. Verification runs `go test -race ./...`; the demo is for inspection.
 
 ### Exercise 1: The Registry Package

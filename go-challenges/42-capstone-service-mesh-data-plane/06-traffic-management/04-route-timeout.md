@@ -22,7 +22,6 @@ timeout_test.go        the four-quadrant table of configured x header presence
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/42-capstone-service-mesh-data-plane/06-traffic-management/04-route-timeout/cmd/demo && cd go-solutions/42-capstone-service-mesh-data-plane/06-traffic-management/04-route-timeout
 go mod edit -go=1.26
 ```
 

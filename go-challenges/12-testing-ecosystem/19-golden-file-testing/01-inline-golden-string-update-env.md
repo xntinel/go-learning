@@ -25,13 +25,6 @@ Implement: `Render(input string) (string, error)` converting a markdown subset (
 Test: compare `Render` output to an inline `helloGolden` constant, log the actual output and return early when `UPDATE=1`, reject empty input via `errors.Is`, and prove the update round-trip is deterministic and green.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/19-golden-file-testing/01-inline-golden-string-update-env/cmd/demo
-cd go-solutions/12-testing-ecosystem/19-golden-file-testing/01-inline-golden-string-update-env
-```
-
 ### Why start with an inline string
 
 An inline golden string is the whole technique in miniature, and its limits are

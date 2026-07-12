@@ -23,13 +23,6 @@ Implement: a `Cache` backed by `map[string]entry` + `sync.RWMutex`, with `New`, 
 Test: a contract smoke test asserting the four methods, the empty-value-is-not-an-error rule, and `errors.Is` against both sentinels.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/25-building-a-test-suite/01-implement-the-cache/cmd/demo
-cd go-solutions/12-testing-ecosystem/25-building-a-test-suite/01-implement-the-cache
-```
-
 ### The API contract the rest of the suite pins
 
 Four methods and two sentinel errors are the entire surface, and every design

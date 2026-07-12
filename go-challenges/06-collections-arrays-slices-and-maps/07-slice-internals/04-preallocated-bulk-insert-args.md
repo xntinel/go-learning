@@ -26,13 +26,6 @@ Implement: `BuildArgs(rows [][]any) []any` (one allocation), `AppendRows(dst []a
 Test: `testing.AllocsPerRun(_, build) == 1`; the `make([]T, n)` bug yields leading zeros; `slices.Grow` keeps `len` but raises `cap`, and the follow-up append burst does not reallocate.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/04-preallocated-bulk-insert-args/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/04-preallocated-bulk-insert-args
-```
-
 ### One allocation with a capacity hint
 
 The row count and the columns-per-row are known before you build the args, so the

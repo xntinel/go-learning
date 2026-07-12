@@ -27,13 +27,6 @@ rtcache/                     independent module: example.com/rtcache
 - Test: `-race` concurrency over many goroutines; a timing test where a slow loader for distinct keys runs concurrently (total time near one load, not N loads).
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/07-defer-semantics-and-ordering/08-mutex-unlock-scope/cmd/demo
-cd go-solutions/03-control-flow/07-defer-semantics-and-ordering/08-mutex-unlock-scope
-```
-
 ### Why the deferred unlock scope is the whole problem
 
 Here is the naive method, and it is not obviously wrong:

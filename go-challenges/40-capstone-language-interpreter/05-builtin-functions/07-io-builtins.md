@@ -21,12 +21,6 @@ io_test.go    capture print into a buffer; round-trip and missing-file cases
 - Test: that `print` writes its space-separated arguments to a captured buffer, that a `writeFile`/`readFile` round-trip preserves content, and that `readFile` on a missing path returns an `*Error`.
 - Verify: `go test -race ./...` and `go run ./cmd/demo`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/40-capstone-language-interpreter/05-builtin-functions/07-io-builtins/cmd/demo && cd go-solutions/40-capstone-language-interpreter/05-builtin-functions/07-io-builtins
-```
-
 ### Inject the boundary so the test can stand in for the world
 
 `print` does not call `fmt.Println`. It writes to `Output`, a package-level `var Output io.Writer = os.Stdout`. In production that is standard output; in a test the line `Output = &buf` (restored afterward with `t.Cleanup`) redirects every `print` into a `bytes.Buffer` the test can assert on. This is the cheapest possible version of dependency injection — a single mutable package variable — and it turns an operation that would otherwise need a subprocess-capture harness into a three-line unit test. `print` joins its arguments' `Inspect()` forms with spaces and appends a newline, returning the `null` singleton because it is called for its effect, not its value.

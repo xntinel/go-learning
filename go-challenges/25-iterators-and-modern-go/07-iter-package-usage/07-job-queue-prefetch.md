@@ -19,12 +19,6 @@ prefetch_test.go     full-drain order, window<1 normalization, no-leak on early 
 - Test: drain a finite queue in order, confirm a non-positive window is normalized, and prove that breaking the consumer early tears the producer goroutine down (no leak) under `-race`.
 - Verify: `go test -run 'TestPrefetch' -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/25-iterators-and-modern-go/07-iter-package-usage/07-job-queue-prefetch/cmd/demo && cd go-solutions/25-iterators-and-modern-go/07-iter-package-usage/07-job-queue-prefetch
-```
-
 ### Who owns the pull, and why it must be the worker
 
 Prefetch overlaps production and consumption, so production has to run on its own goroutine: a background worker repeatedly pulls the next job and hands it to the consumer over a channel whose capacity, `window`, bounds how far ahead the worker may run. That channel is the prefetch buffer — fill it and the worker blocks until the consumer drains a slot, which is exactly the back-pressure that keeps prefetch bounded instead of eagerly draining an unbounded producer into memory.

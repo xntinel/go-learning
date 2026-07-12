@@ -27,13 +27,6 @@ ttlcov/                    independent module: example.com/ttlcov
 - Test: parallel subtests that concurrently `Set` and `Get` under `-race`; a boundary test that reads just before and just after expiry; an `Example`.
 - Verify: `go test -count=1 -race -covermode=atomic -cover ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/20-test-coverage-analysis/02-covermode-atomic-race-cache/cmd/demo
-cd go-solutions/12-testing-ecosystem/20-test-coverage-analysis/02-covermode-atomic-race-cache
-```
-
 ### Why this cache needs atomic coverage
 
 The cache stores each value with an expiry instant and reads `time.Now()`

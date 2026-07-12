@@ -26,13 +26,6 @@ publicstr/                 independent module: example.com/publicstr
 - Test: the examples are the tests — `go test -run Example` compiles and runs them and fails if any output drifts.
 - Verify: `go test -count=1 -race -run Example ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/11-packages-and-modules/09-designing-a-public-go-module/03-testable-examples-that-cannot-rot/cmd/demo
-cd go-solutions/11-packages-and-modules/09-designing-a-public-go-module/03-testable-examples-that-cannot-rot
-```
-
 ### Why examples cannot rot, and how the naming maps to rendering
 
 An `Example` function is a first-class testing construct. When its body ends in a

@@ -28,13 +28,6 @@ publisher/                       independent module: example.com/publisher
 - Test: apply a preset then an explicit override and assert the override won while other preset fields survived; apply the same primitive twice and assert last-wins; assert a preset containing an invalid sub-option surfaces the error.
 - Verify: `go test -count=1 ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/12-functional-options-pattern/09-preset-and-ordering-options/cmd/demo
-cd go-solutions/04-functions/12-functional-options-pattern/09-preset-and-ordering-options
-```
-
 ### An option that applies options
 
 The key building block is `WithOptions`, an option that loops over a slice of

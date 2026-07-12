@@ -23,11 +23,6 @@ rowimport/                module example.com/rowimport
 - Test: run a batch with one invalid row and assert both the committed IDs and that `Store.Open()` is back to `0` afterward.
 - Verify: `go test -count=1 ./...`.
 
-```bash
-mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/10-continue-skips-cleanup-leaked-handle
-cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/10-continue-skips-cleanup-leaked-handle
-```
-
 ### The artifact and the planted bug
 
 ```go

@@ -23,13 +23,6 @@ Implement: `NewRunService(name, start, stop)` returning a `Service`; a nil `star
 Test: `Name()` returns the given name; a registered `RunService`'s stop closure runs on shutdown (atomic counter); nil funcs do not panic.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/14-building-a-context-aware-service-framework/02-runservice-functional-adapter/cmd/demo
-cd go-solutions/14-select-and-context/14-building-a-context-aware-service-framework/02-runservice-functional-adapter
-```
-
 ### Why an adapter, and why nil-safety matters
 
 Forcing every trivial component to declare a struct with three methods is

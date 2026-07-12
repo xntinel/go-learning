@@ -28,13 +28,6 @@ secret that is a substring of the replacement (proves no re-scan), empty secret
 list is a no-op, and a `-race` concurrency test.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/05-strings-package/07-secret-log-redactor/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/05-strings-package/07-secret-log-redactor
-```
-
 ### Why one Replacer, and why not chained ReplaceAll
 
 `strings.NewReplacer(pairs...)` replaces in a single left-to-right scan: at each

@@ -96,8 +96,6 @@ Linux enforces a 15-character limit on interface names (IFNAMSIZ = 16 including 
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/38-capstone-container-runtime/03-network-namespace-veth/03-network-namespace-veth/cmd/demo
-cd go-solutions/38-capstone-container-runtime/03-network-namespace-veth/03-network-namespace-veth
 go get github.com/vishvananda/netlink@latest
 ```
 

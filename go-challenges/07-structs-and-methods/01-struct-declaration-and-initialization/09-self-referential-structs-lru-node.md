@@ -28,8 +28,6 @@ lrunode/                    independent module: example.com/lrunode
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/07-structs-and-methods/01-struct-declaration-and-initialization/09-self-referential-structs-lru-node/cmd/demo
-cd go-solutions/07-structs-and-methods/01-struct-declaration-and-initialization/09-self-referential-structs-lru-node
 go mod edit -go=1.24
 ```
 

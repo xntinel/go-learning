@@ -41,8 +41,6 @@ dnsheader/                     module example.com/dnsheader
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/18-dns-header-12-byte-codec
-cd go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/18-dns-header-12-byte-codec
 go mod edit -go=1.24
 ```
 

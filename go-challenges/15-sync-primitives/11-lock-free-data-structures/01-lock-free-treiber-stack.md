@@ -24,13 +24,6 @@ freelist/                        independent module: example.com/freelist
 - Test: LIFO order, pop-on-empty, size after quiesce, and `TestStackDistinctValues` — 1000 values pushed concurrently are popped exactly once each.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/11-lock-free-data-structures/01-lock-free-treiber-stack/stack go-solutions/15-sync-primitives/11-lock-free-data-structures/01-lock-free-treiber-stack/cmd/demo
-cd go-solutions/15-sync-primitives/11-lock-free-data-structures/01-lock-free-treiber-stack
-```
-
 ### Why a server keeps a free-list
 
 A server that reads requests into 32 KiB buffers allocates one per request if it

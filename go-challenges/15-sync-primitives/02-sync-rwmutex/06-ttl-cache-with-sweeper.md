@@ -28,13 +28,6 @@ Implement: `Cache` with `Set(token, principal, ttl)` under `Lock`, `Get(token)` 
 Test: an injectable `now func() time.Time` drives expiry without sleeping; an expired entry is invisible to `Get` yet still counted by `Len` until `Sweep` removes it; concurrent `Get`/`Set` race the live sweeper under `-race`; `Stop` is idempotent and the sweeper provably exits.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/02-sync-rwmutex/06-ttl-cache-with-sweeper/cmd/demo
-cd go-solutions/15-sync-primitives/02-sync-rwmutex/06-ttl-cache-with-sweeper
-```
-
 ### Why the read path must not delete
 
 An expired entry discovered inside `Get` is dead weight, and the reflex is to

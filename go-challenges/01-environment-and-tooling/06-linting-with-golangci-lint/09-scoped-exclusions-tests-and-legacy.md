@@ -27,13 +27,6 @@ scopedexcl/                   independent module: example.com/scopedexcl
 - Test: a `seed` helper that sets keys tersely (the excluded pattern) plus a behavior table.
 - Verify: `go test -count=1 -race ./...`; then `golangci-lint run ./...` with the scoped rule.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/06-linting-with-golangci-lint/09-scoped-exclusions-tests-and-legacy/cmd/demo
-cd go-solutions/01-environment-and-tooling/06-linting-with-golangci-lint/09-scoped-exclusions-tests-and-legacy
-```
-
 ### Narrow the exclusion, never the linter
 
 The anti-pattern is to hit an `errcheck` finding in a test helper and remove

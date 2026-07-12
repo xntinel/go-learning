@@ -27,13 +27,6 @@ account/                    independent module: example.com/account
 - Test: zero options yields the documented defaults; `WithInitialBalance` sets and validates; an invalid option fails with a wrapped error; an injected clock makes `CreatedAt` deterministic; a missing id is rejected.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/12-designing-a-domain-model/05-constructor-functional-options/cmd/demo
-cd go-solutions/07-structs-and-methods/12-designing-a-domain-model/05-constructor-functional-options
-```
-
 ### Options apply, then the constructor validates once
 
 The functional-options pattern separates *what the caller wants to set* from *how

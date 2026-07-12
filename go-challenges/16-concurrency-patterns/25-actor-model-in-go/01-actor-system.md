@@ -25,12 +25,6 @@ actor_test.go         ordered delivery, panic recovery, unknown-actor error,
   returns an error, and that `Stop` processes every queued message first.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/16-concurrency-patterns/25-actor-model-in-go/01-actor-system/cmd/demo && cd go-solutions/16-concurrency-patterns/25-actor-model-in-go/01-actor-system
-```
-
 ### The design, one piece at a time
 
 An actor is three fields: a `name`, a `mailbox` channel that carries work, and a

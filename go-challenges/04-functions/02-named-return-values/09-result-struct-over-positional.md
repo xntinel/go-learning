@@ -25,13 +25,6 @@ directory/                  independent module: example.com/directory
 - Test: field-by-field assertions on `UserRecord`, and a not-found case asserted with `errors.Is`; the prose contrasts the positional form that let a caller swap name/email undetected.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/02-named-return-values/09-result-struct-over-positional/cmd/demo
-cd go-solutions/04-functions/02-named-return-values/09-result-struct-over-positional
-```
-
 ### Why a struct beats four positional returns
 
 Here is the shape to avoid. It compiles and it is a trap:

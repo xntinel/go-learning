@@ -23,13 +23,6 @@ Implement: `Snapshot(map[string]string)` that prints entries as `key=value`, one
 Test: a table-driven `Test`, plus `ExampleSnapshot` asserting an exact ordered block.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/15-testable-examples/05-sorted-keys-stable-output/cmd/demo
-cd go-solutions/12-testing-ecosystem/15-testable-examples/05-sorted-keys-stable-output
-```
-
 ## Sort-then-print versus // Unordered output:
 
 The previous exercise used `// Unordered output:` to absorb map randomness. This

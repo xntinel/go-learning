@@ -19,12 +19,6 @@ fanin_test.go        two-source correctness, empty-input close, race-free load, 
 - Test: combine two sources (set-compared), assert `Merge()` with no inputs closes at once, push 8000 values through 16 sources under `-race` with no duplicates or losses, and prove the close waits for the slowest source.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/16-concurrency-patterns/03-fan-in-pattern/01-merging-channels/cmd/demo && cd go-solutions/16-concurrency-patterns/03-fan-in-pattern/01-merging-channels
-```
-
 ### Why a WaitGroup, and why the Add comes first
 
 The merge starts one goroutine per input. Each goroutine ranges its input and forwards every value to the shared output; ranging ends exactly when that input closes, so the goroutine's lifetime is bounded by its source. The only hard part is closing the output: a send on a closed channel panics, so the output must be closed once, after every forwarder has stopped, and by code that is not itself a forwarder.

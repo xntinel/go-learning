@@ -29,8 +29,6 @@ reqlog/                       module example.com/reqlog
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/05-anonymous-functions/29-request-logging-deferred/cmd/demo
-cd go-solutions/04-functions/05-anonymous-functions/29-request-logging-deferred
 go mod edit -go=1.24
 ```
 

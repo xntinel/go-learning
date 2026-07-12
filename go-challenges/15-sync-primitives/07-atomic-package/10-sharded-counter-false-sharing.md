@@ -25,13 +25,6 @@ shardcount/                independent module: example.com/shardcount
 - Test: G goroutines x K increments then quiesce, `Value` equals G*K for 1, 4, and default shard counts; `unsafe.Sizeof(shard{}) == 64`; Reset-then-count; benchmarks comparing one hot atomic against the sharded counter under `b.RunParallel`.
 - Verify: `go test -count=1 -race ./...` and `go test -bench=. -benchmem`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/07-atomic-package/10-sharded-counter-false-sharing/cmd/demo
-cd go-solutions/15-sync-primitives/07-atomic-package/10-sharded-counter-false-sharing
-```
-
 ### Why a lock-free counter still hits a wall
 
 No goroutine ever blocks on an `atomic.Int64`, but the hardware still serializes

@@ -26,13 +26,6 @@ repo/                      independent module: example.com/repo
 - Test: the override records a metric and returns the delegate's result; a non-overridden method (`Save`) is forwarded transparently; a nil embedded interface makes a promoted call panic.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/08-embedding-for-composition/07-interface-embedding-decorator/cmd/demo
-cd go-solutions/07-structs-and-methods/08-embedding-for-composition/07-interface-embedding-decorator
-```
-
 ### Override one method, promote the rest
 
 A `UserRepository` might have a dozen methods. To instrument just `FindByID` you do

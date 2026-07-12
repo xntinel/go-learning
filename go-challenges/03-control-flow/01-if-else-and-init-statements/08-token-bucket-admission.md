@@ -26,13 +26,6 @@ tokenbucket/                independent module: example.com/tokenbucket
 - Test: a burst of `capacity` requests all allowed, the next rejected; after advancing the clock enough to refill one token, one more allowed; independent keys have independent buckets; tokens never exceed capacity after a long idle gap; concurrent `-race` test showing no over-admission.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/01-if-else-and-init-statements/08-token-bucket-admission/cmd/demo
-cd go-solutions/03-control-flow/01-if-else-and-init-statements/08-token-bucket-admission
-```
-
 ## Refill lazily, then decide
 
 A naive limiter runs a background goroutine that adds tokens on a ticker. The lazy

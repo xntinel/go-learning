@@ -25,13 +25,6 @@ Implement: a stateless `Validator` with a skew `Leeway` and `Validate(claims Cla
 Test: table-driven with an injected `now` — valid mid-window; before `nbf-leeway` rejects but within leeway accepts; after `exp+leeway` rejects but within leeway accepts; assert sentinels via `errors.Is`; `t.Parallel`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/16-testing-time-dependent-code/09-token-expiry-clock-skew/cmd/demo
-cd go-solutions/12-testing-ecosystem/16-testing-time-dependent-code/09-token-expiry-clock-skew
-```
-
 ### Why now is a parameter, and why leeway exists
 
 A validator that called `time.Now()` internally would be almost impossible to test

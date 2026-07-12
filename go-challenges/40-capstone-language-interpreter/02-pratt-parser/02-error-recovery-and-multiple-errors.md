@@ -19,12 +19,6 @@ recovery_test.go    multi-error collection, ErrParse wrapping, resume-after-erro
 - Test: `recovery_test.go` proves a clean program yields no errors, three broken statements yield at least three errors, every error satisfies `errors.Is(err, ErrParse)`, and a good statement after a bad one is still recovered.
 - Verify: `go test -race ./...` and `go run ./cmd/demo`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/40-capstone-language-interpreter/02-pratt-parser/02-error-recovery-and-multiple-errors/cmd/demo && cd go-solutions/40-capstone-language-interpreter/02-pratt-parser/02-error-recovery-and-multiple-errors
-```
-
 ### Why recovery is a feature, not an afterthought
 
 Stopping at the first syntax error is the easy thing to build and the wrong thing to ship. The information a compiler is most able to give cheaply — "here are the four places your syntax is broken" — is exactly the information a one-error-and-quit parser throws away. Recovery turns a single parse into a batch report, and it rests on two independent pieces that this module isolates so each can be seen clearly.

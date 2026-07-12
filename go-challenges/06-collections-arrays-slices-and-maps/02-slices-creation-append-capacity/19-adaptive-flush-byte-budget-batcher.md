@@ -45,8 +45,6 @@ bytebatcher/                  module example.com/bytebatcher
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/02-slices-creation-append-capacity/19-adaptive-flush-byte-budget-batcher
-cd go-solutions/06-collections-arrays-slices-and-maps/02-slices-creation-append-capacity/19-adaptive-flush-byte-budget-batcher
 go mod edit -go=1.24
 ```
 

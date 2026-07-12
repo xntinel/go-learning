@@ -37,8 +37,6 @@ merkletree/                   independent module: example.com/merkletree
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/07-recursive-functions-and-stack-depth/28-merkle-tree-verification-memoized/cmd/demo
-cd go-solutions/04-functions/07-recursive-functions-and-stack-depth/28-merkle-tree-verification-memoized
 go mod edit -go=1.24
 ```
 

@@ -23,13 +23,6 @@ Implement: `Config` with `Host`, `Port`, `TLS`; `Load(overrides, defaults Config
 Test: a table-driven `Test`, plus `ExampleLoad` that builds inputs in-line and pins the resolved config.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/15-testable-examples/10-example-with-setup-deterministic-output/cmd/demo
-cd go-solutions/12-testing-ecosystem/15-testable-examples/10-example-with-setup-deterministic-output
-```
-
 ## Setup is allowed; non-determinism is not
 
 `ExampleLoad` does genuine setup — it constructs a `defaults` and an `overrides`

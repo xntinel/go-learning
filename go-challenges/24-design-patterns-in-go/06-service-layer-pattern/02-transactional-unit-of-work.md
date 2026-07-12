@@ -23,12 +23,6 @@ transfer_test.go     conservation of total, every rollback path, one-transaction
 - Test: `transfer_test.go` covers the happy path, conservation of the total, insufficient-funds rollback, a missing-destination rollback of an already-applied debit, non-positive and same-account rejection, the nil-dependency guard, and that exactly one transaction is opened.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/24-design-patterns-in-go/06-service-layer-pattern/02-transactional-unit-of-work/cmd/demo && cd go-solutions/24-design-patterns-in-go/06-service-layer-pattern/02-transactional-unit-of-work
-```
-
 ### Why the transaction boundary is an interface
 
 A money transfer is two writes that must be one fact: the debit and the credit either both happen or neither does. A database gives that guarantee through a transaction, but if the service calls `db.Begin` and `tx.Commit` directly it is now bolted to that database, and the business rule — check the balance, debit, credit — is drowned in transaction bookkeeping. The unit of work pattern lifts the boundary into an interface. `UnitOfWork` has exactly one method, `Within(ctx, fn)`: it opens a transaction, hands `fn` a transaction-scoped `AccountStore`, commits if `fn` returns nil, and rolls back if `fn` returns any error. The service's whole responsibility becomes writing `fn`. It never types `Begin` or `Commit`; it states intent and trusts the boundary to make it atomic.

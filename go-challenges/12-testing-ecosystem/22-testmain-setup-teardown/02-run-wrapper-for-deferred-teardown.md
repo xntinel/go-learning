@@ -26,13 +26,6 @@ Implement: `withFixture(body func(dir string) int) (code int, dir string, tornDo
 Test: a one-line `TestMain` of `os.Exit(run(m))`; a test that reads the seeded fixture during the run; and a test that calls `withFixture` directly and asserts the dir was removed and the teardown flag set.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/22-testmain-setup-teardown/02-run-wrapper-for-deferred-teardown/cmd/demo
-cd go-solutions/12-testing-ecosystem/22-testmain-setup-teardown/02-run-wrapper-for-deferred-teardown
-```
-
 ### The bug, stated precisely
 
 Consider the broken shape:

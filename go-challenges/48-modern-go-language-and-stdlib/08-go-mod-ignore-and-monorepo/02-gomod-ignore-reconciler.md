@@ -30,8 +30,6 @@ gomodignore/                    independent module: example.com/gomodignore
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/48-modern-go-language-and-stdlib/08-go-mod-ignore-and-monorepo/02-gomod-ignore-reconciler/cmd/demo
-cd go-solutions/48-modern-go-language-and-stdlib/08-go-mod-ignore-and-monorepo/02-gomod-ignore-reconciler
 go mod edit -go=1.25
 go get golang.org/x/mod@v0.37.0
 ```

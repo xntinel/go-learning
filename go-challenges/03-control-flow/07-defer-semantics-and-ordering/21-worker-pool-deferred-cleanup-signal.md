@@ -33,8 +33,6 @@ workerpool/                 independent module: example.com/worker-pool-deferred
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/07-defer-semantics-and-ordering/21-worker-pool-deferred-cleanup-signal/cmd/demo
-cd go-solutions/03-control-flow/07-defer-semantics-and-ordering/21-worker-pool-deferred-cleanup-signal
 go mod edit -go=1.24
 ```
 

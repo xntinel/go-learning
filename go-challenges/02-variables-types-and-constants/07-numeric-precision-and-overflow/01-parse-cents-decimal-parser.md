@@ -31,13 +31,6 @@ explicit `ParseCents("92233720368547758.08")` returning `ErrOverflow` via
 `errors.Is`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/07-numeric-precision-and-overflow/01-parse-cents-decimal-parser/cmd/demo
-cd go-solutions/02-variables-types-and-constants/07-numeric-precision-and-overflow/01-parse-cents-decimal-parser
-```
-
 ### Why the parser is the trust boundary
 
 The invariant this package guarantees is that once an amount is a `Cents`, it is an

@@ -29,13 +29,6 @@ connreg/                     independent module: example.com/connreg
 - Test: register/lookup/deregister semantics; duplicate register returns false without overwriting; deregister of an absent id returns false; 100 concurrent mixed operations run clean under `-race`; count reflects net live registrations; every operation after `Close` returns its zero result; double `Close` does not panic.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/02-channel-basics/10-connection-registry-command-channel/cmd/demo
-cd go-solutions/13-goroutines-and-channels/02-channel-basics/10-connection-registry-command-channel
-```
-
 ### One channel, several tagged commands
 
 The single-operation actor loop (the monotonic ID generator) had exactly one thing

@@ -30,13 +30,6 @@ nulljson/                    independent module: example.com/nulljson
   round-trip `Value()` then `Scan()` is identity; a retained `[]byte` is copied.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/04-type-switch/03-sql-scanner-type-switch/cmd/demo
-cd go-solutions/03-control-flow/04-type-switch/03-sql-scanner-type-switch
-```
-
 ## The fixed driver vocabulary, and the []byte ownership trap
 
 `database/sql/driver.Value` is documented to be one of exactly seven Go types:

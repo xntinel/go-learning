@@ -27,13 +27,6 @@ alias/                     independent module: example.com/alias
 - Test: assert `a == b` and `*a == n` for `BadAlias`; `a != b` with independent mutation for `NoAlias`; mutate through one pointer and observe the other.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/09-pointer-aliasing-and-data-races/02-pointer-aliasing-fundamentals/cmd/demo
-cd go-solutions/09-pointers/09-pointer-aliasing-and-data-races/02-pointer-aliasing-fundamentals
-```
-
 ### What aliasing is, at the level of a single variable
 
 `BadAlias(n)` declares one local variable `x := n`, then returns `&x` twice. Both

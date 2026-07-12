@@ -30,13 +30,6 @@ Test: an equality test proving both mappers produce identical output; an
 while the nil mapper does more; and an `errors.Is` test for the validator.
 Verify: `go test -count=1 -race ./...`, then `go test -bench=. -benchmem ./...`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/07-escape-analysis/05-slice-preallocation-and-growth/cmd/demo
-cd go-solutions/09-pointers/07-escape-analysis/05-slice-preallocation-and-growth
-```
-
 ### Why growth costs N allocations and a hint costs one
 
 `append` to a slice that has no spare capacity must allocate a new, larger backing

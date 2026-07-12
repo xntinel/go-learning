@@ -27,13 +27,6 @@ bytesize/                 independent module: example.com/bytesize
 - Test: a table of `{name, in, want int64, wantErr bool}` that on an error row asserts `want == 0` and returns early so a spurious value can never pass.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/02-table-driven-tests/07-parser-with-error-cases/cmd/demo
-cd go-solutions/12-testing-ecosystem/02-table-driven-tests/07-parser-with-error-cases
-```
-
 ### Why the table splits into success and failure, and why the guard
 
 This is the module where the *failure* rows carry as much weight as the success

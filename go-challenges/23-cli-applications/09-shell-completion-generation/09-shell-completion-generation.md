@@ -25,8 +25,6 @@ Completion output should be sorted. Unstable suggestions make tests flaky and sh
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/23-cli-applications/09-shell-completion-generation/09-shell-completion-generation
-cd go-solutions/23-cli-applications/09-shell-completion-generation/09-shell-completion-generation
 go mod edit -go=1.26
 ```
 

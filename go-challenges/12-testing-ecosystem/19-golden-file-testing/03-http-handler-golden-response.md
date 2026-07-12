@@ -29,13 +29,6 @@ Implement: `Handler() http.Handler` routing `GET /orders/{id}`, returning the or
 Test: serve requests into an `httptest.ResponseRecorder`, assert status and `Content-Type` separately, then `json.Indent`-normalize the body and compare to a per-case golden.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/19-golden-file-testing/03-http-handler-golden-response/cmd/demo go-solutions/12-testing-ecosystem/19-golden-file-testing/03-http-handler-golden-response/testdata
-cd go-solutions/12-testing-ecosystem/19-golden-file-testing/03-http-handler-golden-response
-```
-
 ### Why golden the body but assert status and headers separately
 
 An HTTP response has three parts a consumer depends on: the status code, the

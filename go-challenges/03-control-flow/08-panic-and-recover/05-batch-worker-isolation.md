@@ -26,13 +26,6 @@ Implement: `ProcessBatch(ctx, msgs []Message, handle func(context.Context, Messa
 Test: a batch of 5 where index 2 panics and index 4 returns an error; assert 3 successes, the joined error `errors.Is` each failure, processing reached the last item, and a second panicking item is also caught (recover is re-armed each iteration).
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/08-panic-and-recover/05-batch-worker-isolation/cmd/demo
-cd go-solutions/03-control-flow/08-panic-and-recover/05-batch-worker-isolation
-```
-
 ### Why the recover goes inside a per-item helper
 
 The naive version wraps the whole loop in one `defer`/`recover`. That is worse

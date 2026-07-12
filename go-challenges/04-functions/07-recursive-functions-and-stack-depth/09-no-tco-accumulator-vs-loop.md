@@ -26,13 +26,6 @@ notco/                     independent module: example.com/notco
 - Test: both agree on random slices; a benchmark comparing them; an informational test showing an ordinary panic is recoverable (to contrast with a stack overflow, which is not).
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/07-recursive-functions-and-stack-depth/09-no-tco-accumulator-vs-loop/cmd/demo
-cd go-solutions/04-functions/07-recursive-functions-and-stack-depth/09-no-tco-accumulator-vs-loop
-```
-
 ### Why "tail recursion" buys nothing in Go
 
 In languages with tail-call optimization (Scheme, and with caveats some others),

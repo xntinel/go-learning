@@ -21,12 +21,6 @@ mqpool_test.go       reuse over loopback, broken-conn discard, backoff retry, ct
 - Test: prove the pool reuses one connection across many requests, discards a broken one, retries a flaky dial until it succeeds, and gives up when the context expires.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/41-capstone-message-queue/07-tcp-protocol-client/04-connection-pool-reconnect/cmd/demo && cd go-solutions/41-capstone-message-queue/07-tcp-protocol-client/04-connection-pool-reconnect
-```
-
 ### Why bound the pool, and why backoff plus jitter on reconnect
 
 A pool is two ideas in one struct: reuse and a bound. Reuse is the obvious win — an idle, already-handshaked connection skips the SYN/SYN-ACK/ACK round trip, so a workload of many small requests spends its time on requests instead of handshakes. The bound is the less obvious but equally important half. An unbounded pool under a burst opens connections until it hits the server's accept backlog or the client's file-descriptor limit, converting a load spike into a connection storm. Capping the idle set with a buffered channel of fixed size means `Get` reuses when it can and `Put` closes the surplus when the idle set is already full, so the pool never holds more than its bound idle and the surplus is reclaimed rather than leaked.

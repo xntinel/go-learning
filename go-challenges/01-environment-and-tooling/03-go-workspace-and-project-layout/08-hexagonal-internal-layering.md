@@ -38,8 +38,6 @@ service/                       module github.com/example/service
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/01-environment-and-tooling/03-go-workspace-and-project-layout/08-hexagonal-internal-layering/internal/core go-solutions/01-environment-and-tooling/03-go-workspace-and-project-layout/08-hexagonal-internal-layering/internal/adapters go-solutions/01-environment-and-tooling/03-go-workspace-and-project-layout/08-hexagonal-internal-layering/internal/platform go-solutions/01-environment-and-tooling/03-go-workspace-and-project-layout/08-hexagonal-internal-layering/cmd/server go-solutions/01-environment-and-tooling/03-go-workspace-and-project-layout/08-hexagonal-internal-layering/cmd/demo
-cd go-solutions/01-environment-and-tooling/03-go-workspace-and-project-layout/08-hexagonal-internal-layering
 go mod edit -go=1.24
 ```
 

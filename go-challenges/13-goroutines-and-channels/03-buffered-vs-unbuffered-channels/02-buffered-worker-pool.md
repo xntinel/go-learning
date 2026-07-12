@@ -29,8 +29,6 @@ workerpool/                  module: example.com/workerpool
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/13-goroutines-and-channels/03-buffered-vs-unbuffered-channels/02-buffered-worker-pool/cmd/demo
-cd go-solutions/13-goroutines-and-channels/03-buffered-vs-unbuffered-channels/02-buffered-worker-pool
 go mod edit -go=1.26
 ```
 

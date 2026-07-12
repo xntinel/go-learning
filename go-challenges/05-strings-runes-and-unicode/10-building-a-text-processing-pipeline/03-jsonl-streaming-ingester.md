@@ -27,13 +27,6 @@ ingester/                 independent module: example.com/ingester
 - Test: a golden multi-record decode; a malformed record on line 2 after a blank line asserting the error contains `line 2`; a blank-line-between-records test; an oversized-line test asserting `bufio.ErrTooLong` is surfaced via `errors.Is`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/10-building-a-text-processing-pipeline/03-jsonl-streaming-ingester/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/10-building-a-text-processing-pipeline/03-jsonl-streaming-ingester
-```
-
 ### Buffer sizing, line numbering, and error wrapping
 
 `bufio.Scanner` reads line by line, but its default maximum token size is 64 KiB.

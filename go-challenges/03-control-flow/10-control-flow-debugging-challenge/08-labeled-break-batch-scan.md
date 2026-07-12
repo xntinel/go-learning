@@ -22,13 +22,6 @@ dedup/                     module example.com/dedup
 - Test: a table where the first duplicate is early and later duplicates exist (the exact key proves which one fired); an examined-count assertion proving the outer loop stopped; a no-duplicate case returning the sentinel.
 - Verify: `go test -count=1 -race ./...`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/08-labeled-break-batch-scan/cmd/demo
-cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/08-labeled-break-batch-scan
-```
-
 ### The artifact and the planted bug
 
 The scanner walks batches in order, remembering every key it has seen, and stops

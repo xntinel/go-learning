@@ -28,8 +28,6 @@ consumer/                  independent module: example.com/consumer
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/50-messaging-and-event-driven/07-idempotent-consumers-inbox/02-idempotent-consumer/cmd/demo
-cd go-solutions/50-messaging-and-event-driven/07-idempotent-consumers-inbox/02-idempotent-consumer
 go mod edit -go=1.26
 ```
 

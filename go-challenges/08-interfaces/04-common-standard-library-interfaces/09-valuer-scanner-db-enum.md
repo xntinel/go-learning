@@ -26,13 +26,6 @@ dbenum/                     independent module: example.com/dbenum
 - Test: `Value()` returns a type in `driver.Value`'s allowed set and never panics; `Scan` handles both `string` and `[]byte`; `Scan(nil)` sets a defined invalid state; `Scan` of an unknown value errors; a `Value`/`Scan` round-trip is the identity.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/04-common-standard-library-interfaces/09-valuer-scanner-db-enum/cmd/demo
-cd go-solutions/08-interfaces/04-common-standard-library-interfaces/09-valuer-scanner-db-enum
-```
-
 ### The restricted write set and the ambiguous read
 
 `driver.Value` is not `any` — `database/sql` accepts only `nil`, `int64`,

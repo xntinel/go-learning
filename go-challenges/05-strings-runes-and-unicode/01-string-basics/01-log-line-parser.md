@@ -27,13 +27,6 @@ Test: valid line, nanosecond timestamp, four rejection cases, a `Format`→`Pars
 round-trip property, and a Unicode-message pass-through.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/01-string-basics/01-log-line-parser/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/01-string-basics/01-log-line-parser
-```
-
 ## Why SplitN with n=3, and why time.Parse over hand-rolling
 
 A structured log line here is three fields separated by spaces: an RFC 3339

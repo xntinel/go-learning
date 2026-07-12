@@ -26,13 +26,6 @@ metrics/                       independent module: example.com/metrics
 - Test: increment named counters through the stored `*Counter` and assert totals; a concurrent test with many goroutines under `-race`; a documented block quoting the non-addressability compile error.
 - Verify: `go vet ./...`, `go test -count=1 -race ./...`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/07-method-sets-and-addressability/03-metrics-registry-map-value-addressability/cmd/demo
-cd go-solutions/07-structs-and-methods/07-method-sets-and-addressability/03-metrics-registry-map-value-addressability
-```
-
 ### Why the map must hold *Counter
 
 `Counter.Inc()` mutates the counter, so it is a pointer method (and its body is an

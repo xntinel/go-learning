@@ -26,13 +26,6 @@ reportsort/                 independent module: example.com/reportsort
 - Test: the multi-key ordering on a fixed fixture; stability (equal keys keep input order) under `sort.Stable`; `sort.Search` finds an insertion index; the `sort.Interface` result matches `SortModern`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/04-common-standard-library-interfaces/08-sort-interface-multikey/cmd/demo
-cd go-solutions/08-interfaces/04-common-standard-library-interfaces/08-sort-interface-multikey
-```
-
 ### Two ways to say the same ordering
 
 `sort.Interface` is three methods on the slice type. `Less(i, j)` encodes the full

@@ -33,8 +33,6 @@ jsworker/                    independent module: example.com/jsworker
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/50-messaging-and-event-driven/03-nats-jetstream-persistence/02-durable-pull-consumer-acks/cmd/demo
-cd go-solutions/50-messaging-and-event-driven/03-nats-jetstream-persistence/02-durable-pull-consumer-acks
 go mod edit -go=1.26
 ```
 

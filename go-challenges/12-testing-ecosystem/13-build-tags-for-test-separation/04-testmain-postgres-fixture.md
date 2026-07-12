@@ -30,8 +30,6 @@ pgrepo/                     independent module: example.com/pgrepo
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/12-testing-ecosystem/13-build-tags-for-test-separation/04-testmain-postgres-fixture/cmd/demo
-cd go-solutions/12-testing-ecosystem/13-build-tags-for-test-separation/04-testmain-postgres-fixture
 go mod edit -go=1.26
 ```
 

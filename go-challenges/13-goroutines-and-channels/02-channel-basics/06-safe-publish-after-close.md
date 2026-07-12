@@ -25,13 +25,6 @@ broker/                      independent module: example.com/broker
 - Test: a subscriber receives a published message; publish after close returns `ErrClosed`; double close is safe; concurrent publishers racing a close never panic.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/02-channel-basics/06-safe-publish-after-close/cmd/demo
-cd go-solutions/13-goroutines-and-channels/02-channel-basics/06-safe-publish-after-close
-```
-
 ### The whole difficulty is the shutdown race
 
 `close(ch)` is the correct way to tell subscribers "no more messages"; a subscriber

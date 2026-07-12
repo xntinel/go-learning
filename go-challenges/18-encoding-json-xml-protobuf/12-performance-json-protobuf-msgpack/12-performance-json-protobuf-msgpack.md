@@ -21,8 +21,6 @@ JSON is portable and readable. gob is Go-specific and convenient. The custom bin
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/18-encoding-json-xml-protobuf/12-performance-json-protobuf-msgpack/12-performance-json-protobuf-msgpack/cmd/demo
-cd go-solutions/18-encoding-json-xml-protobuf/12-performance-json-protobuf-msgpack/12-performance-json-protobuf-msgpack
 go mod edit -go=1.26
 ```
 

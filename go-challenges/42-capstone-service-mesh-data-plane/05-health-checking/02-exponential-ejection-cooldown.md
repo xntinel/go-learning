@@ -22,7 +22,6 @@ backoff_test.go      the doubling sequence, the cap, overflow safety, jitter bou
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/42-capstone-service-mesh-data-plane/05-health-checking/02-exponential-ejection-cooldown/cmd/demo && cd go-solutions/42-capstone-service-mesh-data-plane/05-health-checking/02-exponential-ejection-cooldown
 go mod edit -go=1.26
 ```
 

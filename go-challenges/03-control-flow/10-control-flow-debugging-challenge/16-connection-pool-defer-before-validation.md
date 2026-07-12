@@ -28,11 +28,6 @@ connpool/                   independent module: example.com/connection-pool-defe
 - Test: force `validate` to fail and assert `Pool.Available()` is unchanged and a subsequent `Acquire` still succeeds; a second test asserts the same on the success path.
 - Verify: `go test -count=1 ./...`.
 
-```bash
-mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/16-connection-pool-defer-before-validation/cmd/demo
-cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/16-connection-pool-defer-before-validation
-```
-
 ### Why the defer has to be registered right after Acquire, not after validate
 
 `Acquire` hands ownership of a `*Handle` to the caller the instant it

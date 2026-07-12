@@ -30,8 +30,6 @@ toolregistry/               independent module: example.com/toolregistry
 Set up the module. It needs nothing beyond the standard library:
 
 ```bash
-mkdir -p go-solutions/52-ai-llm-backends/03-tool-and-function-calling/01-tool-registry-and-schema/cmd/demo
-cd go-solutions/52-ai-llm-backends/03-tool-and-function-calling/01-tool-registry-and-schema
 go mod edit -go=1.26
 ```
 

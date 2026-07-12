@@ -22,13 +22,6 @@ Implement: `Service` (Name/Start/Stop), `Config{Critical, StopTimeout}`, `App` w
 Test: drive `Run` in a goroutine, cancel the root context, assert start/stop counts via `atomic.Int64`; separate tests for critical abort (wrapped error, next service never starts) and non-critical continue.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/14-building-a-context-aware-service-framework/01-service-lifecycle-core/cmd/demo
-cd go-solutions/14-select-and-context/14-building-a-context-aware-service-framework/01-service-lifecycle-core
-```
-
 ### The contract and why Start must not block
 
 `Start(ctx)` is called once, synchronously, in registration order. Its job is to

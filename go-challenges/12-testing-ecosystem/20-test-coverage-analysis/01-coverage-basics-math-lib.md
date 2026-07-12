@@ -27,13 +27,6 @@ mathcov/                   independent module: example.com/mathcov
 - Test: table-driven happy-path cases, the `b == 0` error branch asserted with `errors.Is`, and the `Div(_, 1)` branch pinned explicitly.
 - Verify: `go test -count=1 -race -covermode=atomic -cover ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/20-test-coverage-analysis/01-coverage-basics-math-lib/cmd/demo
-cd go-solutions/12-testing-ecosystem/20-test-coverage-analysis/01-coverage-basics-math-lib
-```
-
 ### The library and its one interesting branch
 
 Three of the four operations are total functions: for every pair of `int`s they

@@ -24,13 +24,6 @@ Implement: `printProbe(w io.Writer)` that runs the stdlib-only `Normalize` over 
 Test: capture `printProbe` into a `bytes.Buffer` and assert the exact locale line (`out="istanbul"`), the unchanged German line (`out == in`), and `same key? false`; plus direct invariants on `Normalize`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/08-unicode-normalization-and-collation/02-nfc-nfd-locale-gap-probe/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/08-unicode-normalization-and-collation/02-nfc-nfd-locale-gap-probe
-```
-
 ### Why a probe, and why it takes an io.Writer
 
 A diagnostic that prints to `os.Stdout` inside `main` cannot be tested; a

@@ -28,13 +28,6 @@ profile-capture/              independent module: example.com/profile-capture
 - Test: `TestProfileContention` writes the mutex profile via `pprof.Lookup("mutex").WriteTo` to a `t.TempDir` file and asserts non-empty size; `TestBlockProfileNonEmpty` does the same for the block profile; both save-and-restore the profiler rates in `t.Cleanup`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/14-contention-profiling/05-mutex-and-block-profile-capture/cmd/demo
-cd go-solutions/15-sync-primitives/14-contention-profiling/05-mutex-and-block-profile-capture
-```
-
 ### Writing a profile from a test, and restoring the rates
 
 A profile is captured in three steps: arm the profiler, drive work that contends,

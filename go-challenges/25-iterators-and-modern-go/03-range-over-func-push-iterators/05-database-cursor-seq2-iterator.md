@@ -33,12 +33,6 @@ rowiter_test.go      full stream, early termination materializes fewer rows, err
   stream.
 - Verify: `go test -run TestRows -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/25-iterators-and-modern-go/03-range-over-func-push-iterators/05-database-cursor-seq2-iterator/cmd/demo && cd go-solutions/25-iterators-and-modern-go/03-range-over-func-push-iterators/05-database-cursor-seq2-iterator
-```
-
 ### From the pull cursor to a push pair
 
 `database/sql` exposes a result set as a pull cursor: the consumer drives it with

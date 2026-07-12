@@ -35,8 +35,6 @@ Both accept the same context and argument list. The difference is that `stmt.Que
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/22-database-patterns/04-prepared-statements/04-prepared-statements/cmd/demo
-cd go-solutions/22-database-patterns/04-prepared-statements/04-prepared-statements
 go mod edit -go=1.26
 ```
 

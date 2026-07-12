@@ -27,13 +27,6 @@ retrykit/                            module example.com/retrykit
 - Test: an `export_test.go` assigns `ComputeBackoff`/`Jitter` to the unexported functions; an external `package retry_test` asserts monotonic growth, cap enforcement, and jitter bounds.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/11-packages-and-modules/03-internal-packages/07-export-test-white-box-internal/internal/retry go-solutions/11-packages-and-modules/03-internal-packages/07-export-test-white-box-internal/cmd/demo
-cd go-solutions/11-packages-and-modules/03-internal-packages/07-export-test-white-box-internal
-```
-
 ### Why export_test.go, and how it composes with internal
 
 There are two ways to test private logic. A white-box test in the same package

@@ -32,13 +32,6 @@ publicstr/                       independent module: example.com/publicstr
 - Test: v2's new contract (rune-safe, `(string, bool)`); a consumer test importing both `example.com/publicstr` and `example.com/publicstr/v2` and using each, proving they are distinct, independently-resolvable packages.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/11-packages-and-modules/09-designing-a-public-go-module/09-ship-a-breaking-change-as-v2/v2 go-solutions/11-packages-and-modules/09-designing-a-public-go-module/09-ship-a-breaking-change-as-v2/cmd/demo
-cd go-solutions/11-packages-and-modules/09-designing-a-public-go-module/09-ship-a-breaking-change-as-v2
-```
-
 ### How semantic import versioning encodes the major version
 
 Go encodes the major version in the *import path*. Major versions 2 and above live

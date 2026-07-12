@@ -31,13 +31,6 @@ Test: `TestLimiterConcurrentAllow` fires K goroutines and asserts the granted
 count stays within the mathematically allowed bound, under `-race`.
 Verify: `go test -count=5 -race ./...`; then `go run -race ./cmd/racy`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/21-race-detector/07-mutex-token-bucket-limiter/cmd/demo go-solutions/12-testing-ecosystem/21-race-detector/07-mutex-token-bucket-limiter/cmd/racy
-cd go-solutions/12-testing-ecosystem/21-race-detector/07-mutex-token-bucket-limiter
-```
-
 ### Why compound state needs one lock, not two atomics
 
 `Allow` does four things that must be one atomic step: read `now`, compute the

@@ -28,13 +28,6 @@ composition/                independent module: example.com/composition
 - Test: `newHandler` served by an `httptest.NewRecorder` through a fake repo; `Run` started over a `127.0.0.1:0` loopback listener, serving a real request through the injected stack, then returning cleanly when the context is cancelled.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/10-dependency-injection-with-interfaces/06-composition-root-wiring-main/cmd/demo
-cd go-solutions/08-interfaces/10-dependency-injection-with-interfaces/06-composition-root-wiring-main
-```
-
 ### The one place allowed to import adapters
 
 Draw the import arrows for this module. `service.go` — the business logic — imports

@@ -24,13 +24,6 @@ pluginset/                 independent module: example.com/pluginset
 - Test: a table asserting `nil==nil`, `nil==typedNil` (false), `typedNil(*A)==typedNil(*B)` (false), `sameTypedNil==sameTypedNil` (true); a recover-guarded subtest proving a slice-backed dynamic type panics on comparison.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/07-nil-interface-values/07-nil-interface-equality-registry/cmd/demo
-cd go-solutions/08-interfaces/07-nil-interface-values/07-nil-interface-equality-registry
-```
-
 ### Why interface equality is subtle and sometimes fatal
 
 An interface value is a (dynamic type, dynamic value) pair, and `==` compares

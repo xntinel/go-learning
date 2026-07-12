@@ -30,8 +30,6 @@ repo/                       independent module: example.com/repo
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/09-pointers/10-designing-pointer-safe-apis/01-pointer-safe-repository/cmd/demo
-cd go-solutions/09-pointers/10-designing-pointer-safe-apis/01-pointer-safe-repository
 go mod edit -go=1.25
 ```
 

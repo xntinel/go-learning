@@ -18,13 +18,6 @@ Most production handlers are wrappers: they add fields, route levels, sample eve
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/21-structured-logging-with-slog/06-custom-slog-handler/06-custom-slog-handler
-cd go-solutions/21-structured-logging-with-slog/06-custom-slog-handler/06-custom-slog-handler
-```
-
 Edit `go.mod`:
 
 ```go

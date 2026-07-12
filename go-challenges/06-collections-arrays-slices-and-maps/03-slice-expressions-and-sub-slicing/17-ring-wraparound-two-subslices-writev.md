@@ -41,8 +41,6 @@ ringbuf/                       module example.com/ringbuf
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/17-ring-wraparound-two-subslices-writev
-cd go-solutions/06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/17-ring-wraparound-two-subslices-writev
 go mod edit -go=1.24
 ```
 

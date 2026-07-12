@@ -19,12 +19,6 @@ broadcast_test.go    idempotent-unsubscribe + a -race subscribe/unsubscribe/broa
 - Test: `broadcast_test.go` proves unsubscribe is idempotent, that `Close` closes live channels, and that concurrent subscribe/unsubscribe/broadcast is race-free.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/24-design-patterns-in-go/09-observer-pattern-with-channels/02-safe-subscribe-unsubscribe/cmd/demo && cd go-solutions/24-design-patterns-in-go/09-observer-pattern-with-channels/02-safe-subscribe-unsubscribe
-```
-
 ### Identity by id, exactly-once close, and the lock that ties it together
 
 When subscribers are transient, the publisher needs to find and remove a specific subscriber cheaply, and removal must close that subscriber's channel exactly once even when an `Unsubscribe` races a bus-wide `Close`. A slice of channels (as in the event bus) makes removal an O(n) scan and identifies a subscriber by channel value; a `map[int]chan T` keyed by a monotonically increasing id makes removal O(1) and gives every subscription a stable identity that never collides. `Subscribe` allocates the next id under the lock, stores the channel, and hands the caller a `*Subscription[T]` carrying that id.

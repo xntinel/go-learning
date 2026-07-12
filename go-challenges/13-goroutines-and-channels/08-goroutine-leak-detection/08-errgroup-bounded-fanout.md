@@ -30,8 +30,6 @@ boundedfanout/               independent module: example.com/boundedfanout
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/13-goroutines-and-channels/08-goroutine-leak-detection/08-errgroup-bounded-fanout/cmd/demo
-cd go-solutions/13-goroutines-and-channels/08-goroutine-leak-detection/08-errgroup-bounded-fanout
 go get golang.org/x/sync/errgroup
 go get go.uber.org/goleak@v1.3.0
 ```

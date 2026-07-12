@@ -67,13 +67,6 @@ A concrete trace:
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/46-capstone-concurrency-deep-dive/04-epoch-based-reclamation/04-epoch-based-reclamation/cmd/demo
-cd go-solutions/46-capstone-concurrency-deep-dive/04-epoch-based-reclamation/04-epoch-based-reclamation
-```
-
 This is a library; verification is through `go test`.
 
 ### Exercise 1: Core EBR Types and the Pin/Unpin Protocol

@@ -27,13 +27,6 @@ filterparser/              independent module: example.com/filterparser
 - Test: valid expressions asserting AST shape and precedence (AND tighter than OR, parentheses override); error cases (unbalanced parens, trailing tokens, empty input, missing operator); a depth-cap rejection; an `Eval` round-trip.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/07-recursive-functions-and-stack-depth/04-recursive-descent-filter-parser/cmd/demo
-cd go-solutions/04-functions/07-recursive-functions-and-stack-depth/04-recursive-descent-filter-parser
-```
-
 ### The grammar and why one function per level
 
 The filter language has three precedence levels. `OR` binds loosest, `AND` binds

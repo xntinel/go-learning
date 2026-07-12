@@ -30,8 +30,6 @@ broadcast/                 independent module: example.com/broadcast
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/03-variadic-functions/31-pubsub-broadcast-subscriber-fanout/cmd/demo
-cd go-solutions/04-functions/03-variadic-functions/31-pubsub-broadcast-subscriber-fanout
 go mod edit -go=1.24
 ```
 

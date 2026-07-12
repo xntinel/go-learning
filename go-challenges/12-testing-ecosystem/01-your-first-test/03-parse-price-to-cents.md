@@ -21,13 +21,6 @@ pricecents/                independent module: example.com/pricecents
 - Test: the success path as error-first-then-value; the error path asserting `err != nil` and `errors.Is(err, ErrInvalidPrice)`.
 - Verify: `gofmt -l .`, `go vet ./...`, `go test -count=1 -race ./...`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/01-your-first-test/03-parse-price-to-cents/cmd/demo
-cd go-solutions/12-testing-ecosystem/01-your-first-test/03-parse-price-to-cents
-```
-
 ### Why integer cents, and why exactly two decimals
 
 Representing `$19.99` as the float `19.99` is a bug waiting for a reconciliation

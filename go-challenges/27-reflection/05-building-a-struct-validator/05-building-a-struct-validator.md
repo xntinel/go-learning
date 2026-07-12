@@ -34,13 +34,6 @@ Nested structs must be validated recursively. A `validate:"dive"` tag on an embe
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/27-reflection/05-building-a-struct-validator/05-building-a-struct-validator/cmd/demo
-cd go-solutions/27-reflection/05-building-a-struct-validator/05-building-a-struct-validator
-```
-
 ### Exercise 1: Error Types and the Validate Entry Point
 
 Create `validator.go`:

@@ -25,13 +25,6 @@ mutexstack/                      independent module: example.com/mutexstack
 - Test: the preserved `TestMutexStackLIFOOrder` plus `TestContract`, a suite parameterized over a `lifo[T]` interface and a table of constructors covering both implementations.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/11-lock-free-data-structures/02-mutex-stack-baseline/stack go-solutions/15-sync-primitives/11-lock-free-data-structures/02-mutex-stack-baseline/cmd/demo
-cd go-solutions/15-sync-primitives/11-lock-free-data-structures/02-mutex-stack-baseline
-```
-
 ### Why the boring version comes first
 
 The mutex stack is trivially correct: one lock serializes every operation, the

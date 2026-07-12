@@ -25,8 +25,6 @@ Test: the package loads without panicking; `validatePatterns` rejects a table mi
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/08-init-functions-and-package-initialization/14-regexp-table-cross-validation-at-init
-cd go-solutions/04-functions/08-init-functions-and-package-initialization/14-regexp-table-cross-validation-at-init
 go mod edit -go=1.24
 ```
 

@@ -24,13 +24,6 @@ txn/                          module example.com/txn
 - Test: success commits and applies the writes; a returned error rolls back with no commit; a panicking callback rolls back and surfaces `ErrPanic`; a rollback that itself errors is joined with the original error.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/05-anonymous-functions/07-transaction-callback-runner/cmd/demo
-cd go-solutions/04-functions/05-anonymous-functions/07-transaction-callback-runner
-```
-
 ### The runner owns the boundary; the literal owns the work
 
 `WithinTx` is the inversion at the heart of callback-style APIs. The caller passes a

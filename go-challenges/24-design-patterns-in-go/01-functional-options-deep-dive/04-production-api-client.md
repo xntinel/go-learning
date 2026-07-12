@@ -21,12 +21,6 @@ client_test.go         defaults, precedence, aggregated invalid combos, retry/gi
 - Test: `client_test.go` proves defaults, last-option-wins precedence, that one bad call surfaces every problem (including the transport/TLS conflict) through `errors.Is`, that retries replay 5xx and then give up, that middleware nest in order, and that the TLS config is cloned.
 - Verify: `go test -race ./...` then `go run ./cmd/demo`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/24-design-patterns-in-go/01-functional-options-deep-dive/04-production-api-client/cmd/demo && cd go-solutions/24-design-patterns-in-go/01-functional-options-deep-dive/04-production-api-client
-```
-
 ### Why a client constructor is the canonical home for functional options
 
 A client is the textbook case for the pattern: almost every caller wants sane defaults and only a handful override one or two knobs, and the set of knobs grows over the life of the service. A positional constructor — `New(baseURL string, timeout time.Duration, retries int, tls *tls.Config, ...)` — breaks every call site the day someone adds a setting, and reads as an unlabelled tuple at the call. Options keep the constructor backward-compatible and self-documenting: `New(WithBaseURL(u), WithRetry(3, 100*time.Millisecond))` says exactly what it configures and leaves everything else defaulted.

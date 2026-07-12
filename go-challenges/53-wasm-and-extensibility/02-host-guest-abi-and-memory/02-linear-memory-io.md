@@ -27,13 +27,6 @@ memio/                     independent module: example.com/memio
 - Test: table-driven round-trips; out-of-range write and read asserted with `errors.Is`; a write-through proof (mutating a view is visible in a later read); a proof that a defensive copy survives a `Grow` while a retained view goes stale.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/53-wasm-and-extensibility/02-host-guest-abi-and-memory/02-linear-memory-io/cmd/demo
-cd go-solutions/53-wasm-and-extensibility/02-host-guest-abi-and-memory/02-linear-memory-io
-```
-
 ### The embedded guest, and why it is 25 bytes
 
 To exercise linear-memory I/O you need a module that *has* a memory and exports

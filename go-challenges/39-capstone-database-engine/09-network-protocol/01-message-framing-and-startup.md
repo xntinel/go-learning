@@ -20,12 +20,6 @@ wire_test.go         framing round-trip, empty payload, startup parsing, C-strin
 - Test: `wire_test.go` round-trips a typed message, an empty-payload message, and a startup message over `net.Pipe`, and exercises the C-string scanner's edge cases.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/09-network-protocol/01-message-framing-and-startup/cmd/demo && cd go-solutions/39-capstone-database-engine/09-network-protocol/01-message-framing-and-startup
-```
-
 ### How framing actually works
 
 The whole job of `ReadMessage` is to turn a byte stream back into discrete messages, and it does so with three reads in a fixed order: one byte for the type, four bytes for the length, then exactly `length - 4` bytes for the payload. The length field is big-endian and, per Postgres, counts itself but not the type byte, so the payload is `length - 4` bytes long. Every fixed-size read goes through `io.ReadFull`, because a single `bufio.Reader.Read` (or the underlying `net.Conn.Read`) may return fewer bytes than asked even when more are coming; `io.ReadFull` loops until the buffer is full or the stream ends. `WriteMessage` is the mirror image: write the type byte, write `uint32(len(payload) + 4)` big-endian, write the payload. The `+ 4` is the entire ballgame — drop it and the reader on the far side is off by four bytes forever.

@@ -19,12 +19,6 @@ record_test.go       round-trip table, exhaustive bit-flip detection, short-buff
 - Test: `record_test.go` round-trips several records, flips every payload byte and asserts each flip is caught, and rejects buffers shorter than a header.
 - Verify: `go test -run 'TestRecord|TestDecode' -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/01-write-ahead-log/01-record-encoding/cmd/demo && cd go-solutions/39-capstone-database-engine/01-write-ahead-log/01-record-encoding
-```
-
 ### Why framing and a checksum, and why this exact layout
 
 A log file is a flat stream of bytes with no index. The reader is handed a file that a crashed process may have stopped writing in the middle of any record, and it must still parse the good prefix without seeking, guessing, or reading past a record into the next one. Two properties make that possible, and the frame is designed to provide exactly them.

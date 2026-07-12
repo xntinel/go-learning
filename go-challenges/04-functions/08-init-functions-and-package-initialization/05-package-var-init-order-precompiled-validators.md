@@ -25,13 +25,6 @@ Implement: package-level `regexp.MustCompile` patterns and a derived allow-list 
 Test: each precompiled regexp is non-nil and matches/rejects known inputs; the derived var is correct despite being declared "before" its dependency in source.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/08-init-functions-and-package-initialization/05-package-var-init-order-precompiled-validators/cmd/demo
-cd go-solutions/04-functions/08-init-functions-and-package-initialization/05-package-var-init-order-precompiled-validators
-```
-
 ### Why precompile, and why order is not source order
 
 Compiling a regexp is expensive relative to matching one, and a static pattern has

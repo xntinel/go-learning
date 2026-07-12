@@ -28,14 +28,6 @@ Implement: `AssertNoLeaks(t testing.TB, d *Detector)` that drains `AfterFunc` ca
 Test: cancelled-not-leaked, uncancelled-is-leaked (the canary), parent-cancel-clears-child, timeout-clears-on-expiry, `ActiveContexts` pinned at each stage, `TotalCreated` across all three constructors, report carries caller and age, `AssertNoLeaks` passes on clean code, and the deadline-expiry test.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/13-context-leak-detection/02-assert-no-leaks-suite/internal/leakdetect
-mkdir -p go-solutions/14-select-and-context/13-context-leak-detection/02-assert-no-leaks-suite/cmd/demo
-cd go-solutions/14-select-and-context/13-context-leak-detection/02-assert-no-leaks-suite
-```
-
 ### Why AssertNoLeaks sleeps before it checks
 
 `AssertNoLeaks` is the ergonomic front door: any test can call it and get a

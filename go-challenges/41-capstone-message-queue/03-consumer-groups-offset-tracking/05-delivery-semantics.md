@@ -19,12 +19,6 @@ delivery_test.go     lost-on-crash, redelivered-on-crash, clean run, resume-from
 - Test: a crash under `AtMostOnce` loses the message (process count 0), the same crash under `AtLeastOnce` redelivers it (process count 2), a clean run processes each message exactly once, and a consumer resumes from its committed offset.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/41-capstone-message-queue/03-consumer-groups-offset-tracking/05-delivery-semantics/cmd/demo && cd go-solutions/41-capstone-message-queue/03-consumer-groups-offset-tracking/05-delivery-semantics
-```
-
 ### The vulnerable window between process and commit
 
 Processing a message and recording that you processed it are two separate writes to two separate places - the side effect goes to your application, the offset goes to the offset store - and nothing makes them atomic. A crash can fall in the window between them, and which step you put first decides what that crash costs.

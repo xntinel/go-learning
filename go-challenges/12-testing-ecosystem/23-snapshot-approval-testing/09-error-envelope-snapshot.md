@@ -28,13 +28,6 @@ Implement: a JSON error envelope, a `WriteError` writer, and a `Handler` whose `
 Test: snapshot status + envelope for the 400 and 500 paths against goldens; assert a changed error code breaks the snapshot.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/09-error-envelope-snapshot/cmd/demo go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/09-error-envelope-snapshot/testdata
-cd go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/09-error-envelope-snapshot
-```
-
 ### Why error envelopes are prime snapshot candidates
 
 Error envelopes are exactly the output snapshot testing is best at. They are small,

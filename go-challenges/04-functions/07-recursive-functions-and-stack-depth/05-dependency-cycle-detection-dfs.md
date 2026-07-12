@@ -25,13 +25,6 @@ cycledetect/               independent module: example.com/cycledetect
 - Test: an acyclic DAG returns `false`; `A->B->C->A` returns the cycle; a self-loop `A->A` is detected; disconnected components are each checked; the reported cycle is a real closed path; determinism via sorted iteration.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/07-recursive-functions-and-stack-depth/05-dependency-cycle-detection-dfs/cmd/demo
-cd go-solutions/04-functions/07-recursive-functions-and-stack-depth/05-dependency-cycle-detection-dfs
-```
-
 ### Why three colors, not one set
 
 Recursion over a graph must terminate, and a graph — unlike a tree — can have

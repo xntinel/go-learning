@@ -18,13 +18,6 @@ Library code should not decide whether production uses text or JSON. A small con
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/21-structured-logging-with-slog/03-json-handler-vs-text-handler/03-json-handler-vs-text-handler
-cd go-solutions/21-structured-logging-with-slog/03-json-handler-vs-text-handler/03-json-handler-vs-text-handler
-```
-
 Edit `go.mod`:
 
 ```go

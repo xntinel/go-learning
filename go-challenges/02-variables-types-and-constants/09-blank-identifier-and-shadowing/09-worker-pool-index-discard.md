@@ -27,13 +27,6 @@ workerpool/                     module: example.com/workerpool
 - Test: all jobs execute exactly once on the happy path (atomic counter); results collected regardless of order; a failing job surfaces a wrapped error and stops further work; run under `-race`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/09-blank-identifier-and-shadowing/09-worker-pool-index-discard/cmd/demo
-cd go-solutions/02-variables-types-and-constants/09-blank-identifier-and-shadowing/09-worker-pool-index-discard
-```
-
 ### The index discard, and the aggregation that must not shadow
 
 The feeder ranges the job slice with `for _, job := range jobs`: the index is

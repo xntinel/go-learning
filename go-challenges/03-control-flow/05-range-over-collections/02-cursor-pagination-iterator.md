@@ -29,8 +29,6 @@ cursorpager/                independent module: example.com/cursorpager
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/05-range-over-collections/02-cursor-pagination-iterator/cmd/demo
-cd go-solutions/03-control-flow/05-range-over-collections/02-cursor-pagination-iterator
 go mod edit -go=1.24
 ```
 

@@ -34,8 +34,6 @@ gossip/                     independent module: example.com/gossip
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/06-labels-break-continue-goto/33-gossip-protocol-eventual-consistency/cmd/demo
-cd go-solutions/03-control-flow/06-labels-break-continue-goto/33-gossip-protocol-eventual-consistency
 go mod edit -go=1.24
 ```
 

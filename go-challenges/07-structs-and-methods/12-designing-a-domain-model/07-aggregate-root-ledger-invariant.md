@@ -27,13 +27,6 @@ ledger/                     independent module: example.com/ledger
 - Test: posting a debit beyond the balance is rejected and leaves entries unchanged; `Balance()` equals the sum of entries; `Entries()` returns a copy (mutating it does not affect the aggregate); append order is preserved.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/12-designing-a-domain-model/07-aggregate-root-ledger-invariant/cmd/demo
-cd go-solutions/07-structs-and-methods/12-designing-a-domain-model/07-aggregate-root-ledger-invariant
-```
-
 ### The root is the only door, and it owns the cross-entry rule
 
 An aggregate root is the single entry point to a cluster of objects. Here the

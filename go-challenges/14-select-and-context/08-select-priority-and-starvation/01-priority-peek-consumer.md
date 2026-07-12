@@ -30,13 +30,6 @@ cancel; deadline path returns promptly; cancellation strictly beats a buffered
 high item; `ExamplePriority` output.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/08-select-priority-and-starvation/01-priority-peek-consumer/cmd/demo
-cd go-solutions/14-select-and-context/08-select-priority-and-starvation/01-priority-peek-consumer
-```
-
 ### Why three selects, not two
 
 The naive two-channel priority idiom is a peek `select { case <-hi: ...; default:

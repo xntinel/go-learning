@@ -33,13 +33,6 @@ sessionstore/              independent module: example.com/sessionstore
 - Test: unit coverage for all operations including keys that collide onto one shard (found by searching at test setup); the hard test — opposite-direction cross-shard renames looping concurrently under `-race` with a watchdog, asserting no session is lost or duplicated.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/09-lock-ordering-deadlock-prevention/06-sharded-store-two-shard-move/cmd/demo
-cd go-solutions/15-sync-primitives/09-lock-ordering-deadlock-prevention/06-sharded-store-two-shard-move
-```
-
 ### Striped locks, and the operation that spans two stripes
 
 A single `sync.RWMutex` around one big map serializes every session lookup in

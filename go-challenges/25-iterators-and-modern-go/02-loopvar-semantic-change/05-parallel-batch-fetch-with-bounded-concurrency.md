@@ -20,12 +20,6 @@ example_test.go      ExampleFetchAll with a verified // Output block
 - Test: assert results stay aligned with the input order, that observed in-flight concurrency never exceeds the limit, that a failing url surfaces a wrapped error, and that empty input and a non-positive limit return their sentinels — all under `-race`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/25-iterators-and-modern-go/02-loopvar-semantic-change/05-parallel-batch-fetch-with-bounded-concurrency/cmd/demo && cd go-solutions/25-iterators-and-modern-go/02-loopvar-semantic-change/05-parallel-batch-fetch-with-bounded-concurrency
-```
-
 ### The three jobs an errgroup-style fetch has to do at once
 
 A batch fetcher has to solve three problems together, and the loop variable sits under all of them. First, **per-item correctness**: each goroutine must call the client with *its* url and store the body in *its* slot. The range loop `for i, url := range urls` gives each iteration its own `i` and `url` under Go 1.22, so the closure that runs later still refers to the right values; before 1.22 this needed `i, url := i, url` and was the single most common source of "all my fetches hit the last url" bugs. Second, **bounded concurrency**: launching ten thousand goroutines to fetch ten thousand urls exhausts sockets and memory, so a buffered channel used as a counting semaphore caps the number in flight — a goroutine acquires a slot by sending into `sem` before it works and releases it by receiving when done, and the main loop blocks on the send once `limit` slots are taken. Third, **fail-fast aggregation**: when one fetch fails, the job should stop launching useful work and report that error, which is exactly what `golang.org/x/sync/errgroup` with `WithContext` and `SetLimit` does; here it is built from the standard library so the module stays dependency-free, but the shape is identical — a shared `context.CancelFunc`, a `sync.Once` to record the first error, and goroutines that check `ctx.Err()` and bail.

@@ -22,7 +22,6 @@ trust_test.go        downstream requires client cert, upstream sets RootCAs, per
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/42-capstone-service-mesh-data-plane/03-mtls-termination/03-trust-isolation/cmd/demo && cd go-solutions/42-capstone-service-mesh-data-plane/03-mtls-termination/03-trust-isolation
 go mod edit -go=1.26
 ```
 

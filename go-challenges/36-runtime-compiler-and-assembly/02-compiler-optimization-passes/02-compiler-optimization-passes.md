@@ -73,13 +73,6 @@ The `lower` pass replaces expensive operations with cheaper ones: `x*8` becomes 
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/36-runtime-compiler-and-assembly/02-compiler-optimization-passes/02-compiler-optimization-passes/cmd/demo
-cd go-solutions/36-runtime-compiler-and-assembly/02-compiler-optimization-passes/02-compiler-optimization-passes
-```
-
 This is a library with a small demo binary. Verify it with `go test`.
 
 ### Exercise 1: Functions That Expose Optimization Targets

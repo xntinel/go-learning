@@ -26,13 +26,6 @@ Implement: `WithTimeout(d time.Duration, next http.Handler) http.Handler` that d
 Test: an `httptest.NewServer` around the middleware; a slow handler that selects on `time.After` vs `r.Context().Done()` asserts 504 on a 50 ms timeout; a fast handler asserts the happy path is untouched.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/09-context-in-http-servers-clients/01-per-request-timeout-middleware/cmd/demo
-cd go-solutions/14-select-and-context/09-context-in-http-servers-clients/01-per-request-timeout-middleware
-```
-
 ## The design
 
 The middleware does exactly three things, in order: derive a child context with

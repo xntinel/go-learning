@@ -26,13 +26,6 @@ scheduler/                   module example.com/scheduler
 - Test: match in the middle (exact first-fit day/slot), no match (`ErrNoSlot`), a match reachable only after a labeled-continue skip, a single-cell grid, and a case proving the search returns the FIRST fit, not a later one.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/02-for-loops/06-labeled-break-slot-search/cmd/demo
-cd go-solutions/03-control-flow/02-for-loops/06-labeled-break-slot-search
-```
-
 ### Where a label pays for itself, and where it does not
 
 The grid is `booked [][]bool`: `booked[day][slot]` is `true` when that half-hour is

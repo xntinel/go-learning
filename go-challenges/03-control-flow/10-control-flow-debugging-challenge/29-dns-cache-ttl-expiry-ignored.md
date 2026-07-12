@@ -34,11 +34,6 @@ resolver/                    independent module: example.com/dns-cache-ttl-expir
 - Test: a table over well-within-TTL, exactly-at-the-boundary, and well-past-TTL, each asserting the exact lookup count and returned address; a further case asserting a failed lookup is never cached.
 - Verify: `go test -count=1 ./...`.
 
-```bash
-mkdir -p go-solutions/03-control-flow/10-control-flow-debugging-challenge/29-dns-cache-ttl-expiry-ignored/cmd/demo
-cd go-solutions/03-control-flow/10-control-flow-debugging-challenge/29-dns-cache-ttl-expiry-ignored
-```
-
 ### Why storing the TTL is not the same as checking it
 
 The version that shipped first stores every field the answer carries,

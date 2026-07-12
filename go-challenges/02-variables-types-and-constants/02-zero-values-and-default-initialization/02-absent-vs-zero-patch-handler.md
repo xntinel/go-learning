@@ -25,13 +25,6 @@ Implement: a `Handler` for `PATCH /user` whose request DTO uses `*string`/`*bool
 Test: an omitted field leaves the entity unchanged; explicit `false`/`0`/`""` overwrite to the zero value; malformed JSON returns 400.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/02-zero-values-and-default-initialization/02-absent-vs-zero-patch-handler/cmd/demo
-cd go-solutions/02-variables-types-and-constants/02-zero-values-and-default-initialization/02-absent-vs-zero-patch-handler
-```
-
 ## Why pointer fields, and nothing else, work here
 
 `encoding/json` leaves a struct field at its zero value when the corresponding

@@ -24,13 +24,6 @@ Implement: `RunPool(done <-chan struct{}, jobs <-chan Job, results chan<- Result
 Test: M jobs across N workers produce M results (order-independent); closing `done` stops every worker (proven by `results` closing); ranging over `results` terminates.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/07-done-channel-pattern/03-fanout-pool-shutdown/cmd/demo
-cd go-solutions/13-goroutines-and-channels/07-done-channel-pattern/03-fanout-pool-shutdown
-```
-
 ### One close broadcasts to N workers
 
 Every worker runs the same loop: `select { case <-done: return; case job, ok := <-jobs: ... }`.

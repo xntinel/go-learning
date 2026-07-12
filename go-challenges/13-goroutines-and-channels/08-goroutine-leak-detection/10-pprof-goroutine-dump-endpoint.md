@@ -26,13 +26,6 @@ pprofdump/                   independent module: example.com/pprofdump
 - Test: with a known background goroutine running, the handler's body names it and `Count()` exceeds the baseline; `Count()` tracks `runtime.NumGoroutine()`; the handler does not leak.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/08-goroutine-leak-detection/10-pprof-goroutine-dump-endpoint/cmd/demo
-cd go-solutions/13-goroutines-and-channels/08-goroutine-leak-detection/10-pprof-goroutine-dump-endpoint
-```
-
 ### debug=2 is the human-readable full dump
 
 `runtime/pprof` exposes a set of named profiles; `pprof.Lookup("goroutine")` is the

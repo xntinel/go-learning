@@ -27,13 +27,6 @@ writereport/                 independent module: example.com/writereport
 - Test: the success path writes a readable file and returns nil; a failing writer/closer seam surfaces the close/flush failure; a mid-write failure and a close failure are both reported via `errors.Join`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/01-error-interface-and-basic-patterns/08-defer-close-error-capture/cmd/demo
-cd go-solutions/10-error-handling/01-error-interface-and-basic-patterns/08-defer-close-error-capture
-```
-
 ### Why the close error must be captured, and how the named return does it
 
 A `bufio.Writer` exists to batch small writes into larger ones, which means the

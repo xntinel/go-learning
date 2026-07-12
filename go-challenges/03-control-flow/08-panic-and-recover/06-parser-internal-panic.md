@@ -28,13 +28,6 @@ Implement: `Validate(root Node) error` that recovers a private `*parseError` at 
 Test: valid input returns nil; deeply nested / duplicate / empty-key input returns the sentinel-derived error (`errors.As` `*parseError`); a white-box case injects a real runtime bug inside recursion and asserts the boundary RE-PANICS instead of returning it.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/08-panic-and-recover/06-parser-internal-panic/cmd/demo
-cd go-solutions/03-control-flow/08-panic-and-recover/06-parser-internal-panic
-```
-
 ### Why panic here, and why the re-panic rule is sacred
 
 A config tree is recursive, and validation rules apply at arbitrary depth: an empty

@@ -23,13 +23,6 @@ Implement: `Region() string` returning `APP_REGION` when set, else `"us-east-1"`
 Test: snapshot with `os.LookupEnv`, assert-in-`Cleanup` that the value is restored (covering both was-set and was-unset), and prove `t.Cleanup` runs LIFO.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/17-testing-with-environment-variables/02-hermetic-env-restore/cmd/demo
-cd go-solutions/12-testing-ecosystem/17-testing-with-environment-variables/02-hermetic-env-restore
-```
-
 ## Why hermeticity is a property you assert
 
 The original version of this lesson proved restoration by hand-walking

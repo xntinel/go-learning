@@ -27,13 +27,6 @@ profile-fanout/                      independent module: example.com/profilefano
 - Test: two fast branches present in the data, one slow branch recorded as a `DeadlineExceeded` partial via `errors.Join`; total wall time near the parent budget, not the slow branch's full duration; every branch context's deadline is no later than the parent's.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/05-context-withtimeout-withdeadline/08-fanout-subbudget-allocation/cmd/demo
-cd go-solutions/14-select-and-context/05-context-withtimeout-withdeadline/08-fanout-subbudget-allocation
-```
-
 ### One request budget, many branches
 
 The parent `context.WithTimeout(ctx, budget)` establishes the request's total budget.

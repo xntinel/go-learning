@@ -26,13 +26,6 @@ batchmigrate/                  independent module: example.com/batchmigrate
 - Test: the range-value form leaves the slice unchanged; the index form activates every record; the `[]*Record` form mutates under either loop.
 - Verify: `go vet ./...`, `go test -count=1 -race ./...`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/07-method-sets-and-addressability/09-batch-update-slice-range-copy/cmd/demo
-cd go-solutions/07-structs-and-methods/07-method-sets-and-addressability/09-batch-update-slice-range-copy
-```
-
 ### Why ranging by value is a no-op
 
 `for _, r := range records` copies each element into the loop variable `r` on

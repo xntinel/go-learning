@@ -25,13 +25,6 @@ validate/                  independent module: example.com/validate
 - Test: `CreateUserRequest.Validate` aggregates outer and base errors (each found via `errors.Is`); calling `Validate` through a stored `BaseValidator` runs only the base logic, pinning no-virtual-dispatch.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/08-embedding-for-composition/08-method-shadowing-base-validator/cmd/demo
-cd go-solutions/07-structs-and-methods/08-embedding-for-composition/08-method-shadowing-base-validator
-```
-
 ### Promotion is not virtual dispatch — so call the base by hand
 
 In an inheritance language, a base class method that internally calls `validate()`

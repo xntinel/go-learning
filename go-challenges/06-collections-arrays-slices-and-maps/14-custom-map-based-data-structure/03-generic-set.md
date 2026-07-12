@@ -27,13 +27,6 @@ set/                       independent module: example.com/set
 - Test: `Add`/`Delete` idempotence, `Union`/`Intersect` compared via `Ordered()` (never raw range order), and `Has` distinguishing an absent key from the zero value.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/14-custom-map-based-data-structure/03-generic-set/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/14-custom-map-based-data-structure/03-generic-set
-```
-
 ### `map[T]struct{}`, and why the constraint is `cmp.Ordered` not `comparable`
 
 The value type is `struct{}` — the empty struct — because a set stores no value,

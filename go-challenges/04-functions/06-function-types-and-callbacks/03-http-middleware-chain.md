@@ -25,13 +25,6 @@ Implement: `type Middleware func(http.Handler) http.Handler`, `Chain(mw ...Middl
 Test: order via markers appended by each middleware; a panicking handler yields 500; the request ID reaches the final handler through context; an empty chain is the identity.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/06-function-types-and-callbacks/03-http-middleware-chain/cmd/demo
-cd go-solutions/04-functions/06-function-types-and-callbacks/03-http-middleware-chain
-```
-
 ### The chain, and why order is the whole design
 
 A `Middleware` takes a handler and returns a handler that does something before

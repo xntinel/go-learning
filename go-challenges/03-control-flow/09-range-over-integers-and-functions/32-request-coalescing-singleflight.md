@@ -30,8 +30,6 @@ Verify: `go test -race -count=1 ./...`
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/09-range-over-integers-and-functions/32-request-coalescing-singleflight/cmd/demo
-cd go-solutions/03-control-flow/09-range-over-integers-and-functions/32-request-coalescing-singleflight
 go mod edit -go=1.24
 ```
 

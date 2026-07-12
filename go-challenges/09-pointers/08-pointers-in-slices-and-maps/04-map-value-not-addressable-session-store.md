@@ -27,13 +27,6 @@ Test: value-map write-back updates `LastSeen`; pointer-map mutation is visible
 through a held `*Session`; touching an unknown id returns `ErrNoSession`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/08-pointers-in-slices-and-maps/04-map-value-not-addressable-session-store/cmd/demo
-cd go-solutions/09-pointers/08-pointers-in-slices-and-maps/04-map-value-not-addressable-session-store
-```
-
 ### Why the value map cannot be mutated in place
 
 `m[id]` on a `map[string]Session` evaluates to a *copy* of the stored value, and

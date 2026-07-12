@@ -27,13 +27,6 @@ netutil/                       independent module: example.com/netutil
 - Test: `":8080"` defaults the empty host, `"[::1]:80"` handles IPv6 brackets, a missing port errors, and the swap guarantees `lo <= hi`; `JoinHostPort` round-trips the parsed parts.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/01-variable-declaration-and-short-assignment/07-multiple-assignment-address-parsing/cmd/demo
-cd go-solutions/02-variables-types-and-constants/01-variable-declaration-and-short-assignment/07-multiple-assignment-address-parsing
-```
-
 ### Tuple assignment parses in one total statement
 
 `net.SplitHostPort` returns three values, and `host, port, err := net.SplitHostPort(addr)`

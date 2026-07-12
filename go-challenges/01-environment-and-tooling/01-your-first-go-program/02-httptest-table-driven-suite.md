@@ -29,13 +29,6 @@ subtests in parallel with `t.Context()`, exercises the `Client` via
 that cancels the context and asserts `context.Canceled` — with no `time.Sleep`.
 Verify: `go test -count=1 -race ./...`, `gofmt -l` empty.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/01-your-first-go-program/02-httptest-table-driven-suite/cmd/demo
-cd go-solutions/01-environment-and-tooling/01-your-first-go-program/02-httptest-table-driven-suite
-```
-
 ### httptest gives you a real server, not a mock
 
 `httptest.NewServer(handler)` starts an actual HTTP server on a loopback port and

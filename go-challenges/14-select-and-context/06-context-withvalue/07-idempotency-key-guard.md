@@ -27,13 +27,6 @@ Implement: `WithKey`/`KeyFromContext`, an `Extract` middleware reading the `Idem
 Test: a first `POST` with `k1` executes the handler and caches; a second with `k1` short-circuits with the cached body; a `POST` with `k2` executes again; a `POST` with no key executes normally; concurrent identical keys execute exactly once under `-race`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/06-context-withvalue/07-idempotency-key-guard/cmd/demo
-cd go-solutions/14-select-and-context/06-context-withvalue/07-idempotency-key-guard
-```
-
 ### Why the key rides the context and how single-execution is enforced
 
 The idempotency key is a request-scoped fact the guard needs but the business

@@ -26,8 +26,6 @@ webhook/                   independent module: example.com/webhook-event-router
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/03-switch-statements/11-webhook-event-router/cmd/demo
-cd go-solutions/03-control-flow/03-switch-statements/11-webhook-event-router
 go mod edit -go=1.24
 ```
 

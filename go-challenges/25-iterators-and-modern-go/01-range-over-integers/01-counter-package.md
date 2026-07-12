@@ -20,12 +20,6 @@ example_test.go      ExampleCount (a compiled, output-checked doc example)
 - Test: round-trip `Count`, assert every function rejects a negative count with `ErrNegativeCount`, and pin the derived sequences.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/25-iterators-and-modern-go/01-range-over-integers/01-counter-package/cmd/demo && cd go-solutions/25-iterators-and-modern-go/01-range-over-integers/01-counter-package
-```
-
 ### Why each function looks the way it does
 
 The package draws a clean line between the two integer-range forms. `Count` and `Squares` need the iteration number, so they use `for i := range n` and read `i` in the body. `Repeat` does not care which iteration it is on — it appends the same string every time — so it uses `for range n`, which states "do this n times" without introducing an index that `go vet` and the reader would otherwise have to justify. Choosing the form by whether the body reads the counter is the single most useful habit this lesson teaches.

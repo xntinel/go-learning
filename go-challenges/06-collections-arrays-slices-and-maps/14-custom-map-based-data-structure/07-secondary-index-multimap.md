@@ -28,13 +28,6 @@ repo/                      independent module: example.com/repo
 - Test: insert then query returns all matching IDs (order-independent), delete removes the ID from the index and drops the key when the slice empties, and re-inserting after delete does not duplicate.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/14-custom-map-based-data-structure/07-secondary-index-multimap/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/14-custom-map-based-data-structure/07-secondary-index-multimap
-```
-
 ### The index is derived state — update it in the same critical section
 
 The primary store is `map[orderID]Order`. The secondary index is

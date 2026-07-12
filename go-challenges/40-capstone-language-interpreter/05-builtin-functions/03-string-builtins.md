@@ -21,12 +21,6 @@ strings_test.go  delegation correctness, the non-string-element join error, form
 - Test: that each delegates to the right `strings` function, that `join` rejects a non-string element, and that `format` substitutes, passes through literal text, and leaves an unmatched `{}` intact.
 - Verify: `go test -race ./...` and `go run ./cmd/demo`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/40-capstone-language-interpreter/05-builtin-functions/03-string-builtins/cmd/demo && cd go-solutions/40-capstone-language-interpreter/05-builtin-functions/03-string-builtins
-```
-
 ### What the wrappers share, and where format differs
 
 Eleven of the twelve built-ins are mechanical: assert each argument is a `*String` (or, for `join`, a `*Array` of strings), call the matching `strings` function, and wrap the result. The value is consistency — every type failure produces the same `name: arg N: want STRING, got T` shape, so a script author learns one error format and recognizes it everywhere. `split` returns an `*Array` of `*String`; `join` walks an array and fails with a precise element index if any entry is not a string; the boolean tests (`contains`, `startsWith`, `endsWith`) return the `BoolObj` singleton.

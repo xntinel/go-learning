@@ -23,13 +23,6 @@ greetapi/                       independent module: example.com/recorder-unit-ha
 - Test: table-driven cases (valid name, missing name, health) calling the handler with a recorder; decode `rec.Body` into `Greeting`; assert `rec.Code` and the `Content-Type` header.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/09-httptest/01-recorder-unit-handler/cmd/demo
-cd go-solutions/12-testing-ecosystem/09-httptest/01-recorder-unit-handler
-```
-
 ### Why a recorder, and what it captures
 
 `httptest.NewRecorder()` returns a `*httptest.ResponseRecorder` that implements

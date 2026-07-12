@@ -26,13 +26,6 @@ loggrep/                    independent module: example.com/loggrep
 - Test: matching lines report correct line numbers and byte offsets; capture-group indices point at the right substring; a line longer than `bufio.Scanner`'s default 64 KiB buffer is handled; the reader variant reports the same first-match offsets.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/07-regular-expressions/08-streaming-log-grep/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/07-regular-expressions/08-streaming-log-grep
-```
-
 ### Byte offsets, a raised buffer, and the RuneReader variant
 
 Three mechanics matter here. First, `FindStringSubmatchIndex` returns a `[]int` of

@@ -29,13 +29,6 @@ decorate/                     independent module: example.com/decorate
 - Test: a counting spy `Store` proves a cache hit skips the delegate `Get`; counters increment; two decorators stack in either order with correct results; compile-time `Store` guards.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/01-implicit-interface-satisfaction/10-decorator-preserves-interface/cmd/demo
-cd go-solutions/08-interfaces/01-implicit-interface-satisfaction/10-decorator-preserves-interface
-```
-
 ### Why decoration is clean only over a narrow interface
 
 A decorator is a `Store` that wraps a `Store`. `CachingStore` holds a delegate

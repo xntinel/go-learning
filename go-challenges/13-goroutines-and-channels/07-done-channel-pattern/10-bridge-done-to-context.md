@@ -22,13 +22,6 @@ Implement: `DoneFromContext(ctx) <-chan struct{}` returning `ctx.Done()`; `Conte
 Test: cancelling a context closes the channel from `DoneFromContext`; closing a bare `done` cancels the derived context with `context.Canceled`; `OnDone`'s stop prevents the callback; the bridge watcher does not leak on the not-cancelled path.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/07-done-channel-pattern/10-bridge-done-to-context/cmd/demo
-cd go-solutions/13-goroutines-and-channels/07-done-channel-pattern/10-bridge-done-to-context
-```
-
 ### The two directions, and the stdlib's own bridge
 
 `DoneFromContext` is a one-liner — `return ctx.Done()` — and that is the entire point: a context already

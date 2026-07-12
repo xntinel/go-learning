@@ -23,12 +23,6 @@ example_test.go   ExampleBroker with verified // Output
 - Test: produce then fetch, long-poll timeout and unblock-on-produce, multiple partitions are isolated, crash recovery across reopen, group assignment and offsets, and metrics over the HTTP endpoint.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/41-capstone-message-queue/08-full-message-queue/03-broker-orchestration/cmd/demo && cd go-solutions/41-capstone-message-queue/08-full-message-queue/03-broker-orchestration
-```
-
 ### Why the broker owns the lifecycle, and in what order
 
 The broker is an orchestrator, not a base class. It holds concrete pointers to each subsystem and is responsible for one thing the subsystems cannot do for themselves: sequencing their lifecycles so nothing is used after it is closed.

@@ -23,13 +23,6 @@ leakguard/                  independent module: example.com/leakguard
 - Test: a well-behaved worker passes the guard; a still-running goroutine is detected via a fake `TB` recorder that captures the failure.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/03-goroutine-leak-guard-in-tests/cmd/demo
-cd go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/03-goroutine-leak-guard-in-tests
-```
-
 ### Why a baseline diff and a poll, not a raw count
 
 The naive leak check — assert `runtime.NumGoroutine()` equals some number — is

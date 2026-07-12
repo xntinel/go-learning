@@ -29,8 +29,6 @@ qparams/                   independent module: example.com/qparams
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/03-variadic-functions/19-query-param-encoder-pairs/cmd/demo
-cd go-solutions/04-functions/03-variadic-functions/19-query-param-encoder-pairs
 go mod edit -go=1.24
 ```
 

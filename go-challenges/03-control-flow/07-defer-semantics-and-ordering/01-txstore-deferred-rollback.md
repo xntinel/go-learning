@@ -26,13 +26,6 @@ txstore/                     independent module: example.com/txstore
 - Test: set/get roundtrip, rollback restores the snapshot, commit persists, double-commit and commit-then-rollback are rejected, a LIFO-ordering proof, and 32 concurrent transactions each committing a distinct key.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/07-defer-semantics-and-ordering/01-txstore-deferred-rollback/cmd/demo
-cd go-solutions/03-control-flow/07-defer-semantics-and-ordering/01-txstore-deferred-rollback
-```
-
 ### Why the deferred-unlock pattern is the backbone
 
 Every method that touches shared state follows the same three-line shape: lock,

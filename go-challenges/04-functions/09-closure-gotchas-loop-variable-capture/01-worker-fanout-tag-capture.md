@@ -27,8 +27,6 @@ tagpipe/                     independent module: example.com/tagpipe
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/01-worker-fanout-tag-capture/cmd/demo
-cd go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/01-worker-fanout-tag-capture
 go mod edit -go=1.26
 ```
 

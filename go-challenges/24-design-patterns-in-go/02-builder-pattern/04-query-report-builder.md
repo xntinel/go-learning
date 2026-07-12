@@ -19,12 +19,6 @@ query_test.go        composition, the parameter/identifier split, every validato
 - Test: `query_test.go` pins the composed SQL and its arguments, proves caller values land in `Args` and never in the text, exercises every validator via its sentinel, confirms `errors.Join` aggregation, and confirms a built plan is independent of later setter calls.
 - Verify: `go test -race -count=1 ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/24-design-patterns-in-go/02-builder-pattern/04-query-report-builder/cmd/demo && cd go-solutions/24-design-patterns-in-go/02-builder-pattern/04-query-report-builder
-```
-
 ### The one rule: values are parameters, identifiers are allow-listed
 
 SQL injection has exactly one cause — a caller-controlled string becomes part of the query *text* instead of a query *value*. The defense is equally precise, and it splits along a line the SQL grammar itself draws. A *value* (the `42` in `total = 42`, the `'paid'` in `status = 'paid'`) can always be replaced by a placeholder — `total = $1` — and sent to the driver out-of-band, where it can never be parsed as SQL. An *identifier* (a table or column name) cannot: no database lets you bind a column name to a placeholder, because the name has to be known before the query is planned. So identifiers must be made safe a different way — by checking them against an allow-list of names the service already trusts, and only then placing them into the text verbatim.

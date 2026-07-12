@@ -19,12 +19,6 @@ compaction_test.go     latest-per-key, keyless pass-through, tombstone window, d
 - Test: reduce versions to the latest per key, keep keyless messages, retain a tombstone within the window and expire it after, and compute the dirty ratio.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/41-capstone-message-queue/06-message-retention-compaction/03-log-compaction/cmd/demo && cd go-solutions/41-capstone-message-queue/06-message-retention-compaction/03-log-compaction
-```
-
 ### Why two passes, and why forward both times
 
 The keep/drop decision for a message depends on a fact about the *future* of the log: is there a later message with the same key? A single forward pass cannot answer that without buffering every value it has seen, which is O(N) memory. So `Compact` splits the work.

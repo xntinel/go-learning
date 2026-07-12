@@ -28,13 +28,6 @@ Implement: an `http.Handler` for `GET /users/{id}` returning JSON with a volatil
 Test: serve a request with `httptest`, snapshot status+header+normalized body against a golden; assert a drifted handler (renamed field) breaks the snapshot.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/07-http-handler-approval/cmd/demo go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/07-http-handler-approval/testdata
-cd go-solutions/12-testing-ecosystem/23-snapshot-approval-testing/07-http-handler-approval
-```
-
 ### Capturing a handler's response as a contract
 
 `httptest` gives you the whole request/response cycle in-process with no socket.

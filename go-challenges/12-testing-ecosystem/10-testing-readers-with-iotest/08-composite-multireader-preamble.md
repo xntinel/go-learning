@@ -27,13 +27,6 @@ Implement: `Compose(header, body []byte) io.Reader` returning `io.MultiReader` o
 Test: `iotest.TestReader` against the concatenated bytes; `iotest.HalfReader` seam test asserting no bytes lost or duplicated at the boundary; empty-header and empty-body edge cases read cleanly to `io.EOF`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/10-testing-readers-with-iotest/08-composite-multireader-preamble/cmd/demo
-cd go-solutions/12-testing-ecosystem/10-testing-readers-with-iotest/08-composite-multireader-preamble
-```
-
 ### Why MultiReader, and the seam that must be seamless
 
 `io.MultiReader(r1, r2, ...)` returns a reader that reads `r1` to EOF, then `r2`,

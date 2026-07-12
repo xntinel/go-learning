@@ -32,13 +32,6 @@ embedded `Header()` still works via promotion; a second `WriteHeader` does not
 overwrite the first.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/04-anonymous-structs-and-embedding/02-responsewriter-status-capture/cmd/demo
-cd go-solutions/07-structs-and-methods/04-anonymous-structs-and-embedding/02-responsewriter-status-capture
-```
-
 ### Why embed the interface instead of reimplementing it
 
 `http.ResponseWriter` has three methods: `Header() http.Header`,

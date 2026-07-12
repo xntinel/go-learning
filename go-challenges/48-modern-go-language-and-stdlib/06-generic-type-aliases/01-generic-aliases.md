@@ -27,7 +27,6 @@ aliasstore_test.go       compile-time cross-assign, reflect identity, Set litera
 Set up the module. Generic aliases require the language version to be at least 1.24, so pin it explicitly:
 
 ```bash
-mkdir -p go-solutions/48-modern-go-language-and-stdlib/06-generic-type-aliases/01-generic-aliases/cmd/demo go-solutions/48-modern-go-language-and-stdlib/06-generic-type-aliases/01-generic-aliases/internal/legacy && cd go-solutions/48-modern-go-language-and-stdlib/06-generic-type-aliases/01-generic-aliases
 go mod edit -go=1.24
 ```
 

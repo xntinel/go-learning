@@ -27,13 +27,6 @@ retry/                     independent module: example.com/retry
 - Test: `op` fails twice then succeeds in exactly 3 attempts; a cancel during the backoff returns a context error promptly without re-invoking `op`; an always-failing `op` returns its last error after `MaxAttempts` tries.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/04-context-withcancel/05-context-retry-backoff/cmd/demo
-cd go-solutions/14-select-and-context/04-context-withcancel/05-context-retry-backoff
-```
-
 ### Why the sleep is a select, not time.Sleep
 
 The retry loop has two jobs: call `op`, and if it fails and attempts remain, wait

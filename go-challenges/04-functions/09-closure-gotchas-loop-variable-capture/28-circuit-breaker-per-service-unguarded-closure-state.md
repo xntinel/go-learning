@@ -30,8 +30,6 @@ breaker/                     independent module: example.com/breaker
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/28-circuit-breaker-per-service-unguarded-closure-state/cmd/demo
-cd go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/28-circuit-breaker-per-service-unguarded-closure-state
 go mod edit -go=1.24
 ```
 

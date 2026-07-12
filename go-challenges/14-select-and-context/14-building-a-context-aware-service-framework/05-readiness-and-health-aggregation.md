@@ -24,13 +24,6 @@ Implement: `HealthChecker` (`Check(ctx) error`); `App.ReadyHandler(perCheck)` th
 Test: table-driven with healthy / erroring / slow-past-timeout fakes; status flips `503 → 200` only when all critical checks pass; a hung check is bounded by `perCheck`; `errors.Join` surfaces every failing name.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/14-building-a-context-aware-service-framework/05-readiness-and-health-aggregation/cmd/demo
-cd go-solutions/14-select-and-context/14-building-a-context-aware-service-framework/05-readiness-and-health-aggregation
-```
-
 ### The aggregation model
 
 A service *optionally* implements `HealthChecker`. The readiness handler walks

@@ -27,13 +27,6 @@ chanlimiter/                    independent module: example.com/chanlimiter
 - Test: initial burst and deny-after-drain with refill effectively off, a 50-goroutine exact-N storm, a poll-with-deadline refill test, double-`Close` safety, and a goroutine-exit assertion.
 - Verify: `go test -count=1 -race ./...` and `go run ./cmd/demo`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/10-mutex-vs-channel/02-channel-semaphore-limiter/limiter go-solutions/15-sync-primitives/10-mutex-vs-channel/02-channel-semaphore-limiter/cmd/demo
-cd go-solutions/15-sync-primitives/10-mutex-vs-channel/02-channel-semaphore-limiter
-```
-
 ### A buffered channel is a counting semaphore
 
 `make(chan struct{}, n)` pre-filled with n empty structs is a token store

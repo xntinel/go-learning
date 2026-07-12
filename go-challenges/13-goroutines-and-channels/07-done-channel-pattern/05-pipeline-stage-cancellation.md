@@ -23,13 +23,6 @@ Implement: `generate(done <-chan struct{}, nums ...int) <-chan int` and `square(
 Test: consuming the whole pipeline yields the squares; reading one value and closing `done` lets both stages exit (proven by the final channel closing); an unread sink plus closed `done` still drains.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/07-done-channel-pattern/05-pipeline-stage-cancellation/cmd/demo
-cd go-solutions/13-goroutines-and-channels/07-done-channel-pattern/05-pipeline-stage-cancellation
-```
-
 ### Every stage owns its output and guards its send
 
 Two rules make a pipeline cancellable. First, each stage owns exactly one channel — its output —

@@ -26,13 +26,6 @@ redact/                     independent module: example.com/redact
 - Test: a bearer token is masked but `Authorization:` and `Bearer ` survive; multiple secrets on one line are all masked; a clean line is returned unchanged; the raw secret never appears in the output; a benchmark justifies package-level compilation.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/07-regular-expressions/04-log-secret-redactor/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/07-regular-expressions/04-log-secret-redactor
-```
-
 ### Why ReplaceAllStringFunc, and why preserve structure
 
 A redactor has to do more than "delete the secret." A debugger reading the scrubbed

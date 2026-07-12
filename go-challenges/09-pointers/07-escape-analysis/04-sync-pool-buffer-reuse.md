@@ -31,13 +31,6 @@ Test: JSON round-trip, `errors.Is(err, ErrEncode)` on an unencodable value, an
 `AllocsPerRun` guard that the pooled path allocates fewer than the naive one.
 Verify: `go test -count=1 -race ./...`, then `go test -bench=. -benchmem ./...`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/07-escape-analysis/04-sync-pool-buffer-reuse/cmd/demo
-cd go-solutions/09-pointers/07-escape-analysis/04-sync-pool-buffer-reuse
-```
-
 ### The escape sync.Pool amortizes, and the bug it invites
 
 The buffer a JSON encoder writes into must survive the `Encode` call, so it is a

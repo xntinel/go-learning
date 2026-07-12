@@ -31,8 +31,6 @@ shutdown/                   independent module: example.com/graceful-shutdown-dr
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/01-if-else-and-init-statements/24-graceful-shutdown-drain-and-timeout/cmd/demo
-cd go-solutions/03-control-flow/01-if-else-and-init-statements/24-graceful-shutdown-drain-and-timeout
 go mod edit -go=1.24
 ```
 

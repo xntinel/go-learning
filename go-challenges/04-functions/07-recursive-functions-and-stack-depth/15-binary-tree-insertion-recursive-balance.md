@@ -39,8 +39,6 @@ avltree/                    independent module: example.com/avltree
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/07-recursive-functions-and-stack-depth/15-binary-tree-insertion-recursive-balance/cmd/demo
-cd go-solutions/04-functions/07-recursive-functions-and-stack-depth/15-binary-tree-insertion-recursive-balance
 go mod edit -go=1.24
 ```
 

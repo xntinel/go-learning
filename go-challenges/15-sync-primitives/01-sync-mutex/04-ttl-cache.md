@@ -27,11 +27,6 @@ ttlcache/                    independent module: example.com/ttlcache
 - Test: Set/Get round-trip; expiry via an injected clock asserting `Get` returns `ok==false` past the deadline; `DeleteExpired` removes only stale keys; concurrent Set/Get under `-race`.
 - Verify: `go test -count=1 -race ./...`
 
-```bash
-mkdir -p go-solutions/15-sync-primitives/01-sync-mutex/04-ttl-cache/cmd/demo
-cd go-solutions/15-sync-primitives/01-sync-mutex/04-ttl-cache
-```
-
 ### Lazy expiry, and an injectable clock for honest tests
 
 The cache stores each value with an `expires` instant computed at `Set` time as

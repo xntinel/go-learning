@@ -78,13 +78,6 @@ Pool a `strings.Builder` by resetting it with `sb.Reset()` before returning to t
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/35-runtime-garbage-collector/09-reducing-gc-pressure/09-reducing-gc-pressure/cmd/demo
-cd go-solutions/35-runtime-garbage-collector/09-reducing-gc-pressure/09-reducing-gc-pressure
-```
-
 ### Exercise 1: Pipeline with Baseline and Optimised Versions
 
 Create `pipeline.go`:

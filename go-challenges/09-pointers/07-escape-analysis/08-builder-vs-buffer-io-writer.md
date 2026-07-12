@@ -31,13 +31,6 @@ io.Writer path.
 Verify: `go test -count=1 -race ./...`, then observe the interface escape with
 `go build -gcflags=-m ./... 2>&1 | grep 'escapes to heap'`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/07-escape-analysis/08-builder-vs-buffer-io-writer/cmd/demo
-cd go-solutions/09-pointers/07-escape-analysis/08-builder-vs-buffer-io-writer
-```
-
 ### The interface boundary is where the value escapes
 
 `SerBuilder` is monomorphic: it computes the total length, calls `Grow` once to

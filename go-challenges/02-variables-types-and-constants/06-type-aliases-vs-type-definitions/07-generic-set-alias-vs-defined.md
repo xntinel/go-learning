@@ -31,8 +31,6 @@ genset/                   independent module: example.com/genset
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/02-variables-types-and-constants/06-type-aliases-vs-type-definitions/07-generic-set-alias-vs-defined/cmd/demo
-cd go-solutions/02-variables-types-and-constants/06-type-aliases-vs-type-definitions/07-generic-set-alias-vs-defined
 go mod edit -go=1.24
 ```
 

@@ -22,7 +22,6 @@ durable_test.go        round-trip, no temp leak, atomic overwrite, store save/lo
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/43-capstone-stream-processing-engine/05-checkpointing/04-durable-fsync-writes/cmd/demo && cd go-solutions/43-capstone-stream-processing-engine/05-checkpointing/04-durable-fsync-writes
 go mod edit -go=1.26
 ```
 

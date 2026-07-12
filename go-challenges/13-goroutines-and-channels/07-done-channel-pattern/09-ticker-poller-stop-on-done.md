@@ -22,13 +22,6 @@ Implement: `Poller.Poll(done <-chan struct{}, interval time.Duration, check func
 Test: the poller runs checks over time; closing `done` stops it (its goroutine returns); a failing check increments the consecutive-failure counter.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/07-done-channel-pattern/09-ticker-poller-stop-on-done/cmd/demo
-cd go-solutions/13-goroutines-and-channels/07-done-channel-pattern/09-ticker-poller-stop-on-done
-```
-
 ### The ticker loop and why Stop matters
 
 `time.NewTicker(interval)` returns a ticker whose channel `C` delivers a value every interval. The loop

@@ -26,13 +26,6 @@ Implement: a `Batcher` that appends records and flushes at a threshold, resettin
 Test: after `s[:0]` reset, `len == 0` but `cap` unchanged and `SliceData` identical across cycles; after `nil` reset, `cap == 0` and the next append allocates; steady-state cycles amortize to zero allocations.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/06-buffer-reuse-truncation/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/06-buffer-reuse-truncation
-```
-
 ### Two resets that look the same and are opposite
 
 `s = s[:0]` produces a slice with the same pointer, `len == 0`, and the same

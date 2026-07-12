@@ -28,8 +28,6 @@ apihandler/                 independent module: example.com/apihandler
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/09-pointers/06-pointer-receivers-and-interfaces/03-http-handler-pointer-receiver/cmd/demo
-cd go-solutions/09-pointers/06-pointer-receivers-and-interfaces/03-http-handler-pointer-receiver
 go mod edit -go=1.25
 ```
 

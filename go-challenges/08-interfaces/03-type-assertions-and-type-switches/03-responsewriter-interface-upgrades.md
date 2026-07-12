@@ -27,13 +27,6 @@ Implement: `StreamEvents(w, events)` flushing via `http.NewResponseController`; 
 Test: drive a `httptest.ResponseRecorder` and assert `rec.Flushed`; wrap it and show the raw assertion fails while the controller still flushes via `Unwrap`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/03-type-assertions-and-type-switches/03-responsewriter-interface-upgrades/cmd/demo
-cd go-solutions/08-interfaces/03-type-assertions-and-type-switches/03-responsewriter-interface-upgrades
-```
-
 ### The capability probe and why it breaks
 
 `http.ResponseWriter` guarantees only `Header`, `Write`, and `WriteHeader`.

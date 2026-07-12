@@ -40,8 +40,6 @@ fkgraph/                      independent module: example.com/fkgraph
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/07-recursive-functions-and-stack-depth/33-database-schema-fk-cycle-detection/cmd/demo
-cd go-solutions/04-functions/07-recursive-functions-and-stack-depth/33-database-schema-fk-cycle-detection
 go mod edit -go=1.24
 ```
 

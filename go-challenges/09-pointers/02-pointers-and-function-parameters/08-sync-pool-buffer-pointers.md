@@ -26,13 +26,6 @@ encoder/                    independent module: example.com/encoder
 - Test: encoding is correct across many reuse cycles, Reset-on-checkout clears stale bytes, concurrent encoding is race-free, and a benchmark with `b.ReportAllocs()`/`b.Loop()` shows the pooled path allocates less.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/02-pointers-and-function-parameters/08-sync-pool-buffer-pointers/cmd/demo
-cd go-solutions/09-pointers/02-pointers-and-function-parameters/08-sync-pool-buffer-pointers
-```
-
 ### Why the pool holds pointers and Reset matters
 
 `sync.Pool` stores `any`. If you pooled `bytes.Buffer` *values*, every `Put(buf)`

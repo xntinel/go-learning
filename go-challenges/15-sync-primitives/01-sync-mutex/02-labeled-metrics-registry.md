@@ -27,11 +27,6 @@ metricsreg/                  independent module: example.com/metricsreg
 - Test: concurrent writers to distinct and shared labels assert per-label totals and `Len`; `Get(missing)` returns `ok==false`; `Snapshot` returns an independent copy.
 - Verify: `go test -count=1 -race ./...`
 
-```bash
-mkdir -p go-solutions/15-sync-primitives/01-sync-mutex/02-labeled-metrics-registry/cmd/demo
-cd go-solutions/15-sync-primitives/01-sync-mutex/02-labeled-metrics-registry
-```
-
 ### Why a bare map needs a lock, and why Snapshot copies
 
 A Go map is not safe for concurrent use: concurrent writes, or a concurrent read

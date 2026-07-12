@@ -23,13 +23,6 @@ Implement: `LoadAll()` accumulating field errors into `errors.Join`, and a `Load
 Test: set several invalid vars at once; assert the joined error satisfies `errors.Is` for each sentinel and lists every key; show `LoadFirst` reports only one.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/17-testing-with-environment-variables/05-accumulated-validation-errors/cmd/demo
-cd go-solutions/12-testing-ecosystem/17-testing-with-environment-variables/05-accumulated-validation-errors
-```
-
 ## Accumulate, then join
 
 The pattern is mechanical but the payoff is large. Instead of returning at the

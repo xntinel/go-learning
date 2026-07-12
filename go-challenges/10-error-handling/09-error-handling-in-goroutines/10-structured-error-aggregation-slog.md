@@ -31,8 +31,6 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/10-error-handling/09-error-handling-in-goroutines/10-structured-error-aggregation-slog/cmd/demo
-cd go-solutions/10-error-handling/09-error-handling-in-goroutines/10-structured-error-aggregation-slog
 go mod edit -go=1.26
 ```
 

@@ -26,13 +26,6 @@ orderstate/                    independent module: example.com/orderstate
 - Test: `fmt.Sprint(orderState)` returns the label; `fmt.Sprint(badState)` returns the raw number (the trap); `fmt.Sprint(&badState)` returns the label (the pointer form).
 - Verify: `go vet ./...`, `go test -count=1 -race ./...`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/07-method-sets-and-addressability/08-stringer-pointer-vs-value-logging/cmd/demo
-cd go-solutions/07-structs-and-methods/07-method-sets-and-addressability/08-stringer-pointer-vs-value-logging
-```
-
 ### Why fmt skips a pointer-only Stringer for a value
 
 `fmt` does not know your type at compile time. For each argument it checks at

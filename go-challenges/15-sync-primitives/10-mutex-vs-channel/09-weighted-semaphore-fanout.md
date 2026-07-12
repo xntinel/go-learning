@@ -33,8 +33,6 @@ fanoutsem/                      independent module: example.com/fanoutsem
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/15-sync-primitives/10-mutex-vs-channel/09-weighted-semaphore-fanout/fanout go-solutions/15-sync-primitives/10-mutex-vs-channel/09-weighted-semaphore-fanout/cmd/demo
-cd go-solutions/15-sync-primitives/10-mutex-vs-channel/09-weighted-semaphore-fanout
 go get golang.org/x/sync/semaphore
 ```
 

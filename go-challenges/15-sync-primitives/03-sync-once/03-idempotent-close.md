@@ -25,13 +25,6 @@ idempotent-close/             module: example.com/idempotent-close
 - Test: two `Close` calls run teardown once and return the identical error value; a failing sink yields a stable wrapped error across calls; 100 concurrent `Close` calls run teardown once; a `Write` after `Close` returns `ErrClosed`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/03-sync-once/03-idempotent-close/cmd/demo
-cd go-solutions/15-sync-primitives/03-sync-once/03-idempotent-close
-```
-
 ### Why Once is the right guard for Close
 
 The naive idempotent close guards teardown with a `bool`: "if closed, return;

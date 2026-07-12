@@ -17,12 +17,6 @@ fanout_test.go       drop-oldest, drop-newest, disconnect, and a no-loss race te
 - Test: each policy keeps the right messages when overrun; a roomy buffer under concurrent publishers loses nothing.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/41-capstone-message-queue/01-in-memory-topic-subscription/03-slow-consumer-policy/cmd/demo && cd go-solutions/41-capstone-message-queue/01-in-memory-topic-subscription/03-slow-consumer-policy
-```
-
 ### Why per-subscriber buffers, and what the three policies trade
 
 If a hub delivered by blocking until every subscriber accepted a message, the slowest subscriber would set the pace for everyone — a single stuck reader would freeze the whole broadcast. The fix is to give each subscriber a private bounded queue and let the publisher hand off into that queue without ever waiting. As long as a subscriber keeps up, its queue stays shallow and it sees every message. When it falls behind, its queue fills, and at that moment the policy decides what gives. The publisher is never blocked and the other subscribers never notice.

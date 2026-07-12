@@ -22,13 +22,6 @@ blockprof/                independent module: example.com/blockprof
 - Test: with rate=1 the captured profile has `Count() > 0` and its text names `Contend`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/05-block-profile-channel-contention/cmd/demo
-cd go-solutions/13-goroutines-and-channels/16-goroutine-debugging-under-load/05-block-profile-channel-contention
-```
-
 ### Why block profiling is off by default, and how to read it
 
 The block profile records, for each stack, how long goroutines spent blocked there:

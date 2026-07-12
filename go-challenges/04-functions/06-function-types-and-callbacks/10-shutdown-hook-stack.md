@@ -26,13 +26,6 @@ Implement: `type CleanupFunc func(ctx context.Context) error`, a `Registry` with
 Test: three hooks run reverse-of-registration; a failing hook does not stop the rest and its error is joined; a hook honoring ctx respects a short deadline; `Shutdown` is idempotent; concurrent `Register`/`Shutdown` is race-free.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/06-function-types-and-callbacks/10-shutdown-hook-stack/cmd/demo
-cd go-solutions/04-functions/06-function-types-and-callbacks/10-shutdown-hook-stack
-```
-
 ### Why LIFO, and why run every hook
 
 You start a service in dependency order: open the DB pool, start the workers that use it,

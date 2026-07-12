@@ -28,13 +28,6 @@ metricsmw/                 independent module: example.com/metricsmw
 - Test: increment per route N times and assert `Snapshot()[route] == N`; two routes stay separate; 64 concurrent requests through one handler total correctly under `-race`; mutating a returned snapshot does not corrupt internal state.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/04-first-class-functions-and-closures/01-metrics-middleware-factory/cmd/demo
-cd go-solutions/04-functions/04-first-class-functions-and-closures/01-metrics-middleware-factory
-```
-
 ### The chain of closures
 
 `Metrics` is a *factory*: it takes the dependencies (a `Counter` and a `route`)

@@ -18,13 +18,6 @@ If a type parameter appears only in the return type, callers often have to provi
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/20-generics/07-type-inference-and-constraint-inference/07-type-inference-and-constraint-inference/cmd/demo
-cd go-solutions/20-generics/07-type-inference-and-constraint-inference/07-type-inference-and-constraint-inference
-```
-
 ### Exercise 1: Build Inference-Friendly Helpers
 
 Create `transform.go`:

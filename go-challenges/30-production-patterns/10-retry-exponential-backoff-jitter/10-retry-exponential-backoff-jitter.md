@@ -77,13 +77,6 @@ Retrying a non-idempotent operation (an HTTP POST that creates a resource, a cha
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/30-production-patterns/10-retry-exponential-backoff-jitter/10-retry-exponential-backoff-jitter/cmd/demo
-cd go-solutions/30-production-patterns/10-retry-exponential-backoff-jitter/10-retry-exponential-backoff-jitter
-```
-
 This is a library. You verify it with `go test`, not `go run`.
 
 ### Exercise 1: The Core Types

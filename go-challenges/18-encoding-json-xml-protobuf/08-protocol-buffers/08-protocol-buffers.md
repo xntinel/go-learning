@@ -21,8 +21,6 @@ Real protobuf decoders preserve or skip unknown fields for compatibility. This t
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/18-encoding-json-xml-protobuf/08-protocol-buffers/08-protocol-buffers/cmd/demo
-cd go-solutions/18-encoding-json-xml-protobuf/08-protocol-buffers/08-protocol-buffers
 go mod edit -go=1.26
 ```
 

@@ -32,8 +32,6 @@ logwin/                    independent module: example.com/logwin
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/01-log-window-pagination/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/01-log-window-pagination
 go mod edit -go=1.24
 ```
 

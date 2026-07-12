@@ -25,8 +25,6 @@ release/                      module: example.com/mono/release
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/11-packages-and-modules/10-monorepo-module-strategy/09-tag-a-subdirectory-module/cmd/demo
-cd go-solutions/11-packages-and-modules/10-monorepo-module-strategy/09-tag-a-subdirectory-module
 go get golang.org/x/mod
 ```
 

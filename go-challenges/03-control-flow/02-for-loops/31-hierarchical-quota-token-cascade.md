@@ -34,8 +34,6 @@ quota/                         module example.com/quota
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/02-for-loops/31-hierarchical-quota-token-cascade/cmd/demo
-cd go-solutions/03-control-flow/02-for-loops/31-hierarchical-quota-token-cascade
 go mod edit -go=1.24
 ```
 

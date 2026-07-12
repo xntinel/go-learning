@@ -29,8 +29,6 @@ entity/                     independent module: example.com/entity
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/09-pointers/10-designing-pointer-safe-apis/02-nil-safe-entity-and-constructor/cmd/demo
-cd go-solutions/09-pointers/10-designing-pointer-safe-apis/02-nil-safe-entity-and-constructor
 go mod edit -go=1.25
 ```
 

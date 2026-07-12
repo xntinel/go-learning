@@ -25,13 +25,6 @@ httpmetrics/                     independent module: example.com/httpmetrics
 - Test: N goroutines x M increments sum to exactly N*M under `-race`; httptest requests land in the right class; `BenchmarkSingleCounter` vs `BenchmarkShardedCounter` under `b.RunParallel`.
 - Verify: `go test -count=1 -race ./...` then `go test -bench=. ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/11-lock-free-data-structures/04-sharded-request-counters/cmd/demo
-cd go-solutions/15-sync-primitives/11-lock-free-data-structures/04-sharded-request-counters
-```
-
 ### False sharing, and why padding is not superstition
 
 `atomic.Int64.Add` is a single hardware instruction, but the cache-coherence

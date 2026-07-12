@@ -23,13 +23,6 @@ Implement: a lazily-built `*http.Client` with a tuned `*http.Transport`, constru
 Test: many concurrent callers see the factory run exactly once (atomic counter) and get the same pointer; the singleton is never built if never called.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/08-init-functions-and-package-initialization/06-sync-once-lazy-init-vs-init/cmd/demo
-cd go-solutions/04-functions/08-init-functions-and-package-initialization/06-sync-once-lazy-init-vs-init
-```
-
 ### Why lazy beats an init()-built global
 
 Consider a shared `*http.Client` with a carefully tuned `*http.Transport`

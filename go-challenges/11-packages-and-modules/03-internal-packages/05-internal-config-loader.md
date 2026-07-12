@@ -25,13 +25,6 @@ svcconfig/                         module example.com/svcconfig
 - Test: table-driven cases with `t.Setenv` for all-valid, missing-required, unparseable int/duration, defaults-applied, and multiple aggregated errors, matched via `errors.Is`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/11-packages-and-modules/03-internal-packages/05-internal-config-loader/internal/config go-solutions/11-packages-and-modules/03-internal-packages/05-internal-config-loader/cmd/demo
-cd go-solutions/11-packages-and-modules/03-internal-packages/05-internal-config-loader
-```
-
 ### Why the config loader is internal
 
 A `Config` struct is the single most volatile type in a service. If it is exported

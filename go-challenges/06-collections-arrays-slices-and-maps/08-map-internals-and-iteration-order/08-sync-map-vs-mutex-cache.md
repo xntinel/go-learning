@@ -29,13 +29,6 @@ metacache/                 independent module: example.com/metacache
   `Invalidate` only removes on value match; read-heavy and write-heavy benchmarks.
 - Verify: `go test -count=1 -race ./...` and `go test -bench=. -benchmem`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/08-sync-map-vs-mutex-cache/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/08-sync-map-vs-mutex-cache
-```
-
 ### The decision rule, not the cargo cult
 
 `sync.Map` is not "the concurrent map". It is a specialized structure tuned for two

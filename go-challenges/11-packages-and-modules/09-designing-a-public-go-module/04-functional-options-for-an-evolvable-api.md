@@ -27,13 +27,6 @@ publicstr/                 independent module: example.com/publicstr
 - Test: zero options equals legacy `Slugify`; `WithMaxLen` truncates on a rune boundary; `WithSeparator('_')` swaps the joiner; `WithFallback` replaces `ErrEmpty`; options compose in order.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/11-packages-and-modules/09-designing-a-public-go-module/04-functional-options-for-an-evolvable-api/cmd/demo
-cd go-solutions/11-packages-and-modules/09-designing-a-public-go-module/04-functional-options-for-an-evolvable-api
-```
-
 ### How the options pattern preserves the signature forever
 
 The mechanism is three moving parts. An unexported `config` struct holds every

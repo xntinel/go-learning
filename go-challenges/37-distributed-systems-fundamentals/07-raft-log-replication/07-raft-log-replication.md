@@ -46,13 +46,6 @@ A new leader's log may diverge from a follower's log: the follower may have entr
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/37-distributed-systems-fundamentals/07-raft-log-replication/07-raft-log-replication/cmd/demo
-cd go-solutions/37-distributed-systems-fundamentals/07-raft-log-replication/07-raft-log-replication
-```
-
 This is a library. You verify it with `go test`, not by running a program.
 
 ### Exercise 1: LogEntry and the Log Type

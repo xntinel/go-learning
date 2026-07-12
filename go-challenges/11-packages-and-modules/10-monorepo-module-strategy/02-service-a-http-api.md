@@ -26,14 +26,6 @@ mono/                         single module: example.com/mono
 - Test: build a request with `httptest.NewRequest`, record with `httptest.NewRecorder`, assert the status code and that the body decodes to the shared `httpx.Envelope`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module. Each exercise is self-contained, so it bundles its own copy of
-the shared package under the same import path it would have in the real repo:
-
-```bash
-mkdir -p go-solutions/11-packages-and-modules/10-monorepo-module-strategy/02-service-a-http-api/platform/httpx go-solutions/11-packages-and-modules/10-monorepo-module-strategy/02-service-a-http-api/cmd/api
-cd go-solutions/11-packages-and-modules/10-monorepo-module-strategy/02-service-a-http-api
-```
-
 ### Why the handler is the unit, not main
 
 The thing worth testing in a service is the `http.Handler`, not `main`. `main`

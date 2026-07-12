@@ -29,13 +29,6 @@ and assert the worker observes `t.Context()` cancellation before its cleanup
 returns.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/14-parallel-tests/07-parallel-cleanup-ordering-and-context/cmd/demo
-cd go-solutions/12-testing-ecosystem/14-parallel-tests/07-parallel-cleanup-ordering-and-context
-```
-
 ### Why LIFO, and how to observe it
 
 Fixtures have dependencies: the store's file lives inside the temp dir, the worker

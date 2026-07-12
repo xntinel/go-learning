@@ -19,12 +19,6 @@ batch_test.go        remainder, exact multiple, empty input, invalid size, capac
 - Test: pin the page count for empty, exact-multiple, and remainder inputs; pin the page contents including the short final page; reject a non-positive size; and prove each page's capacity is bounded so appending to one page cannot corrupt the next.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/25-iterators-and-modern-go/01-range-over-integers/05-batch-pagination/cmd/demo && cd go-solutions/25-iterators-and-modern-go/01-range-over-integers/05-batch-pagination
-```
-
 ### Why the count is a ceiling, and why each page is capacity-bounded
 
 The bulk API has a hard per-request ceiling: send it at most `size` records or it rejects the call. Covering `total` records therefore takes `ceil(total / size)` requests, and the remainder is the trap. Plain integer division `total / size` truncates: 10 records at 4 per page is `10 / 4 == 2`, but two pages of four only carry eight records — the last two would be silently dropped. The fix is the standard ceiling-division idiom `(total + size - 1) / size`, which rounds up without floating point: `(10 + 3) / 4 == 3`. Computing the count up front, before any slicing, lets a caller size a progress bar or a rate-limit budget without materializing the pages, and it is the loop bound `Pages` ranges over.

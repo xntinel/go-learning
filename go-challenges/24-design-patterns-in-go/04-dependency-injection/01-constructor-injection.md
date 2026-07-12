@@ -30,12 +30,6 @@ service_test.go      local fakes; happy path, payment short-circuit, nil rejecti
 - Test: round-trip the happy path, assert payment failure stops before save and notify, reject nil dependencies and invalid input.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/24-design-patterns-in-go/04-dependency-injection/01-constructor-injection/cmd/demo && cd go-solutions/24-design-patterns-in-go/04-dependency-injection/01-constructor-injection
-```
-
 ### Why the interfaces live here and the constructor validates
 
 Read the service from its dependencies inward. `OrderService` needs to do three

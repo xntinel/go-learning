@@ -19,12 +19,6 @@ credit_test.go       deterministic bound (3 credits) + concurrent stress (bound 
 - Test: a deterministic test that exactly three records are delivered before the fourth `Recv` blocks and one `Ack` releases exactly one more; a concurrent stress test asserting the in-flight high-water mark never exceeds the credit cap and every record is delivered once.
 - Verify: `go test -race ./... && go run ./cmd/demo`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/41-capstone-message-queue/05-consumer-api-backpressure/02-credit-based-flow-control/cmd/demo && cd go-solutions/41-capstone-message-queue/05-consumer-api-backpressure/02-credit-based-flow-control
-```
-
 ### Credits as a counting semaphore
 
 The whole protocol reduces to one data structure: a buffered channel of empty structs used as a counting semaphore. Create it with capacity `MaxCredits` and pre-fill it with `MaxCredits` tokens, so the bucket starts with a full credit balance. Spending a credit is a receive (`<-c.tokens`); returning one is a send (`c.tokens <- struct{}{}`). Because the channel can hold at most `MaxCredits` tokens, the number of tokens taken-but-not-returned -- which is precisely the in-flight window -- is bounded by the channel capacity for free, with no separate counter to keep consistent.

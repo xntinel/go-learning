@@ -26,13 +26,6 @@ Implement: a `Server` embedding `atomic.Int64` (total, errors, inflight) and `at
 Test: N goroutines each run a balanced Start/Finish; assert the final totals under `-race`; the zero value reports all zeros; inflight returns to `0`; `BeginDrain` transitions exactly once via compare-and-swap.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/02-zero-values-and-default-initialization/04-atomic-zero-value-counters/cmd/demo
-cd go-solutions/02-variables-types-and-constants/02-zero-values-and-default-initialization/04-atomic-zero-value-counters
-```
-
 ## Why the zero value is a working instrument — and must not be copied
 
 `atomic.Int64` and `atomic.Bool` are documented as usable at their zero value:

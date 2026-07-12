@@ -27,13 +27,6 @@ uservalidate/             independent module: example.com/uservalidate
 - Test: a table of `{name, input, wantErr bool, wantSentinel error}` asserting `(err != nil) == wantErr` and, when an error is expected, `errors.Is(err, wantSentinel)`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/02-table-driven-tests/03-request-validation-rules/cmd/demo
-cd go-solutions/12-testing-ecosystem/02-table-driven-tests/03-request-validation-rules
-```
-
 ### Why wantErr-bool and wantSentinel are different columns
 
 The table has two expectation columns because they answer two questions. `wantErr

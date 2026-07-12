@@ -29,8 +29,6 @@ reconnect/                 independent module: example.com/reconnect
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/06-labels-break-continue-goto/03-broker-reconnect-backoff-loop/cmd/demo
-cd go-solutions/03-control-flow/06-labels-break-continue-goto/03-broker-reconnect-backoff-loop
 go mod edit -go=1.24
 ```
 

@@ -33,8 +33,6 @@ Set up the module. `crypto/fips140.Enforced` and `Version` were added in Go 1.26
 so pin the language version:
 
 ```bash
-mkdir -p go-solutions/49-application-security-crypto-supplychain/08-fips-140-3-mode/01-fips-startup-posture/cmd/demo
-cd go-solutions/49-application-security-crypto-supplychain/08-fips-140-3-mode/01-fips-startup-posture
 go mod edit -go=1.26
 ```
 

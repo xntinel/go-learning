@@ -49,13 +49,6 @@ about (and a caller that wants a hard floor can check length first). When `keep 
 0` the whole value is masked. A `café` masked with `keep=2` keeps `fé` — two runes,
 three bytes — intact and valid.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/10-pii-rune-mask/internal/redact go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/10-pii-rune-mask/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/03-runes-and-unicode-code-points/10-pii-rune-mask
-```
-
 Create `internal/redact/redact.go`:
 
 ```go

@@ -24,13 +24,6 @@ report/                     independent module: example.com/report
 - Test: inject a `failWriter` whose `Write`/`Close` return sentinels; assert the returned error wraps the flush sentinel; assert the success path returns nil and all bytes reach the sink; assert that when both a flush error and a close error occur, `errors.Join` surfaces both.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/03-defer-close-error-into-named-return/report go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/03-defer-close-error-into-named-return/cmd/demo
-cd go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/03-defer-close-error-into-named-return
-```
-
 ### Why the buffered writer makes this trap so easy to fall into
 
 A `bufio.Writer` accumulates bytes in memory and writes them through to the

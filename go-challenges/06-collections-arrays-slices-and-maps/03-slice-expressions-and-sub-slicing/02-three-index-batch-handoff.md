@@ -34,8 +34,6 @@ batcher/                   independent module: example.com/batcher
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/02-three-index-batch-handoff/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/03-slice-expressions-and-sub-slicing/02-three-index-batch-handoff
 go mod edit -go=1.24
 ```
 

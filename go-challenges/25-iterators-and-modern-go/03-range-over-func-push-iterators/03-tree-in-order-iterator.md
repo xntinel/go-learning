@@ -30,12 +30,6 @@ tree_test.go         sorted in-order output, early-break prefix, list early brea
   and breaks early out of the list.
 - Verify: `go test -run 'TestTree|TestList' -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/25-iterators-and-modern-go/03-range-over-func-push-iterators/03-tree-in-order-iterator/cmd/demo && cd go-solutions/25-iterators-and-modern-go/03-range-over-func-push-iterators/03-tree-in-order-iterator
-```
-
 ### The easy case: a flat loop honors the protocol with return
 
 A singly linked list iterates with one loop and no recursion, so the protocol is

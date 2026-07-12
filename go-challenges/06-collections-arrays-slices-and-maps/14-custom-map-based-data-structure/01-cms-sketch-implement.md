@@ -27,13 +27,6 @@ cms/                       independent module: example.com/cms
 - Test: adding an item three times estimates at least three; an unseen item estimates zero; an `Example` with deterministic output.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/14-custom-map-based-data-structure/01-cms-sketch-implement/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/14-custom-map-based-data-structure/01-cms-sketch-implement
-```
-
 ### The shape: a 2D counter table plus one hash per row
 
 A Count-Min Sketch is a `rows × width` table of unsigned counters. `Add(item)`

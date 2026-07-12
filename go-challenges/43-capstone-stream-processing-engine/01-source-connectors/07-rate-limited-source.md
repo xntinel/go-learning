@@ -20,12 +20,6 @@ rate-limited-source/
 - Test: emitting N records with burst 1 takes at least (N-1) intervals; a burst of B records drains before the first refill tick.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/43-capstone-stream-processing-engine/01-source-connectors/07-rate-limited-source/cmd/demo && cd go-solutions/43-capstone-stream-processing-engine/01-source-connectors/07-rate-limited-source
-```
-
 ### The shared vocabulary
 
 `source.go` bundles the usual `Record`, `Metrics`, and `Source`. Rate limiting is purely about *when* records leave, not what they contain, so nothing here changes the record shape.

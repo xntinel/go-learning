@@ -20,13 +20,6 @@ payment_test.go                   approval round-trip, decline sentinel + code, 
 - Test: an approved charge returns a `Receipt`, a decline matches `ErrDeclined` and exposes its code, each failure status maps to its sentinel, bad money and a cancelled context are rejected before the vendor is called, and an unknown status falls back to a catch-all sentinel.
 - Verify: `go test -race ./...` and `go run ./cmd/demo`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/24-design-patterns-in-go/07-adapter-pattern/02-payment-gateway-acl/thirdparty/paypro go-solutions/24-design-patterns-in-go/07-adapter-pattern/02-payment-gateway-acl/cmd/demo
-cd go-solutions/24-design-patterns-in-go/07-adapter-pattern/02-payment-gateway-acl
-```
-
 ### A vendor that does not believe in errors
 
 The simulated gateway is deliberately un-Go-like. `Submit` takes a `ChargeInput` whose amount is `AmountMinor int64` — cents, not a money type — and returns a `ChargeOutput` in *every* case, success or failure, with no second `error` return value. The caller is expected to read `Accepted` and `StatusCode` to find out what happened. A missing API key yields `4010`, an outage (modelled by a `Down` flag) yields `5000`, a non-positive amount yields `4000`, an amount over a ceiling yields `4020` ("insufficient funds"), and anything else is approved with `Accepted: true` and `StatusCode: 2000`.

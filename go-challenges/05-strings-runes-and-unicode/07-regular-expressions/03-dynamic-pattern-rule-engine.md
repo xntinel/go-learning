@@ -27,13 +27,6 @@ ruleengine/                 independent module: example.com/ruleengine
 - Test: a valid config compiles; one invalid pattern fails the load with an error naming the bad rule (`errors.Is` + `errors.As`); an over-long or over-nested pattern is rejected by the budget; a `QuoteMeta`-wrapped literal matches metacharacters literally; the compile count stays at the number of rules under repeated matching.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/07-regular-expressions/03-dynamic-pattern-rule-engine/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/07-regular-expressions/03-dynamic-pattern-rule-engine
-```
-
 ### Compile at load, budget before compile, match with no allocation
 
 Three ideas drive the design. First, **`Compile`, not `MustCompile`**: the

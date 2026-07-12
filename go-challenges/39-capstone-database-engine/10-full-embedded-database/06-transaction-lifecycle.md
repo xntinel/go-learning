@@ -21,12 +21,6 @@ txn_test.go           rollback is invisible, commit is visible, unknown-txn erro
 - Test: `txn_test.go` proves a transaction sees its own pending insert, a rollback leaves nothing visible to a later reader, a commit is visible to a later reader, and every operation on an unknown transaction returns `ErrNoTxn`.
 - Verify: `go test -run 'TestTxn|ExampleTxnStore' -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/10-full-embedded-database/06-transaction-lifecycle/cmd/demo && cd go-solutions/39-capstone-database-engine/10-full-embedded-database/06-transaction-lifecycle
-```
-
 ### Why writes are private until commit, and what read-your-own-writes means
 
 The contract this store models has three observable rules, and each maps to one line of the implementation. A transaction's inserts are buffered in a per-transaction slice and not touched into the shared heap until commit — that is what makes them private. A select issued *inside* the transaction returns the committed rows followed by that transaction's own pending rows — that is read-your-own-writes, the rule that a transaction always sees the effect of its own statements even before it commits, which is what lets a single transaction insert a row and then update it. A rollback deletes the buffer without ever touching the heap, so the rows simply cease to exist; a commit walks the buffer and inserts each row into the heap, after which a *new* transaction's select sees them. The pivotal asymmetry is that visibility to others is gated on commit while visibility to self is immediate.

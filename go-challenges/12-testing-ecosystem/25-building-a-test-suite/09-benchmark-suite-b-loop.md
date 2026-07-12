@@ -23,13 +23,6 @@ Implement: reuse the cache.
 Test: `BenchmarkGet` and `BenchmarkSet` with `for b.Loop()` and `b.ReportAllocs()`; `BenchmarkGetParallel` with `b.RunParallel`; plus a normal `TestGetSet` so `go test` has something to run.
 Verify: `go test -count=1 -race ./...` and `go test -bench . -benchmem -run '^$'`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/25-building-a-test-suite/09-benchmark-suite-b-loop/cmd/demo
-cd go-solutions/12-testing-ecosystem/25-building-a-test-suite/09-benchmark-suite-b-loop
-```
-
 ### Why b.Loop replaces the b.N loop
 
 The legacy benchmark shape, `for i := 0; i < b.N; i++`, has two well-known

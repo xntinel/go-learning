@@ -34,8 +34,6 @@ outbox/                     independent module: example.com/outbox-pattern-trans
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/01-if-else-and-init-statements/22-outbox-pattern-transactional-publish/cmd/demo
-cd go-solutions/03-control-flow/01-if-else-and-init-statements/22-outbox-pattern-transactional-publish
 go mod edit -go=1.24
 ```
 

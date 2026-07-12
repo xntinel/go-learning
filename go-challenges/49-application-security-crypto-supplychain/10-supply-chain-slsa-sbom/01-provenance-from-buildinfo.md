@@ -30,8 +30,6 @@ provenance/                 independent module: example.com/provenance
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/49-application-security-crypto-supplychain/10-supply-chain-slsa-sbom/01-provenance-from-buildinfo/cmd/demo
-cd go-solutions/49-application-security-crypto-supplychain/10-supply-chain-slsa-sbom/01-provenance-from-buildinfo
 go mod edit -go=1.26
 ```
 

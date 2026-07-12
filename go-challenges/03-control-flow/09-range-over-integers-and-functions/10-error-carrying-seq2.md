@@ -24,13 +24,6 @@ Implement: `DecodeRecords(r io.Reader) iter.Seq2[Record, error]` yielding `(reco
 Test: clean input yields all with nil errors; a bad line at position k yields k good then one error and no more; the wrapped error matches `ErrMalformed` via `errors.Is`; an empty reader yields nothing.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/09-range-over-integers-and-functions/10-error-carrying-seq2/cmd/demo
-cd go-solutions/03-control-flow/09-range-over-integers-and-functions/10-error-carrying-seq2
-```
-
 ## The design
 
 `DecodeRecords` returns an `iter.Seq2[Record, error]`. It scans the reader line by

@@ -26,13 +26,6 @@ users/                        independent module: example.com/users
 - Test: inject each driver sentinel and assert the result satisfies `errors.Is(err, ErrNotFound)` and does NOT satisfy `errors.Is(err, sql.ErrNoRows)` / `io.EOF`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/05-sentinel-errors/03-translate-driver-sentinels/cmd/demo
-cd go-solutions/10-error-handling/05-sentinel-errors/03-translate-driver-sentinels
-```
-
 ### The boundary rule: infrastructure sentinels stop at the adapter
 
 A `SELECT ... WHERE id = ?` that matches no row is a normal, expected outcome,

@@ -25,11 +25,6 @@ Implement: `Render(metrics []Metric) string` producing HELP/TYPE lines and sampl
 Test: exact exposition for a fixed metric set; float edge cases (integers without spurious decimals, NaN/Inf); label escaping of quotes and backslashes.
 Verify: `go test -count=1 -race ./...`
 
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/09-strings-builder-performance/05-prometheus-text-exposition-builder/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/09-strings-builder-performance/05-prometheus-text-exposition-builder
-```
-
 ### Determinism and escaping are the whole job
 
 The Prometheus text exposition format is line-oriented and picky, and two properties

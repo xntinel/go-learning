@@ -26,8 +26,6 @@ permission/                  independent module: example.com/permission
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/10-higher-order-functions/21-permission-checker-with-inheritance
-cd go-solutions/04-functions/10-higher-order-functions/21-permission-checker-with-inheritance
 go mod edit -go=1.24
 ```
 

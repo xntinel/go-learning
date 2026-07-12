@@ -24,13 +24,6 @@ pauser/                     independent module: example.com/pauser
 - Test: after `Pause`, submitted jobs make zero progress with every worker durably parked; `Resume` releases all N workers at once; `Stop` while paused terminates every worker with no goroutine leak; `-race` churn with interleaved pause/resume.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/06-sync-cond/06-pausable-worker-pool/cmd/demo
-cd go-solutions/15-sync-primitives/06-sync-cond/06-pausable-worker-pool
-```
-
 ### One Cond, one waiter class, three-part predicate
 
 Every parked goroutine here is a worker, and every worker waits for the same

@@ -28,13 +28,6 @@ ci-gate/                       module example.com/ci-gate
 - Test: `circle` math and the sentinel via `errors.Is`.
 - Verify: `./check.sh` exits 0 on the clean module; an unformatted file, a vet finding, or a failing test each makes it exit non-zero and name the failing stage.
 
-Create the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/04-go-tool-commands/10-ci-toolchain-gate/cmd/demo go-solutions/01-environment-and-tooling/04-go-tool-commands/10-ci-toolchain-gate/internal/circle
-cd go-solutions/01-environment-and-tooling/04-go-tool-commands/10-ci-toolchain-gate
-```
-
 ### Why one composed gate, and why this order
 
 Every command in the previous nine exercises catches a different class of defect.

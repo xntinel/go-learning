@@ -28,13 +28,6 @@ Implement: `MarshalConfig(Config) ([]byte, error)` using a `json.Encoder` with `
 Test: byte-compare the snapshot to the golden; prove map keys serialize sorted regardless of insertion order; prove `SetEscapeHTML(false)` keeps `<`, `>`, `&` literal.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/19-golden-file-testing/06-json-marshalindent-snapshot/cmd/demo go-solutions/12-testing-ecosystem/19-golden-file-testing/06-json-marshalindent-snapshot/testdata
-cd go-solutions/12-testing-ecosystem/19-golden-file-testing/06-json-marshalindent-snapshot
-```
-
 ### The three determinism levers, and the two policies you must set
 
 `encoding/json` pins two things for free, which is why JSON is a friendly golden

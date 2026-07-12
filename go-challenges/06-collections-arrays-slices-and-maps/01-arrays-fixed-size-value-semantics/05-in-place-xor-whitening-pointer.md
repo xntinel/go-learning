@@ -27,13 +27,6 @@ whitening/                   independent module: example.com/whitening
 - Test: `Whiten` mutates the caller's block; `WhitenCopy` does not; whitening twice with the same key restores the original; a benchmark showing the pointer path is allocation-free.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/05-in-place-xor-whitening-pointer/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/05-in-place-xor-whitening-pointer
-```
-
 ### Why the mutation path needs *[16]byte
 
 `Whiten(block, key *[16]byte)` takes pointers to arrays. The XOR loop writes

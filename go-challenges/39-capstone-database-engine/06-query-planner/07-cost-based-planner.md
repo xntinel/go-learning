@@ -25,12 +25,6 @@ planner_test.go   index-scan selection, predicate pushdown, pushed filter
 - Test: the planner picks `IndexScanOperator` for an equality predicate on an indexed column; predicate pushdown moves a single-table conjunct to the scan side of a join; a `SeqScanOperator` with a pushed-down filter discards rows during the scan.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/06-query-planner/07-cost-based-planner/cmd/demo && cd go-solutions/39-capstone-database-engine/06-query-planner/07-cost-based-planner
-```
-
 ### Typed values and three-valued logic
 
 Every column can be NULL, so a runtime value carries its own type tag and nullability. Arithmetic or comparison touching a NULL yields NULL, and `CompareValues` defines a deterministic total order (NULL sorts before every concrete value) that sort and merge depend on. `ToBool` collapses a value to a Go bool for control flow, mapping NULL to false, but the evaluator never relies on that alone for AND and OR.

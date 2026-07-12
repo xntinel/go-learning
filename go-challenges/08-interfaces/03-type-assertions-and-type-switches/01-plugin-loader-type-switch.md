@@ -26,13 +26,6 @@ Implement: `Load(name, map[string]any) (Plugin, error)` dispatching by type, `Lo
 Test: table-driven cases for string/number/bool/config, `errors.Is` for `ErrUnknownType` and `ErrMissingKey`, and a `nil` value handled by `case nil` rather than as an error.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/03-type-assertions-and-type-switches/01-plugin-loader-type-switch/cmd/demo
-cd go-solutions/08-interfaces/03-type-assertions-and-type-switches/01-plugin-loader-type-switch
-```
-
 ### Why a type switch here
 
 The loader's job is dispatch: given an `any`, decide which of several concrete

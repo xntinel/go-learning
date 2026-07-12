@@ -31,8 +31,6 @@ patchfields/                 independent module: example.com/patchfields
 Set up the module. `new(expr)` requires Go 1.26, so pin the language version:
 
 ```bash
-mkdir -p go-solutions/48-modern-go-language-and-stdlib/15-new-expr-initialized-allocation/01-optional-patch-fields/cmd/demo
-cd go-solutions/48-modern-go-language-and-stdlib/15-new-expr-initialized-allocation/01-optional-patch-fields
 go mod edit -go=1.26
 ```
 

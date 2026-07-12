@@ -31,13 +31,6 @@ operates on the embedded handle; domain and promoted methods coexist;
 `repo.BaseRepo` is still reachable explicitly.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/04-anonymous-structs-and-embedding/04-base-repository-embedding/cmd/demo
-cd go-solutions/07-structs-and-methods/04-anonymous-structs-and-embedding/04-base-repository-embedding
-```
-
 ### Why embed the base by value and what promotion buys
 
 `BaseRepo` holds the two things every repository shares: a `Store` handle (a small

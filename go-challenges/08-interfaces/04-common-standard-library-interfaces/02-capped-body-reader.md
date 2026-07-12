@@ -27,13 +27,6 @@ cappedbody/                 independent module: example.com/cappedbody
 - Test: body under cap reads fully and ends in `io.EOF`; body exactly at cap succeeds; body over cap returns the sentinel via `errors.Is` at the boundary; short-buffer reads accumulate across calls; no bytes past the cap are delivered.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/04-common-standard-library-interfaces/02-capped-body-reader/cmd/demo
-cd go-solutions/08-interfaces/04-common-standard-library-interfaces/02-capped-body-reader
-```
-
 ### How MaxBytesReader actually works
 
 The naive cap — count bytes and error once the count passes `limit` — has an

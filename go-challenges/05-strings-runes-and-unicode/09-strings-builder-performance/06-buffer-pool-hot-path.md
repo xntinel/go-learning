@@ -25,11 +25,6 @@ Implement: `Encode(fields []string) string` backed by a `sync.Pool` of `*bytes.B
 Test: concurrent encode under `-race` gives uncorrupted output; no bleed-through between reuses; the cap policy drops oversized buffers; pooled vs unpooled benchmarks.
 Verify: `go test -count=1 -race ./...`
 
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/09-strings-builder-performance/06-buffer-pool-hot-path/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/09-strings-builder-performance/06-buffer-pool-hot-path
-```
-
 ### The two disciplines of a correct pool
 
 `sync.Pool` hands you objects that other goroutines used before you and may reuse

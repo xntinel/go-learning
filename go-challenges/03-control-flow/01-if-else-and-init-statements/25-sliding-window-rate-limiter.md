@@ -32,8 +32,6 @@ slidingwindow/              independent module: example.com/sliding-window-rate-
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/01-if-else-and-init-statements/25-sliding-window-rate-limiter/cmd/demo
-cd go-solutions/03-control-flow/01-if-else-and-init-statements/25-sliding-window-rate-limiter
 go mod edit -go=1.24
 ```
 

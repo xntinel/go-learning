@@ -29,13 +29,6 @@ gateproof/                 independent module: example.com/gateproof
 - Test: `TestBuildTierIsUnit` asserts `Tier == "unit"` under the default build; `TestIntegrationCheckEnv` (tagged) skips when `INTEGRATION` is unset and asserts `Tier == "integration"` when it runs.
 - Verify: `go test ./...` runs the unit tests only; `go test -tags=integration` compiles and adds the tagged test; `gofmt -l` and `go vet` are clean under both tag sets.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/13-build-tags-for-test-separation/03-run-and-verify-gates/cmd/demo
-cd go-solutions/12-testing-ecosystem/13-build-tags-for-test-separation/03-run-and-verify-gates
-```
-
 ### Making the compile-time gate observable
 
 The verification problem is that "the file was excluded" leaves no runtime trace by

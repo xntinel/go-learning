@@ -41,8 +41,6 @@ ratelimit/                  independent module: example.com/sliding-window-rate-
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/05-range-over-collections/33-sliding-window-rate-limiter-log/cmd/demo
-cd go-solutions/03-control-flow/05-range-over-collections/33-sliding-window-rate-limiter-log
 go mod edit -go=1.24
 ```
 

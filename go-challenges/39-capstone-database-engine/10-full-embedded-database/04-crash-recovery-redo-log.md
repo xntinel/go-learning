@@ -20,12 +20,6 @@ recovery_test.go     committed survives, uncommitted discarded, only-committed m
 - Test: `recovery_test.go` proves a committed insert is restored, an uncommitted one is discarded, a mix keeps only the committed transaction's rows, and a tuple too large to replay returns `ErrRecover`.
 - Verify: `go test -run 'TestRecover|ExampleRecover' -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/10-full-embedded-database/04-crash-recovery-redo-log/cmd/demo && cd go-solutions/39-capstone-database-engine/10-full-embedded-database/04-crash-recovery-redo-log
-```
-
 ### Why the commit record is the single source of truth
 
 The deep idea behind crash recovery is that durable state is whatever the log says it is, and nothing else. After a crash, you cannot trust the in-memory page cache, because some of its pages reached disk and some did not, and you have no way to tell which. So recovery throws all of it away and rebuilds from the one artifact that was written durably in order: the log. The model here makes that brutal honesty explicit — `Recover` ignores any prior page state entirely and constructs a brand-new `SlottedPage`, replaying the log into it from scratch.

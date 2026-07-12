@@ -31,13 +31,6 @@ configdisco/                 independent module: example.com/configdisco
   match set asserting `nil` error and an empty slice.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/11-testing-filesystems-with-fstest/06-glob-config-discovery/cmd/demo
-cd go-solutions/12-testing-ecosystem/11-testing-filesystems-with-fstest/06-glob-config-discovery
-```
-
 ### Sort the matches; do not trust glob order for precedence
 
 `fs.Glob(fsys, pattern)` returns the names matching a `path.Match` pattern, or

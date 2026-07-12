@@ -30,13 +30,6 @@ blobsvc/                     independent module: example.com/blobsvc
 - Test: a two-method hand-rolled double for the seam; `var _ ObjectStore = (*sdk.Client)(nil)` proving the fat client satisfies it; a roundtrip against the real client through the narrow interface.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/08-mocking-with-interfaces/09-consumer-defined-interface-segregation/sdk go-solutions/12-testing-ecosystem/08-mocking-with-interfaces/09-consumer-defined-interface-segregation/archive go-solutions/12-testing-ecosystem/08-mocking-with-interfaces/09-consumer-defined-interface-segregation/cmd/demo
-cd go-solutions/12-testing-ecosystem/08-mocking-with-interfaces/09-consumer-defined-interface-segregation
-```
-
 ### The fat SDK you do not own
 
 Real object-store SDKs are wide: get, put, delete, list, copy, move, stat, ACLs,

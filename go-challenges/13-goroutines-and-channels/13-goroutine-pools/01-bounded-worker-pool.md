@@ -28,13 +28,6 @@ pool/                      independent module: example.com/pool
 - Test: all jobs run, `Size` is exact, `Submit` rejects after `Close`, double `Close` is safe, concurrency never exceeds the worker count, and `Close` blocks until in-flight jobs finish.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/13-goroutine-pools/01-bounded-worker-pool/cmd/demo
-cd go-solutions/13-goroutines-and-channels/13-goroutine-pools/01-bounded-worker-pool
-```
-
 ### The shape of the pool
 
 A `Job` is the unit of work: `func() error`. Making it a closure rather than a

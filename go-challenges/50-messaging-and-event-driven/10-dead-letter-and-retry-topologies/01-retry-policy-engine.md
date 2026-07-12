@@ -31,8 +31,6 @@ retrypolicy/                 independent module: example.com/retrypolicy
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/50-messaging-and-event-driven/10-dead-letter-and-retry-topologies/01-retry-policy-engine/cmd/demo
-cd go-solutions/50-messaging-and-event-driven/10-dead-letter-and-retry-topologies/01-retry-policy-engine
 go mod edit -go=1.26
 ```
 

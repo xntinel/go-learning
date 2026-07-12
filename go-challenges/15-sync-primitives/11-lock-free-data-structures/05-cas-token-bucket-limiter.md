@@ -24,13 +24,6 @@ tokenbucket/                     independent module: example.com/tokenbucket
 - Test: burst-of-capacity allowed and capacity+1 denied; refill after a clock advance; partial refill denied; G goroutines with a frozen clock never over-admit.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/11-lock-free-data-structures/05-cas-token-bucket-limiter/cmd/demo
-cd go-solutions/15-sync-primitives/11-lock-free-data-structures/05-cas-token-bucket-limiter
-```
-
 ### The state is a value; the pointer is the variable
 
 A token bucket has two pieces of state that must change *together*: the token

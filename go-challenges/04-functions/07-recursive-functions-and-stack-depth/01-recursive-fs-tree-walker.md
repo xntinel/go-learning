@@ -27,13 +27,6 @@ treewalk/                  independent module: example.com/treewalk
 - Test: synthetic `fstest.MapFS` trees asserting every entry is visited once, sizes sum, a nil filesystem errors, the deepest file and its depth are reported, a single-file root early-returns, and a 50-directory-deep tree still walks.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/07-recursive-functions-and-stack-depth/01-recursive-fs-tree-walker/walk go-solutions/04-functions/07-recursive-functions-and-stack-depth/01-recursive-fs-tree-walker/cmd/demo
-cd go-solutions/04-functions/07-recursive-functions-and-stack-depth/01-recursive-fs-tree-walker
-```
-
 ### Why recursion is the right default here
 
 The tree is an `fs.FS` you are handed — a directory layout, an embedded asset

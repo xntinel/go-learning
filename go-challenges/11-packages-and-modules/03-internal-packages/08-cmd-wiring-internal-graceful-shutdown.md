@@ -28,13 +28,6 @@ serverkit/                          module example.com/serverkit
 - Test: route status/body via `httptest.NewServer`; the shutdown path by calling `Server.Shutdown` and asserting `Serve` returns `http.ErrServerClosed`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/11-packages-and-modules/03-internal-packages/08-cmd-wiring-internal-graceful-shutdown/internal/config go-solutions/11-packages-and-modules/03-internal-packages/08-cmd-wiring-internal-graceful-shutdown/internal/httpapi go-solutions/11-packages-and-modules/03-internal-packages/08-cmd-wiring-internal-graceful-shutdown/cmd/server go-solutions/11-packages-and-modules/03-internal-packages/08-cmd-wiring-internal-graceful-shutdown/cmd/demo
-cd go-solutions/11-packages-and-modules/03-internal-packages/08-cmd-wiring-internal-graceful-shutdown
-```
-
 ### Why cmd/ + internal/ is an encapsulation choice
 
 A service is meant to be a terminal node in the dependency graph: something you

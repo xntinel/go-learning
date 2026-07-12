@@ -50,8 +50,6 @@ slidinglog/              module example.com/slidinglog
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/13-implementing-a-ring-buffer/12-sliding-window-rate-limiter-count-vs-time
-cd go-solutions/06-collections-arrays-slices-and-maps/13-implementing-a-ring-buffer/12-sliding-window-rate-limiter-count-vs-time
 go mod edit -go=1.24
 ```
 

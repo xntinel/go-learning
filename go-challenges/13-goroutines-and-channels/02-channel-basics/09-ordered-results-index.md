@@ -25,13 +25,6 @@ batch/                       independent module: example.com/batch
 - Test: results are in input order under non-uniform work; all inputs processed; empty and single-element inputs; unordered variant processes all but does not guarantee order.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/02-channel-basics/09-ordered-results-index/cmd/demo
-cd go-solutions/13-goroutines-and-channels/02-channel-basics/09-ordered-results-index
-```
-
 ### Carry the index through the pipeline
 
 The unordered pool (Exercise 1) appends results as they arrive, so `out[0]` is

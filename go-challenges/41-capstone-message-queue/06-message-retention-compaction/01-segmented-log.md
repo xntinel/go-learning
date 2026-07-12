@@ -19,12 +19,6 @@ log_test.go            sealing math, tombstone detection, concurrent Append/Segm
 - Test: seal a segment and check the size/timestamp/offset math, detect a tombstone, and drive `Append` and `Segments` from many goroutines under the race detector.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/41-capstone-message-queue/06-message-retention-compaction/01-segmented-log/cmd/demo && cd go-solutions/41-capstone-message-queue/06-message-retention-compaction/01-segmented-log
-```
-
 ### Why a sealed segment is the unit of everything
 
 A segment is sealed once and never touched again. That single property is what lets retention and compaction run concurrently with producers: a sealed segment is immutable, so a reader scanning it and a producer appending to a *different* (newer) segment cannot interfere. The cost of that immutability is that you can never edit a segment in place — you delete it whole or you rewrite it whole — which is exactly the segment-granularity constraint that shapes every policy that follows.

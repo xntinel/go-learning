@@ -21,13 +21,6 @@ Implement: an in-memory `Repository` with `FindByStatus` (sorted), `Page(offset,
 Test: `loadSeed(t)` reads `testdata/seed.json` into a fresh repo and registers `t.Cleanup(repo.Reset)`; query tests assert result-set IDs; a save/reload test uses `t.TempDir` for a file-backed snapshot.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/08-seed-repository-fixtures/cmd/demo go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/08-seed-repository-fixtures/testdata
-cd go-solutions/12-testing-ecosystem/07-test-fixtures-and-testdata/08-seed-repository-fixtures
-```
-
 ### Seed data as the source of truth for query tests
 
 A query method is only as testable as the data behind it. If each test inserts its own ad-hoc rows, the dataset is scattered across the file and no single place tells you what the repository contains — and two tests that each insert "a couple of active users" will disagree on the counts. A seed fixture fixes that: `testdata/seed.json` is the canonical dataset, reviewed and versioned like any other fixture, and every query test asserts against that one known state. `FindByStatus("active")` has a definite, checkable answer because the seed defines exactly which users are active.

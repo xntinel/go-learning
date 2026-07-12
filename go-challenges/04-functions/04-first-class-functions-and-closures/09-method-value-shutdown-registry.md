@@ -27,13 +27,6 @@ shutdown/                  independent module: example.com/shutdown
 - Test: closers append their name to a captured slice to prove LIFO order; a closer returning an error is included in the joined result but does not stop the others; a method value bound to one receiver closes THAT instance, not another.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/04-first-class-functions-and-closures/09-method-value-shutdown-registry/cmd/demo
-cd go-solutions/04-functions/04-first-class-functions-and-closures/09-method-value-shutdown-registry
-```
-
 ### Method values bind the receiver
 
 A method value is what you get when you write `pool.Close` without calling it:

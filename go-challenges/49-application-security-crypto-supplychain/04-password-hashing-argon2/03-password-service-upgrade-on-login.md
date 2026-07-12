@@ -30,8 +30,6 @@ credstore/                 independent module: example.com/credstore
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/49-application-security-crypto-supplychain/04-password-hashing-argon2/03-password-service-upgrade-on-login/cmd/demo
-cd go-solutions/49-application-security-crypto-supplychain/04-password-hashing-argon2/03-password-service-upgrade-on-login
 go mod edit -go=1.26
 go get golang.org/x/crypto/argon2 golang.org/x/crypto/bcrypt
 ```

@@ -54,8 +54,6 @@ hashring/                 module example.com/hashring
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/11-slice-memory-leaks/19-hashring-snapshot-in-place-corruption
-cd go-solutions/06-collections-arrays-slices-and-maps/11-slice-memory-leaks/19-hashring-snapshot-in-place-corruption
 go mod edit -go=1.24
 ```
 

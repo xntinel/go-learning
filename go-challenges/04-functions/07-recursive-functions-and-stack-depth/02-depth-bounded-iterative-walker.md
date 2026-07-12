@@ -27,13 +27,6 @@ boundedwalk/               independent module: example.com/boundedwalk
 - Test: parity with `Walk` on a trusted tree, a boundary tree at exactly `maxDepth` passing and `maxDepth+1` failing (checked with `errors.Is`), and deterministic ordering.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/07-recursive-functions-and-stack-depth/02-depth-bounded-iterative-walker/walk go-solutions/04-functions/07-recursive-functions-and-stack-depth/02-depth-bounded-iterative-walker/cmd/demo
-cd go-solutions/04-functions/07-recursive-functions-and-stack-depth/02-depth-bounded-iterative-walker
-```
-
 ### The mechanical transformation
 
 Recursion to iteration is a rote transformation, and doing it by hand once fixes

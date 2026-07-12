@@ -51,8 +51,6 @@ shardring/                module example.com/shardring
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/13-implementing-a-ring-buffer/13-sharded-ring-buffers-hash-distribution
-cd go-solutions/06-collections-arrays-slices-and-maps/13-implementing-a-ring-buffer/13-sharded-ring-buffers-hash-distribution
 go mod edit -go=1.24
 ```
 

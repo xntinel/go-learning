@@ -31,8 +31,6 @@ pipeline/                  independent module: example.com/pipeline
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/48-modern-go-language-and-stdlib/13-flight-recorder-runtime-trace/03-annotated-workload/cmd/demo
-cd go-solutions/48-modern-go-language-and-stdlib/13-flight-recorder-runtime-trace/03-annotated-workload
 go mod edit -go=1.25
 ```
 

@@ -23,13 +23,6 @@ Implement: `Worker.Run(done <-chan struct{}, work <-chan int) (int, error)` accu
 Test: full drain sums correctly; `close(done)` returns `ErrStopped` via `errors.Is`; a partial-cancel run returns the partial sum and `ErrStopped`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/07-done-channel-pattern/01-cancellable-worker/cmd/demo
-cd go-solutions/13-goroutines-and-channels/07-done-channel-pattern/01-cancellable-worker
-```
-
 ### The two-signal loop
 
 `Run` is a `for` loop wrapped around a two-case `select`. One case receives from `done`;

@@ -27,13 +27,6 @@ headercanon/                 independent module: example.com/headercanon
 - Test: exact canonical output over mixed-case and non-letter bytes; the table has 256 entries; canonicalizing twice equals once; a benchmark documenting the allocation-free lookup.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/04-header-canonicalize-lookup-table/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/04-header-canonicalize-lookup-table
-```
-
 ### Why a [256]byte table, built once
 
 A byte has 256 possible values, so a `[256]byte` array can hold the canonical form

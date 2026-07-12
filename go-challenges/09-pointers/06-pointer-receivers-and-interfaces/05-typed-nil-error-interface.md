@@ -28,8 +28,6 @@ typednil/                   independent module: example.com/typednil
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/09-pointers/06-pointer-receivers-and-interfaces/05-typed-nil-error-interface/cmd/demo
-cd go-solutions/09-pointers/06-pointer-receivers-and-interfaces/05-typed-nil-error-interface
 go mod edit -go=1.25
 ```
 

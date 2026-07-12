@@ -25,13 +25,6 @@ Implement: a concurrency-safe `Limiter` with `capacity` and a one-token-per-`int
 Test: inject `FakeClock` — drain the bucket and assert further `Allow()==false`; advance exactly one interval and assert exactly one grant; advance a partial interval and assert no premature grant; run concurrent `Allow()` under `-race`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/16-testing-time-dependent-code/03-token-bucket-rate-limiter/cmd/demo
-cd go-solutions/12-testing-ecosystem/16-testing-time-dependent-code/03-token-bucket-rate-limiter
-```
-
 ### Lazy refill: the design that makes the boundary exact
 
 A naive limiter would run a background goroutine that adds a token every

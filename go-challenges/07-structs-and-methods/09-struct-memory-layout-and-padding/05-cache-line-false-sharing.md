@@ -26,13 +26,6 @@ shardcounter/              independent module: example.com/shardcounter
 - Test: assert `unsafe.Sizeof(paddedShard{})` is a multiple of 64; a `-race` test where N goroutines add on their own shard and `Sum` equals the expected total; benchmarks `BenchmarkPadded`/`BenchmarkUnpadded` that document (not assert) the throughput difference.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/09-struct-memory-layout-and-padding/05-cache-line-false-sharing/cmd/demo
-cd go-solutions/07-structs-and-methods/09-struct-memory-layout-and-padding/05-cache-line-false-sharing
-```
-
 ### Why padding to a cache line matters
 
 Cache coherency operates on cache lines, typically 64 bytes. When core A writes a

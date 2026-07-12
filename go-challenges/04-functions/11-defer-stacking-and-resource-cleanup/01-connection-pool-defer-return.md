@@ -26,13 +26,6 @@ connpool/                       independent module: example.com/connpool
 - Test: acquire/release counting, an `Acquire` that blocks until a `Close`, a context-deadline cancel returning `DeadlineExceeded`, a 32-worker concurrent run under `-race`, an `Acquire`-after-`Close` that returns `ErrPoolClosed`, and a `TryAcquire` on a drained pool that returns `ErrPoolExhausted`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/01-connection-pool-defer-return/internal/pool go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/01-connection-pool-defer-return/cmd/demo
-cd go-solutions/04-functions/11-defer-stacking-and-resource-cleanup/01-connection-pool-defer-return
-```
-
 ### The free list is a buffered channel, and that is correct
 
 The original version of this lesson described `Acquire` as "blocking on a

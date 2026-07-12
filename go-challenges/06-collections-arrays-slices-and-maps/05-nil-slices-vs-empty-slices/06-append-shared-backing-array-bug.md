@@ -29,13 +29,6 @@ Test: `BuildUnsafe` aliases (the second call clobbers the first); `Build` and
 `Build` concurrently.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/06-append-shared-backing-array-bug/headers go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/06-append-shared-backing-array-bug/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/06-append-shared-backing-array-bug
-```
-
 ### How the shared backing array corrupts requests
 
 `base` is `make([]string, 2, 8)` — length two, capacity eight. That spare

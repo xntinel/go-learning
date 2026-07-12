@@ -30,8 +30,6 @@ loadshed/                     module example.com/loadshed
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/05-anonymous-functions/28-backpressure-errgroup/cmd/demo
-cd go-solutions/04-functions/05-anonymous-functions/28-backpressure-errgroup
 go mod edit -go=1.24
 go get golang.org/x/sync/errgroup@v0.10.0
 ```

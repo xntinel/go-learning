@@ -27,13 +27,6 @@ order/                         independent module: example.com/order
 - Test: forcing failure at each step yields a message prefixed with the operation and `errors.Is` still finds the step sentinel; the success path returns `nil` with a committed result (proving the guard does not fabricate); `fmt.Errorf("op: %w", nil)` is non-nil (justifying the guard).
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/02-fmt-errorf-and-error-wrapping/06-handler-defer-wrap-named-return/cmd/demo
-cd go-solutions/10-error-handling/02-fmt-errorf-and-error-wrapping/06-handler-defer-wrap-named-return
-```
-
 ### One defer, every exit path
 
 `ProcessOrder` names its return values `(res *Result, err error)` so the deferred

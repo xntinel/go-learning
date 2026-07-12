@@ -23,13 +23,6 @@ apierr/                    independent module: example.com/apierr
 - Test: `StatusFor(validateBuggy("ok"))` hits a nil-deref (recover-guarded); the fixed path maps NotFound to 404, Validation to 422, unauthorized to 401, unknown to 500; `errors.As` populates a non-nil `*DomainError` only when a real one is present.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/07-nil-interface-values/08-errors-as-typed-nil-sentinel/cmd/demo
-cd go-solutions/08-interfaces/07-nil-interface-values/08-errors-as-typed-nil-sentinel
-```
-
 ### Why the typed nil re-enters through errors.As
 
 `StatusFor` is the mapper: it converts any domain error to an HTTP status. It

@@ -28,8 +28,6 @@ mailbox/                    independent module: example.com/mailbox
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/14-select-and-context/02-select-with-default/03-latest-value-config-mailbox/cmd/demo
-cd go-solutions/14-select-and-context/02-select-with-default/03-latest-value-config-mailbox
 go mod edit -go=1.26
 ```
 

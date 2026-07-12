@@ -18,13 +18,6 @@ Reflection can see unexported field metadata, but packages outside the declaring
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/27-reflection/02-inspecting-struct-fields-tags/02-inspecting-struct-fields-tags/cmd/demo
-cd go-solutions/27-reflection/02-inspecting-struct-fields-tags/02-inspecting-struct-fields-tags
-```
-
 ### Exercise 1: Extract Field Metadata
 
 Create `tagdoc.go`:

@@ -27,13 +27,6 @@ Implement: `Validate(port int) error` (pure, wraps `ErrInvalidPort`), and `RunOr
 Test: unit-test `Validate` with `errors.Is`; subprocess-test `RunOrExit` by re-execing `os.Args[0]` with an env guard and asserting `*exec.ExitError` / `ExitCode()`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/22-testmain-setup-teardown/08-testing-os-exit-with-subprocess/cmd/demo
-cd go-solutions/12-testing-ecosystem/22-testmain-setup-teardown/08-testing-os-exit-with-subprocess
-```
-
 ### Why you cannot test os.Exit in-process
 
 `os.Exit` terminates the process immediately. If a test calls a function that

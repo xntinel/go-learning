@@ -24,13 +24,6 @@ Implement: `newTestCache(now time.Time)` injecting a frozen clock; `assertValue`
 Test: exercise the helpers on a real cache and assert `t.Cleanup` runs in LIFO order.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/25-building-a-test-suite/02-helpers-and-t-helper
-cd go-solutions/12-testing-ecosystem/25-building-a-test-suite/02-helpers-and-t-helper
-```
-
 ### Why t.Helper is a correctness property
 
 When a test fails, `go test` prints the file and line of the failing assertion.

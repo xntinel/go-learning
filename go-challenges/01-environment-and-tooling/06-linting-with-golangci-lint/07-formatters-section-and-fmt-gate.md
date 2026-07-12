@@ -27,13 +27,6 @@ slugfmt/                      independent module: example.com/slugfmt
 - Test: a table over punctuation, spacing, and empty input.
 - Verify: `go test -count=1 -race ./...`; then `golangci-lint fmt --diff`, `golangci-lint fmt`, and `golangci-lint run ./...`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/06-linting-with-golangci-lint/07-formatters-section-and-fmt-gate/cmd/demo
-cd go-solutions/01-environment-and-tooling/06-linting-with-golangci-lint/07-formatters-section-and-fmt-gate
-```
-
 ### Why formatting belongs in the lint gate
 
 In v1, `gofmt`/`goimports` were linters, awkwardly reusing the linter machinery to

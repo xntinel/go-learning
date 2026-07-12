@@ -29,8 +29,6 @@ ledger/                    independent module: example.com/ledger
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/13-goroutines-and-channels/14-deadlock-detection-and-prevention/06-nonreentrant-mutex-selfdeadlock/cmd/demo
-cd go-solutions/13-goroutines-and-channels/14-deadlock-detection-and-prevention/06-nonreentrant-mutex-selfdeadlock
 go mod edit -go=1.25
 ```
 

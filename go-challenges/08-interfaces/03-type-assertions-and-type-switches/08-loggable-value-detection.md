@@ -26,13 +26,6 @@ Implement: `Render(v any) string` type-switching over `error`, `fmt.Stringer`, `
 Test: a value implementing several interfaces resolves to the highest-priority one; a plain struct falls back to `%v`; a `MarshalText` that errors is handled without panic.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/03-type-assertions-and-type-switches/08-loggable-value-detection/cmd/demo
-cd go-solutions/08-interfaces/03-type-assertions-and-type-switches/08-loggable-value-detection
-```
-
 ### Precedence is the whole design
 
 `Render` asserts the value against three interface types, in order, and the first

@@ -30,8 +30,6 @@ drivers/                  independent module: example.com/drivers
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/08-interfaces/13-designing-a-plugin-system/04-constructor-factory-registration/cmd/demo
-cd go-solutions/08-interfaces/13-designing-a-plugin-system/04-constructor-factory-registration
 go mod edit -go=1.25
 ```
 

@@ -23,8 +23,6 @@ validate/                    independent module: example.com/validate
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/10-higher-order-functions/04-validation-pipeline/cmd/demo
-cd go-solutions/04-functions/10-higher-order-functions/04-validation-pipeline
 go mod edit -go=1.25
 ```
 

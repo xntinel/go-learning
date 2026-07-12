@@ -28,13 +28,6 @@ Implement: `NewBoundedWriter(w io.Writer, cap int) io.Writer` that reports the r
 Test: `io.Copy` to the honest bounded sink returns `io.ErrShortWrite` via `errors.Is`; the manual loop does too; `iotest.TruncateWriter` masks the short write (no error) so only the delivered-byte count reveals the loss; an under-limit payload writes fully.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/10-testing-readers-with-iotest/09-truncating-writer-short-write/cmd/demo
-cd go-solutions/12-testing-ecosystem/10-testing-readers-with-iotest/09-truncating-writer-short-write
-```
-
 ### An honest short write vs. a lying one
 
 There are two kinds of truncating sink and the difference is the whole lesson. An

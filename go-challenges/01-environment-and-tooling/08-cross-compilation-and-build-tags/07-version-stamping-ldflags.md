@@ -25,13 +25,6 @@ app/                           module example.com/app
 - Test: assert the un-stamped defaults are `dev` and the render format is stable.
 - Verify: `go test -race ./...`; a default `go run ./cmd/app version` prints `dev`; a `-ldflags -X` build then prints the injected values.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/08-cross-compilation-and-build-tags/07-version-stamping-ldflags/cmd/app go-solutions/01-environment-and-tooling/08-cross-compilation-and-build-tags/07-version-stamping-ldflags/internal/buildmeta
-cd go-solutions/01-environment-and-tooling/08-cross-compilation-and-build-tags/07-version-stamping-ldflags
-```
-
 ### Why the variables must be package-level strings
 
 `-ldflags "-X importpath.name=value"` sets a variable at link time, and it works

@@ -26,11 +26,6 @@ Implement: `Naive(level, ts, msg string, kv []string) string` and `Builder(level
 Test: a table test asserting `Naive(...) == Builder(...)` over representative and empty/nil field sets, plus cases pinning the exact empty-kv output.
 Verify: `go test -count=1 -race ./...`
 
-```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/09-strings-builder-performance/01-log-line-assembler-builder-vs-naive/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/09-strings-builder-performance/01-log-line-assembler-builder-vs-naive
-```
-
 ### Why two implementations
 
 `Naive` is written the way a hurried engineer reaches for first: accumulate into a

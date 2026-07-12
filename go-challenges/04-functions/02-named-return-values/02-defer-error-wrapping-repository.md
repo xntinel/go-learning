@@ -24,13 +24,6 @@ userrepo/                    independent module: example.com/userrepo
 - Test: a fake store returning a sentinel `ErrNotFound`; assert the message carries the `FindUser "id"` prefix AND `errors.Is` still matches the sentinel; assert the success path leaves `err` nil and unwrapped.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/02-named-return-values/02-defer-error-wrapping-repository/cmd/demo
-cd go-solutions/04-functions/02-named-return-values/02-defer-error-wrapping-repository
-```
-
 ### One decoration, every exit
 
 `FindUser` has three return sites: empty id, cancelled context, and the store

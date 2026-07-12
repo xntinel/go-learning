@@ -25,13 +25,6 @@ Implement: `KiB`, `MiB`, `GiB` via `1 << (10 * iota)`; `MaxRequestBody` and `Max
 Test: `KiB == 1024`, `MiB == 1048576`, `GiB == 1073741824`; `MaxRequestBody` equals its intended multiple; a `FormatBytes` table; and a `> 2 GiB` limit does not overflow.
 Verify: `go test -count=1 ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/04-constants-and-iota/05-byte-size-limit-constants/cmd/demo
-cd go-solutions/02-variables-types-and-constants/04-constants-and-iota/05-byte-size-limit-constants
-```
-
 ## Why the shift idiom, and why int64
 
 The unit ladder is the canonical `iota` shift pattern:

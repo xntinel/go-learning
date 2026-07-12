@@ -36,8 +36,6 @@ Set up the module. The Vault client and the AppRole helper are external modules,
 fetch them:
 
 ```bash
-mkdir -p go-solutions/49-application-security-crypto-supplychain/07-secrets-management-vault/01-approle-kv-secret-loader/cmd/demo
-cd go-solutions/49-application-security-crypto-supplychain/07-secrets-management-vault/01-approle-kv-secret-loader
 go mod edit -go=1.26
 go get github.com/hashicorp/vault/api
 go get github.com/hashicorp/vault/api/auth/approle

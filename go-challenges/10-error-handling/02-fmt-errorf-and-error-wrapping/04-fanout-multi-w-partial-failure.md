@@ -28,13 +28,6 @@ health/                        independent module: example.com/health
 - Test: all pass returns `nil`; one timeout makes `errors.Is(err, ErrDegraded)` and `errors.Is(err, ErrTimeout)` both true; `errors.Unwrap(err)` returns `nil` (the `Unwrap() []error` form); the message lists the failing dependency.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/02-fmt-errorf-and-error-wrapping/04-fanout-multi-w-partial-failure/cmd/demo
-cd go-solutions/10-error-handling/02-fmt-errorf-and-error-wrapping/04-fanout-multi-w-partial-failure
-```
-
 ### One error, two reachable sentinels
 
 Each `Check` is a named probe: a `Name` and a `Run func() error`. `CheckAll`

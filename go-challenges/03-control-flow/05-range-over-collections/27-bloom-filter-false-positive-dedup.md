@@ -38,8 +38,6 @@ bloom/                      independent module: example.com/bloom-filter-false-p
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/05-range-over-collections/27-bloom-filter-false-positive-dedup/cmd/demo
-cd go-solutions/03-control-flow/05-range-over-collections/27-bloom-filter-false-positive-dedup
 go mod edit -go=1.24
 ```
 

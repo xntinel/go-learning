@@ -28,13 +28,6 @@ budget-retry/                        independent module: example.com/budgetretry
 - Test: with ample budget it succeeds and reports the attempt count; with a tight deadline it returns before exhausting retries with `DeadlineExceeded`, near the deadline (not the sum of backoffs); a mid-backoff cancel returns promptly; no attempt starts after the deadline.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/05-context-withtimeout-withdeadline/04-total-budget-retry/cmd/demo
-cd go-solutions/14-select-and-context/05-context-withtimeout-withdeadline/04-total-budget-retry
-```
-
 ### The two things a budget-aware retry must do differently
 
 A naive retry loop calls the operation, and on failure sleeps a growing backoff and

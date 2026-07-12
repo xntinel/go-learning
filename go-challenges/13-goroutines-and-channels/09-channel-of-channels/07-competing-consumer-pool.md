@@ -27,13 +27,6 @@ pool/                      independent module: example.com/pool
 - Test: submit many distinct requests, assert each is answered exactly once with the right value; assert a multi-worker pool finishes a sleep-bound batch faster than a single worker; all under `-race`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/09-channel-of-channels/07-competing-consumer-pool/cmd/demo
-cd go-solutions/13-goroutines-and-channels/09-channel-of-channels/07-competing-consumer-pool
-```
-
 ### Competing consumers on a shared channel
 
 `W` worker goroutines all execute `for { select { case req := <-inbox: ...; case

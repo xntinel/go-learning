@@ -27,13 +27,6 @@ Implement: `Limiter` with `Allow(clientID) bool` — registry lookup under `RLoc
 Test: a cold bucket admits exactly its burst capacity then denies; advancing the injected clock refills proportionally (table test); concurrent goroutines hammering distinct clients produce exact per-client counts under `-race`; a concurrent first hit on one new client creates exactly one bucket.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/02-sync-rwmutex/07-per-key-rate-limiter-registry/cmd/demo
-cd go-solutions/15-sync-primitives/02-sync-rwmutex/07-per-key-rate-limiter-registry
-```
-
 ### Two locks, two jobs
 
 A naive registry puts one mutex around everything: every `Allow` from every

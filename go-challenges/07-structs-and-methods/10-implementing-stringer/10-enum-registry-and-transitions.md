@@ -25,13 +25,6 @@ statemachine/               independent module: example.com/statemachine
 - Test: a `(from, to)` table asserting legal moves succeed and illegal ones fail; the error message reads `illegal transition <from> -> <to>`; `errors.As` extracts the `from`/`to`; terminal states reject everything.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/10-implementing-stringer/10-enum-registry-and-transitions/cmd/demo
-cd go-solutions/07-structs-and-methods/10-implementing-stringer/10-enum-registry-and-transitions
-```
-
 ### Tying Stringer to domain-error UX
 
 The state machine is a `map[Status][]Status`: the set of states each state may move

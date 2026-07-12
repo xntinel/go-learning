@@ -26,13 +26,6 @@ Implement: `NewHandler() http.Handler` — a stateless router serving `GET /heal
 Test: a `TestMain`/`run()` that starts one `httptest.NewServer(NewHandler())`, stores `srv.URL` in a package var, and closes it in teardown; tests build requests with `http.NewRequestWithContext(t.Context(), ...)` against that URL.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/22-testmain-setup-teardown/04-shared-httptest-harness/cmd/demo
-cd go-solutions/12-testing-ecosystem/22-testmain-setup-teardown/04-shared-httptest-harness
-```
-
 ### Why one server, and why it must be stateless to share safely
 
 `httptest.NewServer` starts a real HTTP server on a real loopback port and returns

@@ -24,13 +24,6 @@ peakgauge/                 independent module: example.com/peakgauge
 - Test: many goroutines observe a shuffled set and `Peak` equals the true maximum; a second test interleaves increasing values to force CAS retries.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/07-atomic-package/05-peak-gauge-highwater-cas/cmd/demo
-cd go-solutions/15-sync-primitives/07-atomic-package/05-peak-gauge-highwater-cas
-```
-
 ### Building max from CompareAndSwap
 
 There is no `atomic.Int64.Max`. The operation "set the stored value to `v` if `v`

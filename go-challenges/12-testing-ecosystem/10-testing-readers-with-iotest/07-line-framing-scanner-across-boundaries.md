@@ -28,13 +28,6 @@ Implement: `ReadLines(r io.Reader, maxLine int) ([]string, error)` that scans li
 Test: identical records across `{plain, OneByteReader, HalfReader}`; an over-long line yields `bufio.ErrTooLong`; a trailing line without a newline is still emitted.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/10-testing-readers-with-iotest/07-line-framing-scanner-across-boundaries/cmd/demo
-cd go-solutions/12-testing-ecosystem/10-testing-readers-with-iotest/07-line-framing-scanner-across-boundaries
-```
-
 ### Why the Scanner is boundary-agnostic, and where it still fails
 
 `bufio.Scanner` buffers internally and applies a split function (`ScanLines` by

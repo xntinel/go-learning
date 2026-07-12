@@ -29,13 +29,6 @@ Test: one `TestValidate` whose table cases each run as a `t.Parallel()` subtest,
 asserting accept and reject via `errors.Is`.
 Verify: `go test -count=1 -race -shuffle=on ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/14-parallel-tests/02-parallel-table-http-validation/cmd/demo
-cd go-solutions/12-testing-ecosystem/14-parallel-tests/02-parallel-table-http-validation
-```
-
 ### Why sentinel errors, and why email via net/mail
 
 A validator's callers need to branch on *which* rule failed — a handler maps a

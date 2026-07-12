@@ -28,8 +28,6 @@ suitelc/                     independent module: example.com/suitelc
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/12-testing-ecosystem/12-t-cleanup-patterns/10-testmain-suite-lifecycle/cmd/demo
-cd go-solutions/12-testing-ecosystem/12-t-cleanup-patterns/10-testmain-suite-lifecycle
 go mod edit -go=1.24
 ```
 

@@ -51,8 +51,6 @@ deployorder/            module example.com/deployorder
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/19-dependency-dag-cycle-detection
-cd go-solutions/06-collections-arrays-slices-and-maps/04-maps-creation-access-iteration/19-dependency-dag-cycle-detection
 go mod edit -go=1.24
 ```
 

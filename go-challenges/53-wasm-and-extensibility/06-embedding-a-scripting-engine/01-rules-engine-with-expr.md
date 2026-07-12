@@ -33,8 +33,6 @@ Verify: `go test -race ./...` with the dependency present (bar-mode: the offline
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/53-wasm-and-extensibility/06-embedding-a-scripting-engine/01-rules-engine-with-expr/cmd/demo
-cd go-solutions/53-wasm-and-extensibility/06-embedding-a-scripting-engine/01-rules-engine-with-expr
 go mod edit -go=1.26
 go get github.com/expr-lang/expr@v1.17.5
 ```

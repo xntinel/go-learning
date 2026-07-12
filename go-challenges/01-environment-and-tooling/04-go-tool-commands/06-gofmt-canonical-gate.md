@@ -24,13 +24,6 @@ fmt-gate/                      module example.com/fmt-gate
 - Test: a table test of both helpers.
 - Verify: `gofmt -l .` prints nothing (the gate passes); a messy file is shown named by `-l` and diffed by `-s -d`.
 
-Create the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/04-go-tool-commands/06-gofmt-canonical-gate/cmd/demo go-solutions/01-environment-and-tooling/04-go-tool-commands/06-gofmt-canonical-gate/internal/slice
-cd go-solutions/01-environment-and-tooling/04-go-tool-commands/06-gofmt-canonical-gate
-```
-
 ### The four modes and the one gate
 
 `gofmt` has no configuration for *what* canonical looks like — that is the whole

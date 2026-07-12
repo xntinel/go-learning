@@ -29,13 +29,6 @@ healthgate/                   independent module: example.com/healthgate
 - Test: an `httptest.Server` table asserting status and body per route.
 - Verify: `go test -count=1 -race ./...`; then the incremental-gate walkthrough.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/06-linting-with-golangci-lint/10-incremental-lint-and-ci-gating/cmd/demo
-cd go-solutions/01-environment-and-tooling/06-linting-with-golangci-lint/10-incremental-lint-and-ci-gating
-```
-
 ### How the incremental gate works
 
 `golangci-lint run --new-from-merge-base=main` computes the merge base between your

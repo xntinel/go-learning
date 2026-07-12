@@ -28,13 +28,6 @@ Implement: a `Record` struct, `IndexByID([]Record) map[string]*Record` using `&r
 Test: the correct index's pointers are distinct and write through to the slice; the buggy index's pointers all alias one copy (all point to the last element); run under `-race`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/05-pointers-to-structs/05-slice-index-address-indexer/cmd/demo
-cd go-solutions/09-pointers/05-pointers-to-structs/05-slice-index-address-indexer
-```
-
 ### `&records[i]` addresses the element; `&v` addresses a copy
 
 A range loop over a slice of structs, `for i, v := range records`, binds `v` to a

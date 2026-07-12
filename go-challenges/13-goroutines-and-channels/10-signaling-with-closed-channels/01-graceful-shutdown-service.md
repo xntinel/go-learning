@@ -50,13 +50,6 @@ at once. Without the flag, a second `close(stop)` would panic — the exact
 double-close bug that pages you when a `defer`, a signal handler, and an error
 path all try to stop the same service.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/10-signaling-with-closed-channels/01-graceful-shutdown-service/cmd/demo
-cd go-solutions/13-goroutines-and-channels/10-signaling-with-closed-channels/01-graceful-shutdown-service
-```
-
 Create `service.go`:
 
 ```go

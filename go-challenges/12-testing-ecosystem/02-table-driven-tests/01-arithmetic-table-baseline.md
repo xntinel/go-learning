@@ -27,13 +27,6 @@ arith/                     independent module: example.com/arith
 - Test: a `{name,a,b,want}` table per operation, each case a `t.Run` subtest with `t.Parallel`, a `Fatalf` that echoes the inputs, and a large-number row appended to `TestAdd`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/02-table-driven-tests/01-arithmetic-table-baseline/cmd/demo
-cd go-solutions/12-testing-ecosystem/02-table-driven-tests/01-arithmetic-table-baseline
-```
-
 ### Why this shape is the template
 
 Everything later in the lesson — the HTTP status matrix, the validator, the

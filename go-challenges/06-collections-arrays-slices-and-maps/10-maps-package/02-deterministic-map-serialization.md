@@ -26,13 +26,6 @@ Implement: `CanonicalKey(map[string]string) string`, `StableJSON(map[string]any)
 Test: identical output for maps built in different insertion orders; identical sha256; a naive range-based version to show the contrast.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/02-deterministic-map-serialization/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/10-maps-package/02-deterministic-map-serialization
-```
-
 ## Why sorting the keys is the whole job
 
 The runtime randomizes map iteration order per range statement. Two maps with

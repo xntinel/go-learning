@@ -23,7 +23,6 @@ rst-stream-cancel/
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/44-capstone-http2-implementation/04-server-push/05-rst-stream-cancel/cmd/demo && cd go-solutions/44-capstone-http2-implementation/04-server-push/05-rst-stream-cancel
 go mod edit -go=1.26
 ```
 

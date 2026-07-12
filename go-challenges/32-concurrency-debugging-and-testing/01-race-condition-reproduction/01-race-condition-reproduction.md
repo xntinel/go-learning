@@ -67,14 +67,6 @@ The first block names the goroutine and line that made the current access. The s
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/32-concurrency-debugging-and-testing/01-race-condition-reproduction/01-race-condition-reproduction/counter
-mkdir -p go-solutions/32-concurrency-debugging-and-testing/01-race-condition-reproduction/01-race-condition-reproduction/cmd/demo
-cd go-solutions/32-concurrency-debugging-and-testing/01-race-condition-reproduction/01-race-condition-reproduction
-```
-
 ### Exercise 1: A Counter With a Race
 
 Create `counter/counter.go`:

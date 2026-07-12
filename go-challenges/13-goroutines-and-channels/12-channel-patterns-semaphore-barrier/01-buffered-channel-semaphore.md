@@ -29,8 +29,6 @@ chpatterns/                 independent module: example.com/chpatterns
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/13-goroutines-and-channels/12-channel-patterns-semaphore-barrier/01-buffered-channel-semaphore/cmd/demo
-cd go-solutions/13-goroutines-and-channels/12-channel-patterns-semaphore-barrier/01-buffered-channel-semaphore
 go mod edit -go=1.26
 ```
 

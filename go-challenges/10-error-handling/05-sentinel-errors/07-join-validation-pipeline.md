@@ -25,13 +25,6 @@ validate/                     independent module: example.com/validate
 - Test: a payload failing three rules where `errors.Is` finds each sentinel; a valid payload returning `nil`; a check that the joined value exposes `Unwrap() []error` and the line count matches the failure count.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/05-sentinel-errors/07-join-validation-pipeline/cmd/demo
-cd go-solutions/10-error-handling/05-sentinel-errors/07-join-validation-pipeline
-```
-
 ### Why errors.Join fits accumulation exactly
 
 Field validation is naturally a *set* of independent failures, and `errors.Join`

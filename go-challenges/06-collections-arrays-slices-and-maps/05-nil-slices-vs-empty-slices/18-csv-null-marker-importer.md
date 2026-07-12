@@ -55,8 +55,6 @@ importtags/                    module example.com/importtags
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/18-csv-null-marker-importer
-cd go-solutions/06-collections-arrays-slices-and-maps/05-nil-slices-vs-empty-slices/18-csv-null-marker-importer
 go mod edit -go=1.24
 ```
 

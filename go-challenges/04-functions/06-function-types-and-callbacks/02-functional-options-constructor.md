@@ -26,13 +26,6 @@ Implement: `type Option func(*Config)`, `New(opts ...Option) (*Client, error)` w
 Test: zero options yields defaults; a subset changes only those fields; last-writer-wins for the same field; an out-of-range timeout or empty base URL returns a wrapped sentinel error; a brand-new option compiles against old call sites.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/06-function-types-and-callbacks/02-functional-options-constructor/cmd/demo
-cd go-solutions/04-functions/06-function-types-and-callbacks/02-functional-options-constructor
-```
-
 ### Why options beat a giant struct literal
 
 Imagine the alternative: an exported `Config` struct that every caller fills with a

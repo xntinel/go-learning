@@ -41,8 +41,6 @@ Hardcoding pool settings at every call site causes drift. A single constructor f
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/22-database-patterns/03-connection-pool-configuration/03-connection-pool-configuration/cmd/demo
-cd go-solutions/22-database-patterns/03-connection-pool-configuration/03-connection-pool-configuration
 go mod edit -go=1.26
 ```
 

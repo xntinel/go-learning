@@ -24,13 +24,6 @@ lease/                        module example.com/lease
 - Test: cancelling the context runs the cleanup (synchronize on a channel — `AfterFunc` does not wait); on the normal path `Release` returns true and cleanup still ran once; `stop()` after cancellation returns false, and the gauge is never double-decremented.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/05-anonymous-functions/08-context-afterfunc-cleanup-hook/cmd/demo
-cd go-solutions/04-functions/05-anonymous-functions/08-context-afterfunc-cleanup-hook
-```
-
 ### AfterFunc registers a cleanup; stop deregisters it
 
 `context.AfterFunc(ctx, f)` starts `f` in its own goroutine when `ctx` becomes done,

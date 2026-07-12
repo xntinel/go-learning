@@ -25,13 +25,6 @@ metrics/                    independent module: example.com/metrics
 - Test: every method on a nil `*Metrics` is a safe no-op, a non-nil instance records, the unguarded method panics on nil, and a `Server` with a nil `*Metrics` still constructs and runs.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/09-pointers/02-pointers-and-function-parameters/07-nil-receiver-optional-dependency/cmd/demo
-cd go-solutions/09-pointers/02-pointers-and-function-parameters/07-nil-receiver-optional-dependency
-```
-
 ### Why a nil receiver is callable
 
 A method with a pointer receiver is really a function whose first argument is the

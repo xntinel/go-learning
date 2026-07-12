@@ -28,13 +28,6 @@ commit/                      independent module: example.com/commit
 - Test: the all-yes path fires `OnCommit` on every shard and `OnAbort` on none; a single failing `Prepare` aborts every shard and returns a joined error naming the failure; the decision reaches each shard exactly once; a failure at any index still aborts (table-driven); state written before a vote is visible after the commit reply.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/02-channel-basics/13-two-phase-shard-commit-barrier/cmd/demo
-cd go-solutions/13-goroutines-and-channels/02-channel-basics/13-two-phase-shard-commit-barrier
-```
-
 ### A two-phase barrier built from request/reply channels
 
 Two-phase commit has a prepare phase and a decide phase. The invariant is

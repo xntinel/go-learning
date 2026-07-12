@@ -26,13 +26,6 @@ Implement: a `Pool` holding `[]*Conn`, `Evict(i)` using `slices.Delete`, `Insert
 Test: after `Evict`, order is preserved and `len` drops by 1; the freed tail slot is `nil` (GC-eligible); the naive version leaves a stale non-nil pointer in the tail.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/07-slices-delete-eviction/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/07-slices-delete-eviction
-```
-
 ### The tail-pointer leak and how slices.Delete fixes it
 
 `slices.Delete(s, i, j)` removes elements `[i:j)` by copying the tail

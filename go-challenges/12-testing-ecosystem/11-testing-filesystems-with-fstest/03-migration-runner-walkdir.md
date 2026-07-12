@@ -31,13 +31,6 @@ migrations/                  independent module: example.com/migrations
   files, a duplicate-version error, and walk-error propagation via a fault FS.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/11-testing-filesystems-with-fstest/03-migration-runner-walkdir/cmd/demo
-cd go-solutions/12-testing-ecosystem/11-testing-filesystems-with-fstest/03-migration-runner-walkdir
-```
-
 ### Why WalkDir, and where the errors hide
 
 `fs.WalkDir` walks the tree in lexical order and hands the callback a

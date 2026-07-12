@@ -30,8 +30,6 @@ configcache/                 independent module: example.com/configcache
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/12-testing-ecosystem/12-t-cleanup-patterns/02-tempdir-config-scratch/cmd/demo
-cd go-solutions/12-testing-ecosystem/12-t-cleanup-patterns/02-tempdir-config-scratch
 go mod edit -go=1.24
 ```
 

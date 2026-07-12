@@ -32,8 +32,6 @@ watermark/                   independent module: example.com/watermark
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/13-goroutines-and-channels/06-ranging-over-channels/14-contiguous-watermark-offset-commit-consumer/cmd/demo
-cd go-solutions/13-goroutines-and-channels/06-ranging-over-channels/14-contiguous-watermark-offset-commit-consumer
 go get go.uber.org/goleak
 go mod tidy
 ```

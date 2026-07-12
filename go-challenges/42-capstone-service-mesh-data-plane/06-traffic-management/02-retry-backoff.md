@@ -22,7 +22,6 @@ retry_test.go          retriability table, backoff growth and cap, jitter bounds
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/42-capstone-service-mesh-data-plane/06-traffic-management/02-retry-backoff/cmd/demo && cd go-solutions/42-capstone-service-mesh-data-plane/06-traffic-management/02-retry-backoff
 go mod edit -go=1.26
 ```
 

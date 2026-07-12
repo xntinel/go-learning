@@ -19,12 +19,6 @@ shardmerge_test.go   global-order check, fail-fast error propagation, empty case
 - Test: assert the merged stream is globally sorted by `Key` across all shards, that a mid-stream shard error is delivered on the error channel, that zero/empty sources close cleanly with a nil error, and that many shards merge race-free.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/16-concurrency-patterns/03-fan-in-pattern/02-ordered-shard-merge/cmd/demo && cd go-solutions/16-concurrency-patterns/03-fan-in-pattern/02-ordered-shard-merge
-```
-
 ### Why arrival order is not enough, and what a k-way merge does
 
 If you fan in the shards with the basic `Merge` from exercise 1, you get every record exactly once, but in scheduler-decided arrival order. That cannot be globally sorted, because the record currently sitting in a fast shard's channel may have a larger key than one still in transit from a slow shard: emitting "whatever arrived first" can emit a key-9 record before a key-3 record that simply hadn't been received yet. Sorting per source is not the question; combining sorted sources into a sorted whole is.

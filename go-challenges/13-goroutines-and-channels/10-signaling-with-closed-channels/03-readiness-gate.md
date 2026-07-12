@@ -59,13 +59,6 @@ terminal and shared.
 probe flipping ready, an init routine finishing) can all call it without a
 double-close panic. Exactly one close happens.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/10-signaling-with-closed-channels/03-readiness-gate/cmd/demo
-cd go-solutions/13-goroutines-and-channels/10-signaling-with-closed-channels/03-readiness-gate
-```
-
 Create `server.go`:
 
 ```go

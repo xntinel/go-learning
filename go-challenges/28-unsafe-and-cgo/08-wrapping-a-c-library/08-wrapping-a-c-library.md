@@ -56,8 +56,6 @@ This is the same approach SQLite's `*sql.DB` uses internally: the public type is
 Set up the module. This exercise requires `gcc` or `clang`:
 
 ```bash
-mkdir -p go-solutions/28-unsafe-and-cgo/08-wrapping-a-c-library/08-wrapping-a-c-library/cmd/demo
-cd go-solutions/28-unsafe-and-cgo/08-wrapping-a-c-library/08-wrapping-a-c-library
 go env CGO_ENABLED   # must print 1
 ```
 

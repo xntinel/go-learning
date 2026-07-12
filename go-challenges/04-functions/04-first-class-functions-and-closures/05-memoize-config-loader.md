@@ -26,13 +26,6 @@ memoize/                   independent module: example.com/memoize
 - Test: two loads of one key return equal values with the loader called once; two distinct keys call it twice; a failing load is retried (not cached); concurrent loads of one key are safe under `-race`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/04-functions/04-first-class-functions-and-closures/05-memoize-config-loader/cmd/demo
-cd go-solutions/04-functions/04-first-class-functions-and-closures/05-memoize-config-loader
-```
-
 ### The cache is the captured environment
 
 `Memoize` declares a `cache map[K]V` and a `sync.Mutex` and returns a closure that

@@ -41,7 +41,6 @@ server_test.go     h2c GET, body echo, concurrent streams, bad-preface close,
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/44-capstone-http2-implementation/06-full-http2-server/02-h2c-cleartext-server/cmd/demo && cd go-solutions/44-capstone-http2-implementation/06-full-http2-server/02-h2c-cleartext-server
 go mod edit -go=1.26
 ```
 

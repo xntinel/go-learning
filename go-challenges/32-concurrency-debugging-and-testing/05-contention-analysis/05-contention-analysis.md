@@ -41,13 +41,6 @@ The shard for a key is determined by hashing the key modulo N. The `hash/fnv` pa
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/32-concurrency-debugging-and-testing/05-contention-analysis/05-contention-analysis/cmd/demo
-cd go-solutions/32-concurrency-debugging-and-testing/05-contention-analysis/05-contention-analysis
-```
-
 ### Exercise 1: Three Store Implementations
 
 Create `store.go`:

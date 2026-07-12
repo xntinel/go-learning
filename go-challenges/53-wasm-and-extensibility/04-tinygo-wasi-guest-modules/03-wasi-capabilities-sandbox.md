@@ -34,8 +34,6 @@ fsguest/                    independent module: example.com/fsguest
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/53-wasm-and-extensibility/04-tinygo-wasi-guest-modules/03-wasi-capabilities-sandbox/guest go-solutions/53-wasm-and-extensibility/04-tinygo-wasi-guest-modules/03-wasi-capabilities-sandbox/cmd/demo
-cd go-solutions/53-wasm-and-extensibility/04-tinygo-wasi-guest-modules/03-wasi-capabilities-sandbox
 go mod edit -go=1.24
 go get github.com/tetratelabs/wazero@latest
 ```

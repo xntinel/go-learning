@@ -38,13 +38,6 @@ Go 1.24 introduced `b.Loop`, which excludes setup before the loop and cleanup af
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/26-memory-model-and-optimization/04-benchmarking-methodology/04-benchmarking-methodology/cmd/demo
-cd go-solutions/26-memory-model-and-optimization/04-benchmarking-methodology/04-benchmarking-methodology
-```
-
 ### Exercise 1: Build The Search Library
 
 Create `search.go`:

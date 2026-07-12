@@ -71,9 +71,6 @@ Resources can be unit-tested by invoking their lifecycle methods directly, but t
 Set up the module. The framework requires Go 1.21+; this lesson pins 1.26:
 
 ```bash
-mkdir -p go-solutions/31-cloud-native-go/08-terraform-provider-skeleton/08-terraform-provider-skeleton/internal/inventory
-mkdir -p go-solutions/31-cloud-native-go/08-terraform-provider-skeleton/08-terraform-provider-skeleton/internal/provider
-cd go-solutions/31-cloud-native-go/08-terraform-provider-skeleton/08-terraform-provider-skeleton
 go get github.com/hashicorp/terraform-plugin-framework@latest
 ```
 

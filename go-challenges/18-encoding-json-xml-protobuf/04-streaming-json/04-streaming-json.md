@@ -21,8 +21,6 @@ A decoder loop normally ends with `io.EOF`. Treating EOF as a bad record turns a
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/18-encoding-json-xml-protobuf/04-streaming-json/04-streaming-json/cmd/demo
-cd go-solutions/18-encoding-json-xml-protobuf/04-streaming-json/04-streaming-json
 go mod edit -go=1.26
 ```
 

@@ -23,13 +23,6 @@ after/                      independent module: example.com/after
 - Test: operate directly on `*Store`; `Put` then `Get` round-trips, `Delete` then `Get` returns empty. No mock and no interface satisfaction anywhere.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/08-interfaces/12-interface-pollution-anti-patterns/02-after-concrete-store/cmd/demo
-cd go-solutions/08-interfaces/12-interface-pollution-anti-patterns/02-after-concrete-store
-```
-
 ### Why deleting the interface is the improvement
 
 Compare this to Exercise 1 method by method. The fat `Service` interface is gone.

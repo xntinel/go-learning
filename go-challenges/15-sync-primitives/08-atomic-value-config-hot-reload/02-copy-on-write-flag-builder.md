@@ -27,13 +27,6 @@ cfgbuild/                  independent module: example.com/cfgbuild
 - Test: the preserved `TestWithFlagsCopiesInput` and nil-flags contract, plus proofs that `WithOverrides` leaves the base snapshot bit-identical and that no caller map ever aliases a stored config.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/08-atomic-value-config-hot-reload/02-copy-on-write-flag-builder/cmd/demo
-cd go-solutions/15-sync-primitives/08-atomic-value-config-hot-reload/02-copy-on-write-flag-builder
-```
-
 ### Why the copy happens in the constructor, not at the call site
 
 The snapshot idiom has exactly one dangerous seam: interior mutable state.

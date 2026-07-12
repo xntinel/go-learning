@@ -32,8 +32,6 @@ leasepool/                   independent module: example.com/leasepool
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/13-goroutines-and-channels/09-channel-of-channels/10-connection-pool-lease-checkout/cmd/demo
-cd go-solutions/13-goroutines-and-channels/09-channel-of-channels/10-connection-pool-lease-checkout
 go get go.uber.org/goleak
 go mod tidy
 ```

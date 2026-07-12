@@ -27,8 +27,6 @@ legacyparse/               independent module: example.com/legacyparse
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/06-string-formatting-with-fmt/09-sscanf-parse-legacy-line/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/06-string-formatting-with-fmt/09-sscanf-parse-legacy-line
 go mod edit -go=1.24
 ```
 

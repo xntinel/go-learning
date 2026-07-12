@@ -26,8 +26,6 @@ exercising all three outcomes in one pass.
 Verify: `go test -count=1 ./...`
 
 ```bash
-mkdir -p go-solutions/04-functions/06-function-types-and-callbacks/15-reconciliation-differ-callback
-cd go-solutions/04-functions/06-function-types-and-callbacks/15-reconciliation-differ-callback
 go mod edit -go=1.24
 ```
 

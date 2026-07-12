@@ -19,12 +19,6 @@ assignment_test.go   even/remainder/single-consumer splits, sticky preservation,
 - Test: even and remainder splits, the single-consumer case, sticky preservation, and that sticky moves strictly fewer partitions than an eager recompute.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/41-capstone-message-queue/03-consumer-groups-offset-tracking/01-partition-assignment/cmd/demo && cd go-solutions/41-capstone-message-queue/03-consumer-groups-offset-tracking/01-partition-assignment
-```
-
 ### Why an assignor is a pure function, and what "moved" means
 
 An assignor takes the current set of partitions and the current set of consumers and returns a map from consumer to the partitions it should own. Making it a pure function - no state, no I/O - is what makes it testable and what lets a coordinator swap strategies by configuration. The previous assignment is passed in as a third argument so a sticky assignor can consult it; the two stateless assignors ignore it. Every assignor sorts its inputs first, so its output is deterministic regardless of map iteration order - a property the tests depend on.

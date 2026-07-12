@@ -21,8 +21,6 @@ XML is not JSON with angle brackets. Attributes, character data, element names, 
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/18-encoding-json-xml-protobuf/07-xml-encoding-decoding/07-xml-encoding-decoding/cmd/demo
-cd go-solutions/18-encoding-json-xml-protobuf/07-xml-encoding-decoding/07-xml-encoding-decoding
 go mod edit -go=1.26
 ```
 

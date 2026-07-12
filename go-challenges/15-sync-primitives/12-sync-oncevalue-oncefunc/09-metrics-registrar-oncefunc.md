@@ -23,13 +23,6 @@ metricsboot/               independent module: example.com/metricsboot
 - Test: 50 concurrent plus repeated sequential `ensure()` calls against a stub that panics on its second registration — exactly one registration, no panic; a negative test shows the unwrapped path panicking; the real `EnsureMetrics` wiring verified via `expvar.Get`.
 - Verify: `go test -count=1 -race ./...` and `go run ./cmd/demo`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/15-sync-primitives/12-sync-oncevalue-oncefunc/09-metrics-registrar-oncefunc/cmd/demo
-cd go-solutions/15-sync-primitives/12-sync-oncevalue-oncefunc/09-metrics-registrar-oncefunc
-```
-
 ### Why registries panic, and why that panic finds you
 
 `expvar.Publish` documents it plainly: reuse of a name is a program logic

@@ -24,13 +24,6 @@ Implement: `Config.StartTimeout`; `Run` starts each service against `context.Wit
 Test: a service whose `Start` blocks forever aborts `Run` within `StartTimeout` with the custom cause, and a previously-started service is `Stop`ped in reverse; contrast a service returning a normal error to confirm the two modes are reported distinctly.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/14-building-a-context-aware-service-framework/07-bounded-startup-with-deadline-cause/cmd/demo
-cd go-solutions/14-select-and-context/14-building-a-context-aware-service-framework/07-bounded-startup-with-deadline-cause
-```
-
 ### Bounding Start and naming the culprit
 
 The framework bounds each `Start` call with a per-service deadline. It derives

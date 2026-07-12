@@ -27,13 +27,6 @@ retry/                          module: example.com/retry
 - Test: a bare retryable error (direct comma-ok matches), a wrapped retryable error (only `errors.As` finds it), a non-retryable error and `nil` (no panic), and `Do` retrying then stopping.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/02-variables-types-and-constants/09-blank-identifier-and-shadowing/08-retryable-error-assertion/cmd/demo
-cd go-solutions/02-variables-types-and-constants/09-blank-identifier-and-shadowing/08-retryable-error-assertion
-```
-
 ### Why comma-ok, and why errors.As beats a bare assertion
 
 A type assertion has two forms and they behave very differently on a miss. The

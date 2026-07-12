@@ -27,13 +27,6 @@ repo/                       independent module: example.com/repo
 - Test: concurrent `Save`/`Get`/`List` from many goroutines run clean under `-race`; a missing key returns `ErrNotFound`; a value from `Get` does not alias the stored value; `List` returns a snapshot copy.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/12-designing-a-domain-model/10-thread-safe-repository/cmd/demo
-cd go-solutions/07-structs-and-methods/12-designing-a-domain-model/10-thread-safe-repository
-```
-
 ### Guard the store, and hand out copies
 
 These are two separate rules, and a correct repository needs both. *Guard the

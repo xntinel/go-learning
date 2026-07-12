@@ -199,14 +199,6 @@ round-trip on revival.
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/31-cloud-native-go/02-lambda-cold-start-optimization/02-lambda-cold-start-optimization/handler
-mkdir -p go-solutions/31-cloud-native-go/02-lambda-cold-start-optimization/02-lambda-cold-start-optimization/cmd/demo
-cd go-solutions/31-cloud-native-go/02-lambda-cold-start-optimization/02-lambda-cold-start-optimization
-```
-
 This is a library plus an entry point. The handler package is verified with
 `go test`; the cmd/demo package is a standalone program. Both run fully offline
 with no external AWS dependencies.

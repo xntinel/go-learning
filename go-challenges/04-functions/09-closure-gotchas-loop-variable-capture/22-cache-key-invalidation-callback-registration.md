@@ -25,8 +25,6 @@ cacheinval/                  independent module: example.com/cacheinval
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/22-cache-key-invalidation-callback-registration
-cd go-solutions/04-functions/09-closure-gotchas-loop-variable-capture/22-cache-key-invalidation-callback-registration
 go mod edit -go=1.24
 ```
 

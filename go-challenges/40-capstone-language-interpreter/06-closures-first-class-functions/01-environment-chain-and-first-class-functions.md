@@ -21,12 +21,6 @@ cmd/
 - Test: capture by pointer, shadowing, chain resolution, factory independence, parameter binding plus arity checking, and return-value unwrapping.
 - Verify: `go test -race ./...` then `go run ./cmd/demo`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/40-capstone-language-interpreter/06-closures-first-class-functions/01-environment-chain-and-first-class-functions/cmd/demo && cd go-solutions/40-capstone-language-interpreter/06-closures-first-class-functions/01-environment-chain-and-first-class-functions
-```
-
 ### The object system
 
 Every runtime value implements `Object`. The type that matters for closures is `Function`: it holds its parameters, its body, and — the load-bearing field — a pointer to the `*Environment` that was alive when the function literal was evaluated. Storing a pointer rather than a copy is what makes a Monkey function a closure, exactly as Go's own function literals capture their free variables by reference. The `Body` field is a `string` here so the package compiles standalone; in the full interpreter it is an `*ast.BlockStatement`.

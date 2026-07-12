@@ -30,8 +30,6 @@ queuecascade/                independent module: example.com/queue-priority-leve
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/03-switch-statements/20-queue-priority-level-inheritance/cmd/demo
-cd go-solutions/03-control-flow/03-switch-statements/20-queue-priority-level-inheritance
 go mod edit -go=1.24
 ```
 

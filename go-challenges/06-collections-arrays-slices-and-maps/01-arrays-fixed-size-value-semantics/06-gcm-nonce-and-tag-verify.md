@@ -27,13 +27,6 @@ gcmnonce/                    independent module: example.com/gcmnonce
 - Test: a nonce is 12 bytes and two successive nonces differ; `VerifyTag` is true for equal tags, false for a one-byte difference and for a length mismatch.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/06-gcm-nonce-and-tag-verify/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/01-arrays-fixed-size-value-semantics/06-gcm-nonce-and-tag-verify
-```
-
 ### Why the nonce is an array and the compare is constant-time
 
 An AES-GCM nonce is exactly 12 bytes — the standard GCM nonce size — so `[12]byte`

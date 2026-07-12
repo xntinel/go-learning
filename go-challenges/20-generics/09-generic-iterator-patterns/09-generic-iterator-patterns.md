@@ -18,13 +18,6 @@ A negative limit is a caller error. The constructor returns a wrapped sentinel e
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/20-generics/09-generic-iterator-patterns/09-generic-iterator-patterns/cmd/demo
-cd go-solutions/20-generics/09-generic-iterator-patterns/09-generic-iterator-patterns
-```
-
 ### Exercise 1: Build Lazy Combinators
 
 Create `iterators.go`:

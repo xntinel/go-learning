@@ -73,13 +73,6 @@ Key fields used in this lesson:
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/33-tcp-udp-and-networking/10-dns-resolver-and-custom-dialer/10-dns-resolver-and-custom-dialer/cmd/demo
-cd go-solutions/33-tcp-udp-and-networking/10-dns-resolver-and-custom-dialer/10-dns-resolver-and-custom-dialer
-```
-
 ### Exercise 1: The Resolver Interface and OverrideMap
 
 Define a minimal `Resolver` interface. `*net.Resolver` already satisfies it, which lets tests inject a lightweight mock without network I/O.

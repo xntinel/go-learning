@@ -30,13 +30,6 @@ receives the value) and the request still returns a valid response; document tha
 the naive `go work()` would escape `Recoverer`. Run with `-race`.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/10-error-handling-middleware/08-goroutine-panic-trap/cmd/demo
-cd go-solutions/10-error-handling/10-error-handling-middleware/08-goroutine-panic-trap
-```
-
 ### Why Recoverer cannot help here
 
 `recover` is goroutine-local. A deferred `recover` catches a panic only if that

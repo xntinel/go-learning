@@ -26,13 +26,6 @@ auditbucket/                independent module: example.com/auditbucket
 - Test: positive/negative `Equal`; `reflect.DeepEqual` and `Equal` agree on populated histories; `reflect.DeepEqual(nil, empty) == false` while `slices.Equal(nil, empty) == true`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/05-struct-comparison-and-equality/02-audit-history-deepequal-slices/cmd/demo
-cd go-solutions/07-structs-and-methods/05-struct-comparison-and-equality/02-audit-history-deepequal-slices
-```
-
 ### Why `==` will not compile, and what replaces it
 
 `BucketV2` adds `history []int`. A slice field is never comparable, so it makes the

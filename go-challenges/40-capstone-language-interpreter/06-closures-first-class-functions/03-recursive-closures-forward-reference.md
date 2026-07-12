@@ -21,12 +21,6 @@ cmd/
 - Test: the captured environment resolves the function's name to the function itself, the factorial computes correctly, and binding the name after the function is created still works.
 - Verify: `go test -race ./...` then `go run ./cmd/demo`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/40-capstone-language-interpreter/06-closures-first-class-functions/03-recursive-closures-forward-reference/cmd/demo && cd go-solutions/40-capstone-language-interpreter/06-closures-first-class-functions/03-recursive-closures-forward-reference
-```
-
 ### Why the order does not matter here
 
 The two-step forward-reference convention is: bind the name to a placeholder (`Null`) first, create the function so it captures the environment, then update the binding to point at the function. In an environment that copied its contents at creation time, that ordering would be mandatory — the function would otherwise capture a snapshot taken before the name existed and could never find itself. In this pointer-based design the placeholder is optional, because `Function.Env` and the environment the name is bound into are one live map, and the body resolves the name only at call time. Whether the function value is created before or after `Set("fact", f)`, a later call walks the current map and finds `f`. The placeholder still earns its place: it documents that a forward reference is intended and keeps the code portable to value-copy designs, which is why the implementation below uses it even though it is not strictly required.

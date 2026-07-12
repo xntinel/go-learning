@@ -22,7 +22,6 @@ store_test.go         version stamping, coalescing, concurrent Apply
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/42-capstone-service-mesh-data-plane/09-control-plane-grpc/01-config-snapshot-store/cmd/demo && cd go-solutions/42-capstone-service-mesh-data-plane/09-control-plane-grpc/01-config-snapshot-store
 go mod edit -go=1.26
 ```
 

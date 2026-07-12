@@ -29,8 +29,6 @@ configvalidate/            independent module: example.com/configvalidate
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/03-control-flow/06-labels-break-continue-goto/07-config-validation-labeled-continue/cmd/demo
-cd go-solutions/03-control-flow/06-labels-break-continue-goto/07-config-validation-labeled-continue
 go mod edit -go=1.24
 ```
 

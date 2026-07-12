@@ -31,8 +31,6 @@ Verify: `go test -count=1 ./...`
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/08-init-functions-and-package-initialization/23-graceful-shutdown-handler-collection-stack/cmd/demo
-cd go-solutions/04-functions/08-init-functions-and-package-initialization/23-graceful-shutdown-handler-collection-stack
 go mod edit -go=1.24
 ```
 

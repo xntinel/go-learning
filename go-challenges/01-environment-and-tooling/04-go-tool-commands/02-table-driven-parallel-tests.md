@@ -24,13 +24,6 @@ table-tests/                   module example.com/table-tests
 - Test: a table-driven `TestArea` with parallel subtests, including a `radius: 2.5` case, asserting the sentinel with `errors.Is` and the math with an epsilon.
 - Verify: `go run ./cmd/demo` prints the areas; `go test -count=1 -race -shuffle=on ./...` passes; `go test -run TestArea/negative` runs exactly one subtest.
 
-Create the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/04-go-tool-commands/02-table-driven-parallel-tests/cmd/demo go-solutions/01-environment-and-tooling/04-go-tool-commands/02-table-driven-parallel-tests/internal/circle
-cd go-solutions/01-environment-and-tooling/04-go-tool-commands/02-table-driven-parallel-tests
-```
-
 ### The shape and why each flag matters
 
 A table-driven test names each case in a struct slice and runs it as a subtest

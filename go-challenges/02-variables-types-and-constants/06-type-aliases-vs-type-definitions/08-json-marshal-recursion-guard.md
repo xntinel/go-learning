@@ -29,8 +29,6 @@ apievent/                 independent module: example.com/apievent
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/02-variables-types-and-constants/06-type-aliases-vs-type-definitions/08-json-marshal-recursion-guard/cmd/demo
-cd go-solutions/02-variables-types-and-constants/06-type-aliases-vs-type-definitions/08-json-marshal-recursion-guard
 go mod edit -go=1.24
 ```
 

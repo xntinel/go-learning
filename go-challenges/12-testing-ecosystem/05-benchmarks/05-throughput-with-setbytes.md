@@ -28,8 +28,6 @@ logpipe/                   independent module: example.com/logpipe
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/12-testing-ecosystem/05-benchmarks/05-throughput-with-setbytes/cmd/demo
-cd go-solutions/12-testing-ecosystem/05-benchmarks/05-throughput-with-setbytes
 go mod edit -go=1.24
 ```
 

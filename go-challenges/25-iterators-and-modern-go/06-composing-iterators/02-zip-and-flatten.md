@@ -19,12 +19,6 @@ combine_test.go      Zip stops at shorter, Flatten output, Flatten early-break l
 - Test: `Zip` stops at the shorter sequence; `Flatten` concatenates in order; breaking out of a `Flatten` range stops upstream so later sub-sequences are never produced.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/25-iterators-and-modern-go/06-composing-iterators/02-zip-and-flatten/cmd/demo && cd go-solutions/25-iterators-and-modern-go/06-composing-iterators/02-zip-and-flatten
-```
-
 ### Why Zip needs iter.Pull
 
 A push sequence delivers its values by calling `yield` in its own loop; the consumer never asks for "the next one," it just reacts inside the `for range` body. That is fine for one sequence, but `Zip` has to advance two at the same rate, and you cannot put two sequences in one `for range`, nor nest them — nesting would run the inner one to completion for every single element of the outer. The two sequences need to step together, which means at least one of them must become *pullable*: something you can call to get exactly one value on demand.

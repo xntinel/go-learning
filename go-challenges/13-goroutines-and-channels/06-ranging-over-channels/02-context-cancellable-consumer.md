@@ -26,13 +26,6 @@ Implement: `Consume(ctx context.Context, in <-chan Job) []Job` that loops on a `
 Test: a pre-cancelled context returns immediately with an empty slice; an open channel plus a later cancel returns a bounded partial drain and terminates; a closed channel returns all jobs via the `ok == false` branch; `-race` proves no leak.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/06-ranging-over-channels/02-context-cancellable-consumer/cmd/demo
-cd go-solutions/13-goroutines-and-channels/06-ranging-over-channels/02-context-cancellable-consumer
-```
-
 ### Why range cannot do this, and what replaces it
 
 `for j := range in` blocks in a single receive. There is nowhere in that

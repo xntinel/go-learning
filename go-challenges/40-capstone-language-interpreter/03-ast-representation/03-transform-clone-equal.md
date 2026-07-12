@@ -22,12 +22,6 @@ transform_test.go    clone independence, position-blind Equal, multi-level fold
 - Test: `transform_test.go` proves a clone is independent of its source, that `Equal` ignores positions but distinguishes values, that integer and boolean constant folding work (and skip division by zero), that nested folding collapses in one pass, and that transforming a clone leaves the original untouched.
 - Verify: `go test -run 'TestClone|TestEqual|TestConstantFold|TestTransform|ExampleTransform' -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/40-capstone-language-interpreter/03-ast-representation/03-transform-clone-equal/cmd/demo && cd go-solutions/40-capstone-language-interpreter/03-ast-representation/03-transform-clone-equal
-```
-
 ### Why deep clone, position-blind equality, and bottom-up transform
 
 `Clone` produces an independent deep copy: every node and slice is freshly allocated, so a mutation anywhere in the copy is invisible to the original. It is the prerequisite for any pass that rewrites a tree while keeping the input intact — clone first, then mutate the clone. The implementation is a type-switch that rebuilds each node from its fields and recurses into children, ending in a `default` that panics on an unknown node type, so adding a node without teaching `Clone` about it fails loudly in a test rather than silently dropping a subtree.

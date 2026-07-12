@@ -28,13 +28,6 @@ e2eclient/                 independent module: example.com/e2eclient
 - Test: the client against `httptest.Server` in the default build; the e2e tier against `E2E_BASE_URL`; a boolean-tagged file excluded under `-race`.
 - Verify: `go test ./...` runs none of the tagged tiers; `-tags=integration` and `-tags=e2e` run their own; the `&& !race` file is excluded when `-race` is set.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/18-integration-tests-with-build-tags/08-e2e-tier-second-build-tag/cmd/demo
-cd go-solutions/12-testing-ecosystem/18-integration-tests-with-build-tags/08-e2e-tier-second-build-tag
-```
-
 ### Three tiers, three tags, three stages
 
 Integration and e2e are different jobs and deserve different tags. The integration

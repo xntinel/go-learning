@@ -26,13 +26,6 @@ versioned/                  independent module: example.com/versioned
 - Test: two loads at version N, the first `Update` succeeds and bumps to N+1, the second with stale N returns `ErrVersionConflict`; `Update` of a missing id returns `ErrNotFound`; a fetched value is a copy, not an alias; concurrent updates run clean under `-race`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/12-designing-a-domain-model/09-optimistic-concurrency-version/cmd/demo
-cd go-solutions/07-structs-and-methods/12-designing-a-domain-model/09-optimistic-concurrency-version
-```
-
 ### The conditional update is the whole mechanism
 
 Optimistic concurrency assumes conflicts are rare and pays for that assumption

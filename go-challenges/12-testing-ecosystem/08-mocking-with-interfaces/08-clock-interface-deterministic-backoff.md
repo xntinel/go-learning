@@ -26,13 +26,6 @@ backoff/                     independent module: example.com/backoff
 - Test: a fake clock that records each sleep duration and advances virtual `Now`; assert the backoff sequence, the attempt count, `ErrExhausted`, `ErrBudgetExceeded`, and a context-cancelled abort — all with no real sleep.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/08-mocking-with-interfaces/08-clock-interface-deterministic-backoff/cmd/demo
-cd go-solutions/12-testing-ecosystem/08-mocking-with-interfaces/08-clock-interface-deterministic-backoff
-```
-
 ### The Clock seam and the retrier
 
 The `Clock` interface is deliberately tiny: `Now() time.Time` and `Sleep(ctx,

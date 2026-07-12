@@ -28,13 +28,6 @@ Implement: a fixed-capacity `History` with `New(capacity)`, `Add(v int)`, `Snaps
 Test: add-and-snapshot-in-order, overwrite-oldest-when-full, snapshot-returns-independent-copy, empty-snapshot, wraparound-at-boundary, never-grows-beyond-capacity.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/01-bounded-event-history/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/07-slice-internals/01-bounded-event-history
-```
-
 ### Why a ring buffer behind a slice
 
 The naive "keep the last N" implementation appends to a slice and trims the

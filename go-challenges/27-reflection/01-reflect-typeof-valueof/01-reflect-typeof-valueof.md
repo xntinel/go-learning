@@ -18,13 +18,6 @@ Reflection is useful at package boundaries where the static type is intentionall
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/27-reflection/01-reflect-typeof-valueof/01-reflect-typeof-valueof/cmd/demo
-cd go-solutions/27-reflection/01-reflect-typeof-valueof/01-reflect-typeof-valueof
-```
-
 ### Exercise 1: Implement the Inspector
 
 Create `inspect.go`:

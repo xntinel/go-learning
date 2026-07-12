@@ -26,13 +26,6 @@ Implement: a `Server` whose worker goroutine ranges an intake channel; `Start(ct
 Test: after graceful shutdown every buffered job is processed and the intake is fully drained; `DrainHard` conserves items (processed + remaining == total) but may leave some unprocessed; `-race` clean; `Wait` returns only after the drain completes.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/13-goroutines-and-channels/06-ranging-over-channels/06-graceful-shutdown-drain/cmd/demo
-cd go-solutions/13-goroutines-and-channels/06-ranging-over-channels/06-graceful-shutdown-drain
-```
-
 ### Why graceful drain is a plain range, and hard cancel is not
 
 The graceful path is deliberately a plain `for j := range intake`. It has no

@@ -32,8 +32,6 @@ configmerge/                 independent module: example.com/configmerge
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/48-modern-go-language-and-stdlib/15-new-expr-initialized-allocation/03-config-overlay-merge/cmd/demo
-cd go-solutions/48-modern-go-language-and-stdlib/15-new-expr-initialized-allocation/03-config-overlay-merge
 go mod edit -go=1.26
 ```
 

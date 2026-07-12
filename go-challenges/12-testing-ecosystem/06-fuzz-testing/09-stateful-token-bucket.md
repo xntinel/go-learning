@@ -29,13 +29,6 @@ replaying a fuzzed op stream and asserting the invariant after each step.
 Verify: `go test -race ./...`, then `go test -fuzz=FuzzBucketInvariant
 -fuzztime=2s`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/12-testing-ecosystem/06-fuzz-testing/09-stateful-token-bucket/cmd/demo
-cd go-solutions/12-testing-ecosystem/06-fuzz-testing/09-stateful-token-bucket
-```
-
 ### A pure limiter, and model-based fuzzing
 
 The bucket holds `tokens` up to `capacity`, refilling at `rate` tokens per

@@ -28,13 +28,6 @@ latency/                     independent module: example.com/latency
 - Test (`httptest`): a handler that sleeps a known duration yields an observed latency `>= sleep`; the broken variant records `~0`; a handler writing 503 has its status captured.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/03-control-flow/07-defer-semantics-and-ordering/06-request-latency-timer/cmd/demo
-cd go-solutions/03-control-flow/07-defer-semantics-and-ordering/06-request-latency-timer
-```
-
 ### Why the closure moves the measurement to return time
 
 `defer`'s rule: the deferred call's *arguments* are evaluated at the `defer`

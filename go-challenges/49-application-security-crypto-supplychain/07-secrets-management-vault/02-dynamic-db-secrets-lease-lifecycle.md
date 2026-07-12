@@ -33,8 +33,6 @@ dbcreds/                       independent module: example.com/dbcreds
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/49-application-security-crypto-supplychain/07-secrets-management-vault/02-dynamic-db-secrets-lease-lifecycle/cmd/demo
-cd go-solutions/49-application-security-crypto-supplychain/07-secrets-management-vault/02-dynamic-db-secrets-lease-lifecycle
 go mod edit -go=1.26
 go get github.com/hashicorp/vault/api
 ```

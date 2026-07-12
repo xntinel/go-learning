@@ -33,13 +33,6 @@ downstream space lets sends succeed again; under concurrent submits, enqueued +
 diverted + dropped equals the total (no send blocks or is lost silently).
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/08-select-priority-and-starvation/07-backpressure-load-shed/cmd/demo
-cd go-solutions/14-select-and-context/08-select-priority-and-starvation/07-backpressure-load-shed
-```
-
 ### Non-blocking send is the backpressure primitive
 
 `select` with `default` on a *send* case is the primitive for backpressure:

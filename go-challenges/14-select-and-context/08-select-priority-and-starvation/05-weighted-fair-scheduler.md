@@ -31,13 +31,6 @@ through to a lower one; an item arriving later unblocks a waiting `Next`;
 cancellation exits.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/08-select-priority-and-starvation/05-weighted-fair-scheduler/cmd/demo
-cd go-solutions/14-select-and-context/08-select-priority-and-starvation/05-weighted-fair-scheduler
-```
-
 ### Deficit round-robin without reflect
 
 The two-channel consecutive-high counter from Exercise 2 does not generalize

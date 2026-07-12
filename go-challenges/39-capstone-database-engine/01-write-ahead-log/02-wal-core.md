@@ -22,12 +22,6 @@ wal_test.go          monotonic + restart-resumed LSNs, concurrent appends, rotat
 - Test: `wal_test.go` asserts monotonic and restart-resumed LSNs, that concurrent appends never collide, that the log rotates segments, that the group-commit timer path assigns unique LSNs, and that a checkpoint plus `Truncate` frees old segments.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/01-write-ahead-log/02-wal-core/cmd/demo && cd go-solutions/39-capstone-database-engine/01-write-ahead-log/02-wal-core
-```
-
 ### The four invariants the core upholds
 
 Most real-world WAL bugs are a violation of one of four invariants, and every later exercise assumes all four hold, so it is worth naming them before the code.

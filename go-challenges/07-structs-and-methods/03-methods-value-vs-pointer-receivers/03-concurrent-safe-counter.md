@@ -28,13 +28,6 @@ Implement: a `Counter` interface (`Inc()`, `Get() int64`) satisfied by `*AtomicC
 Test: spawn N goroutines that each call `Inc`, wait, and assert `Get() == N`, for both implementations, under `-race`; `go vet` passes (proving no lock/atomic value-copy).
 Verify: `go test -count=1 -race ./...` and `go vet ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/03-methods-value-vs-pointer-receivers/03-concurrent-safe-counter/cmd/demo
-cd go-solutions/07-structs-and-methods/03-methods-value-vs-pointer-receivers/03-concurrent-safe-counter
-```
-
 ### Why these types cannot use value receivers
 
 `sync.Mutex` and `atomic.Int64` both carry internal state that is only meaningful

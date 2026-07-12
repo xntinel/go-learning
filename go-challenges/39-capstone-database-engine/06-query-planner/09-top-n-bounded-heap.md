@@ -23,12 +23,6 @@ topn_test.go        ordering cases, negative-parameter rejection, NULL-sorts-fir
 - Test: multi-key ordering with `Desc` per key, `offset` skipping, a limit larger than the input, a zero limit, rejection of negative `limit`/`offset`, and that a NULL sort key sorts first under ASC.
 - Verify: `go test -run 'TestTopN|TestNewTopN' -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/39-capstone-database-engine/06-query-planner/09-top-n-bounded-heap/cmd/demo && cd go-solutions/39-capstone-database-engine/06-query-planner/09-top-n-bounded-heap
-```
-
 ### Why a heap and not a sort
 
 The key insight is that an `ORDER BY ... LIMIT k` query never needs more than `k` rows resident at once. If the buffer already holds the best `k` rows seen so far, a new row matters only if it beats the worst of those `k`; otherwise it is discarded immediately. To make "the worst of the kept rows" cheap to find and cheap to replace, the buffer is a max-heap *under the ORDER BY ordering*: its root is the row that sorts last among those kept, so it is exactly the one to evict on overflow. Each input row costs one comparison against the root plus, at most, one O(log k) sift, giving O(n log k) overall against the O(n log n) of a full sort, and O(k) space against O(n).

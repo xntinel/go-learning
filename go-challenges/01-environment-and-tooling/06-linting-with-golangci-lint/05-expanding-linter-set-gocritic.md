@@ -27,13 +27,6 @@ statusclass/                  independent module: example.com/statusclass
 - Test: a table over representative codes and each boundary.
 - Verify: `go test -count=1 -race ./...`; then `golangci-lint linters` and `golangci-lint run ./...`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/06-linting-with-golangci-lint/05-expanding-linter-set-gocritic/cmd/demo
-cd go-solutions/01-environment-and-tooling/06-linting-with-golangci-lint/05-expanding-linter-set-gocritic
-```
-
 ### Reading the linter catalog
 
 Before adding a linter, look at what is already on and what is available:

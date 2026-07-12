@@ -30,8 +30,6 @@ slug/                     independent module: example.com/slug
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/05-strings-runes-and-unicode/10-building-a-text-processing-pipeline/06-diacritic-folding-slug-generator/cmd/demo
-cd go-solutions/05-strings-runes-and-unicode/10-building-a-text-processing-pipeline/06-diacritic-folding-slug-generator
 go get golang.org/x/text/transform golang.org/x/text/runes golang.org/x/text/unicode/norm
 ```
 

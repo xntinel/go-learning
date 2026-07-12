@@ -25,13 +25,6 @@ joinnil/                   independent module: example.com/joinnil
 - Test: `Collect2(nil, errA)` is `errors.Is` errA; `Collect2(nil, nil)` is nil via `err != nil`; `Collect3(nil, nil, nil)` is nil; and assert the returned value is *untyped* nil, not a non-nil interface.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/07-multiple-error-returns/03-join-nil-semantics/cmd/demo
-cd go-solutions/10-error-handling/07-multiple-error-returns/03-join-nil-semantics
-```
-
 ### Why the nil rules matter for real code
 
 Aggregation loops want to write `errs = append(errs, step())` and then

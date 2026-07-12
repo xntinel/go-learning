@@ -25,13 +25,6 @@ vet-floor/                     module example.com/vet-floor
 - Test: `Address` for IPv4, IPv6, and a hostname; `SumTo(100) == 100` under `-race`.
 - Verify: `go vet ./...` is silent and `go test -race ./...` passes on the correct code; each buggy variant makes `go vet` exit non-zero.
 
-Create the module:
-
-```bash
-mkdir -p go-solutions/01-environment-and-tooling/04-go-tool-commands/04-go-vet-catches-real-bugs/cmd/demo go-solutions/01-environment-and-tooling/04-go-tool-commands/04-go-vet-catches-real-bugs/internal/netutil
-cd go-solutions/01-environment-and-tooling/04-go-tool-commands/04-go-vet-catches-real-bugs
-```
-
 ### Why vet is a separate stage from build
 
 The compiler checks types; it does not check that a `Printf` format verb matches

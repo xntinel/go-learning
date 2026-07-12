@@ -58,8 +58,6 @@ fingerprint/                  module example.com/fingerprint
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/20-config-fingerprint-etag
-cd go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/20-config-fingerprint-etag
 go mod edit -go=1.24
 ```
 

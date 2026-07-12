@@ -26,13 +26,6 @@ balance/                    independent module: example.com/balance
 - Test: `NewBalance(-1,0)` returns `ErrNonNegative`; `Sub` returns `ErrOverdraw` when the result would go negative; `Add` leaves inputs unchanged; equal fields compare `==`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/12-designing-a-domain-model/01-balance-value-object/cmd/demo
-cd go-solutions/07-structs-and-methods/12-designing-a-domain-model/01-balance-value-object
-```
-
 ### Why unexported fields and a constructor
 
 The invariant is "a balance is never negative". The only way to guarantee it for

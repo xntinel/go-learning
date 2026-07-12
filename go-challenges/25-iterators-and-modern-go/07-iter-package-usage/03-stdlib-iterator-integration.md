@@ -19,12 +19,6 @@ stdlibiter_test.go   deterministic key order, round-trip collect, reversal
 - Test: sorted keys are deterministic regardless of insertion order, a collected copy equals the source, and a reversal is exact.
 - Verify: `go test -run 'TestSortedKeys|TestCollectValues|TestReversed' -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/25-iterators-and-modern-go/07-iter-package-usage/03-stdlib-iterator-integration/cmd/demo && cd go-solutions/25-iterators-and-modern-go/07-iter-package-usage/03-stdlib-iterator-integration
-```
-
 ### Producers, consumers, and the one-liners they make possible
 
 The `slices` and `maps` packages were extended in Go 1.23 to traffic in `iter.Seq`. On the producing side, `slices.Values(s)` turns a slice into an `iter.Seq[V]`, `slices.Backward(s)` into a reverse `iter.Seq2[int, V]`, and `maps.Keys(m)` into an `iter.Seq[K]` over a map's keys. On the consuming side, `slices.Collect(seq)` drains an `iter.Seq` into a fresh slice and `slices.Sorted(seq)` drains and sorts it (it requires `cmp.Ordered` elements). Because both sides speak the same type, a producer and a consumer snap together directly.

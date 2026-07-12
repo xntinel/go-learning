@@ -18,13 +18,6 @@ Logging schema is an API for operators. Group names should be stable and meaning
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/21-structured-logging-with-slog/04-groups-and-nested-attributes/04-groups-and-nested-attributes
-cd go-solutions/21-structured-logging-with-slog/04-groups-and-nested-attributes/04-groups-and-nested-attributes
-```
-
 Edit `go.mod`:
 
 ```go

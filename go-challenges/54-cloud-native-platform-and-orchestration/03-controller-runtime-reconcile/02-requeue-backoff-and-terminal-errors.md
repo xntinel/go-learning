@@ -33,8 +33,6 @@ provisioner-reconcile/            independent module: example.com/provisioner-re
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/54-cloud-native-platform-and-orchestration/03-controller-runtime-reconcile/02-requeue-backoff-and-terminal-errors/cmd/demo
-cd go-solutions/54-cloud-native-platform-and-orchestration/03-controller-runtime-reconcile/02-requeue-backoff-and-terminal-errors
 go mod edit -go=1.24
 go get sigs.k8s.io/controller-runtime@v0.20.4
 go get k8s.io/api@v0.32.0 k8s.io/apimachinery@v0.32.0 k8s.io/client-go@v0.32.0

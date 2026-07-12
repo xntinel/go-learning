@@ -30,8 +30,6 @@ Verify: `go test -count=1 -race ./...`
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/10-error-handling/06-error-wrapping-chains/09-safe-error-redaction-logging/cmd/demo
-cd go-solutions/10-error-handling/06-error-wrapping-chains/09-safe-error-redaction-logging
 go mod edit -go=1.24
 ```
 

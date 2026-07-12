@@ -26,13 +26,6 @@ money/                       independent module: example.com/money-value-object-
 - Test: construction rejects unknown/empty currency and normalizes case; matching-currency `Add`/`Sub` are correct; mismatched `Add` returns `ErrCurrencyMismatch` via `errors.Is`; the zero value is inert; and `String()` renders the documented format including negatives.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/06-constructor-functions-and-validation/06-money-value-object-invariants/cmd/demo
-cd go-solutions/07-structs-and-methods/06-constructor-functions-and-validation/06-money-value-object-invariants
-```
-
 ### Why the invariant must be unbypassable
 
 The `Money` invariant is "amount is in minor units of a known currency". If a

@@ -21,12 +21,6 @@ higherorder_test.go   callable application, truthiness filtering, error propagat
 - Test: that the callback is applied to every element, that `filter` keeps truthy results, that `reduce` folds left, and that an error from the callback aborts the whole call.
 - Verify: `go test -race ./...` and `go run ./cmd/demo`.
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/40-capstone-language-interpreter/05-builtin-functions/02-higher-order-builtins/cmd/demo && cd go-solutions/40-capstone-language-interpreter/05-builtin-functions/02-higher-order-builtins
-```
-
 ### Why an interface, not a concrete function type
 
 The higher-order built-ins must invoke a callback that, in the full interpreter, is a `*Function` carrying an AST body and a closure environment. The built-in package cannot import the evaluator to name that type — the evaluator already imports the built-ins, so naming `*Function` here would close a circular dependency. The `Callable` interface breaks the cycle: it declares exactly one capability, `Call(args ...Object) Object`, and the built-ins program against it. The evaluator's `*Function` implements `Call` by running `Eval` on its body; the `*BuiltinCallable` defined in this module implements it by invoking a wrapped Go function. The built-ins never know or care which one they hold.

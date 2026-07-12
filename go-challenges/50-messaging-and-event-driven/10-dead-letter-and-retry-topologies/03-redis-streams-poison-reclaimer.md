@@ -36,8 +36,6 @@ redisreclaimer/                  independent module: example.com/redisreclaimer
 Set up the module. The pure core needs no dependency; the integration file does:
 
 ```bash
-mkdir -p go-solutions/50-messaging-and-event-driven/10-dead-letter-and-retry-topologies/03-redis-streams-poison-reclaimer/cmd/demo
-cd go-solutions/50-messaging-and-event-driven/10-dead-letter-and-retry-topologies/03-redis-streams-poison-reclaimer
 go mod edit -go=1.26
 go get github.com/redis/go-redis/v9   # only needed to compile/run with -tags integration
 ```

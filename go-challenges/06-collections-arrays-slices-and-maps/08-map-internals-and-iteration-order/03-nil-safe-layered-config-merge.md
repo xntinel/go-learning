@@ -29,13 +29,6 @@ config/                    independent module: example.com/config
   result is independent of the input layers.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/03-nil-safe-layered-config-merge/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/08-map-internals-and-iteration-order/03-nil-safe-layered-config-merge
-```
-
 ### The two faces of a nil map, and why they bite
 
 A nil map reads safely and writes fatally. `Lookup` reads: ranging or indexing a nil

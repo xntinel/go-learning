@@ -38,13 +38,6 @@ A generator is a goroutine inside a function. The channel is the return value. T
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/16-concurrency-patterns/05-generator-pattern/05-generator-pattern/internal/integer go-solutions/16-concurrency-patterns/05-generator-pattern/05-generator-pattern/internal/fib go-solutions/16-concurrency-patterns/05-generator-pattern/05-generator-pattern/internal/compose go-solutions/16-concurrency-patterns/05-generator-pattern/05-generator-pattern/cmd/gendemo
-cd go-solutions/16-concurrency-patterns/05-generator-pattern/05-generator-pattern
-```
-
 ### Exercise 1: The Integer Generator
 
 Create `internal/integer/integer.go`:

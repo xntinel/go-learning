@@ -77,13 +77,6 @@ The mapping is kind-based, with a special case for `time.Time`:
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/27-reflection/08-building-a-simple-orm/08-building-a-simple-orm/cmd/demo
-cd go-solutions/27-reflection/08-building-a-simple-orm/08-building-a-simple-orm
-```
-
 The schema and ORM logic compile with no external modules. Tests that require a SQL driver are gated behind `//go:build online`.
 
 ### Exercise 1: Schema Types and Cache

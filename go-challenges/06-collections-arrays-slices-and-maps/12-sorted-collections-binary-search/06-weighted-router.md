@@ -26,13 +26,6 @@ Implement: `Router` with `New([]Variant) (*Router, error)`, `Pick(r int) string`
 Test: boundary draws `r=0`, `r=total-1`, and each bucket edge land in the right variant; a full sweep gives each variant exactly `weight` picks; zero-weight variants are never picked; a single-variant table always returns it.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/06-collections-arrays-slices-and-maps/12-sorted-collections-binary-search/06-weighted-router/cmd/demo
-cd go-solutions/06-collections-arrays-slices-and-maps/12-sorted-collections-binary-search/06-weighted-router
-```
-
 ### Prefix sums turn weights into half-open buckets
 
 Give variants weights `[3, 2, 5]`. The cumulative table is `[3, 5, 10]`, and it

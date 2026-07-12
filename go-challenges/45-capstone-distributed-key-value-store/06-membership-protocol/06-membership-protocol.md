@@ -62,13 +62,6 @@ With 21-byte addresses ("192.168.255.255:65535") and six gossip entries plus a t
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/45-capstone-distributed-key-value-store/06-membership-protocol/06-membership-protocol/cmd/demo
-cd go-solutions/45-capstone-distributed-key-value-store/06-membership-protocol/06-membership-protocol
-```
-
 ### Exercise 1: Core Types and the Gossip Queue
 
 Create `membership.go`. This file defines every type the rest of the package builds on: the member state machine, the sentinel errors, the cluster configuration, and the central `Membership` struct. Networking methods (Start, Stop, Join, probe loop) are added in Exercise 3.

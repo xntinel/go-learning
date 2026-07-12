@@ -27,13 +27,6 @@ cacheaside/                  independent module: example.com/cacheaside
 - Test: a miss returns `errors.Is(err, ErrCacheMiss)` and triggers exactly one loader call; a hit returns the cached value with nil error and zero loader calls; a loader failure propagates verbatim; a closed cache propagates `ErrCacheClosed` without calling the loader; two `errors.New` with identical text are not `==`.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/01-error-interface-and-basic-patterns/04-cache-miss-error-value/cmd/demo
-cd go-solutions/10-error-handling/01-error-interface-and-basic-patterns/04-cache-miss-error-value
-```
-
 ### Errors as flow signals, and why identity matters
 
 `ReadThrough` reads three outcomes from `cache.Get` and does something different

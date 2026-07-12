@@ -25,13 +25,6 @@ statussql/                  independent module: example.com/statussql
 - Test: `Scan(Value(s))` reconstructs each `s`; `Scan` handles `string`, `[]byte`, and `nil`; a numeric `src` is rejected with a wrapped sentinel; `var _ driver.Valuer` and `var _ sql.Scanner` assertions.
 - Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/07-structs-and-methods/10-implementing-stringer/06-sql-valuer-scanner-enum-column/cmd/demo
-cd go-solutions/07-structs-and-methods/10-implementing-stringer/06-sql-valuer-scanner-enum-column
-```
-
 ### The storage contract
 
 `database/sql` moves values across the driver boundary through two interfaces.

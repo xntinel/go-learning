@@ -19,12 +19,6 @@ pretty_test.go     each value type, color stripping, sorted-hash determinism
 - Test: `pretty_test.go` asserts on `StripANSI(Pretty(...))` for every value kind, checks that hash keys are sorted for deterministic output, and that the array inline/multi-line threshold works.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/40-capstone-language-interpreter/07-repl-line-editing/04-pretty-printing/cmd/demo && cd go-solutions/40-capstone-language-interpreter/07-repl-line-editing/04-pretty-printing
-```
-
 ### One entry point, color injected inline
 
 `Pretty(*Object) string` switches on the object's type and returns a colored string. Color is injected inline with ANSI SGR (Select Graphic Rendition) escape sequences: a code like `\x1b[33m` turns the following text yellow, and every colored span is closed with `\x1b[0m` (reset) so the color does not bleed past it. The palette follows what most REPLs converge on — integers and floats yellow, strings green, booleans cyan, functions blue, errors red, null gray — and a `nil` object is treated as null so the caller never has to guard against it.

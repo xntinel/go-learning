@@ -18,13 +18,6 @@ Context keys should use an unexported custom type to avoid collisions with other
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/21-structured-logging-with-slog/07-context-aware-logging/07-context-aware-logging
-cd go-solutions/21-structured-logging-with-slog/07-context-aware-logging/07-context-aware-logging
-```
-
 Edit `go.mod`:
 
 ```go

@@ -27,8 +27,6 @@ treevisit/                   independent module: example.com/treevisit
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/04-functions/10-higher-order-functions/27-visitor-tree-traversal-injected/cmd/demo
-cd go-solutions/04-functions/10-higher-order-functions/27-visitor-tree-traversal-injected
 go mod edit -go=1.24
 ```
 

@@ -19,12 +19,6 @@ bus_test.go          contract tests + a -race concurrent publish/cancel sweep
 - Test: `bus_test.go` checks delivery, drop-on-full, idempotent cancel, the error contracts, fan-out to many subscribers, and concurrent publish/cancel under the race detector.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/24-design-patterns-in-go/09-observer-pattern-with-channels/01-event-bus/cmd/demo && cd go-solutions/24-design-patterns-in-go/09-observer-pattern-with-channels/01-event-bus
-```
-
 ### The shape of the bus, and the one hazard that drives its design
 
 The bus holds a `map[string][]chan Event`: each event type maps to the slice of channels subscribed to it. `Subscribe` makes a buffered channel, appends it under the lock, and returns the receive-only end plus a `cancel` closure. `Publish` looks up the slice for the event's type and hands the event to each channel with a non-blocking send. `Close` shuts the whole bus. That is the entire structure; the difficulty is entirely in one interaction.

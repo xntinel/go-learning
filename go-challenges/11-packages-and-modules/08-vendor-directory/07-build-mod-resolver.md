@@ -30,8 +30,6 @@ modresolver/                 independent module: example.com/modresolver
 Set up the module:
 
 ```bash
-mkdir -p go-solutions/11-packages-and-modules/08-vendor-directory/07-build-mod-resolver/cmd/demo
-cd go-solutions/11-packages-and-modules/08-vendor-directory/07-build-mod-resolver
 go get golang.org/x/mod
 ```
 

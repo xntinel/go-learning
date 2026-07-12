@@ -25,12 +25,6 @@ uow_test.go              atomic multi-entity commit, stale-version conflict,
 - Test: a transfer commits atomically, a stale update returns `ErrConflict`, a partially-conflicting commit applies nothing, and N concurrent commits on the same base version produce exactly one winner.
 - Verify: `go test -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/24-design-patterns-in-go/05-repository-pattern/04-unit-of-work-optimistic-concurrency/cmd/demo && cd go-solutions/24-design-patterns-in-go/05-repository-pattern/04-unit-of-work-optimistic-concurrency
-```
-
 ### Why a unit of work and what optimistic concurrency buys you
 
 A bare repository exposes one-entity operations: get this, save that. Real work rarely touches one entity. Moving money debits one account and credits another, and both writes must land or neither must — a credit without its matching debit is money invented from nothing. The Unit of Work pattern is the boundary that makes "both or neither" expressible: a caller `Load`s the entities it will touch, mutates its own copies, stages them with `Update`/`Add`/`Remove`, and calls `Commit` once. The store applies the whole batch under a single lock, so no other transaction observes a half-applied state. That single-lock apply is the atomicity guarantee in miniature; a database gives you the same property with a real transaction, and this in-memory model deliberately mirrors its semantics.

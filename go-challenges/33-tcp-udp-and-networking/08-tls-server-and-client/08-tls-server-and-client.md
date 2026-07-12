@@ -46,13 +46,6 @@ A client that calls `tls.Dial` without the correct `RootCAs` receives an error w
 
 ## Exercises
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/33-tcp-udp-and-networking/08-tls-server-and-client/08-tls-server-and-client/cmd/demo
-cd go-solutions/33-tcp-udp-and-networking/08-tls-server-and-client/08-tls-server-and-client
-```
-
 This is a library. Verification runs `go test`, not `go run`.
 
 ### Exercise 1: Certificate Generation and Config Helpers

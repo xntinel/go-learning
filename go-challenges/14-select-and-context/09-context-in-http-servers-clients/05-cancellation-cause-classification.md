@@ -27,13 +27,6 @@ Implement: sentinel errors `ErrHandlerTimeout`, `ErrClientDisconnect`, `ErrServe
 Test: a table driving (a) derived-timeout fires -> `handler-timeout`, (b) parent cancelled with a client cause -> `client-disconnect`, (c) parent cancelled with a shutdown cause -> `server-shutdown`; and that `ctx.Err()` stays coarse (`DeadlineExceeded`/`Canceled`) while `Cause` is specific.
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/14-select-and-context/09-context-in-http-servers-clients/05-cancellation-cause-classification/cmd/demo
-cd go-solutions/14-select-and-context/09-context-in-http-servers-clients/05-cancellation-cause-classification
-```
-
 ## The design
 
 `context.WithTimeoutCause(parent, d, cause)` behaves exactly like `WithTimeout`

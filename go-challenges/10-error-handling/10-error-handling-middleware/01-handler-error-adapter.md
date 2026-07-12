@@ -28,13 +28,6 @@ Test: assert the adapter never writes when `err == nil` (the handler's own
 response stands) and always writes when `err != nil` (the handler wrote nothing).
 Verify: `go test -count=1 -race ./...`
 
-Set up the module:
-
-```bash
-mkdir -p go-solutions/10-error-handling/10-error-handling-middleware/01-handler-error-adapter/cmd/demo
-cd go-solutions/10-error-handling/10-error-handling-middleware/01-handler-error-adapter
-```
-
 ### Why an adapter at all
 
 `net/http` fixes the handler signature as `ServeHTTP(w http.ResponseWriter, r
